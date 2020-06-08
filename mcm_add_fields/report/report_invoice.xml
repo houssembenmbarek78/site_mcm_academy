@@ -407,8 +407,8 @@
                 <br/>
             </xpath>
 
-            <xpath expr="//div[@class='footer o_standard_footer']" position="replace">
-                <div class="footer o_standard_footer">
+            <xpath expr="//div[3]" position="replace">
+                <div t-attf-class="footer o_standard_footer o_company_#{company.id}_layout">
                     <center><div class="row">
                         <span style="color:grey;font-size:14px" t-field="company.partner_id.name"/>
                         <span style="color:grey;font-size:14px">|</span>
