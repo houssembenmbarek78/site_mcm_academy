@@ -35,7 +35,7 @@
         'views/helpdesk_dashboard_view.xml',
     ],
     'demo': [
-        'demo/helpdesk_demo.xml',
+        # 'demo/helpdesk_demo.xml',
     ],
     'development_status': 'Alpha',
     'application': True,

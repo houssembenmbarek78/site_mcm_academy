@@ -14,4 +14,4 @@ class HelpdeskCategory(models.Model):
         default=lambda self: self.env.company
     )
 
-    code = fields.Char('Code', required=True)
+    code = fields.Char('Code', required=False)

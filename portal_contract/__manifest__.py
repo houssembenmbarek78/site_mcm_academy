@@ -11,7 +11,7 @@ add css and js files to website model
     'category': 'website',
     'website': 'https://www.odoo.com/page/billing',
     # 'images' : ['images/accounts.jpeg','images/bank_statement.jpeg','images/cash_register.jpeg','images/chart_of_accounts.jpeg','images/customer_invoice.jpeg','images/journal_entries.jpeg'],
-    'depends': ['base','web', 'website', 'website_sale', 'sale','product','mcm_add_fields','mail','account','mcm_session'],
+    'depends': ['base','web', 'website', 'website_sale','stock', 'sale','product','mcm_add_fields','mail','account','mcm_session'],
     'data': [
         'views/sale_portal_templates.xml',
         'views/account_portal_templates.xml',
