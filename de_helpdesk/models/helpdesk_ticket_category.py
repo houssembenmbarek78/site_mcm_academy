@@ -15,4 +15,4 @@ class HelpdeskCategory(models.Model):
             'helpdesk.ticket')
     )
 
-    code = fields.Char('Code', required=True)
+    code = fields.Char('Code', required=False)
