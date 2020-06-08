@@ -14,7 +14,8 @@
         'account',
         'product',
         'base',
-        'contacts'
+        'contacts',
+        'web'
     ],
     'description': "Rajout des champs",
     'data': [

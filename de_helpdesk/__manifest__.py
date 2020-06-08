@@ -17,6 +17,7 @@
     'depends': [
         'mail',
         'portal',
+        'account'
     ],
     'data': [
         'data/helpdesk_data.xml',

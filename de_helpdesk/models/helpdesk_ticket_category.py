@@ -11,8 +11,7 @@ class HelpdeskCategory(models.Model):
     company_id = fields.Many2one(
         'res.company',
         string="Company",
-        default=lambda self: self.env['res.company']._company_default_get(
-            'helpdesk.ticket')
+        default=lambda self: self.env.company
     )
 
-    code = fields.Char('Code', required=False)
+    code = fields.Char('Code', required=True)
