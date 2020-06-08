@@ -13,7 +13,8 @@
         'l10n_fr',
         'account',
         'product',
-        'base'
+        'base',
+        'contacts'
     ],
     'description': "Rajout des champs",
     'data': [
