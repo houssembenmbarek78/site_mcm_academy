@@ -1,0 +1,84 @@
+<odoo>
+
+    <report
+            id="report_programme"
+            model="mcmacademy.programme"
+            string="Programme report"
+            name="mcm_session.report_programme_view"
+            file="mcmacademy.report_programme"
+            report_type="qweb-pdf"
+            attachment_use="True"
+            attachment="'Programme'+(object.name or '').replace('/','')+'.pdf'"
+    />
+
+    <template id="report_programme_view">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <span t-field="doc.name" class="text-left" style="font-weight: bold;font-size: 18px;"/>
+                    </div>
+                    <div>
+                        <span t-field="doc.description"/>
+                    </div>
+                    <div>
+                        <p><span style="font-weight: bold;font-size: 18px;">A QUI S'ADRESSE CETTE FORMATION ?</span></p>
+                        <span style="font-weight: bold;font-size: 14px;">Profil du stagiaire</span>
+                        <ul>
+                            <t t-foreach="doc.clients_potentiels"
+                               t-as="line">
+                                <li>
+                                    <span t-field="line.name" t-options="{'widget': 'text'}"/>
+                                </li>
+                            </t>
+                        </ul>
+                        <span style="font-weight: bold;font-size: 18px;">Prérequis</span>
+                        <ul>
+                            <t t-foreach="doc.prerequis"
+                               t-as="line">
+                                <li>
+                                    <span t-field="line.name" t-options="{'widget': 'text'}"/>
+                                </li>
+                            </t>
+                        </ul>
+                        <span style="font-weight: bold;font-size: 18px;">OBJECTIFS PEDAGOGIQUES</span>
+                        <ul>
+                            <t t-foreach="doc.objectifs"
+                               t-as="line">
+                                <li>
+                                    <span t-field="line.name" t-options="{'widget': 'text'}"/>
+                                </li>
+                            </t>
+                        </ul>
+                        <p><span style="font-weight: bold;font-size: 18px;">Organisations</span></p>
+                        <p><span style="font-weight: bold;font-size: 14px;">Formateur</span></p>
+                        <p><span t-field="doc.description_pedagogique" t-options="{'widget': 'text'}"/></p>
+                        <span style="font-weight: bold;font-size: 14px;">Moyens pédagogiques et techniques</span>
+                        <ul>
+                            <t t-foreach="doc.ressources_pedagogique"
+                               t-as="line">
+                                <li>
+                                    <span t-field="line.name" t-options="{'widget': 'text'}"/>
+                                </li>
+                            </t>
+                        </ul>
+                        <span style="font-weight: bold;font-size: 14px;">Dispositif de suivi de l'exécution de
+                            d'évaluation des résultats de la formation
+                        </span>
+                        <ul>
+                            <t t-foreach="doc.suivi_execution"
+                               t-as="line">
+                                <li>
+                                    <span t-field="line.name" t-options="{'widget': 'text'}"/>
+                                </li>
+                            </t>
+                        </ul>
+
+                    </div>
+
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>

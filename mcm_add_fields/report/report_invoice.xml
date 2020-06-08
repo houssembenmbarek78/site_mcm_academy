@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Inherit invoice report (from module account) -->
+        <template id="mcm_report_invoice_document" inherit_id="account.report_invoice_document">
+            <xpath expr="//t[@t-set='address']" position="replace">
+                <div class="row">
+                    <div class="col-6">
+                    </div>
+                    <div class="col-4 offset-2">
+                        <strong>
+                            <span>Date de facture:</span>
+                            <span t-field="o.invoice_date"/>
+                        </strong>
+                    </div>
+                </div>
+            </xpath>
+            <xpath expr="//div[@class='page']/h2//span[@t-field='o.name']" position="replace">
+                <strong>
+                    <span style="font-size: 20px;" t-if="o.name != '/'" t-field="o.name"/>
+                </strong>
+            </xpath>
+            <xpath expr="//div[@class='page']/h2//span[1]" position="replace">
+                <strong style="font-size: 20px;">
+                    Facture
+                </strong>
+            </xpath>
+            <xpath expr="//div[@id='informations']" position="replace">
+                <div id="informations" class="row mt32 mb32">
+                    <div class="col-auto mw-100 mb-2" t-if="o.invoice_date" name="invoice_date">
+                        <strong>Destinataire:</strong>
+                        <span class="m-0" t-field="o.partner_id.name"/>
+                        <address t-field="o.partner_id"
+                                 t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;], &quot;no_marker&quot;: True}"/>
+                    </div>
+                    <div class="col-auto mw-100 mb-2">
+                    </div>
+                    <div class="col-auto mw-100 mb-2">
+                    </div>
+                    <div class="col-auto mw-100 mb-2">
+                    </div>
+                    <div class="col-auto mw-100 mb-2">
+                    </div>
+                    <div class="col-auto mw-200 mb-4">
+                    </div>
+                    <div class="col-auto mw-100 mb-2" name="formation_details">
+                        <h6>
+                            <span>Intitulé de la formation:</span>
+                            <t t-foreach="o.invoice_line_ids"
+                               t-as="line">
+                                <strong>
+                                    <span t-field="line.name" t-options="{'widget': 'text'}"/>
+                                </strong>
+                            </t>
+                        </h6>
+                        <h6 t-if="o.partner_id.module_id.product_id.distance_formation==False">
+                            <span>Lieu de la formation:</span>
+                            <span t-field="o.partner_id.module_id.lieu.address"/>
+                        </h6>
+                        <h6 t-if="o.partner_id.module_id.product_id.distance_formation==True">
+                            <span>Lieu de la formation: à distance</span>
+                        </h6>
+                        <h6 t-if="o.partner_id.module_id.product_id.distance_formation==False">
+                            <span>Dates de la formation: du</span>
+                            <span t-field="o.partner_id.module_id.date_debut"/>
+                            <span>au</span>
+                            <span t-field="o.partner_id.module_id.date_fin"/>
+                        </h6>
+                        <h6 t-if="o.partner_id.module_id.product_id.distance_formation==True">
+                            <span>Dates de la formation: A définir</span>
+                        </h6>
+                        <h6>
+                            <span>Durée de la formation:</span>
+                            <span t-field="o.partner_id.module_id.duree"/>
+                        </h6>
+                    </div>
+                </div>
+                <br></br>
+            </xpath>
+            <xpath expr="//table[@name='invoice_line_table']" position="replace">
+                <table style="width: 100%;margin-bottom: 1rem;border-color:#000" name="invoice_line_table">
+                    <thead>
+                        <tr style="background-color: #E8E8E8;">
+                            <!-- TODO: remove in master -->
+                            <t t-set="colspan" t-value="6"/>
+                            <th name="th_description" class="text-center" style="border: 1px solid black;">
+                                <span>Désignation</span>
+                            </th>
+                            <th name="th_source" class="d-none text-center" style="border: 1px solid black;">
+                                <span>Source Document</span>
+                            </th>
+                            <th name="th_quantity" class="text-center" style="border: 1px solid black;">
+                                <span>Quantity</span>
+                            </th>
+                            <th name="th_priceunit"
+                                t-attf-class="text-center {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"
+                                style="border: 1px solid black;">
+                                <span>Prix unitaire HT</span>
+                            </th>
+                            <th name="th_price_unit" t-if="display_discount"
+                                t-attf-class="text-center{{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"
+                                style="border: 1px solid black;">
+                                <span>Disc.%</span>
+                                <!-- TODO: remove in master -->
+                                <t t-set="colspan" t-value="colspan+1"/>
+                            </th>
+                            <th name="th_subtotal" class="text-center" style="border: 1px solid black;">
+                                <span groups="account.group_show_line_subtotals_tax_excluded">Total HT</span>
+                                <span groups="account.group_show_line_subtotals_tax_included">Prix Total</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="invoice_tbody">
+                        <t t-set="current_subtotal" t-value="0"/>
+
+                        <t t-foreach="o.invoice_line_ids.sorted(key=lambda l: (-l.sequence, l.date, l.move_name, -l.id), reverse=True)"
+                           t-as="line">
+                            <t t-set="current_subtotal" t-value="current_subtotal + line.price_subtotal"
+                               groups="account.group_show_line_subtotals_tax_excluded"/>
+                            <t t-set="current_subtotal" t-value="current_subtotal + line.price_total"
+                               groups="account.group_show_line_subtotals_tax_included"/>
+
+                            <tr t-att-class="'bg-200 font-weight-bold o_line_section' if line.display_type == 'line_section' else 'font-italic o_line_note' if line.display_type == 'line_note' else ''">
+                                <t t-if="not line.display_type" name="account_invoice_line_accountable">
+                                    <td name="account_invoice_line_name" class="text-center"
+                                        style="border: 1px solid black;">
+                                        <strong>
+                                            <span t-field="line.name" t-options="{'widget': 'text'}"/>
+                                        </strong>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;">
+                                        <span t-field="line.quantity"/>
+                                        <span t-field="line.product_uom_id" groups="uom.group_uom"/>
+                                    </td>
+                                    <td t-attf-class="text-center {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"
+                                        style="border: 1px solid black;">
+                                        <span t-field="line.price_unit"/>
+                                    </td>
+                                    <td t-if="display_discount"
+                                        t-attf-class="text-center {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"
+                                        style="border: 1px solid black;">
+                                        <span t-field="line.discount"/>
+                                    </td>
+                                    <td class="text-center o_price_total" style="border: 1px solid black;">
+                                        <span t-field="line.price_subtotal"
+                                              groups="account.group_show_line_subtotals_tax_excluded"/>
+                                        <span t-field="line.price_total"
+                                              groups="account.group_show_line_subtotals_tax_included"/>
+                                    </td>
+                                </t>
+                                <t t-if="line.display_type == 'line_section'">
+                                    <td colspan="99">
+                                        <span t-field="line.name" t-options="{'widget': 'text'}"/>
+                                    </td>
+                                    <t t-set="current_section" t-value="line"/>
+                                    <t t-set="current_subtotal" t-value="0"/>
+                                </t>
+                                <t t-if="line.display_type == 'line_note'">
+                                    <td colspan="99">
+                                        <span t-field="line.name" t-options="{'widget': 'text'}"/>
+                                    </td>
+                                </t>
+                            </tr>
+
+                            <t t-if="current_section and (line_last or o.invoice_line_ids[line_index+1].display_type == 'line_section')">
+                                <tr class="is-subtotal text-center">
+                                    <td colspan="99">
+                                        <strong class="mr16">Subtotal</strong>
+                                        <span t-esc="current_subtotal"
+                                              t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
+                                    </td>
+                                </tr>
+                            </t>
+                        </t>
+                    </tbody>
+                </table>
+                <br></br>
+            </xpath>
+            <xpath expr="//div[@class='clearfix']" position="replace">
+                <div class="clearfix">
+                    <div id="total" class="row">
+                        <div class="col-4">
+                        </div>
+                        <div class="col-8">
+                            <table style="margin-bottom: 1rem;border-color:#000" name="total">
+                                <tr>
+                                    <td class="text-left"
+                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px">
+                                        Total HT
+                                    </td>
+                                    <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
+                                        <span t-field="o.amount_untaxed"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left"
+                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px">
+                                        Prestations de formation en exonération de TVA, article 261-
+                                        4-4 du CGI
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black; padding: 5px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left"
+                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px">
+                                        <strong>Total</strong>
+                                    </td>
+                                    <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
+                                        <strong>
+                                            <span t-field="o.amount_total"/>
+                                        </strong>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+            <xpath expr="//div[@class='page']//p[1]" position="replace">
+                <div class="row">
+                    <div class="col-4">
+                        <p>
+                            <font style="font-size: 12px; font-style: italic;">
+                                Conformément à l’article L. 441-6 du code de commerce, les
+                                pénalités de retards seront calculées à partir de 3 fois le taux
+                                d’intérêt légal en vigueur et seront dues à défaut de règlement le
+                                jour suivant la date de paiement figurant sur la facture.
+                            </font>
+                        </p>
+                    </div>
+                    <div class="col-2">
+                        <span t-if="o.invoice_payment_state=='paid'" style="color: #B22222;" class="text-right">
+                            <strong>Facture
+                                acquittée
+                            </strong>
+                        </span>
+                    </div>
+                </div>
+            </xpath>
+            <xpath expr="//div[@class='page']//p[2]" position="replace">
+                <div id="total" class="row">
+                    <div class="col-3">
+                    </div>
+                    <div class="col-9">
+                        <br/>
+                        <table style="border: 1px solid black; width:100% ">
+                            <tr>
+                                <td style="border: 1px solid black; padding: 5px">Code banque
+                                    <br/>
+                                    <t t-foreach="o.company_id.partner_id.bank_ids"
+                                       t-as="bank">
+                                        <strong>
+                                            <span t-field="bank.bank_code"/>
+                                        </strong>
+                                    </t>
+                                </td>
+                                <td style="border: 1px solid black; padding: 5px">Code guichet
+                                    <br/>
+                                    <t t-foreach="o.company_id.partner_id.bank_ids"
+                                       t-as="bank">
+                                        <strong>
+                                            <span t-field="bank.guichet_code"/>
+                                        </strong>
+                                    </t>
+                                </td>
+                                <td style="border: 1px solid black; padding: 5px">N°compte
+                                    <br/>
+                                    <t t-foreach="o.company_id.partner_id.bank_ids"
+                                       t-as="bank">
+                                        <strong>
+                                            <span t-field="bank.number_of_account"/>
+                                        </strong>
+                                    </t>
+                                </td>
+                                <td style="border: 1px solid black; padding: 5px">Clé RIB
+                                    <br/>
+                                    <t t-foreach="o.company_id.partner_id.bank_ids"
+                                       t-as="bank">
+                                        <strong>
+                                            <span t-field="bank.rib"/>
+                                        </strong>
+                                    </t>
+                                </td>
+                                <td style="border: 1px solid black; padding: 5px">Monnaie
+                                    <br/>
+                                    <span t-field="o.company_id.currency_id.name"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="border: 1px solid black; padding: 5px">IBAN
+                                    <br/>
+                                    <!--                                    FR76 3000 3033 5000 0270 0818 863-->
+                                    <t t-foreach="o.company_id.partner_id.bank_ids"
+                                       t-as="bank">
+                                        <strong>
+                                            <span t-field="bank.acc_number"/>
+                                        </strong>
+                                    </t>
+
+                                </td>
+                                <td colspan="2" style="border: 1px solid black; padding: 5px">BIC
+                                    <br/>
+                                    <t t-foreach="o.company_id.partner_id.bank_ids"
+                                       t-as="bank">
+                                        <strong>
+                                            <span t-field="bank.bic"/>
+                                        </strong>
+                                    </t>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </xpath>
+            <xpath expr="//div[@class='page']//p[@name='note']" position="replace">
+                <p t-if="o.invoice_payment_term_id" name="note">
+                </p>
+            </xpath>
+            <!--            <xpath expr="//p[@name='payment_term']" position="replace">-->
+            <!--                    <span></span>-->
+            <!--            </xpath>-->
+            <!--            <xpath expr="//p[@name='note']" position="replace">-->
+            <!--                <span></span>-->
+            <!--            </xpath>-->
+            <!--            <xpath expr="//div[@id='qrcode']" position="replace">-->
+            <!--                <span></span>-->
+            <!--            </xpath>-->
+
+
+        </template>
+        <template id="mcm_report_invoice_document_with_payments"
+                  inherit_id="account.report_invoice_document_with_payments">
+            <xpath expr="//t[@t-foreach='payments_vals']" position="replace">
+                <div class="row">
+                    <div class="col-9">
+                    </div>
+                    <div class="col-3">
+                        <t>
+                            <tr>
+                                <td class="text-right">
+                                    <i class="text-right">
+                                        <font style="font-size: 16px;">Montant déjà encaissé :</font>
+                                    </i>
+                                </td>
+                                <td class="text-right">
+                                    <font style="font-size: 16px;">
+                                        <span t-esc="o.mcm_paid_amount"
+                                              t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
+                                    </font>
+                                </td>
+                            </tr>
+                        </t>
+                    </div>
+                </div>
+            </xpath>
+            <xpath expr="//t[@t-if='len(payments_vals) &gt; 0']" position="replace">
+                <t>
+                    <tr>
+                        <td class="text-right">
+                            <font style="font-size: 16px;">
+                                <i class="oe_form_field text-right oe_payment_label">Montant restant à encaisse :
+                                </i>
+                            </font>
+                        </td>
+                        <td class="text-right">
+                            <font style="font-size: 16px;">
+                                <span t-esc="o.amount_residual"
+                                      t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
+                            </font>
+                        </td>
+                    </tr>
+                </t>
+            </xpath>
+        </template>
+        <template id="mcm_external_layout_standard"
+                  inherit_id="web.external_layout_standard">
+            <xpath expr="//div[@class='header']" position="replace">
+                <div class="header">
+                    <div class="row">
+                        <div class="col-6" name="company_address">
+                            <strong>
+                                <span t-field="company.partner_id.name"/>
+                            </strong>
+                            <div>
+                                <span t-field="company.partner_id.street"/>
+                            </div>
+                            <div>
+                                <span t-field="company.partner_id.zip"/>
+                                <span t-field="company.partner_id.city"/>
+                            </div>
+                            <div>
+                                Email:
+                                <span t-field="company.partner_id.email"/>
+                            </div>
+                            <div>
+                                Tel:
+                                <span t-field="company.partner_id.phone"/>
+                            </div>
+                        </div>
+                        <div class="col-6" name="company_logo">
+                            <img t-if="company.logo" t-att-src="image_data_uri(company.logo)"
+                                 style="max-height: 60px; float:right" alt="Logo"/>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+            </xpath>
+
+            <xpath expr="//div[@class='footer o_standard_footer']" position="replace">
+                <div class="footer o_standard_footer">
+                    <center><div class="row">
+                        <span style="color:grey;font-size:14px" t-field="company.partner_id.name"/>
+                        <span style="color:grey;font-size:14px">|</span>
+                        <span style="color:grey;font-size:14px" t-field="company.partner_id.street"/>
+                        <span style="color:grey;font-size:14px"></span>
+                        <span style="color:grey;font-size:14px" t-field="company.partner_id.city"/>
+                        <span style="color:grey;font-size:14px"></span>
+                        <span style="color:grey;font-size:14px" t-field="company.partner_id.zip"/>
+                        <span style="color:grey;font-size:14px">| Numéro SIRET:</span>
+                        <span style="color:grey;font-size:14px" t-field="company.siret"/>
+                        <span style="color:grey;font-size:14px">| Numéro de déclaration d'activité:</span>
+                        <span style="color:grey;font-size:14px" t-field="company.activity_declaration_number"/>
+                        <span style="color:grey;font-size:14px">(auprès du préfet de
+                            région de: 75)
+                        </span>
+                    </div></center>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>

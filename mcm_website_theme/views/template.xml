@@ -1,0 +1,1011 @@
+<odoo>
+    <template id="mcm_website_theme.mcm_template" inherit_id="website.homepage">
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <style>
+                .skills .content h3 {
+                font-weight: 700;
+                font-size: 32px;
+                color: #37517e;
+                font-family: "Poppins", sans-serif;
+                }
+
+                .skills .content ul {
+                list-style: none;
+                padding: 0;
+                }
+
+                .skills .content ul li {
+                padding-bottom: 10px;
+                }
+
+                .skills .content ul i {
+                font-size: 20px;
+                padding-right: 4px;
+                color: #47b2e4;
+                }
+
+                .skills .content p:last-child {
+                margin-bottom: 0;
+                }
+
+                .skills .progress {
+                height: 50px;
+                display: block;
+                background: none;
+                }
+
+                .skills .progress .skill {
+                padding: 0;
+                margin: 0 0 6px 0;
+                text-transform: uppercase;
+                display: block;
+                font-weight: 600;
+                font-family: "Poppins", sans-serif;
+                color: #37517e;
+                }
+
+                .skills .progress .skill .val {
+                float: right;
+                font-style: normal;
+                }
+
+                .skills .progress-bar-wrap {
+                background: #000;
+                }
+
+                .skills .progress-bar {
+                width: 1px;
+                height: 10px;
+                transition: .9s;
+                background-color: #4668a2;
+                }
+                .clients {
+                padding: 15px 0;
+                text-align: center;
+                }
+
+                .clients img {
+                max-width: 45%;
+                transition: all 0.4s ease-in-out;
+                display: inline-block;
+                padding: 15px 0;
+                -webkit-filter: grayscale(100);
+                filter: grayscale(100);
+                }
+
+                .clients img:hover {
+                -webkit-filter: none;
+                filter: none;
+                transform: scale(1.15);
+                }
+
+                @media (max-width: 768px) {
+                .clients img {
+                max-width: 40%;
+                }
+                }
+                .yd-stats {
+                padding: 100px 0;
+                background-image:url("/mcm_website_theme/static/src/img/background compt.png");
+                color:#fff;
+                }
+
+                .section {
+                padding: 7rem 0;
+                }
+
+                .filters a {
+                color: #000;
+                display: inline-block;
+                padding-left: 10px;
+                padding-right: 10px;
+                position: relative;
+                }
+
+                .filters a:hover, .filters a:focus, .filters a:active {
+                text-decoration: none;
+                }
+
+                .filters a:hover:before {
+                content: "";
+                position: absolute;
+                left: 10px;
+                right: 10px;
+                bottom: 0;
+                height: 1px;
+                background-color: #000;
+                }
+
+                .filters a.active {
+                color: #000;
+                }
+
+                .filters a.active:before {
+                content: "";
+                position: absolute;
+                left: 10px;
+                right: 10px;
+                bottom: 0;
+                height: 1px;
+                background-color: #000;
+                }
+
+                .item {
+                border: none;
+                margin-bottom: 30px;
+                }
+
+                .item .item-wrap {
+                display: block;
+                position: relative;
+                overflow: hidden;
+                }
+
+                .item .item-wrap:after {
+                z-index: 2;
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.4);
+                visibility: hidden;
+                opacity: 0;
+                transition: .3s all ease-in-out;
+                }
+
+                .item .item-wrap img {
+                transition: .3s transform ease;
+                transform: scale(1);
+                }
+
+                .item .item-wrap &gt; .work-info {
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                text-align: center;
+                z-index: 3;
+                transform: translateY(-50%);
+                color: #fff;
+                opacity: 0;
+                visibility: hidden;
+                margin-top: 20px;
+                transition: .3s all ease;
+                }
+
+                .item .item-wrap &gt; .work-info h3 {
+                font-size: 20px;
+                margin-bottom: 0;
+                }
+
+                .item .item-wrap &gt; .work-info span {
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: .2rem;
+                }
+
+                .item .item-wrap:hover {
+                text-decoration: none;
+                }
+
+                .item .item-wrap:hover img {
+                transform: scale(1.05);
+                }
+
+                .item .item-wrap:hover:after {
+                opacity: 1;
+                visibility: visible;
+                }
+
+                .item .item-wrap:hover .work-info {
+                margin-top: 0px;
+                opacity: 1;
+                visibility: visible;
+                }
+
+                .testimonial-wrap {
+                padding: 50px 50px 80px 50px;
+                background: #eceff2;
+                }
+
+                .testimonial-wrap .testimonial {
+                text-align: center;
+                max-width: 500px;
+                margin: 0 auto;
+                }
+
+                .testimonial-wrap .testimonial img {
+                border-radius: 50%;
+                width: 120px;
+                margin: 0 auto 30px auto;
+                }
+
+                .testimonial-wrap .testimonial blockquote p {
+                font-size: 20px;
+                }
+                .buttons {
+                margin: 10%;
+                text-align: center;
+                }
+
+                .btn-hover {
+                width: 200px;
+                font-size: 16px;
+                font-weight: 600;
+                color: #fff;
+                cursor: pointer;
+                margin: 20px;
+                height: 55px;
+                text-align:center;
+                border: none;
+                background-size: 300% 100%;
+
+                border-radius: 50px;
+                moz-transition: all .4s ease-in-out;
+                -o-transition: all .4s ease-in-out;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+                }
+
+                .btn-hover:hover {
+                background-position: 100% 0;
+                moz-transition: all .4s ease-in-out;
+                -o-transition: all .4s ease-in-out;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+                }
+                .btn-hover.color-8 {
+                background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+                box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+                }
+
+            </style>
+            <img src="/mcm_website_theme/static/src/img/bannermcm.gif" style="width:100%"/>
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="p-0" id="home" style="background-color:#000;margin-top:-15px">
+                    <div class="carousel slide" id="main-slide" data-ride="carousel">
+                        <section class="search-sec">
+                            <div class="container">
+                                <center>
+                                    <form t-att-action="action if action else '/shop'"
+                                          t-attf-class="o_mcm_products_searchbar_form" method="get"
+                                          novalidate="novalidate">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-md-3 col-sm-12 p-0"
+                                                         style="margin:auto;background-color:#fff;border-color:#585959">
+                                                        <select name="category" class="form-control search-slt">
+                                                            <option value="all">Catégorie</option>
+                                                            <t t-foreach="all_categories" t-as="web_category">
+                                                                <t t-if="category">
+                                                                    <t t-if="category.id == web_category.id">
+                                                                        <option t-att-value="web_category.id"
+                                                                                selected="selected">
+                                                                            <t t-esc="web_category.name"/>
+                                                                        </option>
+                                                                    </t>
+                                                                    <t t-if="category.id  != web_category.id">
+                                                                        <option t-att-value="web_category.id">
+                                                                            <t t-esc="web_category.name"/>
+                                                                        </option>
+                                                                    </t>
+                                                                </t>
+                                                                <t t-if="not category">
+                                                                    <option t-att-value="web_category.id">
+                                                                        <t t-esc="web_category.name"/>
+                                                                    </option>
+                                                                </t>
+                                                            </t>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-3 col-sm-12 p-0"
+                                                         style="margin:auto;background-color:#fff;border-color:#585959">
+                                                        <input type="text" name="state"
+                                                               class="state-search-query form-control search-slt"
+                                                               placeholder="Liste des départements..."
+                                                               list="states_datalist"/>
+                                                        <datalist id="states_datalist">
+                                                            <span t-set="states" t-value="website.get_states()"/>
+                                                            <span t-foreach="states" t-as="state">
+                                                                <option t-att-value="state.name"/>
+                                                            </span>
+                                                        </datalist>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-3 col-sm-12 p-0" style="margin:auto">
+                                                        <button class="Button2" type="submit">Recherche</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </center>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <br/>
+                <main id="main">
+                    <section class="section site-portfolio pt0 pb0">
+                        <div class="container">
+                            <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+                                <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
+                                    <a href="/taxi" class="item-wrap fancybox">
+                                        <div class="work-info">
+                                            <h3>Formation</h3>
+                                            <span>TAXI</span>
+                                        </div>
+                                        <img class="img-fluid" src="/mcm_website_theme/static/src/img/TAXIcarte.png"/>
+                                    </a>
+                                    <div class="buttons">
+                                        <a href="/taxi">
+                                            <button class="btn-hover color-8">Formation TAXI</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+                                    <a href="/vtc" class="item-wrap fancybox">
+                                        <div class="work-info">
+                                            <h3>Frmation</h3>
+                                            <span>VTC</span>
+                                        </div>
+                                        <img class="img-fluid" src="/mcm_website_theme/static/src/img/VTCcarte.png"/>
+                                    </a>
+                                    <div class="buttons">
+                                        <a href="/vtc">
+                                            <button class="btn-hover color-8">Formation VTC</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+                                    <a href="/vmdtr" class="item-wrap fancybox">
+                                        <div class="work-info">
+                                            <h3>Formation</h3>
+                                            <span>VMDTR</span>
+                                        </div>
+                                        <img class="img-fluid" src="/mcm_website_theme/static/src/img/VMDTRcarte.png"/>
+                                    </a>
+                                    <div class="buttons">
+                                        <a href="/vmdtr">
+                                            <button class="btn-hover color-8">Formation VMDTR</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+                <div id="preloader"/>
+                <a href="#" class="back-to-top">
+                    <i class="bx bx-up-arrow-alt"/>
+                </a>
+
+                <section id="clients" class="clients section-bg">
+                    <br/>
+                    <br/>
+                    <p color="#fff">
+                        <h3>
+                            <center>
+                                <b>Nos partenaires</b>
+                            </center>
+                        </h3>
+                    </p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                <img src="/mcm_website_theme/static/src/img/CLICAR.jpg" class="img-fluid" alt=""/>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                <img src="/mcm_website_theme/static/src/img/2.jpg" class="img-fluid" alt=""/>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                <img src="/mcm_website_theme/static/src/img/chambre.jpg" class="img-fluid" alt=""/>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                <img src="/mcm_website_theme/static/src/img/logo-a3.jpg" class="img-fluid" alt=""/>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                <img src="/mcm_website_theme/static/src/img/expert.jpg" class="img-fluid" alt=""/>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                                <img src="/mcm_website_theme/static/src/img/LOGOVIAAUTOMOBILE-CMJN2.png"
+                                     class="img-fluid" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <script src="/mcm_website_theme/static/src/js/jquery.min.js"/>
+            <script src="/mcm_website_theme/static/src/js/jquery.waypoints.min.js"/>
+            <script src="/mcm_website_theme/static/src/js/main.js"/>
+            <script src="https://code.jquery.com/jquery-3.4.1.js"
+                    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"/>
+            <script>
+                (function ($) {
+                $.fn.countTo = function (options) {
+                options = options || {};
+
+                return $(this).each(function () {
+
+                var settings = $.extend({}, $.fn.countTo.defaults, {
+                from: $(this).data('from'),
+                to: $(this).data('to'),
+                speed: $(this).data('speed'),
+                refreshInterval: $(this).data('refresh-interval'),
+                decimals: $(this).data('decimals')
+                }, options);
+
+                var loops = Math.ceil(settings.speed / settings.refreshInterval),
+                increment = (settings.to - settings.from) / loops;
+
+                var self = this,
+                $self = $(this),
+                loopCount = 0,
+                value = settings.from,
+                data = $self.data('countTo') || {};
+
+                $self.data('countTo', data);
+
+                if (data.interval) {
+                clearInterval(data.interval);
+                }
+                data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+                // initialize the element with the starting value
+                render(value);
+
+                function updateTimer() {
+                value += increment;
+                loopCount++;
+
+                render(value);
+
+                if (typeof(settings.onUpdate) == 'function') {
+                settings.onUpdate.call(self, value);
+                }
+
+                if (loopCount &gt;= loops) {
+
+                $self.removeData('countTo');
+                clearInterval(data.interval);
+                value = settings.to;
+
+                if (typeof(settings.onComplete) == 'function') {
+                settings.onComplete.call(self, value);
+                }
+                }
+                }
+
+                function render(value) {
+                var formattedValue = settings.formatter.call(self, value, settings);
+                $self.html(formattedValue);
+                }
+                });
+                };
+
+                $.fn.countTo.defaults = {
+                from: 0, // the number the element should start at
+                to: 0, // the number the element should end at
+                speed: 1000, // how long it should take to count between the target numbers
+                refreshInterval: 100, // how often the element should be updated
+                decimals: 0, // the number of decimal places to show
+                formatter: formatter, // handler for formatting the value before rendering
+                onUpdate: null, // callback method for every time the element is updated
+                onComplete: null // callback method for when the element finishes updating
+                };
+
+                function formatter(value, settings) {
+                return value.toFixed(settings.decimals);
+                }
+                }(jQuery));
+
+                jQuery(function ($) {
+
+                $('.count-number').data('countToOptions', {
+                formatter: function (value, options) {
+                return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+                }
+                });
+
+
+                $('.timer').each(count);
+
+                function count(options) {
+                var $this = $(this);
+                options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+                $this.countTo(options);
+                }
+                });
+            </script>
+        </xpath>
+    </template>
+    <template id="mcm_website_theme.payment_tokens_list" inherit_id="payment.payment_tokens_list">
+        <xpath expr="//button[@id='o_payment_form_pay']" position="after">
+            <body onload='verify_PM()'>
+                <a role="button" href="#" t-attf-onclick="linkTo()" style="visibility: hidden;" class="btn btn-primary"
+                   id="link_to">s'inscrire
+                </a>
+            </body>
+        </xpath>
+        <xpath expr="//label[1]" position="replace">
+            <label>
+                <t t-if="acq.payment_flow == 'form'">
+                    <input type="radio" t-att-data-acquirer-id="acq.id"
+                           t-att-data-form-payment="true"
+                           t-att-data-provider="acq.provider"
+                           t-att-class="'d-none' if (acquirers_count==1 and pms_count==0) else ''"
+                           name="pm_id" t-attf-id="{{acq.code}}" t-attf-value="{{acq.code}}"
+                           t-att-checked="acquirers_count==1 and pms_count==0 or acquirers[0] == acq"
+                           t-attf-onclick="verify_PM()"/>
+                </t>
+                <t t-else="acq.payment_flow == 's2s'">
+                    <input type="radio" t-att-data-acquirer-id="acq.id"
+                           t-att-data-s2s-payment="true"
+                           t-att-data-provider="acq.provider"
+                           name="pm_id" t-attf-value="new_{{acq.id}}"
+                           t-att-class="'d-none' if (acquirers_count==1 and pms_count==0) else ''"
+                           t-att-checked="acquirers_count==1 and pms_count==0 or acquirers[0] == acq"/>
+                </t>
+                <span class="payment_option_name">
+                    <t t-esc="acq.display_as or acq.name"/>
+                    <div t-if="acq.state == 'test'" class="badge-pill badge-warning float-right"
+                         style="margin-left:5px">
+                        Test Mode
+                    </div>
+                </span>
+                <t t-if="acq_extra_fees and acq_extra_fees.get(acq)">
+                    <span class="badge badge-pill badge-secondary">+
+                        <t t-esc="acq_extra_fees[acq]"
+                           t-options='{"widget": "monetary", "display_currency": acq_extra_fees["currency_id"]}'/>
+                        Fee
+                    </span>
+                </t>
+                <t t-elif="acq.fees_active">
+                    <small class="text-muted">(Some fees may apply)</small>
+                </t>
+            </label>
+        </xpath>
+        <xpath expr="//input[@name='csrf_token']" position="before">
+            <script>
+                function verify_PM(){
+                stripe=document.getElementById('stripe');
+                if(stripe) {
+                if (document.getElementById('stripe').checked) {
+                document.getElementById("o_payment_form_pay").style.visibility = "visible";
+                document.getElementById("link_to").style.visibility = "hidden";
+                } else {
+                document.getElementById("o_payment_form_pay").style.visibility = 'hidden';
+                document.getElementById("link_to").style.visibility = 'visible';
+                }
+                }
+                };
+
+                function linkTo(){
+                if (document.getElementById('pole_emploi').checked) {
+                document.getElementById("link_to").href="/contactus";
+                }
+                };
+            </script>
+        </xpath>
+    </template>
+    <template id="mcm_website_sale_total" inherit_id="website_sale.total">
+        <xpath expr="//tr[@id='order_total_taxes']" position="after">
+            <tr id="order_instalment" t-if="website_sale_order.amount_total>1000" style="visibility:visible">
+                <td class="text-right border-0">
+                    <label for="checkbox_instalment">
+                        Payer montant sur 3 fois
+                    </label>
+                </td>
+                <td class="text-xl-right border-0">
+
+                    <input type="checkbox" id="checkbox_instalment" style="white-space: nowrap;"
+                           class="text-xl-right border-0" t-att-checked="website_sale_order.instalment"
+                           t-att-value="website_sale_order.instalment"/>
+
+                </td>
+            </tr>
+            <body onload="verify_checked()">
+                <tr id="order_instalment_number" style="visibility: hidden;">
+                    <td class="text-right border-0">Tranches:</td>
+                    <td class="text-xl-right border-0">
+                        <span t-field="website_sale_order.instalment_number" style="white-space: nowrap;"/>
+                    </td>
+                </tr>
+            </body>
+        </xpath>
+        <xpath expr="//tr[@id='order_total']" position="after">
+            <body onload="verify_checked()">
+                <tr id="order_amount_to_pay" style="visibility: hidden;">
+                    <td class="text-right">
+                        <strong>Montant à payer:</strong>
+                    </td>
+                    <td class="text-xl-right">
+                        <strong t-field="website_sale_order.amount_to_pay" class="monetary_field"
+                                t-options='{"widget": "monetary", "display_currency": website_sale_order.pricelist_id.currency_id}'/>
+                    </td>
+                </tr>
+            </body>
+        </xpath>
+    </template>
+    <template id="mcm_website_sale_cart_lines" inherit_id="website_sale.cart_lines">
+        <xpath expr="//td[@class='text-center td-qty']" position="replace">
+            <td class="text-center td-qty">
+                <input type="text" class="js_quantity form-control quantity" t-att-data-line-id="line.id"
+                       t-att-data-product-id="line.product_id.id"
+                       t-att-value="int(line.product_uom_qty) == line.product_uom_qty and int(line.product_uom_qty) or line.product_uom_qty"
+                       readonly="True"/>
+            </td>
+        </xpath>
+        <xpath expr="//table[@id='cart_products']" position="after">
+            <t t-foreach="website_sale_order.website_order_line" t-as="line">
+                <h3 class="mb24" t-att-value="line.name_short">Mode de financement</h3>
+            </t>
+            <div class="card-body o_payment_acquirer_select">
+                <label>
+                    <t t-foreach="website_sale_order.website_order_line" t-as="line">
+                        <input type="radio" name="pm_method" data-acquirer-id="8" data-form-payment="True"
+                               data-provider="stripe_pm"
+                               class="" t-att-value="line.name_short" id="stripe_pm" checked="True"
+                               t-attf-onclick="onchangeTextButton1()">
+
+                            <span class="payment_option_name">
+                                Carte de crédit
+                            </span>
+                            <p style="font-style: italic;font-size: 12px;">Paiement en 1 ou 4 fois sans frais</p>
+                        </input>
+                    </t>
+                </label>
+                <div class="text-muted ml-3">
+                    <p>
+                        <br/>
+                    </p>
+                </div>
+            </div>
+            <!--            <div class="card-body o_payment_acquirer_select">-->
+            <!--                <label>-->
+
+            <!--                    <input type="radio" name="pm_method" data-acquirer-id="15" data-form-payment="True"-->
+            <!--                           data-provider="transfer"-->
+            <!--                           class="" id="pole_emploi_pm" value="pole_emploi" t-attf-onclick="onchangeTextButton()">-->
+
+            <!--                        <span class="payment_option_name">-->
+            <!--                            Pôle emploi, Région-Haut-de-France-->
+
+            <!--                        </span>-->
+            <!--                        <p style="font-style: italic;font-size: 12px;">Demande de devis</p>-->
+            <!--                    </input>-->
+            <!--                </label>-->
+            <!--            </div>-->
+            <!--            <div class="card-body o_payment_acquirer_select">-->
+            <!--                <label>-->
+
+            <!--                    <input type="radio" name="pm_method" data-acquirer-id="16" data-form-payment="True"-->
+            <!--                           data-provider="transfer" class="" id="region_pm" value="region"-->
+            <!--                           t-attf-onclick="onchangeTextButton()">-->
+
+            <!--                        <span class="payment_option_name">-->
+            <!--                            Financement avec la region-->
+
+            <!--                        </span>-->
+            <!--                    </input>-->
+            <!--                </label>-->
+            <!--            </div>-->
+            <div class="card-body o_payment_acquirer_select">
+                <label>
+                    <t t-foreach="website_sale_order.website_order_line" t-as="line">
+                        <input type="radio" name="pm_method" data-acquirer-id="16" data-form-payment="True"
+                               data-provider="transfer" class="" id="cpf_pm" t-att-value="line.name_short"
+                               t-attf-onclick="onchangeTextButton()">
+
+                            <span class="payment_option_name">
+                                CPF
+                            </span>
+                            <p style="font-style: italic;font-size: 12px;">Mon Compte personnel de formation</p>
+                        </input>
+                    </t>
+                </label>
+            </div>
+            <script>
+
+            </script>
+        </xpath>
+
+
+    </template>
+    <template id="mcm_website_sale_short_cart_summary" inherit_id="website_sale.short_cart_summary">
+        <xpath expr="//a[@class='btn btn-secondary float-right d-none d-xl-inline-block']" position="replace">
+            <a role="button" t-if="website_sale_order and website_sale_order.website_order_line"
+               class="btn btn-secondary float-right d-none d-xl-inline-block" href="/shop/checkout?express=1"
+               id="pm_shop_checkout" t-attf-onclick="verify_payment_method()">
+                <span id="pm_shop_checkout_text">Passer au paiement</span>
+            </a>
+        </xpath>
+    </template>
+    <template id="mcm_website_sale_product_quantity" inherit_id="website_sale.product_quantity">
+        <xpath expr="//div[@class='css_quantity input-group']" position="replace">
+        </xpath>
+    </template>
+    <template id="mcm_website_sale_products_add_to_cart" inherit_id="website_sale.products_add_to_cart">
+        <xpath expr="//t[@t-if='product_variant_id']" position="replace">
+            <t t-if="product_variant_id">
+                <a t-if="request.website.is_public_user()==False" href="#" role="button"
+                   class="btn btn-secondary a-submit" aria-label="Shopping cart" title="Shopping cart">
+                    <span class="fa fa-shopping-cart"/>
+                </a>
+            </t>
+        </xpath>
+    </template>
+    <template id="mcm_website_sale_products_add_to_cart" inherit_id="website_sale.products_add_to_cart">
+        <xpath expr="//t[@t-if='product_variant_id']" position="replace">
+            <t t-if="product_variant_id">
+                <a t-if="request.website.is_public_user()==False" href="#" role="button"
+                   class="btn btn-secondary a-submit" aria-label="Shopping cart" title="Shopping cart">
+                    <span class="fa fa-shopping-cart"/>
+                </a>
+            </t>
+        </xpath>
+    </template>
+    <template id="mcm_website_sale_confirmation" inherit_id="website_sale.confirmation">
+        <xpath expr="//h1" position="replace">
+            <h1>
+                <span>Contrat</span>
+                <em t-field="order.partner_id.name"/>
+                <t t-if="order.state == 'sale'">
+                    <span>Confirmed</span>
+                </t>
+            </h1>
+        </xpath>
+        <xpath expr="//div[@class='thanks_msg']" position="replace">
+            <div class="thanks_msg">
+                <h2>Merci pour votre paiement.
+                    <a role="button" class="btn btn-primary d-none d-md-inline-block" href="/shop/print" target="_blank"
+                       aria-label="Print" title="Print">
+                        <i class="fa fa-print"></i>
+                        Imprimer
+                    </a>
+                </h2>
+            </div>
+        </xpath>
+        <xpath expr="//p[@class='alert alert-info mt-3']" position="replace">
+            <p class="alert alert-info mt-3" role="status">
+                <a role="button"
+                   t-att-href='order.partner_id.signup_prepare() and order.partner_id.with_context(relative_url=True).signup_url'
+                   class='btn btn-primary'>S'inscrire
+                </a>
+                pour suivre votre contrat
+            </p>
+        </xpath>
+    </template>
+
+    <template id="mcm_website_sale_cart_total_script" inherit_id="website_sale.total">
+        <xpath expr="//div[@id='cart_total']" position="inside">
+            <script>
+                function verify_checked(){
+                var x=document.getElementById('checkbox_instalment');
+
+                if(x) {
+                console.log(x.checked);
+                if (document.getElementById('checkbox_instalment').checked==true) {
+                document.getElementById("order_amount_to_pay").style.visibility = 'visible';
+                document.getElementById("order_instalment_number").style.visibility = 'visible';
+
+                } else {
+                document.getElementById("order_amount_to_pay").style.visibility = 'hidden';
+                document.getElementById("order_instalment_number").style.visibility = 'hidden';
+                }
+                }
+                };
+            </script>
+        </xpath>
+    </template>
+
+    <template id="mcm_website_footer_custom" inherit_id="website.footer_custom">
+        <xpath expr="//div[@class='container']" position="inside">
+
+        </xpath>
+        <xpath expr="//div[@id='connect']/ul" position="replace">
+            <style>
+                .calendly-inline-widget,
+                .calendly-inline-widget
+                *,.calendly-badge-widget,.calendly-badge-widget *,
+                .calendly-overlay,
+                .calendly-overlay *{font-size:16px;line-height:1.2em;}
+                .calendly-inline-widget iframe,.calendly-badge-widget iframe,
+                .calendly-popup-content{position:relative}.calendly-popup-content
+                .calendly-mobile{-webkit-overflow-scrolling:touch;overflow-y:auto}
+                .calendly-overlay{position:fixed;top:0;left:0;right:0;bottom:0;overflow:hidden;z-index:9999;background-color:#a5a5a5;background-color:rgba(31,31,31,0.4)}
+                .calendly-overlay .calendly-close-overlay{position:absolute;top:0;left:0;right:0;bottom:0}
+                .calendly-overlay
+                .calendly-popup{box-sizing:border-box;position:absolute;top:50%;left:50%;-webkit-transform:translateY(-50%)
+                translateX(-50%);transform:translateY(-50%)
+                translateX(-50%);width:80%;min-width:900px;max-width:1000px;height:90%;max-height:680px}@media
+                (max-width: 975px){
+                .calendly-overlay
+                .calendly-popup{top:50px;left:0;right:0;bottom:0;-webkit-transform:none;transform:none;width:100%;height:auto;min-width:0;max-height:none}}
+                .calendly-overlay .calendly-popup .calendly-popup-content{height:100%}
+                .calendly-overlay
+                .calendly-popup-close{position:absolute;top:25px;right:25px;color:#fff;width:19px;height:19px;cursor:pointer;background:url(//assets.calendly.com/assets/external/close-icon-77963382ab339573bb06b204699d4adf5ebbcbaaa51784f1d9f4b611723b42b0.svg)
+                no-repeat;background-size:contain}@media (max-width: 975px){
+                .calendly-overlay .calendly-popup-close{top:15px;right:15px}}
+                .calendly-badge-widget{position:fixed;float:left;bottom:15px;z-index:9998}
+                .calendly-badge-widget .calendly-badge-content{display:table-cell;width:auto;height:45px;padding:0
+                30px;border-radius:25px;box-shadow:rgba(0,0,0,0.25) 0 2px
+                5px;font-family:sans-serif;text-align:center;vertical-align:middle;font-weight:bold;font-size:14px;color:#fff;cursor:pointer;}
+                .calendly-badge-widget .calendly-badge-content.calendly-white{color:#666a73}
+                .calendly-badge-widget .calendly-badge-content span{display:block;font-size:12px}
+                .calendly-spinner{position:absolute;top:50%;left:0;right:0;-webkit-transform:translateY(-50%);transform:translateY(-50%);text-align:center;z-index:-1}
+                .calendly-spinner>div{display:inline-block;width:18px;height:18px;background-color:#e1e1e1;border-radius:50%;vertical-align:middle;-webkit-animation:calendly-bouncedelay
+                1.4s infinite ease-in-out;animation:calendly-bouncedelay 1.4s infinite
+                ease-in-out;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+                .calendly-spinner .calendly-bounce1{-webkit-animation-delay:-0.32s;animation-delay:-0.32s}
+                .calendly-spinner
+                .calendly-bounce2{-webkit-animation-delay:-0.16s;animation-delay:-0.16s}@-webkit-keyframes
+                calendly-bouncedelay{0%,80%,100%{-webkit-transform:scale(0);transform:scale(0)}40%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes
+                calendly-bouncedelay{0%,80%,100%{-webkit-transform:scale(0);transform:scale(0)}40%{-webkit-transform:scale(1);transform:scale(1)}}
+            </style>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="/new/ticket">Contact</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone"/>
+                    <span class="o_force_ltr" t-field="res_company.phone"/>
+                </li>
+                <li>
+                    <i class="fa fa-envelope"/>
+                    <span t-field="res_company.email"/>
+                </li>
+                <input type="hidden" name="user_name_connected" id="user_name_connected"
+                       t-att-value="request.website.get_user_name_logged()"/>
+                <input type="hidden" name="user_email_connected" id="user_email_connected"
+                       t-att-value="request.website.get_user_email_logged()"/>
+            </ul>
+            <div>
+                <div t-if="request.website.is_public_user()==False">
+                    <!--                    <link href="/mcm_website_theme/static/src/css/widget.css" rel="stylesheet"/>-->
+                    <script src="/mcm_website_theme/static/src/js/widget.js"
+                            type="text/javascript"></script>
+                    <script type="text/javascript">
+                        var user_name=document.getElementById("user_name_connected").value;
+                        var user_email=document.getElementById("user_email_connected").value;
+                        Calendly.initBadgeWidget({ url:
+                        'https://calendly.com/mcm-academy', prefill: {
+                        name: user_name,
+                        email: user_email,
+                        } , text: 'Devis Taxi/VTC', color:
+                        '#00a2ff', textColor: '#ffffff', branding: false });
+                    </script>
+                </div>
+                <div t-if="request.website.is_public_user()==True">
+                    <!--                    <link href="/mcm_website_theme/static/src/css/widget.css" rel="stylesheet"/>-->
+                    <script src="/mcm_website_theme/static/src/js/widget.js"
+                            type="text/javascript"></script>
+                    <script type="text/javascript">
+                        Calendly.initBadgeWidget({ url:
+                        'https://calendly.com/mcm-academy', text: 'Devis Taxi/VTC', color:
+                        '#00a2ff', textColor: '#ffffff', branding: false });
+                    </script>
+                </div>
+            </div>
+
+        </xpath>
+    </template>
+    <template id="mcm_website_sale_cart_script" inherit_id="website_sale.cart">
+        <xpath expr="//a[@class='btn btn-primary float-right']" position="replace">
+            <a role="button" t-if="website_sale_order and website_sale_order.website_order_line"
+               class="btn btn-primary float-right" href=""
+               t-attf-onclick="verify_payment_method()" id="pm_shop">
+                <span id="pm_shop_text">Passer au paiement</span>
+                <span class="fa fa-chevron-right"/>
+            </a>
+        </xpath>
+        <xpath expr="//a[@class='btn btn-primary float-right d-none d-xl-inline-block']" position="replace">
+            <a role="button" t-if="website_sale_order and website_sale_order.website_order_line"
+               class="btn btn-primary float-right d-none d-xl-inline-block" t-attf-onclick="verify_payment_method()"
+               href="" id="pm_shop_check">
+                <span id="pm_shop_check_text">Passer au paiement</span>
+                <span class="fa fa-chevron-right"/>
+            </a>
+        </xpath>
+        <xpath expr="//div[@class='col-12 col-xl-8 oe_cart']" position="inside">
+            <script>
+                function verify_payment_method(){
+                stripe_pm=document.getElementById('stripe_pm');
+                if (stripe_pm){
+                if (stripe_pm.checked==true) {
+                document.getElementById("pm_shop").href="/shop/checkout?express=1";
+                document.getElementById("pm_shop_check").href="/shop/checkout?express=1";
+                document.getElementById("pm_shop_checkout").href="/shop/checkout?express=1";
+                }
+                }
+                pole_emploi_pm=document.getElementById('pole_emploi_pm');
+                if(pole_emploi_pm){
+                if (pole_emploi_pm.checked==true) {
+                document.getElementById("pm_shop").href="/new/ticket/pole_emploi";
+                document.getElementById("pm_shop_check").href="/new/ticket/pole_emploi";
+                document.getElementById("pm_shop_checkout").href="/new/ticket/pole_emploi";
+                }
+                }
+                cpf_pm=document.getElementById('cpf_pm');
+                if(cpf_pm){
+                if (cpf_pm.checked==true) {
+                if(cpf_pm.value=='Formation intensive VTC')
+                {
+                document.getElementById("pm_shop").href="https://urlz.fr/cKaS";
+                document.getElementById("pm_shop_check").href="https://urlz.fr/cKaS";
+                document.getElementById("pm_shop_checkout").href="https://urlz.fr/cKaS";
+                }
+                if(cpf_pm.value=='Formation intensive TAXI')
+                {
+                document.getElementById("pm_shop").href="https://cutt.ly/2yGasyt";
+                document.getElementById("pm_shop_check").href="https://cutt.ly/2yGasyt";
+                document.getElementById("pm_shop_checkout").href="https://cutt.ly/2yGasyt";
+                }
+                if(cpf_pm.value=='Formation pratique TAXI')
+                {
+                document.getElementById("pm_shop").href="https://cutt.ly/yyVUzq1";
+                document.getElementById("pm_shop_check").href="https://cutt.ly/yyVUzq1";
+                document.getElementById("pm_shop_checkout").href="https://cutt.ly/yyVUzq1";
+                }
+                if(cpf_pm.value=='Formation e-learning TAXI')
+                {
+                document.getElementById("pm_shop").href="https://cutt.ly/WyVUxTz";
+                document.getElementById("pm_shop_check").href="https://cutt.ly/WyVUxTz";
+                document.getElementById("pm_shop_checkout").href="https://cutt.ly/WyVUxTz";
+                }
+                if(cpf_pm.value=='Formation pratique VTC')
+                {
+                document.getElementById("pm_shop").href="https://cutt.ly/KyVUm1T";
+                document.getElementById("pm_shop_check").href="https://cutt.ly/KyVUm1T";
+                document.getElementById("pm_shop_checkout").href="https://cutt.ly/KyVUm1T";
+                }
+                }
+                }
+                };
+                function onchangeTextButton(){
+                if(document.getElementById("pm_shop_text")){
+                document.getElementById("pm_shop_text").innerHTML = 'Créer une demande';
+                document.getElementById("pm_shop_check_text").innerHTML = 'Créer une demande';
+                document.getElementById("pm_shop_checkout_text").innerHTML = 'Créer une demande';
+                if(document.getElementById("order_instalment")){
+                document.getElementById("order_instalment").style.visibility = 'hidden';
+                document.getElementById("order_instalment_number").style.visibility = 'hidden';
+                document.getElementById("order_amount_to_pay").style.visibility = 'hidden';
+                }
+                }
+                };
+                function onchangeTextButton1(){
+                if(document.getElementById("pm_shop_text")){
+                document.getElementById("pm_shop_text").innerHTML = 'Passer au paiement';
+                document.getElementById("pm_shop_check_text").innerHTML = 'Passer au paiement';
+                document.getElementById("pm_shop_checkout_text").innerHTML = 'Passer au paiement';
+                if(document.getElementById("order_instalment")){
+                document.getElementById("order_instalment").style.visibility = 'visible';
+                }
+
+                instalment=document.getElementById("checkbox_instalment");
+                if(instalment){
+                if(instalment.checked==true){
+                document.getElementById("order_instalment_number").style.visibility = 'visible';
+                document.getElementById("order_amount_to_pay").style.visibility = 'visible';
+                }
+                }
+                }
+                };
+            </script>
+
+        </xpath>
+    </template>
+    <template id="mcm_website_sale_cart_summary" inherit_id="website_sale.cart_summary">
+        <xpath expr="//div[@class='card']" position="inside">
+            <script>
+                function onchangeButton(){
+                document.getElementById("pm_shop_text").textContent = Créer une demande;
+                document.getElementById("pm_shop_check_text").textContent = Créer une demande;
+                document.getElementById("pm_shop_checkout_text").textContent = Créer une demande;
+                };
+            </script>
+        </xpath>
+    </template>
+</odoo>

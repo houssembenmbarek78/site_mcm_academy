@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="mcm_portal_view_res_partner_form" model="ir.ui.view">
+        <field name="name">res.partner.form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='vat']" position="after">
+                <field name="special_tarif" attrs="{'invisible': [('session_id', '=', '')]}"/>
+                <label for="" name="discount" string="Remise" attrs="{'invisible': [('special_tarif', '!=', True)]}"/>
+                <field name="discount_name" placeholder="e.x Remise "
+                       attrs="{'invisible': [('special_tarif', '!=', True)]}"/>
+                <field name="discount" attrs="{'invisible': [('special_tarif', '!=', True)]}"/>
+            </xpath>
+            <xpath expr="//div[@class='o_row']" position="after">
+                <div class="o_row_signature">
+                    <label for="signature_partner" name="signature_partner" />
+                    <field name="signature_partner" string="Signature" widget="image"/>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="mcmacademy_view_res_partner_form" model="ir.ui.view">
+        <field name="name">res.partner.form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="before">
+                <header>
+                    <field name="customer_rank" invisible="1"/>
+                    <field name="code_pole_emploi" invisible="1"/>
+                    <field name="module_id" invisible="1"/>
+                    <field name="mode_de_financement" invisible="1"/>
+                    <field name="statut" widget="statusbar" clickable="True"
+                           attrs="{'invisible': [('customer_rank', '=', 0)]}"/>
+                    <button name="action_validate" id="action_validate" string="Valider" class="btn-primary"
+                            type="object"
+                            attrs="{'invisible': [('statut', '!=', 'indecis'),'&amp;',('mode_de_financement','!=','aif'),'&amp;',('module_id','!=','False'),'&amp;',('code_pole_emploi','!=','')]}"/>
+                    <button name="action_create_contract" id="action_create_contract"
+                            string="Valider &amp; Créer Contrat" class="btn-primary"
+                            type="object"
+                            attrs="{'invisible': [('statut', '!=', 'won'),'&amp;',('mode_de_financement','!=','aif'),'&amp;',('module_id','!=','False'),'&amp;',('code_pole_emploi','!=','')]}"/>
+                </header>
+            </xpath>
+        </field>
+    </record>
+    <record id="mcmacademy_view_res_partner_tree" model="ir.ui.view">
+        <field name="name">res.partner.tree</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='vat']" position="after">
+                <field name="statut" optional="hide"/>
+                <field name="module_id" optional="hide"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="mcmacademy_session_view_res_partner_form" model="ir.ui.view">
+        <field name="name">res.partner.form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="mcm_add_fields.mcm_view_res_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='session_id']" position="after">
+                <field name="mcm_session_id" string="Session"/>
+                <field name="customer_rank" invisible="1"/>
+                <field name="module_id"
+                       attrs="{'invisible': ['|',('customer_rank', '=', 0),('module_id', '=', False)]}"
+                       domain="[('session_id', '=', 'mcm_session_id')]"/>
+            </xpath>
+            <xpath expr="//page[@name='session']" position="after">
+                <page string="Financement" name="financement">
+                    <group string="Financement" name="financement">
+                        <field name="mode_de_financement" string="Mode de financement"/>
+                        <field name="code_pole_emploi" string="N° de la convention"
+                               attrs="{'invisible': [('mode_de_financement', '!=', 'aif')]}"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+    <record id="mcmacademy_view_res_partner_form_3" model="ir.ui.view">
+        <field name="name">res.partner.form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet//group" position="replace">
+                <group>
+                    <div class="row form-panel">
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <div class="form-group">
+                                        <label for="title" string=""></label>
+                                        <field name="title" string=""/>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10">
+                                    <label for="name" string="Nom et Prénom :" class="control-label no-autofill">Nom et
+                                        Prénom
+                                    </label>
+                                    <field name="name" string=" Nom et prénom" placeholder="Nom et prénom"/>
+                                    <field name="city" invisible="1"/>
+                                    <field name="zip" invisible="1"/>
+                                    <field name="lang" invisible="1"/>
+                                    <field name="country_id" invisible="1"/>
+                                    <field name="street" invisible="1"/>
+                                    <field name="street2" invisible="1"/>
+                                    <field name="state_id" invisible="1"/>
+                                    <field name="type" invisible="1"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div>
+                                        <label for="email" string="Email :" class="control-label no-autofill">Email
+                                        </label>
+                                        <field name="email"/>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div>
+                                        <label for="code_interne" string="Code interne :"
+                                               class="control-label no-autofill">Code interne
+                                        </label>
+                                        <field name="code_interne"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div>
+                                        <label for="nationality" string="Nationalité :">Nationalité</label>
+                                        <field name="nationality"/>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div>
+                                        <label for="birth_name" string="Nom de naissance :">Nom de naissance</label>
+                                        <field name="birth_name"/>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div>
+                                        <label for="birth_city" string="Ville de naissance :">Ville de naissance</label>
+                                        <field name="birth_city"/>
+                                        <field name="city" invisible="1"/>
+                                        <field name="zip" invisible="1"/>
+                                        <field name="lang" invisible="1"/>
+                                        <field name="country_id" invisible="1"/>
+                                        <field name="street" invisible="1"/>
+                                        <field name="street2" invisible="1"/>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div>
+                                        <label for="birth_state" string="Région de naissance :">Région de naissance
+                                        </label>
+                                        <field name="birth_state"/>
+                                        <field name="type" invisible="1"/>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div>
+                                        <label for="birthday" string="Date de naissance :">Date de naissance</label>
+                                        <field name="birthday"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group label-floating form-group-sm">
+                                        <label class="control-label" for="street" string="Adresse">Adresse</label>
+                                        <field name="street"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group label-floating form-group-sm">
+                                        <label class="control-label" for="zip" string="Code postal :">Code postal
+                                        </label>
+                                        <field name="zip"/>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group label-floating form-group-sm">
+                                        <label class="control-label" for="city" string="Ville :">Ville</label>
+                                        <field name="city"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group label-floating form-group-sm">
+                                        <label class="control-label" for="country_id" string="Pays :">Pays</label>
+                                        <field name="country_id"/>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group label-floating form-group-sm">
+                                        <label class="control-label" for="mobile" string="Téléphone :">Téléphone</label>
+                                        <field name="mobile"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group label-floating form-group-sm is-empty">
+                                        <label class="control-label" for="phone" string="Téléphone secondaire :">
+                                            Téléphone
+                                            secondaire
+                                        </label>
+                                        <field name="phone"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </group>
+            </xpath>
+            <xpath expr="//field[@name='company_type']" position="replace">
+                <field name="company_type" widget="radio" class="oe_edit_only" options="{'horizontal': true}"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="mcmacademy_view_res_partner_form_bank_page" model="ir.ui.view">
+        <field name="name">res.partner.property.form.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="account.view_partner_property_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='accounting']" position="attributes">
+                <attribute name="string">RIB
+                </attribute>
+            </xpath>
+            <xpath expr="//page[1]" position="replace">
+                <page string="Société" autofocus="autofocus" attrs="{'invisible': [('company_type', '!=', 'company')]}">
+                    <field name="child_ids" mode="kanban"
+                           context="{'default_parent_id': active_id, 'default_street': street, 'default_street2': street2, 'default_city': city, 'default_state_id': state_id, 'default_zip': zip, 'default_country_id': country_id, 'default_lang': lang, 'default_user_id': user_id, 'default_type': 'other'}">
+                        <kanban>
+                            <field name="id"/>
+                            <field name="color"/>
+                            <field name="name"/>
+                            <field name="title"/>
+                            <field name="type"/>
+                            <field name="email"/>
+                            <field name="parent_id"/>
+                            <field name="is_company"/>
+                            <field name="function"/>
+                            <field name="phone"/>
+                            <field name="street"/>
+                            <field name="street2"/>
+                            <field name="zip"/>
+                            <field name="city"/>
+                            <field name="country_id"/>
+                            <field name="mobile"/>
+                            <field name="state_id"/>
+                            <field name="image_128"/>
+                            <field name="lang"/>
+                            <!-- fields in form x2many view to diminish requests -->
+                            <field name="comment"/>
+                            <field name="display_name"/>
+                            <templates>
+                                <t t-name="kanban-box">
+                                    <t t-set="color" t-value="kanban_color(record.color.raw_value)"/>
+                                    <div t-att-class="color + (record.title.raw_value == 1 ? ' oe_kanban_color_alert' : '') + ' oe_kanban_global_click'">
+                                        <div class="o_kanban_image">
+                                            <img alt="" t-if="record.image_128.raw_value"
+                                                 t-att-src="kanban_image('res.partner', 'image_128', record.id.raw_value)"/>
+                                            <t t-if="!record.image_128.raw_value">
+                                                <img alt="Delivery" t-if="record.type.raw_value === 'delivery'"
+                                                     t-att-src="_s + &quot;/base/static/img/truck.png&quot;"/>
+                                                <img alt="Invoice" t-if="record.type.raw_value === 'invoice'"
+                                                     t-att-src="_s + &quot;/base/static/img/money.png&quot;"/>
+                                                <t t-if="record.type.raw_value !== 'invoice' &amp;&amp; record.type.raw_value !== 'delivery'">
+                                                    <img alt="Logo" t-if="record.is_company.raw_value === true"
+                                                         t-att-src="_s + &quot;/base/static/img/company_image.png&quot;"/>
+                                                    <img alt="Avatar" t-if="record.is_company.raw_value === false"
+                                                         t-att-src="_s + &quot;/base/static/img/avatar.png&quot;"/>
+                                                </t>
+                                            </t>
+                                        </div>
+                                        <div class="oe_kanban_details">
+                                            <field name="name"/>
+                                            <div t-if="record.function.raw_value">
+                                                <field name="function"/>
+                                            </div>
+                                            <div t-if="record.email.raw_value">
+                                                <field name="email" widget="email"/>
+                                            </div>
+                                            <div t-if="record.type.raw_value != 'contact'">
+                                                <div>
+                                                    <field name="zip"/>
+                                                    <field name="city"/>
+                                                </div>
+                                                <field t-if="record.state_id.raw_value" name="state_id"/>
+                                                <field name="country_id"/>
+                                            </div>
+                                            <div t-if="record.phone.raw_value">Phone:
+                                                <field name="phone" widget="phone"/>
+                                            </div>
+                                            <div t-if="record.mobile.raw_value">Mobile:
+                                                <field name="mobile" widget="phone"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </t>
+                            </templates>
+                        </kanban>
+                        <form string="Contact / Address">
+                            <sheet>
+                                <!-- parent_id and type fields needed in attrs in base_address_city module which overwrites
+                                _fields_view_get() of partner. It would be better to put those fields there but the web client
+                                dosen't support when a field is displayed several times in the same view.-->
+                                <field name="type" required="1" widget="radio" options="{'horizontal': true}"/>
+                                <field name="parent_id" invisible="1"/>
+                                <hr/>
+                                <group col="12">
+                                    <group colspan="5">
+                                        <field name="name" string="Contact Name"
+                                               attrs="{'required' : [('type', '=', 'contact')]}"/>
+                                        <field name="title" placeholder="e.g. Mr."
+                                               attrs="{'invisible': [('type','!=', 'contact')]}"/>
+                                        <field name="function" placeholder="e.g. Sales Director"
+                                               attrs="{'invisible': [('type','!=', 'contact')]}"/>
+                                        <label for="street" string="Address"
+                                               attrs="{'invisible': [('type','=', 'contact')]}"/>
+                                        <div attrs="{'invisible': [('type','=', 'contact')]}">
+                                            <div class="o_address_format" name="div_address">
+                                                <field name="street" placeholder="Street..." class="o_address_street"/>
+                                                <field name="street2" placeholder="Street 2..."
+                                                       class="o_address_street"/>
+                                                <field name="city" placeholder="City" class="o_address_city"/>
+                                                <field name="state_id" class="o_address_state" placeholder="State"
+                                                       options="{&quot;no_open&quot;: True}"
+                                                       context="{'country_id': country_id, 'zip': zip}"/>
+                                                <field name="zip" placeholder="ZIP" class="o_address_zip"/>
+                                                <field name="country_id" placeholder="Country" class="o_address_country"
+                                                       options="{&quot;no_open&quot;: True, &quot;no_create&quot;: True}"/>
+                                            </div>
+                                        </div>
+                                        <field name="comment" placeholder="Internal notes..."/>
+                                    </group>
+                                    <group colspan="5">
+                                        <field name="email" widget="email"/>
+                                        <field name="phone" widget="phone"/>
+                                        <field name="mobile" widget="phone"/>
+                                    </group>
+                                    <group colspan="1">
+                                        <field name="image_1920" widget="image" class="oe_avatar" nolabel="1"
+                                               options="{'image_preview': 'image_128'}"/>
+                                    </group>
+                                </group>
+                                <field name="lang" invisible="True"/>
+                                <field name="image_1920" invisible="True"/>
+                                <field name="user_id" invisible="True"/>
+                            </sheet>
+                        </form>
+                    </field>
+                </page>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>

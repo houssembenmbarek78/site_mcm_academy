@@ -1,0 +1,91 @@
+  
+.wrapper{
+	width: 92%; 
+	margin: 0 auto;
+}
+
+#banner{ 
+	text-align:center;
+}
+	
+#hero,
+#page-header{
+	background:#f3f3f3;
+	border-top:1px solid #e2e2e2;
+	border-bottom:1px solid #e2e2e2;
+	padding:20px 0;
+}
+#hero h1{ 
+	line-height:1.2em;
+	margin-top:0px;
+	margin-bottom:10px;}
+
+.flexslider{
+	display:none;
+}
+
+#content {  
+	margin:40px 0;
+}
+
+aside { 
+	margin:40px 0;
+} 
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after,
+.container:after,
+.row:after{
+  clear: both;
+}
+@media only screen and (min-width: 481px) {
+#banner{
+	float:left;
+	text-align:left;
+	margin-bottom:-20px;/*this depends on the height of the logo*/
+}
+.menu-toggle{/*make menu float right, instead of sitting under the logo*/
+	margin-top:10px; /*this depends on the height of the logo*/
+	float:right;
+}
+} 
+@media only screen and (min-width: 920px) {
+
+.wrapper{
+	max-width: 1200px; 
+	margin: .75em auto;
+}
+#banner{ 
+	float:left; 
+	text-align:left;
+	margin-bottom:0px;
+}
+.flexslider{
+display:block;
+/*demo 1 slider theme*/	
+margin: 0 0 60px; 
+background: #fff; 
+border: 4px solid #fff; 
+-webkit-border-radius: 4px; 
+-moz-border-radius: 4px; 
+-o-border-radius: 4px; 
+border-radius: 4px; 
+box-shadow: 0 1px 4px rgba(0,0,0,.2); 
+-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2); 
+-moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); 
+-o-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+}
+aside { 
+	float:right;
+	width:30%;
+}
+#hero [class*="grid_"] { margin-bottom:-20px;}
+}
+
+
+

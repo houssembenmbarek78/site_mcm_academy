@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="account.portal_my_home_menu_invoice" name="Portal layout : invoice menu entries"
+              inherit_id="portal.portal_breadcrumbs" priority="30">
+        <xpath expr="//ol[hasclass('o_portal_submenu')]" position="inside">
+            <li t-if="page_name == 'invoice'" t-attf-class="breadcrumb-item #{'active ' if not invoice else ''}">
+                <a t-if="invoice" t-attf-href="/my/invoices?{{ keep_query() }}">Factures</a>
+                <t t-else="">Factures</t>
+            </li>
+            <li t-if="invoice" class="breadcrumb-item active">
+                <t t-esc="invoice.name" t-if="invoice.name"/>
+                <t t-else="">
+                    <em>Facture Brouillon</em>
+                </t>
+            </li>
+        </xpath>
+    </template>
+    <template id="account.portal_my_home_invoice" name="Portal My Home : invoice entries" inherit_id="portal.portal_my_home"
+              priority="30">
+        <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
+            <t t-if="invoice_count" t-call="portal.portal_docs_entry">
+                <t t-set="title">Factures</t>
+                <t t-set="url" t-value="'/my/invoices'"/>
+                <t t-set="count" t-value="invoice_count"/>
+            </t>
+        </xpath>
+    </template>
+</odoo>

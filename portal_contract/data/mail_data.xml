@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="mcm_email_template_edi_sale" model="mail.template">
+            <field name="name">MCM Contrat: Send by email</field>
+            <field name="model_id" ref="sale.model_sale_order"/>
+            <field name="subject">${object.company_id.name}
+                ${object.state in ('draft', 'sent') and 'Contrat-' or 'Contrat-'} ${object.partner_id.name}
+            </field>
+            <field name="email_from">${(object.user_id.email_formatted or user.email_formatted) | safe}</field>
+            <field name="partner_to">${object.partner_id.id}</field>
+            <field name="body_html" type="html">
+                <div style="margin: 0px; padding: 0px;">
+                    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+                        % set doc_name = 'Contrat' if object.state in ('draft', 'sent') else 'Contrat'
+                        Bonjour,
+                        <br/>
+                        <br/>
+                        Votre
+                        % if ctx.get('proforma'):
+                        Facture pro forma pour ${doc_name}
+                        <strong>${object.name}</strong>
+                        % if object.origin:
+                        (en référence: ${object.origin} )
+                        % endif
+                        d'un montant de <strong>${format_amount(object.amount_total, object.pricelist_id.currency_id)}
+                    </strong> est disponible.
+                        % else:
+                        ${doc_name}
+                        <strong>${object.name}</strong>
+                        % if object.origin:
+                        (with reference: ${object.origin} )
+                        % endif
+                        d'un montant de <strong>${format_amount(object.amount_total, object.pricelist_id.currency_id)}
+                    </strong> est prêt pour signature.
+                        % endif
+                        <br/>
+                        <br/>
+                        N'hésitez pas à nous contacter si vous avez des questions.
+                        <br/>
+                    </p>
+                </div>
+            </field>
+            <field name="report_template" ref="sale.action_report_saleorder"/>
+            <field name="report_name">Contrat- ${(object.partner_id.name)}</field>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="user_signature" eval="False"/>
+            <field name="auto_delete" eval="True"/>
+        </record>
+
+        <record id="mcm_reset_password_email" model="mail.template">
+            <field name="name">Auth Signup: Reset Password</field>
+            <field name="model_id" ref="base.model_res_users"/>
+            <field name="subject">Password reset</field>
+            <field name="email_from">"${object.company_id.name | safe}" &lt;${(object.company_id.email or user.email) | safe}&gt;</field>
+            <field name="email_to">${object.email_formatted | safe}</field>
+            <field name="body_html" type="html">
+                <table border="0" cellpadding="0" cellspacing="0"
+                       style="padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;">
+                    <tr>
+                        <td align="center">
+                            <table border="0" cellpadding="0" cellspacing="0" width="590"
+                                   style="padding: 16px; background-color: white; color: #454748; border-collapse:separate;">
+                                <tbody>
+                                    <!-- HEADER -->
+                                    <tr>
+                                        <td align="center" style="min-width: 590px;">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="590"
+                                                   style="min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;">
+                                                <tr>
+                                                    <td valign="middle">
+                                                        <span style="font-size: 10px;">Votre compte</span>
+                                                        <br/>
+                                                        <span style="font-size: 20px; font-weight: bold;">
+                                                            ${object.name}
+                                                        </span>
+                                                    </td>
+                                                    <td valign="middle" align="right">
+                                                        <img src="/logo.png?company=${object.company_id.id}"
+                                                             style="padding: 0px; margin: 0px; height: auto; width: 80px;"
+                                                             alt="${object.company_id.name}"/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" style="text-align:center;">
+                                                        <hr width="100%"
+                                                            style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;"/>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- CONTENT -->
+                                    <tr>
+                                        <td align="center" style="min-width: 590px;">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="590"
+                                                   style="min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;">
+                                                <tr>
+                                                    <td valign="top" style="font-size: 13px;">
+                                                        <div>
+                                                            Cher(e) ${object.name},
+                                                            <br/>
+                                                            <br/>
+                                                            Nous avons reçu une demande de réinitialisation de mot de
+                                                            passe pour votre compte.
+                                                            Cliquez sur ce lien (valable 24 heures) pour le changer:
+                                                            <br/>
+                                                            <div style="margin: 16px 0px 16px 0px;">
+                                                                <a href="${object.signup_url}"
+                                                                   style="background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;">
+                                                                    Changer mon mot de passe
+                                                                </a>
+                                                            </div>
+                                                            Si vous n'êtes pas à l'origine de cette demande, ignorez-cet
+                                                            email.
+                                                            <br/>
+                                                            <br/>
+                                                            Merci,
+                                                            <br/>
+                                                            ${user.signature | safe}
+                                                            <br/>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align:center;">
+                                                        <hr width="100%"
+                                                            style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;"/>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- FOOTER -->
+                                    <tr>
+                                        <td align="center" style="min-width: 590px;">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="590"
+                                                   style="min-width: 590px; background-color: white; font-size: 11px; padding: 0px 8px 0px 8px; border-collapse:separate;">
+                                                <tr>
+                                                    <td valign="middle" align="left">
+                                                        ${object.company_id.name}
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td valign="middle" align="left" style="opacity: 0.7;">
+                                                        ${object.company_id.phone}
+                                                        % if object.company_id.email
+                                                        |
+                                                        <a href="'mailto:%s' % ${object.company_id.email}"
+                                                           style="text-decoration:none; color: #454748;">
+                                                            ${object.company_id.email}
+                                                        </a>
+                                                        % endif
+                                                        % if object.company_id.website
+                                                        |
+                                                        <a href="'%s' % ${object.company_id.website}"
+                                                           style="text-decoration:none; color: #454748;">
+                                                            ${object.company_id.website}
+                                                        </a>
+                                                        % endif
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- POWERED BY -->
+                    <tr>
+                        <td align="center" style="min-width: 590px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="590"
+                                   style="min-width: 590px; background-color: #F1F1F1; color: #454748; padding: 8px; border-collapse:separate;">
+                                <tr>
+                                    <td style="text-align: center; font-size: 13px;">
+                                        Propulsé par
+                                        <a target="_blank" href="https://www.mcm-academy.fr/"
+                                           style="color: #875A7B;">MCM Academy
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </field>
+            <field name="lang">${object.lang}</field>
+            <field name="auto_delete" eval="True"/>
+            <field name="user_signature" eval="False"/>
+        </record>
+
+        <record id="mcm_set_password_email" model="mail.template">
+            <field name="name">Auth Signup: Odoo Connection</field>
+            <field name="model_id" ref="base.model_res_users"/>
+            <field name="subject">${object.create_uid.name} de ${object.company_id.name} vous invite à vous connecter à MCM Academy
+            </field>
+            <field name="email_from">"${object.company_id.name | safe}" &lt;${(object.company_id.email or user.email) | safe}&gt;</field>
+            <field name="email_to">${object.email_formatted | safe}</field>
+            <field name="body_html" type="html">
+                <table border="0" cellpadding="0" cellspacing="0"
+                       style="padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;">
+                    <tr>
+                        <td align="center">
+                            <table border="0" cellpadding="0" cellspacing="0" width="590"
+                                   style="padding: 16px; background-color: white; color: #454748; border-collapse:separate;">
+                                <tbody>
+                                    <!-- HEADER -->
+                                    <tr>
+                                        <td align="center" style="min-width: 590px;">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="590"
+                                                   style="min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;">
+                                                <tr>
+                                                    <td valign="middle">
+                                                        <span style="font-size: 10px;">Bienvenue à MCM Academy</span>
+                                                        <br/>
+                                                        <span style="font-size: 20px; font-weight: bold;">
+                                                            ${object.name}
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" style="text-align:center;">
+                                                        <hr width="100%"
+                                                            style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;"/>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!-- CONTENT -->
+                                    <tr>
+        <td align="center" style="min-width: 590px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="590" style="min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;">
+                <tr><td valign="top" style="font-size: 13px;">
+                    <div>
+                        Chere(e) ${object.name},<br /><br />
+                        Vous avez été invité par ${object.create_uid.name} de ${object.company_id.name} à rejoindre le site.
+                        <div style="margin: 16px 0px 16px 0px;">
+                            <a href="${object.signup_url}"
+                                style="background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;">
+                                Accept invitation
+                            </a>
+                        </div>
+                        % set website_url = object.env['ir.config_parameter'].sudo().get_param('web.base.url')
+                        votre nom de domaine est: <b><a href='${website_url}'>${website_url}</a></b><br />
+                        Votre courriel de connection est: <b><a href="/web/login?login=${object.email}" target="_blank">${object.email}</a></b><br /><br />
+
+                        <br /><br />
+                        <br /><br />
+                       <br />
+                        --<br/>L'équipe ${object.company_id.name}
+                    </div>
+                </td></tr>
+                <tr><td style="text-align:center;">
+                  <hr width="100%" style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;"/>
+                </td></tr>
+            </table>
+        </td>
+    </tr>
+                                    <!-- FOOTER -->
+                                    <tr>
+                                        <td align="center" style="min-width: 590px;">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="590"
+                                                   style="min-width: 590px; background-color: white; font-size: 11px; padding: 0px 8px 0px 8px; border-collapse:separate;">
+                                                <tr>
+                                                    <td valign="middle" align="left">
+                                                        ${object.company_id.name}
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td valign="middle" align="left" style="opacity: 0.7;">
+                                                        ${object.company_id.phone}
+                                                        % if object.company_id.email
+                                                        |
+                                                        <a href="'mailto:%s' % ${object.company_id.email}"
+                                                           style="text-decoration:none; color: #454748;">
+                                                            ${object.company_id.email}
+                                                        </a>
+                                                        % endif
+                                                        % if object.company_id.website
+                                                        |
+                                                        <a href="'%s' % ${object.company_id.website}"
+                                                           style="text-decoration:none; color: #454748;">
+                                                            ${object.company_id.website}
+                                                        </a>
+                                                        % endif
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- POWERED BY -->
+                    <tr>
+                        <td align="center" style="min-width: 590px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="590"
+                                   style="min-width: 590px; background-color: #F1F1F1; color: #454748; padding: 8px; border-collapse:separate;">
+                                <tr>
+                                    <td style="text-align: center; font-size: 13px;">
+                                        Propulsé par
+                                        <a target="_blank" href="https://www.mcm-academy.fr/"
+                                           style="color: #875A7B;">MCM Academy
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </field>
+            <field name="lang">${object.lang}</field>
+            <field name="auto_delete" eval="True"/>
+            <field name="user_signature" eval="False"/>
+        </record>
+
+        <record id="mcm_mail_template_sale_confirmation" model="mail.template">
+            <field name="name">Contrat: Email de confirmation</field>
+            <field name="model_id" ref="sale.model_sale_order"/>
+            <field name="subject">${object.company_id.name}
+                ${(object.get_portal_last_transaction().state == 'pending') and 'Contrat' or 'Contrat'}
+                ${object.partner_id.name or 'n/a' }
+            </field>
+            <field name="email_from">${(object.user_id.email_formatted or user.email_formatted) | safe}</field>
+            <field name="partner_to">${object.partner_id.id}</field>
+            <field name="body_html" type="html">
+                <div style="margin: 0px; padding: 0px;">
+                    <p style="margin: 0px; padding: 0px; font-size: 12px;">
+                        Bonjour,
+                        <br/>
+                        <br/>
+                        % set transaction = object.get_portal_last_transaction()
+                        Votre Contrat <strong>${object.name}</strong> D'un montant de
+                        <strong>${format_amount(object.amount_total, object.currency_id)}</strong>
+                        % if object.state == 'sale' or (transaction and transaction.state in ('done', 'authorized')) :
+                        a été confirmé
+                        <br/>
+                        Merci pour votre confiance
+                        % elif transaction and transaction.state == 'pending' :
+                        est en attente. Il sera confirmé lors de la réception du paiement.
+                        % if object.reference:
+                        Votre référence de paiement est <strong>${object.reference}</strong>.
+                        % endif
+                        % endif
+                        <br/>
+                        <br/>
+                        N'hésitez pas à nous contacter si vous avez des questions
+                        <br/>
+                        <br/>
+                        % if object.website_id:
+                        <table width="100%" style="color: #454748; font-size: 12px; border-collapse: collapse;">
+                            <tr style="border-bottom: 2px solid #dee2e6;">
+                                <td width="18%">
+                                    <strong>Produits</strong>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <strong>Quantité</strong>
+                                </td>
+                                <td width="10%" align="center">
+                                    <strong>Prix</strong>
+                                </td>
+                            </tr>
+                            % for line in object.order_line:
+                            % if not line.is_delivery:
+                            <tr style="${loop.cycle('background-color: #f2f2f2', 'background-color: #ffffff')}">
+                                % if line.display_type == 'line_section':
+                                <td colspan="4">
+                                    <strong>${line.name}</strong>
+                                </td>
+                                % elif line.display_type == 'line_note':
+                                <td colspan="4">
+                                    <i>${line.name}</i>
+                                </td>
+                                % else:
+                                <td style="width: 150px;">
+                                    <img src="/web/image/product.product/${line.product_id.id}/image_128"
+                                         style="width: 64px; height: 64px; object-fit: contain;"
+                                         alt="Product image"></img>
+                                </td>
+                                <td align="left">${line.product_id.name}</td>
+                                <td>${line.product_uom_qty}</td>
+                                % if object.user_id.has_group('account.group_show_line_subtotals_tax_excluded'):
+                                <td align="right">${format_amount(line.price_reduce_taxexcl, object.currency_id)}</td>
+                                % endif
+                                % if object.user_id.has_group('account.group_show_line_subtotals_tax_included'):
+                                <td align="right">${format_amount(line.price_reduce_taxinc, object.currency_id)}</td>
+                                % endif
+                                % endif
+                            </tr>
+                            % endif
+                            % endfor
+                        </table>
+                        <table width="40%" style="color: #454748; font-size: 12px; border-spacing: 0px 4px;"
+                               align="right">
+                            % if object.carrier_id:
+                            <tr>
+                                <td style="border-top: 1px solid #dee2e6;" align="right">
+                                    <strong>Livraison:</strong>
+                                </td>
+                                <td style="border-top: 1px solid #dee2e6;" align="right">
+                                    ${format_amount(object.amount_delivery, object.currency_id)}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="30%" align="right">
+                                    <strong>Sous-total</strong>
+                                </td>
+                                <td align="right">${format_amount(object.amount_untaxed, object.currency_id)}</td>
+                            </tr>
+                            % else:
+                            <tr>
+                                <td style="border-top: 1px solid #dee2e6;" width="30%" align="right">
+                                    <strong>Sous-total</strong>
+                                </td>
+                                <td style="border-top: 1px solid #dee2e6;" align="right">
+                                    ${format_amount(object.amount_untaxed, object.currency_id)}
+                                </td>
+                            </tr>
+                            % endif
+                            <tr>
+                                <td align="right">
+                                    <strong>Taxes:</strong>
+                                </td>
+                                <td align="right">${format_amount(object.amount_tax, object.currency_id)}</td>
+                            </tr>
+                            <tr>
+                                <td style="border-top: 1px solid #dee2e6;" align="right">
+                                    <strong>Total:</strong>
+                                </td>
+                                <td style="border-top: 1px solid #dee2e6;" align="right">
+                                    ${format_amount(object.amount_total, object.currency_id)}
+                                </td>
+                            </tr>
+                        </table>
+                        <br/>
+                        <table width="100%" style="color: #454748; font-size: 12px;">
+                            % if object.partner_invoice_id:
+                            <tr>
+                                <td style="padding-top: 10px;">
+                                    <strong>Facturation:</strong>
+                                    ${object.partner_invoice_id.street or ''}
+                                    ${object.partner_invoice_id.city or ''}
+                                    ${object.partner_invoice_id.state_id.name or ''}
+                                    ${object.partner_invoice_id.zip or ''}
+                                    ${object.partner_invoice_id.country_id.name or ''}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Méthode de paiement:</strong>
+                                    % if transaction.payment_token_id:
+                                    ${transaction.payment_token_id.name}
+                                    % else:
+                                    ${transaction.acquirer_id.name}
+                                    % endif
+                                    (${format_amount(transaction.amount, object.currency_id)})
+                                </td>
+                            </tr>
+                            % endif
+                            % if object.partner_shipping_id and not object.only_services:
+                            <tr>
+                                <td>
+                                    <br/>
+                                    <strong>Livraison à:</strong>
+                                    ${object.partner_shipping_id.street or ''}
+                                    ${object.partner_shipping_id.city or ''}
+                                    ${object.partner_shipping_id.state_id.name or ''}
+                                    ${object.partner_shipping_id.zip or ''}
+                                    ${object.partner_shipping_id.country_id.name or ''}
+                                </td>
+                            </tr>
+                            % if object.carrier_id:
+                            <tr>
+                                <td>
+                                    <strong>Méthode de Livraison:</strong>
+                                    ${object.carrier_id.name}
+                                    % if object.carrier_id.fixed_price == 0.0:
+                                    (Free)
+                                    % else:
+                                    (${format_amount(object.carrier_id.fixed_price, object.currency_id)})
+                                    % endif
+                                </td>
+                            </tr>
+                            % endif
+                            % endif
+                        </table>
+                        % endif
+                    </p>
+                </div>
+            </field>
+            <field name="report_template" ref="sale.action_report_saleorder"/>
+            <field name="report_name">Contrat- ${(object.partner_id.name)}</field>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="user_signature" eval="False"/>
+            <field name="auto_delete" eval="True"/>
+        </record>
+
+        <!-- set default order confirmation template -->
+<!--        <record id="sale.default_confirmation_template" model="ir.config_parameter">-->
+<!--            <field name="key">sale.default_confirmation_template</field>-->
+<!--            <field name="value" ref="portal_contract.mcm_mail_template_sale_confirmation"/>-->
+<!--        </record>-->
+        <template id="mail.mail_notification_light">
+            <table border="0" cellpadding="0" cellspacing="0"
+                   style="padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;">
+                <tr>
+                    <td align="center">
+                        <table border="0" cellpadding="0" cellspacing="0" width="590"
+                               style="padding: 24px; background-color: white; color: #454748; border-collapse:separate;">
+                            <tbody>
+                                <!-- HEADER -->
+                                <tr>
+                                    <td align="center" style="min-width: 590px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                               style="background-color: white; padding: 0; border-collapse:separate;">
+                                            <tr>
+                                                <td valign="middle">
+                                                    <span style="font-size: 10px;">Votre
+                                                        <t t-if="message.model=='sale.order'" t-esc="Contrat"/>
+                                                        <t t-elif="message.model=='account.move'" t-esc="Facture"/>
+                                                        <t t-else="" t-esc="model_description or 'document'"/>
+                                                    </span>
+                                                    <br/>
+                                                    <span style="font-size: 20px; font-weight: bold;">
+                                                        <t t-esc="message.record_name and message.record_name.replace('/','-') or ''"/>
+                                                    </span>
+                                                </td>
+                                                <td valign="middle" align="right">
+                                                    <img t-att-src="'/logo.png?company=%s' % company.id"
+                                                         style="padding: 0px; margin: 0px; height: 48px;"
+                                                         t-att-alt="'%s' % company.name"/>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" style="text-align:center;">
+                                                    <hr width="100%"
+                                                        style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin:4px 0px 32px 0px;"/>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- CONTENT -->
+                                <tr>
+                                    <td style="min-width: 590px;">
+                                        <t t-raw="message.body"/>
+                                    </td>
+                                </tr>
+                                <!-- FOOTER -->
+                                <tr>
+                                    <td align="center" style="min-width: 590px; padding: 0 8px 0 8px; font-size:11px;">
+                                        <hr width="100%"
+                                            style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 4px 0px;"/>
+                                        <b t-esc="company.name"/>
+                                        <br/>
+                                        <div style="color: #999999;">
+                                            <t t-esc="company.phone"/>
+                                            <t t-if="company.email">|
+                                                <a t-att-href="'mailto:%s' % company.email"
+                                                   style="text-decoration:none; color: #999999;">
+                                                    <t t-esc="company.email"/>
+                                                </a>
+                                            </t>
+                                            <t t-if="company.website">|
+                                                <a t-att-href="'%s' % company.website"
+                                                   style="text-decoration:none; color: #999999;">
+                                                    <t t-esc="company.website"/>
+                                                </a>
+                                            </t>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </template>
+        <template id="mail.mail_notification_paynow" name="Mail: Pay Now mail notification template">
+            <table border="0" cellpadding="0" cellspacing="0"
+                   style="padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;">
+                <tr>
+                    <td align="center">
+                        <table border="0" cellpadding="0" cellspacing="0" width="590"
+                               style="padding: 24px; background-color: white; color: #454748; border-collapse:separate;">
+                            <tbody>
+                                <!-- HEADER -->
+                                <tr>
+                                    <td align="center" style="min-width: 590px;">
+                                        <t t-set="access_action"
+                                           t-value="record.with_context(force_website=True).get_access_action()"/>
+                                        <t t-set="is_online"
+                                           t-value="access_action and access_action['type'] == 'ir.actions.act_url'"/>
+                                        <t t-set="base_url" t-value="record.get_base_url()"/>
+                                        <t t-set="share_url"
+                                           t-value="record._get_share_url(redirect=True, signup_partner=True)"/>
+                                        <t t-set="access_url"
+                                           t-value="is_online and share_url and base_url + share_url or ''"/>
+                                        <t t-set="access_name">
+                                            Voir
+                                            <t t-if="message.model=='sale.order'" t-esc="' le Contrat'"/>
+                                            <t t-elif="message.model=='account.move'" t-esc="' la Facture'"/>
+                                            <t t-else="" t-esc="model_description or 'document'"/>
+                                        </t>
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                               style="background-color: white; padding: 0; border-collapse:separate;">
+                                            <tr>
+                                                <td valign="middle">
+                                                    <span style="font-size: 10px;">Votre
+                                                        <t t-if="message.model=='sale.order'" t-esc="'Contrat'"/>
+                                                        <t t-elif="message.model=='account.move'" t-esc="'Facture'"/>
+                                                        <t t-else="" t-esc="model_description or 'document'"/>
+                                                    </span>
+                                                    <br/>
+                                                    <span style="font-size: 20px; font-weight: bold;">
+                                                        <t t-esc="message.record_name"/>
+                                                    </span>
+                                                </td>
+                                                <td valign="middle" align="right">
+                                                    <img t-att-src="'/logo.png?company=%s' % company.id"
+                                                         style="padding: 0px; margin: 0px; height: 48px;"
+                                                         t-att-alt="'%s' % company.name"/>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" style="text-align:center;">
+                                                    <hr width="100%"
+                                                        style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin:4px 0px 32px 0px;"/>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- CONTENT -->
+                                <tr>
+                                    <td style="padding: 0">
+                                        <t t-raw="message.body"/>
+                                        <div t-if="is_online and not record._context.get('proforma')"
+                                             style="margin: 32px 0px 32px 0px; text-align: center;">
+                                            <a t-att-href="access_url"
+                                               style="background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;">
+                                                <t t-esc="access_name"/>
+                                            </a>
+                                        </div>
+                                        <t t-if="record.user_id and not record.env.user._is_superuser()">
+                                            <div style="margin: 0px; padding: 0px; font-size:13px;">
+                                                Best regards,
+                                            </div>
+                                            <div>&amp;nbsp;</div>
+                                            <div t-if="record.user_id.sudo().signature" style="font-size: 13px;">
+                                                <div t-raw="record.user_id.sudo().signature"/>
+                                            </div>
+                                        </t>
+                                    </td>
+                                </tr>
+                                <!-- FOOTER -->
+                                <tr>
+                                    <td style="padding: 0; font-size:11px;">
+                                        <hr width="100%"
+                                            style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 32px 0px 4px 0px;"/>
+                                        <b t-esc="company.name"/>
+                                        <br/>
+                                        <div style="color: #999999">
+                                            <t t-esc="company.phone"/>
+                                            <t t-if="company.email">|
+                                                <a t-att-href="'mailto:%s' % company.email"
+                                                   style="text-decoration:none; color: #999999;">
+                                                    <t t-esc="company.email"/>
+                                                </a>
+                                            </t>
+                                            <t t-if="company.website">|
+                                                <a t-att-href="'%s' % company.website"
+                                                   style="text-decoration:none; color: #999999;">
+                                                    <t t-esc="company.website"/>
+                                                </a>
+                                            </t>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <!--                &lt;!&ndash; POWERED BY &ndash;&gt;-->
+                <!--                <tr>-->
+                <!--                    <td align="center" style="min-width: 590px; padding: 8px; font-size:11px;">-->
+                <!--                        Powered by-->
+                <!--                        <a target="_blank" href="https://www.odoo.com?utm_source=db&amp;utm_medium=email"-->
+                <!--                           style="color: #875A7B;">Odoo-->
+                <!--                        </a>-->
+                <!--                    </td>-->
+                <!--                </tr>-->
+            </table>
+        </template>
+
+    </data>
+    <data noupdate="0">
+<!--        <template id="mcm_mail_notification_paynow_online" inherit_id="sale.mail_notification_paynow_online">-->
+<!--            <xpath expr="//t[@t-if='record.has_to_be_signed(include_draft=True)']" position="replace">-->
+<!--                <t t-if="record.has_to_be_signed(include_draft=True)">-->
+<!--                    <t t-if="record.has_to_be_paid()" t-set="access_name">Signez &amp; Payez Contrat</t>-->
+<!--                    <t t-else="" t-set="access_name">Acceptez &amp; Signez Contrat</t>-->
+<!--                </t>-->
+
+<!--            </xpath>-->
+<!--            <xpath expr="//t[@t-elif='record.has_to_be_paid(include_draft=True)']//t[@t-set='access_name']"-->
+<!--                   position="replace">-->
+<!--                <t t-set="access_name">Acceptez &amp; Payez Contrat</t>-->
+<!--            </xpath>-->
+<!--            <xpath expr="/t//t[1]" position="before">-->
+<!--                <t t-if="record.state in ('sale', 'sent')">-->
+<!--                    <t t-set="access_name">Acceptez &amp; Signez Contrat</t>-->
+<!--                </t>-->
+<!--            </xpath>-->
+<!--        </template>-->
+    </data>
+</odoo>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="mcm_sign_up" inherit_id="website_sale.product" active="False" customize_show="True">
+        <xpath expr="//a[@id='add_to_cart']" position="replace">
+            <a t-if="request.website.is_public_user()==False" role="button" id="add_to_cart"
+               class="btn btn-primary btn-lg mt16 js_check_product a-submit d-block d-sm-inline-block" href="#">
+                <i class="fa fa-shopping-cart"/>
+                Ajouter au panier
+            </a>
+        </xpath>
+        <xpath expr="//a[@id='add_to_cart']" position="after">
+            <t t-if="request.env['ir.config_parameter'].sudo().get_param('auth_signup.invitation_scope', 'b2b') == 'b2c' and request.website.is_public_user()">
+                <a role="button" id="sign_up" class="btn btn-outline-primary btn-lg mt16 d-block d-sm-inline-block"
+                   t-attf-href="/web/signup?{{ keep_query() }}">
+                    <i class="fa fa-bolt"/>
+                    S'inscrire
+                </a>
+            </t>
+
+        </xpath>
+    </template>
+    <template id="mcm_price" inherit_id="website_sale.products_item">
+        <xpath expr="//div[@class='product_price']" position="replace">
+
+            <div class="product_price" itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer">
+                <del t-attf-class="text-danger mr-2 {{'' if combination_info['has_discounted_price'] else 'd-none'}}"
+                     style="white-space: nowrap;" t-esc="combination_info['list_price']"
+                     t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                <span t-if="combination_info['price']  and request.website.is_public_user()==False"
+                      t-esc="combination_info['price']"
+                      t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                <span itemprop="price" style="display:none;" t-esc="combination_info['price']"/>
+                <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
+            </div>
+
+        </xpath>
+    </template>
+
+
+    <template id="mcm_address" inherit_id="website_sale.address">
+        <xpath expr="//select[@id='country_id']" position="replace">
+            <select id="country_id" name="country_id"
+                    t-attf-class="form-control #{error.get('country_id') and 'is-invalid' or ''}">
+                <option value="">Country...</option>
+                <t t-foreach="countries" t-as="c">
+                    <option t-att-value="c.id" t-att-selected="c.id == (fr_country.id or -1)">
+                        <t t-esc="c.name"/>
+                    </option>
+                </t>
+            </select>
+        </xpath>
+    </template>
+</odoo>

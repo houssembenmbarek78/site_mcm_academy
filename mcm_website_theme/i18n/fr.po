@@ -1,0 +1,2021 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mcm_website_theme
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-24 11:00+0000\n"
+"PO-Revision-Date: 2020-03-24 11:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_template
+msgid "&amp;nbsp;"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"&amp;nbsp;\n"
+"                                                <font color=\"#ff0000\" style=\"color: rgb(0, 0, 0);\">\n"
+"                                                    <b>&amp;nbsp;</b>\n"
+"                                                </font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"&amp;nbsp;\n"
+"                                    Découvrez notre formation théorique et pratique TAXI"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"&amp;nbsp;\n"
+"                                    Découvrez notre formation théorique et pratique VMDTR"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"&amp;nbsp;\n"
+"                                    Découvrez notre formation théorique et pratique VTC"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid "&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Formation pratique Taxi"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"&amp;nbsp;l'épreuve\n"
+"                                                                                pratique et vous propose une f\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    ormation personnalisée de la\n"
+"                                                                                    conduite.\n"
+"\n"
+"                                                                                </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"&amp;nbsp;l'épreuve\n"
+"                                                                                pratique et vous propose une f\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    ormation personnalisée de la\n"
+"                                                                                    conduite.\n"
+"                                                                                </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_template
+msgid "10,000&amp;nbsp;"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid "20 '"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"20 minutes\n"
+"                                                        <br/>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid "20 points"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid "30 '"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"30 minutes\n"
+"                                                        <br/>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"4/20\n"
+"                                                        <br/>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"45 minutes\n"
+"                                                        <br/>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid "6/20"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"6/20\n"
+"                                                        <br/>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_template
+msgid "674"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"<b style=\"font-size: 14px; color: rgb(255, 0, 0);\">L’inscription à\n"
+"                                                        l’examen TAXI se fait au préalable auprès de la\n"
+"                                                        Chambre de Métiers et de l’Artisanat (CMA)\n"
+"                                                    </b>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"<b style=\"font-size: 14px; color: rgb(255, 0, 0);\">L’inscription à\n"
+"                                                    l’examen VTC se fait au préalable auprès de la\n"
+"                                                    Chambre de Métiers et de l’Artisanat (CMA)\n"
+"                                                </b>\n"
+"                                                <br/>\n"
+"                                                <span style=\"color: rgb(0, 0, 0); font-size: 18px;\">Épreuve\n"
+"                                                    d'admission:\n"
+"                                                </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_template
+msgid ""
+"<b>\n"
+"                                            <font style=\"color: rgb(0, 0, 0); font-size: 48px;\">Formation</font>\n"
+"                                        </b>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"<b>\n"
+"                                        <span style=\"color: rgb(0, 0, 0); font-size: 18px;\">Une épreuve&amp;nbsp;théorique</span>\n"
+"                                        <span style=\"color: rgb(0, 0, 0); font-size: 14px;\"/>\n"
+"                                        <span style=\"color: rgb(0, 0, 0); font-size: 18px;\">et une épreuve pratique\n"
+"                                        </span>\n"
+"                                        <span style=\"color: rgb(0, 0, 0); font-size: 14px;\">.</span>\n"
+"                                    </b>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"<b>Formation théorique TAXI:</b>\n"
+"                                        <b>\n"
+"                                            <br/>\n"
+"                                        </b>\n"
+"                                        <font style=\"color: rgb(255, 0, 0); font-size: 14px;\">L'inscription à l'examen\n"
+"                                            se fait au préalable auprès de la chambre de métiers et de l'artisanat (CMA)\n"
+"                                        </font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid "<b>Formation théorique VMDTR</b>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid "<b>Formation théorique VTC:</b>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"<b>MCM\n"
+"                                                                                ACADEMY&amp;nbsp;</b>vous propose une\n"
+"                                                                            formation\n"
+"                                                                            pratique, en présentiel comme en"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"<b>MCM\n"
+"                                                                                ACADEMY</b>vous propose une formation\n"
+"                                                                                pratique, en présentiel comme en"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"<font color=\"#ff0000\" style=\"color: rgb(0, 0, 0);\">\n"
+"                                                    <b>&amp;nbsp;</b>\n"
+"                                                </font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"<font color=\"#ff0000\" style=\"font-size: 14px;\">&amp;nbsp;L’inscription à\n"
+"                                            l’examen\n"
+"                                            VMDTR se fait au préalable auprès de la\n"
+"                                            Chambre de Métiers et de l’Artisanat (CMA)\n"
+"                                        </font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"<font color=\"#ff0000\" style=\"font-size: 14px;\">L’inscription à l’examen\n"
+"                                            VTC se fait au préalable auprès de la Chambre de Métiers et de\n"
+"                                            l’Artisanat (CMA)\n"
+"                                        </font>\n"
+"\n"
+"                                        <br/>\n"
+"                                        <font color=\"#ff0000\" style=\"\">\n"
+"                                            <span style=\"color: rgb(0, 0, 0); font-size: 18px;\">\n"
+"                                                Épreuve d'admission:\n"
+"                                            </span>\n"
+"                                        </font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"<font style=\"\">\n"
+"                                                <b>\n"
+"                                                    <span style=\"font-size: 18px;\">Épreuve d'admissibilité :</span>\n"
+"                                                </b>\n"
+"                                            </font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"<font style=\"\">\n"
+"                                                <span style=\"font-size: 18px;\">Épreuve d'admissibilité :</span>\n"
+"                                            </font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"<font style=\"color: rgb(0, 0, 0); font-size: 14px;\" data-original-title=\"\" title=\"\" aria-describedby=\"tooltip108369\">Comment\n"
+"                                                                            réussir l'examen pratique TAXI\n"
+"                                                                            <b>&amp;nbsp;</b>\n"
+"                                                                        </font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"<font style=\"color: rgb(0, 0, 0); font-size: 14px;\" data-original-title=\"\" title=\"\" aria-describedby=\"tooltip108369\">Comment\n"
+"                                                                            réussir l'examen pratique VTC\n"
+"                                                                            <b>&amp;nbsp;</b>\n"
+"                                                                        </font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"<font style=\"color: rgb(0, 0, 0); font-size: 14px;\" data-original-title=\"\" title=\"\" aria-describedby=\"tooltip108369\">Comment\n"
+"                                                                        réussir l'examen pratique VTC\n"
+"                                                                        <b>&amp;nbsp;</b>\n"
+"                                                                    </font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"<font style=\"color: rgb(0, 0, 0); font-size: 14px;\" data-original-title=\"\" title=\"\" aria-describedby=\"tooltip269276\">\n"
+"                                                                            Préparation à l'examen pratique TAXI\n"
+"                                                                        </font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"<font style=\"color: rgb(0, 0, 0); font-size: 14px;\" data-original-title=\"\" title=\"\" aria-describedby=\"tooltip481734\">Comment\n"
+"                                                                        réussir l'examen VMDTR théorique&amp;nbsp;\n"
+"                                                                    </font>\n"
+"                                                                    <font style=\"color: rgb(0, 0, 0); font-size: 18px;\" data-original-title=\"\" title=\"\" aria-describedby=\"tooltip481734\">\n"
+"                                                                    </font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"<font style=\"color: rgb(0, 0, 0); font-size: 14px;\" data-original-title=\"\" title=\"\" aria-describedby=\"tooltip481734\">Comment\n"
+"                                                                        réussir l'examen VTC théorique&amp;nbsp;\n"
+"                                                                    </font>\n"
+"                                                                    <font style=\"color: rgb(0, 0, 0); font-size: 18px;\" data-original-title=\"\" title=\"\" aria-describedby=\"tooltip481734\">\n"
+"                                                                    </font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"<font style=\"color: rgb(0, 0, 0); font-size: 14px;\" data-original-title=\"\" title=\"\" aria-describedby=\"tooltip978710\">Le programme\n"
+"                                                                        de formation pratique VTC&amp;nbsp;\n"
+"                                                                    </font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"<font style=\"color: rgb(0, 0, 0); font-size: 18px;\" data-original-title=\"\" title=\"\" aria-describedby=\"tooltip710343\">\n"
+"                                                                    </font>\n"
+"                                                                    <font style=\"color: rgb(0, 0, 0); font-size: 14px;\" data-original-title=\"\" title=\"\" aria-describedby=\"tooltip710343\">Préparation à\n"
+"                                                                        l'examen théorique VMDTR\n"
+"                                                                    </font>\n"
+"                                                                    <font style=\"color: rgb(0, 0, 0); font-size: 18px;\" data-original-title=\"\" title=\"\" aria-describedby=\"tooltip710343\">\n"
+"                                                                    </font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"<font style=\"color: rgb(0, 0, 0); font-size: 18px;\" data-original-title=\"\" title=\"\" aria-describedby=\"tooltip710343\">\n"
+"                                                                    </font>\n"
+"                                                                    <font style=\"color: rgb(0, 0, 0); font-size: 14px;\" data-original-title=\"\" title=\"\" aria-describedby=\"tooltip710343\">Préparation à\n"
+"                                                                        l'examen théorique VTC\n"
+"                                                                    </font>\n"
+"                                                                    <font style=\"color: rgb(0, 0, 0); font-size: 18px;\" data-original-title=\"\" title=\"\" aria-describedby=\"tooltip710343\">\n"
+"                                                                    </font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_template
+msgid ""
+"<font style=\"color: rgb(0, 0, 0); font-size: 48px;\">\n"
+"                                            <b>\n"
+"                                                TAXI-VTC-VMDTR\n"
+"                                            </b>\n"
+"                                        </font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"<font style=\"color: rgb(0, 0, 0);\" data-original-title=\"\" title=\"\" aria-describedby=\"tooltip269276\"/>\n"
+"                                                                        <font style=\"color: rgb(0, 0, 0); font-size: 14px;\" data-original-title=\"\" title=\"\" aria-describedby=\"tooltip269276\">\n"
+"                                                                            Préparation à l'examen pratique VTC&amp;nbsp;\n"
+"                                                                        </font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"<font style=\"color: rgb(0, 0, 0);\" data-original-title=\"\" title=\"\" aria-describedby=\"tooltip269276\"/>\n"
+"                                                                    <font style=\"color: rgb(0, 0, 0); font-size: 14px;\" data-original-title=\"\" title=\"\" aria-describedby=\"tooltip269276\">Préparation à\n"
+"                                                                        l'examen pratique VTC\n"
+"                                                                    </font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"<font style=\"float:left\">\n"
+"                                                    <span style=\"font-size: 18px;\">Épreuve d'admission:</span>\n"
+"                                                </font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_template
+msgid "<font style=\"font-size: 24px;\">Clients</font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_template
+msgid "<font style=\"font-size: 24px;\">Formateurs</font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_template
+msgid "<font style=\"font-size: 24px;\">Recommandation</font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_template
+msgid "<font style=\"font-size: 24px;\">Taux de satisfaction</font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"<font style=\"font-size: 36px;\">\n"
+"                                        <b>FORMATION VTC</b>\n"
+"                                    </font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid "<font style=\"font-size: 48px;\">Formation TAXI&amp;nbsp;</font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_sign_up
+msgid ""
+"<i class=\"fa fa-bolt\"/>\n"
+"                    S'inscrire"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_sale_confirmation
+msgid ""
+"<i class=\"fa fa-print\"/>\n"
+"                        Imprimer"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_sign_up
+msgid ""
+"<i class=\"fa fa-shopping-cart\"/>\n"
+"                Ajouter au panier"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.payment_tokens_list
+msgid "<small class=\"text-muted\">(Some fees may apply)</small>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"<span class=\"h4 mb-0 font-weight-bold\" data-original-title=\"\" title=\"\" aria-describedby=\"tooltip830594\" style=\"text-align: center;\">Formation\n"
+"                                            théorique\n"
+"                                        </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"<span class=\"h4 mb-0 font-weight-bold\" style=\"text-align:center\" data-original-title=\"\" title=\"\" aria-describedby=\"tooltip520833\">Formation\n"
+"                                            pratique\n"
+"                                        </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"<span style=\"color: rgb(0, 0, 0); font-size: 18px;\">\n"
+"                                                <b>Épreuve d'admissibilité:</b>\n"
+"\n"
+"                                            </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"<span style=\"color: rgb(255, 255, 255); font-size: 14px; font-weight: bolder;\">\n"
+"                                                            Durée\n"
+"                                                        </span>\n"
+"                                                        <br/>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"<span style=\"color: rgb(255, 255, 255); font-size: 14px; font-weight: bolder;\">\n"
+"                                                            Note\n"
+"                                                            éliminatoire\n"
+"                                                        </span>\n"
+"                                                        <span style=\"font-weight: bolder; font-size: 14px;\"/>\n"
+"                                                        <br/>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"<span style=\"font-size: 0.875rem;\">\n"
+"                                            &amp;nbsp;</span>&amp;nbsp;\n"
+"                                            <br/>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"<span style=\"font-size: 14px; color: rgb(255, 0, 0);\">L’inscription à\n"
+"                                                l’examen VTC se fait au préalable auprès de la\n"
+"                                                Chambre de Métiers et de l’Artisanat (CMA)\n"
+"                                            </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"<span style=\"font-size: 14px;\">\n"
+"                                                                                <b>MCM ACADEMY</b>\n"
+"                                                                                propose une formation VMDTR\n"
+"                                                                                d’excellence basée sur\n"
+"                                                                            </span>\n"
+"                                                                            <br/>\n"
+"                                                                            <br/>\n"
+"                                                                            <span style=\"font-size: 14px;\">\n"
+"                                                                                l'expertise de nos formateurs&amp;nbsp;\n"
+"                                                                            </span>\n"
+"                                                                            <span style=\"font-size: 14px;\">et la\n"
+"                                                                                dédication de toute l'équipe.\n"
+"                                                                            </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"<span style=\"font-size: 14px;\">&amp;nbsp;\n"
+"                                                                            </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"<span style=\"font-size: 14px;\">L'épreuve pratique s’agit d’une épreuve de conduite\n"
+"                                        jugée sur 4 critères, à savoir la préparation&amp;nbsp;et&amp;nbsp;réalisation\n"
+"                                        parcours, la sécurité routière&amp;nbsp;et le respect du code de la route, la\n"
+"                                        relation client et&amp;nbsp;finalement la&amp;nbsp;facturation. Une fois,\n"
+"                                        l’examen pratique validé,\n"
+"                                    </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"<span style=\"font-size: 14px;\">Les\n"
+"                                                                                résultats de l’examen VMDTR\n"
+"                                                                                théorique vous seront communiqués\n"
+"                                                                                par la\n"
+"                                                                            </span>\n"
+"                                                                            <br/>\n"
+"                                                                            <br/>\n"
+"                                                                            <span style=\"font-size: 14px;\">Chambre\n"
+"                                                                                des Métiers&amp;nbsp;\n"
+"                                                                            </span>\n"
+"                                                                            <span style=\"font-size: 14px;\">et de\n"
+"                                                                                l'Artisanat (CMA) dans les semaines\n"
+"                                                                                qui suivent\n"
+"                                                                            </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"<span style=\"font-size: 14px;\">Les\n"
+"                                                                                thématiques abordées lors de la\n"
+"                                                                                formation théorique balaient\n"
+"                                                                                largement\n"
+"                                                                            </span>\n"
+"                                                                            <br/>\n"
+"                                                                            <br/>\n"
+"                                                                            <span style=\"font-size: 14px;\">tous les\n"
+"                                                                                modules prévus&amp;nbsp;\n"
+"                                                                            </span>\n"
+"                                                                            <span style=\"font-size: 14px;\">lors de\n"
+"                                                                                l'examen officiel à savoir la\n"
+"                                                                                réglementation,\n"
+"                                                                            </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"<span style=\"font-size: 14px;\">Notre\n"
+"                                                                                formation théorique à l’examen <b>\n"
+"                                                                                    VMDTR\n"
+"                                                                                </b> vous permettra de mieux\n"
+"                                                                            </span>\n"
+"                                                                            <br/>\n"
+"                                                                            <br/>\n"
+"                                                                            <span style=\"font-size: 14px;\">\n"
+"                                                                                comprendre le métier de&amp;nbsp;\n"
+"                                                                            </span>\n"
+"                                                                            <span style=\"font-size: 14px;\">chauffeur <b>\n"
+"                                                                                VMDTR</b>, d’en maîtriser le\n"
+"                                                                                fonctionnement\n"
+"                                                                            </span>\n"
+"                                                                            <br/>\n"
+"                                                                            <br/>\n"
+"                                                                            <span style=\"font-size: 14px;\">et les\n"
+"                                                                                principales règles du&amp;nbsp;\n"
+"                                                                            </span>\n"
+"                                                                            <span style=\"font-size: 14px;\">métier et\n"
+"                                                                                de vous\n"
+"                                                                            </span>\n"
+"                                                                            <span style=\"font-size: 14px;\">&amp;nbsp;\n"
+"                                                                            </span>\n"
+"                                                                            <span style=\"font-size: 14px;\">préparer\n"
+"                                                                                au mieux pour réussir\n"
+"                                                                            </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"<span style=\"font-size: 14px;\">Notre\n"
+"                                                                                formation théorique à l’examen <b>VTC\n"
+"                                                                                </b> vous permettra de mieux\n"
+"                                                                            </span>\n"
+"                                                                            <span style=\"font-size: 14px;\">comprendre le\n"
+"                                                                                métier de chauffeur<b>VTC</b>, d'en&amp;nbsp;\n"
+"                                                                            </span>\n"
+"                                                                            <span style=\"font-size: 14px;\">maîtriser\n"
+"                                                                                le fonctionnement\n"
+"                                                                            </span>\n"
+"                                                                            <span style=\"font-size: 14px;\">et les\n"
+"                                                                                principales règles du métier et de vous&amp;nbsp;\n"
+"                                                                            </span>\n"
+"                                                                            <span style=\"font-size: 14px;\">préparer\n"
+"                                                                                au mieux pour réussir\n"
+"                                                                            </span>\n"
+"                                                                            <span style=\"font-size: 14px;\">l'examen\n"
+"                                                                                de <b>VTC&amp;nbsp;</b>et ainsi, obtenir\n"
+"                                                                                votre\n"
+"                                                                                carte professionnelle.\n"
+"                                                                            </span>\n"
+"                                                                            <span style=\"font-size: 14px;\">Les\n"
+"                                                                                thématiques abordées lors de la\n"
+"                                                                                formation théorique balaient largement\n"
+"                                                                                tous les modules prévus&amp;nbsp;\n"
+"                                                                            </span>\n"
+"                                                                            <span style=\"font-size: 14px;\">lors de\n"
+"                                                                                l'examen officiel à savoir&amp;nbsp;\n"
+"                                                                            </span>\n"
+"                                                                            <span style=\"font-size: 14px;\">la\n"
+"                                                                                réglementation, la gestion&amp;nbsp;\n"
+"                                                                            </span>\n"
+"                                                                            <span style=\"font-size: 14px;\">, la sécurité\n"
+"                                                                                routière, le développement&amp;nbsp;\n"
+"                                                                            </span>\n"
+"                                                                            <span style=\"font-size: 14px;\">commercial,\n"
+"                                                                                et les langues française&amp;nbsp;\n"
+"                                                                            </span>\n"
+"                                                                            <span style=\"font-size: 14px;\">et\n"
+"                                                                                anglaise.\n"
+"                                                                            </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"<span style=\"font-size: 14px;\">Pour\n"
+"                                                                                rappel, pour réussir l’examen\n"
+"                                                                                théorique VMDTR, une moyenne\n"
+"                                                                                générale\n"
+"                                                                            </span>\n"
+"                                                                            <br/>\n"
+"                                                                            <br/>\n"
+"                                                                            <span style=\"font-size: 14px;\">d’au\n"
+"                                                                                moins 10/20 est&amp;nbsp;\n"
+"                                                                            </span>\n"
+"                                                                            <span style=\"font-size: 14px;\">\n"
+"                                                                                obligatoire. Aussi, chaque épreuve\n"
+"                                                                                est soumise\n"
+"                                                                            </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"<span style=\"font-size: 14px;\">Pour rappel,\n"
+"                                                                                pour réussir l’examen théorique VTC, une\n"
+"                                                                                moyenne générale d’au moins 10/20 est&amp;nbsp;\n"
+"                                                                                obligatoire. Aussi, chaque épreuve est\n"
+"                                                                                soumise&amp;nbsp; à une note\n"
+"                                                                                éliminatoire propre. Un candidat se\n"
+"                                                                                verra&amp;nbsp; éliminer s'il obtient\n"
+"                                                                                une note inférieure à celle-ci.&amp;nbsp;Les\n"
+"                                                                                résultats de l’examen VTC théorique vous\n"
+"                                                                                seront communiqués par la Chambre des\n"
+"                                                                                Métiers et de&amp;nbsp; l'Artisanat\n"
+"                                                                                (CMA) dans les semaines qui suivent\n"
+"                                                                                l’épreuve par mail et sms mais aussi en\n"
+"                                                                                ligne sur le\n"
+"                                                                            </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"<span style=\"font-size: 14px;\">Selon la Loi Granguillaume de 2017, devenir chauffeur\n"
+"                                        VMDTR passe inévitablement par le passage&amp;nbsp;d’un examen VMDTR. Désormais,\n"
+"                                        l’examen officiel VMDTR se déroule en deux parties :\n"
+"                                    </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"<span style=\"font-size: 14px;\">l'examen\n"
+"                                                                                de <b>VMDTR</b> et ainsi, obtenir\n"
+"                                                                                votre carte professionnelle.\n"
+"                                                                            </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"<span style=\"font-size: 14px;\">la\n"
+"                                                                                gestion, la sécurité routière, le\n"
+"                                                                                développement&amp;nbsp;\n"
+"                                                                            </span>\n"
+"                                                                            <span style=\"font-size: 14px;\">\n"
+"                                                                                commercial, et les langues\n"
+"                                                                            </span>\n"
+"                                                                            <br/>\n"
+"                                                                            <br/>\n"
+"                                                                            <span style=\"font-size: 14px;\">française&amp;nbsp;</span>\n"
+"                                                                            <span style=\"font-size: 14px;\">et\n"
+"                                                                                anglaise.\n"
+"                                                                            </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"<span style=\"font-size: 14px;\">l’épreuve\n"
+"                                                                                par mail et sms mais aussi en ligne\n"
+"                                                                                sur&amp;nbsp;\n"
+"                                                                            </span>\n"
+"                                                                            <span style=\"font-size: 14px;\">le site\n"
+"                                                                                web de la CMA.\n"
+"                                                                            </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"<span style=\"font-size: 14px;\">site web de\n"
+"                                                                                la CMA.&amp;nbsp;<b>MCM ACADEMY</b>propose\n"
+"                                                                                une formation VTC d’excellence basée sur\n"
+"                                                                                l'expertise de nos formateurs et&amp;nbsp;la\n"
+"                                                                                dédication de toute l'équipe.\n"
+"                                                                            </span>\n"
+"                                                                            <br/>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"<span style=\"font-size: 14px;\">vous&amp;nbsp;&amp;nbsp;êtes\n"
+"                                    en mesure de demander&amp;nbsp;votre carte professionnelle et de ce fait, exercer&amp;nbsp;le\n"
+"                                    métier.Une formation pratique à l’examen VMDTR&amp;nbsp;est nécessaire pour\n"
+"                                    maîtriser le bon fonctionnement et&amp;nbsp;connaître&amp;nbsp;</span>&amp;nbsp;\n"
+"                                    <font style=\"font-size: 14px;\">les bases du métier.&amp;nbsp;MCM ACADEMY vous\n"
+"                                        propose une formation qui allie formation en&amp;nbsp;présentiel et flexibilité\n"
+"                                        du e-learning&amp;nbsp;et vous assure un suivi tout au long de votre progression\n"
+"                                        par&amp;nbsp;nos&amp;nbsp;formateurs.\n"
+"                                    </font>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"<span style=\"font-size: 14px;\">à une\n"
+"                                                                                note éliminatoire propre. Un\n"
+"                                                                                candidat se verra\n"
+"                                                                            </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"<span style=\"font-size: 14px;\">éliminer\n"
+"                                                                                s'il obtient une note inférieure à\n"
+"                                                                                celle-ci.\n"
+"                                                                            </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"<span style=\"font-weight: bolder;\">\n"
+"                                                            <font style=\"color: rgb(255, 255, 255); font-size: 14px;\">\n"
+"                                                                Coefficient\n"
+"                                                            </font>\n"
+"                                                        </span>\n"
+"                                                        <br/>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"<span style=\"font-weight: bolder;\">\n"
+"                                                            <font style=\"color: rgb(255, 255, 255); font-size: 14px;\">\n"
+"                                                                Nom de matière\n"
+"                                                            </font>\n"
+"                                                        </span>\n"
+"                                                        <br/>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"<span style=\"font-weight: bolder;\">-\n"
+"                                                                                Critère A :&amp;nbsp;</span>Préparation\n"
+"                                                                            et réalisation du parcours (Sur 3\n"
+"                                                                            points)"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"<span style=\"font-weight: bolder;\">-\n"
+"                                                                                Critère B :&amp;nbsp;</span>Conduite et\n"
+"                                                                            sécurité routière (Sur 10 points)"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"<span style=\"font-weight: bolder;\">-\n"
+"                                                                                Critère C :</span>&amp;nbsp;Relation\n"
+"                                                                            client et informations touristiques (Sur\n"
+"                                                                            5 points)"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"<span style=\"font-weight: bolder;\">-\n"
+"                                                                                Critère D :&amp;nbsp;</span>Facturation\n"
+"                                                                            (Sur 2 points)"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_sale_confirmation
+msgid "<span>Confirmed</span>"
+msgstr "Confirmé"
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_sale_confirmation
+msgid "<span>Contrat</span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_sale_total
+msgid "<strong>Montant à payer:</strong>"
+msgstr ""
+
+#. module: mcm_website_theme
+#. openerp-web
+#: code:addons/mcm_website_theme/static/src/xml/account_payment.xml:0
+#, python-format
+msgid "Add"
+msgstr "Ajouter"
+
+#. module: mcm_website_theme
+#. openerp-web
+#: code:addons/mcm_website_theme/static/src/xml/account_payment.xml:0
+#, python-format
+msgid "Amount:"
+msgstr "Montant :"
+
+#. module: mcm_website_theme
+#: code:addons/mcm_website_theme/models/payment_acquirer.py:0
+#, python-format
+msgid ""
+"Bravo ! Commande confirmée \n"
+" Vous allez recevoir dans quelques minutes un mail ! Pas de mail reçu ? Vérifiez dans vos courriers indésirables ou spams."
+msgstr ""
+"Bravo ! Commande confirmée \n"
+" "
+" Vous allez recevoir dans quelques minutes un mail ! Pas de mail reçu ? Vérifiez dans vos courriers indésirables ou spams."
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_template
+msgid "Button border orange"
+msgstr ""
+"Bravo ! Commande confirmée  Vous allez recevoir dans quelques minutes un "
+"mail ! Pas de mail reçu ? Vérifiez dans vos courriers indésirables ou spams."
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_template
+msgid "Catégorie"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"Cet examen\n"
+"                                                                                constitue la dernière étape pour réussir\n"
+"                                                                                l'examen final TAXI."
+msgstr ""
+
+#. module: mcm_website_theme
+#: model:ir.model.fields,field_description:mcm_website_theme.field_payment_acquirer__code
+#: model:ir.model.fields,field_description:mcm_website_theme.field_product_public_category__code
+msgid "Code"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid "Coefficient"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"Comment réussir\n"
+"                                                                    l'examen taxi théorique"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"Connaissance du territoire et de la réglementation locale\n"
+"                                                        <br/>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_address
+msgid "Country..."
+msgstr ""
+
+#. module: mcm_website_theme
+#. openerp-web
+#: code:addons/mcm_website_theme/static/src/xml/account_payment.xml:0
+#, python-format
+msgid "Date:"
+msgstr "Date :"
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid "Durée"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"Développement commercial et gestion propre à l'activité du VMDTR\n"
+"                                                        <br/>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"Développement commercial et gestion propre à l'activité du VTC\n"
+"                                                        <br/>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"F(V) - Développement commercial et gestion propre à l'activité\n"
+"                                                        VTC"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_template
+msgid "FORMATION TAXI&amp;nbsp;"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_template
+msgid "FORMATION VMDTR"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_template
+msgid "FORMATION VTC"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.payment_tokens_list
+msgid "Fee"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_template
+msgid "Formation TAXI"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_template
+msgid "Formation VMDTR"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_template
+msgid "Formation VTC"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid "Formation pratique VMDTR"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid "Formation pratique VTC:"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid "Formation théorique et pratique VMDTR"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid "G(V) - Réglementation nationale spécifique ) l'activité VTC"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"Gestion d'entreprise\n"
+"                                                        <br/>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model:ir.model.fields,field_description:mcm_website_theme.field_payment_acquirer__instalment
+msgid "Instalement"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model:ir.model.fields,field_description:mcm_website_theme.field_sale_order__instalment
+msgid "Instalment"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"L'épreuve\n"
+"                                                                            pratique VTC porte sur 4 critères en\n"
+"                                                                            commun.\n"
+"                                                                            Vous trouverez ci-dessous le barème\n"
+"                                                                            d’évaluation des 3 critères en commun de\n"
+"                                                                            l’examen pratique VTC:"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"L'épreuve théorique s’agit d’une succession de 7 épreuves.Les questions sont\n"
+"                                    proposées sous\n"
+"                                    <span style=\"font-size: 0.875rem;\">forme de</span>\n"
+"                                    <span style=\"font-size: 0.875rem; font-weight: bolder;\">QCM (questions à choix\n"
+"                                        multiples)\n"
+"                                    </span>\n"
+"                                    <span style=\"font-size: 0.875rem;\">et de</span>\n"
+"                                    <span style=\"font-size: 0.875rem; font-weight: bolder;\">QRC (questions à réponses\n"
+"                                        courtes)\n"
+"\n"
+"                                    </span>\n"
+"                                    <span style=\"font-size: 0.875rem;\">.\n"
+"                                    </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"La formation\n"
+"                                                                                pratique TAXI proposée par MCM ACADEMY\n"
+"                                                                                dénombre toutes les"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"La formation\n"
+"                                                                                pratique VTC proposée par MCM ACADEMY\n"
+"                                                                                dénombre toutes les"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"Langue anglaise\n"
+"                                                        <br/>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid "Langue française"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"Le programme\n"
+"                                                                                de formation pratique est dispensé par\n"
+"                                                                                des&amp;nbsp;\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    professionnels\n"
+"                                                                                </span>\n"
+"                                                                                <br/>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    expérimentés&amp;nbsp;\n"
+"                                                                                </span>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">et\n"
+"                                                                                    aux profils sélectionnés.\n"
+"                                                                                </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"Le programme\n"
+"                                                                            de formation pratique est dispensé par\n"
+"                                                                            des&amp;nbsp;\n"
+"                                                                            <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                professionnels\n"
+"\n"
+"                                                                                expérimentés&amp;nbsp;et aux profils\n"
+"                                                                                sélectionnés.\n"
+"                                                                            </span>Une fois l’examen pratique validé, le\n"
+"                                                                            candidat peut entamer les démarches de\n"
+"                                                                            demande de sa carte&amp;nbsp;\n"
+"                                                                            <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                professionnelle et la création de\n"
+"                                                                                son entreprise.\n"
+"\n"
+"                                                                            </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"Les\n"
+"                                                                                thématiques abordées lors de la\n"
+"                                                                                formation pratique balaient largement\n"
+"                                                                                tous"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"Les résultats de l’examen\n"
+"                                                                            taxi théorique vous seront communiqués par\n"
+"                                                                            la Chambre des Métiers et de l'Artisanat\n"
+"                                                                            (CMA) dans les semaines qui suivent\n"
+"                                                                            l’épreuve par mail et sms mais aussi en\n"
+"                                                                            ligne sur le site web de la CMA."
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"Les thématiques abordées\n"
+"                                                                            lors de la formation théorique balaient\n"
+"                                                                            largement tous les modules prévus lors de\n"
+"                                                                            l'examen officiel à savoir la\n"
+"                                                                            réglementation, la gestion, la sécurité\n"
+"                                                                            routière, le développement commercial, et\n"
+"                                                                            les langues française et anglaise."
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_template
+msgid "Liste des départements..."
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"MCM ACADEMY propose une\n"
+"                                                                            formation taxi d’excellence basée sur\n"
+"                                                                            l'expertise de nos formateurs et la\n"
+"                                                                            dédication de toute l&amp;amp;#39;équipe."
+msgstr ""
+
+#. module: mcm_website_theme
+#. openerp-web
+#: code:addons/mcm_website_theme/static/src/xml/account_payment.xml:0
+#, python-format
+msgid "Memo:"
+msgstr "Mémo :"
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_sale_confirmation
+msgid "Merci pour votre paiement."
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid "Modalités d’évaluation VTC"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model:ir.model.fields,field_description:mcm_website_theme.field_sale_order__amount_to_pay
+msgid "Montant à Payer"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid "Note sur"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid "Note éliminatoire"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"Notre formation théorique à\n"
+"                                                                            l’examen taxi vous permettra de mieux\n"
+"                                                                            comprendre le métier de"
+msgstr ""
+
+#. module: mcm_website_theme
+#. openerp-web
+#: code:addons/mcm_website_theme/static/src/xml/account_payment.xml:0
+#, python-format
+msgid "Paid on"
+msgstr "Payé le"
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_sale_total
+msgid "Payer montant sur 3 tranches"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model:ir.model,name:mcm_website_theme.model_payment_acquirer
+msgid "Payment Acquirer"
+msgstr "Intermédiaire de Paiement"
+
+#. module: mcm_website_theme
+#. openerp-web
+#: code:addons/mcm_website_theme/static/src/xml/account_payment.xml:0
+#, python-format
+msgid "Payment Info"
+msgstr "Information de paiement"
+
+#. module: mcm_website_theme
+#. openerp-web
+#: code:addons/mcm_website_theme/static/src/xml/account_payment.xml:0
+#, python-format
+msgid "Payment Journal:"
+msgstr "Journal des paiements"
+
+#. module: mcm_website_theme
+#: model:ir.model,name:mcm_website_theme.model_payment_transaction
+msgid "Payment Transaction"
+msgstr "Transaction"
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"Pour\n"
+"                                                                            rappel, pour réussir l’examen théorique\n"
+"                                                                            taxi, une moyenne générale d’au moins 10/20\n"
+"                                                                            est"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"Pour rappel,\n"
+"                                                                                l’examen <b>TAXI</b> s’effectue en 2\n"
+"                                                                                parties. Une fois, l’examen"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"Pour rappel,\n"
+"                                                                                l’examen <b>VTC</b> s’effectue en 2\n"
+"                                                                                parties. Une fois, l’examen"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"Pour rappel,\n"
+"                                                                            l’examen <b>VTC</b> s’effectue en 2\n"
+"                                                                            parties. Une fois, l’examen\n"
+"                                                                            théorique réussi, il est alors&amp;nbsp;\n"
+"                                                                            <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                admissible à l’épreuve pratique VTC,\n"
+"                                                                                épreuve de\n"
+"                                                                            </span>\n"
+"                                                                            <span style=\"font-size: 0.875rem;\">conduite&amp;nbsp;\n"
+"                                                                                professionnelle&amp;nbsp; que le\n"
+"                                                                                candidat doit réussir&amp;nbsp; dans les\n"
+"                                                                                12 mois. Pour\n"
+"                                                                            </span>\n"
+"                                                                            <span style=\"font-size: 0.875rem;\">réussir\n"
+"                                                                                l’examen&amp;nbsp; pratique VTC&amp;nbsp;\n"
+"                                                                                , une moyenne générale d’au moins 12/20\n"
+"                                                                                est\n"
+"                                                                            </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_sale_confirmation
+msgid "Print"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"Préparation à\n"
+"                                                                    l'examen théorique taxi"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_template
+msgid "Recherche"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"Réglementation du T3P (TRANSPORT PUBLIC PARTICULIER DE\n"
+"                                                        PERSONNES)\n"
+"                                                        <br/>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"Réglementation nationale de l&amp;amp;#39;activité taxi et\n"
+"                                                        gestion propre à cette activité\n"
+"                                                        <br/>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"Réglementation nationale spécifique à l'activité VMDTR\n"
+"                                                        <br/>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"Réglementation nationale spécifique à l'activité VTC\n"
+"                                                        <br/>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_sale_confirmation
+msgid "S'inscrire"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model:ir.model,name:mcm_website_theme.model_sale_order
+msgid "Sales Order"
+msgstr "Bon de commande"
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"Selon la Loi Granguillaume de 2017, devenir chauffeur VTC passe inévitablement par le\n"
+"                                    passage\n"
+"                                    <span style=\"font-size: 0.875rem;\">d’un examen</span>\n"
+"                                    <span style=\"font-size: 0.875rem; font-weight: bolder;\">VTC\n"
+"                                    </span>\n"
+"                                    <span style=\"font-size: 0.875rem;\">. Désormais, l'examen\n"
+"\n"
+"                                    </span>\n"
+"                                    <span style=\"font-size: 0.875rem; font-weight: bolder;\">VTC\n"
+"                                    </span>\n"
+"                                    <span style=\"font-size: 0.875rem;\">se déroule en deux parties: une épreuve\n"
+"                                        théorique</span>et une épreuve pratique."
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"Selon la Loi Granguillaume de 2017, devenir chauffeur taxi passe inévitablement par\n"
+"                                    le passage d’un\n"
+"                                    examen taxi. Désormais, l’examen taxi se déroule en deux parties : une épreuve\n"
+"                                    théorique et une&amp;nbsp;\n"
+"                                    <span style=\"font-size: 0.875rem;\">épreuve pratique.L'épreuve théorique s’agit d’une&amp;nbsp;\n"
+"                                        succession de&amp;nbsp;\n"
+"                                    </span>\n"
+"                                    <span style=\"font-size: 0.875rem; font-weight: bolder;\">7 épreuves\n"
+"                                    </span>\n"
+"                                    <span style=\"font-size: 0.875rem;\">. Les questions sont proposées sous forme&amp;nbsp;\n"
+"                                        de&amp;nbsp;\n"
+"                                    </span>\n"
+"                                    <span style=\"font-size: 0.875rem; font-weight: bolder;\">QCM\n"
+"                                    </span>\n"
+"                                    <span style=\"font-size: 0.875rem;\">&amp;nbsp;(questions à choix multiples) et de&amp;nbsp;\n"
+"                                    </span>\n"
+"                                    <span style=\"font-size: 0.875rem; font-weight: bolder;\">QRC\n"
+"                                    </span>\n"
+"                                    <span style=\"font-size: 0.875rem;\">(questions à &amp;nbsp; réponses courtes).</span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_sale_products_add_to_cart
+msgid "Shopping cart"
+msgstr "Panier"
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"Sécurité routière\n"
+"                                                        <br/>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid "Tapez votre ville"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.payment_tokens_list
+msgid "Test Mode"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model:ir.model.fields,field_description:mcm_website_theme.field_sale_order__instalment_number
+msgid "Tranches"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_sale_total
+msgid "Tranches:"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"Une fois\n"
+"                                                                                l’examen pratique validé, le candidat\n"
+"                                                                                peut entamer les démarches de"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"Une formation à l’examen taxi est requise pour l'obtention de résultats\n"
+"                                    satisfaisants.&amp;nbsp;\n"
+"                                    <span style=\"font-weight: bolder;\">MCM ACADEMY&amp;nbsp;</span>\n"
+"                                    <span style=\"font-size: 0.875rem;\">vous propose une formation qui allie&amp;nbsp;\n"
+"                                    </span>\n"
+"                                    <span style=\"font-size: 0.875rem;\">formation en présentiel et flexibilité du&amp;nbsp;</span>\n"
+"                                    <span style=\"font-size: 0.875rem; font-weight: bolder;\">e-learning</span>\n"
+"                                    <span style=\"font-size: 0.875rem;\">&amp;nbsp;et vous</span>\n"
+"\n"
+"\n"
+"                                    assure un suivi tout au long de votre progression par nos formateurs."
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"Une formation à l’examen<span style=\"font-weight: bolder;\">VTC</span>est\n"
+"                                    requise pour l'obtention de résultats satisfaisants.\n"
+"                                    <span style=\"font-weight: bolder;\">MCM\n"
+"                                    </span>\n"
+"                                    <span style=\"font-size: 0.875rem; font-weight: bolder;\">ACADEMY\n"
+"                                    </span>\n"
+"                                    <span style=\"font-size: 0.875rem;\">vous propose une formation</span>qui allie\n"
+"                                    formation en présentiel et flexibilité du e-learning et\n"
+"                                    <span style=\"font-size: 0.875rem;\">vous assure un suivi tout au long de votre\n"
+"                                        progression par nos formateurs.\n"
+"\n"
+"                                    </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#. openerp-web
+#: code:addons/mcm_website_theme/static/src/xml/account_payment.xml:0
+#, python-format
+msgid "Unreconcile"
+msgstr "Annuler le lettrage"
+
+#. module: mcm_website_theme
+#. openerp-web
+#: code:addons/mcm_website_theme/static/src/xml/account_payment.xml:0
+#, python-format
+msgid "View"
+msgstr "Vue"
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_product_price
+msgid ""
+"Vous devez s'inscrire pour consulter\n"
+"                le prix de formation"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model:ir.model,name:mcm_website_theme.model_website
+msgid "Website"
+msgstr "Site Web"
+
+#. module: mcm_website_theme
+#: model:ir.model,name:mcm_website_theme.model_product_public_category
+msgid "Website Product Category"
+msgstr "Catégorie d'articles du site Web"
+
+#. module: mcm_website_theme
+#. openerp-web
+#: code:addons/mcm_website_theme/static/src/xml/account_payment.xml:0
+#, python-format
+msgid "assign to invoice"
+msgstr "attribuer cette facture"
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"chauffeur taxi, d’en\n"
+"                                                                            maîtriser le fonctionnement et les\n"
+"                                                                            principales règles du métier et de vous"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model:ir.model.constraint,message:mcm_website_theme.constraint_payment_acquirer_code_uniq
+msgid "code déja existe !"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model:ir.model.constraint,message:mcm_website_theme.constraint_product_public_category_code_uniq
+msgid "code déja existe pour une autre catégorie !"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"de chauffeur\n"
+"                                                                                TAXI, d’en maîtriser le&amp;nbsp;\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    fonctionnement et les principales\n"
+"                                                                                    règles du\n"
+"                                                                                </span>\n"
+"                                                                                <br/>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    métier et de vous&amp;nbsp;\n"
+"                                                                                </span>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    préparer au mieux pour réussir&amp;nbsp;\n"
+"                                                                                </span>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    l'examen de TAXI et ainsi,\n"
+"                                                                                </span>\n"
+"                                                                                <br/>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    obtenir votre carte professionnelle.\n"
+"                                                                                </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"de chauffeur\n"
+"                                                                                VTC, d’en maîtriser le&amp;nbsp;\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    fonctionnement et les principales\n"
+"                                                                                    règles du\n"
+"                                                                                </span>\n"
+"\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    métier et de vous&amp;nbsp;\n"
+"                                                                                </span>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    préparer au mieux pour réussir&amp;nbsp;\n"
+"                                                                                </span>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    l'examen de VTC et ainsi,\n"
+"                                                                                </span>\n"
+"\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    obtenir votre carte professionnelle.\n"
+"                                                                                </span>\n"
+"                                                                                Cet examen constitue la dernière étape\n"
+"                                                                                pour réussir l'examen final VTC."
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"demande de sa\n"
+"                                                                                carte&amp;nbsp;\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    professionnelle et la création de\n"
+"                                                                                    son entreprise.\n"
+"                                                                                </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"e-learning.\n"
+"                                                                                Cette&amp;nbsp;\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    formation vous permettra de mieux\n"
+"                                                                                    comprendre le métier\n"
+"                                                                                </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"e-learning.\n"
+"                                                                            Cette&amp;nbsp;\n"
+"                                                                            <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                formation vous permettra de mieux\n"
+"                                                                                comprendre le métier\n"
+"                                                                            </span>\n"
+"                                                                            de chauffeur VTC, d’en maîtriser le&amp;nbsp; <span style=\"font-size: 0.875rem;\">\n"
+"                                                                            fonctionnement et les principales règles du\n"
+"                                                                            métier et de vous&amp;nbsp; préparer au\n"
+"                                                                            mieux pour réussir&amp;nbsp; l'examen de VTC\n"
+"                                                                            et ainsi, obtenir votre carte\n"
+"                                                                            professionnelle.</span>Cet examen constitue\n"
+"                                                                            la dernière étape pour réussir l'examen\n"
+"                                                                            final VTC. Les thématiques abordées lors de\n"
+"                                                                            la formation pratique balaient largement\n"
+"                                                                            tous les modules prévus&amp;nbsp;\n"
+"                                                                            <span style=\"font-size: 0.875rem;\">lors de\n"
+"                                                                                l'examen officiel à savoir l’orientation\n"
+"                                                                                (plan et GPS), le protocole accueil\n"
+"                                                                                client, le service à&amp;nbsp; bord du\n"
+"                                                                                véhicule et la préparation des\n"
+"                                                                                bons de commandes et de factures et\n"
+"                                                                                autres.\n"
+"                                                                            </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"les modules\n"
+"                                                                                prévus&amp;nbsp;\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">lors\n"
+"                                                                                    de l'examen officiel à savoir\n"
+"                                                                                    l’orientation (plan et GPS),\n"
+"\n"
+"                                                                                </span>\n"
+"                                                                                <br/>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">le\n"
+"                                                                                    protocole accueil\n"
+"                                                                                    &amp;nbsp;\n"
+"\n"
+"                                                                                    client, le service à&amp;nbsp;\n"
+"\n"
+"                                                                                    bord\n"
+"                                                                                    du véhicule et la préparation des\n"
+"\n"
+"                                                                                </span>\n"
+"                                                                                <br/>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">bons\n"
+"                                                                                    de commandes et de factures et\n"
+"                                                                                    autres.\n"
+"                                                                                </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"les modules\n"
+"                                                                                prévus&amp;nbsp;\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">lors\n"
+"                                                                                    de l'examen officiel à savoir\n"
+"                                                                                    l’orientation (plan et GPS),\n"
+"\n"
+"                                                                                </span>\n"
+"                                                                                <br/>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">le\n"
+"                                                                                    protocole accueil client, le service\n"
+"                                                                                    à&amp;nbsp; bord du véhicule et la\n"
+"                                                                                    préparation des\n"
+"                                                                                </span>\n"
+"                                                                                <br/>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">bons&amp;nbsp;\n"
+"                                                                                    &amp;nbsp;de\n"
+"                                                                                    commandes et de factures et autres.\n"
+"\n"
+"                                                                                </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"o\n"
+"                                                                            Accueil,\n"
+"                                                                            comportement durant le parcours"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"o\n"
+"                                                                            Conduite en\n"
+"                                                                            sécurité et respect du code de la route"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"o\n"
+"                                                                            Culture\n"
+"                                                                            générale et aptitudes à offrir des\n"
+"                                                                            informations touristiques"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"o\n"
+"                                                                            Maîtrise\n"
+"                                                                            d’une carte imprimée"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"o\n"
+"                                                                            Maîtrise de\n"
+"                                                                            notions de gestion"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"o\n"
+"                                                                            Maîtrise du\n"
+"                                                                            GPS"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"o\n"
+"                                                                            Pertinence du\n"
+"                                                                            parcours adopté et réactivité du\n"
+"                                                                            chauffeur"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"o\n"
+"                                                                            Prise en\n"
+"                                                                            charge et dépose des clients et de leurs\n"
+"                                                                            bagages"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"o\n"
+"                                                                            Présentation\n"
+"                                                                            générale et attitudes du candidat"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"o\n"
+"                                                                            Savoir\n"
+"                                                                            établir un bon de commande et une\n"
+"                                                                            facture"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"o\n"
+"                                                                            Souplesse de\n"
+"                                                                            la conduite assurant le confort des\n"
+"                                                                            passagers"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"o\n"
+"                                                                            Sécurité des\n"
+"                                                                            clients"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"o\n"
+"                                                                            Vérification\n"
+"                                                                            de l’état du véhicule avant et après la\n"
+"                                                                            prestation"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"obligatoire.\n"
+"                                                                                Toutefois, il existe des fautes\n"
+"                                                                                éliminatoires à éviter."
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid ""
+"obligatoire.\n"
+"                                                                            Toutefois, il existe des fautes\n"
+"                                                                            éliminatoires à éviter.\n"
+"                                                                            La formation pratique VTC proposée par MCM\n"
+"                                                                            ACADEMY dénombre toutes les spécificités des&amp;nbsp; <span style=\"font-size: 0.875rem;\">\n"
+"                                                                            anciens examens de la CMA\n"
+"                                                                            nécessaires à la réussite de\n"
+"\n"
+"                                                                        </span>l'épreuve pratique et vous propose une f\n"
+"                                                                            <span style=\"font-size: 0.875rem;\">ormation\n"
+"                                                                                personnalisée de la\n"
+"                                                                                conduite.\n"
+"\n"
+"                                                                            </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"obligatoire. Aussi, chaque\n"
+"                                                                            épreuve est soumise à une note éliminatoire\n"
+"                                                                            propre. Un candidat se verra éliminer s'il\n"
+"                                                                            obtient une note inférieure à celle-ci."
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_sale_confirmation
+msgid "pour suivre votre contrat"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"préparer au mieux pour\n"
+"                                                                            réussir l'examen de taxi et ainsi, obtenir\n"
+"                                                                            votre carte professionnelle."
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.payment_tokens_list
+msgid "s'inscrire"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"spécificités\n"
+"                                                                                des&amp;nbsp;\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    anciens examens de la CMA\n"
+"                                                                                    nécessaires à la réussite de\n"
+"                                                                                </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+msgid ""
+"théorique\n"
+"                                                                                réussi, il est alors&amp;nbsp;\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    admissible à l’épreuve pratique\n"
+"                                                                                    TAXI,\n"
+"                                                                                    épreuve de\n"
+"                                                                                </span>\n"
+"                                                                                <br/>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    conduite&amp;nbsp;\n"
+"                                                                                </span>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    professionnelle&amp;nbsp;\n"
+"                                                                                </span>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">que\n"
+"                                                                                    le candidat doit réussir&amp;nbsp;\n"
+"                                                                                </span>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">dans\n"
+"                                                                                    les 12 mois. Pour\n"
+"                                                                                </span>\n"
+"                                                                                <br/>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    réussir l’examen&amp;nbsp;\n"
+"                                                                                </span>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    pratique TAXI</span>&amp;nbsp;\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">, une\n"
+"                                                                                    moyenne générale d’au moins 12/20\n"
+"                                                                                    est\n"
+"                                                                                </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+msgid ""
+"théorique\n"
+"                                                                                réussi, il est alors&amp;nbsp;\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    admissible à l’épreuve pratique VTC,\n"
+"                                                                                    épreuve de\n"
+"                                                                                </span>\n"
+"                                                                                <br/>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    conduite&amp;nbsp;\n"
+"                                                                                </span>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    professionnelle&amp;nbsp;\n"
+"                                                                                </span>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">que\n"
+"                                                                                    le candidat doit réussir&amp;nbsp;\n"
+"                                                                                </span>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">dans\n"
+"                                                                                    les 12 mois. Pour\n"
+"                                                                                </span>\n"
+"                                                                                <br/>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    réussir l’examen&amp;nbsp;\n"
+"                                                                                </span>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">\n"
+"                                                                                    pratique VTC&amp;nbsp;\n"
+"                                                                                </span>\n"
+"                                                                                <span style=\"font-size: 0.875rem;\">, une\n"
+"                                                                                    moyenne générale d’au moins 12/20\n"
+"                                                                                    est\n"
+"                                                                                </span>"
+msgstr ""
+
+#. module: mcm_website_theme
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_taxi
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vmdtr
+#: model_terms:ir.ui.view,arch_db:mcm_website_theme.mcm_website_theme_vtc
+msgid "Épreuves"
+msgstr ""

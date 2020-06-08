@@ -1,0 +1,33 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mcm_formations_departments
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-07 12:34+0000\n"
+"PO-Revision-Date: 2020-02-07 12:34+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mcm_formations_departments
+#: model_terms:ir.ui.view,arch_db:mcm_formations_departments.mcm_product_template_add_states
+msgid "Name of Departement"
+msgstr "Nom de Département"
+
+#. module: mcm_formations_departments
+#: model:ir.model,name:mcm_formations_departments.model_product_template
+msgid "Product Template"
+msgstr "Modèle d'article"
+
+#. module: mcm_formations_departments
+#: model:ir.model.fields,field_description:mcm_formations_departments.field_product_product__state_ids
+#: model:ir.model.fields,field_description:mcm_formations_departments.field_product_template__state_ids
+#: model_terms:ir.ui.view,arch_db:mcm_formations_departments.mcm_product_template_add_states
+msgid "States"
+msgstr "Départements"

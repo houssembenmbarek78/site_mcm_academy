@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="mcmacademy_view_account_move" model="ir.ui.view">
+        <field name="name">account.move.form</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@id='account_invoice_payment_btn']" position="after">
+                <button name="action_invoice_register_payment_stripe" id="account_invoice_payment_btn" type="object"
+                        class="oe_highlight"
+                        attrs="{'invisible': ['|', '|', ('state', '!=', 'posted'), ('invoice_payment_state', '!=', 'not_paid'), ('type', 'not in', ('out_invoice', 'out_refund', 'in_invoice', 'in_refund', 'out_receipt', 'in_receipt'))]}"
+                        string="Enregistrer un paiement Stripe 3X" groups="account.group_account_invoice"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

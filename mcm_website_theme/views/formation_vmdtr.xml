@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="mcm_website_theme_vmdtr">
+        <t t-call="website.layout">
+            <style>
+                .nav-pills .nav-link.active, .nav-pills .show &gt; .nav-link{
+                background-color:#000;
+
+                }
+                a {
+                color: #000;}
+                a:hover{color:#000;}
+                .btn{
+                background-color:#000;
+                border-color:#000;
+                color:#fff;
+                }
+                .btn:hover{
+                background-color:#7F7E7E;}
+
+            </style>
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="s_text_image pt0 pb0 oe_img_bg oe_custom_bg" data-name="Image - Text"
+                         style="background-image: url(&quot;http://localhost:8069/web/image/1309/background_17580.jpg&quot;);margin-top:-15px">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="listing pb0">
+                                <div class="listing_image">
+                                    <div class="listing_image_container">
+                                        <img style="display:inline-block;"
+                                             src="/mcm_website_theme/static/src/img/VMDTR.jpg" width="500px"
+                                             height="400px" data-original-title="" title=""
+                                             aria-describedby="tooltip695809"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 pt16 pb0">
+                                <h2>Formation théorique et pratique VMDTR</h2>
+                                <h3 style="font-size: calc(1.27812rem + 0.3375vw);">
+                                    <span style="font-size: 14px;">Selon la Loi Granguillaume de 2017, devenir chauffeur
+                                        VMDTR passe inévitablement par le passage&amp;nbsp;d’un examen VMDTR. Désormais,
+                                        l’examen officiel VMDTR se déroule en deux parties :
+                                    </span>
+                                </h3>
+                                <h3 style="font-size: calc(1.27812rem + 0.3375vw);">
+                                    <b>
+                                        <span style="color: rgb(0, 0, 0); font-size: 18px;">Une épreuve&amp;nbsp;théorique</span>
+                                        <span style="color: rgb(0, 0, 0); font-size: 14px;"/>
+                                        <span style="color: rgb(0, 0, 0); font-size: 18px;">et une épreuve pratique
+                                        </span>
+                                        <span style="color: rgb(0, 0, 0); font-size: 14px;">.</span>
+                                    </b>
+                                </h3>
+                                <h3 style="font-size: calc(1.27812rem + 0.3375vw);">
+                                    <span style="font-size: 14px;">L'épreuve pratique s’agit d’une épreuve de conduite
+                                        jugée sur 4 critères, à savoir la préparation&amp;nbsp;et&amp;nbsp;réalisation
+                                        parcours, la sécurité routière&amp;nbsp;et le respect du code de la route, la
+                                        relation client et&amp;nbsp;finalement la&amp;nbsp;facturation. Une fois,
+                                        l’examen pratique validé,
+                                    </span>
+                                </h3>
+                                <h3 style="font-size: calc(1.27812rem + 0.3375vw);"><span style="font-size: 14px;">vous&amp;nbsp;&amp;nbsp;êtes
+                                    en mesure de demander&amp;nbsp;votre carte professionnelle et de ce fait, exercer&amp;nbsp;le
+                                    métier.Une formation pratique à l’examen VMDTR&amp;nbsp;est nécessaire pour
+                                    maîtriser le bon fonctionnement et&amp;nbsp;connaître&amp;nbsp;</span>&amp;nbsp;
+                                    <font style="font-size: 14px;">les bases du métier.&amp;nbsp;MCM ACADEMY vous
+                                        propose une formation qui allie formation en&amp;nbsp;présentiel et flexibilité
+                                        du e-learning&amp;nbsp;et vous assure un suivi tout au long de votre progression
+                                        par&amp;nbsp;nos&amp;nbsp;formateurs.
+                                    </font>
+                                </h3>
+                                <p/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="main-container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 heading pb64">
+                                <span class="title-icon classic float-left">
+
+                                </span>
+                                <h2 class="classic title"><img class="img-fluid o_we_custom_image"
+                                                               src="/mcm_website_theme/static/src/img/f.png" data-original-title=""
+                                                               title="" aria-describedby="tooltip613264"/>&amp;nbsp;
+                                    Découvrez notre formation théorique et pratique VMDTR
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="row landing-tab">
+                            <div class="col-md-3 col-sm-5 pt0" style="">
+                                <div class="nav flex-column nav-pills border-right" id="v-pills-tab" role="tablist"
+                                     aria-orientation="vertical">
+                                    <a class="animated fadeIn nav-link py-4 d-flex align-items-center active"
+                                       data-toggle="pill" href="#tab_1" role="tab" aria-selected="true"
+                                       data-original-title="" title="" aria-describedby="tooltip93201">
+                                        <span class="h4 mb-0 font-weight-bold" data-original-title="" title=""
+                                              aria-describedby="tooltip830594" style="text-align: center;">Formation
+                                            théorique
+                                        </span>
+                                    </a>
+                                    <a class="animated fadeIn nav-link py-4 d-flex align-items-center"
+                                       data-toggle="pill" href="#tab_2" role="tab" aria-selected="false"
+                                       data-original-title="" title="" aria-describedby="tooltip199634">
+                                        <span class="h4 mb-0 font-weight-bold" style="text-align:center"
+                                              data-original-title="" title="" aria-describedby="tooltip520833">Formation
+                                            pratique
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-9 col-sm-7 pb104">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane pl-sm-5 fade animated fadeInLeft active show" id="tab_1"
+                                         role="tabpanel">
+                                        <h3>
+                                            <b>Formation théorique VMDTR</b>
+                                        </h3>
+                                        <p/>
+
+
+                                        <font color="#ff0000" style="font-size: 14px;">&amp;nbsp;L’inscription à
+                                            l’examen
+                                            VMDTR se fait au préalable auprès de la
+                                            Chambre de Métiers et de l’Artisanat (CMA)
+                                        </font>
+
+
+                                        <section class="s_faq_collapse pt0 pb0" data-name="Accordion">
+                                            <div class="container">
+                                                <div class="row s_col_no_bgcolor">
+                                                    <div class="col-lg-12 pt16 pb0">
+                                                        <div id="myCollapse" class="accordion" role="tablist">
+                                                            <div class="card bg-white">
+                                                                <a href="#" role="tab" data-toggle="collapse"
+                                                                   aria-expanded="false" class="card-header collapsed"
+                                                                   data-parent="#myCollapse"
+                                                                   data-target="#myCollapseTab1581499769939"
+                                                                   data-original-title="" title=""
+                                                                   style="text-align: left;">
+                                                                    <font style="color: rgb(0, 0, 0); font-size: 18px;"
+                                                                          data-original-title="" title=""
+                                                                          aria-describedby="tooltip710343">
+                                                                    </font>
+                                                                    <font style="color: rgb(0, 0, 0); font-size: 14px;"
+                                                                          data-original-title="" title=""
+                                                                          aria-describedby="tooltip710343">Préparation à
+                                                                        l'examen théorique VMDTR
+                                                                    </font>
+                                                                    <font style="color: rgb(0, 0, 0); font-size: 18px;"
+                                                                          data-original-title="" title=""
+                                                                          aria-describedby="tooltip710343">
+                                                                    </font>
+                                                                </a>
+                                                                <div class="collapse" role="tabpanel"
+                                                                     id="myCollapseTab1581499769939" style="">
+                                                                    <div class="card-body">
+                                                                        <p class="card-text" style="text-align: left; ">
+                                                                            <span style="font-size: 14px;">Notre
+                                                                                formation théorique à l’examen <b>
+                                                                                    VMDTR
+                                                                                </b> vous permettra de mieux
+                                                                            </span>
+                                                                            <br/>
+                                                                            <br/>
+                                                                            <span style="font-size: 14px;">
+                                                                                comprendre le métier de&amp;nbsp;
+                                                                            </span>
+                                                                            <span style="font-size: 14px;">chauffeur <b>
+                                                                                VMDTR</b>, d’en maîtriser le
+                                                                                fonctionnement
+                                                                            </span>
+                                                                            <br/>
+                                                                            <br/>
+                                                                            <span style="font-size: 14px;">et les
+                                                                                principales règles du&amp;nbsp;
+                                                                            </span>
+                                                                            <span style="font-size: 14px;">métier et
+                                                                                de vous
+                                                                            </span>
+                                                                            <span style="font-size: 14px;">&amp;nbsp;
+                                                                            </span>
+                                                                            <span style="font-size: 14px;">préparer
+                                                                                au mieux pour réussir
+                                                                            </span>
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left; ">
+                                                                            <span style="font-size: 14px;">l'examen
+                                                                                de <b>VMDTR</b> et ainsi, obtenir
+                                                                                votre carte professionnelle.
+                                                                            </span>
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left; ">
+                                                                            <span style="font-size: 14px;">Les
+                                                                                thématiques abordées lors de la
+                                                                                formation théorique balaient
+                                                                                largement
+                                                                            </span>
+                                                                            <br/>
+                                                                            <br/>
+                                                                            <span style="font-size: 14px;">tous les
+                                                                                modules prévus&amp;nbsp;
+                                                                            </span>
+                                                                            <span style="font-size: 14px;">lors de
+                                                                                l'examen officiel à savoir la
+                                                                                réglementation,
+                                                                            </span>
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left; ">
+                                                                            <span style="font-size: 14px;">la
+                                                                                gestion, la sécurité routière, le
+                                                                                développement&amp;nbsp;
+                                                                            </span>
+                                                                            <span style="font-size: 14px;">
+                                                                                commercial, et les langues
+                                                                            </span>
+                                                                            <br/>
+                                                                            <br/>
+                                                                            <span style="font-size: 14px;">française&amp;nbsp;</span>
+                                                                            <span style="font-size: 14px;">et
+                                                                                anglaise.
+                                                                            </span>
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left; ">
+                                                                            <span style="font-size: 14px;">&amp;nbsp;
+                                                                            </span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card bg-white">
+                                                                <a href="#" role="tab" data-toggle="collapse"
+                                                                   aria-expanded="false" class="card-header collapsed"
+                                                                   data-parent="#myCollapse"
+                                                                   data-target="#myCollapseTab1581499769940"
+                                                                   data-original-title="" title=""
+                                                                   style="text-align: left;">
+                                                                    <font style="color: rgb(0, 0, 0); font-size: 14px;"
+                                                                          data-original-title="" title=""
+                                                                          aria-describedby="tooltip481734">Comment
+                                                                        réussir l'examen VMDTR théorique&amp;nbsp;
+                                                                    </font>
+                                                                    <font style="color: rgb(0, 0, 0); font-size: 18px;"
+                                                                          data-original-title="" title=""
+                                                                          aria-describedby="tooltip481734">
+                                                                    </font>
+                                                                </a>
+                                                                <div class="collapse" role="tabpanel"
+                                                                     id="myCollapseTab1581499769940" style="">
+                                                                    <div class="card-body">
+                                                                        <p class="card-text" style="text-align: left; ">
+                                                                            <span style="font-size: 14px;">Pour
+                                                                                rappel, pour réussir l’examen
+                                                                                théorique VMDTR, une moyenne
+                                                                                générale
+                                                                            </span>
+                                                                            <br/>
+                                                                            <br/>
+                                                                            <span style="font-size: 14px;">d’au
+                                                                                moins 10/20 est&amp;nbsp;
+                                                                            </span>
+                                                                            <span style="font-size: 14px;">
+                                                                                obligatoire. Aussi, chaque épreuve
+                                                                                est soumise
+                                                                            </span>
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left; ">
+                                                                            <span style="font-size: 14px;">à une
+                                                                                note éliminatoire propre. Un
+                                                                                candidat se verra
+                                                                            </span>
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left; ">
+                                                                            <span style="font-size: 14px;">éliminer
+                                                                                s'il obtient une note inférieure à
+                                                                                celle-ci.
+                                                                            </span>
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left; ">
+                                                                            <span style="font-size: 14px;">Les
+                                                                                résultats de l’examen VMDTR
+                                                                                théorique vous seront communiqués
+                                                                                par la
+                                                                            </span>
+                                                                            <br/>
+                                                                            <br/>
+                                                                            <span style="font-size: 14px;">Chambre
+                                                                                des Métiers&amp;nbsp;
+                                                                            </span>
+                                                                            <span style="font-size: 14px;">et de
+                                                                                l'Artisanat (CMA) dans les semaines
+                                                                                qui suivent
+                                                                            </span>
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left; ">
+                                                                            <span style="font-size: 14px;">l’épreuve
+                                                                                par mail et sms mais aussi en ligne
+                                                                                sur&amp;nbsp;
+                                                                            </span>
+                                                                            <span style="font-size: 14px;">le site
+                                                                                web de la CMA.
+                                                                            </span>
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left; ">
+                                                                            <span style="font-size: 14px;">
+                                                                                <b>MCM ACADEMY</b>
+                                                                                propose une formation VMDTR
+                                                                                d’excellence basée sur
+                                                                            </span>
+                                                                            <br/>
+                                                                            <br/>
+                                                                            <span style="font-size: 14px;">
+                                                                                l'expertise de nos formateurs&amp;nbsp;
+                                                                            </span>
+                                                                            <span style="font-size: 14px;">et la
+                                                                                dédication de toute l'équipe.
+                                                                            </span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <h1 class="s_title_lines" style="overflow: hidden;">
+                                            <span style="color: rgb(0, 0, 0); font-size: 18px;">
+                                                <b>Épreuve d'admissibilité:</b>
+
+                                            </span>
+
+                                        </h1>
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="background-color: rgb(0, 0, 0);">
+                                                        <span style="font-weight: bolder;">
+                                                            <font style="color: rgb(255, 255, 255); font-size: 14px;">
+                                                                Nom de matière
+                                                            </font>
+                                                        </span>
+                                                        <br/>
+                                                    </td>
+                                                    <td style="background-color: rgb(0, 0, 0);">
+                                                        <span style="font-weight: bolder;">
+                                                            <font style="color: rgb(255, 255, 255); font-size: 14px;">
+                                                                Coefficient
+                                                            </font>
+                                                        </span>
+                                                        <br/>
+                                                    </td>
+                                                    <td style="background-color: rgb(0, 0, 0);">
+                                                        <span style="color: rgb(255, 255, 255); font-size: 14px; font-weight: bolder;">
+                                                            Durée
+                                                        </span>
+                                                        <br/>
+                                                    </td>
+                                                    <td style="background-color: rgb(0, 0, 0);">
+                                                        <span style="color: rgb(255, 255, 255); font-size: 14px; font-weight: bolder;">
+                                                            Note
+                                                            éliminatoire
+                                                        </span>
+                                                        <span style="font-weight: bolder; font-size: 14px;"/>
+                                                        <br/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Réglementation du T3P (TRANSPORT PUBLIC PARTICULIER DE
+                                                        PERSONNES)
+                                                        <br/>
+
+                                                    </td>
+                                                    <td>
+                                                        3
+                                                        <br/>
+
+                                                    </td>
+                                                    <td>
+                                                        45 minutes
+                                                        <br/>
+
+                                                    </td>
+                                                    <td>
+                                                        6/20
+                                                        <br/>
+
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Gestion d'entreprise
+                                                        <br/>
+
+                                                    </td>
+                                                    <td>
+                                                        2
+
+                                                    </td>
+                                                    <td>
+                                                        45 minutes
+                                                        <br/>
+
+                                                    </td>
+                                                    <td>
+                                                        6/20
+                                                        <br/>
+
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Sécurité routière
+                                                        <br/>
+
+                                                    </td>
+                                                    <td>
+                                                        3
+
+                                                    </td>
+                                                    <td>
+                                                        30 minutes
+                                                        <br/>
+
+                                                    </td>
+                                                    <td>
+                                                        6/20
+                                                        <br/>
+
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Langue française
+                                                    </td>
+                                                    <td>2</td>
+                                                    <td>30 minutes
+                                                        <br/>
+                                                    </td>
+                                                    <td>
+                                                        6/20
+                                                        <br/>
+
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Langue anglaise
+                                                        <br/>
+
+                                                    </td>
+                                                    <td>
+                                                        1
+
+                                                    </td>
+                                                    <td>
+                                                        30 minutes
+                                                        <br/>
+
+                                                    </td>
+                                                    <td>
+                                                        4/20
+                                                        <br/>
+
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Développement commercial et gestion propre à l'activité du VMDTR
+                                                        <br/>
+
+                                                    </td>
+                                                    <td>3
+                                                    </td>
+                                                    <td>
+                                                        30 minutes
+                                                        <br/>
+
+                                                    </td>
+                                                    <td>
+                                                        6/20
+                                                        <br/>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Réglementation nationale spécifique à l'activité VMDTR
+                                                        <br/>
+                                                    </td>
+                                                    <td>3
+                                                    </td>
+                                                    <td>20 minutes
+                                                        <br/>
+                                                    </td>
+                                                    <td>6/20
+                                                        <br/>
+
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div style="text-align: center;">
+                                            <div>
+                                                <br/>
+                                            </div>
+                                        </div>
+                                        <div style="text-align: center;"><span style="font-size: 0.875rem;">
+                                            &amp;nbsp;</span>&amp;nbsp;
+                                            <br/>
+                                            <div class="container">
+                                                <div class="cover">
+                                                    <form t-att-action="action if action else '/shop'"
+                                                          class="flex-form">
+                                                        <script>
+                                                            function verifyState() {
+                                                            var input=document.getElementById("vmdtr_state").value;
+                                                            if(input.trim() != '') {
+                                                            $('#vmdtrSubmitBtn').removeAttr('disabled');
+                                                            }
+                                                            };
+                                                        </script>
+                                                        <label for="from">
+                                                            <i class="ion-location"/>
+                                                        </label>
+                                                        <input type="text" name="vmdtr_state" id="vmdtr_state"
+                                                               class="state-search-query form-control search-slt"
+                                                               placeholder="Tapez votre ville" list="states_datalist"
+                                                               onchange="verifyState()"/>
+                                                        <datalist id="states_datalist">
+                                                            <span t-set="states" t-value="website.get_states()"/>
+                                                            <span t-foreach="states" t-as="state">
+                                                                <option t-att-value="state.name"/>
+                                                            </span>
+                                                        </datalist>
+                                                        <input type="submit" value="Recherche" disabled="true"
+                                                               id="vmdtrSubmitBtn"/>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <form/>
+                                    </div>
+                                    <div class="tab-pane pl-sm-5 fade animated fadeInLeft" id="tab_2" role="tabpanel">
+                                        <h3>Formation pratique VMDTR</h3>
+                                        <font color="#ff0000" style="font-size: 14px;">L’inscription à l’examen
+                                            VTC se fait au préalable auprès de la Chambre de Métiers et de
+                                            l’Artisanat (CMA)
+                                        </font>
+
+                                        <br/>
+                                        <font color="#ff0000" style="">
+                                            <span style="color: rgb(0, 0, 0); font-size: 18px;">
+                                                Épreuve d'admission:
+                                            </span>
+                                        </font>
+
+
+                                        <div class="tab-pane pl-sm-5 fade animated fadeInLeft active show" id="tab_2"
+                                             role="tabpanel" style="text-align: center; ">
+                                            <section class="s_faq_collapse pt0 pb0" data-name="Accordion" style="">
+                                                <div class="container" style="">
+                                                    <div class="row s_col_no_bgcolor" style="">
+                                                        <div class="col-lg-12 pt16 pb16" style="">
+                                                            <div id="myCollapse" class="accordion" role="tablist"
+                                                                 style="">
+                                                                <div class="card bg-white" style="">
+                                                                    <a href="#" role="tab" data-toggle="collapse"
+                                                                       aria-expanded="false"
+                                                                       class="card-header collapsed"
+                                                                       data-parent="#myCollapse"
+                                                                       data-target="#myCollapseTab1581503928464"
+                                                                       data-original-title="" title=""
+                                                                       style="text-align: left;">
+                                                                        <font style="color: rgb(0, 0, 0);"
+                                                                              data-original-title="" title=""
+                                                                              aria-describedby="tooltip269276"/>
+                                                                        <font style="color: rgb(0, 0, 0); font-size: 14px;"
+                                                                              data-original-title="" title=""
+                                                                              aria-describedby="tooltip269276">
+                                                                            Préparation à l'examen pratique VTC&amp;nbsp;
+                                                                        </font>
+                                                                    </a>
+                                                                    <div class="collapse" role="tabpanel"
+                                                                         id="myCollapseTab1581503928464" style="">
+                                                                        <div class="card-body" style="">
+                                                                            <p class="card-text"
+                                                                               style="text-align: left; "><b>MCM
+                                                                                ACADEMY</b>vous propose une formation
+                                                                                pratique, en présentiel comme en
+                                                                            </p>
+                                                                            <p class="card-text"
+                                                                               style="text-align: left; ">e-learning.
+                                                                                Cette&amp;nbsp;
+                                                                                <span style="font-size: 0.875rem;">
+                                                                                    formation vous permettra de mieux
+                                                                                    comprendre le métier
+                                                                                </span>
+                                                                            </p>
+                                                                            <p class="card-text"
+                                                                               style="text-align: left; ">de chauffeur
+                                                                                VTC, d’en maîtriser le&amp;nbsp;
+                                                                                <span style="font-size: 0.875rem;">
+                                                                                    fonctionnement et les principales
+                                                                                    règles du
+                                                                                </span>
+
+                                                                                <span style="font-size: 0.875rem;">
+                                                                                    métier et de vous&amp;nbsp;
+                                                                                </span>
+                                                                                <span style="font-size: 0.875rem;">
+                                                                                    préparer au mieux pour réussir&amp;nbsp;
+                                                                                </span>
+                                                                                <span style="font-size: 0.875rem;">
+                                                                                    l'examen de VTC et ainsi,
+                                                                                </span>
+
+                                                                                <span style="font-size: 0.875rem;">
+                                                                                    obtenir votre carte professionnelle.
+                                                                                </span>
+                                                                                Cet examen constitue la dernière étape
+                                                                                pour réussir l'examen final VTC.
+                                                                            </p>
+                                                                            <p class="card-text"
+                                                                               style="text-align: left; ">Les
+                                                                                thématiques abordées lors de la
+                                                                                formation pratique balaient largement
+                                                                                tous
+                                                                            </p>
+                                                                            <p class="card-text"
+                                                                               style="text-align: left; ">les modules
+                                                                                prévus&amp;nbsp;
+                                                                                <span style="font-size: 0.875rem;">lors
+                                                                                    de l'examen officiel à savoir
+                                                                                    l’orientation (plan et GPS),
+
+                                                                                </span>
+                                                                                <br/>
+                                                                                <span style="font-size: 0.875rem;">le
+                                                                                    protocole accueil
+                                                                                    &amp;nbsp;
+
+                                                                                    client, le service à&amp;nbsp;
+
+                                                                                    bord
+                                                                                    du véhicule et la préparation des
+
+                                                                                </span>
+                                                                                <br/>
+                                                                                <span style="font-size: 0.875rem;">bons
+                                                                                    de commandes et de factures et
+                                                                                    autres.
+                                                                                </span>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card bg-white" style="">
+                                                                    <a href="#" role="tab" data-toggle="collapse"
+                                                                       aria-expanded="false"
+                                                                       class="card-header collapsed"
+                                                                       data-parent="#myCollapse"
+                                                                       data-target="#myCollapseTab1581503928465"
+                                                                       data-original-title="" title=""
+                                                                       style="text-align: left;">
+                                                                        <font style="color: rgb(0, 0, 0); font-size: 14px;"
+                                                                              data-original-title="" title=""
+                                                                              aria-describedby="tooltip108369">Comment
+                                                                            réussir l'examen pratique VTC
+                                                                            <b>&amp;nbsp;</b>
+                                                                        </font>
+                                                                    </a>
+                                                                    <div class="collapse" role="tabpanel"
+                                                                         id="myCollapseTab1581503928465" style="">
+                                                                        <div class="card-body" style="">
+                                                                            <p class="card-text"
+                                                                               style="text-align: left; ">Pour rappel,
+                                                                                l’examen <b>VTC</b> s’effectue en 2
+                                                                                parties. Une fois, l’examen
+                                                                            </p>
+                                                                            <p class="card-text"
+                                                                               style="text-align: left; ">théorique
+                                                                                réussi, il est alors&amp;nbsp;
+                                                                                <span style="font-size: 0.875rem;">
+                                                                                    admissible à l’épreuve pratique VTC,
+                                                                                    épreuve de
+                                                                                </span>
+                                                                                <br/>
+                                                                                <span style="font-size: 0.875rem;">
+                                                                                    conduite&amp;nbsp;
+                                                                                </span>
+                                                                                <span style="font-size: 0.875rem;">
+                                                                                    professionnelle&amp;nbsp;
+                                                                                </span>
+                                                                                <span style="font-size: 0.875rem;">que
+                                                                                    le candidat doit réussir&amp;nbsp;
+                                                                                </span>
+                                                                                <span style="font-size: 0.875rem;">dans
+                                                                                    les 12 mois. Pour
+                                                                                </span>
+                                                                                <br/>
+                                                                                <span style="font-size: 0.875rem;">
+                                                                                    réussir l’examen&amp;nbsp;
+                                                                                </span>
+                                                                                <span style="font-size: 0.875rem;">
+                                                                                    pratique VTC&amp;nbsp;
+                                                                                </span>
+                                                                                <span style="font-size: 0.875rem;">, une
+                                                                                    moyenne générale d’au moins 12/20
+                                                                                    est
+                                                                                </span>
+                                                                            </p>
+                                                                            <p class="card-text"
+                                                                               style="text-align: left; ">obligatoire.
+                                                                                Toutefois, il existe des fautes
+                                                                                éliminatoires à éviter.
+                                                                            </p>
+                                                                            <p class="card-text"
+                                                                               style="text-align: left; ">La formation
+                                                                                pratique VTC proposée par MCM ACADEMY
+                                                                                dénombre toutes les
+                                                                            </p>
+                                                                            <p class="card-text"
+                                                                               style="text-align: left; ">spécificités
+                                                                                des&amp;nbsp;
+                                                                                <span style="font-size: 0.875rem;">
+                                                                                    anciens examens de la CMA
+                                                                                    nécessaires à la réussite de
+                                                                                </span>
+                                                                            </p>
+                                                                            <p class="card-text"
+                                                                               style="text-align: left; ">&amp;nbsp;l'épreuve
+                                                                                pratique et vous propose une f
+                                                                                <span style="font-size: 0.875rem;">
+                                                                                    ormation personnalisée de la
+                                                                                    conduite.
+                                                                                </span>
+                                                                            </p>
+                                                                            <p class="card-text"
+                                                                               style="text-align: left; ">Le programme
+                                                                                de formation pratique est dispensé par
+                                                                                des&amp;nbsp;
+                                                                                <span style="font-size: 0.875rem;">
+                                                                                    professionnels
+                                                                                </span>
+                                                                                <br/>
+                                                                                <span style="font-size: 0.875rem;">
+                                                                                    expérimentés&amp;nbsp;
+                                                                                </span>
+                                                                                <span style="font-size: 0.875rem;">et
+                                                                                    aux profils sélectionnés.
+                                                                                </span>
+                                                                            </p>
+                                                                            <p class="card-text"
+                                                                               style="text-align: left; ">Une fois
+                                                                                l’examen pratique validé, le candidat
+                                                                                peut entamer les démarches de
+                                                                            </p>
+                                                                            <p class="card-text"
+                                                                               style="text-align: left; ">demande de sa
+                                                                                carte&amp;nbsp;
+                                                                                <span style="font-size: 0.875rem;">
+                                                                                    professionnelle et la création de
+                                                                                    son entreprise.
+                                                                                </span>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                        <div class="tab-pane pl-sm-5 fade animated fadeInLeft active show" id="tab_2"
+                                             role="tabpanel" style="text-align: center; ">
+                                            <div class="tab-pane pl-sm-5 fade animated fadeInLeft active show"
+                                                 id="tab_2" role="tabpanel" style="">
+                                                <div class="tab-pane pl-sm-5 fade animated fadeInLeft active show"
+                                                     id="tab_2" role="tabpanel"/>
+                                            </div>
+                                            <div class="active animated fade fadeInLeft pl-sm-5 show tab-pane"
+                                                 id="tab_2" role="tabpanel" style="">&amp;nbsp;
+                                                <font color="#ff0000" style="color: rgb(0, 0, 0);">
+                                                    <b>&amp;nbsp;</b>
+                                                </font>
+                                            </div>
+                                        </div>
+                                        <section class="pb32 pt0" data-name="Title">
+                                            <div class="container">
+                                                <div class="row s_nb_column_fixed">
+                                                    <div class="col-lg-12 s_title pb0 pt0" style="text-align: center;">
+                                                        <div class="s_btn pb16 text-center pt0" data-name="Button">
+                                                            <div class="container">
+                                                                <div class="cover">
+                                                                    <form t-att-action="action if action else '/shop'"
+                                                                          class="flex-form">
+                                                                        <script>
+                                                                            function verifyState() {
+                                                                            var
+                                                                            input=document.getElementById("vmdtr_state").value;
+                                                                            if(input.trim() != '') {
+                                                                            $('#vmdtrSubmitBtn').removeAttr('disabled');
+                                                                            }
+                                                                            };
+                                                                        </script>
+                                                                        <label for="from">
+                                                                            <i class="ion-location"/>
+                                                                        </label>
+                                                                        <input type="text" name="vmdtr_state"
+                                                                               id="vmdtr_state"
+                                                                               class="state-search-query form-control search-slt"
+                                                                               placeholder="Tapez votre ville"
+                                                                               list="states_datalist"
+                                                                               onchange="verifyState()"/>
+                                                                        <datalist id="states_datalist">
+                                                                            <span t-set="states"
+                                                                                  t-value="website.get_states()"/>
+                                                                            <span t-foreach="states" t-as="state">
+                                                                                <option t-att-value="state.name"/>
+                                                                            </span>
+                                                                        </datalist>
+                                                                        <input type="submit" value="Recherche"
+                                                                               disabled="true" id="vmdtrSubmitBtn"/>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <h1 class="s_title_default" style="text-align: left; ">
+                                                            <br/>
+                                                        </h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <br/>
+                                    </div>
+                                    <div class="tab-pane pl-sm-5 fade animated fadeInLeft" id="tab_3" role="tabpanel">
+                                        <h3>Modalités d’évaluation VTC</h3>
+                                        <br/>
+                                        <table>
+                                            <tbody>
+                                                <tr style="background-color:#000;color:#fff">
+                                                    <td>Épreuves</td>
+                                                    <td>Durée</td>
+                                                    <td>Note sur</td>
+                                                    <td>Coefficient</td>
+                                                    <td>Note éliminatoire</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>F(V) - Développement commercial et gestion propre à l'activité
+                                                        VTC
+                                                    </td>
+                                                    <td>30 '</td>
+                                                    <td>20 points</td>
+                                                    <td>3</td>
+                                                    <td>6/20</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>G(V) - Réglementation nationale spécifique ) l'activité VTC</td>
+                                                    <td>20 '</td>
+                                                    <td>20 points</td>
+                                                    <td>3</td>
+                                                    <td>6/20</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+</odoo>

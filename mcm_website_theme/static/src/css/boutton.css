@@ -1,0 +1,55 @@
+.Button {
+	box-shadow: 0px 10px 14px -7px #000000;
+	
+	background-color:#779499;
+	border-radius:4px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#fff;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:10px 8px;
+	text-decoration:none;
+
+	width:80px;
+	height:50px;
+	text-align:center;
+}
+.Button:hover {
+	background:linear-gradient(to bottom, #fff 5%, #779499 100%);
+	background-color:#000;
+}
+.Button:active {
+	position:relative;
+	top:1px;
+}
+.Button2 {
+	box-shadow: 0px 10px 14px -7px #779499;
+	background-color:##779499;
+	border-radius:4px;
+	border:1px solid ##779499;
+	display:inline-block;
+	cursor:pointer;
+	color:#000;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px ##779499;
+	width:100%;
+	height:50px;
+	text-align:center;
+}
+.Button2:hover {
+	background:linear-gradient(to bottom, ##779499 5%, ##779499 100%);
+	background-color:#779499;
+}
+.Button2:active {
+	position:relative;
+	top:1px;
+}
+
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="auth_signup_fields_extend" inherit_id="auth_signup.fields" name="Signup Fields Extend">
+            <xpath expr="//div[hasclass('field-name')]" position="after">
+                 <div class="form-group field-phone">
+                    <label for="phone" class="control-label">Téléphone</label>
+                    <input type="tel" name="phone" t-att-value="phone" id="phone" class="form-control" required="required"/>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>

@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="sale.portal_my_home_menu_sale" name="Portal layout : sales menu entries"
+              inherit_id="portal.portal_breadcrumbs" priority="20">
+        <xpath expr="//ol[hasclass('o_portal_submenu')]" position="inside">
+            <li t-if="page_name == 'quote' or sale_order and sale_order.state in ('sent', 'cancel')"
+                t-attf-class="breadcrumb-item #{'active ' if not sale_order else ''}">
+                <a t-if="sale_order" t-attf-href="/my/quotes?{{ keep_query() }}">Contrat non signé</a>
+                <t t-else="">Contrat non signé</t>
+            </li>
+            <li t-if="page_name == 'order' or sale_order and sale_order.state not in ('sent', 'cancel')"
+                t-attf-class="breadcrumb-item #{'active ' if not sale_order else ''}">
+                <a t-if="sale_order" t-attf-href="/my/orders?{{ keep_query() }}">Contrat signé</a>
+                <t t-else="">Contrat signé</t>
+            </li>
+            <li t-if="sale_order" class="breadcrumb-item active">
+                <span>Contrat</span>
+                <t t-esc="sale_order.name"/>
+            </li>
+        </xpath>
+    </template>
+
+    <template id="portal_contract.portal_my_home_sale" inherit_id="sale.portal_my_home_sale">
+        <xpath expr="//t[@t-if='quotation_count']" position="replace">
+            <t t-if="quotation_count" t-call="portal.portal_docs_entry">
+                <t t-set="title">Contrats non signés</t>
+                <t t-set="url" t-value="'/my/quotes'"/>
+                <t t-set="count" t-value="quotation_count"/>
+            </t>
+        </xpath>
+        <xpath expr="//t[@t-if='order_count']" position="replace">
+            <t t-if="order_count" t-call="portal.portal_docs_entry">
+                <t t-set="title">Contrats signés</t>
+                <t t-set="url" t-value="'/my/orders'"/>
+                <t t-set="count" t-value="order_count"/>
+            </t>
+        </xpath>
+    </template>
+    <template id="portal_contract.portal_my_quotations" inherit_id="sale.portal_my_quotations">
+        <xpath expr="//t[@t-call='portal.portal_layout']" position="replace">
+            <t t-call="portal.portal_layout">
+                <t t-set="breadcrumbs_searchbar" t-value="True"/>
+
+                <t t-call="portal.portal_searchbar">
+                    <t t-set="title">Contrats non signés</t>
+                </t>
+                <t t-if="not quotations">
+                    <p>Il n’y a actuellement aucun contrats non signés pour votre compte.</p>
+                </t>
+                <t t-if="quotations" t-call="portal.portal_table">
+                    <thead>
+                        <tr class="active">
+                            <th>Contrat</th>
+                            <th class="text-right">Date de contrat</th>
+                        </tr>
+                    </thead>
+                    <t t-foreach="quotations" t-as="quotation">
+                        <tr>
+                            <td>
+                                <a t-att-href="quotation.get_portal_url()">
+                                    <t t-esc="quotation.name"/>
+                                </a>
+                            </td>
+                            <td class="text-right">
+                                <span t-field="quotation.date_order"/>
+                            </td>
+                        </tr>
+                    </t>
+                </t>
+            </t>
+        </xpath>
+    </template>
+    <template id="portal_contract.portal_my_orders" inherit_id="sale.portal_my_orders">
+        <xpath expr="//t[@t-call='portal.portal_layout']" position="replace">
+            <t t-call="portal.portal_layout">
+                <t t-set="breadcrumbs_searchbar" t-value="True"/>
+
+                <t t-call="portal.portal_searchbar">
+                    <t t-set="title">Contrats signés</t>
+                </t>
+                <t t-if="not orders">
+                    <p>Il n’y a actuellement aucun contrat signé pour votre compte.</p>
+                </t>
+                <t t-if="orders" t-call="portal.portal_table">
+                    <thead>
+                        <tr class="active">
+                            <th>
+                                <span class='d-none d-md-inline'>Contrat</span>
+                            </th>
+                            <th class="text-right">Date de contrat</th>
+                        </tr>
+                    </thead>
+                    <t t-foreach="orders" t-as="order">
+                        <tr>
+                            <td>
+                                <a t-att-href="order.get_portal_url()">
+                                    <t t-esc="order.name"/>
+                                </a>
+                            </td>
+                            <td class="text-right">
+                                <span t-field="order.date_order" t-options="{'widget': 'date'}"/>
+                            </td>
+                        </tr>
+                    </t>
+                </t>
+            </t>
+        </xpath>
+    </template>
+    <template id="portal_contract.sale_order_portal_template" inherit_id="sale.sale_order_portal_template">
+        <xpath expr="//div[@class='row mt16 o_portal_sale_sidebar']" position="replace">
+            <div class="row mt16 o_portal_sale_sidebar">
+                <!-- Sidebar -->
+                <t t-call="portal.portal_record_sidebar">
+                    <t t-set="classes" t-value="'col-lg-auto d-print-none'"/>
+
+                    <t t-set="title">
+                        <h2 class="mb-0">
+                            <b t-field="sale_order.amount_total" data-id="total_amount"/>
+                        </h2>
+                    </t>
+                    <t t-set="entries">
+                        <ul class="list-group list-group-flush flex-wrap flex-row flex-lg-column">
+                            <li class="list-group-item flex-grow-1">
+                                <a t-if="sale_order.has_to_be_signed(True)" role="button"
+                                   class="btn btn-primary btn-block mb8" data-toggle="modal" data-target="#modalaccept"
+                                   href="#">
+                                    <i class="fa fa-check"/>
+                                    <!--                                    <t t-if="sale_order.has_to_be_paid(True)">Sign &amp; Pay</t>-->
+                                    <t>Accepter et signer</t>
+                                </a>
+                                <!--                                <a t-elif="sale_order.has_to_be_paid(True)" role="button" id="o_sale_portal_paynow"-->
+                                <!--                                   data-toggle="modal" data-target="#modalaccept" href="#"-->
+                                <!--                                   t-att-class="'btn-block mb8 %s' % ('btn btn-light' if sale_order.transaction_ids else 'btn btn-primary')">-->
+                                <!--                                    <i class="fa fa-check"/>-->
+                                <!--                                    <t t-if="not sale_order.signature">Accept &amp; Pay</t>-->
+                                <!--                                    <t t-else="">Pay Now</t>-->
+                                <!--                                </a>-->
+                                <div class="o_download_pdf btn-toolbar flex-sm-nowrap">
+                                    <div class="btn-group flex-grow-1 mr-1 mb-1">
+                                        <a class="btn btn-secondary btn-block o_download_btn"
+                                           t-att-href="sale_order.get_portal_url(report_type='pdf', download=True)"
+                                           title="Download">
+                                            <i class="fa fa-download"/>
+                                            Télécharger
+                                        </a>
+                                    </div>
+                                    <div class="btn-group flex-grow-1 mb-1">
+                                        <a class="btn btn-secondary btn-block o_print_btn o_portal_invoice_print"
+                                           t-att-href="sale_order.get_portal_url(report_type='pdf')"
+                                           id="print_invoice_report" title="Print" target="_blank">
+                                            <i class="fa fa-print"/>
+                                            Imprimer
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="navspy list-group-item pl-0 flex-grow-1" t-ignore="true" role="complementary">
+                                <ul class="nav flex-column bs-sidenav"></ul>
+                            </li>
+
+                            <!--                            <t t-if="not sale_order.is_expired and sale_order.state in ['draft', 'sent']">-->
+                            <!--                                <li t-if="sale_order.remaining_validity_days &gt; 0" class="list-group-item">-->
+                            <!--                                    <small>-->
+                            <!--                                        <b class="text-muted">This offer expires in</b>-->
+                            <!--                                    </small>-->
+                            <!--                                    <div class="day_counter">-->
+                            <!--                                        <i class="fa fa-clock-o" aria-label="Dates" title="Dates"></i>-->
+                            <!--                                        <t t-esc="sale_order.remaining_validity_days"/>-->
+                            <!--                                        <t t-if="sale_order.remaining_validity_days &gt; 1">days</t>-->
+                            <!--                                        <t t-else="">day</t>-->
+                            <!--                                    </div>-->
+                            <!--                                </li>-->
+                            <!--                                <li t-if="sale_order.amount_undiscounted - sale_order.amount_untaxed &gt; 0.01"-->
+                            <!--                                    class="list-group-item flex-grow-1">-->
+                            <!--                                    <small>-->
+                            <!--                                        <b class="text-muted">Your advantage</b>-->
+                            <!--                                    </small>-->
+                            <!--                                    <small>-->
+                            <!--                                        <b t-field="sale_order.amount_undiscounted"-->
+                            <!--                                           t-options='{"widget": "monetary", "display_currency": sale_order.pricelist_id.currency_id}'-->
+                            <!--                                           style="text-decoration: line-through"-->
+                            <!--                                           class="d-block mt-1"-->
+                            <!--                                           data-id="amount_undiscounted"/>-->
+                            <!--                                    </small>-->
+                            <!--                                    <t t-if="sale_order.amount_untaxed == sale_order.amount_total">-->
+                            <!--                                        <h4 t-field="sale_order.amount_total" class="text-success"-->
+                            <!--                                            data-id="total_amount"/>-->
+                            <!--                                    </t>-->
+                            <!--                                    <t t-else="">-->
+                            <!--                                        <h4 t-field="sale_order.amount_untaxed" class="text-success mb-0"-->
+                            <!--                                            data-id="total_untaxed"/>-->
+                            <!--                                        <small>(-->
+                            <!--                                            <span t-field="sale_order.amount_total" data-id="total_amount"/>-->
+                            <!--                                            Incl. tax)-->
+                            <!--                                        </small>-->
+                            <!--                                    </t>-->
+                            <!--                                </li>-->
+                            <!--                            </t>-->
+
+                            <li t-if="sale_order.user_id" class="list-group-item flex-grow-1">
+                                <div class="small mb-1">
+                                    <strong class="text-muted">Responsable</strong>
+                                </div>
+                                <div class="row flex-nowrap">
+                                    <div class="col flex-grow-0 pr-2">
+                                        <img class="rounded-circle mr4 float-left o_portal_contact_img"
+                                             t-if="sale_order.user_id.image_1024"
+                                             t-att-src="image_data_uri(sale_order.user_id.image_1024)" alt="Contact"/>
+                                        <img class="rounded-circle mr4 float-left o_portal_contact_img"
+                                             t-if="not sale_order.user_id.image_1024"
+                                             src="/web/static/src/img/placeholder.png" alt="Contact"/>
+                                    </div>
+                                    <div class="col pl-0" style="min-width: 150px">
+                                        <span t-field="sale_order.user_id"
+                                              t-options='{"widget": "contact", "fields": ["name", "phone"], "no_marker": True}'/>
+                                        <a href="#discussion" class="small">
+                                            <i class="fa fa-comment"></i>
+                                            Envoyer un message
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </t>
+                </t>
+
+                <!-- Page content -->
+                <div id="quote_content" class="col-12 col-lg justify-content-end">
+
+                    <!-- modal relative to the actions sign and pay -->
+                    <div role="dialog" class="modal fade" id="modalaccept">
+                        <div class="modal-dialog" t-if="sale_order.has_to_be_signed(True)">
+                            <form id="accept" method="POST" t-att-data-order-id="sale_order.id"
+                                  t-att-data-token="sale_order.access_token"
+                                  class="js_accept_json modal-content js_website_submit_form">
+                                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                <header class="modal-header">
+                                    <h4 class="modal-title">Confirmer le contrat</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">&amp;times;</button>
+                                </header>
+                                <main class="modal-body" id="sign-dialog">
+                                    <p>
+                                        <span>En signant ce contract, vous acceptez les conditions suivantes :</span>
+                                        <ul>
+                                            <li>
+                                                <span>Accepté au nom de :</span>
+                                                <b t-field="sale_order.partner_id.commercial_partner_id"/>
+                                            </li>
+                                            <li>
+                                                <span>Pour un montant de :</span>
+                                                <b data-id="total_amount" t-field="sale_order.amount_total"/>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <t t-call="portal.signature_form">
+                                        <t t-set="call_url" t-value="sale_order.get_portal_url(suffix='/accept')"/>
+                                        <t t-set="default_name" t-value="sale_order.partner_id.name"/>
+                                    </t>
+                                </main>
+                            </form>
+                        </div>
+                    </div>
+
+
+                    <!-- status messages -->
+                    <div t-if="message == 'sign_ok'" class="alert alert-success alert-dismissable d-print-none"
+                         role="status">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">&amp;times;</button>
+                        <strong>Merci!</strong>
+                        <br/>
+                        <t t-if="message == 'sign_ok' and sale_order.state in ['sale', 'done']">Votre contrat a été
+                            signé.
+                        </t>
+                        <t t-else="">Votre contrat a été signé</t>
+                    </div>
+
+
+                    <!--                    <t t-if="sale_order.transaction_ids">-->
+                    <!--                        <t t-call="payment.payment_confirmation_status">-->
+                    <!--                            <t t-set="payment_tx_id" t-value="sale_order.get_portal_last_transaction()"/>-->
+                    <!--                            <t t-set="reference" t-value="sale_order.reference"/>-->
+                    <!--                        </t>-->
+                    <!--                    </t>-->
+
+                    <!--                    <div t-if="sale_order.state == 'cancel'" class="alert alert-danger alert-dismissable d-print-none"-->
+                    <!--                         role="alert">-->
+                    <!--                        <button type="button" class="close" data-dismiss="alert" aria-label="close">&amp;times;</button>-->
+                    <!--                        <strong>This quotation has been canceled.</strong>-->
+                    <!--                        <a role="button" href="#discussion">-->
+                    <!--                            <i class="fa fa-comment"/>-->
+                    <!--                            Contact us to get a new quotation.-->
+                    <!--                        </a>-->
+                    <!--                    </div>-->
+
+                    <!--                    <div t-if="sale_order.is_expired" class="alert alert-warning alert-dismissable d-print-none"-->
+                    <!--                         role="alert">-->
+                    <!--                        <button type="button" class="close" data-dismiss="alert" aria-label="close">&amp;times;</button>-->
+                    <!--                        <strong>This offer expired!</strong>-->
+                    <!--                        <a role="button" href="#discussion">-->
+                    <!--                            <i class="fa fa-comment"/>-->
+                    <!--                            Contact us to get a new quotation.-->
+                    <!--                        </a>-->
+                    <!--                    </div>-->
+
+                    <!-- main content -->
+                    <div t-attf-class="card #{'pb-5' if report_type == 'html' else ''}">
+                        <div t-call="sale.sale_order_portal_content"/>
+                    </div>
+
+                    <!-- bottom actions -->
+                    <div t-if="sale_order.has_to_be_signed(True) or sale_order.has_to_be_paid(True)"
+                         class="row justify-content-center text-center d-print-none pt-1 pb-4">
+
+                        <t t-if="sale_order.has_to_be_signed(True)">
+                            <div class="col-sm-auto mt8">
+                                <a role="button" class="btn btn-primary" data-toggle="modal" data-target="#modalaccept"
+                                   href="#">
+                                    <i class="fa fa-check"/>
+                                    <t>Accepter et signer</t>
+                                </a>
+                            </div>
+                            <div class="col-sm-auto mt8">
+                                <a role="button" class="btn btn-secondary" href="#discussion">
+                                    <i class="fa fa-comment"/>
+                                    Discussion
+                                </a>
+                            </div>
+                        </t>
+                    </div>
+
+                    <!-- chatter -->
+                    <div id="sale_order_communication" class="mt-4">
+                        <h2>Historique</h2>
+                        <t t-call="portal.message_thread">
+                            <t t-set="object" t-value="sale_order"/>
+                        </t>
+                    </div>
+                </div><!-- // #quote_content -->
+            </div>
+        </xpath>
+    </template>
+    <template id="mcm_sale_order_portal_content" inherit_id="sale.sale_order_portal_content">
+        <xpath expr="//div[@id='introduction']" position="replace">
+            #contenu {
+            font:Verdana, Geneva, sans-serif;
+            font-size:18px;
+            text-align:left;
+            height:50px;
+            vertical-align:middle;
+            line-height: 50px;
+            }
+            <div id="introduction" t-attf-class="pb-2 pt-3 #{'card-header bg-white' if report_type == 'html' else ''}">
+                <h2 class="my-0">
+                    <t>Contrat</t>
+                    <em t-esc="sale_order.partner_id.name"/>
+                </h2>
+            </div>
+        </xpath>
+        <xpath expr="//div[2]" position="replace">
+            <div t-attf-class="#{'card-body' if report_type == 'html' else ''}">
+                <div class="row">
+                    <div class="col-3">
+                    </div>
+                    <div class="col-8">
+                        <strong>
+                            <span style="font-size:25px" t-if="sale_order.partner_id.company_type == 'person'">Contrat
+                                de
+                                formation
+                                professionnelle
+                            </span>
+                            <span style="font-size:19px" t-if="sale_order.partner_id.company_type == 'company'">
+                                Convention
+                                de formation
+                                professionnelle
+                            </span>
+                        </strong>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                    </div>
+                    <div class="col-6" style="margin-left:30px">
+                        <span t-if="sale_order.partner_id.company_type == 'person'" style="font-size: 10px;">
+                            (Articles L. 6353-3 à L. 6353-7 du code du travail)
+                        </span>
+                        <span t-if="sale_order.partner_id.company_type == 'company'" style="font-size: 10px;">
+                            (Articles L. 6353-1 et L. 6353-2 du code du travail)
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+
+                        <strong>
+                            <span style="font-size:18px">
+                                <b>Entre l'organisme de formation:</b>
+                            </span>
+                            <span style="font-size:20px" t-field="sale_order.company_id.name"/>
+                        </strong>
+
+                        <div>
+                            <span style="font-size:10px;font-style: italic;">(ci-après nommé l'organisme de
+                                formation)
+                            </span>
+                        </div>
+                        <div>
+                            <span style="font-size:14px">Situé:</span>
+                            <span style="font-size:14px" t-field="sale_order.company_id.street"/>
+                            <span></span>
+                            <span style="font-size:14px" t-field="sale_order.company_id.zip"/>
+                            <span></span>
+                            <span style="font-size:14px" t-field="sale_order.company_id.city"/>
+                        </div>
+                        <div>
+                            <span style="font-size:14px">Déclaration d'activité n°</span>
+                            <span style="font-size:14px" t-field="sale_order.company_id.activity_declaration_number"/>
+                            <span style="font-size:14px">, Numéro SIRET:</span>
+                            <span style="font-size:14px" t-field="sale_order.company_id.siret"/>
+                        </div>
+                        <div>
+                            <span style="font-size:14px">Représenté par:</span>
+                            <span style="font-size:14px" t-field="sale_order.company_id.mcm_responsable_id.name"/>
+                        </div>
+                        <div>
+                            <strong>
+                                <span style="font-size:18px">Et le bénéficiaire:</span>
+                                <span style="font-size:20px" t-field="sale_order.partner_id.name"/>
+                            </strong>
+                        </div>
+                        <div>
+                            <span style="font-size:9px;font-style: italic;">(ci-après nommé l'organisme de
+                                formation)
+                            </span>
+                        </div>
+                        <div>
+                            <span style="font-size:14px">Situé:</span>
+                            <span style="font-size:14px" t-field="sale_order.partner_id.street"/>
+                            <span></span>
+                            <span style="font-size:14px" t-field="sale_order.partner_id.zip"/>
+                            <span></span>
+                            <span style="font-size:14px" t-field="sale_order.partner_id.city"/>
+                        </div>
+                        <div t-if="sale_order.partner_id.company_type == 'company'">
+                            <span style="font-size:14px">Représenté par:</span>
+                            <span style="font-size:14px" t-field="sale_order.partner_id.name"/>
+                        </div>
+                        <div t-if="sale_order.partner_id.company_type == 'company'">
+                            <span style="font-size:14px">Est conclue la convention suivante en application des
+                                dispositions du livre IX du
+                                Code du travail portant sur l'organisation de la
+                                formation professionnelle continue dans le cadre de l’éducation permanente.
+                            </span>
+                        </div>
+                        <div>
+                            <strong>
+                                <span style="font-size:16px">1. Objet, nature et durée de la formation</span>
+                            </strong>
+                        </div>
+                        <div>
+                            <span style="font-size:12px">Le bénéficiaire entend faire participer une partie de son
+                                personnel à l’action de
+                                formation suivante organisée par l’organisme de formation.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="background-color:#EAEAEA;width:100%;height:40px">
+                    <div class="col-6">
+                    </div>
+                    <div class="col-6">
+                        <strong>
+                            <span style="font-size:16px;background-color:#EAEAEA;width:100%;height:40px;color:#000;margin-left:-42px"
+                                  t-field="sale_order.partner_id.mcm_session_id.name"/>
+                        </strong>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div>
+                            <span style="font-size:12px">Type d’action de formation (art. L6313-1 du code du
+                                travail):
+                            </span>
+                            <span style="font-size:12px" t-field="sale_order.partner_id.mcm_session_id.action_type_id.name"/>
+                        </div>
+                        <div>
+                            <span style="font-size:12px">Diplôme visé :</span>
+                            <span style="font-size:12px" t-field="sale_order.partner_id.mcm_session_id.diplome_vise"/>
+                        </div>
+                        <div>
+                            <span style="font-size:12px">Date de la formation : </span>
+                            <span style="font-size:12px" t-field="sale_order.partner_id.mcm_session_id.date_debut"
+                                  t-options='{"widget": "date"}'/>
+                            <span style="font-size:12px">au</span>
+                            <span style="font-size:12px" t-field="sale_order.partner_id.mcm_session_id.date_fin"
+                                  t-options='{"widget": "date"}'/>
+                        </div>
+                        <div>
+                            <span style="font-size:12px">Lieu de la formation:</span>
+                            <span style="font-size:12px"
+                                  t-if="sale_order.partner_id.module_id.product_id.distance_formation==false"
+                                  t-field="sale_order.partner_id.module_id.lieu.address"/>
+                            <span style="font-size:12px"
+                                  t-if="sale_order.partner_id.module_id.product_id.distance_formation==true">à distance
+                            </span>
+                        </div>
+                        <div>
+                            <span style="font-size:12px">Durée de la formation :</span>
+                            <span style="font-size:12px"
+                                  t-field="sale_order.partner_id.module_id.duree"/>
+                        </div>
+                        <div>
+                            <span style="font-size:12px">Horraires :</span>
+                                <span style="font-size:12px">de</span>
+                                <span style="font-size:12px" t-field="sale_order.partner_id.module_id.heure_debut_matin" />
+                                <span style="font-size:12px"> à </span>
+                                <span style="font-size:12px" t-field="sale_order.partner_id.module_id.heure_fin_matin" />
+                                <span style="font-size:12px"> de </span>
+                                <span style="font-size:12px" t-field="sale_order.partner_id.module_id.heure_debut_apres_midi" />
+                                <span style="font-size:12px"> à </span>
+                                <span style="font-size:12px" t-field="sale_order.partner_id.module_id.heure_fin_apres_midi" />
+                        </div>
+                        <div>
+                            <strong>
+                                <span style="font-size:16px">2. Programme de la formation et formateur</span>
+                            </strong>
+                        </div>
+                        <div>
+                            <span style="font-size:12px">La description détaillée du programme de formation et du
+                                formateur est fournie en
+                                annexe. Le niveau de connaissances préalables requis pour suivre la formation et
+                                obtenir les qualifications auxquelles elle prépare est détaillé dans ce programme.
+                            </span>
+                        </div>
+                        <div>
+                            <strong>
+                                <span style="font-size:16px">3. Engagement de participation à l'action de
+                                    formation
+                                </span>
+                            </strong>
+                        </div>
+                        <div t-if="sale_order.partner_id.company_type == 'person'">
+                            <span style="font-size:12px">Le bénéficiaire s’engage à assurer
+                                sa présence aux dates et lieux prévus
+                                ci-dessus.
+                            </span>
+                        </div>
+                        <div t-if="sale_order.partner_id.company_type == 'company'">
+                            <div>
+                                <span>
+                                    <strong style="font-size:12px">Stagiaires:</strong>
+                                </span>
+                            </div>
+                            <div>
+                                <t t-foreach="sale_order.partner_id.child_ids"
+                                   t-as="line">
+                                    <span style="font-size:12px" t-field="line.name"/>
+                                </t>
+                            </div>
+                        </div>
+                        <div>
+                            <strong>
+                                <span style="font-size:16px">4. Prix de la formation</span>
+                            </strong>
+                        </div>
+                        <div>
+                            <span style="font-size:12px">En contrepartie de cette action de formation, le
+                                bénéficiaire s'acquittera des
+                                coûts suivants qui couvrent l'intégralité des frais engagés par l'organisme de
+                                formation pour cette session:
+                            </span>
+                        </div>
+                        <div>
+                            <span style="font-size:12px">Coût unitaire HT :</span>
+                            <span style="font-size:12px" t-field="sale_order.partner_id.module_id.particulier_price_untaxed"
+                                  t-options='{"widget": "monetary", "display_currency": sale_order.currency_id}'/>
+                        </div>
+                        <div>
+                            <table name="product description details"
+                                   style="width: 100%; border-bottom:1px solid lightgrey; page-break-inside: avoid;">
+                                <thead>
+                                    <tr style="width: 100%; border-bottom:1px solid lightgrey;">
+                                        <th name="th_description" class="text-left">
+                                            <strong>
+                                                <span style="font-size:12px">Description</span>
+                                            </strong>
+                                        </th>
+                                        <th name="th_description" class="text-right">
+                                            <strong>
+                                                <span style="font-size:12px">Prix</span>
+                                            </strong>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach="sale_order.partner_id.module_id.module_details_ids"
+                                       t-as="line">
+                                        <tr style="width: 100%; border-bottom:1px solid lightgrey;">
+                                            <td name="td_product_details_name" class="text-left">
+                                                <span style="font-size:12px" t-field="line.name"/>
+                                                <span></span>
+                                                <span style="font-size:12px" t-field="line.duree"/>
+                                            </td>
+                                            <td name="td_product_details_price" class="text-right">
+                                                <span style="font-size:12px" t-field="line.prix_normal"
+                                                      t-options='{"widget": "monetary", "display_currency": sale_order.currency_id}'/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                    <tr style="width: 100%; border-bottom:1px solid lightgrey;"
+                                        t-if="sale_order.partner_id.special_tarif==true">
+                                        <td name="td_remise" class="text-left">
+                                            <span style="font-size:12px" t-field="sale_order.partner_id.discount_name"/>
+                                        </td>
+                                        <td name="td_remise_price" class="text-right">
+                                            <span style="font-size:12px" t-field="sale_order.partner_id.discount"
+                                                  t-options='{"widget": "monetary", "display_currency": sale_order.currency_id}'/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+                            <span style="font-size:12px">L’organisme de formation atteste être exonéré de TVA.</span>
+                        </div>
+                        <div>
+                            <strong>
+                                <span style="font-size:12px">TOTAL NET DE TAXES:</span>
+                                <span style="font-size:12px"
+                                      t-field="sale_order.partner_id.module_id.prix_normal"
+                                      t-options='{"widget": "monetary", "display_currency": sale_order.currency_id}'/>
+                            </strong>
+                        </div>
+                        <div>
+                            <h6>
+                                <strong>
+                                    <span style="font-size:16px">5. Modalités de règlement</span>
+                                </strong>
+                            </h6>
+                        </div>
+                        <div>
+                            <span style="font-size:12px">
+                                Le paiement sera dû à réception d'une facture émise par l'organisme de formation à
+                                destination du bénéficiaire.
+                            </span>
+                        </div>
+                        <div>
+                            <span style="font-size:12px">
+                                Le bénéficiaire s’engage à verser la somme due selon les modalités de paiement
+                                suivantes :
+                            </span>
+                        </div>
+                        <div>
+                            <ul>
+                                <li style="font-size:12px">Après un délai de rétractation mentionné à l’article 11 du
+                                    présent contrat, le
+                                    stagiaire effectue un premier versement d’un montant de 30% du total.
+                                </li>
+                                <li style="font-size:12px">Il est rappelé aussi :</li>
+                                <li style="font-size:12px">Après un délai de rétractation de :</li>
+                                <li style="font-size:12px">Dix jours à compter de la date de signature du contrat ;
+                                </li>
+                            </ul>
+                            <span style="font-size:12px;margin-left:200px">ou</span>
+                            <ul>
+                                <li style="font-size:12px">Quatorze jours pour les contrats conclus à distance ou
+                                    hors d’établissement,
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <span style="font-size:12px">
+                                Sous réserve des dispositions de l’article L 6353-6 du Code du travail, le paiement
+                                du solde de la formation à la charge du stagiaire pourra être, à sa demande, réglé
+                                en un seul versement.
+                            </span>
+                        </div>
+                        <div>
+                            <strong>
+                                <span style="font-size:16px">6.1 Modalités de déroulement : Moyens pédagogiques et
+                                    techniques mis en
+                                    œuvre
+                                </span>
+                            </strong>
+                        </div>
+                        <div>
+                            <span style="font-size:12px">
+                                Voir le programme de formation en annexe détaillant les moyens mis en œuvre pour
+                                réaliser techniquement l'action, suivre son exécution et apprécier ses
+                                résultats. Une feuille d’émargement signée par le(s) stagiaire(s) et le formateur,
+                                par demi-journée de formation, permettra de justifier de la réalisation de la
+                                prestation.
+                            </span>
+                        </div>
+                        <div>
+                            <strong>
+                                <span style="font-size:16px">6.2 Modalités relatives à la location de voiture
+                                </span>
+                            </strong>
+                        </div>
+                        <div>
+                            <span style="font-size:12px">
+                                Pour la formation pratique, le bénéficiaire de la formation s’engage à respecter les
+                                règles du Code de la route durant la formation et durant l’examen.
+                                Il est rappelé que le stagiaire demeure responsable des fautes commises dans le
+                                cadre de sa conduite.
+                                En cas d’infraction au Code de la route, le conducteur pourra être déclaré
+                                responsable pécuniairement en qualité d’auteur véritable de l’infraction et
+                                identifié au
+                                moment où l’infraction a été commise. En outre, il est rappelé qu’une franchise est
+                                prévue en cas de dommages (tous accidents) qui s’élèvent à la somme de 400
+                                euros. En cas d’accident responsable, le montant de la franchise sera à la charge du
+                                locataire. Il est rappelé expressément, qu’en cas d’annulation de la réservation
+                                dans un délai inférieur à 72 heures, aucun remboursement ne pourra être demandé à
+                                MCM ACADEMY, sauf cas de force majeur justifié.
+                            </span>
+                        </div>
+                        <div>
+                            <strong>
+                                <span style="font-size:16px">7. Sanction de la formation
+                                </span>
+                            </strong>
+                        </div>
+                        <div>
+                            <span style="font-size:12px">
+                                En application de l’article L.6353-1 du Code du Travail, une attestation mentionnant
+                                les matiéres, la nature et la durée de l’action et les résultats de l’évaluation des
+                                acquis de la formation sera remise au(x) stagiaire(s) à l’issue de la formation.
+                            </span>
+                        </div>
+                        <div style="page-break-inside: avoid;">
+                            <ul>
+                                <li style="font-size:12px">Quiz en salle</li>
+                                <li style="font-size:12px">Accueil des stagiaires dans une salle dédiée à la
+                                    formation.
+                                </li>
+                                <li style="font-size:12px">Documents supports de formation projetés.</li>
+                                <li style="font-size:12px">Mise à disposition en ligne de documents supports à la
+                                    suite de la formation.
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h6>
+                                <strong>
+                                    <span style="font-size:16px">8. Non réalisation de la prestation de formation
+                                    </span>
+                                </strong>
+                            </h6>
+                        </div>
+                        <div>
+                            <span style="font-size:12px">
+                                En application de l’article L6354-1 du Code du travail, il est convenu entre les
+                                signataires de la présente convention, que faute de résiliation totale ou partielle
+                                de la
+                                prestation de formation, l’organisme prestataire doit rembourser au cocontractant
+                                les sommes indûment perçues de ce fait.
+                            </span>
+                        </div>
+                        <div>
+                            <h6>
+                                <strong>
+                                    <span style="font-size:16px">9. Dédommagement, réparation ou dédit
+                                    </span>
+                                </strong>
+                            </h6>
+                        </div>
+                        <div>
+                            <span style="font-size:12px">
+                                A compter de la date de signature du présent contrat, le bénéficiaire a un délai de
+                                10 jours pour se rétracter. Le délai de rétractation est porté à 14 jours (article
+                                L.121-16 du Code de la consommation) pour les contrats conclus « à distance » et les
+                                contrats conclus « hors établissement ». Il en informe l’organisme de
+                                formation par lettre recommandée avec accusé de réception. Dans ce cas, aucune somme
+                                ne peut être exigée du bénéficiaire.
+                                Si le bénéficiaire est empêché de suivre la formation par suite de force majeure
+                                dûment reconnue, le contrat de formation professionnelle est résilié. Dans ce cas,
+                                seules les prestations effectivement dispensées sont dues au prorata temporis de
+                                leur valeur prévue au présent contrat.
+                                En cas de renoncement par le bénéficiaire avant le début du programme de formation
+                            </span>
+                        </div>
+                        <div>
+                            <ul>
+                                <li style="font-size:12px">Dans un délai inférieur à 3 semaines avant le début de la
+                                    formation : 50 % du
+                                    coût de la formation est dû.
+                                </li>
+                                <li style="font-size:12px">Dans un délai inférieur à 2 semaines avant le début de la
+                                    formation : 100 % du
+                                    coût de la formation est dû.
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <span style="font-size:12px">
+                                En cas d’absence du stagiaire, le remboursement ne pourra être demandé qu’en cas de
+                                force majeur et au prorata du nombre de jour d’absence et sur présentation
+                                de justificatif.
+                            </span>
+                        </div>
+                        <div>
+                            <h6>
+                                <strong>
+                                    <span style="font-size:16px">10. Moyen de contrôle de l'assiduité
+                                    </span>
+                                </strong>
+                            </h6>
+                        </div>
+                        <div>
+                            <span style="font-size:12px">
+                                Feuille d'émargement individuelle pour les formations en présentiel, plus
+                                attestation assiduité.
+                                Relevé de connexion pour les formations à distance, plus attestation assiduité.
+                            </span>
+                        </div>
+                        <div>
+                            <strong>
+                                <span style="font-size:16px">11. Litiges
+                                </span>
+                            </strong>
+                        </div>
+                        <div>
+                            <span style="font-size:12px">
+                                Si une contestation ou un différend ne peuvent pas être réglés à l’amiable, le
+                                Tribunal de 
+                            </span>
+                            <span style="font-size:12px" t-field="sale_order.company_id.city"/>
+                            <span style="font-size:12px">sera seul compétent pour régler le litige.
+
+                                Document réalisé en 2 exemplaires à
+                            </span>
+                            <span style="font-size:12px" t-field="sale_order.company_id.city"/>
+                            <span style="font-size:12px">
+                                , le
+                            </span>
+                            <span style="font-size:12px" t-field="sale_order.date_order"
+                                  t-options='{"widget": "date"}'/>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <span style="font-size:12px">
+                            Pour l'organisme de formation,
+                        </span>
+                    </div>
+                    <div class="col-6">
+                        <span style="font-size:12px">
+                            Pour le bénéficiaire
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <span style="font-size:13px" t-field="sale_order.company_id.name"/>
+                        <span style="font-size:13px">,</span>
+                        <span style="font-size:13px" t-field="sale_order.company_id.mcm_responsable_id.name"/>
+                    </div>
+                    <div class="col-6">
+                        <span style="font-size:13px" t-field="sale_order.partner_id.name"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div t-if="sale_order.company_id.mcm_responsable_id.name" class="mt32 ml64 mr4"
+                             name="responsable_signature">
+                            <img t-att-src="image_data_uri(sale_order.company_id.mcm_responsable_id.signature_partner)"
+                                 style="height: 70px; width: 100px; margin-left:-70px"/>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div t-if="sale_order.signature" class="mt32 ml64 mr4" name="signature">
+                            <img t-att-src="image_data_uri(sale_order.signature)"
+                                 style="max-height: 2cm; max-width: 6cm;"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+    <template id="web.brand_promotion_message" name="Brand Promotion Message">
+        <t t-set="odoo_logo">
+        </t>
+        <t t-set="final_message"></t>
+        <t/>
+    </template>
+    <template id="mcm_portal_record_sidebar" inherit_id="portal.portal_record_sidebar">
+        <xpath expr="//div[@class='card-footer small text-center text-muted border-top-0 pt-1 pb-1 d-none d-lg-block']"
+               position="replace">
+        </xpath>
+    </template>
+</odoo>

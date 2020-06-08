@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="mcm_website_theme_vtc">
+        <t t-call="website.layout">
+            <style>
+                .nav-pills .nav-link.active, .nav-pills .show &gt; .nav-link{
+                background-color:#000;
+
+                }
+                a {
+                color: #000;}
+                a:hover{color:#000;}
+                .btn{
+                background-color:#000;
+                border-color:#000;
+                color:#fff;
+                }
+                .btn:hover{
+                background-color:#7F7E7E;}
+
+            </style>
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="s_text_image pt0 pb0 oe_img_bg oe_custom_bg" data-name="Image - Text"
+                         style="background-image: url(&quot;http://localhost:8069/web/image/1309/background_17580.jpg&quot;);margin-top:-15px">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="listing pb0">
+                                <div class="listing_image">
+                                    <div class="listing_image_container">
+                                        <img style="display:inline-block;"
+                                             src="/mcm_website_theme/static/src/img/VTC.jpg" width="500px"
+                                             height="400px" data-original-title="" title=""
+                                             aria-describedby="tooltip695809"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pt16 pb16 col-lg-5 offset-lg-1">
+                                <h2>
+                                    <font style="font-size: 36px;">
+                                        <b>FORMATION VTC</b>
+                                    </font>
+                                </h2>
+                                <p>Selon la Loi Granguillaume de 2017, devenir chauffeur VTC passe inévitablement par le
+                                    passage
+                                    <span style="font-size: 0.875rem;">d’un examen</span>
+                                    <span style="font-size: 0.875rem; font-weight: bolder;">VTC
+                                    </span>
+                                    <span style="font-size: 0.875rem;">. Désormais, l'examen
+
+                                    </span>
+                                    <span style="font-size: 0.875rem; font-weight: bolder;">VTC
+                                    </span>
+                                    <span style="font-size: 0.875rem;">se déroule en deux parties: une épreuve
+                                        théorique</span>et une épreuve pratique.
+                                </p>
+                                <p>L'épreuve théorique s’agit d’une succession de 7 épreuves.Les questions sont
+                                    proposées sous
+                                    <span style="font-size: 0.875rem;">forme de</span>
+                                    <span style="font-size: 0.875rem; font-weight: bolder;">QCM (questions à choix
+                                        multiples)
+                                    </span>
+                                    <span style="font-size: 0.875rem;">et de</span>
+                                    <span style="font-size: 0.875rem; font-weight: bolder;">QRC (questions à réponses
+                                        courtes)
+
+                                    </span>
+                                    <span style="font-size: 0.875rem;">.
+                                    </span>
+                                </p>
+                                <p>Une formation à l’examen<span style="font-weight: bolder;">VTC</span>est
+                                    requise pour l'obtention de résultats satisfaisants.
+                                    <span style="font-weight: bolder;">MCM
+                                    </span>
+                                    <span style="font-size: 0.875rem; font-weight: bolder;">ACADEMY
+                                    </span>
+                                    <span style="font-size: 0.875rem;">vous propose une formation</span>qui allie
+                                    formation en présentiel et flexibilité du e-learning et
+                                    <span style="font-size: 0.875rem;">vous assure un suivi tout au long de votre
+                                        progression par nos formateurs.
+
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="main-container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 heading pb0">
+                                <span class="title-icon classic float-left">
+
+                                </span>
+                                <div class="s_hr text-left pt32 pb32" data-name="Separator">
+                                    <hr class="s_hr_1px s_hr_solid border-600 w-100 mx-auto"/>
+                                </div>
+                                <h2 class="classic title"><img class="img-fluid o_we_custom_image"
+                                                               src="/mcm_website_theme/static/src/img/f.png" data-original-title=""
+                                                               title="" aria-describedby="tooltip613264"/>&amp;nbsp;
+                                    Découvrez notre formation théorique et pratique VTC
+                                </h2>
+                                <div class="s_hr text-left pb72 pt72" data-name="Separator">
+                                    <hr class="s_hr_1px s_hr_solid border-600 w-100 mx-auto"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row landing-tab">
+                            <div class="col-md-3 col-sm-5 pt0" style="">
+                                <div class="nav flex-column nav-pills border-right" id="v-pills-tab" role="tablist"
+                                     aria-orientation="vertical">
+                                    <a class="animated fadeIn nav-link py-4 d-flex align-items-center active"
+                                       data-toggle="pill" href="#tab_1" role="tab" aria-selected="false"
+                                       data-original-title="" title="" aria-describedby="tooltip93201">
+                                        <span class="h4 mb-0 font-weight-bold" data-original-title="" title=""
+                                              aria-describedby="tooltip830594" style="text-align: center;">Formation
+                                            théorique
+                                        </span>
+                                    </a>
+                                    <a class="animated fadeIn nav-link py-4 d-flex align-items-center "
+                                       data-toggle="pill" href="#tab_2" role="tab" aria-selected="true"
+                                       data-original-title="" title="" aria-describedby="tooltip199634">
+                                        <span class="h4 mb-0 font-weight-bold" style="text-align:center"
+                                              data-original-title="" title="" aria-describedby="tooltip520833">Formation
+                                            pratique
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-9 col-sm-7 pb104">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane pl-sm-5 fade animated fadeInLeft active show" id="tab_1"
+                                         role="tabpanel">
+                                        <h3>
+                                            <b>Formation théorique VTC:</b>
+                                        </h3>
+                                        <div style="text-align: left;">
+                                            <span style="font-size: 14px; color: rgb(255, 0, 0);">L’inscription à
+                                                l’examen VTC se fait au préalable auprès de la
+                                                Chambre de Métiers et de l’Artisanat (CMA)
+                                            </span>
+                                        </div>
+                                        <section class="s_faq_collapse pt0 pb0" data-name="Accordion">
+                                            <div class="container">
+                                                <div class="row s_col_no_bgcolor">
+                                                    <div class="col-lg-12 pt16 pb0">
+                                                        <div id="myCollapse" class="accordion" role="tablist">
+                                                            <div class="card bg-white">
+                                                                <a href="#" role="tab" data-toggle="collapse"
+                                                                   aria-expanded="false" class="card-header collapsed"
+                                                                   data-parent="#myCollapse"
+                                                                   data-target="#myCollapseTab1581499769939"
+                                                                   data-original-title="" title=""
+                                                                   style="text-align: left;">
+                                                                    <font style="color: rgb(0, 0, 0); font-size: 18px;"
+                                                                          data-original-title="" title=""
+                                                                          aria-describedby="tooltip710343">
+                                                                    </font>
+                                                                    <font style="color: rgb(0, 0, 0); font-size: 14px;"
+                                                                          data-original-title="" title=""
+                                                                          aria-describedby="tooltip710343">Préparation à
+                                                                        l'examen théorique VTC
+                                                                    </font>
+                                                                    <font style="color: rgb(0, 0, 0); font-size: 18px;"
+                                                                          data-original-title="" title=""
+                                                                          aria-describedby="tooltip710343">
+                                                                    </font>
+                                                                </a>
+                                                                <div class="collapse" role="tabpanel"
+                                                                     id="myCollapseTab1581499769939" style="">
+                                                                    <div class="card-body">
+                                                                        <p class="card-text" style="text-align: left; ">
+                                                                            <span style="font-size: 14px;">Notre
+                                                                                formation théorique à l’examen <b>VTC
+                                                                                </b> vous permettra de mieux
+                                                                            </span>
+                                                                            <span style="font-size: 14px;">comprendre le
+                                                                                métier de chauffeur<b>VTC</b>, d'en&amp;nbsp;
+                                                                            </span>
+                                                                            <span style="font-size: 14px;">maîtriser
+                                                                                le fonctionnement
+                                                                            </span>
+                                                                            <span style="font-size: 14px;">et les
+                                                                                principales règles du métier et de vous&amp;nbsp;
+                                                                            </span>
+                                                                            <span style="font-size: 14px;">préparer
+                                                                                au mieux pour réussir
+                                                                            </span>
+                                                                            <span style="font-size: 14px;">l'examen
+                                                                                de <b>VTC&amp;nbsp;</b>et ainsi, obtenir
+                                                                                votre
+                                                                                carte professionnelle.
+                                                                            </span>
+                                                                            <span style="font-size: 14px;">Les
+                                                                                thématiques abordées lors de la
+                                                                                formation théorique balaient largement
+                                                                                tous les modules prévus&amp;nbsp;
+                                                                            </span>
+                                                                            <span style="font-size: 14px;">lors de
+                                                                                l'examen officiel à savoir&amp;nbsp;
+                                                                            </span>
+                                                                            <span style="font-size: 14px;">la
+                                                                                réglementation, la gestion&amp;nbsp;
+                                                                            </span>
+                                                                            <span style="font-size: 14px;">, la sécurité
+                                                                                routière, le développement&amp;nbsp;
+                                                                            </span>
+                                                                            <span style="font-size: 14px;">commercial,
+                                                                                et les langues française&amp;nbsp;
+                                                                            </span>
+                                                                            <span style="font-size: 14px;">et
+                                                                                anglaise.
+                                                                            </span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card bg-white">
+                                                                <a href="#" role="tab" data-toggle="collapse"
+                                                                   aria-expanded="false" class="card-header collapsed"
+                                                                   data-parent="#myCollapse"
+                                                                   data-target="#myCollapseTab1581499769940"
+                                                                   data-original-title="" title=""
+                                                                   style="text-align: left;">
+                                                                    <font style="color: rgb(0, 0, 0); font-size: 14px;"
+                                                                          data-original-title="" title=""
+                                                                          aria-describedby="tooltip481734">Comment
+                                                                        réussir l'examen VTC théorique&amp;nbsp;
+                                                                    </font>
+                                                                    <font style="color: rgb(0, 0, 0); font-size: 18px;"
+                                                                          data-original-title="" title=""
+                                                                          aria-describedby="tooltip481734">
+                                                                    </font>
+                                                                </a>
+                                                                <div class="collapse" role="tabpanel"
+                                                                     id="myCollapseTab1581499769940" style="">
+                                                                    <div class="card-body">
+                                                                        <p class="card-text" style="text-align: left; ">
+                                                                            <span style="font-size: 14px;">Pour rappel,
+                                                                                pour réussir l’examen théorique VTC, une
+                                                                                moyenne générale d’au moins 10/20 est&amp;nbsp;
+                                                                                obligatoire. Aussi, chaque épreuve est
+                                                                                soumise&amp;nbsp; à une note
+                                                                                éliminatoire propre. Un candidat se
+                                                                                verra&amp;nbsp; éliminer s'il obtient
+                                                                                une note inférieure à celle-ci.&amp;nbsp;Les
+                                                                                résultats de l’examen VTC théorique vous
+                                                                                seront communiqués par la Chambre des
+                                                                                Métiers et de&amp;nbsp; l'Artisanat
+                                                                                (CMA) dans les semaines qui suivent
+                                                                                l’épreuve par mail et sms mais aussi en
+                                                                                ligne sur le
+                                                                            </span>
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left; ">
+                                                                            <span style="font-size: 14px;">site web de
+                                                                                la CMA.&amp;nbsp;<b>MCM ACADEMY</b>propose
+                                                                                une formation VTC d’excellence basée sur
+                                                                                l'expertise de nos formateurs et&amp;nbsp;la
+                                                                                dédication de toute l'équipe.
+                                                                            </span>
+                                                                            <br/>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <h1 class="s_title_lines" style="overflow: hidden;">
+                                            <font style="">
+                                                <b>
+                                                    <span style="font-size: 18px;">Épreuve d'admissibilité :</span>
+                                                </b>
+                                            </font>
+                                        </h1>
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="background-color: rgb(0, 0, 0);">
+                                                        <span style="font-weight: bolder;">
+                                                            <font style="color: rgb(255, 255, 255); font-size: 14px;">
+                                                                Nom de matière
+                                                            </font>
+                                                        </span>
+                                                        <br/>
+                                                    </td>
+                                                    <td style="background-color: rgb(0, 0, 0);">
+                                                        <span style="font-weight: bolder;">
+                                                            <font style="color: rgb(255, 255, 255); font-size: 14px;">
+                                                                Coefficient
+                                                            </font>
+                                                        </span>
+                                                        <br/>
+                                                    </td>
+                                                    <td style="background-color: rgb(0, 0, 0);">
+                                                        <span style="color: rgb(255, 255, 255); font-size: 14px; font-weight: bolder;">
+                                                            Durée
+                                                        </span>
+                                                        <br/>
+                                                    </td>
+                                                    <td style="background-color: rgb(0, 0, 0);">
+                                                        <span style="color: rgb(255, 255, 255); font-size: 14px; font-weight: bolder;">
+                                                            Note
+                                                            éliminatoire
+                                                        </span>
+                                                        <span style="font-weight: bolder; font-size: 14px;"/>
+                                                        <br/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Réglementation du T3P (TRANSPORT PUBLIC PARTICULIER DE
+                                                        PERSONNES)
+                                                        <br/>
+
+                                                    </td>
+                                                    <td>
+                                                        3
+                                                        <br/>
+
+                                                    </td>
+                                                    <td>
+                                                        45 minutes
+                                                        <br/>
+
+                                                    </td>
+                                                    <td>
+                                                        6/20
+                                                        <br/>
+
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Gestion d'entreprise
+                                                        <br/>
+
+                                                    </td>
+                                                    <td>
+                                                        2
+
+                                                    </td>
+                                                    <td>
+                                                        45 minutes
+                                                        <br/>
+
+                                                    </td>
+                                                    <td>
+                                                        6/20
+                                                        <br/>
+
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Sécurité routière
+                                                        <br/>
+
+                                                    </td>
+                                                    <td>
+                                                        3
+
+                                                    </td>
+                                                    <td>
+                                                        30 minutes
+                                                        <br/>
+
+                                                    </td>
+                                                    <td>
+                                                        6/20
+                                                        <br/>
+
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Langue française
+                                                    </td>
+                                                    <td>2</td>
+                                                    <td>30 minutes
+                                                        <br/>
+                                                    </td>
+                                                    <td>
+                                                        6/20
+                                                        <br/>
+
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Langue anglaise
+                                                        <br/>
+
+                                                    </td>
+                                                    <td>
+                                                        1
+
+                                                    </td>
+                                                    <td>
+                                                        30 minutes
+                                                        <br/>
+
+                                                    </td>
+                                                    <td>
+                                                        4/20
+                                                        <br/>
+
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Développement commercial et gestion propre à l'activité du VTC
+                                                        <br/>
+
+                                                    </td>
+                                                    <td>3
+                                                    </td>
+                                                    <td>
+                                                        30 minutes
+                                                        <br/>
+
+                                                    </td>
+                                                    <td>
+                                                        6/20
+                                                        <br/>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Réglementation nationale spécifique à l'activité VTC
+                                                        <br/>
+                                                    </td>
+                                                    <td>3
+                                                    </td>
+                                                    <td>20 minutes
+                                                        <br/>
+                                                    </td>
+                                                    <td>6/20
+                                                        <br/>
+
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div style="text-align: center;"/>
+                                        <div style="text-align: center;"/>
+                                        <div style="text-align: center;"/>
+                                        <div style="text-align: center;"/>
+                                        <div style="text-align: center;"><span style="font-size: 0.875rem;">
+                                            &amp;nbsp;</span>&amp;nbsp;
+                                            <br/>
+                                            <div class="container">
+                                                <div class="cover">
+                                                    <form t-att-action="action if action else '/shop'"
+                                                          class="flex-form">
+                                                        <script>
+                                                            function verifyState() {
+                                                            var input=document.getElementById("vtc_state").value;
+                                                            if(input.trim() != '') {
+                                                            $('#vtcSubmitBtn').removeAttr('disabled');
+                                                            }
+                                                            };
+                                                        </script>
+                                                        <label for="from">
+                                                            <i class="ion-location"/>
+                                                        </label>
+                                                        <input type="text" name="vtc_state" id="vtc_state"
+                                                               class="state-search-query form-control search-slt"
+                                                               placeholder="Tapez votre ville" list="states_datalist"
+                                                               onchange="verifyState()"/>
+                                                        <datalist id="states_datalist">
+                                                            <span t-set="states" t-value="website.get_states()"/>
+                                                            <span t-foreach="states" t-as="state">
+                                                                <option t-att-value="state.name"/>
+                                                            </span>
+                                                        </datalist>
+                                                        <input type="submit" value="Recherche" disabled="true"
+                                                               id="vtcSubmitBtn"/>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <form/>
+                                    </div>
+                                    <div class="tab-pane pl-sm-5 fade animated fadeInLeft" id="tab_2" role="tabpanel">
+                                        <h3>Formation pratique VTC:</h3>
+                                        <h3/>
+                                        <h3 style="text-align: center; ">
+                                            <div style="text-align: left;">
+                                                <b style="font-size: 14px; color: rgb(255, 0, 0);">L’inscription à
+                                                    l’examen VTC se fait au préalable auprès de la
+                                                    Chambre de Métiers et de l’Artisanat (CMA)
+                                                </b>
+                                                <br/>
+                                                <span style="color: rgb(0, 0, 0); font-size: 18px;">Épreuve
+                                                    d'admission:
+                                                </span>
+
+
+                                            </div>
+                                        </h3>
+                                        <section class="s_faq_collapse pt0 pb0" data-name="Accordion" style="">
+                                            <div class="container" style="">
+                                                <div class="row s_col_no_bgcolor" style="">
+                                                    <div class="col-lg-12 pt16 pb16" style="">
+                                                        <div id="myCollapse" class="accordion" role="tablist" style="">
+                                                            <div class="card bg-white" style="">
+                                                                <a href="#" role="tab" data-toggle="collapse"
+                                                                   aria-expanded="false" class="card-header collapsed"
+                                                                   data-parent="#myCollapse"
+                                                                   data-target="#myCollapseTab1581503928464"
+                                                                   data-original-title="" title=""
+                                                                   style="text-align: left;">
+                                                                    <font style="color: rgb(0, 0, 0);"
+                                                                          data-original-title="" title=""
+                                                                          aria-describedby="tooltip269276"/>
+                                                                    <font style="color: rgb(0, 0, 0); font-size: 14px;"
+                                                                          data-original-title="" title=""
+                                                                          aria-describedby="tooltip269276">Préparation à
+                                                                        l'examen pratique VTC
+                                                                    </font>
+                                                                </a>
+                                                                <div class="collapse" role="tabpanel"
+                                                                     id="myCollapseTab1581503928464" style="">
+                                                                    <div class="card-body" style="">
+                                                                        <p class="card-text" style="text-align: left; ">
+                                                                            <b>MCM
+                                                                                ACADEMY&amp;nbsp;</b>vous propose une
+                                                                            formation
+                                                                            pratique, en présentiel comme en
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left; ">
+                                                                            e-learning.
+                                                                            Cette&amp;nbsp;
+                                                                            <span style="font-size: 0.875rem;">
+                                                                                formation vous permettra de mieux
+                                                                                comprendre le métier
+                                                                            </span>
+                                                                            de chauffeur VTC, d’en maîtriser le&amp;nbsp; <span
+                                                                                style="font-size: 0.875rem;">
+                                                                            fonctionnement et les principales règles du
+                                                                            métier et de vous&amp;nbsp; préparer au
+                                                                            mieux pour réussir&amp;nbsp; l'examen de VTC
+                                                                            et ainsi, obtenir votre carte
+                                                                            professionnelle.</span>Cet examen constitue
+                                                                            la dernière étape pour réussir l'examen
+                                                                            final VTC. Les thématiques abordées lors de
+                                                                            la formation pratique balaient largement
+                                                                            tous les modules prévus&amp;nbsp;
+                                                                            <span style="font-size: 0.875rem;">lors de
+                                                                                l'examen officiel à savoir l’orientation
+                                                                                (plan et GPS), le protocole accueil
+                                                                                client, le service à&amp;nbsp; bord du
+                                                                                véhicule et la préparation des
+                                                                                bons de commandes et de factures et
+                                                                                autres.
+                                                                            </span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card bg-white" style="">
+                                                                <a href="#" role="tab" data-toggle="collapse"
+                                                                   aria-expanded="false" class="card-header collapsed"
+                                                                   data-parent="#myCollapse"
+                                                                   data-target="#myCollapseTab1581503928465"
+                                                                   data-original-title="" title=""
+                                                                   style="text-align: left;">
+                                                                    <font style="color: rgb(0, 0, 0); font-size: 14px;"
+                                                                          data-original-title="" title=""
+                                                                          aria-describedby="tooltip108369">Comment
+                                                                        réussir l'examen pratique VTC
+                                                                        <b>&amp;nbsp;</b>
+                                                                    </font>
+                                                                </a>
+                                                                <div class="collapse" role="tabpanel"
+                                                                     id="myCollapseTab1581503928465" style="">
+                                                                    <div class="card-body" style="">
+                                                                        <p class="card-text" style="text-align: left; ">
+                                                                            Pour rappel,
+                                                                            l’examen <b>VTC</b> s’effectue en 2
+                                                                            parties. Une fois, l’examen
+                                                                            théorique réussi, il est alors&amp;nbsp;
+                                                                            <span style="font-size: 0.875rem;">
+                                                                                admissible à l’épreuve pratique VTC,
+                                                                                épreuve de
+                                                                            </span>
+                                                                            <span style="font-size: 0.875rem;">conduite&amp;nbsp;
+                                                                                professionnelle&amp;nbsp; que le
+                                                                                candidat doit réussir&amp;nbsp; dans les
+                                                                                12 mois. Pour
+                                                                            </span>
+                                                                            <span style="font-size: 0.875rem;">réussir
+                                                                                l’examen&amp;nbsp; pratique VTC&amp;nbsp;
+                                                                                , une moyenne générale d’au moins 12/20
+                                                                                est
+                                                                            </span>
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left; ">
+                                                                            obligatoire.
+                                                                            Toutefois, il existe des fautes
+                                                                            éliminatoires à éviter.
+                                                                            La formation pratique VTC proposée par MCM
+                                                                            ACADEMY dénombre toutes les spécificités des&amp;nbsp; <span
+                                                                                style="font-size: 0.875rem;">
+                                                                            anciens examens de la CMA
+                                                                            nécessaires à la réussite de
+
+                                                                        </span>l'épreuve pratique et vous propose une f
+                                                                            <span style="font-size: 0.875rem;">ormation
+                                                                                personnalisée de la
+                                                                                conduite.
+
+                                                                            </span>
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left; ">
+                                                                            Le programme
+                                                                            de formation pratique est dispensé par
+                                                                            des&amp;nbsp;
+                                                                            <span style="font-size: 0.875rem;">
+                                                                                professionnels
+
+                                                                                expérimentés&amp;nbsp;et aux profils
+                                                                                sélectionnés.
+                                                                            </span>Une fois l’examen pratique validé, le
+                                                                            candidat peut entamer les démarches de
+                                                                            demande de sa carte&amp;nbsp;
+                                                                            <span style="font-size: 0.875rem;">
+                                                                                professionnelle et la création de
+                                                                                son entreprise.
+
+                                                                            </span>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card bg-white" style="">
+                                                                <a href="#" role="tab" data-toggle="collapse"
+                                                                   aria-expanded="false" class="card-header collapsed"
+                                                                   data-parent="#myCollapse"
+                                                                   data-target="#myCollapseTab1581503928466"
+                                                                   data-original-title="" title=""
+                                                                   style="text-align: left;">
+                                                                    <font style="color: rgb(0, 0, 0); font-size: 14px;"
+                                                                          data-original-title="" title=""
+                                                                          aria-describedby="tooltip978710">Le programme
+                                                                        de formation pratique VTC&amp;nbsp;
+                                                                    </font>
+                                                                </a>
+                                                                <div class="collapse" role="tabpanel"
+                                                                     id="myCollapseTab1581503928466" style="">
+                                                                    <div class="card-body" style="">
+                                                                        <p class="card-text" style="text-align: left;">
+                                                                            L'épreuve
+                                                                            pratique VTC porte sur 4 critères en
+                                                                            commun.
+                                                                            Vous trouverez ci-dessous le barème
+                                                                            d’évaluation des 3 critères en commun de
+                                                                            l’examen pratique VTC:
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left;">
+                                                                            <span style="font-weight: bolder;">-
+                                                                                Critère A :&amp;nbsp;</span>Préparation
+                                                                            et réalisation du parcours (Sur 3
+                                                                            points)
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left;">o
+                                                                            Pertinence du
+                                                                            parcours adopté et réactivité du
+                                                                            chauffeur
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left;">o
+                                                                            Maîtrise du
+                                                                            GPS
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left;">o
+                                                                            Maîtrise
+                                                                            d’une carte imprimée
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left;">
+                                                                            <span style="font-weight: bolder;">-
+                                                                                Critère B :&amp;nbsp;</span>Conduite et
+                                                                            sécurité routière (Sur 10 points)
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left;">o
+                                                                            Conduite en
+                                                                            sécurité et respect du code de la route
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left;">o
+                                                                            Souplesse de
+                                                                            la conduite assurant le confort des
+                                                                            passagers
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left;">o
+                                                                            Prise en
+                                                                            charge et dépose des clients et de leurs
+                                                                            bagages
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left;">o
+                                                                            Sécurité des
+                                                                            clients
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left;">
+                                                                            <span style="font-weight: bolder;">-
+                                                                                Critère C :</span>&amp;nbsp;Relation
+                                                                            client et informations touristiques (Sur
+                                                                            5 points)
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left;">o
+                                                                            Présentation
+                                                                            générale et attitudes du candidat
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left;">o
+                                                                            Accueil,
+                                                                            comportement durant le parcours
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left;">o
+                                                                            Vérification
+                                                                            de l’état du véhicule avant et après la
+                                                                            prestation
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left;">o
+                                                                            Culture
+                                                                            générale et aptitudes à offrir des
+                                                                            informations touristiques
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left;">
+                                                                            <span style="font-weight: bolder;">-
+                                                                                Critère D :&amp;nbsp;</span>Facturation
+                                                                            (Sur 2 points)
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left;">o
+                                                                            Maîtrise de
+                                                                            notions de gestion
+                                                                        </p>
+                                                                        <p class="card-text" style="text-align: left;">o
+                                                                            Savoir
+                                                                            établir un bon de commande et une
+                                                                            facture
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <div class="tab-pane pl-sm-5 fade animated fadeInLeft active show" id="tab_2"
+                                             role="tabpanel" style="text-align: center; ">
+                                            <div class="tab-pane pl-sm-5 fade animated fadeInLeft active show"
+                                                 id="tab_2" role="tabpanel" style="">
+                                                <br/>
+                                            </div>
+                                        </div>
+                                        <section class="pb32 pt0" data-name="Title">
+                                            <div class="container">
+                                                <div class="row s_nb_column_fixed">
+                                                    <div class="col-lg-12 s_title pb0 pt0" style="text-align: center;">
+                                                        <div class="s_btn pb16 text-center pt0" data-name="Button">
+                                                            <div class="container">
+                                                                <div class="cover">
+                                                                    <form t-att-action="action if action else '/shop'"
+                                                                          class="flex-form">
+                                                                        <script>
+                                                                            function verifyState() {
+                                                                            var
+                                                                            input=document.getElementById("vtc_state").value;
+                                                                            if(input.trim() != '') {
+                                                                            $('#vtcSubmitBtn').removeAttr('disabled');
+                                                                            }
+                                                                            };
+                                                                        </script>
+                                                                        <label for="from">
+                                                                            <i class="ion-location"/>
+                                                                        </label>
+                                                                        <input type="text" name="vtc_state"
+                                                                               id="vtc_state"
+                                                                               class="state-search-query form-control search-slt"
+                                                                               placeholder="Tapez votre ville"
+                                                                               list="states_datalist"
+                                                                               onchange="verifyState()"/>
+                                                                        <datalist id="states_datalist">
+                                                                            <span t-set="states"
+                                                                                  t-value="website.get_states()"/>
+                                                                            <span t-foreach="states" t-as="state">
+                                                                                <option t-att-value="state.name"/>
+                                                                            </span>
+                                                                        </datalist>
+                                                                        <input type="submit" value="Recherche"
+                                                                               disabled="true" id="vtcSubmitBtn"/>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <h1 class="s_title_default" style="text-align: left; "/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <br/>
+                                    </div>
+                                    <div class="tab-pane pl-sm-5 fade animated fadeInLeft" id="tab_3" role="tabpanel">
+                                        <h3>Modalités d’évaluation VTC</h3>
+                                        <br/>
+                                        <table>
+                                            <tbody>
+                                                <tr style="background-color:#000;color:#fff">
+                                                    <td>Épreuves</td>
+                                                    <td>Durée</td>
+                                                    <td>Note sur</td>
+                                                    <td>Coefficient</td>
+                                                    <td>Note éliminatoire</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>F(V) - Développement commercial et gestion propre à l'activité
+                                                        VTC
+                                                    </td>
+                                                    <td>30 '</td>
+                                                    <td>20 points</td>
+                                                    <td>3</td>
+                                                    <td>6/20</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>G(V) - Réglementation nationale spécifique ) l'activité VTC</td>
+                                                    <td>20 '</td>
+                                                    <td>20 points</td>
+                                                    <td>3</td>
+                                                    <td>6/20</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+</odoo>

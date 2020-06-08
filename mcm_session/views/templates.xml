@@ -1,0 +1,37 @@
+<odoo>
+    <template id="mcmacademy_website_sale_product" inherit_id="website_sale.product">
+        <xpath expr="//a[@id='add_to_cart']" position="before">
+            <div class="col-lg-3 col-md-3 col-sm-12 p-0"
+                 style="margin:auto;background-color:#fff;border-color:#585959"
+                 t-if="request.website.is_public_user()==False">
+                <p style="margin-left: -127px;" t-if="modules">
+                    <b>
+                        Choisissez une session
+                    </b>
+                </p>
+                <select name="module" class="form-control search-slt" style="width:200px;margin-left: -127px;"
+                        t-if="modules">
+                    <t t-foreach="modules" t-as="module">
+                        <t t-if="module">
+                            <b>
+                                <option t-att-value="module.id"
+                                        selected="selected">
+                                    <t t-esc="module.date_debut"/>
+                                    au
+                                    <t t-esc="module.date_fin"/>
+                                </option>
+                            </b>
+                        </t>
+                    </t>
+                </select>
+            </div>
+        </xpath>
+    </template>
+    <template id="mcmacademy_product_price" inherit_id="website_sale.product_price">
+        <xpath expr="//h4[@class='oe_price_h4 css_editable_mode_hidden']" position="replace">
+            <span class="text-muted" t-if="request.website.is_public_user()==True">Vous devez s'inscrire pour consulter
+                le prix de formation
+            </span>
+        </xpath>
+    </template>
+</odoo>

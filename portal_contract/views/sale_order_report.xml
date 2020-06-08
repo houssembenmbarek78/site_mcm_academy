@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="mcm_report_saleorder_document" inherit_id="sale.report_saleorder_document">
+            <xpath expr="//t[@t-call='web.external_layout']" position="replace">
+                #contenu {
+                font:Verdana, Geneva, sans-serif;
+                font-size:18px;
+                text-align:left;
+                height:50px;
+                vertical-align:middle;
+                line-height: 50px;
+                }
+                <t t-call="web.external_layout">
+                    <t t-set="doc" t-value="doc.with_context(lang=doc.partner_id.lang)"/>
+
+                    <div class="row">
+                        <div class="col-3">
+                        </div>
+                        <div class="col-8">
+                            <strong>
+                                <span style="font-size:25px" t-if="doc.partner_id.company_type == 'person'">
+                                    <b>Contrat de
+                                        formation
+                                        professionnelle
+                                    </b>
+                                </span>
+                                <span style="font-size:19px" t-if="doc.partner_id.company_type == 'company'">Convention
+                                    de formation
+                                    professionnelle
+                                </span>
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                        </div>
+                        <div class="col-6" style="margin-left:30px">
+                            <span t-if="doc.partner_id.company_type == 'person'" style="font-size: 10px;">
+                                (Articles L. 6353-3 à L. 6353-7 du code du travail)
+                            </span>
+                            <span t-if="doc.partner_id.company_type == 'company'" style="font-size:10px;">
+                                (Articles L. 6353-1 et L. 6353-2 du code du travail)
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+
+
+                            <span style="font-size:18px">
+                                <b>Entre l'organisme de formation:</b>
+                            </span>
+                            <b>
+                                <span style="font-size:20px" t-field="doc.company_id.name"/>
+                            </b>
+                            <br/>(ci-après nommé l'organisme de
+                            formation)
+                            <div>
+                                <span style="font-size:14px">Situé:</span>
+                                <span style="font-size:14px" t-field="doc.company_id.street"/>
+                                <span></span>
+                                <span style="font-size:14px" t-field="doc.company_id.zip"/>
+                                <span style="font-size:14px" t-field="doc.company_id.city"/>
+                            </div>
+                            <div>
+                                <span style="font-size:14px">Déclaration d'activité n°</span>
+                                <span style="font-size:14px" t-field="doc.company_id.activity_declaration_number"/>
+                                <span style="font-size:14px">, Numéro SIRET:</span>
+                                <span style="font-size:14px" t-field="doc.company_id.siret"/>
+                            </div>
+                            <div>
+                                <span style="font-size:14px">Représenté par:</span>
+                                <span style="font-size:14px" t-field="doc.company_id.mcm_responsable_id.name"/>
+                            </div>
+                            <div>
+
+                                <span style="font-size:18px">
+                                    <b>Et le bénéficiaire:</b>
+                                </span>
+                                <b>
+                                    <span style="font-size:20px" t-field="doc.partner_id.name"/>
+                                </b>
+                                <br/>
+                                (ci-après nommé l'organisme de
+                                formation)
+
+                            </div>
+
+                            <div>
+                                <span style="font-size:14px">Situé:</span>
+                                <span style="font-size:14px" t-field="doc.partner_id.street"/>
+                                <span></span>
+                                <span style="font-size:14px" t-field="doc.partner_id.zip"/>
+                                <span></span>
+                                <span style="font-size:14px" t-field="doc.partner_id.city"/>
+                            </div>
+                            <div t-if="doc.partner_id.company_type == 'company'">
+                                <span style="font-size:14px">Représenté par:</span>
+                                <span style="font-size:14px" t-field="doc.partner_id.name"/>
+                            </div>
+                            <div t-if="doc.partner_id.company_type == 'company'">
+                                <span style="font-size:14px">Est conclue la convention suivante en application des
+                                    dispositions du livre IX du
+                                    Code du travail portant sur l'organisation de la
+                                    formation professionnelle continue dans le cadre de l’éducation permanente.
+                                </span>
+                            </div>
+                            <div>
+                                <strong>
+                                    <span style="font-size:16px">
+                                        <b>1. Objet, nature et durée de la formation</b>
+                                    </span>
+                                </strong>
+                            </div>
+                            <div>
+                                <span style="font-size:12px">Le bénéficiaire entend faire participer une partie de son
+                                    personnel à l’action de formation suivante organisée par l’organisme de formation.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="background-color:#EAEAEA;width:100%;height:40px">
+                        <div class="col-6">
+                        </div>
+                        <div class="col-6">
+                            <strong>
+                                <span style="font-size:16px;background-color:#EAEAEA;width:100%;height:40px;color:#000;margin-left:-42px"
+                                      t-field="doc.partner_id.mcm_session_id.name"/>
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div>
+                                <span style="font-size:12px">Type d’action de formation (art. L6313-1 du code du
+                                    travail):
+                                </span>
+                                <span style="font-size:12px" t-field="doc.partner_id.mcm_session_id.action_type_id.name"/>
+                            </div>
+                            <div>
+                                <span style="font-size:12px">Diplôme visé :</span>
+                                <span style="font-size:12px" t-field="doc.partner_id.mcm_session_id.diplome_vise"/>
+                            </div>
+                            <div>
+                                <span style="font-size:12px">Date de la formation : </span>
+                                <span style="font-size:12px" t-field="doc.partner_id.mcm_session_id.date_debut"
+                                      t-options='{"widget": "date"}'/>
+                                <span style="font-size:12px">au</span>
+                                <span style="font-size:12px" t-field="doc.partner_id.mcm_session_id.date_fin"
+                                      t-options='{"widget": "date"}'/>
+                            </div>
+                            <div>
+                                <span style="font-size:12px">Lieu de la formation:</span>
+                                <span style="font-size:12px"
+                                      t-if="doc.partner_id.module_id.product_id.distance_formation==false"
+                                      t-field="doc.partner_id.module_id.lieu.address"/>
+                                <span style="font-size:12px"
+                                      t-if="doc.partner_id.module_id.product_id.distance_formation==true">à distance
+                                </span>
+                            </div>
+                            <div>
+                                <span style="font-size:12px">Durée de la formation :</span>
+                                <span style="font-size:12px" t-field="doc.partner_id.module_id.duree"/>
+                            </div>
+                            <div>
+                                <span style="font-size:12px">Horraires :</span>
+                                <span style="font-size:12px">de</span>
+                                <span style="font-size:12px" t-field="doc.partner_id.module_id.heure_debut_matin" />
+                                <span style="font-size:12px"> à </span>
+                                <span style="font-size:12px" t-field="doc.partner_id.module_id.heure_fin_matin" />
+                                <span style="font-size:12px"> de </span>
+                                <span style="font-size:12px" t-field="doc.partner_id.module_id.heure_debut_apres_midi" />
+                                <span style="font-size:12px"> à </span>
+                                <span style="font-size:12px" t-field="doc.partner_id.module_id.heure_fin_apres_midi" />
+                            </div>
+                            <div>
+                                <strong>
+                                    <span style="font-size:16px">
+                                        <b>2. Programme de la formation et formateur</b>
+                                    </span>
+                                </strong>
+                            </div>
+                            <div>
+                                <span style="font-size:12px">La description détaillée du programme de formation et du
+                                    formateur est fournie en
+                                    annexe. Le niveau de connaissances préalables requis pour suivre la formation et
+                                    obtenir les qualifications auxquelles elle prépare est détaillé dans ce programme.
+                                </span>
+                            </div>
+                            <div>
+                                <strong>
+                                    <span style="font-size:16px">
+                                        <b>3. Engagement de participation à l'action de
+                                            formation
+                                        </b>
+                                    </span>
+                                </strong>
+                            </div>
+                            <div t-if="doc.partner_id.company_type == 'person'">
+                                <span style="font-size:12px">Le bénéficiaire s’engage à assurer
+                                    sa présence aux dates et lieux prévus
+                                    ci-dessus.
+                                </span>
+                            </div>
+                            <div t-if="doc.partner_id.company_type == 'company'">
+                                <div>
+                                    <span>
+                                        <strong style="font-size:12px">Stagiaires:</strong>
+                                    </span>
+                                </div>
+                                <div>
+                                    <t t-foreach="doc.partner_id.child_ids"
+                                       t-as="line">
+                                        <span style="font-size:12px" t-field="line.name"/>
+                                    </t>
+                                </div>
+                            </div>
+                            <div>
+                                <strong>
+                                    <span style="font-size:16px">
+                                        <b>4. Prix de la formation</b>
+                                    </span>
+                                </strong>
+                            </div>
+                            <div>
+                                <span style="font-size:12px">En contrepartie de cette action de formation, le
+                                    bénéficiaire s'acquittera des
+                                    coûts suivants qui couvrent l'intégralité des frais engagés par l'organisme de
+                                    formation pour cette session:
+                                </span>
+                            </div>
+                            <div>
+                                <span style="font-size:12px">Coût unitaire HT :</span>
+                                <span style="font-size:12px" t-field="doc.partner_id.module_id.particulier_price_untaxed"
+                                      t-options='{"widget": "monetary", "display_currency": doc.currency_id}'/>
+                            </div>
+                            <div>
+                                <table name="product description details"
+                                       style="width: 100%; border-bottom:1px solid lightgrey; page-break-inside: avoid;">
+                                    <thead>
+                                        <tr style="width: 100%; border-bottom:1px solid lightgrey;">
+                                            <th name="th_description" class="text-left">
+                                                <strong>
+                                                    <span style="font-size:12px">Description</span>
+                                                </strong>
+                                            </th>
+                                            <th name="th_description" class="text-right">
+                                                <strong>
+                                                    <span style="font-size:12px">Prix</span>
+                                                </strong>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <t t-foreach="doc.partner_id.module_id.module_details_ids"
+                                           t-as="line">
+                                            <tr style="width: 100%; border-bottom:1px solid lightgrey;">
+                                                <td name="td_product_details_name" class="text-left">
+                                                    <span style="font-size:12px" t-field="line.name"/>
+                                                    <span></span>
+                                                    <span style="font-size:12px" t-field="line.duree"/>
+                                                </td>
+                                                <td name="td_product_details_price" class="text-right">
+                                                    <span style="font-size:12px" t-field="line.prix_normal"
+                                                          t-options='{"widget": "monetary", "display_currency": doc.currency_id}'/>
+                                                </td>
+                                            </tr>
+                                        </t>
+                                        <tr style="width: 100%; border-bottom:1px solid lightgrey;"
+                                            t-if="doc.partner_id.special_tarif==true">
+                                            <td name="td_remise" class="text-left">
+                                                <span style="font-size:12px" t-field="doc.partner_id.discount_name"/>
+                                            </td>
+                                            <td name="td_remise_price" class="text-right">
+                                                <span style="font-size:12px" t-field="doc.partner_id.discount"
+                                                      t-options='{"widget": "monetary", "display_currency": doc.currency_id}'/>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>
+                                <span style="font-size:12px">L’organisme de formation atteste être exonéré de TVA.
+                                </span>
+                            </div>
+                            <div>
+                                <strong>
+                                    <span style="font-size:12px">TOTAL NET DE TAXES:</span>
+                                    <span style="font-size:12px"
+                                          t-field="doc.partner_id.module_id.prix_normal"
+                                          t-options='{"widget": "monetary", "display_currency": doc.currency_id}'/>
+                                </strong>
+                            </div>
+                            <div>
+                                <h6>
+                                    <strong>
+                                        <span style="font-size:16px">
+                                            <b>5. Modalités de règlement</b>
+                                        </span>
+                                    </strong>
+                                </h6>
+                            </div>
+                            <div>
+                                <span style="font-size:12px">
+                                    Le paiement sera dû à réception d'une facture émise par l'organisme de formation à
+                                    destination du bénéficiaire.
+                                </span>
+                            </div>
+                            <div>
+                                <span style="font-size:12px">
+                                    Le bénéficiaire s’engage à verser la somme due selon les modalités de paiement
+                                    suivantes :
+                                </span>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li style="font-size:12px">Après un délai de rétractation mentionné à l’article 11
+                                        du
+                                        présent contrat, le
+                                        stagiaire effectue un premier versement d’un montant de 30% du total.
+                                    </li>
+                                    <li style="font-size:12px">Il est rappelé aussi :</li>
+                                    <li style="font-size:12px">Après un délai de rétractation de :</li>
+                                    <li style="font-size:12px">Dix jours à compter de la date de signature du contrat ;
+                                    </li>
+                                </ul>
+                                <span style="font-size:12px;margin-left:200px">ou</span>
+                                <ul>
+                                    <li style="font-size:14px">Quatorze jours pour les contrats conclus à distance ou
+                                        hors d’établissement,
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span style="font-size:12px;margin-top:20px">
+                                    Sous réserve des dispositions de l’article L 6353-6 du Code du travail, le paiement
+                                    du solde de la formation à la charge du stagiaire pourra être, à sa demande, réglé
+                                    en un seul versement.
+                                </span>
+                            </div>
+                            <div>
+                                <strong>
+                                    <span style="font-size:16px">
+                                        <b>6.1 Modalités de déroulement : Moyens pédagogiques et
+                                            techniques mis en
+                                            œuvre
+                                        </b>
+                                    </span>
+                                </strong>
+                            </div>
+                            <div>
+                                <span style="font-size:12px">
+                                    Voir le programme de formation en annexe détaillant les moyens mis en œuvre pour
+                                    réaliser techniquement l'action, suivre son exécution et apprécier ses
+                                    résultats. Une feuille d’émargement signée par le(s) stagiaire(s) et le formateur,
+                                    par demi-journée de formation, permettra de justifier de la réalisation de la
+                                    prestation.
+                                </span>
+                            </div>
+                            <div>
+                                <strong>
+                                    <span style="font-size:16px">
+                                        <b>6.2 Modalités relatives à la location de voiture</b>
+                                    </span>
+                                </strong>
+                            </div>
+                            <div>
+                                <span style="font-size:12px">
+                                    Pour la formation pratique, le bénéficiaire de la formation s’engage à respecter les
+                                    règles du Code de la route durant la formation et durant l’examen.
+                                    Il est rappelé que le stagiaire demeure responsable des fautes commises dans le
+                                    cadre de sa conduite.
+                                    En cas d’infraction au Code de la route, le conducteur pourra être déclaré
+                                    responsable pécuniairement en qualité d’auteur véritable de l’infraction et
+                                    identifié au
+                                    moment où l’infraction a été commise. En outre, il est rappelé qu’une franchise est
+                                    prévue en cas de dommages (tous accidents) qui s’élèvent à la somme de 400
+                                    euros. En cas d’accident responsable, le montant de la franchise sera à la charge du
+                                    locataire. Il est rappelé expressément, qu’en cas d’annulation de la réservation
+                                    dans un délai inférieur à 72 heures, aucun remboursement ne pourra être demandé à
+                                    MCM ACADEMY, sauf cas de force majeur justifié.
+                                </span>
+                            </div>
+                            <div>
+                                <strong>
+                                    <span style="font-size:16px">
+                                        <b>7. Sanction de la formation</b>
+                                    </span>
+                                </strong>
+                            </div>
+                            <div>
+                                <span style="font-size:12px">
+                                    En application de l’article L.6353-1 du Code du Travail, une attestation mentionnant
+                                    les matiéres, la nature et la durée de l’action et les résultats de l’évaluation des
+                                    acquis de la formation sera remise au(x) stagiaire(s) à l’issue de la formation.
+                                </span>
+                            </div>
+                            <div style="page-break-inside: avoid;">
+                                <ul>
+                                    <li style="font-size:12px">Quiz en salle</li>
+                                    <li style="font-size:12px">Accueil des stagiaires dans une salle dédiée à la
+                                        formation.
+                                    </li>
+                                    <li style="font-size:12px">Documents supports de formation projetés.</li>
+                                    <li style="font-size:12px">Mise à disposition en ligne de documents supports à la
+                                        suite de la formation.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h6>
+                                    <strong>
+                                        <span style="font-size:16px">
+                                            <b>8. Non réalisation de la prestation de formation</b>
+                                        </span>
+                                    </strong>
+                                </h6>
+                            </div>
+                            <div>
+                                <span style="font-size:12px">
+                                    En application de l’article L6354-1 du Code du travail, il est convenu entre les
+                                    signataires de la présente convention, que faute de résiliation totale ou partielle
+                                    de la
+                                    prestation de formation, l’organisme prestataire doit rembourser au cocontractant
+                                    les sommes indûment perçues de ce fait.
+                                </span>
+                            </div>
+                            <div>
+                                <h6>
+                                    <strong>
+                                        <span style="font-size:16px">
+                                            <b>9. Dédommagement, réparation ou dédit</b>
+                                        </span>
+                                    </strong>
+                                </h6>
+                            </div>
+                            <div>
+                                <span style="font-size:12px">
+                                    A compter de la date de signature du présent contrat, le bénéficiaire a un délai de
+                                    10 jours pour se rétracter. Le délai de rétractation est porté à 14 jours (article
+                                    L.121-16 du Code de la consommation) pour les contrats conclus « à distance » et les
+                                    contrats conclus « hors établissement ». Il en informe l’organisme de
+                                    formation par lettre recommandée avec accusé de réception. Dans ce cas, aucune somme
+                                    ne peut être exigée du bénéficiaire.
+                                    Si le bénéficiaire est empêché de suivre la formation par suite de force majeure
+                                    dûment reconnue, le contrat de formation professionnelle est résilié. Dans ce cas,
+                                    seules les prestations effectivement dispensées sont dues au prorata temporis de
+                                    leur valeur prévue au présent contrat.
+                                    En cas de renoncement par le bénéficiaire avant le début du programme de formation
+                                </span>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li style="font-size:12px">Dans un délai inférieur à 3 semaines avant le début de la
+                                        formation : 50 % du
+                                        coût de la formation est dû.
+                                    </li>
+                                    <li style="font-size:12px">Dans un délai inférieur à 2 semaines avant le début de la
+                                        formation : 100 % du
+                                        coût de la formation est dû.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span style="font-size:12px">
+                                    En cas d’absence du stagiaire, le remboursement ne pourra être demandé qu’en cas de
+                                    force majeur et au prorata du nombre de jour d’absence et sur présentation
+                                    de justificatif.
+                                </span>
+                            </div>
+                            <div>
+                                <h6>
+                                    <strong>
+                                        <span style="font-size:12px">
+                                            <b>10. Moyen de contrôle de l'assiduité</b>
+                                        </span>
+                                    </strong>
+                                </h6>
+                            </div>
+                            <div>
+                                <span style="font-size:12px">
+                                    Feuille d'émargement individuelle pour les formations en présentiel, plus
+                                    attestation assiduité.
+                                    Relevé de connexion pour les formations à distance, plus attestation assiduité.
+                                </span>
+                            </div>
+                            <div>
+                                <strong>
+                                    <span style="font-size:16px">
+                                        <b>11. Litiges</b>
+                                    </span>
+                                </strong>
+                            </div>
+                            <div>
+                                <span style="font-size:12px">
+                                    Si une contestation ou un différend ne peuvent pas être réglés à l’amiable, le
+                                    Tribunal de 
+                                </span>
+                                <span style="font-size:12px" t-field="doc.company_id.city"/>
+                                <span style="font-size:12px">sera seul compétent pour régler le litige.
+
+                                    Document réalisé en 2 exemplaires à
+                                </span>
+                                <span style="font-size:12px" t-field="doc.company_id.city"/>
+                                <span style="font-size:12px">
+                                    , le
+                                </span>
+                                <span style="font-size:12px" t-field="doc.date_order" t-options='{"widget": "date"}'/>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div style="page-break-inside: avoid;">
+                    <div class="row">
+                        <div class="col-6">
+                            <span style="font-size:13px">
+                                Pour l'organisme de formation,
+                            </span>
+                        </div>
+                        <div class="col-6">
+                            <span style="font-size:12px">
+                                Pour le bénéficiaire
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <span style="font-size:10px" t-field="doc.company_id.name"/>
+                            <span style="font-size:10px">,</span>
+                            <span style="font-size:10px" t-field="doc.company_id.mcm_responsable_id.name"/>
+                        </div>
+                        <div class="col-6">
+                            <span style="font-size:10px" t-field="doc.partner_id.name"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div t-if="doc.company_id.mcm_responsable_id.name" class="mt32 ml64 mr4"
+                                 name="responsable_signature">
+                                <img t-att-src="image_data_uri(doc.company_id.mcm_responsable_id.signature_partner)"
+                                     style="height: 70px; width: 100px; margin-left:-70px"/>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div t-if="doc.signature" class="mt32 ml64 mr4" name="signature">
+                                <img t-att-src="image_data_uri(doc.signature)"
+                                     style="max-height: 2cm; max-width: 6cm;"/>
+                            </div>
+                        </div>
+                    </div></div>
+                </t>
+            </xpath>
+        </template>
+    </data>
+</odoo>

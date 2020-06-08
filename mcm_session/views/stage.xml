@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- session form view -->
+        <record model="ir.ui.view" id="mcmacademy_stage_session_form_view">
+            <field name="name">stage.session.form</field>
+            <field name="model">mcmacademy.stage</field>
+            <field name="arch" type="xml">
+                <form string="État de session">
+                    <sheet>
+                        <group>
+                           <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- session tree/list view -->
+        <record model="ir.ui.view" id="mcmacademy_stage_session_tree_view">
+            <field name="name">stage.session.tree</field>
+            <field name="model">mcmacademy.stage</field>
+            <field name="arch" type="xml">
+                <tree string="État de session">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,5 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+mcm_action_formation_manager,mcm action formation manager,model_mcm_action_formation,base.group_user,1,1,1,0
+mcm_action_formation_read_all,mcm action formation all,model_mcm_action_formation,,1,0,0,0
+product_template_details_manager,product template details manager,model_product_template_details,base.group_user,1,1,1,0
+product_template_details_read_all,product_template_details all,model_product_template_details,,1,0,0,0

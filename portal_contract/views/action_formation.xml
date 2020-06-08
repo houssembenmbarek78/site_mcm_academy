@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- session form view -->
+        <record model="ir.ui.view" id="action_formation_form_view">
+            <field name="name">action.formation.form</field>
+            <field name="model">mcm.action.formation</field>
+            <field name="arch" type="xml">
+                <form string="Formation Action Form">
+                    <sheet>
+                        <group>
+                           <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- session tree/list view -->
+        <record model="ir.ui.view" id="action_formation_tree_view">
+            <field name="name">action.formation.tree</field>
+            <field name="model">mcm.action.formation</field>
+            <field name="arch" type="xml">
+                <tree string="Formation Action Tree">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_formation_list_action">
+            <field name="name">Action Formation</field>
+            <field name="res_model">mcm.action.formation</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="action_formation_menu" name="Action Formation"
+                  parent="contacts.menu_contacts"
+                  action="action_formation_list_action"
+                  groups="base.group_system"
+                  sequence="3"/>
+
+        <record model="ir.ui.menu" id="contacts.res_partner_menu_config">
+            <field name='sequence'>4</field>
+        </record>
+
+    </data>
+</odoo>

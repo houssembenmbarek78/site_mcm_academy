@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- session form view -->
+        <record model="ir.ui.view" id="product_tempalte_details_form_view">
+            <field name="name">product.template.details.form</field>
+            <field name="model">product.template.details</field>
+            <field name="arch" type="xml">
+                <form string="Product Template Details Form">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="product_tmpl_id"/>
+                            <field name="currency_id" invisible="1"/>
+                            <field name="price"/>
+                            <field name="formation_time"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- session tree/list view -->
+        <record model="ir.ui.view" id="product_tempalte_details_tree_view">
+            <field name="name">product.template.details.tree</field>
+            <field name="model">product.template.details</field>
+            <field name="arch" type="xml">
+                <tree string="Product Template Details Tree">
+                    <field name="name"/>
+                    <field name="product_tmpl_id"/>
+                    <field name="currency_id" invisible="1"/>
+                    <field name="price"/>
+                    <field name="formation_time"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="product_tempalte_details_list_action">
+            <field name="name">Product Template Details</field>
+            <field name="res_model">product.template.details</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="product_tempalte_details_menu" name="Product Details"
+                   parent="stock.menu_stock_inventory_control"
+                  action="product_tempalte_details_list_action"
+                  sequence="2"/>
+    </data>
+</odoo>

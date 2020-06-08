@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- session form view -->
+        <record model="ir.ui.view" id="mcmacademy_programme_form_view">
+            <field name="name">programme.form</field>
+            <field name="model">mcmacademy.programme</field>
+            <field name="arch" type="xml">
+                <form string="Type d'action">
+                    <div class="oe_title pr-0">
+                        <h1>
+                            <field name="name" placeholder="titre de programme"/>
+                        </h1>
+                    </div>
+                    <div>
+                        <group>
+                            <group string="Module &amp; code">
+                                <field name="module_id"/>
+                                <field name="sous_titre" placeholder="Sous titre"/>
+                                <field name="code"/>
+                            </group>
+                            <group string="DURÉE &amp; PRIX">
+                                <div>
+                                    <field name="duree_heure" class="oe_inline"/>
+                                    heures
+                                    <field name="duree_jours" class="oe_inline"/>
+                                    jours
+                                    <field name="currency_id" invisible="1"/>>
+                                    Prix Personnel <field name="prix_normal" string="Prix Personnel" widget="monetary"
+                                           options="{'currency_field': 'currency_id'}"/>
+                                    Prix CHPF <field name="prix_chpf" string="Prix CHPF" widget="monetary"
+                                           options="{'currency_field': 'currency_id'}"/>
+                                </div>
+
+
+                            </group>
+                        </group>
+                        <!--                        <group>-->
+                        <!--                            <group>-->
+                        <!--                            </group>-->
+                        <!--                            <group string="PRIX">-->
+
+                        <!--                            </group>-->
+                        <!--                        </group>-->
+                    </div>
+                    <group string="DESCRIPTION DU PROGRAMME">
+                        <field name="description"/>
+                    </group>
+                    <notebook colspan="4">
+                        <page string="MODALITÉ" autofocus="autofocus">
+                            <group>
+                                <group>
+                                    <field name="formation_type"/>
+                                    <field name="handicap_acces"/>
+                                    <field name="effectif_limit"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="TYPE D'ACTION DE FORMATION" autofocus="autofocus">
+                            <group>
+                                <group>
+                                    <field name="action_id"/>
+                                    <field name="domain_id"/>
+                                    <field name="diplome_vise" widget="radio"/>
+                                    <field name="nom_titre_vise"/>
+                                    <field name="bloc_competance"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="OBJECTIFS PÉDAGOGIQUES" autofocus="autofocus">
+                            <group>
+                                <field name="objectifs" string="OBJECTIFS PÉDAGOGIQUES"
+                                       widget="section_and_note_one2many"
+                                       mode="tree,kanban" context="{'default_programme_id': active_id}">
+                                    <tree editable="bottom" default_order="sequence,id">
+                                        <control>
+                                            <create name="add_line_control" string="Ajouter une ligne"/>
+                                        </control>
+                                        <field name="sequence" widget="handle"/>
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </group>
+                        </page>
+                        <page string="Profils des stagiaires" autofocus="autofocus">
+                            <group>
+                                <group>
+                                    <field name="clients_potentiels" string="Clients potentiels"
+                                           widget="section_and_note_one2many"
+                                           mode="tree,kanban" context="{'default_programme_id': active_id}">
+                                        <tree editable="bottom" default_order="sequence,id">
+                                            <control>
+                                                <create name="add_line_control" string="Ajouter une ligne"/>
+                                            </control>
+                                            <field name="sequence" widget="handle"/>
+                                            <field name="name"/>
+                                        </tree>
+                                    </field>
+                                    <field name="prerequis" string="Pré-requis"
+                                           widget="section_and_note_one2many"
+                                           mode="tree,kanban" context="{'default_programme_id': active_id}">
+                                        <tree editable="bottom" default_order="sequence,id">
+                                            <control>
+                                                <create name="add_line_control" string="Ajouter une ligne"/>
+                                            </control>
+                                            <field name="sequence" widget="handle"/>
+                                            <field name="name"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                                <group>
+                                    <field name="description_client_prerequis" string=""/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="SUIVI de L'EXÉCUTION" autofocus="autofocus">
+                            <group>
+                                <group>
+                                    <field name="description_pedagogique"/>
+                                </group>
+                            </group>
+                            <group>
+                                <field name="suivi_execution" string="Suivi de l'exécution et évaluation des résultats"
+                                       widget="section_and_note_one2many"
+                                       mode="tree,kanban" context="{'default_programme_id': active_id}">
+                                    <tree editable="bottom" default_order="sequence,id">
+                                        <control>
+                                            <create name="add_line_control" string="Ajouter une ligne"/>
+                                        </control>
+                                        <field name="sequence" widget="handle"/>
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                                <field name="ressources_pedagogique" string="Ressources pédagogiques"
+                                       widget="section_and_note_one2many"
+                                       mode="tree,kanban" context="{'default_programme_id': active_id}">
+                                    <tree editable="bottom" default_order="sequence,id">
+                                        <control>
+                                            <create name="add_line_control" string="Ajouter une ligne"/>
+                                        </control>
+                                        <field name="sequence" widget="handle"/>
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </group>
+                        </page>
+                        <page string="Modalités de certification" autofocus="autofocus">
+                            <group>
+                                <group>
+                                    <field name="resultat_attendu"/>
+                                    <field name="modalite_obtention"/>
+                                    <field name="details_certification"/>
+                                    <label for="duree_validite" name="duree_validite"/>
+                                    <div>
+                                        <field name="duree_validite" class="oe_inline"/>
+                                        année(s)
+                                    </div>
+                                </group>
+                                <group>
+                                    <field name="description_modalite_certification" string=""/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="QUALITÉ" autofocus="autofocus">
+                            <group>
+                                <group>
+                                    <field name="indicateur_resultat"/>
+                                </group>
+                                <group>
+                                    <field name="description_qualite" string=""/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="CONFIGURATION COMPTABLE DE PRODUIT" autofocus="autofocus">
+                            <group>
+                                <group>
+                                    <field name="code_de_produit"/>
+                                    <field name="code_de_produit_pour_financeurs"/>
+                                    <field name="code_comptabilite_analytique"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="CHAMPS POUR L'ECPORT EDOF" autofocus="autofocus">
+                            <group>
+                                <group>
+                                    <field name="type_parcours_formation"/>
+                                    <field name="niveau_entree"/>
+                                    <field name="niveau_entree_obligatoire"/>
+                                    <field name="niveau_sortie"/>
+                                    <field name="rythme_formation"/>
+                                    <field name="modalite_entree_sortie"/>
+                                </group>
+                                <group>
+                                    <field name="lang"/>
+                                    <field name="modalite_admission"/>
+                                    <field name="consctruction_forfaitaire"/>
+                                    <field name="certif_inclus"/>
+                                    <field name="code_certif"/>
+                                    <field name="objectif_general"/>
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                </form>
+            </field>
+        </record>
+
+        <!-- session tree/list view -->
+        <record model="ir.ui.view" id="mcmacademy_programme_tree_view">
+            <field name="name">programme.tree</field>
+            <field name="model">mcmacademy.programme</field>
+            <field name="arch" type="xml">
+                <tree string="programme">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

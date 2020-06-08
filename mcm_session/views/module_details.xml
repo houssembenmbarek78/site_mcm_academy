@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- session form view -->
+        <record model="ir.ui.view" id="mcmacademy_module_details_session_form_view">
+            <field name="name">module.details.session.form</field>
+            <field name="model">mcmacademy.module.details</field>
+            <field name="arch" type="xml">
+                <form string="domaine de formation">
+                    <div class="oe_title pr-0">
+                        <h1 class="d-flex flex-row justify-content-between">
+                            <field name="name" class="o_task_name text-truncate" placeholder="Nom de module"/>
+                        </h1>
+                    </div>
+                    <div>
+                        <group>
+                            <group>
+                                <field name="prix_chpf"  widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                                <field name="prix_normal"  widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                                <field name="currency_id" invisible="1"/>
+                            </group>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="duree"/>
+                            </group>
+
+                        </group>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!-- session tree/list view -->
+        <record model="ir.ui.view" id="mcmacademy_module_details_session_tree_view">
+            <field name="name">module.details.session.tree</field>
+            <field name="model">mcmacademy.module.details</field>
+            <field name="arch" type="xml">
+                <tree string="Type d'action">
+                    <field name="name"/>
+                    <field name="prix_chpf"  widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                    <field name="prix_normal"  widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                    <field name="duree"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

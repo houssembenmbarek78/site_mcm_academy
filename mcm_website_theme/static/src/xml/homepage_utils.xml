@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+<!-- Products Search Bar autocomplete item -->
+    <div t-name="mcm_website_theme.productsSearchBar.autocomplete">
+    <t t-if="!states.length">
+         <div class="media align-items-center o_search_product_item">
+             <div class="media-body px-3"></div>
+         </div>
+    </t>
+        <t t-foreach="states" t-as="state"
+           class="dropdown-item p-2 text-wrap">
+    </t>
+</div>
+</templates>

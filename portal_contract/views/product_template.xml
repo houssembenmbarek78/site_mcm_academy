@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="mcm_portal_view_product_template_common_form" model="ir.ui.view">
+        <field name="name">product.template.common.form</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='general_information']" position="after">
+                <page string="Description" name="description">
+                    <sheet>
+                        <group>
+                            <field name="product_details_ids" widget="many2many">
+                                <tree>
+                                    <field name="name"/>
+                                    <field name="price"/>
+                                    <field name="formation_time"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </sheet>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
