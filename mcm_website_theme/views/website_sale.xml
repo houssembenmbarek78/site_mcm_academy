@@ -22,7 +22,7 @@
         </xpath>
     </template>
     <template id="mcm_price" inherit_id="website_sale.products_item">
-        <xpath expr="//div[@class='product_price']" position="replace">
+        <xpath expr="//div[hasclass('product_price')]" position="replace">
 
             <div class="product_price" itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer">
                 <del t-attf-class="text-danger mr-2 {{'' if combination_info['has_discounted_price'] else 'd-none'}}"

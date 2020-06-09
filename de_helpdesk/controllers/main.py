@@ -2,6 +2,8 @@ import logging
 import werkzeug
 import odoo.http as http
 import base64
+import werkzeug
+import requests
 from odoo.http import request
 _logger = logging.getLogger(__name__)
 

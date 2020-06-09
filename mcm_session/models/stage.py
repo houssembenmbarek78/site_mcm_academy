@@ -5,5 +5,6 @@ from odoo import api, fields, models
 
 class Module(models.Model):
     _name = 'mcmacademy.stage'
+    _description = "Etats des sessions"
 
     name=fields.Char("Nom d'état")

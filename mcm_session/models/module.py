@@ -7,6 +7,7 @@ from odoo.tools.float_utils import float_round
 
 class Module(models.Model):
     _name = 'mcmacademy.module'
+    _description = "Description de module"
 
     name = fields.Char('Nom du module', required=True)
     product_id = fields.Many2one('product.template', string="Formation", required=True)
@@ -34,7 +35,7 @@ class Module(models.Model):
     color = fields.Integer(string='Color Index')
     # tarif_by_client_type=fields.Boolean('Tarifs par type de client')
     particulier_price_untaxed = fields.Monetary('Prix Unitaire HT', compute='_compute_price_untaxed', store=True)
-    chpf_price_untaxed = fields.Monetary('Prix Unitaire HT', compute='_compute_price_untaxed', store=True)
+    chpf_price_untaxed = fields.Monetary('Prix CHPF', compute='_compute_price_untaxed', store=True)
     heure_debut_matin = fields.Char('De (Matin)')
     heure_fin_matin = fields.Char('À (Matin) ')
     heure_debut_apres_midi = fields.Char('De (Aprés midi)')

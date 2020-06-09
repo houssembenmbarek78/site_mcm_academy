@@ -13,7 +13,7 @@
                        attrs="{'invisible': [('special_tarif', '!=', True)]}"/>
                 <field name="discount" attrs="{'invisible': [('special_tarif', '!=', True)]}"/>
             </xpath>
-            <xpath expr="//div[@class='o_row']" position="after">
+            <xpath expr="//div[hasclass('o_row')]" position="after">
                 <div class="o_row_signature">
                     <label for="signature_partner" name="signature_partner" />
                     <field name="signature_partner" string="Signature" widget="image"/>

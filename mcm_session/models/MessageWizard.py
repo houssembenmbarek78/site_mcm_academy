@@ -6,6 +6,7 @@ from odoo import api, fields, models
 
 class MessageWizard(models.TransientModel):
     _name = 'message.wizard'
+    _description = "Message de l'état de paiement stripe"
 
     message = fields.Text('Message', required=True)
 

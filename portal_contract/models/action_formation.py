@@ -5,5 +5,6 @@ from odoo import api, fields, models
 
 class Session(models.Model):
     _name = 'mcm.action.formation'
+    _description = "action de formation"
 
     name=fields.Char('Nom')

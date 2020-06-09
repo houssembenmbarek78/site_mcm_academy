@@ -6,7 +6,7 @@ from odoo import api, fields, models
 class Session(models.Model):
     _inherit = 'product.template'
 
-    product_details_ids=fields.One2many('product.template.details','product_tmpl_id','Description')
+    product_details_ids=fields.One2many('product.template.details','product_tmpl_id','Déscription')
     formation_price=fields.Monetary('Prix Formation',compute='_compute_price_formation',store=True)
 
 

@@ -6,6 +6,7 @@ import random
 
 class Session(models.Model):
     _name = 'mcmacademy.session'
+    _description = "Sessions de formation"
 
     name=fields.Char('Nom du session',required=True)
 

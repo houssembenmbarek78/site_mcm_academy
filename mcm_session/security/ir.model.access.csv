@@ -23,5 +23,3 @@ mcmacademy_suivi_execution_manager,mcm academy suivie execution manager,model_mc
 mcm_academy_suivi_execution_read_all,mcm academy suivie execution all,model_mcmacademy_suiviexecution,,1,0,0,0
 mcmacademy_ressources_manager,mcm academy ressources manager,model_mcmacademy_ressources,base.group_user,1,1,1,1
 mcm_academy_ressources_read_all,mcm academy ressources all,model_mcmacademy_ressources,,1,0,0,0
-mcmacademy_message_manager,mcm academy message manager,model_message_wizard,base.group_user,1,1,1,1
-mcm_academy_message_read_all,mcm academy message all,model_message_wizard,,1,1,1,1

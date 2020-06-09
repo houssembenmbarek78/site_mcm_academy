@@ -8,7 +8,7 @@ class resPartner(models.Model):
     _inherit = "res.partner"
 
     special_tarif = fields.Boolean('Tarif spéciale', store=True)
-    discount_name = fields.Char(' ')
+    discount_name = fields.Char('  ')
     discount = fields.Monetary(' ', store=True)
     signature_partner = fields.Binary('Signature', store=True)
 

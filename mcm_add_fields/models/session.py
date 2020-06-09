@@ -5,6 +5,7 @@ from odoo import api, fields, models
 
 class Session(models.Model):
     _name = 'mcm.session'
+    _description = 'session de formation'
 
     product_id=fields.Many2one('product.template',string="Formation",required=True)
     start_date=fields.Date(required=True)

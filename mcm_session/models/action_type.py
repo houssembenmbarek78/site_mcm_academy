@@ -5,5 +5,6 @@ from odoo import api, fields, models
 
 class Module(models.Model):
     _name = 'mcmacademy.action'
+    _description = "Type d'action"
 
     name=fields.Char("Nom d'action")

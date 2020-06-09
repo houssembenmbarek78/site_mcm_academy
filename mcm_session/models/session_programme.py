@@ -6,6 +6,7 @@ from odoo.tools.float_utils import float_round
 
 class Programme(models.Model):
     _name = 'mcmacademy.programme'
+    _description = "Programme de la session"
 
     name=fields.Char('Titre de programme')
     sous_titre=fields.Char('Sous titre')

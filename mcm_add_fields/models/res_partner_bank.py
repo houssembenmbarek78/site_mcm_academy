@@ -6,10 +6,10 @@ from odoo import api, fields, models
 class Bank(models.Model):
     _inherit = "res.partner.bank"
 
-    bank_code = fields.Char('Code banque',compute='_get_account_data_number' ,store=True)
-    guichet_code = fields.Char('Code guichet',compute='_get_account_data_number')
-    number_of_account = fields.Char('N° de compte',compute='_get_account_data_number')
-    rib = fields.Char('RIB',compute='_get_account_data_number')
+    bank_code = fields.Char('Code banque',compute='_get_account_data_number' ,store=True,compute_sudo=True)
+    guichet_code = fields.Char('Code guichet',compute='_get_account_data_number',compute_sudo=True)
+    number_of_account = fields.Char('N° de compte',compute='_get_account_data_number',compute_sudo=True)
+    rib = fields.Char('RIB',compute='_get_account_data_number',compute_sudo=True)
     bic = fields.Char('BIC')
 
     def _get_account_data_number(self):

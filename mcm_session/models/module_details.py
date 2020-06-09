@@ -5,6 +5,7 @@ from odoo import api, fields, models
 
 class ModuleDetails(models.Model):
     _name = 'mcmacademy.module.details'
+    _description = "Details de modules"
 
     name = fields.Char('Nom', required=True)
     prix_normal=fields.Monetary('Prix Particulier')

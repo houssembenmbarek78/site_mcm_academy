@@ -15,12 +15,12 @@
                     </div>
                 </div>
             </xpath>
-            <xpath expr="//div[@class='page']/h2//span[@t-field='o.name']" position="replace">
+            <xpath expr="//div[hasclass('page')]/h2//span[@t-field='o.name']" position="replace">
                 <strong>
                     <span style="font-size: 20px;" t-if="o.name != '/'" t-field="o.name"/>
                 </strong>
             </xpath>
-            <xpath expr="//div[@class='page']/h2//span[1]" position="replace">
+            <xpath expr="//div[hasclass('page')]/h2//span[1]" position="replace">
                 <strong style="font-size: 20px;">
                     Facture
                 </strong>
@@ -183,7 +183,7 @@
                 </table>
                 <br></br>
             </xpath>
-            <xpath expr="//div[@class='clearfix']" position="replace">
+            <xpath expr="//div[hasclass('clearfix')]" position="replace">
                 <div class="clearfix">
                     <div id="total" class="row">
                         <div class="col-4">
@@ -224,7 +224,7 @@
                     </div>
                 </div>
             </xpath>
-            <xpath expr="//div[@class='page']//p[1]" position="replace">
+            <xpath expr="//div[hasclass('page')]//p[1]" position="replace">
                 <div class="row">
                     <div class="col-4">
                         <p>
@@ -245,7 +245,7 @@
                     </div>
                 </div>
             </xpath>
-            <xpath expr="//div[@class='page']//p[2]" position="replace">
+            <xpath expr="//div[hasclass('page')]//p[2]" position="replace">
                 <div id="total" class="row">
                     <div class="col-3">
                     </div>
@@ -320,7 +320,7 @@
                     </div>
                 </div>
             </xpath>
-            <xpath expr="//div[@class='page']//p[@name='note']" position="replace">
+            <xpath expr="//div[hasclass('page')]//p[@name='note']" position="replace">
                 <p t-if="o.invoice_payment_term_id" name="note">
                 </p>
             </xpath>

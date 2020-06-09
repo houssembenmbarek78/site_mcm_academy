@@ -5,6 +5,7 @@ from odoo import api, fields, models
 
 class Domaine(models.Model):
     _name = 'mcmacademy.domain'
+    _description = "Domaine de formation"
 
     name=fields.Char("Nom de domaine de formation")
     code=fields.Integer("Code")

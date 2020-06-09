@@ -5,6 +5,7 @@ from odoo import api, fields, models
 
 class Session(models.Model):
     _name = 'product.template.details'
+    _description = "product details"
 
     name=fields.Char('Nom')
     price=fields.Monetary('Prix')
