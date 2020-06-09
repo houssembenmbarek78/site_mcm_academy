@@ -12,7 +12,6 @@ class PaymentTransaction(models.Model):
 
         data = self.reference.split("-")
         sale = self.env['sale.order'].sudo().search([('name', 'ilike', data[0])])
-        stripe=self.env['sale.order'].sudo().search(['|','&',('name', 'ilike', 'Stripe'),('code', 'ilike', 'stripe')])
         if (self.stripe_payment_intent and self.state == 'done'):
             list = []
             sale.partner_id.mcm_session_id=sale.partner_id.module_id.session_id

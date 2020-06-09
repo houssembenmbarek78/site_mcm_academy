@@ -1,6 +1,6 @@
 <odoo>
     <template id="mcm_website_theme.mcm_template" inherit_id="website.homepage">
-        <xpath expr="//div[@id='wrap']" position="replace">
+        <xpath expr="//div[1]" position="replace">
             <style>
                 .skills .content h3 {
                 font-weight: 700;
