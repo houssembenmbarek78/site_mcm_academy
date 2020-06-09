@@ -629,7 +629,7 @@
         </xpath>
     </template>
     <template id="mcm_website_sale_cart_lines" inherit_id="website_sale.cart_lines">
-        <xpath expr="//td[hasclass('text-center td-qty')]" position="replace">
+        <xpath expr="//td[4]" position="replace">
             <div class="css_quantity input-group mx-auto" style="visibility:hidden;">
                 <div class="input-group-prepend">
                     <a t-attf-href="#" class="btn btn-link js_add_cart_json d-none d-md-inline-block"
@@ -731,7 +731,7 @@
 
     </template>
     <template id="mcm_website_sale_short_cart_summary" inherit_id="website_sale.short_cart_summary">
-        <xpath expr="//a[hasclass('btn btn-secondary float-right d-none d-xl-inline-block')]" position="replace">
+        <xpath expr="//a[@class='btn btn-secondary float-right d-none d-xl-inline-block']" position="replace">
             <a role="button" t-if="website_sale_order and website_sale_order.website_order_line"
                class="btn btn-secondary float-right d-none d-xl-inline-block" href="/shop/checkout?express=1"
                id="pm_shop_checkout" t-attf-onclick="verify_payment_method()">
@@ -740,7 +740,7 @@
         </xpath>
     </template>
     <template id="mcm_website_sale_product_quantity" inherit_id="website_sale.product_quantity">
-        <xpath expr="//div[hasclass('css_quantity input-group')]" position="replace">
+        <xpath expr="//div[@class='css_quantity input-group']" position="replace">
         </xpath>
     </template>
     <template id="mcm_website_sale_products_add_to_cart" inherit_id="website_sale.products_add_to_cart">
@@ -784,7 +784,7 @@
                 </h2>
             </div>
         </xpath>
-        <xpath expr="//p[hasclass('alert alert-info mt-3')]" position="replace">
+        <xpath expr="//p[@class='alert alert-info mt-3']" position="replace">
             <p class="alert alert-info mt-3" role="status">
                 <a role="button"
                    t-att-href='order.partner_id.signup_prepare() and order.partner_id.with_context(relative_url=True).signup_url'
@@ -909,7 +909,7 @@
         </xpath>
     </template>
     <template id="mcm_website_sale_cart_script" inherit_id="website_sale.cart">
-        <xpath expr="//a[hasclass('btn btn-primary float-right')]" position="replace">
+        <xpath expr="//a[@class='btn btn-primary float-right']" position="replace">
             <a role="button" t-if="website_sale_order and website_sale_order.website_order_line"
                class="btn btn-primary float-right" href=""
                t-attf-onclick="verify_payment_method()" id="pm_shop">
@@ -917,7 +917,7 @@
                 <span class="fa fa-chevron-right"/>
             </a>
         </xpath>
-        <xpath expr="//a[hasclass('btn btn-primary float-right d-none d-xl-inline-block')]" position="replace">
+        <xpath expr="//a[@class='btn btn-primary float-right d-none d-xl-inline-block']" position="replace">
             <a role="button" t-if="website_sale_order and website_sale_order.website_order_line"
                class="btn btn-primary float-right d-none d-xl-inline-block" t-attf-onclick="verify_payment_method()"
                href="" id="pm_shop_check">
@@ -925,7 +925,7 @@
                 <span class="fa fa-chevron-right"/>
             </a>
         </xpath>
-        <xpath expr="//div[hasclass('col-12 col-xl-8 oe_cart')]" position="inside">
+        <xpath expr="//div[@class='col-12 col-xl-8 oe_cart']" position="inside">
             <script>
                 function verify_payment_method(){
                 stripe_pm=document.getElementById('stripe_pm');

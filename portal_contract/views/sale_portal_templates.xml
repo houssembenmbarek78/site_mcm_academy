@@ -108,7 +108,7 @@
         </xpath>
     </template>
     <template id="portal_contract.sale_order_portal_template" inherit_id="sale.sale_order_portal_template">
-        <xpath expr="//div[hasclass('row mt16 o_portal_sale_sidebar')]" position="replace">
+        <xpath expr="//div[@class='row mt16 o_portal_sale_sidebar']" position="replace">
             <div class="row mt16 o_portal_sale_sidebar">
                 <!-- Sidebar -->
                 <t t-call="portal.portal_record_sidebar">
@@ -888,7 +888,7 @@
         <t/>
     </template>
     <template id="mcm_portal_record_sidebar" inherit_id="portal.portal_record_sidebar">
-        <xpath expr="//div[hasclass('card-footer small text-center text-muted border-top-0 pt-1 pb-1 d-none d-lg-block')]"
+        <xpath expr="//div[@class='card-footer small text-center text-muted border-top-0 pt-1 pb-1 d-none d-lg-block']"
                position="replace">
         </xpath>
     </template>
