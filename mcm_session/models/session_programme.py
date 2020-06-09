@@ -192,6 +192,7 @@ class Programme(models.Model):
 
 class Objectif(models.Model):
     _name = 'mcmacademy.programme.objectif'
+    _description = 'objectif de programme'
 
     name=fields.Char('Objectif')
     sequence=fields.Integer('',default=1)
@@ -199,6 +200,7 @@ class Objectif(models.Model):
 
 class ClientPotentiel(models.Model):
     _name = 'mcmacademy.programme.clientpotentiel'
+    _description = "programme client potentiel"
 
     name=fields.Char('Client')
     sequence=fields.Integer('',default=1)
@@ -206,6 +208,7 @@ class ClientPotentiel(models.Model):
 
 class Prerequis(models.Model):
     _name = 'mcmacademy.programme.prerequis'
+    _description = "prerequis de programme"
 
     name=fields.Char('Pré-Requis')
     sequence=fields.Integer('',default=1)
@@ -213,6 +216,7 @@ class Prerequis(models.Model):
 
 class SuiviExecution(models.Model):
     _name = 'mcmacademy.suiviexecution'
+    _description = "suivi d'éxécution de programme "
 
     name=fields.Char('Nom')
     sequence=fields.Integer('',default=1)
@@ -220,6 +224,7 @@ class SuiviExecution(models.Model):
 
 class Ressources(models.Model):
     _name = 'mcmacademy.ressources'
+    _description = "ressources de programme "
 
     name=fields.Char('Nom')
     sequence=fields.Integer('',default=1)

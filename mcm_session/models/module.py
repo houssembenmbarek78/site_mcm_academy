@@ -21,7 +21,7 @@ class Module(models.Model):
     currency_id = fields.Many2one('res.currency', related='company_id.currency_id')
     sequence = fields.Integer(string='Sequence', default=10)
     company_id = fields.Many2one('res.company', string='Company', default=lambda self: self.env.company)
-    display_duration = fields.Char('Durée', compute='_get_display_duration', store=True)
+    display_duration = fields.Char('Durée ', compute='_get_display_duration', store=True)
     date_module = fields.Selection(selection=[
         ('interval', 'Entrer seulement un intervalle'),
         ('all', 'Ou bien entrer toutes les dates'),
@@ -35,7 +35,7 @@ class Module(models.Model):
     color = fields.Integer(string='Color Index')
     # tarif_by_client_type=fields.Boolean('Tarifs par type de client')
     particulier_price_untaxed = fields.Monetary('Prix Unitaire HT', compute='_compute_price_untaxed', store=True)
-    chpf_price_untaxed = fields.Monetary('Prix CHPF', compute='_compute_price_untaxed', store=True)
+    chpf_price_untaxed = fields.Monetary('Prix CHPF ', compute='_compute_price_untaxed', store=True)
     heure_debut_matin = fields.Char('De (Matin)')
     heure_fin_matin = fields.Char('À (Matin) ')
     heure_debut_apres_midi = fields.Char('De (Aprés midi)')
