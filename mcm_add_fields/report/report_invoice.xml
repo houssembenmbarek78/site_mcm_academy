@@ -74,6 +74,8 @@
                             <span t-field="o.partner_id.module_id.duree"/>
                         </h6>
                     </div>
+                     <div class="col-auto mw-200 mb-4" name="reference" invisible="1">
+                    </div>
                 </div>
                 <br></br>
             </xpath>
