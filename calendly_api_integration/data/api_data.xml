@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="calendly_api_parametres" model="calendly.api">
+            <field name="client_id">30619c87f05a76ccd4f44ee59d4281a3714395299a4b277492c7f0d149e09462</field>
+            <field name="client_secret">86bd046a39760594cc2fdd7036571842db01ac3122c4e4df8d6b4e43933ea2ba</field>
+            <field name="redirect_uri">https://test.mcm-academy.fr/</field>
+            <field name="access_token">e5c6c2422786d08cc58c5cface0fe510fad175f5350f370932eaa86d7104b2ac</field>
+            <field name="refresh_token">a961a7d268365568dc1e03ec603f7e45059778cbfd81b58705636cc47eb9bea0</field>
+        </record>
+    </data>
+    <record model="ir.cron" id="calendly_refresh_token">
+        <field name="name">Refresh token</field>
+        <field name="model_id" ref="model_calendly_api"/>
+        <field name="state">code</field>
+        <field name="code">model._refresh_token()</field>
+        <field name="active" eval="True"/>
+        <field name="user_id" ref="base.user_root"/>
+        <field name="interval_number">5</field> <!-- To decide clearly -->
+        <field name="interval_type">minutes</field>
+        <field name="numbercall">-1</field>
+    </record>
+</odoo>

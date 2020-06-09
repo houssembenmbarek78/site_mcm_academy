@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="mcm_calendly_view_res_partner_form" model="ir.ui.view">
+        <field name="name">res.partner.form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="before">
+                <group string="Pré-requis">
+                    <group>
+                        <field name="formation_type"/>
+                        <field name="pole_emploi"/>
+                        <field name="social_security_number"/>
+                        <field name="funding_type"/>
+                    </group>
+                    <group>
+                        <field name="driver_licence"/>
+                        <field name="license_suspension"/>
+                        <field name="criminal_record"/>
+                        <field name="statut_calendly"/>
+                        <progressbar field="statut_calendly"
+                                     colors='{"valid": "success", "waiting": "danger"}'/>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>
