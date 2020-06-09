@@ -3,7 +3,9 @@
 
 {
     'name': 'Session',
-    'description': "module session ",
+    'description': """
+ajouter un ensemble des sessions et des modules lié au session
+    """,
     'author': "Houssem",
     'maintainer': 'DIGIMOOV',
     'category': 'Session',
@@ -19,7 +21,9 @@
         'payment',
         'mcm_add_fields',
     ],
-    'description': "module session",
+    'description': """
+ajouter un ensemble des sessions et des modules lié au session
+    """,
     'data': [
         'views/session.xml',
         'views/menu.xml',
