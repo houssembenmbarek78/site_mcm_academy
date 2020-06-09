@@ -29,11 +29,12 @@ class SaleOrder(models.Model):
         # Try to retrieve the acquirer. However, fallback to the token's acquirer.
         acquirer_id = vals.get('acquirer_id')
         payment_token_id = vals.get('payment_token_id')
-
+        acquirer=False
         if payment_token_id:
             payment_token = self.env['payment.token'].sudo().browse(payment_token_id)
 
             # Check payment_token/acquirer matching or take the acquirer from token
+
             if acquirer_id:
                 acquirer = self.env['payment.acquirer'].browse(acquirer_id)
                 if payment_token and payment_token.acquirer_id != acquirer:
