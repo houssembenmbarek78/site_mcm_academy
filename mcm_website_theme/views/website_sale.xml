@@ -7,6 +7,8 @@
                 <i class="fa fa-shopping-cart"/>
                 Ajouter au panier
             </a>
+            <a  id="add_to_cart" invisible="1">
+            </a>
         </xpath>
         <xpath expr="//a[@id='add_to_cart']" position="after">
             <t t-if="request.env['ir.config_parameter'].sudo().get_param('auth_signup.invitation_scope', 'b2b') == 'b2c' and request.website.is_public_user()">
