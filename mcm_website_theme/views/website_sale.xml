@@ -18,7 +18,6 @@
                     S'inscrire
                 </a>
             </t>
-
         </xpath>
     </template>
     <template id="mcm_price" inherit_id="website_sale.products_item">

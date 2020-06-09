@@ -382,7 +382,7 @@
         </template>
         <template id="mcm_external_layout_standard"
                   inherit_id="web.external_layout_standard">
-            <xpath expr="//div[1]" position="replace">
+            <xpath expr="//div[hasclass('header')]" position="replace">
                 <div class="header">
                     <div class="row">
                         <div class="col-6" name="company_address">
@@ -414,7 +414,7 @@
                 <br/>
             </xpath>
 
-            <xpath expr="//div[3]" position="replace">
+            <xpath expr="//div[hasclass('footer')]" position="replace">
                 <div t-attf-class="footer o_standard_footer o_company_#{company.id}_layout">
                     <center><div class="row">
                         <span style="color:grey;font-size:14px" t-field="company.partner_id.name"/>
