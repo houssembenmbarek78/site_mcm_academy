@@ -9,6 +9,7 @@ class ProductTemplate(models.Model):
 
     duration = fields.Char(string='Duration')
     distance_formation=fields.Boolean('À distance')
+    location=fields.Boolean('Location de véhicule')
 
 
 

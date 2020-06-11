@@ -10,7 +10,6 @@ class Session(models.Model):
     formation_price=fields.Monetary('Prix Formation',compute='_compute_price_formation',store=True)
 
 
-    @api.depends('product_details_ids')
     def _compute_price_formation(self):
         for rec in self:
             if rec.product_details_ids:

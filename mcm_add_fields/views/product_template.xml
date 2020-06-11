@@ -8,6 +8,7 @@
             <xpath expr="//field[@name='categ_id']" position="after">
                 <field name="distance_formation"/>
                 <field name="duration"/>
+                <field name="location"/>
             </xpath>
         </field>
     </record>

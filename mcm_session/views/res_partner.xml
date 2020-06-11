@@ -16,10 +16,10 @@
                     <button name="action_validate" id="action_validate" string="Valider" class="btn-primary"
                             type="object"
                             attrs="{'invisible': [('statut', '!=', 'indecis'),'&amp;',('mode_de_financement','!=','aif'),'&amp;',('module_id','!=','False'),'&amp;',('code_pole_emploi','!=','')]}"/>
-                    <button name="action_create_contract" id="action_create_contract"
-                            string="Valider &amp; Créer Contrat" class="btn-primary"
-                            type="object"
-                            attrs="{'invisible': [('statut', '!=', 'won'),'&amp;',('mode_de_financement','!=','aif'),'&amp;',('module_id','!=','False'),'&amp;',('code_pole_emploi','!=','')]}"/>
+<!--                    <button name="action_create_contract" id="action_create_contract"-->
+<!--                            string="Valider &amp; Créer Contrat" class="btn-primary"-->
+<!--                            type="object"-->
+<!--                            attrs="{'invisible': [('statut', '!=', 'won'),('mode_de_financement','!=','aif'),('module_id','!=','False'),('code_pole_emploi','!=','')]}"/>-->
                 </header>
             </xpath>
         </field>
@@ -193,6 +193,16 @@
                                             secondaire
                                         </label>
                                         <field name="phone"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group label-floating form-group-sm is-empty">
+                                        <label class="control-label" for="numero_permis" string="Numéro de permis :">
+                                            Numéro de permis
+                                        </label>
+                                        <field name="numero_permis"/>
                                     </div>
                                 </div>
                             </div>

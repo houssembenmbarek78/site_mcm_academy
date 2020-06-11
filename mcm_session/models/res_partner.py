@@ -31,6 +31,7 @@ class resPartner(models.Model):
     birth_name=fields.Char('Nom de naissance')
     birth_state=fields.Char('Région de naissance')
     birth_city=fields.Char('Ville de naissance')
+    numero_permis=fields.Char('Numéro de permis')
 
 
     @api.constrains('code_pole_emploi')

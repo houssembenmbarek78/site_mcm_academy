@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="mcm_sign_up" inherit_id="website_sale.product" active="False" customize_show="True">
+        <template id="mcm_sign_up" inherit_id="website_sale.product" active="False" customize_show="True">
         <xpath expr="//a[@id='add_to_cart']" position="replace">
             <a t-if="request.website.is_public_user()==False" role="button" id="add_to_cart"
                class="btn btn-primary btn-lg mt16 js_check_product a-submit d-block d-sm-inline-block" href="#">
                 <i class="fa fa-shopping-cart"/>
                 Ajouter au panier
-            </a>
-            <a  id="add_to_cart" invisible="1">
             </a>
         </xpath>
         <xpath expr="//a[@id='add_to_cart']" position="after">
@@ -18,6 +16,7 @@
                     S'inscrire
                 </a>
             </t>
+
         </xpath>
     </template>
     <template id="mcm_price" inherit_id="website_sale.products_item">

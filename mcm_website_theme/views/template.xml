@@ -1,6 +1,6 @@
 <odoo>
     <template id="mcm_website_theme.mcm_template" inherit_id="website.homepage">
-        <xpath expr="//div[1]" position="replace">
+        <xpath expr="//div[@id='wrap']" position="replace">
             <style>
                 .skills .content h3 {
                 font-weight: 700;
@@ -863,7 +863,7 @@
             </style>
             <ul class="list-unstyled">
                 <li>
-                    <a href="/helpdesk">Contact</a>
+                    <a href="/new/ticket">Contact</a>
                 </li>
                 <li>
                     <i class="fa fa-phone"/>
@@ -1023,6 +1023,17 @@
                 document.getElementById("pm_shop_checkout_text").textContent = Créer une demande;
                 };
             </script>
+        </xpath>
+    </template>
+
+    <template id="mcm_website_address" inherit_id="website_sale.address">
+        <xpath expr="//div[hasclass('form-row')]//div[1]" position="after">
+            <div t-attf-class="form-group col-lg-12 ">
+                <label class="col-form-label" for="name">Numéro de permis</label>
+                <input type="text" name="numero_permis" id="numero_permis"
+                       t-attf-class="form-control #{error.get('numero_permis') and 'is-invalid' or ''}"
+                       t-att-value="numero_permis" required="True"/>
+            </div>
         </xpath>
     </template>
 </odoo>
