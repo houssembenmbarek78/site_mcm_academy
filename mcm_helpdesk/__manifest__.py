@@ -10,9 +10,9 @@
     'sequence': 15,
     'summary': 'Helpdesk',
     'depends': [
-        'website_helpdesk',
         'helpdesk',
-        'web_enterprise',
+        'website_helpdesk'
+        'web_enterprise'
     ],
     'description': "Personaliser helpdesk",
     'data': [

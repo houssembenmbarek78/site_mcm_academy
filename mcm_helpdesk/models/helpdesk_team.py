@@ -4,8 +4,14 @@
 from odoo import api, fields, models
 
 
-class AccountMove(models.Model):
+class Helpdesk(models.Model):
     _inherit = "helpdesk.team"
 
-    icon_class = fields.Char('Class icone',default='fa fa-home')
+    icon_class = fields.Char('Class icone')
+    mcm_test = fields.Boolean('MCM Test')
+
+class Ticket(models.Model):
+    _inherit = "helpdesk.ticket"
+
+    mcm_test = fields.Boolean('MCM Test')
 
