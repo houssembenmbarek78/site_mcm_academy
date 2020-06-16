@@ -12,11 +12,12 @@
     'depends': [
         'website_helpdesk',
         'helpdesk',
+        'web_enterprise',
     ],
     'description': "Personaliser helpdesk",
     'data': [
-        'views/helpdesk_template.xml',
-        'views/helpdesk_team.xml',
+        # 'views/helpdesk_template.xml',
+        # 'views/helpdesk_team.xml',
     ],
     'qweb': [],
     'demo': [

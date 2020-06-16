@@ -4,7 +4,8 @@
 from odoo import api, fields, models
 
 
-class HelpdeskTeam(models.Model):
+class AccountMove(models.Model):
     _inherit = "helpdesk.team"
 
-    icon_class=fields.Char('Icone',default='fa fa-home')
+    icon_class = fields.Char('Class icone',default='fa fa-home')
+
