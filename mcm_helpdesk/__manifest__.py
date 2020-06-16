@@ -1,25 +1,29 @@
+# -*- coding: utf-8 -*-
+# Part of Odoo. See LICENSE file for full copyright and licensing details.
+
 {
     'name': 'MCM Helpdesk',
-    'version': '13.0.1.0.0',
-    'category': 'Website',
-    'summary': 'Auth signup form with extra fields',
-    'description': """
-        This module add phone number, address and birth date to auth sign up page
-        * Phone Number
-        * Address
-        * Birth date
-    """,
-    'sequence': 1,
-    'author': 'Futurelens',
-    'website': 'http://thefuturelens.com',
-    'depends': ['helpdesk','website_helpdesk'],
+    'description': " personaliser helpdesk ",
+    'author': "Houssem",
+    'maintainer': 'DIGIMOOV',
+    'category': 'Helpdesk',
+    'sequence': 15,
+    'summary': 'Helpdesk',
+    'depends': [
+        'website_helpdesk',
+        'helpdesk',
+        'web_enterprise'
+    ],
+    'description': "Rajout de la champ ville(s) à la vue article",
     'data': [
+        # 'views/helpdesk_team.xml',
     ],
-    'images': [
+    'qweb': [],
+    'demo': [
     ],
-    'demo': [],
+    'test': [
+    ],
     'installable': True,
     'auto_install': False,
-    'application': True,
-    'license': 'LGPL-3'
+    'application': False,
 }
