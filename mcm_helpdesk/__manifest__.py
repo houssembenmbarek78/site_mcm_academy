@@ -11,7 +11,7 @@
     'summary': 'Helpdesk',
     'depends': [
         'helpdesk',
-        'website_helpdesk'
+        'website_helpdesk',
         'web_enterprise'
     ],
     'description': "Personaliser helpdesk",
