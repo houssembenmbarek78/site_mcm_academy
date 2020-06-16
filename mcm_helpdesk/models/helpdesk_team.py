@@ -1,17 +1,11 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-from odoo import api, fields, models
+from odoo import fields, models
 
 
-class Helpdesk(models.Model):
-    _inherit = "helpdesk.team"
+class ResPartner(models.Model):
+    _inherit = "res.partner"
 
-    icon_class = fields.Char('Class icone')
-    mcm_test = fields.Boolean('MCM Test')
+    mcm_test = fields.Boolean('test')
 
-class Ticket(models.Model):
-    _inherit = "helpdesk.ticket"
-
-    mcm_test = fields.Boolean('MCM Test')
 
