@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="mcm_website_helpdesk_teams" inherit_id="website_helpdesk.team">
+        <xpath expr="//t//div[1]" position="replace">
+            <div>
+            </div>
+        </xpath>
+        <xpath expr="//t//div[2]" position="replace">
+            <div id="wrap" class="container">
+            <link href="/mcm_helpdesk/static/src/css/font-awesome.min.css" rel="stylesheet"/>
+            <link href="/mcm_helpdesk/static/src/css/animate.min.css" rel="stylesheet"/>
+            <style>
+                #services {
+                padding: 60px 0 0 0;
+                }
+
+                #services .box {
+                padding: 40px;
+                margin-bottom: 40px;
+                background: #fff;
+                transition: 0.4s;
+                border: 1px solid #dedede;
+                }
+
+                #services .box:hover {
+                box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+                transform: translateY(-10px);
+                -webkit-transform: translateY(-10px);
+                -moz-transform: translateY(-10px);
+                }
+
+                #services .box .icon {
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding: 15px;
+                }
+
+                #services .box .icon i {
+                color: #444;
+                font-size: 44px;
+                transition: 0.5s;
+                line-height: 0;
+                margin-top: 0px;
+                display: block;
+                margin: 0 auto 25px;
+                }
+
+                #services .box .icon i:before {
+                background: #0c2e8a;
+                background: linear-gradient(45deg, #875A7B 0%, #FF5722 100%);
+                background-clip: border-box;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                }
+
+                #services .box h4 {
+                margin-left: 100px;
+                font-weight: 700;
+                font-size: 20px;
+                display: block;
+                width: 100%;
+                text-align: center;
+                float: left;
+                margin: 0;
+                }
+
+                #services .box h4 a {
+                color: #444;
+                }
+
+                #services .box p {
+                font-size: 14px;
+                line-height: 24px;
+                text-align: center;
+                display: block;
+                margin: 0;
+                padding-top: 15px;
+                }
+
+                @media (max-width: 767px) {
+                #services .box .box {
+                margin-bottom: 20px;
+                }
+                #services .box .icon {
+                float: none;
+                text-align: center;
+                padding-bottom: 15px;
+                }
+                #services .box h4, #services .box p {
+                margin-left: 0;
+                text-align: center;
+                }
+                }
+                .btn-primary{
+                background-color:#000;
+                border-color:#875A7B;
+                }
+                .btn-primary:hover{
+                background-color:#875A7B;
+                border-color:#875A7B;
+                }
+            </style>
+            <section id="services">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Nos Services</h2>
+                    </div>
+                    <div class="row">
+                        <t t-foreach="teams" t-as="team">
+                            <div class="col-lg-4">
+                                <div class="box wow fadeInLeft">
+                                    <div class="icon">
+                                        <i t-attf-class="#{team.icon_class}"></i>
+                                    </div>
+                                    <h4 class="title">
+                                       <a id="submit-ticket" t-attf-href="/helpdesk/#{team.id}/submit">
+                                         <button t-attf-class="btn btn-primary #{'col-md-10' if multi_type else 'col-md-12'}" t-field="team.name"></button>
+                                        </a>
+                                    </h4>
+                                    <p class="description" t-field="team.description">
+                                    </p>
+                                </div>
+                            </div>
+                        </t>
+                    </div>
+
+                </div>
+            </section>
+            <script src="/mcm_helpdesk/static/src/js/query.min.js"></script>
+            <script src="/mcm_helpdesk/static/src/js/ow.min.js"></script>
+            <script src="/mcm_helpdesk/static/src/js/wl.carousel.min.js"></script>
+            <script src="/mcm_helpdesk/static/src/js/ticky.js"></script> 
+            <script src="/mcm_helpdesk/static/src/js/ain.js"></script>
+                
+            </div>
+        </xpath>
+    </template>
+</odoo>
