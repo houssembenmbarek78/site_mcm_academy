@@ -20,6 +20,7 @@
                 background: #fff;
                 transition: 0.4s;
                 border: 1px solid #dedede;
+                height:75%;
                 }
 
                 #services .box:hover {
@@ -111,7 +112,7 @@
                             <div class="col-lg-4">
                                 <div class="box wow fadeInLeft">
                                     <div class="icon">
-                                        <i t-attf-class="#{team.icon_class}"></i>
+                                        <i t-attf-class="#{team.icon_css}"></i>
                                     </div>
                                     <h4 class="title">
                                        <a id="submit-ticket" t-attf-href="/helpdesk/#{team.id}/submit">

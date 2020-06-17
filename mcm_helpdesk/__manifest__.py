@@ -12,11 +12,14 @@
     'depends': [
         'website_helpdesk',
         'helpdesk',
-        'web_enterprise'
+        'web_enterprise',
+        'account'
     ],
     'description': "Rajout de la champ ville(s) à la vue article",
     'data': [
-        # 'views/helpdesk_team.xml',
+        'views/helpdesk_team.xml',
+        'views/helpdesk_template.xml',
+        'views/helpdesk_ticket.xml',
     ],
     'qweb': [],
     'demo': [

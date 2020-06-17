@@ -6,7 +6,8 @@
         <field name="inherit_id" ref="helpdesk.helpdesk_team_view_form"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='description']" position="after">
-                <field name="icon_class"/>
+                <label name="icon_css" for="icon_css"/>
+                <field name="icon_css"/>
             </xpath>
         </field>
     </record>
