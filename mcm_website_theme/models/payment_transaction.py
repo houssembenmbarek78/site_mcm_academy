@@ -51,7 +51,9 @@ class PaymentTransaction(models.Model):
                     move.action_post()
                 sale.action_cancel()
                 sale.sale_action_sent()
-
+                sale.partner_id.mcm_session_id=sale.session_id
+                sale.partner_id.module_id=sale.module_id
+                sale.partner_id.statut='won'
                 for move in moves.with_user(SUPERUSER_ID):
                     move.message_post_with_template(int(template),
                                                        composition_mode='comment',
