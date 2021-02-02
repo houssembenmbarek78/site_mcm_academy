@@ -26,7 +26,7 @@ class AccountMove(models.Model):
             paid_amount = 0.0
 
             for payment in payments:
-                if payment.company_id==rec.company_id:
+                if payment.company_id==rec.company_id: 
                     paid_amount += payment.amount
             rec.mcm_paid_amount = paid_amount
 
