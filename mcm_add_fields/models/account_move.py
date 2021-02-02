@@ -22,7 +22,7 @@ class AccountMove(models.Model):
     @api.depends('amount_total', 'amount_residual')
     def _get_mcm_paid_amount(self):
         for rec in self:
-            payments = self.env['account.payment'].search(['|',('communication', "=", rec.name),('communication', 'like', rec.invoice_origin)])
+            payments = self.env['account.payment'].search(['|',('communication', "=", rec.name),('communication', 'ilike', rec.invoice_origin)])
             paid_amount = 0.0
 
             for payment in payments:
