@@ -186,7 +186,7 @@ class ClientCPFController(http.Controller):
                 user.partner_id.module_id = module_id
                 request.env.user.company_id = 1
                 order = module_id = request.env['sale.order'].sudo().search(
-                    [('module_id', "=", module_id.id), ('state', 'in', ('sent', 'sale'))])
+                    [('module_id', "=", module_id.id), ('state', 'in', ('sent', 'sale')),('partner_id',"=",user.partner_id.id)])
                 if not order:
                     so = request.env['sale.order'].sudo().create({
                         'partner_id': user.partner_id.id,
