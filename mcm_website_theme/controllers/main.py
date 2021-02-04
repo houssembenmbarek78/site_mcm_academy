@@ -489,9 +489,9 @@ class WebsiteSale(WebsiteSale):
         country = country and country.exists() or def_country_id
         fr_country = request.env['res.country'].sudo().search(
             [('code', 'ilike', 'FR')], limit=1)
-        if partner:
-            values['addresse_facturation'] = partner.addresse_facturation
-            values['siret'] = partner.siret
+        # if partner:
+        #     values['addresse_facturation'] = partner.addresse_facturation
+        #     values['siret'] = partner.siret
         render_values = {
             'website_sale_order': order,
             'partner_id': partner_id,
