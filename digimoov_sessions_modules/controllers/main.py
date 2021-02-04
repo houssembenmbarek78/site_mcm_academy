@@ -27,8 +27,8 @@ class WebsiteSale(WebsiteSale):
         if order.company_id.id==1 and (partenaire or product):
             return request.redirect("/shop/cart/")
         if order and order.company_id.id==2:
-            request.env.user.company_id=2
-            request.env.user.company_ids=[2]
+            request.env.user.company_id=2 #change default company
+            request.env.user.company_ids=[2] #change default companies
             product_id = False
             if order:
                 for line in order.order_line:
