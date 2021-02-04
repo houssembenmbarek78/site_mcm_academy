@@ -335,8 +335,8 @@ class WebsiteSale(WebsiteSale):
         return request.redirect('/shop/confirmation')
 
     @http.route(['''/<string:product>/<string:partenaire>/shop/address''', '''/<string:product>/shop/address''',
-                 '''/shop/address'''], type='http', methods=['GET', 'POST'], auth="public", website=True, sitemap=False)
-    def address(self, partenaire=None, product=None, auth="user", **kw):
+                 '''/shop/address'''], type='http', methods=['GET', 'POST'], auth="user", website=True, sitemap=False)
+    def address(self, partenaire=None, product=None, **kw):
         Partner = request.env['res.partner'].with_context(show_address=1).sudo()
         order = request.website.sale_get_order()
         if order.company_id.id == 1 and (partenaire or product):
