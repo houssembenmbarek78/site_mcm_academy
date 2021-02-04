@@ -497,7 +497,7 @@ class WebsiteSale(WebsiteSale):
             'partner_id': partner_id,
             'mode': mode,
             'checkout': values,
-            'fact': partner.addresse_facturation,
+            'fact': order.partner_id.addresse_facturation,
             'can_edit_vat': can_edit_vat,
             'country': country,
             'fr_country': fr_country,
