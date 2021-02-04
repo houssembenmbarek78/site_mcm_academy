@@ -93,6 +93,15 @@ class FINANCEMENT(http.Controller):
     def cpf_thanks(self, **kw, ):
         return request.render("digimoov_website_templates.cpf_thank_you", {})
 
+    @http.route('/pricing', type='http', auth='user', website=True)
+    def pricing_table(self, **kw, ):
+        user_connected=request.env.user
+        if user_connected:
+            if user_connected.partner_id.partner_from and user_connected.partner_id.partner_from in ['ubereats', 'deliveroo', 'coursierjob']:
+                return request.redirect("/%s#pricing"% str(user_connected.partner_id.partner_from))
+            else:
+                return request.redirect("/#pricing")
+
 
 class DIGIEXAMEN(http.Controller):
 

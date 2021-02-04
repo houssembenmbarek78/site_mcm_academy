@@ -47,7 +47,10 @@ class Website(Home):
                 if (product.default_code == 'premium'):
                     premium_price = round(product.list_price)
         promo = False
+        user_connected = request.env.user
+        user_connected.partner_from = False
         if (request.website.id == 2 and partenaire in ['ubereats', 'deliveroo', 'coursierjob']):
+            user_connected.partner_from = str(partenaire)
             promo = request.env['product.pricelist'].sudo().search(
                 [('company_id', '=', 2), ('code', 'ilike', partenaire.upper())])
         if state:

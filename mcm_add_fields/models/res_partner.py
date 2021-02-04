@@ -7,3 +7,4 @@ class resComapny(models.Model):
     _inherit = "res.partner"
 
     session_id = fields.Many2one('mcm.session','Session')
+    partner_from = fields.Char('Partenaire')
