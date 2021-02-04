@@ -89,11 +89,11 @@ class FINANCEMENT(http.Controller):
             partner.ville=ville
             return request.redirect("/cpf-thank-you")
 
-    @http.route('/cpf-thank-you', type='http', auth='public', website=True)
+    @http.route('/cpf-thank-you', type='http', auth='user', website=True)
     def cpf_thanks(self, **kw, ):
         return request.render("digimoov_website_templates.cpf_thank_you", {})
 
-    @http.route('/pricing', type='http', auth='user', website=True)
+    @http.route('/pricing', type='http', auth='public', website=True)
     def pricing_table(self, **kw, ):
         user_connected=request.env.user
         if user_connected:
