@@ -492,6 +492,8 @@ class WebsiteSale(WebsiteSale):
         if partner:
             values['addresse_facturation'] = order.partner_id.addresse_facturation
             values['siret'] = order.partner_id.siret
+            values['name'] = order.partner_id.name
+            values['phone'] = order.partner_id.phone
         render_values = {
             'website_sale_order': order,
             'partner_id': partner_id,
