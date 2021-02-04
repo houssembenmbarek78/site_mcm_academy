@@ -16,7 +16,7 @@ PPR = 4  # Products Per Row
 class WebsiteSale(WebsiteSale):
 
     @http.route(['''/<string:product>/<string:partenaire>/shop/cart''','''/<string:product>/shop/cart''','''/shop/cart'''], type='http', auth="public", website=True, sitemap=False)
-    def cart(self, access_token=None,auth='user',product=None, revive='',partenaire=None, **post):
+    def cart(self, access_token=None,auth="user",product=None, revive='',partenaire=None, **post):
         """
         Main cart management + abandoned cart revival
         access_token: Abandoned cart SO access token
