@@ -1048,17 +1048,9 @@
                                                 </p>
                                                 <br/>
                                                 <button class="btn btn-block text-white" type="submit"
-                                                        t-if="request.website.is_public_user()==False"
                                                         style="background-color:#6E209F;border-radius: 25px">
                                                     Je m'inscris
                                                 </button>
-                                                <t t-if="request.website.is_public_user()">
-                                                    <a role="button" id="sign_up" class="btn btn-block text-white"
-                                                       style="background-color:#6E209F;border-radius: 25px"
-                                                       t-attf-href="/web/signup?{{ keep_query() }}">
-                                                        S'inscrire
-                                                    </a>
-                                                </t>
                                             </div>
                                         </form>
                                     </t>
@@ -1164,17 +1156,9 @@
                                                 </p>
                                                 <br/>
                                                 <button class="btn btn-block text-white" type="submit"
-                                                        t-if="request.website.is_public_user()==False"
                                                         style="background-color:#6E209F;border-radius: 25px">
                                                     Je m'inscris
                                                 </button>
-                                                <t t-if="request.website.is_public_user()">
-                                                    <a role="button" id="sign_up" class="btn btn-block text-white"
-                                                       style="background-color:#6E209F;border-radius: 25px"
-                                                       t-attf-href="/web/signup?{{ keep_query() }}">
-                                                        S'inscrire
-                                                    </a>
-                                                </t>
                                             </div>
                                         </form>
                                     </t>
@@ -1273,17 +1257,9 @@
                                                 </p>
                                                 <br/>
                                                 <button class="btn btn-block text-white" type="submit"
-                                                        t-if="request.website.is_public_user()==False"
                                                         style="background-color:#6E209F;border-radius: 25px">
                                                     Je m'inscris
                                                 </button>
-                                                <t t-if="request.website.is_public_user()">
-                                                    <a role="button" id="sign_up" class="btn btn-block text-white"
-                                                       style="background-color:#6E209F;border-radius: 25px"
-                                                       t-attf-href="/web/signup?{{ keep_query() }}">
-                                                        S'inscrire
-                                                    </a>
-                                                </t>
                                             </div>
                                         </form>
                                     </t>
