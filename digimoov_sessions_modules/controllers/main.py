@@ -15,14 +15,79 @@ PPR = 4  # Products Per Row
 
 class WebsiteSale(WebsiteSale):
 
-    @http.route(['/shop/cart'], type='http', auth="user", website=True, sitemap=False)
-    def cart(self, access_token=None, revive='', **post):
+    @http.route(['''/<string:product>/<string:partenaire>/shop/cart''','''/<string:product>/shop/cart''','''/shop/cart'''], type='http', auth="public", website=True, sitemap=False)
+    def cart(self, access_token=None,product=None, revive='',partenaire=None, **post):
         """
         Main cart management + abandoned cart revival
         access_token: Abandoned cart SO access token
         revive: Revival method when abandoned cart. Can be 'merge' or 'squash'
         """
         order = request.website.sale_get_order()
+        print(order)
+        if order.company_id.id==1 and (partenaire or product):
+            return request.redirect("/shop/cart/")
+        if order and order.company_id.id==2:
+            product_id = False
+            if order:
+                for line in order.order_line:
+                    product_id = line.product_id
+
+            if not product and not partenaire and product_id:
+                product=True
+                partenaire=True
+            if product and not partenaire:
+                if product_id:
+                    slugname = (product_id.name).strip().strip('-').replace(' ', '-').lower()
+                    if str(slugname) != str(product):
+                        if order.pricelist_id and order.pricelist_id.name in ['ubereats','deliveroo','coursierjob']:
+                            return request.redirect("/%s/%s/shop/cart/"% (slugname,order.pricelist_id.name))
+                        else:
+                            return request.redirect("/%s/shop/cart/"% (slugname))
+                    else:
+                        if order.pricelist_id and order.pricelist_id.name in ['ubereats','deliveroo','coursierjob']:
+                            return request.redirect("/%s/%s/shop/cart/"% (slugname,order.pricelist_id.name))
+                else:
+                    return request.redirect("/pricing")
+            elif product and partenaire:
+                if product_id:
+                    slugname = (product_id.name).strip().strip('-').replace(' ', '-').lower()
+                    if str(slugname) != str(product):
+                        pricelist = request.env['product.pricelist'].sudo().search(
+                            [('company_id', '=', 2), ('name', "=", str(partenaire))])
+                        if not pricelist:
+                            pricelist_id=order.pricelist_id
+                            if pricelist_id.name in ['ubereats','deliveroo','coursierjob']:
+                                return request.redirect("/%s/%s/shop/cart/" % (slugname,pricelist_id.name))
+                            else:
+                                return request.redirect("/%s/shop/cart/" % (slugname))
+                        else:
+                            if pricelist.name in ['ubereats','deliveroo','coursierjob']:
+                                return request.redirect("/%s/%s/shop/cart/" % (slugname, order.pricelist_id.name))
+                            else:
+                                return request.redirect("/%s/shop/cart/" % (slugname))
+                    else:
+                        pricelist = request.env['product.pricelist'].sudo().search(
+                            [('company_id', '=', 2), ('name', "=", str(partenaire))])
+
+                        if not pricelist:
+                            pricelist_id=order.pricelist_id
+                            if pricelist_id.name in ['ubereats','deliveroo','coursierjob']:
+                                return request.redirect("/%s/%s/shop/cart/" % (slugname,pricelist_id.name))
+                            else:
+                                return request.redirect("/%s/shop/cart/" % (slugname))
+                        else:
+                            if pricelist.name in ['ubereats','deliveroo','coursierjob']:
+                                if pricelist.name != order.pricelist_id.name:
+                                    return request.redirect("/%s/%s/shop/cart/" % (slugname, order.pricelist_id.name))
+                            else:
+                                return request.redirect("/%s/shop/cart/" % (slugname))
+                else:
+                    pricelist = request.env['product.pricelist'].sudo().search(
+                        [('company_id', '=', 2), ('name', "=", str(partenaire))])
+                    if pricelist and pricelist.name in ['ubereats','deliveroo','coursierjob']:
+                        return request.redirect("/%s" % (pricelist.name))
+                    else:
+                        return request.redirect("/pricing")
         list_products = []
         if order:
             for line in order.order_line:
