@@ -114,5 +114,16 @@ class WebsiteSale(WebsiteSale):
 
         if kw.get('express'):
             return request.redirect("/shop/checkout?express=1")
-
+        if product_id:
+            product = request.env['product.template'].sudo().search(
+                [('id', '=', product_id)],limit=1)
+            slugname=(product.name).strip().strip('-').replace(' ','-').lower()
+            if not promo and product and product.company_id.id==2:
+                return request.redirect("/%s/shop/cart" % (slugname))
+            elif promo and product and product.company_id.id==2:
+                pricelist = request.env['product.pricelist'].sudo().search(
+                    [('company_id', '=', 2), ('id',"=",promo)])
+                if pricelist:
+                    if pricelist.name in ['ubereats','deliveroo','coursierjob']:
+                        return request.redirect("/%s/%s/shop/cart" % (slugname,pricelist.name))
         return request.redirect("/shop/cart")
