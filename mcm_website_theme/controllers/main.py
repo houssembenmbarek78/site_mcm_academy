@@ -332,79 +332,31 @@ class WebsiteSale(WebsiteSale):
         if tx and tx.state == 'done' and tx.amount > 0 and order.state != 'sale':
             order.sale_action_sent()
         PaymentProcessing.remove_payment_transaction(tx)
-        return request.redirect('/shop/confirmation')
-
-    @http.route(['''/<string:product>/<string:partenaire>/shop/address''', '''/<string:product>/shop/address''',
-                 '''/shop/address'''], type='http', methods=['GET', 'POST'], auth="user", website=True, sitemap=False)
-    def address(self, partenaire=None, product=None, **kw):
-        Partner = request.env['res.partner'].with_context(show_address=1).sudo()
-        order = request.website.sale_get_order()
-        if order.company_id.id == 1 and (partenaire or product):
-            return request.redirect("/shop/address/")
-        if order and order.company_id.id == 2:
+        if order.company_id.id==1:
+            return request.redirect("/shop/confirmation")
+        else:
             product_id = False
+            pricelist = False
             if order:
                 for line in order.order_line:
                     product_id = line.product_id
-
-            if not product and not partenaire and product_id:
-                product = True
-                partenaire = True
-            if product and not partenaire:
+            if tx:
+                state = str(tx.state)
                 if product_id:
                     slugname = (product_id.name).strip().strip('-').replace(' ', '-').lower()
-                    if str(slugname) != str(product):
-                        if order.pricelist_id and order.pricelist_id.name in ['ubereats', 'deliveroo', 'coursierjob']:
-                            return request.redirect("/%s/%s/shop/address/" % (slugname, order.pricelist_id.name))
-                        else:
-                            return request.redirect("/%s/shop/address/" % (slugname))
+                    if order.pricelist_id and order.pricelist_id.name in ['ubereats', 'deliveroo', 'coursierjob']:
+                        return request.redirect("/%s/%s/shop/confirmation/%s" % (slugname, order.pricelist_id.name,state))
                     else:
-                        if order.pricelist_id and order.pricelist_id.name in ['ubereats', 'deliveroo', 'coursierjob']:
-                            return request.redirect("/%s/%s/shop/address/" % (slugname, order.pricelist_id.name))
+                        return request.redirect("/%s/shop/confirmation/%s"% (slugname ,state))
                 else:
-                    return request.redirect("/pricing")
-            elif product and partenaire:
-                if product_id:
-                    slugname = (product_id.name).strip().strip('-').replace(' ', '-').lower()
-                    if str(slugname) != str(product):
-                        pricelist = request.env['product.pricelist'].sudo().search(
-                            [('company_id', '=', 2), ('name', "=", str(partenaire))])
-                        if not pricelist:
-                            pricelist_id = order.pricelist_id
-                            if pricelist_id.name in ['ubereats', 'deliveroo', 'coursierjob']:
-                                return request.redirect("/%s/%s/shop/address/" % (slugname, pricelist_id.name))
-                            else:
-                                return request.redirect("/%s/shop/address/" % (slugname))
-                        else:
-                            if pricelist.name in ['ubereats', 'deliveroo', 'coursierjob']:
-                                return request.redirect("/%s/%s/shop/address/" % (slugname, order.pricelist_id.name))
-                            else:
-                                return request.redirect("/%s/shop/address/" % (slugname))
-                    else:
-                        pricelist = request.env['product.pricelist'].sudo().search(
-                            [('company_id', '=', 2), ('name', "=", str(partenaire))])
+                    return request.redirect("/shop/confirmation")
+            else:
+                return request.redirect("/shop/confirmation")
 
-                        if not pricelist:
-                            pricelist_id = order.pricelist_id
-                            if pricelist_id.name in ['ubereats', 'deliveroo', 'coursierjob']:
-                                return request.redirect("/%s/%s/shop/address/" % (slugname, pricelist_id.name))
-                            else:
-                                return request.redirect("/%s/shop/address/" % (slugname))
-                        else:
-                            if pricelist.name in ['ubereats', 'deliveroo', 'coursierjob']:
-                                if pricelist.name != order.pricelist_id.name:
-                                    return request.redirect(
-                                        "/%s/%s/shop/address/" % (slugname, order.pricelist_id.name))
-                            else:
-                                return request.redirect("/%s/shop/address/" % (slugname))
-                else:
-                    pricelist = request.env['product.pricelist'].sudo().search(
-                        [('company_id', '=', 2), ('name', "=", str(partenaire))])
-                    if pricelist and pricelist.name in ['ubereats', 'deliveroo', 'coursierjob']:
-                        return request.redirect("/%s" % (pricelist.name))
-                    else:
-                        return request.redirect("/pricing")
-
+    @http.route(['''/<string:product>/<string:partenaire>/shop/address''','''/<string:product>/shop/address''','''/shop/address'''], type='http', methods=['GET', 'POST'], auth="user", website=True, sitemap=False)
+    def address(self, partenaire=None, product=None, **kw):
+        Partner = request.env['res.partner'].with_context(show_address=1).sudo()
+        order = request.website.sale_get_order()
         redirection = self.checkout_redirection(order)
         if redirection:
             return redirection
