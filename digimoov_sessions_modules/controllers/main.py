@@ -241,8 +241,11 @@ class WebsiteSale(WebsiteSale):
                         return request.redirect("/pricing")
         return super(WebsiteSale, self).payment(**post)
 
-    @http.route(['''/<string:product>/<string:partenaire>/shop/confirmation''','''/<string:product>/shop/confirmation''','''/shop/confirmation'''], type='http', auth="user", website=True, sitemap=False)
-    def payment_confirmation(self,partenaire=None,product=None, **post):
+    @http.route(['''/<string:product>/<string:partenaire>/shop/confirmation/<string:state>''',
+                 '''/<string:product>/<string:partenaire>/shop/confirmation''',
+                 '''/<string:product>/shop/confirmation/<string:state>''', '''/<string:product>/shop/confirmation''',
+                 '''/shop/confirmation'''], type='http', auth="user", website=True, sitemap=False)
+    def payment_confirmation(self, partenaire=None, product=None, state=None, **post):
         order_id = request.session.get('sale_last_order_id')
         order = request.env['sale.order'].sudo().search([('id', '=', order_id)], limit=1)
         if order:
@@ -261,13 +264,17 @@ class WebsiteSale(WebsiteSale):
                     if product_id:
                         slugname = (product_id.name).strip().strip('-').replace(' ', '-').lower()
                         if str(slugname) != str(product):
-                            if order.pricelist_id and order.pricelist_id.name in ['ubereats', 'deliveroo', 'coursierjob']:
-                                return request.redirect("/%s/%s/shop/confirmation/" % (slugname, order.pricelist_id.name))
+                            if order.pricelist_id and order.pricelist_id.name in ['ubereats', 'deliveroo',
+                                                                                  'coursierjob']:
+                                return request.redirect(
+                                    "/%s/%s/shop/confirmation/" % (slugname, order.pricelist_id.name))
                             else:
                                 return request.redirect("/%s/shop/confirmation/" % (slugname))
                         else:
-                            if order.pricelist_id and order.pricelist_id.name in ['ubereats', 'deliveroo', 'coursierjob']:
-                                return request.redirect("/%s/%s/shop/confirmation/" % (slugname, order.pricelist_id.name))
+                            if order.pricelist_id and order.pricelist_id.name in ['ubereats', 'deliveroo',
+                                                                                  'coursierjob']:
+                                return request.redirect(
+                                    "/%s/%s/shop/confirmation/" % (slugname, order.pricelist_id.name))
                     else:
                         return request.redirect("/pricing")
                 elif product and partenaire:
@@ -284,7 +291,8 @@ class WebsiteSale(WebsiteSale):
                                     return request.redirect("/%s/shop/confirmation/" % (slugname))
                             else:
                                 if pricelist.name in ['ubereats', 'deliveroo', 'coursierjob']:
-                                    return request.redirect("/%s/%s/shop/confirmation/" % (slugname, order.pricelist_id.name))
+                                    return request.redirect(
+                                        "/%s/%s/shop/confirmation/" % (slugname, order.pricelist_id.name))
                                 else:
                                     return request.redirect("/%s/shop/confirmation/" % (slugname))
                         else:
