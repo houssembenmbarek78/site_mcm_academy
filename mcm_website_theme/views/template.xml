@@ -614,7 +614,7 @@
             <!--                    </input>-->
             <!--                </label>-->
             <!--            </div>-->
-            <div class="card-body o_payment_acquirer_select">
+            <div class="card-body o_payment_acquirer_select" t-if="website_sale_order.module_id.product_id.cpf_available">
                 <label>
                     <t t-foreach="website_sale_order.website_order_line" t-as="line">
                         <input type="radio" name="pm_method" data-acquirer-id="16" data-form-payment="True"
