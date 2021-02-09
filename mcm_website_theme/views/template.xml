@@ -579,7 +579,7 @@
                         </input>
                     </t>
                 </label>
-                <div class="text-muted ml-3">
+                <div class="text-muted ml-3" t-if="website_sale_order.module_id.product_id.cpf_available">
                     <p>
                         <br/>
                     </p>
