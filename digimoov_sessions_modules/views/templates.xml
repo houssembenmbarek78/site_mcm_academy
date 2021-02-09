@@ -195,9 +195,12 @@
                 document.getElementById("promo_input").style.display = 'none';
                 }
                 if(document.getElementById("order_instalment")){
-                document.getElementById("order_instalment").style.visibility = 'hidden';
-                document.getElementById("order_instalment_number").style.visibility = 'hidden';
-                document.getElementById("order_amount_to_pay").style.visibility = 'hidden';
+                document.getElementById("order_instalment").style.display = 'none';
+                document.getElementById("order_instalment_checkbox").style.display = 'none';
+                document.getElementById("order_instalment_number").style.display = 'none';
+                document.getElementById("order_instalment_number_order").style.display = 'none';
+                document.getElementById("order_amount_to_pay").style.display = 'none';
+                document.getElementById("order_amount_to_pay_amount").style.display = 'none';
                 }
                 }
                 };
@@ -213,14 +216,17 @@
                 document.getElementById("promo_button").style.display = 'inline';
                 }
                 if(document.getElementById("order_instalment")){
-                document.getElementById("order_instalment").style.visibility = 'visible';
+                document.getElementById("order_instalment").style.display = 'block';
+                document.getElementById("order_instalment_checkbox").style.display = 'table-cell';
                 }
 
                 instalment=document.getElementById("checkbox_instalment");
                 if(instalment){
                 if(instalment.checked==true){
-                document.getElementById("order_instalment_number").style.visibility = 'visible';
-                document.getElementById("order_amount_to_pay").style.visibility = 'visible';
+                document.getElementById("order_instalment_number").style.display = 'block';
+                document.getElementById("order_instalment_number_order").style.display = 'table-cell';
+                document.getElementById("order_amount_to_pay").style.display = 'block';
+                document.getElementById("order_amount_to_pay_amount").style.display = 'table-cell';
                 }
                 }
                 }
