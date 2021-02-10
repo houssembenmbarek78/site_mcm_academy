@@ -552,8 +552,8 @@
             </td>
         </xpath>
         <xpath expr="//table[@id='cart_products']" position="after">
-            <t t-foreach="website_sale_order.website_order_line" t-as="line" t-if="website_sale_order.module_id.product_id.cpf_available">
-                <h3 class="mb24" t-att-value="line.name_short">Mode de financement</h3>
+            <t t-foreach="website_sale_order.website_order_line" t-as="line">
+                <h3 class="mb24" t-att-value="line.name_short" t-if="line.product_id.cpf_available">Mode de financement</h3>
             </t>
             <div class="card-body o_payment_acquirer_select" t-if="website_sale_order.module_id.product_id.cpf_available">
                 <label>
@@ -561,7 +561,7 @@
                         <input type="radio" name="pm_method" data-acquirer-id="8" data-form-payment="True"
                                data-provider="stripe_pm"
                                class="" t-att-value="line.name_short" id="stripe_pm" checked="True"
-                               t-attf-onclick="onchangeTextButton1()">
+                               t-attf-onclick="onchangeTextButton1()" t-if="line.product_id.cpf_available">
 
                             <span class="payment_option_name">
                                 Carte de crédit
