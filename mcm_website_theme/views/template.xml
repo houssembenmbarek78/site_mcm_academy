@@ -555,7 +555,7 @@
             <t t-foreach="website_sale_order.website_order_line" t-as="line" t-if="website_sale_order.module_id.product_id.cpf_available">
                 <h3 class="mb24" t-att-value="line.name_short">Mode de financement</h3>
             </t>
-            <div class="card-body o_payment_acquirer_select" t-if="website_sale_order.module_id.product_id.cpf_available">
+            <div class="card-body o_payment_acquirer_select">
                 <label>
                     <t t-foreach="website_sale_order.website_order_line" t-as="line">
                         <input type="radio" name="pm_method" data-acquirer-id="8" data-form-payment="True"
