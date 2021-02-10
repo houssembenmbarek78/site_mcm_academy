@@ -614,12 +614,12 @@
             <!--                    </input>-->
             <!--                </label>-->
             <!--            </div>-->
-            <div class="card-body o_payment_acquirer_select" t-if="website_sale_order.module_id.product_id.cpf_available">
+            <div class="card-body o_payment_acquirer_select">
                 <label>
                     <t t-foreach="website_sale_order.website_order_line" t-as="line">
                         <input type="radio" name="pm_method" data-acquirer-id="16" data-form-payment="True"
                                data-provider="transfer" class="" id="cpf_pm" t-att-value="line.name_short"
-                               t-attf-onclick="onchangeTextButton()">
+                               t-attf-onclick="onchangeTextButton()" t-if="line.product_id.cpf_available">
 
                             <span class="payment_option_name">
                                 CPF
