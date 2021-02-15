@@ -4,6 +4,7 @@
 	<record id="menu_blog_demo_template" model="website.menu">
 		<field name="name">Block Demo</field>
 		<field name="parent_id" ref="website.main_menu" />
+		<field name="website_indexed" eval="False"/>
 		<field name="sequence" type="int">3</field>
 		<field name="url">/snippet-demo</field>
 	</record>
@@ -11,6 +12,7 @@
 	<record id="menu_metro_home_template" model="website.menu">
 		<field name="name">Metro</field>
 		<field name="parent_id" ref="website.main_menu" />
+		<field name="website_indexed" eval="False"/>
 		<field name="sequence" type="int">1</field>
 		<field name="url">/metro-home</field>
 	</record>
@@ -18,12 +20,14 @@
 	<record id="menu_soft_home_template" model="website.menu">
 		<field name="name">Soft</field>
 		<field name="parent_id" ref="website.main_menu" />
+		<field name="website_indexed" eval="False"/>
 		<field name="sequence" type="int">2</field>
 		<field name="url">/soft-home</field>
 	</record>
 
 	<record id="menu_project_template" model="website.menu">
 		<field name="name">Projects</field>
+		<field name="website_indexed" eval="False"/>
 		<field name="parent_id" ref="website.main_menu" />
 
 	</record>
@@ -31,6 +35,7 @@
 	<record id="menu_project_page_template" model="website.menu">
 		<field name="name">Project</field>
 		<field name="parent_id" ref="theme_centric.menu_project_template"/>
+		<field name="website_indexed" eval="False"/>
 		<field name="sequence" type="int">4</field>
 		<field name="url">/project</field>
 	</record>
@@ -38,18 +43,21 @@
 	<record id="menu_project_detail_template" model="website.menu">
 		<field name="name">Project Details</field>
 		<field name="parent_id" ref="menu_project_template"/>
+		<field name="website_indexed" eval="False"/>
 		<field name="sequence" type="int">5</field>
 		<field name="url">/project-detail</field>
 	</record>
 	
 	<record id="menu_service_template" model="website.menu">
 		<field name="name">Services</field>
+		<field name="website_indexed" eval="False"/>
 		<field name="parent_id" ref="website.main_menu" />
 	</record>
 
 	<record id="menu_service_page_template" model="website.menu">
 		<field name="name">Service</field>
 		<field name="parent_id" ref="menu_service_template" />
+		<field name="website_indexed" eval="False"/>
 		<field name="sequence" type="int">6</field>
 		<field name="url">/service</field>
 	</record>
@@ -57,6 +65,7 @@
 	<record id="menu_service_detail_template" model="website.menu">
 		<field name="name">Service Details</field>
 		<field name="parent_id" ref="menu_service_template" />
+		<field name="website_indexed" eval="False"/>
 		<field name="sequence" type="int">7</field>
 		<field name="url">/service-detail</field>
 	</record>
@@ -64,6 +73,7 @@
 	<record id="menu_features_template" model="website.menu">
 		<field name="name">Features</field>
 		<field name="parent_id" ref="website.main_menu" />
+		<field name="website_indexed" eval="False"/>
 		<field name="sequence" type="int">8</field>
 		<field name="url">/feature</field>
 	</record>
@@ -71,6 +81,7 @@
 	<record id="menu_about_template" model="website.menu">
 		<field name="name">About</field>
 		<field name="parent_id" ref="website.main_menu" />
+		<field name="website_indexed" eval="False"/>
 		<field name="sequence" type="int">9</field>
 		<field name="url">/about</field>
 	</record>
