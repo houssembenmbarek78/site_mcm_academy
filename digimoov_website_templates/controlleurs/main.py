@@ -262,7 +262,7 @@ class Services(http.Controller):
         return request.render("digimoov_website_templates.digimoov_template_contact", {})
 
     @http.route('/helpdesk/submitted/',
-                type="http", auth="public", website=True, csrf=False)
+                type="http", auth="public", website=True, csrf=False,sitemap=False)
     def get_ticket(self,**kwargs):
         contact_last_name=kwargs.get('contact_lastname')
         contact_name=kwargs.get('contact_name')
