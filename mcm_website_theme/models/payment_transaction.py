@@ -52,6 +52,8 @@ class PaymentTransaction(models.Model):
                     move.methodes_payment = 'cartebleu'
                     move.module_id=sale.module_id
                     move.session_id=sale.session_id
+                    sale.partner_id.mcm_session_id = sale.session_id
+                    sale.partner_id.module_id = sale.module_id
                     if sale.pricelist_id.code:
                         move.pricelist_id=sale.pricelist_id
                     move.company_id=sale.company_id
