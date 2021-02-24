@@ -37,11 +37,6 @@ class PaymentAcquirer(models.Model):
                     transaction.amount = transaction.amount / 3
                 if sale:
                     sale.amount_total = sale.amount_total / 3
-            if sale:
-                print('aaaaaaaa')
-                print(sale.instalment)
-                print(sale.company_id.id)
-                print(rec.instalment)
             if sale and sale.instalment and sale.company_id.id==2 and rec.instalment:
                 sale.amount_total = sale.amount_total / sale.instalment_number
                 amount = amount / sale.instalment_number

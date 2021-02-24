@@ -14,6 +14,8 @@ class PaymentTransaction(models.Model):
             sale = self.env['sale.order'].sudo().search([('name', 'ilike', data[0])])
             if (self.stripe_payment_intent and self.state == 'done'):
                 Session = self.env['mcm.session']
+                sale.partner_id.mcm_session_id = sale.session_id
+                sale.partner_id.module_id = sale.module_id
                 for order in sale.order_line:
                     session = Session.sudo().search([('product_id', '=', order.product_id.product_tmpl_id.id)])
                     if session:
@@ -45,6 +47,8 @@ class PaymentTransaction(models.Model):
                     move.type_facture='web'
                     move.module_id=sale.module_id
                     move.session_id=sale.session_id
+                    sale.partner_id.mcm_session_id = sale.session_id
+                    sale.partner_id.module_id = sale.module_id
                     if sale.pricelist_id.code:
                         move.pricelist_id=sale.pricelist_id
                     move.company_id=sale.company_id
