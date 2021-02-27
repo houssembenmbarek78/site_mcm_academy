@@ -713,10 +713,11 @@ class CustomerPortal(CustomerPortal):
         else:
             grouped_tasks = [tasks]
         my_tasks=[]
-        user=request.env.user
+        users=request.env.user
         for task in grouped_tasks:
-            if task.user_id.id==user.id or task.partner_id==user.partner_id.id:
-                my_tasks.append(task)
+            for user in users:
+                if task.partner_id==user.partner_id.id:
+                    my_tasks.append(task)
 
         values.update({
             'date': date_begin,
