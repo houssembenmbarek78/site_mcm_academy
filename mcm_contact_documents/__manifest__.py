@@ -23,6 +23,7 @@
         'views/partner_documents_templates.xml',
         # 'views/templates.xml',
         'views/document_template.xml',
+        'views/digimoov_template_documents.xml',
         'data/mail_template.xml',
     ],
     'qweb': [],
