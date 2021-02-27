@@ -307,7 +307,7 @@ class Services(http.Controller):
                 for ufile in files:
                     datas = base64.encodebytes(ufile.read())
                     request.env['ir.attachment'].sudo().create({
-                        'name': ufile.name,
+                        'name': ufile.text,
                         'type': 'binary',
                         'datas': datas,
                         'res_model': 'helpdesk.ticket',
@@ -365,6 +365,16 @@ class Services(http.Controller):
             }
             new_ticket = request.env['helpdesk.ticket'].sudo().create(
                 vals)
+            if files:
+                for ufile in files:
+                    datas = base64.encodebytes(ufile.read())
+                    request.env['ir.attachment'].sudo().create({
+                        'name': ufile.text,
+                        'type': 'binary',
+                        'datas': datas,
+                        'res_model': 'helpdesk.ticket',
+                        'res_id': new_ticket.id
+                    })
             return request.render("digimoov_website_templates.pedagogique_thank_you")
 
 
