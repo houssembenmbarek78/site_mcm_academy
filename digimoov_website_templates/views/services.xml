@@ -61,12 +61,20 @@
                                                                    class="o_website_form_input form-control" value=""/>
                                                         </div>
                                                     </div>
+
                                                     <div class="col-lg-12">
                                                         <div class="form-group m-t-15 ">
                                                             <textarea name="description" rows="3" placeholder="Message"
                                                                       required="True"
                                                                       class=" o_website_form_input form-control"
                                                                       value=""/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="form-group m-t-15 ">
+                                                            <input name="attachment" placeholder="Objet" required="True"
+                                                                   type="Object"
+                                                                   class="o_website_form_input form-control" value=""/>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-12 s_name" data-name="Button">
@@ -456,6 +464,13 @@
                                                                       required="True"
                                                                       class=" o_website_form_input form-control"
                                                                       value=""/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="form-group m-t-15 ">
+                                                            <input name="attachment" placeholder="Objet" required="True"
+                                                                   type="Object"
+                                                                   class="o_website_form_input form-control" value=""/>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-12 s_name" data-name="Button">

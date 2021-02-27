@@ -1,6 +1,7 @@
 from odoo import http
 from odoo.http import request
 from datetime import datetime,date
+import base64
 
 class FAQ(http.Controller):
 
@@ -270,6 +271,7 @@ class Services(http.Controller):
         phone=kwargs.get('phone')
         name=kwargs.get('name')
         description=kwargs.get('description')
+        files = request.httprequest.files.getlist('attachment')
         name_company=False
         if kwargs.get('name_company'):
             name_company=kwargs.get('name_company')
@@ -301,6 +303,15 @@ class Services(http.Controller):
             }
             new_ticket = request.env['helpdesk.ticket'].sudo().create(
                 vals)
+            if files:
+                for ufile in files:
+                    datas = base64.encodebytes(ufile.read())
+                    request.env['ir.attachment'].sudo().create({
+                        'type': 'binary',
+                        'datas': datas,
+                        'res_model': 'helpdesk.ticket',
+                        'res_id': new_ticket.id
+                    })
             return request.render("digimoov_website_templates.client_thank_you")
         elif service == 'Administration':
             vals = {
