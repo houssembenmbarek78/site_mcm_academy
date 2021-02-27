@@ -797,6 +797,266 @@ class CustomerPortal(CustomerPortal):
             logger.exception("Fail to upload document Carte d'identité ")
         return http.request.render('mcm_contact_documents.success_documents')
 
+    @http.route('/upload_my_files', type="http", auth="user", methods=['POST'], website=True, csrf=False)
+    def upload_my_files(self, **kw):
+        print('upload_my_files')
+        print(http.request.env.user.name)
+        folder_id = request.env['documents.folder'].sudo().search(
+            [('name', "=", _('Documents Clients')), ('company_id', "=", 2)])
+        if not folder_id:
+            vals_list = []
+            vals = {
+                'name': "Documents Clients",
+                'company_id': 2
+            }
+            vals_list.append(vals)
+            folder_id = request.env['documents.folder'].sudo().create(vals_list)
+            vals_list = []
+            vals = {
+                'name': "Statut document",
+                'folder_id': folder_id.id,
+            }
+            vals_list.append(vals)
+            facet = request.env['documents.facet'].sudo().create(vals_list)
+        try:
+            files = request.httprequest.files.getlist('identity')
+            if files:
+                vals_list = []
+                vals = {
+                    'name': "Carte d'identité",
+                    'datas': False,
+                    'folder_id': int(folder_id),
+                    'code_document': 'identity',
+                    'confirmation': kw.get('confirm_identity'),
+                    'attachment_number': kw.get('identity_number'),
+                    'type': 'binary',
+                    'partner_id': False,
+                    'owner_id': False}
+                vals_list.append(vals)
+                document = request.env['documents.document'].sudo().create(vals_list)
+                if document:
+                    uid = document.create_uid
+                    document.sudo().write(
+                        {'owner_id': uid, 'partner_id': uid.partner_id, 'name': document.name + ' ' + str(uid.name)})
+                if len(files) == 2:
+                    datas = base64.encodebytes(files[0].read())
+                    datas2 = base64.encodebytes(files[1].read())
+                    request.env['ir.attachment'].sudo().create({
+                        'name': "Carte d'identité Recto",
+                        'type': 'binary',
+                        'datas': datas,
+                        'res_model': 'documents.document',
+                        'res_id': document.id
+                    })
+                    request.env['ir.attachment'].sudo().create({
+                        'name': "Carte d'identité Verso",
+                        'type': 'binary',
+                        'datas': datas2,
+                        'res_model': 'documents.document',
+                        'res_id': document.id
+                    })
+                elif len(files) == 1:
+                    datas = base64.encodebytes(files[0].read())
+                    request.env['ir.attachment'].sudo().create({
+                        'name': "Carte d'identité Recto Verso",
+                        'type': 'binary',
+                        'datas': datas,
+                        'res_model': 'documents.document',
+                        'res_id': document.id
+                    })
+        except Exception as e:
+            logger.exception("Fail to upload document Carte d'identité ")
+        try:
+            files = request.httprequest.files.getlist('address_proof')
+            if files:
+                vals_list = []
+                vals = {
+                    'name': "Jusitificatif à domicile",
+                    'datas': False,
+                    'folder_id': int(folder_id),
+                    'code_document': 'proof',
+                    'type': 'binary',
+                    'partner_id': False,
+                    'owner_id': False
+                }
+                vals_list.append(vals)
+                document = request.env['documents.document'].sudo().create(vals_list)
+                if document:
+                    uid = document.create_uid
+                    document.sudo().write(
+                        {'owner_id': uid, 'partner_id': uid.partner_id, 'name': document.name + ' ' + str(uid.name)})
+                if len(files) == 2:
+                    datas = base64.encodebytes(files[0].read())
+                    datas2 = base64.encodebytes(files[1].read())
+                    request.env['ir.attachment'].sudo().create({
+                        'name': "Jusitificatif à domicile Recto",
+                        'type': 'binary',
+                        'datas': datas,
+                        'res_model': 'documents.document',
+                        'res_id': document.id
+                    })
+                    request.env['ir.attachment'].sudo().create({
+                        'name': "Jusitificatif à domicile Verso",
+                        'type': 'binary',
+                        'datas': datas2,
+                        'res_model': 'documents.document',
+                        'res_id': document.id
+                    })
+                elif len(files) == 1:
+                    datas = base64.encodebytes(files[0].read())
+                    request.env['ir.attachment'].sudo().create({
+                        'name': "Jusitificatif à domicile",
+                        'type': 'binary',
+                        'datas': datas,
+                        'res_model': 'documents.document',
+                        'res_id': document.id
+                    })
+        except Exception as e:
+            logger.exception("Fail to upload document Carte d'identité ")
+        try:
+            files = request.httprequest.files.getlist('identity_hebergeur')
+            if files:
+                vals_list = []
+                vals = {
+                    'name': "Carte d'identité hébergeur",
+                    'datas': False,
+                    'folder_id': int(folder_id),
+                    'code_document': 'hebergeur',
+                    'type': 'binary',
+                    'partner_id': False,
+                    'owner_id': False
+                }
+                vals_list.append(vals)
+                document = request.env['documents.document'].sudo().create(vals_list)
+                if document:
+                    uid = document.create_uid
+                    document.sudo().write(
+                        {'owner_id': uid, 'partner_id': uid.partner_id, 'name': document.name + ' ' + str(uid.name)})
+                if len(files) == 2:
+                    datas = base64.encodebytes(files[0].read())
+                    datas2 = base64.encodebytes(files[1].read())
+                    request.env['ir.attachment'].sudo().create({
+                        'name': "Carte d'identité hébergeur Recto",
+                        'type': 'binary',
+                        'datas': datas,
+                        'res_model': 'documents.document',
+                        'res_id': document.id
+                    })
+                    request.env['ir.attachment'].sudo().create({
+                        'name': "Carte d'identité hébergeur Verso",
+                        'type': 'binary',
+                        'datas': datas2,
+                        'res_model': 'documents.document',
+                        'res_id': document.id
+                    })
+                elif len(files) == 1:
+                    datas = base64.encodebytes(files[0].read())
+                    request.env['ir.attachment'].sudo().create({
+                        'name': "Carte d'identité hébergeur",
+                        'type': 'binary',
+                        'datas': datas,
+                        'res_model': 'documents.document',
+                        'res_id': document.id
+                    })
+        except Exception as e:
+            logger.exception("Fail to upload document Carte d'identité ")
+        try:
+            files = request.httprequest.files.getlist('attestation_hebergeur')
+            if files:
+                vals_list = []
+                vals = {
+                    'name': "Attestation d'hébergement",
+                    'datas': False,
+                    'folder_id': int(folder_id),
+                    'code_document': 'hebergement',
+                    'type': 'binary',
+                    'partner_id': False,
+                    'owner_id': False
+                }
+                vals_list.append(vals)
+                document = request.env['documents.document'].sudo().create(vals_list)
+                if document:
+                    uid = document.create_uid
+                    document.sudo().write(
+                        {'owner_id': uid, 'partner_id': uid.partner_id, 'name': document.name + ' ' + str(uid.name)})
+                if len(files) == 2:
+                    datas = base64.encodebytes(files[0].read())
+                    datas2 = base64.encodebytes(files[1].read())
+                    request.env['ir.attachment'].sudo().create({
+                        'name': "Attestation d'hébergement Recto",
+                        'type': 'binary',
+                        'datas': datas,
+                        'res_model': 'documents.document',
+                        'res_id': document.id
+                    })
+                    request.env['ir.attachment'].sudo().create({
+                        'name': "Attestation d'hébergement Verso",
+                        'type': 'binary',
+                        'datas': datas2,
+                        'res_model': 'documents.document',
+                        'res_id': document.id
+                    })
+                elif len(files) == 1:
+                    datas = base64.encodebytes(files[0].read())
+                    request.env['ir.attachment'].sudo().create({
+                        'name': "Attestation d'hébergement",
+                        'type': 'binary',
+                        'datas': datas,
+                        'res_model': 'documents.document',
+                        'res_id': document.id
+                    })
+        except Exception as e:
+            logger.exception("Fail to upload document Carte d'identité ")
+        try:
+            files = request.httprequest.files.getlist('cerfa')
+            if files:
+                vals_list = []
+                vals = {
+                    'name': "Cerfa",
+                    'datas': False,
+                    'folder_id': int(folder_id),
+                    'code_document': 'cerfa',
+                    'confirmation': kw.get('confirm_cerfa'),
+                    'type': 'binary',
+                    'partner_id': False,
+                    'owner_id': False
+                }
+                vals_list.append(vals)
+                document = request.env['documents.document'].sudo().create(vals_list)
+                if document:
+                    uid = document.create_uid
+                    document.sudo().write(
+                        {'owner_id': uid, 'partner_id': uid.partner_id, 'name': document.name + ' ' + str(uid.name)})
+                if len(files) == 2:
+                    datas = base64.encodebytes(files[0].read())
+                    datas2 = base64.encodebytes(files[1].read())
+                    request.env['ir.attachment'].sudo().create({
+                        'name': "Cerfa Recto",
+                        'type': 'binary',
+                        'datas': datas,
+                        'res_model': 'documents.document',
+                        'res_id': document.id
+                    })
+                    request.env['ir.attachment'].sudo().create({
+                        'name': "Cerfa Verso",
+                        'type': 'binary',
+                        'datas': datas2,
+                        'res_model': 'documents.document',
+                        'res_id': document.id
+                    })
+                elif len(files) == 1:
+                    datas = base64.encodebytes(files[0].read())
+                    request.env['ir.attachment'].sudo().create({
+                        'name': "Cerfa",
+                        'type': 'binary',
+                        'datas': datas,
+                        'res_model': 'documents.document',
+                        'res_id': document.id
+                    })
+        except Exception as e:
+            logger.exception("Fail to upload document Carte d'identité ")
+        return http.request.render('mcm_contact_documents.success_documents')
+
     @http.route('/new_documents', type="http", auth="user", website=True)
     def create_documents(self, **kw):
         name = http.request.env.user.name
