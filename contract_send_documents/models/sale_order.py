@@ -47,19 +47,25 @@ class SaleOrder(models.Model):
                     'contract_send_documents.mail_template_client_info_document_digimoov', raise_if_not_found=False)
                 if template_id:
                     template = self.env['mail.template'].search([('id', '=', template_id)])
+                    template.attachment_ids = False
                     attachment = self.env['ir.attachment'].search(
-                        [("name", "=", "cerfa_11414-05.pdf"), ("description", "=", "cerfa_mail_template_attachment")])
+                        [("name", "=", "cerfa_11414-05.pdf"), ("description", "=", "cerfa_mail_template_attachment")],limit=1)
+                    if attachment:
+                        template.sudo().write({'attachment_ids': [(6, 0, attachment.ids)]})
             if not template_id:
                 template_id = self.env['ir.model.data'].xmlid_to_res_id('contract_send_documents.mail_template_client_info_document_digimoov',
                                                                         raise_if_not_found=False)
-                if template_id:
-                    print('tttttttt')
             if template_id:
                 for order in self:
                     order.with_context(force_send=True).message_post_with_template(template_id,
                                                                                    composition_mode='comment',
                                                                                    email_layout_xmlid="contract_send_documents.portal_contract_document_mail")
             subtype_id = self.env['ir.model.data'].xmlid_to_res_id('mt_note')
+            attachments = self.env['ir.attachment'].search(
+                [("name", "=", "cerfa_11414-05.pdf"), ("description", "=", "cerfa_mail_template_attachment"),
+                 ('res_model', "=", "sale.order")])
+            for attachment in attachments:
+                attachment.sudo().unlink()
             message = self.env['mail.message'].sudo().create({
                 'subject': 'Contrat signé',
                 'model': 'res.partner',
