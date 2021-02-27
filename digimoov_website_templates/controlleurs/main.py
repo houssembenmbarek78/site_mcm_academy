@@ -307,7 +307,7 @@ class Services(http.Controller):
                 for ufile in files:
                     datas = base64.encodebytes(ufile.read())
                     request.env['ir.attachment'].sudo().create({
-                        'name': ufile.name,
+                        'name': ufile.filename,
                         'type': 'binary',
                         'datas': datas,
                         'res_model': 'helpdesk.ticket',
@@ -369,7 +369,7 @@ class Services(http.Controller):
                 for ufile in files:
                     datas = base64.encodebytes(ufile.read())
                     request.env['ir.attachment'].sudo().create({
-                        'name': datas.text,
+                        'name': ufile.filename,
                         'type': 'binary',
                         'datas': datas,
                         'res_model': 'helpdesk.ticket',
