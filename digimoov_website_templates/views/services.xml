@@ -62,7 +62,7 @@
                                                     </div>
                                                     <div class="col-lg-12">
                                                         <div class="form-group m-t-15 ">
-                                                            <input name="attachment" placeholder="Objet" required="True"
+                                                            <input name="attachment" placeholder="Objet" required="False"
                                                                    type="file"
                                                                    class="o_website_form_input form-control" value=""/>
                                                         </div>
@@ -379,7 +379,7 @@
                                                     </div>
                                                     <div class="col-lg-12">
                                                         <div class="form-group m-t-15 ">
-                                                            <input name="attachment" placeholder="Objet" required="True"
+                                                            <input name="attachment" placeholder="Objet" required="False"
                                                                    type="file"
                                                                    class="o_website_form_input form-control" value=""/>
                                                         </div>
