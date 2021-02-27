@@ -17,19 +17,23 @@
                         Documents nécessaires :
                         <br/>
                         % if object.module_id:
-                        % if object.module_id.product_id.name in ('Formation intensive VTC','Formation intensive TAXI','Formation intensive VMDTR'):
+                        % if object.module_id.product_id.name in ('Formation intensive VTC','Formation intensive
+                        TAXI','Formation intensive VMDTR'):
                         - Reçu de paiement de l’examen CMA
                         % endif
-                        % if object.module_id.product_id.name in ('Formation continue TAXI','Formation continue VTC','Formation continue VMDTR'):
+                        % if object.module_id.product_id.name in ('Formation continue TAXI','Formation continue
+                        VTC','Formation continue VMDTR'):
                         - Carte Taxi ou VTC ou VMDTR
                         % endif
                         % if object.module_id.product_id.name in ('Formation mobilité TAXI'):
                         - Carte Taxi
                         % endif
-                        % if object.module_id.product_id.name in ('Formation à distance TAXI','Formation à distance VTC','Formation à distance VMDTR'):
+                        % if object.module_id.product_id.name in ('Formation à distance TAXI','Formation à distance
+                        VTC','Formation à distance VMDTR'):
                         - Examen Chambre des métiers
                         % endif
-                        % if object.module_id.product_id.name in ('Formation à distance passerelle VTC','Formation à distance passerelle Taxi'):
+                        % if object.module_id.product_id.name in ('Formation à distance passerelle VTC','Formation à
+                        distance passerelle Taxi'):
                         - Obtention Examen ou Carte Taxi / VTC ( Après 2016 )
                         % endif
                         % endif
@@ -53,11 +57,60 @@
             <field name="auto_delete" eval="True"/>
         </record>
     </data>
+    <data noupdate="0">
+        <record id="mail_template_client_info_document_digimoov" model="mail.template">
+            <field name="name">Contact : Demande des documents</field>
+            <field name="model_id" ref="sale.model_sale_order"/>
+            <field name="subject">Digimoov : Documents à fournir</field>
+            <field name="email_from">${object.company_id.email}</field>
+            <field name="partner_to">${object.partner_id.id}</field>
+            <field name="body_html" type="html">
+                <div style="margin: 0px; padding: 0px;">
+                    <p style="margin: 0px; padding: 0px; font-size: 12px;">
+                        Bonjour ${object.partner_id.name},
+                        <br/>
+                        <br/>
+                        Pour finaliser votre inscription, nous vous invitons à télécharger vos documents en cliquant sur
+                        le bouton ci dessous. Les documents demandés doivent être: en couleur | en cours de validité |
+                        valable au sein de l'Union Européenne ou de la zone AELE | de bonne qualité (nette, non
+                        pixelisée et sans reflet lumineux) | non tronquée (les quatre coins du document doivent être
+                        visibles) | en entier (recto et verso).
+                        <br/>
+                        <br/>
+                        <b>Documents nécessaires :</b>
+                        <br/>
+                        <br/>
+                        - Carte d’identité recto / verso
+                        <br/>
+                        - Justificatif de domicile (à moins de 3 mois) .
+                        <br/>
+                        - Cerfa rempli et signé .
+                        <br/>
+                        <br/>
+                        Merci pour l’intérêt que vous avez porté à notre centre de formation.
+                        <br/>
+                        <br/>
+                        Cordialement
+                        <br/>
+                    </p>
+                </div>
+            </field>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="user_signature" eval="False"/>
+            <field name="auto_delete" eval="True"/>
+        </record>
+    </data>
     <data>
         <template id="portal_contract_document_mail" inherit_id="mail.mail_notification_paynow">
             <xpath expr="//tbody//tr[2]//td//div//a" position="replace">
-                <t t-if="record._name == 'sale.order' and record.signed_by != False and record.signed_on != False and record.signature != False">
+                <t t-if="record._name == 'sale.order' and record.signed_by != False and record.signed_on != False and record.signature != False and record.company_id.id==1">
                     <a href="/new_documents"
+                       style="background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;">
+                        Envoyer mes documents
+                    </a>
+                </t>
+                <t t-elif="record._name == 'sale.order' and record.signed_by != False and record.signed_on != False and record.signature != False and record.company_id.id==2">
+                    <a href="/charger_mes_documents"
                        style="background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;">
                         Envoyer mes documents
                     </a>
