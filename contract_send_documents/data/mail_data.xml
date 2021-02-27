@@ -70,49 +70,28 @@
                         Bonjour ${object.partner_id.name},
                         <br/>
                         <br/>
-                        Félicitation pour votre inscription ! Il vous reste encore quelques étapes pour compléter votre
-                        dossier et entrer en formation.
-                        Voici une liste de documents à préparer et à envoyer sur le lien suivant:
-                        <b>
-                            <a href="https://www.digimoov.fr/charger_mes_documents">je charge mes documents</a>
-                        </b>
+                        Pour finaliser votre inscription, nous vous invitons à télécharger vos documents en cliquant sur
+                        le bouton ci dessous. Les documents demandés doivent être: en couleur | en cours de validité |
+                        valable au sein de l'Union Européenne ou de la zone AELE | de bonne qualité (nette, non
+                        pixelisée et sans reflet lumineux) | non tronquée (les quatre coins du document doivent être
+                        visibles) | en entier (recto et verso).
                         <br/>
                         <br/>
-
-                        <b>C'est simple et facile :</b>
+                        <b>Documents nécessaires :</b>
                         <br/>
                         <br/>
-                        1 - Je prends en photo ma
-                        <b> pièce d'identité recto-verso,</b>
+                        - Carte d’identité recto / verso
                         <br/>
-<!--                        2 - Je prends en photo mon <b>justificatif de domicile</b> datant de moins de 3 mois,-->
-<!--                        <br/>-->
-<!--                        3 - Je télécharge le <b>formulaire CERFA ci-joint</b>, je le remplis et le signe,.-->
-<!--                        <br/>-->
-                        2 - J'envois le tout sur le<b>lien indiqué au début du mail.</b>
+                        - Justificatif de domicile (à moins de 3 mois) .
+                        <br/>
+                        - Cerfa rempli et signé .
                         <br/>
                         <br/>
-                        <b>Rappel:</b>
-                        Il est indispensable de participer à une session de bienvenue où on vous expliquera le
-                        fonctionnement de la formation de la capacité de transport léger de marchandise chez Digimoov:
-                        <b>
-                            <a href="https://calendly.com/digimoov/session-de-information-digimoov">
-                                Réservez votre place ici
-                            </a>
-                        </b>
+                        Merci pour l’intérêt que vous avez porté à notre centre de formation.
                         <br/>
                         <br/>
-                        N'hésitez pas à
-                        <b>
-                            <a href="https://www.digimoov.fr/service-clientele">nous contacter</a>
-                        </b>
-                        pour toute question ou assistance.
+                        Cordialement
                         <br/>
-                        <br/>
-                        À très bientôt
-                        <br/>
-                        <br/>
-                        L'équipe de Digimoov.
                     </p>
                 </div>
             </field>
