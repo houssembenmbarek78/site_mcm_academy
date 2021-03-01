@@ -112,7 +112,7 @@
                 <t t-elif="record._name == 'sale.order' and record.signed_by != False and record.signed_on != False and record.signature != False and record.company_id.id==2">
                     <a href="/charger_mes_documents"
                        style="background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;">
-                        Envoyer mes documents
+                        Envoyer mes document
                     </a>
                 </t>
                 <t t-else="">
@@ -128,5 +128,4 @@
             </xpath>
         </template>
     </data>
-
 </odoo>
