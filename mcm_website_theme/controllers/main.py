@@ -486,7 +486,7 @@ class WebsiteSale(WebsiteSale):
             if not data.get(field_name):
                 error[field_name] = 'missing'
 
-        if not data.get('numero_permis'):
+        if not data.get('numero_permis') and request.website.id==1:
             error["numero_permis"] = 'error'
             error_message.append(_('Numéro de permis doit être rempli'))
         if not data.get('adresse_facturation'):
