@@ -1026,15 +1026,17 @@
                                                         </p>
                                                         <p class="text-center font-weight-bolder text-dark h1 display-4 mb-0"
                                                            t-if="promo">
-                                                            <t t-foreach="promo.item_ids" t-as="item">
-                                                                <t t-if="item.product_id.id==product.id">
-                                                                    <span t-esc="round(item.fixed_price)"/>
-                                                                    <span t-esc="product.currency_id.symbol"/>
+                                                            <t t-if="promo.item_ids">
+                                                                <t t-foreach="promo.item_ids" t-as="item">
+                                                                    <t t-if="item.product_id.id==product.id">
+                                                                        <span t-esc="round(item.fixed_price)"/>
+                                                                        <span t-esc="product.currency_id.symbol"/>
+                                                                    </t>
                                                                 </t>
-                                                                <t t-else="">
-                                                                    <span t-esc="round(product.list_price)"/>
-                                                                    <span t-esc="product.currency_id.symbol"/>
-                                                                </t>
+                                                            </t>
+                                                            <t t-else="">
+                                                                <span t-esc="round(product.list_price)"/>
+                                                                <span t-esc="product.currency_id.symbol"/>
                                                             </t>
                                                         </p>
                                                     </font>
