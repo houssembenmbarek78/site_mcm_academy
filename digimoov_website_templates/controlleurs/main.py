@@ -413,7 +413,7 @@ class HOME2(http.Controller):
             'avancee_price': avancee_price if avancee_price else '',
             'premium_price': premium_price if premium_price else '',
         }
-        if (partenaire in ['', 'ubereats', 'deliveroo', 'coursierjob'] and request.website.id == 2):
+        if (partenaire in ['', 'ubereats', 'deliveroo', 'coursierjob','box2home'] and request.website.id == 2):
             values['partenaire'] = partenaire
             if (promo):
                 values['promo'] = promo
