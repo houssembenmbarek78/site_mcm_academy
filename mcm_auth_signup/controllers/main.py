@@ -31,7 +31,7 @@ class AuthSignupHome(AuthSignupHome):
             values['lang'] = lang
         values['lang'] = 'fr_FR'
         if request.website.id == 2:
-            values['company_ids'] = [2]
+            values['company_ids'] = [1,2]
             values['company_id'] = 2
         self._signup_with_values(qcontext.get('token'), values)
         request.env.cr.commit()
