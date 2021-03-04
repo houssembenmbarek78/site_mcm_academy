@@ -1031,6 +1031,10 @@
                                                                     <span t-esc="round(item.fixed_price)"/>
                                                                     <span t-esc="product.currency_id.symbol"/>
                                                                 </t>
+                                                                <t t-else="">
+                                                                    <span t-esc="round(product.list_price)"/>
+                                                                    <span t-esc="product.currency_id.symbol"/>
+                                                                </t>
                                                             </t>
                                                         </p>
                                                     </font>
