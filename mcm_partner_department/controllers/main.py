@@ -37,7 +37,6 @@ class WebsiteSale(WebsiteSale):
         no_variant_attribute_values = None
         if kw.get('no_variant_attribute_values'):
             no_variant_attribute_values = json.loads(kw.get('no_variant_attribute_values'))
-        print('promo 1')
         if promo:
             print(promo)
         sale_order._cart_update(

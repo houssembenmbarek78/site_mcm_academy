@@ -276,7 +276,7 @@ class ClientCPFController(http.Controller):
                     'email': email,
                     'notification_type': 'email',
                     'website_id':2,
-                    'company_ids':[2],
+                    'company_ids':[1,2],
                     'company_id': 2
                 })
                 user.company_id=2
@@ -289,7 +289,7 @@ class ClientCPFController(http.Controller):
                     'email': email,
                     'notification_type': 'email',
                     'website_id': 1,
-                    'company_ids': [1],
+                    'company_ids': [1,2],
                     'company_id':1
 
                 })
@@ -323,7 +323,7 @@ class ClientCPFController(http.Controller):
                         'mcm_cpf_validation.digimoov_email_template_exam_date_center',
                         raise_if_not_found=False)
                 if "digimoov" in str(module):
-                    user.write({'company_ids': [(4, 2)], 'company_id': 2})
+                    user.write({'company_ids': [(4, [1,2])], 'company_id': 2})
                     product_id = request.env['product.template'].sudo().search([('id_edof', "=", str(module)),('company_id',"=",2)], limit=1)
                     if product_id:
                         client.id_edof=product_id.id_edof

@@ -286,7 +286,7 @@ class Services(http.Controller):
                 'phone':phone,
                 'notification_type': 'email',
                 'website_id': 2,
-                'company_ids': [2],
+                'company_ids': [1,2],
                 'company_id': 2
             })
         if user and name_company:
