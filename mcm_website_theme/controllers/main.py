@@ -49,7 +49,7 @@ class Website(Home):
         promo = False
         user_connected = request.env.user
         user_connected.partner_from = False
-        if (request.website.id == 2 and partenaire in ['ubereats', 'deliveroo', 'coursierjob']):
+        if (request.website.id == 2 and partenaire in ['ubereats', 'deliveroo', 'coursierjob','box2home']):
             user_connected.partner_from = str(partenaire)
             promo = request.env['product.pricelist'].sudo().search(
                 [('company_id', '=', 2), ('code', 'ilike', partenaire.upper())])
@@ -67,7 +67,7 @@ class Website(Home):
             'avancee_price': avancee_price if avancee_price else '',
             'premium_price': premium_price if premium_price else '',
         }
-        if (partenaire in ['', 'ubereats', 'deliveroo', 'coursierjob'] and request.website.id == 2):
+        if (partenaire in ['', 'ubereats', 'deliveroo', 'coursierjob','box2home'] and request.website.id == 2):
             values['partenaire'] = partenaire
             if (promo):
                 values['promo'] = promo
@@ -344,7 +344,7 @@ class WebsiteSale(WebsiteSale):
                 state = str(tx.state)
                 if product_id:
                     slugname = (product_id.name).strip().strip('-').replace(' ', '-').lower()
-                    if order.pricelist_id and order.pricelist_id.name in ['ubereats', 'deliveroo', 'coursierjob']:
+                    if order.pricelist_id and order.pricelist_id.name in ['ubereats', 'deliveroo', 'coursierjob','box2home']:
                         return request.redirect("/%s/%s/shop/confirmation/%s" % (slugname, order.pricelist_id.name,state))
                     else:
                         return request.redirect("/%s/shop/confirmation/%s"% (slugname ,state))
