@@ -98,7 +98,7 @@ class FINANCEMENT(http.Controller):
     def pricing_table(self, **kw, ):
         user_connected=request.env.user
         if user_connected:
-            if user_connected.partner_id.partner_from and user_connected.partner_id.partner_from in ['ubereats', 'deliveroo', 'coursierjob']:
+            if user_connected.partner_id.partner_from and user_connected.partner_id.partner_from in ['ubereats', 'deliveroo', 'coursierjob','','box2home']:
                 return request.redirect("/%s#pricing"% str(user_connected.partner_id.partner_from))
             else:
                 return request.redirect("/#pricing")
@@ -404,7 +404,7 @@ class HOME2(http.Controller):
                 if (product.default_code == 'premium'):
                     premium_price = round(product.list_price)
         promo = False
-        if (request.website.id == 2 and partenaire in ['ubereats', 'deliveroo', 'coursierjob']):
+        if (request.website.id == 2 and partenaire in ['ubereats', 'deliveroo', 'coursierjob','box2home']):
             promo = request.env['product.pricelist'].sudo().search(
                 [('company_id', '=', 2), ('code', 'ilike', partenaire.upper())])
         values = {
