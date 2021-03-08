@@ -107,7 +107,7 @@
             </t>
         </xpath>
     </template>
-    <template id="portal_contract.sale_order_portal_template" inherit_id="sale.sale_order_portal_template" name="Contrat">
+    <template id="portal_contract.sale_order_portal_template" inherit_id="sale.sale_order_portal_template">
         <xpath expr="//div[@class='row mt16 o_portal_sale_sidebar']" position="replace">
             <div class="row mt16 o_portal_sale_sidebar">
                 <!-- Sidebar -->
@@ -124,7 +124,7 @@
                             <li class="list-group-item flex-grow-1">
                                 <a t-if="sale_order.has_to_be_signed(True)" role="button"
                                    class="btn btn-primary btn-block mb8" data-toggle="modal" data-target="#modalaccept"
-                                   href="#" style="display:none" id="accept_and_sign">
+                                   href="#" id="accept_and_sign">
                                     <i class="fa fa-check"/>
                                     <!--                                    <t t-if="sale_order.has_to_be_paid(True)">Sign &amp; Pay</t>-->
                                     <t>Accepter et signer</t>
@@ -316,9 +316,9 @@
                         <t t-if="sale_order.has_to_be_signed(True)">
                             <div class="col-sm-auto mt8">
                                 <a role="button" class="btn btn-primary" data-toggle="modal" data-target="#modalaccept"
-                                   href="#" id="footer_accept_and_sign">
+                                   href="#">
                                     <i class="fa fa-check"/>
-                                    <t>Signature contrat</t>
+                                    <t>Accepter et signer</t>
                                 </a>
                             </div>
                             <div class="col-sm-auto mt8">
@@ -626,7 +626,7 @@
                                 </span>
                             </div>
                             <div>
-                                <span style="font-size:12px">Coût unitaire horaire HT :</span>
+                                <span style="font-size:12px">Coût unitaire HT :</span>
                                 <span style="font-size:12px"
                                       t-field="sale_order.partner_id.module_id.particulier_price_untaxed"
                                       t-options='{"widget": "monetary", "display_currency": sale_order.currency_id}'/>
