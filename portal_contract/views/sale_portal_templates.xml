@@ -122,7 +122,7 @@
                     <t t-set="entries">
                         <ul class="list-group list-group-flush flex-wrap flex-row flex-lg-column">
                             <li class="list-group-item flex-grow-1">
-                                <a t-if="sale_order.has_to_be_signed(True)" role="button"
+                                <a t-if="sale_order.has_to_be_signed(True)" role="button" style="display:none;"
                                    class="btn btn-primary btn-block mb8" data-toggle="modal" data-target="#modalaccept"
                                    href="#" id="accept_and_sign">
                                     <i class="fa fa-check"/>
