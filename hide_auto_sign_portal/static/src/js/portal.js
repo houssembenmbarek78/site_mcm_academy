@@ -13,10 +13,12 @@ publicWidget.registry.SignTemplate = publicWidget.Widget.extend({
 //    },
     start: function() {
         var self = this;
-        console.log('aazzaazzazazaazazazaaza');
+         console.log('aazzaazzazazaazazazaaza');
          this.$('a.o_web_sign_auto_button').css('display','none');
          this.$('a.o_web_sign_load_button').css('display','none');
          this.$('a.o_web_sign_draw_button').html('Signature');
+         this.$autoButton=this.$('a.o_web_sign_auto_button');
+         console.log(this.$autoButton)
     },
 //    hide_auto_sign: function (ev) {
 //         var self = this;
