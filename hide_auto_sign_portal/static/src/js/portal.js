@@ -8,6 +8,8 @@ publicWidget.registry.SignTemplate = publicWidget.Widget.extend({
      events: {
         'click a[id="accept_and_sign"]': 'hide_auto_sign',
         'mouseover a[id="accept_and_sign"]': 'hide_auto_sign',
+        'click a[id="footer_accept_and_sign"]': 'hide_auto_sign',
+        'mouseover a[id="footer_accept_and_sign"]': 'hide_auto_sign',
     },
     start: function() {
         var self = this;
