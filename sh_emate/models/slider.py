@@ -40,8 +40,8 @@ class Slider(models.Model):
 
 
 
-    # event_filter_id = fields.Many2one(comodel_name="ir.filters", string = "Event Filter", domain='[("model_id","=","event.event" )]')
-    # event_ids = fields.Many2many(comodel_name="event.event", string = "Events")
+    event_filter_id = fields.Many2one(comodel_name="ir.filters", string = "Event Filter", domain='[("model_id","=","event.event" )]') 
+    event_ids = fields.Many2many(comodel_name="event.event", string = "Events")
     
     
     
@@ -60,7 +60,7 @@ class Slider(models.Model):
                         
         products = self.env["product.template"]        
         blog_posts = self.env["blog.post"] 
-        # events = self.env["event.event"]
+        events = self.env["event.event"] 
         pricelist_currency_id = self.env.user.company_id.currency_id        
         base_url = self.env['ir.config_parameter'].sudo().get_param('web.base.url')
        
@@ -187,48 +187,48 @@ class Slider(models.Model):
                 ('website_published', '=', True),  
             ]            
             
-            # if self.filter_type == 'manual':
-            #     if self.event_ids:
-            #         events = self.event_ids
+            if self.filter_type == 'manual':  
+                if self.event_ids:
+                    events = self.event_ids
                     
                     
-            # elif self.filter_type == 'domain':
-            #     if self.event_filter_id.sudo():
-            #         domain += safe_eval(self.event_filter_id.sudo().domain)
-            #         sort = safe_eval(self.event_filter_id.sudo().sort)
-            #
-            #         # TODO: remove limit or make dynamic when done.
-            #         events = events.search(domain,order = sort, limit = limit)
+            elif self.filter_type == 'domain':                    
+                if self.event_filter_id.sudo():
+                    domain += safe_eval(self.event_filter_id.sudo().domain)                     
+                    sort = safe_eval(self.event_filter_id.sudo().sort) 
+                           
+                    # TODO: remove limit or make dynamic when done.
+                    events = events.search(domain,order = sort, limit = limit)
                                     
-            # dic_events = {}
-            # for event in events:
-            #     cover_properties = safe_eval(event.cover_properties or {})
-            #
-            #
-            #     image_url = cover_properties.get("background-image",False)
-            #     if image_url != 'none':
-            #
-            #         first_part_url = "url('"
-            #         last_part_url = image_url[5:]
-            #         last_part_url = base_url + last_part_url
-            #         cover_properties.update({
-            #             "background-image": first_part_url + last_part_url
-            #             })
-            #
-            #     dic_events.update({
-            #         event.id : cover_properties
-            #         })
-            #
-            #
-            # try:
-            #     template_id = "sh_emate." + tmpl_item_name
-            #     output = self.env["ir.ui.view"].render_template(template_id, values={
-            #         'events': events,
-            #         'dic_events':dic_events,
-            #         'base_url':base_url
-            #     })
-            # except Exception as e:
-            #     raise UserError(_('%s') % ( ustr(e) ))
+            dic_events = {}
+            for event in events:
+                cover_properties = safe_eval(event.cover_properties or {})
+                
+                
+                image_url = cover_properties.get("background-image",False)
+                if image_url != 'none':
+                    
+                    first_part_url = "url('"
+                    last_part_url = image_url[5:]
+                    last_part_url = base_url + last_part_url
+                    cover_properties.update({
+                        "background-image": first_part_url + last_part_url
+                        })
+                    
+                dic_events.update({
+                    event.id : cover_properties
+                    })
+                
+                
+            try:            
+                template_id = "sh_emate." + tmpl_item_name
+                output = self.env["ir.ui.view"].render_template(template_id, values={
+                    'events': events,
+                    'dic_events':dic_events,
+                    'base_url':base_url                
+                })              
+            except Exception as e:
+                raise UserError(_('%s') % ( ustr(e) ))
                         
          
         output = output.decode("utf-8")    
