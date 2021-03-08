@@ -15,18 +15,8 @@ publicWidget.registry.SignTemplate = publicWidget.Widget.extend({
         var self = this;
         console.log('aazzaazzazazaazazazaaza');
         this.$('a.o_web_sign_auto_button').css('display','none');
-        this.$('a.o_web_sign_load_button').css('display','none');
         this.$('a.o_web_sign_draw_button').html('Signature');
 
-    if (this.$autoButton){
-        this.$('a.o_web_sign_auto_button').css('display','none');
-    }
-    if (this.$loadButton){
-        this.$('a.o_web_sign_load_button').css('display','none');
-    }
-    if (this.$drawButton){
-        this.$('a.o_web_sign_draw_button').html('Signature');
-    }
     },
     hide_auto_sign: function (ev) {
          var self = this;
