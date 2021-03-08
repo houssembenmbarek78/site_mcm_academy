@@ -25,6 +25,7 @@
                 "mass_mailing",
                 "website_sale",
                 "website_blog",     
+                "website_event",
                 "sh_snippet_adv",
                                            
             ],
@@ -132,7 +133,7 @@
     "views/snippets/blog_s.xml",
 
 
-    # "views/event.xml",
+    "views/event.xml",
     "views/snippets/event_s_item.xml",
     "views/snippets/event_s.xml",
 #     "views/snippets_event.xml",

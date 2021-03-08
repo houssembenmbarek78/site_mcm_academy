@@ -32,9 +32,9 @@
             					/>   
 
 
-<!--            					<field name="event_filter_id"-->
-<!--            					attrs="{'invisible': ['|',('filter_type', '!=', 'domain'),('slider_type', '!=', 'event')], 'required': [('filter_type', '=', 'domain'),('slider_type', '=', 'event')]}"-->
-<!--            					/> -->
+            					<field name="event_filter_id"
+            					attrs="{'invisible': ['|',('filter_type', '!=', 'domain'),('slider_type', '!=', 'event')], 'required': [('filter_type', '=', 'domain'),('slider_type', '=', 'event')]}"
+            					/> 
 
             					  
 								<field name="limit" attrs="{'invisible': [('filter_type', '!=', 'domain')] }"/>            					  
@@ -51,9 +51,9 @@
             					/>    
 
 
-<!--            					<field name="event_ids"-->
-<!--            					attrs="{'invisible': ['|',('filter_type', '!=', 'manual'),('slider_type', '!=', 'event')]}"-->
-<!--            					/>   -->
+            					<field name="event_ids"
+            					attrs="{'invisible': ['|',('filter_type', '!=', 'manual'),('slider_type', '!=', 'event')]}"
+            					/>   
 
 
             			</group>            			

@@ -4,4 +4,4 @@
 
 from . import slider
 from . import emate_config
-# from . import event
+from . import event
