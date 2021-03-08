@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sh_emate_slider_public,access.sh.emate.slider.public,model_sh_emate_slider,,1,1,1,1
+access_sh_emate_config_settings_public,access_sh_emate_config_settings_public,model_sh_emate_config_settings,,1,1,1,1

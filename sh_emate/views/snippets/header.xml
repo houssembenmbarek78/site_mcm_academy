@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- header template 1 -->
+<template id="sh_emate_header_tmpl_1" name="Header 1">
+	
+	<div class="o_mail_block_header_social" id="sh_header_1" data-name="Left Logo">
+		<div class="o_mail_snippet_general">
+   			<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+       			<tbody>
+       				<tr>
+           				<td width="30%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding logo">
+                     		<a href="#">
+                          		<h4>BOOK</h4>
+                     		</a>
+           				</td>
+						<td width="70%" class="text-right o_mail_no_resize o_mail_col_mv o_mail_col_container">
+   							<div class="o_mail_header_social menu">
+	          					<a href="#" class="ml10">HOME</a>
+	          					<a href="#" class="ml10">ABOUT</a>
+	          					<a href="#" class="ml10">BLOG</a>
+		        				<a href="#" class="ml10">CONTACT</a>
+   							</div>
+						</td>
+       				</tr>
+   				</tbody>
+   			</table>
+		</div>
+	</div> 
+	
+</template>
+<!-- end header template 1  -->
+
+
+<!-- header template 2 -->
+<template id="sh_emate_header_tmpl_2" name="Header 2">
+	
+	<div class="o_mail_block_header_social" id="sh_header_2" data-name="Left Logo">
+		<div class="o_mail_snippet_general">
+   			<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+       			<tbody>
+       				<tr>
+           				<td width="30%" class="o_mail_col_mv o_mail_logo_container o_mail_h_padding o_mail_v_padding logo">
+                     		<a href="#">
+                          		<h4>BOOK</h4>
+                     		</a>
+           				</td>
+						<td width="70%" class="text-right o_mail_no_resize o_mail_col_mv o_mail_col_container">
+   							<div class="o_mail_header_social menu">
+	          					<a href="#" class="ml10">HOME</a>
+	          					<a href="#" class="ml10">|</a>
+	          					<a href="#" class="ml10">SERVICES</a>
+	          					<a href="#" class="ml10">|</a>
+	          					<a href="#" class="ml10">ABOUT</a>
+   							</div>
+						</td>
+       				</tr>
+   				</tbody>
+   			</table>
+		</div>
+	</div>
+
+</template>
+<!-- end header template 2  -->
+
+
+<!-- header template 3 -->
+<template id="sh_emate_header_tmpl_3" name="Header 3">
+
+	<div class="o_mail_block_header_logo" data-name="Centered Logo" id="sh_header_3">
+	    <div class="o_mail_snippet_general">
+	        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding">
+	            <tbody><tr>
+	                <td width="40%" class="o_mail_no_resize o_mail_col_mv o_mail_col_container o_mail_col_container p10">
+	                	<div class="o_mail_header_social menu">
+	       					<a href="#">ABOUT</a>
+	       					<a href="#" class="ml10">PRODUCT</a>
+						</div>
+	                </td>
+	                <td valign="center" width="20%" class="p10 logo text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding">
+	                    <a href="#">
+	                    	<h1>BOOK</h1>
+	               		</a>
+	                </td>
+	                <td width="40%" class="text-right o_mail_col_mv o_mail_col_container p10">
+	                	<a href="#"><span class="fa fa-phone"></span> 7984575681</a>
+	                </td>
+	            </tr>
+	        </tbody></table>
+	    </div>
+	</div>
+
+</template>
+<!-- end header template 3  -->
+
+<!-- header template 4 -->
+<template id="sh_emate_header_tmpl_4" name="Header 4">
+
+	<div class="o_mail_block_header_logo" data-name="Centered Logo" id="sh_header_4">
+	    <div class="o_mail_snippet_general">
+	        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding">
+	            <tbody><tr>
+	                <td width="40%" class="o_mail_no_resize o_mail_col_mv o_mail_col_container p10">
+	                	<div class="o_mail_header_social menu">
+	       					<a href="#">ABOUT</a>
+	       					<a href="#" class="ml10">SERVICES</a>
+						</div>
+	                </td>
+	                <td valign="center" width="20%" class="p10 logo text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding">
+	                    <a href="#">
+	                    	<h1>FASHION</h1>
+	               		</a>
+	                </td>
+	                <td width="40%" class="text-right menu o_mail_col_mv o_mail_col_container p10">
+	                	<a href="#">CONTACT</a>
+	       				<a href="#" class="ml10">SALE</a>
+	                </td>
+	            </tr>
+	        </tbody></table>
+	    </div>
+	</div>
+
+</template>
+<!-- end header template 4  -->
+
+<!-- header template 5 -->
+<template id="sh_emate_header_tmpl_5" name="Header 5">
+
+	<div class="o_mail_block_header_social" id="sh_header_5" data-name="Left Logo">
+		<div class="o_mail_snippet_general">
+			<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+	   			<tbody>
+	   				<tr>
+	       				<td width="25%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding logo">
+	                 		<a href="#">
+	                      		<h4>FASHION</h4>
+	                 		</a>
+	       				</td>
+						<td width="75%" class="text-right o_mail_no_resize o_mail_col_mv o_mail_col_container">
+							<div class="o_mail_header_social menu">
+	       					<a href="#" class="ml10">ABOUT</a>
+	       					<a href="#" class="ml10">SERVICES</a>
+	       					<a href="#" class="ml10">CONTACT</a>
+							</div>
+						</td>
+	   				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</template>
+<!-- end header template 5  -->
+
+<!-- header template 6 -->
+<template id="sh_emate_header_tmpl_6" name="Header 6">
+
+	<div class="o_mail_block_header_social" id="sh_header_6" data-name="Left Logo">
+		<div class="o_mail_snippet_general">
+			<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+	   			<tbody>
+	   				<tr>
+	       				<td width="25%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding logo">
+	                 		<a href="#">
+	                      		<h4>FASHION</h4>
+	                 		</a>
+	       				</td>
+						<td width="75%" class="text-right o_mail_no_resize o_mail_col_mv o_mail_col_container">
+							<div class="o_mail_header_social menu">
+	       					<a href="#" class="ml10">OFFER</a>
+	       					<a href="#" class="ml10">SERVICE</a>
+	       					<a href="#" class="ml10">ABOUT</a>
+							</div>
+						</td>
+	   				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</template>
+<!-- end header template 6  -->
+
+<!-- header template 7 -->
+<template id="sh_emate_header_tmpl_7" name="Header 7">
+
+	<div class="o_mail_block_header_logo" data-name="Centered Logo" id="sh_header_7">
+	    <div class="o_mail_snippet_general">
+	        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding">
+	            <tbody>
+	            	<tr>
+		                <td valign="center" width="100%" class="o_mail_col_mv o_mail_col_container text-center o_mail_v_padding logo">
+		                    <a href="#">
+		                   		<h4>FASHION</h4>
+		              		</a>
+		                </td>
+	            	</tr>
+	            	<tr>
+						<td width="100%" class="text-center o_mail_no_resize o_mail_col_mv o_mail_col_container">
+							<div class="o_mail_header_social menu">
+							<a href="#" class="plr15">WOMAN</a>
+	       					<a href="#" class="plr15">MAN</a>
+	       					<a href="#" class="plr15">KIDS</a>
+	       					<a href="#" class="plr15">OFFER</a>
+							</div>
+						</td>
+	   				</tr>
+	        	</tbody>
+	        </table>
+	    </div>
+	</div>
+
+</template>
+<!-- end header template 7 -->
+
+<!-- header template 8 -->
+<template id="sh_emate_header_tmpl_8" name="Header 8">
+
+	<div class="o_mail_block_header_social" id="sh_header_1" data-name="Left Logo">
+		<div class="o_mail_snippet_general">
+	  		<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+	   			<tbody>
+	   				<tr>
+	       				<td width="30%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding logo">
+	                 		<a href="#">
+	                      		<h4>FOOD</h4>
+	                 		</a>
+	       				</td>
+						<td width="70%" class="text-right o_mail_no_resize o_mail_col_mv o_mail_col_container">
+							<div class="o_mail_header_social menu">
+	        					<a href="#" class="ml10">HOME</a>
+	        					<a href="#" class="ml10">ABOUT</a>
+	        					<a href="#" class="ml10">BLOG</a>
+	       						<a href="#" class="ml10">CONTACT</a>
+							</div>
+						</td>
+	   				</tr>
+				</tbody>
+	  		</table>
+		</div>
+	</div>
+
+</template>
+<!-- end header template 8 -->
+
+
+<!-- header template 9 -->
+<template id="sh_emate_header_tmpl_9" name="Header 9">
+	
+ 	<div class="o_mail_block_header_social" id="sh_header_9" data-name="Left Logo">
+		<div class="o_mail_snippet_general">
+	  		<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+	      		<tbody>
+	      			<tr>
+	          			<td width="30%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding logo">
+	          			</td>
+						<td width="70%" class="text-right o_mail_no_resize o_mail_col_mv o_mail_col_container">
+							<div class="o_mail_header_social menu">
+	       					<a href="#" class="ml10">HOME</a>
+	       					<a href="#" class="ml10">ABOUT</a>
+	       					<a href="#" class="ml10">BLOG</a>
+	      					<a href="#" class="ml10">CONTACT</a>
+							</div>
+						</td>
+	      			</tr>
+	  			</tbody>
+	  		</table>
+		</div>
+	</div>
+
+</template>
+<!-- end header template 9 -->
+
+
+<!-- header template 10 -->
+<template id="sh_emate_header_tmpl_10" name="Header 10">
+	
+	<div class="o_mail_block_header_social" id="sh_header_10" data-name="Left Logo">
+		<div class="o_mail_snippet_general">
+	  		<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+	      		<tbody>
+	      			<tr>
+	          			<td width="30%" class="o_mail_logo_container o_mail_h_padding o_mail_v_padding logo">
+	          			</td>
+						<td width="70%" class="text-right o_mail_no_resize">
+							<div class="o_mail_header_social menu">
+	       						<a href="#">HOME</a>
+	                        	<a href="#" class="ml10">CONTACT</a>
+	                        	<a href="#" class="active ml10">REGISTER</a>
+	      						<a href="#" class="ml10"><h4><t t-if="company_id" t-esc="company_id.name"/></h4></a>
+							</div>
+						</td>
+	      			</tr>
+	  			</tbody>
+	  		</table>
+		</div>
+	</div>
+
+</template>
+<!-- end header template 10 -->
+
+
+<!-- header template 11 -->
+<template id="sh_emate_header_tmpl_11" name="Header 11">
+
+	<div class="o_mail_block_header_logo" data-name="Centered Logo" id="sh_header_11">
+	    <div class="o_mail_snippet_general">
+	        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding">
+	            <tbody><tr>
+	                <td valign="center" width="30%" class="p10 logo text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding logo">
+	                    <a href="#">
+	                    	<h1><t t-if="company_id" t-esc="company_id.name"/></h1>
+	               		</a>
+	                </td>
+	                <td width="70%" class="text-right o_mail_col_mv o_mail_col_container p10">
+	                	<div class="icon">
+	                      <a t-att-href="company_id.social_facebook">
+	                          <span class="fa fa-facebook"></span>
+	                      </a>
+	
+	                      <a t-att-href="company_id.social_twitter">
+	                          <span class="fa fa-twitter"></span>
+	                      </a>
+	
+	                      <a t-att-href="company_id.social_linkedin">
+	                          <span class="fa fa-linkedin"></span>
+	                      </a>
+	                      
+	                      <a t-att-href="company_id.email">
+	                          <span class="fa fa-envelope"></span>
+	                      </a>
+	
+	                    </div>
+	                </td>
+	            </tr>
+	        </tbody></table>
+	    </div>
+	</div>
+
+</template>
+<!-- end header template 11 -->
+
+
+<!-- header template 12 -->
+<template id="sh_emate_header_tmpl_12" name="Header 12">
+
+	<div class="o_mail_block_header_social" id="sh_header_12" data-name="Left Logo">
+		<div class="o_mail_snippet_general">
+	  		<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+	      		<tbody>
+	      			<tr>
+	          			<td width="30%" class="o_mail_col_mv o_mail_logo_container o_mail_h_padding o_mail_v_padding logo">
+	                    	<a href="#">
+	                         	<h4>FURNITURE</h4>
+	                    	</a>
+	          			</td>
+						<td width="70%" class="text-right o_mail_no_resize o_mail_col_mv o_mail_col_container">
+	  						<div class="o_mail_header_social menu">
+	          					<a href="#" class="ml10">HOME</a>
+	          					<a href="#" class="ml10">|</a>
+	          					<a href="#" class="ml10">SERVICES</a>
+	          					<a href="#" class="ml10">|</a>
+	          					<a href="#" class="ml10">ABOUT</a>
+	  						</div>
+						</td>
+	      			</tr>
+	  			</tbody>
+	  		</table>
+		</div>
+	</div>
+
+</template>
+<!-- end header template 12 -->
+
+<!-- header template 13 -->
+<template id="sh_emate_header_tmpl_13" name="Header 13">
+	
+	<div class="o_mail_block_header_logo" data-name="Centered Logo" id="sh_header_13">
+	    <div class="o_mail_snippet_general">
+	        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding pr0">
+	            <tbody><tr>
+	                <td width="50%" class="o_mail_no_resize o_mail_col_mv o_mail_col_container p10">
+	                	<div class="o_mail_header_social menu">
+	       					<a href="#">CONTACT: 7984575681</a>
+						</div>
+	                </td>
+	                <td valign="center" width="20%" class="p10 logo text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding">
+	                    <a href="#">
+	                    	<h1>FURNITURE</h1>
+	               		</a>
+	                </td>
+	                <td width="30%" class="text-right o_mail_col_mv o_mail_col_container icon p10">
+	                	<a href="#"><span class="fa fa-shopping-cart"></span></a>
+	                </td>
+	            </tr>
+	        </tbody></table>
+	    </div>
+	</div>
+	
+</template>
+<!-- end header template 13 -->
+
+
+<!-- header template 14 -->
+<template id="sh_emate_header_tmpl_14" name="Header 14">
+
+	<div class="o_mail_block_header_social" id="sh_header_14" data-name="Left Logo">
+		<div class="o_mail_snippet_general">
+	  		<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+	      		<tbody>
+	      			<tr>
+						<td width="70%" class="text-left o_mail_no_resize o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding">
+	  						<div class="o_mail_header_social menu">
+	          					<a href="#" class="ml10">OUR SITE</a>
+	          					<a href="#" class="ml10 active">CONTACT US</a>
+	          					<a href="#" class="ml10">SERVICE</a>
+	  						</div>
+						</td>
+						<td width="30%" class="o_mail_col_mv o_mail_logo_container o_mail_h_padding o_mail_v_padding logo">
+	                    	<a href="#">
+	                         	<h4>FURNITURE</h4>
+	                    	</a>
+	          			</td>
+	      			</tr>
+	  			</tbody>
+	  		</table>
+		</div>
+	</div>
+
+</template>
+<!-- end header template 14 -->
+
+
+<!-- header template 15 -->
+<template id="sh_emate_header_tmpl_15" name="Header 15">
+
+	<div class="o_mail_block_header_social" id="sh_header_15" data-name="Left Logo">
+		<div class="o_mail_snippet_general">
+			<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+	   			<tbody>
+	   				<tr>
+	       				<td width="25%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding logo">
+	                 		<a href="#">
+	                      		<h4>JEWELLERY</h4>
+	                 		</a>
+	       				</td>
+						<td width="75%" class="text-right o_mail_no_resize o_mail_col_mv o_mail_col_container">
+							<div class="o_mail_header_social menu">
+	       						<a href="#" class="ml10">HOME</a>
+		          				<a href="#" class="ml10">|</a>
+		          				<a href="#" class="ml10">SERVICES</a>
+		          				<a href="#" class="ml10">|</a>
+		          				<a href="#" class="ml10">ABOUT</a>
+							</div>
+						</td>
+	   				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</template>
+<!-- end header template 15 -->
+
+<!-- header template 16 -->
+<template id="sh_emate_header_tmpl_16" name="Header 16">
+
+	<div class="o_mail_block_header_social" id="sh_header_16" data-name="Left Logo">
+		<div class="o_mail_snippet_general">
+			<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+	   			<tbody>
+	   				<tr>
+	       				<td width="25%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding logo">
+	                 		<a href="#">
+	                      		<h4>JEWELLERY</h4>
+	                 		</a>
+	       				</td>
+						<td width="75%" class="text-right o_mail_no_resize o_mail_col_mv o_mail_col_container">
+							<div class="o_mail_header_social menu">
+	       						<a href="#" class="ml10">HOME</a>
+		          				<a href="#" class="ml10">|</a>
+		          				<a href="#" class="ml10">SERVICES</a>
+		          				<a href="#" class="ml10">|</a>
+		          				<a href="#" class="ml10">ABOUT</a>
+							</div>
+						</td>
+	   				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+</template>
+<!-- end header template 16 -->
+
+
+<!-- header template 17 -->
+<template id="sh_emate_header_tmpl_17" name="Header 17">
+
+	<div class="o_mail_block_header_social" id="sh_header_17" data-name="Left Logo">
+		<div class="o_mail_snippet_general">
+			<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+	   			<tbody>
+	   				<tr>
+						<td width="70%" class="text-left o_mail_no_resize o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding ptb10">
+							<div class="o_mail_header_social menu">
+	        					<a href="#">OFFER</a>
+	        					<a href="#" class="ml10">|</a>
+	        					<a href="#" class="ml10">SERVICE</a>
+	        					<a href="#" class="ml10">|</a>
+	        					<a href="#" class="ml10">ABOUT</a>
+							</div>
+						</td>
+						<td width="30%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding logo ptb10">
+	                 		<a href="#">
+	                      		<h4>JEWELLERY</h4>
+	                 		</a>
+	       				</td>
+	   				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</template>
+<!-- end header template 17 -->
+
+<!-- header template 18 -->
+<template id="sh_emate_header_tmpl_18" name="Header 18">
+
+	<div class="o_mail_block_header_logo" data-name="Centered Logo" id="sh_header_19">
+	    <div class="o_mail_snippet_general">
+	        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding">
+	            <tbody><tr>
+	                <td width="40%" class="o_mail_no_resize o_mail_col_mv o_mail_col_container p10">
+	                	<div class="o_mail_header_social menu">
+	       					<a href="#">HOME</a>
+	       					<a href="#" class="ml10">ABOUT</a>
+						</div>
+	                </td>
+	                <td valign="center" width="20%" class="p10 logo text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding">
+	                    <a href="#">
+	                    	<h1>Agency</h1>
+	               		</a>
+	                </td>
+	                <td width="40%" class="text-right menu o_mail_col_mv o_mail_col_container p10">
+	                	<a href="#">BLOG</a>
+	       				<a href="#" class="ml10">CONTACT</a>
+	                </td>
+	            </tr>
+	        </tbody></table>
+	    </div>
+	</div>
+
+</template>
+<!-- end header template 18 -->
+
+<!-- header template 19 -->
+<template id="sh_emate_header_tmpl_19" name="Header 19">
+	<div class="o_mail_block_header_social" id="sh_header_20" data-name="Left Logo">
+		<div class="o_mail_snippet_general">
+			<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+	   			<tbody>
+	   				<tr>
+	       				<td width="25%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding logo">
+	                 		<a href="#">
+	                      		<h3>Ecommerce</h3>
+	                 		</a>
+	       				</td>
+						<td width="75%" class="text-right o_mail_no_resize o_mail_col_mv o_mail_col_container">
+							<div class="o_mail_header_social menu">
+	       					<a href="#" class="ml10">Home</a>
+	       					<a href="#" class="ml10">About</a>
+	       					<a href="#" class="ml10">Blog</a>
+	       					<a href="#" class="ml10">Contact</a>
+							</div>
+						</td>
+	   				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</template>
+<!-- end header template 19 -->
+
+<!-- header template 20 -->
+<template id="sh_emate_header_tmpl_20" name="Header 20">
+	<div class="o_mail_block_menubar" id="sh_menubar_20" data-name="Left Logo">
+		<div class="o_mail_snippet_general">
+			<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+	   			<tbody>
+	   				<tr>
+						<td width="100%" class="text-center o_mail_no_resize o_mail_col_mv o_mail_col_container">
+							<div class="o_mail_header_social menu">
+		       					<a href="#">New Arrival</a>
+		       					<a href="#">|</a>
+		       					<a href="#">Men</a>
+		       					<a href="#">|</a>
+		       					<a href="#">Women</a>
+		       					<a href="#">|</a>
+		       					<a href="#">Accessories</a>
+		       					<a href="#">|</a>
+		       					<a href="#">Sale</a>	
+							</div>
+						</td>
+	   				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</template>
+<!-- end header template 20 -->
+
+<!-- header template 21 -->
+<template id="sh_emate_header_tmpl_21" name="Header 21">
+	<div class="o_mail_block_header_logo" data-name="Centered Logo" id="sh_header_21">
+	    <div class="o_mail_snippet_general">
+	        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding border_bottom">
+	            <tbody>
+	            	<tr>
+		                <td valign="center" width="100%" class="o_mail_col_mv o_mail_col_container text-center o_mail_v_padding logo">
+		                    <a href="#">
+		                   		<h4>Ecommerce</h4>
+		              		</a>
+		                </td>
+	            	</tr>
+	            	<tr>
+						<td width="100%" class="text-center o_mail_no_resize o_mail_col_mv o_mail_col_container">
+							<div class="o_mail_header_social menu">
+							<a href="#" class="plr15">VINTAGE</a>
+	       					<a href="#" class="plr15">SUMMER</a>
+	       					<a href="#" class="plr15">TOP</a>
+	       					<a href="#" class="plr15">ACCESSORIES</a>
+							</div>
+						</td>
+	   				</tr>
+	        	</tbody>
+	        </table>
+	    </div>
+	</div>
+</template>
+<!-- end header template 21 -->
+
+<!-- header template 22 -->
+<template id="sh_emate_header_tmpl_22" name="Header 22">
+	<div class="o_mail_block_header_social" id="sh_header_22" data-name="Left Logo">
+		<div class="o_mail_snippet_general">
+			<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+	   			<tbody>
+	   				<tr>
+	       				<td width="30%" class="o_mail_col_mv o_mail_logo_container o_mail_h_padding o_mail_v_padding logo">
+	                 		<a href="#">
+	                      		<h4>Saas</h4>
+	                 		</a>
+	       				</td>
+						<td width="70%" class="text-right o_mail_no_resize o_mail_col_mv o_mail_col_container">
+							<div class="o_mail_header_social menu">
+	       						<a href="#" class="ml10">Features</a>
+	       						<a href="#" class="ml10">|</a>
+	       						<a href="#" class="ml10">Review</a>
+	       						<a href="#" class="ml10">|</a>
+	       						<a href="#" class="ml10">Contact: 7984575681</a>
+							</div>
+						</td>
+	   				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</template>
+<!-- end header template 22 -->
+
+<!-- header template 23 -->
+<template id="sh_emate_header_tmpl_23" name="Header 23">
+	<div class="o_mail_block_header_social" id="sh_header_23" data-name="Left Logo">
+		<div class="o_mail_snippet_general">
+	  		<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+	      		<tbody>
+	      			<tr>
+	          			<td width="30%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding logo">
+	          				<a href="#"><h4>SaaS</h4></a>
+	          			</td>
+						<td width="70%" class="text-right o_mail_no_resize o_mail_col_mv o_mail_col_container">
+							<div class="o_mail_header_social menu">
+	       					<a href="#" class="ml10">Overview</a>
+	       					<a href="#" class="ml10">Features</a>
+	       					<a href="#" class="ml10">Reviews</a>
+	      					<a href="#" class="ml10">Contact</a>
+							</div>
+						</td>
+	      			</tr>
+	  			</tbody>
+	  		</table>
+		</div>
+	</div>
+</template>
+<!-- end header template 23 -->
+
+
+<!-- header template 24 -->
+<template id="sh_emate_header_tmpl_24" name="Header 24">
+	<div class="o_mail_block_header_social" id="sh_header_24" data-name="Left Logo">
+		<div class="o_mail_snippet_general">
+			<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+	   			<tbody>
+	   				<tr>
+	       				<td width="30%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding logo">
+	                 		<a href="#">
+	                      		<h4>Construction</h4>
+	                 		</a>
+	       				</td>
+						<td width="70%" class="text-right o_mail_no_resize o_mail_col_mv o_mail_col_container">
+							<div class="o_mail_header_social menu">
+	       						<a href="#" class="ml10">About</a>
+	       						<a href="#" class="ml10">Services</a>
+	       						<a href="#" class="ml10">Portfolio</a>
+	      						<a href="#" class="ml10">Contact</a>
+							</div>
+						</td>
+	   				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</template>
+<!-- end header template 24 -->
+
+<!-- header template 25 -->
+<template id="sh_emate_header_tmpl_25" name="Header 25">
+	<div class="o_mail_block_header_social" id="sh_header_25" data-name="Left Logo">
+		<div class="o_mail_snippet_general">
+	  		<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+	      		<tbody>
+	      			<tr>
+	          			<td width="30%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding logo">
+	          				<a href="#"><h4>Construction</h4></a>
+	          			</td>
+						<td width="70%" class="text-right o_mail_no_resize o_mail_col_mv o_mail_col_container">
+							<div class="o_mail_header_social menu">
+	       					<a href="#" class="ml10">About</a>
+	       					<a href="#" class="ml10">Services</a>
+	       					<a href="#" class="ml10">Portfolio</a>
+	      					<a href="#" class="ml10">Contact</a>
+							</div>
+						</td>
+	      			</tr>
+	  			</tbody>
+	  		</table>
+		</div>
+	</div>
+</template>
+<!-- end header template 25 -->
+
+<!-- header template 26 -->
+<template id="sh_emate_header_tmpl_26" name="Header 26">
+	<div class="o_mail_block_header_logo" id="sh_header_26">
+		<div class="o_mail_snippet_general">
+			<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding">
+	 			<tbody>
+	   				<tr>
+	     				<td width="70%" class="left_side o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding logo">
+	       					<a href="#"><img src="/sh_emate/static/src/img/tmpl_26/logo.png" alt="logo" /></a>
+	     				</td>
+	     				<td width="30%" class="text-right o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding">
+	       					<div class="right_menu">
+	         					<a t-if="company_id.social_facebook" title="Facebook" t-att-href="company_id.social_facebook"> <span class="fa fa-facebook"></span> </a>
+	         					<a t-if="company_id.social_twitter" title="Twitter" t-att-href="company_id.social_twitter" class="ml10"> <span class="fa fa-twitter"></span> </a>
+	         					<a t-if="company_id.social_instagram" title="Instagram" t-att-href="company_id.social_instagram" class="ml10"> <span class="fa fa-instagram"></span> </a>
+	         					<a t-if="company_id.social_youtube" title="Youtube" t-att-href="company_id.social_youtube" class="ml10"> <span class="fa fa-youtube-play"></span> </a>
+	       					</div>
+	     				</td>
+	   				</tr>
+	 			</tbody>
+			</table>	
+		</div>
+	</div>	
+</template>
+<!-- end header template 26 -->
+
+<!-- header template 27 -->
+<template id="sh_emate_header_tmpl_27" name="Header 27">
+	<div class="o_mail_block_header_logo" id="sh_header_27">
+		<div class="o_mail_snippet_general">
+			<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding">
+	 			<tbody>
+                       <tr>
+                           <td width="30%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding logo">
+                               <a href="#">
+                                   <img src="/sh_emate/static/src/img/tmpl_27/logo.png" alt="logo" />
+                               </a>
+                           </td>
+                           <td width="70%" class="text-right o_mail_no_resize o_mail_col_mv o_mail_col_container">
+                               <div class="o_mail_header_social menu right_menu">
+                                   <a href="#" class="ml10">MENS</a>
+                                   <a href="#" class="ml10">WOMENS</a>
+                                   <a href="#" class="ml10">KIDS</a>
+                                   <a href="#" class="ml10">STORE</a>
+                               </div>
+                           </td>
+                       </tr>
+                   </tbody>
+			</table>	
+		</div>
+	</div>	
+</template>
+<!-- end header template 27 -->
+
+
+<!-- header template 28 -->
+<template id="sh_emate_header_tmpl_28" name="Header 28">
+	<div class="o_mail_block_header_social" id="sh_header_28" data-name="Left Logo">
+         <div class="o_mail_snippet_general">
+             <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+                 <tbody>
+                     <tr>
+                         <td width="25%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding logo">
+                             <a href="#">
+                                 <img src="/sh_emate/static/src/img/tmpl_28/logo.png" alt="logo" />
+                             </a>
+                         </td>
+                         <td width="75%" class="text-right o_mail_no_resize o_mail_col_mv o_mail_col_container">
+                             <div class="o_mail_header_social menu">
+                                 <a href="#" class="ml10">MEN</a>
+                                 <a href="#" class="ml10">|</a>
+                                 <a href="#" class="ml10">WOMEN</a>
+                                 <a href="#" class="ml10">|</a>
+                                 <a href="#" class="ml10">OFFER</a>
+                             </div>
+                         </td>
+                     </tr>
+                 </tbody>
+             </table>
+         </div>
+     </div>
+</template>
+<!-- end header template 28 -->
+
+<!-- header template 29 -->
+<template id="sh_emate_header_tmpl_29" name="Header 29">
+	<div class="o_mail_block_header_social" id="sh_header_30" data-name="Left Logo">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                            <td width="25%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding logo">
+                                <a href="#">
+                                    <img src="/sh_emate/static/src/img/tmpl_30/logo.png" alt="logo" />
+                                </a>
+                            </td>
+                            <td width="75%" class="text-right o_mail_no_resize o_mail_col_mv o_mail_col_container">
+                                <div class="o_mail_header_social menu">
+                                    <a href="#" class="ml10">REVIEW</a>
+                                    <a href="#" class="ml10">PARTNER</a>
+                                    <a href="#" class="ml10">CONTACT</a>
+                                    <a href="#" class="ml10">STORE</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+</template>
+<!-- end header template 29 -->
+
+<!-- header template 30 -->
+<template id="sh_emate_header_tmpl_30" name="Header 30">
+	<div class="o_mail_block_header_logo" data-name="Centered Logo" id="sh_header_32">
+          <div class="o_mail_snippet_general">
+              <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding border_bottom plr30">
+                  <tbody>
+                      <tr>
+                          <td valign="center" width="100%" class="o_mail_col_mv o_mail_col_container text-center o_mail_v_padding logo">
+                              <a href="#">
+                                  <img src="/sh_emate/static/src/img/tmpl_32/top_logo.png" alt="logo"/>
+                              </a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width="100%" class="text-center o_mail_no_resize o_mail_col_mv o_mail_col_container">
+                              <div class="o_mail_header_social menu">
+                                  <a href="#" class="p15">Home</a>
+                                  <span>|</span>
+                                  <a href="#" class="p15">Properties</a>
+                                  <span>|</span>
+                                  <a href="#" class="p15">About</a>
+                                  <span>|</span>
+                                  <a href="#" class="p15">Blog</a>
+                                  <span>|</span>
+                                  <a href="#" class="p15">Contact</a>
+                              </div>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+</template>
+<!-- end header template 30 -->
+
+
+
+
+
+
+</odoo>

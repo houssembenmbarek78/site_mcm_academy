@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- copyright template 1 -->
+<template id="sh_emate_copyright_tmpl_1" name="Copyright 1">
+	
+	<div class="sh_emate_copyright_1">
+		<div class="o_mail_block_copyright" data-name="Copyright" id="sh_copyright_1">
+	        <div class="o_mail_snippet_general">
+	            <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+	                <tbody>
+	                    <tr>
+	                        <td width="100%" class="o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker">
+	                            <center>
+			                        <p>Unsbscribe . View in Browser</p>
+			                        <p>Copyright - <t t-if="company_id" t-esc="company_id.name"/>
+			                        </p>
+			                    </center>
+	                        </td>
+	                    </tr>
+	                </tbody>
+	            </table>
+	        </div>
+	    </div>
+	</div>
+	
+</template>
+<!-- end copyright template 1  -->
+
+<!-- copyright template 2 -->
+<template id="sh_emate_copyright_tmpl_2" name="Copyright 2">
+	
+	<div class="sh_emate_copyright_2">
+		<div class="o_mail_block_footer_social o_mail_footer_social_left" data-name="Footer Left" id="sh_copyright_3">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding p15">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_footer_description copyright_content o_mail_col_mv o_mail_col_container">
+		                        <div>
+		                            <p class="o_mail_footer_copy o_default_snippet_text">Copyright <span class="fa fa-copyright" role="img" aria-label="Copyright" title="Copyright"></span> Softhealer Technologie</p>
+		                        </div>
+		                    </td>
+					        <td class="o_mail_footer_social right-icon pr0 o_mail_col_mv o_mail_col_container"> 
+						        <a aria-label="Facebook" title="Facebook" href="#">
+						          <span class="fa fa-facebook"></span>
+						        </a>
+						        <a aria-label="GooglePlus" title="GooglePlus" href="#">
+						          <span class="fa fa-google-plus"></span>
+						        </a>
+						    	<a aria-label="Twitter" title="Twitter" href="#">
+						            <span class="fa fa-twitter"></span>
+						        </a>
+						        <a aria-label="LinkedIn" title="LinkedIn" href="#">
+						            <span class="fa fa-linkedin"></span>
+						        </a>
+					        </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+    </div>       
+	
+</template>
+<!-- end copyright template 2  -->
+
+
+<!-- copyright template 3 -->
+<template id="sh_emate_copyright_tmpl_3" name="Copyright 3">
+	
+	<div class="sh_emate_copyright_3">
+		<div class="o_mail_block_footer_social o_mail_footer_social_left" data-name="Footer Left" id="sh_copyright_6">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding p15 border0">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_footer_description copyright_content o_mail_col_mv o_mail_col_container">
+		                        <div>
+		                            <p class="o_mail_footer_copy o_default_snippet_text">If you liked our template, follow us</p>
+		                        </div>
+		                    </td>
+					        <td class="o_mail_footer_social right-icon pr0 o_mail_col_mv o_mail_col_container"> 
+						        <a aria-label="Facebook" title="Facebook" href="#">
+						          <span class="fa fa-facebook"></span>
+						        </a>
+						        <a aria-label="Instagram" title="Instagram" href="#" class="ml10">
+						            <span class="fa fa-instagram"></span>
+						        </a>
+						        <a aria-label="Twitter" title="Twitter" href="#" class="ml10">
+						            <span class="fa fa-twitter"></span>
+						        </a>
+						        <a aria-label="LinkedIn" title="LinkedIn" href="#" class="ml10">
+						            <span class="fa fa-linkedin"></span>
+						        </a>
+						        <a aria-label="Pinterest" title="Pinterest" href="#" class="ml10">
+						            <span class="fa fa-pinterest-p"></span>
+						        </a>
+					        </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>     
+    </div>       
+	
+</template>
+<!-- end copyright template 3  -->
+
+
+<!-- copyright template 4 -->
+<template id="sh_emate_copyright_tmpl_4" name="Copyright 4">
+	
+	<div class="sh_emate_copyright_4">
+		<div class="o_mail_block_footer_social o_mail_footer_social_left" data-name="Footer Left" id="sh_copyright_14">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding p15 border0">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_footer_description copyright_content o_mail_col_mv o_mail_col_container">
+		                        <div>
+		                            <p class="o_mail_footer_copy o_default_snippet_text">If you liked our template, follow us</p>
+		                        </div>
+		                    </td>
+					        <td class="o_mail_footer_social right-icon pr0 o_mail_col_mv o_mail_col_container"> 
+						        <a aria-label="Facebook" title="Facebook" href="#">
+						          <span class="fa fa-facebook"></span>
+						        </a>
+						        <a aria-label="Instagram" title="Instagram" href="#" class="ml10">
+						            <span class="fa fa-instagram"></span>
+						        </a>
+						        <a aria-label="Twitter" title="Twitter" href="#" class="ml10">
+						            <span class="fa fa-twitter"></span>
+						        </a>
+						        <a aria-label="LinkedIn" title="LinkedIn" href="#" class="ml10">
+						            <span class="fa fa-linkedin"></span>
+						        </a>
+						        <a aria-label="Pinterest" title="Pinterest" href="#" class="ml10">
+						            <span class="fa fa-pinterest-p"></span>
+						        </a>
+					        </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+    </div>       
+	
+</template>
+<!-- end copyright template 4  -->
+
+
+<!-- copyright template 5 -->
+<template id="sh_emate_copyright_tmpl_5" name="Copyright 5">
+	
+	<div class="sh_emate_copyright_5">
+		<div class="o_mail_block_footer_social o_mail_footer_social_left" data-name="Footer Left" id="sh_copyright_17">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding p15 border0">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_footer_description copyright_content o_mail_col_mv o_mail_col_container">
+		                        <div>
+		                            <p class="o_mail_footer_copy o_default_snippet_text">If you liked our template, follow us</p>
+		                        </div>
+		                    </td>
+					        <td class="o_mail_footer_social right-icon pr0 o_mail_col_mv o_mail_col_container"> 
+						        <a aria-label="Facebook" title="Facebook" href="#">
+						          <span class="fa fa-facebook"></span>
+						        </a>
+						        <a aria-label="Instagram" title="Instagram" href="#" class="ml10">
+						            <span class="fa fa-instagram"></span>
+						        </a>
+						        <a aria-label="Twitter" title="Twitter" href="#" class="ml10">
+						            <span class="fa fa-twitter"></span>
+						        </a>
+						        <a aria-label="LinkedIn" title="LinkedIn" href="#" class="ml10">
+						            <span class="fa fa-linkedin"></span>
+						        </a>
+						        <a aria-label="Pinterest" title="Pinterest" href="#" class="ml10">
+						            <span class="fa fa-pinterest-p"></span>
+						        </a>
+					        </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+    </div>       
+	
+</template>
+<!-- end copyright template 5  -->
+
+<!-- copyright template 6 -->
+<template id="sh_emate_copyright_tmpl_6" name="Copyright 6">
+	
+	<div class="sh_emate_copyright_6">
+		<div class="o_mail_block_copyright" data-name="Three Columns" id="sh_copyright_21">
+		    <div class="o_mail_snippet_general">
+		       
+		          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0 pb0">
+		             <tbody>
+		                <tr>
+		                	 <td class="o_mail_footer_social bottom-footer" width="80%">
+						        <p>Copyright © Softhealer Technologies</p>
+		    				</td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+    </div>       
+	
+</template>
+<!-- end copyright template 6  -->
+
+<!-- copyright template 7 -->
+<template id="sh_emate_copyright_tmpl_7" name="Copyright 7">
+	
+	<div class="sh_emate_copyright_7">
+		<div class="o_mail_block_footer_copyright o_mail_copyright" data-name="copyright Center" id="sh_copyright_32">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding p15 border0">
+                    <tbody>
+                        <tr>
+                            <td class="o_mail_copyright_description copyright_content o_mail_col_mv o_mail_col_container">
+                                <div>
+                                    <p class="o_mail_footer_copy o_default_snippet_text">Copyright © Softhealer Technologies</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>       
+	
+</template>
+<!-- end copyright template 7  -->
+
+	
+
+</odoo>

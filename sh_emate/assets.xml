@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="sh_emate_assets_mail_themes" inherit_id="mass_mailing.assets_mail_themes">
+        <xpath expr="." position="inside">
+
+
+
+			<!-- Emate SCSS Variable  -->
+          	<link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/sh_emate_variables.scss"/>
+
+ 
+			<!--  Emate Theme Color -->  
+			<link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme_color.scss"/>
+             
+           
+	 		
+			
+             <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_1.scss"/>
+            
+             <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_2.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_3.scss"/>
+             
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_4.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_5.scss"/>
+             
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_6.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_7.scss"/>   
+                     
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_8.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_9.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_10.scss"/>            
+        
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_11.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_12.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_13.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_14.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_15.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_16.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_17.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_18.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_19.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_20.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_21.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_22.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_23.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_24.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_25.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_26.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_27.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_28.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_29.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_30.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_31.scss"/>
+            
+            <link rel="stylesheet" type="text/scss" href="/sh_emate/static/src/scss/theme/theme_32.scss"/>
+            
+            
+            
+             
+        
+        
+        </xpath>
+    </template>
+    
+    
+ 
+    
+</odoo>

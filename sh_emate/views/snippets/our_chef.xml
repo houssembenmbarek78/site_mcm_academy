@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- our chef template 1 -->
+<template id="sh_emate_our_chef_tmpl_1" name="Our chef 1">
+	
+	<div class="sh_emate_our_chef_1">
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_our_chef_1">
+	        <div class="o_mail_snippet_general">
+	        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+	            <tbody>
+			        <tr>
+			            <td width="100%" class="heading">
+			                <center>
+			                    <h3>Our Chefs</h3>
+			                    <hr/>
+			                    <p class="detail">Lorem ipsum dolor sit amet, consectetur<br/>adipiscing elit. Curabitur placerat.</p>
+			                </center>
+			            </td>
+			        </tr>
+			     </tbody>
+			  </table>
+	        
+	            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col">
+	                <tbody>
+	                    <tr>
+	                        <td style="vertical-align:top;width:180px;" class="o_mail_col_mv o_mail_col_container plr10">
+	                            <div>
+	                                <img src="/sh_emate/static/src/img/tmpl_1/young-confident-confident-guy-hugging-brown-notebook-with-black-ballpoint-pen-by-hands_150254-786.jpg" class="d-block mx-auto" alt="Your Picture" />
+	                                <p class="text-center o_mail_no_margin o_default_snippet_text">
+	                                    <a href="#">LOREM IPSUM</a>
+	                                </p>
+	                            </div>
+	                        </td>
+	
+	                        <td style="vertical-align:top;width:180px;" class="o_mail_col_mv o_mail_col_container plr10">
+	                            <div>
+	                                <img src="/sh_emate/static/src/img/tmpl_1/man-writing-his-notebook_23-2148221815.jpg" class="d-block mx-auto" alt="Your Picture" />
+	                                <p class="text-center o_mail_no_margin o_default_snippet_text">
+	                                    <a href="#">LOREM IPSUM</a>
+	                                </p>
+	                            </div>
+	                        </td>
+	
+	                        <td style="vertical-align:top;width:180px;" class="o_mail_col_mv o_mail_col_container plr10">
+	                            <div>
+	                                <img src="/sh_emate/static/src/img/tmpl_1/pensive-guy-redactor-stands-with-brown-paper-notebook-hand-black-ballpoint-pen-near-face_150254-933.jpg" class="d-block mx-auto" alt="Your Picture" />
+	                                <p class="text-center o_mail_no_margin o_default_snippet_text">
+	                                    <a href="#">LOREM IPSUM</a>
+	                                </p>
+	                            </div>
+	                        </td>
+	                    </tr>
+	                </tbody>
+	            </table>
+	        </div>
+	    </div> 
+	</div>
+	
+</template>
+<!-- end our chef template 1  -->
+
+
+<!-- our chef template 2 -->
+<template id="sh_emate_our_chef_tmpl_2" name="Our chef 2">
+	
+	<div class="sh_emate_our_chef_2">
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_our_chef_8">
+		    <div class="o_mail_snippet_general">
+		      <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+		          <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+				                    <h3>Our Chefs</h3>
+				                    <hr/>
+				                    <p class="detail">Lorem ipsum dolor sit amet, consectetur<br/>adipiscing elit. Curabitur placerat.</p>
+				                </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				  </table>
+		      
+		          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col">
+		              <tbody>
+		                  <tr>
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+		                          <div class="border-box">
+		                              <img src="/sh_emate/static/src/img/tmpl_8/portrait-smiling-male-chef-white-uniform-isolated-white-background_23-2147863828.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                              <p class="text-center o_mail_no_margin o_default_snippet_text">
+		                                  <a href="#">LOREM IPSUM</a>
+		                              </p>
+		                          </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+		                          <div class="border-box">
+		                              <img src="/sh_emate/static/src/img/tmpl_8/happy-young-cook-uniform-holding-salad_171337-5342.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                              <p class="text-center o_mail_no_margin o_default_snippet_text">
+		                                  <a href="#">LOREM IPSUM</a>
+		                              </p>
+		                          </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+		                          <div class="border-box">
+		                              <img src="/sh_emate/static/src/img/tmpl_8/cheerful-young-cook-uniform-holding-salad-pointing-you_171337-5344.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                              <p class="text-center o_mail_no_margin o_default_snippet_text">
+		                                  <a href="#">LOREM IPSUM</a>
+		                              </p>
+		                          </div>
+		                      </td>
+		                  </tr>
+		              </tbody>
+		          </table>
+		      </div>
+		</div> 
+	</div>
+	
+</template>
+<!-- end our chef template 2  -->
+
+
+
+
+
+
+
+
+	
+
+</odoo>

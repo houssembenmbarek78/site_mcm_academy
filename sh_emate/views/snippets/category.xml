@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- category template 1 -->
+<template id="sh_emate_category_tmpl_1" name="Category 1">
+	
+	<div class="sh_emate_category_1">
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_categories_21">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table">
+		            <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+				                    <h3>OUR CATEGORIES</h3>
+				                   	<hr/>
+				                </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				  </table>
+		        
+		            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+		                <tbody>
+		                    <tr>
+		                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+		                            <div class="box text-center">
+				                        <div class="img">
+					                        <img src="/sh_emate/static/src/img/tmpl_21/2.png" alt="Blog1" title="Blog1"/>
+					                        <div class="content">
+						                        <a href="#" class="btn_cat">Accessories</a>
+						                    </div>
+					                    </div>
+				                    </div>
+		                        </td>
+		
+		                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+		                            <div class="box text-center">
+				                        <div class="img">
+					                        <img src="/sh_emate/static/src/img/tmpl_21/3.png" alt="Blog2" title="Blog2"/>
+					                        <div class="content">
+						                        <a href="#" class="btn_cat">Sun Glasses</a>
+						                    </div>
+					                    </div>
+				                    </div>
+		                        </td>
+		
+		                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+		                            <div class="box text-center">
+				                        <div class="img">
+					                        <img src="/sh_emate/static/src/img/tmpl_21/4.png" alt="Blog3" title="Blog3"/>
+					                        <div class="content21">
+						                        <a href="#" class="btn_cat">Footwear</a>
+						                    </div>
+					                    </div>
+				                    </div>
+		                        </td>
+		                    </tr>
+		                </tbody>
+		            </table>
+		        </div>
+		    </div>   
+	</div>
+	
+</template>
+<!-- end Category template 1  -->
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+</odoo>

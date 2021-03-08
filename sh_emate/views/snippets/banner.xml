@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- banner template 1 -->
+<template id="sh_emate_banner_tmpl_1" name="Banner 1">
+	
+	<div class="sh_emate_banner_1">
+		<div class="o_mail_block_banner" id="sh_banner_1" data-name="Banner">
+	        <div class="o_mail_snippet_general">
+	            <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+	                <tbody>
+	                    <tr>
+	                        <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+	                        	<a href="#">
+	                                <img src="/sh_emate/static/src/img/tmpl_1/BANNER1.png" class="d-block mx-auto" alt="Your Banner Image" />
+	                            </a>
+		                   </td>
+	                    </tr>
+	                </tbody>
+	            </table>
+	        </div>
+	    </div>
+	</div>
+	
+</template>
+<!-- end banner template 1  -->
+
+<!-- banner template 2 -->
+<template id="sh_emate_banner_tmpl_2" name="Banner 2">
+	
+	<div class="sh_emate_banner_2">
+		<div class="o_mail_block_banner" id="sh_banner_2" data-name="Banner">
+	        <div class="o_mail_snippet_general">
+	            <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+	                <tbody>
+	                    <tr>
+	                        <td width="100%" valign="top" class="o_mail_col_mv o_mail_col_container o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+	                        	<a href="#">
+	                                <img src="/sh_emate/static/src/img/tmpl_2/BANNER2.png" class="d-block mx-auto" alt="Your Banner Image" />
+	                            </a>
+	                            <!-- <a href="#">
+	                                <img src="/sh_emate/static/src/img/tmpl_2/2.jpg" class="d-block mx-auto" alt="Your Banner Image" />
+	                            </a>
+	                        </td>
+	                        <td class="text o_mail_col_mv o_mail_col_container">
+		                        <h2>LOREM IPSUM</h2>
+		                        <p>Lorem ipsum dolor sit amet, consectetur<br/>aipicsing elit. Curabitur placerat.</p>
+		                        <a class="btn" href="#">READ MORE</a> -->
+		                   </td>
+	                    </tr>
+	                </tbody>
+	            </table>
+	        </div>
+	    </div>
+	</div>
+	
+</template>
+<!-- end banner template 2  -->
+
+<!-- banner template 3 -->
+<template id="sh_emate_banner_tmpl_3" name="Banner 3">
+	
+	<div class="sh_emate_banner_3">
+		<div class="o_mail_block_banner" id="sh_banner_3" data-name="Banner">
+	      <div class="o_mail_snippet_general">
+	          <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+	              <tbody>
+	                  <tr>
+	                      <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+	                      	  <a href="#">
+	                              <img src="/sh_emate/static/src/img/tmpl_3/BANNER3.png" class="d-block mx-auto" alt="Your Banner Image" />
+	                          </a>
+	                         <!--  <a href="#">
+	                              <img src="/sh_emate/static/src/img/tmpl_2/2.jpg" class="d-block mx-auto" alt="Your Banner Image" />
+	                          </a>
+	                      </td>
+	                      <td class="text">
+	                      	  <h2>LATEST BOOK ARRIVALS</h2>
+		                      <p>50% FLAT OFFER COLLECTIONS</p>
+		                      <a class="btn btn_shopnow" href="#">Shop Now</a> -->
+	                  	  </td>
+	                  </tr>
+	              </tbody>
+	          </table>
+	      </div>
+	  </div>
+	</div>
+	
+</template>
+<!-- end banner template 3  -->
+
+
+<!-- banner template 4 -->
+<template id="sh_emate_banner_tmpl_4" name="Banner 4">
+	
+	<div class="sh_emate_banner_4">
+		<div class="o_mail_block_banner" id="sh_banner_4" data-name="Banner">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+		                    	<a href="#">
+		                            <img src="/sh_emate/static/src/img/tmpl_4/BANNER4.png" class="d-block mx-auto" alt="Your Banner Image" />
+		                        </a>
+			                </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+<!-- end banner template 4  -->
+
+
+<!-- banner template 5 -->
+<template id="sh_emate_banner_tmpl_5" name="Banner 5">
+	
+	<div class="sh_emate_banner_5">
+		<div class="o_mail_block_banner" id="sh_banner_5" data-name="Banner">
+	      <div class="o_mail_snippet_general">
+	          <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+	              <tbody>
+	                  <tr>
+	                      <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+	                      	  <a href="#">
+	                              <img src="/sh_emate/static/src/img/tmpl_5/BANNER5.png" class="d-block mx-auto" alt="Your Banner Image" />
+	                          </a>
+			              </td>
+	                  </tr>
+	              </tbody>
+	          </table>
+	      </div>
+	  </div>
+	</div>
+	
+</template>
+<!-- end banner template 5  -->
+
+
+<!-- banner template 6 -->
+<template id="sh_emate_banner_tmpl_6" name="Banner 6">
+	
+	<div class="sh_emate_banner_6">
+		<div class="o_mail_block_banner" id="sh_banner_6" data-name="Banner">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+		                    	<a href="#">
+		                         	<img src="/sh_emate/static/src/img/tmpl_6/emate_BANNER6.png" class="d-block mx-auto" alt="Your Banner Image" />
+		                        </a>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+<!-- end banner template 6  -->
+
+
+<!-- banner template 7 -->
+<template id="sh_emate_banner_tmpl_7" name="Banner 7">
+	
+	<div class="sh_emate_banner_7">
+		<div class="o_mail_block_banner" id="sh_banner_7" data-name="Banner">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+		                    	<a href="#">
+		                         	<img src="/sh_emate/static/src/img/tmpl_7/BANNER7.png" class="d-block mx-auto" alt="Your Banner Image" />
+		                         </a>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+<!-- end banner template 7  -->
+
+<!-- banner template 8 -->
+<template id="sh_emate_banner_tmpl_8" name="Banner 8">
+	
+	<div class="sh_emate_banner_8">
+		<div class="o_mail_block_banner" id="sh_banner_6" data-name="Banner">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+		                    	<a href="#">
+		                         	<img src="/sh_emate/static/src/img/tmpl_8/BANNER8.png" class="d-block mx-auto" alt="Your Banner Image" />
+		                        </a>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+<!-- end banner template 8  -->
+
+<!-- banner template 9 -->
+<template id="sh_emate_banner_tmpl_9" name="Banner 9">
+	
+	<div class="sh_emate_banner_9">
+		<div class="o_mail_block_banner" id="sh_banner_9" data-name="Banner">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+			                <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+			                     <a href="#">
+			                         <img src="/sh_emate/static/src/img/tmpl_9/BANNER9.png" class="d-block mx-auto" alt="Your Banner Image" />
+			                     </a>
+			                 </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div> 
+	</div>
+	
+</template>
+<!-- end banner template 9  -->
+
+<!-- banner template 10 -->
+<template id="sh_emate_banner_tmpl_10" name="Banner 10">
+	
+	<div class="sh_emate_banner_10">
+		<div class="o_mail_block_banner" id="sh_banner_10" data-name="Banner">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+			                <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+			                     <a href="#">
+			                         <img src="/sh_emate/static/src/img/tmpl_10/BANNER10.png" class="d-block mx-auto" alt="Your Banner Image" />
+			                     </a>
+			                 </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div> 
+	</div>
+	
+</template>
+<!-- end banner template 10  -->
+
+<!-- banner template 11 -->
+<template id="sh_emate_banner_tmpl_11" name="Banner 11">
+	
+	<div class="sh_emate_banner_11">
+		<div class="o_mail_block_banner" id="sh_banner_11" data-name="Banner">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+			                <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+			                     <a href="#">
+			                         <img src="/sh_emate/static/src/img/tmpl_11/banner11.png" class="d-block mx-auto" alt="Your Banner Image" />
+			                     </a>
+			                 </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div> 
+	</div>
+	
+</template>
+<!-- end banner template 11  -->
+
+
+<!-- banner template 12 -->
+<template id="sh_emate_banner_tmpl_12" name="Banner 12">
+	
+	<div class="sh_emate_banner_12">
+		<div class="o_mail_block_banner" id="sh_banner_12" data-name="Banner">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+		                        <a href="#">
+		                            <img src="/sh_emate/static/src/img/tmpl_12/BANNER12.png" class="d-block mx-auto" alt="Your Banner Image" />
+		                        </a>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+<!-- end banner template 12  -->
+
+<!-- banner template 13 -->
+<template id="sh_emate_banner_tmpl_13" name="Banner 13">
+	
+	<div class="sh_emate_banner_13">
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_banner_13">
+	    <div class="o_mail_snippet_general">
+	            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+	                <tbody>
+	                    <tr>
+		                    <td class="o_mail_col_mv o_mail_col_container p0 width180">
+		                        <div class="text-center">
+			                        <div class="img">
+				                        <img src="/sh_emate/static/src/img/tmpl_13/BANNER13.png" alt="Your Image" title="Banner Image"/>
+				                    </div>
+			                    </div>
+		                     </td>
+	                    </tr>
+	                </tbody>
+	            </table>
+	        </div>
+	    </div> 
+	</div>
+	
+</template>
+<!-- end banner template 13  -->
+
+<!-- banner template 14 -->
+<template id="sh_emate_banner_tmpl_14" name="Banner 14">
+	
+	<div class="sh_emate_banner_14">
+		<div class="o_mail_block_banner" id="sh_banner_14" data-name="Banner">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+		                        <a href="#">
+		                            <img src="/sh_emate/static/src/img/tmpl_14/banner14.png" class="d-block mx-auto" alt="Your Banner Image" />
+		                        </a>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+<!-- end banner template 14  -->
+
+<!-- banner template 15 -->
+<template id="sh_emate_banner_tmpl_15" name="Banner 15">
+	
+	<div class="sh_emate_banner_15">
+		<div class="o_mail_block_banner" id="sh_banner_15" data-name="Banner">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+		                    	<a href="#">
+		                         	<img src="/sh_emate/static/src/img/tmpl_15/BANNER15.png" class="d-block mx-auto" alt="Your Banner Image" />
+		                        </a>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+<!-- end banner template 15  -->
+
+<!-- banner template 16 -->
+<template id="sh_emate_banner_tmpl_16" name="Banner 16">
+	
+	<div class="sh_emate_banner_16">
+		<div class="o_mail_block_banner" id="sh_banner_16" data-name="Banner">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+		                    	<a href="#">
+		                         	<img src="/sh_emate/static/src/img/tmpl_16/BANNER16.png" class="d-block mx-auto" alt="Your Banner Image" />
+		                        </a>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>   
+	</div>
+	
+</template>
+<!-- end banner template 16  -->
+
+<!-- banner template 17 -->
+<template id="sh_emate_banner_tmpl_17" name="Banner 17">
+	
+	<div class="sh_emate_banner_17">
+		<div class="o_mail_block_banner" id="sh_banner_17" data-name="Banner">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+		                    	<a href="#">
+		                         	<img src="/sh_emate/static/src/img/tmpl_17/BANNER17.png" class="d-block mx-auto" alt="Your Banner Image" />
+		                        </a>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+<!-- end banner template 17  -->
+
+<!-- banner template 18 -->
+<template id="sh_emate_banner_tmpl_18" name="Banner 18">
+	
+	<div class="sh_emate_banner_18">
+		<div class="o_mail_block_banner" id="sh_banner_18" data-name="Banner">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+		                    	<a href="#">
+		                         	<img src="/sh_emate/static/src/img/tmpl_18/banner18.png" class="d-block mx-auto" alt="Your Banner Image" />
+		                        </a>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>   
+	</div>
+	
+</template>
+<!-- end banner template 18  -->
+
+<!-- banner template 19 -->
+<template id="sh_emate_banner_tmpl_19" name="Banner 19">
+	
+	<div class="sh_emate_banner_19">
+		<div class="o_mail_block_banner" id="sh_banner_19" data-name="Banner">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+		                    	<a href="#">
+		                            <img src="/sh_emate/static/src/img/tmpl_19/banner19.png" class="d-block mx-auto" alt="Your Banner Image" />
+		                        </a>
+		                	</td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+<!-- end banner template 19  -->
+
+<!-- banner template 20 -->
+<template id="sh_emate_banner_tmpl_20" name="Banner 20">
+	
+	<div class="sh_emate_banner_20">
+		<div class="o_mail_block_banner" id="sh_banner_20" data-name="Banner">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+		                    	<a href="#">
+		                            <img src="/sh_emate/static/src/img/tmpl_20/banner20.png" class="d-block mx-auto" alt="Your Banner Image" />
+		                        </a>
+		                	</td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+<!-- end banner template 20  -->
+
+<!-- banner template 21 -->
+<template id="sh_emate_banner_tmpl_21" name="Banner 21">
+	
+	<div class="sh_emate_banner_21">
+		<div class="o_mail_block_banner" id="sh_banner_21" data-name="Banner">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+		                    	<a href="#">
+		                            <img src="/sh_emate/static/src/img/tmpl_21/banner21.png" class="d-block mx-auto" alt="Your Banner Image" />
+		                        </a>
+		                	</td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+<!-- end banner template 21  -->
+
+<!-- banner template 22 -->
+<template id="sh_emate_banner_tmpl_22" name="Banner 22">
+	
+	<div class="sh_emate_banner_22">
+		<div class="o_mail_block_banner" id="sh_offer_banner_21" data-name="Banner">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+		                    	<a href="#">
+		                            <img src="/sh_emate/static/src/img/tmpl_21/OFFER_banner20.png" class="d-block mx-auto" alt="Your Banner Image" />
+		                        </a>
+		                	</td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+<!-- end banner template 22  -->
+
+<!-- banner template 23 -->
+<template id="sh_emate_banner_tmpl_23" name="Banner 23">
+	
+	<div class="sh_emate_banner_23">
+		<div class="o_mail_block_banner" id="sh_banner_22" data-name="Banner">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+		                    	<a href="#">
+		                            <img src="/sh_emate/static/src/img/tmpl_22/banner22.png" class="d-block mx-auto" alt="Your Banner Image" />
+		                        </a>
+		                	</td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+<!-- end banner template 23  -->
+
+<!-- banner template 24 -->
+<template id="sh_emate_banner_tmpl_24" name="Banner 24">
+	
+	<div class="sh_emate_banner_24">
+		<div class="o_mail_block_banner" id="sh_banner_23" data-name="Banner">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+			                <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+			                     <a href="#">
+			                         <img src="/sh_emate/static/src/img/tmpl_23/banner23.png" class="d-block mx-auto" alt="Your Banner Image" />
+			                     </a>
+			                 </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div> 
+	</div>
+	
+</template>
+<!-- end banner template 24  -->
+
+<!-- banner template 25 -->
+<template id="sh_emate_banner_tmpl_25" name="Banner 25">
+	
+	<div class="sh_emate_banner_25">
+		<div class="o_mail_block_banner" id="sh_banner_24" data-name="Banner">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+			                <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+			                     <a href="#">
+			                         <img src="/sh_emate/static/src/img/tmpl_24/banner_24.png" class="d-block mx-auto" alt="Your Banner Image" />
+			                     </a>
+			                 </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div> 
+	</div>
+	
+</template>
+<!-- end banner template 25  -->
+
+<!-- banner template 26 -->
+<template id="sh_emate_banner_tmpl_26" name="Banner 26">
+	
+	<div class="sh_emate_banner_26">
+		<div class="o_mail_block_banner" id="sh_banner_25" data-name="Banner">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+			                <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+			                     <a href="#">
+			                         <img src="/sh_emate/static/src/img/tmpl_25/banner_25.png" class="d-block mx-auto" alt="Your Banner Image" />
+			                     </a>
+			                 </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div> 
+	</div>
+	
+</template>
+<!-- end banner template 26  -->
+
+<!-- banner template 27 -->
+<template id="sh_emate_banner_tmpl_27" name="Banner 27">
+	
+	<div class="sh_emate_banner_27">
+		<div class="o_mail_block_banner" id="sh_banner_26" data-name="Banner">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                            <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+                                <a href="#">
+                                    <img src="/sh_emate/static/src/img/tmpl_26/banner.jpg" class="d-block mx-auto" alt="Your Banner Image" />
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+	</div>
+	
+</template>
+<!-- end banner template 27  -->
+
+<!-- banner template 28 -->
+<template id="sh_emate_banner_tmpl_28" name="Banner 28">
+	
+	<div class="sh_emate_banner_28">
+		<div class="o_mail_block_event" data-name="Text - Image" id="sh_static_event_26">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                            <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270 pr0">
+                                <div class="box">
+                                    <div class="content">
+                                    	<a class="btn btn_day" href="#">Thursday</a>
+                                    	<h4 class="date">24 December 2020</h4>
+                                        <h1 class="title o_default_snippet_text">CHRISTMAS</h1>
+                                        <h1 class="sub_title o_default_snippet_text">PARTY</h1>
+                                        <h6>Doors open at 7pm - Free Entry</h6>
+                                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270 pl0">
+                                
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+	</div>
+	
+</template>
+<!-- end banner template 28  -->
+
+<!-- banner template 29 -->
+<template id="sh_emate_banner_tmpl_29" name="Banner 29">
+	
+	<div class="sh_emate_banner_29">
+		<div class="o_mail_block_banner" id="sh_banner_27" data-name="Banner">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                            <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+                                <a href="#">
+                                    <img src="/sh_emate/static/src/img/tmpl_27/banner.gif" class="d-block mx-auto" alt="Your Banner Image" />
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+	</div>
+	
+</template>
+<!-- end banner template 29  -->
+
+<!-- banner template 30 -->
+<template id="sh_emate_banner_tmpl_30" name="Banner 30">
+	
+	<div class="sh_emate_banner_30">
+		<div class="o_mail_block_banner" id="sh_banner_28" data-name="Banner">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                            <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+                                <a href="#">
+                                    <img src="/sh_emate/static/src/img/tmpl_28/banner.png" class="d-block mx-auto" alt="Your Banner Image" />
+                                    <img src="/sh_emate/static/src/img/tmpl_28/gif.gif" class="d-block mx-auto" alt="Your Banner Image" />
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+	</div>
+	
+</template>
+<!-- end banner template 30  -->
+
+<!-- banner template 31 -->
+<template id="sh_emate_banner_tmpl_31" name="Banner 31">
+	
+	<div class="sh_emate_banner_31">
+		<div class="o_mail_block_banner" id="sh_banner_29" data-name="Banner">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                            <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+                                <a href="#">
+                                    <img src="/sh_emate/static/src/img/tmpl_29/gif.gif" class="d-block mx-auto banner_img" alt="Your Banner Image" />
+                                    <img src="/sh_emate/static/src/img/tmpl_29/banner_bottom.png" class="d-block mx-auto" alt="Your Banner Image" />
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+	</div>
+	
+</template>
+<!-- end banner template 31  -->
+
+<!-- banner template 32 -->
+<template id="sh_emate_banner_tmpl_32" name="Banner 32">
+	
+	<div class="sh_emate_banner_32">
+		<div class="o_mail_block_banner" id="sh_banner_30" data-name="Banner">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                            <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+                                <a href="#">
+                                    <img src="/sh_emate/static/src/img/tmpl_30/banner_img.png" class="d-block mx-auto" alt="Your Banner Image" />
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+	</div>
+	
+</template>
+<!-- end banner template 32 -->
+
+<!-- banner template 33 -->
+<template id="sh_emate_banner_tmpl_33" name="Banner 33">
+	
+	<div class="sh_emate_banner_33">
+		<div class="o_mail_block_banner" id="sh_banner_31" data-name="Banner">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                            <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+                                <a href="#">
+                                    <img src="/sh_emate/static/src/img/tmpl_31/banner.png" class="d-block mx-auto banner_img" alt="Your Banner Image" />
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+	</div>
+	
+</template>
+<!-- end banner template 33 -->
+
+
+<!-- banner template 34 -->
+<template id="sh_emate_banner_tmpl_34" name="Banner 34">
+	
+	<div class="o_mail_block_banner" id="sh_banner_32" data-name="Banner">
+         <div class="o_mail_snippet_general">
+             <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+                 <tbody>
+                     <tr>
+                         <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+                             <a href="#">
+                                 <img src="/sh_emate/static/src/img/tmpl_32/banner.png" class="d-block mx-auto banner_img" alt="Your Banner Image" />
+                             </a>
+                         </td>
+                     </tr>
+                 </tbody>
+             </table>
+         </div>
+     </div>
+
+	
+</template>
+<!-- end banner template 34 -->
+
+
+
+
+</odoo>

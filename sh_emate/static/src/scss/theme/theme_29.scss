@@ -1,0 +1,76 @@
+
+/* ======== banner_29 ========= */
+
+#sh_banner_29{margin-top: 0px;}
+#sh_banner_29 .banner_img{margin-bottom: 10px;}
+
+
+/* ===== product ==== */
+#sh_product_29{padding: 20px 10px 40px 10px;font-family: 'Nunito', sans-serif;text-align: center;}
+#sh_product_29 .o_mail_snippet_general{background: #fff;}
+#sh_product_29 .sh_heading .heading h3{color: $sh_emate_theme1_color_text_header;font-size: 17px;padding-bottom: 0px;margin-bottom: 5px;font-family: 'Nunito', sans-serif;font-weight: bold;text-transform: uppercase;}
+#sh_product_29 .sh_heading .heading h2{color: $sh_emate_theme1_color_text_header;font-size: 22px;padding-bottom: 0px;margin-bottom: 5px;font-family: 'Nunito', sans-serif;font-weight: bold;text-transform: uppercase;}
+#sh_product_29 .sh_heading .heading p.main_text{color: $sh_emate_theme1_color_text_content;font-size: 15px;margin: 30px 0px 10px 0px;font-family: 'Nunito', sans-serif;}
+#sh_product_29 .sh_heading .heading p.sub_text{color: #414141;font-size: 15px;margin: 30px 0px 10px 0px;font-family: 'Nunito', sans-serif;}
+
+#sh_product_29 .sh_heading .heading img.heading_bottom{width: 150px;margin-top: 15px;} 
+
+#sh_product_29 img.single_img{width: 95%;height: 120px;object-fit: cover;}
+#sh_product_29 .width130{width:130px;text-align:center;vertical-align:middle;}
+#sh_product_29 .width120{width:120px;text-align:center;vertical-align:top;}
+#sh_product_29 .p8{padding: 10px 8px;}
+#sh_product_29 .content .mt-10{margin-top: 10px;}
+#sh_product_29 .content h6{font-weight: bold;margin: 0;padding: 0px 0 8px 0px;color: $sh_emate_theme1_color_text_header;text-align: left;font-family: 'Nunito', sans-serif;font-size: 16px;}
+#sh_product_29 .content p{margin: 0px 0px 10px 0px;display: flex;}
+#sh_product_29 .content p del{font-size: 15px;color: $sh_emate_theme1_color_text_content;margin-bottom: 0px;text-align: left;display: block;font-family: 'Nunito', sans-serif;margin-right: 10px;}
+#sh_product_29 .content p span{font-size: 15px;color: #414141;margin-bottom: 0px;text-align: left;display: block;font-family: 'Nunito', sans-serif;font-weight: normal;}
+#sh_product_29 .content a.btn_buynow{text-decoration: none;font-size: 15px;color: $sh_emate_theme1_color_primary;background: transparent;border: 0px;text-align: center;font-family: 'Nunito', sans-serif;border-radius:0px;padding: 0px;text-transform: capitalize;}
+#sh_product_29 .box .content{padding: 20px;background: #fff;text-align: left;font-family: 'Nunito', sans-serif;}
+
+
+/* === offer === */
+
+#sh_offer_29{padding: 10px 10px;border: 5px solid $sh_emate_theme1_color_primary;margin: 10px 0px 50px 0px;}
+#sh_offer_29 .left-content h4{color: $sh_emate_theme1_color_text_header;font-size: 22px;font-weight: bold;font-family: 'Nunito', sans-serif;margin-bottom: 0px;text-transform: uppercase;}
+#sh_offer_29 .btn-right{margin-right: 20px;}
+#sh_offer_29 .btn-right a.btn_shopnow{border: 1px solid $sh_emate_theme1_color_primary;color: #fff;padding: 10px 20px;margin-top: 0px;font-size: 15px;font-family: 'Nunito', sans-serif;background: $sh_emate_theme1_color_primary;border-radius: 0px;box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);}
+#sh_offer_29 .v_middle{vertical-align: middle;}
+
+/* === footer_top ==== */
+
+#sh_footer_top_29 .footer_top_img{margin-bottom: 10px;object-fit: cover;}
+
+
+/* === footer ==== */
+
+#sh_footer_29{background: url('/sh_emate/static/src/img/tmpl_29/footer_bg.png');background-size: cover;background-position: center;padding: 30px 0px 0px 0px;}
+#sh_footer_29 .width180{width: 180px;}
+#sh_footer_29 .part1 h3.title,#sh_footer_29 .part3 h3.title{color: #fff;font-size: 18px;margin-bottom: 10px;font-family: 'Nunito', sans-serif;font-weight: bold;}
+#sh_footer_29 .part1 ul li,#sh_footer_29 .part3 ul li{list-style-type: none;padding-left: 0px;}
+#sh_footer_29 .part1 ul li a,
+#sh_footer_29 .part3 ul li a,
+#sh_footer_29 .part3 ul li,#sh_footer_29 .part1 ul li{color: #fff;font-size: 12px;padding: 5px 0px;text-align: left;font-weight: normal;}
+#sh_footer_29 .part2 .image_tree img{object-fit: cover;margin-bottom: 20px;width: 100%;}
+#sh_footer_29 .part2 .image_tree{text-align: center;width: 100%;}
+#sh_footer_29 .part2 p.text{color: #fff;font-size: 13px;font-family: 'Nunito', sans-serif;margin-bottom: 15px;text-align: center;}
+#sh_footer_29 .part2 .bottom_icon{display: inline-block;}
+#sh_footer_29 .part2 .bottom_icon a span,#sh_footer_29 .part2 .bottom_icon a img{color: #fff;font-size: 15px;padding: 5px 10px;}
+#sh_footer_29 .c_text{color: $sh_emate_theme1_color_text_content;font-size: 15px;font-family: 'Nunito', sans-serif;margin-bottom: 0px;}
+#sh_footer_29 .part1{width: 140px;}
+#sh_footer_29 .part2{width: 180px;}
+#sh_footer_29 .part3{width: 160px;}
+#sh_footer_29 .part2{text-align: center;}
+#sh_footer_29 .o_mail_snippet_general td, #sh_footer_29 .o_mail_snippet_general th{vertical-align: middle;}
+
+
+#sh_footer_29 .sh_border_top{border-top: 1px solid $sh_emate_theme1_color_text_content;}
+
+
+
+
+
+
+
+
+
+

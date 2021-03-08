@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+
+<!-- Theme "solar" default template -->
+<template id="theme_tmpl_9">
+
+<!-- header/menubar -->
+<div class="o_mail_block_header_social" id="sh_header_9" data-name="Left Logo">
+	<div class="o_mail_snippet_general">
+  		<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+      		<tbody>
+      			<tr>
+          			<td width="30%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding logo">
+          			</td>
+					<td width="70%" class="text-right o_mail_no_resize o_mail_col_mv o_mail_col_container">
+						<div class="o_mail_header_social menu">
+       					<a href="#" class="ml10">HOME</a>
+       					<a href="#" class="ml10">ABOUT</a>
+       					<a href="#" class="ml10">BLOG</a>
+      					<a href="#" class="ml10">CONTACT</a>
+						</div>
+					</td>
+      			</tr>
+  			</tbody>
+  		</table>
+	</div>
+</div>
+<!-- end header/menubar -->
+  
+<!-- banner -->
+<div class="o_mail_block_banner" id="sh_banner_9" data-name="Banner">
+    <div class="o_mail_snippet_general">
+        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+            <tbody>
+                <tr>
+	                <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+	                     <a href="#">
+	                         <img src="/sh_emate/static/src/img/tmpl_9/BANNER9.png" class="d-block mx-auto" alt="Your Banner Image" />
+	                     </a>
+	                 </td>
+                    <!-- <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+                        <a href="#">
+                            <img src="/sh_emate/static/src/img/tmpl_9/top-view-fast-food-with-copy-space_23-2148273099.jpg" class="d-block mx-auto" alt="Your Banner Image" />
+                        </a>
+                    </td>
+                    <td class="text">
+                     	<h2>Food That Tastes<br/>Freakin Good!!</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur</p>
+                        <a class="btn_booktable" href="#">BOOK TABLE</a>
+                	</td> -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div> 
+<!-- end banner -->
+
+<!-- gallery -->
+ 	
+ <div class="o_mail_block_two_cols" data-name="Two Columns" id="sh_gallery_9">
+      <div class="o_mail_snippet_general">
+          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table two_col">
+              <tbody>
+                  <tr>
+                      <td class="o_mail_col_mv o_mail_col_container w270 p20">
+                       	  <div class="img">
+                           	<img src="/sh_emate/static/src/img/tmpl_9/delicious-home-made-pizza_62847-359.jpg" class="d-block mx-auto" alt="Your Picture" />
+                           </div>
+                      </td>
+
+                      <td class="o_mail_col_mv o_mail_col_container w270 p20">
+                       	  <div class="img">
+                           		<img src="/sh_emate/static/src/img/tmpl_9/delicious-fresh-homemade-burger-wooden-plate_44537-794.jpg" class="d-block mx-auto" alt="Your Picture" />
+                           </div>
+                      </td>
+                  </tr>
+                  
+                  <tr>
+                      <td class="o_mail_col_mv o_mail_col_container w270 p20">
+                       	  <div class="img">
+                           	<img src="/sh_emate/static/src/img/tmpl_9/mexican-tacos-with-meat-vegetables-red-onion_2829-8286.jpg" class="d-block mx-auto" alt="Your Picture" />
+                           </div>
+                      </td>
+
+                      <td class="o_mail_col_mv o_mail_col_container w270 p20">
+                       	  <div class="img">
+                           		<img src="/sh_emate/static/src/img/tmpl_9/tortilla-wrap-with-falafel-fresh-salad_2829-3418.jpg" class="d-block mx-auto" alt="Your Picture" />
+                           </div>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+</div> 
+<!-- end gallery -->
+
+<!-- single_product -->
+<div class="o_mail_block_text_image" data-name="Text - Image" id="sh_single_product_9">
+    <div class="o_mail_snippet_general">
+    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+	          <tbody>
+		        <tr>
+		            <td width="100%" class="heading">
+		                <center>
+	                        <h3 class="title">LOREM IPSUM</h3>
+                        	<hr/>
+	                    </center>
+		            </td>
+		        </tr>
+		     </tbody>
+		  </table>
+        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+            <tbody>
+                <tr>
+                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270">
+                        <div class="content">
+	                        <h3>Lorem ipsum dolor sit amet</h3>
+                    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Curabitur placerat tellus sit.</p>
+                    		<a class="btn_ordernow" href="#">ORDER NOW</a>
+	                    </div>
+                    </td>
+                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270">
+                        <div class="img">
+	                        <img src="/sh_emate/static/src/img/tmpl_9/tasty-doner-kebabs-with-fresh-salad-trimmings-shaved-roasted-meat-served-tortilla-wraps-brown-paper-as-takeaway-snack_124865-2179.jpg" alt="image" />
+	                    </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div> 
+<!-- end single_product -->
+
+<!-- Event -->
+ 	
+<div class="o_mail_block_blog" data-name="Image - Text" id="sh_event_9">
+    <div class="o_mail_snippet_general">
+      	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+           <tbody>
+		        <tr>
+		            <td width="100%" class="heading">
+		                <center>
+	                        <h3>LOREM IPSUM</h3>
+	                        <hr/>
+	                    </center>
+		            </td>
+		        </tr>
+		     </tbody>
+		</table>
+          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+              <tbody>
+                  <tr>
+                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+                          <img src="/sh_emate/static/src/img/tmpl_8/event8_1.jpg" class="d-block mx-auto" alt="Your Picture" />
+                      </td>
+                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 text-left p8">
+                          <div class="content">
+		                       	<h5>LOREM IPSUM</h5>
+	                        	<p class="author">Organized By: Lorem Ipsum</p>
+	                        	<p>Lorem ipsum dolor sit amet.</p>
+	                        	<p><span class="fa fa-clock-o"></span> 02:00 PM</p>
+		                  </div>
+                      </td>
+                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+                          <img src="/sh_emate/static/src/img/tmpl_8/event8_2.jpg" class="d-block mx-auto" alt="Your Picture" />
+                      </td>
+                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 text-left p8">
+	                       <div class="content">
+		                        <h5>LOREM IPSUM</h5>
+	                        	<p class="author">Organized By: Lorem Ipsum</p>
+	                        	<p>Lorem ipsum dolor sit amet.</p>
+	                        	<p><span class="fa fa-clock-o"></span> 02:00 PM</p>
+		                  </div>
+                      </td>
+                  </tr>
+                  
+                  <tr>
+                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+                          <img src="/sh_emate/static/src/img/tmpl_8/event8_3.jpg" class="d-block mx-auto" alt="Your Picture" />
+                      </td>
+                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 text-left p8">
+                          <div class="content">
+		                       	<h5>LOREM IPSUM</h5>
+	                        	<p class="author">Organized By: Lorem Ipsum</p>
+	                        	<p>Lorem ipsum dolor sit amet.</p>
+	                        	<p><span class="fa fa-clock-o"></span> 04:00 PM</p>
+		                  </div>
+                      </td>
+                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+                          <img src="/sh_emate/static/src/img/tmpl_8/event8_4.jpg" class="d-block mx-auto" alt="Your Picture" />
+                      </td>
+                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 text-left p8">
+	                       <div class="content">
+		                        <h5>LOREM IPSUM</h5>
+	                        	<p class="author">Organized By: Lorem Ipsum</p>
+	                        	<p>Lorem ipsum dolor sit amet.</p>
+	                        	<p><span class="fa fa-clock-o"></span> 07:00 PM</p>
+		                  </div>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+  
+<!-- end Event -->
+
+<!-- call_to_action -->
+<div class="o_mail_block_call_to_action sh_emate_calltoaction_2" id="sh_call_to_action_9" data-name="Call to Action">
+	<div class="o_mail_snippet_general">
+		<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+   			<tbody>
+   				<tr>
+       				<td width="70%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding left-content">
+                 		<h4>Lorem ipsum dolor sit</h4>
+       				</td>
+					<td width="30%" class="text-right o_mail_col_mv o_mail_col_container o_mail_no_resize v_middle">
+						<div class="btn-right">
+       					<a class="btn_booknow" href="#">BOOK NOW</a>
+						</div>
+					</td>
+   				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<!-- end call_to_action -->
+
+<!-- product_item -->
+<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_product_item_9">
+    <div class="o_mail_snippet_general">
+        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+            <tbody>
+		        <tr>
+		            <td width="100%" class="heading">
+		                <center>
+		                    <h3>LOREM IPSUM</h3>
+	                        <hr/>
+		                </center>
+		            </td>
+		        </tr>
+		     </tbody>
+		 </table>
+        
+        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+            <tbody>
+                <tr>
+                    <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                        <div class="box text-center">
+	                      <div class="img">
+	                          <img src="/sh_emate/static/src/img/tmpl_9/hot-pizza-slice-with-melting-cheese_34936-282.jpg" alt="Product1" title="Product1" />
+	                          <p class="text">LOREM IPSUM</p>
+	                          <p class="price">$50.00</p>
+	                          <a class="btn_ordernow" href="#">ORDER NOW</a>
+	                      </div>
+	                  </div>
+                    </td>
+
+                    <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                        <div class="box text-center">
+	                      <div class="img">
+	                          <img src="/sh_emate/static/src/img/tmpl_9/craft-beef-burger-with-cheese-rocket-leafs-french-fries-wood-table_74692-156.jpg" alt="Product2" title="Product2" />
+	                          <p class="text">LOREM IPSUM</p>
+	                          <p class="price">$50.00</p>
+	                          <a class="btn_ordernow" href="#">ORDER NOW</a>
+	                      </div>
+	                  </div>
+                    </td>
+
+                    <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                        <div class="box text-center">
+	                      <div class="img">
+	                          <img src="/sh_emate/static/src/img/tmpl_9/mexican-tacos-with-meat-vegetables-red-onion_2829-8286.jpg" alt="Product3" title="Product3" />
+	                          <p class="text">LOREM IPSUM</p>
+	                          <p class="price">$50.00</p>
+	                          <a class="btn_ordernow" href="#">ORDER NOW</a>
+	                      </div>
+	                  </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div> 
+<!-- end product_item -->
+
+<!-- Blog -->
+<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_blog_9">
+    <div class="o_mail_snippet_general">
+        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+            <tbody>
+		        <tr>
+		            <td width="100%" class="heading">
+		                <center>
+		                    <h3>LOREM IPSUM</h3>
+	                        <hr/>
+		                </center>
+		            </td>
+		        </tr>
+		     </tbody>
+		 </table>
+        
+        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+            <tbody>
+                <tr>
+                    <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                        <div class="box text-center">
+	                      <div class="img">
+	                          <img src="/sh_emate/static/src/img/tmpl_9/temp8_blog3.jpg" alt="Product1" title="Product1" />
+                          		<div class="content">
+		                        	<a href="#"><h5>LOREM IPSUM</h5></a>
+		                        	<h6>18 January 2020</h6>
+		                        	<p>Lorem ipsum is simply dummy text of the printing and typesetting industry...</p>
+		                        	<a href="#" class="btn_readmore">READ MORE</a>
+		                    	</div>
+	                      </div>
+	                    </div>
+                     </td>
+
+                    <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                        <div class="box text-center">
+	                      <div class="img">
+	                          <img src="/sh_emate/static/src/img/tmpl_8/temp8_blog2.jpg" alt="Product2" title="Product2" />
+	                          <div class="content">
+		                           <a href="#"><h5>LOREM IPSUM</h5></a>
+		                           <h6>18 January 2020</h6>
+		                           <p>Lorem ipsum is simply dummy text of the printing and typesetting industry...</p>
+		                           <a href="#" class="btn_readmore">READ MORE</a>
+		                      </div>
+	                      </div>
+	                  </div>
+                    </td>
+
+                    <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                        <div class="box text-center">
+	                      <div class="img">
+	                          <img src="/sh_emate/static/src/img/tmpl_9/temp8_blog1.jpg" alt="Product3" title="Product3" />
+	                          <div class="content">
+		                        <a href="#"><h5>LOREM IPSUM</h5></a>
+		                        <h6>18 January 2020</h6>
+		                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry...</p>
+		                        <a href="#" class="btn_readmore">READ MORE</a>
+		                      </div>
+	                      </div>
+	                  </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div> 
+<!-- end Blog -->
+
+<!-- footer -->
+<div class="o_mail_block_footer_social o_mail_footer_social_left sh_emate_footer_6" data-name="Footer Left" id="sh_footer_9">
+    <div class="o_mail_snippet_general border0">
+        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding border0">
+            <tbody>
+                <tr>
+                    <td class="o_mail_footer_description border-right o_mail_col_mv o_mail_col_container">
+                        <div class="part1">
+	                        <h2 class="title"><b>
+	                           <t t-if="company_id" t-esc="company_id.name"/>
+	                        </b></h2>
+	                    </div>
+                    </td>
+			        <td class="o_mail_footer_social o_mail_col_mv o_mail_col_container">
+						<div class="part2">
+                            <a t-att-href="company_id.social_facebook">
+                                <span class="fa fa-facebook"></span>
+                            </a>
+                            <a t-att-href="company_id.social_instagram">
+                                <span class="fa fa-instagram"></span>
+                            </a>
+                            <a t-att-href="company_id.social_twitter">
+                                <span class="fa fa-twitter"></span>
+                            </a>
+                            <a t-att-href="company_id.social_linkedin">
+                                <span class="fa fa-linkedin"></span>
+                            </a>
+	                        <p t-if="company_id">
+	                            <span t-if="company_id.street" t-esc="company_id.street"/>
+	                            <span t-if="company_id.street2" t-esc="company_id.street2"/>    
+	                            <span t-if="company_id.city" t-esc="company_id.city"/>                        
+	                        </p>
+	                        <p>Thanks for part of being our community!</p>
+	                        <p t-if="company_id">     <t t-esc="company_id.phone"/>   </p>
+	                    </div>
+			        </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- end footer -->
+
+
+
+
+</template>
+
+
+</odoo>

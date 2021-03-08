@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- call_to_action template 1 -->
+<template id="sh_emate_calltoaction_tmpl_1" name="Call To Action 1">
+	
+	<div class="sh_emate_calltoaction_1">
+		<div class="o_mail_block_call_to_action" id="sh_call_to_action_2" data-name="Call to Action">
+			<div class="o_mail_snippet_general">
+	   			<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+	       			<tbody>
+	       				<tr>
+	           				<td width="70%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding left-content">
+	                     		<p>WE ARE PROVIDING</p>
+		                    	<h4>BEST FEATURES</h4>
+	           				</td>
+							<td width="30%" class="text-right o_mail_col_mv o_mail_col_container o_mail_no_resize v_middle">
+	   							<div class="btn-right">
+		          					<a class="btn_readmore" href="#">READ MORE</a>
+	   							</div>
+							</td>
+	       				</tr>
+	   				</tbody>
+	   			</table>
+			</div>
+		</div>	    
+	</div>
+	
+</template>
+<!-- end calltoaction template 1  -->
+
+
+<!-- call_to_action template 2 -->
+<template id="sh_emate_calltoaction_tmpl_2" name="Call To Action 2">
+	
+	<div class="sh_emate_calltoaction_2">
+		<div class="o_mail_block_call_to_action" id="sh_call_to_action_9" data-name="Call to Action">
+			<div class="o_mail_snippet_general">
+				<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		   			<tbody>
+		   				<tr>
+		       				<td width="70%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding left-content">
+		                 		<h4>Lorem ipsum dolor sit</h4>
+		       				</td>
+							<td width="30%" class="text-right o_mail_col_mv o_mail_col_container o_mail_no_resize v_middle">
+								<div class="btn-right">
+		       					<a class="btn_booknow" href="#">BOOK NOW</a>
+								</div>
+							</td>
+		   				</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>  
+	</div>
+	
+</template>
+<!-- end calltoaction template 2  -->
+
+
+<!-- call_to_action template 3 -->
+<template id="sh_emate_calltoaction_tmpl_3" name="Call To Action 3">
+	
+	<div class="sh_emate_calltoaction_3">
+		<div class="o_mail_block_call_to_action" data-name="Centered" id="sh_call_to_action_11">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding">
+		            <tbody><tr>
+		                <td valign="center" width="100%" class="p10 text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding">
+		                    <h2>TASTE ALL NEW<br/>EXCLUSIVE FOOD</h2>
+		                    <a class="btn" href="#">ORDER NOW</a>
+		                </td>
+		            </tr>
+		        </tbody></table>
+		    </div>
+		</div>    
+	</div>
+	
+</template>
+<!-- end calltoaction template 3  -->
+
+
+<!-- call_to_action template 4 -->
+<template id="sh_emate_calltoaction_tmpl_4" name="Call To Action 4">
+	
+	<div class="sh_emate_calltoaction_4">
+		<div class="o_mail_block_call_to_action" data-name="Centered" id="sh_call_to_action_15">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding">
+		            <tbody><tr>
+		                <td valign="center" width="100%" class="p10 text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding">
+		                    <h2>LEAVE US A MESSAGE</h2>
+		                	<p>Lorem ipsum dolor sit amet,dream consectetur adipiscing elit</p>
+		                	<a class="btn" href="#">SEND MESSAGE</a>
+		                </td>
+		            </tr>
+		        </tbody></table>
+		    </div>
+		</div>    
+	</div>
+	
+</template>
+<!-- end calltoaction template 4  -->
+
+<!-- call_to_action template 5 -->
+<template id="sh_emate_calltoaction_tmpl_5" name="Call To Action 5">
+	
+	<div class="sh_emate_calltoaction_5">
+		<div class="o_mail_block_call_to_action" id="sh_call_to_action_18" data-name="Call to Action">
+			<div class="o_mail_snippet_general">
+				<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		   			<tbody>
+		   				<tr>
+		       				<td width="70%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding left-content">
+		       					<h4>Let's Start Work With</h4>
+		                 		<h4>Agency Today.</h4>
+		       				</td>
+							<td width="30%" class="text-right o_mail_col_mv o_mail_col_container o_mail_no_resize v_middle">
+								<div class="btn-right">
+		       						<a class="btn_getintouch" href="#">Get in Touch</a>
+								</div>
+							</td>
+		   				</tr>
+					</tbody>
+				</table>
+			</div>
+		</div> 
+	</div>
+	
+</template>
+<!-- end calltoaction template 5  -->
+
+<!-- call_to_action template 6 -->
+<template id="sh_emate_calltoaction_tmpl_6" name="Call To Action 6">
+	
+	<div class="sh_emate_calltoaction_6">
+		<div class="o_mail_block_call_to_action" id="sh_call_to_action_20" data-name="Call to Action">
+			<div class="o_mail_snippet_general">
+				<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		   			<tbody>
+		   				<tr>
+		       				<td width="70%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding left-content">
+		                 		<p>ENJOY 50% OFF</p>
+		                 		<h4>THIS HOLIDAY</h4>
+		       				</td>
+							<td width="30%" class="text-right o_mail_col_mv o_mail_col_container o_mail_no_resize v_middle">
+								<div class="btn-right">
+		       					<a class="btn_addtocart" href="#">Add to Cart</a>
+								</div>
+							</td>
+		   				</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+</template>
+<!-- end calltoaction template 6  -->
+
+
+
+
+
+
+
+
+
+
+	
+
+</odoo>

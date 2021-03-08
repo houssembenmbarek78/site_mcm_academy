@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- counter template 1 -->
+<template id="sh_emate_counter_tmpl_1" name="Counter 1">
+	
+	<div class="sh_emate_counter_1">
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_counter_5">
+		      <div class="o_mail_snippet_general">
+			      <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+			          <tbody>
+			        <tr>
+			            <td width="100%" class="heading">
+			                <center>
+			                    <h3>LOREM IPSUM DOLOR SIT AMET</h3>
+			                </center>
+			            </td>
+			        </tr>
+			     </tbody>
+			  </table>
+		      
+		          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+		              <tbody>
+		                  <tr>
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+		                          <div class="box">
+		                              <p class="text-center o_mail_no_margin o_default_snippet_text digit">23K</p>
+		                              <p class="text">LOREM IPSUM</p>
+		                          </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+		                          <div class="box">
+		                              <p class="text-center o_mail_no_margin o_default_snippet_text digit">68K</p>
+		                              <p class="text">LOREM IPSUM</p>
+		                          </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+		                          <div class="box">
+		                              <p class="text-center o_mail_no_margin o_default_snippet_text digit">2.4K</p>
+		                              <p class="text">LOREM IPSUM</p>
+		                         </div>
+		                      </td>
+		                  </tr>
+		              </tbody>
+		          </table>
+		      </div>
+		  </div> 	    
+	</div>
+	
+</template>
+
+<!-- end counter template 1  -->
+
+<!-- counter template 2 -->
+<template id="sh_emate_counter_tmpl_2" name="Counter 2">
+	
+	<div class="sh_emate_counter_2">
+		<div class="o_mail_block_steps o_mail_no_colorpicker" data-name="Steps" id="sh_counter_6">
+		    <div class="o_mail_snippet_general bg_img">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding p10 bg w170">
+		                        <table align="center">
+		                            <tbody><tr>
+		                                <td rowspan="2" class="icon vmiddle">
+		                                    &amp;nbsp;
+		                                    <span class="fa fa-cubes fa-2x" role="img" title="Cube"></span>
+		                                    &amp;nbsp;
+		                                </td>
+		                                <td class="text-left">
+		                                    <p class="o_mail_no_margin o_default_snippet_text digit">23K</p>
+		                                    <h6 class="o_mail_no_margin o_default_snippet_text text">LOREM IPSUM</h6>
+		                                </td>
+		                            </tr>
+		                        </tbody></table>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding p10 bg w170">
+		                        <table align="center">
+		                            <tbody><tr>
+		                                <td rowspan="2" class="icon vmiddle">
+		                                    &amp;nbsp;
+		                                    <span class="fa fa-cubes fa-2x" role="img" title="Cube"></span>
+		                                    &amp;nbsp;
+		                                </td>
+		                                <td class="text-left">
+		                                    <p class="o_mail_no_margin o_default_snippet_text digit">23K</p>
+		                                    <h6 class="o_mail_no_margin o_default_snippet_text text">LOREM IPSUM</h6>
+		                                </td>
+		                            </tr>
+		                        </tbody></table>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding p10 bg w170">
+		                        <table align="center">
+		                            <tbody><tr>
+		                                <td rowspan="2" class="icon vmiddle">
+		                                    &amp;nbsp;
+		                                    <span class="fa fa-cubes fa-2x" role="img" title="Cube"></span>
+		                                    &amp;nbsp;
+		                                </td>
+		                                <td class="text-left">
+		                                    <p class="o_mail_no_margin o_default_snippet_text digit">23K</p>
+		                                    <h6 class="o_mail_no_margin o_default_snippet_text text">LOREM IPSUM</h6>
+		                                </td>
+		                            </tr>
+		                        </tbody></table>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+
+<!-- end counter template 2  -->
+
+<!-- counter template 3 -->
+<template id="sh_emate_counter_tmpl_3" name="Counter 3">
+	
+	<div class="sh_emate_counter_3">
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_counter_14">
+		      <div class="o_mail_snippet_general">
+		      
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+		                        <div class="box">
+			                        <div class="img">
+			                            <span class="fa fa-cubes"></span>
+			                        </div>
+			                        <div class="content">
+			                            <p class="digit">11K</p>
+			                            <p class="text">LOREM IPSUM</p>
+			                        </div>
+			                    </div>
+		                    </td>
+		
+		                    <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+		                        <div class="box">
+			                        <div class="img">
+			                            <span class="fa fa-cubes"></span>
+			                        </div>
+			                        <div class="content">
+			                            <p class="digit">11K</p>
+			                            <p class="text">LOREM IPSUM</p>
+			                        </div>
+			                    </div>
+		                    </td>
+		
+		                    <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+		                        <div class="box">
+			                        <div class="img">
+			                            <span class="fa fa-cubes"></span>
+			                        </div>
+			                        <div class="content">
+			                            <p class="digit">11K</p>
+			                            <p class="text">LOREM IPSUM</p>
+			                        </div>
+			                    </div>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div> 
+	</div>
+	
+</template>
+
+<!-- end counter template 3  -->
+
+<!-- counter template 4 -->
+<template id="sh_emate_counter_tmpl_4" name="Counter 4">
+	
+	<div class="sh_emate_counter_4">
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_counter_16">
+		     <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0 pb0">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_col_container plr10 w60 vmiddle">
+		                        <div class="box1">
+			                        <div class="right-content float-right">
+			                            <h1>LOREM<br/>IPSUM</h1>
+			                        </div>
+			                    </div>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_col_container plr10 w60 vmiddle">
+		                        <div class="box">
+			                        <div class="right-content float-right">
+			                            <p class="text">LOREM IPSUM</p>
+			                            <hr/>
+			                            <p class="digit">11K</p>
+			                        </div>
+			                    </div>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_col_container plr10 w60 vmiddle">
+		                        <div class="box">
+			                        <div class="right-content float-right">
+			                            <p class="text">LOREM IPSUM</p>
+			                            <hr/>
+			                            <p class="digit">11K</p>
+			                        </div>
+			                    </div>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_col_container plr10 w60 vmiddle">
+		                        <div class="box">
+			                        <div class="right-content float-right">
+			                            <p class="text">LOREM IPSUM</p>
+			                            <hr/>
+			                            <p class="digit">11K</p>
+			                        </div>
+			                    </div>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div> 
+	</div>
+	
+</template>
+
+<!-- end counter template 4 -->
+
+<!-- counter template 5 -->
+<template id="sh_emate_counter_tmpl_5" name="Counter 5">
+	
+	<div class="sh_emate_counter_5">
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_counter_18">
+		      <div class="o_mail_snippet_general">
+		          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table three_col">
+		              <tbody>
+		                  <tr>
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width60">
+		                          <div class="box text-center">
+			                        <h3>12+</h3>
+			                        <p>Lorem Ipsum</p>
+			                    </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width60">
+		                          <div class="box text-center">
+			                        <h3>900+</h3>
+			                        <p>Lorem Ipsum</p>
+			                    </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width60">
+		                          <div class="box text-center">
+			                        <h3>60+</h3>
+			                        <p>Lorem Ipsum</p>
+			                    </div>
+		                      </td>
+		                      
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width60">
+		                          <div class="box text-center">
+			                        <h3>150+</h3>
+			                        <p>Lorem Ipsum</p>
+			                    </div>
+		                      </td>
+		                  </tr>
+		              </tbody>
+		          </table>
+		      </div>
+		</div> 
+	</div>
+	
+</template>
+
+<!-- end counter template 5 -->
+
+<!-- counter template 6 -->
+<template id="sh_emate_counter_tmpl_6" name="Counter 6">
+	
+	<div class="sh_emate_counter_6">
+		<div class="o_mail_block_counter" id="sh_counter_19" data-name="Counter">
+			<div class="o_mail_snippet_general">
+				<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		   			<tbody>
+		   				<tr>
+		       				<td width="70%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding left-content">
+		                 		<h4>Take advantage of your</h4>
+		                 		<h4>experience</h4>
+		       				</td>
+							<td width="30%" class="text-right o_mail_col_mv o_mail_col_container o_mail_no_resize v_middle">
+								<div class="btn-right">
+		       					<a class="btn_getin" href="#">Get In Touch</a>
+								</div>
+							</td>
+		   				</tr>
+					</tbody>
+				</table>
+				<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table three_col">
+		              <tbody>
+		                  <tr>
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+		                          <div class="box text-center">
+			                        <h3>50+</h3>
+			                        <p>Lorem Ipsum</p>
+			                    </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+		                          <div class="box text-center">
+			                        <h3>50+</h3>
+			                        <p>Lorem Ipsum</p>
+			                    </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+		                          <div class="box text-center">
+			                        <h3>50+</h3>
+			                        <p>Lorem Ipsum</p>
+			                    </div>
+		                      </td>
+		                      
+		                  </tr>
+		              </tbody>
+		          </table>
+			</div>
+		</div>
+	</div>
+	
+</template>
+
+<!-- end counter template 6 -->
+
+<!-- counter template 7 -->
+<template id="sh_emate_counter_tmpl_7" name="Counter 7">
+	
+	<div class="sh_emate_counter_7">
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_counter_22">
+		      <div class="o_mail_snippet_general">
+		          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table three_col">
+		              <tbody>
+		                  <tr>
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width60">
+		                          <div class="box text-center">
+			                        <h3>223</h3>
+			                        <p>Lorem Ipsum</p>
+			                    </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width60">
+		                          <div class="box text-center">
+			                        <h3>516</h3>
+			                        <p>Lorem Ipsum</p>
+			                    </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width60">
+		                          <div class="box text-center">
+			                        <h3>805</h3>
+			                        <p>Lorem Ipsum</p>
+			                    </div>
+		                      </td>
+		                      
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width60">
+		                          <div class="box text-center">
+			                        <h3>906</h3>
+			                        <p>Lorem Ipsum</p>
+			                    </div>
+		                      </td>
+		                  </tr>
+		              </tbody>
+		          </table>
+		      </div>
+		</div> 
+	</div>
+	
+</template>
+
+<!-- end counter template 7 -->
+
+<!-- counter template 8 -->
+<template id="sh_emate_counter_tmpl_8" name="Counter 8">
+	
+	<div class="sh_emate_counter_8">
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_counter_24">
+		      <div class="o_mail_snippet_general">
+		          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table three_col">
+		              <tbody>
+		                  <tr>
+		                      <td class="o_mail_col_mv o_mail_col_container plr10" width="33%">
+		                          <div class="box text-center">
+		                          	<div class="icon"><span class="fa fa-file-text-o"></span></div>
+			                        <p>Lorem Ipsum</p>
+			                        <h3>485+</h3>
+			                    </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container plr10" width="33%">
+		                          <div class="box text-center">
+		                          	<div class="icon"><span class="fa fa-bar-chart"></span></div>
+		                          	<p>Lorem Ipsum</p>
+			                        <h3>745+</h3>
+			                    </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container plr10" width="33%">
+		                          <div class="box text-center">
+		                          	<div class="icon"><span class="fa fa-building-o"></span></div>
+		                          	<p>Lorem Ipsum</p>
+			                        <h3>325+</h3>
+			                    </div>
+		                      </td>
+		                      
+		                  </tr>
+		              </tbody>
+		          </table>
+		      </div>
+		</div> 
+	</div>
+	
+</template>
+
+<!-- end counter template 8 -->
+
+<!-- counter template 9 -->
+<template id="sh_emate_counter_tmpl_9" name="Counter 9">
+	
+	<div class="sh_emate_counter_9">
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_counter_25">
+		      <div class="o_mail_snippet_general">
+		          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table three_col">
+		              <tbody>
+		                  <tr>
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width60">
+		                          <div class="box text-center">
+			                        <h3>485+</h3>
+			                        <p>Lorem Ipsum</p>
+			                    </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width60">
+		                          <div class="box text-center">
+			                        <h3>485+</h3>
+			                        <p>Lorem Ipsum</p>
+			                    </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width60">
+		                          <div class="box text-center">
+			                        <h3>485+</h3>
+			                        <p>Lorem Ipsum</p>
+			                    </div>
+		                      </td>
+		                      
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width60">
+		                          <div class="box text-center">
+			                        <h3>485+</h3>
+			                        <p>Lorem Ipsum</p>
+			                    </div>
+		                      </td>
+		                  </tr>
+		              </tbody>
+		          </table>
+		      </div>
+		</div> 
+	</div>
+	
+</template>
+
+<!-- end counter template 9 -->
+
+
+
+
+
+</odoo>
+
+
+
+
+
+

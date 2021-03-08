@@ -1,0 +1,122 @@
+// ==========================
+// Mass Mailing "Theme 1 variables"
+// ==========================
+
+
+/*
+$sh-emate-mm-theme2-color-alpha: #8e6b5a;
+$sh-emate-mm-theme2-color-beta: white;
+$sh-emate-mm-theme2-color-gamma: #ff3c00;
+$sh-emate-mm-theme2-color-delta: darken($sh-emate-mm-theme2-color-gamma, 5%);
+$sh-emate-mm-theme2-color-epsilon: black;
+$sh-emate-mm-theme2-color-zeta: #f4f0e7;
+*/
+
+// ==========================
+// Mass Mailing "Theme 1 variables"
+// ==========================
+
+
+
+
+
+.o_mail_snippet_general{
+
+padding-left: 0px;
+padding-right: 0px;
+
+}
+
+
+
+/*========= header =======*/
+#sh_header_20{background-color: $sh_emate_theme1_color_secondary;padding: 5px 0;font-family: 'Poppins', sans-serif;}
+#sh_header_20 .logo h3{margin-bottom: 0px;font-size: 25px;font-weight: 600;text-decoration: none;color: #fff;font-family: 'Poppins', sans-serif;}
+#sh_header_20 .menu a{text-decoration: none;color: #fff;font-size: 15px;transition: all .4s;font-family: 'Poppins', sans-serif;font-weight: bold;}
+#sh_header_20 .ml10{margin-left: 10px;}
+#sh_header_20 .p10{padding: 10px 0px;}
+
+/*====== menubar =====*/
+#sh_menubar_20{background: #ebebeb;text-align: center;padding: 10px 0px;}
+#sh_menubar_20 .menu a{color: $sh_emate_theme1_color_secondary;font-size: 15px;text-decoration: none;padding: 5px 10px;font-family: 'Poppins', sans-serif;}
+
+/*========= banner =======*/
+
+/*===== product_item =======*/
+#sh_product_item_20{padding: 30px 10px;font-family: 'Poppins', sans-serif;}
+#sh_product_item_20 .three_col .width180{vertical-align:top;width:180px;}
+#sh_product_item_20 .img img{width: 98%;height: 200px;object-fit: cover;border: 0px solid $sh_emate_theme1_color_secondary;}
+#sh_product_item_20 .box .content{padding: 10px 20px;background: transparent;text-align: center;font-family: 'Poppins', sans-serif;}
+#sh_product_item_20 .plr10{padding-left: 10px;padding-right: 10px;}
+#sh_product_item_20 .pt0{padding-top: 0px;}
+#sh_product_item_20 .text{color: $sh_emate_theme1_color_text_header;font-weight: 600;font-size: 16px;margin: 10px 0px 5px;font-family: 'Poppins', sans-serif;}
+#sh_product_item_20 .price{color: $sh_emate_theme1_color_text_header;letter-spacing: 1px;font-weight: 500;margin-bottom: 10px;font-family: 'Poppins', sans-serif;font-size: 14px;}
+#sh_product_item_20 .btn{background: $sh_emate_theme1_color_secondary;color: #fff;padding:6px 15px;border: none;cursor: pointer;font-size: 15px;border-radius: 0px;display: inline-block;font-family: 'Poppins', sans-serif;}
+#sh_product_item_20 .box{text-align: center;font-family: 'Poppins', sans-serif;}
+
+
+/*======= call_to_action =======*/
+.sh_emate_calltoaction_6{background: $sh_emate_theme1_color_primary;}
+#sh_call_to_action_20{padding: 10px 0px;}
+#sh_call_to_action_20 .left-content p{color: #fff;margin-bottom: 5px;font-family: 'Poppins', sans-serif;font-size: 18px;font-weight: bold;}
+#sh_call_to_action_20 .left-content h4{color: #fff;font-size: 22px;font-weight: bold;font-family: 'Poppins', sans-serif;margin-bottom: 0px;}
+#sh_call_to_action_20 a.btn_addtocart{border: 2px solid #fff;color: #fff;padding: 10px 20px;margin-top: 0px;font-size: 15px;font-family: 'Poppins', sans-serif;margin-right: 20px;}
+#sh_call_to_action_20 .v_middle{vertical-align: middle;}
+
+/*====== Product ======*/
+#sh_product_20{padding: 20px 0px;}
+#sh_product_20 .content{padding: 15px 0px;}
+#sh_product_20 .content .top-text{color: #616161;font-size: 14px;margin-bottom: 10px;font-family: 'Poppins', sans-serif;}
+#sh_product_20 .content h5{font-weight: bold;font-size: 20px;color: $sh_emate_theme1_color_text_header;margin-bottom: 10px;font-family: 'Poppins', sans-serif;}
+#sh_product_20 .content .para_text{color: $sh_emate_theme1_color_text_content;font-size: 15px;margin-bottom: 30px;font-family: 'Poppins', sans-serif;}
+#sh_product_20 .content .btn_buynow{color: #fff;background: $sh_emate_theme1_color_secondary;font-size: 15px;padding: 8px 20px;border-radius: 0px;font-family: 'Poppins', sans-serif;} 
+#sh_product_20 .img img{width: 100%;object-fit: cover;}
+#sh_product_20 .w270{width: 270px;}
+#sh_product_20 .p10{padding-left: 10px;padding-right: 10px;}
+#sh_product_20 .vmiddle{vertical-align: middle;}
+
+
+/*====== footer ========*/
+.sh_emate_footer_13{background-color: #464646;}
+
+#sh_footer_20 .part1 h2{font-size: 22px;margin-bottom: 20px;color: #fff;}
+#sh_footer_20 .part1 .text{font-size: 15px;color: #f2f2f2;display: block;font-family: 'Poppins', sans-serif;}
+#sh_footer_20 .part1  a{text-decoration: none;color: #f2f2f2;font-size: 12px;font-weight: bold;font-family: 'Poppins', sans-serif;}
+#sh_footer_20 .part2 h3, #sh_footer_20 .part3 h3{font-size: 20px;font-weight: bolder;margin-bottom: 30px;margin-top: 0px;color: #fff;font-family: 'Poppins', sans-serif;}
+#sh_footer_20 .part2 ul li, #sh_footer_20 .part3 ul li{display: block;padding-bottom: 10px;font-size: 14px;list-style-type: none;}
+#sh_footer_20 .part2 ul li a, #sh_footer_20 .part3 ul li a{text-decoration: none;color: #f2f2f2;font-family: 'Poppins', sans-serif;font-weight: normal;}
+#sh_footer_20 {padding: 30px 10px 30px 10px;margin-top: 0px;}
+#sh_footer_20 .part3.division{margin-bottom: 20px;color: #f2f2f2;font-family: 'Poppins', sans-serif;}
+#sh_footer_20 .part1 a{padding-top: 15px;display: inline-block;font-family: 'Poppins', sans-serif;}
+#sh_footer_20 ul li{list-style-type: none;}
+#sh_footer_20 .width180{width: 180px;}
+#sh_footer_20 .plr10{padding-left: 10px;padding-right: 10px;}
+#sh_footer_20 .part1 .bottom_icon span,#sh_footer_20 .part1 .bottom_icon img{color: #fff;padding: 5px 8px;font-size: 18px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

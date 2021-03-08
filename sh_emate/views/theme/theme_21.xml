@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+
+<!-- Theme "solar" default template -->
+<template id="theme_tmpl_21">
+     		
+             		
+
+          			
+<!-- header -->
+<div class="o_mail_block_header_logo" data-name="Centered Logo" id="sh_header_21">
+    <div class="o_mail_snippet_general">
+        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding border_bottom">
+            <tbody>
+            	<tr>
+	                <td valign="center" width="100%" class="o_mail_col_mv o_mail_col_container text-center o_mail_v_padding logo">
+	                    <a href="#">
+	                   		<h4>Ecommerce</h4>
+	              		</a>
+	                </td>
+            	</tr>
+            	<tr>
+					<td width="100%" class="text-center o_mail_no_resize o_mail_col_mv o_mail_col_container">
+						<div class="o_mail_header_social menu">
+						<a href="#" class="plr15">VINTAGE</a>
+       					<a href="#" class="plr15">SUMMER</a>
+       					<a href="#" class="plr15">TOP</a>
+       					<a href="#" class="plr15">ACCESSORIES</a>
+						</div>
+					</td>
+   				</tr>
+        	</tbody>
+        </table>
+    </div>
+</div>
+<!-- end header -->
+ 	
+<!-- banner -->
+<div class="o_mail_block_banner" id="sh_banner_21" data-name="Banner">
+    <div class="o_mail_snippet_general">
+        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+            <tbody>
+                <tr>
+                    <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+                    	<a href="#">
+                            <img src="/sh_emate/static/src/img/tmpl_21/banner21.png" class="d-block mx-auto" alt="Your Banner Image" />
+                        </a>
+                	</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- end banner -->
+
+<!-- Categories -->
+<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_categories_21">
+    <div class="o_mail_snippet_general">
+        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table">
+            <tbody>
+		        <tr>
+		            <td width="100%" class="heading">
+		                <center>
+		                    <h3>OUR CATEGORIES</h3>
+		                   	<hr/>
+		                </center>
+		            </td>
+		        </tr>
+		     </tbody>
+		  </table>
+        
+            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+                <tbody>
+                    <tr>
+                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                            <div class="box text-center">
+		                        <div class="img">
+			                        <img src="/sh_emate/static/src/img/tmpl_21/2.png" alt="Blog1" title="Blog1"/>
+			                        <div class="content">
+				                        <a href="#" class="btn_cat">Accessories</a>
+				                    </div>
+			                    </div>
+		                    </div>
+                        </td>
+
+                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                            <div class="box text-center">
+		                        <div class="img">
+			                        <img src="/sh_emate/static/src/img/tmpl_21/3.png" alt="Blog2" title="Blog2"/>
+			                        <div class="content">
+				                        <a href="#" class="btn_cat">Sun Glasses</a>
+				                    </div>
+			                    </div>
+		                    </div>
+                        </td>
+
+                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                            <div class="box text-center">
+		                        <div class="img">
+			                        <img src="/sh_emate/static/src/img/tmpl_21/4.png" alt="Blog3" title="Blog3"/>
+			                        <div class="content21">
+				                        <a href="#" class="btn_cat">Footwear</a>
+				                    </div>
+			                    </div>
+		                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div> 
+<!-- end Categories -->
+
+
+<!-- Deal -->
+ 	
+<div class="o_mail_block_deal" data-name="Image - Text" id="sh_deal_21">
+    <div class="o_mail_snippet_general">
+      	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+           <tbody>
+		        <tr>
+		            <td width="100%" class="heading">
+		                <center>
+		                    <h3>DEAL OF THE DAY</h3>
+		                   	<hr/>
+		                </center>
+		            </td>
+		        </tr>
+		     </tbody>
+		</table>
+          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+              <tbody>
+                  <tr>
+                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+                          <img src="/sh_emate/static/src/img/tmpl_21/5.png" class="d-block mx-auto" alt="Your Picture" />
+                      </td>
+                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 text-left p8">
+                          <div class="content">
+		                       <h6>Lorem Ipsum</h6>
+		                       <p><del>$150.00</del><span>$100.00</span></p>
+		                       <a href="#" class="btn_buynow">BUY NOW</a>
+		                  </div>
+                      </td>
+                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+                          <img src="/sh_emate/static/src/img/tmpl_21/6.png" class="d-block mx-auto" alt="Your Picture" />
+                      </td>
+                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 text-left p8">
+	                       <div class="content">
+		                        <h6>Lorem Ipsum</h6>
+		                       	<p><del>$250.00</del><span>$190.00</span></p>
+		                       	<a href="#" class="btn_buynow">BUY NOW</a>
+		                  </div>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+          
+          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+              <tbody>
+                  <tr>
+                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+                          <img src="/sh_emate/static/src/img/tmpl_21/7.png" class="d-block mx-auto" alt="Your Picture" />
+                      </td>
+                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 text-left p8">
+                          <div class="content">
+		                       <h6>Lorem Ipsum</h6>
+		                       <p><del>$200.00</del><span>$150.00</span></p>
+		                       <a href="#" class="btn_buynow">BUY NOW</a>
+		                  </div>
+                      </td>
+                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+                          <img src="/sh_emate/static/src/img/tmpl_21/8.png" class="d-block mx-auto" alt="Your Picture" />
+                      </td>
+                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 text-left p8">
+	                       <div class="content">
+		                        <h6>Lorem Ipsum</h6>
+		                       	<p><del>$150.00</del><span>$100.00</span></p>
+		                       	<a href="#" class="btn_buynow">BUY NOW</a>
+		                  </div>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+  
+<!-- end Deal -->
+
+<!-- offer_banner -->
+<div class="o_mail_block_banner" id="sh_offer_banner_21" data-name="Banner">
+    <div class="o_mail_snippet_general">
+        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+            <tbody>
+                <tr>
+                    <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+                    	<a href="#">
+                            <img src="/sh_emate/static/src/img/tmpl_21/OFFER_banner20.png" class="d-block mx-auto" alt="Your Banner Image" />
+                        </a>
+                	</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- end offer_banner -->
+
+<!-- Blog -->
+<div class="o_mail_block_two_cols" data-name="Two Columns" id="sh_blog_21">
+    <div class="o_mail_snippet_general">
+    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt0 mlr10">
+	           <tbody>
+		        <tr>
+		            <td width="100%" class="heading">
+		                <center>
+		                    <h3>LATEST BLOG</h3>
+		                   	<hr/>
+		                </center>
+		            </td>
+		        </tr>
+		     </tbody>
+		</table>
+        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt-0">
+            <tbody>
+                <tr>
+                    <td class="o_mail_col_mv o_mail_col_container">
+                        <div class="box">
+                        	<div class="img">
+                        		<img src="/sh_emate/static/src/img/tmpl_21/10.png" class="d-block mx-auto" alt="Your Picture" />
+                        	</div>
+                            <div class="content">
+		                        <h5>Lorem ipsum dolor sit amet</h5>
+		                        <p>Lorem ipsum dolor sit, consectetur adipiscing elit.Lorem ipsum dolor sit, consectetur adipiscing elit.</p>
+		                        <a href="#" class="btn_readmore">READ MORE</a>
+		                    </div>
+                        </div>
+                    </td>
+
+                    <td class="o_mail_col_mv o_mail_col_container">
+                        <div class="box">
+                        	<div class="img">
+                        		<img src="/sh_emate/static/src/img/tmpl_21/11.png" class="d-block mx-auto" alt="Your Picture" />
+                        	</div>
+                            <div class="content">
+		                        <h5>Lorem ipsum dolor sit amet</h5>
+		                        <p>Lorem ipsum dolor sit, consectetur adipiscing elit.Lorem ipsum dolor sit, consectetur adipiscing elit.</p>
+		                        <a href="#" class="btn_readmore">READ MORE</a>
+		                    </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- end Blog -->
+
+<!-- footer -->
+<div class="o_mail_block_three_cols sh_emate_footer_14" data-name="Three Columns" id="sh_footer_21">
+    <div class="o_mail_snippet_general">
+        
+        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+            <tbody>
+                <tr>
+                    <td class="o_mail_col_mv o_mail_col_container plr10 width150">
+                        <div class="part1 division">
+	                        <h2 class="title"><b> 
+	                            <t t-if="company_id" t-esc="company_id.name"/>
+	                        </b></h2>
+	                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p><span><a href="#"><b>READ MORE</b></a></span>
+	                    </div>
+                    </td>
+
+                    <td class="o_mail_col_mv o_mail_col_container plr10 width130">
+                        <div class="part2 division">
+                        	<h3 class="title">Contact</h3>
+	                        <ul>
+	                            <li><a href="#">905, Corporate Levels, 150ft. Ring Road Rajkot.</a></li>
+	                            <li><a href="#">info@softhealer.com</a></li>
+	                            <li><a href="#">www.softhealer.com</a></li>
+	                        </ul>
+	                    </div>
+                    </td>
+
+                    <td class="o_mail_col_mv o_mail_col_container plr10 width130">
+                        <div class="part3 division">
+	                       <h3 class="title">More Links</h3>
+	                        <ul>
+	                            <li><a href="#">Women</a></li>
+	                            <li><a href="#">Men</a></li>
+	                            <li><a href="#">Accessories</a></li>
+	                            <li><a href="#">Privacy Policy</a></li>
+	                        </ul> 
+	                    </div>
+                    </td>
+                </tr>
+             </tbody>
+          </table>
+          
+    </div>
+</div> 
+<!-- end footer -->
+
+<!-- Copyright -->
+<div class="o_mail_block_copyright sh_emate_copyright_6" data-name="Three Columns" id="sh_copyright_21">
+    <div class="o_mail_snippet_general">
+       
+          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0 pb0">
+             <tbody>
+                <tr>
+                	 <td class="o_mail_footer_social bottom-footer" width="80%">
+				        <p>Copyright © Softhealer Technologies</p>
+    				</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div> 
+<!-- end Copyright -->
+
+
+
+</template>
+    
+    
+    
+
+</odoo>

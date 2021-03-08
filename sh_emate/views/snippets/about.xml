@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+	<!-- about template 1 -->
+	<template id="sh_emate_about_tmpl_1" name="About 1">
+		
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_about_32">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+                    <tbody>
+                        <tr>
+                            <td width="100%" class="heading">
+                                <center>
+                                	<h6>Best property for best people</h6>
+                                    <h3>About This Property</h3>
+                                    <p class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                </center>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col">
+                    <tbody>
+                        <tr>
+                            <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                                <div class="box text-center">
+                                    <div class="icon"><img src="/sh_emate/static/src/img/tmpl_32/icon/1.png"></img></div>
+                                    <p class="text-center title">World Mentor</p>
+                                    <hr class="border-bottom"></hr>
+                                    <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit</p>
+                                </div>
+                            </td>
+
+                            <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                                <div class="box text-center">
+                                    <div class="icon"><img src="/sh_emate/static/src/img/tmpl_32/icon/2.png"></img></div>
+                                    <p class="text-center title">10 Rooms</p>
+                                    <hr class="border-bottom"></hr>
+                                    <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit</p>
+                                </div>
+                            </td>
+
+                            <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                                <div class="box text-center">
+                                    <div class="icon"><img src="/sh_emate/static/src/img/tmpl_32/icon/3.png"></img></div>
+                                    <p class="text-center title">2 Pools</p>
+                                    <hr class="border-bottom"></hr>
+                                    <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col">
+                    <tbody>
+                        <tr>
+                            <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                                <div class="box text-center">
+                                    <div class="icon"><img src="/sh_emate/static/src/img/tmpl_32/icon/4.png"></img></div>
+                                    <p class="text-center title">Parking</p>
+                                    <hr class="border-bottom"></hr>
+                                    <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit</p>
+                                </div>
+                            </td>
+
+                            <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                                <div class="box text-center">
+                                    <div class="icon"><img src="/sh_emate/static/src/img/tmpl_32/icon/5.png"></img></div>
+                                    <p class="text-center title">3 Floors</p>
+                                    <hr class="border-bottom"></hr>
+                                    <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit</p>
+                                </div>
+                            </td>
+
+                            <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                                <div class="box text-center">
+                                    <div class="icon"><img src="/sh_emate/static/src/img/tmpl_32/icon/1.png"></img></div>
+                                    <p class="text-center title">Lot 1 Acres</p>
+                                    <hr class="border-bottom"></hr>
+                                    <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+		
+	</template>
+	<!-- end about template 1  -->
+
+
+</odoo>

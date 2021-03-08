@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <!-- Add our custom themes in editor -->
+    <template id="sh_emate_email_designer_snippets" inherit_id="mass_mailing.email_designer_snippets">
+        <xpath expr="//div[@id='email_designer_themes']" position="inside">
+           
+            <div data-name="theme_1"
+                 data-img="/sh_emate/static/src/img/tmpl_1/thumb/tmpl_1_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_1"/>
+            </div>           
+
+
+            <div data-name="theme_2"
+                 data-img="/sh_emate/static/src/img/tmpl_2/thumb/tmpl_2_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_2"/>
+            </div>  
+
+            <div data-name="theme_3"
+                 data-img="/sh_emate/static/src/img/tmpl_3/thumb/tmpl_3_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_3"/>
+            </div> 
+
+            <div data-name="theme_4"
+                 data-img="/sh_emate/static/src/img/tmpl_4/thumb/tmpl_4_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_4"/>
+            </div> 
+
+            <div data-name="theme_5"
+                 data-img="/sh_emate/static/src/img/tmpl_5/thumb/tmpl_5_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_5"/>
+            </div>
+
+            <div data-name="theme_6"
+                 data-img="/sh_emate/static/src/img/tmpl_6/thumb/tmpl_6_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_6"/>
+            </div>
+
+            <div data-name="theme_7"
+                 data-img="/sh_emate/static/src/img/tmpl_7/thumb/tmpl_7_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_7"/>
+            </div>   
+            
+
+            <div data-name="theme_8"
+                 data-img="/sh_emate/static/src/img/tmpl_8/thumb/tmpl_8_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_8"/>
+            </div>           
+           
+
+            <div data-name="theme_9"
+                 data-img="/sh_emate/static/src/img/tmpl_9/thumb/tmpl_9_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_9"/>
+            </div>    
+
+            <div data-name="theme_10"
+                 data-img="/sh_emate/static/src/img/tmpl_10/thumb/tmpl_10_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_10"/>
+            </div>    
+
+           
+           
+           
+           <!-- TEMPLATE 11 -->
+            <div data-name="theme_11"
+                 data-img="/sh_emate/static/src/img/tmpl_11/thumb/tmpl_11_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_11"/>
+            </div>   
+
+            <div data-name="theme_12"
+                 data-img="/sh_emate/static/src/img/tmpl_12/thumb/tmpl_12_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_12"/>
+            </div>
+
+            <div data-name="theme_13"
+                 data-img="/sh_emate/static/src/img/tmpl_13/thumb/tmpl_13_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_13"/>
+            </div>
+
+            <div data-name="theme_14"
+                 data-img="/sh_emate/static/src/img/tmpl_14/thumb/tmpl_14_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_14"/>
+            </div>
+
+            <div data-name="theme_15"
+                 data-img="/sh_emate/static/src/img/tmpl_15/thumb/tmpl_15_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_15"/>
+            </div>   
+
+            <div data-name="theme_16"
+                 data-img="/sh_emate/static/src/img/tmpl_16/thumb/tmpl_16_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_16"/>
+            </div>
+            
+            
+            
+            <div data-name="theme_17"
+                 data-img="/sh_emate/static/src/img/tmpl_17/thumb/tmpl_17_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_17"/>
+            </div>               
+           
+
+            <div data-name="theme_18"
+                 data-img="/sh_emate/static/src/img/tmpl_18/thumb/tmpl_18_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_18"/>
+            </div> 
+            
+            
+            <div data-name="theme_19"
+                 data-img="/sh_emate/static/src/img/tmpl_19/thumb/tmpl_19_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_19"/>
+            </div> 
+            
+            <div data-name="theme_20"
+                 data-img="/sh_emate/static/src/img/tmpl_20/thumb/tmpl_20_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_20"/>
+            </div>
+            
+            <div data-name="theme_21"
+                 data-img="/sh_emate/static/src/img/tmpl_21/thumb/tmpl_21_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_21"/>
+            </div>
+            
+            <div data-name="theme_22"
+                 data-img="/sh_emate/static/src/img/tmpl_22/thumb/tmpl_22_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_22"/>
+            </div>
+            
+            
+            <div data-name="theme_23"
+                 data-img="/sh_emate/static/src/img/tmpl_23/thumb/tmpl_23_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_23"/>
+            </div> 
+            
+            <div data-name="theme_24"
+                 data-img="/sh_emate/static/src/img/tmpl_24/thumb/tmpl_24_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_24"/>
+            </div> 
+            
+            <div data-name="theme_25"
+                 data-img="/sh_emate/static/src/img/tmpl_25/thumb/tmpl_25_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_25"/>
+            </div> 
+            
+            
+            <div data-name="theme_26" data-img="/sh_emate/static/src/img/tmpl_26/thumb/tmpl_26_thumb" data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                <t t-call="sh_emate.theme_tmpl_26" />
+            </div>  
+                         
+           <div data-name="theme_27" data-img="/sh_emate/static/src/img/tmpl_27/thumb/tmpl_27_thumb" data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                <t t-call="sh_emate.theme_tmpl_27" />
+            </div>
+            
+            
+            <div data-name="theme_28" data-img="/sh_emate/static/src/img/tmpl_28/thumb/tmpl_28_thumb" data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                <t t-call="sh_emate.theme_tmpl_28" />
+            </div> 
+            
+            
+            <div data-name="theme_29" data-img="/sh_emate/static/src/img/tmpl_29/thumb/tmpl_29_thumb" data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                <t t-call="sh_emate.theme_tmpl_29" />
+            </div>  
+           
+           <div data-name="theme_30" data-img="/sh_emate/static/src/img/tmpl_30/thumb/tmpl_30_thumb" data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                <t t-call="sh_emate.theme_tmpl_30" />
+            </div> 
+            
+            <div data-name="theme_31" data-img="/sh_emate/static/src/img/tmpl_31/thumb/tmpl_31_thumb" data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                <t t-call="sh_emate.theme_tmpl_31" />
+            </div> 
+
+			<div data-name="theme_32" data-img="/sh_emate/static/src/img/tmpl_32/thumb/tmpl_32_thumb" data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                <t t-call="sh_emate.theme_tmpl_32" />
+            </div>  
+            
+			
+            <!-- <div data-name="Theme Try"
+                 data-img="/sh_emate/static/src/img/tmpl_17/thumb/tmpl_18_thumb"
+                 data-images-info='{"logo": {"format": "png"}, "all": {"module": "sh_emate"}}'>
+                 <t t-call="sh_emate.theme_tmpl_try"/>
+            </div>     -->  
+           
+
+           
+            
+        </xpath>
+    </template>
+    
+</odoo>    

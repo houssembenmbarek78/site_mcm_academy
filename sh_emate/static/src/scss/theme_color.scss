@@ -1,0 +1,14 @@
+@include bg-variant(".bg-beta", $sh_emate_theme1_color_primary);
+@include text-emphasis-variant(".text-beta", $sh_emate_theme1_color_primary);
+@include bg-variant(".bg-delta", $sh_emate_theme1_color_secondary);
+
+
+
+/*
+@include bg-variant(".bg-alpha", $sh_emate_theme1_color_primary );
+@include bg-variant(".bg-beta", $sh_emate_theme1_color_secondary );
+@include bg-variant(".bg-gamma", $sh_emate_theme1_color_extra_color_1 );
+@include bg-variant(".bg-delta", $sh_emate_theme1_color_extra_color_2 );
+@include bg-variant(".bg-epsilon", $sh_emate_theme1_color_extra_color_3 );
+*/
+

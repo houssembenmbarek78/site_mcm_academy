@@ -1,0 +1,1445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- event template 1 -->
+<template id="sh_emate_event_tmpl_1" name="Event 1">
+	<div class="sh_emate_event_div_1">
+		<div id="sh_emate_event_div_1" class="sh_emate_s_item_sh_emate_event_tmpl_item_1">
+		
+			<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_event_1">
+		        <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+		            <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+				                    <h3>Events</h3>
+				                    <hr/>
+				                    <p class="detail">Lorem ipsum dolor sit amet, consectetur<br/>adipiscing elit. Curabitur placerat.</p>
+				                </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				  </table>
+		        
+		        	<div class="js_cls_sh_mail_snippet_general">
+			            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col">
+			                <tbody>
+			                    <tr>
+			                        <td style="vertical-align:top;width:180px;" class="o_mail_col_mv o_mail_col_container plr10">
+			                            <div class="box">
+					                       	<div class="content">
+					                        	<h5>Lorem Ipsum</h5>
+					                        	<p><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit</p>
+					                        	<h3>10:00 AM</h3>
+					                        	<a href="#" class="btn_register">Register Now</a>
+					                    	</div>
+					                	</div>
+			                        </td>
+			
+			                        <td style="vertical-align:top;width:180px;" class="o_mail_col_mv o_mail_col_container plr10">
+			                            <div class="box">
+						                    <div class="content">
+						                        <h5>Lorem Ipsum</h5>
+						                        <p><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit</p>
+						                        <h3>12:00 AM</h3>
+						                        <a href="#" class="btn_register">Register Now</a>
+						                    </div>
+						                </div>
+			                        </td>
+			
+			                        <td style="vertical-align:top;width:180px;" class="o_mail_col_mv o_mail_col_container plr10">
+			                            <div class="box">
+						                    <div class="content">
+						                        <h5>Lorem Ipsum</h5>
+						                        <p><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit</p>
+						                        <h3>03:00 AM</h3>
+						                        <a href="#" class="btn_register">Register Now</a>
+						                    </div>
+						                </div>
+			                        </td>
+			                    </tr>
+			                </tbody>
+			            </table>
+			        </div>
+		        </div>
+		    </div>
+		</div>
+	</div>
+</template>
+
+<!-- end event template 1  -->
+
+<!-- event template 2 -->
+
+<template id="sh_emate_event_tmpl_2" name="Event 2">
+	<div class="sh_emate_event_div_2">
+		<div id="sh_emate_event_div_2" class="sh_emate_s_item_sh_emate_event_tmpl_item_2">
+		
+			<div class="o_mail_block_event mlr10" data-name="Title Content" id="sh_event_2">
+		        <div class="o_mail_snippet_general bg-white">
+		        	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt0 mlr10">
+			            <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+					                    <h3>LOREM IPSUM</h3>
+				                    	<p class="detail">Lorem ipsum dolor sit amet</p>
+					                </center>
+					            </td>
+					        </tr>
+					     </tbody>
+					</table>
+					
+					<div class="js_cls_sh_mail_snippet_general">
+			            <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table mlr10">
+			                <tbody>
+			                    <tr>
+			                        <td width="10%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10">
+					                    <div class="icon_img">
+					                        <span class="fa fa-clock-o"></span>
+					                        <h5 class="time">09:00 AM</h5>
+					                    </div>
+					                </td>
+					                <td width="90%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10">
+					                    <div class="content">
+					                        <a href="#"><h6>LOREM IPSUM</h6></a>
+					                        <p>Lorem ipsum dolor sit amet, consectetur edipiscing elit. Corabitur placerat.</p>
+					                        <div class="bottom">
+						                        <p><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit</p>
+						                        <p class="author">Organized By: Lorem Ipsum</p>
+						                    </div>
+					                    </div>
+			                        </td>
+			                    </tr>
+			                    <tr>
+			                        <td width="10%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10">
+					                    <div class="icon_img">
+					                        <span class="fa fa-clock-o"></span>
+					                        <h5 class="time">01:00 AM</h5>
+					                    </div>
+					                </td>
+					                <td width="90%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10">
+					                    <div class="content">
+					                        <a href="#"><h6>LOREM IPSUM</h6></a>
+					                        <p>Lorem ipsum dolor sit amet, consectetur edipiscing elit. Corabitur placerat.</p>
+					                        <div class="bottom">
+						                        <p><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit</p>
+						                        <p class="author">Organized By: Lorem Ipsum</p>
+						                    </div>
+					                    </div>
+			                        </td>
+			                    </tr>
+			                    <tr>
+			                        <td width="10%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10">
+					                    <div class="icon_img">
+					                        <span class="fa fa-clock-o"></span>
+					                        <h5 class="time">06:00 AM</h5>
+					                    </div>
+					                </td>
+					                <td width="90%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10">
+					                    <div class="content">
+					                        <a href="#"><h6>LOREM IPSUM</h6></a>
+					                        <p>Lorem ipsum dolor sit amet, consectetur edipiscing elit. Corabitur placerat.</p>
+					                        <div class="bottom">
+						                        <p><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit</p>
+						                        <p class="author">Organized By: Lorem Ipsum</p>
+						                    </div>
+					                    </div>
+			                        </td>
+			                    </tr>
+			                </tbody>
+			            </table>
+			         </div>
+		        </div>
+		    </div>
+		</div>
+	</div>
+</template>
+
+<!-- end event template 2  -->
+
+<!-- event template 3 -->
+
+<template id="sh_emate_event_tmpl_3" name="Event 3">
+	<div class="sh_emate_event_div_3">
+		<div id="sh_emate_event_div_3" class="sh_emate_s_item_sh_emate_event_tmpl_item_3">
+		
+			<div class="o_mail_block_event mlr10" data-name="Title Content" id="sh_event_3">
+			      <div class="o_mail_snippet_general bg-white">
+				      	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt0 mlr10">
+				           <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+					                    <h3>LOREM IPSUM</h3>
+					                   	<p class="detail">LOREM SIMPLY DUMMY INDUSTRY</p>
+					                </center>
+					            </td>
+					        </tr>
+					     </tbody>
+					</table>
+					
+					<div class="js_cls_sh_mail_snippet_general">
+				          <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table mlr10 pt0">
+				              <tbody>
+				                  <tr>
+				                      <td width="70%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p0">
+				                    		<div class="box">
+						                       <div class="content">
+							                        <a href="#"><h6>LOREM SIMPLY DUMMY INDUSTRY</h6></a>
+							                        <p class="author">Organized By: Lorem Ipsum</p>
+							                        <p>Lorem ipsum dolor sit amet, consectetur edipiscing elit,sed do</p>
+							                        <div class="bottom">
+								                        <p><span class="fa fa-clock-o"></span> 11 AM - 2 PM</p><p class="location"><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit</p>
+								                    </div>
+						                    	</div>
+					                    	</div>
+						               </td>
+					                   <td width="30%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker vmiddle p0">
+						                    <div class="btn_register">
+						                        <a href="#" class="btn_reg">Register</a>
+						                    </div>
+					                	</td>
+				                	</tr>
+				                	<tr>
+				                      <td width="70%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p0">
+				                    		<div class="box">
+						                       <div class="content">
+							                        <a href="#"><h6>LOREM SIMPLY DUMMY INDUSTRY</h6></a>
+							                        <p class="author">Organized By: Lorem Ipsum</p>
+							                        <p>Lorem ipsum dolor sit amet, consectetur edipiscing elit,sed do</p>
+							                        <div class="bottom">
+								                        <p><span class="fa fa-clock-o"></span> 11 AM - 2 PM</p><p class="location"><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit</p>
+								                    </div>
+						                    	</div>
+					                    	</div>
+						               </td>
+					                   <td width="30%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker vmiddle p0">
+						                    <div class="btn_register">
+						                        <a href="#" class="btn_reg">Register</a>
+						                    </div>
+					                	</td>
+				                	</tr>
+				                	<tr>
+				                      <td width="70%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p0">
+				                    		<div class="box">
+						                       <div class="content">
+							                        <a href="#"><h6>LOREM SIMPLY DUMMY INDUSTRY</h6></a>
+							                        <p class="author">Organized By: Lorem Ipsum</p>
+							                        <p>Lorem ipsum dolor sit amet, consectetur edipiscing elit,sed do</p>
+							                        <div class="bottom">
+								                        <p><span class="fa fa-clock-o"></span> 11 AM - 2 PM</p><p class="location"><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit</p>
+								                    </div>
+						                    	</div>
+					                    	</div>
+						               </td>
+					                   <td width="30%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker vmiddle p0">
+						                    <div class="btn_register">
+						                        <a href="#" class="btn_reg">Register</a>
+						                    </div>
+					                	</td>
+				                	</tr>
+				            </tbody>
+				        </table>
+				     </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<!-- end event template 3  -->
+
+
+<!-- event template 4 -->
+
+<template id="sh_emate_event_tmpl_4" name="Event 4">
+	<div class="sh_emate_event_div_4">
+		<div id="sh_emate_event_div_4" class="sh_emate_s_item_sh_emate_event_tmpl_item_4">
+		
+			<div class="o_mail_block_event mlr10" data-name="Title Content" id="sh_event_4">
+			      <div class="o_mail_snippet_general bg-white">
+				      	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt0 mlr10">
+				           <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+				                        <h3>LATEST EVENTS</h3>
+				                        <p class="detail">LOREM SIMPLY DUMMY INDUSTRY</p>
+				                    </center>
+					            </td>
+					        </tr>
+					     </tbody>
+					</table>
+					
+					<div class="js_cls_sh_mail_snippet_general">
+				          <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table mlr10 pt0">
+				              <tbody>
+				                  <tr>
+				                      <td width="70%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p0">
+				                    		<div class="box">
+						                       <div class="content">
+							                        <a href="#"><h6>LOREM IPSUM</h6></a>
+							                        <p class="author">Organized By: Lorem Ipsum</p>
+							                        <p>Lorem ipsum dolor sit amet, consectetur edipiscing elit,sed do</p>
+							                        <div class="bottom">
+								                        <p class="location"><span class="fa fa-map-marker"></span> Lorem ipsum</p><a href="#" class="btn_reg">REGISTER</a>
+								                    </div>
+						                    	</div>
+					                    	</div>
+						               </td>
+					                   <td width="30%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker vmiddle p0">
+						                    <div class="time">
+						                        <h3>11:00 AM</h3>
+						                    </div>
+					                	</td>
+				                	</tr>
+				                	<tr>
+				                      <td width="70%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p0">
+				                    		<div class="box">
+						                       <div class="content">
+							                        <a href="#"><h6>LOREM IPSUM</h6></a>
+							                        <p class="author">Organized By: Lorem Ipsum</p>
+							                        <p>Lorem ipsum dolor sit amet, consectetur edipiscing elit,sed do</p>
+							                        <div class="bottom">
+								                        <p class="location"><span class="fa fa-map-marker"></span> Lorem ipsum</p><a href="#" class="btn_reg">REGISTER</a>
+								                    </div>
+						                    	</div>
+					                    	</div>
+						               </td>
+					                   <td width="30%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker vmiddle p0">
+						                    <div class="time">
+						                        <h3>01:00 PM</h3>
+						                    </div>
+					                	</td>
+				                	</tr>
+				            </tbody>
+				        </table>
+			        </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<!-- end event template 4  -->
+
+<!-- event template 5 -->
+
+<template id="sh_emate_event_tmpl_5" name="Event 5">
+	<div class="sh_emate_event_div_5">
+		<div id="sh_emate_event_div_5" class="sh_emate_s_item_sh_emate_event_tmpl_item_5">
+		
+			      <div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_event_5">
+				      <div class="o_mail_snippet_general">
+				        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+				            <tbody>
+				                <tr>
+				                    <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+				                        <div class="box portion1">
+				                            <h3>LOREM IPSUM</h3>
+				                    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				                    		<a class="btn btn_viewmore" href="#">VIEW MORE</a>
+				                        </div>
+				                    </td>
+				
+				
+					<div class="js_cls_sh_mail_snippet_general">
+				                    <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+				                        <div class="box portion2">
+				                            <div class="img">
+						                		<img src="/sh_emate/static/src/img/tmpl_5/event5_1.jpg" alt="img1"></img>
+						                	</div>
+						                	<div class="content">
+						                		<h5>LOREM IPSUM</h5>
+						                		<p>Lorem ipsum dolor sit amet, consectetur</p>
+						                		<p class="author">Organized By: Lorem Ipsum</p>
+						                		<p><span class="fa fa-clock-o"></span> 02:00:00 to 06:00:00</p>
+						                		<p class="location"><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit</p>
+						                	</div>
+				                        </div>
+				                    </td>
+				
+				                    <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+				                        <div class="box portion3">
+				                            <div class="img">
+						                		<img src="/sh_emate/static/src/img/tmpl_5/event5_2.jpg" alt="img2"></img>
+						                	</div>
+						                	<div class="content">
+						                		<h5>LOREM IPSUM</h5>
+						                		<p>Lorem ipsum dolor sit amet, consectetur</p>
+						                		<p class="author">Organized By: Lorem Ipsum</p>
+						                		<p><span class="fa fa-clock-o"></span> 02:00:00 to 06:00:00</p>
+						                		<p class="location"><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit</p>
+						                	</div>
+				                        </div>
+				                    </td>
+				                    
+				        </div>
+				        
+				                    
+				                    
+				                </tr>
+				            </tbody>
+				        </table>
+				    </div>
+				</div> 
+			</div>
+		</div>	
+</template>
+
+<!-- end event template 5  -->
+
+<!-- event template 6 -->
+
+<template id="sh_emate_event_tmpl_6" name="Event 6">
+	<div class="sh_emate_event_div_6">
+		<div id="sh_emate_event_div_6" class="sh_emate_s_item_sh_emate_event_tmpl_item_6">
+
+			<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_event_6">
+			      <div class="o_mail_snippet_general">
+				      <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+				          <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+				                        <h3>LOREM IPSUM</h3>
+				                        <p class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br/> incididunt ut labore et dolore magna</p>
+				                    </center>
+					            </td>
+					        </tr>
+					     </tbody>
+					  </table>
+			      
+			      	  <div class="js_cls_sh_mail_snippet_general">
+				          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+				              <tbody>
+				                  <tr>
+				                      <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+				                          <div class="box">
+						                        <div class="img">
+							                		<img src="/sh_emate/static/src/img/tmpl_6/event5_1.jpg" alt="img1"></img>
+								                	<div class="content">
+								                		<a href="#"><h5>LOREM IPSUM</h5></a>
+								                		<p><span class="fa fa-clock-o"></span> 04:00:00 to 07:00:00</p>
+								                		<p class="location"><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit</p>
+								                		<p class="author">Organized By: Lorem Ipsum</p>
+								                	</div>
+								                </div>
+							                	<div class="bottom_btn">
+							                		<a href="#" class="btn">13 Aug 2020</a>
+							                	</div>
+						                    </div>
+				                      	</td>
+				
+					                      <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+					                          <div class="box">
+						                        <div class="img">
+							                		<img src="/sh_emate/static/src/img/tmpl_6/event5_2.jpg" alt="img2"></img>
+								                	<div class="content">
+								                		<a href="#"><h5>LOREM IPSUM</h5></a>
+								                		<p><span class="fa fa-clock-o"></span> 04:00:00 to 07:00:00</p>
+								                		<p class="location"><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit</p>
+								                		<p class="author">Organized By: Lorem Ipsum</p>
+								                	</div>
+								               	</div>
+							                	<div class="bottom_btn">
+							                		<a href="#" class="btn">13 Aug 2020</a>
+							                	</div>
+						                    </div>
+					                      </td>
+				
+					                      <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+					                          <div class="box">
+						                        <div class="img">
+							                		<img src="/sh_emate/static/src/img/tmpl_6/event5_1.jpg" alt="img3"></img>
+								                	<div class="content">
+								                		<a href="#"><h5>LOREM IPSUM</h5></a>
+								                		<p><span class="fa fa-clock-o"></span> 04:00:00 to 07:00:00</p>
+								                		<p class="location"><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit</p>
+								                		<p class="author">Organized By: Lorem Ipsum</p>
+								                	</div>
+								                </div>
+							                	<div class="bottom_btn">
+							                		<a href="#" class="btn">13 Aug 2020</a>
+							                	</div>
+						                    </div>
+					                      </td>
+				                  	  </tr>
+				              </tbody>
+				          </table>
+				      </div>
+			      </div>
+			</div> 
+		</div>
+	</div>
+</template>
+
+<!-- end event template 6  -->
+
+<!-- event template 7 -->
+
+<template id="sh_emate_event_tmpl_7" name="Event 7">
+	<div class="sh_emate_event_div_7">
+		<div id="sh_emate_event_div_7" class="sh_emate_s_item_sh_emate_event_tmpl_item_7">
+		
+			<div class="o_mail_block_blog" data-name="Image - Text" id="sh_event_7">
+		      <div class="o_mail_snippet_general">
+		      	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+		           <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+				                    <h3>LOREM IPSUM</h3>
+				                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+				                </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				</table>
+				
+				 <div class="js_cls_sh_mail_snippet_general">
+			          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+			              <tbody>
+			                  <tr>
+			                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8 img">
+			                          <img src="/sh_emate/static/src/img/tmpl_7/event5_1.jpg" class="d-block mx-auto" alt="Your Picture" />
+			                      </td>
+			                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 p8">
+			                          <div class="content">
+					                        <h5>LOREM IPSUM</h5>
+					                        <p class="author">Organized By: Lorem Ipsum</p>
+					                        <p>Lorem ipsum dolor sit amet.</p>
+					                        <p><span class="fa fa-clock-o"></span> 04:00:00 to 07:00:00</p>
+						                	<p class="location mb20"><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit</p>
+					                        <a href="#" class="btn_reg">Register</a>
+					                  </div>
+			                      </td>
+			                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8 img">
+			                          <img src="/sh_emate/static/src/img/tmpl_7/event5_2.jpg" class="d-block mx-auto" alt="Your Picture" />
+			                      </td>
+			                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 p8">
+			                          <div class="content">
+				                        <h5>LOREM IPSUM</h5>
+				                        <p class="author">Organized By: Lorem Ipsum</p>
+				                       	<p>Lorem ipsum dolor sit amet.</p>
+				                       	<p><span class="fa fa-clock-o"></span> 04:00:00 to 07:00:00</p>
+					                	<p class="location"><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit</p>
+				                       	<a href="#" class="btn_reg">Register</a>
+				                      </div>
+			                      </td>
+			                  </tr>
+			              </tbody>
+			          </table>
+			       </div>
+		      </div>
+		  </div>
+		</div>
+	</div>
+</template>
+
+<!-- end event template 7  -->
+
+<!-- event template 8 -->
+
+<template id="sh_emate_event_tmpl_8" name="Event 8">
+	<div class="sh_emate_event_div_8">
+		<div id="sh_emate_event_div_8" class="sh_emate_s_item_sh_emate_event_tmpl_item_8">
+		
+			<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_event_8">
+			     <div class="o_mail_snippet_general">
+			      <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+			          <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+					                    <h3>Our Events</h3>
+				                        <hr/>
+				                        <p class="detail">Lorem ipsum color sit amet, consectetur edipiscing elit. Curabitur placerat.</p>
+					                </center>
+					            </td>
+					        </tr>
+					     </tbody>
+					  </table>
+			      
+			      	  <div class="js_cls_sh_mail_snippet_general">
+				          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+				              <tbody>
+				                  <tr>
+				                      <td class="o_mail_col_mv o_mail_col_container plr7 w180">
+				                          <div class="box">
+						                       	<div class="img">
+							                        <img src="/sh_emate/static/src/img/tmpl_10/event5_1.jpg" alt="event1" title="event1"/>
+							                    </div>
+							                       <div class="content">
+							                        <a href="#"><h5>Lorem ipsum</h5></a>
+							                        <p class="author">Organized By: Lorem Ipsum</p>
+							                        <p>Lorem ipsum is simply dummy text of printing and typesetting...</p>
+							                        <p class="location"><span class="fa fa-map-marker"></span> Lorem ipsum</p>
+							                        <hr/>
+							                        <div class="bottom">
+								                        <p><span class="fa fa-clock-o"></span> 12 PM</p><a href="#" class="btn_reg">REGISTER</a>
+								                    </div>
+							                    </div>
+						                  </div>
+				                      </td>
+				
+				                      <td class="o_mail_col_mv o_mail_col_container plr7 w180">
+				                          <div class="box">
+							                    <div class="img">
+							                        <img src="/sh_emate/static/src/img/tmpl_10/event5_2.jpg" alt="event2" title="event2"/>
+							                    </div>
+							                       <div class="content">
+							                        <a href="#"><h5>Lorem ipsum</h5></a>
+							                        <p class="author">Organized By: Lorem Ipsum</p>
+							                        <p>Lorem ipsum is simply dummy text of printing and typesetting...</p>
+							                        <p class="location"><span class="fa fa-map-marker"></span> Lorem ipsum</p>
+							                        <hr/>
+							                        <div class="bottom">
+								                        <p><span class="fa fa-clock-o"></span> 3 PM</p><a href="#" class="btn_reg">REGISTER</a>
+								                    </div>
+							                    </div>
+							              </div>
+				                      </td>
+				
+				                      <td class="o_mail_col_mv o_mail_col_container plr7 w180">
+				                          <div class="box">
+					                    		<div class="img">
+							                        <img src="/sh_emate/static/src/img/tmpl_10/event5_1.jpg" alt="event1" title="event1"/>
+							                    </div>
+							                    <div class="content">
+							                        <a href="#"><h5>Lorem ipsum</h5></a>
+							                        <p class="author">Organized By: Lorem Ipsum</p>
+							                        <p>Lorem ipsum is simply dummy text of printing and typesetting...</p>
+							                        <p class="location"><span class="fa fa-map-marker"></span> Lorem ipsum</p>
+							                        <hr/>
+							                        <div class="bottom">
+								                        <p><span class="fa fa-clock-o"></span> 12 PM</p><a href="#" class="btn_reg">REGISTER</a>
+								                    </div>
+							                    </div>
+					                	  </div>
+				                      </td>
+				                  </tr>
+				              </tbody>
+				          </table>
+				      </div>
+			      </div>
+			</div> 
+		</div>
+	</div>
+</template>
+<!-- end event template 8  -->
+
+<!-- event template 9 -->
+<template id="sh_emate_event_tmpl_9" name="Event 9">
+	<div class="sh_emate_event_div_9">
+		<div id="sh_emate_event_div_9" class="sh_emate_s_item_sh_emate_event_tmpl_item_9">
+		
+			<div class="o_mail_block_blog" data-name="Image - Text" id="sh_event_9">
+			    <div class="o_mail_snippet_general">
+			      	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+			           <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+				                        <h3>LOREM IPSUM</h3>
+				                        <hr/>
+				                    </center>
+					            </td>
+					        </tr>
+					     </tbody>
+					</table>
+					
+					 <div class="js_cls_sh_mail_snippet_general">
+				          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+				              <tbody>
+				                  <tr>
+				                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+				                          <img src="/sh_emate/static/src/img/tmpl_8/event8_1.jpg" class="d-block mx-auto" alt="Your Picture" />
+				                      </td>
+				                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 text-left p8">
+				                          <div class="content">
+						                       	<h5>LOREM IPSUM</h5>
+					                        	<p class="author">Organized By: Lorem Ipsum</p>
+					                        	<p>Lorem ipsum dolor sit amet.</p>
+					                        	<p><span class="fa fa-clock-o"></span> 02:00 PM</p>
+						                  </div>
+				                      </td>
+				                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+				                          <img src="/sh_emate/static/src/img/tmpl_8/event8_2.jpg" class="d-block mx-auto" alt="Your Picture" />
+				                      </td>
+				                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 text-left p8">
+					                       <div class="content">
+						                        <h5>LOREM IPSUM</h5>
+					                        	<p class="author">Organized By: Lorem Ipsum</p>
+					                        	<p>Lorem ipsum dolor sit amet.</p>
+					                        	<p><span class="fa fa-clock-o"></span> 02:00 PM</p>
+						                  </div>
+				                      </td>
+				                  </tr>
+				                  
+				                  <tr>
+				                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+				                          <img src="/sh_emate/static/src/img/tmpl_8/event8_3.jpg" class="d-block mx-auto" alt="Your Picture" />
+				                      </td>
+				                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 text-left p8">
+				                          <div class="content">
+						                       	<h5>LOREM IPSUM</h5>
+					                        	<p class="author">Organized By: Lorem Ipsum</p>
+					                        	<p>Lorem ipsum dolor sit amet.</p>
+					                        	<p><span class="fa fa-clock-o"></span> 04:00 PM</p>
+						                  </div>
+				                      </td>
+				                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+				                          <img src="/sh_emate/static/src/img/tmpl_8/event8_4.jpg" class="d-block mx-auto" alt="Your Picture" />
+				                      </td>
+				                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 text-left p8">
+					                       <div class="content">
+						                        <h5>LOREM IPSUM</h5>
+					                        	<p class="author">Organized By: Lorem Ipsum</p>
+					                        	<p>Lorem ipsum dolor sit amet.</p>
+					                        	<p><span class="fa fa-clock-o"></span> 07:00 PM</p>
+						                  </div>
+				                      </td>
+				                  </tr>
+				              </tbody>
+				          </table>
+				       </div>
+			      </div>
+			  </div>
+		</div>
+	</div>
+</template>
+
+<!-- end event template 9  -->
+
+<!-- event template 10 -->
+
+<template id="sh_emate_event_tmpl_10" name="Event 10">
+	<div class="sh_emate_event_div_10">
+		<div id="sh_emate_event_div_10" class="sh_emate_s_item_sh_emate_event_tmpl_item_10">
+		
+			<div class="o_mail_block_event mlr10" data-name="Title Content" id="sh_event_10">
+			      <div class="o_mail_snippet_general bg-white">
+			      	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt0 mlr10">
+			           <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+					                    <h3 class="title">LOREM IPSUM</h3>
+				                    	<hr/>
+				                    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do euismodtempor incididunt ut.</p>
+					                </center>
+					            </td>
+					        </tr>
+					     </tbody>
+					</table>
+					
+					<div class="js_cls_sh_mail_snippet_general">
+				          <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table mlr10">
+				              <tbody>
+				                  <tr>
+				                      <td width="30%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10">
+					                    <div class="img">
+					                        <img src="/sh_emate/static/src/img/tmpl_9/event5_1.jpg" alt="Your Img" title="image" />
+					                    </div>
+					                </td>
+					                <td width="70%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10">
+					                    <div class="content">
+				                        	<a href="#"><h5>Lorem Ipsum</h5></a>
+				                        	<p class="author">Organized By: Lorem Ipsum</p>
+				                        	<p>Lorem ipsum is simply dummy text of the printing and typesetting industry...</p>
+					                        <div class="bottom">
+						                        <p>15 Aug 2020</p> <p><span class="fa fa-clock-o"></span> 11 AM - 2 PM</p> <p><span class="fa fa-map-marker"></span> Lorem ipsum</p>
+						                    </div>
+						                </div>
+					                </td>
+				                  </tr>
+				                  <tr>
+				                      <td width="30%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10">
+					                    <div class="img">
+					                        <img src="/sh_emate/static/src/img/tmpl_9/event5_2.jpg" alt="Your Img" title="image" />
+					                    </div>
+					                  </td>
+					                <td width="70%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10">
+					                    <div class="content">
+					                        <a href="#"><h5>Lorem Ipsum</h5></a>
+					                        <p class="author">Organized By: Lorem Ipsum</p>
+					                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry...</p>
+					                        <div class="bottom">
+						                        <p>15 Aug 2020</p><p><span class="fa fa-clock-o"></span> 11 AM - 2 PM</p> <p><span class="fa fa-map-marker"></span> Lorem ipsum</p>
+						                    </div>
+					                    </div>
+				                      </td>
+				                  	</tr>
+				              </tbody>
+				          </table>
+				       </div>
+			      </div>
+			  </div>
+		</div>
+	</div>
+</template>
+
+<!-- end event template 10  -->
+
+<!-- event template 11 -->
+
+<template id="sh_emate_event_tmpl_11" name="Event 11">
+	<div class="sh_emate_event_div_11">
+		<div id="sh_emate_event_div_11" class="sh_emate_s_item_sh_emate_event_tmpl_item_11">
+		
+			<div class="o_mail_block_two_cols" data-name="Two Columns" id="sh_event_11">
+			    <div class="o_mail_snippet_general">
+			    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt0 mlr10">
+				           <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+					                    <h3>LOREM IPSUM</h3>
+					                </center>
+					            </td>
+					        </tr>
+					     </tbody>
+					</table>
+					
+					<div class="js_cls_sh_mail_snippet_general">
+				        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt-0">
+				            <tbody>
+				                <tr>
+				                    <td class="o_mail_col_mv o_mail_col_container">
+				                        <div class="box">
+				                        	<div class="img">
+				                        		<img src="/sh_emate/static/src/img/tmpl_10/event5_1.jpg" class="d-block mx-auto" alt="Your Picture" />
+				                        	</div>
+				                            <div class="content">
+						                        <a href="#"><h5>Lorem ipsum dolor sit amet</h5></a>
+						                        <p>Lorem ipsum dolor sit consectetur adipiscing elit. Curabitur placerat tellus sit amet ipsum ornare.</p>
+						                        <p class="author">Organized By: Lorem Ipsum</p>
+						                        <div class="bottom">
+							                        <p><span class="fa fa-clock-o"></span> 12:00 PM TO 04:00 PM</p>
+							                    </div>
+							                    <hr/>
+							                    <a href="#" class="btn_reg">REGISTER NOW</a>
+						                    </div>
+				                        </div>
+				                    </td>
+				
+				                    <td class="o_mail_col_mv o_mail_col_container">
+				                        <div class="box">
+				                        	<div class="img">
+				                        		<img src="/sh_emate/static/src/img/tmpl_10/event5_2.jpg" class="d-block mx-auto" alt="Your Picture" />
+				                        	</div>
+				                            <div class="content">
+						                        <a href="#"><h5>Lorem ipsum dolor sit amet</h5></a>
+						                        <p>Lorem ipsum dolor sit consectetur adipiscing elit. Curabitur placerat tellus sit amet ipsum ornare.</p>
+						                        <p class="author">Organized By: Lorem Ipsum</p>
+						                        <div class="bottom">
+							                        <p><span class="fa fa-clock-o"></span> 12:00 PM TO 04:00 PM</p>
+							                    </div>
+							                    <hr/>
+							                    <a href="#" class="btn_reg">REGISTER NOW</a>
+						                    </div>
+				                        </div>
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				    </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<!-- end event template 11  -->
+
+<!-- event template 12 -->
+
+<template id="sh_emate_event_tmpl_12" name="Event 12">
+	<div class="sh_emate_event_div_12">
+		<div id="sh_emate_event_div_12" class="sh_emate_s_item_sh_emate_event_tmpl_item_12">
+		
+			<div class="o_mail_block_steps o_mail_no_colorpicker" data-name="Steps" id="sh_event_12">
+			    <div class="o_mail_snippet_general bg-white">
+			    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+			        	<tbody>
+					      <tr>
+					          <td width="100%" class="heading">
+					              <center>
+					                   <h3>LOREM IPSUM</h3>
+					               </center>
+					          </td>
+					      </tr>
+					   </tbody>
+					</table>
+					
+					<div class="js_cls_sh_mail_snippet_general">
+				        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding">
+				            <tbody>
+				                <tr>
+				                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+				                        <table align="center">
+				                            <tbody><tr>
+				                                <td rowspan="2" class="text-right icon vmiddle">
+				                                    <span class="fa fa-cubes" role="img" title="Headphone"></span>
+				                                </td>
+				                                <td>
+				                                    <div class="right-content">
+								                       	<p class="text">Lorem ipsum dolor sit amet.</p>
+								                        <a href="#"><p class="title">LOREM IPSUM</p></a>
+								                        <p class="time">01:00 - 03:00</p>
+								                    </div>
+				                                </td>
+				                            </tr>
+				                        </tbody></table>
+				                    </td>
+				                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+				                        <table align="center">
+				                            <tbody><tr>
+				                                <td rowspan="2" class="text-right icon vmiddle">
+				                                    <span class="fa fa-cubes" role="img" title="Order"></span>
+				                                </td>
+				                                <td>
+				                                    <div class="right-content">
+							                       		<p class="text">Lorem ipsum dolor sit amet.</p>
+							                           <a href="#"><p class="title">LOREM IPSUM</p></a>
+							                           <p class="time">02:00 - 05:00</p>
+							                       </div>
+				                                </td>
+				                            </tr>
+				                        </tbody></table>
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				        
+				        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding">
+				            <tbody>
+				                <tr>
+				                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+				                        <table align="center">
+				                            <tbody><tr>
+				                                <td rowspan="2" class="text-right icon vmiddle">
+				                                    <span class="fa fa-cubes" role="img" title="Headphone"></span>
+				                                </td>
+				                                <td>
+				                                    <div class="right-content">
+							                       		<p class="text">Lorem ipsum dolor sit amet.</p>
+							                           <a href="#"><p class="title">LOREM IPSUM</p></a>
+							                           <p class="time">04:00 - 06:00</p>
+							                       </div>
+				                                </td>
+				                            </tr>
+				                        </tbody></table>
+				                    </td>
+				                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+				                        <table align="center">
+				                            <tbody><tr>
+				                                <td rowspan="2" class="text-right icon vmiddle">
+				                                    <span class="fa fa-cubes" role="img" title="Order"></span>
+				                                </td>
+				                                <td>
+				                                    <div class="right-content">
+							                       		<p class="text">Lorem ipsum dolor sit amet.</p>
+							                           	<a href="#"><p class="title">LOREM IPSUM</p></a>
+							                           	<p class="time">07:00 - 09:00</p>
+							                       </div>
+				                                </td>
+				                            </tr>
+				                        </tbody></table>
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				     </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<!-- end event template 12  -->
+
+
+<!-- event template 13 -->
+
+<template id="sh_emate_event_tmpl_13" name="Event 13">
+	<div class="sh_emate_event_div_13">
+		<div id="sh_emate_event_div_13" class="sh_emate_s_item_sh_emate_event_tmpl_item_13">
+		
+			<div class="o_mail_block_event mlr10" data-name="Title Content" id="sh_event_13">
+		      <div class="o_mail_snippet_general bg-white">
+		      	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt0 mlr10">
+		           <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+				                    <h3>LOREM IPSUM</h3>
+				                   	<p class="detail">LOREM SIMPLY DUMMY INDUSTRY</p>
+				                </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				</table>
+				
+				<div class="js_cls_sh_mail_snippet_general">
+			          <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table mlr10">
+			              <tbody>
+			                  <tr>
+			                      <td width="40%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10">
+				                    <div class="img">
+				                        <img src="/sh_emate/static/src/img/tmpl_13/event5_1.jpg" alt="Your Img" title="image" />
+				                    </div>
+				                </td>
+				                <td width="60%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10">
+				                    <div class="content">
+			                        	<p><span class="fa fa-clock-o"></span> 09:00 AM - 00:12 PM</p>
+				                        <a href="#"><h5>Lorem ipsum dolor sit amet</h5></a>
+				                        <p class="author">Organized By: Lorem Ipsum</p>
+				                        <p>Lorem ipsum dolor sit amet, consectetur edipiscing elit. Curabitur placerat tellus sit amet ipsum ornare.</p>
+				                        <div class="bottom">
+					                        <p><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit</p>
+					                    </div>
+				                    </div>
+				                </td>
+			                  </tr>
+			                  <tr>
+			                      <td width="40%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10">
+				                    <div class="img">
+				                        <img src="/sh_emate/static/src/img/tmpl_13/event5_2.jpg" alt="Your Img" title="image" />
+				                    </div>
+				                  </td>
+				                  <td width="60%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10">
+				                    <div class="content">
+			                        	<p><span class="fa fa-clock-o"></span> 09:00 AM - 00:12 PM</p>
+				                        <a href="#"><h5>Lorem ipsum dolor sit amet</h5></a>
+				                        <p class="author">Organized By: Lorem Ipsum</p>
+				                        <p>Lorem ipsum dolor sit amet, consectetur edipiscing elit. Curabitur placerat tellus sit amet ipsum ornare.</p>
+				                        <div class="bottom">
+					                        <p><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit</p>
+					                    </div>
+				                    </div>
+			                     </td>
+			                  </tr>
+			              </tbody>
+			          </table>
+			      </div>
+		      </div>
+		  </div>
+		</div>
+	</div>
+</template>
+
+<!-- end event template 13  -->
+
+<!-- event template 14 -->
+
+<template id="sh_emate_event_tmpl_14" name="Event 14">
+	<div class="sh_emate_event_div_14">
+		<div id="sh_emate_event_div_14" class="sh_emate_s_item_sh_emate_event_tmpl_item_14">
+		
+			<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_event_14">
+			      <div class="o_mail_snippet_general">
+			      	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table">
+				        <tbody>
+					        <tr>
+					            <td width="100%" class="heading text-left">
+					                <h3>LOREM IPSUM</h3>
+			                        <p class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+					            </td>
+					        </tr>
+					     </tbody>
+					  </table>
+					  
+					 <div class="js_cls_sh_mail_snippet_general">
+				        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+				            <tbody>
+				                <tr>
+				                    <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+				                        <div class="box">
+					                        <div class="content">
+						                        <a href="#"><h5>LOREM IPSUM</h5></a>
+						                        <hr/>
+						                        <p class="date">11 Aug 2020</p>
+						                        <p>Lorem ipsum dolor sit amet,consectetur edipiscing elit</p>
+						                        <p><span class="fa fa-clock-o"></span> 01:00 PM</p>
+						                        <p class="location"><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit</p>
+						                        <p class="author">Organized By: Lorem Ipsum</p>
+							                    <a href="#" class="btn_reg">Register</a>
+							                    <br/>
+						                    </div>
+						                </div>
+				                    </td>
+				
+				                    <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+				                        <div class="box">
+					                        <div class="content">
+						                        <a href="#"><h5>LOREM IPSUM</h5></a>
+						                        <hr/>
+						                        <p class="date">11 Aug 2020</p>
+						                        <p>Lorem ipsum dolor sit amet,consectetur edipiscing elit</p>
+						                        <p><span class="fa fa-clock-o"></span> 01:00 PM</p>
+						                        <p class="location"><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit</p>
+						                        <p class="author">Organized By: Lorem Ipsum</p>
+							                    <a href="#" class="btn_reg">Register</a>
+							                    <br/>
+						                    </div>
+						                </div>
+				                    </td>
+				
+				                    <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+				                        <div class="box">
+					                        <div class="content">
+						                        <a href="#"><h5>LOREM IPSUM</h5></a>
+						                        <hr/>
+						                        <p class="date">11 Aug 2020</p>
+						                        <p>Lorem ipsum dolor sit amet,consectetur edipiscing elit</p>
+						                        <p><span class="fa fa-clock-o"></span> 01:00 PM</p>
+						                        <p class="location"><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit</p>
+						                        <p class="author">Organized By: Lorem Ipsum</p>
+							                    <a href="#" class="btn_reg">Register</a>
+							                    <br/>
+						                    </div>
+						                </div>
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				     </div>
+			    </div>
+			</div> 
+		</div>
+	</div>
+</template>
+
+<!-- end event template 14  -->
+
+
+<!-- event template 15 -->
+
+<template id="sh_emate_event_tmpl_15" name="Event 15">
+	<div class="sh_emate_event_div_15">
+		<div id="sh_emate_event_div_15" class="sh_emate_s_item_sh_emate_event_tmpl_item_15">
+		
+			<div class="o_mail_block_text_image" data-name="Text - Image" id="sh_event_15">
+			    <div class="o_mail_snippet_general">
+			    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table">
+			            <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+					                    <h3>Events</h3>
+					                    <hr/>
+					                    <p class="detail">Lorem ipsum dolor sit amet, consectetur<br/>adipiscing elit. Curabitur placerat.</p>
+					                </center>
+					            </td>
+					        </tr>
+					     </tbody>
+					  </table>
+					  
+					  <div class="js_cls_sh_mail_snippet_general">
+				        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+				            <tbody>
+				                <tr>
+				                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270">
+				                        <div class="img">
+					                        <img src="/sh_emate/static/src/img/tmpl_15/event5_1.jpg" alt="image" />
+					                    </div>
+				                    </td>
+				                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270 pl0">
+				                        <div class="content">
+					                        <h5>LOREM IPSUM</h5>
+					                        <p class="author">Organized By: Lorem Ipsum</p>
+					                        <p>Lorem ipsum dolor sit amet consectetur edipiscing elit tempor.</p>
+					                        <p class="time"><span class="fa fa-clock-o"></span> 01:00 PM</p>
+					                        <p class="location"><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit</p>
+						                    <a href="#" class="btn_reg">Register</a>
+						                </div>
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				     </div>
+			    </div>
+			</div> 
+		</div>
+	</div>
+</template>
+
+<!-- end event template 15  -->
+
+<!-- event template 16 -->
+
+<template id="sh_emate_event_tmpl_16" name="Event 16">
+	<div class="sh_emate_event_div_16">
+		<div id="sh_emate_event_div_16" class="sh_emate_s_item_sh_emate_event_tmpl_item_16">
+		
+			<div class="o_mail_block_two_cols" data-name="Two Columns" id="sh_event_16">
+			    <div class="o_mail_snippet_general">
+			    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt0 mlr10">
+				           <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+					                    <a class="title-btn">LOREM IPSUM</a>
+					                </center>
+					            </td>
+					        </tr>
+					     </tbody>
+					</table>
+					
+					<div class="js_cls_sh_mail_snippet_general">
+				        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt-0">
+				            <tbody>
+				                <tr>
+				                    <td class="o_mail_col_mv o_mail_col_container w260 plr10">
+				                        <div class="box">
+				                        	<div class="img">
+				                        		<img src="/sh_emate/static/src/img/tmpl_16/event8_1.jpg" class="d-block mx-auto" alt="Your Picture" />
+				                        	</div>
+				                            <div class="content">
+				                            	<h5>LOREM IPSUM</h5>
+				                            	<p class="author">Organized By: Lorem Ipsum</p>
+						                        <p>Lorem ipsum dolor sit consectetur adipiscing elit</p>
+						                        <p><span class="fa fa-map-marker"></span>  Lorem ipsum</p>
+						                        <p class="time"><span class="fa fa-clock-o"></span> 12 PM - 02 PM</p>
+						                        <a href="#" class="btn_readmore">REGISTER NOW</a>
+						                    </div>
+				                        </div>
+				                    </td>
+				
+				                    <td class="o_mail_col_mv o_mail_col_container w260 plr10">
+				                        <div class="box">
+				                        	<div class="img">
+				                        		<img src="/sh_emate/static/src/img/tmpl_16/event8_3.jpg" class="d-block mx-auto" alt="Your Picture" />
+				                        	</div>
+				                            <div class="content">
+				                            	<h5>LOREM IPSUM</h5>
+				                            	<p class="author">Organized By: Lorem Ipsum</p>
+						                        <p>Lorem ipsum dolor sit consectetur adipiscing elit</p>
+						                        <p><span class="fa fa-map-marker"></span>  Lorem ipsum</p>
+						                        <p class="time"><span class="fa fa-clock-o"></span> 12 PM - 02 PM</p>
+						                        <a href="#" class="btn_readmore">REGISTER NOW</a>
+						                    </div>
+				                        </div>
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				     </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<!-- end event template 16  -->
+
+
+<!-- event template 17 -->
+
+<template id="sh_emate_event_tmpl_17" name="Event 17">
+	<div class="sh_emate_event_div_17">
+		<div id="sh_emate_event_div_17" class="sh_emate_s_item_sh_emate_event_tmpl_item_17">
+		
+			<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_event_17">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_h_padding o_mail_v_padding o_mail_col_table">
+			          <tbody>
+				        <tr>
+				            <td width="100%" class="heading text-left">
+			                     <h3>LOREM IPSUM</h3>
+			                     <p class="detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius mod</p>
+				            </td>
+				        </tr>
+				     </tbody>
+				  </table>
+		        
+		        
+		        	<div class="js_cls_sh_mail_snippet_general">
+			            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+			                <tbody>
+			                    <tr>
+			                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+			                            <div class="box">
+						                    <div class="icon_img">
+						                        <span class="fa fa-clock-o fa-5x"></span>
+						                        <p class="time">09:00 AM - 02:00 PM</p>
+						                    </div>
+					                        <div class="content">
+						                        <a href="#"><h5>Lorem ipsum dolor sit amet, consectetur edipiscing elit, sed do eius</h5></a>
+						                        <p class="location"><span class="fa fa-map-marker"></span> Lorem ipsum</p>
+						                        <p class="author">Organized By: Lorem Ipsum</p>
+						                    </div>
+						                    <div class="bottom">
+						                        <a href="#" class="btn_reg">Register Now</a>
+						                    </div>
+						                </div>
+			                        </td>
+			
+			                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+			                            <div class="box">
+						                    <div class="icon_img">
+						                        <span class="fa fa-clock-o fa-5x"></span>
+						                        <p class="time">09:00 AM - 02:00 PM</p>
+						                    </div>
+					                        <div class="content">
+						                        <a href="#"><h5>Lorem ipsum dolor sit amet, consectetur edipiscing elit, sed do eius</h5></a>
+						                        <p class="location"><span class="fa fa-map-marker"></span> Lorem ipsum</p>
+						                        <p class="author">Organized By: Lorem Ipsum</p>
+						                    </div>
+						                    <div class="bottom">
+						                        <a href="#" class="btn_reg">Register Now</a>
+						                    </div>
+						                </div>
+			                        </td>
+			
+			                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+			                            <div class="box">
+						                    <div class="icon_img">
+						                        <span class="fa fa-clock-o fa-5x"></span>
+						                        <p class="time">09:00 AM - 02:00 PM</p>
+						                    </div>
+					                        <div class="content">
+						                        <a href="#"><h5>Lorem ipsum dolor sit amet, consectetur edipiscing elit, sed do eius</h5></a>
+						                        <p class="location"><span class="fa fa-map-marker"></span> Lorem ipsum</p>
+						                        <p class="author">Organized By: Lorem Ipsum</p>
+						                    </div>
+						                    <div class="bottom">
+						                        <a href="#" class="btn_reg">Register Now</a>
+						                    </div>
+						                </div>
+			                        </td>
+			                    </tr>
+			                </tbody>
+			            </table>
+			         </div>
+		        </div>
+		    </div> 
+		</div>
+	</div>
+</template>
+
+<!-- end event template 17  -->
+
+
+<!-- event template 18 -->
+
+<template id="sh_emate_event_tmpl_18" name="Event 18">
+	<div class="sh_emate_event_div_18">
+		<div id="sh_emate_event_div_18" class="sh_emate_s_item_sh_emate_event_tmpl_item_18">
+
+        <div class="o_mail_block_event" data-name="Centered" id="sh_event_28">
+            <div class="o_mail_snippet_general">
+				<div class="js_cls_sh_mail_snippet_general">            
+	                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding">
+	                    <tbody>
+	                        <tr>
+	                        	<td valign="center" width="100%" class="p10 text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding sh_heading">
+	                        		<div class="heading">
+	                        			<h3>Welcome To New Year Celebration</h3>
+	                                    <img class="heading_bottom" src="/sh_emate/static/src/img/tmpl_28/header_bottom.png" alt="heading_img" />
+	                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+	                                 </div>
+	                             </td>
+	                          </tr>
+	                          <tr>
+	                             <td valign="center" width="100%" class="p10 text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding sh_content">
+	                                <h2 class="sh_date">DATE : <span class="inner_text"> Thursday, December 31st 2020 </span></h2>
+	                                <h2 class="sh_timing">DOOR OPENS AT : <span class="inner_text"> 8.00 PM TO 12.00 PM </span></h2>
+	                                <h2 class="sh_event_name">EVENTS : <span class="inner_text"> LIVE MUSIC &amp; DJ </span></h2>
+	                                <a class="btn_join btn" href="#">Join Now</a>
+	                            </td>
+	                        </tr>
+	                    </tbody>
+	                </table>
+                </div>
+            </div>
+        </div>
+        		
+
+		</div>
+	</div>
+</template>
+
+<!-- end event template 18  -->
+
+<!-- event template 19 -->
+
+<template id="sh_emate_event_tmpl_19" name="Event 19">
+	<div class="sh_emate_event_div_19">
+		<div id="sh_emate_event_div_19" class="sh_emate_s_item_sh_emate_event_tmpl_item_19">
+
+        <div class="o_mail_block_event" data-name="Centered" id="sh_event_31">
+            <div class="o_mail_snippet_general">
+            	<div class="js_cls_sh_mail_snippet_general">
+	                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding">
+	                    <tbody>
+	                        <tr>
+	                        	<td valign="center" width="100%" class="p10 text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding sh_heading">
+	                        		<div class="heading_top">
+	                        			<img src="/sh_emate/static/src/img/tmpl_31/frame_1.png" alt="heading_bottom_img" />
+	                                 </div>
+	                             </td>
+	                          </tr>
+	                          <tr>
+	                             <td valign="center" width="100%" class="p10 text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding sh_content">
+	                             	<div class="venue_part">
+		                                <h2>Venue</h2>
+		                                <p>905, Corpomate Levels, Ayodhya Chowk, <br/>150ft. Ring Road, Rajkot.</p>
+		                            </div>
+	                            </td>
+	                          </tr>
+	                          <tr>
+	                             <td valign="center" width="100%" class="p10 text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding sh_content">
+	                             	<div class="timing_part">
+		                                <h2>Date &amp; Time</h2>
+		                                <p>Thursday, 31st December, 2020 <br/> @ 6PM In The Evening
+		                                </p>
+		                            </div>
+	                            </td>
+	                          </tr>
+	                          <tr>
+	                             <td valign="center" width="100%" class="p10 text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding sh_content">
+	                             	<div class="hosted_part">
+		                                <h2>Host By</h2>
+		                                <p>Softhealer Technologies</p>
+		                                <p>+91 7985575681</p>
+		                                <a t-att-href="'mailto: %s' %(res_company.email)"><p>info@softhealer.com</p></a>
+		                            </div>
+	                            </td>
+	                          </tr>
+	                          
+	                          <tr>
+	                        	<td valign="center" width="100%" class="p10 text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding sh_heading">
+	                        		<div class="heading_bottom">
+	                        			<img src="/sh_emate/static/src/img/tmpl_31/frame_2.png" alt="heading_bottom_img" />
+	                                 </div>
+	                             </td>
+	                          </tr>
+	                    </tbody>
+	                </table>
+	            </div>
+            </div>
+        </div>
+        		
+
+		</div>
+	</div>
+</template>
+
+<!-- end event template 19  -->
+
+
+
+
+</odoo>
+
+
+
+
+
+

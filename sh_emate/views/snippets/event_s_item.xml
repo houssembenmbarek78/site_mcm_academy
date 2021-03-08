@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+
+<!-- event temp 1 -->
+<template id="sh_emate_event_tmpl_item_1" name="Event 1 Item">
+  
+	
+       <div class="js_cls_sh_mail_snippet_general">
+         <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col">
+             <tbody>
+                 <tr>
+                 
+                 	<t t-if="events">           	
+	           		<t t-foreach="events" t-as="event">
+                 
+	                     <td style="vertical-align:top;width:180px;" class="o_mail_col_mv o_mail_col_container plr10">
+	                         <div class="box">
+		                      	<div class="content">
+			                       	<!-- Title -->
+			                        <h5 t-attf-class="card-title mb-0 text-truncate #{(not event.website_published) and 'text-danger'}">
+			                            <a t-attf-href="/event/#{ event.id }" class="text-reset text-decoration-none" itemprop="url">
+			                                <span t-field="event.name" itemprop="name"/>
+			                            </a>
+			                        </h5>
+			                        
+			                        <div style="display: flex;justify-content: center;margin-top: 15px;">
+				                       	<p style="padding:10px 5px;"><span class="fa fa-map-marker" style="padding: 5px;"></span>
+				                       		<!-- Location -->
+			                        		<span t-if="event.is_online">Online</span>
+			                        		<span t-else="" itemprop="location" t-field="event.address_id" t-options="{'widget': 'contact', 'fields': ['city'], 'no_marker': 'true'}"/>
+				                       	</p>
+				                    </div>
+			                       	
+			                       	
+			                       	<h3>
+			                       		<!-- Start Date & Time -->
+				                        <time itemprop="startDate" t-att-datetime="event.date_begin">
+				                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'time_only': 'true', 'format': 'short'}"/>
+				                        </time> 
+			                       	</h3>
+			                       	<a t-attf-href="/event/#{ event.id }" class="btn_register">Register Now</a>
+			                   	</div>
+	               			</div>
+	                     </td>
+	                     
+	                </t>
+	                </t>
+
+                 </tr>
+             </tbody>
+         </table>
+     </div>
+</template>
+
+
+<!-- event temp 2 -->
+
+<template id="sh_emate_event_tmpl_item_2" name="Event 2 Item">
+	<div class="js_cls_sh_mail_snippet_general">
+      <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table mlr10">
+          <tbody>
+          
+          		<t t-if="events">           	
+	           	<t t-foreach="events" t-as="event">
+          
+          
+	              	 <tr>
+		                  <td width="10%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10">
+			                <div class="icon_img">
+			                    <span class="fa fa-clock-o"></span>
+			                    
+			                    <h5 class="time">
+				                    <time itemprop="startDate" t-att-datetime="event.date_begin">
+			                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'time_only': 'true', 'format': 'short'}"/>
+			                        </time>   
+		                        </h5>
+		                        
+			                </div>
+			              </td>
+			              <td width="90%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10">
+			                <div class="content">
+			                    <a t-attf-href="/event/#{ event.id }">
+			                    	<h6 t-attf-class="card-title mb-0 text-truncate #{(not event.website_published) and 'text-danger'}">
+			                            <a t-attf-href="/event/#{ event.id }" class="text-reset text-decoration-none" itemprop="url">
+			                                <span t-field="event.name" itemprop="name"/>
+			                            </a>
+			                        </h6>
+			                    </a>
+			                    <!-- short description -->
+                                <p class="text-center o_mail_no_margin" t-field="event.sh_emate_short_description"/>
+                                
+			                    <div class="bottom" style="display: flex;">
+			                     	<p><span class="fa fa-map-marker"></span>
+			                     		<span t-if="event.is_online">Online</span>
+		                        		<span t-else="" itemprop="location" t-field="event.address_id" t-options="{'widget': 'contact', 'fields': ['city'], 'no_marker': 'true'}"/>
+			                     	</p>
+			                     	
+			                     	<!-- Organizer in paragraph -->
+		                			<p t-if="event.organizer_id" class="author">Organized By: <span t-field="event.organizer_id" itemprop="organizer"/> </p>               
+			                 	</div>
+			                </div>
+			             </td>
+	              	</tr>
+	              	
+	            </t>
+	            </t>
+              
+          </tbody>
+      </table>
+   </div>
+
+</template>
+
+
+<!-- event temp 3-->
+
+<template id="sh_emate_event_tmpl_item_3" name="Event 3 Item">
+	<div class="js_cls_sh_mail_snippet_general">
+         <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table mlr10 pt0">
+             <tbody>
+             
+             	<t t-if="events">           	
+	           	<t t-foreach="events" t-as="event">
+             
+	                 <tr>
+	                     <td width="70%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p0">
+	                   		<div class="box">
+		                       <div class="content">
+			                        <a t-attf-href="/event/#{ event.id }">
+			                        	<h6 t-attf-class="card-title mb-0 text-truncate #{(not event.website_published) and 'text-danger'}">
+				                            <a t-attf-href="/event/#{ event.id }" class="text-reset text-decoration-none" itemprop="url">
+				                                <span t-field="event.name" itemprop="name"/>
+				                            </a>
+				                        </h6>
+			                        </a>
+			                        <!-- Organizer in paragraph -->
+		                			<p t-if="event.organizer_id" class="author">Organized By: <span t-field="event.organizer_id" itemprop="organizer"/> </p>
+		                			
+			                        <!-- short description -->
+                                	<p class="text-center o_mail_no_margin" t-field="event.sh_emate_short_description"/>
+                                	
+			                        <div class="bottom">
+				                        <p><span class="fa fa-clock-o"></span>
+				                        	<!-- Start Date & Time -->
+					                        <time itemprop="startDate" t-att-datetime="event.date_begin">
+					                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'date_only': 'true', 'format': 'long'}"/> -
+					                        </time> 
+				                        </p>
+				                        <div style="display: flex;">
+					                        <p class="location"><span class="fa fa-map-marker"></span>
+					                        	<!-- Location -->
+			                        			<span t-if="event.is_online">Online</span>
+			                        			<span t-else="" itemprop="location" t-field="event.address_id" t-options="{'widget': 'contact', 'fields': ['city'], 'no_marker': 'true'}"/>
+					                        </p>
+					                    </div>
+				                    </div>
+		                    	</div>
+	                    	</div>
+		               </td>
+	                   <td width="30%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker vmiddle p0">
+		                    <div class="btn_register">
+		                        <a t-attf-href="/event/#{ event.id }" class="btn_reg">Register</a>
+		                    </div>
+	                	</td>
+	               	</tr>
+	               	
+	            </t>
+	            </t>
+               	
+           </tbody>
+       </table>
+    </div>
+</template>
+
+
+<!-- event temp 4-->
+
+<template id="sh_emate_event_tmpl_item_4" name="Event 4 Item">
+	<div class="js_cls_sh_mail_snippet_general">
+      <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table mlr10 pt0">
+          <tbody>
+          
+          		<t t-if="events">           	
+	           	<t t-foreach="events" t-as="event">
+          
+		              <tr>
+		                  	<td width="70%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p0">
+		                		<div class="box">
+				                     <div class="content">
+				                       <a t-attf-href="/event/#{ event.id }">
+				                       		<h6 t-attf-class="card-title mb-0 text-truncate #{(not event.website_published) and 'text-danger'}">
+					                            <a t-attf-href="/event/#{ event.id }" class="text-reset text-decoration-none" itemprop="url">
+					                                <span t-field="event.name" itemprop="name"/>
+					                            </a>
+					                        </h6>
+				                       </a>
+				                       
+				                       	<!-- Organizer in paragraph -->
+		                				<p t-if="event.organizer_id" class="author">Organized By: <span t-field="event.organizer_id" itemprop="organizer"/> </p>
+		                				
+				                       	<!-- short description -->
+                                		<p class="text-center o_mail_no_margin" t-field="event.sh_emate_short_description"/>
+                                		
+				                       <div class="bottom" style="display: flex;">
+				                        	<p class="location"><span class="fa fa-map-marker"></span>
+				                        		<!-- Location -->
+			                        			<span t-if="event.is_online">Online</span>
+			                        			<span t-else="" itemprop="location" t-field="event.address_id" t-options="{'widget': 'contact', 'fields': ['city'], 'no_marker': 'true'}"/>
+				                        	</p><a t-attf-href="/event/#{ event.id }" class="btn_reg">REGISTER</a>
+				                    	</div>
+			                  		</div>
+		                 		</div>
+		                 	</td>
+			                <td width="30%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker vmiddle p0">
+			                  <div class="time">
+			                      <h3>
+			                      	<!-- Start Time -->
+		                        	<time itemprop="startDate" t-att-datetime="event.date_begin">
+		                            	<span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'time_only': 'true', 'format': 'short'}"/>
+		                        	</time>  
+								  </h3>
+			                  </div>
+			             	</td>
+		            	</tr>
+		            	
+		         </t>
+		         </t>
+            	
+        </tbody>
+    </table>
+   </div>
+</template>
+
+
+<!-- event temp 5-->
+
+<template id="sh_emate_event_tmpl_item_5" name="Event 5 Item">
+
+       <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+           <tbody>
+               <tr>
+                   <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+                       <div class="box portion1">
+                           <h3 t-attf-class="card-title mt-2 mb-0 text-truncate #{(not event.website_published) and 'text-danger'}">
+	                            <a t-attf-href="/event/#{ event.id }" class="text-reset text-decoration-none" itemprop="url">
+	                                <span t-field="event.name" itemprop="name"/>
+	                            </a>
+	                        </h3>
+                   			<!-- short description -->
+                             <p class="text-center o_mail_no_margin" t-field="event.sh_emate_short_description"/>
+                   			<a class="btn btn_viewmore" t-attf-href="/event/#{ event.id }">VIEW MORE</a>
+                       </div>
+                   </td>
+
+
+	<div class="js_cls_sh_mail_snippet_general">
+					<t t-if="events">           	
+	           		<t t-foreach="events" t-as="event">
+
+
+
+	                   <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+	                       <div class="box portion2">
+	                           <div class="img">
+		                			<!-- Image -->
+									 <t t-set="_cp" t-value="dic_events.get( event.id  ) or {}"/>
+								     <div t-attf-class="o_record_cover_container d-flex flex-column h-100 #{use_size and _cp.get('resize_class')} #{use_text_size and _cp.get('text_size_class')} #{use_text_align and _cp.get('text_align_class')} #{additionnal_classes}">
+							         <div class="o_record_cover_component o_record_cover_image" t-attf-style="width: 100%;height: 100px;background-image: #{_cp.get('background-image')};"/>
+							        	<t t-raw="0"/>
+							    	 </div>
+		                		</div>
+		                	<div class="content">
+		                		<!-- Title -->
+		                        <h5 t-attf-class="card-title mt-2 mb-0 text-truncate #{(not event.website_published) and 'text-danger'}">
+		                            <a t-attf-href="/event/#{ event.id }" class="text-reset text-decoration-none" itemprop="url">
+		                                <span t-field="event.name" itemprop="name"/>
+		                            </a>
+		                        </h5>
+		                        
+		                		<!-- short description -->
+                                <p class="text-center o_mail_no_margin" t-field="event.sh_emate_short_description"/>
+                                
+		                		<!-- Organizer in paragraph -->
+		                		<p t-if="event.organizer_id" class="author">Organized By: <span t-field="event.organizer_id" itemprop="organizer"/> </p>
+		                		
+		                		<p><span class="fa fa-clock-o"></span>
+		                			<!-- Start Date & Time -->
+			                        <time itemprop="startDate" t-att-datetime="event.date_begin">
+			                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'date_only': 'true', 'format': 'long'}"/> -
+			                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'time_only': 'true', 'format': 'short'}"/>
+			                        </time>  
+		                		</p>
+		                		
+		                		<div style="display: flex;">
+			                		<p class="location"><span class="fa fa-map-marker"></span>
+			                			<!-- Location -->
+			                        	<span t-if="event.is_online">Online</span>
+			                        	<span t-else="" itemprop="location" t-field="event.address_id" t-options="{'widget': 'contact', 'fields': ['city'], 'no_marker': 'true'}"/>
+			                		</p>
+			                	</div>
+		                	</div>
+	                       </div>
+	                   </td>
+	                  
+
+	                  
+	                   
+	                </t>
+	                </t>
+
+</div>
+
+
+
+               </tr>
+           </tbody>
+       </table>
+
+</template>
+
+
+<!-- event temp 6-->
+
+<template id="sh_emate_event_tmpl_item_6" name="Event 6 Item">
+	<div class="js_cls_sh_mail_snippet_general">
+      <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+          <tbody>
+              <tr>
+              
+              
+              		<t t-if="events">           	
+	           		<t t-foreach="events" t-as="event">
+              
+		                  <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+		                      <div class="box">
+		                      		<div class="img">
+		               					<!-- Image -->
+										 <t t-set="_cp" t-value="dic_events.get( event.id  ) or {}"/>
+									     <div t-attf-class="o_record_cover_container d-flex flex-column h-100 #{use_size and _cp.get('resize_class')} #{use_text_size and _cp.get('text_size_class')} #{use_text_align and _cp.get('text_align_class')} #{additionnal_classes}">
+								         <div class="o_record_cover_component o_record_cover_image" t-attf-style="width: 100%;height: 100px;position: relative;background-image: #{_cp.get('background-image')};"/>
+								        	<t t-raw="0"/>
+								    	 </div>
+								    	 
+					                	<div class="content" style="position: relative;">
+					                		<a t-attf-href="/event/#{ event.id }">
+					                			<!-- Title -->
+						                        <h5 t-attf-class="card-title mt-2 mb-0 text-truncate #{(not event.website_published) and 'text-danger'}">
+						                            <a t-attf-href="/event/#{ event.id }" class="text-reset text-decoration-none" itemprop="url">
+						                                <span t-field="event.name" itemprop="name"/>
+						                            </a>
+						                        </h5>
+											</a>
+					                		<p><span class="fa fa-clock-o"></span>
+					                			<!-- Start Date & Time -->
+						                        <time itemprop="startDate" t-att-datetime="event.date_begin">
+						                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'time_only': 'true', 'format': 'short'}"/>
+						                        </time> 
+					                		</p>
+					                		
+					                		<div style="display: flex;justify-content: center;">
+						                		<p class="location"><span class="fa fa-map-marker"></span>
+						                			<!-- Location -->
+			                        				<span t-if="event.is_online">Online</span>
+			                        				<span t-else="" itemprop="location" t-field="event.address_id" t-options="{'widget': 'contact', 'fields': ['city'], 'no_marker': 'true'}"/>
+						                		</p>
+						                	</div>
+						                		
+					                		<!-- Organizer in paragraph -->
+		                					<p t-if="event.organizer_id" class="author">Organized By: <span t-field="event.organizer_id" itemprop="organizer"/> </p>
+		                					
+					                	</div>
+		                			</div>
+					               	<div class="bottom_btn">
+					               		<a href="#" class="btn">
+					               			<!-- Start Date & Time -->
+					                        <time itemprop="startDate" t-att-datetime="event.date_begin">
+					                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'date_only': 'true', 'format': 'long'}"/> -
+					                        </time>  
+					               		</a>
+					               	</div>
+		                  		</div>
+		                  	</td>
+
+					</t>
+					</t>
+					
+                   
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</template>
+
+
+<!-- event temp 7-->
+
+<template id="sh_emate_event_tmpl_item_7" name="Event 7 Item">
+	<div class="js_cls_sh_mail_snippet_general">
+       <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+           <tbody>
+               <tr>
+               
+               		<t t-if="events">           	
+	           		<t t-foreach="events" t-as="event">
+               
+	                   <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8 img">
+	                       	<!-- Image -->
+							 <t t-set="_cp" t-value="dic_events.get( event.id  ) or {}"/>
+						     <div t-attf-class="o_record_cover_container d-flex flex-column h-100 #{use_size and _cp.get('resize_class')} #{use_text_size and _cp.get('text_size_class')} #{use_text_align and _cp.get('text_align_class')} #{additionnal_classes}">
+					         <div class="o_record_cover_component o_record_cover_image" t-attf-style="width: 100px;height: 100px;position: relative;background-image: #{_cp.get('background-image')};"/>
+					        	<t t-raw="0"/>
+					    	 </div>
+	                   </td>
+	                   
+	                   <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 p8">
+	                       <div class="content">
+		                       <!-- Title -->
+		                        <h5 t-attf-class="card-title mt-2 mb-0 text-truncate #{(not event.website_published) and 'text-danger'}">
+		                            <a t-attf-href="/event/#{ event.id }" class="text-reset text-decoration-none" itemprop="url">
+		                                <span t-field="event.name" itemprop="name"/>
+		                            </a>
+		                        </h5>
+		                        
+		                       <!-- Organizer in paragraph -->
+		                		<p t-if="event.organizer_id" class="author">Organized By: <span t-field="event.organizer_id" itemprop="organizer"/> </p>
+		                		
+		                       <!-- short description -->
+                                <p class="text-center o_mail_no_margin" t-field="event.sh_emate_short_description"/>
+                                
+		                       	<p><span class="fa fa-clock-o"></span>
+		                       		<!-- Start Date & Time -->
+			                        <time itemprop="startDate" t-att-datetime="event.date_begin">
+			                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'time_only': 'true', 'format': 'short'}"/>
+			                        </time> 
+		                       	</p>
+		                       	
+		                       	<div style="display: flex;margin-bottom: 20px;">
+			                		<p class="location mb20"><span class="fa fa-map-marker"></span>
+			                			<!-- Location -->
+			                        	<span t-if="event.is_online">Online</span>
+			                        	<span t-else="" itemprop="location" t-field="event.address_id" t-options="{'widget': 'contact', 'fields': ['city'], 'no_marker': 'true'}"/>
+			                		</p>
+			                	</div>
+		                       <a t-attf-href="/event/#{ event.id }" class="btn_reg">Register</a>
+	                 	  </div>
+	                   </td>
+	                
+	                </t>
+	                </t>
+                   
+               </tr>
+           </tbody>
+       </table>
+    </div>  
+</template>
+
+
+<!-- event temp 8-->
+
+<template id="sh_emate_event_tmpl_item_8" name="Event 8 Item">
+	<div class="js_cls_sh_mail_snippet_general">
+      <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+          <tbody>
+              <tr>
+              
+              		<t t-if="events">           	
+	           		<t t-foreach="events" t-as="event">
+              
+	                  <td class="o_mail_col_mv o_mail_col_container plr7 w180">
+	                      <div class="box">
+		                     	<div class="img">
+		                       		<img src="/sh_emate/static/src/img/tmpl_10/event5_1.jpg" alt="event1" title="event1"/>
+		                   		</div>
+		                      	<div class="content">
+			                       <a t-attf-href="/event/#{ event.id }">
+			                       		<h5 t-attf-class="card-title mt-2 mb-0 text-truncate #{(not event.website_published) and 'text-danger'}">
+				                            <a t-attf-href="/event/#{ event.id }" class="text-reset text-decoration-none" itemprop="url">
+				                                <span t-field="event.name" itemprop="name"/>
+				                            </a>
+				                        </h5>
+			                       </a>
+			                       
+			                       <!-- Organizer in paragraph -->
+		                			<p t-if="event.organizer_id" class="author">Organized By: <span t-field="event.organizer_id" itemprop="organizer"/> </p>
+		                			
+			                       <!-- short description -->
+                                	<p class="text-center o_mail_no_margin" t-field="event.sh_emate_short_description"/>
+                                	
+                                	<div style="display: flex;">
+				                       <p class="location"><span class="fa fa-map-marker"></span>
+				                       		<!-- Location -->
+				                        	<span t-if="event.is_online">Online</span>
+				                        	<span t-else="" itemprop="location" t-field="event.address_id" t-options="{'widget': 'contact', 'fields': ['city'], 'no_marker': 'true'}"/>
+				                       </p>
+				                    </div>
+			                       <hr/>
+			                       <div class="bottom">
+			                        	<p><span class="fa fa-clock-o"></span>
+			                        		<!-- Start Date & Time -->
+					                        <time itemprop="startDate" t-att-datetime="event.date_begin">
+					                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'time_only': 'true', 'format': 'short'}"/>
+					                        </time> 
+			                        	</p><a t-attf-href="/event/#{ event.id }" class="btn_reg">REGISTER</a>
+		                    		</div>
+		                   		</div>
+	                		</div>
+	                  </td>
+	                  
+	               </t>
+	               </t>
+	                  
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</template>
+
+
+<!-- event temp 9-->
+
+<template id="sh_emate_event_tmpl_item_9" name="Event 9 Item">
+	<div class="js_cls_sh_mail_snippet_general">
+	    <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+	        <tbody>
+	        
+	            <tr>
+	            
+	            	<t t-if="events">           	
+	           		<t t-foreach="events" t-as="event">
+	            
+		                <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+		                    <!-- Image -->
+							 <t t-set="_cp" t-value="dic_events.get( event.id  ) or {}"/>
+						     <div t-attf-class="o_record_cover_container d-flex flex-column h-100 #{use_size and _cp.get('resize_class')} #{use_text_size and _cp.get('text_size_class')} #{use_text_align and _cp.get('text_align_class')} #{additionnal_classes}">
+					         <div class="o_record_cover_component o_record_cover_image" t-attf-style="width: 100px;height: 100px;background-image: #{_cp.get('background-image')};"/>
+					        	<t t-raw="0"/>
+					    	 </div>
+		                </td>
+		                <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 text-left p8">
+		                    <div class="content">
+			                   	<!-- Title -->
+		                        <h5 t-attf-class="card-title mt-2 mb-0 text-truncate #{(not event.website_published) and 'text-danger'}">
+		                            <a t-attf-href="/event/#{ event.id }" class="text-reset text-decoration-none" itemprop="url">
+		                                <span t-field="event.name" itemprop="name"/>
+		                            </a>
+		                        </h5>
+		                        
+			                   	<!-- Organizer in paragraph -->
+		                		<p t-if="event.organizer_id" class="author">Organized By: <span t-field="event.organizer_id" itemprop="organizer"/> </p>
+		                		
+			                   	<!-- short description -->
+                                <p class="text-center o_mail_no_margin" t-field="event.sh_emate_short_description"/>
+                                
+			                   	<p><span class="fa fa-clock-o"></span>
+			                   		<!-- Start Date & Time -->
+			                        <time itemprop="startDate" t-att-datetime="event.date_begin">
+			                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'time_only': 'true', 'format': 'short'}"/>
+			                        </time>  
+			                   	</p>
+			              </div>
+		                </td>
+		                
+		             </t>
+		             </t>  
+		              
+	            </tr>
+	            
+	        </tbody>
+	    </table>
+ 	</div>
+</template>
+
+
+<!-- event temp 10-->
+
+<template id="sh_emate_event_tmpl_item_10" name="Event 10 Item">
+	<div class="js_cls_sh_mail_snippet_general">
+     <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table mlr10">
+         <tbody>
+         
+         		<t t-if="events">           	
+	           	<t t-foreach="events" t-as="event">
+         	
+	             <tr>
+	                 <td width="30%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10">
+		                <div class="img">
+		                    <!-- Image -->
+							 <t t-set="_cp" t-value="dic_events.get( event.id  ) or {}"/>
+						     <div t-attf-class="o_record_cover_container d-flex flex-column h-100 #{use_size and _cp.get('resize_class')} #{use_text_size and _cp.get('text_size_class')} #{use_text_align and _cp.get('text_align_class')} #{additionnal_classes}">
+					         <div class="o_record_cover_component o_record_cover_image" t-attf-style="width: 100%;height: 100px;background-image: #{_cp.get('background-image')};"/>
+					        	<t t-raw="0"/>
+					    	 </div>
+		                </div>
+		            </td>
+		            <td width="70%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10">
+		                <div class="content">
+		                   	<a t-attf-href="/event/#{ event.id }">
+		                   		<h5 t-attf-class="card-title mb-0 text-truncate #{(not event.website_published) and 'text-danger'}">
+		                            <a t-attf-href="/event/#{ event.id }" class="text-reset text-decoration-none" itemprop="url">
+		                                <span t-field="event.name" itemprop="name"/>
+		                            </a>
+		                        </h5>
+		                   	</a>
+		                   	
+		                   	<!-- Organizer in paragraph -->
+			                <p t-if="event.organizer_id" class="author">Organized By: <span t-field="event.organizer_id" itemprop="organizer"/> </p>
+			                		
+		                   	<!-- short description -->
+	                        <p class="text-center o_mail_no_margin" t-field="event.sh_emate_short_description"/>
+	                        
+		                    <div class="bottom">
+		                     	<p>
+		                     		<!-- Start Date & Time -->
+			                        <time itemprop="startDate" t-att-datetime="event.date_begin">
+			                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'date_only': 'true', 'format': 'long'}"/> -
+			                        </time> 
+								</p> 
+								<p><span class="fa fa-clock-o"></span>
+									<!-- Start Date & Time -->
+			                        <time itemprop="startDate" t-att-datetime="event.date_begin">
+			                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'time_only': 'true', 'format': 'short'}"/>
+			                        </time> 
+								</p> 
+								
+								<div style="display: flex;">
+									<p><span class="fa fa-map-marker"></span>
+										<!-- Location -->
+				                        <div t-if="event.is_online">Online</div>
+				                        <div t-else="" itemprop="location" t-field="event.address_id" t-options="{'widget': 'contact', 'fields': ['city'], 'no_marker': 'true'}"/>
+									</p>
+								</div>
+		                 	</div>
+		             	</div>
+	            	</td>
+	             </tr>
+             
+             </t>
+             </t>
+             
+         </tbody>
+     </table>
+  </div>
+</template>
+
+
+<!-- event temp 11-->
+
+<template id="sh_emate_event_tmpl_item_11" name="Event 11 Item">
+	<div class="js_cls_sh_mail_snippet_general">
+      <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt-0">
+          <tbody>
+              <tr>
+              
+              	<t t-if="events">           	
+	           	<t t-foreach="events" t-as="event">
+              
+	                  <td class="o_mail_col_mv o_mail_col_container">
+	                      <div class="box">
+		                      	<div class="img">
+		                      		<!-- Image -->
+									 <t t-set="_cp" t-value="dic_events.get( event.id  ) or {}"/>
+								     <div t-attf-class="o_record_cover_container d-flex flex-column h-100 #{use_size and _cp.get('resize_class')} #{use_text_size and _cp.get('text_size_class')} #{use_text_align and _cp.get('text_align_class')} #{additionnal_classes}">
+							         <div class="o_record_cover_component o_record_cover_image" t-attf-style="width: 100%;height: 100px;position: relative;background-image: #{_cp.get('background-image')};"/>
+							        	<t t-raw="0"/>
+							    	 </div>
+		                      	</div>
+	                          	<div class="content">
+	                        		<a t-attf-href="/event/#{ event.id }">
+	                        			<h5 t-attf-class="card-title mt-2 mb-0 text-truncate #{(not event.website_published) and 'text-danger'}">
+				                            <a t-attf-href="/event/#{ event.id }" class="text-reset text-decoration-none" itemprop="url">
+				                                <span t-field="event.name" itemprop="name"/>
+				                            </a>
+				                        </h5>
+									</a>
+									
+	                        		<!-- short description -->
+	                                <p class="text-center o_mail_no_margin" t-field="event.sh_emate_short_description"/>
+	                                
+	                        		<!-- Organizer in paragraph -->
+			                		<p t-if="event.organizer_id" class="author">Organized By: <span t-field="event.organizer_id" itemprop="organizer"/> </p>
+			                		
+			                        <div class="bottom">
+				                        <p><span class="fa fa-clock-o"></span>
+				                        	<!-- Start Date & Time -->
+					                        <time itemprop="startDate" t-att-datetime="event.date_begin">
+					                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'time_only': 'true', 'format': 'short'}"/>
+					                        </time> 
+				                        </p>
+				                    </div>
+				                    
+				                    <hr/>
+		                    		<a t-attf-href="/event/#{ event.id }" class="btn_reg">REGISTER NOW</a>
+	                    		</div>
+	                      </div>
+	                  </td>
+	                  
+	                  
+	             </t>
+	             </t>
+
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</template>
+
+
+<!-- event temp 12-->
+
+<template id="sh_emate_event_tmpl_item_12" name="Event 12 Item">
+	<div class="js_cls_sh_mail_snippet_general">
+      <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding">
+          <tbody>
+              <tr>
+              
+              		<t t-if="events">           	
+	           		<t t-foreach="events" t-as="event"> 
+              
+	                  <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+	                      <table align="center">
+	                          <tbody><tr>
+	                              <td rowspan="2" class="text-right icon vmiddle">
+	                                  <span class="fa fa-cubes" role="img" title="Headphone"></span>
+	                              </td>
+	                              <td style="vertical-align: middle;">
+	                                  <div class="right-content" style="vertical-align: middle;">
+			                       		<!-- short description -->
+                                		<p class="text-center o_mail_no_margin text" t-field="event.sh_emate_short_description"/>
+			                        	<a t-attf-href="/event/#{ event.id }">
+			                        		<p class="title" t-attf-class="card-title mt-2 mb-0 text-truncate #{(not event.website_published) and 'text-danger'}">
+					                            <a t-attf-href="/event/#{ event.id }" class="text-reset text-decoration-none" itemprop="url">
+					                                <span t-field="event.name" itemprop="name"/>
+					                            </a>
+					                        </p>
+			                        	</a>
+			                        	<p class="time">
+			                        		<!-- Start Date & Time -->
+					                        <time itemprop="startDate" t-att-datetime="event.date_begin">
+					                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'time_only': 'true', 'format': 'short'}"/>
+					                        </time> 
+			                        	</p>
+			                    </div>
+	                              </td>
+	                          </tr>
+	                      </tbody></table>
+	                  </td>
+	               
+	               </t>
+	               </t>
+                  
+              </tr>
+          </tbody>
+      </table>
+      
+   </div>
+</template>
+
+
+<!-- event temp 13-->
+
+<template id="sh_emate_event_tmpl_item_13" name="Event 13 Item">
+	<div class="js_cls_sh_mail_snippet_general">
+      <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table mlr10">
+          <tbody>
+          
+          		<t t-if="events">           	
+	           	<t t-foreach="events" t-as="event">
+          
+		              <tr>
+		                  <td width="40%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10">
+			                 <div class="img">
+			                     <!-- Image -->
+								 <t t-set="_cp" t-value="dic_events.get( event.id  ) or {}"/>
+							     <div t-attf-class="o_record_cover_container d-flex flex-column h-100 #{use_size and _cp.get('resize_class')} #{use_text_size and _cp.get('text_size_class')} #{use_text_align and _cp.get('text_align_class')} #{additionnal_classes}">
+						         <div class="o_record_cover_component o_record_cover_image" t-attf-style="width: 100%;height: 100px;background-image: #{_cp.get('background-image')};"/>
+						        	<t t-raw="0"/>
+						    	 </div>
+			                 </div>
+			             </td>
+			             <td width="60%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10">
+			                 <div class="content">
+			                    	<p><span class="fa fa-clock-o"></span>
+			                    		<!-- Start Date & Time -->
+				                        <time itemprop="startDate" t-att-datetime="event.date_begin">
+				                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'time_only': 'true', 'format': 'short'}"/>
+				                        </time> 
+			                    	</p>
+				                     <a t-attf-href="/event/#{ event.id }">
+				                     	<h5 t-attf-class="card-title mt-2 mb-0 text-truncate #{(not event.website_published) and 'text-danger'}">
+				                            <a t-attf-href="/event/#{ event.id }" class="text-reset text-decoration-none" itemprop="url">
+				                                <span t-field="event.name" itemprop="name"/>
+				                            </a>
+				                        </h5>
+				                     </a>
+				                     
+				                     <!-- Organizer in paragraph -->
+		                				<p t-if="event.organizer_id" class="author">Organized By: <span t-field="event.organizer_id" itemprop="organizer"/> </p>
+		                				
+				                     <!-- short description -->
+		                              <p class="text-center o_mail_no_margin" t-field="event.sh_emate_short_description"/>
+		                              
+		                              
+				                     <div class="bottom" style="display: flex;">
+				                      	<p><span class="fa fa-map-marker"></span>
+				                      		<!-- Location -->
+		                        			<div t-if="event.is_online">Online</div>
+		                        			<div t-else="" itemprop="location" t-field="event.address_id" t-options="{'widget': 'contact', 'fields': ['city'], 'no_marker': 'true'}"/>
+				                      	</p>
+				                  	</div>
+			                 </div>
+			             </td>
+		              </tr>
+		              
+		         </t>
+		         </t>
+              
+          </tbody>
+      </table>
+  </div>  
+</template>
+
+
+<!-- event temp 14-->
+
+<template id="sh_emate_event_tmpl_item_14" name="Event 14 Item">
+	<div class="js_cls_sh_mail_snippet_general">
+     <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+         <tbody>
+             <tr>
+             
+             	<t t-if="events">           	
+	           	<t t-foreach="events" t-as="event">
+             
+	                 <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+	                     <div class="box">
+		                      <div class="content">
+		                       <a t-attf-href="/event/#{ event.id }">
+		                       		<h5 t-attf-class="card-title mt-2 mb-0 text-truncate #{(not event.website_published) and 'text-danger'}">
+			                            <a t-attf-href="/event/#{ event.id }" class="text-reset text-decoration-none" itemprop="url">
+			                                <span t-field="event.name" itemprop="name"/>
+			                            </a>
+			                        </h5>
+		                       </a>
+		                       <hr/>
+
+		                       <!-- Start Date & Time -->
+		                        <time itemprop="startDate" t-att-datetime="event.date_begin" class="date">
+		                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'date_only': 'true', 'format': 'long'}"/> -
+		                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'time_only': 'true', 'format': 'short'}"/>
+		                        </time>  
+		                        
+		                       <!-- short description -->
+                                <p class="text-center o_mail_no_margin" t-field="event.sh_emate_short_description"/>
+                                
+		                       <p><span class="fa fa-clock-o"></span>
+		                       		<!-- Start Date & Time -->
+			                        <time itemprop="startDate" t-att-datetime="event.date_begin">
+			                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'time_only': 'true', 'format': 'short'}"/>
+			                        </time>  
+		                       </p>
+		                       
+		                       <div style="display: flex;">
+			                       <p class="location"><span class="fa fa-map-marker"></span>
+			                       		<!-- Location -->
+			                        	<div t-if="event.is_online">Online</div>
+			                        	<div t-else="" itemprop="location" t-field="event.address_id" t-options="{'widget': 'contact', 'fields': ['city'], 'no_marker': 'true'}"/>
+			                       </p>
+			                   </div>
+			                       
+		                       <!-- Organizer in paragraph -->
+		                		<p t-if="event.organizer_id" class="author">Organized By: <span t-field="event.organizer_id" itemprop="organizer"/> </p>
+		                		
+		                		
+			                    <a t-attf-href="/event/#{ event.id }" class="btn_reg">Register</a>
+			                    <br/>
+		                   </div>
+	               		</div>
+	                 </td>
+					
+				</t>
+				</t>
+                 
+             </tr>
+         </tbody>
+     </table>
+  </div>
+</template>
+
+
+<!-- event temp 15-->
+
+<template id="sh_emate_event_tmpl_item_15" name="Event 15 Item">
+	<div class="js_cls_sh_mail_snippet_general">
+       <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+           <tbody>
+           
+           		<t t-if="events">           	
+	           	<t t-foreach="events" t-as="event">
+           
+		               <tr>
+		                   <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270">
+		                       <div class="img">
+			                        <!-- Image -->
+									 <t t-set="_cp" t-value="dic_events.get( event.id  ) or {}"/>
+								     <div t-attf-class="o_record_cover_container d-flex flex-column h-100 #{use_size and _cp.get('resize_class')} #{use_text_size and _cp.get('text_size_class')} #{use_text_align and _cp.get('text_align_class')} #{additionnal_classes}">
+							         <div class="o_record_cover_component o_record_cover_image" t-attf-style="width: 100%;height: 100px;background-image: #{_cp.get('background-image')};"/>
+							        	<t t-raw="0"/>
+							    	 </div>
+			                    </div>
+		                   </td>
+		                   <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270 pl0">
+		                       <div class="content">
+		                        <h5 t-attf-class="card-title mt-2 mb-0 text-truncate #{(not event.website_published) and 'text-danger'}">
+		                            <a t-attf-href="/event/#{ event.id }" class="text-reset text-decoration-none" itemprop="url">
+		                                <span t-field="event.name" itemprop="name"/>
+		                            </a>
+		                        </h5>
+		                        
+		                        <!-- Organizer in paragraph -->
+		                		<p t-if="event.organizer_id" class="author">Organized By: <span t-field="event.organizer_id" itemprop="organizer"/> </p>
+		                		
+		                        <!-- short description -->
+                                <p class="text-center o_mail_no_margin" t-field="event.sh_emate_short_description"/>
+                                
+		                        <p class="time"><span class="fa fa-clock-o"></span>
+		                        	<!-- Start Date & Time -->
+			                        <time itemprop="startDate" t-att-datetime="event.date_begin">
+			                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'time_only': 'true', 'format': 'short'}"/>
+			                        </time>
+								</p>
+								
+								<div style="display: flex;">
+			                        <p class="location"><span class="fa fa-map-marker"></span>
+			                        	<!-- Location -->
+			                        	<div t-if="event.is_online">Online</div>
+			                        	<div t-else="" itemprop="location" t-field="event.address_id" t-options="{'widget': 'contact', 'fields': ['city'], 'no_marker': 'true'}"/>
+			                        </p>
+			                    </div>
+			                    
+			                    <a t-attf-href="/event/#{ event.id }" class="btn_reg">Register</a>
+			                </div>
+		                   </td>
+		               </tr>
+		               
+		         </t>
+		         </t>
+		               
+           </tbody>
+       </table>
+    </div>
+</template>
+
+
+<!-- event temp 16-->
+
+<template id="sh_emate_event_tmpl_item_16" name="Event 16 Item">
+	<div class="js_cls_sh_mail_snippet_general">
+     <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt-0">
+         <tbody>
+             <tr>
+             
+             	<t t-if="events">           	
+	           	<t t-foreach="events" t-as="event">
+             	
+	                 <td class="o_mail_col_mv o_mail_col_container w260 plr10">
+	                     <div class="box">
+	                     	<div class="img">
+	                     		<!-- Image -->
+								 <t t-set="_cp" t-value="dic_events.get( event.id  ) or {}"/>
+							     <div t-attf-class="o_record_cover_container d-flex flex-column h-100 #{use_size and _cp.get('resize_class')} #{use_text_size and _cp.get('text_size_class')} #{use_text_align and _cp.get('text_align_class')} #{additionnal_classes}">
+						         <div class="o_record_cover_component o_record_cover_image" t-attf-style="width: 100%;height: 100px;position: relative;background-image: #{_cp.get('background-image')};"/>
+						        	<t t-raw="0"/>
+						    	 </div>
+	                     	</div>
+	                         <div class="content">
+	                         	<h5 t-attf-class="card-title mt-2 mb-0 text-truncate #{(not event.website_published) and 'text-danger'}">
+		                            <a t-attf-href="/event/#{ event.id }" class="text-reset text-decoration-none" itemprop="url">
+		                                <span t-field="event.name" itemprop="name"/>
+		                            </a>
+		                        </h5>
+		                        
+	                         	<!-- Organizer in paragraph -->
+		                		<p t-if="event.organizer_id" class="author">Organized By: <span t-field="event.organizer_id" itemprop="organizer"/> </p>
+		                		
+	                       		<!-- short description -->
+                                <p class="text-center o_mail_no_margin" t-field="event.sh_emate_short_description"/>
+                                
+                                
+                                <div style="display: flex;">
+			                       <p><span class="fa fa-map-marker"></span>
+			                       		<!-- Location -->
+		                        		<div t-if="event.is_online">Online</div>
+		                        		<div t-else="" itemprop="location" t-field="event.address_id" t-options="{'widget': 'contact', 'fields': ['city'], 'no_marker': 'true'}"/>
+			                       </p>
+			                    </div>
+			                       <p class="time"><span class="fa fa-clock-o"></span>
+			                       		<!-- Start Date & Time -->
+				                        <time itemprop="startDate" t-att-datetime="event.date_begin">
+				                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'time_only': 'true', 'format': 'short'}"/>
+				                        </time> 
+			                       </p>
+			                       <a t-attf-href="/event/#{ event.id }" class="btn_readmore">REGISTER NOW</a>
+			                   </div>
+	                     </div>
+	                 </td>
+				
+				</t>
+				</t>
+                 
+             </tr>
+         </tbody>
+     </table>
+  </div>
+</template>
+
+
+<!-- event temp 17-->
+
+<template id="sh_emate_event_tmpl_item_17" name="Event 17 Item">
+	<div class="js_cls_sh_mail_snippet_general">
+     <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+         <tbody>
+             <tr>
+             
+             	<t t-if="events">           	
+	           	<t t-foreach="events" t-as="event">
+             
+	                 <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+	                     <div class="box">
+			                <div class="icon_img">
+			                    <span class="fa fa-clock-o fa-5x"></span>
+			                    <p class="time">
+				                    <!-- Start Date & Time -->
+			                        <time itemprop="startDate" t-att-datetime="event.date_begin">
+			                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'time_only': 'true', 'format': 'short'}"/>
+			                        </time>  
+		                        </p>
+			                </div>
+			                   <div class="content">
+			                    <a t-attf-href="/event/#{ event.id }">
+			                    	<!-- Title -->
+			                        <h5 t-attf-class="card-title mb-0 text-truncate #{(not event.website_published) and 'text-danger'}">
+			                            <a t-attf-href="/event/#{ event.id }" class="text-reset text-decoration-none" itemprop="url">
+			                                <span t-field="event.name" itemprop="name"/>
+			                            </a>
+			                        </h5>
+			                    </a>
+			                    
+			                    <div style="display: flex;justify-content: center;">
+				                    <p class="location"><span class="fa fa-map-marker" style="margin-right: 8px;"></span>
+				                    	<!-- Location -->
+			                        <div t-if="event.is_online">Online</div>
+			                        <div t-else="" itemprop="location" t-field="event.address_id" t-options="{'widget': 'contact', 'fields': ['city'], 'no_marker': 'true'}"/>
+				                    </p>
+				                </div>
+				                
+			                    <!-- Organizer in paragraph -->
+		                		<p t-if="event.organizer_id" class="author">Organized By: <span t-field="event.organizer_id" itemprop="organizer"/> </p>
+		                		
+			                </div>
+			                
+			                <div class="bottom">
+			                    <a t-attf-href="/event/#{ event.id }" class="btn_reg">Register Now</a>
+			                </div>
+			            </div>
+	                 </td>
+
+				</t>
+				</t>
+                 
+             </tr>
+         </tbody>
+     </table>
+  </div>
+</template>
+
+<!-- event temp 18-->
+
+<template id="sh_emate_event_tmpl_item_18" name="Event 18 Item">
+
+	<div class="js_cls_sh_mail_snippet_general">            
+         <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding">
+              <tbody>
+             		<t t-if="events">           	
+	           		<t t-foreach="events" t-as="event">                    
+                        <tr>
+                        	<td valign="center" width="100%" class="p10 text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding sh_heading">
+                        		<div class="heading">
+			                    
+			                    <a t-attf-href="/event/#{ event.id }">                        		
+                        			<h3 t-field="event.name" itemprop="name"/>
+								</a>
+
+	                     		<!-- Image -->
+								 <t t-set="_cp" t-value="dic_events.get( event.id  ) or {}"/>
+							     <div t-attf-class="o_record_cover_container d-flex flex-column h-100 #{use_size and _cp.get('resize_class')} #{use_text_size and _cp.get('text_size_class')} #{use_text_align and _cp.get('text_align_class')} #{additionnal_classes}">
+						         <div class="o_record_cover_component o_record_cover_image" t-attf-style="width: 100%;height: 100px;position: relative;background-image: #{_cp.get('background-image')};"/>
+						        	<t t-raw="0"/>
+						    	 </div>
+						    	 
+
+
+                                <p t-field="event.sh_emate_short_description"/>
+                                
+                                
+                                 </div>
+                             </td>
+                          </tr>
+                          <tr>
+                             <td valign="center" width="100%" class="p10 text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding sh_content">
+                                
+                                <!-- 
+                                <h2 class="sh_date">DATE : <span class="inner_text"> Thursday, December 31st 2020 </span></h2>
+                                 -->
+                                
+                                <h2 class="sh_timing">DOOR OPENS AT : <span class="inner_text"> 
+                                
+				                        	<!-- Start Date & Time -->
+					                        <time itemprop="startDate" t-att-datetime="event.date_begin">
+					                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'format': 'long'}"/> -
+					                        </time> 
+					                        
+					                                                      
+                                
+                                </span></h2>
+                                <h2 class="sh_event_name">EVENTS : <span class="inner_text" t-field="event.name"/> 
+                                </h2>
+                                <a class="btn_join btn" t-attf-href="/event/#{ event.id }">Join Now</a>
+                            </td>
+                        </tr>
+                    </t>
+                    </t>
+              </tbody>
+         </table>
+     </div>
+                
+
+</template>	
+
+
+<!-- event temp 19-->
+
+<template id="sh_emate_event_tmpl_item_19" name="Event 19 Item">
+
+	<div class="js_cls_sh_mail_snippet_general">
+		<t t-if="events">           	
+	    <t t-foreach="events" t-as="event"> 
+	        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding">
+	            <tbody>
+	                <tr>
+	                	<td valign="center" width="100%" class="p10 text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding sh_heading">
+	                		<div class="heading_top">
+	                			<img src="/sh_emate/static/src/img/tmpl_31/frame_1.png" alt="heading_bottom_img" />
+	                         </div>
+	                     </td>
+	                  </tr>
+	                  <tr>
+	                     <td valign="center" width="100%" class="p10 text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding sh_content">
+	                     	<div class="venue_part">
+	                         	<h2>Venue</h2>
+	                            <p><div itemprop="location" t-field="event.address_id" t-options="{'widget': 'contact', 'fields': ['city'], 'no_marker': 'true'}" style="justify-content: center;"/></p>
+	                     </div>
+	                    </td>
+	                  </tr>
+	                  <tr>
+	                     <td valign="center" width="100%" class="p10 text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding sh_content">
+	                     	<div class="timing_part">
+	                         <h2>Date &amp; Time</h2>
+	                         <p><time itemprop="startDate" t-att-datetime="event.date_begin">
+	                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'format': 'long'}"/> -
+	                        </time> 
+	                         </p>
+	                     </div>
+	                    </td>
+	                  </tr>
+	                  <tr>
+	                     <td valign="center" width="100%" class="p10 text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding sh_content">
+	                     	<div class="hosted_part">
+	                         <h2>Host By</h2>
+	                         <p t-if="event.organizer_id"><span t-field="event.organizer_id" itemprop="organizer"/> </p>
+	                         <p t-if="event.organizer_id and event.organizer_id.mobile">
+	                         
+	                         <a t-att-href="'tel: %s' %(event.organizer_id.mobile)">
+	                         	<t t-esc="event.organizer_id.mobile"/>
+	                         </a>
+	                         
+	                         </p>
+	                         
+	                         <a t-if="event.organizer_id and event.organizer_id.email"
+	                         t-att-href="'mailto: %s' %(event.organizer_id.email)"
+	                         >
+	                         <p>
+	                         <t t-esc="event.organizer_id.email"/>
+	                         </p></a>
+	                     </div>
+	                    </td>
+	                  </tr>
+	                  
+	                  <tr>
+	                	<td valign="center" width="100%" class="p10 text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding sh_heading">
+	                		<div class="heading_bottom">
+	                			<img src="/sh_emate/static/src/img/tmpl_31/frame_2.png" alt="heading_bottom_img" />
+	                         </div>
+	                     </td>
+	                  </tr>
+	            </tbody>
+	        </table>
+	    </t>
+	    </t>
+    </div>
+
+</template>
+
+		
+	
+	
+	
+
+
+</odoo>

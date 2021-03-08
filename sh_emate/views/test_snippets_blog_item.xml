@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+	<div class="js_cls_sh_mail_snippet_general">				
+	    <table align="center" cellspacing="0" cellpadding="0" border="0">
+	        <tr width="100%">
+	           
+	           	<t t-if="blog_posts">           	
+	           	<t t-foreach="blog_posts" t-as="blog_post">    				           
+	           
+		            <td class="three-box">
+		                <div class="box">
+		                    <div class="img">
+				
+					            <t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+					            <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+
+								<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+								    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+								    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+								    <t t-raw="0"/>
+								</div>
+
+		                        <div class="content">
+			                        <h5 t-field="blog_post.name"/>
+			                        
+			                        <p t-field="blog_post.subtitle"></p>
+			                        <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)" class="btn_readmore">READ MORE</a>
+			                    </div>
+			                    
+		                    </div>
+		                </div>
+		            </td>
+				</t>
+				</t>
+
+	    	</tr>    
+		</table>
+	</div> 			
+	 -->	
+		
+		
+	
+	<template id="sh_emate_blog_tmpl_item_1" name="Blog 1 item">
+	
+	            <div class="o_mail_snippet_general js_cls_sh_mail_snippet_general">
+	
+
+	                    <table align="center" cellspacing="0" cellpadding="0" border="0">
+	                        <tbody>
+	                   
+	                   
+      <tr>
+                                         
+	           	<t t-if="blog_posts">           	
+	           	<t t-foreach="blog_posts" t-as="blog_post">                            
+	  
+                        <td style="vertical-align:top;width:270px;" class="o_mail_col_mv o_mail_col_container">
+                            <div>
+                                
+                                
+
+							
+				            <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)">
+				
+								<!-- IMAGE -->
+					            <t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+					            <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+				
+				      
+								<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+								    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+								    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+								    <t t-raw="0"/>
+								</div>
+							    
+					         </a>	
+			
+                                
+                                
+                                <!-- BLOG NAME / TITLE -->
+                                <h4 class="text-center" t-field="blog_post.name">
+                                </h4>
+
+
+								<!-- PARAGRAPH or SUB TITLE -->
+                                <p class="text-center o_mail_no_margin" t-field="blog_post.subtitle">
+                                </p>
+                                
+                                
+                                <div class="text-center" style="margin-top:15px;">
+                                <!-- LINK -->
+                                    <a role="button" t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)" class="btn btn-link">Read More...</a>
+                                </div>
+
+                                
+                            </div>
+                        </td>
+
+  
+	                    
+                 	               
+				</t>
+				</t>                            
+	                            
+	  </tr>	
+	
+	
+	                        </tbody>
+	                    </table>
+	                </div> 
+	
+
+	
+	</template>
+
+
+
+</odoo>
+

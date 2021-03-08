@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<!-- TODO: no update 1 when done -->
+    <data noupdate="1">
+        
+        
+        
+        <!--
+        
+        	one attachment for scss variable settings 
+        	Write this file each time when we change theme settings.
+        	include this file in assets file by attachment url.
+        	
+         -->
+        <record id="sh_emate_variables_attachment_1" model="ir.attachment">
+            <field name="public" eval="True"/>
+            <field name="name">Emate Variables</field>
+        	<field name="datas" type="base64" file="sh_emate/data/sh_emate_variables.scss"></field>            
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">binary</field>
+            <field name="mimetype">text/scss</field>
+            <field name="store_fname">sh_emate_variables.scss</field>            
+            
+            
+            <field name="url">/sh_emate/static/src/scss/sh_emate_variables.scss</field>
+        </record>   
+                
+        
+        
+        <!-- 
+        ================================================
+		One Record for Config Settings
+        ================================================        
+         -->
+        <record id="sh_emate_config_settings_1" model="sh.emate.config.settings">
+            
+            <field name="name">Mass Mailing Theme Settings</field> 
+            <field name="sh_emate_theme1_color_primary">#e1a825</field>
+            <field name="sh_emate_theme1_color_secondary">#212121</field>
+            <field name="sh_emate_theme1_color_extra_color_1">#5c5b80</field>
+            <field name="sh_emate_theme1_color_extra_color_2">#5c5b80</field>
+            <field name="sh_emate_theme1_color_extra_color_3">#5c5b80</field>  
+            <field name="sh_emate_theme1_color_extra_color_4">#5c5b80</field>   
+
+            <field name="sh_emate_theme1_color_text_header">#e1a825</field>  
+            <field name="sh_emate_theme1_color_text_content">#212121</field>   
+            
+            
+                                                                     
+        </record>          
+        
+                  
+        
+	</data>
+		
+	
+</odoo>

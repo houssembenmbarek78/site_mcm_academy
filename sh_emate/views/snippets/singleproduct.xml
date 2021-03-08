@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- single product with discription template 1 -->
+<template id="sh_emate_single_product_tmpl_1" name="Single Product 1">
+	
+	<div class="sh_emate_single_product_1">
+		<div class="o_mail_block_image_text" data-name="Image - Text" id="sh_new_collection_3">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding text-left content w230">
+		                        <h3 class="o_default_snippet_text title">NEW<br/> COLLECTION</h3>
+		                        <p class="o_mail_no_margin o_default_snippet_text">LOREM SIMPLY DUMMY INDUSTRY</p>
+		                        <div class="mt15">
+		                            <a role="button" href="#" class="btn btn-link o_default_snippet_text btn_buy">BUY NOW</a>
+		                        </div>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w230 p0 img">
+		                        <img src="/sh_emate/static/src/img/tmpl_3/2.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>         
+	</div>
+	
+</template>
+
+<!-- end single product with discription template 1  -->
+
+
+<!-- single product with discription template 2 -->
+<template id="sh_emate_single_product_tmpl_2" name="Single Product 2">
+	
+	<div class="sh_emate_single_product_2">     
+		<div class="o_mail_block_image_text" data-name="Image - Text" id="sh_second_product_3">
+		    <div class="o_mail_snippet_general">
+		    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt0 mlr10">
+			           <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+				                    <h3>LOREM IPSUM</h3>
+				                   	<p class="detail">LOREM SIMPLY DUMMY INDUSTRY</p>
+				                </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				</table>
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding text-left content w260 border">
+		                        <h3 class="o_default_snippet_text title">LOREM IPSUM</h3>
+		                        <p class="o_mail_no_margin o_default_snippet_text">LOREM SIMPLY DUMMY INDUSTRY</p>
+		                        <h4 class="price">$40.00</h4>
+		                        <div class="mt15">
+		                            <a role="button" href="#" class="btn btn-link o_default_snippet_text btn_buy">BUY NOW</a>
+		                        </div>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w260 p0 img">
+		                        <img src="/sh_emate/static/src/img/tmpl_3/set-books-ladders_23-2148207614.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                    </td>
+		                </tr>
+		                
+		                <tr>
+		                	<td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w260 p0 img">
+		                        <img src="/sh_emate/static/src/img/tmpl_3/composition-books-globe_23-2148207622.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding text-left content w260 border">
+		                        <h3 class="o_default_snippet_text title">LOREM IPSUM</h3>
+		                        <p class="o_mail_no_margin o_default_snippet_text">LOREM SIMPLY DUMMY INDUSTRY</p>
+		                        <h4 class="price">$40.00</h4>
+		                        <div class="mt15">
+		                            <a role="button" href="#" class="btn btn-link o_default_snippet_text btn_buy">BUY NOW</a>
+		                        </div>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>	
+	</div>
+	
+</template>
+
+<!-- end single product with discription template 2  -->
+
+<!-- single product with discription template 3 -->
+<template id="sh_emate_single_product_tmpl_3" name="Single Product 3">
+	
+	<div class="sh_emate_single_product_3">     
+		<div id="sh_offer_4" class="o_mail_block_two_cols" data-name="Two Columns">
+			<div class="o_mail_snippet_general">
+		       <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table two_col pt0">
+		          <tbody>
+		              <tr>
+		                  <td class="o_mail_col_mv o_mail_col_container plr10 width200 text-center">
+		                      <div class="box box1">
+		                           <div class="content">
+			                            <p class="detail">IMAGE PREVIEW</p>
+			                            <h3 class="title">HELLO<br/>NEW!</h3>
+			                            <p class="detail">Your wardrobe has been<br/>waiting for these...</p>
+			                            <a class="btn" href="#">SHOW MORE</a>
+		                        	</div>
+		                    	</div>
+		                  </td>
+		
+		                  <td class="o_mail_col_mv o_mail_col_container p0 width200 text-center">
+		                      <div class="box box2">
+			                       <div class="img">
+			                           <img src="/sh_emate/static/src/img/tmpl_4/cheerful-casual-woman-with-bag_136403-2367.jpg" alt="img1" style="display: block;margin: auto;" />
+			                       </div>
+			                  </div>
+		                  </td>
+		              </tr>
+		          </tbody>
+		      </table>
+		   </div>
+		</div>     
+	</div>
+	
+</template>
+
+<!-- end single product with discription template 3  -->
+
+
+<!-- single product with discription template 4 -->
+<template id="sh_emate_single_product_tmpl_4" name="Single Product 4">
+	
+	<div class="sh_emate_single_product_4">     
+		<div class="o_mail_block_text_image" data-name="Text - Image" id="sh_single_product_6">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270">
+		                        <div class="sh_content">
+			                        <h3>Black Friday is here!</h3>
+			                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</p>
+			                        <a class="btn btn_readmore" href="#">READ MORE</a>
+			                    </div>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270">
+		                        <div class="sh_right_content">
+			                        <img src="/sh_emate/static/src/img/tmpl_6/offerr_6.png" alt="image" />
+			                    </div>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>  
+	</div>
+	
+</template>
+
+<!-- end single product with discription template 4  -->
+
+
+<!-- single product with discription template 5 -->
+<template id="sh_emate_single_product_tmpl_5" name="Single Product 5">
+	
+	<div class="sh_emate_single_product_5">     
+		<div class="o_mail_block_text_image" data-name="Text - Image" id="sh_single_product_8">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270">
+		                        <div class="content">
+			                        <h3>Lorem ipsum dolor sit amet</h3>
+				                    <hr/>
+				                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Curabitur placerat tellus sit amet ipsum ornare.</p>
+				                    <p class="time"><span class="fa fa-clock-o"></span> Monday - Thursday : 10AM to 8PM</p>
+				                    <p class="time"><span class="fa fa-clock-o"></span> Friday - Sunday : 8AM to Midnight</p>
+				                 </div>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270">
+		                        <div class="img">
+			                        <img src="/sh_emate/static/src/img/tmpl_8/big-sandwich-hamburger-burger-with-beef-red-onion-tomato-fried-bacon_2829-5352.jpg" alt="image" />
+			                    </div>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div> 
+	</div>
+	
+</template>
+
+<!-- end single product with discription template 5  -->
+
+
+<!-- single product with discription template 6 -->
+<template id="sh_emate_single_product_tmpl_6" name="Single Product 6">
+	
+	<div class="sh_emate_single_product_6">     
+		<div class="o_mail_block_text_image" data-name="Text - Image" id="sh_single_product_9">
+		    <div class="o_mail_snippet_general">
+		    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+			          <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+			                        <h3 class="title">LOREM IPSUM</h3>
+		                        	<hr/>
+			                    </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				  </table>
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270">
+		                        <div class="content">
+			                        <h3>Lorem ipsum dolor sit amet</h3>
+		                    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Curabitur placerat tellus sit.</p>
+		                    		<a class="btn_ordernow" href="#">ORDER NOW</a>
+			                    </div>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270">
+		                        <div class="img">
+			                        <img src="/sh_emate/static/src/img/tmpl_9/tasty-doner-kebabs-with-fresh-salad-trimmings-shaved-roasted-meat-served-tortilla-wraps-brown-paper-as-takeaway-snack_124865-2179.jpg" alt="image" />
+			                    </div>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div> 
+	</div>
+	
+</template>
+
+<!-- end single product with discription template 6  -->
+
+
+<!-- single product with discription template 7 -->
+<template id="sh_emate_single_product_tmpl_7" name="Single Product 7">
+	
+	<div class="sh_emate_single_product_7">     
+		<div class="o_mail_block_image_text" data-name="Image - Text" id="sh_product_item_11">
+		    <div class="o_mail_snippet_general">
+		    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt0 mlr10">
+			           <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+				                    <h3>LOREM IPSUM</h3>
+				                </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				</table>
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                	<td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w260 pr0 img">
+		                        <img src="/sh_emate/static/src/img/tmpl_11/craft-beef-burger-with-cheese-rocket-leafs-french-fries-wood-table_74692-156.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding text-left content w260 pl0">
+		                       <div class="box">
+			                        <h1>LOREM IPSUM</h1>
+			                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+			                        <div>
+			                            <h4>$40.00</h4>
+			                            <a class="btn_ordernow btn" href="#">ORDER NOW</a>
+			                        </div>
+			                    </div>
+		                    </td>
+		                </tr>
+		                
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding text-left content w260 pr0">
+		                        <div class="box">
+			                        <h1>LOREM IPSUM</h1>
+			                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+			                        <div>
+			                            <h4>$50.00</h4>
+			                            <a class="btn_ordernow btn" href="#">ORDER NOW</a>
+			                        </div>
+			                    </div>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w260 pl0 img">
+		                        <img src="/sh_emate/static/src/img/tmpl_11/big-sandwich-hamburger-burger-with-beef-red-onion-tomato-fried-bacon_2829-5352.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>	
+	</div>
+	
+</template>
+
+<!-- end single product with discription template 7  -->
+
+
+<!-- single product with discription template 8 -->
+<template id="sh_emate_single_product_tmpl_8" name="Single Product 8">
+	
+	<div class="sh_emate_single_product_8">     
+		<div class="o_mail_block_text_image" data-name="Text - Image" id="sh_single_product_12">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270">
+		                        <div class="content">
+			                        <h3>Lorem ipsum dolor sit amet</h3>
+				                    <hr/>
+				                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Curabitur placerat tellus sit amet ipsum ornare.</p>
+				                    <p class="time"><span class="fa fa-clock-o"></span> Monday - Thursday : 10AM to 8PM</p>
+				                 </div>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270">
+		                        <div class="img">
+			                        <img src="/sh_emate/static/src/img/tmpl_12/chair-realistic-illustration_1284-9507.jpg" alt="image" />
+			                    </div>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div> 
+	</div>
+	
+</template>
+
+<!-- end single product with discription template 8  -->
+
+
+<!-- single product with discription template 9 -->
+<template id="sh_emate_single_product_tmpl_9" name="Single Product 9">
+	
+	<div class="sh_emate_single_product_9">     
+		<div class="o_mail_block_image_text" data-name="Image - Text" id="sh_product_item_14">
+		    <div class="o_mail_snippet_general">
+		    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table">
+			        <tbody>
+				        <tr>
+				            <td width="100%" class="heading text-left">
+				                <h3>LOREM IPSUM</h3>
+		                        <p class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+				            </td>
+				        </tr>
+				     </tbody>
+				  </table>
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding img p10">
+		                        <img src="/sh_emate/static/src/img/tmpl_14/interior-frame-living-room-with-colorful-white-sofa_46483-430.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+		                        <div class="box box1">
+			                        <h1>LOREM IPSUM</h1>
+			                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+			                        <del>$120.00</del>
+			                        <div class="bottom">
+			                            <h4>$40.00</h4>
+			                            <a class="btn" href="#">BUY NOW</a>
+			                        </div>
+			                    </div>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		        
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+		                        <div class="box2 box">
+			                        <h1>LOREM IPSUM</h1>
+			                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+			                        <del>$160.00</del>
+			                        <div class="bottom">
+			                            <h4>$50.00</h4>
+			                            <a class="btn" href="#">BUY NOW</a>
+			                        </div>
+			                    </div>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding img p10">
+		                        <img src="/sh_emate/static/src/img/tmpl_14/living-room-interior_1048-9888.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+
+<!-- end single product with discription template 9  -->
+
+
+<!-- single product with discription template 10 -->
+<template id="sh_emate_single_product_tmpl_10" name="Single Product 10">
+	
+	<div class="sh_emate_single_product_10">     
+		<div class="o_mail_block_text_image" data-name="Text - Image" id="sh_single_product_15">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270">
+		                        <div class="content">
+			                        <h3>LOREM IPSUM</h3>
+		                			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, quis.Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+		                			<a class="btn_viewall" href="#">VIEW ALL</a>
+			                    </div>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270">
+		                        <div class="sh_right_img">
+			                        <img src="/sh_emate/static/src/img/tmpl_15/ripple-ornament-forever-drop-costume_1232-3547.jpg" alt="image" />
+			                    </div>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div> 
+	</div>
+	
+</template>
+
+<!-- end single product with discription template 10  -->
+
+
+<!-- single product with discription template 11 -->
+<template id="sh_emate_single_product_tmpl_11" name="Single Product 11">
+	
+	<div class="sh_emate_single_product_11">     
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_offer_17">
+	    <div class="o_mail_snippet_general">
+	        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_h_padding o_mail_v_padding o_mail_col_table">
+		          <tbody>
+			        <tr>
+			            <td width="100%" class="heading text-left">
+		                     <h3>LOREM IPSUM</h3>
+		                     <p class="detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius mod</p>
+			            </td>
+			        </tr>
+			     </tbody>
+			  </table>
+	        
+	            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+	                <tbody>
+	                    <tr>
+	                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+	                            <div class="offer text-center">
+			                        <p>BLACKFRIDAY</p>
+			                        <h1>70%<br/>OFF</h1>
+			                        <p>EVERYTHING</p>
+			                    </div>
+	                        </td>
+	
+	                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+	                            <div class="offer_read text-center">
+			                        <p class="offer-name">BlackFriday<br/>is here!</p>
+			                        <p class="offer-info">Lorem ipsum dolor sit amet, consectetur  adipisicing elit. Id ratione hic non repellendus soluta hic, ipsum animi.Lorem ipsum dolor sit amet, consectetur  adipisicing elit. Id ratione</p>
+			                        <a href="#" class="btnreadmore btn">READ MORE</a>
+			                    </div>
+	                        </td>
+	
+	                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+	                            <div class="offer_img text-center">
+			                        <img width="100%" src="/sh_emate/static/src/img/tmpl_17/luxury-wedding-rings-with-diamonds-flowers_89816-3051.jpg" alt="diamond_ring" />
+			                    </div>
+	                        </td>
+	                    </tr>
+	                </tbody>
+	            </table>
+	        </div>
+	    </div> 
+	</div>
+	
+</template>
+
+<!-- end single product with discription template 11  -->
+
+
+
+
+
+	
+
+</odoo>

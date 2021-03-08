@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+
+    <!-- Theme "solar" default template -->
+    <template id="theme_tmpl_try">
+
+
+
+<div class="o_layout o_default_theme" style="padding:0px 3% 0px 3%;color:rgb(121, 121, 121);font-family:-apple-system, HelveticaNeue, &quot;Helvetica Neue&quot;, Helvetica, Arial, &quot;Lucida Grande&quot;, sans-serif;font-size:14px;background-color:rgb(245, 245, 245);min-height:100%;width:94%;box-sizing:content-box;overflow-y:initial;overflow-x:initial;">
+	<table class="o_mail_wrapper" style="width:100%;border-collapse:separate;">
+		<tbody>
+			<tr>
+				<td class="o_mail_no_resize o_not_editable" contenteditable="false" style="text-align:left;">&amp;nbsp;</td><td class="o_mail_no_options o_mail_wrapper_td oe_structure" style="border-style:solid;background-color:rgb(255, 255, 255);border-left-color:rgb(240, 240, 240);border-bottom-color:rgb(240, 240, 240);border-right-color:rgb(240, 240, 240);border-top-color:rgb(240, 240, 240);border-left-width:1px;border-bottom-width:1px;border-right-width:1px;border-top-width:1px;text-align:left;width:600px;">
+					<div class="o_mail_block_header_logo mb16" style="margin:0 0 16px 0;">
+			            <div class="o_mail_snippet_general" style="margin:0px auto 0px auto;max-width:600px;width:100%;">
+			                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding" style="padding:0 20px 0 20px;width:100%;border-collapse:separate;">
+			                    <tbody>
+			                    	<tr>
+				                        <td width="10%" style="text-align:left;vertical-align:middle;">&amp;nbsp;</td>
+				                        <td valign="center" width="60%" class="o_mail_logo_container text-left o_mail_v_padding" style="padding:20px 0 20px 0;vertical-align:middle;text-align:left;">
+				                            <a style="font-weight:bold;background-color:transparent;color:rgb(100, 89, 116);text-decoration:none;" href="#">
+				                                Yourexample@gmail.com
+				                            </a>
+				                        </td>
+			                        	<td width="10%" style="vertical-align:middle;text-align:right">&amp;nbsp;</td>
+			                    	</tr>
+		                		</tbody>
+		                	</table>
+		            	</div>
+        			</div>
+    			</td>
+    			<td class="o_mail_no_resize o_not_editable" contenteditable="false" style="text-align:left;">&amp;nbsp;</td>
+    		</tr>
+    	</tbody>
+    </table>
+</div>
+
+
+
+</template>
+
+</odoo>
+
+
+

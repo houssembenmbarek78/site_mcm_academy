@@ -1,0 +1,158 @@
+// ==========================
+// Mass Mailing "Theme 5"
+// ==========================
+
+$sh-emate-mm-theme3-color-alpha: #8e6b5a;
+$sh-emate-mm-theme3-color-beta: white;
+$sh-emate-mm-theme3-color-gamma: #ff3c00;
+$sh-emate-mm-theme3-color-delta: darken($sh-emate-mm-theme2-color-gamma, 5%);
+$sh-emate-mm-theme3-color-epsilon: black;
+$sh-emate-mm-theme3-color-zeta: #f4f0e7;
+
+ul{padding: 0;margin: 0;}
+
+
+
+/*========= header =======*/
+#sh_header_5{background-color: #e0e0e0;}
+#sh_header_5 .logo a{text-decoration:none;float:none;}
+#sh_header_5 .logo h4{font-size: 20px;font-weight: bold;font-family: 'Encode Sans Expanded', sans-serif;margin-bottom: 0px;color: $sh_emate_theme1_color_text_content;}
+#sh_header_5 .menu a{font-size: 15px;text-decoration: none;font-family: 'Encode Sans Expanded', sans-serif;color: $sh_emate_theme1_color_text_content;}
+#sh_header_5 .ml10{margin-left: 10px;}
+
+
+/*========= banner =======*/
+#sh_banner_5 .bg_img{position: relative;}
+#sh_banner_5 .text{position: absolute;left: 30%;top: 50%;transform: translate(-50px, -50px);}
+#sh_banner_5 .text h2{font-weight: bold;font-size: 35px;margin-bottom: 20px;color: #fff;font-family: 'Encode Sans Expanded', sans-serif;}
+#sh_banner_5 .text p{margin-bottom: 20px;font-size:15px;color: #fff;font-family: 'Encode Sans Expanded', sans-serif;}
+#sh_banner_5 .text a.btn{cursor: pointer;border-radius: 0px;background: $sh_emate_theme1_color_primary;padding: 10px 30px;font-weight: 700;color: #fff;font-family: 'Encode Sans Expanded', sans-serif;font-size: 15px;}
+
+
+/*========= four product =======*/
+#sh_four_product_5{padding: 40px 0px;font-family: 'Encode Sans Expanded', sans-serif;}
+#sh_four_product_5 .left_content h3{margin-bottom: 20px;color: $sh_emate_theme1_color_secondary;font-size: 30px;font-weight: 700;font-family: 'Encode Sans Expanded', sans-serif;}
+#sh_four_product_5 .left_content p{margin-bottom: 30px;font-weight: 500;font-family: 'Encode Sans Expanded', sans-serif;font-size: 15px;}
+#sh_four_product_5 .left_content .btn_viewmore{cursor: pointer;font-weight: 550;font-size: 15px;padding: 8px 30px;border-radius: 0px;border: 0px;font-family: 'Encode Sans Expanded', sans-serif;background: $sh_emate_theme1_color_primary;color: #fff;}
+#sh_four_product_5 .img_text img{padding: 10px 5px;width: 95%;height: 130px;object-fit: cover;}
+#sh_four_product_5 .img_text .img{position: relative;}
+#sh_four_product_5 .img_text p{margin: 0px;font-family: 'Encode Sans Expanded', sans-serif;color: $sh_emate_theme1_color_text_content;}
+#sh_four_product_5 .img_text .text{position: absolute;bottom: 7%;background: rgba(0,0,0,0.2);padding: 5px 11px;left: 3%;width: 81%;text-align: center;}
+#sh_four_product_5 .img_text .text a{text-decoration: none;color: $sh_emate_theme1_color_text_content;}
+
+
+/*======= product_item =======*/
+
+#sh_product_item_5{text-align: center;font-family: 'Encode Sans Expanded', sans-serif;padding: 20px 0px;}
+#sh_product_item_5 .heading h3{color: $sh_emate_theme1_color_text_header;font-size: 30px;font-weight: 700;margin-bottom: 0px;padding: 10px 0px;font-family: 'Encode Sans Expanded', sans-serif;} 
+#sh_product_item_5 .three_col img{width: 100%;height: 180px;object-fit: cover;}
+#sh_product_item_5 .three_col .box{background: #e0e0e0;}
+#sh_product_item_5 .three_col .title{font-weight: bold;margin: 0;padding: 10px 0;color: $sh_emate_theme1_color_text_content;font-size: 15px;text-align: center;font-family: 'Encode Sans Expanded', sans-serif;}
+#sh_product_item_5 .three_col .price{font-weight: normal;margin: 0;padding: 0px 0px 10px 0px;color: $sh_emate_theme1_color_text_content;font-size: 15px;text-align: center;font-family: 'Encode Sans Expanded', sans-serif;}
+#sh_product_item_5 .three_col .title a{color: $sh_emate_theme1_color_text_content;text-decoration: none;}
+#sh_product_item_5 .three_col .plr10{padding-left: 10px;padding-right: 10px;}
+#sh_product_item_5 .w180{vertical-align:top;width:180px;}
+#sh_product_item_5 .pt0{padding-top: 0px;}
+
+
+
+/*======= counter =========*/
+.sh_emate_counter_1{background: #262221;}
+#sh_counter_5{text-align: center;font-family: 'Encode Sans Expanded', sans-serif;padding: 20px 0px;}
+#sh_counter_5 .heading h3{color: #fff;font-size: 30px;font-weight: 700;margin-bottom: 0px;padding: 10px 0px;font-family: 'Encode Sans Expanded', sans-serif;}
+#sh_counter_5 .box .digit{color: #fff;margin-bottom: 15px;font-family: 'Encode Sans Expanded', sans-serif;font-size: 25px;font-weight: bold;}
+#sh_counter_5 .box .text{color: #fff;font-size: 15px;font-weight: normal;letter-spacing: 1px;margin: 5px;font-family: 'Encode Sans Expanded', sans-serif;} 
+
+
+/*====== testimonial =======*/
+#sh_testimonial_5{background: transparent;padding-top: 10px;padding-bottom: 10px;font-family: 'Encode Sans Expanded', sans-serif;}
+#sh_testimonial_5 .heading h3{color: $sh_emate_theme1_color_text_header;font-size: 30px;font-weight: 700;margin-bottom: 0px;padding: 10px 0px;font-family: 'Encode Sans Expanded', sans-serif;}
+#sh_testimonial_5 .two_col .img img{height: 100px;width: 100px;border-radius: 50%;}
+#sh_testimonial_5 .two_col .img{position: absolute;z-index: 1;top: -50px;left: 50%;transform: translateX(-50%);}
+#sh_testimonial_5 .two_col .text{position: relative;padding: 0px;margin-bottom: 20px;color: $sh_emate_theme1_color_text_content;font-family: 'Encode Sans Expanded', sans-serif;font-size: 15px;}
+#sh_testimonial_5 .two_col hr{margin: 0rem 0 1rem 0;justify-content: center;margin: 0px auto;margin-bottom: 1rem;border-top-color: $sh_emate_theme1_color_primary;border-top-style: solid;border-top-width: 3px;border-left-width: 0px;border-bottom-width: 0px;border-right-width: 0px;overflow-y: visible;overflow-x: visible;height: 0px;width: 30%;box-sizing: content-box;}
+#sh_testimonial_5 .two_col  h4{color: $sh_emate_theme1_color_text_content;font-weight: normal;font-family: 'Encode Sans Expanded', sans-serif;font-size: 18px;}
+#sh_testimonial_5 .two_col .box{width: auto;padding: 0 10px;position: relative;margin: 0px auto;font-family: 'Encode Sans Expanded', sans-serif;}
+#sh_testimonial_5 .two_col .box .content{padding: 80px 20px 20px 20px;background: #e0e0e0;text-align: center;font-family: 'Encode Sans Expanded', sans-serif;}
+#sh_testimonial_5 .plr10{padding-left: 10px;padding-right: 10px;}
+#sh_testimonial_5 .w270{vertical-align:top;width:270px;}
+
+
+/*======= Blog =======*/
+
+#sh_blog_5{text-align: center;font-family: 'Encode Sans Expanded', sans-serif;padding: 0px 0px 20px 0px;}
+#sh_blog_5 .heading h3{color: $sh_emate_theme1_color_text_header;font-size: 25px;font-weight: 700;margin-bottom: 0px;padding: 10px 0px;font-family: 'Encode Sans Expanded', sans-serif;} 
+#sh_blog_5 .three_col img{width: 100%;height: 180px;object-fit: cover;}
+#sh_blog_5 .three_col .content{background: #ebebeb;padding: 10px 0px 20px 0px;}
+#sh_blog_5 .three_col .content h5{font-weight: bold;margin: 0;padding: 10px 0;color: $sh_emate_theme1_color_text_content;font-size: 16px;text-align: center;font-family: 'Encode Sans Expanded', sans-serif;}
+#sh_blog_5 .three_col .content p{font-weight: normal;margin: 0;padding: 0px 0px 10px 0px;color: $sh_emate_theme1_color_text_content;font-size: 15px;text-align: center;font-family: 'Encode Sans Expanded', sans-serif;}
+#sh_blog_5 .three_col .content a.btn_readmore{color: $sh_emate_theme1_color_primary;text-decoration: none;font-size: 15px;font-family: 'Encode Sans Expanded', sans-serif;}
+#sh_blog_5 .three_col .plr10{padding-left: 10px;padding-right: 10px;}
+#sh_blog_5 .w180{vertical-align:top;width:180px;}
+#sh_blog_5 .pt0{padding-top: 0px;}
+
+
+/*======= event =======*/
+
+#sh_event_5{padding: 0px 0px;font-family: 'Encode Sans Expanded', sans-serif;padding-bottom: 20px;}
+#sh_event_5 .portion1 h3{color: $sh_emate_theme1_color_text_content;margin-bottom: 20px;font-size: 30px;font-weight: bold;font-family: 'Encode Sans Expanded', sans-serif;}
+#sh_event_5 .portion1 p{color: $sh_emate_theme1_color_text_content;line-height: 23px;font-size: 16px;margin-bottom: 40px;font-weight: 500;font-family: 'Encode Sans Expanded', sans-serif;}
+#sh_event_5 .portion1 .btn_viewmore{background: $sh_emate_theme1_color_primary;color: #fff;padding: 10px 30px;border-radius: 0px;border: none;font-size: 15px;}
+#sh_event_5 .box .img img{width: 100%;object-fit: cover;height: 130px;}
+#sh_event_5 .box .content{padding: 15px 0px;}
+#sh_event_5 .box .content h5{color: $sh_emate_theme1_color_text_content;font-weight: bold;margin-bottom: 15px;text-align: left;font-size: 16px;}
+#sh_event_5 .box .content p{color: #616161;font-weight: normal;margin-bottom: 15px;text-align: left;font-size: 15px;}
+#sh_event_5 .box .content p.author{color: #616161;font-weight: normal;margin-bottom: 15px;text-align: left;font-size: 14px;}
+#sh_event_5 .box .content span, #sh_event_5 .box .content img{margin-right: 10px;}
+#sh_event_5 .w180{vertical-align:top;width:180px;} 
+#sh_event_5 .three_col .plr10{padding-left: 10px;padding-right: 10px;}
+
+
+
+/*========= footer ==========*/
+#sh_footer_5{background-color: $sh_emate_theme1_color_secondary;}
+#sh_footer_5 {padding: 50px 0px;font-family: 'Encode Sans Expanded', sans-serif;}
+#sh_footer_5 ul{padding: 0;}
+#sh_footer_5 ul li{display: inline-block;font-family: 'Encode Sans Expanded', sans-serif;}
+#sh_footer_5 ul li{display: inline-block;text-align: center;padding:0px 15px;margin-bottom: 0px; }
+#sh_footer_5 p{color: #b0bec5;border-top:1px solid #b0bec5;border-bottom: 1px solid #b0bec5;width: 70%;padding: 10px 0px;margin-bottom: 10px;font-family: 'Encode Sans Expanded', sans-serif;}
+#sh_footer_5 .btn{cursor: pointer;border:1px solid #b0bec5;padding: 10px 40px;color: #b0bec5;font-size: 16px;font-family: 'Encode Sans Expanded', sans-serif;}
+#sh_footer_5 .btn img{background:transparent;color: #b0bec5;font-weight: 700;padding-right:20px;font-size: 18px;margin-top: 0px;}
+#sh_footer_5 a img{background-color: transparent;color: #fff;border-radius: 0%;height: 15px;width: 15px;line-height: 25px;}
+#sh_footer_5 ul li img{padding: 0px;cursor: pointer;}
+#sh_footer_5 ul li a{color: #fff;text-decoration: none;}
+#sh_footer_5 .p10{padding: 10px;}
+
+
+/*======= copyright ========*/
+#sh_copyright_5{padding: 10px 0px;background-color: #e0e0e0;}
+#sh_copyright_5 p{line-height: 10px;font-weight: 530;letter-spacing: .5px;color: $sh_emate_theme1_color_text_content;font-family: 'Encode Sans Expanded', sans-serif;}
+#sh_copyright_5 p:nth-child(2){margin-bottom: 0px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Theme "solar" default template -->
+    <template id="theme_tmpl_32">
+    
+    	<!-- header -->
+        <div class="o_mail_block_header_logo" data-name="Centered Logo" id="sh_header_32">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding border_bottom plr30">
+                    <tbody>
+                        <tr>
+                            <td valign="center" width="100%" class="o_mail_col_mv o_mail_col_container text-center o_mail_v_padding logo">
+                                <a href="#">
+                                    <img src="/sh_emate/static/src/img/tmpl_32/top_logo.png" alt="logo"/>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="100%" class="text-center o_mail_no_resize o_mail_col_mv o_mail_col_container">
+                                <div class="o_mail_header_social menu">
+                                    <a href="#" class="p15">Home</a>
+                                    <span>|</span>
+                                    <a href="#" class="p15">Properties</a>
+                                    <span>|</span>
+                                    <a href="#" class="p15">About</a>
+                                    <span>|</span>
+                                    <a href="#" class="p15">Blog</a>
+                                    <span>|</span>
+                                    <a href="#" class="p15">Contact</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- end header -->
+        
+        <!-- banner -->
+
+        <div class="o_mail_block_banner" id="sh_banner_32" data-name="Banner">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                            <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+                                <a href="#">
+                                    <img src="/sh_emate/static/src/img/tmpl_32/banner.png" class="d-block mx-auto banner_img" alt="Your Banner Image" />
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- end banner -->
+
+		<!-- About -->
+ 		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_about_32">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+                    <tbody>
+                        <tr>
+                            <td width="100%" class="heading">
+                                <center>
+                                	<h6>Best property for best people</h6>
+                                    <h3>About This Property</h3>
+                                    <p class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                </center>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col">
+                    <tbody>
+                        <tr>
+                            <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                                <div class="box text-center">
+                                    <div class="icon"><img src="/sh_emate/static/src/img/tmpl_32/icon/1.png"></img></div>
+                                    <p class="text-center title">World Mentor</p>
+                                    <hr class="border-bottom"></hr>
+                                    <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit</p>
+                                </div>
+                            </td>
+
+                            <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                                <div class="box text-center">
+                                    <div class="icon"><img src="/sh_emate/static/src/img/tmpl_32/icon/2.png"></img></div>
+                                    <p class="text-center title">10 Rooms</p>
+                                    <hr class="border-bottom"></hr>
+                                    <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit</p>
+                                </div>
+                            </td>
+
+                            <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                                <div class="box text-center">
+                                    <div class="icon"><img src="/sh_emate/static/src/img/tmpl_32/icon/3.png"></img></div>
+                                    <p class="text-center title">2 Pools</p>
+                                    <hr class="border-bottom"></hr>
+                                    <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col">
+                    <tbody>
+                        <tr>
+                            <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                                <div class="box text-center">
+                                    <div class="icon"><img src="/sh_emate/static/src/img/tmpl_32/icon/4.png"></img></div>
+                                    <p class="text-center title">Parking</p>
+                                    <hr class="border-bottom"></hr>
+                                    <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit</p>
+                                </div>
+                            </td>
+
+                            <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                                <div class="box text-center">
+                                    <div class="icon"><img src="/sh_emate/static/src/img/tmpl_32/icon/5.png"></img></div>
+                                    <p class="text-center title">3 Floors</p>
+                                    <hr class="border-bottom"></hr>
+                                    <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit</p>
+                                </div>
+                            </td>
+
+                            <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                                <div class="box text-center">
+                                    <div class="icon"><img src="/sh_emate/static/src/img/tmpl_32/icon/1.png"></img></div>
+                                    <p class="text-center title">Lot 1 Acres</p>
+                                    <hr class="border-bottom"></hr>
+                                    <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+		<!-- End About -->
+		
+		<!-- Comparision -->
+		<div class="o_mail_block_two_cols" data-name="Two Columns" id="sh_comparision_32">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pb0">
+                    <tbody>
+                        <tr>
+                            <td class="o_mail_col_mv o_mail_col_container w180 p0">
+                                <div class="box bg_light">
+                                    <h6>Basic Package</h6>
+                                    <h2><sub>$</sub>250.<span>580</span></h2>
+                                    <p>PER MONTH</p>
+                                </div>
+                            </td>
+
+                            <td class="o_mail_col_mv o_mail_col_container w180 p0">
+                                <div class="box bg_dark">
+                                    <h6>Value Package</h6>
+                                    <h2><sub>$</sub>159.<span>520</span></h2>
+                                    <p>PER MONTH</p>
+                                </div>
+                            </td>
+
+                            <td class="o_mail_col_mv o_mail_col_container w180 p0">
+                                <div class="box bg_light">
+                                    <h6>Heavy Package</h6>
+                                    <h2><sub>$</sub>182.<span>538</span></h2>
+                                    <p>PER MONTH</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+		<!-- End Comparision -->
+		
+		<!-- Gallery -->
+		<div class="o_mail_block_two_cols" data-name="Two Columns" id="sh_gallery_32">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+                    <tbody>
+                        <tr>
+                            <td width="100%" class="heading">
+                                <center>
+                                	<h6>Check Out the Photo Gallery</h6>
+                                    <h3>Our Photo Gallery</h3>
+                                    <p class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                </center>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pb0">
+                    <tbody>
+                        <tr>
+                            <td class="o_mail_col_mv o_mail_col_container w180 p10">
+                                <div class="img">
+                                    <img src="/sh_emate/static/src/img/tmpl_32/skyscrapers-sunset_1112-1870.jpg" class="d-block mx-auto" alt="Your Picture" loading="lazy" />
+                                </div>
+                            </td>
+
+                            <td class="o_mail_col_mv o_mail_col_container w180 p10">
+                                <div class="img">
+                                    <img src="/sh_emate/static/src/img/tmpl_32/interior-with-bid-dining-room-modern-private-house_181624-17504.jpg" class="d-block mx-auto" alt="Your Picture" loading="lazy" />
+                                </div>
+                            </td>
+
+                            <td class="o_mail_col_mv o_mail_col_container w180 p10">
+                                <div class="img">
+                                    <img src="/sh_emate/static/src/img/tmpl_32/beautiful-big-luxurious-green-brick-house-with-garage-paved-driveway-two-12.jpg" class="d-block mx-auto" alt="Your Picture" loading="lazy" />
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+                    <tbody>
+                        <tr>
+                            <td class="o_mail_col_mv o_mail_col_container p10" rowspan="2" width="67%">
+                                <div class="sh_left_part">
+                                    <img src="/sh_emate/static/src/img/tmpl_32/3d-rendering-house-visualisation_62754-1778.jpg" alt="img1" title="img1" loading="lazy" />
+                                </div>
+                            </td>
+
+                            <td class="o_mail_col_mv o_mail_col_container p10" width="33%">
+                                <div class="sh_right_top">
+                                    <img src="/sh_emate/static/src/img/tmpl_32/3d-rendering-house-visualisation_62754-1769.jpg" alt="img2" title="img2" loading="lazy" />
+                                </div>
+                                <div class="sh_right_bottom">
+                                    <img src="/sh_emate/static/src/img/tmpl_32/3d-rendering-modern-house_62754-1884.jpg" alt="img2" title="img2" loading="lazy" />
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+		<!-- End Gallery -->
+		
+		<!-- Amenities/Services -->
+		<div class="o_mail_block_steps o_mail_no_colorpicker" data-name="Steps" id="sh_service_32">
+            <div class="o_mail_snippet_general bg-white">
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+                    <tbody>
+                        <tr>
+                            <td width="100%" class="heading">
+                                <center>
+                                	<h6>Best Services For Best People</h6>
+                                    <h3>Apartment Amenities</h3>
+                                    <p class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                </center>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding">
+                    <tbody>
+                        <tr>
+                            <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+                                <table align="center">
+                                    <tbody>
+                                        <tr>
+                                            <td class="w200">
+                                                <div class="right-content text-right">
+                                                    <a href="#"><p class="title">High Speed Wi-Fi</p></a>
+                                                    <p class="text">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                                                </div>
+                                            </td>
+                                            <td rowspan="2" class="text-right vmiddle w60">
+                                                <img class="icon_img" src="/sh_emate/static/src/img/tmpl_32/icon/6.png" role="img" title="Headphone" alt="icon_img"></img>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+                                <table align="center">
+                                    <tbody>
+                                        <tr>
+                                        	<td rowspan="2" class="text-left vmiddle w60">
+                                                <img class="icon_img" src="/sh_emate/static/src/img/tmpl_32/icon/8.png" role="img" title="Headphone" alt="icon_img"></img>
+                                            </td>
+                                            <td class="w200 pl15">
+                                                <div class="left-content text-left">
+                                                    <a href="#"><p class="title">Luxury Appliances</p></a>
+                                                    <p class="text">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding">
+                    <tbody>
+                        <tr>
+                            <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+                                <table align="center">
+                                    <tbody>
+                                        <tr>
+                                            <td class="w200">
+                                                <div class="right-content text-right">
+                                                    <a href="#"><p class="title">Solar System</p></a>
+                                                    <p class="text">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                                                </div>
+                                            </td>
+                                            <td rowspan="2" class="text-right vmiddle w60">
+                                                <img class="icon_img" src="/sh_emate/static/src/img/tmpl_32/icon/7.png" role="img" title="Headphone" alt="icon_img"></img>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+                                <table align="center">
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="2" class="text-left vmiddle w60">
+                                                <img class="icon_img" src="/sh_emate/static/src/img/tmpl_32/icon/9.png" role="img" title="Headphone" alt="icon_img"></img>
+                                            </td>
+                                            <td class="w200 pl15">
+                                                <div class="left-content">
+                                                    <a href="#"><p class="title">Garden Area</p></a>
+                                                    <p class="text">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+		<!-- End Amenities/Services -->
+		
+		<!-- Get_in_touch -->
+		<div class="o_mail_block_banner" id="sh_get_in_touch_banner_32" data-name="Banner">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                            <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+                                <a href="#">
+                                    <img src="/sh_emate/static/src/img/tmpl_32/get_in_touch.png" class="d-block mx-auto banner_img" alt="Your Banner Image" />
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+		<!-- End Get_in_touch -->
+		
+        <!-- footer -->
+        <div class="o_mail_block_three_cols sh_emate_footer_25" data-name="Three Columns" id="sh_footer_32">
+		      <div class="o_mail_snippet_general">
+		          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table two_col pt0">
+		              <tbody>
+		                  <tr>
+		                      <td class="o_mail_col_mv o_mail_col_container p5 w180">
+		                          <div class="part1">
+				                        <h3 class="title o_default_snippet_text"><span class="fa fa-comments-o"></span>Contact</h3>
+				                        <p class="text">
+				                            <span class="o_default_snippet_text">905, Corporate Levels, 150ft. </span>
+				                                
+				                            <span class="o_default_snippet_text">Ring Road, Rajkot.</span>                                                
+				                        </p>
+				                        <p class="link_text">
+				                        	<a href="#" class="o_default_snippet_text">
+					                         	support@softhealer.com 
+					                        </a>
+					                    </p>
+				                    </div>
+		                      	</td>
+		
+			                      <td class="o_mail_col_mv o_mail_col_container p5 w360">
+			                          <div class="part2">
+					                        <h3 class="title o_default_snippet_text"><span class="fa fa-info-circle"></span>About</h3>
+					                        <p class="text">
+					                         	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+					                        </p>
+					                  </div>
+			                      </td>
+		                  	  </tr>
+		              </tbody>
+		          </table>
+		          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table logo_icon p1025">
+		              <tbody>
+		                  <tr>
+		                      <td class="o_mail_col_mv o_mail_col_container p5 w180">
+		                          <div class="left_logo">
+				                        <img src="/sh_emate/static/src/img/tmpl_32/bottom_logo.png" alt="footer_logo" />
+				                    </div>
+		                      	</td>
+		
+			                      <td class="o_mail_col_mv o_mail_col_container p5 w360 text-right">
+			                          <div class="right_social_media_icon">
+					                        <a href="#" class="ml10 o_default_snippet_text"><span class="fa fa-facebook"></span></a>
+					                        <a href="#" class="ml10 o_default_snippet_text"><span class="fa fa-twitter"></span></a>
+					                        <a href="#" class="ml10 o_default_snippet_text"><span class="fa fa-instagram"></span></a>
+					                        <a href="#" class="ml10 o_default_snippet_text"><span class="fa fa-pinterest-p"></span></a>
+					                  </div>
+			                      </td>
+		                  	  </tr>
+		              </tbody>
+		          </table>
+		      </div>
+		</div>
+        <!-- end footer -->
+        
+        <!-- copyright -->
+        <div class="o_mail_block_footer_copyright o_mail_copyright" data-name="copyright Center" id="sh_copyright_32">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding p15 border0">
+                    <tbody>
+                        <tr>
+                            <td class="o_mail_copyright_description copyright_content o_mail_col_mv o_mail_col_container">
+                                <div>
+                                    <p class="o_mail_footer_copy o_default_snippet_text">Copyright © Softhealer Technologies</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- end Copyright -->
+        
+    </template>
+</odoo>

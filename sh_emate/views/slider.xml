@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    	<!-- Form -->
+    	<record id="sh_emate_slider_form" model="ir.ui.view">
+            <field name="name">sh.emate.slider.form</field>
+            <field name="model">sh.emate.slider</field>
+            <field name="arch" type="xml">
+            	<form>
+            		<sheet>
+            			<group>
+            				<group>
+            					
+            					
+            					
+            					<field name="name"/>
+            					<!-- TODO: INVISIBLE 0 WHEN DO CATEGORY AND BLOG DYNAMIC -->
+            					<field name="slider_type" widget="radio" invisible="0"/>
+            					<field name="filter_type" widget="radio"/>
+            					     
+            					
+            					<field name="product_filter_id"
+            					attrs="{'invisible': ['|',('filter_type', '!=', 'domain'),('slider_type', '!=', 'product')], 'required': [('filter_type', '=', 'domain'),('slider_type', '=', 'product')]}"
+            					/>            					  
+          					     
+								
+								<field name="pricelist_id" domain="[('selectable','=',True)]" attrs="{'invisible': [('slider_type', '!=', 'product')], 'required': [('slider_type', '=', 'product')]}"/>
+
+
+
+            					<field name="blog_post_filter_id"
+            					attrs="{'invisible': ['|',('filter_type', '!=', 'domain'),('slider_type', '!=', 'blog')], 'required': [('filter_type', '=', 'domain'),('slider_type', '=', 'blog')]}"
+            					/>   
+
+
+            					<field name="event_filter_id"
+            					attrs="{'invisible': ['|',('filter_type', '!=', 'domain'),('slider_type', '!=', 'event')], 'required': [('filter_type', '=', 'domain'),('slider_type', '=', 'event')]}"
+            					/> 
+
+            					  
+								<field name="limit" attrs="{'invisible': [('filter_type', '!=', 'domain')] }"/>            					  
+            					            					            					
+            				</group>
+
+            					<field name="product_ids"
+            					attrs="{'invisible': ['|',('filter_type', '!=', 'manual'),('slider_type', '!=', 'product')]}"
+            					/>     
+
+			
+            					<field name="blog_post_ids"
+            					attrs="{'invisible': ['|',('filter_type', '!=', 'manual'),('slider_type', '!=', 'blog')]}"
+            					/>    
+
+
+            					<field name="event_ids"
+            					attrs="{'invisible': ['|',('filter_type', '!=', 'manual'),('slider_type', '!=', 'event')]}"
+            					/>   
+
+
+            			</group>            			
+            		</sheet>
+            	</form>
+            </field>
+    	</record>
+    	
+    	<!-- Tree -->
+    	<record id="sh_emate_slider_tree" model="ir.ui.view">
+            <field name="name">sh.emate.slider.tree</field>
+            <field name="model">sh.emate.slider</field>
+            <field name="arch" type="xml">
+            	<tree>
+  					<field name="name"/>
+  					<field name="slider_type"/>
+  					<field name="filter_type"/>            	
+            	</tree>
+            </field>    		
+    	</record>
+    	
+    	<!-- Action -->
+        <record id="sh_emate_slider_action" model="ir.actions.act_window">
+            <field name="name">Dynamic Product, Blog and Event Snippets Config</field>
+            <field name="res_model">sh.emate.slider</field>
+            <field name="target">current</field>
+            <field name="view_mode">tree,form</field>       
+        </record>
+
+
+                  
+    <!-- Configuration / Slider -->
+    <menuitem id="sh_emate_slider_menu"
+        action="sh_emate_slider_action"
+        parent="mass_mailing.mass_mailing_configuration"/>                      	
+
+</odoo>
+
+
+
+
+
+

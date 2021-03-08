@@ -1,0 +1,33 @@
+
+
+/* === banner ==== */
+#sh_banner_31{margin-top: 0px;}
+
+
+/* ==== event === */
+
+#sh_event_31{padding: 50px 0px;text-align: center;font-family: 'Lato', sans-serif;}
+#sh_event_31 .o_mail_snippet_general{background: #fff;}
+#sh_event_31 .sh_heading img{object-fit: cover;width: 200px;margin-bottom: 0px;text-align: center;}
+#sh_event_31 .sh_content{text-align: center;font-family: 'Lato', sans-serif;padding: 10px 0px;}
+#sh_event_31 .sh_content h2{font-size: 22px;color: $sh_emate_theme1_color_primary;margin: 20px 0px;font-weight: bold;font-family: 'Lato', sans-serif;text-transform: capitalize;}
+#sh_event_31 .sh_content p,#sh_event_31 .sh_content a p{font-size: 15px;color: $sh_emate_theme1_color_text_content;margin: 0px 0px;font-weight: normal;font-family: 'Lato', sans-serif;text-transform: capitalize;line-height: 18px;}
+#sh_event_31 .sh_content a{text-decoration: none;}
+#sh_event_31 .heading_bottom img{margin-top: 30px;}
+#sh_event_31 .sh_content p div{justify-content: center;}
+#sh_event_31 [itemprop="address"] div{justify-content: center !important;}
+
+/* ======= Footer ======= */
+
+#sh_footer_31 {padding: 100px 0px 30px 0px;font-family: 'Lato', sans-serif;background: url('/sh_emate/static/src/img/tmpl_31/footer_bg.png');background-position: center;background-size: cover;}
+#sh_footer_31 .icon_part{width: 70%;padding: 10px 0px;}
+#sh_footer_31 .icon_part ul{padding: 0;}
+#sh_footer_31 .icon_part ul li{display: inline-block;font-family: 'Lato', sans-serif;}
+#sh_footer_31 .icon_part ul li{display: inline-block;text-align: center;padding:0px 15px;margin-bottom: 0px; }
+#sh_footer_31 .content_para p{color: #fff;width: 70%;padding: 10px 0px;margin-bottom: 0px;font-family: 'Lato', sans-serif;font-size: 15px;}
+
+#sh_footer_31 .icon_part ul li img{padding: 0px;cursor: pointer;}
+#sh_footer_31 .icon_part ul li a{color: #fff;text-decoration: none;}
+#sh_footer_31 .p10{padding: 10px;}
+
+#sh_footer_31 p.c_text{color: #fff;margin-bottom: 0px;font-family: 'Lato', sans-serif;font-size: 15px;}

@@ -1,0 +1,119 @@
+// ==========================
+// Mass Mailing "Theme 7"
+// ==========================
+
+$sh-emate-mm-theme7-color-alpha: #8e6b5a;
+$sh-emate-mm-theme7-color-beta: white;
+$sh-emate-mm-theme7-color-gamma: #ff3c00;
+$sh-emate-mm-theme7-color-delta: darken($sh-emate-mm-theme2-color-gamma, 5%);
+$sh-emate-mm-theme7-color-epsilon: black;
+$sh-emate-mm-theme7-color-zeta: #f4f0e7;
+
+ul{padding: 0;margin: 0;}
+
+
+/*===== header =====*/
+
+#sh_header_21{background-color: transparent;margin-bottom: 30px;}
+#sh_header_21 .logo a{text-decoration:none;float:none;}
+#sh_header_21 .logo h4{font-size: 25px;font-weight: bold;font-family: 'Poppins', sans-serif;margin-bottom: 0px;color: $sh_emate_theme1_color_primary;}
+#sh_header_21 .menu a{font-size: 15px;text-decoration: none;font-family: 'Poppins', sans-serif;color: $sh_emate_theme1_color_text_content;}
+#sh_header_21 .plr15{padding-left: 15px;padding-right: 15px;padding-bottom: 10px;}
+#sh_header_21 .border_bottom{border-bottom: 1px solid $sh_emate_theme1_color_text_content;}
+
+/*========= banner =======*/
+
+
+/*======= categories =====*/
+#sh_categories_21 {margin: 20px 0px;}
+#sh_categories_21 .heading h3{color: $sh_emate_theme1_color_text_header;font-size: 22px;margin-bottom: 0px;padding-bottom: 15px;font-family: 'Poppins', sans-serif;font-weight: bold;}
+#sh_categories_21 .heading hr{margin: 0rem 0 1rem 0;border-top-color: $sh_emate_theme1_color_text_header;border-top-style: solid;border-top-width: 2px;border-left-width: 0px;border-bottom-width: 0px;border-right-width: 0px;overflow-y: visible;overflow-x: visible;height: 0px;width: 18%;box-sizing: content-box;}
+
+#sh_categories_21 .img img{width: 98%;height: 220px;object-fit: cover;border: 0px;}
+#sh_categories_21 .img{position: relative;}
+#sh_categories_21 .box .content{position: absolute;bottom: 15%;left: 13%;content: '';}
+#sh_categories_21 .box .content a.btn_cat,#sh_categories_21 .box .content21 a.btn_cat{background: $sh_emate_theme1_color_primary;color: #fff;font-size: 15px;font-family: 'Poppins', sans-serif;padding: 8px 20px;}
+#sh_categories_21 .width180{width: 180px;}
+#sh_categories_21 .plr10{padding-left: 10px;padding-right: 10px;}
+#sh_categories_21 .box .content21{position: absolute;bottom: 15%;left: 21%;content: '';}
+
+
+
+/*======= Deal =====*/
+#sh_deal_21 {margin: 20px 0px;}
+#sh_deal_21 .heading h3{color: $sh_emate_theme1_color_text_header;font-size: 22px;margin-bottom: 0px;padding-bottom: 15px;font-family: 'Poppins', sans-serif;font-weight: bold;}
+#sh_deal_21 .heading hr{margin: 0rem 0 1rem 0;border-top-color: $sh_emate_theme1_color_text_header;border-top-style: solid;border-top-width: 2px;border-left-width: 0px;border-bottom-width: 0px;border-right-width: 0px;overflow-y: visible;overflow-x: visible;height: 0px;width: 18%;box-sizing: content-box;}
+
+
+#sh_deal_21{padding: 20px 0px;font-family: 'Poppins', sans-serif;}
+#sh_deal_21 img{width: 95%;height: 170px;object-fit: cover;}
+#sh_deal_21 .width130{width:130px;text-align:center;vertical-align:middle;}
+#sh_deal_21 .width120{width:120px;text-align:center;vertical-align:top;}
+#sh_deal_21 .p8{padding: 10px 8px;}
+#sh_deal_21 .content .mt-10{margin-top: 10px;}
+#sh_deal_21 .content h6{font-weight: bold;margin: 0;padding: 10px 0 8px 0px;color: $sh_emate_theme1_color_text_header;text-align: left;font-family: 'Poppins', sans-serif;font-size: 16px;}
+#sh_deal_21 .content p{margin: 0px 0px 15px 0px;}
+#sh_deal_21 .content p del{font-size: 15px;color: $sh_emate_theme1_color_secondary;margin-bottom: 15px;text-align: left;display: block;font-family: 'Poppins', sans-serif;margin-right: 10px;}
+#sh_deal_21 .content p span{font-size: 15px;color: $sh_emate_theme1_color_text_content;margin-bottom: 15px;text-align: left;display: block;font-family: 'Poppins', sans-serif;font-weight: bold;}
+#sh_deal_21 .content a.btn_buynow{text-decoration: none;font-size: 15px;color: #fff;background: $sh_emate_theme1_color_primary;border: 0px;text-align: center;font-family: 'Poppins', sans-serif;border-radius:0px;padding: 7px 18px;}
+#sh_deal_21 .box .content{padding: 20px;background: #fff;text-align: left;font-family: 'Poppins', sans-serif;}
+
+
+/*====== Blog ======*/
+
+#sh_blog_21 {margin: 20px 0px;}
+#sh_blog_21 .heading h3{color: $sh_emate_theme1_color_text_header;font-size: 22px;margin-bottom: 0px;padding-bottom: 15px;font-family: 'Poppins', sans-serif;font-weight: bold;}
+#sh_blog_21 .heading hr{margin: 0rem 0 1rem 0;border-top-color: $sh_emate_theme1_color_text_header;border-top-style: solid;border-top-width: 2px;border-left-width: 0px;border-bottom-width: 0px;border-right-width: 0px;overflow-y: visible;overflow-x: visible;height: 0px;width: 18%;box-sizing: content-box;}
+
+#sh_blog_21 .w270{vertical-align:top;width:270px;}
+#sh_blog_21 .box .img img{height: 150px;width: 100%;object-fit: cover;}
+#sh_blog_21 .box .content h5{font-weight: bold;font-size: 20px;margin: 0;padding: 8px 0;color: $sh_emate_theme1_color_text_header;text-align: left;font-family: 'Poppins', sans-serif;}
+#sh_blog_21 .box .content p{font-size: 15px;color: $sh_emate_theme1_color_text_content;font-weight: normal;margin-bottom: 10px;text-align: left;display: block;font-family: 'Poppins', sans-serif;}
+#sh_blog_21 .box .content a.btn_readmore{text-decoration: none;font-size: 15px;color: $sh_emate_theme1_color_primary;text-align: left;font-family: 'Poppins', sans-serif;}
+#sh_blog_21 .box .content{padding: 20px 0px;background: transparent;text-align: left;font-family: 'Poppins', sans-serif;}
+
+/*====== footer ========*/
+ .sh_emate_footer_14{background-color: #424242;}
+
+#sh_footer_21 .part1 h2{font-size: 22px;margin-bottom: 20px;color: #fff;}
+#sh_footer_21 .part1 .text{font-size: 15px;color: #f4f4f4;display: block;font-family: 'Poppins', sans-serif;}
+#sh_footer_21 .part1  a{text-decoration: none;color: #f4f4f4;font-size: 12px;font-weight: bold;font-family: 'Poppins', sans-serif;}
+#sh_footer_21 .part2 h3, #sh_footer_21 .part3 h3{font-size: 20px;font-weight: bolder;margin-bottom: 30px;margin-top: 0px;color: #fff;font-family: 'Poppins', sans-serif;}
+#sh_footer_21 .part2 ul li, #sh_footer_21 .part3 ul li{display: block;padding-bottom: 15px;font-size: 14px;list-style-type: none;}
+#sh_footer_21 .part2 ul li a, #sh_footer_21 .part3 ul li a{text-decoration: none;color: #f4f4f4;font-family: 'Poppins', sans-serif;font-weight: normal;}
+#sh_footer_21 {padding: 30px 10px 0px 10px;margin-top: 0px;}
+#sh_footer_21 .part3.division{margin-bottom: 20px;color: #f4f4f4;font-family: 'Poppins', sans-serif;}
+#sh_footer_21 .part1 a{padding-top: 15px;display: inline-block;font-family: 'Poppins', sans-serif;}
+#sh_footer_21 ul li{list-style-type: none;}
+#sh_footer_21 .width130{width: 130px;}
+#sh_footer_21 .width150{width: 150px;}
+#sh_footer_21 .plr10{padding-left: 10px;padding-right: 10px;}
+#sh_footer_21 .part1 .bottom_icon span,#sh_footer_21 .part1 .bottom_icon img{color: #fff;padding: 5px 8px;font-size: 18px;}
+
+
+/*====== copyright ======*/
+.sh_emate_copyright_6{background: #252525;}
+
+#sh_copyright_21 .bottom-footer{padding: 10px 0px;text-align: center;border-top: 1px solid #fff;}
+#sh_copyright_21 .bottom-footer p{color: #fff;font-size: 15px;margin: 10px 0px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

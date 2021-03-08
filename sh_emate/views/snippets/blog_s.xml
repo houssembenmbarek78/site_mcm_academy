@@ -1,0 +1,1569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+
+	
+	<!-- 
+	==============================================================================
+	
+	<template id="sh_emate_blog_tmpl_1" name="Blog 1">
+	    <div class="sh_emate_blog_div_1">
+	        <div id="sh_emate_blog_div_1" data-tmpl-item="">
+	
+	            <div class="js_cls_sh_mail_snippet_general">
+	
+
+				 
+				WRITE YOUR CUSTOM CODE HERE
+
+	
+
+	
+	            </div>
+	
+	        </div>
+	    </div>
+	</template>	
+	
+	==============================================================================
+	 -->
+	 
+	 
+
+
+
+<!-- blog template 1 -->
+
+<template id="sh_emate_blog_tmpl_1" name="Blogs 1">
+	<div class="sh_emate_blog_div_1">
+		<div id="sh_emate_blog_div_1" class="sh_emate_s_item_sh_emate_blog_tmpl_item_1">
+		
+			<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_blog_1">
+		       <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+		            <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+				                    <h3>Our Blogs</h3>
+				                    <hr/>
+				                    <p class="detail">Lorem ipsum dolor sit amet, consectetur<br/>adipiscing elit. Curabitur placerat.</p>
+				                </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				  </table>
+		        
+		        
+		        	<div class="js_cls_sh_mail_snippet_general">
+		            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col">
+		                <tbody>
+		                    <tr>
+		                        <td style="vertical-align:top;width:180px;" class="o_mail_col_mv o_mail_col_container plr10">
+		                            <div class="box">
+					                    <div class="img">
+					                        <img src="/sh_emate/static/src/img/tmpl_1/temp1_blog1.jpg" alt="Blog1" title="Blog1"/>
+					                        <div class="content">
+						                        <h5>LOREM IPSUM</h5>
+						                        <p>Lorem ipsum dolor sit amet,consectetur edipiscing elit.</p>
+						                        <a href="#" class="btn_readmore">READ MORE</a>
+						                    </div>
+					                    </div>
+					                </div>
+		                        </td>
+		
+		                        <td style="vertical-align:top;width:180px;" class="o_mail_col_mv o_mail_col_container plr10">
+		                            <div class="box">
+					                    <div class="img">
+					                        <img src="/sh_emate/static/src/img/tmpl_1/temp1_blog2.jpg" alt="Blog2" title="Blog2"/>
+					                        <div class="content">
+						                        <h5>LOREM IPSUM</h5>
+						                        <p>Lorem ipsum dolor sit amet,consectetur edipiscing elit.</p>
+						                        <a href="#" class="btn_readmore">READ MORE</a>
+						                    </div>
+					                    </div>
+					                </div>
+		                        </td>
+		
+		                        <td style="vertical-align:top;width:180px;" class="o_mail_col_mv o_mail_col_container plr10">
+		                            <div class="box">
+					                    <div class="img">
+					                        <img src="/sh_emate/static/src/img/tmpl_1/temp1_blog3.jpg" alt="Blog3" title="Blog3"/>
+					                        <div class="content">
+						                        <h5>LOREM IPSUM</h5>
+						                        <p>Lorem ipsum dolor sit amet,consectetur edipiscing elit.</p>
+						                        <a href="#" class="btn_readmore">READ MORE</a>
+						                    </div>
+					                    </div>
+					                </div>
+		                        </td>
+		                    </tr>
+		                </tbody>
+		            </table>
+		            </div>
+		            
+		            
+		        </div>
+		    </div> 
+		    
+		</div>
+	</div>
+</template>
+
+<!-- end blog template 1  -->
+
+<!-- blog template 2 -->
+
+<template id="sh_emate_blog_tmpl_2" name="Blogs 2">
+	<div class="sh_emate_blog_div_2">
+		<div id="sh_emate_blog_div_2" class="sh_emate_s_item_sh_emate_blog_tmpl_item_2">
+		
+			<div class="o_mail_block_blog" data-name="Image - Text" id="sh_blog_2">
+		        <div class="o_mail_snippet_general">
+		        	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+			            <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+					                    <h3>LOREM IPSUM</h3>
+				                    	<p class="detail">Lorem ipsum dolor sit amet</p>
+					                </center>
+					            </td>
+					        </tr>
+					     </tbody>
+					</table>
+					
+					<div class="js_cls_sh_mail_snippet_general">
+			            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+			                <tbody>
+			                    <tr>
+			                        <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+			                            <img src="/sh_emate/static/src/img/tmpl_2/temp2_blog2.jpg" class="d-block mx-auto" alt="Your Picture" />
+			                        </td>
+			                        <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 p8">
+			                            <h5 class="o_default_snippet_text">LOREM IPSUM</h5>
+			                            <p class="o_mail_no_margin o_default_snippet_text">Lorem ipsum dolor sit amet,consectetur edipiscing elit.Curabitur placerat.</p>
+			                            <div class="text-left mt-10">
+			                                <a role="button" href="#" class="btn btn-link o_default_snippet_text btn_readmore">Read More</a>
+			                            </div>
+			                        </td>
+			                        <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+			                            <img src="/sh_emate/static/src/img/tmpl_2/temp2_blog3.jpg" class="d-block mx-auto" alt="Your Picture" />
+			                        </td>
+			                        <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 p8">
+			                            <h5 class="o_default_snippet_text">LOREM IPSUM</h5>
+			                            <p class="o_mail_no_margin o_default_snippet_text">Lorem ipsum dolor sit amet,consectetur edipiscing elit.Curabitur placerat.</p>
+			                            <div class="text-left mt-10">
+			                                <a role="button" href="#" class="btn btn-link o_default_snippet_text btn_readmore">Read More</a>
+			                            </div>
+			                        </td>
+			                    </tr>
+			                </tbody>
+			            </table>
+			         </div>
+		        </div>
+		    </div>
+		</div>
+	</div>
+</template>
+
+<!-- end blog template 2  -->
+
+<!-- blog template 3 -->
+
+<template id="sh_emate_blog_tmpl_3" name="Blogs 3">
+	<div class="sh_emate_blog_div_3">
+		<div id="sh_emate_blog_div_3" class="sh_emate_s_item_sh_emate_blog_tmpl_item_3">
+		
+			
+			<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_blog_3">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+		            <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+				                    <h3>LOREM IPSUM</h3>
+				                   	<p class="detail">LOREM SIMPLY DUMMY INDUSTRY</p>
+				                </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				  </table>
+		        
+		        	<div class="js_cls_sh_mail_snippet_general">
+			            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+			                <tbody>
+			                    <tr>
+			                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+			                            <div class="box text-center">
+					                        <div class="img">
+						                        <img src="/sh_emate/static/src/img/tmpl_3/temp1_blog2.jpg" alt="Blog1" title="Blog1"/>
+						                        <div class="content">
+							                        <h5>LOREM IPSUM</h5>
+							                        <p>LOREM DOLOR SIMPLY DUMMY INDUSTRY</p>
+							                        <a href="#" class="btn_readmore">Read More</a>
+							                    </div>
+						                    </div>
+					                    </div>
+			                        </td>
+			
+			                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+			                            <div class="box text-center">
+					                        <div class="img">
+						                        <img src="/sh_emate/static/src/img/tmpl_3/temp1_blog3.jpg" alt="Blog2" title="Blog2"/>
+						                        <div class="content">
+							                        <h5>LOREM IPSUM</h5>
+							                        <p>LOREM DOLOR SIMPLY DUMMY INDUSTRY</p>
+							                        <a href="#" class="btn_readmore">Read More</a>
+							                    </div>
+						                    </div>
+					                    </div>
+			                        </td>
+			
+			                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+			                            <div class="box text-center">
+					                        <div class="img">
+						                        <img src="/sh_emate/static/src/img/tmpl_3/temp1_blog1.jpg" alt="Blog3" title="Blog3"/>
+						                        <div class="content">
+							                        <h5>LOREM IPSUM</h5>
+							                        <p>LOREM DOLOR SIMPLY DUMMY INDUSTRY</p>
+							                        <a href="#" class="btn_readmore">Read More</a>
+							                    </div>
+						                    </div>
+					                    </div>
+			                        </td>
+			                    </tr>
+			                </tbody>
+			            </table>
+			         </div>
+		        </div>
+		    </div> 
+		</div>
+	</div>
+</template>
+
+<!-- end blog template 3  -->
+
+<!-- blog template 4 -->
+
+<template id="sh_emate_blog_tmpl_4" name="Blogs 4">
+	<div class="sh_emate_blog_div_4">
+		<div id="sh_emate_blog_div_4" class="sh_emate_s_item_sh_emate_blog_tmpl_item_4">
+		
+			
+			<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_blog_4">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+		            <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+			                        <h3>LATEST BLOG</h3>
+			                        <p class="detail">LOREM SIMPLY DUMMY INDUSTRY</p>
+			                    </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				  </table>
+		        
+		        	<div class="js_cls_sh_mail_snippet_general">
+			            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+			                <tbody>
+			                    <tr>
+			                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+			                            <div class="box text-center">
+					                        <img src="/sh_emate/static/src/img/tmpl_4/temp4_blog1.jpg" alt="Blog1" title="Blog1"/>
+					                        <div class="content">
+						                        <a href="#"><h5>LOREM IPSUM</h5></a>
+						                        <p>20 June 2020</p>
+						                    </div>
+					                    </div>
+			                        </td>
+			
+			                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+			                            <div class="box text-center">
+					                        <img src="/sh_emate/static/src/img/tmpl_4/temp4_blog2.jpg" alt="Blog2" title="Blog2"/>
+					                        <div class="content">
+						                        <a href="#"><h5>LOREM IPSUM</h5></a>
+						                        <p>20 June 2020</p>
+						                    </div>
+					                    </div>
+			                        </td>
+			
+			                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+			                            <div class="box text-center">
+					                        <img src="/sh_emate/static/src/img/tmpl_4/temp4_blog3.jpg" alt="Blog3" title="Blog3"/>
+					                        <div class="content">
+						                        <a href="#"><h5>LOREM IPSUM</h5></a>
+						                        <p>20 June 2020</p>
+						                    </div>
+					                    </div>
+			                        </td>
+			                    </tr>
+			                </tbody>
+			            </table>
+			         </div>
+		        </div>
+		    </div>
+		</div>
+	</div>
+</template>
+
+<!-- end blog template 4  -->
+
+
+<!-- blog template 5 -->
+
+<template id="sh_emate_blog_tmpl_5" name="Blogs 5">
+	<div class="sh_emate_blog_div_5">
+		<div id="sh_emate_blog_div_5" class="sh_emate_s_item_sh_emate_blog_tmpl_item_5">
+		
+			
+			<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_blog_5">
+			      <div class="o_mail_snippet_general">
+				      <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+				          <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+					                    <h3>LOREM IPSUM</h3>
+					                </center>
+					            </td>
+					        </tr>
+					     </tbody>
+					  </table>
+			      
+			      
+			      	<div class="js_cls_sh_mail_snippet_general">
+				        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+				            <tbody>
+				                <tr>
+				                    <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+				                        <div class="box">
+				                            <img src="/sh_emate/static/src/img/tmpl_5/temp4_blog2.jpg" class="d-block mx-auto" alt="Your Picture" />
+				                            <div class="content">
+						                        <h5>LOREM IPSUM</h5>
+						                        <p>Lorem ipsum dolor sit amet,consectetur edipiscing elit.</p>
+						                        <a href="#" class="btn_readmore">Read More</a>
+						                    </div>
+				                        </div>
+				                    </td>
+				
+				                    <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+				                        <div class="box">
+				                            <img src="/sh_emate/static/src/img/tmpl_5/temp4_blog3.jpg" class="d-block mx-auto" alt="Your Picture" />
+				                            <div class="content">
+						                        <h5>LOREM IPSUM</h5>
+						                        <p>Lorem ipsum dolor sit amet,consectetur edipiscing elit.</p>
+						                        <a href="#" class="btn_readmore">Read More</a>
+						                    </div>
+				                        </div>
+				                    </td>
+				
+				                    <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+				                        <div class="box">
+				                            <img src="/sh_emate/static/src/img/tmpl_5/temp4_blog1.jpg" class="d-block mx-auto" alt="Your Picture" />
+				                            <div class="content">
+						                        <h5>LOREM IPSUM</h5>
+						                        <p>Lorem ipsum dolor sit amet,consectetur edipiscing elit.</p>
+						                        <a href="#" class="btn_readmore">Read More</a>
+						                    </div>
+				                        </div>
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				    </div>
+			    </div>
+			</div> 
+		</div>
+	</div>
+</template>
+
+<!-- end blog template 5  -->
+
+<!-- blog template 6 -->
+
+<template id="sh_emate_blog_tmpl_6" name="Blogs 6">
+	<div class="sh_emate_blog_div_6">
+		<div id="sh_emate_blog_div_6" class="sh_emate_s_item_sh_emate_blog_tmpl_item_6">
+		
+			
+			<div class="o_mail_block_blog" data-name="Image - Text" id="sh_blog_6">
+			    <div class="o_mail_snippet_general">
+			      	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+			           <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+				                        <h3>LOREM IPSUM</h3>
+				                        <p class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br/> incididunt ut labore et dolore magna</p>
+				                    </center>
+					            </td>
+					        </tr>
+					     </tbody>
+					</table>
+					
+						<div class="js_cls_sh_mail_snippet_general">
+				          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+				              <tbody>
+				                  <tr>
+				                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+				                          <img src="/sh_emate/static/src/img/tmpl_6/temp4_blog1.jpg" class="d-block mx-auto" alt="Your Picture" />
+				                      </td>
+				                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 text-left p8">
+				                          <div class="content">
+						                       <h6>June 15,2020</h6>
+						                       <p>Lorem ipsum dolor sit amet,consectetur edipiscing elit.</p>
+						                       <hr/>
+						                       <a href="#" class="btn_readmore">READ MORE</a>
+						                  </div>
+				                      </td>
+				                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+				                          <img src="/sh_emate/static/src/img/tmpl_6/temp4_blog2.jpg" class="d-block mx-auto" alt="Your Picture" />
+				                      </td>
+				                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 text-left p8">
+					                       <div class="content">
+						                        <h6>June 15,2020</h6>
+						                       	<p>Lorem ipsum dolor sit amet,consectetur edipiscing elit.</p>
+						                       	<hr/>
+						                       	<a href="#" class="btn_readmore">READ MORE</a>
+						                  </div>
+				                      </td>
+				                  </tr>
+				              </tbody>
+				          </table>
+				       </div>
+			      </div>
+			  </div>
+		</div>
+	</div>
+</template>
+
+<!-- end blog template 6  -->
+
+<!-- blog template 7 -->
+
+<template id="sh_emate_blog_tmpl_7" name="Blogs 7">
+	<div class="sh_emate_blog_div_7">
+		<div id="sh_emate_blog_div_7" class="sh_emate_s_item_sh_emate_blog_tmpl_item_7">
+		
+			
+			<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_blog_7">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+		            <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+				                    <h3>LOREM IPSUM</h3>
+				                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+				                </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				  </table>
+		        
+		        	<div class="js_cls_sh_mail_snippet_general">
+			            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+			                <tbody>
+			                    <tr>
+			                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+			                            <div class="box text-center">
+					                        <div class="img">
+						                        <img src="/sh_emate/static/src/img/tmpl_7/temp4_blog1.jpg" alt="Blog1" title="Blog1"/>
+						                        <div class="content">
+							                        <a href="#"><h5>LOREM IPSUM</h5></a>
+							                        <p>15 JUNE 2020</p>
+							                    </div>
+						                    </div>
+					                    </div>
+			                        </td>
+			
+			                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+			                            <div class="box text-center">
+					                        <div class="img">
+						                        <img src="/sh_emate/static/src/img/tmpl_7/temp4_blog2.jpg" alt="Blog2" title="Blog2"/>
+						                        <div class="content">
+							                        <a href="#"><h5>LOREM IPSUM</h5></a>
+							                        <p>15 JUNE 2020</p>
+							                    </div>
+						                    </div>
+					                    </div>
+			                        </td>
+			
+			                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+			                            <div class="box text-center">
+					                        <div class="img">
+						                        <img src="/sh_emate/static/src/img/tmpl_7/temp4_blog3.jpg" alt="Blog3" title="Blog3"/>
+						                        <div class="content">
+							                        <a href="#"><h5>LOREM IPSUM</h5></a>
+							                        <p>15 JUNE 2020</p>
+							                    </div>
+						                    </div>
+					                    </div>
+			                        </td>
+			                    </tr>
+			                </tbody>
+			            </table>
+			        </div>
+		        </div>
+		    </div> 
+		</div>
+	</div>
+</template>
+
+<!-- end blog template 7  -->
+
+<!-- blog template 8 -->
+
+<template id="sh_emate_blog_tmpl_8" name="Blogs 8">
+	<div class="sh_emate_blog_div_8">
+		<div id="sh_emate_blog_div_8" class="sh_emate_s_item_sh_emate_blog_tmpl_item_8">
+			
+			<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_blog_8">
+			     <div class="o_mail_snippet_general">
+			      <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+			          <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+					                    <h3>Latest Blog</h3>
+					                    <hr/>
+					                    <p class="detail">Lorem ipsum dolor sit amet, consectetur edipiscing elit, Curabitur placerat .</p>
+					                </center>
+					            </td>
+					        </tr>
+					     </tbody>
+					  </table>
+			      
+			      	  <div class="js_cls_sh_mail_snippet_general">
+				          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+				              <tbody>
+				                  <tr>
+				                      <td class="o_mail_col_mv o_mail_col_container w180 plr10">
+				                          <div class="box">
+						                       	<div class="img">
+							                        <img src="/sh_emate/static/src/img/tmpl_8/temp8_blog1.jpg" alt="Blog1" title="Blog1"/>
+							                    </div>
+							                     <div class="content">
+							                        <a href="#"><h5>Lorem ipsum is simply dummy text of the...</h5></a>
+							                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.Lorem ipsum has been the industry...</p>
+							                        <hr/>
+							                        <p class="date"><span class="fa fa-calendar"></span>10 DEC, 2018</p>
+							                    </div>
+						                  </div>
+				                      </td>
+				
+				                      <td class="o_mail_col_mv o_mail_col_container w180 plr10">
+				                          <div class="box">
+							                    <div class="img">
+							                        <img src="/sh_emate/static/src/img/tmpl_8/temp8_blog2.jpg" alt="Blog2" title="Blog2"/>
+							                    </div>
+							                    <div class="content">
+							                        <a href="#"><h5>Lorem ipsum is simply dummy text of the...</h5></a>
+							                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.Lorem ipsum has been the industry...</p>
+							                        <hr/>
+							                        <p class="date"><span class="fa fa-calendar"></span>10 DEC, 2018</p>
+							                    </div>
+							              </div>
+				                      </td>
+				
+				                      <td class="o_mail_col_mv o_mail_col_container w180 plr10">
+				                          <div class="box">
+					                    		<div class="img">
+							                        <img src="/sh_emate/static/src/img/tmpl_8/temp8_blog3.jpg" alt="Blog3" title="Blog3"/>
+							                    </div>
+							                    <div class="content">
+							                        <a href="#"><h5>Lorem ipsum is simply dummy text of the...</h5></a>
+							                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.Lorem ipsum has been the industry...</p>
+							                        <hr/>
+							                        <p class="date"><span class="fa fa-calendar"></span>10 DEC, 2018</p>
+							                    </div>
+					                	  </div>
+				                      </td>
+				                  </tr>
+				              </tbody>
+				          </table>
+				       </div>
+			      </div>
+			</div> 
+		</div>
+	</div>
+</template>
+
+<!-- end blog template 8  -->
+
+<!-- blog template 9 -->
+
+<template id="sh_emate_blog_tmpl_9" name="Blogs 9">
+	<div class="sh_emate_blog_div_9">
+		<div id="sh_emate_blog_div_9" class="sh_emate_s_item_sh_emate_blog_tmpl_item_9">
+		
+			<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_blog_9">
+			    <div class="o_mail_snippet_general">
+			        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+			            <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+					                    <h3>LOREM IPSUM</h3>
+				                        <hr/>
+					                </center>
+					            </td>
+					        </tr>
+					     </tbody>
+					 </table>
+			        
+			        <div class="js_cls_sh_mail_snippet_general">
+				        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+				            <tbody>
+				                <tr>
+				                    <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+				                        <div class="box text-center">
+					                      <div class="img">
+					                          <img src="/sh_emate/static/src/img/tmpl_9/temp8_blog3.jpg" alt="Product1" title="Product1" />
+				                          		<div class="content">
+						                        	<a href="#"><h5>LOREM IPSUM</h5></a>
+						                        	<h6>18 January 2020</h6>
+						                        	<p>Lorem ipsum is simply dummy text of the printing and typesetting industry...</p>
+						                        	<a href="#" class="btn_readmore">READ MORE</a>
+						                    	</div>
+					                      </div>
+					                    </div>
+				                     </td>
+				
+				                    <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+				                        <div class="box text-center">
+					                      <div class="img">
+					                          <img src="/sh_emate/static/src/img/tmpl_8/temp8_blog2.jpg" alt="Product2" title="Product2" />
+					                          <div class="content">
+						                           <a href="#"><h5>LOREM IPSUM</h5></a>
+						                           <h6>18 January 2020</h6>
+						                           <p>Lorem ipsum is simply dummy text of the printing and typesetting industry...</p>
+						                           <a href="#" class="btn_readmore">READ MORE</a>
+						                      </div>
+					                      </div>
+					                  </div>
+				                    </td>
+				
+				                    <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+				                        <div class="box text-center">
+					                      <div class="img">
+					                          <img src="/sh_emate/static/src/img/tmpl_9/temp8_blog1.jpg" alt="Product3" title="Product3" />
+					                          <div class="content">
+						                        <a href="#"><h5>LOREM IPSUM</h5></a>
+						                        <h6>18 January 2020</h6>
+						                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry...</p>
+						                        <a href="#" class="btn_readmore">READ MORE</a>
+						                      </div>
+					                      </div>
+					                  </div>
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				     </div>
+			    </div>
+			</div> 
+		</div>
+	</div>
+</template>
+
+<!-- end blog template 9  -->
+
+<!-- blog template 10 -->
+
+<template id="sh_emate_blog_tmpl_10" name="Blogs 10">
+	<div class="sh_emate_blog_div_10">
+		<div id="sh_emate_blog_div_10" class="sh_emate_s_item_sh_emate_blog_tmpl_item_10">
+		
+			<div class="o_mail_block_image_text" data-name="Image - Text" id="sh_blog_10">
+			    <div class="o_mail_snippet_general">
+			    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+				        <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+					                    <h3 class="title">LOREM IPSUM</h3>
+				                    	<hr/>
+				                    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do euismodtempor incididunt ut.</p>
+					                </center>
+					            </td>
+					        </tr>
+					     </tbody>
+					  </table>
+					  
+					  <div class="js_cls_sh_mail_snippet_general">
+				        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+				            <tbody>
+				                <tr>
+				                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding img p10">
+				                        <img src="/sh_emate/static/src/img/tmpl_10/temp8_blog2.jpg" class="d-block mx-auto" alt="Your Picture" />
+				                    </td>
+				                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+				                        <div class="content">
+					                        <a href="#"><h5>Lorem ipsum</h5></a>
+					                        <hr/>
+					                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown...</p>
+					                        <p class="date"><span class="fa fa-calendar"></span>10 dec, 2018</p>
+					                    </div>
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				        
+				        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+				            <tbody>
+				                <tr>
+				                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+				                        <div class="content">
+					                        <a href="#"><h5>Lorem ipsum</h5></a>
+					                        <hr/>
+					                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown...</p>
+					                        <p class="date"><span class="fa fa-calendar"></span>10 dec, 2018</p>
+					                    </div>
+				                    </td>
+				                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding img p10">
+				                        <img src="/sh_emate/static/src/img/tmpl_10/temp8_blog3.jpg" class="d-block mx-auto" alt="Your Picture" />
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				     </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<!-- end blog template 10  -->
+
+<!-- blog template 11 -->
+
+<template id="sh_emate_blog_tmpl_11" name="Blogs 11">
+	<div class="sh_emate_blog_div_11">
+		<div id="sh_emate_blog_div_11" class="sh_emate_s_item_sh_emate_blog_tmpl_item_11">
+		
+			<div class="o_mail_block_two_cols" data-name="Two Columns" id="sh_blog_11">
+			    <div class="o_mail_snippet_general">
+			    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt0 mlr10">
+				           <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+					                    <h3>LOREM IPSUM</h3>
+					                </center>
+					            </td>
+					        </tr>
+					     </tbody>
+					</table>
+					
+					<div class="js_cls_sh_mail_snippet_general">
+				        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt-0">
+				            <tbody>
+				                <tr>
+				                    <td class="o_mail_col_mv o_mail_col_container">
+				                        <div class="box">
+				                        	<div class="img">
+				                        		<img src="/sh_emate/static/src/img/tmpl_8/temp8_blog1.jpg" class="d-block mx-auto" alt="Your Picture" />
+				                        	</div>
+				                            <div class="content">
+					                        	<p>JUNE 15, 2020</p>
+						                        <h5>Lorem ipsum dolor sit amet</h5>
+						                        <p>Lorem ipsum dolor sit consectetur adipiscing elit</p>
+						                        <hr/>
+						                        <a href="#" class="btn_readmore">READ MORE</a>
+						                    </div>
+				                        </div>
+				                    </td>
+				
+				                    <td class="o_mail_col_mv o_mail_col_container">
+				                        <div class="box">
+				                        	<div class="img">
+				                        		<img src="/sh_emate/static/src/img/tmpl_8/temp8_blog2.jpg" class="d-block mx-auto" alt="Your Picture" />
+				                        	</div>
+				                            <div class="content">
+					                        	<p>JUNE 15, 2020</p>
+						                        <h5>Lorem ipsum dolor sit amet</h5>
+						                        <p>Lorem ipsum dolor sit consectetur adipiscing elit</p>
+						                        <hr/>
+						                        <a href="#" class="btn_readmore">READ MORE</a>
+						                    </div>
+				                        </div>
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				     </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<!-- end blog template 11  -->
+
+<!-- blog template 12 -->
+
+<template id="sh_emate_blog_tmpl_12" name="Blogs 12">
+	<div class="sh_emate_blog_div_12">
+		<div id="sh_emate_blog_div_12" class="sh_emate_s_item_sh_emate_blog_tmpl_item_12">
+		
+			<div class="o_mail_block_blog" data-name="Image - Text" id="sh_blog_12">
+		    <div class="o_mail_snippet_general">
+		      	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+		           <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+			                        <h3>LOREM IPSUM</h3>
+			                    </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				</table>
+				
+					<div class="js_cls_sh_mail_snippet_general">
+			          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+			              <tbody>
+			                  <tr>
+			                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 text-left p8">
+			                          <div class="content">
+				                        <a href="#"><h5>Lorem ipsum dolor sit amet</h5></a>
+				                        <p>20 June, 2020</p>
+				                      </div>
+			                      </td>
+			                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+			                          <img src="/sh_emate/static/src/img/tmpl_12/temp12_blog1.jpg" class="d-block mx-auto" alt="Your Picture" />
+			                      </td>
+			                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 text-left p8">
+				                       <div class="content">
+					                       <a href="#"><h5>Lorem ipsum dolor sit amet</h5></a>
+					                       <p>20 June, 2020</p>
+					                   </div>
+			                      </td>
+			                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+			                          <img src="/sh_emate/static/src/img/tmpl_12/temp12_blog2.jpg" class="d-block mx-auto" alt="Your Picture" />
+			                      </td>
+			                  </tr>
+			              </tbody>
+			          </table>
+			       </div>
+		      </div>
+		  </div>
+		</div>
+	</div>
+</template>
+
+<!-- end blog template 12  -->
+
+<!-- blog template 13 -->
+
+<template id="sh_emate_blog_tmpl_13" name="Blogs 13">
+	<div class="sh_emate_blog_div_13">
+		<div id="sh_emate_blog_div_13" class="sh_emate_s_item_sh_emate_blog_tmpl_item_13">
+		
+			<div class="o_mail_block_text_image" data-name="Text - Image" id="sh_blog_13">
+			    <div class="o_mail_snippet_general">
+			    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+			            <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+					                    <h3>LOREM IPSUM</h3>
+					                   	<p class="detail">LOREM SIMPLY DUMMY INDUSTRY</p>
+					                </center>
+					            </td>
+					        </tr>
+					     </tbody>
+					  </table>
+					  
+					  <div class="js_cls_sh_mail_snippet_general">
+				          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+				            <tbody>
+				                <tr>
+				                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270">
+				                        <div class="content">
+					                        <a href="#"><h3>Lorem ipsum dolor sit amet</h3></a>
+					                        <hr/>
+					                        <p>Lorem ipsum dolor sit amet, consectetur edipiscing elit. Curabitur placerat tellus sit amet ipsum ornare. Lorem ipsum dolor sit consectetur edipiscing elit. Curabitur placerat tellus sit amet.</p>
+					                    </div>
+				                    </td>
+				                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270">
+				                        <div class="img">
+					                        <img src="/sh_emate/static/src/img/tmpl_13/temp13_blog1.jpg" alt="image" />
+					                    </div>
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+				            <tbody>
+				                <tr>
+				                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270">
+				                        <div class="content">
+					                        <a href="#"><h3>Lorem ipsum dolor sit amet</h3></a>
+					                        <hr/>
+					                        <p>Lorem ipsum dolor sit amet, consectetur edipiscing elit. Curabitur placerat tellus sit amet ipsum ornare. Lorem ipsum dolor sit consectetur edipiscing elit. Curabitur placerat tellus sit amet.</p>
+					                    </div>
+				                    </td>
+				                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270">
+				                        <div class="img">
+					                        <img src="/sh_emate/static/src/img/tmpl_13/temp12_blog2.jpg" alt="image" />
+					                    </div>
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				     </div>
+			    </div>
+			</div> 
+		</div>
+	</div>
+</template>
+
+<!-- end blog template 13  -->
+
+<!-- blog template 14 -->
+
+<template id="sh_emate_blog_tmpl_14" name="Blogs 14">
+	<div class="sh_emate_blog_div_14">
+		<div id="sh_emate_blog_div_14" class="sh_emate_s_item_sh_emate_blog_tmpl_item_14">
+		
+			<div class="o_mail_block_two_cols" data-name="Two Columns" id="sh_blog_14">
+			    <div class="o_mail_snippet_general">
+			    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_h_padding o_mail_v_padding o_mail_col_table plr20">
+				           <tbody>
+					        <tr>
+					            <td width="100%" class="heading text-left">
+					                <h3>LOREM IPSUM</h3>
+			                        <p class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+					            </td>
+					        </tr>
+					     </tbody>
+					</table>
+					
+					<div class="js_cls_sh_mail_snippet_general">
+				        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+				            <tbody>
+				                <tr>
+				                    <td class="o_mail_col_mv o_mail_col_container plr10">
+				                        <div class="box">
+				                        	<div class="img">
+				                        		<img src="/sh_emate/static/src/img/tmpl_14/temp12_blog2.jpg" class="d-block mx-auto" alt="Your Picture" />
+				                        	</div>
+				                            <div class="content">
+						                        <a href="#"><h5>Lorem ipsum dolor sit amet</h5></a>
+						                        <p>Lorem ipsum dolor sit amet,consectetur edipiscing elit, sed do euismod tempor insididunt ut labore et dolore magna</p>
+						                    </div>
+				                        </div>
+				                    </td>
+				
+				                    <td class="o_mail_col_mv o_mail_col_container plr10">
+				                        <div class="box">
+				                        	<div class="img">
+				                        		<img src="/sh_emate/static/src/img/tmpl_14/temp14_blog2.jpg" class="d-block mx-auto" alt="Your Picture" />
+				                        	</div>
+				                            <div class="content">
+						                        <a href="#"><h5>Lorem ipsum dolor sit amet</h5></a>
+						                        <p>Lorem ipsum dolor sit amet,consectetur edipiscing elit, sed do euismod tempor insididunt ut labore et dolore magna</p>
+						                    </div>
+				                        </div>
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				    </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<!-- end blog template 14  -->
+
+<!-- blog template 15 -->
+
+<template id="sh_emate_blog_tmpl_15" name="Blogs 15">
+	<div class="sh_emate_blog_div_15">
+		<div id="sh_emate_blog_div_15" class="sh_emate_s_item_sh_emate_blog_tmpl_item_15">
+		
+			<div class="o_mail_block_text_image" data-name="Text - Image" id="sh_blog_15">
+			    <div class="o_mail_snippet_general">
+			    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table">
+			            <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+					                    <h3>Latest Blogs</h3>
+					                    <hr/>
+					                    <p class="detail">Lorem ipsum dolor sit amet, consectetur<br/>adipiscing elit. Curabitur placerat.</p>
+					                </center>
+					            </td>
+					        </tr>
+					    </tbody>
+					</table>
+					<div class="js_cls_sh_mail_snippet_general">
+				        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+				            <tbody>
+				                <tr>
+				                	<td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270 p10">
+				                        <div class="content">
+					                        <h5>LOREM IPSUM</h5>
+					                        <h6>18 January 2020</h6>
+					                        <p>Lorem ipsum dolor sit amet consectetur edipiscing elit tempor suscipit consectetur enim sit amet poro consectetur. Lorem ipsum dolor sit amet...</p>
+					                        <a href="#" class="btn_viewmore">VIEW MORE</a>
+					                    </div>
+				                    </td>
+				                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270 p10">
+				                        <div class="img">
+					                        <img src="/sh_emate/static/src/img/tmpl_15/temp15_blog1.jpg" alt="image" />
+					                    </div>
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+				            <tbody>
+				                <tr>
+				                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270 p10">
+				                        <div class="img">
+					                        <img src="/sh_emate/static/src/img/tmpl_15/temp15_blog2.jpg" alt="image" />
+					                    </div>
+				                    </td>
+				                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270 p10">
+				                        <div class="content">
+					                        <h5>LOREM IPSUM</h5>
+					                        <h6>18 January 2020</h6>
+					                        <p>Lorem ipsum dolor sit amet consectetur edipiscing elit tempor suscipit consectetur enim sit amet poro consectetur. Lorem ipsum dolor sit amet...</p>
+					                        <a href="#" class="btn_viewmore">VIEW MORE</a>
+					                    </div>
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				    </div>
+			    </div>
+			</div> 
+		</div>
+	</div>
+</template>
+
+<!-- end blog template 15  -->
+
+<!-- blog template 16 -->
+
+<template id="sh_emate_blog_tmpl_16" name="Blogs 16">
+	<div class="sh_emate_blog_div_16">
+		<div id="sh_emate_blog_div_16" class="sh_emate_s_item_sh_emate_blog_tmpl_item_16">
+		
+			<div class="o_mail_block_image_text" data-name="Image - Text" id="sh_blog_16">
+			    <div class="o_mail_snippet_general">
+			    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt0 mlr10">
+				           <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+					                    <a class="title-btn">LOREM IPSUM</a>
+					                </center>
+					            </td>
+					        </tr>
+					     </tbody>
+					</table>
+					
+					<div class="js_cls_sh_mail_snippet_general">
+				        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+				            <tbody>
+				                <tr>
+				                	<td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w260 pr0 img">
+				                		<div class="box">
+					                        <div class="content">
+						                        <p>Lorem ipsum dolor sit amet consectetur edipiscing elit tempor suscipit consectetur enim sit amet poro consectetur. Lorem ipsum dolor sit amet consectetur edipiscing elit...</p>
+						                        <a href="#" class="btn_readmore">Read More</a>
+						                    </div>
+					                    </div>
+				                    </td>
+				                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding text-left content w260 pl0">
+				                        <img src="/sh_emate/static/src/img/tmpl_16/temp15_blog2.jpg" class="d-block mx-auto" alt="Your Picture" />
+				                    </td>
+				                </tr>
+				                
+				                <tr>
+				                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding text-left content w260 pr0">
+				                        <img src="/sh_emate/static/src/img/tmpl_16/temp15_blog1.jpg" class="d-block mx-auto" alt="Your Picture" />
+				                    </td>
+				                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w260 pl0 img">
+				                        <div class="box">
+					                        <div class="content">
+						                        <p>Lorem ipsum dolor sit amet consectetur edipiscing elit tempor suscipit consectetur enim sit amet poro consectetur. Lorem ipsum dolor sit amet consectetur edipiscing elit...</p>
+						                        <a href="#" class="btn_readmore">Read More</a>
+						                    </div>
+					                    </div>
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				     </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<!-- end blog template 16  -->
+
+<!-- blog template 17 -->
+
+<template id="sh_emate_blog_tmpl_17" name="Blogs 17">
+	<div class="sh_emate_blog_div_17">
+		<div id="sh_emate_blog_div_17" class="sh_emate_s_item_sh_emate_blog_tmpl_item_17">
+		
+			<div class="o_mail_block_image_text" data-name="Image - Text" id="sh_blog_17">
+			    <div class="o_mail_snippet_general">
+			    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_h_padding o_mail_v_padding o_mail_col_table">
+				          <tbody>
+					        <tr>
+					            <td width="100%" class="heading text-left">
+				                     <h3>LOREM IPSUM</h3>
+				                     <p class="detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius mod</p>
+					            </td>
+					        </tr>
+					     </tbody>
+					  </table>
+					  
+					  <div class="js_cls_sh_mail_snippet_general">
+				        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+				            <tbody>
+				                <tr>
+				                	<td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding text-left content w260 p10 img">
+				                        <img src="/sh_emate/static/src/img/tmpl_16/temp15_blog1.jpg" class="d-block mx-auto" alt="Your Picture" />
+				                    </td>
+				                	<td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w260 p10 img">
+				                		<div class="box">
+					                        <div class="content">
+						                    	<h5>LOREM IPSUM</h5>
+						                        <p>Lorem ipsum dolor sit amet,consectetur edipiscing elit,sed do euismodtempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.</p>
+						                        <a href="#" class="btn_readmore">READ MORE</a>
+						                    </div>
+					                    </div>
+				                    </td>
+				                </tr>
+				                
+				                <tr>
+				                	<td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w260 p10 img">
+				                        <div class="box">
+					                        <div class="content">
+					                        	<h5>LOREM IPSUM</h5>
+						                        <p>Lorem ipsum dolor sit amet,consectetur edipiscing elit,sed do euismodtempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.</p>
+						                        <a href="#" class="btn_readmore">READ MORE</a>
+						                    </div>
+					                    </div>
+				                    </td>
+				                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding text-left content w260 p10 img">
+				                        <img src="/sh_emate/static/src/img/tmpl_16/temp15_blog2.jpg" class="d-block mx-auto" alt="Your Picture" />
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				     </div>
+			    </div>
+			</div>	
+		</div>
+	</div>
+</template>
+
+<!-- end blog template 17  -->
+
+<!-- blog template 18 -->
+
+<template id="sh_emate_blog_tmpl_18" name="Blogs 18">
+	<div class="sh_emate_blog_div_18">
+		<div id="sh_emate_blog_div_18" class="sh_emate_s_item_sh_emate_blog_tmpl_item_18">
+		
+			<div class="o_mail_block_text_image" data-name="Text - Image" id="sh_blog_19">
+			    <div class="o_mail_snippet_general">
+			    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+			            <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+					                    <h3>Lorem Ipsum</h3>
+					                    <p class="detail">Lorem ipsum dolor sit amet, consectetur<br/>adipiscing elit. Curabitur placerat.</p>
+					                </center>
+					            </td>
+					        </tr>
+					     </tbody>
+					  </table>
+					  
+					  <div class="js_cls_sh_mail_snippet_general">
+				          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+				            <tbody>
+				                <tr>
+				                	<td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270">
+				                        <div class="img">
+					                        <img src="/sh_emate/static/src/img/tmpl_19/4.png" alt="image" />
+					                    </div>
+				                    </td>
+				                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270">
+				                        <div class="content">
+				                        	<p class="date">June 15,2020</p>
+					                        <h3>Lorem ipsum dolor sit amet</h3>
+					                        <p class="text">Lorem ipsum dolor sit amet, consectetur edipiscing elit.</p>
+					                        <a href="#" class="btn_readmore">Read More <span class="fa fa-long-arrow-right"></span></a>
+					                    </div>
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+				            <tbody>
+				                <tr>
+				                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270">
+				                        <div class="img">
+					                        <img src="/sh_emate/static/src/img/tmpl_19/5.png" alt="image" />
+					                    </div>
+				                    </td>
+				                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270">
+				                        <div class="content">
+				                        	<p class="date">June 15,2020</p>
+					                        <h3>Lorem ipsum dolor sit amet</h3>
+					                        <p class="text">Lorem ipsum dolor sit amet, consectetur edipiscing elit.</p>
+					                        <a href="#" class="btn_readmore">Read More <span class="fa fa-long-arrow-right"></span></a>
+					                    </div>
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				     </div>
+			    </div>
+			</div> 
+		</div>
+	</div>
+</template>
+
+<!-- end blog template 18  -->
+
+<!-- blog template 19 -->
+
+<template id="sh_emate_blog_tmpl_19" name="Blogs 19">
+	<div class="sh_emate_blog_div_19">
+		<div id="sh_emate_blog_div_19" class="sh_emate_s_item_sh_emate_blog_tmpl_item_19">
+		
+			<div class="o_mail_block_two_cols" data-name="Two Columns" id="sh_blog_21">
+			    <div class="o_mail_snippet_general">
+			    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt0 mlr10">
+				           <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+					                    <h3>LATEST BLOG</h3>
+					                   	<hr/>
+					                </center>
+					            </td>
+					        </tr>
+					     </tbody>
+					</table>
+					
+					<div class="js_cls_sh_mail_snippet_general">
+				        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt-0">
+				            <tbody>
+				                <tr>
+				                    <td class="o_mail_col_mv o_mail_col_container">
+				                        <div class="box">
+				                        	<div class="img">
+				                        		<img src="/sh_emate/static/src/img/tmpl_21/10.png" class="d-block mx-auto" alt="Your Picture" />
+				                        	</div>
+				                            <div class="content">
+						                        <h5>Lorem ipsum dolor sit amet</h5>
+						                        <p>Lorem ipsum dolor sit, consectetur adipiscing elit.Lorem ipsum dolor sit, consectetur adipiscing elit.</p>
+						                        <a href="#" class="btn_readmore">READ MORE</a>
+						                    </div>
+				                        </div>
+				                    </td>
+				
+				                    <td class="o_mail_col_mv o_mail_col_container">
+				                        <div class="box">
+				                        	<div class="img">
+				                        		<img src="/sh_emate/static/src/img/tmpl_21/11.png" class="d-block mx-auto" alt="Your Picture" />
+				                        	</div>
+				                            <div class="content">
+						                        <h5>Lorem ipsum dolor sit amet</h5>
+						                        <p>Lorem ipsum dolor sit, consectetur adipiscing elit.Lorem ipsum dolor sit, consectetur adipiscing elit.</p>
+						                        <a href="#" class="btn_readmore">READ MORE</a>
+						                    </div>
+				                        </div>
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				     </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<!-- end blog template 19  -->
+
+<!-- blog template 20 -->
+
+<template id="sh_emate_blog_tmpl_20" name="Blogs 20">
+	<div class="sh_emate_blog_div_20">
+		<div id="sh_emate_blog_div_20" class="sh_emate_s_item_sh_emate_blog_tmpl_item_20">
+		
+			<div class="o_mail_block_two_cols" data-name="Two Columns" id="sh_blog_23">
+			    <div class="o_mail_snippet_general">
+			    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table pt0 mlr10">
+				           <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+					                    <h3>Our Blog</h3>
+			                    		<p class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do euismodtempor incididunt ut labore et dolore magna eliqua.</p>
+					                </center>
+					            </td>
+					        </tr>
+					     </tbody>
+					</table>
+					
+					<div class="js_cls_sh_mail_snippet_general">
+				        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt-0">
+				            <tbody>
+				                <tr>
+				                    <td class="o_mail_col_mv o_mail_col_container">
+				                        <div class="box">
+				                        	<div class="img">
+				                        		<img src="/sh_emate/static/src/img/tmpl_23/3.png" class="d-block mx-auto" alt="Your Picture" />
+				                        	</div>
+				                            <div class="content">
+						                        <h5>Lorem ipsum dolor sit amet</h5>
+						                        <p>Lorem ipsum dolor sit, consectetur adipiscing elit.Lorem ipsum dolor sit, consectetur adipiscing elit.</p>
+						                        <a href="#" class="btn_readmore">Read More</a>
+						                    </div>
+				                        </div>
+				                    </td>
+				
+				                    <td class="o_mail_col_mv o_mail_col_container">
+				                        <div class="box">
+				                        	<div class="img">
+				                        		<img src="/sh_emate/static/src/img/tmpl_23/3.png" class="d-block mx-auto" alt="Your Picture" />
+				                        	</div>
+				                            <div class="content">
+						                        <h5>Lorem ipsum dolor sit amet</h5>
+						                        <p>Lorem ipsum dolor sit, consectetur adipiscing elit.Lorem ipsum dolor sit, consectetur adipiscing elit.</p>
+						                        <a href="#" class="btn_readmore">Read More</a>
+						                    </div>
+				                        </div>
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				     </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<!-- end blog template 20  -->
+
+<!-- blog template 21 -->
+
+<template id="sh_emate_blog_tmpl_21" name="Blogs 21">
+	<div class="sh_emate_blog_div_21">
+		<div id="sh_emate_blog_div_21" class="sh_emate_s_item_sh_emate_blog_tmpl_item_21">
+		
+			<div class="o_mail_block_two_cols" data-name="Two Columns" id="sh_blog_24">
+			    <div class="o_mail_snippet_general">
+			    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table pt0 mlr10">
+				           <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+					                    <h3>Our Blog</h3>
+			                    		<hr/>
+			                    		<p></p>
+					                </center>
+					            </td>
+					        </tr>
+					     </tbody>
+					</table>
+					
+					<div class="js_cls_sh_mail_snippet_general">
+				        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt-0">
+				            <tbody>
+				                <tr>
+				                    <td class="o_mail_col_mv o_mail_col_container" width="50%">
+				                        <div class="box">
+				                        	<div class="img">
+				                        		<img src="/sh_emate/static/src/img/tmpl_24/hand-construction-plans-with-yellow-helmet-drawing-tool_1232-2909.png" class="d-block mx-auto" alt="Your Picture" />
+				                        	</div>
+				                            <div class="content">
+						                        <h5>Lorem ipsum dolor sit amet</h5>
+						                        <p class="text">Lorem ipsum dolor sit, consectetur adipiscing elit.Lorem ipsum dolor sit, consectetur adipiscing elit.</p>
+						                        <a href="#" class="btn_readmore">Read More</a>
+						                    </div>
+				                        </div>
+				                    </td>
+				
+				                    <td class="o_mail_col_mv o_mail_col_container" width="50%">
+				                        <div class="box">
+				                        	<div class="img">
+				                        		<img src="/sh_emate/static/src/img/tmpl_24/working-housing-project_1098-17511.png" class="d-block mx-auto" alt="Your Picture" />
+				                        	</div>
+				                            <div class="content">
+						                        <h5>Lorem ipsum dolor sit amet</h5>
+						                        <p class="text">Lorem ipsum dolor sit, consectetur adipiscing elit.Lorem ipsum dolor sit, consectetur adipiscing elit.</p>
+						                        <a href="#" class="btn_readmore">Read More</a>
+						                    </div>
+				                        </div>
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				     </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<!-- end blog template 21  -->
+
+<!-- blog template 22 -->
+
+<template id="sh_emate_blog_tmpl_22" name="Blogs 22">
+	<div class="sh_emate_blog_div_22">
+		<div id="sh_emate_blog_div_22" class="sh_emate_s_item_sh_emate_blog_tmpl_item_22">
+		
+			<div class="o_mail_block_two_cols" data-name="Two Columns" id="sh_blog_25">
+			    <div class="o_mail_snippet_general">
+			    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table pt0 mlr10">
+				           <tbody>
+					        <tr>
+					            <td width="100%" class="heading">
+					                <center>
+					                    <h5>OUR BLOGS</h5>
+			                        	<hr/>
+				                        <h3>Latest News</h3>
+				                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					                </center>
+					            </td>
+					        </tr>
+					     </tbody>
+					</table>
+					
+					<div class="js_cls_sh_mail_snippet_general">
+				        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt-0">
+				            <tbody>
+				                <tr>
+				                    <td class="o_mail_col_mv o_mail_col_container" width="50%">
+				                        <div class="box">
+				                        	<div class="img">
+				                        		<img src="/sh_emate/static/src/img/tmpl_24/hand-construction-plans-with-yellow-helmet-drawing-tool_1232-2909.png" class="d-block mx-auto" alt="Your Picture" />
+				                        	</div>
+				                            <div class="content">
+						                        <h5>Lorem ipsum dolor sit amet</h5>
+						                        <p class="date">Posted on June 10, 2020</p> 
+						                        <p class="text">Lorem ipsum dolor sit, consectetur adipiscing elit.Lorem ipsum dolor sit, consectetur adipiscing elit.</p>
+						                        <a href="#" class="btn_readmore">Read More</a>
+						                    </div>
+				                        </div>
+				                    </td>
+				
+				                    <td class="o_mail_col_mv o_mail_col_container" width="50%">
+				                        <div class="box">
+				                        	<div class="img">
+				                        		<img src="/sh_emate/static/src/img/tmpl_24/working-housing-project_1098-17511.png" class="d-block mx-auto" alt="Your Picture" />
+				                        	</div>
+				                            <div class="content">
+						                        <h5>Lorem ipsum dolor sit amet</h5>
+						                        <p class="date">Posted on June 10, 2020</p> 
+						                        <p class="text">Lorem ipsum dolor sit, consectetur adipiscing elit.Lorem ipsum dolor sit, consectetur adipiscing elit.</p>
+						                        <a href="#" class="btn_readmore">Read More</a>
+						                    </div>
+				                        </div>
+				                    </td>
+				                </tr>
+				            </tbody>
+				        </table>
+				     </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<!-- end blog template 22  -->
+
+
+<!-- blog template 23 -->
+
+<template id="sh_emate_blog_tmpl_23" name="Blogs 23">
+	<div class="sh_emate_blog_div_23">
+		<div id="sh_emate_blog_div_23" class="sh_emate_s_item_sh_emate_blog_tmpl_item_23">
+	
+			<div class="o_mail_block_two_cols" data-name="Two Columns" id="sh_blog_26">
+	            <div class="o_mail_snippet_general">
+	                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table pt0 mlr10">
+	                    <tbody>
+	                        <tr>
+	                            <td width="100%" class="heading">
+	                                <center>
+	                                    <h3 class="o_default_snippet_text">Our Latest News</h3>
+	                                </center>
+	                            </td>
+	                        </tr>
+	                    </tbody>
+	                </table>
+	                
+	                <div class="js_cls_sh_mail_snippet_general">
+		                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt-0">
+		                    <tbody>
+		                        <tr>
+		                            <td class="o_mail_col_mv o_mail_col_container" width="50%">
+		                                <div class="box">
+		                                    <div class="img">
+		                                        <img src="/sh_emate/static/src/img/tmpl_26/blog1.png" class="d-block mx-auto" alt="Your Picture" loading="lazy" />
+		                                    </div>
+		                                    <div class="content">
+		                                        <h5 class="o_default_snippet_text">Lorem ipsum dolor sit amet</h5>
+		                                        <p class="o_default_snippet_text">Lorem ipsum dolor sit, consectetur adipiscing elit.Lorem ipsum dolor sit, consectetur adipiscing elit.</p>
+		                                        <a href="#" class="btn_readmore o_default_snippet_text">Read More</a>
+		                                    </div>
+		                                </div>
+		                            </td>
+		
+		                            <td class="o_mail_col_mv o_mail_col_container" width="50%">
+		                                <div class="box">
+		                                    <div class="img">
+		                                        <img src="/sh_emate/static/src/img/tmpl_26/blog2.png" class="d-block mx-auto" alt="Your Picture" loading="lazy" />
+		                                    </div>
+		                                    <div class="content">
+		                                        <h5 class="o_default_snippet_text">Lorem ipsum dolor sit amet</h5>
+		                                        <p class="o_default_snippet_text">Lorem ipsum dolor sit, consectetur adipiscing elit.Lorem ipsum dolor sit, consectetur adipiscing elit.</p>
+		                                        <a href="#" class="btn_readmore o_default_snippet_text">Read More</a>
+		                                    </div>
+		                                </div>
+		                            </td>
+		                        </tr>
+		                    </tbody>
+		                </table>
+		              </div>
+	            </div>
+	        </div>
+	     </div>
+	</div>
+</template>
+
+<!-- end blog template 23  -->
+
+
+
+
+	
+
+</odoo>

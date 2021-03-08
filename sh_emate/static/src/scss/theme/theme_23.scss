@@ -1,0 +1,113 @@
+// ==========================
+// Mass Mailing "Theme 1 variables"
+// ==========================
+
+
+/*
+$sh-emate-mm-theme2-color-alpha: #8e6b5a;
+$sh-emate-mm-theme2-color-beta: white;
+$sh-emate-mm-theme2-color-gamma: #ff3c00;
+$sh-emate-mm-theme2-color-delta: darken($sh-emate-mm-theme2-color-gamma, 5%);
+$sh-emate-mm-theme2-color-epsilon: black;
+$sh-emate-mm-theme2-color-zeta: #f4f0e7;
+*/
+
+// ==========================
+// Mass Mailing "Theme 1 variables"
+// ==========================
+
+
+
+
+
+.o_mail_snippet_general{
+
+padding-left: 0px;
+padding-right: 0px;
+
+}
+/*========= header =======*/
+#sh_header_23{z-index: 1;position: relative;background: rgba(0,0,0,0.2);border-bottom: 1px solid #fff;}
+#sh_header_23 .logo a{text-decoration:none;float:none;}
+#sh_header_23 .logo h4{font-size: 30px;font-weight: bold;font-family: 'Nunito', sans-serif;margin-bottom: 0px;color: $sh_emate_theme1_color_primary;}
+#sh_header_23 .menu a{font-size: 15px;text-decoration: none;font-family: 'Nunito', sans-serif;color: #fff;}
+#sh_header_23 .ml10{margin-left: 10px;}
+
+
+/*======== banner ========*/
+#sh_banner_23{margin-top: -77px;}
+#sh_banner_23 .bg_img{position: relative;}
+
+
+/*====== Image_Text ======*/
+#sh_image_text_23{margin: 30px 0px;}
+#sh_image_text_23 .content p.small_text{font-weight: normal;font-size: 14px;margin: 0;padding: 0px 0px 0px 0px;color: #414141;margin-bottom: 10px;text-align: left;font-family: 'Nunito', sans-serif;}
+#sh_image_text_23 .content h5{font-weight: bold;font-size: 18px;margin: 0;padding: 0px 0px 15px 0px;color: $sh_emate_theme1_color_text_header;text-align: left;font-family: 'Nunito', sans-serif;}
+#sh_image_text_23 .content p.para_text{font-size: 15px;color: $sh_emate_theme1_color_text_content;margin-bottom: 30px;text-align: left;display: block;font-family: 'Nunito', sans-serif;}
+#sh_image_text_23 .content{padding: 10px;background: #fff;text-align: left;font-family: 'Nunito', sans-serif;}
+#sh_image_text_23 .content a{text-decoration: none;font-size: 15px;color: #fff;text-align: center;font-family: 'Nunito', sans-serif;}
+#sh_image_text_23 .content a.btn_readmore{background: $sh_emate_theme1_color_primary;color: #fff;padding: 10px 30px;border: none;border-radius: 10px;}
+#sh_image_text_23 .img img{width: 100%;object-fit: cover;}
+#sh_image_text_23 .w270{width: 270px;}
+#sh_image_text_23 .p10{padding: 10px;}
+#sh_image_text_23 .vmiddle{vertical-align: middle;}
+
+
+/*======= Service =====*/
+#sh_service_23{margin-bottom: 20px;}
+#sh_service_23 .heading h3{position: relative;color: $sh_emate_theme1_color_text_header;font-size: 25px;font-weight: 700;margin-bottom: 0px;padding: 10px 0px;font-family: 'Nunito', sans-serif;}
+#sh_service_23 .heading p{color: $sh_emate_theme1_color_text_content;font-family: 'Nunito', sans-serif;font-size: 15px;}
+#sh_service_23 .three_col .icon{margin-bottom: 15px;}
+#sh_service_23 .three_col .icon span,#sh_service_23 .three_col .icon img{font-size: 40px;margin-bottom: 0px;color: $sh_emate_theme1_color_primary;}
+#sh_service_23 .three_col .title{font-weight: bold;font-size: 15px;margin-bottom: 10px;font-family: 'Nunito', sans-serif;color: $sh_emate_theme1_color_text_header;font-weight: bold;}
+#sh_service_23 .three_col .text{margin-bottom: 5px;font-family: 'Nunito', sans-serif;font-size: 15px;color: $sh_emate_theme1_color_text_content;}
+#sh_service_23 .three_col a{text-decoration: none;color: $sh_emate_theme1_color_primary;font-family: 'Nunito', sans-serif;}
+#sh_service_23 .three_col .box{border: 1px solid #E0E0E0;padding: 15px 7px;}
+#sh_service_23 .three_col .width180{vertical-align:top;width:180px;}
+#sh_service_23 .three_col .plr10{padding: 10px;}
+
+
+/*===== counter ======*/
+#sh_counter_23{background: $sh_emate_theme1_color_primary;padding: 10px 0px;}
+#sh_counter_23 .w60{width: 60px;}
+#sh_counter_23 .plr10{padding: 10px;}
+#sh_counter_23 .box h3{font-size: 25px;font-weight: bold;color: #fff;font-family: 'Nunito', sans-serif;margin-bottom: 15px;}
+#sh_counter_23 .box p{font-size: 15px;font-weight: bold;color: #fff;font-family: 'Nunito', sans-serif;margin: 0px;}
+
+
+/*====== Blog ======*/
+#sh_blog_23 {margin: 20px 0px;}
+#sh_blog_23 .heading h3{position: relative;color: $sh_emate_theme1_color_text_header;font-size: 25px;font-weight: 700;margin-bottom: 0px;padding: 10px 0px;font-family: 'Nunito', sans-serif;}
+#sh_blog_23 .heading p{color: $sh_emate_theme1_color_text_content;font-family: 'Nunito', sans-serif;font-size: 15px;}
+
+#sh_blog_23 .w270{vertical-align:top;width:270px;}
+#sh_blog_23 .box .img img{height: 150px;width: 100%;object-fit: cover;}
+#sh_blog_23 .box .content h5{font-weight: bold;font-size: 20px;margin: 0;padding: 8px 0;color: $sh_emate_theme1_color_text_header;text-align: left;font-family: 'Nunito', sans-serif;}
+#sh_blog_23 .box .content p{font-size: 15px;color: $sh_emate_theme1_color_text_content;font-weight: normal;margin-bottom: 30px;text-align: left;display: block;font-family: 'Nunito', sans-serif;}
+#sh_blog_23 .box .content a.btn_readmore{text-decoration: none;font-size: 15px;background: $sh_emate_theme1_color_primary;color: #fff;text-align: left;font-family: 'Nunito', sans-serif;border-radius: 10px;padding: 10px 30px;}
+#sh_blog_23 .box .content{padding: 20px 0px;background: transparent;text-align: left;font-family: 'Nunito', sans-serif;}
+
+
+
+/*========= footer ==========*/
+.sh_emate_footer_16{background-color: $sh_emate_theme1_color_secondary;}
+
+#sh_footer_23 {padding: 30px 0px 10px 0px;font-family: 'Nunito', sans-serif;}
+#sh_footer_23 ul{padding: 0;}
+#sh_footer_23 ul li{display: inline-block;font-family: 'Nunito', sans-serif;}
+#sh_footer_23 ul li{display: inline-block;text-align: center;padding:0px 15px;margin-bottom: 0px; }
+#sh_footer_23 ul li a{color: #fff;text-decoration: none;}
+#sh_footer_23 h4{color: #fff;font-weight: bold;margin-bottom: 0px;font-family: 'Nunito', sans-serif;}
+#sh_footer_23 .bottom_menu ul li{display: inline-block;color: #fff;list-style-type: none;}
+#sh_footer_23 .bottom_menu ul li a{color: #fff;text-decoration: none;font-size: 15px;font-weight: normal;}
+#sh_footer_23 .bottom_menu ul{border-top:1px solid #fff;border-bottom: 1px solid #fff;width: 80%;padding: 10px 0px;margin-top: 20px;}
+#sh_footer_23 .p10{padding: 10px;}
+#sh_footer_23 .bottom-footer p{color: #fff;font-size: 15px;margin-bottom: 0px;margin-top: 10px;}
+
+
+
+
+
+
+
+
