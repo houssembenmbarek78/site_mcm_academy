@@ -124,7 +124,7 @@
                             <li class="list-group-item flex-grow-1">
                                 <a t-if="sale_order.has_to_be_signed(True)" role="button"
                                    class="btn btn-primary btn-block mb8" data-toggle="modal" data-target="#modalaccept"
-                                   href="#">
+                                   href="#" id="accept_and_sign">
                                     <i class="fa fa-check"/>
                                     <!--                                    <t t-if="sale_order.has_to_be_paid(True)">Sign &amp; Pay</t>-->
                                     <t>Accepter et signer</t>
