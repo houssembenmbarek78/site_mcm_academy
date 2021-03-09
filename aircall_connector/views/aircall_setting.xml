@@ -1,0 +1,124 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="acall_setting_form_views">
+            <field name="name">ac settings window</field>
+            <field name="model">res.config.settings</field>
+            <field name="priority" eval="10"/>
+            <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//div[hasclass('settings')]" position="inside">
+                    <div class="app_settings_block" data-string="AirCall Settings" string="AirCall Settings"
+                         data-key="aircall_connector">
+                        <h2>AirCall Settings</h2>
+                        <div class="row mt16 o_settings_container">
+
+                            <div class="col-lg-6 o_setting_box col-12">
+                                <div class="o_setting_left_pane"
+                                >
+                                    <field name="is_aircall_setting"/>
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label for="is_aircall_setting"/>
+                                    <div class="text-muted">
+                                        Configuration with AirCall
+                                    </div>
+                                    <div class="content-group o_setting_box"
+                                         attrs="{'invisible': [('is_aircall_setting', '=', False)]}">
+                                        <div class="mt16">
+                                            <label for="ax_api_id" string="API ID :"
+                                                   class="col-3 col-lg-3 o_light_label"/>
+                                            <field name="ax_api_id" string="Password"/>
+                                            <label for="ax_api_token" string="API-Token :"
+                                                   class="col-3 col-lg-3 o_light_label"/>
+                                            <field name="ax_api_token" string="Password"/>
+                                        </div>
+<!--                                        <div class="mt16">-->
+<!--                                            <button name="test_connection" type="object" string="Test Connection"-->
+<!--                                                    class="oe_highlight" icon="fa-refresh fa-2x" style="width:40%"-->
+<!--                                                    padding-left="80px"/>-->
+<!--                                        </div>-->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 o_setting_box col-12">
+                                <div class="o_setting_right_pane"/>
+
+                                <div class="o_setting_right_pane">
+                                    <!--                                    <label for="is_aircall_setting"/>-->
+                                    <!--                                    <div class="text-mute q d">-->
+                                    <!--                                        Settings-->
+                                    <!--                                    </div>-->
+                                    <div class="content-group o_setting_box"
+                                         attrs="{'invisible': [('is_aircall_setting', '=', False)]}">
+                                        <div class="mt16">
+                                            <!--                                            <label for="is_auto_create" string="Auto Create contact in Aircall, when create in Odoo:"-->
+                                            <!--                                                   class="col-3 col-lg-3 o_light_label"/>-->
+                                            <div class="o_setting_left_pane">
+                                                <field name="is_auto_create"/>
+                                            </div>
+
+                                            <label for="is_auto_create"/>
+                                            <div class="text-muted">
+                                                Auto Create contact in Aircall, when create in Odoo:
+                                            </div>
+                                            <!--                                            <label for="is_auto_update" string="Auto Update contact in Aircall, when Update in Odoo:"-->
+                                            <!--                                                   class="col-3 col-lg-3 o_light_label"/>-->
+                                            <div class="o_setting_left_pane">
+                                                <field name="is_auto_update"/>
+                                            </div>
+
+                                            <!--                                            <field name="is_auto_update" />-->
+                                            <label for="is_auto_update"/>
+                                            <div class="text-muted">
+                                                Auto Update contact in Aircall, when Update in Odoo:
+                                            </div>
+                                            <div class="o_setting_left_pane">
+                                                <field name="is_comment"/>
+                                            </div>
+
+                                            <!--                                            <field name="is_auto_update" />-->
+                                            <label for="is_comment"/>
+                                            <div class="text-muted">
+                                                This Feature enable to comments from odoo to a specific call record in AirAall:
+                                            </div>
+                                            <div class="o_setting_left_pane">
+                                                <field name="is_tag"/>
+                                            </div>
+
+                                            <!--                                            <field name="is_auto_update" />-->
+                                            <label for="is_tag"/>
+                                            <div class="text-muted">
+                                                This Feature enable to add tags from odoo to a specific call record in AirCall:
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+
+        <record id="ac_genral_settings" model="ir.actions.act_window">
+            <field name="name">ac settings window</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.config.settings</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="base.res_config_settings_view_form"/>
+            <field name="target">inline</field>
+            <field name="context">{'module':'aircall_connector'}</field>
+        </record>
+
+
+        <menuitem id="ac_configration" name="Configurations" parent="aircall_connector.aircall_menu" sequence="100" groups="base.group_system"/>
+        <menuitem id="ac_settings" name="Settings" parent="ac_configration" sequence="10"
+                  action="ac_genral_settings"/>
+
+    </data>
+</odoo>

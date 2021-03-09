@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="call_detail_form" model="ir.ui.view">
+            <field name="name">call.detail.form</field>
+            <field name="model">call.detail</field>
+            <field name="arch" type="xml">
+                <form string="Call details">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="call_id"/>
+                                <field name="user_name"/>
+                                <field name="call_contact"/>
+                                <field name="phone_number"/>
+                                <field name="company_name"/>
+                                <field name="digits"/>
+                                <field name="call_recording" widget="url"/>
+                                <field name="call_direction"/>
+                                <field name="call_date"/>
+
+                            </group>
+                            <group>
+                                <field name="air_call_tag" widget="many2many_tags"/>
+                                <field name="call_status"/>
+                                <field name="user_id"/>
+                            </group>
+
+
+                        </group>
+                        <notebook>
+                            <page string="Notes">
+                                <group string="Notes">
+                                    <field name="notes"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="call_detail_tree" model="ir.ui.view">
+            <field name="name">call.detail.tree</field>
+            <field name="model">call.detail</field>
+            <field name="arch" type="xml">
+                <tree string="Call Detail">
+                    <field name="call_contact"/>
+                    <field name="phone_number"/>
+                    <field name="company_name"/>
+                    <field name="call_date"/>
+                    <field name="call_recording" widget ="url"/>
+                    <field name="call_direction"/>
+                    <field name="call_direction"/>
+                    <field name="call_status"/>
+                    <field name="user_id"/>
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="call_detail_kanban" model="ir.ui.view">
+         <field name="name">call.detail.kanban</field>
+          <field name="model">call.detail</field>
+         <field name="arch" type="xml">
+            <kanban>
+                <field name="call_contact"/>
+                <field name="phone_number"/>
+                <field name="call_direction"/>
+<!--                <field name="call_status"/>-->
+                <field name="call_date"/>
+
+         <templates>
+                        <t t-name="kanban-box">
+                            <div t-attf-class="oe_kanban_global_click">
+                                <div class="row mb4">
+                                    <div class="col-6">
+                                        <strong><span><field name="call_contact"/></span></strong>
+
+                                    </div>
+
+                                </div>
+                                <div class="row mb4">
+                                    <div class="col-6">
+                                        <strong><span><field name="phone_number"/></span></strong>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-6">
+                                        <field name="call_date" />
+                                        <field name="call_direction" />
+
+
+                                    </div>
+
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-6">
+
+                                         <field name="call_status" />
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+         </kanban>
+         </field>
+        </record>
+
+        <record id="call_detail_action" model="ir.actions.act_window">
+            <field name="name">Call Details</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">call.detail</field>
+             <field name="domain">[('call_contact.id','=', active_id)]</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+         <record id="call_detail_action2" model="ir.actions.act_window">
+            <field name="name">Call Details</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">call.detail</field>
+<!--             <field name="domain">[('call_contact.id','=', active_id)]</field>-->
+            <field name="view_mode">kanban,tree,form</field>
+
+        </record>
+
+        <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
+<!--        <menuitem id="aircall_menu" name="AirCall" parent="base.menu_users" sequence="5"/>-->
+          <menuitem id="aircall_menu"  name="AirCall "
+                  groups="base.group_user" web_icon="aircall_connector,static/description/aircall.webp"/>
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="aircall_menu_categ" name="AirCall Details" parent="aircall_menu" action="call_detail_action2" sequence="3"/>
+    </data>
+</odoo>
