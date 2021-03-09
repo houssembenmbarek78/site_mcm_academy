@@ -12,7 +12,7 @@
 <!--            <field name="interval_type">minutes</field>-->
 <!--            <field name="numbercall">-1</field>-->
 <!--        </record>-->
-        <!--  Import calls planned action ..executed every 1 minute  -->
+
         <record id="import_call_schedulers" model="ir.cron">
             <field name="name">Import Call records form AirCall</field>
             <field name="user_id" ref="base.user_root"/>
