@@ -22,8 +22,7 @@
 
     # always loaded
     'data': [
-        'security/ir.model.access.csv', # Limiter l'accèes au menu aircall configuration
-        'security/aircall_security.xml',
+        'security/ir.model.access.csv',
         'views/call_history.xml',
         'views/views.xml',
         'views/aircall_setting.xml',
