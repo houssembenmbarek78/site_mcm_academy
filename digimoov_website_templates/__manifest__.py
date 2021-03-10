@@ -20,7 +20,7 @@
     'description': "digimoov website templates",
     'data': [
         'views/homepage.xml',
-        # 'views/homepage2.xml',
+        'views/homepage2.xml',
         'views/faq.xml',
         'views/financement.xml',
         'views/examen.xml',
@@ -34,9 +34,7 @@
         'views/completer_mon_dossier_cpf.xml',
         'views/template.xml',
         'views/cpf_thanks.xml',
-        'views/portal_my_details.xml',
-        'views/confidentialite.xml',
-        # 'views/sitemap.xml',
+        'views/free_ebook.xml',
 
     ],
     'qweb': [],
