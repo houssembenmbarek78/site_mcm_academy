@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="digimoov_website_templates.free_ebook" name="EBOOK gratuit | DIGIMOOV">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <div class="container">
+                    <div class="row">
+                        <div class="row m-0">
+                            <div class="col-lg-12">
+                                <br/>
+                                <h3 class="text-center"><i class="fa fa-check-circle fa-2x text-success" role="img" aria-label="Success" title="Success"/></h3>
+                                <h3 class="text-center">Merci Houssem</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

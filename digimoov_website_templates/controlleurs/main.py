@@ -2,6 +2,7 @@ from odoo import http
 from odoo.http import request
 from datetime import datetime,date
 import base64
+from werkzeug.exceptions import NotFound
 
 class FAQ(http.Controller):
 
@@ -102,6 +103,13 @@ class FINANCEMENT(http.Controller):
                 return request.redirect("/%s#pricing"% str(user_connected.partner_id.partner_from))
             else:
                 return request.redirect("/#pricing")
+    @http.route('/ebook-gratuit', type='http', auth='public', website=True)
+    def ebook(self, **kw, ):
+        if request.website.id==2:
+            return request.render("digimoov_website_templates.free_ebook", {})
+        else:
+            raise NotFound()
+
 
 
 class DIGIEXAMEN(http.Controller):
