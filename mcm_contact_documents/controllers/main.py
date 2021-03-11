@@ -30,6 +30,7 @@ class CustomerPortal(CustomerPortal):
 
     def _prepare_portal_layout_values(self):
         values = super(CustomerPortal, self)._prepare_portal_layout_values()
+        print('_prepare_portal_layout_values')
         user = request.env.user
         document_count = request.env['documents.document'].sudo().search_count(
             [('owner_id', '=', user.id)])
@@ -39,6 +40,8 @@ class CustomerPortal(CustomerPortal):
             ('type', 'in', ('out_invoice', 'in_invoice', 'out_refund', 'in_refund', 'out_receipt', 'in_receipt')),
             ('type_facture', '=', 'web'), ('cpf_solde_invoice', '=', False), ('cpf_acompte_invoice', '=', False)])
         values['invoice_count'] = invoice_count
+        print('invoice_count')
+        print(invoice_count)
         return values
 
     # def _document_check_access(self, document_id):
