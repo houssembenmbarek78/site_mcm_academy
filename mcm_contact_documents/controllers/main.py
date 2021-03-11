@@ -34,6 +34,11 @@ class CustomerPortal(CustomerPortal):
         document_count = request.env['documents.document'].sudo().search_count(
             [('owner_id', '=', user.id)])
         values['document_count'] = document_count
+        values = super(CustomerPortal, self)._prepare_portal_layout_values()
+        invoice_count = request.env['account.move'].search_count([
+            ('type', 'in', ('out_invoice', 'in_invoice', 'out_refund', 'in_refund', 'out_receipt', 'in_receipt')),
+            ('type_facture', '=', 'web'), ('cpf_solde_invoice', '=', False), ('cpf_acompte_invoice', '=', False)])
+        values['invoice_count'] = invoice_count
         return values
 
     # def _document_check_access(self, document_id):
