@@ -746,73 +746,71 @@ class CustomerPortal(CustomerPortal):
         return request.render("project.portal_my_tasks", values)
 
         # First Function to Add Filter to invoice_count in portal invoice view
-        def _prepare_portal_layout_values(self):
-            values = super(CustomerPortal, self)._prepare_portal_layout_values()
-            invoice_count = request.env['account.move'].search_count([
-                ('type', 'in', ('out_invoice', 'in_invoice', 'out_refund', 'in_refund', 'out_receipt', 'in_receipt')),
-                ('type_facture', '=', 'web'), ('cpf_solde_invoice', '=', False), ('cpf_acompte_invoice', '=', False)
-            ])
-            values['invoice_count'] = invoice_count
-            return values
+    def _prepare_portal_layout_values(self):
+        values = super(CustomerPortal, self)._prepare_portal_layout_values()
+        invoice_count = request.env['account.move'].search_count([
+            ('type', 'in', ('out_invoice', 'in_invoice', 'out_refund', 'in_refund', 'out_receipt', 'in_receipt')),
+            ('type_facture', '=', 'web'), ('cpf_solde_invoice', '=', False), ('cpf_acompte_invoice', '=', False)
+        ])
+        values['invoice_count'] = invoice_count
+        return values
 
-        # Second Function to Add Filter to invoice_count in portal invoice view
-        def _prepare_home_portal_values(self):
-            values = super(CustomerPortal, self)._prepare_home_portal_values()
-            invoice_count = request.env['account.move'].search_count([
-                ('type', 'in', ('out_invoice', 'in_invoice', 'out_refund', 'in_refund', 'out_receipt', 'in_receipt')),
-                ('type_facture', '=', 'web'), ('cpf_solde_invoice', '=', False), ('cpf_acompte_invoice', '=', False)
-            ]) if request.env['account.move'].check_access_rights('read', raise_exception=False) else 0
-            values['invoice_count'] = invoice_count
-            return values
+    # Second Function to Add Filter to invoice_count in portal invoice view
+    def _prepare_home_portal_values(self):
+        values = super(CustomerPortal, self)._prepare_home_portal_values()
+        invoice_count = request.env['account.move'].search_count([
+            ('type', 'in', ('out_invoice', 'in_invoice', 'out_refund', 'in_refund', 'out_receipt', 'in_receipt')),
+            ('type_facture', '=', 'web'), ('cpf_solde_invoice', '=', False), ('cpf_acompte_invoice', '=', False)
+        ]) if request.env['account.move'].check_access_rights('read', raise_exception=False) else 0
+        values['invoice_count'] = invoice_count
+        return values
 
-        # Add filter to display just type=WEB of list invoices linked to specific portal
-        @http.route(['/my/invoices', '/my/invoices/page/<int:page>'], type='http', auth="user", website=True)
-        def portal_my_invoices(self, page=1, date_begin=None, date_end=None, sortby=None, **kw):
-            values = self._prepare_portal_layout_values()
-            AccountInvoice = request.env['account.move']
+    # Add filter to display just type=WEB of list invoices linked to specific portal
+    @http.route(['/my/invoices', '/my/invoices/page/<int:page>'], type='http', auth="user", website=True)
+    def portal_my_invoices(self, page=1, date_begin=None, date_end=None, sortby=None, **kw):
+        values = self._prepare_portal_layout_values()
+        AccountInvoice = request.env['account.move']
 
-            domain = [
-                ('type', 'in', ('out_invoice', 'out_refund', 'in_invoice', 'in_refund', 'out_receipt', 'in_receipt')),
-                ('type_facture', '=', 'web'), ('cpf_solde_invoice', '=', False), ('cpf_acompte_invoice', '=', False)]
+        domain = [
+            ('type', 'in', ('out_invoice', 'out_refund', 'in_invoice', 'in_refund', 'out_receipt', 'in_receipt')),
+            ('type_facture', '=', 'web'), ('cpf_solde_invoice', '=', False), ('cpf_acompte_invoice', '=', False)]
 
-            searchbar_sortings = {
-                'date': {'label': _('Invoice Date'), 'order': 'invoice_date desc'},
-                'duedate': {'label': _('Due Date'), 'order': 'invoice_date_due desc'},
-                'name': {'label': _('Reference'), 'order': 'name desc'},
-                'state': {'label': _('Status'), 'order': 'state'},
-            }
-            # default sort by order
-            if not sortby:
-                sortby = 'date'
-            order = searchbar_sortings[sortby]['order']
+        searchbar_sortings = {
+            'date': {'label': _('Invoice Date'), 'order': 'invoice_date desc'},
+            'duedate': {'label': _('Due Date'), 'order': 'invoice_date_due desc'},
+            'name': {'label': _('Reference'), 'order': 'name desc'},
+            'state': {'label': _('Status'), 'order': 'state'},
+        }
+        # default sort by order
+        if not sortby:
+            sortby = 'date'
+        order = searchbar_sortings[sortby]['order']
 
-            archive_groups = self._get_archive_groups('account.move', domain)
-            if date_begin and date_end:
-                domain += [('create_date', '>', date_begin), ('create_date', '<=', date_end)]
+        archive_groups = self._get_archive_groups('account.move', domain)
+        if date_begin and date_end:
+            domain += [('create_date', '>', date_begin), ('create_date', '<=', date_end)]
 
-            # count for pager
-            invoice_count = AccountInvoice.search_count(domain)
-            # pager
-            pager = portal_pager(
-                url="/my/invoices",
-                url_args={'date_begin': date_begin, 'date_end': date_end, 'sortby': sortby},
-                total=invoice_count,
-                page=page,
-                step=self._items_per_page
-            )
-            # content according to pager and archive selected
-            invoices = AccountInvoice.search(domain, order=order, limit=self._items_per_page,
-                                             offset=pager['offset']).filtered(lambda
-                                                                                  facture: facture.type_facture == 'web' and facture.cpf_solde_invoice == False and facture.cpf_acompte_invoice == False)
-            request.session['my_invoices_history'] = invoices.ids[:100]
-            values.update({
-                'date': date_begin,
-                'invoices': invoices,
-                'page_name': 'invoice',
-                'pager': pager,
-                'archive_groups': archive_groups,
-                'default_url': '/my/invoices',
-                'searchbar_sortings': searchbar_sortings,
-                'sortby': sortby,
-            })
-            return request.render("account.portal_my_invoices", values)
+        # count for pager
+        invoice_count = AccountInvoice.search_count(domain)
+        # pager
+        pager = portal_pager(
+            url="/my/invoices",
+            url_args={'date_begin': date_begin, 'date_end': date_end, 'sortby': sortby},
+            total=invoice_count,
+            page=page,
+            step=self._items_per_page
+        )
+        # content according to pager and archive selected
+        invoices = AccountInvoice.search(domain, order=order, limit=self._items_per_page, offset=pager['offset']).filtered(lambda facture: facture.type_facture == 'web' and facture.cpf_solde_invoice == False and facture.cpf_acompte_invoice == False)
+        request.session['my_invoices_history'] = invoices.ids[:100]
+        values.update({
+            'date': date_begin,
+            'invoices': invoices,
+            'page_name': 'invoice',
+            'pager': pager,
+            'archive_groups': archive_groups,
+            'default_url': '/my/invoices',
+            'searchbar_sortings': searchbar_sortings,
+            'sortby': sortby,
+        })
+        return request.render("account.portal_my_invoices", values)
