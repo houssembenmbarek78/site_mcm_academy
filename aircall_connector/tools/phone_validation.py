@@ -112,6 +112,6 @@ def phone_sanitize_numbers_w_record(numbers, record, country=False, record_count
             country = record[record_country_fname]
         elif record:
             country = record.env.company.country_id
-    country_code = country.code if country else None
-    country_phone_code = country.phone_code if country else None
+    country_code = country.code if country else False
+    country_phone_code = country.phone_code if country else False
     return phone_sanitize_numbers(numbers, country_code, country_phone_code, force_format=force_format)
