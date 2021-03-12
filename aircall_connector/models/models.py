@@ -134,8 +134,8 @@ class ResUser(models.Model):
         if odoo_contact:
             odoo_contact.partner_id.write({'name': str(contact['first_name']) + ' ' + str(contact['last_name']),
                                             'air_contact_id': contact['id'],
-                                            'email': contact['emails'][0]['value'] if contact['emails'] else None,
-                                            'phone': contact['phone_numbers'][0]['value'] if contact['phone_numbers'] else None,
+                                            'email': contact['emails'][0]['value'] if contact['emails'] else False,
+                                            'phone': contact['phone_numbers'][0]['value'] if contact['phone_numbers'] else False,
                                 # 'category_id': tags,
                                 })
 
@@ -153,15 +153,15 @@ class ResUser(models.Model):
                 })
                 if odoo_contact:
                     odoo_contact.partner_id.phone=contact['phone_numbers'][0]['value'] if contact[
-                                                 'phone_numbers'] else None
+                                                 'phone_numbers'] else False
                     odoo_contact.partner_id.email=contact['emails'][0]['value']
 
             else:
                 odoo_contact.partner_id.write({'name': str(contact['first_name']) + ' ' + str(contact['last_name']),
                                      'air_contact_id': contact['id'],
-                                     'email': contact['emails'][0]['value'] if contact['emails'] else None,
+                                     'email': contact['emails'][0]['value'] if contact['emails'] else False,
                                      'phone': contact['phone_numbers'][0]['value'] if contact[
-                                                 'phone_numbers'] else None,
+                                                 'phone_numbers'] else False,
                                      })
         if odoo_contact:
             return odoo_contact.partner_id
@@ -251,7 +251,7 @@ class ResUser(models.Model):
                                          'call_direction': call['direction'],
                                          'call_date': date,
                                          'phone_number': call['raw_digits'],
-                                         'call_contact': odoo_contact.id if odoo_contact else None,
+                                         'call_contact': odoo_contact.id if odoo_contact else False,
                                          'call_recording': call['asset'],
                                          'digits': call['number']['digits'],
                                          'company_name': call['number']['name'],
@@ -279,7 +279,7 @@ class ResUser(models.Model):
                                         'body': str(note['content']),
                                     })
                     if not call_rec.call_contact and odoo_contact:
-                        call_rec.write({'call_contact': odoo_contact.id if odoo_contact else None,
+                        call_rec.write({'call_contact': odoo_contact.id if odoo_contact else False,
                                         })
 
                     if call['tags']:
@@ -322,8 +322,8 @@ class ResPartner(models.Model):
             return number
         return phone_validation.phone_format(
             number,
-            country.code if country else None,
-            country.phone_code if country else None,
+            country.code if country else False,
+            country.phone_code if country else False,
             force_format='INTERNATIONAL',
             raise_exception=True
         )
