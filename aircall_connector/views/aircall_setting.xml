@@ -118,7 +118,7 @@
 
         <menuitem id="ac_configration" name="Configurations" parent="aircall_connector.aircall_menu" sequence="100" groups="base.group_system"/>
         <menuitem id="ac_settings" name="Settings" parent="ac_configration" sequence="10"
-                  action="ac_genral_settings"/>
+                  action="ac_genral_settings" groups="base.group_system"/>
 
     </data>
 </odoo>
