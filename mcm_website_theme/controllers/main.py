@@ -628,6 +628,11 @@ class Conditions(http.Controller):
 
 
 class CustomerPortal(CustomerPortal):
+    """
+    @override function 'portal_my_tasks' to add domain
+    'users_tasks_domain' to restrict users to display tasks
+    assigned to them.
+    """
     @http.route(['/my/tasks', '/my/tasks/page/<int:page>'], type='http', auth="user", website=True)
     def portal_my_tasks(self, page=1, date_begin=None, date_end=None, sortby=None, filterby=None, search=None,
                         search_in='content', groupby='project', **kw):
@@ -655,6 +660,7 @@ class CustomerPortal(CustomerPortal):
 
         # extends filterby criteria with project the customer has access to
         projects = request.env['project.project'].search([])
+        print(projects)
         for project in projects:
             searchbar_filters.update({
                 str(project.id): {'label': project.name, 'domain': [('project_id', '=', project.id)]}
@@ -698,21 +704,23 @@ class CustomerPortal(CustomerPortal):
                 search_domain = OR([search_domain, [('stage_id', 'ilike', search)]])
             domain += search_domain
 
+        # Display tasks of active user
+        users = request.env.user
+        users_tasks_domain = ['|', ('parent_id.user_id', '=', users.id), ('user_id', '=', users.id)]
         # task count
-        task_count = request.env['project.task'].search_count(domain)
+        task_count = request.env['project.task'].search_count(users_tasks_domain)
         # pager
         pager = portal_pager(
             url="/my/tasks",
-            url_args={'date_begin': date_begin, 'date_end': date_end, 'sortby': sortby, 'filterby': filterby,
-                      'search_in': search_in, 'search': search},
+            url_args={'date_begin': date_begin},
             total=task_count,
             page=page,
             step=self._items_per_page
         )
         # content according to pager and archive selected
-        if groupby == 'project':
+        if groupby == 'project_id':
             order = "project_id, %s" % order  # force sort on project first to group by project in view
-        tasks = request.env['project.task'].search(domain, order=order, limit=self._items_per_page,
+        tasks = request.env['project.task'].search(users_tasks_domain, order=order, limit=self._items_per_page,
                                                    offset=(page - 1) * self._items_per_page)
         request.session['my_tasks_history'] = tasks.ids[:100]
         if groupby == 'project':
@@ -720,16 +728,10 @@ class CustomerPortal(CustomerPortal):
                              groupbyelem(tasks, itemgetter('project_id'))]
         else:
             grouped_tasks = [tasks]
-        my_tasks = []
-        users = request.env.user
-        for task in grouped_tasks:
-            for user in users:
-                my_tasks.append(task)
-
         values.update({
             'date': date_begin,
             'date_end': date_end,
-            'grouped_tasks': my_tasks,
+            'grouped_tasks': grouped_tasks,
             'page_name': 'task',
             'archive_groups': archive_groups,
             'default_url': '/my/tasks',
@@ -745,7 +747,7 @@ class CustomerPortal(CustomerPortal):
         })
         return request.render("project.portal_my_tasks", values)
 
-        # First Function to Add Filter to invoice_count in portal invoice view
+    # @override First Function to Add Filter to invoice_count in portal invoice view
     def _prepare_portal_layout_values(self):
         values = super(CustomerPortal, self)._prepare_portal_layout_values()
         invoice_count = request.env['account.move'].search_count([
@@ -755,7 +757,7 @@ class CustomerPortal(CustomerPortal):
         values['invoice_count'] = invoice_count
         return values
 
-    # Second Function to Add Filter to invoice_count in portal invoice view
+    # @override Second Function to Add Filter to invoice_count in portal invoice view
     def _prepare_home_portal_values(self):
         values = super(CustomerPortal, self)._prepare_home_portal_values()
         invoice_count = request.env['account.move'].search_count([
@@ -765,7 +767,8 @@ class CustomerPortal(CustomerPortal):
         values['invoice_count'] = invoice_count
         return values
 
-    # Add filter to display just type=WEB of list invoices linked to specific portal
+    """@override this function to add filter can display 
+    all invoices Not CPF type linked to specific portal"""
     @http.route(['/my/invoices', '/my/invoices/page/<int:page>'], type='http', auth="user", website=True)
     def portal_my_invoices(self, page=1, date_begin=None, date_end=None, sortby=None, **kw):
         values = self._prepare_portal_layout_values()
@@ -801,6 +804,11 @@ class CustomerPortal(CustomerPortal):
             step=self._items_per_page
         )
         # content according to pager and archive selected
+
+        """ Add filter to client view to display all invoices 
+        contains type WEB also the cpf_solde_invoice, cpf_acompte_invoice
+        should be not ckecked using lambda """
+
         invoices = AccountInvoice.search(domain, order=order, limit=self._items_per_page, offset=pager['offset']).filtered(lambda facture: facture.type_facture == 'web' and facture.cpf_solde_invoice == False and facture.cpf_acompte_invoice == False)
         request.session['my_invoices_history'] = invoices.ids[:100]
         values.update({
