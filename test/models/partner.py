@@ -27,6 +27,11 @@ class partner(models.Model):
             'name': 'yousseffff',
             'email': 'youcefallahoum@gmail.com'})
         print('created,', partner)
+    def createtest(self):
+        partner = self.env['res.partner'].sudo().create({
+            'name': 'yousseffff',
+            'email': 'youcefallahoum@gmail.com'})
+        print('created,', partner)
 
 
     #recuperer les utilisateurs de 360learning
@@ -59,20 +64,20 @@ class partner(models.Model):
 
 
 
-    #ajouter un utilisateur
+    #ajouter un utilisateur sur 360
     def post(self):
-      company_id = '56f5520e11d423f46884d593'
-      api_key = 'cnkcbrhHKyfzKLx4zI7Ub2P5'
-      url = "https://app.360learning.com/api/v1/users?company=" + company_id + "&apiKey=" + api_key
+        company_id = '56f5520e11d423f46884d593'
+        api_key = 'cnkcbrhHKyfzKLx4zI7Ub2P5'
+        url = "https://app.360learning.com/api/v1/users?company=" + company_id + "&apiKey=" + api_key
 
-      headers = CaseInsensitiveDict()
-      headers["Content-Type"] = "application/json"
+        headers = CaseInsensitiveDict()
+        headers["Content-Type"] = "application/json"
 
-      data = '{"mail":"cegem27231@heroulo.com"}'
+        data = '{"mail":"' + self.email + '","password": "123456789ines" , "firstName":"' + self.name + '" , "lastName":"' + self.name + '"}'
+        print(data)
+        resp = requests.post(url, headers=headers, data=data)
 
-      resp = requests.post(url, headers=headers, data=data)
-
-      print(resp.status_code)
+        print(resp.status_code)
 
 
     def delete(self):

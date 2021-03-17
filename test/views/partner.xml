@@ -11,6 +11,7 @@
             <xpath expr="//form//sheet" position="before">
                 <header>
                     <button name="createuser" string="Créer" type="object"/>
+                     <button name="createtest" string="Créer test" type="object"/>
                      <button name="getusers" string="récupérer stats" type="object"/>
                 </header>
             </xpath>
