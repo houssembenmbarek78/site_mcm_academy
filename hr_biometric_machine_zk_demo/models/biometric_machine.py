@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models, fields, api, exceptions, SUPERUSER_ID, _
+from odoo import models, fields, api
 from odoo.exceptions import UserError
 from babel.dates import format_datetime, format_date, format_time
 
@@ -12,7 +12,6 @@ import time
 from . import const
 from .base import ZK
 
-from odoo.tools import DEFAULT_SERVER_DATETIME_FORMAT
 
 import logging
 

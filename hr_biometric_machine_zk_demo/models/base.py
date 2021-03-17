@@ -5,7 +5,6 @@ from socket import AF_INET, SOCK_DGRAM, SOCK_STREAM, socket, timeout
 from struct import pack, unpack
 import codecs
 
-from hr_zk_attendance.models.zkconst import decode_time
 from . import const
 from .exception import ZKErrorConnection, ZKErrorResponse, ZKNetworkError
 from .user import User
