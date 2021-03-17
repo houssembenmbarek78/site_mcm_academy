@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="listusers">
+        <field name="name">List Users</field>
+        <field name="model">test.session</field>
+        <field name="arch" type="xml">
+            <tree >
+                <button name="click" string="users" class="oe_highlight"></button>
+
+
+            </tree>
+        </field>
+    </record>
+</odoo>

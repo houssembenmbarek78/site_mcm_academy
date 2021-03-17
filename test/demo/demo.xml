@@ -1,0 +1,28 @@
+<odoo>
+    <data>
+          <record id="course0" model="test.course">
+            <field name="name">cours 0</field>
+            <field name="description">description0</field>
+          </record>
+
+          <record id="course1" model="test.course">
+            <field name="name">cours 1</field>
+          </record>
+
+          <record id="course2" model="test.course">
+            <field name="name">course 2</field>
+            <field name="description">description du cours 2</field>
+          </record>
+
+          <record id="object3" model="test.test">
+            <field name="name">Object 3</field>
+            <field name="value">30</field>
+          </record>
+
+          <record id="object4" model="test.test">
+            <field name="name">Object 4</field>
+            <field name="value">40</field>
+          </record>
+
+    </data>
+</odoo>

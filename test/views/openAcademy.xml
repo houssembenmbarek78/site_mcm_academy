@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="course_search_view" model="ir.ui.view">
+        <field name="name">course.form</field>
+        <field name="model">test.course</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"></field>
+                <field name="description"></field>
+                <filter name="my_courses" string="mes cours"
+                        domain="[('responsible_id','=',uid)]"/>
+                    <group string="group by">
+                        <filter name="by_responsible" string="Responsable"
+                                context="{'group_by': 'responsible_id'}"/>
+                    </group>
+
+            </search>
+        </field>
+    </record>
+
+
+
+            <record id="course_form_view" model="ir.ui.view">
+        <field name="name">course.form</field>
+        <field name="model">test.course</field>
+        <field name="arch" type="xml">
+            <form string="course_form">
+                <sheet>
+                    <group>
+                        <field name="name"></field>
+                        <field name="responsible_id"></field>
+                        <notebook>
+                            <page string="Description">
+                                <field name="description"></field>
+                            </page>
+                            <page string="Sessions">
+                                <field name="session_ids">
+                                    <tree string="Registered sesions">
+                                        <field name="name"/>
+                                        <field name="instructor_id"/>
+                                    </tree>
+                                </field>
+
+                            </page>
+                        </notebook>
+
+                    </group>
+                </sheet>
+
+            </form>
+        </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="list_courses">
+        <field name="name">test list</field>
+        <field name="model">test.course</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- action definition for a window action-->
+    <record model="ir.actions.act_window" id="cours_list_action">
+        <field name="name">Liste des Cours</field>
+        <field name="res_model">test.course</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context" eval="{'search_default_my_courses': 1}"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">creer le premier cours</p>
+
+        </field>
+    </record>
+    <menuitem id="main_open_academy_menu" name="Open Academy"></menuitem>
+    <menuitem id="open_academy_menu" name="open academy" parent="main_open_academy_menu"/>
+    <menuitem id="course_menu" name="Courses" parent="open_academy_menu" action="cours_list_action"/>
+
+
+
+
+
+
+
+
+
+    <!-- automatically generated list view for courses -->
+    <record model="ir.ui.view" id="course_tree_view">
+        <field name="name">course.tree</field>
+        <field name="model">test.course</field>
+        <field name="arch" type="xml">
+            <tree string="Course Tree">
+                <field name="name"/>
+                <field name="responsible_id"/>
+            </tree>
+
+        </field>
+
+    </record>
+
+    <!-- session tree view-->
+    <record model="ir.ui.view" id="session_liste_view">
+        <field name="name">Liste des sessions</field>
+        <field name="model">test.session</field>
+        <field name="arch" type="xml">
+            <tree string="Liste des Sessions" decoration-info="duration&lt;5" decoration-danger="duration&gt;15">
+                <field name="name"></field>
+                <field name="course_id"></field>
+                <field name="taken_seats" widget="progressbar"></field>
+                <field name="duration" invisible="1"></field>
+
+            </tree>
+
+        </field>
+    </record>
+        <!-- session form view-->
+    <record model="ir.ui.view" id="session_form_view">
+        <field name="name">session.form</field>
+        <field name="model">test.session</field>
+        <field name="arch" type="xml">
+            <form string="session_form">
+                <sheet>
+                    <group>
+                        <group string="General">
+                            <field name="course_id"></field>
+                            <field name="name"></field>
+                            <field name="instructor_id"></field>
+                            <field name="active"></field>
+
+                        </group>
+                        <group string="Shedule">
+                            <field name="date_debut"></field>
+                            <field name="duration"></field>
+                            <field name="seats"></field>
+                            <field name="taken_seats" widget="progressbar"></field>
+                        </group>
+
+                    </group>
+                    <label for="attendee_ids"></label>
+                    <field name="attendee_ids"></field>
+                </sheet>
+            </form>
+
+        </field>
+    </record>
+
+
+
+     <!-- session sous forme de gantt-->
+    <record model="ir.ui.view" id="session_gantt">
+        <field name="name">session.gantt</field>
+        <field name="model">test.session</field>
+        <field name="arch" type="xml">
+            <gantt string="Gantt des sessions"
+            date_start="date_debut"
+            date_stop="end_date"
+            default_group_by="instructor_id">
+            </gantt>
+        </field>
+    </record>
+
+    <!--     session calendar view-->
+    <record model="ir.ui.view" id="session_calendar_view">
+        <field name="name">session.calendar</field>
+        <field name="model">test.session</field>
+        <field name="arch" type="xml">
+            <calendar string="session calendar" date_start="date_debut" date_stop="end_date"
+              color="instructor_id">
+                <field name="name"></field>
+            </calendar>
+
+        </field>
+    </record>
+     <!-- graph session -->
+
+    <record model="ir.ui.view" id="session_graph">
+        <field name="name">session.graph</field>
+        <field name="model">test.session</field>
+        <field name="arch" type="xml">
+            <graph string="Participation par cours">
+                <field name="course_id"></field>
+                <field name="attendee_count"></field>
+            </graph>
+        </field>
+    </record>
+
+
+    <!-- kanban view for session-->
+
+
+       <record model="ir.ui.view" id="view_openacad_session_kanban">
+            <field name="name">openacademy.session.kanban</field>
+            <field name="model">test.session</field>
+            <field name="arch" type="xml">
+                <kanban default_group_by="course_id">
+                    <field name="color"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div
+                                    t-attf-class="oe_kanban_color_{{kanban_getcolor(record.color.raw_value)}}
+                                                  oe_kanban_global_click_edit oe_semantic_html_override
+                                                  oe_kanban_card {{record.group_fancy==1 ? 'oe_kanban_card_fancy' : ''}}">
+                                <div class="oe_dropdown_kanban">
+                                    <!-- dropdown menu -->
+                                    <div class="oe_dropdown_toggle">
+                                        <i class="fa fa-bars fa-lg" title="Manage" aria-label="Manage"/>
+                                        <ul class="oe_dropdown_menu">
+                                            <li>
+                                                <a type="delete">Delete</a>
+                                            </li>
+                                            <li>
+                                                <ul class="oe_kanban_colorpicker"
+                                                    data-field="color"/>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="oe_clear"></div>
+                                </div>
+                                <div t-attf-class="oe_kanban_content">
+                                    <!-- title -->
+                                    Session name:
+                                    <field name="name"/>
+                                    <br/>
+                                    Start date:
+                                    <field name="date_debut"/>
+                                    <br/>
+                                    duration:
+                                    <field name="duration"/>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+
+    <record model="ir.actions.act_window" id="session_list_action">
+        <field name="name">Sessions</field>
+        <field name="res_model">test.session</field>
+        <field name="view_mode">tree,graph,form,gantt,calendar,kanban</field>
+    </record>
+
+    <menuitem id="session_menu" name="Sessions"
+              parent="open_academy_menu"
+              action="session_list_action"></menuitem>
+
+    <record model="ir.ui.view" id="wizard_form_view">
+        <field name="name">wizard.form</field>
+        <field name="model">test.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Ajouter des participants">
+                <group>
+                    <field name="session_ids"></field>
+                    <field name="attendee_ids"></field>
+                </group>
+                <footer>
+                    <button name="subscribe" type="object"
+                     string="subscribe" class="oe_highlight"></button>
+                    or
+                    <button special="cancel" string="cancel">
+
+                    </button>
+                </footer>
+            </form>
+        </field>
+
+    </record>
+    <act_window id="lounch_session_wizard"
+                 name="Ajouter participants"
+                 binding_model="test.session"
+                 res_model="test.wizard"
+                 view_mode="form"
+                 target="new"></act_window>
+</odoo>
