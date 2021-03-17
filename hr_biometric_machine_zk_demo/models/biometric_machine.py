@@ -70,7 +70,7 @@ class attendanceLog(models.Model):
         for r in self:
 
             machine_ip = '192.168.1.201'
-            port = 4370
+            port = int(4370)
             zk = ZK(machine_ip, port=port, timeout=10, password=0, force_udp=False, ommit_ping=False)
             conn = ''
             try:
