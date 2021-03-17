@@ -17,7 +17,6 @@ class partner(models.Model):
 
     #champs pour recuperer les statistiques
     last_login=fields.Char(string="derniere Connexion")
-
     # learner_achivement=fields.Char(string="Réalisations des apprenants")
     averageScore=fields.Char(string="Score Moyenne")
     totalTimeSpentInMinutes=fields.Char(string="temps passé en minutes")
