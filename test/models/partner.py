@@ -35,14 +35,14 @@ class partner(models.Model):
             response_user=requests.get('https://app.360learning.com/api/v1/users'+ iduser ,params=params)
             table_user=response_user.json()
            # Affecter les infos recupérés aux champs du res.partner
-            values={
-                "last_login": table_user['lastLoginAt'],
-                "averageScore": table_user['averageScore'],
-                "totalTimeSpentInMinutes": table_user['totalTimeSpentInMinutes']
-            }
-
-            self.env['res.partner'].sudo().create(values)
-        print("users-----", values)
+           #  values={
+           #      "last_login": table_user['lastLoginAt'],
+           #      "averageScore": table_user['averageScore'],
+           #      "totalTimeSpentInMinutes": table_user['totalTimeSpentInMinutes']
+           #  }
+           #
+           #  self.env['res.partner'].sudo().create(values)
+        # print("users-----", values)
         # res = requests.get('https://app.360learning.com/api/v1/programs/sessions', params=params)
         # program_sessions = res.json()
         # # for record in program_sessions:
