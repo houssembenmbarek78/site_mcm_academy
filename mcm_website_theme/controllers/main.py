@@ -747,7 +747,7 @@ class CustomerPortal(CustomerPortal):
         })
         return request.render("project.portal_my_tasks", values)
 
-    # @override First Function to Add Filter to invoice_count in portal invoice view
+    # @override Function to Add Filter to invoice_count in portal invoice view
     def _prepare_portal_layout_values(self):
         values = super(CustomerPortal, self)._prepare_portal_layout_values()
         invoice_count = request.env['account.move'].search_count([
@@ -755,6 +755,10 @@ class CustomerPortal(CustomerPortal):
             ('type_facture', '=', 'web'), ('cpf_solde_invoice', '=', False), ('cpf_acompte_invoice', '=', False)
         ])
         values['invoice_count'] = invoice_count
+        #add users_tasks_domain to filter tasks in portal view
+        users = request.env.user
+        users_tasks_domain = ['|', ('parent_id.user_id', '=', users.id), ('user_id', '=', users.id)]
+        values['task_count'] = request.env['project.task'].search_count(users_tasks_domain)
         return values
 
     # @override Second Function to Add Filter to invoice_count in portal invoice view
@@ -765,6 +769,10 @@ class CustomerPortal(CustomerPortal):
             ('type_facture', '=', 'web'), ('cpf_solde_invoice', '=', False), ('cpf_acompte_invoice', '=', False)
         ]) if request.env['account.move'].check_access_rights('read', raise_exception=False) else 0
         values['invoice_count'] = invoice_count
+        # add users_tasks_domain to filter tasks in portal view
+        users = request.env.user
+        users_tasks_domain = ['|', ('parent_id.user_id', '=', users.id), ('user_id', '=', users.id)]
+        values['task_count'] = request.env['project.task'].search_count(users_tasks_domain)
         return values
 
     """@override this function to add filter can display 
