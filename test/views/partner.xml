@@ -8,12 +8,12 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"></field>
         <field name="arch" type="xml">
-
-            <header>
-                <button name="getusers" string="Addto360" type="object"/>
-            </header>
-
-            <notebook position="inside">
+            <xpath expr="//form//sheet" position="before">
+                <header>
+                    <button name="getusers" string="Addto360" type="object"/>
+                </header>
+            </xpath>
+             <xpath expr="//page[@name='internal_notes']" position="after">
                 <page string="Statistique">
                     <group>
                         <field name="instructor"></field>
@@ -21,8 +21,7 @@
 
                     </group>
                 </page>
-            </notebook>
-
+            </xpath>
 
 
         </field>
@@ -35,9 +34,9 @@
         <field name="view_mode">tree,form</field>
     </record>
     <menuitem id="configuration_menu" name="configuration"
-    parent="main_open_academy_menu"/>
+              parent="main_open_academy_menu"/>
     <menuitem id="contact_menu" name="Contacts"
-    parent="configuration_menu"/>
+              parent="configuration_menu"/>
 
     <record model="ir.actions.act_window" id="contact_cat_list_action">
         <field name="name">Contact tags</field>
@@ -47,8 +46,8 @@
     </record>
 
     <menuitem id="contact_cat_menu" name="caontact_cat"
-        parent="configuration_menu"
-        action="contact_cat_list_action">
+              parent="configuration_menu"
+              action="contact_cat_list_action">
 
     </menuitem>
     <record model="res.partner" id="teacher1">
@@ -57,13 +56,13 @@
     <record model="res.partner" id="teacher2">
         <field name="name">Teacher/ level2</field>
     </record>
-     <act_window id="lounch_session_wizard"
-                 name="Ajouter participants"
-                 binding_model="test.partner"
-                 res_model="test.wizard"
-                 view_mode="form"
-                 target="new">
+    <act_window id="lounch_session_wizard"
+                name="Ajouter participants"
+                binding_model="test.partner"
+                res_model="test.wizard"
+                view_mode="form"
+                target="new">
 
-     </act_window>
+    </act_window>
 
 </odoo>
