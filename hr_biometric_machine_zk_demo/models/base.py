@@ -1562,6 +1562,5 @@ class ZK(object):
                 timestamp = self.__decode_time(timestamp)
                 attendance = Attendance(user_id, timestamp, status, punch, uid)
                 attendances.append(attendance)
-                print(attendance)
                 attendance_data = attendance_data[40:]
         return attendances
