@@ -1,0 +1,4 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_zk_machine_manager,zk.machine.demo,model_zk_machine_demo_udp,,1,1,1,1
+access_machine_manager,zk.attendance.demo,model_attendance_log,,1,1,1,1
+
