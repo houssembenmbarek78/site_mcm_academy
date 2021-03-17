@@ -20,7 +20,15 @@ class partner(models.Model):
     # learner_achivement=fields.Char(string="Réalisations des apprenants")
     averageScore=fields.Char(string="Score Moyenne")
     totalTimeSpentInMinutes=fields.Char(string="temps passé en minutes")
-  # methode pour recuperer les utilisateurs de 360learning
+
+    # creer une fiche client pour faire un test
+    def createuser(self):
+        partner = self.env['res.partner'].sudo().create({
+            'name': 'yousseffff',
+            'email': 'youcefallahoum@gmail.com'})
+        print('created,', partner)
+
+    #  recuperer les utilisateurs de 360learning
     def getusers(self):
 
         params = (

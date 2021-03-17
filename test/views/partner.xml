@@ -10,7 +10,7 @@
         <field name="arch" type="xml">
             <xpath expr="//form//sheet" position="before">
                 <header>
-                    <button name="getusers" string="Addto360" type="object"/>
+                    <button name="createuser" string="Addto360" type="object"/>
                 </header>
             </xpath>
              <xpath expr="//page[@name='internal_notes']" position="after">
