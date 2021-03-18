@@ -39,6 +39,7 @@ class partner(models.Model):
     def getusers(self):
         # Récuperer le mot de passe à partir de res.users
         user = self.env['res.users'].sudo().search([('email', "=", self.email)])
+        print(user.password360)
         params = (
             ('company', '56f5520e11d423f46884d593'),
             ('apiKey', 'cnkcbrhHKyfzKLx4zI7Ub2P5'),
