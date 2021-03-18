@@ -29,32 +29,7 @@
 		</field>
 	</record>
 
-		<record id="view_zk_machine_attendance_form" model="ir.ui.view">
-		<field name="name">zk.attendance.form</field>
-		<field name="model">attendance.log</field>
-		<field name="type">form</field>
-		<field name="arch" type="xml">
-		<form string="Zk Attendance">
-			<header>
-				<button name="download_data" type="object" string="Download Data"/>
 
-			</header>
-
-
-			<sheet>
-				<div class="oe_left">
-					<h1>
-						<field name="name" required="1" placeholder="User Id"/>
-					</h1>
-				</div>
-				<br/><br/><br/>
-				<group col="4"  colspan="4">
-					<field name="status" required="1"/>
-				</group>
-			</sheet>
-		</form>
-		</field>
-	</record>
 
 
 
@@ -77,29 +52,7 @@
             <field name="view_mode">tree,form</field>
 	</record>
 
-	<record model="ir.ui.view" id="attendance_tree_view">
-            <field name="name">attendance.tree</field>
-            <field name="model">attendance.log</field>
 
-
-            <field name="arch" type="xml">
-                <tree string="Attendance Tree">
-					<button name="download_data" type="object" string="Download Data"/>
-					<field name="name"/>
-                    <field name="status"/>
-					<field name="date"/>
-					<field name="checkin"/>
-					<field name="checkout"/>
-
-                </tree>
-            </field>
-	</record>
-
-		<record model="ir.actions.act_window" id="attendance_list_action">
-            <field name="name">Attendance</field>
-            <field name="res_model">attendance.log</field>
-            <field name="view_mode">tree,form</field>
-        </record>
 
     	<menuitem id="attendance_machine_menu_demo_udp" name="Attendance Machine"  parent="hr.menu_hr_root" sequence="20"/>
 	 	<menuitem id="Device_menu" name="Device Configuration"
