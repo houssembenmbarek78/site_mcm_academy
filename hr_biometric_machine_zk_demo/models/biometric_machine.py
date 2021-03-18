@@ -33,7 +33,7 @@ class zkMachine(models.Model):
         for r in self:
 
             machine_ip = r.name
-            port = r.port
+            port = int(r.port)
             zk = ZK(machine_ip, port=int(port), timeout=10, password=0, force_udp=False, ommit_ping=False)
             conn = ''
             try:
