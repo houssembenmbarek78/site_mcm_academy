@@ -24,7 +24,7 @@ class zkMachine(models.Model):
     _description = 'Zk machine Model'
 
     name = fields.Char("Machine IP")
-    port = fields.Integer("Port Number")
+    port = fields.Char("Port Number")
 
         # Tester la  connexion avec la pointeuse
         # Se deconnecter apres une alerte de reussite
