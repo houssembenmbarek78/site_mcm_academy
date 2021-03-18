@@ -36,22 +36,19 @@ class zkMachine(models.Model):
             port = int(r.port)
             zk = ZK(machine_ip, port=port, timeout=10, password=0, force_udp=False, ommit_ping=False)
             conn = ''
-            try:
 
-                conn = zk.connect()
+            conn = zk.connect()
+            print("connn", conn)
 
-            except Exception as e:
-                raise UserError('The connection has not been achieved')
-            finally:
-                if conn:
-                    conn.disconnect()
-                    return {
-                        'effect': {
-                            'fadeout': 'slow',
-                            'message': 'Connexion réussi',
-                            'type': 'rainbow_man',
-                        }
+            if conn:
+                conn.disconnect()
+                return {
+                    'effect': {
+                        'fadeout': 'slow',
+                        'message': 'Connexion réussi',
+                        'type': 'rainbow_man',
                     }
+                }
 
 
 
