@@ -9,32 +9,33 @@ from odoo import models, fields
 class partner(models.Model):
     _inherit = 'res.partner'
 
-    # ajouter champs au modele partner par defaut res.partner ne sont pas des instructors
+    # Ajouter champs au modele partner par defaut res.partner ne sont pas des instructors
     instructor = fields.Boolean("Instructor", default=False)
     session_ids = fields.Many2many('test.session', string='attended_sessions',
 
                                    readonly=True)
 
-    #champs pour recuperer les statistiques
+    #Champs pour recuperer les statistiques
     last_login=fields.Char(string="derniere Connexion")
     # learner_achivement=fields.Char(string="Réalisations des apprenants")
     averageScore=fields.Char(string="Score Moyenne")
     totalTimeSpentInMinutes=fields.Char(string="temps passé en minutes")
 
-    # creer une fiche client pour faire un test
+    # Creer une fiche client pour faire un test
     def createuser(self):
         partner = self.env['res.partner'].sudo().create({
-            'name': 'yousseffff',
+            'name': 'youcef',
             'email': 'youcefallahoum@gmail.com'})
         print('created,', partner)
+
     def createtest(self):
         partner = self.env['res.partner'].sudo().create({
-            'name': 'yousseffff',
-            'email': 'youcefallahoum@gmail.com'})
+            'name': 'test',
+            'email': 'kadilo3413@gameqo.com'})
         print('created,', partner)
 
 
-    #recuperer les utilisateurs de 360learning
+    #Recuperer les utilisateurs de 360learning
     def getusers(self):
 
         params = (
@@ -43,7 +44,7 @@ class partner(models.Model):
         )
         response = requests.get('https://app.360learning.com/api/v1/users', params=params)
         users = response.json()
-        #faire un parcours sur chaque user et extraie ses statistique
+        #Faire un parcours sur chaque user et extraie ses statistique
         for user in users:
             iduser=user['_id']
             email=user['mail']
@@ -64,7 +65,7 @@ class partner(models.Model):
 
 
 
-    #ajouter un utilisateur sur 360
+    #Ajouter un utilisateur sur 360
     def post(self):
         company_id = '56f5520e11d423f46884d593'
         api_key = 'cnkcbrhHKyfzKLx4zI7Ub2P5'
