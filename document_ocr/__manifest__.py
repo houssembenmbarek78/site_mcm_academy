@@ -8,8 +8,7 @@
     "license": "AGPL-3",
     "category": "Knowledge Management",
     "summary": "Run character recognition on uploaded files",
-    "depends": ["documents",
-    ],
+    "depends": ["documents"],
     "data": [
         "data/ir_cron.xml",
         "data/ir_config_parameter.xml",
