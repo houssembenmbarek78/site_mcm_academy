@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<openerp>
+<odoo>
     <data noupdate="1">
         <record id="param_synchronous" model="ir.config_parameter">
             <field name="key">document_ocr.synchronous</field>
@@ -10,4 +10,4 @@
             <field name="value">300</field>
         </record>
     </data>
-</openerp>
+</odoo>
