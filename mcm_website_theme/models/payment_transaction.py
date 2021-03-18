@@ -12,7 +12,7 @@ class PaymentTransaction(models.Model):
         if self.reference:
             data = self.reference.split("-")
             sale = self.env['sale.order'].sudo().search([('name', 'ilike', data[0])])
-            if (self.stripe_payment_intent and self.state == 'done'):
+            if (self.stripe_payment_intent and self.state == 'done' and sale):
                 Session = self.env['mcm.session']
                 sale.partner_id.mcm_session_id = sale.session_id
                 sale.partner_id.module_id = sale.module_id
