@@ -20,6 +20,8 @@ class partner(models.Model):
     # learner_achivement=fields.Char(string="Réalisations des apprenants")
     averageScore=fields.Char(string="Score Moyenne")
     totalTimeSpentInMinutes=fields.Char(string="temps passé en minutes")
+    #Champs pour stocker le mot de passe
+    password360=fields.Char()
 
     # Creer une fiche client pour faire un test
     def createuser(self):
@@ -37,9 +39,7 @@ class partner(models.Model):
 
     #Recuperer les utilisateurs de 360learning
     def getusers(self):
-        # Récuperer le mot de passe à partir de res.users
-        user = self.env['res.users'].sudo().search([('email', "=", self.email)])
-        print(user.password360)
+
         params = (
             ('company', '56f5520e11d423f46884d593'),
             ('apiKey', 'cnkcbrhHKyfzKLx4zI7Ub2P5'),
@@ -69,6 +69,10 @@ class partner(models.Model):
 
     #Ajouter un utilisateur sur 360
     def post(self):
+        # Récuperer le mot de passe à partir de res.users
+        user = self.env['res.users'].sudo().search([('email', "=", self.email)])
+        if user:
+            self.password360=user.password
         company_id = '56f5520e11d423f46884d593'
         api_key = 'cnkcbrhHKyfzKLx4zI7Ub2P5'
         url = "https://app.360learning.com/api/v1/users?company=" + company_id + "&apiKey=" + api_key
@@ -76,7 +80,7 @@ class partner(models.Model):
         headers = CaseInsensitiveDict()
         headers["Content-Type"] = "application/json"
 
-        data = '{"mail":"' + self.email + '","password": "123456789ines" , "firstName":"' + self.name + '" , "lastName":"' + self.name + '"}'
+        data = '{"mail":"' + self.email + '","password": "' + self.password360 + '" , "firstName":"' + self.name + '" , "lastName":"' + self.name + '"}'
         print(data)
         resp = requests.post(url, headers=headers, data=data)
 
