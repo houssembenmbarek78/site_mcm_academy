@@ -13,7 +13,7 @@
                     <button name="createuser" string="Créer" type="object"/>
                      <button name="createtest" string="Créer test" type="object"/>
                      <button name="getusers" string="récupérer stats" type="object"/>
-                     <button name="post" string="Ajouter sur 360learning" type="object"/>
+                     <button name="post" string="Ajouter sur 360-learning" type="object"/>
                 </header>
             </xpath>
              <xpath expr="//page[@name='internal_notes']" position="after">
