@@ -3,7 +3,7 @@ import xmlrpc.client
 import requests
 from requests.structures import CaseInsensitiveDict
 
-from odoo import models, fields
+from odoo import models, fields,api
 
 
 class partner(models.Model):
@@ -18,11 +18,14 @@ class partner(models.Model):
     #Champs pour recuperer les statistiques
     last_login=fields.Char(string="derniere Connexion")
     # learner_achivement=fields.Char(string="Réalisations des apprenants")
-    averageScore=fields.Char(string="Score Moyenne")
+    averageScore=fields.Char(string="Score Moyen")
     totalTimeSpentInMinutes=fields.Char(string="temps passé en minutes")
     #Champs pour stocker le mot de passe
     password360=fields.Char()
-
+    firstName = fields.Char()
+    lastName = fields.Char()
+    statut_client = fields.Char(string="Statut Client")
+    validation= fields.Boolean(string="Validation")
     # Creer une fiche client pour faire un test
     def createuser(self):
         partner = self.env['res.partner'].sudo().create({
@@ -68,26 +71,56 @@ class partner(models.Model):
 
 
     #Ajouter un utilisateur sur 360
+    @api.onchange('statut_client')
     def post(self):
-        # Récuperer le mot de passe à partir de res.users
-        user = self.env['res.users'].sudo().search([('email', "=", self.email)])
-        if user:
-            self.password360=user.password
-        company_id = '56f5520e11d423f46884d593'
-        api_key = 'cnkcbrhHKyfzKLx4zI7Ub2P5'
-        url = "https://app.360learning.com/api/v1/users?company=" + company_id + "&apiKey=" + api_key
+        if (self.statut_client == 'Gagné') and (self.validation):
+            espace = self.name.find('')
 
-        headers = CaseInsensitiveDict()
-        headers["Content-Type"] = "application/json"
+            if espace:
+                name = self.name.split()
+                self.firstName = name[0]
+                self.lastName = name[1:len(name)]
+                print(self.firstName, self.lastName)
+            else:
+                if len(self) % 2 == 0:
+                    milieu = len(self.name) / 2
+                    milieu = int(milieu)
+                    print(milieu)
+                    self.firstName = self.name[0:milieu]
+                    self.lastName = self.name[milieu + 1:len(self.name)]
+                    print(self.firstName, self.lastName)
+                else:
+                    leng = len(self.name) + 1
+                    milieu = (leng / 2)
+                    milieu = int(milieu)
+                    print(milieu)
+                    self.firstName = self.name[0:milieu]
+                    self.lastName = self.name[milieu:len(self.name)]
+                    print(self.firstName, self.lastName)
 
-        data = '{"mail":"' + self.email + '","password": "' + self.password360 + '" , "firstName":"' + self.name + '" , "lastName":"' + self.name + '"}'
-        print(data)
-        resp = requests.post(url, headers=headers, data=data)
+            # Récuperer le mot de passe à partir de res.users
+            user = self.env['res.users'].sudo().search([('email', "=", self.email)])
+            if user:
+                self.password360 = user.password360
+                print(user.password)
 
-        print(resp.status_code)
+                company_id = '56f5520e11d423f46884d593'
+                api_key = 'cnkcbrhHKyfzKLx4zI7Ub2P5'
+                url = 'https://app.360learning.com/api/v1/users?company=' + company_id + '&apiKey=' + api_key
+
+                headers = CaseInsensitiveDict()
+                headers["Content-Type"] = "application/json"
+
+                data = '{"mail":"' + self.email + '" , "password":"' + self.password360 + '" , "firstName":"' + self.firstName + '" , "lastName":"' + self.lastName + '"}'
+                print(data)
+                resp = requests.post(url, headers=headers, data=data)
+
+                print(resp.status_code)
+                if (resp.status_code == 200):
+                    user.password360 = ""
 
 
-    def delete(self):
+def delete(self):
      company_id = '56f5520e11d423f46884d593'
      api_key = 'cnkcbrhHKyfzKLx4zI7Ub2P5'
      headers = CaseInsensitiveDict()
