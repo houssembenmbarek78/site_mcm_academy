@@ -75,8 +75,8 @@
 
         </field>
     </record>
-    <menuitem id="main_open_academy_menu" name="Open Academy"></menuitem>
-    <menuitem id="open_academy_menu" name="open academy" parent="main_open_academy_menu"/>
+    <menuitem id="main_open_academy_menu" name="360 Learning"></menuitem>
+    <menuitem id="open_academy_menu" name="360 Learning" parent="main_open_academy_menu"/>
     <menuitem id="course_menu" name="Courses" parent="open_academy_menu" action="cours_list_action"/>
 
 
