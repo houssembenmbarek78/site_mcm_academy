@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
-import pytesseract
+
 
 
 
@@ -15,5 +15,5 @@ class ocrdocument(models.Model):
     def trycv(self):
         for r in self:
 
-            image=pytesseract.image_to_string('image.png')
-            print(image)
+
+           print('it is working')
