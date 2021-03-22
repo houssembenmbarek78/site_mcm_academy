@@ -15,7 +15,7 @@
 
                                 <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Montserrat:300,400,500,600,700|Source+Code+Prodisplay=swap"
                                       rel="stylesheet"/>
-                                <link rel="stylesheet"
+                                 <link rel="stylesheet"
                                       href="/mcm_contact_documents/static/src/css/style2.css"/>
                                 <link rel="stylesheet" href="/mcm_contact_documents/static/src/css/style1.css"/>
 
@@ -83,1066 +83,488 @@
 
                                     }
                                 </style>
-                                <center>
-
-                                    <div class="wrapper">
-                                        <p>
-                                            <h1 style="font-size: 4vmin;text-align: center;line-height: 1;color: #333;">
-                                                <b>Constituez votre dossier</b>
-                                            </h1>
-                                        </p>
-                                    </div>
+<center>
 
                                     <form action="/submitted/document" method="post" id="form1"
                                           class="s_website_form container-fluid mt32" enctype="multipart/form-data"
-                                          data-model_name="documents.document"
+                                          data-model_name="partner.document"
                                           data-success_page="/submitted_documents" data-editable-form="false"
-                                          hide-change-model="true" style="margin-top: -10px !important;">
-                                        <div class="container"
-                                             style="margin-left:auto;margin-right:auto;z-index:-1;display: table-cell;horizontal-align: middle;"
-                                             align="center">
-                                            <div align="center">
-                                                <div class="row" style="width:120%;margin-left:-35px;margin-right:15%;"
-                                                     align="center">
-                                                    <div style="padding: 0 1px 0 1px;display:inline-block;"
-                                                         class="col-sm-4">
-                                                        <div class="ligne">
+                                          hide-change-model="true">
+                                        <div class="container" align="center" style="margin-left:auto;margin-right:auto;display:block;z-index:-1;display: table-cell;
+    horizontal-align: middle ">
+<div align="center">
+<div class="row" align="center" style="display:flex;margin:auto;
+    float:none;">
+       <div style="padding: 0 1px 0 1px;display:inline-block;margin-left:-10px" class="col-xs-4">
+
+<div class="ligne" >
+
+<div class="pricing" style="display:inline-block;padding-bottom: 0px;">
+  <div class="panel panel-default option-basic active">
+    <div class="panel-heading">
+      <h3>
+        <span class="price">Pièce d'identité</span>
+<a href="#0" class="cd-popup-trigger" style="margin-top:-15px;margin-left:90%">?</a>
+
+<div class="cd-popup" role="alert">
+    <div class="cd-popup-container">
+        <p><b>Carte nationale d’identité (CNI) ou passeport :</b><br/></p>
+        <p>  <h5>  Photocopie de la CNI ou du passeport en cours de validité. Les documents doivent être transmis recto-verso. Cette mesure s’applique également au ressortissant d’un état membre de l’UE, qui peut présenter une copie de la CNI ou du passeport en cours de validité de son pays.</h5></p><hr></hr>
+
+   <p> <b>Titres de séjour :</b><br/></p>
+          <p>  <h5>Les personnes non ressortissantes d’un Etat membre de l’Union européenne ou d’un Etat partie à l’accord sur l’espace économique européen, doivent avoir un titre de séjour les autorisant à exercer une activité professionnelle en France. Est admis un titre de séjour temporaire valable un an pour vie privée et familiale autorisant à travailler en France, ou à travailler en qualité de salarié.</h5></p>
+        <a href="#0" class="cd-popup-close img-replace"></a>
+    </div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+
+
+      </h3>
+
+
+    </div>
+    <div class="panel-body">
+        <div class="table-container">
+          <table class="table">
+            <thead>
+               <div style="float:left;width:120%;padding: 0 1px 0 1px;">
+                                            <div class="input-field o_website_form_required" style="width:83%;">
+                                              <br/>
+                                                <div id="input-images-1" class="input-images-1" style="padding-top: .5rem; border-style: dotted;border-color:#DCDCDC;"></div>
 
-                                                            <div class="pricing" style="position:relative">
 
-
-                                                                <div class="panel panel-default option-basic active">
-                                                                    <div class="panel-heading">
-                                                                        <h3>
-                                                                            <span class="price">Pièce d'identité</span>
-                                                                            <div>
-                                                                                <a href="#0" class="cd-popup-trigger"
-                                                                                   style="margin-top:-15px;margin-left:90%">
-                                                                                    Aide
-                                                                                </a>
-
-                                                                                <div class="cd-popup" role="alert">
-                                                                                    <div class="cd-popup-container">
-                                                                                        <p>
-                                                                                            <b>Carte nationale
-                                                                                                d’identité (CNI) ou
-                                                                                                passeport:
-                                                                                            </b>
-
-                                                                                        </p>
-                                                                                        <p>
-                                                                                            <h5>Photocopie de la CNI ou
-                                                                                                du passeport en cours de
-                                                                                                validité.
-                                                                                                Les documents doivent
-                                                                                                être transmis
-                                                                                                recto-verso. Cette
-                                                                                                mesure s’applique
-                                                                                                également au
-                                                                                                ressortissant d’un état
-                                                                                                membre de l’UE, qui peut
-                                                                                                présenter une copie de
-                                                                                                la CNI ou du passeport
-                                                                                                en cours de validité de
-                                                                                                son pays.
-
-                                                                                            </h5>
-                                                                                        </p>
-                                                                                        <hr></hr>
-
-                                                                                        <p>
-                                                                                            <b>Titres de séjour:
-                                                                                            </b>
-                                                                                            <br/>
-                                                                                        </p>
-                                                                                        <p>
-                                                                                            <h5>
-                                                                                                Les personnes non
-                                                                                                ressortissantes d’un
-                                                                                                Etat membre de l’Union
-                                                                                                européenne ou d’un Etat
-                                                                                                partie à l’accord
-                                                                                                sur l’espace économique
-                                                                                                européen, doivent avoir
-                                                                                                un titre de séjour les
-                                                                                                autorisant à exercer une
-                                                                                                activité
-                                                                                                professionnelle en
-                                                                                                France. Est admis un
-                                                                                                titre de séjour
-                                                                                                temporaire valable un an
-                                                                                                pour vie privée et
-                                                                                                familiale autorisant à
-                                                                                                travailler en France, ou
-                                                                                                à travailler en qualité
-                                                                                                de salarié.
-
-
-                                                                                            </h5>
-                                                                                        </p>
-
-
-                                                                                        <a href="#0"
-                                                                                           class="cd-popup-close img-replace"></a>
-                                                                                    </div> <!-- cd-popup-container -->
-                                                                                </div> <!-- cd-popup -->
-                                                                            </div>
-
-                                                                        </h3>
-                                                                    </div>
-                                                                    <div class="panel-body">
-                                                                        <div class="table-container">
-                                                                            <table class="table">
-                                                                                <thead>
-                                                                                    <div style="float:left;width:120%;padding: 0 1px 0 1px;">
-                                                                                        <div class="input-field o_website_form_required"
-                                                                                             style="width:83%;">
-                                                                                            <br/>
-                                                                                            <div id="input-images-1"
-                                                                                                 class="input-images-1"
-                                                                                                 style="padding-top: .5rem; border-style: dotted;border-color:#DCDCDC"></div>
-                                                                                        </div>
-
-                                                                                        <div class="effect-15 o_website_form_required"
-                                                                                             style="width:83%;margin-top:5px"
-                                                                                             align="center">
-
-                                                                                            <input class="effect-15"
-                                                                                                   type="text"
-                                                                                                   name="number"
-                                                                                                   placeholder="Numéro de pièce d'identité "/>
-                                                                                            <span class="focus-bg">
-
-                                                                                                <a href="#0"
-                                                                                                   class="cd-popup-trigger2"
-                                                                                                   style="margin-top:-16px;margin-left:87%;z-index:1;transform: translateY(-50%);right: 10px;">
-                                                                                                    Aide
-                                                                                                </a>
-
-                                                                                                <div class="cd-popup2"
-                                                                                                     role="alert">
-                                                                                                    <div class="cd-popup-container2">
-                                                                                                        <p style="font-size:1.5em">
-                                                                                                            Pensez à
-                                                                                                            bien
-                                                                                                            vérifier ces
-                                                                                                            chiffres
-                                                                                                            avant
-                                                                                                            l'envoie
-                                                                                                            <br/>
-                                                                                                        </p>
-
-                                                                                                        <a href="#0"
-                                                                                                           class="cd-popup-close2 img-replace2"></a>
-                                                                                                    </div> <!-- cd-popup-container -->
-                                                                                                </div> <!-- cd-popup -->
-
-                                                                                            </span>
-                                                                                            <div class="input-field o_website_form_required"
-                                                                                                 style="width:100%;margin-top:58px;">
-                                                                                                <label for="confirmation"
-                                                                                                       style="width:100%;margin-left:5px;margin-top:-58px;font-size:0.8em">
-                                                                                                    Je confirme avoir
-                                                                                                    soumis
-                                                                                                    le recto et le verso
-                                                                                                </label>
-                                                                                                <input type="checkbox"
-                                                                                                       name="confirmation"
-                                                                                                       style="width:15px;margin-top:-45px;float:left"
-                                                                                                       id="confirmation"/>
-
-                                                                                            </div>
-                                                                                            <p t-if="error_identity!='' and error_identity_number!=''"
-                                                                                               class="alert alert-warning"
-                                                                                               style="margin-left:0%;">
-                                                                                                Vous devez remplir et
-                                                                                                charger votre pièce
-                                                                                                d'identité
-                                                                                            </p>
-                                                                                            <p t-if="error_identity!='' and error_identity_number==''"
-                                                                                               class="alert alert-warning"
-                                                                                               style="margin-left:0%;">
-                                                                                                Vous devez charger votre
-                                                                                                pièce d'identité.
-                                                                                            </p>
-                                                                                            <p t-if="error_identity=='' and error_identity_number!=''"
-                                                                                               class="alert alert-warning"
-                                                                                               style="margin-left:0%;">
-                                                                                                Vous devez remplir votre
-                                                                                                numéro de pièce
-                                                                                                d'identité.
-                                                                                            </p>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </thead>
-                                                                            </table>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-
-                                                            </div>
-                                                            <t t-if="partner_id.module_id">
-                                                                <t t-if="partner_id.module_id.product_id.name in ('Formation intensive VTC','Formation intensive TAXI','Formation intensive VMDTR')">
-                                                                    <div class="pricing" style="position:relative">
-
-
-                                                                        <div class="panel panel-default option-basic active">
-                                                                            <div class="panel-heading">
-                                                                                <h3>
-                                                                                    <span class="price">Reçu de
-                                                                                        paiement
-                                                                                    </span>
-
-
-                                                                                </h3>
-                                                                            </div>
-                                                                            <div class="panel-body">
-                                                                                <div class="table-container">
-                                                                                    <table class="table">
-                                                                                        <thead>
-                                                                                            <div style="float:left;width:100%;padding: 0 1px 0 1px;">
-                                                                                                <div class="input-field o_website_form_required"
-                                                                                                     style="width:100%;">
-                                                                                                    <br/>
-                                                                                                    <div id="input-images-4"
-                                                                                                         class="input-images-4"
-                                                                                                         style="padding-top: .5rem; border-style: dotted;border-color:#DCDCDC"></div>
-                                                                                                </div>
-
-                                                                                                <div class="effect-15 o_website_form_required"
-                                                                                                     style="width:100%;margin-top:5px;float:middle"
-                                                                                                     align="center">
-
-                                                                                                    <p style="font-size:0.9em">
-                                                                                                        Inscrire à
-                                                                                                        l'examen?
-                                                                                                    </p>
-
-                                                                                                    Oui:
-                                                                                                    <input style="width:20%;font-size:0.3em"
-                                                                                                           type="radio"
-                                                                                                           name="radio2"/>
-                                                                                                    Non:
-                                                                                                    <input type="radio"
-                                                                                                           name="radio2"
-                                                                                                           style="width:20%;font-size:0.3em"/>
-                                                                                                    <center>
-                                                                                                        <a href="https://www.examentaxivtc.fr/"
-                                                                                                           target="_blank"
-                                                                                                           class="button-three"
-                                                                                                           style="margin-left:5%;float:right;text-decoration:none;color:#fff;width:50%;height:50%">
-                                                                                                            Reserver
-
-                                                                                                        </a>
-                                                                                                    </center>
-
-                                                                                                </div>
-
-                                                                                            </div>
-                                                                                        </thead>
-                                                                                    </table>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </t>
-                                                            </t>
-                                                            <t t-if="partner_id.module_id">
-                                                                <t t-if="partner_id.module_id.product_id.name in ('Formation continue TAXI','Formation continue VTC','Formation continue VMDTR')">
-                                                                    <div class="pricing" style="position:relative">
-
-
-                                                                        <div class="panel panel-default option-basic active">
-                                                                            <div class="panel-heading">
-                                                                                <h3>
-                                                                                    <span class="price">Carte Taxi ou
-                                                                                        VTC ou VMDTR
-                                                                                    </span>
-
-
-                                                                                </h3>
-                                                                            </div>
-                                                                            <div class="panel-body">
-                                                                                <div class="table-container">
-                                                                                    <table class="table">
-                                                                                        <thead>
-                                                                                            <div style="float:left;width:100%;padding: 0 1px 0 1px;">
-                                                                                                <div class="input-field o_website_form_required"
-                                                                                                     style="width:100%;">
-                                                                                                    <br/>
-                                                                                                    <div id="input-images-4"
-                                                                                                         class="input-images-4"
-                                                                                                         style="padding-top: .5rem; border-style: dotted;border-color:#DCDCDC"></div>
-                                                                                                </div>
-
-                                                                                                <div class="effect-15 o_website_form_required"
-                                                                                                     style="width:100%;margin-top:5px;float:middle;display:none"
-                                                                                                     align="center">
-
-                                                                                                    <p style="font-size:0.9em">
-                                                                                                        Inscrire à
-                                                                                                        l'examen?
-                                                                                                    </p>
-
-                                                                                                    Oui:
-                                                                                                    <input style="width:20%;font-size:0.3em"
-                                                                                                           type="radio"
-                                                                                                           name="radio2"/>
-                                                                                                    Non:
-                                                                                                    <input type="radio"
-                                                                                                           name="radio2"
-                                                                                                           style="width:20%;font-size:0.3em"/>
-                                                                                                    <center>
-                                                                                                        <button class="button-three"
-
-                                                                                                                style="margin-left:5%;float:right">
-                                                                                                            Reserver
-                                                                                                        </button>
-                                                                                                    </center>
-
-                                                                                                </div>
-
-                                                                                            </div>
-                                                                                        </thead>
-                                                                                    </table>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </t>
-                                                            </t>
-                                                            <t t-if="partner_id.module_id">
-                                                                <t t-if="partner_id.module_id.product_id.name in ('Formation mobilité TAXI')">
-                                                                    <div class="pricing" style="position:relative">
-
-
-                                                                        <div class="panel panel-default option-basic active">
-                                                                            <div class="panel-heading">
-                                                                                <h3>
-                                                                                    <span class="price">Carte Taxi
-                                                                                    </span>
-
-
-                                                                                </h3>
-                                                                            </div>
-                                                                            <div class="panel-body">
-                                                                                <div class="table-container">
-                                                                                    <table class="table">
-                                                                                        <thead>
-                                                                                            <div style="float:left;width:100%;padding: 0 1px 0 1px;">
-                                                                                                <div class="input-field o_website_form_required"
-                                                                                                     style="width:100%;">
-                                                                                                    <br/>
-                                                                                                    <div id="input-images-4"
-                                                                                                         class="input-images-4"
-                                                                                                         style="padding-top: .5rem; border-style: dotted;border-color:#DCDCDC"></div>
-                                                                                                </div>
-
-                                                                                                <div class="effect-15 o_website_form_required"
-                                                                                                     style="width:100%;margin-top:5px;float:middle;display:none"
-                                                                                                     align="center">
-
-                                                                                                    <p style="font-size:0.9em">
-                                                                                                        Inscrire à
-                                                                                                        l'examen?
-                                                                                                    </p>
-
-                                                                                                    Oui:
-                                                                                                    <input style="width:20%;font-size:0.3em"
-                                                                                                           type="radio"
-                                                                                                           name="radio2"/>
-                                                                                                    Non:
-                                                                                                    <input type="radio"
-                                                                                                           name="radio2"
-                                                                                                           style="width:20%;font-size:0.3em"/>
-                                                                                                    <center>
-                                                                                                        <button class="button-three"
-
-                                                                                                                style="margin-left:5%;float:right">
-                                                                                                            Reserver
-                                                                                                        </button>
-                                                                                                    </center>
-
-                                                                                                </div>
-
-                                                                                            </div>
-                                                                                        </thead>
-                                                                                    </table>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </t>
-                                                            </t>
-                                                            <t t-if="partner_id.module_id">
-                                                                <t t-if="partner_id.module_id.product_id.name in ('Formation à distance TAXI','Formation à distance VTC','Formation à distance VMDTR')">
-                                                                    <div class="pricing" style="position:relative">
-
-
-                                                                        <div class="panel panel-default option-basic active">
-                                                                            <div class="panel-heading">
-                                                                                <h3>
-                                                                                    <span class="price">Examen Chambre
-                                                                                        des métiers
-                                                                                    </span>
-
-
-                                                                                </h3>
-                                                                            </div>
-                                                                            <div class="panel-body">
-                                                                                <div class="table-container">
-                                                                                    <table class="table">
-                                                                                        <thead>
-                                                                                            <div style="float:left;width:100%;padding: 0 1px 0 1px;">
-                                                                                                <div class="input-field o_website_form_required"
-                                                                                                     style="width:100%;">
-                                                                                                    <br/>
-                                                                                                    <div id="input-images-4"
-                                                                                                         class="input-images-4"
-                                                                                                         style="padding-top: .5rem; border-style: dotted;border-color:#DCDCDC"></div>
-                                                                                                </div>
-
-                                                                                                <div class="effect-15 o_website_form_required"
-                                                                                                     style="width:100%;margin-top:5px;float:middle;display:none"
-                                                                                                     align="center">
-
-                                                                                                    <p style="font-size:0.9em">
-                                                                                                        Inscrire à
-                                                                                                        l'examen?
-                                                                                                    </p>
-
-                                                                                                    Oui:
-                                                                                                    <input style="width:20%;font-size:0.3em"
-                                                                                                           type="radio"
-                                                                                                           name="radio2"/>
-                                                                                                    Non:
-                                                                                                    <input type="radio"
-                                                                                                           name="radio2"
-                                                                                                           style="width:20%;font-size:0.3em"/>
-                                                                                                    <center>
-                                                                                                        <button class="button-three"
-
-                                                                                                                style="margin-left:5%;float:right">
-                                                                                                            Reserver
-                                                                                                        </button>
-                                                                                                    </center>
-
-                                                                                                </div>
-
-                                                                                            </div>
-                                                                                        </thead>
-                                                                                    </table>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </t>
-                                                            </t>
-                                                            <t t-if="partner_id.module_id">
-                                                                <t t-if="partner_id.module_id.product_id.name in ('Formation à distance passerelle VTC','Formation à distance passerelle Taxi')">
-                                                                    <div class="pricing" style="position:relative">
-
-
-                                                                        <div class="panel panel-default option-basic active">
-                                                                            <div class="panel-heading">
-                                                                                <h3>
-                                                                                    <span class="price">Obtention Examen
-                                                                                        ou Carte Taxi / VTC
-                                                                                    </span>
-
-
-                                                                                </h3>
-                                                                            </div>
-                                                                            <div class="panel-body">
-                                                                                <div class="table-container">
-                                                                                    <table class="table">
-                                                                                        <thead>
-                                                                                            <div style="float:left;width:100%;padding: 0 1px 0 1px;">
-                                                                                                <div class="input-field o_website_form_required"
-                                                                                                     style="width:100%;">
-                                                                                                    <br/>
-                                                                                                    <div id="input-images-4"
-                                                                                                         class="input-images-4"
-                                                                                                         style="padding-top: .5rem; border-style: dotted;border-color:#DCDCDC"></div>
-                                                                                                </div>
-
-                                                                                                <div class="effect-15 o_website_form_required"
-                                                                                                     style="width:100%;margin-top:5px;float:middle;display:none"
-                                                                                                     align="center">
-
-                                                                                                    <p style="font-size:0.9em">
-                                                                                                        Inscrire à
-                                                                                                        l'examen?
-                                                                                                    </p>
-
-                                                                                                    Oui:
-                                                                                                    <input style="width:20%;font-size:0.3em"
-                                                                                                           type="radio"
-                                                                                                           name="radio2"/>
-                                                                                                    Non:
-                                                                                                    <input type="radio"
-                                                                                                           name="radio2"
-                                                                                                           style="width:20%;font-size:0.3em"/>
-                                                                                                    <center>
-                                                                                                        <button class="button-three"
-                                                                                                                style="margin-left:5%;float:right">
-                                                                                                            Reserver
-                                                                                                        </button>
-                                                                                                    </center>
-
-                                                                                                </div>
-
-                                                                                            </div>
-                                                                                        </thead>
-                                                                                    </table>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </t>
-                                                            </t>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div style="padding: 0 4px 0 4px;display:inline-block;border-spacing: 5px 1rem;"
-                                                         class="col-sm-4">
-
-                                                        <div class="pricing" style="position:relative">
-
-
-                                                            <div class="panel panel-default option-basic active">
-                                                                <div class="panel-heading">
-                                                                    <h3>
-                                                                        <span class="price">Permis de conduire</span>
-                                                                        <div>
-                                                                            <a href="#0" class="cd-popup-trigger4"
-                                                                               style="margin-top:-15px;margin-left:90%">
-                                                                                Aide
-                                                                            </a>
-
-                                                                            <div class="cd-popup4" role="alert">
-                                                                                <div class="cd-popup-container4">
-                                                                                    <img src="/mcm_contact_documents/static/src/permis-01.png"
-                                                                                         width="350px" height="350px"/>
-                                                                                    <img src="/mcm_contact_documents/static/src/ancien-01.png"
-                                                                                         width="350px" height="350px"/>
-                                                                                    <a href="#0"
-                                                                                       class="cd-popup-close4 img-replace4"></a>
-                                                                                </div> <!-- cd-popup-container -->
-                                                                            </div> <!-- cd-popup -->
-                                                                        </div>
-
-                                                                    </h3>
-                                                                </div>
-                                                                <div class="panel-body">
-                                                                    <div class="table-container">
-                                                                        <table class="table">
-                                                                            <thead>
-                                                                                <div style="float:left;width:120%;padding: 0 1px 0 1px;">
-                                                                                    <div class="input-field o_website_form_required"
-                                                                                         style="width:83%;">
-                                                                                        <br/>
-                                                                                        <div id="input-images-3"
-                                                                                             class="input-images-3"
-                                                                                             style="padding-top: .5rem; border-style: dotted;border-color:#DCDCDC"></div>
-                                                                                    </div>
-
-                                                                                    <div class="effect-15 o_website_form_required"
-                                                                                         style="width:83%;margin-top:5px"
-                                                                                         align="center">
-
-                                                                                        <input class="effect-15"
-                                                                                               type="text"
-                                                                                               name="number_permis"
-                                                                                               placeholder="Numéro de permis de conduire "/>
-                                                                                        <span class="focus-bg">
-
-                                                                                            <a href="#0"
-                                                                                               class="cd-popup-trigger6"
-                                                                                               style="margin-top:-16px;margin-left:87%;z-index:1;transform: translateY(-50%);right: 10px;">
-                                                                                                Aide
-                                                                                            </a>
-
-                                                                                            <div class="cd-popup6"
-                                                                                                 role="alert">
-                                                                                                <div class="cd-popup-container6">
-                                                                                                    <p style="font-size:1.5em">
-                                                                                                        Pensez à bien
-                                                                                                        vérifier ces
-                                                                                                        chiffres avant
-                                                                                                        l'envoie
-                                                                                                        <br/>
-                                                                                                    </p>
-
-                                                                                                    <a href="#0"
-                                                                                                       class="cd-popup-close6 img-replace6"></a>
-                                                                                                </div> <!-- cd-popup-container -->
-                                                                                            </div> <!-- cd-popup -->
-
-                                                                                        </span>
-                                                                                        <div class="input-field o_website_form_required"
-                                                                                             style="width:100%;margin-top:58px;">
-                                                                                            <label for="confirmation_permis"
-                                                                                                   style="width:100%;margin-left:5px;margin-top:-58px;font-size:0.8em">
-                                                                                                Je confirme avoir soumis
-                                                                                                le recto et le verso
-                                                                                            </label>
-                                                                                            <input type="checkbox"
-                                                                                                   name="confirmation_permis"
-                                                                                                   style="width:15px;margin-top:-45px;float:left"
-                                                                                                   id="confirmation_permis"/>
-
-                                                                                        </div>
-                                                                                        <p t-if="error_permis!='' and error_permis_number!=''"
-                                                                                           class="alert alert-warning"
-                                                                                           style="margin-left:0%;">
-                                                                                            Vous devez charger,remplir
-                                                                                            votre permis de conduire.
-                                                                                        </p>
-                                                                                        <p t-if="error_permis!='' and error_permis_number==''"
-                                                                                           class="alert alert-warning"
-                                                                                           style="margin-left:0%;">
-                                                                                            Vous devez charger votre
-                                                                                            permis de conduire.
-                                                                                        </p>
-                                                                                        <p t-if="error_permis=='' and error_permis_number!=''"
-                                                                                           class="alert alert-warning"
-                                                                                           style="margin-left:0%;">
-                                                                                            Vous devez remplir votre
-                                                                                            numéro de permis de
-                                                                                            conduire.
-                                                                                        </p>
-
-                                                                                    </div>
-                                                                                </div>
-                                                                            </thead>
-                                                                        </table>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-
-                                                        </div>
-
-                                                        <div class="pricing" style="position:relative">
-
-
-                                                            <div class="panel panel-default option-basic active"
-                                                                 style="display:none" id="attestation_hebergement">
-                                                                <div class="panel-heading">
-                                                                    <h3>
-                                                                        <span class="price">Attestation d'hébergement
-                                                                        </span>
-                                                                    </h3>
-                                                                </div>
-                                                                <div class="panel-body">
-                                                                    <div class="table-container">
-                                                                        <table class="table">
-                                                                            <thead>
-                                                                                <div style="float:left;width:120%;padding: 0 1px 0 1px;">
-                                                                                    <div class="input-field o_website_form_required"
-                                                                                         style="width:83%;">
-                                                                                        <br/>
-                                                                                        <div id="input-images-2"
-                                                                                             class="input-images-2"
-                                                                                             style="padding-top: .5rem; border-style: dotted;border-color:#DCDCDC"></div>
-                                                                                    </div>
-
-                                                                                </div>
-                                                                            </thead>
-                                                                        </table>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div id="ligne" style="padding: 0 1px 0 1px;display:inline-block;"
-                                                         class="col-sm-4">
-
-                                                        <div class="pricing" style="position:relative">
-
-
-                                                            <div class="panel panel-default option-basic active">
-                                                                <div class="panel-heading">
-                                                                    <h3>
-                                                                        <span class="price">Justificatif de domicile
-                                                                        </span>
-                                                                        <a href="#0" class="cd-popup-trigger7"
-                                                                           style="margin-top:-15px;margin-left:90%">Aide
-                                                                        </a>
-
-                                                                        <div class="cd-popup7" role="alert">
-                                                                            <div class="cd-popup-container7">
-                                                                                <p>
-                                                                                    <b>Vous avez un justificatif de
-                                                                                        domicile à votre nom:
-                                                                                    </b>
-                                                                                    <br/>
-                                                                                </p>
-                                                                                <p>
-                                                                                    <h5>Il doit comporter votre nom et
-                                                                                        votre prénom et doit être daté
-                                                                                        de moins de trois mois. Il peut
-                                                                                        s'agir d'un des documents
-                                                                                        suivants :
-                                                                                        <br/>
-
-                                                                                        facture d'eau, d'électricité, de
-                                                                                        gaz ou de téléphone (y compris
-                                                                                        de téléphone mobile),
-                                                                                        avis d'imposition ou certificat
-                                                                                        de non imposition,
-                                                                                        quittance d'assurance (incendie,
-                                                                                        risques locatifs ou
-                                                                                        responsabilité civile) pour le
-                                                                                        logement,
-                                                                                        titre de propriété ou quittance
-                                                                                        de loyer.
-                                                                                        La copie d'une facture
-                                                                                        électronique est acceptée.
-                                                                                    </h5>
-                                                                                </p>
-                                                                                <hr></hr>
-
-                                                                                <p>
-                                                                                    <b>Vous habitez chez un proche
-                                                                                        (parent, ami...):
-                                                                                    </b>
-                                                                                    <br/>
-                                                                                </p>
-                                                                                <p>
-                                                                                    <h5>Il faut présenter les trois
-                                                                                        documents suivants :
-                                                                                        <br/>
-
-                                                                                        Photocopie de la pièce
-                                                                                        d'identité de la personne qui
-                                                                                        vous héberge,
-                                                                                        Lettre de l’hébergeant signée
-                                                                                        certifiant que vous habitez chez
-                                                                                        elle de manière stable ou depuis
-                                                                                        plus de trois mois,
-                                                                                        Justificatif de domicile récent
-                                                                                        (moins de trois mois) au nom de
-                                                                                        l'hébergeant
-                                                                                    </h5>
-                                                                                </p>
-                                                                                <p>
-                                                                                    <b>Vous habitez chez un proche
-                                                                                        (parent, ami...):
-                                                                                    </b>
-                                                                                    <br/>
-                                                                                </p>
-                                                                                <p>
-                                                                                    <h5>Vous vivez à l'hôtel:
-                                                                                        <br/>
-                                                                                        Il faut présenter les deux
-                                                                                        documents suivants :
-                                                                                        <br/>
-
-                                                                                        attestation du gérant ou du
-                                                                                        directeur de l'hôtel,
-                                                                                        document officiel à votre nom
-                                                                                        indiquant la même adresse
-                                                                                        (permis de conduire, avis
-                                                                                        d'imposition, attestation
-                                                                                        vitale, titre de pension, titre
-                                                                                        d'allocations familiales,
-                                                                                        document de Pôle Emploi).
-                                                                                    </h5>
-                                                                                </p>
-                                                                                <a href="#0"
-                                                                                   class="cd-popup-close7 img-replace7"></a>
-                                                                            </div> <!-- cd-popup-container -->
-                                                                        </div> <!-- cd-popup -->
-                                                                    </h3>
-                                                                </div>
-                                                                <div class="panel-body">
-                                                                    <div class="table-container">
-                                                                        <table class="table">
-                                                                            <thead>
-                                                                                <div style="float:left;width:120%;padding: 0 1px 0 1px;">
-                                                                                    <div class="input-field o_website_form_required"
-                                                                                         style="width:83%;">
-                                                                                        <br/>
-                                                                                        <div id="input-images-5"
-                                                                                             class="input-images-5"
-                                                                                             style="padding-top: .2rem; border-style: dotted;border-color:#DCDCDC"></div>
-                                                                                    </div>
-
-                                                                                    <div class="effect-15 o_website_form_required"
-                                                                                         style="width:83%;margin-top:5px">
-
-                                                                                        <p style="font-size:0.9em">
-                                                                                            Justificatif de domicile à
-                                                                                            votre nom?
-                                                                                        </p>
-                                                                                        <br/>
-                                                                                        <div style="margin-top:-15px;">
-                                                                                            Oui:
-                                                                                            <input style="width:20%;font-size:0.3em"
-                                                                                                   type="radio"
-                                                                                                   name="radio1"
-                                                                                                   id="domicile_checked"
-                                                                                                   onclick="check_domicile()"
-                                                                                            />
-                                                                                            Non:
-                                                                                            <input type="radio"
-                                                                                                   name="radio1"
-                                                                                                   style="width:20%;font-size:0.3em"
-                                                                                                   id="domicile_not_checked"
-                                                                                                   onclick="check_domicile()"
-                                                                                            />
-                                                                                        </div>
-                                                                                        <span class="focus-bg"></span>
-                                                                                        <p t-if="error_domicile!=''"
-                                                                                           class="alert alert-warning"
-                                                                                           style="margin-left:0%;">
-                                                                                            Vous devez charger votre
-                                                                                            justificatif à domicile
-                                                                                        </p>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </thead>
-                                                                        </table>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-
-                                                        </div>
-
-
-                                                        <div class="pricing" style="position:relative">
-
-
-                                                            <div class="panel panel-default option-basic active"
-                                                                 style="display:none" id="identity_hebergeur">
-                                                                <div class="panel-heading">
-                                                                    <h3>
-                                                                        <span class="price">Carte d'identité
-                                                                            d'hébergeur
-                                                                        </span>
-                                                                        <div>
-                                                                            <a href="#0" class="cd-popup-trigger8"
-                                                                               style="margin-top:-15px;margin-left:90%">
-                                                                                Aide
-                                                                            </a>
-
-                                                                            <div class="cd-popup8" role="alert">
-                                                                                <div class="cd-popup-container8">
-                                                                                    <p>
-                                                                                        <b>Carte nationale d’identité
-                                                                                            (CNI) ou passeport:
-                                                                                        </b>
-
-                                                                                    </p>
-                                                                                    <p>
-                                                                                        <h5>Photocopie de la CNI ou du
-                                                                                            passeport en cours de
-                                                                                            validité.
-                                                                                            Les documents doivent être
-                                                                                            transmis recto-verso. Cette
-                                                                                            mesure s’applique également
-                                                                                            au ressortissant d’un état
-                                                                                            membre de l’UE, qui peut
-                                                                                            présenter une copie de la
-                                                                                            CNI ou du passeport en cours
-                                                                                            de validité de son pays.
-
-                                                                                        </h5>
-                                                                                    </p>
-                                                                                    <hr></hr>
-
-                                                                                    <p>
-                                                                                        <b>Titres de séjour:
-                                                                                        </b>
-                                                                                        <br/>
-                                                                                    </p>
-                                                                                    <p>
-                                                                                        <h5>
-                                                                                            Les personnes non
-                                                                                            ressortissantes d’un Etat
-                                                                                            membre de l’Union européenne
-                                                                                            ou d’un Etat partie à
-                                                                                            l’accord
-                                                                                            sur l’espace économique
-                                                                                            européen, doivent avoir un
-                                                                                            titre de séjour les
-                                                                                            autorisant à exercer une
-                                                                                            activité
-                                                                                            professionnelle en France.
-                                                                                            Est admis un titre de séjour
-                                                                                            temporaire valable un an
-                                                                                            pour vie privée et
-                                                                                            familiale autorisant à
-                                                                                            travailler en France, ou à
-                                                                                            travailler en qualité de
-                                                                                            salarié.
-
-
-                                                                                        </h5>
-                                                                                    </p>
-
-
-                                                                                    <a href="#0"
-                                                                                       class="cd-popup-close8 img-replace8"></a>
-                                                                                </div> <!-- cd-popup-container -->
-                                                                            </div> <!-- cd-popup -->
-                                                                        </div>
-
-                                                                    </h3>
-                                                                </div>
-                                                                <div class="panel-body">
-                                                                    <div class="table-container">
-                                                                        <table class="table">
-                                                                            <thead>
-                                                                                <div style="float:left;width:120%;padding: 0 1px 0 1px;">
-                                                                                    <div class="input-field o_website_form_required"
-                                                                                         style="width:83%;">
-                                                                                        <br/>
-                                                                                        <div id="input-images-6"
-                                                                                             class="input-images-6"
-                                                                                             style="padding-top: .5rem; border-style: dotted;border-color:#DCDCDC"></div>
-                                                                                    </div>
-
-                                                                                    <div class="effect-15 o_website_form_required"
-                                                                                         style="width:83%;margin-top:5px"
-                                                                                         align="center">
-
-                                                                                        <input class="effect-15"
-                                                                                               type="text"
-                                                                                               name="identity_hebergeur_card_number"
-                                                                                               placeholder="Numéro de carte "/>
-                                                                                        <span class="focus-bg">
-
-                                                                                            <a href="#0"
-                                                                                               class="cd-popup-trigger9"
-                                                                                               style="margin-top:-16px;margin-left:87%;z-index:1;transform: translateY(-50%);right: 10px;">
-                                                                                                Aide
-                                                                                            </a>
-
-                                                                                            <div class="cd-popup9"
-                                                                                                 role="alert">
-                                                                                                <div class="cd-popup-container9">
-                                                                                                    <p style="font-size:1.5em">
-                                                                                                        Pensez à bien
-                                                                                                        vérifier ces
-                                                                                                        chiffres avant
-                                                                                                        l'envoie
-                                                                                                        <br/>
-                                                                                                    </p>
-
-                                                                                                    <a href="#0"
-                                                                                                       class="cd-popup-close9 img-replace9"></a>
-                                                                                                </div> <!-- cd-popup-container -->
-                                                                                            </div> <!-- cd-popup -->
-
-                                                                                        </span>
-                                                                                        <div class="input-field o_website_form_required"
-                                                                                             style="width:100%;margin-top:58px;">
-                                                                                            <label for="confirmation2"
-                                                                                                   style="width:100%;margin-left:5px;margin-top:-58px;font-size:0.8em">
-                                                                                                Je confirme avoir soumis
-                                                                                                le recto et le verso
-                                                                                            </label>
-                                                                                            <input type="checkbox"
-                                                                                                   name="confirmation_hebergeur"
-                                                                                                   style="width:15px;margin-top:-45px;float:left"
-                                                                                                   id="confirmation"/>
-
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </thead>
-                                                                        </table>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-
-                                                        </div>
-
-                                                    </div>
-                                                </div>
                                             </div>
 
-                                            <div style="display:inline-block;">
-                                                <center>
-                                                    <div class="sub-main" style="margin-right:40px">
-                                                        <button class="button-one" style="float:right;" type="submit">
-                                                            Valider
-                                                        </button>
-                                                    </div>
-                                                </center>
+
+                                          <div class="effect-15 o_website_form_required"
+                                                 style="width:83%;margin-top:5px;">
+
+        	<input class="effect-15" type="text" placeholder="Numéro de pièce d'identité "/>
+
+            <span class="focus-bg">
+                <a href="#0" class="cd-popup-trigger3" style="margin-top:-16px;margin-left:87%;transform: translateY(-50%);
+    right: 10px;">?</a>
+
+<div class="cd-popup3" role="alert">
+    <div class="cd-popup-container3">
+        <p style="font-size:1.5em">Pensez à bien vérifier ces chiffres avant l'envoie<br/></p>
+
+        <a href="#0" class="cd-popup-close3 img-replace3"></a>
+    </div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+</span>
 
                                             </div>
+                                            <br/>
+                                            <div class="input-field o_website_form_required"
+                                                 style="width:100%;margin-top:10px;">
+
+                                                <label for="confirmation2"
+                                                       style="width:100%;margin-left:-20px;font-size:0.7em">
+                                                    Je confirme avoir soumis le recto et le verso
+                                                </label>
+                                                <input type="checkbox" name="confirmation" style="width:15px;margin-top:-45px;float:left"
+                                                       id="confirmation"/>
+
+                 </div>
+
+
+
+               </div>
+            </thead>
+
+          </table>
+
+        </div>
+
+    </div>
+    </div>
+
+
+</div>
+
+    <br/><br/>
+    <div class="pricing" style="display:inline-block;">
+
+<div>
+  <div class="panel panel-default option-basic active">
+    <div class="panel-heading">
+      <h3>
+        <span class="price">Carte d'identité d'hébergeur </span>
+<a href="#0" class="cd-popup-trigger4" style="margin-top:-15px;margin-left:90%">?</a>
+
+<div class="cd-popup4" role="alert">
+    <div class="cd-popup-container4">
+        <p><b>Carte nationale d’identité (CNI) ou passeport :</b><br/></p>
+        <p>  <h5>  Photocopie de la CNI ou du passeport en cours de validité. Les documents doivent être transmis recto-verso. Cette mesure s’applique également au ressortissant d’un état membre de l’UE, qui peut présenter une copie de la CNI ou du passeport en cours de validité de son pays.</h5></p><hr></hr>
+
+   <p> <b>Titres de séjour :</b><br/></p>
+          <p>  <h5>Les personnes non ressortissantes d’un Etat membre de l’Union européenne ou d’un Etat partie à l’accord sur l’espace économique européen, doivent avoir un titre de séjour les autorisant à exercer une activité professionnelle en France. Est admis un titre de séjour temporaire valable un an pour vie privée et familiale autorisant à travailler en France, ou à travailler en qualité de salarié.</h5></p>
+        <a href="#0" class="cd-popup-close4 img-replace4"></a>
+    </div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+
+      </h3>
+    </div>
+    <div class="panel-body">
+        <div class="table-container">
+          <table class="table">
+            <thead>
+               <div style="float:left;width:120%;padding: 0 1px 0 1px;">
+                                            <div class="input-field o_website_form_required" style="width:83%;">
+                                              <br/>
+                                                <div id="input-images-6" class="input-images-6" style="padding-top: .5rem; border-style: dotted;border-color:#DCDCDC;"></div></div>
+
+                                                                      <div class="effect-15 o_website_form_required"
+                                                 style="width:83%;margin-top:5px">
+
+        	<input class="effect-15" type="text" placeholder="Numéro de la carte "/>
+            <span class="focus-bg">
+
+                <a href="#0" class="cd-popup-trigger5" style="margin-top:-16px;margin-left:87%;z-index:1;transform: translateY(-50%);
+    right: 10px;">?</a>
+
+<div class="cd-popup5" role="alert">
+    <div class="cd-popup-container5">
+        <p style="font-size:1.5em">Pensez à bien vérifier ces chiffres avant l'envoie<br/></p>
+
+        <a href="#0" class="cd-popup-close5 img-replace5"></a>
+    </div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+
+
+            </span>
+
+                                            </div>
+                                            <br/>
+                                            <div class="input-field o_website_form_required"
+                                                 style="width:100%;margin-top:10px;">
+                                                <label for="confirmation2"
+                                                       style="width:100%;margin-left:-20px;font-size:0.7em">
+                                                    Je confirme avoir soumis le recto et le verso
+                                                </label>
+                                                <input type="checkbox" name="confirmation" style="width:15px;margin-top:-45px;float:left"
+                                                       id="confirmation"/>
+
+                 </div>
+                 </div>
+            </thead>
+          </table>
+        </div>
+    </div>
+  </div></div>
+
+
+</div>
+
+</div>
+
+                                      </div>
+
+                                           <div id="ligne" style="padding: 0 1px 0 1px;display:inline-block;" class="col-xs-4">
+
+<div class="pricing" style="position:relative">
+
+
+  <div class="panel panel-default option-basic active">
+    <div class="panel-heading">
+      <h3>
+        <span class="price">Permis de conduire</span>
+          <div>
+<a href="#0" class="cd-popup-trigger2" style="margin-top:-15px;margin-left:90%">?</a>
+
+<div class="cd-popup2" role="alert">
+    <div class="cd-popup-container2">
+        <img src="/mcm_contact_documents/static/src/permis-01.png" width="350px" height="350px"/>    <img src="/mcm_contact_documents/static/src/ancien-01.png" width="350px" height="350px"/>
+        <a href="#0" class="cd-popup-close2 img-replace2"></a>
+    </div> <!-- cd-popup-container -->
+</div> <!-- cd-popup --></div>
+
+      </h3>
+    </div>
+    <div class="panel-body">
+        <div class="table-container">
+          <table class="table">
+            <thead>
+               <div style="float:left;width:120%;padding: 0 1px 0 1px;">
+                                            <div class="input-field o_website_form_required" style="width:83%;">
+                                              <br/>
+                                                <div id="input-images-2" class="input-images-2" style="padding-top: .5rem; border-style: dotted;border-color:#DCDCDC"></div></div>
+
+                                          <div class="effect-15 o_website_form_required"
+                                                 style="width:83%;margin-top:5px" align="center">
+
+        	<input class="effect-15" type="text" placeholder="Numéro de permis de conduire "/>
+            <span class="focus-bg">
+
+                <a href="#0" class="cd-popup-trigger6" style="margin-top:-16px;margin-left:87%;z-index:1;transform: translateY(-50%);
+    right: 10px;">?</a>
+
+<div class="cd-popup6" role="alert">
+    <div class="cd-popup-container6">
+        <p style="font-size:1.5em">Pensez à bien vérifier ces chiffres avant l'envoie<br/></p>
+
+        <a href="#0" class="cd-popup-close6 img-replace6"></a>
+    </div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+
+            </span>
+                          <div class="input-field o_website_form_required"
+                                                 style="width:100%;margin-top:58px;">
+                                                <label for="confirmation2"
+                                                       style="width:100%;margin-left:5px;margin-top:-58px;font-size:0.7em">
+                                                    Je confirme avoir soumis le recto et le verso
+                                                </label>
+                                                <input type="checkbox" name="confirmation" style="width:15px;margin-top:-45px;float:left"
+                                                       id="confirmation"/>
+
+                 </div>
+                                            </div>
+                                            <br/>
+                  </div>
+            </thead>
+          </table>
+        </div>
+    </div>
+    </div>
+
+
+</div>
+    <br/>
+                                            <div class="pricing" style="display:inline-block;padding-bottom: 0px;
+">
+
+
+  <div class="panel panel-default option-basic active">
+    <div class="panel-heading">
+      <h3>
+        <span class="price">Reçu de paiement </span>
+<a href="#0" class="cd-popup-trigger7" style="margin-top:-15px;margin-left:90%">?</a>
+
+<div class="cd-popup7" role="alert">
+    <div class="cd-popup-container7">
+        <p><b>Carte nationale d’identité (CNI) ou passeport :</b><br/></p>
+        <p>  <h5>  Photocopie de la CNI ou du passeport en cours de validité. Les documents doivent être transmis recto-verso. Cette mesure s’applique également au ressortissant d’un état membre de l’UE, qui peut présenter une copie de la CNI ou du passeport en cours de validité de son pays.</h5></p><hr></hr>
+
+   <p> <b>Titres de séjour :</b><br/></p>
+          <p>  <h5>Les personnes non ressortissantes d’un Etat membre de l’Union européenne ou d’un Etat partie à l’accord sur l’espace économique européen, doivent avoir un titre de séjour les autorisant à exercer une activité professionnelle en France. Est admis un titre de séjour temporaire valable un an pour vie privée et familiale autorisant à travailler en France, ou à travailler en qualité de salarié.</h5></p>
+        <a href="#0" class="cd-popup-close7 img-replace7"></a>
+    </div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+      </h3>
+    </div>
+    <div class="panel-body">
+        <div class="table-container">
+          <table class="table">
+            <thead>
+               <div style="float:left;width:120%;padding: 0 1px 0 1px;">
+                                            <div class="input-field o_website_form_required" style="width:83%;">
+                                              <br/>
+                                                <div id="input-images-3" class="input-images-3" style="padding-top: .5rem; border-style: dotted;border-color:#DCDCDC"></div></div>
+
+                                          <div class="effect-15 o_website_form_required"
+                                                 style="width:83%;margin-top:5px;float:middle" align="center">
+
+        	 <p style="font-size:0.9em">Inscrire à l'examen?</p>
+
+                                             Oui: <input style="width:20%;font-size:0.3em" type="radio" name="radio2"/> Non:<input type="radio" name="radio2" style="width:20%;font-size:0.3em"/>
+        <center><button class="button-three" style="margin-left:5%;float:right">Reserver</button></center>
+
+                                            </div>
+
+                 </div>
+            </thead>
+          </table>
+        </div>
+    </div>
+
+    </div>
+
+
+
+</div>
+
+
+
                                         </div>
-                                    </form>
 
-                                </center>
+                                         <div id="ligne" style="padding: 0 1px 0 1px;display:inline-block;" class="col-xs-4">
 
-                                <script>
-                                    function check_domicile(){
-                                    var domicile_checked=document.getElementById('domicile_checked');
-                                    var domicile_not_checked=document.getElementById('domicile_not_checked');
-                                    if(domicile_checked) {
-                                    if (document.getElementById('domicile_checked').checked==true){
-                                    document.getElementById("attestation_hebergement").style.display = 'none';
-                                    document.getElementById("identity_hebergeur").style.display = 'none';
-                                    }
-                                    }
-                                    if(domicile_not_checked) {
-                                    if (document.getElementById('domicile_not_checked').checked==true){
-                                    document.getElementById("attestation_hebergement").style.display = 'inline-block';
-                                    document.getElementById("identity_hebergeur").style.display = 'inline-block';
-                                    }
-                                    }
-                                    }
-                                </script>
+<div class="pricing" style="position:relative">
+
+
+  <div class="panel panel-default option-basic active">
+    <div class="panel-heading">
+      <h3>
+        <span class="price">Justificatif de domicile</span>
+<a href="#0" class="cd-popup-trigger8" style="margin-top:-15px;margin-left:90%">?</a>
+
+<div class="cd-popup8" role="alert">
+    <div class="cd-popup-container8">
+        <p><b>Vous avez un justificatif de domicile à votre nom:</b><br/></p>
+        <p>  <h5>Il doit comporter votre nom et votre prénom et doit être daté de moins de trois mois. Il peut s'agir d'un des documents suivants :<br/>
+
+facture d'eau, d'électricité, de gaz ou de téléphone (y compris de téléphone mobile),
+avis d'imposition ou certificat de non imposition,
+quittance d'assurance (incendie, risques locatifs ou responsabilité civile) pour le logement,
+titre de propriété ou quittance de loyer.
+La copie d'une facture électronique est acceptée.</h5></p><hr></hr>
+
+   <p> <b>Vous habitez chez un proche (parent, ami...):</b><br/></p>
+          <p>  <h5>Il faut présenter les trois documents suivants :<br/>
+
+Photocopie de la pièce d'identité de la personne qui vous héberge,
+Lettre de l’hébergeant signée certifiant que vous habitez chez elle de manière stable ou depuis plus de trois mois,
+Justificatif de domicile récent (moins de trois mois) au nom de l'hébergeant</h5></p>
+        <p> <b>Vous habitez chez un proche (parent, ami...):</b><br/></p>
+          <p>  <h5>Vous vivez à l'hôtel:
+<br/>
+Il faut présenter les deux documents suivants :<br/>
+
+attestation du gérant ou du directeur de l'hôtel,
+document officiel à votre nom indiquant la même adresse (permis de conduire, avis d'imposition, attestation vitale, titre de pension, titre d'allocations familiales, document de Pôle Emploi).</h5></p>
+        <a href="#0" class="cd-popup-close8 img-replace8"></a>
+    </div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+      </h3>
+    </div>
+    <div class="panel-body">
+        <div class="table-container">
+          <table class="table">
+            <thead>
+               <div style="float:left;width:120%;padding: 0 1px 0 1px;">
+                                            <div class="input-field o_website_form_required" style="width:83%;">
+                                              <br/>
+                                                <div  id="input-images-4" class="input-images-4" style="padding-top: .2rem; border-style: dotted;border-color:#DCDCDC"></div></div>
+
+                                          <div class="effect-15 o_website_form_required"
+                                                 style="width:83%;margin-top:5px">
+
+                                              <p style="font-size:0.9em">Justificatif de domicile à votre nom?</p><br/>
+                                              <div style="margin-top:-15px;">
+                                                  Oui: <input style="width:20%;font-size:0.3em" type="radio" name="radio1"/> Non:<input type="radio" name="radio1" style="width:20%;font-size:0.3em"/></div>
+            <span class="focus-bg"></span>
+
+                                            </div>
+                                            <br/>
+                </div>
+            </thead>
+          </table>
+        </div>
+    </div>
+    </div>
+
+
+</div>
+    <br/>
+                                            <div class="pricing" style="display:inline-block;padding-bottom: 0px;
+">
+
+
+  <div class="panel panel-default option-basic active">
+    <div class="panel-heading">
+      <h3>
+        <span class="price">Attestation d'hébergement </span>
+<a href="#0" class="cd-popup-trigger9" style="margin-top:-15px;margin-left:90%">?</a>
+
+<div class="cd-popup9" role="alert">
+    <div class="cd-popup-container9">
+        <p><b>Carte nationale d’identité (CNI) ou passeport :</b><br/></p>
+        <p>  <h5>  Photocopie de la CNI ou du passeport en cours de validité. Les documents doivent être transmis recto-verso. Cette mesure s’applique également au ressortissant d’un état membre de l’UE, qui peut présenter une copie de la CNI ou du passeport en cours de validité de son pays.</h5></p><hr></hr>
+
+   <p> <b>Titres de séjour :</b><br/></p>
+          <p>  <h5>Les personnes non ressortissantes d’un Etat membre de l’Union européenne ou d’un Etat partie à l’accord sur l’espace économique européen, doivent avoir un titre de séjour les autorisant à exercer une activité professionnelle en France. Est admis un titre de séjour temporaire valable un an pour vie privée et familiale autorisant à travailler en France, ou à travailler en qualité de salarié.</h5></p>
+        <a href="#0" class="cd-popup-close9 img-replace9"></a>
+    </div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+      </h3>
+    </div>
+    <div class="panel-body">
+
+
+               <div style="float:left;width:120%;padding: 0 1px 0 1px;">
+                                            <div class="input-field o_website_form_required" style="width:83%;">
+                                              <br/>
+                                                <div  id="input-images-5" class="input-images-5" style="padding-top: .2rem; border-style: dotted;border-color:#DCDCDC"></div></div>
+
+                                          <div class=""
+                                                 style="width:74%;margin-top:5px">
+
+
+
+
+                                            </div>
+                                            <br/>
+                                            <div class="input-field o_website_form_required"
+                                                 style="width:100%;margin-top:-20px">
+
+
+
+                 </div></div>
+
+
+    </div>
+    </div>
+
+
+</div>
+
+</div>
+</div></div>
+                                        <br/>
+<div style="display:inline-block;">
+
+
+
+    <div class="sub-main" vstyle="margin-right:-30px">
+      <button class="button-one" style="float:right;" >Valider</button>
+    </div>
+
+                                        </div>
+</div>
+     </form>
+
+</center>
+
+
+
+
+
                                 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"
-                                        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-                                        crossorigin="anonymous"></script>
-                                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
                                 <script type="text/javascript"
                                         src="/mcm_contact_documents/static/src/js/image-uploader.min.js"></script>
                                 <script>jQuery(document).ready(function($){
-                                    //open popup
-                                    $('.cd-popup-trigger').on('click', function(event){
-                                    event.preventDefault();
-                                    $('.cd-popup').addClass('is-visible');
-                                    });
+	//open popup
+	$('.cd-popup-trigger').on('click', function(event){
+		event.preventDefault();
+		$('.cd-popup').addClass('is-visible');
+	});
 
-                                    //close popup
-                                    $('.cd-popup').on('click', function(event){
-                                    if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
-                                    event.preventDefault();
-                                    $(this).removeClass('is-visible');
-                                    }
-                                    });
-                                    //close popup when clicking the esc keyboard button
-                                    $(document).keyup(function(event){
-                                    if(event.which=='27'){
-                                    $('.cd-popup').removeClass('is-visible');
-                                    }
-                                    });
-                                    });
-                                    // Popup Open
-                                    function popupOpen(){
-                                    document.getElementById("popup").style.display="block";
-                                    document.getElementById("overlay").style.display="block";
-                                    }
-                                    // Popup Close
-                                    function popupClose(){
-                                    document.getElementById("popup").style.display="none";
-                                    document.getElementById("overlay").style.display="none";
-                                    }
+	//close popup
+	$('.cd-popup').on('click', function(event){
+		if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
+			event.preventDefault();
+			$(this).removeClass('is-visible');
+		}
+	});
+	//close popup when clicking the esc keyboard button
+	$(document).keyup(function(event){
+    	if(event.which=='27'){
+    		$('.cd-popup').removeClass('is-visible');
+	    }
+    });
+});
+// Popup Open
+function popupOpen(){
+    document.getElementById("popup").style.display="block";
+    document.getElementById("overlay").style.display="block";
+	}
+// Popup Close
+	function popupClose(){
+    document.getElementById("popup").style.display="none";
+    document.getElementById("overlay").style.display="none";
+	}
 
 
                                 </script>
@@ -1307,12 +729,9 @@
                             <i class="fa fa-check-circle fa-2x text-success" role="img" aria-label="Success"
                                title="Success"/>
                         </h3>
-                        <h3 class="text-center">Nous vous remecions pour le temps que vous avez consacré à charger vos
-                            documents.
-                        </h3>
-                        <h3 class="text-center">
-                            <img src="https://media.giphy.com/media/11uArCoB4fkRcQ/giphy.gif"
-                                 style="width:100%;height:auto;"/>
+                        <h3 class="text-center">Vos Documents ont été reçu avec succès</h3>
+                        <h3 class="text-center">Notre équipe les prendra en charge dans
+                            les plus bref délais.
                         </h3>
                     </div>
                 </div>
@@ -1336,65 +755,23 @@
                               title="Statut actuelle de ce document"/>
                     </div>
                 </div>
-                <form t-att-action="'/update/%s' % (document.id)" method="post" id="digimoov_updated_document_form"
+                <form t-att-action="'/update/%s' % (document.id)" method="post"
                       class="s_website_form container-fluid mt32" enctype="multipart/form-data"
                       data-model_name="documents.document"
                       data-success_page="/submitted_documents" data-editable-form="false"
                       hide-change-model="true">
-                    <t t-if="document.code_document!='cerfa'">
-                        <div class="form-group row form-field o_website_form_required">
-                            <div class="col-lg-4 col-md-5 text-right">
-                                <label class="col-form-label" for="identity">
-                                    <span t-field="document.name" t-esc="document.name"/>
-                                </label>
-                            </div>
-                            <div class="col-lg-6 col-md-7">
-                                <input type="file" name='updated_document' required="1"
-                                       class="form-control o_website_form_input" multiple="true"
-                                       accept="image/*,application/pdf"/>
-                            </div>
+                    <div class="form-group row form-field o_website_form_required">
+                        <div class="col-lg-4 col-md-5 text-right">
+                            <label class="col-form-label" for="identity">
+                                <span t-field="document.name" t-esc="document.name"/>
+                            </label>
                         </div>
-                    </t>
-                    <t t-if="document.code_document=='cerfa'">
-                        <div class="form-group row form-field o_website_form_required">
-                            <div class="col-lg-4 col-md-5 text-right">
-                                <label class="col-form-label" for="updated_document_cerfa" id="label_updated_document_cerfa">
-                                    CERFA 11414-05 (Page1,2,3)
-                                </label>
-                            </div>
-                            <div class="col-lg-6 col-md-7">
-                                <input type="file" name='updated_document_cerfa' id="updated_document_cerfa"
-                                       class="form-control o_website_form_input" multiple="true"
-                                       accept="image/*,application/pdf"/>
-                            </div>
+                        <div class="col-lg-6 col-md-7">
+                            <input type="file" name='updated_document' required="1"
+                                   class="form-control o_website_form_input"
+                                   accept="image/*,application/pdf"/>
                         </div>
-                        <div class="form-group row form-field" style="display: none;"
-                                             id="o_website_form_updated_cerfa_2">
-                            <div class="col-lg-4 col-md-5 text-right">
-                                <label class="col-form-label" for="cerfa2">
-                                    CERFA 11414-05 Page 2
-                                </label>
-                            </div>
-                            <div class="col-lg-6 col-md-7">
-                                <input type="file" name='updated_document_cerfa2'
-                                       class="form-control o_website_form_input" id="updated_document_cerfa2"
-                                       accept="image/*,application/pdf"/>
-                            </div>
-                        </div>
-                        <div  class="form-group row form-field" style="display: none;"
-                                             id="o_website_form_updated_cerfa_3">
-                            <div class="col-lg-4 col-md-5 text-right">
-                                <label class="col-form-label" for="identity">
-                                    CERFA 11414-05 Page 3
-                                </label>
-                            </div>
-                            <div class="col-lg-6 col-md-7">
-                                <input type="file" name='updated_document_cerfa3'
-                                       class="form-control o_website_form_input" id="updated_document_cerfa3"
-                                       accept="image/*,application/pdf"/>
-                            </div>
-                        </div>
-                    </t>
+                    </div>
                     <div class="form-group row">
                         <div class="offset-lg-1 offset-md-1 col-md-12 col-lg-12">
                             <button type="submit" class="btn btn-primary" id="update_document">
