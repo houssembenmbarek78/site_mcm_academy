@@ -62,6 +62,7 @@ class AuthSignupHome(AuthSignupHome):
                     user_sudo = request.env['res.users'].sudo().search([('login', "=", qcontext.get('login').replace(' ', '').lower())])
                     if user_sudo:
                         user_sudo.street = str(request.website.name)
+                    kw['login'] = qcontext.get('login').replace(' ', '').lower()
                 return self.web_login(*args, **kw)
             except UserError as e:
                 qcontext['error'] = e.name or e.value
