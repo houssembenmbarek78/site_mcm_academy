@@ -5,6 +5,7 @@ from cv2 import cv2
 
 
 
+
 class ocrdocument(models.Model):
     _name = 'ocrdocument.ocrdocument'
     _description = 'ocrdocument.ocrdocument'
@@ -14,6 +15,7 @@ class ocrdocument(models.Model):
 # Extract text from image with open cv into text
     def trycv(self):
         for r in self:
+           img2 = cv2.imread('image.png')
+           cv2.imshow('Result2', img2)
+           cv2.waitKey(0)
 
-
-           print('it is working')
