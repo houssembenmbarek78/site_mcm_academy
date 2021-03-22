@@ -38,7 +38,7 @@
             <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem id="main_openacv_menu" name="Open CV"/>
+    <menuitem id="main_openacv_menu" name="Document OCR"/>
         <!-- A first level in the left side menu is needed
              before using action= attribute -->
         <menuitem id="openacv_menu" name="Document OCR"
