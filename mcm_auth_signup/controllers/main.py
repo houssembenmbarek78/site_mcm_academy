@@ -15,6 +15,7 @@ class AuthSignupHome(AuthSignupHome):
     def do_signup(self, qcontext):
         """ Shared helper that creates a res.partner out of a token """
         values = {key: qcontext.get(key) for key in ('login', 'name', 'firstname', 'password', 'phone')}
+        values['login'] = values['login'].replace(' ', '').lower()
         if not values:
             raise UserError(_("Le formulaire n'est pas correctement rempli."))
         if '+33' not in values['phone']:
@@ -50,7 +51,7 @@ class AuthSignupHome(AuthSignupHome):
                 self.do_signup(qcontext)
                 # Send an account creation confirmation email
                 if qcontext.get('token'):
-                    user_sudo = request.env['res.users'].sudo().search([('login', '=', qcontext.get('login'))])
+                    user_sudo = request.env['res.users'].sudo().search([('login', "=", qcontext.get('login').replace(' ', '').lower())])
                     template = request.env.ref('auth_signup.mail_template_user_signup_account_created',
                                                raise_if_not_found=False)
                     if user_sudo and template:
@@ -58,14 +59,14 @@ class AuthSignupHome(AuthSignupHome):
                             lang=user_sudo.lang,
                             auth_login=werkzeug.url_encode({'auth_login': user_sudo.email}),
                         ).send_mail(user_sudo.id, force_send=True)
-                    user_sudo = request.env['res.users'].sudo().search([('login', '=', qcontext.get('login'))])
+                    user_sudo = request.env['res.users'].sudo().search([('login', "=", qcontext.get('login').replace(' ', '').lower())])
                     if user_sudo:
                         user_sudo.street = str(request.website.name)
                 return self.web_login(*args, **kw)
             except UserError as e:
                 qcontext['error'] = e.name or e.value
             except (SignupError, AssertionError) as e:
-                if request.env["res.users"].sudo().search([("login", "=", qcontext.get("login"))]):
+                if request.env["res.users"].sudo().search([("login", "=", qcontext.get("login").replace(' ', '').lower())]):
                     qcontext["error"] = _("Another user is already registered using this email address.")
                 else:
                     _logger.error("%s", e)
