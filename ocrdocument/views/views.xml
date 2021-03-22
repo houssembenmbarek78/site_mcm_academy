@@ -1,0 +1,52 @@
+<odoo>
+  <data>
+     <record model="ir.ui.view" id="about_form_view">
+
+            <field name="name">opencv.form</field>
+            <field name="model">ocrdocument.ocrdocument</field>
+            <field name="arch" type="xml">
+                <form string="open Form">
+                    <header>
+                        <button name="trycv" type="object" string="Ouvrir image"/>
+                    </header>
+                    <sheet>
+                        <group string="General">
+                                <field name="name"/>
+                                 <field name="description"/>
+
+                        </group>
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+     <record model="ir.ui.view" id="about_tree_view">
+            <field name="name">opencv.tree</field>
+            <field name="model">ocrdocument.ocrdocument</field>
+            <field name="arch" type="xml">
+                <tree string="open Tree">
+                    <field name="name"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+    <record model="ir.actions.act_window" id="open_list_action">
+            <field name="name">Opencv</field>
+            <field name="res_model">ocrdocument.ocrdocument</field>
+            <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="main_openacv_menu" name="Open CV"/>
+        <!-- A first level in the left side menu is needed
+             before using action= attribute -->
+        <menuitem id="openacv_menu" name="Document OCR"
+                  parent="main_openacv_menu"/>
+        <!-- the following menuitem should appear *after*
+             its parent openacademy_menu and *after* its
+             action course_list_action -->
+        <menuitem id="open_menu" name="Open" parent="openacv_menu"
+                  action="open_list_action"/>
+  </data>
+</odoo>
