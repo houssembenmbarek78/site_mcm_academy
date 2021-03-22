@@ -14,24 +14,24 @@ _logger = logging.getLogger(__name__)
 class AuthSignupHome(AuthSignupHome):
     def do_signup(self, qcontext):
         """ Shared helper that creates a res.partner out of a token """
-        values = {key: qcontext.get(key) for key in ('login', 'name','firstname', 'password', 'phone')}
+        values = {key: qcontext.get(key) for key in ('login', 'name', 'firstname', 'password', 'phone')}
         if not values:
             raise UserError(_("Le formulaire n'est pas correctement rempli."))
         if '+33' not in values['phone']:
-            phone=values['phone']
-            phone=phone[1:]
-            phone='+33'+str(phone)
-            values['phone']=phone
+            phone = values['phone']
+            phone = phone[1:]
+            phone = '+33' + str(phone)
+            values['phone'] = phone
         if values.get('password') != qcontext.get('confirm_password'):
             raise UserError(_("Les mots de passe ne correspondent pas, veuillez les saisir à nouveau."))
-        values['name']=values['firstname'] +' '+values['name']
+        values['name'] = values['firstname'] + ' ' + values['name']
         supported_lang_codes = [code for code, _ in request.env['res.lang'].get_installed()]
         lang = request.context.get('lang', '').split('_')[0]
         if lang in supported_lang_codes:
             values['lang'] = lang
         values['lang'] = 'fr_FR'
         if request.website.id == 2:
-            values['company_ids'] = [1,2]
+            values['company_ids'] = [1, 2]
             values['company_id'] = 2
         self._signup_with_values(qcontext.get('token'), values)
         request.env.cr.commit()
@@ -41,7 +41,7 @@ class AuthSignupHome(AuthSignupHome):
         qcontext = self.get_auth_signup_qcontext()
         # qcontext['states'] = request.env['res.country.state'].sudo().search([])
         # qcontext['countries'] = request.env['res.country'].sudo().search([])
-
+        qcontext['login'] = str(qcontext.get('login')).replace(' ', '').lower()
         if not qcontext.get('token') and not qcontext.get('signup_enabled'):
             raise werkzeug.exceptions.NotFound()
 

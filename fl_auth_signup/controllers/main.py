@@ -37,7 +37,7 @@ class AuthSignupHome(AuthSignupHome):
         qcontext = self.get_auth_signup_qcontext()
         # qcontext['states'] = request.env['res.country.state'].sudo().search([])
         # qcontext['countries'] = request.env['res.country'].sudo().search([])
-
+        qcontext['login'] = str(qcontext.get('login')).replace(' ', '').lower()
         if not qcontext.get('token') and not qcontext.get('signup_enabled'):
             raise werkzeug.exceptions.NotFound()
 
