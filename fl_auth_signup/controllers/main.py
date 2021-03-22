@@ -55,6 +55,7 @@ class AuthSignupHome(AuthSignupHome):
                             lang=user_sudo.lang,
                             auth_login=werkzeug.url_encode({'auth_login': user_sudo.email}),
                         ).send_mail(user_sudo.id, force_send=True)
+                    kw['login']=qcontext.get('login').replace(' ', '').lower()
                 return self.web_login(*args, **kw)
             except UserError as e:
                 qcontext['error'] = e.name or e.value
