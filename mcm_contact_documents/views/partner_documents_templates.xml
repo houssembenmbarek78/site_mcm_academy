@@ -26,7 +26,16 @@
     <template id="portal_my_documents" name="Mes Documents">
         <t t-call="portal.portal_layout">
             <t t-set="breadcrumbs_searchbar" t-value="True"/>
-            <form method="POST" t-attf-action="/new_documents">
+            <form method="POST" t-attf-action="/new_documents" t-if="website.id==1">
+                <h3>Documents
+                    <t t-call="portal.portal_searchbar"/>
+                    <button name="create_documents" type="action" class="btn btn-primary" groups="base.group_portal"
+                            style="float: right; margin-right: 5px;">Charger mes documents
+                    </button>
+                </h3>
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+            </form>
+            <form method="POST" t-attf-action="/charger_mes_documents" t-if="website.id==2">
                 <h3>Documents
                     <t t-call="portal.portal_searchbar"/>
                     <button name="create_documents" type="action" class="btn btn-primary" groups="base.group_portal"
@@ -90,5 +99,56 @@
                 </div>
             </div>
         </t>
+    </template>
+    <template id="cerfa_portal_template" name="CERFA Portal Template" inherit_id="portal.portal_sidebar" primary="True">
+        <xpath expr="//div[hasclass('o_portal_sidebar')]" position="inside">
+            <div class="row mt16 o_portal_sale_sidebar">
+                <!-- Sidebar -->
+                <t t-call="portal.portal_record_sidebar">
+                    <t t-set="classes" t-value="'col-lg-auto d-print-none'"/>
+
+                    <t t-set="title">
+                        Document décharge
+                    </t>
+                    <t t-set="entries">
+                        <ul class="list-group list-group-flush flex-wrap flex-row flex-lg-column">
+                            <li class="list-group-item flex-grow-1">
+                                <a role="button" class="btn btn-primary btn-block mb8" data-toggle="modal" data-target="#modalaccept" href="#">
+                                    <i class="fa fa-check"/><t> Accepter &amp; signer </t>
+                                </a>
+                            </li>
+                        </ul>
+                    </t>
+                </t>
+                <div id="quote_content" class="col-12 col-lg justify-content-end">
+                    <!-- modal relative to the actions sign and pay -->
+                    <div role="dialog" class="modal fade" id="modalaccept">
+                        <div class="modal-dialog">
+                            <form id="accept" method="POST" class="js_accept_json modal-content js_website_submit_form">
+                                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                <header class="modal-header">
+                                    <h4 class="modal-title">Valider décharge</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">X</button>
+                                </header>
+                                <main class="modal-body" id="sign-dialog">
+                                    <p>
+                                        <span>En signant ce document, je confirme que :</span>
+                                        <ul>
+                                            <li><span>J'ai 3 ans de permis ou plus</span></li>
+                                            <li><span>J'ai aucun retrait définitif du permis ces 10 dernières années</span></li>
+                                            <li><span>J'ai un casier judiciaire vierge B2</span></li>
+                                        </ul>
+                                    </p>
+                                    <t t-call="portal.signature_form">
+                                        <t t-set="call_url" t-value="'/my/cerfa/accept'"/>
+                                        <t t-set="default_name" t-value="CERFA"/>
+                                    </t>
+                                </main>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
     </template>
 </odoo>
