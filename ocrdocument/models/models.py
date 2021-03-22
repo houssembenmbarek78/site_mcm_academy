@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models, fields, ap
+from odoo import models, fields, api
 from cv2 import cv2
 
 
