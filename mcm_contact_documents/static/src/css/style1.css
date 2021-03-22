@@ -114,17 +114,18 @@
 
 
 .pricing {
-
-  margin: 0 auto;
+width:100%;
+margin: 0 auto;
 }
 
 .pricing .panel {
   cursor: pointer;
-  margin-left:20px;
-  width: 250px;
+  margin-left:10px;
+  width: 100%;
   border-radius: 0;
   text-align: center;
   transition:all .5s;
+  padding: 15px;
 }
 
 .panel-default>.panel-heading {
@@ -133,6 +134,7 @@
 	background-color: #f6f8f8;
 	color: #333;
 	height:10%;
+	width:100%;
 }
 
 .panel-default>.panel-heading h3 {
@@ -172,12 +174,14 @@ h3 .fa-check {
 	background-color: white;
 
 	height: 282px;
+	width:100%;
 }
 
 .table-container {
 	background-color: #fff;
 	background-image: #fff;
 	height: 100%;
+	width:100%
 }
 
 .panel-body .table th {
@@ -215,18 +219,7 @@ h3 .fa-check {
     height: 100%;
     vertical-align: top;
 }
-#ligne{
-display: inline-block;
 
-}
-.ligne {
-    display: inline-block;
-    margin-left:8px;
-
-
-
-
-    }
 
 h1, button{
   color:#fff;
@@ -302,7 +295,7 @@ text-align: center;
 }
 
 .button-three:hover{
-   background:#fff;
+   background:#000;
    box-shadow:0px 2px 10px 5px #97B1BF;
    color:#000;
 }
