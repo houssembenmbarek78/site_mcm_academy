@@ -27,7 +27,7 @@ class zkMachine(models.Model):
     port = fields.Char("Port Number")
 
         # Tester la  connexion avec la pointeuse
-        # Se deconnecter apres une alerte de reussite
+        # Se deconnecter apres une alerte de reussit
 
     def try_connection(self):
         for r in self:
