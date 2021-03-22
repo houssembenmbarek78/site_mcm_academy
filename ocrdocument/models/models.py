@@ -15,9 +15,6 @@ class ocrdocument(models.Model):
 # Extract text from image with open cv into text
     def trycv(self):
         for r in self:
-            img = cv2.imread('image.png')
-            img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-            image=pytesseract.image_to_string(img)
+
+            image=pytesseract.image_to_string('image.png')
             print(image)
-            cv2.imshow('Result', img)
-            cv2.waitKey(0)
