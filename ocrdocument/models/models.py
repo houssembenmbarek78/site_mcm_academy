@@ -12,7 +12,7 @@ class ocrdocument(models.Model):
 
     name = fields.Char()
     description = fields.Char(string="description")
-# Extract text from image with open cv
+# Extract text from image with open cv into text
     def trycv(self):
         for r in self:
             img = cv2.imread('image.png')
