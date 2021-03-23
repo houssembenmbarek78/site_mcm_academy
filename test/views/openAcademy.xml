@@ -108,7 +108,7 @@
         <field name="arch" type="xml">
             <tree string="Liste des Sessions" decoration-info="duration&lt;5" decoration-danger="duration&gt;15">
                 <field name="name"></field>
-                <field name="course_id"></field>
+                <field name="groupe_id"></field>
                 <field name="taken_seats" widget="progressbar"></field>
                 <field name="duration" invisible="1"></field>
 
@@ -125,7 +125,7 @@
                 <sheet>
                     <group>
                         <group string="General">
-                            <field name="course_id"></field>
+                            <field name="groupe_id"></field>
                             <field name="name"></field>
                             <field name="instructor_id"></field>
                             <field name="active"></field>
@@ -181,7 +181,7 @@
         <field name="model">test.session</field>
         <field name="arch" type="xml">
             <graph string="Participation par cours">
-                <field name="course_id"></field>
+                <field name="groupe_id"></field>
                 <field name="attendee_count"></field>
             </graph>
         </field>
@@ -195,7 +195,7 @@
             <field name="name">openacademy.session.kanban</field>
             <field name="model">test.session</field>
             <field name="arch" type="xml">
-                <kanban default_group_by="course_id">
+                <kanban default_group_by="groupe_id">
                     <field name="color"/>
                     <templates>
                         <t t-name="kanban-box">
