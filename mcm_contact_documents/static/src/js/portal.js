@@ -36,14 +36,12 @@ publicWidget.registry.ExamCenterDate = publicWidget.Widget.extend({
         if(domic_not_checked.checked){
         if(domic_identity_hebergeur) {
         domic_identity_hebergeur.style.display='block';
-        domic_identity_hebergeur.className='form-group row form-field
-        o_website_form_required';
+        domic_identity_hebergeur.className='form-group row form-field o_website_form_required';
         identity_hebergeur.required = 1;
         }
         if(domic_attestation_hebergeur) {
         domic_attestation_hebergeur.style.display='block';
-        domic_attestation_hebergeur.className='form-group row form-field
-        o_website_form_required';
+        domic_attestation_hebergeur.className='form-group row form-field o_website_form_required';
         attestation_hebergeur.required = 1;
         }
         }
