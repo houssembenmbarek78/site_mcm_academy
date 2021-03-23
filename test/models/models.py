@@ -62,6 +62,7 @@ class Session(models.Model):
 
     taken_seats = fields.Float(string="Place Occupées", compute='_taken_seats')
 
+
     end_date = fields.Date(string="Date_de_fin", compute='_get_end_date',store=True, inverse='_set_end_date')
     attendee_count =fields.Integer(string="Nombre des Participants", compute='_get_attendees_count', store=True)
     color = fields.Integer()
