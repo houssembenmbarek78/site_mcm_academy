@@ -14,7 +14,7 @@ class course(models.Model):
     responsible_id = fields.Many2one('res.users',
                                      ondelete='set null', string="Responsible", index=True)
     session_ids = fields.One2many(
-        'test.session', 'course_id', string="Sessions")
+        'test.session', 'groupe_id', string="Sessions")
 
     def copy(self, default=None):
         default = (default or {})
@@ -56,7 +56,7 @@ class Session(models.Model):
                                             ('instructor', '=', True),
                                             ('category_id.name', 'ilike', "Teacher")]
                                     )
-    course_id = fields.Many2one('test.course',
+    groupe_id = fields.Many2one('test.course',
                                 ondelete='cascade', string="Course", required=True)
     attendee_ids = fields.Many2many('res.partner', string="Participants")
 

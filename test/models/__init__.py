@@ -4,3 +4,4 @@ from . import models
 from . import partner
 from . import wizard
 from . import users
+from . import groupe
