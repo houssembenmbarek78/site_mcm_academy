@@ -14,8 +14,8 @@ class partner(models.Model):
     session_ids = fields.Many2many('test.session', string='attended_sessions',
                                    readonly=True)
 
-    groupe_admin_ids= fields.Many2many('test.groupe', string='groupes à gérer')
-    groupe_user_ids =fields.Many2many('test.groupe', string='groupes à suivre')
+    # groupe_admin_ids= fields.Many2many('test.groupe', string='groupes à gérer')
+    # groupe_user_ids =fields.Many2many('test.groupe', string='groupes à suivre')
 
     #Champs pour recuperer les statistiques
     last_login=fields.Char(string="derniere Connexion")
