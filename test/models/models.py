@@ -56,8 +56,8 @@ class Session(models.Model):
                                             ('instructor', '=', True),
                                             ('category_id.name', 'ilike', "Teacher")]
                                     )
-    groupe_id = fields.Many2one('test.course',
-                                ondelete='cascade', string="Course", required=True)
+    groupe_id = fields.Many2one('test.groupe',
+                                ondelete='cascade', string="Groupe", required=True)
     attendee_ids = fields.Many2many('res.partner', string="Participants")
 
     taken_seats = fields.Float(string="Place Occupées", compute='_taken_seats')
