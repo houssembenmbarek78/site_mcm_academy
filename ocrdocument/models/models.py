@@ -19,5 +19,5 @@ class ocrdocument(models.Model):
            # img2 = cv2.imread('image.png')
            # cv2.imshow('Result2', img2)
            # cv2.waitKey(0)
-           image = pytesseract.image_to_string('image.png')
+           image = pytesseract.image_to_string('./image.png')
            print(image)
