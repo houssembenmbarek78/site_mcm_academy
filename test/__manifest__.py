@@ -28,7 +28,7 @@
         'security/security.xml',
         'views/views.xml',
         'views/templates.xml',
-        'views/openAcademy.xml',
+        'views/learning_plateform.xml',
         'views/partner.xml',
     ],
     # only loaded in demonstration mode

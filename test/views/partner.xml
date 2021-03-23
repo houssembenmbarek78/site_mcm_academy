@@ -39,7 +39,7 @@
         <field name="view_mode">tree,form</field>
     </record>
     <menuitem id="configuration_menu" name="configuration"
-              parent="main_open_academy_menu"/>
+              parent="main_learning_plateform_menu"/>
     <menuitem id="contact_menu" name="Contacts"
               parent="configuration_menu"/>
 

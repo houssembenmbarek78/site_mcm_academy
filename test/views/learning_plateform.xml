@@ -21,31 +21,28 @@
 
 
 
-            <record id="course_form_view" model="ir.ui.view">
-        <field name="name">course.form</field>
-        <field name="model">test.course</field>
+          <record id="groupe_form_view" model="ir.ui.view">
+        <field name="name">groupe.form</field>
+        <field name="model">test.groupe</field>
         <field name="arch" type="xml">
-            <form string="course_form">
+
+            <form string="groupe_form">
                 <sheet>
                     <group>
-                        <field name="name"></field>
-                        <field name="responsible_id"></field>
-                        <notebook>
-                            <page string="Description">
-                                <field name="description"></field>
-                            </page>
-                            <page string="Sessions">
-                                <field name="session_ids">
-                                    <tree string="Registered sesions">
-                                        <field name="name"/>
-                                        <field name="instructor_id"/>
-                                    </tree>
-                                </field>
+                        <group string="General">
+                            <field name="parent_id"></field>
+                            <field name="name"></field>
+                            <field name="public"></field>
 
-                            </page>
-                        </notebook>
+
+                        </group>
 
                     </group>
+
+                    <label for="admins_ids"></label>
+                    <field name="admins_ids"></field>
+                    <label for="users_ids"></label>
+                    <field name="users_ids"></field>
                 </sheet>
 
             </form>
@@ -53,9 +50,9 @@
     </record>
 
 
-    <record model="ir.ui.view" id="list_courses">
+    <record model="ir.ui.view" id="list_groupes">
         <field name="name">test list</field>
-        <field name="model">test.course</field>
+        <field name="model">test.groupe</field>
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
@@ -65,36 +62,30 @@
     </record>
 
     <!-- action definition for a window action-->
-    <record model="ir.actions.act_window" id="cours_list_action">
-        <field name="name">Liste des Cours</field>
-        <field name="res_model">test.course</field>
+    <record model="ir.actions.act_window" id="groups_list_action">
+        <field name="name">Liste des Groupes</field>
+        <field name="res_model">test.groupe</field>
         <field name="view_mode">tree,form</field>
         <field name="context" eval="{'search_default_my_courses': 1}"/>
         <field name="help" type="html">
-            <p class="o_view_nocontent_smiling_face">creer le premier cours</p>
+            <p class="o_view_nocontent_smiling_face">créer le premier groupe</p>
 
         </field>
     </record>
-    <menuitem id="main_open_academy_menu" name="360 Learning"></menuitem>
-    <menuitem id="open_academy_menu" name="360 Learning" parent="main_open_academy_menu"/>
-    <menuitem id="course_menu" name="Courses" parent="open_academy_menu" action="cours_list_action"/>
-
-
-
-
-
-
-
+    <menuitem id="main_learning_plateform_menu" name="360 Learning"></menuitem>
+    <menuitem id="learning_plateform_menu" name="360 Learning" parent="main_learning_plateform_menu"/>
+    <menuitem id="course_menu" name="Courses" parent="learning_plateform_menu" action="groups_list_action"/>
 
 
     <!-- automatically generated list view for courses -->
-    <record model="ir.ui.view" id="course_tree_view">
-        <field name="name">course.tree</field>
+    <record model="ir.ui.view" id="groupe_tree_view">
+        <field name="name">groupe.tree</field>
         <field name="model">test.course</field>
         <field name="arch" type="xml">
-            <tree string="Course Tree">
+            <tree string="Groupe Tree">
                 <field name="name"/>
-                <field name="responsible_id"/>
+                <field name="public"/>
+                <field name="parent_id"/>
             </tree>
 
         </field>
@@ -244,8 +235,8 @@
         <field name="view_mode">tree,graph,form,gantt,calendar,kanban</field>
     </record>
 
-    <menuitem id="session_menu" name="Sessions"
-              parent="open_academy_menu"
+   <menuitem id="session_menu" name="Sessions"
+              parent="learning_plateform_menu"
               action="session_list_action"></menuitem>
 
     <record model="ir.ui.view" id="wizard_form_view">
