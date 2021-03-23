@@ -80,7 +80,7 @@
     <!-- automatically generated list view for courses -->
     <record model="ir.ui.view" id="groupe_tree_view">
         <field name="name">groupe.tree</field>
-        <field name="model">test.course</field>
+        <field name="model">test.groupe</field>
         <field name="arch" type="xml">
             <tree string="Groupe Tree">
                 <field name="name"/>
