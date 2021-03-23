@@ -74,7 +74,7 @@
     </record>
     <menuitem id="main_learning_plateform_menu" name="360 Learning"></menuitem>
     <menuitem id="learning_plateform_menu" name="360 Learning" parent="main_learning_plateform_menu"/>
-    <menuitem id="course_menu" name="Courses" parent="learning_plateform_menu" action="groups_list_action"/>
+    <menuitem id="groupe_menu" name="Groupes" parent="learning_plateform_menu" action="groups_list_action"/>
 
 
     <!-- automatically generated list view for courses -->

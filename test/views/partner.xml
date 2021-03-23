@@ -4,7 +4,7 @@
 
 
     <record model="ir.ui.view" id="partner_instructor_form_view">
-        <field name="name">hello</field>
+        <field name="name">Apprenants</field>
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"></field>
         <field name="arch" type="xml">
@@ -16,6 +16,10 @@
                      <button name="post" string="Ajouter sur 360-learning" type="object"/>
                 </header>
             </xpath>
+             <xpath expr="//field[@name='email']" position="after">
+                 <label for="statut_client"></label>
+                 <field name="statut_client" ></field>
+             </xpath>
              <xpath expr="//page[@name='internal_notes']" position="after">
                 <page string="Statistique">
                     <group>
@@ -33,26 +37,26 @@
 
     </record>
 
-    <record model="ir.actions.act_window" id="contact_list_action">
-        <field name="name">Contacts</field>
-        <field name="res_model">res.partner</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-    <menuitem id="configuration_menu" name="configuration"
+<!--    <record model="ir.actions.act_window" id="contact_list_action">-->
+<!--        <field name="name">Contacts</field>-->
+<!--        <field name="res_model">res.partner</field>-->
+<!--        <field name="view_mode">tree,form</field>-->
+<!--    </record>-->
+    <menuitem id="statistique_menu" name="Statistique"
               parent="main_learning_plateform_menu"/>
     <menuitem id="contact_menu" name="Contacts"
-              parent="configuration_menu"/>
+              parent="statistique_menu"/>
 
-    <record model="ir.actions.act_window" id="contact_cat_list_action">
-        <field name="name">Contact tags</field>
+    <record model="ir.actions.act_window" id="contact_list_action">
+        <field name="name">Les Apprenants</field>
         <field name="res_model">res.partner</field>
         <field name="view_mode">tree,form</field>
 
     </record>
 
-    <menuitem id="contact_cat_menu" name="caontact_cat"
-              parent="configuration_menu"
-              action="contact_cat_list_action">
+    <menuitem id="contact_menu" name="les Apprenants"
+              parent="statistique_menu"
+              action="contact_list_action">
 
     </menuitem>
     <record model="res.partner" id="teacher1">
