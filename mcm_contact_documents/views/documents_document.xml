@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="mcm_contact_documents_document_view_form" model="ir.ui.view">
+        <field name="name">documents form</field>
+        <field name="model">documents.document</field>
+        <field name="inherit_id" ref="documents.document_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='datas']" position="after">
+                <field name="confirmation"/>
+                <field name="attachment_number"/>
+                    <field name="company_id"/>
+            </xpath>
+            <xpath expr="//header" position="inside">
+                <button type="object" name="action_refuse_document" string="Refuser" class="btn-danger" attrs="{'invisible': [('state', '=', 'refused')]}"/>
+                <button type="object" name="wait_document" string="Mettre en attente" class="btn-warning" attrs="{'invisible': [('state', '=', 'waiting')]}"/>
+                <button type="object" name="validate_document" string="Valider" class="btn-success" attrs="{'invisible': [('state', '=', 'validated')]}"/>
+                <button type="object" name="transfert_document" string="Transferer" class="oe_highlight"/>
+                <field name="state" widget="statusbar" clickable="True"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="mcm_contact_documents_document_view_list" model="ir.ui.view">
+        <field name="name">documents list</field>
+        <field name="model">documents.document</field>
+        <field name="inherit_id" ref="documents.documents_view_list"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='tag_ids']" position="replace">
+                <field name="state"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

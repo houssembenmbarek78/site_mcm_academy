@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_frontend" inherit_id="website.assets_frontend">
+        <xpath expr="." position="inside">
+            <!--            <script type="text/javascript" src="/mcm_contact_documents/static/src/js/image-uploader.min.js"></script>-->
+            <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"
+                    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        </xpath>
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" href="/mcm_contact_documents/static/src/css/style1.css"/>
+            <link rel="stylesheet" href="/mcm_contact_documents/static/src/css/image-uploader.min.css"/>
+
+        </xpath>
+    </template>
+</odoo>

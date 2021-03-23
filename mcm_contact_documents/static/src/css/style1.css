@@ -1,0 +1,321 @@
+
+       #button {
+            -webkit-appearance: none;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            padding: 1rem 2rem;
+            border: none;
+            background-color: #50ce7d;
+            color: #fff;
+            text-transform: uppercase;
+
+            margin: 2rem 0 2rem auto;
+            font-size: 1em;
+        }
+
+        ul {
+            margin-left: 2rem;
+        }
+
+       input[type="text"]{font: 13px/24px "Lato", Arial, sans-serif; color: #333; width: 100%; box-sizing: border-box;}
+
+        .input-field .o_website_form_required, .o_website_form_required_custom {
+    .control-label:after {
+        content: ' *';
+    }
+}
+
+
+
+
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+#mcmpopup {
+    text-align: center;
+    color: #fff;
+    background: #111;
+    position: fixed;
+    z-index: 100;
+    padding: 15px;
+    border-radius: 5em;
+
+
+}
+
+
+    #mcmpopup:after
+    {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #111;
+        content: '';
+        position: fixed;
+        left: 50%;
+        bottom: -10px;
+        margin-left: -10px;
+        border-radius: 5em;
+    }
+
+        #mcmpopup.top:after
+        {
+            border-top-color: transparent;
+            border-bottom: 10px solid #111;
+            top: -20px;
+            bottom: auto;
+            border-radius: 5em;
+        }
+
+        #mcmpopup.left:after
+        {
+            left: 10px;
+            margin: 0;
+            border-radius: 5em;
+        }
+
+        #mcmpopup.right:after
+        {
+            right: 10px;
+            left: auto;
+            margin: 0;
+            border-radius: 5em;
+        }
+
+.mcmpopup {
+ background: #ddd;
+ color:#000;
+ padding: 1em;
+ border-radius: 5px;
+ font-size: 1.2em;position:relative;
+ background-color: -internal-light-dark(rgb(239, 239, 239), rgb(74, 74, 74));
+ font-weight: bold;
+ right:2px;
+ float:right;
+
+
+}
+
+
+.pricing {
+width:100%;
+margin: 0 auto;
+}
+
+.pricing .panel {
+  cursor: pointer;
+  margin-left:10px;
+  width: 100%;
+  border-radius: 0;
+  text-align: center;
+  transition:all .5s;
+  padding: 15px;
+}
+
+.panel-default>.panel-heading {
+	padding: 2px;
+	border-color: #edf1f2;
+	background-color: #f6f8f8;
+	color: #333;
+	height:10%;
+	width:100%;
+}
+
+.panel-default>.panel-heading h3 {
+	background-color: #325d88;
+	color: #000;
+	padding: 25px 10px;
+	font-weight: 200;
+	font-size: 10px;
+	margin: 0;
+
+	position: relative;
+    transition:all .5s;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+
+.panel-default>.panel-heading h3 span{
+	display: block;
+	margin-top: -8px;
+	font-size: 15px;
+	font-weight: 400;
+	float:left;
+
+}
+
+h3 .fa-check {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	text-shadow: none;
+	opacity: 0;
+}
+
+.panel .panel-body {
+	padding: 2px;
+	background-color: white;
+
+	height: 282px;
+	width:100%;
+}
+
+.table-container {
+	background-color: #fff;
+	background-image: #fff;
+	height: 100%;
+	width:100%
+}
+
+.panel-body .table th {
+	font-family: 'Arvo', serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #555;
+	text-align: center;
+}
+
+.panel.active { /* There is no space between .panel and .active here. For these are classes that needs be selected at the same time*/
+	box-shadow: 0 0 2px #999;
+
+}
+
+.panel.active h3 {
+	background-color: #f5f5f5;
+}
+
+.active .fa-check {
+	opacity: 1;
+}
+.effect-15{border: 0;  border: 1px solid #f2f2f2; position: relative; background: transparent;}
+.home-wrapper {
+    display: inline-block;
+    width: 100%;
+}
+
+.wrapper-md {
+    padding: 20px;
+}
+.col {
+    display: table-cell;
+    float: none;
+    height: 100%;
+    vertical-align: top;
+}
+
+
+h1, button{
+  color:#fff;
+  text-align: center;
+  padding: 20px;
+
+}
+.sub-main{
+
+  margin:25px;
+  float: right;
+  text-align: center;
+  margin-right:10%;
+}
+
+.button-one{
+  text-align: center;
+  cursor: pointer;
+  font-size:14px;
+  margin: 0 0 0 30px;
+
+}
+
+.button-three{
+text-align: center;
+  cursor: pointer;
+  font-size:14px;
+  margin: 0 0 0 100px;
+
+}
+
+/*Button One*/
+.button-one {
+  outline: none;
+  background-color: #27ae60;
+  border: none;
+  border-radius:5px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    float:right;
+    width: 100px;
+     text-align: center;
+
+}
+
+.button-one:hover{
+  background:#fff;
+   box-shadow:0px 2px 10px 5px #97B1BF;
+   color:#000;
+}
+
+.button-one:active {
+  background-color: #2ecc71;
+  box-shadow: 0 5px #95a5a6;
+  transform: translateY(4px);
+}
+/*Button Three*/
+.button-three {
+    position: relative;
+    background-color: #0a51a5;
+    border: none;
+    padding: 2px;
+    width: 60px;
+    margin-top:5px !important;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.button-three:hover{
+   background:#000;
+   box-shadow:0px 2px 10px 5px #97B1BF;
+   color:#000;
+}
+
+.button-three:after {
+    content: "";
+    background: #f1c40f;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button-three:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
