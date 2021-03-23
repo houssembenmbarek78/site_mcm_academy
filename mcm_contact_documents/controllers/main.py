@@ -779,33 +779,18 @@ class CustomerPortal(CustomerPortal):
                     document.sudo().write(
                         {'owner_id': uid, 'partner_id': uid.partner_id, 'name': document.name + ' ' + str(uid.name)})
                     #on cas d'attacher deux attachements aux doc Cerfa
-                if len(files) == 2:
-                    datas_cerfa_recto = base64.encodebytes(files[0].read())
+                page_number=1
+                #Loop & create cerfa attachments
+                for ufile in files:
+                    datas_cerfa= base64.encodebytes(ufile.read())
                     request.env['ir.attachment'].sudo().create({
-                        'name': "Cerfa Recto",
-                        'type': 'binary',
-                        'datas': datas_cerfa_recto,
-                        'res_model': 'documents.document',
-                        'res_id': document.id
-                    })
-                    datas_cerfa_verso = base64.encodebytes(files[1].read())
-                    request.env['ir.attachment'].sudo().create({
-                        'name': "Cerfa Verso",
-                        'type': 'binary',
-                        'datas': datas_cerfa_verso,
-                        'res_model': 'documents.document',
-                        'res_id': document.id
-                    })
-                    #notre cas en cas d attacher un seul attachement
-                elif len(files) == 1:
-                    datas_cerfa = base64.encodebytes(files[0].read())
-                    request.env['ir.attachment'].sudo().create({
-                        'name': "Cerfa",
+                        'name': "Cerfa Page "+ str(page_number),
                         'type': 'binary',
                         'datas': datas_cerfa,
                         'res_model': 'documents.document',
                         'res_id': document.id
                     })
+                    page_number+=1
         except Exception as e:
             logger.exception("Fail to upload document Carte d'identité ")
         return http.request.render('mcm_contact_documents.success_documents')
