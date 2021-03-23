@@ -14,7 +14,7 @@ class partner(models.Model):
     session_ids = fields.Many2many('test.session', string='attended_sessions',
                                    readonly=True)
 
-    groupe_admin_ids= fields.Many2many('test.groupe',string='groupes à gérer')
+    groupe_admin_ids= fields.Many2many('test.groupe', string='groupes à gérer')
     groupe_user_ids =fields.Many2many('test.groupe', string='groupes à suivre')
 
     #Champs pour recuperer les statistiques
@@ -101,7 +101,7 @@ class partner(models.Model):
                     print(self.firstName, self.lastName)
 
             # Récuperer le mot de passe à partir de res.users
-            user = self.env['res.users'].sudo().search([('email', "=", self.email)])
+            user = self.env['res.users'].sudo().search([('partner_id', "=", self._id)])
             if user:
                 self.password360 = user.password360
                 print(user.password)
