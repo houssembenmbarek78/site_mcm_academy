@@ -27,6 +27,7 @@ publicWidget.registry.digi_documents = publicWidget.Widget.extend({
         domic_identity_hebergeur.style.display='none';
         domic_identity_hebergeur.className='form-group row form-field';
         identity_hebergeur.required = 0;
+        identity_hebergeur1.required = 0;
         }
         if(domic_identity_hebergeur1) {
         domic_identity_hebergeur1.style.display='none';
@@ -44,6 +45,7 @@ publicWidget.registry.digi_documents = publicWidget.Widget.extend({
         domic_identity_hebergeur.style.display='block';
         domic_identity_hebergeur.className='form-group row form-field o_website_form_required';
         identity_hebergeur.required = 1;
+        identity_hebergeur1.required = 1;
         }
         if(domic_identity_hebergeur1) {
         domic_identity_hebergeur1.style.display='block';
