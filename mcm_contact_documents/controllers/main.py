@@ -493,6 +493,8 @@ class CustomerPortal(CustomerPortal):
         try:
             # Preparation de l'environemnt de travail celons le profile et preparation de chargement des fichiers
             files = request.httprequest.files.getlist('identity')
+            files2 = request.httprequest.files.getlist('identity2')
+            document=False
             if files:
                 vals_list = []
                 #charge le modele de la carte d'identité [un seul modele pour deux attachements]
@@ -542,60 +544,70 @@ class CustomerPortal(CustomerPortal):
                         'res_model': 'documents.document',
                         'res_id': document.id
                     })
+            if files2 and document:
+                datas_carte_didentite = base64.encodebytes(files2[0].read())
+                request.env['ir.attachment'].sudo().create({
+                    'name': "Carte d'identité Verso",
+                    'type': 'binary',
+                    'datas': datas_carte_didentite,
+                    'res_model': 'documents.document',
+                    'res_id': document.id
+                })
+            document.sudo().write({'name':"Carte d'identité"})
         except Exception as e:
             logger.exception("Fail to upload document Carte d'identité ")
 
-        try:
-            files2 = request.httprequest.files.getlist('identity2')
-            if files2:
-                vals_list = []
-                vals = {
-                    'name': "Carte d'identité verso",
-                    'folder_id': int(folder_id),
-                    'code_document': 'identity2',
-                    'confirmation': kw.get('confirm_identity'),
-                    'attachment_number': kw.get('identity_number'),
-                    'type': 'binary',
-                    'partner_id': False,
-                    'owner_id': False}
-                vals_list.append(vals)
-                document = request.env['documents.document'].sudo().create(vals_list)
-                if document:
-                    uid = document.create_uid
-                    document.sudo().write(
-                        {'owner_id': uid, 'partner_id': uid.partner_id, 'name': document.name + ' ' + str(uid.name)})
-                    #dans cette partie on a pris on compte si un client télécharge deux fichier par l'upload file
-                    # cette option est désactiver dans la vue xml par le champs multiple
-                if len(files2) == 2:
-                    datas_cartedidenditeerecto = base64.encodebytes(files2[0].read())
-                    datas_cartedidenditeeverso = base64.encodebytes(files2[1].read())
-                    request.env['ir.attachment'].sudo().create({
-                        'name': "Carte d'identité Recto",
-                        'type': 'binary',
-                        'datas': datas_cartedidenditeerecto,
-                        'res_model': 'documents.document',
-                        'res_id': document.id
-                    })
-                    # creation de l'attachement carte d'identité verso
-                    request.env['ir.attachment'].sudo().create({
-                        'name': "Carte d'identité verso",
-                        'type': 'binary',
-                        'datas': datas_cartedidenditeeverso,
-                        'res_model': 'documents.document',
-                        'res_id': document.id
-                    })
-                elif len(files2) == 1:
-                    # cest notre cas puisqu'on a un seul attachement on parse la carte d identité verso
-                    datas_cartedidenditeverso = base64.encodebytes(files2[0].read())
-                    request.env['ir.attachment'].sudo().create({
-                        'name': "Carte d'identité Verso",
-                        'type': 'binary',
-                        'datas': datas_cartedidenditeverso,
-                        'res_model': 'documents.document',
-                        'res_id': document.id
-                    })
-        except Exception as e:
-            logger.exception("Fail to upload document Carte d'identité ")
+        # try:
+        #     files2 = request.httprequest.files.getlist('identity2')
+        #     if files2:
+        #         vals_list = []
+        #         vals = {
+        #             'name': "Carte d'identité verso",
+        #             'folder_id': int(folder_id),
+        #             'code_document': 'identity2',
+        #             'confirmation': kw.get('confirm_identity'),
+        #             'attachment_number': kw.get('identity_number'),
+        #             'type': 'binary',
+        #             'partner_id': False,
+        #             'owner_id': False}
+        #         vals_list.append(vals)
+        #         document = request.env['documents.document'].sudo().create(vals_list)
+        #         if document:
+        #             uid = document.create_uid
+        #             document.sudo().write(
+        #                 {'owner_id': uid, 'partner_id': uid.partner_id, 'name': document.name + ' ' + str(uid.name)})
+        #             #dans cette partie on a pris on compte si un client télécharge deux fichier par l'upload file
+        #             # cette option est désactiver dans la vue xml par le champs multiple
+        #         if len(files2) == 2:
+        #             datas_cartedidenditeerecto = base64.encodebytes(files2[0].read())
+        #             datas_cartedidenditeeverso = base64.encodebytes(files2[1].read())
+        #             request.env['ir.attachment'].sudo().create({
+        #                 'name': "Carte d'identité Recto",
+        #                 'type': 'binary',
+        #                 'datas': datas_cartedidenditeerecto,
+        #                 'res_model': 'documents.document',
+        #                 'res_id': document.id
+        #             })
+        #             # creation de l'attachement carte d'identité verso
+        #             request.env['ir.attachment'].sudo().create({
+        #                 'name': "Carte d'identité verso",
+        #                 'type': 'binary',
+        #                 'datas': datas_cartedidenditeeverso,
+        #                 'res_model': 'documents.document',
+        #                 'res_id': document.id
+        #             })
+        #         elif len(files2) == 1:
+        #             # cest notre cas puisqu'on a un seul attachement on parse la carte d identité verso
+        #             datas_cartedidenditeverso = base64.encodebytes(files2[0].read())
+        #             request.env['ir.attachment'].sudo().create({
+        #                 'name': "Carte d'identité Verso",
+        #                 'type': 'binary',
+        #                 'datas': datas_cartedidenditeverso,
+        #                 'res_model': 'documents.document',
+        #                 'res_id': document.id
+        #             })
+        # except Exception as e:
+        #     logger.exception("Fail to upload document Carte d'identité ")
         try:
             files = request.httprequest.files.getlist('address_proof')
             if files:
@@ -791,6 +803,7 @@ class CustomerPortal(CustomerPortal):
                         'res_id': document.id
                     })
                     page_number+=1
+                document.sudo().write({'name':'Cerfa'})
         except Exception as e:
             logger.exception("Fail to upload document Carte d'identité ")
         return http.request.render('mcm_contact_documents.success_documents')
