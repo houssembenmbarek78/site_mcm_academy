@@ -1,4 +1,4 @@
-doo.define('mcm_contact_documents.portal', function (require) {
+odoo.define('mcm_contact_documents.portal', function (require) {
 'use strict';
 
 var publicWidget = require('web.public.widget');
