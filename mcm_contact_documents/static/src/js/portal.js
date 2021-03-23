@@ -1,42 +1,53 @@
-odoo.define('portal.portal', function (require) {
+doo.define('mcm_contact_documents.portal', function (require) {
 'use strict';
 
 var publicWidget = require('web.public.widget');
 
-publicWidget.registry.portalDetails = publicWidget.Widget.extend({
-     events: _.extend({}, publicWidget.registry.portalDetails.events, {
-       'change #identity': 'onCheckDocuments',
-       'change #permis': 'onCheckDocuments',
-    }),
+publicWidget.registry.ExamCenterDate = publicWidget.Widget.extend({
+    selector: '#digimoov_my_documents_form',
+    events: {
+        'click #check_domicile_not_checked': 'check_domicile',
+        'click #check_domicile_checked': 'check_domicile',
+    },
 
-    /**
-     * @private
-     */
-         onCheckDocuments: function (ev) {
-        var $identity = $("input[id='identity']");
-                        var $permis = $("input[id='permis']");
-                        if ((parseInt($identity.get(0).files.length)>2) || (parseInt($permis.get(0).files.length)>2)){
-                        if (parseInt($identity.get(0).files.length)>2){
-                        alert("Vous ne pouvez télécharger qu'un maximum de 2 fichiers ( Recto , Verso ) à votre pièce
-                        d'identité");
-                        button=document.getElementById('submit_documents');
-                        document.getElementById('identity').value=null;
-                        button.disabled=true;
-                        }
-                        if (parseInt($permis.get(0).files.length)>2){
-                        alert("Vous ne pouvez télécharger qu'un maximum de 2 fichiers ( Recto , Verso ) à votre permis
-                        de conduire");
-                        button=document.getElementById('submit_documents');
-                        document.getElementById('permis').value=null;
-                        button.disabled=true;
-                        }
-                        }
-                        else {
-                        button=document.getElementById('submit_documents');
-                        button.disabled=false;
-                        }
-    },
-    _onCountryChange: function () {
-        this._adaptAddressForm();
-    },
+        check_domicile: function (ev) {
+        console.log('verify date exam');
+        var self = this;
+        var domic_checked= document.getElementById('check_domicile_checked');
+        var domic_not_checked= document.getElementById('check_domicile_not_checked');
+        var domic_identity_hebergeur=
+        document.getElementById('o_website_form_identity_hebergeur');
+        var domic_attestation_hebergeur=
+        document.getElementById('o_website_form_attestation_hebergeur');
+        var identity_hebergeur = document.getElementById('identity_hebergeur');
+        var attestation_hebergeur = document.getElementById('attestation_hebergeur');
+        if(domic_checked.checked){
+        if(domic_identity_hebergeur) {
+        domic_identity_hebergeur.style.display='none';
+        domic_identity_hebergeur.className='form-group row form-field';
+        identity_hebergeur.required = 0;
+        }
+        if(domic_attestation_hebergeur) {
+        domic_attestation_hebergeur.style.display='none';
+        domic_attestation_hebergeur.className='form-group row form-field';
+        attestation_hebergeur.required = 0;
+        }
+        }
+        if(domic_not_checked.checked){
+        if(domic_identity_hebergeur) {
+        domic_identity_hebergeur.style.display='block';
+        domic_identity_hebergeur.className='form-group row form-field
+        o_website_form_required';
+        identity_hebergeur.required = 1;
+        }
+        if(domic_attestation_hebergeur) {
+        domic_attestation_hebergeur.style.display='block';
+        domic_attestation_hebergeur.className='form-group row form-field
+        o_website_form_required';
+        attestation_hebergeur.required = 1;
+        }
+        }
+            },
+
+})
 });
