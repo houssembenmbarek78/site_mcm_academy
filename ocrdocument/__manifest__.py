@@ -28,6 +28,8 @@
         'views/views.xml',
         'views/templates.xml',
     ],
+    # image
+    'images': ['/image.png'],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
