@@ -11,7 +11,6 @@ publicWidget.registry.ExamCenterDate = publicWidget.Widget.extend({
     },
 
         check_domicile: function (ev) {
-        console.log('verify date exam');
         var self = this;
         var domic_checked= document.getElementById('check_domicile_checked');
         var domic_not_checked= document.getElementById('check_domicile_not_checked');
@@ -20,12 +19,14 @@ publicWidget.registry.ExamCenterDate = publicWidget.Widget.extend({
         var domic_attestation_hebergeur=
         document.getElementById('o_website_form_attestation_hebergeur');
         var identity_hebergeur = document.getElementById('identity_hebergeur');
+        var identity_hebergeur1 = document.getElementById('identity_hebergeur1');
         var attestation_hebergeur = document.getElementById('attestation_hebergeur');
         if(domic_checked.checked){
         if(domic_identity_hebergeur) {
         domic_identity_hebergeur.style.display='none';
         domic_identity_hebergeur.className='form-group row form-field';
         identity_hebergeur.required = 0;
+        identity_hebergeur1.required = 0;
         }
         if(domic_attestation_hebergeur) {
         domic_attestation_hebergeur.style.display='none';
@@ -38,6 +39,7 @@ publicWidget.registry.ExamCenterDate = publicWidget.Widget.extend({
         domic_identity_hebergeur.style.display='block';
         domic_identity_hebergeur.className='form-group row form-field o_website_form_required';
         identity_hebergeur.required = 1;
+        identity_hebergeur1.required = 1;
         }
         if(domic_attestation_hebergeur) {
         domic_attestation_hebergeur.style.display='block';
