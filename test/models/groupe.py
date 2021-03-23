@@ -41,24 +41,24 @@ class Groupe(models.Model):
         default['name'] = new_name
         return super(Groupe, self).copy(default)
 
-    _sql_constraints = [
-        ('check_description_name',
-         'CHECK(name != description)',
-         "Le nom doit etre différent de description",
-         ),
-        ('check_name',
-         'UNIQUE(name)',
-         "le nom doit etre unique",
-         ),
-        ('check_admin_coach',
-         'CHECK(admins_ids != authors_ids)',
-         "L\'admin doit etre différent d'auteur'",
-         ),
-        ('check_user_author',
-         'CHECK(coaches_ids != users_ids)',
-         "Le coach doit etre différent d\'utilisateur",
-         ),
-    ]
+    # _sql_constraints = [
+    #     ('check_description_name',
+    #      'CHECK(name != description)',
+    #      "Le nom doit etre différent de description",
+    #      ),
+    #     ('check_name',
+    #      'UNIQUE(name)',
+    #      "le nom doit etre unique",
+    #      ),
+    #     ('check_admin_coach',
+    #      'CHECK(admins_ids != authors_ids)',
+    #      "L\'admin doit etre différent d'auteur'",
+    #      ),
+    #     ('check_user_author',
+    #      'CHECK(coaches_ids != users_ids)',
+    #      "Le coach doit etre différent d\'utilisateur",
+    #      ),
+    # ]
 
 
     def click(self):
