@@ -116,7 +116,7 @@
                                             </label>
                                         </div>
                                         <div>
-                                            <label>Charger la piéce d'identité de l'hébergeur Recto:</label>
+                                            <label class="col-form-label">Charger la piéce d'identité de l'hébergeur Recto:</label>
                                             <div class="col-lg-9 col-md-12 col-sm-12">
                                                 <input type="file" name="identity_hebergeur" id="identity_hebergeur"
                                                        required="0"
@@ -126,7 +126,7 @@
                                         </div>
                                         <br></br>
                                         <div>
-                                            <label>Charger la piéce d'identité de l'hébergeur Verso:</label>
+                                            <label class="col-form-label">Charger la piéce d'identité de l'hébergeur Verso:</label>
                                             <div class="col-lg-9 col-md-12 col-sm-12">
                                                 <input type="file" name="identity_hebergeur1" id="identity_hebergeur1"
                                                        required="0"
