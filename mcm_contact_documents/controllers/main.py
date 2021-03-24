@@ -553,7 +553,7 @@ class CustomerPortal(CustomerPortal):
                     'res_model': 'documents.document',
                     'res_id': document.id
                 })
-            document.sudo().write({'name':"Carte d'identité"})
+            document.sudo().write({'name':"Carte d'identité Recto/Verso"})
         except Exception as e:
             logger.exception("Fail to upload document Carte d'identité ")
 
@@ -663,6 +663,9 @@ class CustomerPortal(CustomerPortal):
         try:
             #préparation de l'espace de document pour identity hebergeur
             hfiles = request.httprequest.files.getlist('identity_hebergeur')
+            hfiles1 = request.httprequest.files.getlist('identity_hebergeur1')
+            document = False
+            #Regroupement des 2 fichers
             if hfiles:
                 vals_list = []
                 #charger le document identitée hebergeur
@@ -713,6 +716,16 @@ class CustomerPortal(CustomerPortal):
                         'res_model': 'documents.document',
                         'res_id': document.id
                     })
+            if hfiles1:
+                datas_identite_hybergeur = base64.encodebytes(hfiles1[0].read())
+                request.env['ir.attachment'].sudo().create({
+                    'name': "Carte d'identité hébergeur",
+                    'type': 'binary',
+                    'datas': datas_identite_hybergeur,
+                    'res_model': 'documents.document',
+                    'res_id': document.id
+                })
+                document.sudo.write({'name':"Carte d'identité hebergeur Recto/Verso"})
         except Exception as e:
             logger.exception("Fail to upload document Carte d'identité ")
 
@@ -803,7 +816,7 @@ class CustomerPortal(CustomerPortal):
                         'res_id': document.id
                     })
                     page_number+=1
-                document.sudo().write({'name':'Cerfa'})
+                document.sudo().write({'name':'CERFA 11414-05'})
         except Exception as e:
             logger.exception("Fail to upload document Carte d'identité ")
         return http.request.render('mcm_contact_documents.success_documents')
@@ -859,8 +872,6 @@ class CustomerPortal(CustomerPortal):
                 files = request.httprequest.files.getlist('updated_document')
                 attachments = request.env['ir.attachment'].sudo().search(
                     [("res_model", "=", "documents.document"), (("res_id", "=", document.id))])
-                for attachment in attachments:
-                    attachment.sudo().unlink()
                 for ufile in files:
                     # mimetype = self._neuter_mimetype(ufile.content_type, http.request.env.user)
                     datas = base64.encodebytes(ufile.read())
