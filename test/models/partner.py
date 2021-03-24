@@ -72,7 +72,7 @@ class partner(models.Model):
 
 
 
-    #Ajouter un utilisateur sur 360
+    #Ajouter i-One sur 360
     @api.onchange('statut_client')
     def post(self):
         if (self.statut_client == 'Gagné') and (self.validation):
@@ -101,28 +101,33 @@ class partner(models.Model):
                     print(self.firstName, self.lastName)
 
             # Récuperer le mot de passe à partir de res.users
-            user = self.env['res.users'].sudo().search([('partner_id', "=", self._id)])
+            user = self.env['res.users'].sudo().search([('partner_id', "=", self.id)])
             if user:
                 self.password360 = user.password360
                 print(user.password)
-
+                id_Digimoov_bienvenue = '56f5520e11d423f46884d594'
                 company_id = '56f5520e11d423f46884d593'
                 api_key = 'cnkcbrhHKyfzKLx4zI7Ub2P5'
-                url = 'https://app.360learning.com/api/v1/users?company=' + company_id + '&apiKey=' + api_key
+                urluser = 'https://app.360learning.com/api/v1/users?company=' + company_id + '&apiKey=' + api_key
+                urlgroup = 'https://app.360learning.com/api/v1/groups/' + id_Digimoov_bienvenue + '/users/' + self.email + '?company=' + company_id + '&apiKey=' + api_key
 
                 headers = CaseInsensitiveDict()
                 headers["Content-Type"] = "application/json"
 
                 data = '{"mail":"' + self.email + '" , "password":"' + self.password360 + '" , "firstName":"' + self.firstName + '" , "lastName":"' + self.lastName + '"}'
                 print(data)
-                resp = requests.post(url, headers=headers, data=data)
-
+                #Ajouter i-One à table user
+                resp = requests.post(urluser, headers=headers, data=data)
                 print(resp.status_code)
                 if (resp.status_code == 200):
                     user.password360 = ""
 
+                #Affecter i-One au groupe digimoov-bienvenue
+                data_group = {}
+                respgroupe = requests.put(urlgroup, headers=headers, data=data_group)
+                print('groupe', respgroupe.status_code)
 
-def delete(self):
+    def delete(self):
      company_id = '56f5520e11d423f46884d593'
      api_key = 'cnkcbrhHKyfzKLx4zI7Ub2P5'
      headers = CaseInsensitiveDict()

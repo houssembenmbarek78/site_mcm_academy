@@ -17,7 +17,7 @@
                 </header>
             </xpath>
              <xpath expr="//field[@name='email']" position="after">
-                 <label for="statut_client"></label>
+
                  <field name="statut_client" ></field>
              </xpath>
              <xpath expr="//page[@name='internal_notes']" position="after">
@@ -26,7 +26,7 @@
 
                         <field name="last_login"></field>
                         <field name="averageScore"></field>
-                         <field name="totalTimeSpentInMinutes"></field>
+                        <field name="totalTimeSpentInMinutes"></field>
 
                     </group>
                 </page>
@@ -44,8 +44,8 @@
 <!--    </record>-->
     <menuitem id="statistique_menu" name="Statistique"
               parent="main_learning_plateform_menu"/>
-    <menuitem id="contact_menu" name="Contacts"
-              parent="statistique_menu"/>
+<!--    <menuitem id="contact_menu" name="Contacts"-->
+<!--              parent="statistique_menu"/>-->
 
     <record model="ir.actions.act_window" id="contact_list_action">
         <field name="name">Les Apprenants</field>
@@ -54,7 +54,7 @@
 
     </record>
 
-    <menuitem id="contact_menu" name="les Apprenants"
+    <menuitem id="contact_menu" name="Apprenants"
               parent="statistique_menu"
               action="contact_list_action">
 
