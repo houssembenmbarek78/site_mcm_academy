@@ -7,14 +7,14 @@
                 <div class="container">
                     <div class="row">
                         <div class="row m-0">
-                            <div class="col-lg-6">
+                            <div class="col-lg-4">
                                 <div class="card-shadow ">
                                     <img src="/mcm_contact_documents/static/img/3 Dossier d'insciption Digimoov.webp"
                                          class="img-responsive img img-fluid"
                                          data-original-title="" title="" aria-describedby="tooltip821638"/>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-8">
                                 <center>
                                     <div class="wrapper">
                                         <p>
@@ -116,7 +116,7 @@
                                             </label>
                                         </div>
                                         <div>
-                                            <label class="col-form-label" for="identity_hebergeur">Charger la piéce d'identité de l'hébergeur Recto:</label>
+                                            <label class="col-form-label" for="identity_hebergeur" style="padding-left:12px !important">Charger la piéce d'identité de l'hébergeur Recto:</label>
                                             <div class="col-lg-9 col-md-12 col-sm-12">
                                                 <input type="file" name="identity_hebergeur" id="identity_hebergeur"
                                                        required="0"
@@ -126,7 +126,7 @@
                                         </div>
                                         <br></br>
                                         <div>
-                                            <label class="col-form-label" for="identity_hebergeur1">Charger la piéce d'identité de l'hébergeur Verso:</label>
+                                            <label class="col-form-label" for="identity_hebergeur1" style="padding-left:12px !important">Charger la piéce d'identité de l'hébergeur Verso:</label>
                                             <div class="col-lg-9 col-md-12 col-sm-12">
                                                 <input type="file" name="identity_hebergeur1" id="identity_hebergeur1"
                                                        required="0"
