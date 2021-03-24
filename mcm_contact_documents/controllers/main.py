@@ -665,7 +665,6 @@ class CustomerPortal(CustomerPortal):
             hfiles = request.httprequest.files.getlist('identity_hebergeur')
             hfiles1 = request.httprequest.files.getlist('identity_hebergeur1')
             document = False
-            #Regroupement des 2 fichers
             if hfiles:
                 vals_list = []
                 #charger le document identitée hebergeur
@@ -725,7 +724,7 @@ class CustomerPortal(CustomerPortal):
                     'res_model': 'documents.document',
                     'res_id': document.id
                 })
-                document.sudo.write({'name':"Carte d'identité hebergeur Recto/Verso"})
+            document.sudo.write({'name':"Carte d'identité hebergeur Recto/Verso"})
         except Exception as e:
             logger.exception("Fail to upload document Carte d'identité ")
 
