@@ -104,7 +104,7 @@ class partner(models.Model):
                     print(self.firstName, self.lastName)
 
             # Récuperer le mot de passe à partir de res.users
-            user = self.env['res.users'].sudo().search([('partner_id', "=", self.id)])
+            user = self.env['res.users'].sudo().search([('login', "=", self.email)])
             if user:
                 self.password360 = user.password360
                 print(user.password)
@@ -126,9 +126,9 @@ class partner(models.Model):
                     user.password360 = ""
 
                 #Affecter i-One au groupe digimoov-bienvenue
-                data_group = {}
-                respgroupe = requests.put(urlgroup, headers=headers, data=data_group)
-                print('groupe', respgroupe.status_code)
+                # data_group = {}
+                # respgroupe = requests.put(urlgroup, headers=headers, data=data_group)
+                # print('groupe', respgroupe.status_code)
 
     def delete(self):
      company_id = '56f5520e11d423f46884d593'
