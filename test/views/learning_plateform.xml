@@ -40,7 +40,6 @@
                     </group>
 
                        <sheet>
-
                         <label for="users_ids"></label>
                     <field name="users_ids"></field>
                    </sheet>
