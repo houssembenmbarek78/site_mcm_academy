@@ -14,7 +14,7 @@ class partner(models.Model):
     session_ids = fields.Many2many('test.session', string='attended_sessions',
                                    readonly=True)
     assignedPrograms = fields.Integer(string='Nombre de programmes attribués')
-    certification_ids = fields.One2many('test.certification', string='certifications')
+    # certification_ids = fields.One2many('test.certification', string='certifications')
     toDeactivateAt = fields.Date(string='date de suppression', default='')
     # groupe_admin_ids= fields.Many2many('test.groupe', string='groupes à gérer')
     # groupe_user_ids =fields.Many2many('test.groupe', string='groupes à suivre')
