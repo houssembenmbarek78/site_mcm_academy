@@ -8,12 +8,14 @@ from odoo import models, fields,api
 
 class partner(models.Model):
     _inherit = 'res.partner'
-
+    #apprenant = fields.Boolean("Apprenant", default=True)
     # Ajouter champs au modele partner par defaut res.partner ne sont pas des instructors
     instructor = fields.Boolean("Instructor", default=False)
     session_ids = fields.Many2many('test.session', string='attended_sessions',
                                    readonly=True)
-
+    assignedPrograms = fields.Integer(string='Nombre de programmes attribués')
+    certification_ids = fields.One2many('test.certification', string='certifications')
+    toDeactivateAt = fields.Date(string='date de suppression', default='')
     # groupe_admin_ids= fields.Many2many('test.groupe', string='groupes à gérer')
     # groupe_user_ids =fields.Many2many('test.groupe', string='groupes à suivre')
 
@@ -21,7 +23,7 @@ class partner(models.Model):
     last_login=fields.Char(string="derniere Connexion")
     # learner_achivement=fields.Char(string="Réalisations des apprenants")
     averageScore=fields.Char(string="Score Moyen")
-    totalTimeSpentInMinutes=fields.Char(string="temps passé en minutes")
+    totalTimeSpentInMinutes=fields.Char(string="temps passé")
     #Champs pour stocker le mot de passe
     password360=fields.Char()
     firstName = fields.Char()
@@ -65,7 +67,8 @@ class partner(models.Model):
                 'last_login': table_user['lastLoginAt'],
                 'averageScore': table_user['averageScore'],
                 'totalTimeSpentInMinutes': table_user['totalTimeSpentInMinutes'],
-
+                'assignedPrograms': table_user['assignedPrograms'],
+                'toDeactivateAt': table_user['toDeactivateAt'],
             })
         print("partner",partner.last_login)
 

@@ -39,10 +39,10 @@
 
                     </group>
 
-                    <label for="admins_ids"></label>
-                    <field name="admins_ids"></field>
-                    <label for="users_ids"></label>
+                       <sheet>
+                        <label for="users_ids"></label>
                     <field name="users_ids"></field>
+                   </sheet>
                 </sheet>
 
             </form>
@@ -77,7 +77,7 @@
     <menuitem id="groupe_menu" name="Groupes" parent="learning_plateform_menu" action="groups_list_action"/>
 
 
-    <!-- automatically generated list view for courses -->
+    <!-- automatically generated list view for groupes -->
     <record model="ir.ui.view" id="groupe_tree_view">
         <field name="name">groupe.tree</field>
         <field name="model">test.groupe</field>

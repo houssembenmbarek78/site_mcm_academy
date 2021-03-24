@@ -11,8 +11,8 @@ class Groupe(models.Model):
     name = fields.Char(string="Nom", require=True)
     description = fields.Char(string="Description")
     public = fields.Boolean(string="Public")
-
     parent_id = fields.Many2one('test.groupe',ondelete='set null', string="Groupe Parent")
+    children_id = fields.One2many('test.groupe', 'parent_id', string='Sous groupes')
     responsible_id = fields.Many2one('res.users',
                                      ondelete='set null', string="Responsible", index=True)
     admins_ids = fields.Many2many('res.partner' ,relation='admins_ids', string='Les Admins')

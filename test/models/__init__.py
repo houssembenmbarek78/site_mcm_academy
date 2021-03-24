@@ -5,3 +5,4 @@ from . import partner
 from . import wizard
 from . import users
 from . import groupe
+from . import certification
