@@ -1338,7 +1338,7 @@
                         </div>
                         <div class="col-lg-6 col-md-7">
                             <input type="file" name='updated_document' required="1"
-                                   class="form-control o_website_form_input"
+                                   class="form-control o_website_form_input" multiple="true"
                                    accept="image/*,application/pdf"/>
                         </div>
                     </div>

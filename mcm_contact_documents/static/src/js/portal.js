@@ -14,10 +14,9 @@ publicWidget.registry.ExamCenterDate = publicWidget.Widget.extend({
         var self = this;
         var domic_checked= document.getElementById('check_domicile_checked');
         var domic_not_checked= document.getElementById('check_domicile_not_checked');
-        var domic_identity_hebergeur=
-        document.getElementById('o_website_form_identity_hebergeur');
-        var domic_attestation_hebergeur=
-        document.getElementById('o_website_form_attestation_hebergeur');
+        var domic_identity_hebergeur=document.getElementById('o_website_form_identity_hebergeur');
+        var domic_identity_hebergeur1=document.getElementById('o_website_form_identity_hebergeur1');
+        var domic_attestation_hebergeur=document.getElementById('o_website_form_attestation_hebergeur');
         var identity_hebergeur = document.getElementById('identity_hebergeur');
         var identity_hebergeur1 = document.getElementById('identity_hebergeur1');
         var attestation_hebergeur = document.getElementById('attestation_hebergeur');
@@ -26,6 +25,10 @@ publicWidget.registry.ExamCenterDate = publicWidget.Widget.extend({
         domic_identity_hebergeur.style.display='none';
         domic_identity_hebergeur.className='form-group row form-field';
         identity_hebergeur.required = 0;
+        }
+        if(domic_identity_hebergeur1) {
+        domic_identity_hebergeur1.style.display='none';
+        domic_identity_hebergeur1.className='form-group row form-field';
         identity_hebergeur1.required = 0;
         }
         if(domic_attestation_hebergeur) {
@@ -39,6 +42,10 @@ publicWidget.registry.ExamCenterDate = publicWidget.Widget.extend({
         domic_identity_hebergeur.style.display='block';
         domic_identity_hebergeur.className='form-group row form-field o_website_form_required';
         identity_hebergeur.required = 1;
+        }
+        if(domic_identity_hebergeur1) {
+        domic_identity_hebergeur1.style.display='block';
+        domic_identity_hebergeur1.className='form-group row form-field o_website_form_required';
         identity_hebergeur1.required = 1;
         }
         if(domic_attestation_hebergeur) {
