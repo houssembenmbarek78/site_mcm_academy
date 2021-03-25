@@ -53,14 +53,14 @@ class partner(models.Model):
         )
         response = requests.get('https://app.360learning.com/api/v1/users', params=params)
         users = response.json()
-        #Faire un parcours sur chaque user et extraie ses statistique
+        #Faire un parcours sur chaque user et extraire ses statistiques
         for user in users:
             iduser=user['_id']
             email=user['mail']
             response_user=requests.get('https://app.360learning.com/api/v1/users/'+iduser ,params=params)
             table_user=response_user.json()
             #print(table_user)
-            #chercher par email le meme client pour lui affecter les stats de 360
+            #Chercher par email le meme client pour lui affecter les stats de 360
             partner= self.env['res.partner'].sudo().search([('email', "=",email)])
             if partner:
                 partner.sudo().write({
