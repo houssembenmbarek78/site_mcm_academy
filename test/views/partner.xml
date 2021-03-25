@@ -31,7 +31,8 @@
 <!--                     <button name="post" string="Ajouter sur 360-learning" type="object"/>-->
 <!--                </header>-->
 <!--            </xpath>-->
-               <group>
+
+             <group>
              <xpath expr="//field[@name='email']" position="after">
 
 
@@ -42,8 +43,8 @@
                      <lable for="apprenant"/>
                      <field name="apprenant"/>
 
-             </xpath>
-               </group>
+              </xpath>
+            </group>
              <xpath expr="//page[@name='internal_notes']" position="after">
                 <page string="Statistique">
                     <group>
