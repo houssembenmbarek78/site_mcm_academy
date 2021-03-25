@@ -34,12 +34,12 @@
 
             <data>
              <xpath expr="//field[@name='email']" position="after">
-                  <div><lable for="statut_client"/></div>
-                  <field name="statut_client"></field>
-                 <div> <lable for="validation"/></div>
-                     <field name="validation"/>
-                   <div>  <lable for="apprenant"/></div>
-                     <field name="apprenant"/>
+                  <div><lable for="statut_client"/>
+                  <field name="statut_client"></field></div>
+                 <div> <lable for="validation"/>
+                     <field name="validation"/></div>
+                   <div><lable for="apprenant"/>
+                     <field name="apprenant"/></div>
 
               </xpath>
             </data>
