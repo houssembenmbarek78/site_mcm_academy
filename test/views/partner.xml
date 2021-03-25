@@ -8,11 +8,17 @@
         <field name="inherit_id" ref="base.view_partner_tree"></field>
         <field name="arch" type="xml">
 
-                <xpath expr="//tree[@string='Contacts']" position="fields">
+                <xpath expr="//field[@name='name']" position="replace">
                 <field name="firstName"/>
-                <field name="lastName"/>
-                <field name="statut_client"/>
+
                    </xpath>
+            <xpath expr="//field[@name='phone']" position="replace">
+                <field name="lastName"/>
+            </xpath>
+            <xpath expr="//field[@name='email']" position="after">
+                    <field name="last_login"/>
+                    <field name="totalTimeSpentInMinutes"/>
+            </xpath>
 
         </field>
 
