@@ -61,16 +61,17 @@ class partner(models.Model):
             table_user=response_user.json()
             #print(table_user)
             #Chercher par email le meme client pour lui affecter les stats de 360
-            partner= self.env['res.partner'].sudo().search([('email', "=",email)])
-            if partner:
-                partner.sudo().write({
-                'last_login': table_user['lastLoginAt'],
-                'averageScore': table_user['averageScore'],
-                'totalTimeSpentInMinutes': table_user['totalTimeSpentInMinutes'],
-                'assignedPrograms': table_user['assignedPrograms'],
-                'toDeactivateAt': table_user['toDeactivateAt'],
-            })
-        print("partner",partner.last_login)
+            partners= self.env['res.partner'].sudo().search([('email', "=",email)])
+            for partner in partners:
+                if partner:
+                    partner.sudo().write({
+                    'last_login': table_user['lastLoginAt'],
+                    'averageScore': table_user['averageScore'],
+                    'totalTimeSpentInMinutes': table_user['totalTimeSpentInMinutes'],
+                    'assignedPrograms': table_user['assignedPrograms'],
+                    'toDeactivateAt': table_user['toDeactivateAt'],
+                })
+                print("partner",partner.last_login)
 
 
 
