@@ -81,7 +81,7 @@ class partner(models.Model):
     #Ajouter i-One sur 360
     @api.onchange('statut_client')
     def post(self):
-        if (self.statut_client == 'Gagné'and self.validation):
+        if (self.statut_client == 'Gagné' and self.validation):
             espace = self.name.find('')
 
             if espace:
