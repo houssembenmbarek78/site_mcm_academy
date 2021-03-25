@@ -64,7 +64,7 @@ class partner(models.Model):
             #Chercher par email le meme client pour lui affecter les stats de 360
             partners= self.env['res.partner'].sudo().search([('email', "=",email)])
             for partner in partners:
-                if partner:
+                if partners:
                     partner.sudo().write({
                     'last_login': table_user['lastLoginAt'],
                     # 'averageScore': table_user['averageScore'],
@@ -139,8 +139,8 @@ class partner(models.Model):
      api_key = 'cnkcbrhHKyfzKLx4zI7Ub2P5'
      headers = CaseInsensitiveDict()
      headers["Accept"] = "*/*"
-     email = "lahmerines7@gmail.com"
-     url = "https://app.360learning.com/api/v1/users/lahmerines7@gmail.com?company=" + company_id + "&apiKey=" + api_key
+     email = self.email
+     url = "https://app.360learning.com/api/v1/users/"+ email +"?company=" + company_id + "&apiKey=" + api_key
      resp = requests.delete(url)
 
      print(resp.status_code)

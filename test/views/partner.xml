@@ -23,14 +23,14 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"></field>
         <field name="arch" type="xml">
-<!--            <xpath expr="//form//sheet" position="before">-->
-<!--                <header>-->
-<!--                    <button name="createuser" string="Créer" type="object"/>-->
+         <xpath expr="//form//sheet" position="before">
+            <header>
+                    <button name="delete" string="supprimer" type="object"/>
 <!--                     <button name="createtest" string="Créer test" type="object"/>-->
 <!--                     <button name="getusers" string="récupérer stats" type="object"/>-->
 <!--                     <button name="post" string="Ajouter sur 360-learning" type="object"/>-->
-<!--                </header>-->
-<!--            </xpath>-->
+              </header>
+            </xpath>
 
             <data>
              <xpath expr="//field[@name='title']" position="replace">
