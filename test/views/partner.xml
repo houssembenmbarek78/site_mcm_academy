@@ -3,10 +3,10 @@
     <!-- ajouter  instructor field à une vue existante -->
 
    <record model="ir.ui.view" id="partner_tree_view">
-        <field name="name">groupe.tree</field>
+        <field name="name">partner.tree</field>
         <field name="model">res.partner</field>
         <field name="arch" type="xml">
-        <field name="inherit_id" ref="base.view_partner_form"></field>
+        <field name="inherit_id" ref="base.view_partner_treee"></field>
             <tree string="partner Tree">
                 <xpath expr="//field[@name='email']" position="before">
                 <field name="firstName"/>
