@@ -31,10 +31,14 @@
                      <button name="post" string="Ajouter sur 360-learning" type="object"/>
                 </header>
             </xpath>
+            <group>
              <xpath expr="//field[@name='email']" position="after">
+
                  <label for="statut_client"/>
                  <field name="statut_client"></field>
+
              </xpath>
+            </group>
              <xpath expr="//page[@name='internal_notes']" position="after">
                 <page string="Statistique">
                     <group>
