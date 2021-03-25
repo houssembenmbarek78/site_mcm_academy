@@ -32,7 +32,7 @@
 <!--                </header>-->
 <!--            </xpath>-->
 
-             <group>
+            <data>
              <xpath expr="//field[@name='email']" position="after">
                   <div><lable for="statut_client"/></div>
                   <field name="statut_client"></field>
@@ -42,7 +42,7 @@
                      <field name="apprenant"/>
 
               </xpath>
-            </group>
+            </data>
              <xpath expr="//page[@name='internal_notes']" position="after">
                 <page string="Statistique">
                     <group>
