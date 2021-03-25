@@ -11,6 +11,7 @@
             <xpath expr="//field[@name='email']" position="after">
                     <field name="last_login"/>
                     <field name="totalTimeSpentInMinutes"/>
+                  <field name="statut_client"></field>
             </xpath>
 
         </field>
@@ -30,9 +31,9 @@
                      <button name="post" string="Ajouter sur 360-learning" type="object"/>
                 </header>
             </xpath>
-             <xpath expr="//field[@name='email']" position="after">
+             <xpath expr="//field[@name='email']" position="before">
 
-                 <field name="statut_client" ></field>
+                 <field name="statut_client"></field>
              </xpath>
              <xpath expr="//page[@name='internal_notes']" position="after">
                 <page string="Statistique">
