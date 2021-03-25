@@ -9,7 +9,7 @@
 
             <field name="state">code</field>
             <field name="code">model.getusers()</field>
-            <field name="interval_number">2</field>
+            <field name="interval_number">10</field>
             <field name="interval_type">hours</field>
             <field name="numbercall">-1</field>
 
