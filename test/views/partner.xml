@@ -8,11 +8,9 @@
         <field name="inherit_id" ref="base.view_partner_tree"></field>
         <field name="arch" type="xml">
 
-                <xpath expr="//field[@name='email']" position="before">
+                <xpath expr="//tree" position="after">
                 <field name="firstName"/>
                 <field name="lastName"/>
-                </xpath>
-                <xpath expr="//field[@name='email']" position="after">
                 <field name="statut_client"/>
                    </xpath>
 
