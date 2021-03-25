@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="assets_frontend" inherit_id="website.assets_frontend">
+    <template id="assets_frontend" inherit_id="website.assets_frontend" name="Digimoov assets frontend view documents">
          <xpath expr="script[last()]" position="after">
             <script type="text/javascript" src="/mcm_contact_documents/static/src/js/portal.js"></script>
         </xpath>
