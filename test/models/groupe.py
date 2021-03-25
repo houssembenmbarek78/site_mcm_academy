@@ -17,7 +17,10 @@ class Groupe(models.Model):
                                      ondelete='set null', string="Responsible", index=True)
     admins_ids = fields.Many2many('res.partner' ,relation='admins_ids', string='Les Admins')
     # authors_ids = fields.Many2many('res.users', string='Les Auteurs')
-    users_ids = fields.Many2many('res.partner',relation='users_ids', string='Les Apprenants')
+    users_ids = fields.Many2many('res.partner',relation='users_ids', string='Les Apprenants',
+                                 domain=[
+                                         ('apprenant', '=', True)
+                                 ])
     # coaches_ids = fields.Many2many('res.partner', string='Les Coachs')
 
     session_ids = fields.One2many(

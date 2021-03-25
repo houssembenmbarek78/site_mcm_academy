@@ -10,6 +10,7 @@ class partner(models.Model):
     _inherit = 'res.partner'
     #apprenant = fields.Boolean("Apprenant", default=True)
     # Ajouter champs au modele partner par defaut res.partner ne sont pas des instructors
+    apprenant=fields.Boolean()
     instructor = fields.Boolean("Instructor", default=False)
     session_ids = fields.Many2many('test.session', string='attended_sessions',
                                    readonly=True)
@@ -70,6 +71,7 @@ class partner(models.Model):
                     'totalTimeSpentInMinutes': table_user['totalTimeSpentInMinutes'],
                     'assignedPrograms': table_user['assignedPrograms'],
                     'toDeactivateAt': table_user['toDeactivateAt'],
+                    'apprenant':True,
                 })
                 print("partner",partner.last_login)
 

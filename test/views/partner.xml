@@ -31,8 +31,8 @@
                      <button name="post" string="Ajouter sur 360-learning" type="object"/>
                 </header>
             </xpath>
-             <xpath expr="//field[@name='email']" position="before">
-
+             <xpath expr="//field[@name='email']" position="after">
+                 <label for="statut_client"/>
                  <field name="statut_client"></field>
              </xpath>
              <xpath expr="//page[@name='internal_notes']" position="after">
