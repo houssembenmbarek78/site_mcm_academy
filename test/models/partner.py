@@ -67,7 +67,7 @@ class partner(models.Model):
                 if partner:
                     partner.sudo().write({
                     'last_login': table_user['lastLoginAt'],
-                    'averageScore': table_user['averageScore'],
+                    # 'averageScore': table_user['averageScore'],
                     'totalTimeSpentInMinutes': table_user['totalTimeSpentInMinutes'],
                     'assignedPrograms': table_user['assignedPrograms'],
                     'toDeactivateAt': table_user['toDeactivateAt'],
@@ -127,6 +127,7 @@ class partner(models.Model):
                 print(resp.status_code)
                 if (resp.status_code == 200):
                     user.password360 = ""
+                    self.apprenant=True
 
                 # Affecter i-One au groupe digimoov-bienvenue
                 data_group = {}

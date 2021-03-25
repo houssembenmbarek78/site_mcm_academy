@@ -23,18 +23,18 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"></field>
         <field name="arch" type="xml">
-            <xpath expr="//form//sheet" position="before">
-                <header>
-                    <button name="createuser" string="Créer" type="object"/>
-                     <button name="createtest" string="Créer test" type="object"/>
-                     <button name="getusers" string="récupérer stats" type="object"/>
-                     <button name="post" string="Ajouter sur 360-learning" type="object"/>
-                </header>
-            </xpath>
+<!--            <xpath expr="//form//sheet" position="before">-->
+<!--                <header>-->
+<!--                    <button name="createuser" string="Créer" type="object"/>-->
+<!--                     <button name="createtest" string="Créer test" type="object"/>-->
+<!--                     <button name="getusers" string="récupérer stats" type="object"/>-->
+<!--                     <button name="post" string="Ajouter sur 360-learning" type="object"/>-->
+<!--                </header>-->
+<!--            </xpath>-->
             <group>
              <xpath expr="//field[@name='email']" position="after">
 
-                 <label for="statut_client"/>
+
                  <field name="statut_client"></field>
 
              </xpath>
