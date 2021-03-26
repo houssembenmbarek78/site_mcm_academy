@@ -919,6 +919,7 @@ class CustomerPortal(CustomerPortal):
                     else:
                         vals = {
                             'state': 'waiting',
+                            'datas':datas
                         }
                         document.sudo().write(vals)
                         request.env['ir.attachment'].sudo().create({
