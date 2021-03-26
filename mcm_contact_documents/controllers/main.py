@@ -514,7 +514,7 @@ class CustomerPortal(CustomerPortal):
                     'partner_id': False,
                     'owner_id': False}
                 vals_list.append(vals)
-                document = request.env['documents.document'].sudo().create(vals_list)
+                document = request.env['documents.document'].sudo().create(vals_list) #Créer un nouveau document carte d'identité
                 if document:
                     uid = document.create_uid
                     document.sudo().write(
@@ -550,6 +550,7 @@ class CustomerPortal(CustomerPortal):
                     })
             if files2 and document:
                 datas_carte_didentite = base64.encodebytes(files2[0].read())
+                #Attachement Carte d'identité verso
                 request.env['ir.attachment'].sudo().create({
                     'name': "Carte d'identité Verso",
                     'type': 'binary',
@@ -561,57 +562,6 @@ class CustomerPortal(CustomerPortal):
         except Exception as e:
             logger.exception("Fail to upload document Carte d'identité ")
 
-        # try:
-        #     files2 = request.httprequest.files.getlist('identity2')
-        #     if files2:
-        #         vals_list = []
-        #         vals = {
-        #             'name': "Carte d'identité verso",
-        #             'folder_id': int(folder_id),
-        #             'code_document': 'identity2',
-        #             'confirmation': kw.get('confirm_identity'),
-        #             'attachment_number': kw.get('identity_number'),
-        #             'type': 'binary',
-        #             'partner_id': False,
-        #             'owner_id': False}
-        #         vals_list.append(vals)
-        #         document = request.env['documents.document'].sudo().create(vals_list)
-        #         if document:
-        #             uid = document.create_uid
-        #             document.sudo().write(
-        #                 {'owner_id': uid, 'partner_id': uid.partner_id, 'name': document.name + ' ' + str(uid.name)})
-        #             #dans cette partie on a pris on compte si un client télécharge deux fichier par l'upload file
-        #             # cette option est désactiver dans la vue xml par le champs multiple
-        #         if len(files2) == 2:
-        #             datas_cartedidenditeerecto = base64.encodebytes(files2[0].read())
-        #             datas_cartedidenditeeverso = base64.encodebytes(files2[1].read())
-        #             request.env['ir.attachment'].sudo().create({
-        #                 'name': "Carte d'identité Recto",
-        #                 'type': 'binary',
-        #                 'datas': datas_cartedidenditeerecto,
-        #                 'res_model': 'documents.document',
-        #                 'res_id': document.id
-        #             })
-        #             # creation de l'attachement carte d'identité verso
-        #             request.env['ir.attachment'].sudo().create({
-        #                 'name': "Carte d'identité verso",
-        #                 'type': 'binary',
-        #                 'datas': datas_cartedidenditeeverso,
-        #                 'res_model': 'documents.document',
-        #                 'res_id': document.id
-        #             })
-        #         elif len(files2) == 1:
-        #             # cest notre cas puisqu'on a un seul attachement on parse la carte d identité verso
-        #             datas_cartedidenditeverso = base64.encodebytes(files2[0].read())
-        #             request.env['ir.attachment'].sudo().create({
-        #                 'name': "Carte d'identité Verso",
-        #                 'type': 'binary',
-        #                 'datas': datas_cartedidenditeverso,
-        #                 'res_model': 'documents.document',
-        #                 'res_id': document.id
-        #             })
-        # except Exception as e:
-        #     logger.exception("Fail to upload document Carte d'identité ")
         try:
             files = request.httprequest.files.getlist('address_proof')
             if files:
@@ -721,6 +671,7 @@ class CustomerPortal(CustomerPortal):
                         'res_id': document.id
                     })
             if hfiles1:
+                #Charger la carte d'identité verso et la rattacher avec le document Carte d'identité hébergeur
                 datas_identite_hybergeur = base64.encodebytes(hfiles1[0].read())
                 request.env['ir.attachment'].sudo().create({
                     'name': "Carte d'identité hébergeur",
@@ -875,7 +826,7 @@ class CustomerPortal(CustomerPortal):
     def portal_my_document(self, document_id=None,access_token=None, **kw):
         document=request.env['documents.document'].sudo().search(
             [('id', '=', document_id)],limit=1)
-
+        #view portal of refused document
         if document:
             if document.state != 'refused':
                 return request.redirect('/my/documents')
@@ -891,20 +842,21 @@ class CustomerPortal(CustomerPortal):
     def update_document(self,document_id=None, **kw):
         document = request.env['documents.document'].sudo().search(
             [('id', '=', document_id)], limit=1)
-
+        #search and get the refused document
         if document:
             try:
-                files = request.httprequest.files.getlist('updated_document')
+                files = request.httprequest.files.getlist('updated_document') #if the refused document is not CERFA
                 if not files:
+                    # if the refused document is CERFA
                     files = request.httprequest.files.getlist('updated_document_cerfa')
-                files2 = request.httprequest.files.getlist('updated_document_cerfa2')
-                files3 = request.httprequest.files.getlist('updated_document_cerfa3')
+                files2 = request.httprequest.files.getlist('updated_document_cerfa2') # get the second page of cerfa if the client upload only one image in first umpload zone
+                files3 = request.httprequest.files.getlist('updated_document_cerfa3')  # get the third page of cerfa if the client upload only one image in first umpload zone
                 for ufile in files:
                     # mimetype = self._neuter_mimetype(ufile.content_type, http.request.env.user)
                     datas = base64.encodebytes(ufile.read())
-                    if request.website.id==1:
+                    if request.website.id==1: # if refused document is for a mcm academy client
                         vals = {
-                            'state':'waiting',
+                            'state':'waiting', #set the state of the refused document to verification (MCM ACADEMY)
                         }
                         document.sudo().write(vals)
                         request.env['ir.attachment'].sudo().create({
@@ -914,9 +866,9 @@ class CustomerPortal(CustomerPortal):
                             'res_model': 'documents.document',
                             'res_id': document.id
                         })
-                    else:
+                    else: # if refused document is for a digimoov client
                         vals = {
-                            'state': 'waiting',
+                            'state': 'waiting', #set the state of the refused document to verification (DIGIMOOV)
                             'datas':datas
                         }
                         document.sudo().write(vals)
@@ -928,7 +880,7 @@ class CustomerPortal(CustomerPortal):
                             'res_id': document.id
                         })
                 if files2:
-                    datas_cerfa = base64.encodebytes(files2[0].read())
+                    datas_cerfa = base64.encodebytes(files2[0].read()) #get the second page of cerfa
                     request.env['ir.attachment'].sudo().create({
                         'name': "Cerfa Page 3",
                         'type': 'binary',
@@ -937,7 +889,7 @@ class CustomerPortal(CustomerPortal):
                         'res_id': document.id
                     })
                 if files3:
-                    datas_cerfa = base64.encodebytes(files3[0].read())
+                    datas_cerfa = base64.encodebytes(files3[0].read()) #get the third page of cerfa
                     request.env['ir.attachment'].sudo().create({
                         'name': "Cerfa Page 3",
                         'type': 'binary',
