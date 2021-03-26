@@ -1363,7 +1363,7 @@
                                 </label>
                             </div>
                             <div class="col-lg-6 col-md-7">
-                                <input type="file" name='updated_document_cerfa' required="1" id="updated_document_cerfa"
+                                <input type="file" name='updated_document_cerfa' id="updated_document_cerfa"
                                        class="form-control o_website_form_input" multiple="true"
                                        accept="image/*,application/pdf"/>
                             </div>
@@ -1376,7 +1376,7 @@
                                 </label>
                             </div>
                             <div class="col-lg-6 col-md-7">
-                                <input type="file" name='updated_document_cerfa' required="0"
+                                <input type="file" name='updated_document_cerfa2'
                                        class="form-control o_website_form_input" id="updated_document_cerfa2"
                                        accept="image/*,application/pdf"/>
                             </div>
@@ -1389,7 +1389,7 @@
                                 </label>
                             </div>
                             <div class="col-lg-6 col-md-7">
-                                <input type="file" name='updated_document_cerfa' required="0"
+                                <input type="file" name='updated_document_cerfa3'
                                        class="form-control o_website_form_input" id="updated_document_cerfa3"
                                        accept="image/*,application/pdf"/>
                             </div>
