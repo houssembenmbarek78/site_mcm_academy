@@ -4,6 +4,10 @@ import odoo.http as http
 import base64
 import werkzeug
 import requests
+from PIL import Image
+import PIL
+import os
+import glob
 from odoo.http import request
 from odoo import _
 from addons.portal.controllers.portal import _build_url_w_params
@@ -665,6 +669,7 @@ class CustomerPortal(CustomerPortal):
             hfiles = request.httprequest.files.getlist('identity_hebergeur')
             hfiles1 = request.httprequest.files.getlist('identity_hebergeur1')
             document = False
+            #Regroupement des 2 fichers
             if hfiles:
                 vals_list = []
                 #charger le document identitée hebergeur
@@ -724,7 +729,7 @@ class CustomerPortal(CustomerPortal):
                     'res_model': 'documents.document',
                     'res_id': document.id
                 })
-            document.sudo.write({'name':"Carte d'identité hebergeur Recto/Verso"})
+            document.sudo().write({'name':"Carte d'identité hebergeur Recto/Verso"})
         except Exception as e:
             logger.exception("Fail to upload document Carte d'identité ")
 
@@ -782,12 +787,15 @@ class CustomerPortal(CustomerPortal):
         try:
             # charger les docs cerfa dans files
             files = request.httprequest.files.getlist('cerfa')
+            files_cerfa_page_2 = request.httprequest.files.getlist('cerfa2')
+            files_cerfa_page_3 = request.httprequest.files.getlist('cerfa3')
+            document = False
             if files:
                 vals_list = []
                 #parser le doc cerfa avec les cordonnee associée
                 #supprime datas=false
                 vals = {
-                    'name': "CERFA",
+                    'name': "CERFA 11414-05",
                     'folder_id': int(folder_id),
                     'code_document': 'cerfa',
                     'confirmation' : kw.get('confirm_cerfa'),
@@ -815,7 +823,25 @@ class CustomerPortal(CustomerPortal):
                         'res_id': document.id
                     })
                     page_number+=1
-                document.sudo().write({'name':'CERFA 11414-05'})
+            if files_cerfa_page_2:
+                datas_cerfa = base64.encodebytes(files_cerfa_page_2[0].read())
+                request.env['ir.attachment'].sudo().create({
+                    'name': "Cerfa Page 2",
+                    'type': 'binary',
+                    'datas': datas_cerfa,
+                    'res_model': 'documents.document',
+                    'res_id': document.id
+                })
+            if files_cerfa_page_3:
+                datas_cerfa = base64.encodebytes(files_cerfa_page_3[0].read())
+                request.env['ir.attachment'].sudo().create({
+                    'name': "Cerfa Page 3",
+                    'type': 'binary',
+                    'datas': datas_cerfa,
+                    'res_model': 'documents.document',
+                    'res_id': document.id
+                })
+            document.sudo().write({'name':"CERFA 11414-05"})
         except Exception as e:
             logger.exception("Fail to upload document Carte d'identité ")
         return http.request.render('mcm_contact_documents.success_documents')
@@ -871,15 +897,25 @@ class CustomerPortal(CustomerPortal):
                 files = request.httprequest.files.getlist('updated_document')
                 attachments = request.env['ir.attachment'].sudo().search(
                     [("res_model", "=", "documents.document"), (("res_id", "=", document.id))])
+                if not files:
+                    files = request.httprequest.files.getlist('updated_document_cerfa')
+                files2 = request.httprequest.files.getlist('updated_document_cerfa2')
+                files3 = request.httprequest.files.getlist('updated_document_cerfa2')
                 for ufile in files:
                     # mimetype = self._neuter_mimetype(ufile.content_type, http.request.env.user)
                     datas = base64.encodebytes(ufile.read())
                     if request.website.id==1:
                         vals = {
-                            'datas': datas,
                             'state':'waiting',
                         }
                         document.sudo().write(vals)
+                        request.env['ir.attachment'].sudo().create({
+                            'name': "Cerfa",
+                            'type': 'binary',
+                            'datas': datas,
+                            'res_model': 'documents.document',
+                            'res_id': document.id
+                        })
                     else:
                         vals = {
                             'state': 'waiting',
@@ -892,7 +928,24 @@ class CustomerPortal(CustomerPortal):
                             'res_model': 'documents.document',
                             'res_id': document.id
                         })
-
+                if files2:
+                    datas_cerfa = base64.encodebytes(files2[0].read())
+                    request.env['ir.attachment'].sudo().create({
+                        'name': "Cerfa Page 3",
+                        'type': 'binary',
+                        'datas': datas_cerfa,
+                        'res_model': 'documents.document',
+                        'res_id': document.id
+                    })
+                if files3:
+                    datas_cerfa = base64.encodebytes(files3[0].read())
+                    request.env['ir.attachment'].sudo().create({
+                        'name': "Cerfa Page 3",
+                        'type': 'binary',
+                        'datas': datas_cerfa,
+                        'res_model': 'documents.document',
+                        'res_id': document.id
+                    })
             except Exception as e:
                 logger.exception("Fail to upload document %s" % ufile.filename)
 
