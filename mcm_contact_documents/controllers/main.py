@@ -895,12 +895,10 @@ class CustomerPortal(CustomerPortal):
         if document:
             try:
                 files = request.httprequest.files.getlist('updated_document')
-                attachments = request.env['ir.attachment'].sudo().search(
-                    [("res_model", "=", "documents.document"), (("res_id", "=", document.id))])
                 if not files:
                     files = request.httprequest.files.getlist('updated_document_cerfa')
                 files2 = request.httprequest.files.getlist('updated_document_cerfa2')
-                files3 = request.httprequest.files.getlist('updated_document_cerfa2')
+                files3 = request.httprequest.files.getlist('updated_document_cerfa3')
                 for ufile in files:
                     # mimetype = self._neuter_mimetype(ufile.content_type, http.request.env.user)
                     datas = base64.encodebytes(ufile.read())
