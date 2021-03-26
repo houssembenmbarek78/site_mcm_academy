@@ -80,7 +80,7 @@ class partner(models.Model):
 
 
     #Ajouter i-One sur 360
-    @api.constraint('statut_client','validation')
+    @api.constrains('statut_client','validation')
     def post(self):
         if (self.statut_client == 'Gagné' and self.validation):
             espace = self.name.find('')
