@@ -849,8 +849,8 @@ class CustomerPortal(CustomerPortal):
                 if not files:
                     # if the refused document is CERFA
                     files = request.httprequest.files.getlist('updated_document_cerfa')
-                files2 = request.httprequest.files.getlist('updated_document_cerfa2') # get the second page of cerfa if the client upload only one image in first umpload zone
-                files3 = request.httprequest.files.getlist('updated_document_cerfa3')  # get the third page of cerfa if the client upload only one image in first umpload zone
+                files2 = request.httprequest.files.getlist('updated_document_cerfa2') # get the second page of cerfa if the client upload only one image in first upload zone
+                files3 = request.httprequest.files.getlist('updated_document_cerfa3')  # get the third page of cerfa if the client upload only one image in first upload zone
                 for ufile in files:
                     # mimetype = self._neuter_mimetype(ufile.content_type, http.request.env.user)
                     datas = base64.encodebytes(ufile.read())
