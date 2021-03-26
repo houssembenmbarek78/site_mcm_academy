@@ -123,19 +123,15 @@ publicWidget.registry.updated_documents = publicWidget.Widget.extend({
                 {
                     div_cerfa_2.style.display='flex';
                     div_cerfa_2.className='form-group row form-field o_website_form_required';
-                    cerfa_2.required = 1;
                     div_cerfa_3.style.display='flex';
                     div_cerfa_3.className='form-group row form-field o_website_form_required';
-                    cerfa_3.required = 1;
                     $("#label_updated_document_cerfa").text("CERFA 11414-05 Page 1");
                 }
                 else {
                     div_cerfa_2.style.display='none';
                     div_cerfa_2.className='form-group row form-field';
-                    cerfa_2.required = 0;
                     div_cerfa_3.style.display='none';
                     div_cerfa_3.className='form-group row form-field';
-                    cerfa_3.required = 0;
                     $("#label_updated_document_cerfa").text("CERFA 11414-05 (Page1,2,3)");
                 }
             }
