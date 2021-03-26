@@ -22,7 +22,7 @@ class Groupe(models.Model):
                                          ('apprenant', '=', True)
                                  ])
     # coaches_ids = fields.Many2many('res.partner', string='Les Coachs')
-    users_count = fields.Integer(string="Nombre d\'i-Ones", compute="_get_ione_count",store=True)
+    users_count = fields.Integer(string="Apprenants", compute="_get_ione_count",store=True)
 
     session_ids = fields.One2many(
         'test.session', 'groupe_id', string="Sessions")

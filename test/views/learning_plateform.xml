@@ -40,6 +40,10 @@
                     </group>
 
                 </sheet>
+                <sheet>
+                        <label for="users_ids"></label>
+                    <field name="users_ids"></field>
+                   </sheet>
                     <sheet>
                         <label for="users_ids"></label>
                     <field name="users_ids"></field>
@@ -83,7 +87,7 @@
         <field name="arch" type="xml">
             <tree string="Groupe Tree">
                 <field name="name"/>
-                <field name="public"/>
+                <field name="users_count"/>
                 <field name="parent_id"/>
             </tree>
 
