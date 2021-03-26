@@ -62,7 +62,7 @@ class partner(models.Model):
             table_user=response_user.json()
             #print(table_user)
             lastlogin = str(table_user['lastLoginAt'])
-            average = str(table_user['averageScore']) if table_user['averageScore'] else ''
+            # average = str(table_user['averageScore']) if table_user['averageScore'] else ''
             if (len(lastlogin) > 0 ):
                 date_split = lastlogin[0:19]
                 date = datetime.strptime(date_split, "%Y-%m-%dT%H:%M:%S")
@@ -76,7 +76,7 @@ class partner(models.Model):
 
                             partner.sudo().write({
                             'last_login': last_login,
-                            'averageScore':average,
+                            # 'averageScore':average,
                             'totalTimeSpentInMinutes': table_user['totalTimeSpentInMinutes'],
                             'assignedPrograms': table_user['assignedPrograms'],
                             'toDeactivateAt': table_user['toDeactivateAt'],
