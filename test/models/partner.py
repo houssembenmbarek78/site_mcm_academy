@@ -64,6 +64,18 @@ class partner(models.Model):
             lastlogin = str(table_user['lastLoginAt'])
             # time=int(table_user['totalTimeSpentInMinutes'])
             # average = str(table_user['averageScore']) if table_user['averageScore'] else ''
+            times=''
+            if 'totalTimeSpentInMinutes' in table_user:
+                time = int(table_user['totalTimeSpentInMinutes'])
+                heure = time // 60
+                minute = time % 60
+
+                times = str(heure) + 'h' + str(minute) + 'min'
+                if (heure == 0):
+                    times = str(minute) + 'min'
+                    print(times)
+                if (minute == 0):
+                    times = '0min'
             average=''
             if 'averageScore' in table_user:
                 average = str(table_user['averageScore'])
@@ -82,7 +94,7 @@ class partner(models.Model):
                             partner.sudo().write({
                             'last_login': last_login,
                             'averageScore':average,
-                            'totalTimeSpentInMinutes': table_user['totalTimeSpentInMinutes'],
+                            'totalTimeSpentInMinutes': times,
                             'assignedPrograms': table_user['assignedPrograms'],
                             'toDeactivateAt': table_user['toDeactivateAt'],
                             'apprenant':True,
