@@ -30,7 +30,7 @@ class partner(models.Model):
     firstName = fields.Char()
     lastName = fields.Char()
     statut_client = fields.Char(string="Statut Client")
-    validation= fields.Boolean(string="Validation")
+    validation= fields.Boolean(string="Validé")
     # Creer une fiche client pour faire un test
     def createuser(self):
         partner = self.env['res.partner'].sudo().create({
@@ -65,23 +65,24 @@ class partner(models.Model):
             partners= self.env['res.partner'].sudo().search([('email', "=",email)])
             for partner in partners:
                 if partners:
-                    partner.sudo().write({
-                    'last_login': table_user['lastLoginAt'],
-                    # 'averageScore': table_user['averageScore'],
-                    'totalTimeSpentInMinutes': table_user['totalTimeSpentInMinutes'],
-                    'assignedPrograms': table_user['assignedPrograms'],
-                    'toDeactivateAt': table_user['toDeactivateAt'],
-                    'apprenant':True,
-                })
-                print("partner",partner.last_login)
+                    if table_user['averageScore']:
+                        partner.sudo().write({
+                        'last_login': table_user['lastLoginAt'],
+                        # 'averageScore': table_user['averageScore'],
+                        'totalTimeSpentInMinutes': table_user['totalTimeSpentInMinutes'],
+                        'assignedPrograms': table_user['assignedPrograms'],
+                        'toDeactivateAt': table_user['toDeactivateAt'],
+                        'apprenant':True,
+                         })
+                        print("partner",partner.last_login)
 
 
 
 
     #Ajouter i-One sur 360
-    @api.onchange('statut_client')
+    @api.constraint('statut_client','validation')
     def post(self):
-        if (self.statut_client == 'Gagné'):
+        if (self.statut_client == 'Gagné' and self.validation):
             espace = self.name.find('')
 
             if espace:
