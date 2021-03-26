@@ -22,6 +22,7 @@ class Groupe(models.Model):
                                          ('apprenant', '=', True)
                                  ])
     # coaches_ids = fields.Many2many('res.partner', string='Les Coachs')
+    users_count = fields.Integer(string="Nombre d\'i-Ones", compute="_get_ione_count",store=True)
 
     session_ids = fields.One2many(
         'test.session', 'groupe_id', string="Sessions")
@@ -32,6 +33,10 @@ class Groupe(models.Model):
     #         if record.coaches_ids and record.coaches_ids in record.admins_ids:
     #             raise exceptions.ValidationError("Un coache ne peut pas etre un admininistrateur")
 
+    @api.depends('users_ids')
+    def _get_ione_count(self):
+        for record in self:
+            record.users_count = len(record.users_ids)
 
     def copy(self, default=None):
         default = (default or {})

@@ -4,7 +4,7 @@ import requests
 from requests.structures import CaseInsensitiveDict
 
 from odoo import models, fields,api
-
+from datetime import datetime
 
 class partner(models.Model):
     _inherit = 'res.partner'
@@ -61,20 +61,28 @@ class partner(models.Model):
             response_user=requests.get('https://app.360learning.com/api/v1/users/'+iduser ,params=params)
             table_user=response_user.json()
             #print(table_user)
+            lastlogin = str(table_user['lastLoginAt'])
+            average = str(table_user['averageScore'])
+            if (len(lastlogin) > 0 ):
+                date_split = lastlogin[0:19]
+                date = datetime.strptime(date_split, "%Y-%m-%dT%H:%M:%S")
+                new_format = '%d %B, %Y'
+                last_login = date.strftime(new_format)
+                print(last_login)
             #Chercher par email le meme client pour lui affecter les stats de 360
-            partners= self.env['res.partner'].sudo().search([('email', "=",email)])
-            for partner in partners:
-                if partners:
-                    if table_user['averageScore']:
-                        partner.sudo().write({
-                        'last_login': table_user['lastLoginAt'],
-                        # 'averageScore': table_user['averageScore'],
-                        'totalTimeSpentInMinutes': table_user['totalTimeSpentInMinutes'],
-                        'assignedPrograms': table_user['assignedPrograms'],
-                        'toDeactivateAt': table_user['toDeactivateAt'],
-                        'apprenant':True,
-                         })
-                        print("partner",partner.last_login)
+                partners= self.env['res.partner'].sudo().search([('email', "=",email)])
+                for partner in partners:
+                    if partners:
+
+                            partner.sudo().write({
+                            'last_login': last_login,
+                            # 'averageScore': table_user['averageScore'],
+                            'totalTimeSpentInMinutes': table_user['totalTimeSpentInMinutes'],
+                            'assignedPrograms': table_user['assignedPrograms'],
+                            'toDeactivateAt': table_user['toDeactivateAt'],
+                            'apprenant':True,
+                             })
+                            print("partner",partner.last_login)
 
 
 

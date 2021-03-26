@@ -32,7 +32,7 @@
                         <group string="General">
                             <field name="parent_id"></field>
                             <field name="name"></field>
-                            <field name="public"></field>
+                            <field name="users_count"></field>
 
 
                         </group>
