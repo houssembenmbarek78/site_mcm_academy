@@ -21,13 +21,17 @@ class ocrdocument(models.Model):
 
         if not (cap.isOpened()):
             print('Could not open video device')
+
+        cap.set(3, 640)
+        cap.set(4, 480)
         while (True):
             # Capture frame-by-frame
 
             ret, frame = cap.read()
 
             # Display the resulting frame
-
+            if not ret:  # exit loop if there was problem to get frame to display
+                break
             cv2.imshow('preview', frame)
 
             # Waits for a user input to quit the application
