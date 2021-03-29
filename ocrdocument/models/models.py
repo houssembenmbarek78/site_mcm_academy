@@ -15,9 +15,27 @@ class ocrdocument(models.Model):
     description = fields.Char(string="description")
 # Extract text from image with open cv into text
     def trycv(self):
-        for r in self:
-           # img2 = cv2.imread('image.png')
-           # cv2.imshow('Result2', img2)
-           # cv2.waitKey(0)
-           image = pytesseract.image_to_string('./image.png')
-           print(image)
+        cap = cv2.VideoCapture(0)
+
+        # Check whether user selected camera is opened successfully.
+
+        if not (cap.isOpened()):
+            print('Could not open video device')
+        while (True):
+            # Capture frame-by-frame
+
+            ret, frame = cap.read()
+
+            # Display the resulting frame
+
+            cv2.imshow('preview', frame)
+
+            # Waits for a user input to quit the application
+
+            if cv2.waitKey(1) & 0xFF == ord('q'):
+                break
+        # When everything done, release the capture
+
+        cap.release()
+
+        cv2.destroyAllWindows()
