@@ -20,7 +20,7 @@ class ocrdocument(models.Model):
 
         # Check whether user selected camera is opened successfully.
 
-        if not (cap.isOpened()):
+        if cap.isOpened():
             return {
                 'warning': {
                     'title': 'Erreur',
