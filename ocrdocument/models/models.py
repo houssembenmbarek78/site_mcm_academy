@@ -2,6 +2,7 @@
 
 from odoo import models, fields, api
 from cv2 import cv2
+from odoo.exceptions import UserError
 from pytesseract import pytesseract
 
 
@@ -20,10 +21,15 @@ class ocrdocument(models.Model):
         # Check whether user selected camera is opened successfully.
 
         if not (cap.isOpened()):
-            print('Could not open video device')
+            return {
+                'warning': {
+                    'title': 'Erreur',
+                    'message': 'Erreur video non ouverte'
+                },
+            }
 
-        cap.set(3, 640)
-        cap.set(4, 480)
+        cap.set(3, 1280)
+        cap.set(4, 720)
         while (True):
             # Capture frame-by-frame
 
