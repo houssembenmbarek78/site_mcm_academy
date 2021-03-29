@@ -50,11 +50,12 @@ class ocrdocument(models.Model):
         # cap.release()
         #
         # cv2.destroyAllWindows()
-        print("tryyyyyyyyyyyyyyyyyyyy")
+
         try:
             cap = cv2.VideoCapture(0)
             cap.set(3, 1280)
             cap.set(4, 720)
+            logger.info("%s: %s", cap)
             while (True):
                 # Capture frame-by-frame
 
