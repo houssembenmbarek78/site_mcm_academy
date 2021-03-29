@@ -116,9 +116,11 @@ publicWidget.registry.digi_documents = publicWidget.Widget.extend({
                  if (file != null)
                  {
                     var type=file['type'];
+                    console.log('type');
+                    console.log(type);
                     if (type != null)
                     {
-                     if (!type.includes("image/") || !type.includes("application/pdf"))
+                     if (type.indexOf("image/")===-1 && type.indexOf("application/pdf")===-1)
                      {
                         input_id.value='';
                         alert('Vous pouvez télécharger que des images ou des PDF');
