@@ -2,11 +2,12 @@
 
 from odoo import models, fields, api
 from cv2 import cv2
+import logging
 from odoo.exceptions import UserError
 from pytesseract import pytesseract
 
 
-
+logger = logging.getLogger(__name__)
 
 class ocrdocument(models.Model):
     _name = 'ocrdocument.ocrdocument'
@@ -16,36 +17,62 @@ class ocrdocument(models.Model):
     description = fields.Char(string="description")
 # Extract text from image with open cv into text
     def trycv(self):
-        cap = cv2.VideoCapture(0)
+        # cap = cv2.VideoCapture(0)
+        #
+        # # Check whether user selected camera is opened successfully.
+        #
+        # if cap.isOpened():
+        #     return {
+        #         'warning': {
+        #             'title': 'Erreur',
+        #             'message': 'Erreur video non ouverte'
+        #         },
+        #     }
+        #
+        # cap.set(3, 1280)
+        # cap.set(4, 720)
+        # while (True):
+        #     # Capture frame-by-frame
+        #
+        #     ret, frame = cap.read()
+        #
+        #     # Display the resulting frame
+        #     if not ret:  # exit loop if there was problem to get frame to display
+        #         break
+        #     cv2.imshow('preview', frame)
+        #
+        #     # Waits for a user input to quit the application
+        #
+        #     if cv2.waitKey(1) & 0xFF == ord('q'):
+        #         break
+        # # When everything done, release the capture
+        #
+        # cap.release()
+        #
+        # cv2.destroyAllWindows()
 
-        # Check whether user selected camera is opened successfully.
+        try:
+            cap = cv2.VideoCapture(0)
+            cap.set(3, 1280)
+            cap.set(4, 720)
+            while (True):
+                # Capture frame-by-frame
 
-        if cap.isOpened():
-            return {
-                'warning': {
-                    'title': 'Erreur',
-                    'message': 'Erreur video non ouverte'
-                },
-            }
+                ret, frame = cap.read()
 
-        cap.set(3, 1280)
-        cap.set(4, 720)
-        while (True):
-            # Capture frame-by-frame
+                # Display the resulting frame
+                if not ret:  # exit loop if there was problem to get frame to display
+                    break
+                cv2.imshow('preview', frame)
 
-            ret, frame = cap.read()
+                # Waits for a user input to quit the application
 
-            # Display the resulting frame
-            if not ret:  # exit loop if there was problem to get frame to display
-                break
-            cv2.imshow('preview', frame)
+                if cv2.waitKey(1) & 0xFF == ord('q'):
+                    break
+            # When everything done, release the capture
 
-            # Waits for a user input to quit the application
+            cap.release()
 
-            if cv2.waitKey(1) & 0xFF == ord('q'):
-                break
-        # When everything done, release the capture
-
-        cap.release()
-
-        cv2.destroyAllWindows()
+            cv2.destroyAllWindows()
+        except Exception as e:
+            logger.exception("Fail to display new window")
