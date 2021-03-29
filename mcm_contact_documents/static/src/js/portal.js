@@ -103,7 +103,7 @@ publicWidget.registry.digi_documents = publicWidget.Widget.extend({
         _onCheckType: function (ev)
         {
             console.log('check changed file');
-            var id_of_input=this.el[0].id;
+            var id_of_input=ev.target.id;
             var file=null;
             var type=null;
             var input_id=null;
