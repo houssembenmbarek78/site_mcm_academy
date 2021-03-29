@@ -2,7 +2,7 @@ from odoo import fields,models,api,exceptions
 import requests
 class Parcours(models.Model):
     _name = 'test.parcours'
-
+    _description='parcours'
     id_parcours=fields.Char(string="id Parcours")
     hasUserLimit=fields.Boolean(string="limite")
     endDate= fields.Char(string="Date Début")
