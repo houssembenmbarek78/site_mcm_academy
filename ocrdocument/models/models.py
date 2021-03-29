@@ -50,7 +50,7 @@ class ocrdocument(models.Model):
         # cap.release()
         #
         # cv2.destroyAllWindows()
-
+        print("tryyyyyyyyyyyyyyyyyyyy")
         try:
             cap = cv2.VideoCapture(0)
             cap.set(3, 1280)
