@@ -23,7 +23,7 @@ class partner(models.Model):
     lastName = fields.Char()
     apprenant = fields.Boolean("Apprenant sur 360")
     statut_client = fields.Selection([('G', 'Gagné'), ('i', 'Indécis')], string="Statut Client")
-    vaalidation = fields.Selection([('t', 'traité'), ('nt', 'Non traité'), ('en', ' Traitement en cours')],
+    validation = fields.Selection([('t', 'traité'), ('nt', 'Non traité'), ('en', ' Traitement en cours')],
                                    string="Etat du Document")
 
 
