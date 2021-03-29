@@ -3,3 +3,4 @@ course_manager,course manager,model_test_course,base.group_user,1,1,1,1
 session_manager,session manager,model_test_session,,1,1,1,1
 groupe_manager,groupe manager,model_test_groupe,,1,1,1,1
 certif_manager,certif manager,model_test_certification,,1,1,1,1
+parcours_manager,parcours manager,model_test_parcours,,1,1,1,1

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
 
-    <record id="course_search_view" model="ir.ui.view">
+  <!--  <record id="course_search_view" model="ir.ui.view">
         <field name="name">course.form</field>
         <field name="model">test.course</field>
         <field name="arch" type="xml">
@@ -17,11 +17,11 @@
 
             </search>
         </field>
-    </record>
+    </record>-->
 
 
-
-          <record id="groupe_form_view" model="ir.ui.view">
+            <!-- Vue formulaire de groupes-->
+       <record id="groupe_form_view" model="ir.ui.view">
         <field name="name">groupe.form</field>
         <field name="model">test.groupe</field>
         <field name="arch" type="xml">
@@ -80,7 +80,7 @@
     <menuitem id="groupe_menu" name="Groupes" parent="learning_plateform_menu" action="groups_list_action"/>
 
 
-    <!-- automatically generated list view for groupes -->
+    <!-- Vue de liste générée automatiquement pour les groupes -->
     <record model="ir.ui.view" id="groupe_tree_view">
         <field name="name">groupe.tree</field>
         <field name="model">test.groupe</field>
@@ -95,7 +95,7 @@
 
     </record>
 
-    <!-- session tree view-->
+    <!-- session sous forme de liste-->
     <record model="ir.ui.view" id="session_liste_view">
         <field name="name">Liste des sessions</field>
         <field name="model">test.session</field>
@@ -110,7 +110,7 @@
 
         </field>
     </record>
-        <!-- session form view-->
+        <!-- session sous forme d'un formulaire-->
     <record model="ir.ui.view" id="session_form_view">
         <field name="name">session.form</field>
         <field name="model">test.session</field>

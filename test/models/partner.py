@@ -8,17 +8,9 @@ from datetime import datetime
 
 class partner(models.Model):
     _inherit = 'res.partner'
-    #apprenant = fields.Boolean("Apprenant", default=True)
-    # Ajouter champs au modele partner par defaut res.partner ne sont pas des instructors
-    apprenant=fields.Boolean()
-    instructor = fields.Boolean("Instructor", default=False)
-    session_ids = fields.Many2many('test.session', string='attended_sessions',
-                                   readonly=True)
+
     assignedPrograms = fields.Integer(string='Nombre de programmes attribués')
-    # certification_ids = fields.One2many('test.certification', string='certifications')
     toDeactivateAt = fields.Date(string='date de suppression', default='')
-    # groupe_admin_ids= fields.Many2many('test.groupe', string='groupes à gérer')
-    # groupe_user_ids =fields.Many2many('test.groupe', string='groupes à suivre')
 
     #Champs pour recuperer les statistiques
     last_login=fields.Char(string="derniere Connexion")
@@ -29,20 +21,19 @@ class partner(models.Model):
     password360=fields.Char()
     firstName = fields.Char()
     lastName = fields.Char()
-    statut_client = fields.Char(string="Statut Client")
-    validation= fields.Boolean(string="Validé")
-    # Creer une fiche client pour faire un test
-    def createuser(self):
-        partner = self.env['res.partner'].sudo().create({
-            'name': 'youcef',
-            'email': 'youcefallahoum@gmail.com'})
-        print('created,', partner)
+    apprenant = fields.Boolean("Apprenant sur 360")
+    statut_client = fields.Selection([('G', 'Gagné'), ('i', 'Indécis')], string="Statut Client")
+    vaalidation = fields.Selection([('t', 'traité'), ('nt', 'Non traité'), ('en', ' Traitement en cours')],
+                                   string="Etat du Document")
 
-    def createtest(self):
-        partner = self.env['res.partner'].sudo().create({
-            'name': 'test',
-            'email': 'kadilo3413@gameqo.com'})
-        print('created,', partner)
+
+
+
+
+   #----------------------------------Methodes------------------
+
+
+
 
 
     #Recuperer les utilisateurs de 360learning
@@ -60,11 +51,10 @@ class partner(models.Model):
             email=user['mail']
             response_user=requests.get('https://app.360learning.com/api/v1/users/'+iduser ,params=params)
             table_user=response_user.json()
-            #print(table_user)
             lastlogin = str(table_user['lastLoginAt'])
-            # time=int(table_user['totalTimeSpentInMinutes'])
-            # average = str(table_user['averageScore']) if table_user['averageScore'] else ''
+
             times=''
+            #Ecrire le temps récupéré de 360 sous forme d'heures et minutes
             if 'totalTimeSpentInMinutes' in table_user:
                 time = int(table_user['totalTimeSpentInMinutes'])
                 heure = time // 60
@@ -77,9 +67,11 @@ class partner(models.Model):
                 if (minute == 0):
                     times = '0min'
             average=''
+            #Vérifier l'existance de champ dans table_user
             if 'averageScore' in table_user:
                 average = str(table_user['averageScore'])
                 print(average)
+            #Si lastlogin n'est pas vide on change le format de date sous forme "01 mars, 2021"
             if (len(lastlogin) > 0 ):
                 date_split = lastlogin[0:19]
                 date = datetime.strptime(date_split, "%Y-%m-%dT%H:%M:%S")
@@ -87,27 +79,28 @@ class partner(models.Model):
                 last_login = date.strftime(new_format)
                 print(last_login)
             #Chercher par email le meme client pour lui affecter les stats de 360
-                partners= self.env['res.partner'].sudo().search([('email', "=",email)])
-                for partner in partners:
-                    if partners:
+            partners= self.env['res.partner'].sudo().search([('email', "=",email)])
+            for partner in partners:
+                if partners:
 
-                            partner.sudo().write({
-                            'last_login': last_login,
-                            'averageScore':average,
-                            'totalTimeSpentInMinutes': times,
-                            'assignedPrograms': table_user['assignedPrograms'],
-                            'toDeactivateAt': table_user['toDeactivateAt'],
-                            'apprenant':True,
-                             })
-                            print("partner",partner.last_login)
+                        partner.sudo().write({
+                        'last_login': last_login,
+                        'averageScore':average,
+                        'totalTimeSpentInMinutes': times,
+                        'assignedPrograms': table_user['assignedPrograms'],
+                        'toDeactivateAt': table_user['toDeactivateAt'],
+                        'apprenant':True,
+                         })
+                        print("partner",partner.last_login)
 
 
 
 
     #Ajouter i-One sur 360
+    #cette methode sera executé si le statut de client est gagné et les documents sont validés
     @api.constrains('statut_client','validation')
     def post(self):
-        if (self.statut_client == 'Gagné' and self.validation):
+        if (self.statut_client == 'G' and self.validation == 't'):
             espace = self.name.find('')
 
             if espace:
@@ -148,11 +141,12 @@ class partner(models.Model):
 
                 data = '{"mail":"' + self.email + '" , "password":"' + self.password360 + '" , "firstName":"' + self.firstName + '" , "lastName":"' + self.lastName + '"}'
                 print(data)
-                #Ajouter i-One à table user
+                #Ajouter i-One à table user de 360
                 resp = requests.post(urluser, headers=headers, data=data)
                 print(resp.status_code)
                 if (resp.status_code == 200):
                     user.password360 = ""
+                    #true si le client est ajouté sur 360
                     self.apprenant=True
 
                 # Affecter i-One au groupe digimoov-bienvenue

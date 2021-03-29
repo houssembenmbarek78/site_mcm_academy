@@ -130,12 +130,3 @@ class Session(models.Model):
                 raise exceptions.ValidationError("Un inspecteur ne peut pas etre un participant")
 
 
-def click():
- params = (
-    ('company', '56f5520e11d423f46884d593'),
-    ('apiKey', 'cnkcbrhHKyfzKLx4zI7Ub2P5'),
-)
-
- response = requests.get('https://app.360learning.com/api/v1/users', params=params)
- for record in response.raw:
-   print("response........", record)

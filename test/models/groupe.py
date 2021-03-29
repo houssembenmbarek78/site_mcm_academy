@@ -33,6 +33,7 @@ class Groupe(models.Model):
     #         if record.coaches_ids and record.coaches_ids in record.admins_ids:
     #             raise exceptions.ValidationError("Un coache ne peut pas etre un admininistrateur")
 
+  #Compter le nombre des clients
     @api.depends('users_ids')
     def _get_ione_count(self):
         for record in self:
@@ -68,8 +69,8 @@ class Groupe(models.Model):
     #      ),
     # ]
 
-
-    def click(self):
+   #Récuperer les groupes de 360
+    def get_groupes(self):
      params = (
         ('company', '56f5520e11d423f46884d593'),
         ('apiKey', 'cnkcbrhHKyfzKLx4zI7Ub2P5'),

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-    <!-- ajouter  instructor field à une vue existante -->
+    <!-- Apprenants sous forme d'une liste -->
 
    <record model="ir.ui.view" id="partner_tree_view">
         <field name="name">Partners</field>
@@ -26,18 +26,16 @@
          <xpath expr="//form//sheet" position="before">
             <header>
                     <button name="delete" string="supprimer" type="object"/>
-<!--                     <button name="createtest" string="Créer test" type="object"/>-->
-<!--                     <button name="getusers" string="récupérer stats" type="object"/>-->
-<!--                     <button name="post" string="Ajouter sur 360-learning" type="object"/>-->
+
               </header>
             </xpath>
 
             <data>
              <xpath expr="//field[@name='title']" position="replace">
                   <div><lable for="statut_client"/></div>
-                  <field name="statut_client"></field>
+                  <field name="statut_client" placeholder="selectionner un statut .." style="color:#898687"></field>
                  <div> <lable for="validation"/></div>
-                     <field name="validation"/>
+                     <field name="validation" placeholder="selectionner un etat.." style="color:#898687"/>
                    <div><lable for="apprenant"/></div>
                      <field name="apprenant"/>
 
