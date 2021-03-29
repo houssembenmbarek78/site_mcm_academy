@@ -107,6 +107,7 @@ publicWidget.registry.digi_documents = publicWidget.Widget.extend({
             var file=null;
             var type=null;
             var input_id=null;
+            var check_type=false
             if (id_of_input)
             {
                  var file=document.getElementById(id_of_input).files[0];
@@ -120,11 +121,15 @@ publicWidget.registry.digi_documents = publicWidget.Widget.extend({
                     console.log(type);
                     if (type != null)
                     {
-                     if (type.indexOf("image/")===-1 && type.indexOf("application/pdf")===-1)
+                     if (type.includes("image/") || type.includes("application/pdf"))
                      {
-                        input_id.value='';
-                        alert('Vous pouvez télécharger que des images ou des PDF');
+                        check_type=true;
                      }
+                     if (check_type==false)
+                        {
+                            input_id.value='';
+                            alert('Vous pouvez charger uniquement des images ou des PDF');
+                        }
                     }
                  }
 
