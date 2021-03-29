@@ -128,7 +128,7 @@ publicWidget.registry.digi_documents = publicWidget.Widget.extend({
                      if (check_type==false)
                         {
                             input_id.value='';
-                            alert('Vous pouvez charger uniquement des images ou des PDF');
+                            alert('Les formats acceptés sont : Images ou PDF.');
                         }
                     }
                  }
