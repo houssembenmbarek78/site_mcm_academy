@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+import pdb
 from odoo.exceptions import UserError
 from babel.dates import format_datetime, format_date, format_time
 
@@ -38,7 +39,9 @@ class zkMachine(models.Model):
             conn = ''
 
             conn = zk.connect()
-            print("connn", conn)
+            pdb.set_trace()
+
+
 
             if conn:
                 conn.disconnect()

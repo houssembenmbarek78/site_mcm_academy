@@ -3,6 +3,7 @@
 from odoo import models, fields, api
 from cv2 import cv2
 import logging
+import pdb
 from odoo.exceptions import UserError
 from pytesseract import pytesseract
 
@@ -56,6 +57,7 @@ class ocrdocument(models.Model):
             cap.set(3, 1280)
             cap.set(4, 720)
             logger.info("%s: %s", cap)
+            pdb.set_trace()
             while (True):
                 # Capture frame-by-frame
 
