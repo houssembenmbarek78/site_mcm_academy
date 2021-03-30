@@ -8,7 +8,7 @@ from datetime import datetime
 class Groupe(models.Model):
     _name = 'test.groupe'
     _description = 'liste des groupes '
-
+    id_groupe = fields.Char(string="id_groupe")
     name = fields.Char(string="Nom", require=True)
     description = fields.Char(string="Description")
     public = fields.Boolean(string="Public")
