@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+      <!-- automatically generated list view for parcours -->
+    <record model="ir.ui.view" id="course_tree_view">
+        <field name="name">parcours.tree</field>
+        <field name="model">test.parcours</field>
+        <field name="arch" type="xml">
+            <tree string="course Tree">
+                  <field name="name"/>
+                <field name="endDate"/>
+                <field name="startDate"/>
+            </tree>
+
+        </field>
+
+    </record>
+
+      <record model="ir.actions.act_window" id="parcours_list_action">
+        <field name="name">Parcours</field>
+        <field name="res_model">test.parcours</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="parcours_menu" name="Parcours"
+              parent="learning_plateform_menu"
+              action="parcours_list_action"></menuitem>
+
+</odoo>

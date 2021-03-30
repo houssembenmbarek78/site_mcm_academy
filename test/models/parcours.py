@@ -9,6 +9,7 @@ class Parcours(models.Model):
     programTemplate =fields.Char(string="id programTemplate")
     startDate=fields.Char(string="Date fin")
     groupe_id=fields.Many2one('test.groupe',string='groupe')
+    group_id_plateforme = fields.Char()
     name = fields.Char(string="Nom")
     programDuration=fields.Integer(string="Durée du programme")
     programDurationType=fields.Char(string="Type de Programme")

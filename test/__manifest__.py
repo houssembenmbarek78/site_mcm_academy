@@ -31,6 +31,8 @@
         'views/learning_plateform.xml',
         'views/partner.xml',
         'views/get_user_stats_ir_cron.xml',
+        'views/get_parcours_ir_cron.xml',
+        'views/parcours.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

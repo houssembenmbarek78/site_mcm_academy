@@ -2,6 +2,7 @@
 from datetime import timedelta
 import requests
 from odoo import models, fields, api, exceptions
+from datetime import datetime
 
 
 class Groupe(models.Model):
@@ -32,6 +33,79 @@ class Groupe(models.Model):
     #     for record in self:
     #         if record.coaches_ids and record.coaches_ids in record.admins_ids:
     #             raise exceptions.ValidationError("Un coache ne peut pas etre un admininistrateur")
+
+
+   #Methode cron pour recupérer parcours et groupe à partir de 360
+    def getParcours(self):
+        params = (
+            ('company', '56f5520e11d423f46884d593'),
+            ('apiKey', 'cnkcbrhHKyfzKLx4zI7Ub2P5'),
+        )
+        resgroupe = requests.get('https://app.360learning.com/api/v1/groups', params=params)
+        for groupe in resgroupe.json():
+            id_groupe = groupe['_id']
+            namegroupe = groupe['name']
+            print('groupe', groupe)
+
+            find_groupe = self.env['test.groupe'].sudo().search([('name', "=", namegroupe)])
+            if not (find_groupe):
+                vals = {
+                    'id_groupe': id_groupe,
+                    'name': groupe['name'],
+                    'public': groupe['public']
+                }
+                self.env['test.groupe'].create(vals)
+                print(vals)
+
+            resparcours = requests.get('https://app.360learning.com/api/v1/groups/' + id_groupe + '/programs',
+                                       params=params)
+            for parcours in resparcours.json():
+                startDate = str(parcours['startDate'])
+                start_Date = ""
+                endDate = str(parcours['endDate'])
+                end_Date = ""
+                if len(endDate) > 0:
+                    date_split = endDate[0:19]
+                    date = datetime.strptime(date_split, "%Y-%m-%dT%H:%M:%S")
+                    new_format = '%d %B, %Y'
+                    end_Date = date.strftime(new_format)
+
+                if len(startDate) > 0:
+                    date_split = startDate[0:19]
+                    date = datetime.strptime(date_split, "%Y-%m-%dT%H:%M:%S")
+                    new_format = '%d %B, %Y'
+                    start_Date = date.strftime(new_format)
+
+                durée = ''
+                type_durée = ''
+                if 'programDurationType' in parcours:
+                    type_durée = parcours['programDurationType']
+                if 'programDuration' in parcours:
+                    durée = parcours['programDuration']
+                print('parcours***************', len(resparcours.json()), parcours)
+                name_parcours = parcours['name']
+                if parcours:
+                    parc = self.env['test.parcours'].sudo().search([('name', "=", name_parcours)])
+                    if parc:
+                        values = {
+                            'id_parcours': parcours['_id'],
+                            'name': parcours['name'],
+                            'endDate': end_Date,
+                            'startDate': start_Date,
+                            'hasUserLimit': parcours['hasUserLimit'],
+                            'programTemplate': parcours['programTemplate'],
+                            'programDuration': durée,
+                            'programDurationType': type_durée,
+                            'group_id_plateforme': id_groupe
+                        }
+                        parc.sudo().write(values)
+                        print(values)
+
+
+
+
+
+
 
   #Compter le nombre des clients
     @api.depends('users_ids')
