@@ -18,7 +18,7 @@ class ocrdocument(models.Model):
     description = fields.Char(string="description")
 # Extract text from image with open cv into text
     def trycv(self):
-        # cap = cv2.VideoCapture(0)
+        # cap = cv2.VideoCapture(0;)
         #
         # # Check whether user selected camera is opened successfully.
         #
