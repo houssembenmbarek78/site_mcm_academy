@@ -27,6 +27,8 @@ class Groupe(models.Model):
 
     session_ids = fields.One2many(
         'test.session', 'groupe_id', string="Sessions")
+    parcours_ids = fields.One2many('test.parcours', 'groupe_id', string="Parcours")
+    parcours_count = fields.Integer(string="Nb.Parcours", compute="_getParcours_count")
 
     # @api.constrains('admins_ids', ' coaches_ids')
     # def _check_instructor_not_in_attendee(self):
@@ -34,6 +36,11 @@ class Groupe(models.Model):
     #         if record.coaches_ids and record.coaches_ids in record.admins_ids:
     #             raise exceptions.ValidationError("Un coache ne peut pas etre un admininistrateur")
 
+    # Methode de calcule de nombre de Parcours:
+    @api.depends('parcours_ids')
+    def _getParcours_count(self):
+        for record in self:
+            record.parcours_count = len(record.parcours_ids)
 
    #Methode cron pour recupérer parcours et groupe à partir de 360
     def getParcours(self):

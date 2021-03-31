@@ -109,20 +109,9 @@ class partner(models.Model):
                 self.lastName = name[1:len(name)]
                 print(self.firstName, self.lastName)
             else:
-                if len(self) % 2 == 0:
-                    milieu = len(self.name) / 2
-                    milieu = int(milieu)
-                    print(milieu)
-                    self.firstName = self.name[0:milieu]
-                    self.lastName = self.name[milieu + 1:len(self.name)]
-                    print(self.firstName, self.lastName)
-                else:
-                    leng = len(self.name) + 1
-                    milieu = (leng / 2)
-                    milieu = int(milieu)
-                    print(milieu)
-                    self.firstName = self.name[0:milieu]
-                    self.lastName = self.name[milieu:len(self.name)]
+
+                    self.firstName = self.name
+                    self.lastName = ''
                     print(self.firstName, self.lastName)
 
             # Récuperer le mot de passe à partir de res.users

@@ -45,8 +45,8 @@
                     <field name="users_ids"></field>
                    </sheet>
                     <sheet>
-                        <label for="users_ids"></label>
-                    <field name="users_ids"></field>
+                        <label for="parcours_ids"></label>
+                    <field name="parcours_ids"></field>
                    </sheet>
             </form>
         </field>
