@@ -8,7 +8,7 @@ import pytz
 import time
 
 from . import const
-from hr_biometric_machine_zk_demo.models.base import ZK
+from .base import ZK
 
 from odoo.tools import DEFAULT_SERVER_DATETIME_FORMAT
 
