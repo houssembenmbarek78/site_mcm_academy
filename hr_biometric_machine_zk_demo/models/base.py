@@ -9,7 +9,6 @@ from . import const
 from .exception import ZKErrorConnection, ZKErrorResponse, ZKNetworkError
 from .user import User
 from .finger import Finger
-from odoo.exceptions import ValidationError
 
 
 def safe_cast(val, to_type, default=None):
@@ -123,7 +122,6 @@ class ZK(object):
         :param verbose: showing log while run the commands
         :param encoding: user encoding
         """
-        raise ValidationError(str(ip)+" "+str(port))
         User.encoding = encoding
         self.__address = (ip, port)
         self.__sock = socket(AF_INET, SOCK_DGRAM)
