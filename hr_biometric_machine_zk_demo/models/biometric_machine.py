@@ -8,7 +8,7 @@ import pytz
 import time
 
 from . import const
-from .base import ZK
+from . import ZK
 
 from odoo.tools import DEFAULT_SERVER_DATETIME_FORMAT
 
