@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models,fields,api,exceptions,SUPERUSER_ID,_
-from odoo.exceptions import UserError
+from odoo.exceptions import UserError,ValidationError
 
 from datetime import datetime , timedelta
 import pytz
@@ -30,6 +30,7 @@ class zkMachine(models.Model):
             conn = ''
             try:
                 conn = zk.connect()
+                raise ValidationError(_('teeest!'))
                 users = conn.get_users()
             except Exception as e:
                 raise UserError('The connection has not been achieved')
