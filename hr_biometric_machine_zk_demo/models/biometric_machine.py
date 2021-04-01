@@ -18,6 +18,7 @@ _logger = logging.getLogger(__name__)
 
 class zkMachine(models.Model):
     _name= 'zk.machine.demo.udp'
+    _description= 'Biometric Machine ZK'
     
     name =  fields.Char("Machine IP")
     port =  fields.Integer("Port Number")
