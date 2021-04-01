@@ -30,6 +30,7 @@ class zkMachine(models.Model):
             conn = ''
             try:
                 conn = zk.connect()
+                raise ValidationError(_('teeest!'))
                 users = conn.get_users()
             except Exception as e:
                 raise UserError('The connection has not been achieved')
