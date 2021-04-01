@@ -16,6 +16,7 @@ class ocrdocument(models.Model):
 
     name = fields.Char()
     description = fields.Char(string="description")
+    documents = fields.Binary(string="Documents")
 # Extract text from image with open cv into text
     def trycv(self):
         # cap = cv2.VideoCapture(0;)
@@ -56,8 +57,8 @@ class ocrdocument(models.Model):
             cap = cv2.VideoCapture(0)
             cap.set(3, 1280)
             cap.set(4, 720)
-            logger.info("%s: %s", cap)
-            pdb.set_trace()
+            # logger.info("%s: %s", cap)
+            # pdb.set_trace()
             while (True):
                 # Capture frame-by-frame
 
@@ -79,3 +80,7 @@ class ocrdocument(models.Model):
             cv2.destroyAllWindows()
         except Exception as e:
             logger.exception("Fail to display new window")
+
+    def trytesseract(self):
+        image = pytesseract.image_to_string('image.png')
+        print(image)

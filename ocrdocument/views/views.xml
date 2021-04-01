@@ -8,6 +8,7 @@
                 <form string="open Form">
                     <header>
                         <button name="trycv" type="object" string="Ouvrir image"/>
+                        <button name="trytesseract" type="object" string="Extract image"/>
                     </header>
                     <sheet>
                         <group string="General">
@@ -15,7 +16,9 @@
                                  <field name="description"/>
 
                         </group>
-
+                        <group>
+                            <field name="documents" widget="image"/>
+                        </group>
                     </sheet>
                 </form>
             </field>
