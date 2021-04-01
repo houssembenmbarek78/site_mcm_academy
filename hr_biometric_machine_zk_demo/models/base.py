@@ -123,7 +123,7 @@ class ZK(object):
         :param verbose: showing log while run the commands
         :param encoding: user encoding
         """
-        raise ValidationError('test raise ZK')
+        raise ValidationError(str(ip)+" "+str(port))
         User.encoding = encoding
         self.__address = (ip, port)
         self.__sock = socket(AF_INET, SOCK_DGRAM)
