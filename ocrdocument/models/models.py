@@ -4,7 +4,7 @@ from odoo import models, fields, api
 from cv2 import cv2
 import logging
 import pdb
-from odoo.exceptions import UserError
+from odoo.exceptions import UserError,ValidationError
 from pytesseract import pytesseract
 
 
@@ -82,5 +82,5 @@ class ocrdocument(models.Model):
             logger.exception("Fail to display new window")
 
     def trytesseract(self):
-        image = pytesseract.image_to_string('image.png')
-        print(image)
+        image = pytesseract.image_to_string('/ocrdocument/static/img/image.png')
+        raise ValidationError(image)
