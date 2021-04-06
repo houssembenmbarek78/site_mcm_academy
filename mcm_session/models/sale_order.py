@@ -10,6 +10,9 @@ class SaleOrder(models.Model):
 
     session_id=fields.Many2one('mcmacademy.session',required=False)
     module_id=fields.Many2one('mcmacademy.module',required=False)
+    conditions =fields.Boolean(default=False)
+    failures = fields.Boolean(default=False)
+    accompagnement = fields.Boolean(default=False)
 
     def action_link_contract(self):
         orders = self.env['sale.order'].sudo().search([])
