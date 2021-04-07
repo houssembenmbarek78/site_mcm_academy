@@ -119,10 +119,6 @@ class Groupe(models.Model):
 
 
 
-
-
-
-
   #Compter le nombre des clients
     @api.depends('users_ids')
     def _get_ione_count(self):

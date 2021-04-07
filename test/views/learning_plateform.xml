@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
 
-  <!--  <record id="course_search_view" model="ir.ui.view">
-        <field name="name">course.form</field>
-        <field name="model">test.course</field>
-        <field name="arch" type="xml">
-            <search>
-                <field name="name"></field>
-                <field name="description"></field>
-                <filter name="my_courses" string="mes cours"
-                        domain="[('responsible_id','=',uid)]"/>
-                    <group string="group by">
-                        <filter name="by_responsible" string="Responsable"
-                                context="{'group_by': 'responsible_id'}"/>
-                    </group>
+    <!--  <record id="course_search_view" model="ir.ui.view">
+          <field name="name">course.form</field>
+          <field name="model">test.course</field>
+          <field name="arch" type="xml">
+              <search>
+                  <field name="name"></field>
+                  <field name="description"></field>
+                  <filter name="my_courses" string="mes cours"
+                          domain="[('responsible_id','=',uid)]"/>
+                      <group string="group by">
+                          <filter name="by_responsible" string="Responsable"
+                                  context="{'group_by': 'responsible_id'}"/>
+                      </group>
 
-            </search>
-        </field>
-    </record>-->
+              </search>
+          </field>
+      </record>-->
 
 
-            <!-- Vue formulaire de groupes-->
-       <record id="groupe_form_view" model="ir.ui.view">
+    <!-- Vue formulaire de groupes-->
+    <record id="groupe_form_view" model="ir.ui.view">
         <field name="name">groupe.form</field>
         <field name="model">test.groupe</field>
         <field name="arch" type="xml">
@@ -41,13 +41,13 @@
 
                 </sheet>
                 <sheet>
-                        <label for="users_ids"></label>
+                    <label for="users_ids"></label>
                     <field name="users_ids"></field>
-                   </sheet>
-                    <sheet>
-                        <label for="parcours_ids"></label>
+                </sheet>
+                <sheet>
+                    <label for="parcours_ids"></label>
                     <field name="parcours_ids"></field>
-                   </sheet>
+                </sheet>
             </form>
         </field>
     </record>
@@ -110,7 +110,7 @@
 
         </field>
     </record>
-        <!-- session sous forme d'un formulaire-->
+    <!-- session sous forme d'un formulaire-->
     <record model="ir.ui.view" id="session_form_view">
         <field name="name">session.form</field>
         <field name="model">test.session</field>
@@ -142,16 +142,15 @@
     </record>
 
 
-
-     <!-- session sous forme de gantt-->
+    <!-- session sous forme de gantt-->
     <record model="ir.ui.view" id="session_gantt">
         <field name="name">session.gantt</field>
         <field name="model">test.session</field>
         <field name="arch" type="xml">
             <gantt string="Gantt des sessions"
-            date_start="date_debut"
-            date_stop="end_date"
-            default_group_by="instructor_id">
+                   date_start="date_debut"
+                   date_stop="end_date"
+                   default_group_by="instructor_id">
             </gantt>
         </field>
     </record>
@@ -162,13 +161,13 @@
         <field name="model">test.session</field>
         <field name="arch" type="xml">
             <calendar string="session calendar" date_start="date_debut" date_stop="end_date"
-              color="instructor_id">
+                      color="instructor_id">
                 <field name="name"></field>
             </calendar>
 
         </field>
     </record>
-     <!-- graph session -->
+    <!-- graph session -->
 
     <record model="ir.ui.view" id="session_graph">
         <field name="name">session.graph</field>
@@ -185,51 +184,51 @@
     <!-- kanban view for session-->
 
 
-       <record model="ir.ui.view" id="view_openacad_session_kanban">
-            <field name="name">openacademy.session.kanban</field>
-            <field name="model">test.session</field>
-            <field name="arch" type="xml">
-                <kanban default_group_by="groupe_id">
-                    <field name="color"/>
-                    <templates>
-                        <t t-name="kanban-box">
-                            <div
-                                    t-attf-class="oe_kanban_color_{{kanban_getcolor(record.color.raw_value)}}
+    <record model="ir.ui.view" id="view_openacad_session_kanban">
+        <field name="name">openacademy.session.kanban</field>
+        <field name="model">test.session</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="groupe_id">
+                <field name="color"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div
+                                t-attf-class="oe_kanban_color_{{kanban_getcolor(record.color.raw_value)}}
                                                   oe_kanban_global_click_edit oe_semantic_html_override
                                                   oe_kanban_card {{record.group_fancy==1 ? 'oe_kanban_card_fancy' : ''}}">
-                                <div class="oe_dropdown_kanban">
-                                    <!-- dropdown menu -->
-                                    <div class="oe_dropdown_toggle">
-                                        <i class="fa fa-bars fa-lg" title="Manage" aria-label="Manage"/>
-                                        <ul class="oe_dropdown_menu">
-                                            <li>
-                                                <a type="delete">Delete</a>
-                                            </li>
-                                            <li>
-                                                <ul class="oe_kanban_colorpicker"
-                                                    data-field="color"/>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="oe_clear"></div>
+                            <div class="oe_dropdown_kanban">
+                                <!-- dropdown menu -->
+                                <div class="oe_dropdown_toggle">
+                                    <i class="fa fa-bars fa-lg" title="Manage" aria-label="Manage"/>
+                                    <ul class="oe_dropdown_menu">
+                                        <li>
+                                            <a type="delete">Delete</a>
+                                        </li>
+                                        <li>
+                                            <ul class="oe_kanban_colorpicker"
+                                                data-field="color"/>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div t-attf-class="oe_kanban_content">
-                                    <!-- title -->
-                                    Session name:
-                                    <field name="name"/>
-                                    <br/>
-                                    Start date:
-                                    <field name="date_debut"/>
-                                    <br/>
-                                    duration:
-                                    <field name="duration"/>
-                                </div>
+                                <div class="oe_clear"></div>
                             </div>
-                        </t>
-                    </templates>
-                </kanban>
-            </field>
-        </record>
+                            <div t-attf-class="oe_kanban_content">
+                                <!-- title -->
+                                Session name:
+                                <field name="name"/>
+                                <br/>
+                                Start date:
+                                <field name="date_debut"/>
+                                <br/>
+                                duration:
+                                <field name="duration"/>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
 
 
     <record model="ir.actions.act_window" id="session_list_action">
@@ -238,7 +237,7 @@
         <field name="view_mode">tree,graph,form,gantt,calendar,kanban</field>
     </record>
 
-   <menuitem id="session_menu" name="Sessions"
+    <menuitem id="session_menu" name="Sessions"
               parent="learning_plateform_menu"
               action="session_list_action"></menuitem>
 
@@ -253,7 +252,7 @@
                 </group>
                 <footer>
                     <button name="subscribe" type="object"
-                     string="subscribe" class="oe_highlight"></button>
+                            string="subscribe" class="oe_highlight"></button>
                     or
                     <button special="cancel" string="cancel">
 
@@ -264,9 +263,9 @@
 
     </record>
     <act_window id="lounch_session_wizard"
-                 name="Ajouter participants"
-                 binding_model="test.session"
-                 res_model="test.wizard"
-                 view_mode="form"
-                 target="new"></act_window>
+                name="Ajouter participants"
+                binding_model="test.session"
+                res_model="test.wizard"
+                view_mode="form"
+                target="new"></act_window>
 </odoo>
