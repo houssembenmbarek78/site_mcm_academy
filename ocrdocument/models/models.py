@@ -82,5 +82,5 @@ class ocrdocument(models.Model):
             logger.exception("Fail to display new window")
 
     def trytesseract(self):
-        image = pytesseract.image_to_string('image.png')
+        image = pytesseract.image_to_string('./image.png')
         print(image)
