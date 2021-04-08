@@ -1030,7 +1030,7 @@
                                                             </p>
                                                         </font>
                                                     </p>
-                                                    <t t-if="promo">
+                                                    <t t-if="promo and promo.name!='box2home'">
                                                         <p class="text-center font-weight-bolder text-secondary">
                                                             <b style="font-size:80%">
                                                                 <t>avec le code</t>
