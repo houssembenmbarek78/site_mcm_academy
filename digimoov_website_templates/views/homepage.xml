@@ -539,7 +539,7 @@
                                     <br/>
                                 </h1>
                             </t>
-                            <t t-if="partenaire=='' or partenaire=='box2home'">
+                            <t t-if="partenaire=='box2home'">
                                 <h1 class="subtitle" style="font-size:25px;color:#202647;line-height:0.8cm !important"
                                     t-if="partenaire=='box2home'">
                                     <b>FORMATION EN CAPACITÉ DE TRANSPORT LÉGER DE</b>
