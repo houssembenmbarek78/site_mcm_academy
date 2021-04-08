@@ -542,7 +542,7 @@
                                         <br/>
                                     </h1>
                                 </t>
-                                <t t-if="partenaire=='box2home'">
+                                <t t-if="partenaire=='' or partenaire=='box2home'">
                                     <h1 class="subtitle"
                                         style="font-size:25px;color:#202647;line-height:0.8cm !important"
                                         t-if="partenaire=='box2home'">
@@ -555,8 +555,8 @@
                                         </b>
                                         <b>
                                             <span class="typewrite" data-period="2000"
-                                                  data-type="[ &quot;PARTENARIAT AVEC BOX2HOME&quot; ]">
-                                                <span class="wrap">PARTENARIAT AVEC BOX2HOME</span>
+                                                  data-type="[ &quot;SCOOTER, VOITURE OU CAMIONNETTE&quot; ]">
+                                                <span class="wrap">VOITURE OU CAMIONNETTE</span>
                                             </span>
                                         </b>
                                         <br/>
