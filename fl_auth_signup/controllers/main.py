@@ -14,22 +14,26 @@ _logger = logging.getLogger(__name__)
 class AuthSignupHome(AuthSignupHome):
     def do_signup(self, qcontext):
         """ Shared helper that creates a res.partner out of a token """
-        values = {key: qcontext.get(key) for key in ('login', 'name', 'password', 'phone')}
+        values = {key: qcontext.get(key) for key in ('login', 'name', 'firstname', 'password', 'phone')}
         values['login'] = values['login'].replace(' ', '').lower()
         if not values:
             raise UserError(_("Le formulaire n'est pas correctement rempli."))
+        if '+33' not in values['phone']:
+            phone = values['phone']
+            phone = phone[1:]
+            phone = '+33' + str(phone)
+            values['phone'] = phone
         if values.get('password') != qcontext.get('confirm_password'):
             raise UserError(_("Les mots de passe ne correspondent pas, veuillez les saisir à nouveau."))
-        if '+33' not in values['phone']:
-            phone=values['phone']
-            phone=phone[1:]
-            phone='+33'+str(phone)
-            values['phone']=phone
+        values['name'] = values['firstname'] + ' ' + values['name']
         supported_lang_codes = [code for code, _ in request.env['res.lang'].get_installed()]
         lang = request.context.get('lang', '').split('_')[0]
         if lang in supported_lang_codes:
             values['lang'] = lang
         values['lang'] = 'fr_FR'
+        if request.website.id == 2:
+            values['company_ids'] = [1, 2]
+            values['company_id'] = 2
         self._signup_with_values(qcontext.get('token'), values)
         request.env.cr.commit()
 
@@ -55,16 +59,19 @@ class AuthSignupHome(AuthSignupHome):
                             lang=user_sudo.lang,
                             auth_login=werkzeug.url_encode({'auth_login': user_sudo.email}),
                         ).send_mail(user_sudo.id, force_send=True)
-                    kw['login']=qcontext.get('login').replace(' ', '').lower()
+                    user_sudo = request.env['res.users'].sudo().search([('login', "=", qcontext.get('login').replace(' ', '').lower())])
+                    if user_sudo:
+                        user_sudo.street = str(request.website.name)
+                    kw['login'] = qcontext.get('login').replace(' ', '').lower()
                 return self.web_login(*args, **kw)
             except UserError as e:
                 qcontext['error'] = e.name or e.value
             except (SignupError, AssertionError) as e:
                 if request.env["res.users"].sudo().search([("login", "=", qcontext.get("login").replace(' ', '').lower())]):
-                    qcontext["error"] = _("Un autre compte est déjà enregistré avec cette adresse email. Cliquez sur la rubrique Mot de passe oublié.")
+                    qcontext["error"] = _("Another user is already registered using this email address.")
                 else:
                     _logger.error("%s", e)
-                    qcontext['error'] = _("Vous ne pouvez pas créer un nouveau compte.")
+                    qcontext['error'] = _("Could not create a new account.")
 
         response = request.render('auth_signup.signup', qcontext)
         response.headers['X-Frame-Options'] = 'DENY'
