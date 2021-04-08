@@ -1034,7 +1034,7 @@
                                                         <p class="text-center font-weight-bolder text-secondary">
                                                             <b style="font-size:80%">
                                                                 <t>avec le code</t>
-                                                                <t t-esc="promo.code"/>
+<!--                                                                <t t-esc="promo.code"/>-->
                                                             </b>
                                                         </p>
                                                     </t>
