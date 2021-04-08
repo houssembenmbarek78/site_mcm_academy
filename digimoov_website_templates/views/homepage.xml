@@ -521,14 +521,14 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 align-self-center">
-                            <h6 class="subtitle" style="font-size:25px;color:#202647">
+
+                            <h1 class="subtitle" style="font-size:25px;color:#202647;line-height:0.8cm !important" t-if="partenaire=='' or partenaire!='box2home'">
                                 <b>FORMATION EN CAPACITÉ DE TRANSPORT LÉGER DE</b>
-                                <span class="stabiloblue">
-                                    <h3 style="font-size:25px">
-                                        <b>MARCHANDISES</b>
-                                    </h3>
+                                <span class="stabiloblue">MARCHANDISES
                                 </span>
-                                <b style="font-size:25px;color:#202647">POUR DEVENIR LIVREUR EN</b>
+                                <b style="font-size:25px;color:#202647;line-height:0.8cm !important">POUR DEVENIR
+                                    LIVREUR EN
+                                </b>
                                 <b>
                                     <span class="typewrite" data-period="2000"
                                           data-type="[ &quot;SCOOTER, VOITURE OU CAMIONNETTE&quot; ]">
@@ -536,7 +536,22 @@
                                     </span>
                                 </b>
                                 <br/>
-                            </h6>
+                            </h1>
+                            <h1 class="subtitle" style="font-size:25px;color:#202647;line-height:0.8cm !important" t-if="partenaire=='box2home'">
+                                <b>FORMATION EN CAPACITÉ DE TRANSPORT LÉGER DE</b>
+                                <span class="stabiloblue">MARCHANDISES
+                                </span>
+                                <b style="font-size:25px;color:#202647;line-height:0.8cm !important">POUR DEVENIR
+                                    LIVREUR EN
+                                </b>
+                                <b>
+                                    <span class="typewrite" data-period="2000"
+                                          data-type="[ &quot;SCOOTER, VOITURE OU CAMIONNETTE&quot; ]">
+                                        <span class="wrap">VOITURE OU CAMIONNETTE</span>
+                                    </span>
+                                </b>
+                                <br/>
+                            </h1>
                             <br/>
                             <a class="arrow-btn m-t-20 m-b-10 font-medium btn btn-alpha rounded-circle"
                                href="https://bit.ly/essgrat" data-original-title="" title="">Essai gratuit
@@ -1041,7 +1056,7 @@
                                                         </p>
                                                     </font>
                                                 </p>
-                                                <t t-if="promo and promo.name!='box2home'">
+                                                <t homet-if="promo and promo.name!='box2home'">
                                                     <p class="text-center font-weight-bolder text-secondary">
                                                         <b style="font-size:80%">
                                                             <t>avec le code</t>
