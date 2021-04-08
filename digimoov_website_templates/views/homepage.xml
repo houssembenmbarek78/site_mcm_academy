@@ -523,7 +523,7 @@
                         <div class="col-md-6 align-self-center">
 
                             <h1 class="subtitle" style="font-size:25px;color:#202647;line-height:0.8cm !important" t-if="partenaire=='' or partenaire!='box2home'">
-                                <b>FORMATION EN CAPACITÉ DE TRANSPORT LÉGER DE</b>
+                                <b>FORMATION EN CAPACITÉ DE TRANSPORT LÉGER DE </b>
                                 <span class="stabiloblue">MARCHANDISES
                                 </span>
                                 <b style="font-size:25px;color:#202647;line-height:0.8cm !important">POUR DEVENIR
