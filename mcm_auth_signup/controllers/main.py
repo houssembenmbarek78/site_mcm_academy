@@ -92,6 +92,7 @@ class Home(Home):
 
     @http.route('/web/login', type='http', auth="public")
     def web_login(self, redirect=None, **kw):
-        request.params['login'] = request.params['login'].replace(' ','').lower()
+        if 'login' in request.params:
+            request.params['login'] = request.params['login'].replace(' ','').lower()
         response=super(Home, self).web_login(redirect=redirect,**kw)
         return response
