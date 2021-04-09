@@ -1,0 +1,14 @@
+<odoo>
+    <template id="portal_website_portal_my_details" inherit_id="portal.portal_my_details">
+        <xpath expr="//input[@name='name']" position="replace">
+            <input type="text" name="name"
+                   t-attf-class="form-control #{error.get('name') and 'is-invalid' or ''}"
+                   t-att-value="name or partner.name" readonly="readonly"/>
+        </xpath>
+        <xpath expr="//input[@name='email']" position="replace">
+            <input type="email" name="email"
+                   t-attf-class="form-control #{error.get('email') and 'is-invalid' or ''}"
+                   t-att-value="email or partner.email" readonly="readonly"/>
+        </xpath>
+    </template>
+</odoo>
