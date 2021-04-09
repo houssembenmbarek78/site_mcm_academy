@@ -86,12 +86,3 @@ class AuthSignupHome(AuthSignupHome):
         response = request.render('auth_signup.signup', qcontext)
         response.headers['X-Frame-Options'] = 'DENY'
         return response
-
-
-class Home(Home):
-
-    @http.route('/web/login', type='http', auth="public")
-    def web_login(self, redirect=None, **kw):
-        request.params['login'] = request.params['login'].replace(' ','').lower()
-        response=super(Home, self).web_login(redirect=redirect,**kw)
-        return response
