@@ -3,7 +3,7 @@
     <data>
         <template id="auth_signup_fields_extend" inherit_id="auth_signup.fields" name="Signup Fields Extend">
             <xpath expr="//div[hasclass('field-name')]" position="after">
-                  <div class="form-group field-phone" t-if="not firstname">
+                 <div class="form-group field-phone" t-if="not firstname">
                      <label for="firstname" class="control-label">Votre Prénom</label>
                     <input type="text" name="firstname" t-att-value="firstname" id="firstname" class="form-control" required="required" placeholder="e.g. John"/>
                 </div>
