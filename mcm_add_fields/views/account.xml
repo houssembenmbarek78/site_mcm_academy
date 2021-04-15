@@ -9,6 +9,5 @@
                 <button name="delete_invoice" string="supprimer cette facture" type="object"/>
             </xpath>
         </field>
-
     </record>
 </odoo>
