@@ -4,7 +4,7 @@
 {
     'name': 'facture acompte',
     'description': " Créer une facture d'acompte  ",
-    'author': "Houssem",
+    'author': "Houssem - modified by Seifeddinne",
     'maintainer': 'DIGIMOOV',
     'category': 'account',
     'sequence': 15,
@@ -13,6 +13,7 @@
         'base',
         'account',
         'mcm_add_fields',
+        'mcm_session',
     ],
     'description': " Créer une facture d'acompte  ",
     'data': [

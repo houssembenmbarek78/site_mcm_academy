@@ -174,7 +174,7 @@
                                         </strong>
                                     </td>
                                     <td name="account_invoice_line_name" class="text-center"
-                                        style="border: 1px solid black;" t-if="o.cpf_acompte_invoice==True">
+                                        style="border: 1px solid black;" t-if="o.cpf_acompte_invoice==True and o.company_id.id==2">
                                         <strong>
                                             <span>Acompte </span>
                                             <span t-field="line.product_id.name" t-options="{'widget': 'text'}"/>
@@ -186,8 +186,8 @@
                                     </td>
                                     <td t-attf-class="text-center {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"
                                         style="border: 1px solid black;">
-                                        <span t-field="line.price_unit" t-if="o.type_facture=='interne'"/>
-                                        <span t-field="o.module_id.product_id.list_price" t-if="o.type_facture=='web'"/>
+                                        <span t-field="line.price_unit" />
+<!--                                        <span t-field="o.module_id.product_id.list_price" t-if="o.type_facture=='web'"/>-->
                                     </td>
                                     <td t-if="display_discount"
                                         t-attf-class="text-center {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"
@@ -196,13 +196,13 @@
                                     </td>
                                     <td class="text-center o_price_total" style="border: 1px solid black;">
                                         <span t-field="line.price_subtotal"
-                                              groups="account.group_show_line_subtotals_tax_excluded" t-if="o.type_facture=='interne'"/>
+                                              groups="account.group_show_line_subtotals_tax_excluded"/>
                                         <span t-field="line.price_total"
-                                              groups="account.group_show_line_subtotals_tax_included" t-if="o.type_facture=='interne'"/>
-                                        <span t-field="o.module_id.product_id.list_price"
-                                              groups="account.group_show_line_subtotals_tax_excluded" t-if="o.type_facture=='web'"/>
-                                        <span t-field="o.module_id.product_id.list_price"
-                                              groups="account.group_show_line_subtotals_tax_included" t-if="o.type_facture=='web'"/>
+                                              groups="account.group_show_line_subtotals_tax_included"/>
+<!--                                        <span t-field="o.module_id.product_id.list_price"-->
+<!--                                              groups="account.group_show_line_subtotals_tax_excluded" t-if="o.type_facture=='web'"/>-->
+<!--                                        <span t-field="o.module_id.product_id.list_price"-->
+<!--                                              groups="account.group_show_line_subtotals_tax_included" t-if="o.type_facture=='web'"/>-->
                                     </td>
                                 </t>
                                 <t t-if="line.display_type == 'line_section'">
@@ -254,76 +254,69 @@
                                 </tr>
                             </t>
                         </t>
-
                         <t t-if="o.acompte_invoice">
                             <tr>
-                                <td name="account_invoice_acompte_name" class="text-center"
-                                    style="border: 1px solid black;">
-                                    <t t-foreach="o.invoice_line_ids"
-                                       t-as="line">
-                                        <strong>
-                                            <span t-options="{'widget': 'text'}">Acompte</span>
-                                            <span t-field="line.name" t-options="{'widget': 'text'}"/>
-                                            <span t-field="o.pourcentage_acompte" t-options="{'widget': 'text'}"/>
-                                            <span t-options="{'widget': 'text'}">%</span>
-                                        </strong>
-                                    </t>
-                                </td>
-                                <td class="text-center" style="border: 1px solid black;">
-                                    <t t-foreach="o.invoice_line_ids"
-                                       t-as="line">
-                                        <span t-field="line.quantity"/>
-                                        <span t-field="line.product_uom_id" groups="uom.group_uom"/>
-                                    </t>
-                                </td>
-                                <td name="account_invoice_account_amount" class="text-center"
-                                    style="border: 1px solid black;">
-                                    <span t-field="o.amount_total"/>
-                                </td>
-                                <td name="account_invoice_account_amount" class="text-center"
-                                    style="border: 1px solid black;">
-                                    <span t-field="o.amount_total"/>
-                                </td>
+
                             </tr>
                         </t>
                     </tbody>
                 </table>
-                <br></br>
 
-                <table style="width: 100%;margin-bottom: 1rem;border-color:#000" name="invoice_line_table_cpf_solde" t-if="o.cpf_solde_invoice==True">
-                    <thead>
-                        <tr style="background-color: #E8E8E8;">
-                            <!-- TODO: remove in master -->
-                            <t t-set="colspan" t-value="6"/>
-                            <th name="th_description" class="text-center" style="border: 1px solid black;">
-                                <span>Désignation</span>
-                            </th>
-                            <th name="th_subtotal" class="text-center" style="border: 1px solid black;">
-                                <span groups="account.group_show_line_subtotals_tax_excluded">Total HT</span>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody class="invoice_tbody">
-                        <t t-set="current_subtotal" t-value="0"/>
-                            <tr>
-                                    <td name="account_link" class="text-center"
-                                        style="border: 1px solid black;" t-if="o.cpf_solde_invoice==True and o.ref">
+<!--                <table style="width: 100%;margin-bottom: 1rem;border-color:#000" name="invoice_line_table_cpf_solde" t-if="o.cpf_solde_invoice==True">-->
+<!--                    <thead>-->
+<!--                        <tr style="background-color: #E8E8E8;">-->
+<!--                            &lt;!&ndash; TODO: remove in master &ndash;&gt;-->
+<!--                            <t t-set="colspan" t-value="6"/>-->
+<!--                            <th name="th_description" class="text-center" style="border: 1px solid black;">-->
+<!--                                <span>Désignation</span>-->
+<!--                            </th>-->
+<!--                            <th name="th_subtotal" class="text-center" style="border: 1px solid black;">-->
+<!--                                <span groups="account.group_show_line_subtotals_tax_excluded">Total HT</span>-->
+<!--                            </th>-->
+<!--                        </tr>-->
+<!--                    </thead>-->
+<!--                    &lt;!&ndash;<tbody class="invoice_tbody">-->
+<!--                        <t t-set="current_subtotal" t-value="0"/>-->
+<!--                            <tr>-->
+<!--                                    <td name="account_link" class="text-center"-->
+<!--                                        style="border: 1px solid black;" t-if="o.cpf_solde_invoice==True and o.ref">-->
+<!--                                        <strong>-->
+<!--                                            <span >Acompte lié </span >-->
+<!--                                            <span t-field="o.ref" t-options="{'widget': 'text'}"/>-->
+<!--                                        </strong>-->
+<!--                                    </td>-->
+<!--                                    <td name="account_invoice_line_name" class="text-center"-->
+<!--                                        style="border: 1px solid black;" t-if="o.cpf_solde_invoice==True">-->
+<!--                                            <span>-</span>-->
+<!--                                            <span t-field="o.cpf_acompte_amount"/>-->
+<!--                                    </td>-->
+<!--                            </tr>-->
+<!--                    </tbody>&ndash;&gt;-->
+<!--                </table>-->
+            </xpath>
+            <xpath expr="//table[@name='invoice_line_table']" position="after">
+                <table style="width: 100% ;border-color:#000" name="Acount_Client" t-if="o.type_facture=='interne'">
+                                <tr>
+                                    <td class="text-center"
+                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px">
+                                        Acompte :
+                                    </td>
+                                     <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
+                                        <span t-field="o.pourcentage_acompte" readonly="False" t-if="o.type_facture=='interne'"/>%
+                                     </td>
+                                     <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
                                         <strong>
-                                            <span >Acompte lié </span >
-                                            <span t-field="o.ref" t-options="{'widget': 'text'}"/>
+                                            <span t-field="o.amount_paye"/>
+                                            <span t-field="o.module_id.product_id.list_price" t-if="o.type_facture=='web'"/>
                                         </strong>
                                     </td>
-                                    <td name="account_invoice_line_name" class="text-center"
-                                        style="border: 1px solid black;" t-if="o.cpf_solde_invoice==True">
-                                            <span>-</span>
-                                            <span t-field="o.cpf_acompte_amount"/>
-                                    </td>
-                            </tr>
-                    </tbody>
+                                </tr>
                 </table>
-                <br></br>
+                <br>
+
+                </br>
             </xpath>
-            <xpath expr="//div[hasclass('clearfix')]" position="replace">
+            <xpath expr="//div[hasclass('clearfix')]" position="replace" t-if="o.type_facture=='interne'">
                 <div class="clearfix">
                     <div id="total" class="row">
                         <div class="col-4">
@@ -333,36 +326,55 @@
                                 <tr>
                                     <td class="text-left"
                                         style="background-color: #E8E8E8; border: 1px solid black; padding: 5px">
-                                        Total HT
-                                    </td>
-                                    <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
-                                        <span t-field="o.amount_untaxed"/>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left"
-                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px">
                                         Prestations de formation en exonération de TVA, article 261-
                                         4-4 du CGI
                                     </td>
-                                    <td class="text-center" style="border: 1px solid black; padding: 5px">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left"
-                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px">
-                                        <strong>Total</strong>
-                                    </td>
                                     <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
                                         <strong>
-                                            <span t-field="o.amount_total"/>
+                                            <span t-field="o.amount_tax"/>
+                                        </strong>
+
+                                    </td>
+                                    <tr t-if="o.type_facture=='web'">
+                                    <td class="text-left"
+                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" >
+                                        Total HT
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black; padding: 5px" t-if="o.type_facture=='web'">
+                                        <span t-field="o.amount_total" t-if="o.type_facture=='web'"/>
+                                    </td>
+                                    <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px" t-if="o.type_facture=='interne'">
+                                        <span t-field="o.restamount" t-if="o.type_facture=='interne'"/>
+                                    </td>
+                                    </tr>
+                                </tr>
+<!--                                    <td class="text-left"-->
+<!--                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px">-->
+<!--                                        Total-->
+<!--                                    </td>-->
+
+<!--                                    <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">-->
+<!--                                        <strong>-->
+<!--                                             <span t-field="o.amount_total" t-if="o.type_facture=='web'"/>-->
+<!--                                        </strong>-->
+<!--                                    </td>-->
+
+                                <tr>
+                                    <td class="text-left"
+                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" t-if="o.type_facture=='interne'" >
+                                        <strong>Montant restant à encaisser:</strong>
+                                    </td>
+                                    <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px" t-if="o.type_facture=='interne'">
+                                        <strong>
+                                            <span t-field="o.restamount" t-if="o.type_facture=='interne'"/>
                                         </strong>
                                     </td>
                                 </tr>
                             </table>
                         </div>
+
+                        </div>
                     </div>
-                </div>
             </xpath>
             <xpath expr="//div[hasclass('page')]//p[1]" position="replace">
                 <div class="row">
@@ -467,11 +479,7 @@
                     </div>
                 </div>
             </xpath>
-            <!--            <xpath expr="//div[hasclass('page')]//p[3]" position="replace">-->
-            <!--                <p t-if="o.invoice_payment_term_id" name="payment_term">-->
-            <!--                    <span></span>-->
-            <!--                </p>-->
-            <!--            </xpath>-->
+
             <!--            <xpath expr="//div[hasclass('page')]//p[4]" position="replace">-->
             <!--                <p t-if="o.fiscal_position_id.note" name="note">-->
             <!--                    <span></span>-->
@@ -487,53 +495,9 @@
                 </div>
             </xpath>
         </template>
-        <template id="mcm_report_invoice_document_with_payments"
-                  inherit_id="account.report_invoice_document_with_payments">
-            <xpath expr="//t[@t-foreach='payments_vals']" position="replace">
-                <div class="row">
-                    <div class="col-9">
-                    </div>
-                    <div class="col-3">
-                        <t>
-                            <tr t-if="o.state != 'cancel' and o.cpf_solde_invoice==False and o.cpf_acompte_invoice==False">
-                                <td class="text-right" t-if="o.amount_residual>0">
-                                    <i class="text-right">
-                                        <font style="font-size: 16px;">Montant déjà encaissé :</font>
-                                    </i>
-                                </td>
-                                <td class="text-right" t-if="o.amount_residual>0">
-                                    <font style="font-size: 16px;">
-                                        <span t-esc="o.mcm_paid_amount"
-                                              t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
-                                    </font>
-                                </td>
-                            </tr>
-                        </t>
-                    </div>
-                </div>
-            </xpath>
-            <xpath expr="//t[@t-if='len(payments_vals) &gt; 0']" position="replace">
-                <t>
-                    <tr t-if="o.state != 'cancel' and o.cpf_solde_invoice==False and o.cpf_acompte_invoice==False">
-                        <td class="text-right" t-if="o.amount_residual>0">
-                            <font style="font-size: 16px;">
-                                <i class="oe_form_field text-right oe_payment_label">Montant restant à encaisse :
-                                </i>
-                            </font>
-                        </td>
-                        <td class="text-right" t-if="o.amount_residual>0">
-                            <font style="font-size: 16px;">
-                                <span t-esc="o.amount_residual"
-                                      t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
-                            </font>
-                        </td>
-                    </tr>
-                </t>
-            </xpath>
-        </template>
         <template id="mcm_external_layout_standard"
                   inherit_id="web.external_layout_standard">
-            <xpath expr="//div[hasclass('header')]" position="replace">
+            <xpath expr="//div[1]" position="replace">
                 <div class="header">
                     <div class="row">
                         <div class="col-6" name="company_address">
@@ -565,30 +529,30 @@
                 <br/>
             </xpath>
 
-            <xpath expr="//div[hasclass('footer')]" position="replace">
-                <div class="page">
-                    <div t-attf-class="footer o_standard_footer o_company_#{company.id}_layout">
-                        <center>
-                            <div class="row">
-                                <span style="color:grey;font-size:14px" t-field="company.partner_id.name"/>
-                                <span style="color:grey;font-size:14px">&#160;|&#160;</span>
-                                <span style="color:grey;font-size:14px" t-field="company.partner_id.street"/>
-                                <span style="color:grey;font-size:14px">&#160;</span>
-                                <span style="color:grey;font-size:14px" t-field="company.partner_id.city"/>
-                                <span style="color:grey;font-size:14px">&#160;</span>
-                                <span style="color:grey;font-size:14px" t-field="company.partner_id.zip"/>
-                                <span style="color:grey;font-size:14px">&#160;| Numéro SIRET:&#160;</span>
-                                <span style="color:grey;font-size:14px" t-field="company.siret"/>
-                                <span style="color:grey;font-size:14px">&#160;| Numéro de déclaration d'activité:&#160;</span>
-                                <span style="color:grey;font-size:14px" t-field="company.activity_declaration_number"/>
-                                <span style="color:grey;font-size:14px">&#160;(auprès du préfet de
-                                    région de: 75)
-                                </span>
-                            </div>
-                        </center>
-                    </div>
-                </div>
-            </xpath>
+<!--            <xpath expr="//div[hasclass('footer o_standard_footer')]" position="replace">-->
+<!--                <div class="page">-->
+<!--                    <div t-attf-class="footer o_standard_footer o_company_#{company.id}_layout">-->
+<!--                        <center>-->
+<!--                            <div class="row">-->
+<!--                                <span style="color:grey;font-size:14px" t-field="company.partner_id.name"/>-->
+<!--                                <span style="color:grey;font-size:14px">&#160;|&#160;</span>-->
+<!--                                <span style="color:grey;font-size:14px" t-field="company.partner_id.street"/>-->
+<!--                                <span style="color:grey;font-size:14px">&#160;</span>-->
+<!--                                <span style="color:grey;font-size:14px" t-field="company.partner_id.city"/>-->
+<!--                                <span style="color:grey;font-size:14px">&#160;</span>-->
+<!--                                <span style="color:grey;font-size:14px" t-field="company.partner_id.zip"/>-->
+<!--                                <span style="color:grey;font-size:14px">&#160;| Numéro SIRET:&#160;</span>-->
+<!--                                <span style="color:grey;font-size:14px" t-field="company.siret"/>-->
+<!--                                <span style="color:grey;font-size:14px">&#160;| Numéro de déclaration d'activité:&#160;</span>-->
+<!--                                <span style="color:grey;font-size:14px" t-field="company.activity_declaration_number"/>-->
+<!--                                <span style="color:grey;font-size:14px">&#160;(auprès du préfet de-->
+<!--                                    région de: 75)-->
+<!--                                </span>-->
+<!--                            </div>-->
+<!--                        </center>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </xpath>-->
         </template>
     </data>
 </odoo>
