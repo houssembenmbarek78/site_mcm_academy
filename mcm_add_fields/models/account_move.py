@@ -50,7 +50,6 @@ class AccountMove(models.Model):
 #
     @api.depends('invoice_line_ids.price_subtotal','pourcentage_acompte')
     def _compute_change_amount(self):
-           print(self.type_facture)
            for rec in self:
                 amount_untaxed_initiale = rec.amount_untaxed
                 if (rec.type_facture == 'interne'):
