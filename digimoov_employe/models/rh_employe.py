@@ -11,6 +11,7 @@ class rh_employe(models.Model):
     invisible_field = fields.Char(string="Invisible Field")
     cin = fields.Char(string="CIN")
     cnss = fields.Char(string="CNSS")
+    address = fields.Char(string="Adresse")
     numero_compte_bancaire = fields.Char(string="Numéro de compte bancaire")
     ville = fields.Char(string="Ville")
     permis_de_travail = fields.Selection([('oui', 'Oui'), ('non', 'Non')])
