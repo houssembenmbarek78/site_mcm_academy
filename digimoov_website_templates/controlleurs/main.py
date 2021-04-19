@@ -3,6 +3,23 @@ from odoo.http import request
 from datetime import datetime,date
 import base64
 from werkzeug.exceptions import NotFound
+from odoo.addons.website.controllers.main import Website
+
+class Website(Website):
+    @http.route('/sitemap.xml', type='http', auth="public", website=True, multilang=False, sitemap=False)
+    def sitemap_xml_index(self, **kwargs):
+        current_website = request.website
+        Attachment = request.env['ir.attachment'].sudo()
+        View = request.env['ir.ui.view'].sudo()
+        mimetype = 'application/xml;charset=utf-8'
+        content = None
+        dom = [('url', '=', '/sitemap-%d.xml' % current_website.id), ('type', '=', 'binary')]
+        sitemap = Attachment.search(dom, limit=1)
+        if sitemap:
+            content = base64.b64decode(sitemap.datas)
+            return request.make_response(content, [('Content-Type', mimetype)])
+        else:
+            return super(Website,self).sitemap_xml_index(**kwargs)
 
 class FAQ(http.Controller):
 
