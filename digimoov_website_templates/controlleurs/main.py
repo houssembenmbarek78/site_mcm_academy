@@ -10,7 +10,7 @@ class Website(Website):
     @http.route('/sitemap.xml', type='http', auth="public", website=True, multilang=False, sitemap=False)
     def sitemap_xml_index(self, **kwargs):
         current_website = request.website
-        Attachment = request.env['ir.attachment'].sudo()
+        Attachment = request.env['ir.attachment'].sudo()#get ir attachment class
         mimetype = 'application/xml;charset=utf-8'
         content = None
         dom = [('url', '=', '/sitemap-%d.xml' % current_website.id), ('type', '=', 'binary')]
