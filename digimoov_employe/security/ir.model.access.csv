@@ -1,3 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_digimoov_employe_digimoov_employe,digimoov_employe.digimoov_employe,model_digimoov_employe_digimoov_employe,base.group_user,1,1,1,1
-access_digimoov_employ_digimoov_employe,digimov_employe.digimoov_employe,model_digimoov_employe_rappelembauche,,1,1,1,1
+access_digimoov_employe_rappelembauche,access_digimoov_employe_rappelembauche,model_digimoov_employe_rappelembauche,base.group_user,1,1,1,1
