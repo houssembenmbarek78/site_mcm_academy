@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="digimoov_employe.list">
+      <field name="name">digimoov_employe list</field>
+      <field name="model">digimoov_employe.digimoov_employe</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="digimoov_employe.action_window">
+      <field name="name">digimoov_employe window</field>
+      <field name="res_model">digimoov_employe.digimoov_employe</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="digimoov_employe.action_server">
+      <field name="name">digimoov_employe server</field>
+      <field name="model_id" ref="model_digimoov_employe_digimoov_employe"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="digimoov_employe" id="digimoov_employe.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="digimoov_employe.menu_1" parent="digimoov_employe.menu_root"/>
+    <menuitem name="Menu 2" id="digimoov_employe.menu_2" parent="digimoov_employe.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="digimoov_employe.menu_1_list" parent="digimoov_employe.menu_1"
+              action="digimoov_employe.action_window"/>
+    <menuitem name="Server to list" id="digimoov_employe" parent="digimoov_employe.menu_2"
+              action="digimoov_employe.action_server"/>
+-->
+  </data>
+</odoo>

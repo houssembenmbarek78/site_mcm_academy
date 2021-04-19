@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+        <record model="ir.cron" id="ir_cron_rappel_demo">
+            <field name="name">Demo rappel</field>
+            <field name="model_id" ref="model_digimoov_employe_rappelembauche"/>
+            <field name="state">code</field>
+            <field name="code">model.rappeltest()</field>
+            <field name="active" eval="True"/>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="interval_number">1</field>
+            <field name="interval_type">minutes</field>
+            <field name="numbercall">-1</field>
+        </record>
+   </data>
+</odoo>

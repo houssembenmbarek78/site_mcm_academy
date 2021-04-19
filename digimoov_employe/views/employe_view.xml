@@ -1,0 +1,64 @@
+<odoo>
+    <data>
+  <record id="viewcustom_employee" model="ir.ui.view">
+            <field name="name">viewcustom.employee</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='parent_id']" position="after">
+
+                    <field name="date_embauche" string="Date d'embauche" />
+
+                </xpath>
+
+                <xpath expr="//field[@name='work_location']" position="replace">
+                    <field name="invisible_field" invisible="1" />
+                </xpath>
+                  <xpath expr="//field[@name='private_email']" position="replace">
+                    <field name="invisible_field" invisible="1" />
+                </xpath>
+                <xpath expr="//field[@name='mobile_phone']" position="replace">
+                    <field name="invisible_field" invisible="1" />
+                </xpath>
+                 <xpath expr="//field[@name='phone']" position="replace">
+                    <field name="invisible_field" invisible="1" />
+                </xpath>
+                 <xpath expr="//field[@name='bank_account_id']" position="replace">
+                    <field name="invisible_field" invisible="1" />
+                </xpath>
+                <xpath expr="//field[@name='km_home_work']" position="replace">
+                    <field name="invisible_field" invisible="1" />
+                </xpath>
+                <xpath expr="//field[@name='identification_id']" position="replace">
+                    <field name="invisible_field" invisible="1" />
+                </xpath>
+                <xpath expr="//field[@name='country_of_birth']" position="replace">
+                    <field name="invisible_field" invisible="1" />
+                </xpath>
+                <xpath expr="//field[@name='permit_no']" position="replace">
+                    <field name="invisible_field" invisible="1" />
+                </xpath>
+                <xpath expr="//field[@name='visa_expire']" position="replace">
+                    <field name="invisible_field" invisible="1" />
+                </xpath>
+                 <xpath expr="//field[@name='passport_id']" position="replace">
+                    <field name="ville" />
+                </xpath>
+
+                 <xpath expr="//field[@name='address_home_id']" position="after">
+                    <field name="numero_compte_bancaire"  />
+                </xpath>
+                <xpath expr="//field[@name='address_home_id']" position="after">
+                    <field name="cnss"  />
+                </xpath>
+                 <xpath expr="//field[@name='address_home_id']" position="after">
+                    <field name="cin"  />
+                </xpath>
+
+                <xpath expr="//field[@name='visa_no']" position="replace">
+                    <field name="permis_de_travail"  />
+                </xpath>
+            </field>
+  </record>
+    </data>
+</odoo>
