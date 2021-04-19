@@ -3,7 +3,7 @@ from odoo.http import request
 from datetime import datetime,date
 import base64
 from werkzeug.exceptions import NotFound
-from odoo.addons.website.controllers.main import Website
+from odoo.addons.website.controllers.main import Website #import website controller
 
 class Website(Website):
     #inherit sitemap route function
@@ -15,7 +15,7 @@ class Website(Website):
         content = None
         dom = [('url', '=', '/sitemap-%d.xml' % current_website.id), ('type', '=', 'binary')]
         sitemap = Attachment.search(dom, limit=1) #check existing of a sitemap attachment in database
-        if sitemap: # if sitemap exist get it from database and don't generate a new one
+        if sitemap and sitemap.datas: # if sitemap exist get it from database and don't generate a new one
             content = base64.b64decode(sitemap.datas)
             return request.make_response(content, [('Content-Type', mimetype)])
         else: # if doesn't exist in database generate new sitemap
