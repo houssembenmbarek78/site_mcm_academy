@@ -1,0 +1,59 @@
+<odoo>
+  <data>
+
+        <record model="ir.ui.view" id="ferie_form_view">
+            <field name="name">ferie.form</field>
+            <field name="model">jours_feries.digimoov</field>
+            <field name="arch" type="xml">
+                <form string="Ferie Form">
+                    <sheet>
+                        <group string="General">
+                                <field name="name"/>
+                                <field name="date_debut"/>
+                                <field name="date_fin"/>
+                                <field name="pays"/>
+                                <field name="remuneration"/>
+                                <field name="description"/>
+
+
+                            </group>
+
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="ferie_tree_view">
+            <field name="name">ferie.tree</field>
+            <field name="model">jours_feries.digimoov</field>
+            <field name="arch" type="xml">
+                <tree string="Ferie Tree">
+                    <field name="name"/>
+                    <field name="date_debut"/>
+                    <field name="date_fin"/>
+                    <field name="pays"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="ferie_calendar_view">
+            <field name="name">ferie.calendar</field>
+            <field name="model">jours_feries.digimoov</field>
+            <field name="arch" type="xml">
+                <calendar string="Ferie Calendar" date_start="date_debut" date_stop="date_fin" color="pays">
+                    <field name="name"/>
+                </calendar>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="ferie_list_action">
+            <field name="name">Ferie</field>
+            <field name="res_model">jours_feries.digimoov</field>
+            <field name="view_mode">tree,form,calendar</field>
+        </record>
+
+        <menuitem id="jours_ferie_menu" name="Jours Ferie"  parent="hr.menu_hr_root" sequence="20" action="ferie_list_action"/>
+
+
+  </data>
+</odoo>
