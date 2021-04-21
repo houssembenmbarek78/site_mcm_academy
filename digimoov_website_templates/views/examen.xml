@@ -18,25 +18,21 @@
                     }
                     }
                 </style>
-
-                <!-- <script defer='defer' type="text/javascript" src="/digimoov_website_templates/static/src/js/bg-examen.js" /> -->
-                <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
-
                 <section id="slider-sec" class="web_agency_banner slider4 oe_img_bg oe_custom_bg" data-name="Home Banner Eight" style="background-image: url(&quot;/web/image/13078/Digimoov%20qui%20somme%20nous.png&quot;); background-position: 37.71% 54.72%;width:100%">
                     <div id="myCarousel1605624033206" class="s_carousel carousel slide s_carousel_default" data-ride="carousel" data-pause="hover" data-interval="7000" data-name="Carousel">
                         <ol class="carousel-indicators d-none">
                             <li data-target="#myCarousel1605624033206" data-slide-to="0" class="active"/>
                         </ol>
                         <div class="carousel-inner" role="listbox">
-                            <div id= "examen-background-examen" class="carousel-item oe_img_bg pt56 pb96 oe_custom_bg active" style="background-image: url(&quot;/digimoov_website_templates/static/img/Examen de capacité de transport léger de marchandise.webp&quot;);">
+                            <div class="carousel-item oe_img_bg pt56 pb96 oe_custom_bg active" style="background-image: url(&quot;/digimoov_website_templates/static/img/Examen de capacité de transport léger de marchandise.webp&quot;);">
                                 <div class="container">
                                     <div class="row" style="width:100% !important;">
                                         <div class="col-md-9 col-lg-6">
                                             <h1 class="custom_p">
                                                 <span style="font-size: 24px;" class="text-delta">
-                                                    <b>L'examen de l'attestation de capacité professionnelle en
-                                                        transport routier léger de marchandises
-                                                    </b>
+<!--                                                    <b>L'examen de l'attestation de capacité professionnelle en-->
+<!--                                                        transport routier léger de marchandises-->
+<!--                                                    </b>-->
                                                     <b>
                                                         <br/>
                                                     </b>
@@ -81,14 +77,7 @@
                             </h2>
                             <div style="width:100%; margin:0 auto;">
                                 <font style="color: rgb(0, 0, 0); font-size: 18px;">C'est un examen qui dure 3 heures et
-                                    qui comporte
-                                    <b>
-                                        <u>
-                                            <a href="/blog/digimoov-3/post/bon-a-savoir-sur-la-formation-capacite-de-transport-leger-6" target="_blank">6 matières
-                                            </a>
-                                        </u>
-                                    </b>
-                                    . Les questions sont proposées sous forme de QCM (questions à
+                                    qui comporte 6 matières. Les questions sont proposées sous forme de QCM (questions à
                                     choix multiples) et de Questions rédigées (QRC).
                                 </font>
                                 <font style="color: rgb(255, 255, 255);">
@@ -119,9 +108,8 @@
                                                 <br/>
                                             </b>
                                         </h5>
-
                                         <h5 class="font-medium">
-                                            <img class="img-fluid o_we_custom_image d-block mx-auto padding-xl lazy" data-src="/digimoov_website_templates/static/img/Partie QCM de l'examen.webp" data-srcSafari="/digimoov_website_templates/static/img/examen/Partie QCM de l'examen.png" data-original-title="" title="" aria-describedby="tooltip973985"/>
+                                            <img class="img-fluid o_we_custom_image d-block mx-auto padding-xl" src="/digimoov_website_templates/static/img/Partie QCM de l'examen.webp" data-original-title="" title="" aria-describedby="tooltip973985"/>
                                         </h5>
                                         <h5 class="font-medium">
                                             <b style="color: rgb(103, 67, 148); font-size: 24px;">
@@ -137,46 +125,29 @@
                                                 <i>Durée totale : 1 h 15 min</i>
                                             </b>
                                             <br/>
-                                            <b>Questionnaires de 50 Questions à Choix Multiples</b>(4 propositions : une
-                                            seule bonne réponse) à 2 points chacune, soit 100 points, réparties sur
-                                            l’ensemble des thématiques du référentiel des connaissances :
-                                            <br/>
+                                            <b>50 questions à choix multiples réparties comme suit :</b>
+                                            <b>
+                                                <br/>
+                                            </b>
                                         </p>
                                         <p class="font-medium"/>
                                         <p>
-                                            <font color="#000000">e) L’entreprise et le droit civil et commercial : 14
-                                                questions ;
+                                            <i>
+                                                <font style="color: rgb(0, 0, 0);">Thématique A :</font>
+                                            </i>
+                                            <b/>
+                                            <font style="color: rgb(0, 0, 0);">L'entreprise, le droit civil et le doit
+                                                commercial - 14 QCM</font>&amp;
+                                            <br/>
+                                            <i>
+                                                <font style="color: rgb(0, 0, 0);">Thématique B :</font>&amp;
+                                            </i>
+                                            <b/>
+                                            <font style="color: rgb(0, 0, 0);">L'entreprise et son activité commerciale
+                                                - 2
+                                                QCM
                                             </font>
-                                        </p>
-                                        <p>
-                                            <font color="#000000">f) L’entreprise et son activité commerciale : 2
-                                                questions ;
-                                            </font>
-                                        </p>
-                                        <p>
-                                            <font color="#000000">g) L’entreprise et le cadre réglementaire de
-                                                l’activité de transport : 13 questions ;
-                                            </font>
-                                        </p>
-                                        <p>
-                                            <font color="#000000">h) L’entreprise et son activité financière : 5
-                                                questions ;
-                                            </font>
-                                        </p>
-                                        <p>
-                                            <font color="#000000">i) L’entreprise et ses salariés : 10 questions ;
-                                            </font>
-                                        </p>
-                                        <p>
-                                            <font color="#000000">j) L’entreprise et la sécurité : 6 questions.</font>
-                                        </p>
-                                        <p>
-                                        </p>
-                                        <p>
-                                            <font color="#000000">Dans chaque thématique, le créateur de l’examen
-                                                veillera à ce que les QCM ne portent pas sur les mêmes sujets que les
-                                                questions à réponse rédigée de la seconde partie de l’examen.
-                                            </font>
+                                            <br/>
                                         </p>
                                         <p class="font-medium">
                                             <b>Note minimale à obtenir : 50/100</b>
@@ -198,61 +169,34 @@
                                                     <br/>
                                                 </b>
                                             </span>
-                                            <img class="img-fluid o_we_custom_image d-block mx-auto padding-xl lazy" data-src="/digimoov_website_templates/static/img/compressed/Examen capacité de marchandise.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Examen capacité de marchandise.jpg" data-original-title="" title="" aria-describedby="tooltip240442" style=""/>
+                                            <img class="img-fluid o_we_custom_image d-block mx-auto padding-xl" src="digimoov_website_templates/static/img/Partie questions à réponses courtes de l'examen.webp" data-original-title="" title="" aria-describedby="tooltip240442" />
                                             <b style="color: rgb(103, 67, 148); font-size: 24px;">L'épreuve Questions
                                                 Rédigées
                                             </b>
+
                                         </h5>
+
                                         <p class="font-medium">
                                             <b>
                                                 <i>Durée totale : 1 h 45min</i>
                                             </b>
-                                            <br/>
-                                            <b>Questions et exercices exigeant une réponse rédigée sur 100 points :</b>
-                                            <br/>
+                                            <b>
+                                                <br/>
+Questions et exercices exigeant une réponse rédigée :
+                                            </b>
                                         </p>
-                                        <ul>
-                                            <li>
-                                                <p>
-                                                    <font color="#000000">Exercices sur la thématique « D. L’entreprise
-                                                        et son activité financière » exigeant une réponse rédigée, sur
-                                                        50 points, comportant au moins un calcul de coût de revient
-                                                        complet et deux questions rédigées portant sur les autres
-                                                        connaissances de la thématique « D. L’entreprise et son&amp;nbsp;
-                                                        activité&amp;nbsp; financière&amp;nbsp; ».&amp;nbsp; Un&amp;nbsp;
-                                                        calcul&amp;nbsp; de&amp;nbsp; seuil&amp;nbsp; de&amp;nbsp;
-                                                        rentabilité&amp;nbsp; ou&amp;nbsp; un&amp;nbsp; exercice
-                                                        d’organisation/classement de postes financiers peuvent remplacer
-                                                        une de ces questions ;
-                                                        <br/>
-                                                        <br/>
-                                                    </font>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <font color="#000000">25 à 30 points pour le coût de revient et 20 à
-                                                        25 points à répartir sur les autres questions, soit 50 points au
-                                                        total ;
-                                                        <br/>
-                                                        <br/>
-                                                    </font>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p>
-                                                    <font color="#000000">5 questions à réponses rédigées portant sur
-                                                        les thématiques « C. L’entreprise et le son cadre réglementaire
-                                                        de l’activité de transport », « E. L’entreprise et ses salariés
-                                                        » et « F. L’entreprise et la sécurité » (dont 3 questions sur la
-                                                        thématique E et 1 question sur chaque thématique C et F); Entre
-                                                        6 à 10 points par question, pour un total de 50 points ;
-                                                    </font>
-                                                </p>
-                                            </li>
-                                        </ul>
                                         <p>
-                                            <font style="color: rgb(0, 0, 0);">
+                                            <b>Thématiques C, E, F :</b>
+                                            <font style="color: rgb(0, 0, 0);">5 questions à réponses rédigés.</font>
+                                            <br/>
+                                            <b>Thématique B :</b>
+                                            <font style="color: rgb(0, 0, 0);">L'entreprise et son activité financière -
+                                                Des exercices exigeant une réponse rédigée, comportant au moins un
+                                                calcul de coût de revient complet et deux questions rédigées portant sur
+                                                les autres connaissances de la thématique. Un calcul de seuil de
+                                                rentabilité ou un exercice d’organisation/classement de postes
+                                                financiers peuvent remplacer une de ces questions.
+                                                <br/>
                                                 <b style="color: rgb(85, 85, 85);">Note minimale à obtenir : 40/100</b>
                                             </font>
                                         </p>
@@ -269,7 +213,7 @@
                 </section>
                 <section class="centric_template" data-name="Subscriber" style="">
                     <section class="service-banner s_cover parallax s_parallax_is_fixed s_parallax_no_overflow_hidden bg-black-75 pt32 pb144" data-scroll-background-ratio="1" data-name="Cover" style="background-image: none;">
-                        <span id="examen-fond" class="oe_img_bg s_parallax_bg oe_custom_bg" style="background-image: url(/digimoov_website_templates/static/img/fond.webp); background-position: 77.19% 24.8%;"/>
+                        <span class="oe_img_bg s_parallax_bg oe_custom_bg" style="background-image: url(&quot;/digimoov_website_templates/static/img/fond.webp&quot;); background-position: 77.19% 24.8%;"/>
                         <div class="container">
                             <div class="subs-content text-center">
                                 <span class="discount">EXAMEN FINAL</span>
@@ -290,7 +234,7 @@
                                     <div class="card-body">
                                         <div class="icon-space">
                                             <section class="icon-round bg-alpha "/>
-                                            <img class="img-fluid o_we_custom_image lazy" data-src="/digimoov_website_templates/static/img/conditions d'obtention de diplôme capacité de marchandise.webp" data-srcSafari="/digimoov_website_templates/static/img/conditions_d'obtention_de_diplôme_capacité_de_marchandise.png" data-original-title="" title="" aria-describedby="tooltip407474"/>
+                                            <img class="img-fluid o_we_custom_image" src="/digimoov_website_templates/static/img/conditions d'obtention de diplôme capacité de marchandise.webp" data-original-title="" title="" aria-describedby="tooltip407474"/>
                                             <section class="icon-round bg-alpha "/>
                                         </div>
                                         <h3 class="m-b-30 m-t-20 text-beta" style="text-align: center; ">
@@ -321,7 +265,7 @@
                                     <div class="card-body">
                                         <div class="icon-space">
                                             <section class="icon-round bg-alpha"/>
-                                            <img class="img-fluid o_we_custom_image lazy" data-src="/digimoov_website_templates/static/img/Les conditions administratives.webp" data-srcSafari="/digimoov_website_templates/static/img/examen/Jury pour la délibération.png" data-original-title="" title="" aria-describedby="tooltip306191" style=""/>
+                                            <img class="img-fluid o_we_custom_image" src="/digimoov_website_templates/static/img/Les conditions administratives.webp" data-original-title="" title="" aria-describedby="tooltip306191" style=""/>
                                             <section class="icon-round bg-alpha"/>
                                         </div>
                                         <h3 class="m-b-30 m-t-20 text-beta" style="text-align: center; ">
@@ -355,7 +299,7 @@
                                     <div class="card-body">
                                         <div class="icon-space">
                                             <section class="icon-round bg-alpha"/>
-                                            <img class="img-fluid o_we_custom_image lazy" data-src="/digimoov_website_templates/static/img/dossier d'inscription pour l'examen final.webp" data-srcSafari="/digimoov_website_templates/static/img/examen/dossier d'inscription pour l'examen final.png" title="" aria-describedby="tooltip409501" style=""/>
+                                            <img class="img-fluid o_we_custom_image" src="/digimoov_website_templates/static/img/dossier d'inscription pour l'examen final.webp" data-original-title="" title="" aria-describedby="tooltip409501" style=""/>
                                             <section class="icon-round bg-alpha"/>
                                         </div>
                                         <h3 class="m-b-30 m-t-20 text-beta" style="text-align: center; ">
@@ -366,20 +310,22 @@
                                         </h3>
                                         <p class="m-b-30 m-t-20 text-beta"/>
                                         <div style="text-align: justify;">
-                                            <span style="color: rgb(32, 38, 71); font-size: 16px; background-color: unset;">
-                                                La photocopie de la pièce d'identité ou d'un titre de séjour européen
+                                            <span style="font-size: 1rem; background-color: unset;">La photocopie de la
+                                                pièce
+                                                d'identité
+                                                ou d'un
+                                                titre de séjour européen
                                             </span>
-                                            <span style="color: rgb(32, 38, 71); font-size: 16px;">
-                                                <br/>
-                                                <br/>
-                                            </span>
-                                            <span style="color: rgb(32, 38, 71); font-size: 16px; background-color: unset;">
-                                                Une justification de domicile de moins de 3 mois
-                                            </span>
-                                            <span style="color: rgb(32, 38, 71); font-size: 16px;">&amp;nbsp;</span>
-                                            <br/>
                                         </div>
                                         <span style="font-size: 1rem; background-color: unset;">
+                                            <div style="text-align: justify;">
+                                                <span style="background-color: unset; font-size: 1rem;">Une
+                                                    justification de
+                                                    domicile de
+                                                    moins
+                                                    de 3 mois
+                                                </span>
+                                            </div>
                                         </span>
                                     </div>
                                 </section>
@@ -400,7 +346,7 @@
                             </div>
                             <div class="pb0 pt0 col-lg-3 offset-lg-3">
                                 <figure class="figure">
-                                    <img data-src="/digimoov_website_templates/static/img/Jury pour la délibération.webp" data-srcSafari="/digimoov_website_templates/static/img/examen/Jury.png" class="lazy figure-img img-fluid img-thumbnail padding-large rounded float-right" alt="Odoo • une photo avec une légende" data-original-title="" title="" aria-describedby="tooltip997559" style="transform: translateX(54.1%) translateY(6.2%) scaleX(1.35) scaleY(1.35);"/>
+                                    <img src="/digimoov_website_templates/static/img/Jury pour la délibération.webp" class="figure-img img-fluid img-thumbnail padding-large rounded float-right" alt="Odoo • une photo avec une légende" data-original-title="" title="" aria-describedby="tooltip997559" style="transform: translateX(54.1%) translateY(6.2%) scaleX(1.35) scaleY(1.35);"/>
                                     <figcaption class="figure-caption py-3 text-center">&amp;nbsp;</figcaption>
                                 </figure>
                             </div>
@@ -422,8 +368,8 @@
                         </div>
                     </div>
                 </section>
-                <section id="examen-fond-2" class="s_newsletter_block oe_img_bg o_animate pb40 pt40 o_anim_zoom_in oe_custom_bg" style="background-image: url(&quot;/digimoov_website_templates/static/img/fond.webp&quot;); animation-name: o_anim_zoom_in; visibility: visible; animation-play-state: paused; background-position: 75.48% 30.96%;" data-name="Newsletter block">
-                    <div class="container" id="nouvelle-tentative">
+                <section class="s_newsletter_block oe_img_bg o_animate pb40 pt40 o_anim_zoom_in oe_custom_bg" style="background-image: url(&quot;/digimoov_website_templates/static/img/fond.webp&quot;); animation-name: o_anim_zoom_in; visibility: visible; animation-play-state: paused; background-position: 75.48% 30.96%;" data-name="Newsletter block">
+                    <div class="container">
                         <div class="row">
                             <div class="bg-white-75 col-lg-12 pt16 pb16">
                                 <div class="text-center">
@@ -450,9 +396,14 @@
                                             <form action="/shop/cart/update" method="post">
                                                 <input type="hidden" class="product_id" name="product_id" t-att-value="echec_examen.id"/>
                                                 <td>
-                                                    <button type="submit" class="btn btn-alpha o_anim_fade_in_up o_animate" data-original-title="" title="" aria-describedby="tooltip906293" style="animation-name: o_anim_fade_in_up; visibility: visible; animation-play-state: paused;">
+                                                    <button type="submit" t-if="request.website.is_public_user()==False" class="btn btn-alpha o_anim_fade_in_up o_animate" data-original-title="" title="" aria-describedby="tooltip906293" style="animation-name: o_anim_fade_in_up; visibility: visible; animation-play-state: paused;">
                                                         Réservez votre tentative
                                                     </button>
+                                                    <t t-if="request.website.is_public_user()">
+                                                        <a role="button" id="sign_up" class="btn btn-alpha o_anim_fade_in_up o_animate" data-original-title="" title="" aria-describedby="tooltip906293" style="animation-name: o_anim_fade_in_up; visibility: visible; animation-play-state: paused;" t-attf-href="/web/signup?{{ keep_query() }}">
+                                                            S'inscrire
+                                                        </a>
+                                                    </t>
                                                 </td>
                                             </form>
                                         </t>
