@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="import_contact_schedulers" model="ir.cron">
-            <field name="name">Import Contact from AirCall</field>
-            <field name="user_id" ref="base.user_root"/>
-            <field name="model_id" ref="model_res_users" />
-            <field name="state">code</field>
-            <field name="active">1</field>
-            <field name="code">model.import_contacts()</field>
-            <field name="priority">1</field>
-            <field name="interval_number">1</field>
-            <field name="interval_type">minutes</field>
-            <field name="numbercall">-1</field>
-        </record>
-
+<!--    <record id="import_contact_schedulers" model="ir.cron">-->
+<!--            <field name="name">Import Contact from AirCall</field>-->
+<!--            <field name="user_id" ref="base.user_root"/>-->
+<!--            <field name="model_id" ref="model_res_users" />-->
+<!--            <field name="state">code</field>-->
+<!--            <field name="active">1</field>-->
+<!--            <field name="code">model.import_contacts()</field>-->
+<!--            <field name="priority">1</field>-->
+<!--            <field name="interval_number">1</field>-->
+<!--            <field name="interval_type">minutes</field>-->
+<!--            <field name="numbercall">-1</field>-->
+<!--        </record>-->
+        <!--  Import calls planned action ..executed every 1 minute  -->
         <record id="import_call_schedulers" model="ir.cron">
             <field name="name">Import Call records form AirCall</field>
             <field name="user_id" ref="base.user_root"/>
