@@ -31,6 +31,7 @@ class AirCall(models.Model):
     is_imp_tag = fields.Boolean(string="is aircall tag")
     air_call_tag = fields.Many2many(comodel_name="res.partner.category", relation="call_tags_relation", column1="call_tag_id", column2="call_id", string="Tags", )
     notes = fields.Text(strng="Notes", required=False)
+    company_id = fields.Many2one('res.company', string='Company', default=lambda self: self.env.company)
 
     def write(self,values):
         res = super(AirCall, self).write(values)

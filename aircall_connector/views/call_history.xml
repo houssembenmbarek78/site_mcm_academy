@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <data>
+<!--        View form of aircall call contains details of call -->
         <record id="call_detail_form" model="ir.ui.view">
             <field name="name">call.detail.form</field>
             <field name="model">call.detail</field>
@@ -44,6 +45,7 @@
                 </form>
             </field>
         </record>
+        <!--        View tree of aircall call contains details of call -->
         <record id="call_detail_tree" model="ir.ui.view">
             <field name="name">call.detail.tree</field>
             <field name="model">call.detail</field>
@@ -62,12 +64,12 @@
                 </tree>
             </field>
         </record>
-
+        <!--        View Kanban of aircall call contains details of call -->
         <record id="call_detail_kanban" model="ir.ui.view">
          <field name="name">call.detail.kanban</field>
           <field name="model">call.detail</field>
          <field name="arch" type="xml">
-            <kanban>
+            <kanban default_order="create_date">
                 <field name="call_contact"/>
                 <field name="phone_number"/>
                 <field name="call_direction"/>
@@ -117,7 +119,7 @@
          </kanban>
          </field>
         </record>
-
+        <!--        Action call history of specific contact -->
         <record id="call_detail_action" model="ir.actions.act_window">
             <field name="name">Call Details</field>
             <field name="type">ir.actions.act_window</field>
@@ -126,6 +128,7 @@
             <field name="view_mode">tree,form</field>
 
         </record>
+         <!--        Action call view kanban of aircall calls -->
          <record id="call_detail_action2" model="ir.actions.act_window">
             <field name="name">Call Details</field>
             <field name="type">ir.actions.act_window</field>
