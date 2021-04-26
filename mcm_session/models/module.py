@@ -52,7 +52,9 @@ class Module(models.Model):
     website_published = fields.Boolean('Publié en site web', default=True)
     contract_price=fields.Monetary('Prix Affiché en contrat',default=lambda self: self.product_id.list_price)
 
-
+    # Add relation between this class and 'info.examen' class
+    info_examen_id = fields.Many2one('info.examen')
+    
     @api.depends('duree')
     def _get_display_duration(self):
         for rec in self:
