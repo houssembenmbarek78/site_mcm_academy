@@ -19,6 +19,8 @@
     'data': [
         'security/ir.model.access.csv',
         'views/partner.xml',
+        'views/notes_examens_partner.xml',
+
     ],
     'qweb': [],
     'demo': [
