@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="inherit_digimoov_session_form" model="ir.ui.view">
+        <field name="name">digimoov.session.form</field>
+        <field name="model">mcmacademy.session</field>
+        <field name="inherit_id" ref="mcm_session.mcmacademy_session_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/header" position="after">
+                <div class="oe_button_box" name="button_box">
+                    <button class="oe_stat_button" type="object" name="get_list_of_partner_gagne"
+                            icon="fa-thumbs-o-up" >
+                        <field string="Client Gagné" name="clients_count" widget="statinfo"/>
+                    </button>
+                    <button class="oe_stat_button" type="object" name="get_list_of_partner_indecis"
+                            icon="fa-thumbs-o-down">
+                        <field string="Client Indécis" name="prospect_count" widget="statinfo"/>
+                    </button>
+                </div>
+            </xpath>
+            <xpath expr="//form/div/group/group[@name='dates']" position="inside">
+                <field name="adresse_examen"/>
+            </xpath>
+            <xpath expr="//form/div/group/group[@name='dates']" position="after">
+                <group string="Horaire">
+                    <field name="date_exam"/>
+                    <field name="temps_convocation"/>
+                    <field name="horaire_email" invisible="1"/>
+                    <field name="heure_examen_matin" string="Heure"
+                           attrs="{'invisible': [('temps_convocation', '=', 'apres_midi')]}"/>
+                    <field name="heure_examen_apres_midi" string="Heure"
+                           attrs="{'invisible': [('temps_convocation', '=', 'matin')]}"/>
+                    <field name="date_convocation"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <template id="digi_mcm_portal_digest_unsubscribed" inherit_id="digest.portal_digest_unsubscribed">
+        <xpath expr="//h3" position="replace">
+            <h3>Abonnements</h3>
+        </xpath>
+        <xpath expr="//p" position="replace">
+            <p>Vous avez bien été désabonné de notre newsletter
+                <strong t-field="digest.name"/>
+            </p>
+        </xpath>
+    </template>
+</odoo>
+
