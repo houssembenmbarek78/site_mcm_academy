@@ -39,7 +39,7 @@ class AccountMove(models.Model):
                 # rec.amount_untaxed = (rec.amount_untaxed * rec.pourcentage_acompte) / 100
                 rec.restamount = amount_untaxed_initiale - rec.amount_paye
                 # rec.amount_residual = rec.restamount
-                amount_residual_signed = rec.restamount
+                # amount_residual_signed = rec.restamount
                 print(rec.amount_total)
                 print(rec.amount_untaxed)
                 print(rec.restamount)
