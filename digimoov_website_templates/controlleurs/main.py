@@ -323,7 +323,7 @@ class Services(http.Controller):
                 'description':str(description),
                 'name':'Digimoov : '+ str( name),
                 'team_id': request.env['helpdesk.team'].sudo().search(
-                    [('name', 'like', 'Client'), ('company_id', "=", 1)],
+                    [('name', 'like', 'Client'), ('company_id', "=", 2)],
                     limit=1).id,
             }
             new_ticket = request.env['helpdesk.ticket'].sudo().create(
@@ -346,7 +346,7 @@ class Services(http.Controller):
                 'description': str(description),
                 'name': 'Digimoov : ' + str(name),
                 'team_id': request.env['helpdesk.team'].sudo().search(
-                    [('name', 'like', 'Admini'), ('company_id', "=", 1)],
+                    [('name', 'like', 'Admini'), ('company_id', "=", 2)],
                     limit=1).id,
             }
             new_ticket = request.env['helpdesk.ticket'].sudo().create(
@@ -359,7 +359,7 @@ class Services(http.Controller):
                 'description': str(description) ,
                 'name': 'Digimoov : ' + str(name),
                 'team_id': request.env['helpdesk.team'].sudo().search(
-                    [('name', 'like', 'Admini'), ('company_id', "=", 1)],
+                    [('name', 'like', 'Admini'), ('company_id', "=", 2)],
                     limit=1).id,
             }
             new_ticket = request.env['helpdesk.ticket'].sudo().create(
@@ -372,7 +372,7 @@ class Services(http.Controller):
                 'description': str(description),
                 'name': 'Digimoov : ' + str(name),
                 'team_id': request.env['helpdesk.team'].sudo().search(
-                    [('name', 'like', 'Compta'), ('company_id', "=", 1)],
+                    [('name', 'like', 'Compta'), ('company_id', "=", 2)],
                     limit=1).id,
             }
             new_ticket = request.env['helpdesk.ticket'].sudo().create(
@@ -385,7 +385,7 @@ class Services(http.Controller):
                 'description': str(description),
                 'name': 'Digimoov : ' + str(name),
                 'team_id': request.env['helpdesk.team'].sudo().search(
-                    [('name', 'like', 'gogique'), ('company_id', "=", 1)],
+                    [('name', 'like', 'gogique'), ('company_id', "=", 2)],
                     limit=1).id,
             }
             new_ticket = request.env['helpdesk.ticket'].sudo().create(
