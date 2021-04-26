@@ -82,7 +82,7 @@ class HelpdeskTicket(models.Model):
         rejected_mails = [
             '360learning','@zoom','calendly','no-reply','noreply','aircall','axeptio','@amazon',
             'uipath','dkv-euroservice.co','enjoy.eset.com','e.fiverr.com','paloaltonetworks.com',
-            'eset-nod32.fr','nordvpn.com','newsletter','modedigital.online','ovh','envato','codeur'
+            'eset-nod32.fr','nordvpn.com','newsletter','modedigital.online','ovh','envato','codeur','h5p'
         ]
         for rec in list_value:
             if any(email in rec['partner_email'] for email in rejected_mails):
