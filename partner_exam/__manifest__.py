@@ -17,6 +17,7 @@
     ],
     'description': "Rajout note d'examen de condidat ",
     'data': [
+        'security/ir.model.access.csv',
         'views/partner.xml',
     ],
     'qweb': [],
