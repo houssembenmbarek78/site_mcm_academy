@@ -461,7 +461,7 @@ class CustomerPortal(CustomerPortal):
                 'partner_id': False,
                 'description': '%s a envoyé ses documents ' % (partner_id.name),
                 'name': 'News : Documents reçu',
-                'team_id': request.env['helpdesk.team'].sudo().search([('name', 'like', _('Documents'))],
+                'team_id': request.env['helpdesk.team'].sudo().search([('name', 'like', _('Documents')),('company_id',"=",1)],
                                                                       limit=1).id,
 
             }
