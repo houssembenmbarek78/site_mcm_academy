@@ -13,6 +13,19 @@
                     </div>
                 </div>
             </xpath>
+                        <xpath expr="//page[last()]" position="after">
+                <page name="note_exam" string="Examen">
+                            <field name="note_exam_id"/>
+                </page>
+            </xpath>
+
+            <div name="button_box" position="inside">
+                <button class="oe_stat_button" context="{'search_default_partner_id': active_id}" type="object"
+                        name="get_notes_history"
+                        icon="fa-book">
+                    <field string="Notes" name="note_exam_count" widget="statinfo"/>
+                </button>
+            </div>
         </field>
     </record>
 </odoo>
