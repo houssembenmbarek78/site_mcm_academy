@@ -20,7 +20,7 @@
         'security/ir.model.access.csv',
         'views/partner.xml',
         'views/notes_examens_partner.xml',
-
+        'views/add_signature.xml',
     ],
     'qweb': [],
     'demo': [
