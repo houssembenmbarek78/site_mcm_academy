@@ -5,17 +5,22 @@
             <field name="name">Examen Informations</field>
             <field name="res_model">info.examen</field>
             <field name="view_mode">tree,form</field>
+            <!--            <field name="search_view_id" ref="info_examen_view_search"/>-->
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">Create the first Information</p>
             </field>
         </record>
 
-        <!-- Form View -->
+        <!-- Views -->
         <record id="notes_des_examens_form" model="ir.ui.view">
             <field name="name">info.examen.form</field>
             <field name="model">info.examen</field>
             <field name="arch" type="xml">
                 <form string="Notes des examens Form">
+                    <!--<header>
+                        <button name="action_get_attachment" string="Generate Attachment" type="object"/>
+                        <button name="action_send_email" string="Send by email" type="object"/>
+                    </header>-->
                     <sheet>
                         <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
                                 attrs="{'invisible': [('active', '=', True)]}"/>
@@ -53,17 +58,17 @@
                 </form>
             </field>
         </record>
-        <!-- Tree View -->
+
         <record id="collecte_info_tree_view" model="ir.ui.view">
             <field name="name">info.examen.tree</field>
             <field name="model">info.examen</field>
             <field name="arch" type="xml">
-                <tree string="Notes des examens Tree" decoration-danger="(presence == 'Absent')" default_order="create_date desc">
+                <tree string="Notes des examens Tree" default_order="create_date desc">
                     <field name="partner_id"/>
                     <field name="date_exam"/>
-                    <field name="epreuve_a" avg="Moy.QCM" />
-                    <field name="epreuve_b" avg="Moy.QRO" />
-                    <field name="moyenne_generale" avg="Moy.G"/>
+                    <field name="epreuve_a"/>
+                    <field name="epreuve_b"/>
+                    <field name="moyenne_generale"/>
                     <field name="mention"/>
                     <field name="resultat"/>
                     <field name="presence"/>
@@ -71,7 +76,7 @@
                 </tree>
             </field>
         </record>
-        <!-- Searsh View -->
+
         <record id="info_examen_view_search" model="ir.ui.view">
             <field name="name">info.examen.search</field>
             <field name="model">info.examen</field>
@@ -85,10 +90,6 @@
                     <filter name="active" string="Active" domain="[('active', '=', True)]"/>
                     <separator/>
                     <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
-                    <group expand="1" string="Group By">
-                    <filter string="Résultat" name="resultat" context="{'group_by':'resultat'}"/>
-                    <filter string="Présence" name="presence" context="{'group_by':'presence'}"/>
-                    </group>
                 </search>
             </field>
         </record>
