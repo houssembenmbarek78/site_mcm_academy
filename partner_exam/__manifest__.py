@@ -12,6 +12,8 @@
     'depends': [
         'base',
         'mcm_session',
+        'contacts',
+        'auto_mass_mailing_marketing',
     ],
     'description': "Rajout note d'examen de condidat ",
     'data': [
