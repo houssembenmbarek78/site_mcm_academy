@@ -21,6 +21,10 @@
         'views/partner.xml',
         'views/notes_examens_partner.xml',
         'views/add_signature.xml',
+        'report/generation_covocation_en_pdf.xml',
+        'report/menu.xml',
+        'report/generate_releve_de_notes.xml',
+        'report/convocation_contact.xml',
     ],
     'qweb': [],
     'demo': [

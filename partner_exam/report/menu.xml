@@ -1,5 +1,5 @@
 <odoo>
-    <!--    This is used to reformat paper format of report PDF Convocation-->
+<!--    This is used to reformat paper format of report PDF Convocation-->
     <record id="paperformat_convocation" model="report.paperformat">
         <field name="name">Convocation</field>
         <field name="default" eval="False"/>
@@ -16,7 +16,17 @@
         <field name="dpi">90</field>
     </record>
 
-    <!--    This report action create a print pdf for "convocation", using the template(xml) ID in contact view-->
+<!--    <report id="convocation_print_report_pdf'"
+            string="Convocation"
+            model="mailing.contact"
+            report_type="qweb-pdf"
+            name="partner_exam.id_convocation_print_report_pdf"
+            file="partner_exam.convocation_print_report_pdf"
+            attachment_use="True"
+            print_report_name="'Convocation - %s' % (object.partner_id.name).replace('/', '')"
+            paperformat="partner_exam.paperformat_convocation"
+    />-->
+
     <report id="id_convocation_print_report_pdf_ids'"
             string="Convocation"
             model="res.partner"
@@ -24,7 +34,7 @@
             name="partner_exam.id_convocation_print_report_pdf_ids"
             file="partner_exam.id_convocation_print_report_pdf_ids"
             attachment_use="True"
-            print_report_name="'Convocation- %s' % (object.name).replace('/', '')"
+            print_report_name="'Convocation - %s' % (object.name).replace('/', '')"
             paperformat="partner_exam.paperformat_convocation"
     />
 
@@ -45,7 +55,7 @@
         <field name="dpi">90</field>
     </record>
 
-    <!--    This is the action to create a print pdf for "relevé de note", using the template(xml) ID-->
+<!--    This is the action to create a print pdf for "relevé de note", using the template(xml) ID-->
     <report id="report_releve_note_id"
             model="res.partner"
             string="Relevé de notes"
@@ -56,25 +66,13 @@
             print_report_name="'Relevé de notes - %s' % (object.name).replace('/', '')"
             paperformat="partner_exam.paperformat_releve_note_id"/>
 
-    <!--    This is the action to create a print pdf for "Générer les relevés de notes", using the template(xml) ID-->
-    <report id="report_releve_note_ids"
+<!--    <report id="id_releve_note_ajournement_pdf_id"
             model="res.partner"
-            string="Générer les relevés de notes"
+            string="Relevé de note D'ajournement"
             report_type="qweb-pdf"
-            name="partner_exam.id_many_releve_note_print_report_pdf"
-            file="partner_exam.report_releve_note_id"
-            menu="True"
-            print_report_name="'Relevé-de-notes %s' % (object.name).replace('/', '')"
-            paperformat="partner_exam.paperformat_releve_note_id"/>
-    <!-- This is the action to create a print pdf in module info.examen for "Générer les relevés de notes", using the template(xml) ID-->
-    <report id="mass_pdf_relevé_de_note_examen"
-            model="info.examen"
-            string="Générer les relevés de notes"
-            report_type="qweb-pdf"
-            name="partner_exam.mass_pdf_relevé_de_note_examen_ids"
-            file="partner_exam.mass_pdf_relevé_de_note_examen"
-            menu="True"
-            print_report_name="'Relevé-de-notes- %s' % (object.partner_id.name).replace('/', '')"
-            paperformat="partner_exam.paperformat_releve_note_id"/>
+            name="partner_exam.id_releve_note_ajournement_id"
+            file="partner_exam.id_releve_note_ajournement_pdf_id"
+            menu="False"
+            paperformat="partner_exam.paperformat_releve_note_id"/>-->
 
 </odoo>
