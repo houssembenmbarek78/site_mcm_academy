@@ -302,6 +302,7 @@ class Services(http.Controller):
             name_company=kwargs.get('name_company')
         service=kwargs.get('service')
         user = http.request.env['res.users'].sudo().search([('login',"=",str(email_from))],limit=1)
+
         if not user:
             user = request.env['res.users'].sudo().create({
                 'name': str(contact_name) + " " + str(contact_last_name),
@@ -316,6 +317,10 @@ class Services(http.Controller):
             })
         if user and name_company:
             user.partner_id.company_name=name_company
+        if user:
+            ticket = request.env['helpdesk.ticket'].sudo().search([('name', "=", name),('partner_id',"=",user.partner_id.id),('description',"=",str(description),)], limit=1)
+            if ticket:
+                return request.redirect('/contact')
         if service == 'client':
             vals = {
                 'partner_email': str(email_from),
