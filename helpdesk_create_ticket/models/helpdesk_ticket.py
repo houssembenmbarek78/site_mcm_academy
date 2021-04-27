@@ -85,9 +85,15 @@ class HelpdeskTicket(models.Model):
             'eset-nod32.fr','nordvpn.com','newsletter','modedigital.online','ovh','envato','codeur','h5p'
             'facebook','google',' @caissedesdepots','@digimoov.fr','@mcm-academy.fr'
         ]
+        rejected_subject = [
+            'nouveau ticket','assigné à vous',
+        ]
         for rec in list_value:
             if any(email in rec['partner_email'] for email in rejected_mails):
                 _logger.error("%s is a rejected mail",rec['partner_email'])
+        for rec in list_value:
+            if any(name in rec['name'] for name in rejected_subject):
+                _logger.error("%s is a rejected mail",rec['name'])
         tickets = super(HelpdeskTicket, self).create(list_value)
         for rec in list_value:
             if 'partner_id' in rec:
