@@ -318,7 +318,8 @@ class Services(http.Controller):
         if user and name_company:
             user.partner_id.company_name=name_company
         if user:
-            ticket = request.env['helpdesk.ticket'].sudo().search([('name', "=", name),('partner_id',"=",user.partner_id.id),('description',"=",str(description),)], limit=1)
+            ticket_name = 'Digimoov : '+ str( name)
+            ticket = request.env['helpdesk.ticket'].sudo().search([('name', "=", ticket_name),('partner_id',"=",user.partner_id.id),('description',"=",str(description),)], limit=1)
             if ticket:
                 return request.redirect('/contact')
         if service == 'client':
