@@ -86,7 +86,7 @@ class HelpdeskTicket(models.Model):
             'facebook','google',' @caissedesdepots','@digimoov.fr','@mcm-academy.fr'
         ]
         rejected_subject = [
-            'nouveau ticket','assigné à vous',
+            'nouveau ticket','assigné à vous','assigned to you'
         ]
         for rec in list_value:
             if any(email in rec['partner_email'] for email in rejected_mails):
