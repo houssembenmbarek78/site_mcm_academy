@@ -87,7 +87,7 @@ class HelpdeskTicket(models.Model):
         ]
         for rec in list_value:
             if any(email in rec['partner_email'] for email in rejected_mails):
-                sys.exit()
+                _logger.error("%s is a rejected mail",rec['partner_email'])
         tickets = super(HelpdeskTicket, self).create(list_value)
         for rec in list_value:
             if 'partner_id' in rec:
