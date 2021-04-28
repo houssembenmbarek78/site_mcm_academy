@@ -107,6 +107,11 @@ class HelpdeskTicket(models.Model):
                     partner = self.env['res.partner'].sudo().search([('id', "=", rec['partner_id'])])
                     if partner:
                         partner.sudo().unlink()
+        for ticket in tickets:
+            if 'caissedesdepots' in ticket.partner_email:
+                team = self.env['helpdesk.team'].sudo().search([('name', 'like', 'Compta'), ('company_id', "=", ticket.company_id.id)],limit=1)
+                if team:
+                    ticket.team_id=team.id
         return tickets
 
     def write(self, vals):
