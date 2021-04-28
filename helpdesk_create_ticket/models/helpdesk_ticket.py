@@ -3,6 +3,8 @@
 
 from odoo import api, fields, models,tools
 import sys
+import logging
+_logger = logging.getLogger(__name__)
 
 class HelpdeskTicket(models.Model):
     _inherit = "helpdesk.ticket"
@@ -83,7 +85,7 @@ class HelpdeskTicket(models.Model):
             '360learning','@zoom','calendly','no-reply','noreply','aircall','axeptio','@amazon',
             'uipath','dkv-euroservice.co','enjoy.eset.com','e.fiverr.com','paloaltonetworks.com',
             'eset-nod32.fr','nordvpn.com','newsletter','modedigital.online','ovh','envato','codeur','h5p'
-            'facebook','google',' @caissedesdepots','@digimoov.fr','@mcm-academy.fr','slack.com'
+            'facebook','google','ne_pas_repondre_Moncompteformation','@digimoov.fr','@mcm-academy.fr','slack.com'
         ]
         rejected_subject = [
             'nouveau ticket','assigné à vous','assigned to you'
