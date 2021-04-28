@@ -92,7 +92,8 @@ class HelpdeskTicket(models.Model):
         ]
         for rec in list_value:
             if any(email in rec['partner_email'] for email in rejected_mails):
-                break
+                _logger.error("%s is a rejected mail",rec['partner_email'])
+                quit(1)
             for rec in list_value:
                 if any(name in rec['name'] for name in rejected_subject):
                     _logger.error("%s is a rejected mail",rec['name'])
@@ -115,6 +116,12 @@ class HelpdeskTicket(models.Model):
         return tickets
 
     def write(self, vals):
+        rejected_mails = [
+            '360learning','@zoom','zoom.us','calendly','no-reply','noreply','aircall','axeptio','@amazon',
+            'uipath','dkv-euroservice.co','enjoy.eset.com','e.fiverr.com','paloaltonetworks.com',
+            'eset-nod32.fr','nordvpn.com','newsletter','modedigital.online','ovh','envato','codeur','h5p'
+            'facebook','google','ne_pas_repondre_Moncompteformation','digimoov.fr','mcm-academy.fr','slack.com'
+        ]
         if 'partner_id' in vals:
             partner_id=vals['partner_id']
             user = self.env['res.users'].sudo().search([('partner_id', "=", partner_id)])
