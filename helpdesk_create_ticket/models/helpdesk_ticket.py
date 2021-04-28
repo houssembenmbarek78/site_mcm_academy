@@ -82,10 +82,10 @@ class HelpdeskTicket(models.Model):
     @api.model_create_multi
     def create(self, list_value):
         rejected_mails = [
-            '360learning','@zoom','calendly','no-reply','noreply','aircall','axeptio','@amazon',
+            '360learning','@zoom','zoom.us','calendly','no-reply','noreply','aircall','axeptio','@amazon',
             'uipath','dkv-euroservice.co','enjoy.eset.com','e.fiverr.com','paloaltonetworks.com',
             'eset-nod32.fr','nordvpn.com','newsletter','modedigital.online','ovh','envato','codeur','h5p'
-            'facebook','google','ne_pas_repondre_Moncompteformation','@digimoov.fr','@mcm-academy.fr','slack.com'
+            'facebook','google','ne_pas_repondre_Moncompteformation','digimoov.fr','mcm-academy.fr','slack.com'
         ]
         rejected_subject = [
             'nouveau ticket','assigné à vous','assigned to you'
@@ -123,6 +123,7 @@ class HelpdeskTicket(models.Model):
                 if partner:
                     partner.sudo().unlink()
                     vals['partner_id']=False
+
         return super(HelpdeskTicket, self).write(vals)
 
 
