@@ -92,26 +92,26 @@ class HelpdeskTicket(models.Model):
         ]
         for rec in list_value:
             if any(email in rec['partner_email'] for email in rejected_mails):
-                _logger.error("%s is a rejected mail",rec['partner_email'])
-        for rec in list_value:
-            if any(name in rec['name'] for name in rejected_subject):
-                _logger.error("%s is a rejected mail",rec['name'])
-        tickets = super(HelpdeskTicket, self).create(list_value)
-        for rec in list_value:
-            if 'partner_id' in rec:
-                if rec['partner_id']:
-                    user = self.env['res.users'].sudo().search([('partner_id', "=", rec['partner_id'])])
-                else:
-                    user = self.env['res.users'].sudo().search([('login', "=", rec['partner_email'])])
-                if not user:
-                    partner = self.env['res.partner'].sudo().search([('id', "=", rec['partner_id'])])
-                    if partner:
-                        partner.sudo().unlink()
-        for ticket in tickets:
-            if 'caissedesdepots' in ticket.partner_email:
-                team = self.env['helpdesk.team'].sudo().search([('name', 'like', 'Compta'), ('company_id', "=", ticket.company_id.id)],limit=1)
-                if team:
-                    ticket.team_id=team.id
+                break
+            for rec in list_value:
+                if any(name in rec['name'] for name in rejected_subject):
+                    _logger.error("%s is a rejected mail",rec['name'])
+            tickets = super(HelpdeskTicket, self).create(list_value)
+            for rec in list_value:
+                if 'partner_id' in rec:
+                    if rec['partner_id']:
+                        user = self.env['res.users'].sudo().search([('partner_id', "=", rec['partner_id'])])
+                    else:
+                        user = self.env['res.users'].sudo().search([('login', "=", rec['partner_email'])])
+                    if not user:
+                        partner = self.env['res.partner'].sudo().search([('id', "=", rec['partner_id'])])
+                        if partner:
+                            partner.sudo().unlink()
+            for ticket in tickets:
+                if 'caissedesdepots' in ticket.partner_email:
+                    team = self.env['helpdesk.team'].sudo().search([('name', 'like', 'Compta'), ('company_id', "=", ticket.company_id.id)],limit=1)
+                    if team:
+                        ticket.team_id=team.id
         return tickets
 
     def write(self, vals):
