@@ -295,10 +295,10 @@
 <!--                </table>-->
             </xpath>
             <xpath expr="//table[@name='invoice_line_table']" position="after">
-                <table style="width: 100% ;border-color:#000" name="Acount_Client" t-if="o.type_facture=='interne'">
+                <table style="width: 100% ;border-color:#000" name="Acount_Client" t-if="o.type_facture=='interne' and o.pourcentage_acompte !=0">
                                 <tr>
                                     <td class="text-center"
-                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px">
+                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" t-if="o.type_facture=='interne' and o.pourcentage_acompte !=0">
                                         Acompte :
                                     </td>
                                      <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
@@ -325,6 +325,15 @@
                             <table style="margin-bottom: 1rem;border-color:#000" name="total">
                                 <tr>
                                     <td class="text-left"
+                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" >
+                                        Total HT
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black; padding: 5px" >
+                                        <span t-field="o.amount_untaxed" t-if="o.type_facture=='interne'"/>
+                                        <span t-field="o.invoice_line_ids.price_unit" t-if="o.type_facture=='web'"/>
+                                    </td>
+                                    <tr>
+                                    <td class="text-left"
                                         style="background-color: #E8E8E8; border: 1px solid black; padding: 5px">
                                         Prestations de formation en exonération de TVA, article 261-
                                         4-4 du CGI
@@ -334,11 +343,13 @@
                                             <span t-field="o.amount_tax"/>
                                         </strong>
 
+
                                     </td>
+                                    </tr>
                                     <tr t-if="o.type_facture=='web'">
                                     <td class="text-left"
                                         style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" >
-                                        Total HT
+                                        Total
                                     </td>
                                     <td class="text-left" style="border: 1px solid black; padding: 5px" t-if="o.type_facture=='web'">
                                         <span t-field="o.amount_total" t-if="o.type_facture=='web'"/>
@@ -359,14 +370,15 @@
 <!--                                        </strong>-->
 <!--                                    </td>-->
 
-                                <tr>
+                                <tr t-if="o.type_facture=='interne'" >
                                     <td class="text-left"
                                         style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" t-if="o.type_facture=='interne'" >
-                                        <strong>Montant restant à encaisser:</strong>
+                                        <strong >Total</strong>
                                     </td>
-                                    <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px" t-if="o.type_facture=='interne'">
+                                    <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
                                         <strong>
-                                            <span t-field="o.restamount" t-if="o.type_facture=='interne'"/>
+                                            <span t-field="o.restamount" t-if="o.type_facture=='interne' and o.pourcentage_acompte != 0"/>
+                                             <span t-field="o.amount_total" t-if="o.type_facture=='interne' and o.pourcentage_acompte == 0"/>
                                         </strong>
                                     </td>
                                 </tr>
@@ -404,7 +416,7 @@
                     </div>
                 </div>
             </xpath>
-            <xpath expr="//div[hasclass('page')]//p[2]" position="replace">
+            <xpath expr="//div[hasclass('page')]//p[3]" position="replace">
                 <div id="total" class="row">
                     <div class="col-3">
                     </div>
@@ -479,12 +491,11 @@
                     </div>
                 </div>
             </xpath>
-
-            <!--            <xpath expr="//div[hasclass('page')]//p[4]" position="replace">-->
-            <!--                <p t-if="o.fiscal_position_id.note" name="note">-->
-            <!--                    <span></span>-->
-            <!--                </p>-->
-            <!--            </xpath>-->
+<!--            <xpath expr="//div[hasclass('page')]//p[4]" position="replace">-->
+<!--                            <p t-if="o.fiscal_position_id.note" name="note">-->
+<!--                                <span></span>-->
+<!--                            </p>-->
+<!--            </xpath>-->
             <xpath expr="//div[@id='qrcode']" position="replace">
                 <div id="qrcode"
                      t-if="(o.company_id.qr_code) and (o.currency_id.name == 'EUR') and (o.invoice_partner_bank_id.acc_number != False)">
