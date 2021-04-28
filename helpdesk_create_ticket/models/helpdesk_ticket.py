@@ -93,7 +93,7 @@ class HelpdeskTicket(models.Model):
         for rec in list_value:
             if any(email in rec['partner_email'] for email in rejected_mails):
                 _logger.error("%s is a rejected mail",rec['partner_email'])
-                quit(1)
+                sys.exit(1)
             for rec in list_value:
                 if any(name in rec['name'] for name in rejected_subject):
                     _logger.error("%s is a rejected mail",rec['name'])
