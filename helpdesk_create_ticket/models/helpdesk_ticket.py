@@ -125,4 +125,5 @@ class HelpdeskTicket(models.Model):
         for ticket in tickets:
             if any(name in rec['name'] for name in rejected_subject):
                 ticket.sudo().unlink()
+        return tickets
 
