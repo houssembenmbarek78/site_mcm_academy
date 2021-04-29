@@ -81,47 +81,25 @@ class HelpdeskTicket(models.Model):
 
     @api.model_create_multi
     def create(self, list_value):
-        rejected_mails = [
-            '360learning','@zoom','zoom.us','calendly','no-reply','noreply','aircall','axeptio','@amazon',
-            'uipath','dkv-euroservice.co','enjoy.eset.com','e.fiverr.com','paloaltonetworks.com',
-            'eset-nod32.fr','nordvpn.com','newsletter','modedigital.online','ovh','envato','codeur','h5p'
-            'facebook','google','ne_pas_repondre_Moncompteformation','digimoov.fr','mcm-academy.fr','slack.com'
-        ]
-        rejected_subject = [
-            'nouveau ticket','assigné à vous','assigned to you'
-        ]
+        tickets = super(HelpdeskTicket, self).create(list_value)
         for rec in list_value:
-            if any(email in rec['partner_email'] for email in rejected_mails):
-                _logger.error("%s is a rejected mail",rec['partner_email'])
-                break
-                for rec in list_value:
-                    if any(name in rec['name'] for name in rejected_subject):
-                        _logger.error("%s is a rejected mail",rec['name'])
-                tickets = super(HelpdeskTicket, self).create(list_value)
-                for rec in list_value:
-                    if 'partner_id' in rec:
-                        if rec['partner_id']:
-                            user = self.env['res.users'].sudo().search([('partner_id', "=", rec['partner_id'])])
-                        else:
-                            user = self.env['res.users'].sudo().search([('login', "=", rec['partner_email'])])
-                        if not user:
-                            partner = self.env['res.partner'].sudo().search([('id', "=", rec['partner_id'])])
-                            if partner:
-                                partner.sudo().unlink()
-                for ticket in tickets:
-                    if 'caissedesdepots' in ticket.partner_email:
-                        team = self.env['helpdesk.team'].sudo().search([('name', 'like', 'Compta'), ('company_id', "=", ticket.company_id.id)],limit=1)
-                        if team:
-                            ticket.team_id=team.id
+            if 'partner_id' in rec:
+                if rec['partner_id']:
+                    user = self.env['res.users'].sudo().search([('partner_id', "=", rec['partner_id'])])
+                else:
+                    user = self.env['res.users'].sudo().search([('login', "=", rec['partner_email'])])
+                if not user:
+                    partner = self.env['res.partner'].sudo().search([('id', "=", rec['partner_id'])])
+                    if partner:
+                        partner.sudo().unlink()
+        for ticket in tickets:
+            if 'caissedesdepots' in ticket.partner_email:
+                team = self.env['helpdesk.team'].sudo().search([('name', 'like', 'Compta'), ('company_id', "=", ticket.company_id.id)],limit=1)
+                if team:
+                    ticket.team_id=team.id
         return tickets
 
     def write(self, vals):
-        rejected_mails = [
-            '360learning','@zoom','zoom.us','calendly','no-reply','noreply','aircall','axeptio','@amazon',
-            'uipath','dkv-euroservice.co','enjoy.eset.com','e.fiverr.com','paloaltonetworks.com',
-            'eset-nod32.fr','nordvpn.com','newsletter','modedigital.online','ovh','envato','codeur','h5p'
-            'facebook','google','ne_pas_repondre_Moncompteformation','digimoov.fr','mcm-academy.fr','slack.com'
-        ]
         if 'partner_id' in vals:
             partner_id=vals['partner_id']
             user = self.env['res.users'].sudo().search([('partner_id', "=", partner_id)])
@@ -131,6 +109,20 @@ class HelpdeskTicket(models.Model):
                     partner.sudo().unlink()
                     vals['partner_id']=False
 
-        return super(HelpdeskTicket, self).write(vals)
-
+        tickets = super(HelpdeskTicket, self).write(vals)
+        rejected_mails = [
+            '360learning','@zoom','zoom.us','calendly','no-reply','noreply','aircall','axeptio','@amazon',
+            'uipath','dkv-euroservice.co','enjoy.eset.com','e.fiverr.com','paloaltonetworks.com',
+            'eset-nod32.fr','nordvpn.com','newsletter','modedigital.online','ovh','envato','codeur','h5p'
+            'facebook','google','ne_pas_repondre_Moncompteformation','digimoov.fr','mcm-academy.fr','slack.com'
+        ]
+        rejected_subject = [
+            'nouveau ticket','assigné à vous','assigned to you'
+        ]
+        for ticket in tickets:
+            if any(email in ticket.partner_email for email in rejected_mails):
+                ticket.sudo().unlink()
+        for ticket in tickets:
+            if any(name in rec['name'] for name in rejected_subject):
+                ticket.sudo().unlink()
 
