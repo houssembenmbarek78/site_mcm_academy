@@ -109,20 +109,20 @@ class HelpdeskTicket(models.Model):
                     partner.sudo().unlink()
                     vals['partner_id']=False
 
-        tickets = super(HelpdeskTicket, self).write(vals)
-        rejected_mails = [
-            '360learning','@zoom','zoom.us','calendly','no-reply','noreply','aircall','axeptio','@amazon',
-            'uipath','dkv-euroservice.co','enjoy.eset.com','e.fiverr.com','paloaltonetworks.com',
-            'eset-nod32.fr','nordvpn.com','newsletter','modedigital.online','ovh','envato','codeur','h5p'
-            'facebook','google','ne_pas_repondre_Moncompteformation','digimoov.fr','mcm-academy.fr','slack.com'
-        ]
-        rejected_subject = [
-            'nouveau ticket','assigné à vous','assigned to you'
-        ]
-        for ticket in tickets:
-            if any(email in ticket.partner_email for email in rejected_mails):
-                ticket.sudo().unlink()
-        for ticket in tickets:
-            if any(name in rec['name'] for name in rejected_subject):
-                ticket.sudo().unlink()
+        return super(HelpdeskTicket, self).write(vals)
+        # rejected_mails = [
+        #     '360learning','@zoom','zoom.us','calendly','no-reply','noreply','aircall','axeptio','@amazon',
+        #     'uipath','dkv-euroservice.co','enjoy.eset.com','e.fiverr.com','paloaltonetworks.com',
+        #     'eset-nod32.fr','nordvpn.com','newsletter','modedigital.online','ovh','envato','codeur','h5p'
+        #     'facebook','google','ne_pas_repondre_Moncompteformation','digimoov.fr','mcm-academy.fr','slack.com'
+        # ]
+        # rejected_subject = [
+        #     'nouveau ticket','assigné à vous','assigned to you'
+        # ]
+        # for ticket in tickets:
+        #     if any(email in ticket.partner_email for email in rejected_mails):
+        #         ticket.sudo().unlink()
+        # for ticket in tickets:
+        #     if any(name in rec['name'] for name in rejected_subject):
+        #         ticket.sudo().unlink()
 
