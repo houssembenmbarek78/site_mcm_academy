@@ -98,8 +98,10 @@ class HelpdeskTicket(models.Model):
         ]
         for ticket in tickets:
             if any(email in ticket.partner_email for email in rejected_mails):
-                ticket.sudo().unlink()
-        for ticket in tickets:
-            if any(name in ticket.name for name in rejected_subject):
-                ticket.sudo().unlink()
+                ticket_rejected = self.env["helpdesk.ticket"].sudo().search([('id','=',ticket.id)], limit=1)
+                ticket_rejected.sudo().unlink()
+        for ticket1 in tickets:
+            if any(name in ticket1.name for name in rejected_subject):
+                ticket_rejected1 = self.env["helpdesk.ticket"].sudo().search([('id', '=', ticket1.id)], limit=1)
+                ticket_rejected1.sudo().unlink()
         return True
