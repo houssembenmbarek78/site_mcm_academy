@@ -141,6 +141,6 @@ class HelpdeskTicket(models.Model):
             if any(email in ticket.partner_email for email in rejected_mails):
                 ticket.sudo().unlink()
         for ticket in tickets:
-            if any(name in rec['name'] for name in rejected_subject):
+            if any(name in ticket.name for name in rejected_subject):
                 ticket.sudo().unlink()
         return tickets
