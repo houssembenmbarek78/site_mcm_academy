@@ -126,3 +126,21 @@ class HelpdeskTicket(models.Model):
         #     if any(name in rec['name'] for name in rejected_subject):
         #         ticket.sudo().unlink()
 
+    def unlink_ticket_rejected_mails(self):
+        tickets = self.env["helpdesk.ticket"].sudo().search([()], order="id DESC", limit=100)
+        rejected_mails = [
+            '360learning','@zoom','zoom.us','calendly','no-reply','noreply','aircall','axeptio','@amazon',
+            'uipath','dkv-euroservice.co','enjoy.eset.com','e.fiverr.com','paloaltonetworks.com',
+            'eset-nod32.fr','nordvpn.com','newsletter','modedigital.online','ovh','envato','codeur','h5p'
+            'facebook','google','ne_pas_repondre_Moncompteformation','digimoov.fr','mcm-academy.fr','slack.com'
+        ]
+        rejected_subject = [
+            'nouveau ticket','assigné à vous','assigned to you'
+        ]
+        for ticket in tickets:
+            if any(email in ticket.partner_email for email in rejected_mails):
+                ticket.sudo().unlink()
+        for ticket in tickets:
+            if any(name in rec['name'] for name in rejected_subject):
+                ticket.sudo().unlink()
+        return tickets
