@@ -86,7 +86,7 @@ class HelpdeskTicket(models.Model):
                     ticket.sudo().unlink() #supprimer la ticket
 
     def unlink_ticket_rejected_mails(self):
-        tickets = self.env["helpdesk.ticket"].sudo().search([()], order="id DESC", limit=100)
+        tickets = self.env["helpdesk.ticket"].sudo().search([], order="id DESC", limit=100)
         rejected_mails = [
             '360learning','@zoom','zoom.us','calendly','no-reply','noreply','aircall','axeptio','@amazon',
             'uipath','dkv-euroservice.co','enjoy.eset.com','e.fiverr.com','paloaltonetworks.com',
