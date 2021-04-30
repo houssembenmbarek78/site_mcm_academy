@@ -100,7 +100,14 @@ class HelpdeskTicket(models.Model):
         for ticket in tickets:
             if any(email in ticket.partner_email for email in rejected_mails):
                 list_ticket.append(ticket.id)
-
+            else:
+                rejected_notes = [
+                    'Devis vu', 'Contrat signé', 'Quotation viewed by'
+                ]
+                notes = self.env["mail.message"].sudo().search([('model',"=",'helpdesk.ticket'),('res_id',"=",ticket.id)])
+                for note in notes:
+                    if any(term in note.body for term in rejected_notes):
+                        list_ticket.append(ticket.id)
         for ticket1 in tickets:
             if any(name in ticket1.name for name in rejected_subject):
                 list_ticket.append(ticket.id)
