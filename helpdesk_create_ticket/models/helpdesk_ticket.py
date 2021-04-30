@@ -51,34 +51,37 @@ class HelpdeskTicket(models.Model):
         return super(HelpdeskTicket, self).write(vals)
 
     def unlink_ticket_rejected_mails(self):
-        tickets = self.env["helpdesk.ticket"].sudo().search([], order="id DESC", limit=100)
+        tickets = self.env["helpdesk.ticket"].sudo().search([], order="id DESC", limit=100) # récupérer les 100 derniers tickets créers 
+        # list des terms ou emails rejetés ( supprimer les tickets envoyés par ces emails )
         rejected_mails = [
-            'no-reply@360learning.com','no-reply@zoom.us','notifications@calendly.com','product-feedback@calendly.com','no-reply','customermarketing@aircall.io','newsletter@axeptio.eu','order-update@amazon.fr',
+            'no-reply@360learning.com','@zoom.us','notifications@calendly.com','product-feedback@calendly.com','no-reply','customermarketing@aircall.io','newsletter@axeptio.eu','order-update@amazon.fr',
             'uipath@discoursemail.com','info@dkv-euroservice.com','serviceclient@enjoy.eset.com','noreply@e.fiverr.com','hello@emails.paloaltonetworks.com',
             'francois.g@eset-nod32.fr','support@nordvpn.com','noreply@jotform.com','newsletter','communication@modedigital.online','support@ovh.com','do-not-reply@market.envato.com','cody@codeur.com','svein-tore.griff@joubel.com',
             'h5p','security@mail.instagram.com','notification@facebookmail.com','advertise-noreply@support.facebook.com','google','ne_pas_repondre_Moncompteformation','digimoov.fr','mcm-academy.fr','slack.com'
         ]
+        # list des terms  rejetés ( supprimer les tickets qui ont l'un de ces terms comme objet )
         rejected_subject = [
             'nouveau ticket','assigné à vous','assigned to you'
         ]
-        list_ticket=[]
-        for ticket in tickets:
-            if any(email in ticket.partner_email for email in rejected_mails):
-                list_ticket.append(ticket.id)
+        list_ids_deleted_tickets=[] # préparer une liste vide qui sera par les id des tickets à supprimer
+        for ticket in tickets: #parcourir les 100 derniers tickets
+            if any(email in ticket.partner_email for email in rejected_mails): #vérifier si l'email de client contient l'un des emails/terms rejetés mis à la liste rejected_mails
+                list_ids_deleted_tickets.append(ticket.id) #ajouter l'id de ticket à list des tickets à supprimer
             else:
                 rejected_notes = [
                     'Devis vu', 'Contrat signé', 'Quotation viewed by'
-                ]
-                notes = self.env["mail.message"].sudo().search([('model',"=",'helpdesk.ticket'),('res_id',"=",ticket.id)])
-                for note in notes:
-                    if any(term in note.body for term in rejected_notes):
-                        list_ticket.append(ticket.id)
-        for ticket1 in tickets:
-            if any(name in ticket1.name for name in rejected_subject):
-                list_ticket.append(ticket.id)
-        if list_ticket:
-            for rejected_ticket in list_ticket:
-                ticket = self.env["helpdesk.ticket"].sudo().search([('id',"=",rejected_ticket)])
-                if ticket:
-                    ticket.sudo().unlink()
+                ] # liste des terms des notes système créer en ticket à vérifier
+
+                notes = self.env["mail.message"].sudo().search([('model',"=",'helpdesk.ticket'),('res_id',"=",ticket.id)]) #recupère tous les notes créer dans le ticket
+                for note in notes: # parcourir les notes de la ticket
+                    if any(term in note.body for term in rejected_notes): # vérifier si l'un des notes est parmis la liste rejected notes
+                        list_ids_deleted_tickets.append(ticket.id) #ajouter l'id de ticket à list des tickets à supprimer
+        for ticket in tickets:
+            if any(name in ticket.name for name in rejected_subject): # vérifier si le nom de ticket contient un term parmis les termes de la liste rejected subject
+                list_ids_deleted_tickets.append(ticket.id) #ajouter l'id de ticket à list des tickets à supprimer
+        if list_ids_deleted_tickets: # vérifier si la liste des tickets à supprimer est vide ou non
+            for rejected_ticket in list_ids_deleted_tickets: # parcourir la liste des tickets à supprimer
+                ticket = self.env["helpdesk.ticket"].sudo().search([('id',"=",rejected_ticket)]) # récuperer la ticket à supprimer en utilisant l'id recupérer de la liste
+                if ticket: # vérifier s'il y a une ticket avec cette id
+                    ticket.sudo().unlink() #supprimer la ticket
 
