@@ -96,12 +96,17 @@ class HelpdeskTicket(models.Model):
         rejected_subject = [
             'nouveau ticket','assigné à vous','assigned to you'
         ]
+        list_ticket=[]
         for ticket in tickets:
             if any(email in ticket.partner_email for email in rejected_mails):
-                ticket_rejected = self.env["helpdesk.ticket"].sudo().search([('id','=',ticket.id)], limit=1)
-                ticket_rejected.sudo().unlink()
-        # for ticket1 in tickets:
-        #     if any(name in ticket1.name for name in rejected_subject):
-        #         ticket_rejected1 = self.env["helpdesk.ticket"].sudo().search([('id', '=', ticket1.id)], limit=1)
-        #         ticket_rejected1.sudo().unlink()
-        return True
+                list_ticket.append(ticket.id)
+
+        for ticket1 in tickets:
+            if any(name in ticket1.name for name in rejected_subject):
+                list_ticket.append(ticket.id)
+        if list_ticket:
+            for rejected_ticket in list_ticket:
+                ticket = self.env["helpdesk.ticket"].sudo().search([('id',"=",rejected_ticket)])
+                if ticket:
+                    ticket.sudo().unlink()
+
