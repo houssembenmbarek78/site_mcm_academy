@@ -22,8 +22,8 @@
             </xpath>
             <xpath expr="//form/div/group/group[@name='dates']" position="after">
                 <group string="Horaire" attrs="{'invisible':[('company_id','!=', 2)]}">
-                    <field name="date_exam"/>
-                    <field name="temps_convocation"/>
+                    <field name="date_exam" attrs="{'required':[('company_id', '=', 2)]}"/>
+                    <field name="temps_convocation" attrs="{'required':[('company_id', '=', 2)]}"/>
                     <field name="horaire_email" invisible="1"/>
                     <field name="heure_examen_matin" string="Heure"
                            attrs="{'invisible': [('temps_convocation', '=', 'apres_midi')]}"/>
