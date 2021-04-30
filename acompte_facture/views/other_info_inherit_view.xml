@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="session_view_account_move_form" model="ir.ui.view">
+            <field name="name">account.move.form</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field eval="2" name="priority"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='invoice_origin']" position="after">
+                    <field name="session_id"/>
+                    <field name="module_id" domain="[('session_id', '=', session_id)]"/>
+                    <field name="cpf_acompte_invoice"/>
+                    <field name="cpf_solde_invoice"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
