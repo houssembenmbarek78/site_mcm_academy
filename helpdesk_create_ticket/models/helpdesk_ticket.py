@@ -23,14 +23,19 @@ class HelpdeskTicket(models.Model):
                     if partner:
                         partner.sudo().unlink() # supprimer la fiche contact de client si le client n'a pas de compte
         for ticket in tickets:
-            if 'caissedesdepots' in ticket.partner_email:
+            if 'caissedesdepots' in ticket.partner_email: # transferer les emails envoyés par caissedesdepots au service comptabilité
                 team = self.env['helpdesk.team'].sudo().search([('name', 'like', 'Compta'), ('company_id', "=", ticket.company_id.id)],limit=1)
                 if team:
                     ticket.team_id=team.id
-            if 'billing' in ticket.partner_email:
+            if 'billing' in ticket.partner_email: # transferer les emails envoyés par billing au service comptabilité
                 team = self.env['helpdesk.team'].sudo().search([('name', 'like', 'Compta'), ('company_id', "=", ticket.company_id.id)],limit=1)
                 if team:
                     ticket.team_id=team.id
+            if 'servicefinance@dkv-euroservice.com' in ticket.partner_email: # transferer les emails envoyés par servicefinance@dkv-euroservice.com au service comptabilité
+                team = self.env['helpdesk.team'].sudo().search(
+                    [('name', 'like', 'Compta'), ('company_id', "=", ticket.company_id.id)], limit=1)
+                if team:
+                    ticket.team_id = team.id
         return tickets
 
     def write(self, vals):
@@ -48,10 +53,10 @@ class HelpdeskTicket(models.Model):
     def unlink_ticket_rejected_mails(self):
         tickets = self.env["helpdesk.ticket"].sudo().search([], order="id DESC", limit=100)
         rejected_mails = [
-            'no-reply@360learning.com','no-reply@zoom.us','notifications@calendly.com','no-reply','noreply','customermarketing@aircall.io','newsletter@axeptio.eu','order-update@amazon.fr',
-            'uipath@discoursemail.com','dkv-euroservice.co','enjoy.eset.com','e.fiverr.com','paloaltonetworks.com',
-            'eset-nod32.fr','nordvpn.com','newsletter','modedigital.online','ovh','envato','codeur','h5p'
-            'facebook','google','ne_pas_repondre_Moncompteformation','digimoov.fr','mcm-academy.fr','slack.com'
+            'no-reply@360learning.com','no-reply@zoom.us','notifications@calendly.com','product-feedback@calendly.com','no-reply','customermarketing@aircall.io','newsletter@axeptio.eu','order-update@amazon.fr',
+            'uipath@discoursemail.com','info@dkv-euroservice.com','serviceclient@enjoy.eset.com','noreply@e.fiverr.com','hello@emails.paloaltonetworks.com',
+            'francois.g@eset-nod32.fr','support@nordvpn.com','noreply@jotform.com','newsletter','communication@modedigital.online','support@ovh.com','do-not-reply@market.envato.com','cody@codeur.com','svein-tore.griff@joubel.com',
+            'h5p','security@mail.instagram.com','notification@facebookmail.com','advertise-noreply@support.facebook.com','google','ne_pas_repondre_Moncompteformation','digimoov.fr','mcm-academy.fr','slack.com'
         ]
         rejected_subject = [
             'nouveau ticket','assigné à vous','assigned to you'
