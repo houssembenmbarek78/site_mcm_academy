@@ -54,7 +54,7 @@ class HelpdeskTicket(models.Model):
         tickets = self.env["helpdesk.ticket"].sudo().search([], order="id DESC", limit=100) # récupérer les 100 derniers tickets créers 
         # list des terms ou emails rejetés ( supprimer les tickets envoyés par ces emails )
         rejected_mails = [
-            'no-reply@360learning.com','@zoom.us','notifications@calendly.com','product-feedback@calendly.com','no-reply','customermarketing@aircall.io','newsletter@axeptio.eu','order-update@amazon.fr',
+            'no-reply@360learning.com','zoom.us','notifications@calendly.com','product-feedback@calendly.com','no-reply','customermarketing@aircall.io','newsletter@axeptio.eu','order-update@amazon.fr',
             'uipath@discoursemail.com','info@dkv-euroservice.com','serviceclient@enjoy.eset.com','noreply@e.fiverr.com','hello@emails.paloaltonetworks.com',
             'francois.g@eset-nod32.fr','support@nordvpn.com','noreply@jotform.com','newsletter','communication@modedigital.online','support@ovh.com','do-not-reply@market.envato.com','cody@codeur.com','svein-tore.griff@joubel.com',
             'h5p','security@mail.instagram.com','notification@facebookmail.com','advertise-noreply@support.facebook.com','google','ne_pas_repondre_Moncompteformation','digimoov.fr','mcm-academy.fr','slack.com'
