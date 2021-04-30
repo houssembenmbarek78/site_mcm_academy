@@ -117,19 +117,19 @@ class NoteExamen(models.Model):
             if rec.epreuve_a >= 10 and rec.epreuve_b >= 8 and rec.moyenne_generale >= 12:
                 rec.mention = 'recu'
                 rec.resultat = 'recu'
+                rec.presence = 'present'
             else:
                 rec.mention = 'ajourne'
                 rec.resultat = 'ajourne'
                 """ This code commented, if we need optimisation for presence field """
-            #     rec.mention = 'ajourne'
-            #     rec.resultat = 'ajourne'
+                rec.presence = 'Absent'
 
     @api.onchange('epreuve_a', 'epreuve_b', 'moyenne_generale', 'presence')
     def _raise_error(self):
-        if self.epreuve_a < 1 and self.epreuve_b < 1 and self.moyenne_generale < 1 and self.presence in 'present':
+        if self.epreuve_a < 1 and self.epreuve_b < 1 and self.moyenne_generale < 1 and self.presence == 'present':
             raise ValidationError(
                 _("Vérifier les constraintes, les notes sont inferieur à 1 mais il est présent!!'"))
-        if self.epreuve_a > 1 and self.epreuve_b > 1 and self.moyenne_generale > 1 and self.presence in 'Absent':
+        if self.epreuve_a > 1 and self.epreuve_b > 1 and self.moyenne_generale > 1 and self.presence == 'Absent':
             raise ValidationError(
                 _("Vérifier les constraintes, les notes sont supperieur à 1 mais il est absent!!'"))
 
