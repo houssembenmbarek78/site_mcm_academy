@@ -219,19 +219,22 @@
                                 </t>
                             </tr>
                             <tr t-if="o.company_id.id==2">
-                                <t t-if="o.pricelist_id" name="pricelist_line">
+                            <t t-if="o.pricelist_id" name="pricelist_line">
+                            <t t-foreach="o.pricelist_id.item_ids" t-as="item">
+                            <t t-if="o.module_id.product_id==item.product_tmpl_id and o.pricelist_id">
+<!--                                    <td name="td_remise_price" class="text-center" style="border: 1px solid black;">-->
                                     <td name="account_invoice_pricelist_name" class="text-center"
-                                        style="border: 1px solid black;">
-                                        <strong>
-                                            <span t-options="{'widget': 'text'}" >Code promo </span>
-                                            <span t-field="o.pricelist_id.code" t-options="{'widget': 'text'}"/>
-                                        </strong>
+                                                     style="border: 1px solid black;">
+                                                <strong>
+                                                <span t-options="{'widget': 'text'}" >Code promo </span>
+                                                <span t-field="o.pricelist_id.code" t-options="{'widget': 'text'}" />
+                                                 </strong>
                                     </td>
                                     <td style="border: 1px solid black;"></td>
                                     <td name="account_invoice_pricelist_price" class="text-center"
                                         style="border: 1px solid black;">
                                         <t t-foreach="o.pricelist_id.item_ids" t-as="item">
-                                            <t t-if="o.module_id.product_id==item.product_tmpl_id">
+                                            <t t-if="o.module_id.product_id==item.product_tmpl_id and o.pricelist_id">
                                                 <td name="td_remise_price" class="text-center" style="border: 1px solid black;">
                                                     <span>-</span>
                                                     <span
@@ -240,7 +243,10 @@
                                                 </td>
                                             </t>
                                         </t>
-                                    </td>
+                                     </td>
+
+                                </t>
+                                </t>
                                 </t>
                             </tr>
 
