@@ -494,7 +494,7 @@
                         Payer montant sur 3 fois
                     </label>
                 </td>
-                <td class="text-xl-right border-0" id="order_instalment_checkbox"  style="display:table-cell">
+                <td class="text-xl-right border-0" id="order_instalment_checkbox" style="display:table-cell">
 
                     <input type="checkbox" id="checkbox_instalment" style="white-space: nowrap;"
                            class="text-xl-right border-0" t-att-checked="website_sale_order.instalment"
@@ -503,7 +503,7 @@
                 </td>
             </tr>
             <body onload="verify_checked()">
-                <tr >
+                <tr>
                     <td class="text-right border-0" id="order_instalment_number" style="display: none;">Tranches:</td>
                     <td class="text-xl-right border-0" id="order_instalment_number_order" style="display: none;">
                         <span t-field="website_sale_order.instalment_number" style="white-space: nowrap;"/>
@@ -561,7 +561,7 @@
                         <input type="radio" name="pm_method" data-acquirer-id="8" data-form-payment="True"
                                data-provider="stripe_pm"
                                class="" t-att-value="line.name_short" id="stripe_pm" checked="True"
-                               t-attf-onclick="onchangeTextButton1()" >
+                               t-attf-onclick="onchangeTextButton1()">
 
                             <span class="payment_option_name">
                                 Carte de crédit
@@ -636,7 +636,10 @@
                            class="text-xl-left border-0" t-att-checked="website_sale_order.failures"
                            t-att-value="website_sale_order.failures">
                         <label for="failures" style="display:inline">
-                            Je reconnais que DIGIMOOV procédera à l'exécution immédiate de ma formation en ligne et à ce titre, je renonce expressément à exercer mon droit de rétractation conformément aux dispositions de l'article L.221-28 1° du code de la consommation.
+                            Pour le site internet : Je souhaite accéder à la formation dès maintenant sans attendre 14
+                            jours. Je reconnais que DIGIMOOV procédera à l'exécution immédiate de ma formation en ligne
+                            et à ce titre, je renonce expressément à exercer mon droit de rétractation conformément aux
+                            dispositions de l'article L.221-28 1° du code de la consommation.
                         </label>
                     </input>
                 </div>
@@ -650,20 +653,21 @@
                         </label>
                     </input>
                 </div>
-                <p t-if="website_sale_order.conditions_error != ''" id="error_conditions" class="alert alert-warning" style="margin-left:0%;display:inline-block;">
-                                Vous devez acceptez les conditions générales de ventes
-                            </p>
+                <p t-if="website_sale_order.conditions_error != ''" id="error_conditions" class="alert alert-warning"
+                   style="margin-left:0%;display:inline-block;">
+                    Vous devez acceptez les conditions générales de ventes
+                </p>
 
-<!--                <div class="input checkbox">-->
-<!--                    <input type="checkbox" id="checkbox_accompagnement" style="white-space: nowrap;"-->
-<!--                           class="text-xl-left border-0" t-att-checked="website_sale_order.accompagnement"-->
-<!--                           t-att-value="website_sale_order.accompagnement">-->
-<!--                        <label for="accompagnement" style="display:inline">-->
-<!--                            J'accepte les appels de suivi et de l'accompagnement-->
-<!--                        </label>-->
-<!--                    </input>-->
+                <!--                <div class="input checkbox">-->
+                <!--                    <input type="checkbox" id="checkbox_accompagnement" style="white-space: nowrap;"-->
+                <!--                           class="text-xl-left border-0" t-att-checked="website_sale_order.accompagnement"-->
+                <!--                           t-att-value="website_sale_order.accompagnement">-->
+                <!--                        <label for="accompagnement" style="display:inline">-->
+                <!--                            J'accepte les appels de suivi et de l'accompagnement-->
+                <!--                        </label>-->
+                <!--                    </input>-->
 
-<!--                </div>-->
+                <!--                </div>-->
             </div>
         </xpath>
 
