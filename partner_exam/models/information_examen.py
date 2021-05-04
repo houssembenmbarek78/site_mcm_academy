@@ -108,29 +108,31 @@ class NoteExamen(models.Model):
             'context': ctx,
         }
 
-    @api.onchange('epreuve_a', 'epreuve_b', 'moyenne_generale')
+    @api.onchange('epreuve_a', 'epreuve_b', 'presence')
     def _compute_moyenne_generale(self):
         """ This function used to auto display some result
         like the "Moyenne Generale" & "Mention" & "Resultat" """
         for rec in self:
             rec.moyenne_generale = (rec.epreuve_a + rec.epreuve_b) / 2
             if rec.epreuve_a >= 10 and rec.epreuve_b >= 8 and rec.moyenne_generale >= 12:
+                rec.moyenne_generale = rec.moyenne_generale
                 rec.mention = 'recu'
                 rec.resultat = 'recu'
                 rec.presence = 'present'
             else:
+                # reset your fields
+                rec.epreuve_a = rec.epreuve_a
+                rec.epreuve_b = rec.epreuve_b
                 rec.mention = 'ajourne'
                 rec.resultat = 'ajourne'
-                """ This code commented, if we need optimisation for presence field """
-                rec.presence = 'Absent'
+                if rec.epreuve_a > 1 and rec.epreuve_a < 20:
+                    rec.presence = 'present'
+                elif rec.epreuve_a < 1 and rec.epreuve_b < 1:
+                    rec.presence = 'Absent'
+                if rec.epreuve_b > 1 and rec.epreuve_b < 21:
+                    rec.presence = 'present'
+                elif rec.epreuve_a < 1 and rec.epreuve_b < 1:
+                    rec.presence = 'Absent'
 
-    @api.onchange('epreuve_a', 'epreuve_b', 'moyenne_generale', 'presence')
-    def _raise_error(self):
-        if self.epreuve_a < 1 and self.epreuve_b < 1 and self.moyenne_generale < 1 and self.presence == 'present':
-            raise ValidationError(
-                _("Vérifier les constraintes, les notes sont inferieur à 1 mais il est présent!!'"))
-        if self.epreuve_a > 1 and self.epreuve_b > 1 and self.moyenne_generale > 1 and self.presence == 'Absent':
-            raise ValidationError(
-                _("Vérifier les constraintes, les notes sont supperieur à 1 mais il est absent!!'"))
 
 
