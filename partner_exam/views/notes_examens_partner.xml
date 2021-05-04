@@ -63,7 +63,7 @@
             <field name="name">info.examen.tree</field>
             <field name="model">info.examen</field>
             <field name="arch" type="xml">
-                <tree string="Notes des examens Tree" default_order="create_date desc">
+                <tree string="Notes des examens Tree" decoration-danger="(presence == 'Absent')" default_order="create_date desc">
                     <field name="partner_id"/>
                     <field name="date_exam"/>
                     <field name="epreuve_a"/>
