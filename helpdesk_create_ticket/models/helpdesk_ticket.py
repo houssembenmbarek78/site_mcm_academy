@@ -57,13 +57,13 @@ class HelpdeskTicket(models.Model):
             'no-reply@360learning.com','zoom.us','notifications@calendly.com','product-feedback@calendly.com','no-reply','customermarketing@aircall.io','newsletter@axeptio.eu','order-update@amazon.fr',
             'uipath@discoursemail.com','info@dkv-euroservice.com','serviceclient@enjoy.eset.com','noreply@e.fiverr.com','hello@emails.paloaltonetworks.com',
             'francois.g@eset-nod32.fr','support@nordvpn.com','noreply@jotform.com','newsletter','communication@modedigital.online','support@ovh.com','do-not-reply@market.envato.com','cody@codeur.com','svein-tore.griff@joubel.com',
-            'h5p','security@mail.instagram.com','notification@facebookmail.com','advertise-noreply@support.facebook.com','google','ne_pas_repondre_Moncompteformation','digimoov.fr','mcm-academy.fr','slack.com'
+            'svein-tore.griff@joubel.com','security@mail.instagram.com','notification@facebookmail.com','advertise-noreply@support.facebook.com','google','ne_pas_repondre_Moncompteformation','digimoov.fr','mcm-academy.fr','slack.com','noreply@aircall.io'
         ]
         # list des terms  rejetés ( supprimer les tickets qui ont l'un de ces terms comme objet )
         rejected_subject = [
             'nouveau ticket','assigné à vous','assigned to you'
         ]
-        list_ids_deleted_tickets=[] # préparer une liste vide qui sera par les id des tickets à supprimer
+        list_ids_deleted_tickets=[] # préparer une liste vide qui sera rempli par les id des tickets à supprimer
         for ticket in tickets: #parcourir les 100 derniers tickets
             if any(email in ticket.partner_email for email in rejected_mails): #vérifier si l'email de client contient l'un des emails/terms rejetés mis à la liste rejected_mails
                 list_ids_deleted_tickets.append(ticket.id) #ajouter l'id de ticket à list des tickets à supprimer
