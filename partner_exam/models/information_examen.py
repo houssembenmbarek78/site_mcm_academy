@@ -40,7 +40,7 @@ class NoteExamen(models.Model):
     presence = fields.Selection(selection=[
         ('present', 'Présent'),
         ('Absent', 'Absent')],
-        string="Présence", default="present")
+        string="Présence")
 
     def action_get_attachment(self):
         """ this method called from button action in view xml """
