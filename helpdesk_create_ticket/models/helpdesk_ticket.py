@@ -34,6 +34,9 @@ class HelpdeskTicket(models.Model):
             if 'servicefinance@dkv-euroservice.com' in ticket.partner_email: # transferer les emails envoyés par servicefinance@dkv-euroservice.com au service comptabilité
                 team = self.env['helpdesk.team'].sudo().search(
                     [('name', 'like', 'Compta'), ('company_id', "=", ticket.company_id.id)], limit=1)
+            if 'support@digidom.pro' in ticket.partner_email:  # transferer les emails envoyés par support@digidom.pro au service comptabilité
+                team = self.env['helpdesk.team'].sudo().search(
+                    [('name', 'like', 'Compta'), ('company_id', "=", ticket.company_id.id)], limit=1)
                 if team:
                     ticket.team_id = team.id
         return tickets
