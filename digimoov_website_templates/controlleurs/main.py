@@ -112,7 +112,7 @@ class FINANCEMENT(http.Controller):
     def cpf_thanks(self, **kw, ):
         return request.render("digimoov_website_templates.cpf_thank_you", {})
 
-    @http.route('/maintenance', type='http', auth='user', website=True)
+    @http.route('/maintenance', type='http', auth='public', website=True)
     def cpf_thanks(self, **kw, ):
         return request.render("digimoov_website_templates.digimoov_template_maintenance", {})
 
