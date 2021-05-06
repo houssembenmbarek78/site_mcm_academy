@@ -112,6 +112,10 @@ class FINANCEMENT(http.Controller):
     def cpf_thanks(self, **kw, ):
         return request.render("digimoov_website_templates.cpf_thank_you", {})
 
+    @http.route('/maintenance', type='http', auth='user', website=True)
+    def cpf_thanks(self, **kw, ):
+        return request.render("digimoov_website_templates.digimoov_template_maintenance", {})
+
     @http.route('/pricing', type='http', auth='public', website=True)
     def pricing_table(self, **kw, ):
         user_connected=request.env.user
@@ -170,6 +174,7 @@ class Services(http.Controller):
 
     @http.route('/service-clientele', type='http', auth='public', website=True)
     def clientele(self, **kw, ):
+        return request.redirect('/maintenance')
         public_user = http.request.env['res.users'].sudo().search([('id', '=', 4), ('active', '=', False)])
 
         if http.request.uid == public_user.id:
@@ -193,6 +198,7 @@ class Services(http.Controller):
 
     @http.route('/administration', type='http', auth='public', website=True)
     def administration(self, **kw, ):
+        return request.redirect('/maintenance')
         public_user = http.request.env['res.users'].sudo().search([('id', '=', 4), ('active', '=', False)])
 
         if http.request.uid == public_user.id:
@@ -216,6 +222,7 @@ class Services(http.Controller):
 
     @http.route('/partenariat', type='http', auth='public', website=True)
     def partenariat(self, **kw, ):
+        return request.redirect('/maintenance')
         public_user = http.request.env['res.users'].sudo().search([('id', '=', 4), ('active', '=', False)])
 
         if http.request.uid == public_user.id:
@@ -239,6 +246,7 @@ class Services(http.Controller):
 
     @http.route('/service-comptabilite', type='http', auth='public', website=True)
     def comptabilite(self, **kw, ):
+        return request.redirect('/maintenance')
         public_user = http.request.env['res.users'].sudo().search([('id', '=', 4), ('active', '=', False)])
 
         if http.request.uid == public_user.id:
@@ -262,6 +270,7 @@ class Services(http.Controller):
 
     @http.route('/service-pedagogique', type='http', auth='public', website=True)
     def pedagogique(self, **kw, ):
+        return request.redirect('/maintenance')
         public_user = http.request.env['res.users'].sudo().search([('id', '=', 4), ('active', '=', False)])
 
         if http.request.uid == public_user.id:
