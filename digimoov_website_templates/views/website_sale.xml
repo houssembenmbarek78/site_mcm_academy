@@ -1,15 +1,15 @@
 <odoo>
     <template id="digimoov_website_sale_total" inherit_id="website_sale.total">
         <xpath expr="//tr[@id='order_total_taxes']" position="after">
-            <tr t-if="website_sale_order.instalment_number==2 or website_sale_order.instalment_number==3">
-                <td class="text-right border-0" id="order_instalment" style="display: block;">
+            <tr id="order_instalment" t-if="website_sale_order.instalment_number==2 or website_sale_order.instalment_number==3" style="visibility:visible">
+                <td class="text-right border-0">
                     <label for="checkbox_instalment">
                         <span>Payer montant sur </span>
                         <span t-field="website_sale_order.instalment_number" style="white-space: nowrap;"/>
                         <span> fois </span>
                     </label>
                 </td>
-                <td class="text-xl-right border-0" id="order_instalment_checkbox" style="display: table-cell;">
+                <td class="text-xl-right border-0">
 
                     <input type="checkbox" id="checkbox_instalment" style="white-space: nowrap;"
                            class="text-xl-right border-0" t-att-checked="website_sale_order.instalment"
@@ -18,9 +18,9 @@
                 </td>
             </tr>
             <body onload="verify_checked()">
-                <tr>
-                    <td class="text-right border-0" id="order_instalment_number" style="display: none;">Tranches:</td>
-                    <td class="text-xl-right border-0" id="order_instalment_number_order" style="display: none;">
+                <tr id="order_instalment_number" style="visibility: hidden;">
+                    <td class="text-right border-0">Tranches:</td>
+                    <td class="text-xl-right border-0">
                         <span t-field="website_sale_order.instalment_number" style="white-space: nowrap;"/>
                     </td>
                 </tr>
@@ -28,11 +28,11 @@
         </xpath>
         <xpath expr="//tr[@id='order_total']" position="after">
             <body onload="verify_checked()">
-                <tr>
-                    <td class="text-right border-0" id="order_amount_to_pay" style="display: none;">
+                <tr id="order_amount_to_pay" style="visibility: hidden;">
+                    <td class="text-right">
                         <strong>Montant à payer:</strong>
                     </td>
-                    <td class="text-xl-right border-0" id="order_amount_to_pay_amount" style="display: none;">
+                    <td class="text-xl-right">
                         <strong t-field="website_sale_order.amount_to_pay" class="monetary_field"
                                 t-options='{"widget": "monetary", "display_currency": website_sale_order.pricelist_id.currency_id}'/>
                     </td>

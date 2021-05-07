@@ -2,157 +2,88 @@
 <odoo>
 
 
-	<template id="theme_centric_assets"
-		name="Website centric Assets" inherit_id="website.assets_frontend">
+	<template id="theme_centric_assets" name="Website centric Assets" inherit_id="website.assets_frontend">
 		<xpath expr="." position="inside">
 
 			<!-- Centric scss -->
-			<link href="/theme_centric/static/src/scss/homepage.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/feature.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/aboutus.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/service.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/service_detail.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/whychoose.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/boosting.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/project.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/project_detail.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/ourteam.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/testimonial.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/analysis.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/client.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/subscriber.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/footer.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/service_page.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/blog.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/blogpage_inherit.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/contact.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/feature_page.scss"
-				rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/homepage.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/feature.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/aboutus.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/service.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/service_detail.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/whychoose.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/boosting.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/project.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/project_detail.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/ourteam.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/testimonial.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/analysis.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/client.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/subscriber.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/footer.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/service_page.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/blog.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/blogpage_inherit.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/contact.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/feature_page.scss" rel="stylesheet" type="text/scss" />
 
 			<!-- Cando scss -->
-			<link href="/theme_centric/static/src/scss/cando_homebanner.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/cando_achievement.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/cando_customers.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/cando_features.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/cando_process.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/cando_quote.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/cando_service.scss"
-				rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/cando_homebanner.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/cando_achievement.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/cando_customers.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/cando_features.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/cando_process.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/cando_quote.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/cando_service.scss" rel="stylesheet" type="text/scss" />
 
 			<!-- Soft scss -->
-			<link href="/theme_centric/static/src/scss/soft_theme.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/soft_home.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/soft_home_row.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/soft_about.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/soft_services.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/soft_work.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/soft_pricing.scss"
-				rel="stylesheet" type="text/scss" />
+zz
 			
-			<!-- Common scss	-->
-			<link href="/theme_centric/static/src/scss/customize_modal.scss"
-				rel="stylesheet" type="text/scss" />
-			
+												<!-- Common scss	-->
+			<link href="/theme_centric/static/src/scss/customize_modal.scss" rel="stylesheet" type="text/scss" />
+
 
 			<!-- Snippets scss -->
-			<link href="/theme_centric/static/src/scss/snippets.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/snippet-common.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/megamenu.scss"
-				rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/snippets.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/snippet-common.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/megamenu.scss" rel="stylesheet" type="text/scss" />
 
 			<!-- Headers scss-->
-			<link href="/theme_centric/static/src/scss/header_eleven.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/header_twelve.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/header_thirteen.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/header_fourteen.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/header_fifteen.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/header_sixteen.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/header_seventeen.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/header_eighteen.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/header_nineteen.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/header_twenty.scss"
-				rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/header_eleven.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/header_twelve.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/header_thirteen.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/header_fourteen.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/header_fifteen.scss" rel="stylesheet" type="text/scss" />
+			<!-- <link href="/theme_centric/static/src/scss/header_sixteen.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/header_seventeen.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/header_eighteen.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/header_nineteen.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/header_twenty.scss" rel="stylesheet" type="text/scss" /> -->
 
 			<!-- Footers scss-->
-			<link href="/theme_centric/static/src/scss/footer_one.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/footer_two.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/footer_three.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/footer_four.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/footer_five.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/footer_six.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/footer_seven.scss"
-				rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/footer_eight.scss"
-				rel="stylesheet" type="text/scss" />
-				
-			<link href="/theme_centric/static/src/scss/gradiant.scss"
-				rel="stylesheet" type="text/scss" />
+			<!-- <link href="/theme_centric/static/src/scss/footer_one.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/footer_two.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/footer_three.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/footer_four.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/footer_five.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/footer_six.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/footer_seven.scss" rel="stylesheet" type="text/scss" />
+			<link href="/theme_centric/static/src/scss/footer_eight.scss" rel="stylesheet" type="text/scss" /> -->
+
+			<link href="/theme_centric/static/src/scss/gradiant.scss" rel="stylesheet" type="text/scss" />
 
 			<!-- Js -->
-			<script type="text/javascript"
-				src="/theme_centric/static/src/js/common.js" />
-			<script type="text/javascript"
-				src="/theme_centric/static/src/js/type.js" />
+			<script type="text/javascript" src="/theme_centric/static/src/js/common.js" />
+			<script type="text/javascript" src="/theme_centric/static/src/js/type.js" />
 
 		</xpath>
 	</template>
 
 	<!-- Variable scss -->
-	<template id="theme_customize_options"
-		inherit_id="web._assets_primary_variables">
+	<template id="theme_customize_options" inherit_id="web._assets_primary_variables">
 		<xpath expr="//link" position="after">
-			<link rel="stylesheet" type="text/scss"
-				href="/theme_centric/static/src/scss/theme-color.scss"/>
-			<link rel="stylesheet" type="text/scss"
-				href="/theme_centric/static/src/scss/customise_variables.scss"/>
+			<link rel="stylesheet" type="text/scss" href="/theme_centric/static/src/scss/theme-color.scss"/>
+			<link rel="stylesheet" type="text/scss" href="/theme_centric/static/src/scss/customise_variables.scss"/>
 		</xpath>
 	</template>
 

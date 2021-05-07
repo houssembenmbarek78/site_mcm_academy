@@ -131,10 +131,10 @@
                                     <div class="row clearfix">
                                         <div class="counter-column col-lg-4 col-md-4 col-sm-12">
                                             <div class="count-box counter-box">
-                                                <span class="count-text counter">1000</span>
+                                                <span class="count-text counter">1500</span>
                                                 <br/>+
                                                 <br/>
-                                                <h4 class="counter-title">Plus de 1000 Stagiaires formés</h4>
+                                                <h4 class="counter-title">Plus de 1500 Stagiaires formés</h4>
                                             </div>
                                         </div>
                                         <div class="counter-column col-lg-4 col-md-4 col-sm-12">
@@ -236,29 +236,22 @@
                                 <div class="col-lg-2">
                                     <img src="/digimoov_website_templates/static/img/MCMACADEMY.webp" style="width:50%"
                                          class="img img-fluid" alt="Logo partenaire MCM Academy" data-original-title=""
-                                         title=""
-                                         aria-describedby="tooltip843653"/>
+                                         title="" aria-describedby="tooltip843653"/>
                                 </div>
                                 <div class="col-lg-2">
                                     <img src="/digimoov_website_templates/static/img/ubereats partenaire Digimoov.webp"
-                                         style="width:50%"
-                                         class="img img-fluid" alt="Logo partenaire Ubereats" data-original-title=""
-                                         title=""
-                                         aria-describedby="tooltip843653"/>
+                                         style="width:50%" class="img img-fluid" alt="Logo partenaire Ubereats"
+                                         data-original-title="" title="" aria-describedby="tooltip843653"/>
                                 </div>
                                 <div class="col-lg-2">
                                     <img src="/digimoov_website_templates/static/img/deliveroo partenaire Digimoov.webp"
-                                         style="width:70%"
-                                         class="img img-fluid" alt="Logo partenaire Deliveroo" data-original-title=""
-                                         title=""
-                                         aria-describedby="tooltip623872"/>
+                                         style="width:70%" class="img img-fluid" alt="Logo partenaire Deliveroo"
+                                         data-original-title="" title="" aria-describedby="tooltip623872"/>
                                 </div>
                                 <div class="col-lg-2">
                                     <img src="/digimoov_website_templates/static/img/coursierjob partenaire Digimoov.webp"
-                                         style="width:50%"
-                                         class="img img-fluid" alt="Logo partenaire Coursierjob" data-original-title=""
-                                         title=""
-                                         aria-describedby="tooltip175558"/>
+                                         style="width:50%" class="img img-fluid" alt="Logo partenaire Coursierjob"
+                                         data-original-title="" title="" aria-describedby="tooltip175558"/>
                                 </div>
                                 <div class="col-lg-2">
                                     <img src="/digimoov_website_templates/static/img/Cabinet Comptable Joel Pruvost.webp"
@@ -404,7 +397,7 @@
                                                      class="img img-fluid" data-original-title="" title=""
                                                      aria-describedby="tooltip282602"/>
                                             </div>
-                                            <h5 class="font-medium">+1000&amp;nbsp;stagiaires formés</h5>
+                                            <h5 class="font-medium">+1500&amp;nbsp;stagiaires formés</h5>
                                         </div>
                                     </section>
                                 </div>

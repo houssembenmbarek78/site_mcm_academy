@@ -2,6 +2,7 @@
     <template id="digimoov_website_templates.digimoov_template_conditions"
               name="Conditions générales de vente | Digimoov">
         <t t-call="website.layout">
+<!--style-->
             <style>
                 .features {
                 padding: 100px 0;
@@ -40,773 +41,1030 @@
                     <div class="row text-left">
                         <div class="col-md-12">
                             <div class="features-intro">
-                                <p>
-                                    CONDITIONS GENERALES DE PRESTATIONS DE SERVICES
-                                </p>
-                                <p>
-                                    Article 1 – OBJET DES CONDITIONS
-                                </p>
-                                <p>
-                                    1.1 Les présentes Conditions générales de Prestations et de Services
-                                    (ci-après “les Conditions”) visent la mise en relation, de DIGIMOOV filiale
-                                    de la SAS MSM ACADEMY sise 10 RUE DE PENTHIEVRE 75008 PARIS (RCS B <a
-                                        href="tel:811%20219%20880">811 219 880</a>), (ci-après “DIGIMOOV”) et le
-                                    Candidat particulier.
-                                </p>
-                                <p>
-                                    L’accès, l’achat et le suivi des formations et examens (ci-après le
-                                    Service) sont proposés exclusivement par le biais du réseau Internet à
-                                    l’adresse Internet https://digimoov.fr (ci-après “le Site”).
-                                </p>
-                                <p>
-                                    Le Candidat est tenu de prendre connaissance des Conditions avant toute
-                                    passation de commande. Le choix et l’achat d’un Service est de la seule
-                                    responsabilité du Candidat.
-                                </p>
-                                <p>
-                                    DIGIMOOV et le Candidat sont ensemble repris sous le vocable “les Parties”.
+                                <div style="text-align: center;">
+                                    <span style="color: rgb(0, 0, 0); font-size: 24px; letter-spacing: 0.01em;">
+                                        <span style="font-weight: bolder;">CONDITIONS GENERALES DE PRESTATIONS DE
+                                            SERVICES
+                                        </span>
+                                    </span>
+                                </div>
+                                <p>
+                                    <font style="letter-spacing: normal; color: rgb(0, 0, 0); font-size: 24px;">
+                                        <span style="font-weight: bolder;">
+                                            <br/>
+                                        </span>
+                                    </font>
+                                </p>
+                                <p>
+                                    <font style="color: rgb(0, 0, 0); font-size: 24px;">
+                                        <span style="font-weight: bolder;">
+                                            <br/>
+                                        </span>
+                                    </font>
+                                </p>
+                                <p>
+                                    <font style="color: rgb(0, 0, 0); font-size: 24px;">
+                                        <span style="font-weight: bolder;">DÉFINITIONS</span>
+                                    </font>
+                                </p>
+                                <p>
+                                    <font style="color: rgb(0, 0, 0); font-size: 24px;">
+                                        <span style="font-weight: bolder;">
+                                            <br/>
+                                        </span>
+                                    </font>
+                                </p>
+                                <p>
+                                    <font style="color: rgb(0, 0, 0);">
+                                        <span style="font-weight: bolder;">Client :</span>
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">tout professionnel ou personne
+                                        physique capable au sens des articles 1123 et suivants du Code civil, ou
+                                        personne morale, qui visite le Site objet des présentes conditions générales.
+                                    </font>
+                                </p>
+                                <p>
+                                    <font style="color: rgb(0, 0, 0);">
+                                        <span style="font-weight: bolder;">Prestations et Services :</span>
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">Les prestations et services que
+                                        MCM ACADEMY sis 10 RUE DE PENTHIÈVRE 75008 PARIS (RCS B 811 219 880) fournis via
+                                        DIGIMOOV à ses Clients.
+                                    </font>
+                                </p>
+                                <p>
+                                    <font style="color: rgb(0, 0, 0);">
+                                        <span style="font-weight: bolder;">Agrément DRIEA :</span>
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">DIGIMOOV est titulaire de
+                                        l’intégralité des agréments délivrés par la DREIA/DREAL dont la formation dépend
+                                        et nécessaires à l’organisation des examens (Numéro d’agrément IDF N°
+                                        2019-0110).
+                                    </font>
                                 </p>
                                 <p>
-                                    1.2 Les présentes Conditions ont vocation à établir les modalités d’accès,
-                                    d’utilisation, d’achat, et de paiement, du service proposé en ligne
-                                    (ci-après “le Candidat”).
+                                    <font style="color: rgb(0, 0, 0);">
+                                        <span style="font-weight: bolder;">Contenu :</span>
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">Ensemble des éléments
+                                        constituants l’information présente sur https://www.digimoov.fr/ et les
+                                        plateformes associées, notamment textes – images – vidéos.
+                                    </font>
                                 </p>
                                 <p>
-                                    1.3 Le Site est édité par la SAS MCM ACADEMY visée à l’article 1.1.
+                                    <font style="color: rgb(0, 0, 0);">
+                                        <span style="font-weight: bolder;">Informations clients :</span>
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">Ci après dénommé « Information
+                                        (s) » qui correspondent à l’ensemble des données personnelles susceptibles
+                                        d’être détenues par MCM ACADEMY pour la gestion de votre compte utilisateur, de
+                                        la gestion de la relation client et à des fins d’analyses et de statistiques.
+                                    </font>
                                 </p>
                                 <p>
-                                    Article 2 – CONDITIONS PREALABLES
+                                    <font style="color: rgb(0, 0, 0);">
+                                        <span style="font-weight: bolder;">Utilisateur :</span>
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">Internaute se connectant,
+                                        utilisant le site https://www.digimoov.fr/
+                                    </font>
                                 </p>
                                 <p>
-                                    2.1 L’accès au Site et au Service développé à l’article 4 est subordonné
-                                    aux conditions suivantes
+                                    <font style="color: rgb(0, 0, 0);">
+                                        <span style="font-weight: bolder;">Informations personnelles :</span>
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">« Les informations qui
+                                        permettent, sous quelque forme que ce soit, directement ou non, l'identification
+                                        des personnes physiques auxquelles elles s'appliquent » (article 4 de la loi n°
+                                        78-17 du 6 janvier 1978).
+                                    </font>
                                 </p>
                                 <p>
-                                    – le Candidat déclare avoir pris connaissance des présentes Conditions et
-                                    les avoir acceptées en cochant la case prévue à cet effet avant la mise en
-                                    œuvre de la procédure de commande en ligne
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">Les termes « données à caractère
+                                        personnel », « personne concernée », « sous-traitant » et « données sensibles »
+                                        ont le sens défini par le Règlement Général sur la Protection des Données (RGPD
+                                        : n° 2016-679).
+                                    </font>
                                 </p>
                                 <p>
-                                    – le Candidat assure DIGIMOOV de la sincérité et de la fidélité de toutes
-                                    les informations transmises, afin de donner les moyens à DIGIMOOV d’assurer
-                                    sa mission dans des conditions optimales.
+                                    <font style="color: rgb(0, 0, 0);">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    – le Candidat doit être titulaire d’une pièce d’identité européenne en
-                                    cours de validité ainsi qu’un justificatif de domicile de moins de 3 mois
-                                    pour pouvoir s’inscrire à l’examen. Cette condition n’est pas indispensable
-                                    pour suivre les formations en ligne, sur site, ou pour participer aux
-                                    examens blancs.
+                                    <span style="font-weight: bolder;">
+                                        <font style="color: rgb(0, 0, 0); font-size: 24px;">ARTICLE 1 – OBJET DES
+                                            CONDITIONS
+                                        </font>
+                                        <font style="color: rgb(0, 0, 0);">&amp;nbsp;</font>
+                                    </span>
                                 </p>
                                 <p>
-                                    – le Service présenté sur le Site est proposé à la vente pour la France, à
-                                    l’exclusion de tout autre pays.
+                                    <span style="font-weight: bolder;">
+                                        <font style="color: rgb(0, 0, 0);">
+                                            <br/>
+                                        </font>
+                                    </span>
                                 </p>
                                 <p>
-                                    2.2 DIGIMOOV se réserve le droit de déroger à certaines clauses des
-                                    présentes Conditions, en fonction de l’évolution du contenu du Site, et en
-                                    fonction de l’évolution de la législation en vigueur. Si tel est le cas, le
-                                    Candidat en sera avisé par courrier électronique.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">1.1 Les présentes Conditions
+                                        générales de Prestations et de Services (ci-après “les Conditions”) visent la
+                                        mise en relation, de SAS MCM ACADEMY sis 10 RUE DE PENTHIÈVRE 75008 PARIS (RCS B
+                                        811 219 880) via DIGIMOOV (ci-après “DIGIMOOV”) et le Candidat particulier.
+                                    </font>
                                 </p>
                                 <p>
-                                    Article 3 – ACCES AU SERVICE
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">1.2 L’accès, l’achat et le suivi
+                                        des formations et examens (ci-après le Service) sont proposés exclusivement par
+                                        le biais du réseau Internet à l’adresse Internet https://digimoov.fr (ci-après
+                                        “le Site”).
+                                    </font>
                                 </p>
                                 <p>
-                                    3.1 Toute personne souhaitant bénéficier du Service proposé ne peut y
-                                    accéder qu’en se connectant sur le Site, via un ordinateur ou tout autre
-                                    support compatible, notamment et sans exclusive, les tablettes tactiles ou
-                                    les smartphones.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">1.3 Le Candidat est tenu de
+                                        prendre connaissance des Conditions avant toute passation de commande. Le choix
+                                        et l’achat d’un Service est de la seule responsabilité du Candidat. (ci-après
+                                        “le Candidat”).
+                                    </font>
                                 </p>
                                 <p>
-                                    Lors de la première connexion, le Candidat devra s’enregistrer par la
-                                    création d’un compte.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">1.4 Les présentes Conditions ont
+                                        vocation à établir les modalités d’accès, d’utilisation, d’achat, et de paiement
+                                        par le candidat aux services et prestations proposés en ligne par Digimoov
+                                        (ci-après ensemble les ”Parties”).
+                                    </font>
                                 </p>
                                 <p>
-                                    Le Candidat devra ensuite renseigner ses coordonnées personnelles (nom,
-                                    prénom, nom commercial ou nom de société, date de naissance et adresse…).
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">1.5 Le Site est édité par la SAS
+                                        MCM ACADEMY
+                                    </font>
                                 </p>
                                 <p>
-                                    Il devra fournir une adresse de courrier électronique valide. Il recevra
-                                    ensuite par courrier électronique un mot de passe à renseigner avant de
-                                    pouvoir se connecter.
+                                    <font style="color: rgb(0, 0, 0);">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    Il est conseillé au Candidat de changer et de personnaliser son mot de
-                                    passe dès cette première connexion.
+                                    <font style="color: rgb(0, 0, 0);"/>
+                                    <font style="color: rgb(0, 0, 0); font-size: 24px;">ARTICLE 2 – CONDITIONS
+                                        PRÉALABLES
+                                    </font>
                                 </p>
                                 <p>
-                                    Le Candidat garantit DIGIMOOV de la sincérité des informations renseignées.
-                                    Il s’engage en outre à les modifier dès le changement d’un des éléments de
-                                    son inscription.
+                                    <font style="color: rgb(0, 0, 0);">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    3.2 La validation de ce compte ne sera effective que lors de l’acceptation
-                                    sans réserve des présentes Conditions, matérialisée par une case à cocher
-                                    lors de la première inscription au Service.
+                                    <font style="color: rgb(0, 0, 0);">&amp;nbsp;</font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">2.1 L’accès au Site et au
+                                        Service développé à l’article 4 est subordonné aux conditions suivantes:
+                                    </font>
                                 </p>
                                 <p>
-                                    3.3 Toute connexion au Site par la conjonction de l’identifiant (login) et
-                                    du mot de passe sera réputée faite par le Candidat, qui prend en
-                                    conséquence la responsabilité du caractère très confidentiel de ces données
-                                    et de l’impérative nécessité de les conserver secrètes.
+                                    <font style="font-size: 14px;">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">2.1.1 le Candidat déclare avoir
+                                        pris connaissance des présentes Conditions et les&amp;nbsp;
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">avoir acceptées en cochant la
+                                        case prévue à cet effet avant la mise en œuvre de la&amp;nbsp;
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">procédure de commande en
+                                        ligne.
+                                    </font>
                                 </p>
                                 <p>
-                                    3.4 Dès l’inscription validée, le Candidat aura accès à un menu principal
-                                    lui permettant d’accéder au Service.
+                                    <font style="font-size: 14px;">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">2.1.2 le Candidat assure
+                                        DIGIMOOV de la sincérité et de la fidélité de toutes les&amp;nbsp;
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">informations transmises, afin de
+                                        donner les moyens à DIGIMOOV d’assurer sa&amp;nbsp;
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">mission dans des conditions
+                                        optimales.
+                                    </font>
                                 </p>
                                 <p>
-                                    Article 4 – DESCRIPTION DU SERVICE
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;"/>
+                                    <font style="font-size: 14px;">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">2.1.3 le Candidat doit être
+                                        titulaire d’une pièce d’identité européenne en cours de&amp;nbsp;
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">validité ainsi qu’un
+                                        justificatif de domicile de moins de 3 mois pour pouvoir&amp;nbsp;
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">s’inscrire à l’examen.</font>
                                 </p>
                                 <p>
-                                    Il s’agit principalement des services suivants, qui pourront évoluer dans
-                                    le temps
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;"/>
+                                    <font style="font-size: 14px;">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">2.1.4 le Service présenté sur le
+                                        Site est proposé à la vente pour la France, à&amp;nbsp;
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">l’exclusion de tout autre
+                                        pays.
+                                    </font>
                                 </p>
                                 <p>
-                                    · les formations en centre de formation, à l’adresse postale indiquée sur
-                                    le Site ou dans des courriers électroniques de confirmation
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">2.2 DIGIMOOV se réserve le droit
+                                        de déroger à certaines clauses des présentes Conditions, en avisant
+                                        préalablement le Candidat, en fonction de l’évolution du contenu du Site et/ou
+                                        pour répondre aux exigences de la législation en vigueur.
+                                    </font>
                                 </p>
                                 <p>
-                                    les formations en ligne (de type e-learning)
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    · l’inscription à des examens blancs, en centre de formation ou en ligne
+                                    <font style="color: rgb(0, 0, 0); font-size: 24px;">ARTICLE 3 – ACCÈS AU SERVICE
+                                    </font>
                                 </p>
                                 <p>
-                                    l’inscription aux examens officiels sur site
-                                    <br/>
-                                    l’accès au compte personnel, notamment aux factures
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    La description détaillée du Service est accessible sur le Site.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">3.1 Toute personne souhaitant
+                                        bénéficier du Service proposé ne peut y accéder qu’en se connectant sur le Site,
+                                        via un ordinateur ou tout autre support compatible, notamment et sans que cela
+                                        soit une liste exclusive, les tablettes tactiles ou les smartphones.
+                                    </font>
                                 </p>
                                 <p>
-                                    Article 5 – MODE OPERATOIRE
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">3.2 Lors de la première
+                                        connexion, le Candidat devra s’enregistrer par la création d’un compte.
+                                    </font>
                                 </p>
                                 <p>
-                                    5.1 Le Candidat accède au Site via le réseau Internet à partir d’un
-                                    périphérique connecté à internet compatible (ordinateur, tablette,
-                                    téléphone …).
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">3.3 Le Candidat devra ensuite
+                                        renseigner ses coordonnées personnelles (nom, prénom, nom commercial ou nom de
+                                        société, date de naissance et adresse…).
+                                    </font>
                                 </p>
                                 <p>
-                                    Il crée un compte utilisateur et renseigne précisément les informations
-                                    sollicitées, telles que prévues à l’article 3. A ce titre, DIGIMOOV se
-                                    réserve le droit d’activer le compte uniquement après vérification de
-                                    l’identité du Candidat.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">3.4 Il devra fournir une adresse
+                                        de courrier électronique valide. Il recevra ensuite par courrier électronique un
+                                        mot de passe à renseigner avant de pouvoir se connecter.
+                                    </font>
                                 </p>
                                 <p>
-                                    5.2 L’accès au Service est subordonné au parfait règlement du montant des
-                                    formations proposées, en centre de formation ou en ligne.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">3.5 Il est conseillé au Candidat
+                                        de changer et de personnaliser son mot de passe dès cette première connexion.
+                                    </font>
                                 </p>
                                 <p>
-                                    5.3 Le Candidat ne peut valider une inscription à une des formations
-                                    proposées que s’il charge en ligne un certain nombre de documents
-                                    justificatifs. Cependant, à titre dérogatoire, l’inscription pourra être
-                                    validée par DIGIMOOV, sous réserve que les documents justificatifs
-                                    manquants soient transmis à DIGIMOOV au plus tard la veille de la formation
-                                    ou de l’examen non officiel.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">3.6 Le Candidat s’engage à
+                                        fournir à DIGIMOOV des informations sincères. Le Candidat s’engage à maintenir à
+                                        jour les informations transmises lors de son inscription et à tenir informé
+                                        DIGIMOOV de toute modification survenue après son inscription.
+                                    </font>
                                 </p>
                                 <p>
-                                    5.4 Le Candidat choisi le type de service accessible en ligne en fonction
-                                    du degré de ses connaissances préalables :
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">3.7 La validation de ce compte
+                                        ne sera effective que lors de l’acceptation sans réserve des présentes
+                                        Conditions, matérialisée par une case à cocher lors de la première inscription
+                                        au Service.
+                                    </font>
                                 </p>
                                 <p>
-                                    – Formation en centre
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">3.8 Toute connexion au Site par
+                                        la conjonction de l’identifiant (login) et du mot de passe sera réputée faite
+                                        par le Candidat, qui prend en conséquence la responsabilité du caractère très
+                                        confidentiel de ces données et de l’impérative nécessité de les conserver
+                                        secrètes.
+                                    </font>
                                 </p>
                                 <p>
-                                    – Formation en ligne
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">3.9 Dès l’inscription validée,
+                                        le Candidat aura accès à un menu principal lui permettant d’accéder au Service.
+                                    </font>
                                 </p>
                                 <p>
-                                    Le Candidat a la possibilité de choisir la date de session de la formation
-                                    selon celle proposée en ligne lors de l’inscription à la formation.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    En cas de désistement du Candidat, sauf cas de force majeure, moins de deux
-                                    semaines avant la date de la formation, celui-ci ne pourra solliciter aucun
-                                    remboursement, la somme versée restant définitivement acquise à DIGIMOOV.
-                                    Au cas où l’intégralité de la somme relative à la formation retenue n’a pas
-                                    été réglée, le solde serait immédiatement exigible.
+                                    <font style="color: rgb(0, 0, 0); font-size: 24px;">ARTICLE 4 – DESCRIPTION DU
+                                        SERVICE
+                                    </font>
                                 </p>
                                 <p>
-                                    En cas d’annulation de la formation, pour quelque raison que ce soit, le
-                                    Candidat se verra proposer plusieurs autres dates de session de formation.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    – Formation en ligne de type e-learning, comprenant notamment des
-                                    questions-réponses, des vidéos, un service de chat entre apprenants, un
-                                    service de question-réponse à un formateur distant, lequel s’engage à
-                                    répondre dans un délai de 48 heures.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">&amp;nbsp;4.1 Le candidat
+                                        inscrit, après paiement des frais afférents, obtiendra accès aux services
+                                        suivants:
+                                    </font>
                                 </p>
-                                <p>
-                                    Le Candidat peut interrompre à tout moment la formation en ligne pour la
-                                    reprendre ultérieurement. Le candidat aura accès à la formation en ligne
-                                    pour une durée ne pouvant dépasser l’une de ces deux dates suivantes : une
-                                    durée de 120 jours à compter de la date de première connexion ou la date
-                                    d’examen si celle-ci est plus rapprochée.
-                                </p>
-                                <p>
-                                    Cependant, en cas d’échec à l’examen officiel, le Candidat ne devra pas
-                                    refaire toute la formation. Il devra néanmoins justifier de l’attestation
-                                    de formation prouvant qu’il a suivi de manière assidu les 102h de
-                                    formation.
-                                </p>
-                                <p>
-                                    –L’espace dédié au Candidat sera définitivement désactivé à compter de la
-                                    notification de la réussite à l’examen officiel final. Le candidat ne
-                                    pourra plus avoir accès à son compte et ne pourra plus bénéficier du
-                                    Service réglé.
-                                </p>
-                                <p>
-                                    Il est important pour le candidat de prévoir pour le passage de l’examen
-                                    une disponibilité de trois heures ininterrompues.
-                                </p>
-                                <p>
-                                    Sauf cas de force majeure prouvé, le candidat ne pourra être remboursé du
-                                    passage d’un examen.
-                                </p>
-                                <p>
-                                    En tout état de cause, le Candidat est informé que les formations proposées
-                                    sont susceptibles d’être modifiées en fonction des évolutions législatives
-                                    et de l’enrichissement des contenus.
+                                <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">4.1.1 Les formations en centre
+                                        de formation, à l’adresse postale indiquée sur le Site ou dans&amp;nbsp;
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">des courriers électroniques de
+                                        confirmation
+                                    </font>
                                 </p>
-                                <p>
-                                    5.5 Pour ce qui concerne l’examen officiel, celui-ci suit la procédure
-                                    suivante impérative :
+                                <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">4.1.2 Les formations en ligne
+                                        (de type e-learning)
+                                    </font>
                                 </p>
-                                <p>
-                                    – l’intégralité des pièces à transmettre doit être communiquée au plus tard
-                                    5 jours ouvrés avant la date de l’examen. À défaut, aucune réservation
-                                    nominative à cet examen ne pourra être enregistrée. En conséquence, si le
-                                    nombre de places requis pour cet examen est rempli, le Candidat ne pourra y
-                                    participer et ne sera pas remboursé par DIGIMOOV, même si les éléments
-                                    justificatifs ont été fournis postérieurement à ce délai de 5 jours.
+                                <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">4.1.3 L’inscription à des
+                                        examens blancs en ligne
+                                    </font>
                                 </p>
-                                <p>
-                                    – le lieu de l’examen peut différer du lieu du centre de formation, si le
-                                    Candidat a suivi cette formation préalable. Il sera précisé dans la
-                                    convocation que le candidat recevra plus tard une semaine avant la date de
-                                    l’examen. À défaut de réception de la convocation, le Candidat doit
-                                    immédiatement en aviser DIGIMOOV. À défaut, il est supposé l’avoir reçue et
-                                    ne sera recevable d’aucune demande d’indemnisation.
+                                <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">4.1.4 L’inscription aux examens
+                                        officiels sur site
+                                    </font>
                                 </p>
-                                <p>
-                                    En cas de report exceptionnel de la date de l’examen, le Candidat recevra
-                                    une nouvelle convocation annulant et remplaçant la précédente
+                                <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">4.1.5 L’accès au compte
+                                        personnel, notamment aux factures
+                                    </font>
                                 </p>
                                 <p>
-                                    DIGIMOOV précise être titulaire de l’intégralité des agréments délivrés par
-                                    la DREIA/DREAL dont la formation dépend et nécessaires à l’organisation des
-                                    examens.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">4.2 L’étendu des Services
+                                        offerts au Candidat dépend du forfait souscrit. La description détaillée du
+                                        Service est accessible sur le Site.
+                                    </font>
                                 </p>
                                 <p>
-                                    Article 6 – TARIFS ET PAIEMENT
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    <strong></strong>
+                                    <font style="color: rgb(0, 0, 0); font-size: 24px;">ARTICLE 5 – ACCES AU SITE</font>
                                 </p>
                                 <p>
-                                    <strong>6.1 Tarification</strong>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    L’utilisation du Service est fournie à titre onéreux. Les tarifs appliqués
-                                    sont en permanence précisés clairement sur le Site pour tout type de
-                                    formation envisagée, ou pour toute inscription à un examen blanc ou
-                                    officiel.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">&amp;nbsp;5.1 Le Candidat accède
+                                        au Site via le réseau Internet à partir d’un périphérique connecté à internet
+                                        compatible (ordinateur, tablette, téléphone …).
+                                    </font>
                                 </p>
                                 <p>
-                                    Le tarif du Service est susceptible d’évolution. Il sera toujours
-                                    clairement mentionné sur le site avant toute commande.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">5.2 Il crée un compte
+                                        utilisateur et renseigne précisément les informations sollicitées, telles que
+                                        prévues à l’article 3. A ce titre, DIGIMOOV se réserve le droit d’activer le
+                                        compte uniquement après vérification de l’identité du Candidat.
+                                    </font>
                                 </p>
                                 <p>
-                                    Les tarifs indiqués ne sont pas soumis à la taxe sur la valeur ajoutée.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">5.3 L’accès au Service est
+                                        subordonné au parfait règlement du montant des formations proposées, en centre
+                                        de formation ou en ligne.
+                                    </font>
                                 </p>
                                 <p>
-                                    <strong>6.2 Modalités de paiement</strong>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">5.4 Le Candidat ne peut valider
+                                        une inscription à une des formations proposées que s’il fournit depuis la
+                                        plateforme en ligne un certain nombre de documents justificatifs.
+                                    </font>
                                 </p>
                                 <p>
-                                    DIGIMOOV met notamment à disposition des Candidats un mode de paiement par
-                                    carte bancaire, règlement sécurisé par un module de type SSL ( <em>secure socket
-                                    layer</em>).
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">Ces documents doivent être
+                                        transmis dans un délai maximum de 72 heures à compter de l’inscription.
+                                    </font>
                                 </p>
                                 <p>
-                                    Le compte du Candidat sera débité dès le règlement effectué.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">5.5 Le Candidat choisi le type
+                                        de service accessible en ligne en fonction du degré de ses connaissances
+                                        préalables :
+                                    </font>
                                 </p>
-                                <p>
-                                    Le Candidat est expressément informé que toute commande de Service ne peut
-                                    faire l’objet d’aucun remboursement, sauf exception expressément prévue par
-                                    les présentes, notamment la survenance d’un cas de force majeure.
+                                <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">5.5.1 Formation en ligne&amp;nbsp;</font>
                                 </p>
                                 <p>
-                                    Le Candidat peut aussi se voir offrir un règlement en deux fois
-                                    exclusivement par carte bancaire.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">5.6 Le Candidat pourra choisir
+                                        la date de session de la formation en ligne lors de l’inscription à la formation
+                                        en fonction des dates disponibles.
+                                    </font>
                                 </p>
                                 <p>
-                                    Les modalités de règlement, pour chacune de ces options, sont définies en
-                                    ligne, avant validation de la commande.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">5.7&amp;nbsp;</font>
+                                    <font color="#000000">
+                                        <span style="font-size: 14px;">Le candidat peut demander un remboursement dans
+                                            les cas suivants:
+                                        </span>
+                                    </font>
                                 </p>
-                                <p>
-                                    En cas de retard de paiement et de versement des sommes dues par le
-                                    Candidat au-delà du délai ci-dessus fixé, des pénalités de retard calculées
-                                    au taux légal sur la base du solde HT restant dû seront acquises
-                                    automatiquement et de plein droit au Prestataire, sans formalité aucune ni
-                                    mise en demeure préalable.
+                                <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                    <font color="#000000">
+                                        <span style="font-size: 14px;">- Il n'a pas renoncé a exercer son droit de
+                                            rétractation lors de son inscription à la formation, qu'il n'a pas dépassé
+                                            14 jours depuis la date de paiement, et qu'il n'a pas entré en formation
+                                            pendant cette période.
+                                        </span>
+                                    </font>
                                 </p>
-                                <p>
-                                    Le retard de paiement entraînera l’exigibilité immédiate de l’intégralité
-                                    des sommes dues par le Candidat, sans préjudice de toute autre action que
-                                    DIGIMOOV serait en droit d’intenter, à ce titre, à l’encontre du Candidat.
+                                <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                    <font color="#000000">
+                                        <span style="font-size: 14px;">- En cas de force majeure.</span>
+                                    </font>
                                 </p>
                                 <p>
-                                    En outre, DIGIMOOV se réserve le droit, en cas de non-respect des
-                                    conditions de paiement figurant ci-dessus, de suspendre ou d’annuler la
-                                    fourniture du Service commandé par le Candidat et/ou de suspendre
-                                    l’exécution de ses obligations.
+                                    <font color="#000000">
+                                        <span style="font-size: 14px;">Si le candidat a coché la case "Je reconnais que
+                                            DIGIMOOV procédera à l'exécution immédiate de ma formation en ligne et à ce
+                                            titre, je renonce expressément à exercer mon droit de rétractation
+                                            conformément aux dispositions de l'article L.221-28 1° du code de la
+                                            consommation" en validant sa commande, et si la demande de remboursement ne
+                                            répond pas aux conditions cités ci-dessus, le candidat ne pourra solliciter
+                                            aucun remboursement, la somme versée restant définitivement acquise à
+                                            DIGIMOOV.
+                                        </span>
+                                    </font>
                                 </p>
                                 <p>
-                                    <strong>6.3 Débours</strong>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">Au cas où l’intégralité de la
+                                        somme relative à la formation retenue n’a pas été réglée, le solde serait
+                                        immédiatement exigible.
+                                    </font>
                                 </p>
                                 <p>
-                                    Tous les débours, notamment les frais de déplacement ou les frais de
-                                    connexion au réseau Internet, restent à la charge du Candidat.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">5.8 En cas d’annulation d’un
+                                        examen indépendamment de la volonté du Candidat, le Candidat se verra proposer
+                                        plusieurs autres dates de session d’examen.
+                                    </font>
                                 </p>
                                 <p>
-                                    <strong>6.4 Cas particuliers</strong>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">5.9 La formation en ligne</font>
                                 </p>
-                                <p>
-                                    En cas de règlement échelonné ou de financement du Service, il est précisé
-                                    qu’aucun accès au centre d’examen, pour ce qui concerne l’examen officiel,
-                                    ne sera autorisé si le solde des sommes restant dû n’est pas préalablement
-                                    réglé.
+                                <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">5.9.1 La formation en ligne de
+                                        type e-learning, comprend notamment des questions-réponses,&amp;nbsp;
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">des vidéos, un service de chat
+                                        entre apprenants, un service de question-réponse à un formateur&amp;nbsp;
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">à distance.</font>
                                 </p>
-                                <p>
-                                    En cas de demande relative à une formation en centre groupée, un devis
-                                    pourra être sollicité en contactant DIGIMOOV via l’onglet « Devis ».
+                                <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">5.9.2 Le formateur à distance
+                                        répondra aux questions dans les meilleurs délais.
+                                    </font>
                                 </p>
                                 <p>
-                                    Dans cette hypothèse, la vente de services sera considérée comme définitive
-                                    qu’après acceptation du devis et respect des modalités de règlement de
-                                    l’acompte visées dans ce devis.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">5.10 En cas d’échec à l’examen
+                                        officiel, le Candidat ne devra pas suivre de nouveau toute la formation mais
+                                        néanmoins il devra suivre des parcours de formation pour pouvoir à nouveau se
+                                        présenter à l’examen.
+                                    </font>
                                 </p>
                                 <p>
-                                    Article 7 – TITULARITÉ DES DROITS
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">5.11 L’espace dédié au Candidat
+                                        sera définitivement désactivé à compter de la notification de la réussite à
+                                        l’examen officiel final. Le candidat ne pourra plus avoir accès à son compte et
+                                        ne pourra plus bénéficier du Service réglé.
+                                    </font>
                                 </p>
                                 <p>
-                                    7.1. DIGIMOOV assure le Candidat être titulaire de tous les droits de
-                                    propriété intellectuelle attachés au contenant et au contenu du Site.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">5.12 Le candidat doit prévoir
+                                        pour le passage de l’examen une disponibilité de trois heures ininterrompues.
+                                    </font>
                                 </p>
                                 <p>
-                                    Tous les éléments du Site sont protégés au titre de la propriété
-                                    intellectuelle.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">5.13 En cas d’absence à un
+                                        examen, le candidat devra régler un montant forfaitaire de 200 euros pour
+                                        pouvoir se représenter à nouveau à cet examen.
+                                    </font>
                                 </p>
                                 <p>
-                                    En particulier, les textes, images, représentations graphiques, vidéos,
-                                    sans que cette liste soit exhaustive, ne peuvent être reproduits sur
-                                    quelque support que ce soit et quel qu’en soit l’usage, sans autorisation
-                                    préalable et expresse de DIGIMOOV.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">5.13 En l’absence de force
+                                        majeure établie, le candidat ne pourra être remboursé des frais acquittés pour
+                                        le passage d’un examen en cas d’absence. Dans tous les autres cas, en cas 4
+                                        d’absence à son examen, le candidat devra régler un montant forfaitaire de 200
+                                        euros pour pouvoir se représenter à nouveau à un examen.
+                                    </font>
                                 </p>
                                 <p>
-                                    Il est formellement prohibé de dupliquer le contenu du Site, ou de le
-                                    partager, de quelque manière que ce soit.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">5.14 Le Candidat accepte par les
+                                        présentes que les formations proposées sont susceptibles d’être modifiées en
+                                        fonction des évolutions législatives et de l’enrichissement des contenus
+                                    </font>
                                 </p>
                                 <p>
-                                    Il est en outre rappelé que toute intrusion illicite dans l’outil
-                                    d’administration (le back office) fera l’objet de poursuites pénales.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    De même, il est expressément convenu que toute extraction de contenus
-                                    appartenant à DIGIMOOV, qualitative ou quantitative, à des fins privées ou
-                                    commerciales est strictement interdite.
+                                    <font style="color: rgb(0, 0, 0); font-size: 24px;">ARTICLE 6 – L’EXAMEN OFFICIEL
+                                    </font>
                                 </p>
                                 <p>
-                                    7.2. Le Candidat s’interdit en conséquence d’utiliser les signes
-                                    distinctifs de DIGIMOOV à toutes fins et de procéder
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    – à la réservation d’un nom de domaine identique ou similaire, toutes
-                                    extensions confondues
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">&amp;nbsp;6.1 Dans le cadre de
+                                        sa participation à un examen le candidat devra impérativement fournir les pièces
+                                        suivantes :
+                                    </font>
                                 </p>
-                                <p>
-                                    – au dépôt identique ou similaire d’une marque pour un Service identique ou
-                                    similaire.
+                                <p><font style="color: rgb(0, 0, 0); font-size: 14px;"/>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">6.1.1 L’intégralité des pièces à
+                                        transmettre doit être communiquée au plus tard 48 heures à&amp;nbsp;
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">compter de l’inscription.&amp;nbsp;</font>
                                 </p>
-                                <p>
-                                    Article 8 – OBLIGATIONS ET DROITS DES PARTIES
+                                <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">6.1.2 Le Candidat ne pourra se
+                                        prévaloir de l’absence de place disponible à l’examen, pour&amp;nbsp;
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">obtenir un remboursement par
+                                        DIGIMOOV, dès lors qu’il n’aura pas été en mesure de&amp;nbsp;</font>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">communiquer les éléments
+                                        justificatifs dans le délai requis.
+                                    </font>
                                 </p>
                                 <p>
-                                    <strong>8.1 Obligations et droits de</strong>
-                                    DIGIMOOV
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">6.2 Au moment du paiement en
+                                        ligne, le candidat dispose d’un délai de 48h pour fournir les pièces
+                                        justificatives requises : ( contrat de formation signée, carte d’identité recto
+                                        et verso en cours de validité ou carte de séjour en cours de validité,
+                                        justificatif de domicile de moins de 6 mois, en cas d’hébergement, attestation
+                                        d’hébergement avec pièce d’identité de l’hébergeur, cerfa n°11414*05) complété
+                                        et signé).
+                                    </font>
                                 </p>
                                 <p>
-                                    DIGIMOOV mettra en œuvre, dans le cadre de son obligation de moyens, toutes
-                                    les ressources humaines et matérielles dont elle dispose afin de satisfaire
-                                    le Service attendu par le Candidat, et de respecter une continuité dans la
-                                    fourniture de ce service.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">6.3 Le candidat sera notifié par
+                                        une convocation transmise une semaine au plus tard avant la date d’examen du
+                                        lieu d’examen auquel il devra se présenter.
+                                    </font>
                                 </p>
                                 <p>
-                                    DIGIMOOV s’interdit de divulguer, sauf dans le cadre d’obligations
-                                    judiciaires ou sur injonction de toute autorité habilitée, toute donnée à
-                                    caractère personnel à des tiers.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">6.4 Le Candidat doit
+                                        immédiatement aviser DIGIMOOV qu’il n’a pas reçu cette notification dans les
+                                        délais prévus à l’article 6.3. Le candidat ne pourra pas se prévaloir de
+                                        l’absence de convocation pour obtenir une indemnisation.
+                                    </font>
                                 </p>
                                 <p>
-                                    Si le Service commandé par le Candidat particulier n’a pas été fourni dans
-                                    un délai de quinze jours ouvrés à compter de date de la commande (en
-                                    particulier la mise à disposition des formations en ligne) ou de la date
-                                    d’envoi de la convocation dans ce délai, ou pour toute autre cause que la
-                                    force majeure ou le fait du Candidat, la vente pourra être résolue à la
-                                    demande écrite du Candidat dans les conditions prévues aux articles L.138-2
-                                    et L.138-3 du Code de la consommation. Les sommes versées par le Candidat
-                                    lui seront alors restituées au plus tard dans les quatorze jours qui
-                                    suivent la date de dénonciation du contrat, à l’exclusion de toute
-                                    indemnisation ou retenue.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    A défaut de réserves ou réclamations expressément émises par le Candidat
-                                    lors de la réception et de l’utilisation du Service, celui-ci sera réputé
-                                    conforme à la commande, en quantité et qualité.
+                                    <font style="color: rgb(0, 0, 0); font-size: 24px;">ARTICLE 7 – TARIFS ET PAIEMENT&amp;nbsp;</font>
                                 </p>
                                 <p>
-                                    Le Candidat disposera d’un délai de quinze jours francs à compter de la
-                                    fourniture du Service pour émettre, par écrit, toute de telles réserves ou
-                                    réclamations, avec tous les justificatifs y afférents, auprès deDIGIMOOV.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    Aucune réclamation ne pourra être valablement acceptée en cas de
-                                    non-respect de ces formalités et délais par le Candidat.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">7.1 L’utilisation du Service est
+                                        fournie à titre onéreux. Les tarifs appliqués sont en permanence précisés
+                                        clairement sur le Site pour tout type de formation envisagée, ou pour toute
+                                        inscription à un examen.
+                                    </font>
                                 </p>
                                 <p>
-                                    DIGIMOOV remboursera le Candidat totalement ou partiellement dans les plus
-                                    brefs délais, selon les modalités adéquates et agréées par le Candidat, du
-                                    Service dont le défaut de conformité aura été dûment prouvé par le
-                                    Candidat.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">7.2 Les tarifs indiqués ne sont
+                                        pas soumis à la taxe sur la valeur ajoutée.
+                                    </font>
                                 </p>
                                 <p>
-                                    <strong>8.2 Obligations et droits du Candidat</strong>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">7.3 DIGIMOOV met notamment à
+                                        disposition des Candidats un mode de paiement par carte bancaire, règlement
+                                        sécurisé par un module de type SSL (Secure socket layer).Le compte du Candidat
+                                        sera débité dès le règlement effectué.
+                                    </font>
                                 </p>
                                 <p>
-                                    Le Candidat s’oblige à fournir des informations fidèles et sincères lors de
-                                    l’inscription et tout au long de la relation contractuelle. En tout état de
-                                    cause, les informations saisies le sont sous la seule et entière
-                                    responsabilité du Candidat.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">7.4 Le Candidat est expressément
+                                        informé que toute commande de Service ne peut faire l’objet d’aucun
+                                        remboursement, sauf en cas de force majeure.
+                                    </font>
                                 </p>
                                 <p>
-                                    Il s’interdit d’utiliser le Site ou le Service pour une finalité sans
-                                    relation avec celles rappelées à l’article 1 des présentes Conditions.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">7.5 Le Candidat peut aussi se
+                                        voir offrir un règlement en deux ou trois fois exclusivement par carte bancaire.
+                                    </font>
                                 </p>
                                 <p>
-                                    Il s’interdit parallèlement d’utiliser, reproduire ou revendre le Service
-                                    mis à sa disposition. A défaut, DIGIMOOV procédera sans préavis à la
-                                    suppression de son compte.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">7.6 Les modalités de règlement,
+                                        pour chacune de ces options, sont définies en ligne, avant validation de la
+                                        commande.
+                                    </font>
                                 </p>
                                 <p>
-                                    DIGIMOOV se réserve de même le droit, en cas de non-respect délibéré des
-                                    obligations inhérentes aux présentes, de procéder à la suspension ou à la
-                                    suppression pure et simple, sans préavis, et sans information préalable, du
-                                    compte de tout Candidat, sans que ce dernier ne puisse se prévaloir d’aucun
-                                    préjudice, et le cas échéant de refuser toute nouvelle inscription avec les
-                                    mêmes coordonnées, notamment la même adresse de courrier électronique ou la
-                                    même adresse IP (Internet Protocol).
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">7.7 En cas de retard de paiement
+                                        et de versement des sommes dues par le Candidat au-delà du délai ci-dessus fixé,
+                                        des pénalités de retard calculées au taux légal sur la base du solde HT restant
+                                        dû seront acquises automatiquement et de plein droit au Prestataire, sans
+                                        formalité aucune ni mise en demeure préalable.
+                                    </font>
                                 </p>
                                 <p>
-                                    Le Candidat ne pourra se prévaloir d’aucun préjudice, ni d’aucune
-                                    prétention indemnitaire, suite à cette suspension à cette suppression.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">7.8 Le retard de paiement
+                                        entraînera l’exigibilité immédiate de l’intégralité des sommes dues par le
+                                        Candidat, sans préjudice de toute autre action que DIGIMOOV serait en droit
+                                        d’intenter, à ce titre, à l’encontre du Candidat.
+                                    </font>
                                 </p>
                                 <p>
-                                    Le Candidat reconnaît avoir eu communication, préalablement à la passation
-                                    de sa commande et à la conclusion du contrat, d’une manière lisible et
-                                    compréhensible, des présentes Conditions et de toutes les informations
-                                    listées à l’article L.121-17 du Code de la consommation, et notamment les
-                                    informations suivantes :
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">7.9 En outre, DIGIMOOV se
+                                        réserve le droit, en cas de non-respect des conditions de paiement figurant
+                                        ci-dessus, de suspendre ou d’annuler la fourniture du Service commandé par le
+                                        Candidat et/ou de suspendre l’exécution de ses obligations.
+                                    </font>
                                 </p>
                                 <p>
-                                    – les caractéristiques essentielles du Service, compte tenu du support de
-                                    communication utilisé et du Service concerné ;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">7.10 Tous les débours, notamment
+                                        les frais de déplacement ou les frais de connexion au réseau Internet, restent à
+                                        la charge du Candidat.
+                                    </font>
                                 </p>
                                 <p>
-                                    – le prix du Service ;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">7.11 En cas de règlement
+                                        échelonné ou de financement du Service, il est précisé qu’aucun accès au centre
+                                        d’examen, pour ce qui concerne l’examen officiel, ne sera autorisé si le solde
+                                        des sommes restant dû n’est pas préalablement réglé.
+                                    </font>
                                 </p>
                                 <p>
-                                    – en l’absence d’exécution immédiate du contrat, la date ou le délai auquel
-                                    DIGIMOOV s’engage à fournir les Services commandés ;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    – les informations relatives à l’identité de DIGIMOOV, à ses coordonnées
-                                    postales, téléphoniques et électroniques, et à ses activités ;
+                                    <font style="color: rgb(0, 0, 0); font-size: 24px;">ARTICLE 8 – TITULARITÉ DES
+                                        DROITS
+                                    </font>
                                 </p>
                                 <p>
-                                    – les informations relatives aux garanties légales et contractuelles et à
-                                    leurs modalités de mise en œuvre ;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    – les fonctionnalités du contenu numérique ;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">8.1. DIGIMOOV assure le Candidat
+                                        être titulaire de tous les droits de propriété intellectuelle attachés au
+                                        contenant et au contenu du Site. Tous les éléments du Site sont protégés au
+                                        titre de la propriété intellectuelle.
+                                    </font>
                                 </p>
                                 <p>
-                                    – la possibilité de recourir à une médiation conventionnelle en cas de
-                                    litige ;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">8.2 Plus précisément, les
+                                        textes, images, représentations graphiques, vidéos, sans que cette liste soit
+                                        exhaustive, ne peuvent être reproduits sur quelque support que ce soit et quel
+                                        qu’en soit l’usage, sans autorisation préalable et expresse de DIGIMOOV.
+                                    </font>
                                 </p>
                                 <p>
-                                    – les informations relatives au droit de rétractation (existence,
-                                    conditions, délai, modalités d’exercice de ce droit et formulaire type de
-                                    rétractation), aux modalités de résiliation et autres conditions
-                                    contractuelles importantes ;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">8.3 Il est formellement prohibé
+                                        de dupliquer le contenu du Site, ou de le partager, de quelque manière que ce
+                                        soit.
+                                    </font>
                                 </p>
                                 <p>
-                                    – les moyens de paiement acceptés.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">8.4 Il est en outre rappelé que
+                                        toute intrusion illicite dans l’outil d’administration (le back office) est
+                                        interdite.
+                                    </font>
                                 </p>
                                 <p>
-                                    Le fait pour une personne physique, de commander sur le Site emporte
-                                    adhésion et acceptation pleine et entière des présentes Conditions et
-                                    obligation au paiement du Service commandé, ce qui est expressément reconnu
-                                    par le Candidat, qui renonce, notamment, à se prévaloir de tout document
-                                    contradictoire, qui serait inopposable à DIGIMOOV.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">8.5 il est expressément convenu
+                                        que toute extraction de contenus appartenant à DIGIMOOV, qualitative ou
+                                        quantitative, à des fins privées ou commerciales est strictement interdite.
+                                    </font>
                                 </p>
                                 <p>
-                                    DIGIMOOV rappelle que le Candidat dispose d’un droit à rétractation de
-                                    quatorze jours à compter de la date d’achat du Service. Il doit être
-                                    exécuté selon le formulaire accessible en annexe, qui doit être adressé
-                                    dans ce délai par lettre recommandée avec demande d’avis de réception. Le
-                                    Candidat sera remboursé dans le délai de quatorze jours à compter de la
-                                    réception de la notification. Ce droit ne peut plus être exercé dès
-                                    connexion du candidat au Service, conformément aux dispositions de
-                                    l’article L.121-21-8 du Code la consommation.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">8.6. Le Candidat s’interdit en
+                                        conséquence d’utiliser les signes distinctifs de DIGIMOOV à toutes fins et de
+                                        procéder
+                                    </font>
                                 </p>
-                                <p>
-                                    Article 9 – RESPONSABILITÉ
+                                <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">8.6.1 à la réservation d’un nom
+                                        de domaine identique ou similaire, toutes extensions&amp;nbsp;
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">confondues</font>
                                 </p>
-                                <p>
-                                    <strong>9.1 Exonération : Force majeure et Cas fortuit</strong>
+                                <p><font style="color: rgb(0, 0, 0); font-size: 14px;"/>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">8.6.2 Au dépôt identique ou
+                                        similaire d’une marque pour un Service identique ou similaire. &amp;nbsp;
+                                    </font>
                                 </p>
                                 <p>
-                                    Au cas où surviendrait un cas de force majeure ou un cas fortuit, les
-                                    Parties conviennent qu’aucune responsabilité ne pourra être recherchée pour
-                                    manquement aux obligations contractuelles.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    Il est entendu par force majeure ou cas fortuit tous les cas, notamment les
-                                    grèves totales ou partielles, les situations de lock-out, troubles,
-                                    émeutes, bris de machine, épidémie, incendies, inondations, catastrophe
-                                    naturelle ou due à la fission de l’atome et, en règle générale, et pour
-                                    tous les cas reconnus par la jurisprudence émanant de la Cour de cassation
-                                    française.
+                                    <font style="color: rgb(0, 0, 0); font-size: 24px;">ARTICLE 9 – OBLIGATIONS ET
+                                        DROITS DES PARTIES
+                                    </font>
                                 </p>
                                 <p>
-                                    Elles conviennent notamment que constituent un cas fortuit des pannes et
-                                    des problèmes d’ordre technique concernant le matériel sur lequel le Site
-                                    est hébergé.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    <strong>9.2 Portée</strong>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">&amp;nbsp;9.1 DIGIMOOV mettra en
+                                        œuvre, dans le cadre de son obligation de moyens, toutes les ressources humaines
+                                        et matérielles dont elle dispose afin de satisfaire le Service attendu par le
+                                        Candidat, et de respecter une continuité dans la fourniture de ce service.
+                                    </font>
                                 </p>
                                 <p>
-                                    Le Service fourni par l’intermédiaire du Site de DIGIMOOV est conforme à la
-                                    réglementation en vigueur en France.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">9.2 DIGIMOOV s’interdit de
+                                        divulguer, sauf dans le cadre d’obligations judiciaires ou sur injonction de
+                                        toute autorité habilitée ou avec accord du candidat, toute donnée à caractère
+                                        personnel à des tiers
+                                    </font>
                                 </p>
                                 <p>
-                                    En tout état de cause, au cas où la responsabilité de DIGIMOOV était
-                                    recherchée, celle-ci ne pourrait en aucun cas être pécuniairement engagée
-                                    au-delà du montant total de la prestation achetée par le Candidat durant
-                                    l’année précédant la date de première réclamation.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">9.3A défaut de réserves ou
+                                        réclamations expressément émises par le Candidat lors de la réception et de
+                                        l’utilisation du Service, celui-ci sera réputé conforme à la commande, en
+                                        quantité et qualité.
+                                    </font>
                                 </p>
                                 <p>
-                                    Article 10 – INTEGRALITE et MODIFICATION
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">9.4 Le Candidat s’oblige à
+                                        fournir des informations fidèles et sincères lors de l’inscription et tout au
+                                        long de la relation contractuelle. La véracité des informations saisies engage
+                                        la seule responsabilité du Candidat.
+                                    </font>
                                 </p>
                                 <p>
-                                    10.1 Les présentes Conditions conclues entre DIGIMOOV et le Candidat
-                                    expriment l’intégralité des obligations des Parties, au même titre que les
-                                    Mentions Légales, visibles sur le Site, à l’adresse <a
-                                        href="http://www.digimoov.fr/">www.digimoov.fr</a>.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">9.5 Le candidat s’engage à ne
+                                        pas utiliser le Site ou le Service pour une finalité sans relation avec celles
+                                        rappelées à l’article 1 des présentes Conditions.
+                                    </font>
                                 </p>
                                 <p>
-                                    Aucun document technique, publicitaire ou commercial d’aucune sorte, aucune
-                                    correspondance antérieure à l’acceptation des présentes Conditions, ne peut
-                                    engendrer d’obligations au titre desdites Conditions.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">9.6 Le candidat s’engage à ne
+                                        pas utiliser, reproduire ou revendre le Service mis à sa disposition. A défaut,
+                                        DIGIMOOV procédera sans préavis à la suppression de son compte. DIGIMOOV se
+                                        réserve le droit d’engager la responsabilité devant les juridictions compétentes
+                                        en cas d’utilisation frauduleuse par le Candidat du Service fourni
+                                    </font>
                                 </p>
                                 <p>
-                                    10.2 En cas d’évolution ou de modification des présentes Conditions en
-                                    cours de contrat, le Candidat en sera averti lors de la connexion, et sera
-                                    invité à les valider.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">9.7 DIGIMOOV se réserve
+                                        également le droit, en cas de non-respect délibéré des obligations inhérentes
+                                        aux présentes, de procéder à la suspension ou à la suppression pure et simple,
+                                        sans préavis, et sans information préalable, du compte de tout Candidat, sans
+                                        que ce dernier ne puisse se prévaloir d’aucun préjudice
+                                    </font>
                                 </p>
                                 <p>
-                                    Article 11 – NON VALIDITE PARTIELLE
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">9.8 Dans l’hypothèse visée à
+                                        l’article 9.7, DIGIMOOV pourra le cas échéant refuser toute nouvelle inscription
+                                        avec les mêmes coordonnées, notamment la même adresse de courrier électronique
+                                        ou la même adresse IP (Internet Protocol).
+                                    </font>
                                 </p>
                                 <p>
-                                    Si une stipulation particulière des présentes Conditions est tenue pour non
-                                    valide ou déclarée comme telle par une décision ayant autorité de la chose
-                                    jugée d’une juridiction compétente, les autres stipulations garderont toute
-                                    leur force et leur portée.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">9.9. Le Candidat reconnaît avoir
+                                        eu communication, préalablement à la passation de sa commande et à la conclusion
+                                        du contrat, d’une manière lisible et compréhensible, des présentes Conditions et
+                                        de toutes les informations listées à l’article L.121-17 du Code de la
+                                        consommation, et notamment les informations suivantes :
+                                    </font>
                                 </p>
-                                <p>
-                                    DIGIMOOV se chargerait, le cas échéant, de remplacer la ou les stipulations
-                                    invalidées.
+                                <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">9.9.1 Les caractéristiques
+                                        essentielles du Service, compte tenu du support de communication&amp;nbsp;
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">utilisé et du Service concerné ;
+                                        &amp;nbsp;
+                                    </font>
                                 </p>
-                                <p>
-                                    Article 12 – PREUVE et SIGNATURE
+                                <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">9.9.2 Le prix du Service ;
+                                    </font>
                                 </p>
-                                <p>
-                                    13.1 Les données concernant le Candidat font l’objet d’un traitement
-                                    automatisé par DIGIMOOV.
+                                <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">9.9.3 En l’absence d’exécution
+                                        immédiate du contrat, la date ou le délai auquel DIGIMOOV&amp;nbsp;
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">s’engage à fournir les Services
+                                        commandés ;&amp;nbsp;
+                                    </font>
                                 </p>
-                                <p>
-                                    13.2 Conformément à la loi Informatique et Libertés du 6 janvier 1978
-                                    modifiée par la loi du 6 août 2004, DIGIMOOV a procédé à la déclaration des
-                                    traitements automatisés de données à caractère personnel dont il a la
-                                    charge et s’engage à respecter les prescriptions légales portant sur
-                                    l’emploi de ces fichiers et notamment :
+                                <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">9.9.4 Les informations relatives
+                                        à l’identité de DIGIMOOV, à ses coordonnées postales,&amp;nbsp;
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">téléphoniques et électroniques,
+                                        et à ses activités ;&amp;nbsp;
+                                    </font>
                                 </p>
-                                <p>
-                                    · ne traiter que des données loyalement et licitement collectées,
+                                <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">9.9.5 Les informations relatives
+                                        aux garanties légales et contractuelles et à leurs modalités de&amp;nbsp;
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">mise en œuvre ;</font>
                                 </p>
-                                <p>
-                                    · ne traiter les données ainsi collectées que dans le cadre des finalités
-                                    déterminées, explicites et légitimes,
+                                <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">9.9.6 Les fonctionnalités du
+                                        contenu numérique ;
+                                    </font>
                                 </p>
-                                <p>
-                                    · ne traiter que les données adéquates, pertinentes et non excessives au
-                                    regard de ces finalités,
+                                <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">9.9.7 Les informations relatives
+                                        au droit de rétractation (existence, conditions, délai, modalités&amp;nbsp;
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">d’exercice de ce droit et
+                                        formulaire type de rétractation), aux modalités de résiliation et autres&amp;nbsp;
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">conditions contractuelles
+                                        importantes ;
+                                    </font>
                                 </p>
                                 <p>
-                                    · conserver ces données durant le temps nécessaire à la réalisation de ces
-                                    finalités,
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">9.10 Le Candidat dispose d’un
+                                        droit à rétractation de quatorze jours à compter de la date d’achat du Service.
+                                        Il doit être exécuté selon le formulaire accessible en annexe, qui doit être
+                                        adressé dans ce délai par lettre recommandée à l’adresse suivante adresse MCM
+                                        ACADEMY / Digimoov 10 RUE DE PENTHIÈVRE PARIS . avec demande d’avis de
+                                        réception. Le Candidat sera remboursé dans le délai de quatorze jours à compter
+                                        de la réception de la notification. Ce droit ne peut plus être exercé dès
+                                        connexion du candidat au Service, conformément aux dispositions de l’article
+                                        L.121-21-8 du Code la consommation.
+                                    </font>
                                 </p>
                                 <p>
-                                    · prendre toutes les précautions utiles afin de préserver la sécurité des
-                                    données et notamment d’empêcher qu’elles ne soient déformées, endommagées
-                                    ou communiquées à des tiers non concernés.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    13.3 DIGIMOOV pourra également détenir et conserver les données de nature à
-                                    permettre l’identification de toute personne ayant utilisé le Site et le
-                                    Service. A la demande de l’autorité judiciaire, DIGIMOOV aura l’obligation
-                                    de fournir ces données sans pour autant porter atteinte aux droits des
-                                    personnes concernées par ces données, et sans mettre en cause la
-                                    responsabilité du Candidat.
+                                    <font style="color: rgb(0, 0, 0); font-size: 24px;">ARTICLE 10– RESPONSABILITÉ
+                                    </font>
                                 </p>
                                 <p>
-                                    13.4 DIGIMOOV permet l’exercice effectif des droits reconnus par la loi aux
-                                    personnes dont les données font l’objet du traitement :
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    · permettre l’exercice du droit d’accès de ces personnes à leurs propres
-                                    données à caractère personnel traitées par DIGIMOOV,
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">10.1 Le Service fourni par
+                                        l’intermédiaire du Site de DIGIMOOV est conforme à la réglementation en vigueur
+                                        en France
+                                    </font>
                                 </p>
                                 <p>
-                                    · permettre l’exercice du droit d’opposition de ces personnes pour les
-                                    données ne relevant pas de la finalité prévue,
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">10.2 Dans le cas où la
+                                        responsabilité de DIGIMOOV était recherchée, celle-ci ne pourrait être
+                                        pécuniairement engagée au-delà du montant total de la prestation achetée par le
+                                        Candidat.
+                                    </font>
                                 </p>
                                 <p>
-                                    · permettre la contestation et la mise à jour par ces personnes des données
-                                    les concernant lorsque celles-ci s’avèreront inexactes, incomplètes,
-                                    équivoques ou périmées,
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    · faire connaître à ces personnes la logique qui sous-tend le traitement
-                                    automatisé en cas de décision prise sur le fondement de celui-ci et
-                                    produisant des effets juridiques à leur égard.
+                                    <font style="color: rgb(0, 0, 0); font-size: 24px;">ARTICLE 11 – INTEGRALITE ET
+                                        MODIFICATION
+                                    </font>
                                 </p>
                                 <p>
-                                    Article 13 – DONNEES A CARACTERE PERSONNEL
+                                    <font style="color: rgb(0, 0, 0); font-size: 24px;">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    13.1 Les données concernant le Candidat font l’objet d’un traitement
-                                    automatisé par DIGIMOOV.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">11.1 Les présentes Conditions
+                                        conclues entre DIGIMOOV et le Candidat expriment l’intégralité des obligations
+                                        des Parties.&amp;nbsp;
+                                    </font>
                                 </p>
                                 <p>
-                                    13.2 Conformément à la loi Informatique et Libertés du 6 janvier 1978
-                                    modifiée par la loi du 6 août 2004, DIGIMOOV a procédé à la déclaration des
-                                    traitements automatisés de données à caractère personnel dont il a la
-                                    charge et s’engage à respecter les prescriptions légales portant sur
-                                    l’emploi de ces fichiers et notamment :
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">11.2 Aucun document technique,
+                                        publicitaire ou commercial d’aucune sorte, aucune correspondance antérieure à
+                                        l’acceptation des présentes Conditions, ne peut engendrer d’obligations au titre
+                                        desdites Conditions
+                                    </font>
                                 </p>
                                 <p>
-                                    · ne traiter que des données loyalement et licitement collectées,
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">11.3 En cas d’évolution ou de
+                                        modification des présentes Conditions en cours de contrat, le Candidat en sera
+                                        averti lors de la connexion, et sera invité à les valider.
+                                    </font>
                                 </p>
                                 <p>
-                                    · ne traiter les données ainsi collectées que dans le cadre des finalités
-                                    déterminées, explicites et légitimes,
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    · ne traiter que les données adéquates, pertinentes et non excessives au
-                                    regard de ces finalités,
+                                    <font style="color: rgb(0, 0, 0); font-size: 24px;">ARTICLE 12 – NON VALIDITE
+                                        PARTIELLE
+                                    </font>
                                 </p>
                                 <p>
-                                    · conserver ces données durant le temps nécessaire à la réalisation de ces
-                                    finalités,
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    · prendre toutes les précautions utiles afin de préserver la sécurité des
-                                    données et notamment d’empêcher qu’elles ne soient déformées, endommagées
-                                    ou communiquées à des tiers non concernés.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">12.1 Si une stipulation
+                                        particulière des présentes Conditions est tenue pour non valide ou déclarée
+                                        comme telle par une décision ayant autorité de la chose jugée d’une juridiction
+                                        compétente, les autres stipulations garderont toute leur force et leur portée.
+                                    </font>
                                 </p>
                                 <p>
-                                    13.3 DIGIMOOV pourra également détenir et conserver les données de nature à
-                                    permettre l’identification de toute personne ayant utilisé le Site et le
-                                    Service. A la demande de l’autorité judiciaire, DIGIMOOV aura l’obligation
-                                    de fournir ces données sans pour autant porter atteinte aux droits des
-                                    personnes concernées par ces données, et sans mettre en cause la
-                                    responsabilité du Candidat.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    13.4 DIGIMOOV permet l’exercice effectif des droits reconnus par la loi aux
-                                    personnes dont les données font l’objet du traitement :
+                                    <font style="color: rgb(0, 0, 0); font-size: 24px;">ARTICLE 13 – DONNEES A CARACTERE
+                                        PERSONNEL
+                                    </font>
                                 </p>
                                 <p>
-                                    · permettre l’exercice du droit d’accès de ces personnes à leurs propres
-                                    données à caractère personnel traitées par DIGIMOOV,
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    · permettre l’exercice du droit d’opposition de ces personnes pour les
-                                    données ne relevant pas de la finalité prévue,
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">13.1 Les données concernant le
+                                        Candidat font l’objet d’un traitement automatisé par DIGIMOOV.
+                                    </font>
                                 </p>
                                 <p>
-                                    · permettre la contestation et la mise à jour par ces personnes des données
-                                    les concernant lorsque celles-ci s’avèreront inexactes, incomplètes,
-                                    équivoques ou périmées,
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">13.2 Conformément à la loi
+                                        Informatique et Libertés du 6 janvier 1978 modifiée par la loi du 6 août 2004,
+                                        DIGIMOOV a procédé à la déclaration des traitements automatisés de données à
+                                        caractère personnel dont il a la charge et s’engage à respecter les
+                                        prescriptions légales portant sur l’emploi de ces fichiers conformément à la
+                                        politique de confidentialité disponible sur le site
+                                    </font>
                                 </p>
                                 <p>
-                                    · faire connaître à ces personnes la logique qui sous-tend le traitement
-                                    automatisé en cas de décision prise sur le fondement de celui-ci et
-                                    produisant des effets juridiques à leur égard.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    Article 14 – DIFFERENDS
+                                    <font style="color: rgb(0, 0, 0); font-size: 24px;">ARTICLE 14 – LITIGE REPRENDRE
+                                        LES TERMES DU CONTRAT
+                                    </font>
                                 </p>
                                 <p>
-                                    Dans l’hypothèse où un litige naîtrait entre DIGIMOOV et le Candidat du
-                                    fait de l’exécution ou de l’interprétation du présent contrat, les Parties
-                                    conviennent préalablement à toute action en Justice de rechercher une
-                                    solution amiable par la voie d’une conciliation qui suivra la procédure
-                                    amiable suivante :
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">
+                                        <br/>
+                                    </font>
                                 </p>
                                 <p>
-                                    – toute réclamation fera l’objet d’un courrier électronique via le
-                                    formulaire de contact accessible sur le Site ;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">14.1 Dans l’hypothèse où un
+                                        litige naîtrait entre DIGIMOOV et le Candidat du fait de l’exécution ou de
+                                        l’interprétation du présent contrat, les Parties conviennent préalablement à
+                                        toute action judiciaire de rechercher une solution amiable par la voie d’une
+                                        conciliation qui suivra la procédure amiable :
+                                    </font>
                                 </p>
-                                <p>
-                                    – le destinataire du courrier électronique s’engage à répondre dans un
-                                    délai de cinq (5) jours ouvrés suivant la réception de la réclamation. A
-                                    défaut de réponse dans ce délai, il sera réputé acquiescer aux réclamations
-                                    de l’expéditeur ;
+                                <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">14.1.1 Toute réclamation fera
+                                        l’objet d’un courrier électronique via le formulaire de contact&amp;nbsp;
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">accessible sur le Site ; &amp;nbsp;</font>
                                 </p>
-                                <p>
-                                    – si le différend persiste après réponse ou en cas d’insuffisance dans la
-                                    réponse apportée, chaque partie pourra engager toute procédure utile devant
-                                    toute juridiction compétente de la ville de PARIS qui statuera conformément
-                                    au droit français, nonobstant action en référé, appel en garantie,
-                                    pluralité de défendeurs ou procédure conservatoire ou non contradictoire.
+                                <p>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">14.1.2 Le destinataire du
+                                        courrier électronique s’engage à répondre dans un bref délai suivant la&amp;nbsp;
+                                    </font>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">réception de la réclamation ;
+                                    </font>
                                 </p>
                                 <p>
-                                    Le Candidat est informé qu’il peut en tout état de cause recourir à une
-                                    médiation conventionnelle, <a name="_GoBack"></a>notamment auprès de la
-                                    Commission de la médiation de la consommation ou auprès des instances de
-                                    médiation sectorielles existantes, et dont les références figurent sur le
-                                    site Internet
-                                    http://www.economie.gouv.fr/mediation-conso/des-mediateurs-pour-chaque-litige.
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;">14.2 Si une contestation ou un
+                                        différend ne peut pas être réglé à l’amiable, le litige sera soumis à la
+                                        juridiction française compétente.
+                                    </font>
                                 </p>
-                                <br/>
-
-
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </t>
