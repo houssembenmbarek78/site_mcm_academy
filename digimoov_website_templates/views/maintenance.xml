@@ -20,7 +20,6 @@
                 text-align: center;
                 font-size: 15pt;
                 }
-
                 .warning {
                 top: 25%;
                 width: 100%;
