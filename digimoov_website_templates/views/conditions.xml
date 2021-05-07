@@ -2,6 +2,7 @@
     <template id="digimoov_website_templates.digimoov_template_conditions"
               name="Conditions générales de vente | Digimoov">
         <t t-call="website.layout">
+<!--style-->
             <style>
                 .features {
                 padding: 100px 0;
