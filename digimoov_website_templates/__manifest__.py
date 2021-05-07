@@ -29,7 +29,7 @@
         'views/quisommesnous.xml',
         'views/noscentre.xml',
         'views/footer_template.xml',
-        'views/header_template.xml',
+        # 'views/header_template.xml',
         'views/website_sale.xml',
         'views/conditions.xml',
         'views/services.xml',
