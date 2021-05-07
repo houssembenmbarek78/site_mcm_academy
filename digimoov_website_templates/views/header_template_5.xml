@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-	<template id="website_multi_header_five" inherit_id="portal.frontend_layout" name="Header Five" active="false">
+	<template id="website_multi_header_five" inherit_id="portal.frontend_layout" name="Header Five" active="active">
 		<xpath expr="//header" position="replace">
 			<header id="header_five" class="header_five">
 				<div class="header13 po-relative">
-					<!-- <div class="h13-topbar">
+					<div class="h13-topbar">
 						<div class="container">
 							<nav class="navbar navbar-expand-lg font-14">
 								<div class="navbar-collapse" id="header13a">
@@ -57,7 +57,7 @@
 								</div>
 							</nav>
 						</div>
-					</div> -->
+					</div>
 					<div class="container-fluid">
 						<nav class="navbar navbar-expand-lg hover-dropdown h13-nav navbar-light">
 							<a href="/" class="navbar-brand logo">
@@ -67,12 +67,7 @@
 								<span class="fa fa-bars"></span>
 							</button>
 							<div class="collapse navbar-collapse" id="top_menu_collapse">
-								<!-- <div class="col-md-2 call-info hidden-md-down">
-									<small class="text-muted">CALL US ON</small>
-									<h5 class="m-b-0 font-medium">
-										<span t-esc="res_company.phone"/>
-									</h5>
-								</div> -->
+
 								<ul class="nav navbar-nav ml-auto" id="top_menu">
 									<t t-foreach="website.menu_id.child_id" t-as="submenu">
 										<t t-call="website.submenu">

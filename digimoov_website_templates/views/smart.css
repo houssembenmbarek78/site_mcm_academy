@@ -1,0 +1,232 @@
+.subtitle > div {
+  height: 160px;
+}
+
+.subtitle > b {
+  font-size: 25px;
+  color: #202647;
+  line-height: 0.8cm !important;
+}
+
+.subtitle > span {
+  color: rgb(0, 0, 0);
+  font-size: 36px;
+}
+
+.subtitle > font {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+}
+
+.title > font {
+  color: rgb(0, 0, 0);
+}
+
+.display-5.fa.fa-3x.fa-flag > span {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  text-align: left;
+}
+
+.m-t-20 > span {
+  font-family: Roboto, "Odoo Unicode Support Noto", sans-serif;
+}
+
+.m-t-20 > span {
+  font-family: Roboto, "Odoo Unicode Support Noto", sans-serif;
+}
+
+.m-t-20 > span {
+  font-family: Roboto, "Odoo Unicode Support Noto", sans-serif;
+}
+
+.s_title.pt16.offset-lg-2.col-lg-8.pb0 > h2 {
+  margin-bottom: 10px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 1.3;
+  color: rgb(58, 58, 71);
+  font-size: 28px;
+}
+
+.title.m-t-20.text-beta > font {
+  font-size: 30px;
+}
+
+.title.m-t-20.text-beta > font {
+  font-size: 30px;
+}
+
+.max-box > div {
+  text-align: right;
+}
+
+.text-left > font {
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  font-size: 35px !important;
+}
+
+.counter-title > font {
+  font-size: 16px;
+}
+
+.counter-title > font {
+  font-size: 16px;
+}
+
+.counter-title > font {
+  font-size: 16px;
+}
+
+.subtitle > span {
+  color: rgb(66, 66, 66);
+  font-size: 16px;
+}
+
+.subtitle > span {
+  color: rgb(66, 66, 66);
+  font-size: 16px;
+}
+
+.text-center.font-weight-bolder.text-secondary > b {
+  font-size: 80%;
+}
+
+.text-center.font-weight-bolder.text-secondary > b {
+  font-size: 80%;
+}
+
+.fa.fa-check-circle.fa-lg.mr-2 > span {
+  font-weight: bolder;
+}
+
+.text-center.font-weight-bolder.text-secondary > b {
+  font-size: 80%;
+}
+
+.medium.text-center.font-weight-bolder.text-secondary > font {
+  color: rgb(156, 156, 148);
+}
+
+#products {
+  background-color: #fff;
+}
+
+.subtitle {
+  font-size: 25px;
+  color: #202647;
+  line-height: 0.8cm !important;
+}
+
+.img.img-fluid {
+  @media (max-width: 720px) {
+    width: 100% !important;
+  }
+
+  @media (min-width: 720px) {
+    width: 50% !important;
+  }
+
+  transform: translateX(46.1%) translateY(59.5%) scaleX(2.32) scaleY(2.32);
+}
+
+.display-5.fa.fa-3x.fa-rocket {
+  color: rgb(99, 74, 165);
+}
+
+.img-responsive {
+  transform: scaleX(1.27) scaleY(1.27);
+}
+
+.display-5.fa.fa-3x.fa-flag {
+  color: rgb(99, 74, 165);
+}
+
+.s_title.pt16.offset-lg-2.col-lg-8.pb0 {
+  text-align: center;
+}
+
+.s_btn.pt16.pb16.text-right {
+  text-align: right;
+}
+
+.arrow-btn.bizople_button.m-t-16.mt16.btn.btn-primary.rounded-circle {
+  font-size: 14px;
+  outline: 0px;
+  box-shadow: rgba(82, 87, 166, 0.5) 0px 0px 0px 0.2rem;
+}
+
+.img-responsive.img.img-fluid {
+  transform: translateX(6.9%) translateY(1.3%) scaleX(1.11) scaleY(1.11);
+}
+
+.o_anim_zoom_in.o_animate.o_animated {
+  animation-name: o_anim_zoom_in;
+  visibility: visible;
+  animation-play-state: running;
+}
+
+.rounded.img-responsive {
+  transform: scaleX(0.78) scaleY(0.85);
+}
+
+.font-medium {
+  text-align: center;
+}
+
+.custom_p.m-b-30.m-t-30 {
+  text-align: center;
+}
+
+.o_animate.o_anim_zoom_in.o_animated {
+  animation-name: o_anim_zoom_in;
+  visibility: visible;
+  animation-play-state: running;
+}
+
+.s_furniture_fun-fact-section.oe_img_bg.oe_custom_bg {
+  background-image: url("/digimoov_website_templates/static/img/Monter boite de transport.webp");
+  background-position: 55.8% 54.4%;
+}
+
+.card.border-0.shadow {
+  border-radius: 25px 25px;
+}
+
+.text-center.text-white.border-0 {
+  background-color: #6e209f;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.card-body {
+  background-color: white;
+}
+
+.medium.text-center.font-weight-bolder.text-secondary {
+  color: red !important;
+}
+
+.btn.btn-block.text-white {
+  background-color: #6e209f;
+  border-radius: 25px;
+}
+
+.fa.fa-lg.fa-times-circle.text-danger.mr-2 {
+  font-size: 1.33333em;
+}
+
+.fa.fa-warning {
+  color: rgb(255, 255, 0);
+  font-size: 16px;
+}
+
+.fa.fa-check-circle.fa-lg.mr-2 {
+  color: rgb(206, 198, 206);
+}
+
+.pt16.pb16.col-lg-4 {
+  border-style: none;
+  border-width: 0px;
+}
