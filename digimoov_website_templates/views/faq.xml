@@ -1,10 +1,10 @@
 <odoo>
     <template id="digimoov_website_templates.digimoov_template_faq" name="FAQ | Digimoov">
         <t t-call="website.layout">
-            <!-- <link href="/digimoov_website_templates/static/src/css/styledigimoov.css" rel="stylesheet"/> -->
+            <link href="/digimoov_website_templates/static/src/css/styledigimoov.css" rel="stylesheet"/>
             <link href="/digimoov_website_templates/static/src/css/faq.css" rel="stylesheet"/>
-            <!-- <link href="/digimoov_website_templates/static/src/css/fontawesome.css" rel="stylesheet"/> -->
-            <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/3.4.93/css/materialdesignicons.min.css"/> -->
+            <link href="/digimoov_website_templates/static/src/css/fontawesome.css" rel="stylesheet"/>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/3.4.93/css/materialdesignicons.min.css"/>
             <style>
                 .card-header{
                 background-color:#E0E1E2;
@@ -204,7 +204,7 @@
                                                                 aria-controls="accordion-tab-1-content-3"
                                                                 data-original-title="" title=""
                                                                 aria-describedby="tooltip389775">Êtes-vous un centre
-                                                            agréé par l’Etat (DRIEA) ?
+                                                            agréépar l’Etat (DRIEA) ?
                                                         </button>
                                                     </h5>
                                                 </div>

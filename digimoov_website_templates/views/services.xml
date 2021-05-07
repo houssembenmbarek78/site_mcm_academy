@@ -1,6 +1,4 @@
-<!-- Vue helpdesk de Digimoov dans le siteweb -->
 <odoo>
-    <!-- Vue helpdesk de Digimoov pour le service clientèle dans le siteweb -->
     <template id="digimoov_website_templates.digimoov_template_service_clientele" name="Service Clientèle | Digimoov">
         <t t-call="website.layout">
             <div id="wrap" class="oe_structure oe_empty">
@@ -11,7 +9,8 @@
                                 <div class="row m-0">
                                     <div class="col-lg-6">
                                         <div class="card-shadow ">
-                                            <img src="/digimoov_website_templates/static/img/Service client Digimoov.webp"
+
+                                            <img src="/mcm_contact_documents/static/img/3 Dossier d'insciption Digimoov.webp"
                                                  class="img-responsive img img-fluid"
                                                  data-original-title="" title="" aria-describedby="tooltip508208"/>
                                         </div>
@@ -63,6 +62,7 @@
                                                                    class="o_website_form_input form-control" value=""/>
                                                         </div>
                                                     </div>
+
                                                     <div class="col-lg-12">
                                                         <div class="form-group m-t-15 ">
                                                             <textarea name="description" rows="3" placeholder="Message"
@@ -73,9 +73,8 @@
                                                     </div>
                                                     <div class="col-lg-12">
                                                         <div class="form-group m-t-15 ">
-                                                            <input name="attachment" placeholder="Objet"
-                                                                   type="file" style="height:auto !important;"
-                                                                   multiple="True"
+                                                            <input name="attachment" placeholder="Objet" required="False"
+                                                                   type="file" style="height:auto !important;" multiple="True"
                                                                    class="o_website_form_input form-control" value=""/>
                                                         </div>
                                                     </div>
@@ -101,7 +100,6 @@
 
         </t>
     </template>
-    <!-- Vue helpdesk de Digimoov pour le service administration dans le siteweb -->
     <template id="digimoov_website_templates.digimoov_template_service_administration"
               name="Service Administration | Digimoov">
         <t t-call="website.layout">
@@ -195,7 +193,6 @@
             </div>
         </t>
     </template>
-     <!-- Vue helpdesk de Digimoov pour le service partenariat dans le siteweb -->
     <template id="digimoov_website_templates.digimoov_template_service_partenariat"
               name="Service Partenariat | Digimoov">
         <t t-call="website.layout">
@@ -297,7 +294,6 @@
             </div>
         </t>
     </template>
-    <!-- Vue helpdesk de Digimoov pour le service comptabilité dans le siteweb -->
     <template id="digimoov_website_templates.digimoov_template_service_comptabilite"
               name="Service Comptabilité | Digimoov">
         <t t-call="website.layout">
@@ -399,7 +395,6 @@
             </div>
         </t>
     </template>
-    <!-- Vue helpdesk de Digimoov pour le service pédagogique dans le siteweb -->
     <template id="digimoov_website_templates.digimoov_template_service_pedagogique" name="Service Pédagogique Digimoov">
         <t t-call="website.layout">
             <div id="wrap" class="oe_structure oe_empty">
@@ -474,9 +469,8 @@
                                                     </div>
                                                     <div class="col-lg-12">
                                                         <div class="form-group m-t-15 ">
-                                                            <input name="attachment" placeholder="Objet"
-                                                                   type="file" style="height:auto !important;"
-                                                                   multiple="True"
+                                                            <input name="attachment" placeholder="Objet" required="False"
+                                                                   type="file" style="height:auto !important;" multiple="True"
                                                                    class="o_website_form_input form-control" value=""/>
                                                         </div>
                                                     </div>
@@ -501,7 +495,6 @@
             </div>
         </t>
     </template>
-    <!-- Vue helpdesk de Digimoov de tous les services dans le siteweb -->
     <template id="digimoov_website_templates.digimoov_template_contact" name="Contactez-Nous | Digimoov">
         <t t-call="website.layout">
             <div id="wrap" class="oe_structure oe_empty">

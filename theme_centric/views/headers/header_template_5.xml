@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-	<template id="website_multi_header_five" inherit_id="portal.frontend_layout" name="Header Five" active="false">
+	<template id="website_multi_header_five"
+		inherit_id="portal.frontend_layout" name="Header Five" active="False">
 		<xpath expr="//header" position="replace">
 			<header id="header_five" class="header_five">
 				<div class="header13 po-relative">
-					<!-- <div class="h13-topbar">
+					<div class="h13-topbar">
 						<div class="container">
 							<nav class="navbar navbar-expand-lg font-14">
 								<div class="navbar-collapse" id="header13a">
@@ -24,32 +25,38 @@
 									</ul>
 									<ul class="navbar-nav ml-auto justify-content-center">
 										<li class="nav-item">
-											<a t-if="website.social_twitter" t-att-href="website.social_twitter" class="nav-link">
+											<a t-if="website.social_twitter"
+												t-att-href="website.social_twitter" class="nav-link">
 												<i class="fa fa-twitter" />
 											</a>
 										</li>
 										<li class="nav-item">
-											<a t-if="website.social_facebook" t-att-href="website.social_facebook" class="nav-link">
+											<a t-if="website.social_facebook"
+												t-att-href="website.social_facebook" class="nav-link">
 												<i class="fa fa-facebook-square" />
 											</a>
 										</li>
 										<li class="nav-item">
-											<a t-if="website.social_linkedin" t-att-href="website.social_linkedin" class="nav-link">
+											<a t-if="website.social_linkedin"
+												t-att-href="website.social_linkedin" class="nav-link">
 												<i class="fa fa-linkedin" />
 											</a>
 										</li>
 										<li class="nav-item">
-											<a t-if="website.social_instagram" t-att-href="website.social_instagram" class="nav-link">
+											<a t-if="website.social_instagram"
+												t-att-href="website.social_instagram" class="nav-link">
 												<i class="fa fa-instagram" />
 											</a>
 										</li>
 										<li class="nav-item">
-											<a t-if="website.social_youtube" t-att-href="website.social_youtube" class="nav-link">
+											<a t-if="website.social_youtube"
+												t-att-href="website.social_youtube" class="nav-link">
 												<i class="fa fa-youtube-play" />
 											</a>
 										</li>
 										<li class="nav-item">
-											<a t-if="website.social_github" t-att-href="website.social_github" class="nav-link">
+											<a t-if="website.social_github"
+												t-att-href="website.social_github" class="nav-link">
 												<i class="fa fa-github" />
 											</a>
 										</li>
@@ -57,22 +64,27 @@
 								</div>
 							</nav>
 						</div>
-					</div> -->
+					</div>
 					<div class="container-fluid">
-						<nav class="navbar navbar-expand-lg hover-dropdown h13-nav navbar-light">
+						<nav
+							class="navbar navbar-expand-lg hover-dropdown h13-nav navbar-light">
 							<a href="/" class="navbar-brand logo">
-								<span t-field="res_company.logo" t-options="{'widget': 'image'}" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name" />
+								<span t-field="res_company.logo"
+									t-options="{'widget': 'image'}"
+									t-att-alt="'Logo of %s' % res_company.name"
+									t-att-title="res_company.name" />
 							</a>
-							<button type="button" class="navbar-toggler collapsed navbar-light ml-auto" data-toggle="collapse" data-target="#top_menu_collapse" aria-expanded="false">
+							<button type="button"
+								class="navbar-toggler collapsed navbar-light ml-auto"
+								data-toggle="collapse" data-target="#top_menu_collapse"
+								aria-expanded="false">
 								<span class="fa fa-bars"></span>
 							</button>
 							<div class="collapse navbar-collapse" id="top_menu_collapse">
-								<!-- <div class="col-md-2 call-info hidden-md-down">
+								<div class="col-md-2 call-info hidden-md-down">
 									<small class="text-muted">CALL US ON</small>
-									<h5 class="m-b-0 font-medium">
-										<span t-esc="res_company.phone"/>
-									</h5>
-								</div> -->
+									<h5 class="m-b-0 font-medium"><span t-esc="res_company.phone"/></h5>
+								</div>
 								<ul class="nav navbar-nav ml-auto" id="top_menu">
 									<t t-foreach="website.menu_id.child_id" t-as="submenu">
 										<t t-call="website.submenu">
@@ -80,16 +92,21 @@
 											<t t-set="link_class" t-value="'nav-link'" />
 										</t>
 									</t>
-									<li class="nav-item divider" t-ignore="true" t-if="not user_id._is_public()" />
-									<li class="nav-item dropdown" t-ignore="true" t-if="not user_id._is_public()">
-										<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+									<li class="nav-item divider" t-ignore="true"
+										t-if="not user_id._is_public()" />
+									<li class="nav-item dropdown" t-ignore="true"
+										t-if="not user_id._is_public()">
+										<a href="#" class="nav-link dropdown-toggle"
+											data-toggle="dropdown">
 											<b>
-												<span t-esc="user_id.name[:23] + '...' if user_id.name and len(user_id.name) &gt; 25 else user_id.name" />
+												<span
+													t-esc="user_id.name[:23] + '...' if user_id.name and len(user_id.name) &gt; 25 else user_id.name" />
 											</b>
 										</a>
 										<div class="dropdown-menu js_usermenu" role="menu">
 											<a t-attf-href="/my/home" role="menuitem" class="dropdown-item">My Account</a>
-											<a id="o_logout" class="dropdown-item" t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a>
+											<a id="o_logout" class="dropdown-item"
+												t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a>
 										</div>
 									</li>
 									<li groups="base.group_public">
