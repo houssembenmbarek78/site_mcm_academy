@@ -39,7 +39,6 @@
         'views/portal_my_details.xml',
         'views/confidentialite.xml',
         # 'views/sitemap.xml',
-
     ],
     'qweb': [],
     'demo': [
