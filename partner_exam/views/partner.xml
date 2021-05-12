@@ -5,6 +5,14 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="mcm_session.mcmacademy_view_res_partner_form_3"/>
         <field name="arch" type="xml">
+            <field name="email" position="after">
+                <label for="this_is_technical_field" string="this_is_technical_field" invisible="1"/>
+                <field name="this_is_technical_field" invisible="1"/>
+                <label for="resultat" string="Résultat" invisible="1"/>
+                <field name="resultat" invisible="1" force_save="0"/>
+                <label for="info_exam_ids" string="Résultat" invisible="1"/>
+                <field name="info_exam_ids" invisible="1" />
+            </field>
             <xpath expr="//group//div[@class='row form-panel']//div[1]//div[3]//div[5]" position="after">
                 <div class="col-sm-12">
                     <div attrs="{'invisible': [('company_id', '=', 2)]}">
@@ -26,6 +34,22 @@
                     <field string="Notes" name="note_exam_count" widget="statinfo"/>
                 </button>
             </div>
+        </field>
+    </record>
+
+    <record model='ir.ui.view' id='view_res_partner_filter'>
+        <field name='name'>res.partner.select.inherit.base.partner.filter</field>
+        <field name='model'>res.partner</field>
+        <field name='inherit_id' ref='base.view_res_partner_filter'/>
+        <field name='arch' type='xml'>
+            <field name="name" position="after">
+                <field name="resultat" string="resultat"/>
+            </field>
+            <xpath expr="//search/group[@name='group_by']/filter[1]" position="after">
+                <filter string="Resultat" name="resultat" context="{'group_by': 'resultat'}"/>
+                <filter string="Resultat Ajourné" name="head_branch" domain="[('resultat', 'ilike', 'ajourne')]"/>
+                <filter string="Resultat Reçu" name="head_branch" domain="[('resultat', 'ilike', 'recu')]"/>
+            </xpath>
         </field>
     </record>
 </odoo>
