@@ -66,6 +66,17 @@
             print_report_name="'Relevé de notes - %s' % (object.name).replace('/', '')"
             paperformat="partner_exam.paperformat_releve_note_id"/>
 
+    <!--    This is the action to create a print pdf for "Imprimer relevé de note", using the template(xml) ID-->
+    <report id="report_releve_note_ids"
+            model="res.partner"
+            string="Imprimer les relevés de notes"
+            report_type="qweb-pdf"
+            name="partner_exam.id_many_releve_note_print_report_pdf"
+            file="partner_exam.report_releve_note_id"
+            menu="True"
+            print_report_name="'Relevé de notes - %s' % (object.name).replace('/', '')"
+            paperformat="partner_exam.paperformat_releve_note_id"/>
+
 <!--    <report id="id_releve_note_ajournement_pdf_id"
             model="res.partner"
             string="Relevé de note D'ajournement"

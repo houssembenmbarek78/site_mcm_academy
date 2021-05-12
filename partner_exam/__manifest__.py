@@ -25,6 +25,7 @@
         'report/menu.xml',
         'report/generate_releve_de_notes.xml',
         'report/convocation_contact.xml',
+        'report/print_releve_note_mass.xml',
     ],
     'qweb': [],
     'demo': [
