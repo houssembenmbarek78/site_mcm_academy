@@ -15,6 +15,8 @@ class resComapny(models.Model):
     
     @api.depends('note_exam_id', 'note_exam_id.resultat')
     def _get_default_value_resultat(self):
+        """ Une fonction qui permet d'afficher 
+                la resultat d'un client si (recu ou ajourné) du dernier ligne dans la list examens."""
         for rec in self:
             res = []
             rec.resultat = '__'
