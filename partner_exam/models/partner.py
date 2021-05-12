@@ -10,6 +10,8 @@ class resComapny(models.Model):
     note_exam_id = fields.One2many('info.examen', 'partner_id')
     note_exam_count = fields.Integer(compute="compute_notes_exams_count")
     this_is_technical_field = fields.Boolean(readonly=True, default=True)
+    resultat = fields.Char(store=True, readonly=True, string="Résultat")
+    info_exam_ids = fields.Many2one('info.examen', string='Resultat', store=True, readonly=True)
 
     def compute_notes_exams_count(self):
         for record in self:
