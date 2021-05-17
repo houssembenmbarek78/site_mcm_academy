@@ -425,7 +425,7 @@
                                             <div class="col-md-4">
                                                 <div class="card card-shadow aos-init" data-aos="flip-up" data-aos-duration="1200">
                                                     <a href="/partenariat" class="img-ho">
-                                                        <img class="card-img-top" src="/digimoov_website_templates/static/img/Devenir partenaire de Digimoov.webp" alt="bizople kit" data-original-title="" title="" aria-describedby="tooltip155657"/>
+                                                        <img class="card-img-top lazy" data-src="/digimoov_website_templates/static/img/Devenir partenaire de Digimoov.webp" data-srcSafari="/digimoov_website_templates/static/img/Devenir partenaire de Digimoov.jpg" alt="bizople kit" data-original-title="" title="" aria-describedby="tooltip155657"/>
                                                     </a>
                                                     <div class="card-body">
                                                         <h5 class="font-medium m-b-0">

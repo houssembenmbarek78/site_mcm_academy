@@ -319,7 +319,7 @@
                                     <div class="card-body">
                                         <div class="icon-space">
                                             <section class="icon-round bg-alpha"/>
-                                            <img class="img-fluid o_we_custom_image" src="/digimoov_website_templates/static/img/Les conditions administratives.webp" data-original-title="" title="" aria-describedby="tooltip306191" style=""/>
+                                            <img class="img-fluid o_we_custom_image lazy" data-src="/digimoov_website_templates/static/img/Les conditions administratives.webp" data-srcSafari="/digimoov_website_templates/static/img/examen/Jury pour la délibération.png" data-original-title="" title="" aria-describedby="tooltip306191" style=""/>
                                             <section class="icon-round bg-alpha"/>
                                         </div>
                                         <h3 class="m-b-30 m-t-20 text-beta" style="text-align: center; ">

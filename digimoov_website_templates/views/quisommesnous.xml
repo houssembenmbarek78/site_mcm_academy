@@ -75,7 +75,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <img data-src="/digimoov_website_templates/static/img/Digimoov - des centres d'examen partout en france.webp" data-srcSafari="/digimoov_website_templates/static/img/Centres d'examen digimoov france.jpg" class="img-fluid" alt="bizople" data-original-title="" title="" aria-describedby="tooltip969892" style="transform: translateX(-0.9%) translateY(18.4%) scaleX(1.05) scaleY(1.05);"/>
+                                    <img data-src="/digimoov_website_templates/static/img/Digimoov - des centres d'examen partout en france.webp" data-srcSafari="/digimoov_website_templates/static/img/Centres d'examen digimoov france.jpg" class="img-fluid lazy" alt="bizople" data-original-title="" title="" aria-describedby="tooltip969892" style="transform: translateX(-0.9%) translateY(18.4%) scaleX(1.05) scaleY(1.05);"/>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="card-body">
@@ -169,22 +169,22 @@
                         <div id="slideshow_1609409222992" class="carousel slide" data-ride="carousel" data-interval="10000" style="margin: 0 12px;">
                             <div class="carousel-inner" style="padding: 0;">
                                 <div class="carousel-item" style="">
-                                    <img class="img img-fluid d-block" data-src="/digimoov_website_templates/static/img/Avis Digimoov Madani Brahimi.webp" data-srcSafari="/digimoov_website_templates/static/img/avis/Avis Digimoov Madani Brahimi.jpg" alt="Image de diapositive" data-index="0"/>
+                                    <img class="img img-fluid d-block lazy" data-src="/digimoov_website_templates/static/img/Avis Digimoov Madani Brahimi.webp" data-srcSafari="/digimoov_website_templates/static/img/avis/Avis Digimoov Madani Brahimi.jpg" data-index="0" alt="Image de diapositive"/>
                                 </div>
                                 <div class="carousel-item active" style="">
-                                    <img class="img img-fluid d-block" data-src="/digimoov_website_templates/static/img/Avis Digimoov Tarek Amine.webp" data-srcSafari="/digimoov_website_templates/static/img/avis/Avis Digimoov Tarek Amine.jpg" alt="Image de diapositive" data-index="1"/>
+                                    <img class="img img-fluid d-block lazy" data-src="/digimoov_website_templates/static/img/Avis Digimoov Tarek Amine.webp" data-srcSafari="/digimoov_website_templates/static/img/avis/Avis Digimoov Tarek Amine.jpg" alt="Image de diapositive" data-index="1"/>
                                 </div>
                                 <div class="carousel-item" style="">
-                                    <img class="img img-fluid d-block" data-src="/digimoov_website_templates/static/img/Avis Digimoov Bingo Ringo.webp" data-srcSafari="/digimoov_website_templates/static/img/avis/Avis Digimoov Bingo Ringo.jpg" alt="Image de diapositive" data-index="2"/>
+                                    <img class="img img-fluid d-block lazy" data-src="/digimoov_website_templates/static/img/Avis Digimoov Bingo Ringo.webp" data-srcSafari="/digimoov_website_templates/static/img/avis/Avis Digimoov Bingo Ringo.jpg" alt="Image de diapositive" data-index="2"/>
                                 </div>
                                 <div class="carousel-item" style="">
-                                    <img class="img img-fluid d-block" data-src="/digimoov_website_templates/static/img/Avis Digimoov Walid Sgh.webp" data-srcSafari="/digimoov_website_templates/static/img/avis/Avis Digimoov Walid Sgh (1).jpg" alt="Image de diapositive" data-index="3"/>
+                                    <img class="img img-fluid d-block lazy" data-src="/digimoov_website_templates/static/img/Avis Digimoov Walid Sgh.webp" data-srcSafari="/digimoov_website_templates/static/img/avis/Avis Digimoov Walid Sgh (1).jpg" alt="Image de diapositive" data-index="3"/>
                                 </div>
                                 <div class="carousel-item" style="">
-                                    <img class="img img-fluid d-block" data-src="/digimoov_website_templates/static/img/Avis digimoov Rayan Ferjani.webp" data-srcSafari="/digimoov_website_templates/static/img/avis/Avis digimoov Rayan Ferjani.jpg" alt="Image de diapositive" data-index="4"/>
+                                    <img class="img img-fluid d-block lazy" data-src="/digimoov_website_templates/static/img/Avis digimoov Rayan Ferjani.webp" data-srcSafari="/digimoov_website_templates/static/img/avis/Avis digimoov Rayan Ferjani.jpg" alt="Image de diapositive" data-index="4"/>
                                 </div>
                                 <div class="carousel-item" style="">
-                                    <img class="img img-fluid d-block" data-src="/digimoov_website_templates/static/img/Avis Digimoov Yaser Ilyas.webp" data-srcSafari="digimoov_website_templates/static/img/avis/Avis Digimoov Yaser Ilyas.jpg" alt="Image de diapositive" data-index="5"/>
+                                    <img class="img img-fluid d-block lazy" data-src="/digimoov_website_templates/static/img/Avis Digimoov Yaser Ilyas.webp" data-srcSafari="digimoov_website_templates/static/img/avis/Avis Digimoov Yaser Ilyas.jpg" alt="Image de diapositive" data-index="5"/>
                                 </div>
                             </div>
                             <a class="carousel-control-prev text-black" href="#slideshow_1609409222992" data-slide="prev" aria-label="Précedent" title="Précedent">
