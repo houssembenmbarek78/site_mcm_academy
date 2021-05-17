@@ -9,9 +9,7 @@
                 <label for="this_is_technical_field" string="this_is_technical_field" invisible="1"/>
                 <field name="this_is_technical_field" invisible="1"/>
                 <label for="resultat" string="Résultat" invisible="1"/>
-                <field name="resultat" invisible="1" force_save="0"/>
-                <label for="info_exam_ids" string="Résultat" invisible="1"/>
-                <field name="info_exam_ids" invisible="1" />
+                <field name="resultat" invisible="1"/>
             </field>
             <xpath expr="//group//div[@class='row form-panel']//div[1]//div[3]//div[5]" position="after">
                 <div class="col-sm-12">

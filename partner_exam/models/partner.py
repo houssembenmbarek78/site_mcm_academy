@@ -11,7 +11,6 @@ class resComapny(models.Model):
     note_exam_count = fields.Integer(compute="compute_notes_exams_count")
     this_is_technical_field = fields.Boolean(readonly=True, default=True)
     resultat = fields.Char(store=True, readonly=True, string="Résultat", compute="_get_default_value_resultat")
-    info_exam_ids = fields.Many2one('info.examen', string='Resultat', store=True, readonly=True, compute="_get_default_value_resultat")
     
     @api.depends('note_exam_id', 'note_exam_id.resultat')
     def _get_default_value_resultat(self):
@@ -23,7 +22,6 @@ class resComapny(models.Model):
             if rec.note_exam_id:
                 res = self.env['info.examen'].search([('partner_id', '=', rec.note_exam_id.partner_id.name)],
                                                          limit=1, order='create_date desc')
-                self.info_exam_ids = res
                 self.resultat = res.resultat
                 return res
 
