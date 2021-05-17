@@ -166,7 +166,7 @@
                                 <div class="row m-0">
                                     <div class="col-lg-6">
                                         <div class="card-shadow ">
-                                            <img data-src="/digimoov_website_templates/static/img/Devenir-Partenaire.webp" data-srcSafari="/digimoov_website_templates/static/img/services/Devenir partenaire de Digimoov.jpg" class="img-responsive img img-fluid lazy" data-original-title="" title="" aria-describedby="tooltip848764"/>
+                                            <img data-src="/digimoov_website_templates/static/img/Devenir-Partenaire.webp" data-srcSafari="/digimoov_website_templates/static/img/services/Devenir partenaire de Digimoov.jpg" class="lazy img-responsive img img-fluid " data-original-title="" title="" aria-describedby="tooltip848764"/>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
@@ -390,9 +390,10 @@
     </template>
     <!-- Vue helpdesk de Digimoov de tous les services dans le siteweb -->
     <template id="digimoov_website_templates.digimoov_template_contact" name="Contactez-Nous | Digimoov">
-        <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
 
         <t t-call="website.layout">
+             <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
+
             <div id="wrap" class="oe_structure oe_empty">
                 <section class="centric_template" data-name="Projects">
                     <section class="project-section pt128 pb0">
