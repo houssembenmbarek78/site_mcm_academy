@@ -46,7 +46,6 @@ class partner(models.Model):
 
     # Recuperer les utilisateurs de 360learning
     def getusers(self):
-
             params = (
                 ('company', '56f5520e11d423f46884d593'),
                 ('apiKey', 'cnkcbrhHKyfzKLx4zI7Ub2P5'),
@@ -62,7 +61,6 @@ class partner(models.Model):
                 lastlogin=""
                 if 'lastLoginAt' in table_user:
                  lastlogin = str(table_user['lastLoginAt'])
-
                 print('user date supp', table_user['toDeactivateAt'])
                 times = ''
                 # Ecrire le temps récupéré de 360 sous forme d'heures et minutes
@@ -70,7 +68,6 @@ class partner(models.Model):
                     time = int(table_user['totalTimeSpentInMinutes'])
                     heure = time // 60
                     minute = time % 60
-
                     times = str(heure) + 'h' + str(minute) + 'min'
                     if (heure == 0):
                         times = str(minute) + 'min'
@@ -115,7 +112,6 @@ class partner(models.Model):
                             'totalTimeSpentInMinutes': times,
                             'assignedPrograms': table_user['assignedPrograms'],
                             'toDeactivateAt': table_user['toDeactivateAt'],
-
                             'apprenant': True,
                             # 'messages':table_user['messages']
                         })
@@ -132,11 +128,8 @@ class partner(models.Model):
         # faire un parcours sur chaque user et extraie ses statistique
         for session in sessions:
             id= session['_id']
-
-
             re = requests.get('https://app.360learning.com/api/v1/courses/'+id+'/stats/youcefallahoum@gmail.com',
                       params=params)
-
             pogramstat=re.json()
             print("courses:", session['name'],'*******',pogramstat)
 
@@ -158,7 +151,6 @@ class partner(models.Model):
                                                            ('module_id', '=', self.module_id.id),
                                                            ('state', '=', 'sale'),
                                                            ], limit=1, order="id desc")
-
         print('sale order', sale_order.name)
         # Récupérer les documents et vérifier si ils sont validés ou non
         documents = self.env['documents.document'].sudo().search([('partner_id', '=', self.id)])
@@ -258,9 +250,7 @@ class partner(models.Model):
                       print('renonce', partner.name, 'failure', failure, 'statut', partner.statut, 'date_ajout',  date_ajout )
                       self.ajouter_iOne(partner)
 
-
     def ajouter_iOne(self, partner):
-
         product_name = partner.module_id.product_id.name
         if (not (product_name)):
             product_name = ''
@@ -297,15 +287,13 @@ class partner(models.Model):
             create=False
 
             #Si le mot de passe n'est pas récupérée au moment d'inscrit on invite l'apprennant
-            if user.password360==False:
-                #on les rrrratache a une session
+            # if user.password360==False:
                 # data_user ='{"mail":"' + partner.email + '"}'
                 # resp_invit = requests.post(urluser, headers=headers, data=data_user)
-                 print('invitation','data_user,resp_invit.status_code')
                 # if(resp_invit.status_code == 200):
                 #     invit=True
             #Si non si mot de passe récupéré on l'ajoute sur la plateforme avec le meme mot de passe
-            else:
+            if user.password360:
                 partner.password360 = user.password360
                 print(user.password)
                 # Ajouter i-One to table user
@@ -317,13 +305,12 @@ class partner(models.Model):
             data_group = {}
 
             # Si l'apprenant a été ajouté sur table user on l'affecte aux autres groupes
-            if ( create or invit ):
+            if ( create ):
                 today=date.today()
                 new_format = '%d %B %Y'
                 # Changer format de date et la mettre en majuscule
                 date_ajout = today.strftime(new_format)
                 partner.date_creation=date_ajout
-
                 # Désactiver les notifications par email
                 data_email = json.dumps({
                     "usersEmails": [
@@ -335,26 +322,20 @@ class partner(models.Model):
                 # Affecter i-One to groupe digimoov-bienvenue
                 respgroupe = requests.put(urlgroup_Bienvenue, headers=headers, data=data_group)
                 print('bienvenue ', respgroupe.status_code, partner.date_creation)
-
                 partner.apprenant = True
-
                 # Affecter i-One à un pack et session choisi
-
                 response_grps = requests.get(url_groups, params=params)
                 existe = False
                 groupes = response_grps.json()
                 # print(response_grps.json())
                 company = str(partner.module_id.company_id.id)
-
                 for groupe in groupes:
                     # Convertir le nom en majuscule
                     nom_groupe = str(groupe['name']).upper()
                     print('nom groupe', groupe)
                     id_groupe = groupe['_id']
-
                     # affecter à groupe digimoov
                     digimoov_examen = "Digimoov - Examen Attestation de capacité du transport léger de marchandises"
-
                     # Si la company est digimoov on ajoute i-One sur 360
                     if (company == '2'):
                         if (nom_groupe == digimoov_examen.upper()):
@@ -385,7 +366,6 @@ class partner(models.Model):
                         packprem = "Digimoov - Premuim go"
                         if (("premium" in product_name) and (nom_groupe == packprem.upper())):
                             print(partner.module_id.name)
-
                             urlgrp_prim = 'https://app.360learning.com/api/v1/groups/' + id_groupe + '/users/' + partner.email + '?company=' + company_id + '&apiKey=' + api_key
                             respgrp_prim = requests.put(urlgrp_prim, headers=headers, data=data_group)
                             print('affecté à premium', respgrp_prim.status_code)
@@ -399,7 +379,6 @@ class partner(models.Model):
 
                         # Affecter apprenant à une session d'examen
                         print('date, ville', ville, date_session)
-
                         if (ville in nom_groupe) and (date_session in nom_groupe):
                             existe = True
                             urlsession = 'https://app.360learning.com/api/v1/groups/' + id_groupe + '/users/' + partner.email + '?company=' + company_id + '&apiKey=' + api_key
@@ -417,14 +396,12 @@ class partner(models.Model):
                     create_session = requests.post(urlgroups, headers=headers, data=data_session)
                     print('creer  une session', create_session.status_code)
                     response_grpss = requests.get(url_groups, params=params)
-
                     groupess = response_grpss.json()
                     # print(response_grpss.json())
                     for groupe in groupess:
                         # Convertir le nom en majuscule
                         nom_groupe = str(groupe['name']).upper()
                         id_groupe = groupe['_id']
-
                         # Affecter apprenant à la nouvelle session d'examen
                         if (ville in nom_groupe) and (date_session in nom_groupe):
                             existe = True
@@ -440,7 +417,6 @@ class partner(models.Model):
      #Pour chaque partner verifier si date_suppression est aujourd'hui
      # pour assurer la suppresion automatique
      for partner in self.env['res.partner'].sudo().search([]):
-
          if partner.mcm_session_id.date_exam:
              #date de suppression est date d'examen + 4jours
              date_suppression = partner.mcm_session_id.date_exam + timedelta(days=4)
@@ -451,9 +427,8 @@ class partner(models.Model):
               url = 'https://app.360learning.com/api/v1/users/cidorod487@laraskey.com?company=' + company_id + '&apiKey=' + api_key
               resp = requests.delete(url)
               if resp.status_code==204:
-
-               partner.passage_exam=True
-               print('supprimé avec succès', resp.status_code,'passage',partner.passage_exam)
+                partner.passage_exam=True
+                print('supprimé avec succès', resp.status_code,'passage',partner.passage_exam)
          else:
              print('date incompatible')
 
@@ -473,21 +448,11 @@ class partner(models.Model):
 
             print('supprimé avec succès', resp.status_code,'passage',self.passage_exam)
 
-
-
-
-
-
-
-
-
-
     # Extraire firstName et lastName à partir du champs name
     def diviser_nom(self,partner):
             if partner.name=='':
                 partner.firstName = partner.name
                 partner.lastName = partner.name
-
 
            # Cas d'un nom composé
             else:

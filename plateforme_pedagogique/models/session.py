@@ -23,10 +23,8 @@ class Session(models.Model):
         )
         url_groups = 'https://app.360learning.com/api/v1/groups'
         response_grps = requests.get(url_groups, params=params)
-
         groupes = response_grps.json()
         print(response_grps.json())
-
         #Trouver la session de 360 sur odoo
         #Récuperer la date d'examen, calculer la date de suppression(+4jours)
         # puis supprimer le groupe
@@ -43,7 +41,6 @@ class Session(models.Model):
                     date_suppression = find_session.date_exam + timedelta(days=4)
                     today = date.today()
                     if ((date_suppression <= today) and (ville in nomgroupe) and (date_exam in nomgroupe)):
-
                         print('date_sup', find_session.date_exam, date_suppression, today)
                         # url = 'https://app.360learning.com/api/v1/groups/'+id_groupe+'?company=' + company_id + '&apiKey=' + api_key
                         # resp = requests.delete(url)
@@ -66,7 +63,6 @@ class Session(models.Model):
         existe = False
         groupes = response_grps.json()
         print(response_grps.json())
-
         # Trouver la session de 360 sur odoo
         # puis supprimer le groupe
         for groupe in groupes:
