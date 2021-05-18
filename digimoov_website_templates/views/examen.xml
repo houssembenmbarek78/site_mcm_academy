@@ -398,7 +398,7 @@
                             </div>
                             <div class="pb0 pt0 col-lg-3 offset-lg-3">
                                 <figure class="figure">
-                                    <img data-src="/digimoov_website_templates/static/img/Jury pour la délibération.webp" data-srcsafari="/digimoov_website_templates/static/img/examen/Jury.png" class="lazy figure-img img-fluid img-thumbnail padding-large rounded float-right" alt="Odoo • une photo avec une légende" data-original-title="" title="" aria-describedby="tooltip997559" style="transform: translateX(54.1%) translateY(6.2%) scaleX(1.35) scaleY(1.35);"/>
+                                    <img data-src="/digimoov_website_templates/static/img/Jury pour la délibération.webp" data-srcSafari="/digimoov_website_templates/static/img/examen/Jury.png" class="lazy figure-img img-fluid img-thumbnail padding-large rounded float-right" alt="Odoo • une photo avec une légende" data-original-title="" title="" aria-describedby="tooltip997559" style="transform: translateX(54.1%) translateY(6.2%) scaleX(1.35) scaleY(1.35);"/>
                                     <figcaption class="figure-caption py-3 text-center">&amp;nbsp;</figcaption>
                                 </figure>
                             </div>
