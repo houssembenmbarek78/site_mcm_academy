@@ -6,13 +6,12 @@
     <field name="arch" type="xml">
         <tree>
             <field name="firstName"></field>
+            <field name="lastName"></field>
             <field name="mail"></field>
              <field name="score"></field>
             <field name="progress"></field>
             <field name="totalTimeSpentInSeconds"></field>
-
         </tree>
-
     </field>
 </record>
     <record model="ir.actions.act_window" id="action_list_stats">
@@ -20,10 +19,8 @@
         <field name="res_model">plateforme_pedagogique.user_stats</field>
         <field name="view_mode">tree,form</field>
     </record>
-    <menuitem id="stat" name="Statistique"
-      parent="learning_plateform_menu"
-       action="action_list_stats">
-    </menuitem>
-
-
+<!--    <menuitem id="stat" name="Statistique"-->
+<!--      parent="learning_plateform_menu"-->
+<!--       action="action_list_stats">-->
+<!--    </menuitem>-->
 </odoo>

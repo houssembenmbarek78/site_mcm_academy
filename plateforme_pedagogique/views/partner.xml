@@ -10,14 +10,6 @@
                     <field name="name"></field>
                     <filter name="apprenants" string="les apprenants"
                             domain="[('apprenant','=','True')]"/>
-                       <field name="name"></field>
-                    <filter name="old_client" string="Anciens clients"
-                            domain="[('password360','=',False)]"/>
-                    <group string="group by">
-                        <filter name="by_apprenant" string="Apprenant"
-                                context="{'group_by': 'apprenant'}"/>
-                    </group>
-
                 </search>
             </field>
         </record>
@@ -33,27 +25,21 @@
                     <field name="averageScore"></field>
                 </graph>
             </field>
-        </record>
-
+    </record>
 
     <!-- Vue Apprenants sous forme d'une liste -->
-
    <record model="ir.ui.view" id="partner_tree_view">
         <field name="name">Partners</field>
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_tree"></field>
         <field name="arch" type="xml">
-
             <xpath expr="//field[@name='email']" position="after">
                     <field name="last_login"/>
                     <field name="totalTimeSpentInMinutes"/>
             </xpath>
-
         </field>
-
-    </record>
-
-    <record model="ir.ui.view" id="partner_form_view">
+   </record>
+   <record model="ir.ui.view" id="partner_form_view">
         <field name="name">Apprenants</field>
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"></field>
@@ -64,31 +50,21 @@
                         type="object"></button>
                     <button name="supprimer_ione_manuelle" string="Supprimer de 360"
                             type="object" confirm="Êtes-vous sûr de vouloir supprimer cet apprenant de la plateforme?"/>
-                <button name="change_value_old" type="object" string="Anciens Clients"/>
             </header>
-            </xpath>
-
-
-             <xpath expr="//page/group[@name='session']" position="inside">
+         </xpath>
+         <xpath expr="//page/group[@name='session']" position="inside">
                     <field name="renounce_request" />
-               </xpath>
-             <xpath expr="//page[@name='internal_notes']" position="after">
+         </xpath>
+         <xpath expr="//page[@name='internal_notes']" position="after">
                 <page string="Statistiques sur 360 Learning">
                     <group>
                         <group  col="12">
-
-
-
                         </group>
                     <group col="8" colspan="4" string="Géneral">
                           <div>
-<!--                              <span class="o_stat_text"><i class="fa fa-tachometer" style="align:center"/> Score Moyen </span>-->
-<!--                              <br/>-->
                               <span  class="o_stat_text" >
-                                  <field name="averageScore" widget="percentpie" >
-                    </field>
+                              <field name="averageScore" widget="percentpie" />
                               </span>
-
                           </div>
                           <div>
                               <span class="o_stat_text">
@@ -99,17 +75,15 @@
                               <span >
                               <field name="last_login"/>
                               </span>
-
                           </div>
                          <div>
                                <span>
                                       <i class="fa fa-clock-o"/>
-                             </span>
-
+                               </span>
                               <span class="o_stat_text">
                                   Temps passé par minute
                               </span>
-                             <br/>
+                              <br/>
                               <span  class="o_stat_text">
                               <field name="totalTimeSpentInMinutes"></field>
                               </span>
@@ -126,12 +100,9 @@
                               <field name="date_creation"></field>
                               </span>
                          </div>
-
-
                     </group>
                          <group col="8" colspan="4"  string="Participation">
                           <div>
-
                               <span class="o_stat_text">
                                   <i  class="fa fa-comment"/> Messages Postés
                               </span>
@@ -139,10 +110,8 @@
                               <span class="o_stat_value">
                                   <field name="messages"/>
                               </span>
-
                           </div>
                              <div>
-
                               <span class="o_stat_text">
                                   <i  class="fa fa-comments"/> Commentaires Postés
                               </span>
@@ -150,10 +119,8 @@
                               <span class="o_stat_value">
                                   <field name="comments"/>
                               </span>
-
                           </div>
                               <div>
-
                               <span class="o_stat_text">
                                   <i  class="fa fa-thumbs-up"/> Réactions
                               </span>
@@ -161,10 +128,8 @@
                               <span class="o_stat_value">
                                   <field name="reactions"/>
                               </span>
-
                           </div>
                           <div>
-
                               <span class="o_stat_text">
                                   <i  class="fa fa-tasks"/> Cours/Programmes publiés
                               </span>
@@ -172,18 +137,13 @@
                               <span class="o_stat_value">
                                   <field name="publications"/>
                               </span>
-
                           </div>
-
                     </group>
                 </group>
                 </page>
-            </xpath>
-
-
+         </xpath>
         </field>
-
-    </record>
+   </record>
 
 
     <menuitem id="statistique_menu" name="Statistique"
@@ -194,14 +154,11 @@
         <field name="name">Les Apprenants</field>
         <field name="res_model">res.partner</field>
         <field name="view_mode">tree,form,graph</field>
-        <field name="context" eval="{'search_default_old_client': 1}"/>
-
     </record>
 
     <menuitem id="contact_menu" name="Apprenants"
               parent="statistique_menu"
               action="contact_list_action">
-
     </menuitem>
 
 
