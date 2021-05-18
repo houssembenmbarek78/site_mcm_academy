@@ -107,7 +107,7 @@
         <field name="view_mode">kanban,tree,form</field>
     </record>
     <menuitem id="parcours_menu" name="Parcours"
-              parent="learning_plateform_menu"
+              parent="statistique_menu"
               action="parcours_list_action"></menuitem>
 
 </odoo>

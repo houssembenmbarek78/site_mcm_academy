@@ -10,13 +10,8 @@
                     <field name="name"></field>
                     <filter name="apprenants" string="les apprenants"
                             domain="[('apprenant','=','True')]"/>
-                       <field name="name"></field>
-                    <filter name="old_client" string="Anciens clients"
-                            domain="[('password360','=',False)]"/>
-                    <group string="group by">
-                        <filter name="by_apprenant" string="Apprenant"
-                                context="{'group_by': 'apprenant'}"/>
-                    </group>
+
+
 
                 </search>
             </field>
@@ -64,7 +59,7 @@
                         type="object"></button>
                     <button name="supprimer_ione_manuelle" string="Supprimer de 360"
                             type="object" confirm="Êtes-vous sûr de vouloir supprimer cet apprenant de la plateforme?"/>
-                <button name="change_value_old" type="object" string="Anciens Clients"/>
+
             </header>
             </xpath>
 
@@ -194,7 +189,6 @@
         <field name="name">Les Apprenants</field>
         <field name="res_model">res.partner</field>
         <field name="view_mode">tree,form,graph</field>
-        <field name="context" eval="{'search_default_old_client': 1}"/>
 
     </record>
 
