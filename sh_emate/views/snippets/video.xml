@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- video template 1 -->
+<template id="sh_emate_video_tmpl_1" name="Video 1">
+	
+	<div class="sh_emate_video_1">
+		<div id="sh_video_4" class="o_mail_block_two_cols" data-name="Two Columns">
+			<div class="o_mail_snippet_general">
+				<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+		            <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+			                        <h3>WATCH OUR VIDEO</h3>
+			                        <p class="detail">LOREM SIMPLY DUMMY INDUSTRY</p>
+			                    </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				  </table>
+		       <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table two_col pt0 pb100">
+		          <tbody>
+		              <tr>
+		                  <td class="o_mail_col_mv o_mail_col_container plr10 width200 text-center">
+		                      <div class="box box1 ml30">
+			                        <div class="img">
+			                        	<a href="#" target="_blank">
+			                            	<img src="/sh_emate/static/src/img/tmpl_4/video1.png" alt="img1" style="display: block;margin: auto;"/>
+			                            </a>
+			                        </div>
+			                    </div>
+		                  </td>
+		
+		                  <td class="o_mail_col_mv o_mail_col_container p0 width200 text-center">
+		                      <div class="box box2">
+			                       <div class="img">
+			                        	<a href="#" target="_blank">
+			                            	<img src="/sh_emate/static/src/img/tmpl_4/video2.png" alt="img2" style="display: block;margin: auto;"/>
+			                            </a>
+			                        </div>
+			                  </div>
+		                  </td>
+		              </tr>
+		          </tbody>
+		      </table>
+		   </div>
+		</div> 
+	</div>
+	
+</template>
+<!-- end video template 1  -->
+
+
+<!-- video template 2 -->
+<template id="sh_emate_video_tmpl_2" name="Video 2">
+	
+	<div class="sh_emate_video_2">
+		<div class="o_mail_block_video" data-name="Centered" id="sh_video_28">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding">
+                    <tbody>
+                        <tr>
+                            <td valign="center" width="100%" class="p10 text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding sh_content">
+                                <h2>Welcome to Midnight Party</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                <a class="btn_play" href="#"><span class="play_icon"><img src="/sh_emate/static/src/img/tmpl_28/video.png" alt="video_img"></img></span>Watch Video</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+	</div>
+	
+</template>
+<!-- end video template 2  -->
+
+
+
+
+
+
+
+
+	
+
+</odoo>

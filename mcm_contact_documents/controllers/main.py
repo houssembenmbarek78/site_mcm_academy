@@ -4,6 +4,10 @@ import odoo.http as http
 import base64
 import werkzeug
 import requests
+from PIL import Image
+import PIL
+import os
+import glob
 from odoo.http import request
 from odoo import _
 from addons.portal.controllers.portal import _build_url_w_params
@@ -59,6 +63,7 @@ class CustomerPortal(CustomerPortal):
         values = self._prepare_portal_layout_values()
         Document = request.env['documents.document']
         user = request.env.user
+        website = request.website
         domain = [('owner_id', '=', user.id)]
 
         searchbar_sortings = {
@@ -104,6 +109,7 @@ class CustomerPortal(CustomerPortal):
             'date': date_begin,
             'documents': documents,
             'page_name': 'document',
+            'website' : website,
             'pager': pager,
             'default_url': '/my/documents',
             'searchbar_sortings': searchbar_sortings,
@@ -112,13 +118,13 @@ class CustomerPortal(CustomerPortal):
             'filterby': filterby,
         })
         return request.render("mcm_contact_documents.portal_my_documents", values)
-
+#upload documents MCM-Academy
     @http.route(['/submitted/document'], type="http", auth="user", methods=['POST'], website=True, csrf=False)
     def submit_documents(self, **kw):
         partner_id = http.request.env.user.partner_id
         print('partner')
         print(partner_id.name)
-        folder_id = request.env['documents.folder'].sudo().search([('name', "=", _('Documents Clients'))])
+        folder_id = request.env['documents.folder'].sudo().search([('name', "=", _('Documents Clients')),('company_id',"=",1)])
         if not folder_id:
             vals_list = []
             vals = {
@@ -130,6 +136,7 @@ class CustomerPortal(CustomerPortal):
             vals = {
                 'name': "Statut document",
                 'folder_id': folder_id.id,
+                'company_id':1,
             }
             vals_list.append(vals)
             facet = request.env['documents.facet'].sudo().create(vals_list)
@@ -172,12 +179,12 @@ class CustomerPortal(CustomerPortal):
             try:
                 files = request.httprequest.files.getlist('identity[]')
                 if len(files) == 2:
-                    datas = base64.encodebytes(files[0].read())
-                    datas2 = base64.encodebytes(files[1].read())
+                    datas_idendity_name = base64.encodebytes(files[0].read())
+                    datas_identity_email = base64.encodebytes(files[1].read())
                     vals_list = []
                     vals = {
                         'name': "Pièce d'identité Recto " + str(partner_id.name),
-                        'datas': datas,
+                        'datas': datas_idendity_name,
                         'folder_id': int(folder_id),
                         'code_document': 'identity_1',
                         'partner_id': int(partner_id),
@@ -196,7 +203,7 @@ class CustomerPortal(CustomerPortal):
                     vals_list = []
                     vals = {
                         'name': "Pièce d'identité Verso " + str(partner_id.name),
-                        'datas': datas2,
+                        'datas': datas_identity_email,
                         'code_document': 'identity_2',
                         'folder_id': int(folder_id),
                         'partner_id': int(partner_id),
@@ -211,11 +218,11 @@ class CustomerPortal(CustomerPortal):
                     else:
                         document = request.env['documents.document'].sudo().create(vals_list)
                 elif len(files) == 1:
-                    datas = base64.encodebytes(files[0].read())
+                    datas_piece_identite_verso = base64.encodebytes(files[0].read())
                     vals_list = []
                     vals = {
                         'name': "Pièce d'identité " + str(partner_id.name),
-                        'datas': datas,
+                        'datas': datas_piece_identite_verso,
                         'code_document': 'identity',
                         'folder_id': int(folder_id),
                         'partner_id': int(partner_id),
@@ -226,6 +233,7 @@ class CustomerPortal(CustomerPortal):
                     document = request.env['documents.document'].sudo().search(
                         [('code_document', "=", 'identity'), ('owner_id', '=', http.request.env.user.id)], limit=1)
                     if document:
+                        #parser les deux piece recto verso dans le mm model
                         document = document.sudo().write(vals)
                     else:
                         print('document not found')
@@ -236,12 +244,12 @@ class CustomerPortal(CustomerPortal):
             try:
                 files = request.httprequest.files.getlist('permis[]')
                 if len(files) == 2:
-                    datas = base64.encodebytes(files[0].read())
-                    datas2 = base64.encodebytes(files[1].read())
+                    datas_permis_recto = base64.encodebytes(files[0].read())
+                    datas_permis_verso = base64.encodebytes(files[1].read())
                     vals_list = []
                     vals = {
                         'name': "Permis de conduire Recto " + str(partner_id.name),
-                        'datas': datas,
+                        'datas': datas_permis_recto,
                         'folder_id': int(folder_id),
                         'code_document': 'permis_1',
                         'partner_id': int(partner_id),
@@ -260,7 +268,7 @@ class CustomerPortal(CustomerPortal):
                     vals_list = []
                     vals = {
                         'name': "Permis de conduire Verso " + str(partner_id.name),
-                        'datas': datas2,
+                        'datas': datas_permis_verso,
                         'code_document': 'permis_2',
                         'folder_id': int(folder_id),
                         'partner_id': int(partner_id),
@@ -275,11 +283,11 @@ class CustomerPortal(CustomerPortal):
                     else:
                         document = request.env['documents.document'].sudo().create(vals_list)
                 elif len(files) == 1:
-                    datas = base64.encodebytes(files[0].read())
+                    datas_permis = base64.encodebytes(files[0].read())
                     vals_list = []
                     vals = {
                         'name': "Permis de conduire " + str(partner_id.name),
-                        'datas': datas,
+                        'datas': datas_permis,
                         'code_document': 'permis',
                         'folder_id': int(folder_id),
                         'partner_id': int(partner_id),
@@ -301,11 +309,11 @@ class CustomerPortal(CustomerPortal):
             try:
                 files = request.httprequest.files.getlist('domicile[]')
                 if files:
-                    datas = base64.encodebytes(files[0].read())
+                    datas_justificatif_domicile = base64.encodebytes(files[0].read())
                     vals_list = []
                     vals = {
                         'name': "Justificatif de domicile " + str(partner_id.name),
-                        'datas': datas,
+                        'datas': datas_justificatif_domicile,
                         'code_document': 'domicile',
                         'folder_id': int(folder_id),
                         'partner_id': int(partner_id),
@@ -324,7 +332,7 @@ class CustomerPortal(CustomerPortal):
             try:
                 files = request.httprequest.files.getlist('changed_file[]')
                 if files:
-                    datas = base64.encodebytes(files[0].read())
+                    datas_changed_file = base64.encodebytes(files[0].read())
                     vals_list = []
                     name = 'Document '
                     if partner_id.module_id:
@@ -344,7 +352,7 @@ class CustomerPortal(CustomerPortal):
                             name = 'Obtention Examen ou Carte Taxi / VTC '
                     vals = {
                         'name': name + str(partner_id.name),
-                        'datas': datas,
+                        'datas': datas_changed_file,
                         'code_document': 'carte_exam',
                         'folder_id': int(folder_id),
                         'partner_id': int(partner_id),
@@ -363,11 +371,11 @@ class CustomerPortal(CustomerPortal):
             try:
                 files = request.httprequest.files.getlist('attestation[]')
                 if files:
-                    datas = base64.encodebytes(files[0].read())
+                    datas_attestation = base64.encodebytes(files[0].read())
                     vals_list = []
                     vals = {
                         'name': "Attestation d'hébergement " + str(partner_id.name),
-                        'datas': datas,
+                        'datas': datas_attestation,
                         'code_document': 'hebergement',
                         'folder_id': int(folder_id),
                         'partner_id': int(partner_id),
@@ -386,12 +394,12 @@ class CustomerPortal(CustomerPortal):
             try:
                 files = request.httprequest.files.getlist('hebergeur_identity[]')
                 if len(files) == 2:
-                    datas = base64.encodebytes(files[0].read())
-                    datas2 = base64.encodebytes(files[1].read())
+                    datas_hebergeur_identity_recto = base64.encodebytes(files[0].read())
+                    datas_hebergeur_identity_verso = base64.encodebytes(files[1].read())
                     vals_list = []
                     vals = {
                         'name': "Carte d'identité hebergeur Recto " + str(partner_id.name),
-                        'datas': datas,
+                        'datas': datas_hebergeur_identity_recto,
                         'folder_id': int(folder_id),
                         'code_document': 'hebergeur_identity_1',
                         'partner_id': int(partner_id),
@@ -411,7 +419,7 @@ class CustomerPortal(CustomerPortal):
                     vals_list = []
                     vals = {
                         'name': "Carte d'identité hebergeur Verso " + str(partner_id.name),
-                        'datas': datas2,
+                        'datas': datas_hebergeur_identity_verso,
                         'code_document': 'hebergeur_identity_2',
                         'folder_id': int(folder_id),
                         'partner_id': int(partner_id),
@@ -427,11 +435,11 @@ class CustomerPortal(CustomerPortal):
                     else:
                         document = request.env['documents.document'].sudo().create(vals_list)
                 elif len(files) == 1:
-                    datas = base64.encodebytes(files[0].read())
+                    datas_hebergeur_identity_verso = base64.encodebytes(files[0].read())
                     vals_list = []
                     vals = {
                         'name': "Carte d'identité hebergeur " + str(partner_id.name),
-                        'datas': datas,
+                        'datas': datas_hebergeur_identity_verso,
                         'code_document': 'hebergeur_identity',
                         'folder_id': int(folder_id),
                         'partner_id': int(partner_id),
@@ -453,7 +461,7 @@ class CustomerPortal(CustomerPortal):
                 'partner_id': False,
                 'description': '%s a envoyé ses documents ' % (partner_id.name),
                 'name': 'News : Documents reçu',
-                'team_id': request.env['helpdesk.team'].sudo().search([('name', 'like', _('Documents'))],
+                'team_id': request.env['helpdesk.team'].sudo().search([('name', 'like', _('Documents')),('company_id',"=",1)],
                                                                       limit=1).id,
 
             }
@@ -462,18 +470,19 @@ class CustomerPortal(CustomerPortal):
         except:
             logger.exception("Fail to upload documents")
         return http.request.render('mcm_contact_documents.success_documents')
-
+# Upload documents digimoov
     @http.route('/upload_my_files', type="http", auth="user", methods=['POST'], website=True, csrf=False)
     def upload_my_files(self, **kw):
         print('upload_my_files')
         print(http.request.env.user.name)
-        folder_id = request.env['documents.folder'].sudo().search(
-            [('name', "=", _('Documents Clients')), ('company_id', "=", 2)])
+        # charger le dossier des documents clients appartenant a Digimoov
+        folder_id = request.env['documents.folder'].sudo().search([('name', "=", _('Documents Digimoov')),('company_id',"=",2)])
         if not folder_id:
-            vals_list = []
+            vals_list =[]
+            #charger les documents appartenant seulement a digimoov
             vals = {
-                'name': "Documents Clients",
-                'company_id': 2
+                'name': "Documents Digimoov",
+                'company_id':2
             }
             vals_list.append(vals)
             folder_id = request.env['documents.folder'].sudo().create(vals_list)
@@ -484,13 +493,19 @@ class CustomerPortal(CustomerPortal):
             }
             vals_list.append(vals)
             facet = request.env['documents.facet'].sudo().create(vals_list)
+            # Ce code  a été modifiée par Seif le 10/03/2021  (!datas!)
         try:
+            # Preparation de l'environemnt de travail celons le profile et preparation de chargement des fichiers
             files = request.httprequest.files.getlist('identity')
+            files2 = request.httprequest.files.getlist('identity2')
+            document=False
             if files:
                 vals_list = []
+                #charge le modele de la carte d'identité [un seul modele pour deux attachements]
+                # on a pris les precaution au cas ou un client télécharge le recto et le verso avec le meme upload file
+                #on a supprimer datas=False
                 vals = {
-                    'name': "Carte d'identité",
-                    'datas': False,
+                    'name': "Carte d'identité Recto",
                     'folder_id': int(folder_id),
                     'code_document': 'identity',
                     'confirmation': kw.get('confirm_identity'),
@@ -499,46 +514,61 @@ class CustomerPortal(CustomerPortal):
                     'partner_id': False,
                     'owner_id': False}
                 vals_list.append(vals)
-                document = request.env['documents.document'].sudo().create(vals_list)
+                document = request.env['documents.document'].sudo().create(vals_list) #Créer un nouveau document carte d'identité
                 if document:
                     uid = document.create_uid
                     document.sudo().write(
                         {'owner_id': uid, 'partner_id': uid.partner_id, 'name': document.name + ' ' + str(uid.name)})
                 if len(files) == 2:
-                    datas = base64.encodebytes(files[0].read())
-                    datas2 = base64.encodebytes(files[1].read())
+                    datas_Carte_didentité_Recto = base64.encodebytes(files[0].read())
+                    datas_Carte_didentité_Verso = base64.encodebytes(files[1].read())
+                    #Attachement Carte d'identité Recto
                     request.env['ir.attachment'].sudo().create({
-                        'name': "Carte d'identité Recto",
+                        'name': "Carte d'identité recto",
                         'type': 'binary',
-                        'datas': datas,
+                        'datas': datas_Carte_didentité_Recto,
                         'res_model': 'documents.document',
                         'res_id': document.id
                     })
+                    # Attachement Carte d'identité Verso
                     request.env['ir.attachment'].sudo().create({
                         'name': "Carte d'identité Verso",
                         'type': 'binary',
-                        'datas': datas2,
+                        'datas': datas_Carte_didentité_Verso,
                         'res_model': 'documents.document',
                         'res_id': document.id
                     })
+                    #Attachement Carte d'identité recto
                 elif len(files) == 1:
-                    datas = base64.encodebytes(files[0].read())
+                    datas_carte_didentiterecto = base64.encodebytes(files[0].read())
                     request.env['ir.attachment'].sudo().create({
-                        'name': "Carte d'identité Recto Verso",
+                        'name': "Carte d'identité recto",
                         'type': 'binary',
-                        'datas': datas,
+                        'datas': datas_carte_didentiterecto,
                         'res_model': 'documents.document',
                         'res_id': document.id
                     })
+            if files2 and document:
+                datas_carte_didentite = base64.encodebytes(files2[0].read())
+                #Attachement Carte d'identité verso
+                request.env['ir.attachment'].sudo().create({
+                    'name': "Carte d'identité Verso",
+                    'type': 'binary',
+                    'datas': datas_carte_didentite,
+                    'res_model': 'documents.document',
+                    'res_id': document.id
+                })
+            document.sudo().write({'name':"Carte d'identité Recto/Verso"})
         except Exception as e:
             logger.exception("Fail to upload document Carte d'identité ")
+
         try:
             files = request.httprequest.files.getlist('address_proof')
             if files:
                 vals_list = []
+                #Attacher la justificatif de domicile
                 vals = {
-                    'name': "Jusitificatif à domicile",
-                    'datas': False,
+                    'name': "Jusitificatif de domicile",
                     'folder_id': int(folder_id),
                     'code_document': 'proof',
                     'type': 'binary',
@@ -546,95 +576,125 @@ class CustomerPortal(CustomerPortal):
                     'owner_id': False
                 }
                 vals_list.append(vals)
+                #Préparation du doc
                 document = request.env['documents.document'].sudo().create(vals_list)
                 if document:
+                    #attacher le document à son créateur
                     uid = document.create_uid
                     document.sudo().write(
                         {'owner_id': uid, 'partner_id': uid.partner_id, 'name': document.name + ' ' + str(uid.name)})
                 if len(files) == 2:
-                    datas = base64.encodebytes(files[0].read())
-                    datas2 = base64.encodebytes(files[1].read())
+                    #lire les docs on cas ou le document contient deux attachement
+                    datas_justificatifrecto = base64.encodebytes(files[0].read())
+                    datas_justificatifverso = base64.encodebytes(files[1].read())
+                    #creation du document justification du domicile en cas il est compose d un recto verso
                     request.env['ir.attachment'].sudo().create({
-                        'name': "Jusitificatif à domicile Recto",
+                        'name': "Jusitificatif de domicile Recto",
                         'type': 'binary',
-                        'datas': datas,
+                        'datas': datas_justificatifrecto,
                         'res_model': 'documents.document',
                         'res_id': document.id
                     })
                     request.env['ir.attachment'].sudo().create({
-                        'name': "Jusitificatif à domicile Verso",
+                        'name': "Jusitificatif de domicile Verso",
                         'type': 'binary',
-                        'datas': datas2,
+                        'datas': datas_justificatifverso,
                         'res_model': 'documents.document',
                         'res_id': document.id
                     })
+                    # creation du document justification du domicile en cas il est compose d'un seul document
                 elif len(files) == 1:
-                    datas = base64.encodebytes(files[0].read())
+                    datas_justificatif = base64.encodebytes(files[0].read())
                     request.env['ir.attachment'].sudo().create({
-                        'name': "Jusitificatif à domicile",
+                        'name': "Jusitificatif de domicile",
                         'type': 'binary',
-                        'datas': datas,
+                        'datas': datas_justificatif,
                         'res_model': 'documents.document',
                         'res_id': document.id
                     })
         except Exception as e:
             logger.exception("Fail to upload document Carte d'identité ")
         try:
-            files = request.httprequest.files.getlist('identity_hebergeur')
-            if files:
+            #préparation de l'espace de document pour identity hebergeur
+            hfiles = request.httprequest.files.getlist('identity_hebergeur')
+            hfiles1 = request.httprequest.files.getlist('identity_hebergeur1')
+            document = False
+            #Regroupement des 2 fichers
+            if hfiles:
                 vals_list = []
+                #charger le document identitée hebergeur
+                #on a supprimer datas
                 vals = {
                     'name': "Carte d'identité hébergeur",
-                    'datas': False,
                     'folder_id': int(folder_id),
-                    'code_document': 'hebergeur',
+                    'code_document': 'identity_hebergeur',
                     'type': 'binary',
                     'partner_id': False,
                     'owner_id': False
                 }
+                #ajouter les les valeurs à la liste vals_list
                 vals_list.append(vals)
                 document = request.env['documents.document'].sudo().create(vals_list)
                 if document:
                     uid = document.create_uid
+                    #concatiner le nom du document avec son createur
                     document.sudo().write(
                         {'owner_id': uid, 'partner_id': uid.partner_id, 'name': document.name + ' ' + str(uid.name)})
-                if len(files) == 2:
-                    datas = base64.encodebytes(files[0].read())
-                    datas2 = base64.encodebytes(files[1].read())
+                    #on cas ou le document est composé de deux attachements on va lire ces deux  attachements
+                if len(hfiles) == 2:
+                    datas_carteidentite_hybergeur_recto = base64.encodebytes(hfiles[0].read())
+                    datas_carteidentite_hybergeur_verso = base64.encodebytes(hfiles[1].read())
+                    #parser la carte déidentité hebergeur recto
                     request.env['ir.attachment'].sudo().create({
-                        'name': "Carte d'identité hébergeur Recto",
+                        'name': "Carte d'identité hébergeur recto",
                         'type': 'binary',
-                        'datas': datas,
+                        'datas': datas_carteidentite_hybergeur_recto,
                         'res_model': 'documents.document',
                         'res_id': document.id
                     })
+                    # parser la carte d'identité hebergeur verso
                     request.env['ir.attachment'].sudo().create({
-                        'name': "Carte d'identité hébergeur Verso",
+                        'name': "Carte d'identité hébergeur verso",
                         'type': 'binary',
-                        'datas': datas2,
+                        'datas': datas_carteidentite_hybergeur_verso,
                         'res_model': 'documents.document',
                         'res_id': document.id
                     })
-                elif len(files) == 1:
-                    datas = base64.encodebytes(files[0].read())
+                    #notre cas ou on attache un seul fichier carte d'identité hebergeur
+                elif len(hfiles) == 1:
+                    datas_identite_hybergeur = base64.encodebytes(hfiles[0].read())
                     request.env['ir.attachment'].sudo().create({
                         'name': "Carte d'identité hébergeur",
                         'type': 'binary',
-                        'datas': datas,
+                        'datas': datas_identite_hybergeur,
                         'res_model': 'documents.document',
                         'res_id': document.id
                     })
+            if hfiles1:
+                #Charger la carte d'identité verso et la rattacher avec le document Carte d'identité hébergeur
+                datas_identite_hybergeur = base64.encodebytes(hfiles1[0].read())
+                request.env['ir.attachment'].sudo().create({
+                    'name': "Carte d'identité hébergeur",
+                    'type': 'binary',
+                    'datas': datas_identite_hybergeur,
+                    'res_model': 'documents.document',
+                    'res_id': document.id
+                })
+            document.sudo().write({'name':"Carte d'identité hebergeur Recto/Verso"})
         except Exception as e:
             logger.exception("Fail to upload document Carte d'identité ")
+
         try:
+            #charger les documents mis (attestation hebergeur)
             files = request.httprequest.files.getlist('attestation_hebergeur')
             if files:
                 vals_list = []
+                #charger son nom et son dossier
+                #supprimer datas
                 vals = {
                     'name': "Attestation d'hébergement",
-                    'datas': False,
                     'folder_id': int(folder_id),
-                    'code_document': 'hebergement',
+                    'code_document': 'attestation_hebergeur',
                     'type': 'binary',
                     'partner_id': False,
                     'owner_id': False
@@ -646,43 +706,50 @@ class CustomerPortal(CustomerPortal):
                     document.sudo().write(
                         {'owner_id': uid, 'partner_id': uid.partner_id, 'name': document.name + ' ' + str(uid.name)})
                 if len(files) == 2:
-                    datas = base64.encodebytes(files[0].read())
-                    datas2 = base64.encodebytes(files[1].read())
-                    request.env['ir.attachment'].sudo().create({
-                        'name': "Attestation d'hébergement Recto",
-                        'type': 'binary',
-                        'datas': datas,
-                        'res_model': 'documents.document',
-                        'res_id': document.id
-                    })
-                    request.env['ir.attachment'].sudo().create({
-                        'name': "Attestation d'hébergement Verso",
-                        'type': 'binary',
-                        'datas': datas2,
-                        'res_model': 'documents.document',
-                        'res_id': document.id
-                    })
-                elif len(files) == 1:
-                    datas = base64.encodebytes(files[0].read())
+                    datas_attestation_hebergeurrecto = base64.encodebytes(files[0].read())
+                    datas_attestation_hebergeurverso = base64.encodebytes(files[1].read())
                     request.env['ir.attachment'].sudo().create({
                         'name': "Attestation d'hébergement",
                         'type': 'binary',
-                        'datas': datas,
+                        'datas': datas_attestation_hebergeurrecto,
                         'res_model': 'documents.document',
                         'res_id': document.id
                     })
+                    request.env['ir.attachment'].sudo().create({
+                        'name': "Attestation d'hébergement",
+                        'type': 'binary',
+                        'datas': datas_attestation_hebergeurverso,
+                        'res_model': 'documents.document',
+                        'res_id': document.id
+                    })
+                    #charger le document attestation d'hebergement
+                elif len(files) == 1:
+                    datas_attestation_hebergeur = base64.encodebytes(files[0].read())
+                    request.env['ir.attachment'].sudo().create({
+                        'name': "Attestation d'hébergement",
+                        'type': 'binary',
+                        'datas': datas_attestation_hebergeur,
+                        'res_model': 'documents.document',
+                        'res_id': document.id
+                    })
+                    #charger une exception en cas  derreur de chargement des docs
         except Exception as e:
             logger.exception("Fail to upload document Carte d'identité ")
         try:
+            # charger les docs cerfa dans files
             files = request.httprequest.files.getlist('cerfa')
+            files_cerfa_page_2 = request.httprequest.files.getlist('cerfa2')
+            files_cerfa_page_3 = request.httprequest.files.getlist('cerfa3')
+            document = False
             if files:
                 vals_list = []
+                #parser le doc cerfa avec les cordonnee associée
+                #supprime datas=false
                 vals = {
-                    'name': "Cerfa",
-                    'datas': False,
+                    'name': "CERFA 11414-05",
                     'folder_id': int(folder_id),
                     'code_document': 'cerfa',
-                    'confirmation': kw.get('confirm_cerfa'),
+                    'confirmation' : kw.get('confirm_cerfa'),
                     'type': 'binary',
                     'partner_id': False,
                     'owner_id': False
@@ -691,34 +758,41 @@ class CustomerPortal(CustomerPortal):
                 document = request.env['documents.document'].sudo().create(vals_list)
                 if document:
                     uid = document.create_uid
+                    # concatiner le nom du doc avec le nom du propriétaire
                     document.sudo().write(
                         {'owner_id': uid, 'partner_id': uid.partner_id, 'name': document.name + ' ' + str(uid.name)})
-                if len(files) == 2:
-                    datas = base64.encodebytes(files[0].read())
-                    datas2 = base64.encodebytes(files[1].read())
+                    #on cas d'attacher deux attachements aux doc Cerfa
+                page_number=1
+                #Loop & create cerfa attachments
+                for ufile in files:
+                    datas_cerfa= base64.encodebytes(ufile.read())
                     request.env['ir.attachment'].sudo().create({
-                        'name': "Cerfa Recto",
+                        'name': "Cerfa Page "+ str(page_number),
                         'type': 'binary',
-                        'datas': datas,
+                        'datas': datas_cerfa,
                         'res_model': 'documents.document',
                         'res_id': document.id
                     })
-                    request.env['ir.attachment'].sudo().create({
-                        'name': "Cerfa Verso",
-                        'type': 'binary',
-                        'datas': datas2,
-                        'res_model': 'documents.document',
-                        'res_id': document.id
-                    })
-                elif len(files) == 1:
-                    datas = base64.encodebytes(files[0].read())
-                    request.env['ir.attachment'].sudo().create({
-                        'name': "Cerfa",
-                        'type': 'binary',
-                        'datas': datas,
-                        'res_model': 'documents.document',
-                        'res_id': document.id
-                    })
+                    page_number+=1
+            if files_cerfa_page_2:
+                datas_cerfa = base64.encodebytes(files_cerfa_page_2[0].read())
+                request.env['ir.attachment'].sudo().create({
+                    'name': "Cerfa Page 2",
+                    'type': 'binary',
+                    'datas': datas_cerfa,
+                    'res_model': 'documents.document',
+                    'res_id': document.id
+                })
+            if files_cerfa_page_3:
+                datas_cerfa = base64.encodebytes(files_cerfa_page_3[0].read())
+                request.env['ir.attachment'].sudo().create({
+                    'name': "Cerfa Page 3",
+                    'type': 'binary',
+                    'datas': datas_cerfa,
+                    'res_model': 'documents.document',
+                    'res_id': document.id
+                })
+            document.sudo().write({'name':"CERFA 11414-05"})
         except Exception as e:
             logger.exception("Fail to upload document Carte d'identité ")
         return http.request.render('mcm_contact_documents.success_documents')
@@ -752,7 +826,7 @@ class CustomerPortal(CustomerPortal):
     def portal_my_document(self, document_id=None,access_token=None, **kw):
         document=request.env['documents.document'].sudo().search(
             [('id', '=', document_id)],limit=1)
-
+        #view portal of refused document
         if document:
             if document.state != 'refused':
                 return request.redirect('/my/documents')
@@ -768,21 +842,61 @@ class CustomerPortal(CustomerPortal):
     def update_document(self,document_id=None, **kw):
         document = request.env['documents.document'].sudo().search(
             [('id', '=', document_id)], limit=1)
-        print('document')
-        print(document)
+        #search and get the refused document
         if document:
             try:
-                files = request.httprequest.files.getlist('updated_document')
+                files = request.httprequest.files.getlist('updated_document') #if the refused document is not CERFA
+                if not files:
+                    # if the refused document is CERFA
+                    files = request.httprequest.files.getlist('updated_document_cerfa')
+                files2 = request.httprequest.files.getlist('updated_document_cerfa2') # get the second page of cerfa if the client upload only one image in first upload zone
+                files3 = request.httprequest.files.getlist('updated_document_cerfa3')  # get the third page of cerfa if the client upload only one image in first upload zone
                 for ufile in files:
                     # mimetype = self._neuter_mimetype(ufile.content_type, http.request.env.user)
-                    print('ufile')
-                    print(ufile)
                     datas = base64.encodebytes(ufile.read())
-                    vals = {
-                        'datas': datas,
-                        'state':'waiting',
-                    }
-                    document.sudo().write(vals)
+                    if request.website.id==1: # if refused document is for a mcm academy client
+                        vals = {
+                            'state':'waiting', #set the state of the refused document to verification (MCM ACADEMY)
+                        }
+                        document.sudo().write(vals)
+                        request.env['ir.attachment'].sudo().create({
+                            'name': "Cerfa",
+                            'type': 'binary',
+                            'datas': datas,
+                            'res_model': 'documents.document',
+                            'res_id': document.id
+                        })
+                    else: # if refused document is for a digimoov client
+                        vals = {
+                            'state': 'waiting', #set the state of the refused document to verification (DIGIMOOV)
+                            'datas':datas
+                        }
+                        document.sudo().write(vals)
+                        request.env['ir.attachment'].sudo().create({
+                            'name': "Cerfa",
+                            'type': 'binary',
+                            'datas': datas,
+                            'res_model': 'documents.document',
+                            'res_id': document.id
+                        })
+                if files2:
+                    datas_cerfa = base64.encodebytes(files2[0].read()) #get the second page of cerfa
+                    request.env['ir.attachment'].sudo().create({
+                        'name': "Cerfa Page 3",
+                        'type': 'binary',
+                        'datas': datas_cerfa,
+                        'res_model': 'documents.document',
+                        'res_id': document.id
+                    })
+                if files3:
+                    datas_cerfa = base64.encodebytes(files3[0].read()) #get the third page of cerfa
+                    request.env['ir.attachment'].sudo().create({
+                        'name': "Cerfa Page 3",
+                        'type': 'binary',
+                        'datas': datas_cerfa,
+                        'res_model': 'documents.document',
+                        'res_id': document.id
+                    })
             except Exception as e:
                 logger.exception("Fail to upload document %s" % ufile.filename)
 
@@ -791,6 +905,5 @@ class CustomerPortal(CustomerPortal):
     @http.route(['/my/cerfa'], type='http', auth="public", website=True)
     def portal_cerfa(self):
         return request.render("mcm_contact_documents.cerfa_portal_template")
-
 
 

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- Deal template 1 -->
+<template id="sh_emate_deal_tmpl_1" name="Deal 1">
+	
+	<div class="sh_emate_deal_1">
+		<div class="o_mail_block_deal" data-name="Image - Text" id="sh_deal_21">
+	    <div class="o_mail_snippet_general">
+	      	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+	           <tbody>
+			        <tr>
+			            <td width="100%" class="heading">
+			                <center>
+			                    <h3>DEAL OF THE DAY</h3>
+			                   	<hr/>
+			                </center>
+			            </td>
+			        </tr>
+			     </tbody>
+			</table>
+	          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+	              <tbody>
+	                  <tr>
+	                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+	                          <img src="/sh_emate/static/src/img/tmpl_21/5.png" class="d-block mx-auto" alt="Your Picture" />
+	                      </td>
+	                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 text-left p8">
+	                          <div class="content">
+			                       <h6>Lorem Ipsum</h6>
+			                       <p><del>$150.00</del><span>$100.00</span></p>
+			                       <a href="#" class="btn_buynow">BUY NOW</a>
+			                  </div>
+	                      </td>
+	                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+	                          <img src="/sh_emate/static/src/img/tmpl_21/6.png" class="d-block mx-auto" alt="Your Picture" />
+	                      </td>
+	                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 text-left p8">
+		                       <div class="content">
+			                        <h6>Lorem Ipsum</h6>
+			                       	<p><del>$250.00</del><span>$190.00</span></p>
+			                       	<a href="#" class="btn_buynow">BUY NOW</a>
+			                  </div>
+	                      </td>
+	                  </tr>
+	              </tbody>
+	          </table>
+	          
+	          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+	              <tbody>
+	                  <tr>
+	                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+	                          <img src="/sh_emate/static/src/img/tmpl_21/7.png" class="d-block mx-auto" alt="Your Picture" />
+	                      </td>
+	                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 text-left p8">
+	                          <div class="content">
+			                       <h6>Lorem Ipsum</h6>
+			                       <p><del>$200.00</del><span>$150.00</span></p>
+			                       <a href="#" class="btn_buynow">BUY NOW</a>
+			                  </div>
+	                      </td>
+	                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+	                          <img src="/sh_emate/static/src/img/tmpl_21/8.png" class="d-block mx-auto" alt="Your Picture" />
+	                      </td>
+	                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 text-left p8">
+		                       <div class="content">
+			                        <h6>Lorem Ipsum</h6>
+			                       	<p><del>$150.00</del><span>$100.00</span></p>
+			                       	<a href="#" class="btn_buynow">BUY NOW</a>
+			                  </div>
+	                      </td>
+	                  </tr>
+	              </tbody>
+	          </table>
+	      </div>
+	  </div>
+	</div>
+	
+</template>
+<!-- end Deal template 1  -->
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+</odoo>

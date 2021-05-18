@@ -255,7 +255,9 @@
                                                                                             <p t-if="error_identity!='' and error_identity_number!=''"
                                                                                                class="alert alert-warning"
                                                                                                style="margin-left:0%;">
-                                                                                                Vous devez remplir et charger votre pièce d'identité
+                                                                                                Vous devez remplir et
+                                                                                                charger votre pièce
+                                                                                                d'identité
                                                                                             </p>
                                                                                             <p t-if="error_identity!='' and error_identity_number==''"
                                                                                                class="alert alert-warning"
@@ -697,7 +699,8 @@
                                                                                         <p t-if="error_permis!='' and error_permis_number!=''"
                                                                                            class="alert alert-warning"
                                                                                            style="margin-left:0%;">
-                                                                                            Vous devez charger,remplir votre permis de conduire.
+                                                                                            Vous devez charger,remplir
+                                                                                            votre permis de conduire.
                                                                                         </p>
                                                                                         <p t-if="error_permis!='' and error_permis_number==''"
                                                                                            class="alert alert-warning"
@@ -899,7 +902,8 @@
                                                                                         <p t-if="error_domicile!=''"
                                                                                            class="alert alert-warning"
                                                                                            style="margin-left:0%;">
-                                                                                            Vous devez charger votre justificatif à domicile
+                                                                                            Vous devez charger votre
+                                                                                            justificatif à domicile
                                                                                         </p>
                                                                                     </div>
                                                                                 </div>
@@ -1068,11 +1072,13 @@
                                             </div>
 
                                             <div style="display:inline-block;">
-                                               <center> <div class="sub-main" style="margin-right:40px">
-                                                    <button class="button-one" style="float:right;" type="submit">
-                                                        Valider
-                                                    </button>
-                                               </div></center>
+                                                <center>
+                                                    <div class="sub-main" style="margin-right:40px">
+                                                        <button class="button-one" style="float:right;" type="submit">
+                                                            Valider
+                                                        </button>
+                                                    </div>
+                                                </center>
 
                                             </div>
                                         </div>
@@ -1301,9 +1307,12 @@
                             <i class="fa fa-check-circle fa-2x text-success" role="img" aria-label="Success"
                                title="Success"/>
                         </h3>
-                        <h3 class="text-center">Vos Documents ont été reçu avec succès</h3>
-                        <h3 class="text-center">Notre équipe les prendra en charge dans
-                            les plus bref délais.
+                        <h3 class="text-center">Nous vous remecions pour le temps que vous avez consacré à charger vos
+                            documents.
+                        </h3>
+                        <h3 class="text-center">
+                            <img src="https://media.giphy.com/media/11uArCoB4fkRcQ/giphy.gif"
+                                 style="width:100%;height:auto;"/>
                         </h3>
                     </div>
                 </div>
@@ -1327,23 +1336,65 @@
                               title="Statut actuelle de ce document"/>
                     </div>
                 </div>
-                <form t-att-action="'/update/%s' % (document.id)" method="post"
+                <form t-att-action="'/update/%s' % (document.id)" method="post" id="digimoov_updated_document_form"
                       class="s_website_form container-fluid mt32" enctype="multipart/form-data"
                       data-model_name="documents.document"
                       data-success_page="/submitted_documents" data-editable-form="false"
                       hide-change-model="true">
-                    <div class="form-group row form-field o_website_form_required">
-                        <div class="col-lg-4 col-md-5 text-right">
-                            <label class="col-form-label" for="identity">
-                                <span t-field="document.name" t-esc="document.name"/>
-                            </label>
+                    <t t-if="document.code_document!='cerfa'">
+                        <div class="form-group row form-field o_website_form_required">
+                            <div class="col-lg-4 col-md-5 text-right">
+                                <label class="col-form-label" for="identity">
+                                    <span t-field="document.name" t-esc="document.name"/>
+                                </label>
+                            </div>
+                            <div class="col-lg-6 col-md-7">
+                                <input type="file" name='updated_document' required="1"
+                                       class="form-control o_website_form_input" multiple="true"
+                                       accept="image/*,application/pdf"/>
+                            </div>
                         </div>
-                        <div class="col-lg-6 col-md-7">
-                            <input type="file" name='updated_document' required="1"
-                                   class="form-control o_website_form_input"
-                                   accept="image/*,application/pdf"/>
+                    </t>
+                    <t t-if="document.code_document=='cerfa'">
+                        <div class="form-group row form-field o_website_form_required">
+                            <div class="col-lg-4 col-md-5 text-right">
+                                <label class="col-form-label" for="updated_document_cerfa" id="label_updated_document_cerfa">
+                                    CERFA 11414-05 (Page1,2,3)
+                                </label>
+                            </div>
+                            <div class="col-lg-6 col-md-7">
+                                <input type="file" name='updated_document_cerfa' id="updated_document_cerfa"
+                                       class="form-control o_website_form_input" multiple="true"
+                                       accept="image/*,application/pdf"/>
+                            </div>
                         </div>
-                    </div>
+                        <div class="form-group row form-field" style="display: none;"
+                                             id="o_website_form_updated_cerfa_2">
+                            <div class="col-lg-4 col-md-5 text-right">
+                                <label class="col-form-label" for="cerfa2">
+                                    CERFA 11414-05 Page 2
+                                </label>
+                            </div>
+                            <div class="col-lg-6 col-md-7">
+                                <input type="file" name='updated_document_cerfa2'
+                                       class="form-control o_website_form_input" id="updated_document_cerfa2"
+                                       accept="image/*,application/pdf"/>
+                            </div>
+                        </div>
+                        <div  class="form-group row form-field" style="display: none;"
+                                             id="o_website_form_updated_cerfa_3">
+                            <div class="col-lg-4 col-md-5 text-right">
+                                <label class="col-form-label" for="identity">
+                                    CERFA 11414-05 Page 3
+                                </label>
+                            </div>
+                            <div class="col-lg-6 col-md-7">
+                                <input type="file" name='updated_document_cerfa3'
+                                       class="form-control o_website_form_input" id="updated_document_cerfa3"
+                                       accept="image/*,application/pdf"/>
+                            </div>
+                        </div>
+                    </t>
                     <div class="form-group row">
                         <div class="offset-lg-1 offset-md-1 col-md-12 col-lg-12">
                             <button type="submit" class="btn btn-primary" id="update_document">

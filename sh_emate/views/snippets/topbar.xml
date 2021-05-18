@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- topbar template 1 -->
+<template id="sh_emate_topbar_tmpl_1" name="Topbar 1">
+	
+	<div class="sh_emate_topbar_1">
+		<div class="o_mail_block_header_logo" id="sh_topbar_1">
+			<div class="o_mail_snippet_general">
+	 			<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding">
+	   				<tbody>
+	     				<tr>
+	       					<td width="70%" class="left_side o_mail_col_mv o_mail_col_container">
+	         					<a href="#" class="mr15"> <span class="fa fa-phone"></span> 7984575681</a>
+	         					<a href="#"><span class="fa fa-envelope"></span> info@softhealer.com</a>
+	       					</td>
+	       					<td width="30%" class="text-right o_mail_col_mv o_mail_col_container">
+	         					<div class="right_menu">
+	           						<a title="Facebook" href="#"> <span class="fa fa-facebook"></span> </a>
+	           						<a title="Twitter" href="#" class="ml10"> <span class="fa fa-twitter"></span> </a>
+	           						<a title="LinkedIn" href="#" class="ml10"> <span class="fa fa-linkedin"></span> </a>
+	           						<a title="Instagram" href="#" class="ml10"> <span class="fa fa-instagram"></span> </a>
+	         					</div>
+	       					</td>
+	     				</tr>
+	   				</tbody>
+	 			</table>
+			</div>
+		</div>
+	</div>
+	
+</template>
+<!-- end topbar template 1  -->
+
+
+<!-- topbar template 2 -->
+<template id="sh_emate_topbar_tmpl_2" name="Topbar 2">
+	
+	<div class="sh_emate_topbar_2">
+		<div class="o_mail_block_topbar" id="sh_topbar_17">
+			<div class="o_mail_snippet_general">
+				<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding">
+		 			<tbody>
+		   				<tr>
+		     				<td width="70%" class="left_side">
+		     				</td>
+		     				<td width="30%" class="text-right">
+		       					<div class="right_menu">
+		         					<a href="#" class="mr15"> <span class="fa fa-phone"></span> 7984575681</a>
+		       					</div>
+		     				</td>
+		   				</tr>
+		 			</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+</template>
+<!-- end topbar template 2  -->
+
+
+<!-- topbar template 3 -->
+<template id="sh_emate_topbar_tmpl_3" name="Topbar 3">
+	
+	<div class="sh_emate_topbar_3">
+		<div class="o_mail_block_header_logo" id="sh_topbar_18">
+			<div class="o_mail_snippet_general">
+				<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding">
+		 			<tbody>
+		   				<tr>
+		     				<td width="70%" class="left_side o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding logo">
+		       					<a href="#"><h3>Agency</h3></a>
+		     				</td>
+		     				<td width="30%" class="text-right o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding">
+		       					<div class="right_menu">
+		         					<a title="Facebook" href="#"> <span class="fa fa-facebook"></span> </a>
+		         					<a title="Twitter" href="#" class="ml10"> <span class="fa fa-twitter"></span> </a>
+		         					<a title="LinkedIn" href="#" class="ml10"> <span class="fa fa-linkedin"></span> </a>
+		         					<a title="Instagram" href="#" class="ml10"> <span class="fa fa-instagram"></span> </a>
+		         					<a title="Pinterest" href="#" class="ml10"> <span class="fa fa-pinterest"></span> </a>
+		       					</div>
+		     				</td>
+		   				</tr>
+		 			</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+</template>
+<!-- end topbar template 3  -->
+
+<!-- topbar template 4 -->
+<template id="sh_emate_topbar_tmpl_4" name="Topbar 4">
+	<div class="sh_emate_topbar_4">
+		<div class="o_mail_block_header_logo" id="sh_topbar_19">
+			<div class="o_mail_snippet_general">
+				<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding">
+		 			<tbody>
+		   				<tr>
+		     				<td width="70%" class="left_side o_mail_col_mv o_mail_col_container">
+		       					<a href="#"><span class="fa fa-envelope"></span> info@softhealer.com</a>
+		     				</td>
+		     				<td width="30%" class="text-right o_mail_col_mv o_mail_col_container">
+		       					<div class="right_menu">
+		         					<a title="Facebook" href="#"> <span class="fa fa-facebook"></span> </a>
+		         					<a title="Twitter" href="#" class="ml10"> <span class="fa fa-twitter"></span> </a>
+		         					<a title="LinkedIn" href="#" class="ml10"> <span class="fa fa-linkedin"></span> </a>
+		         					<a title="Instagram" href="#" class="ml10"> <span class="fa fa-instagram"></span> </a>
+		         					<a title="Pinterest" href="#" class="ml10"> <span class="fa fa-pinterest-p"></span> </a>
+		       					</div>
+		     				</td>
+		   				</tr>
+		 			</tbody>
+				</table>
+			</div>
+		</div>
+	</div>	
+</template>
+<!-- end topbar template 4  -->
+
+<!-- topbar template 5 -->
+<template id="sh_emate_topbar_tmpl_5" name="Topbar 5">
+	<div class="sh_emate_topbar_5">
+		<div class="o_mail_block_header_logo" id="sh_topbar_22">
+			<div class="o_mail_snippet_general">
+				<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding">
+		 			<tbody>
+		   				<tr>
+		     				<td width="70%" class="left_side o_mail_col_mv o_mail_col_container">
+		       					<a href="#"> View Online</a>
+		     				</td>
+		     				<td width="30%" class="text-right o_mail_col_mv o_mail_col_container">
+		       					<div class="right_menu">
+		         					<a title="Facebook" href="#"> <span class="fa fa-facebook"></span> </a>
+		         					<a title="Twitter" href="#" class="ml10"> <span class="fa fa-twitter"></span> </a>
+		         					<a title="LinkedIn" href="#" class="ml10"> <span class="fa fa-linkedin"></span> </a>
+		         					<a title="Instagram" href="#" class="ml10"> <span class="fa fa-instagram"></span> </a>
+		         					<a title="Pinterest" href="#" class="ml10"> <span class="fa fa-pinterest-p"></span> </a>
+		         					<a title="Pinterest" href="#" class="ml10"> <span class="fa fa-google-plus"></span> </a>
+		       					</div>
+		     				</td>
+		   				</tr>
+		 			</tbody>
+				</table>
+			</div>
+		</div>
+	</div>	
+</template>
+<!-- end topbar template 5  -->
+
+
+
+
+	
+
+</odoo>

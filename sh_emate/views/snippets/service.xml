@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- service template 1 -->
+<template id="sh_emate_service_tmpl_1" name="Service 1">
+	
+	<div class="sh_emate_service_1">
+		<div class="o_mail_block_steps o_mail_no_colorpicker" data-name="Steps" id="sh_service_4">
+		    <div class="o_mail_snippet_general bg_img">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+		                        <table align="center">
+		                            <tbody><tr>
+		                                <td rowspan="2" class="text-right icon vmiddle">
+		                                    &amp;nbsp;
+		                                    <span class="fa fa-headphones fa-2x" role="img" title="Headphone"></span>
+		                                    &amp;nbsp;
+		                                </td>
+		                                <td>
+		                                    <p class="o_mail_no_margin o_default_snippet_text text">LOREM IPSUM</p>
+		                                    <h6 class="o_mail_no_margin o_default_snippet_text price">LOREM IPSUM</h6>
+		                                </td>
+		                            </tr>
+		                        </tbody></table>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+		                        <table align="center">
+		                            <tbody><tr>
+		                                <td rowspan="2" class="text-right icon vmiddle">
+		                                    &amp;nbsp;
+		                                    <span class="fa fa-plane fa-2x" role="img" title="Order"></span>
+		                                    &amp;nbsp;
+		                                </td>
+		                                <td>
+		                                    <p class="o_mail_no_margin o_default_snippet_text text">LOREM IPSUM</p>
+		                                    <h6 class="o_mail_no_margin o_default_snippet_text price">LOREM IPSUM</h6>
+		                                </td>
+		                            </tr>
+		                        </tbody></table>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+		                        <table align="center">
+		                            <tbody><tr>
+		                                <td rowspan="2" class="text-right icon vmiddle">
+		                                    &amp;nbsp;
+		                                    <span class="fa fa-refresh fa-2x" role="img" title="Return"></span>
+		                                    &amp;nbsp;
+		                                </td>
+		                                <td>
+		                                    <p class="o_mail_no_margin o_default_snippet_text text">LOREM IPSUM</p>
+		                                    <h6 class="o_mail_no_margin o_default_snippet_text price">LOREM IPSUM</h6>
+		                                </td>
+		                            </tr>
+		                        </tbody></table>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+
+<!-- end service template 1  -->
+
+
+<!-- service template 2 -->
+<template id="sh_emate_service_tmpl_2" name="Service 2">
+	
+	<div class="sh_emate_service_2">
+		<div class="o_mail_block_steps o_mail_no_colorpicker" data-name="Steps" id="sh_service_12">
+		    <div class="o_mail_snippet_general bg-white">
+		    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+		        	<tbody>
+				      <tr>
+				          <td width="100%" class="heading">
+				              <center>
+				                   <h3>LOREM IPSUM</h3>
+				               </center>
+				          </td>
+				      </tr>
+				   </tbody>
+				</table>
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+		                        <table align="center">
+		                            <tbody><tr>
+		                                <td rowspan="2" class="text-right icon vmiddle">
+		                                    <span class="fa fa-cubes" role="img" title="Headphone"></span>
+		                                </td>
+		                                <td>
+		                                    <div class="right-content">
+						                        <a href="#"><p class="title">LOREM IPSUM</p></a>
+						                        <p class="text">Lorem ipsum dolor sit amet, aipicsing elit.</p>
+						                    </div>
+		                                </td>
+		                            </tr>
+		                        </tbody></table>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+		                        <table align="center">
+		                            <tbody><tr>
+		                                <td rowspan="2" class="text-right icon vmiddle">
+		                                    <span class="fa fa-cubes" role="img" title="Order"></span>
+		                                </td>
+		                                <td>
+		                                    <div class="right-content">
+						                        <a href="#"><p class="title">LOREM IPSUM</p></a>
+						                        <p class="text">Lorem ipsum dolor sit amet, aipicsing elit.</p>
+						                    </div>
+		                                </td>
+		                            </tr>
+		                        </tbody></table>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		        
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+		                        <table align="center">
+		                            <tbody><tr>
+		                                <td rowspan="2" class="text-right icon vmiddle">
+		                                    <span class="fa fa-cubes" role="img" title="Headphone"></span>
+		                                </td>
+		                                <td>
+		                                    <div class="right-content">
+						                        <a href="#"><p class="title">LOREM IPSUM</p></a>
+						                        <p class="text">Lorem ipsum dolor sit amet, aipicsing elit.</p>
+						                    </div>
+		                                </td>
+		                            </tr>
+		                        </tbody></table>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+		                        <table align="center">
+		                            <tbody><tr>
+		                                <td rowspan="2" class="text-right icon vmiddle">
+		                                    <span class="fa fa-cubes" role="img" title="Order"></span>
+		                                </td>
+		                                <td>
+		                                    <div class="right-content">
+						                        <a href="#"><p class="title">LOREM IPSUM</p></a>
+						                        <p class="text">Lorem ipsum dolor sit amet, aipicsing elit.</p>
+						                    </div>
+		                                </td>
+		                            </tr>
+		                        </tbody></table>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+
+<!-- end service template 2  -->
+
+<!-- service template 3 -->
+<template id="sh_emate_service_tmpl_3" name="Service 3">
+	
+	<div class="sh_emate_service_3">
+		<div class="o_mail_block_steps o_mail_no_colorpicker" data-name="Steps" id="sh_service_16">
+	    <div class="o_mail_snippet_general bg_color">
+	        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding">
+	            <tbody>
+	                <tr>
+	                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10 bg1 w270">
+	                        <table align="center">
+	                            <tbody><tr>
+	                                <td rowspan="2" class="text-right icon vmiddle">
+	                                    &amp;nbsp;
+	                                    <span class="fa fa-truck" role="img" title="Headphone"></span>
+	                                    &amp;nbsp;
+	                                </td>
+	                                <td>
+	                                    <div class="right-content">
+				                            <p class="title">FREE SHIPING</p>
+				                            <p class="text">LOREM IPSUM DOLOR</p>
+				                        </div>
+	                                </td>
+	                            </tr>
+	                        </tbody></table>
+	                    </td>
+	                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10 bg2 w270">
+	                        <table align="center">
+	                            <tbody><tr>
+	                                <td rowspan="2" class="text-right icon vmiddle">
+	                                    &amp;nbsp;
+	                                    <span class="fa fa-tags" role="img" title="Order"></span>
+	                                    &amp;nbsp;
+	                                </td>
+	                                <td>
+	                                    <div class="right-content">
+				                            <p class="title">FREE SHIPING</p>
+				                            <p class="text">LOREM IPSUM DOLOR</p>
+				                        </div>
+	                                </td>
+	                            </tr>
+	                        </tbody></table>
+	                    </td>
+	                </tr>
+	            </tbody>
+	        </table>
+	    </div>
+	</div>	
+</div>	
+</template>
+
+<!-- end service template 3  -->
+
+<!-- service template 4 -->
+<template id="sh_emate_service_tmpl_4" name="Service 4">
+	
+	<div class="sh_emate_service_4">
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_service_2">
+	        <div class="o_mail_snippet_general">
+	        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+	            <tbody>
+			        <tr>
+			            <td width="100%" class="heading">
+			                <center>
+			                    <h3>LOREM IPSUM</h3>
+		                    	<p class="detail">Lorem ipsum dolor sit amet</p>
+			                </center>
+			            </td>
+			        </tr>
+			     </tbody>
+			  </table>
+	        
+	            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col">
+	                <tbody>
+	                    <tr>
+	                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+	                            <div class="box text-center">
+			                        <div class="icon"><span class="fa fa-cubes"></span></div>
+			                        <p class="text-center title">LOREM IPSUM</p>
+			                        <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit.</p>
+			                        <a href="#" class="btn_readmore">READ MORE</a>
+			                    </div>
+	                        </td>
+	
+	                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+	                            <div class="box text-center">
+			                        <div class="icon"><span class="fa fa-cubes"></span></div>
+			                        <p class="text-center title">LOREM IPSUM</p>
+			                        <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit.</p>
+			                        <a href="#" class="btn_readmore">READ MORE</a>
+			                    </div>
+	                        </td>
+	
+	                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+	                            <div class="box text-center">
+			                        <div class="icon"><span class="fa fa-cubes"></span></div>
+			                        <p class="text-center title">LOREM IPSUM</p>
+			                        <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit.</p>
+			                        <a href="#" class="btn_readmore">READ MORE</a>
+			                    </div>
+	                        </td>
+	                    </tr>
+	                </tbody>
+	            </table>
+	        </div>
+	    </div> 
+	</div>
+	
+</template>
+
+<!-- end service template 4  -->
+
+<!-- service template 5 -->
+<template id="sh_emate_service_tmpl_5" name="Service 5">
+	
+	<div class="sh_emate_service_5">
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_service_18">
+		      <div class="o_mail_snippet_general">
+			      <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_h_padding o_mail_v_padding o_mail_col_table">
+			          <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+				                    <h3>Our Best Services</h3>
+				                   	<hr/>
+		                    		<p class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do euismodtempor incididunt ut.</p>
+				                </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				  </table>
+		      
+		          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table three_col">
+		              <tbody>
+		                  <tr>
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+		                          <div class="box text-center">
+			                        <div class="icon"><span class="fa fa-window-restore"></span></div>
+			                        <p class="text-center title">Awesome Design</p>
+			                        <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit.</p>
+			                        <a href="#" class="btn_readmore">READ MORE <span class="fa fa-long-arrow-right"></span></a>
+			                    </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+		                          <div class="box text-center">
+			                        <div class="icon"><span class="fa fa-pencil-square-o"></span></div>
+			                        <p class="text-center title">Easy Customization</p>
+			                        <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit.</p>
+			                        <a href="#" class="btn_readmore">READ MORE <span class="fa fa-long-arrow-right"></span></a>
+			                    </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+		                          <div class="box text-center">
+			                        <div class="icon"><span class="fa fa-shield"></span></div>
+			                        <p class="text-center title">Extreme Security</p>
+			                        <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit.</p>
+			                        <a href="#" class="btn_readmore">READ MORE <span class="fa fa-long-arrow-right"></span></a>
+			                    </div>
+		                      </td>
+		                  </tr>
+		              </tbody>
+		          </table>
+		      </div>
+		</div> 
+	</div>
+	
+</template>
+
+<!-- end service template 5  -->
+
+<!-- service template 6 -->
+<template id="sh_emate_service_tmpl_6" name="Service 6">
+	
+	<div class="sh_emate_service_6">
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_service_19">
+		      <div class="o_mail_snippet_general">
+				   <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+				      <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+				                    <h3>Lorem Ipsum</h3>
+				                    <p class="detail">Lorem ipsum dolor sit amet, consectetur<br/>adipiscing elit. Curabitur placerat.</p>
+				                </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				  </table>
+		      
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_col_container plr10">
+		                        <div class="box text-left">
+		                            <h6 class="text-left o_mail_no_margin o_default_snippet_text">
+		                                <a href="#">Lorem ipsum</a>
+		                            </h6>
+		                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+		                        </div>
+		                        <div class="box text-left">
+		                            <h6 class="text-left o_mail_no_margin o_default_snippet_text">
+		                                <a href="#">Lorem ipsum</a>
+		                            </h6>
+		                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+		                        </div>
+		                    </td>
+		
+		                    <td class="o_mail_col_mv o_mail_col_container plr10">
+		                        <div class="img">
+		                            <img src="/sh_emate/static/src/img/tmpl_19/3.png" class="d-block mx-auto" alt="Your Picture" />
+		                        </div>
+		                    </td>
+		
+		                    <td class="o_mail_col_mv o_mail_col_container plr10">
+		                        <div class="box text-left">
+		                            <h6 class="text-left o_mail_no_margin o_default_snippet_text">
+		                                <a href="#">Lorem ipsum</a>
+		                            </h6>
+		                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+		                        </div>
+		                        <div class="box text-left">
+		                            <h6 class="text-left o_mail_no_margin o_default_snippet_text">
+		                                <a href="#">Lorem ipsum</a>
+		                            </h6>
+		                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+		                        </div>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div> 
+	</div>
+	
+</template>
+
+<!-- end service template 6  -->
+
+<!-- service template 7 -->
+<template id="sh_emate_service_tmpl_7" name="Service 7">
+	
+	<div class="sh_emate_service_7">
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_service_22">
+		      <div class="o_mail_snippet_general">
+			      <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_h_padding o_mail_v_padding o_mail_col_table">
+			          <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+				                    <h3>Our Services</h3>
+				                   	<hr/>
+		                    		<p class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do euismodtempor incididunt ut.</p>
+				                </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				  </table>
+		      
+		          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table three_col">
+		              <tbody>
+		                  <tr>
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+		                          <div class="box text-center">
+			                        <div class="icon"><span class="fa fa-cog"></span></div>
+			                        <a href="#"><p class="text-center title">Easy to Customize</p></a>
+			                        <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit.</p>
+			                    </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+		                          <div class="box text-center">
+			                        <div class="icon"><span class="fa fa-pencil-square-o"></span></div>
+			                        <a href="#"><p class="text-center title">Unique Design</p></a>
+			                        <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit.</p>
+			                    </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+		                          <div class="box text-center">
+			                        <div class="icon"><span class="fa fa-window-restore"></span></div>
+			                        <a href="#"><p class="text-center title">Multipurpose Layout</p></a>
+			                        <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit.</p>
+			                    </div>
+		                      </td>
+		                  </tr>
+		              </tbody>
+		          </table>
+		      </div>
+		</div> 
+	</div>
+	
+</template>
+
+<!-- end service template 7  -->
+
+<!-- service template 8 -->
+<template id="sh_emate_service_tmpl_8" name="Service 8">
+	
+	<div class="sh_emate_service_8">
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_service_23">
+		      <div class="o_mail_snippet_general">
+			      <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_h_padding o_mail_v_padding o_mail_col_table">
+			          <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+				                    <h3>Our Services</h3>
+		                    		<p class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do euismodtempor incididunt ut labore et dolore magna eliqua.</p>
+				                </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				  </table>
+		      
+		          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table three_col">
+		              <tbody>
+		                  <tr>
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+		                          <div class="box text-center">
+			                        <div class="icon"><span class="fa fa-cog"></span></div>
+			                        <a href="#"><p class="text-center title">Easy to Customize</p></a>
+			                        <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit.</p>
+			                    </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+		                          <div class="box text-center">
+			                        <div class="icon"><span class="fa fa-pencil-square-o"></span></div>
+			                        <a href="#"><p class="text-center title">Unique Design</p></a>
+			                        <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit.</p>
+			                    </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+		                          <div class="box text-center">
+			                        <div class="icon"><span class="fa fa-window-restore"></span></div>
+			                        <a href="#"><p class="text-center title">Multipurpose Layout</p></a>
+			                        <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit.</p>
+			                    </div>
+		                      </td>
+		                  </tr>
+		              </tbody>
+		          </table>
+		      </div>
+		</div> 
+	</div>
+	
+</template>
+
+<!-- end service template 8  -->
+
+<!-- service template 9 -->
+<template id="sh_emate_service_tmpl_9" name="Service 9">
+	
+	<div class="sh_emate_service_9">
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_service_24">
+		      <div class="o_mail_snippet_general">
+			      <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_h_padding o_mail_v_padding o_mail_col_table">
+			          <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+				                    <h3>Our Services</h3>
+		                    		<hr/>
+		                    		<p></p>
+				                </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				  </table>
+		      
+		          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table three_col pb0">
+		              <tbody>
+		                  <tr>
+		                      <td class="o_mail_col_mv o_mail_col_container plr10" width="50%">
+		                          <div class="box text-center">
+			                        <div class="icon"><span class="fa fa-building"></span></div>
+			                        <a href="#"><p class="text-center title">ARCHITECTURAL PLANS</p></a>
+			                        <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit. sed do euis mod tempor magna eliqua.</p>
+			                    </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container plr10" width="50%">
+		                          <div class="box text-center">
+			                        <div class="icon"><span class="fa fa-pencil-square-o"></span></div>
+			                        <a href="#"><p class="text-center title">INTERIOR DESIGN</p></a>
+			                        <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit. sed do euis mod tempor magna eliqua.</p>
+			                    </div>
+		                      </td>
+		                  </tr>
+		              </tbody>
+		          </table>
+		          
+		          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table three_col pt0">
+		              <tbody>
+		                  <tr>
+		                      <td class="o_mail_col_mv o_mail_col_container plr10" width="50%">
+		                          <div class="box text-center">
+			                        <div class="icon"><span class="fa fa-home"></span></div>
+			                        <a href="#"><p class="text-center title">BUILDING RENOVATION</p></a>
+			                        <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit. sed do euis mod tempor magna eliqua.</p>
+			                    </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container plr10" width="50%">
+		                          <div class="box text-center">
+			                        <div class="icon"><span class="fa fa-building"></span></div>
+			                        <a href="#"><p class="text-center title">GREEN BUILDING</p></a>
+			                        <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit. sed do euis mod tempor magna eliqua.</p>
+			                    </div>
+		                      </td>
+		                  </tr>
+		              </tbody>
+		          </table>
+		      </div>
+		</div> 
+	</div>
+	
+</template>
+
+<!-- end service template 9  -->
+
+<!-- service template 10 -->
+<template id="sh_emate_service_tmpl_10" name="Service 10">
+	
+	<div class="sh_emate_service_10">
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_iconbox_25">
+		      <div class="o_mail_snippet_general">
+		      
+		          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table three_col">
+		              <tbody>
+		                  <tr>
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+		                          <div class="box text-center">
+			                          <a href="#">
+				                        <div class="icon"><span class="fa fa-building"></span></div>
+				                        <p class="text-center title">ARCHITECTURAL PLANS</p>
+				                        <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit.</p>
+				                      </a>
+			                      </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+		                          <div class="box text-center">
+		                          		<a href="#">
+					                        <div class="icon"><span class="fa fa-pencil-square-o"></span></div>
+					                        <p class="text-center title">INTERIOR DESIGN</p>
+					                        <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit.</p>
+					                    </a>
+			                      </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+		                          <div class="box text-center">
+		                          		<a href="#">
+					                        <div class="icon"><span class="fa fa-home"></span></div>
+					                        <p class="text-center title">BUILDING RENOVATION</p>
+					                        <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit.</p>
+					                    </a>
+			                      </div>
+		                      </td>
+		                  </tr>
+		              </tbody>
+		          </table>
+		      </div>
+		</div> 
+	</div>
+	
+</template>
+
+<!-- end service template 10  -->
+
+<!-- service template 11 -->
+<template id="sh_emate_service_tmpl_11" name="Service 11">
+	
+	<div class="sh_emate_service_11">
+		<div class="o_mail_block_text_image" data-name="Text - Image" id="sh_service_25">
+		    <div class="o_mail_snippet_general">
+		    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_h_padding o_mail_v_padding o_mail_col_table">
+			          <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+				                    <h5>OUR SERVICES</h5>
+		                        	<hr/>
+			                        <h3>What We Offer for You</h3>
+			                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				                </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				  </table>
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_h_padding o_mail_v_padding">
+		            <tbody>
+		                <tr>
+		                	<td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270 plr10">
+		                        <div class="img">
+			                        <img src="/sh_emate/static/src/img/tmpl_25/working-housing-project_1098-17511.png" alt="image" />
+			                    </div>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270 plr10">
+		                        <div class="content">
+				                    <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		            					<tbody>
+		                					<tr>
+							                    <td class="icon vtop m10" width="20%">
+				                                    <span class="fa fa-building" role="img" title="Cloud"></span>
+				                                </td>
+				                                <td width="80%" class="m10">
+				                                    <h6 class="o_mail_no_margin o_default_snippet_text title">LOREM IPSUM</h6>
+				                                    <p class="o_mail_no_margin o_default_snippet_text text">Lorem ipsum dolor sit amet, consectetur edipiscing elit, sed do.</p>
+				                                </td>
+				                              </tr>
+		                                	  <tr>
+							                    <td class="icon vtop m10" width="20%">
+				                                    <span class="fa fa-pencil-square-o" role="img" title="Paper_plane"></span>
+				                                </td>
+				                                <td width="80%" class="m10">
+				                                    <h6 class="o_mail_no_margin o_default_snippet_text title">LOREM IPSUM</h6>
+				                                    <p class="o_mail_no_margin o_default_snippet_text text">Lorem ipsum dolor sit amet, consectetur edipiscing elit, sed do.</p>
+				                                </td>
+				                               </tr>
+				                               <tr>
+								                    <td class="icon vtop m10" width="20%">
+					                                    <span class="fa fa-home" role="img" title="Cubes"></span>
+					                                </td>
+					                                <td width="80%" class="m10">
+					                                    <h6 class="o_mail_no_margin o_default_snippet_text title">LOREM IPSUM</h6>
+				                                    	<p class="o_mail_no_margin o_default_snippet_text text">Lorem ipsum dolor sit amet, consectetur edipiscing elit, sed do.</p>
+					                                </td>
+					                            </tr>
+					                        </tbody>
+					                    </table>
+				                 </div>
+		                    </td>
+		                    
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div> 
+	</div>
+	
+</template>
+
+<!-- end service template 11  -->
+
+<!-- service template 12 -->
+<template id="sh_emate_service_tmpl_12" name="Service 12">
+	
+	<div class="sh_emate_service_12">
+		<div class="o_mail_block_image_text" data-name="Image - Text" id="sh_service_26">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                        	<td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270 plr10">
+                                <div class="sh_left_image">
+                                    <img src="/sh_emate/static/src/img/tmpl_26/service.png" alt="image" />
+                                </div>
+                            </td>
+                            <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270 plr10">
+                                <div class="sh_content">
+                                    <h5>Our Services Includes</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                                    <div class="d-flex">
+                                    	<div class="left_box">
+	                                    	<ul>
+	                                    		<li><span class="fa fa-check-circle-o"></span> Door Delivery</li>
+	                                    		<li><span class="fa fa-check-circle-o"></span> Free Shipping</li>
+	                                    	</ul>
+	                                    </div>
+	                                    <div class="right_box">
+	                                    	<ul>
+	                                    		<li><span class="fa fa-check-circle-o"></span> Best Quality</li>
+	                                    		<li><span class="fa fa-check-circle-o"></span> Best Prices</li>
+	                                    	</ul>
+	                                    </div>
+                                    </div>
+                                    <a class="btn btn_readmore" href="#">READ MORE</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+	</div>
+	
+</template>
+
+<!-- end service template 12  -->
+
+<!-- service template 13 -->
+<template id="sh_emate_service_tmpl_13" name="Service 13">
+	
+	<div class="sh_emate_service_12">
+		<div class="o_mail_block_steps o_mail_no_colorpicker" data-name="Steps" id="sh_service_32">
+            <div class="o_mail_snippet_general bg-white">
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+                    <tbody>
+                        <tr>
+                            <td width="100%" class="heading">
+                                <center>
+                                	<h6>Best Services For Best People</h6>
+                                    <h3>Apartment Amenities</h3>
+                                    <p class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                </center>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding">
+                    <tbody>
+                        <tr>
+                            <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+                                <table align="center">
+                                    <tbody>
+                                        <tr>
+                                            <td class="w200">
+                                                <div class="right-content text-right">
+                                                    <a href="#"><p class="title">High Speed Wi-Fi</p></a>
+                                                    <p class="text">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                                                </div>
+                                            </td>
+                                            <td rowspan="2" class="text-right vmiddle w60">
+                                                <img class="icon_img" src="/sh_emate/static/src/img/tmpl_32/icon/6.png" role="img" title="Headphone" alt="icon_img"></img>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+                                <table align="center">
+                                    <tbody>
+                                        <tr>
+                                        	<td rowspan="2" class="text-left vmiddle w60">
+                                                <img class="icon_img" src="/sh_emate/static/src/img/tmpl_32/icon/8.png" role="img" title="Headphone" alt="icon_img"></img>
+                                            </td>
+                                            <td class="w200 pl15">
+                                                <div class="left-content text-left">
+                                                    <a href="#"><p class="title">Luxury Appliances</p></a>
+                                                    <p class="text">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding">
+                    <tbody>
+                        <tr>
+                            <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+                                <table align="center">
+                                    <tbody>
+                                        <tr>
+                                            <td class="w200">
+                                                <div class="right-content text-right">
+                                                    <a href="#"><p class="title">Solar System</p></a>
+                                                    <p class="text">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                                                </div>
+                                            </td>
+                                            <td rowspan="2" class="text-right vmiddle w60">
+                                                <img class="icon_img" src="/sh_emate/static/src/img/tmpl_32/icon/7.png" role="img" title="Headphone" alt="icon_img"></img>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+                                <table align="center">
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="2" class="text-left vmiddle w60">
+                                                <img class="icon_img" src="/sh_emate/static/src/img/tmpl_32/icon/9.png" role="img" title="Headphone" alt="icon_img"></img>
+                                            </td>
+                                            <td class="w200 pl15">
+                                                <div class="left-content">
+                                                    <a href="#"><p class="title">Garden Area</p></a>
+                                                    <p class="text">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+	</div>
+	
+</template>
+
+<!-- end service template 13  -->
+
+
+
+
+
+</odoo>
+
+
+
+
+
+

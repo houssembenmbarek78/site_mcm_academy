@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- copyright template 1 -->
+<template id="sh_emate_partner_tmpl_1" name="Partner 1">
+	
+	<div class="sh_emate_partner_1">
+		<div class="o_mail_block_five_cols" data-name="Five Columns" id="sh_partner_1">
+	        <div class="o_mail_snippet_general">
+	        
+	            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table five_col">
+	                <tbody>
+	                    <tr>
+	                        <td style="vertical-align:top;width:105px;" class="o_mail_col_mv o_mail_col_container plr10">
+	                            <div class="box">
+				                    <div class="img">
+				                        <img src="/sh_emate/static/src/img/tmpl_1/partner1.png" alt="p1" title="p1"/>
+				                    </div>
+				                </div>
+	                        </td>
+	                        
+	                        <td style="vertical-align:top;width:105px;" class="o_mail_col_mv o_mail_col_container plr10">
+	                            <div class="box">
+				                    <div class="img">
+				                        <img src="/sh_emate/static/src/img/tmpl_1/partner2.png" alt="p2" title="p2"/>
+				                    </div>
+				                </div>
+	                        </td>
+	                        
+	                        <td style="vertical-align:top;width:105px;" class="o_mail_col_mv o_mail_col_container plr10">
+	                            <div class="box">
+				                    <div class="img">
+				                        <img src="/sh_emate/static/src/img/tmpl_1/partner5.png" alt="p3" title="p3"/>
+				                    </div>
+				                </div>
+	                        </td>
+	
+	                        <td style="vertical-align:top;width:105px;" class="o_mail_col_mv o_mail_col_container plr10">
+	                            <div class="box">
+				                    <div class="img">
+				                        <img src="/sh_emate/static/src/img/tmpl_1/partner4.png" alt="p4" title="p4"/>
+				                    </div>
+				                </div>
+	                        </td>
+	
+	                        <td style="vertical-align:top;width:105px;" class="o_mail_col_mv o_mail_col_container plr10">
+	                            <div class="box">
+				                    <div class="img">
+				                        <img src="/sh_emate/static/src/img/tmpl_1/partner6.png" alt="p5" title="p5"/>
+				                    </div>
+				                </div>
+	                        </td>
+	                    </tr>
+	                </tbody>
+	            </table>
+	        </div>
+	    </div> 
+	</div>
+	
+</template>
+<!-- end partner template 1  -->
+
+
+
+
+
+	
+
+</odoo>

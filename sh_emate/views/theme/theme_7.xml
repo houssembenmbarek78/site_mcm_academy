@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+
+<!-- Theme "solar" default template -->
+<template id="theme_tmpl_7">
+
+<!-- header -->
+<div class="o_mail_block_header_logo" data-name="Centered Logo" id="sh_header_7">
+    <div class="o_mail_snippet_general">
+        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding">
+            <tbody>
+            	<tr>
+	                <td valign="center" width="100%" class="o_mail_col_mv o_mail_col_container text-center o_mail_v_padding logo">
+	                    <a href="#">
+	                   		<h4>FASHION</h4>
+	              		</a>
+	                </td>
+            	</tr>
+            	<tr>
+					<td width="100%" class="text-center o_mail_no_resize o_mail_col_mv o_mail_col_container">
+						<div class="o_mail_header_social menu">
+						<a href="#" class="plr15">WOMAN</a>
+       					<a href="#" class="plr15">MAN</a>
+       					<a href="#" class="plr15">KIDS</a>
+       					<a href="#" class="plr15">OFFER</a>
+						</div>
+					</td>
+   				</tr>
+        	</tbody>
+        </table>
+    </div>
+</div>
+<!-- end header -->
+
+<!-- banner -->
+ 	  
+<div class="o_mail_block_banner" id="sh_banner_7" data-name="Banner">
+    <div class="o_mail_snippet_general">
+        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+            <tbody>
+                <tr>
+                    <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+                    	<a href="#">
+                         	<img src="/sh_emate/static/src/img/tmpl_7/BANNER7.png" class="d-block mx-auto" alt="Your Banner Image" />
+                         </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+   
+<!-- end banner -->
+
+<!-- single_product -->
+<div class="o_mail_block_text_image" data-name="Text - Image" id="sh_single_product_7">
+    <div class="o_mail_snippet_general">
+        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+            <tbody>
+                <tr>
+                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270 pr0">
+                        <div class="box">
+	                        <div class="content">
+	                            <h3 class="title">OFF SEASON SALE</h3>
+	                            <p>UPTO 50% OFF</p>
+	                        </div>
+	                    </div>
+                    </td>
+                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270 pl0">
+                        <div class="sh_right_content">
+	                        <img src="/sh_emate/static/src/img/tmpl_7/beautiful-stylish-young-girl-casual-clothes_85574-6352(3).jpg" alt="image" />
+	                    </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div> 
+<!-- end single_product -->
+
+<!-- product_item -->
+<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_product_item_7">
+    <div class="o_mail_snippet_general">
+        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+            <tbody>
+		        <tr>
+		            <td width="100%" class="heading">
+		                <center>
+		                    <h3>LOREM IPSUM</h3>
+		                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+		                </center>
+		            </td>
+		        </tr>
+		     </tbody>
+		  </table>
+        
+            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+                <tbody>
+                    <tr>
+                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                            <div class="box text-center">
+		                        <div class="img">
+		                            <img src="/sh_emate/static/src/img/tmpl_7/high-fashion-look-glamor-closeup-portrait-beautiful-sexy-stylish-blond-caucasian-young-woman-model-with-bright-makeup_158538-2948.jpg" alt="Product1" title="Product1" />
+		                            <p class="text">LOREM IPSUM</p>
+		                            <p class="price">$100.00</p>
+		                            <a class="btn" href="#">BUY NOW</a>
+		                        </div>
+		                    </div>
+                        </td>
+
+                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                            <div class="box text-center">
+		                        <div class="img">
+		                            <img src="/sh_emate/static/src/img/tmpl_7/beautiful-young-woman-with-long-hair-jewelery_78203-1980.jpg" alt="Product2" title="Product2" />
+		                            <p class="text">LOREM IPSUM</p>
+		                            <p class="price">$110.00</p>
+		                            <a class="btn" href="#">BUY NOW</a>
+		                        </div>
+		                    </div>
+                        </td>
+
+                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                            <div class="box text-center">
+		                        <div class="img">
+		                            <img src="/sh_emate/static/src/img/tmpl_7/young-beautiful-woman-trendy-summer-red-skirt-jacket_158538-2528.jpg" alt="Product3" title="Product3" />
+		                            <p class="text">LOREM IPSUM</p>
+		                            <p class="price">$100.00</p>
+		                            <a class="btn" href="#">BUY NOW</a>
+		                        </div>
+		                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div> 
+<!-- end product_item -->
+
+<!-- Gallery -->
+<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_gallery_7">
+    <div class="o_mail_snippet_general">
+        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+            <tbody>
+		        <tr>
+		            <td width="100%" class="heading">
+		                <center>
+		                    <h3>LOREM IPSUM</h3>
+		                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+		                </center>
+		            </td>
+		        </tr>
+		     </tbody>
+		  </table>
+        
+            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+                <tbody>
+                    <tr>
+                        <td class="o_mail_col_mv o_mail_col_container p0 width180">
+                            <div class="text-center">
+		                        <div class="img">
+			                        <img src="/sh_emate/static/src/img/tmpl_7/gorgeous-sensual-blonde-woman-fashion-pink-dress_149155-924.jpg" alt="Your Image" title="Your Image"/>
+			                    </div>
+		                    </div>
+                        </td>
+
+                        <td class="o_mail_col_mv o_mail_col_container p0 width180">
+                            <div class="box text-center">
+		                        <h1>LOREM IPSUM</h1>
+	                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+		                    </div>
+                        </td>
+
+                        <td class="o_mail_col_mv o_mail_col_container p0 width180">
+                            <div class="text-center">
+		                        <div class="img">
+			                        <img src="/sh_emate/static/src/img/tmpl_7/attractive-woman-with-shopping-bags_23-2147962241.jpg" alt="Your Image" title="Your Image"/>
+			                    </div>
+		                    </div>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="o_mail_col_mv o_mail_col_container p0 width180">
+                            <div class="box text-center">
+		                        <h1>LOREM IPSUM</h1>
+	                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+		                    </div>
+                        </td>
+
+                        <td class="o_mail_col_mv o_mail_col_container p0 width180">
+                            <div class="text-center">
+		                        <img src="/sh_emate/static/src/img/tmpl_7/young-pretty-sexy-woman-girl-with-cute-face-long-brunette-hair-wearing-sunglasses-black-sweater-posing-pink-background_136403-2333.jpg" alt="Your Image" title="Your Image"/>
+		                    </div>
+                        </td>
+
+                        <td class="o_mail_col_mv o_mail_col_container p0 width180">
+                            <div class="box text-center">
+		                         <h1>LOREM IPSUM</h1>
+		                         <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+		                    </div>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div> 
+<!-- end Gallery -->
+
+
+<!-- Blog -->
+<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_blog_7">
+    <div class="o_mail_snippet_general">
+        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+            <tbody>
+		        <tr>
+		            <td width="100%" class="heading">
+		                <center>
+		                    <h3>LOREM IPSUM</h3>
+		                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+		                </center>
+		            </td>
+		        </tr>
+		     </tbody>
+		  </table>
+        
+            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+                <tbody>
+                    <tr>
+                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                            <div class="box text-center">
+		                        <div class="img">
+			                        <img src="/sh_emate/static/src/img/tmpl_7/temp4_blog1.jpg" alt="Blog1" title="Blog1"/>
+			                        <div class="content">
+				                        <a href="#"><h5>LOREM IPSUM</h5></a>
+				                        <p>15 JUNE 2020</p>
+				                    </div>
+			                    </div>
+		                    </div>
+                        </td>
+
+                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                            <div class="box text-center">
+		                        <div class="img">
+			                        <img src="/sh_emate/static/src/img/tmpl_7/temp4_blog2.jpg" alt="Blog2" title="Blog2"/>
+			                        <div class="content">
+				                        <a href="#"><h5>LOREM IPSUM</h5></a>
+				                        <p>15 JUNE 2020</p>
+				                    </div>
+			                    </div>
+		                    </div>
+                        </td>
+
+                        <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+                            <div class="box text-center">
+		                        <div class="img">
+			                        <img src="/sh_emate/static/src/img/tmpl_7/temp4_blog3.jpg" alt="Blog3" title="Blog3"/>
+			                        <div class="content">
+				                        <a href="#"><h5>LOREM IPSUM</h5></a>
+				                        <p>15 JUNE 2020</p>
+				                    </div>
+			                    </div>
+		                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div> 
+<!-- end Blog -->
+
+
+<!-- Event -->
+ 	
+<div class="o_mail_block_blog" data-name="Image - Text" id="sh_event_7">
+      <div class="o_mail_snippet_general">
+      	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+           <tbody>
+		        <tr>
+		            <td width="100%" class="heading">
+		                <center>
+		                    <h3>LOREM IPSUM</h3>
+		                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+		                </center>
+		            </td>
+		        </tr>
+		     </tbody>
+		</table>
+          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+              <tbody>
+                  <tr>
+                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8 img">
+                          <img src="/sh_emate/static/src/img/tmpl_7/event5_1.jpg" class="d-block mx-auto" alt="Your Picture" />
+                      </td>
+                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 p8">
+                          <div class="content">
+		                        <h5>LOREM IPSUM</h5>
+		                        <p class="author">Organized By: Lorem Ipsum</p>
+		                        <p>Lorem ipsum dolor sit amet.</p>
+		                        <p><span class="fa fa-clock-o"></span> 04:00:00 to 07:00:00</p>
+			                	<p class="location mb20"><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit</p>
+		                        <a href="#" class="btn_reg">Register</a>
+		                  </div>
+                      </td>
+                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8 img">
+                          <img src="/sh_emate/static/src/img/tmpl_7/event5_2.jpg" class="d-block mx-auto" alt="Your Picture" />
+                      </td>
+                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 p8">
+                          <div class="content">
+	                        <h5>LOREM IPSUM</h5>
+	                        <p class="author">Organized By: Lorem Ipsum</p>
+	                       	<p>Lorem ipsum dolor sit amet.</p>
+	                       	<p><span class="fa fa-clock-o"></span> 04:00:00 to 07:00:00</p>
+		                	<p class="location"><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit</p>
+	                       	<a href="#" class="btn_reg">Register</a>
+	                      </div>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+  
+<!-- end Event -->
+
+<!-- footer -->
+<div class="o_mail_block_footer_social o_mail_footer_social_center sh_emate_footer_4" data-name="Footer Center" id="sh_footer_7">
+        <div class="o_mail_snippet_general">
+            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding bt0">
+                <tbody>
+        			<tr width="100%">
+            			<td class="o_mail_footer_social heading text-center">
+					        <center>
+			                    <h3>LOREM IPSUM</h3>
+			                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+			                </center>
+            			</td>
+        			</tr>
+        		</tbody>
+        	</table>
+        	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding bt0 border">
+                <tbody>
+    				<tr width="100%">
+                        <td class="o_mail_footer_links o_default_snippet_text text-center o_mail_col_mv o_mail_col_container">
+                           <div class="part2 division">
+		                        <h3 class="title">PHONE</h3>
+		                        <p class="text"> <t t-esc="company_id.phone"/> </p>
+		                        <p class="text"> <t t-esc="company_id.phone"/> </p>
+		                   </div>
+    					</td>
+    					<td class="o_mail_footer_links o_default_snippet_text o_mail_col_mv o_mail_col_container">
+                           <div class="part3 division">
+		                        <h3 class="title">EMAIL</h3>
+		                        <p class="text"><a href="#"><t t-if="company_id" t-esc="company_id.email"/> </a></p>
+		                        <p class="text"><a href="#"><t t-if="company_id" t-esc="company_id.email"/> </a></p>
+		                    </div>
+    					</td>
+                    </tr>
+                 </tbody>
+             </table>
+             <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding bt0">
+                <tbody>
+                    <tr>
+                        <td class="text-center" width="100%">
+                            <a aria-label="Facebook" title="Facebook" href="#">
+					          <span class="fa fa-facebook"></span>
+					        </a>
+					        <a aria-label="Instagram" title="Instagram" href="#" class="ml10">
+					            <span class="fa fa-instagram"></span>
+					        </a>
+					        <a aria-label="Twitter" title="Twitter" href="#" class="ml10">
+					            <span class="fa fa-twitter"></span>
+					        </a>
+					        <a aria-label="LinkedIn" title="LinkedIn" href="#" class="ml10">
+					            <span class="fa fa-linkedin"></span>
+					        </a>
+					        <a aria-label="Pinterest" title="Pinterest" href="#" class="ml10">
+					            <span class="fa fa-pinterest-p"></span>
+					        </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<!-- end footer -->
+
+
+
+</template>
+
+
+</odoo>

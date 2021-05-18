@@ -1,0 +1,1089 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- blog 1 -->
+<template id="sh_emate_blog_tmpl_item_1" name="Blog 1 item">
+
+	<div class="js_cls_sh_mail_snippet_general">
+		<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col">
+           <tbody>
+               <tr>
+               
+               	<t t-if="blog_posts">           	
+	           	<t t-foreach="blog_posts" t-as="blog_post">
+               
+	                   <td style="vertical-align:top;width:180px;" class="o_mail_col_mv o_mail_col_container plr10">
+	                       <div class="box">
+			                  <div class="img">
+			                  		
+			                  		<!-- image -->
+			                      	<t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+						            <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+	
+									<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+									    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+									    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+									    <t t-raw="0"/>
+									</div>
+									
+									
+			                      <div class="content">
+			                      
+			                        <!-- title -->
+			                        <h5 t-field="blog_post.name"/>
+			                        
+			                        <!-- sub title / Paragraph -->
+			                       	<p t-field="blog_post.subtitle"></p>
+			                       	
+			                       	<!-- Button -->
+			                        <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)" class="btn_readmore">READ MORE</a>
+			                   </div>
+			                  </div>
+			              </div>
+	                   </td>
+                   
+                 </t>
+                 </t>
+                   
+               </tr>
+           </tbody>
+       </table>
+    </div>
+
+</template>	
+
+<!-- blog 2 -->
+<template id="sh_emate_blog_tmpl_item_2" name="Blog 2 item">
+
+	<div class="js_cls_sh_mail_snippet_general">
+          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+              <tbody>
+                  <tr>
+                  
+                  	<t t-if="blog_posts">           	
+	           		<t t-foreach="blog_posts" t-as="blog_post">
+	           		
+	                      <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+	                      		<!-- Image -->
+	                          	<t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+				              	<t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+
+								<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+								    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+								    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+								    <t t-raw="0"/>
+								</div>
+	                      </td>
+	                      
+	                      <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 p8">
+	                      	  <!-- title -->
+	                      	  <h5 class="o_default_snippet_text" t-field="blog_post.name"/>
+	                      	  
+	                      	  <!-- paragraph -->
+	                      	  <p class="o_mail_no_margin o_default_snippet_text" t-field="blog_post.subtitle"></p>
+	                          
+	                          <div class="text-left mt-10">
+	                              <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)" class="btn btn-link o_default_snippet_text btn_readmore" role="button">Read More</a>
+	                          </div>
+	                          
+	                      </td>
+	                      
+	                      
+	                      
+	                 </t>
+	                 </t>
+	                   
+	                   
+                  </tr>
+              </tbody>
+          </table>
+       </div>
+		
+</template>	
+
+
+<!-- blog 3 -->
+<template id="sh_emate_blog_tmpl_item_3" name="Blog 3 item">
+
+	<div class="js_cls_sh_mail_snippet_general">
+          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+              <tbody>
+                  <tr>
+                  
+                  	<t t-if="blog_posts">           	
+	           		<t t-foreach="blog_posts" t-as="blog_post">
+                  
+	                      <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+	                          <div class="box text-center">
+	                          
+		                        <div class="img">
+			                        <!-- Image -->
+		                          	<t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+					              	<t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+	
+									<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+									    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+									    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+									    <t t-raw="0"/>
+									</div>
+									
+			                        <div class="content">
+				                        <h5 t-field="blog_post.name"/>
+				                        <p t-field="blog_post.subtitle"></p>
+				                        <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)" class="btn_readmore">Read More</a>
+				                    </div>
+			                    </div>
+		                    </div>
+	                      </td>
+	                      
+	                 </t>
+	                 </t>
+
+                  </tr>
+              </tbody>
+          </table>
+       </div>
+		
+</template>	
+
+<!-- blog 4 -->
+<template id="sh_emate_blog_tmpl_item_4" name="Blog 4 item">
+
+	<div class="js_cls_sh_mail_snippet_general">
+         <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+             <tbody>
+                 <tr>
+                 
+                 	<t t-if="blog_posts">           	
+	           		<t t-foreach="blog_posts" t-as="blog_post">
+                 
+	                     <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+	                         <div class="box text-center">
+	                         
+		                       		<!-- Image -->
+		                          	<t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+					              	<t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+	
+									<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+									    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+									    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+									    <t t-raw="0"/>
+									</div>
+									
+				                    <div class="content">
+				                        <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)"><h5 t-field="blog_post.name"/></a>
+				                        <p t-field="blog_post.subtitle"></p>
+				                    </div>
+		                   </div>
+	                     </td>
+	                     
+	                 </t>
+	                 </t>
+
+                 </tr>
+             </tbody>
+         </table>
+      </div>
+		
+</template>	
+
+
+<!-- blog 5 -->
+<template id="sh_emate_blog_tmpl_item_5" name="Blog 5 item">
+
+	<div class="js_cls_sh_mail_snippet_general">
+        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+            <tbody>
+                <tr>
+                
+                	<t t-if="blog_posts">           	
+	           		<t t-foreach="blog_posts" t-as="blog_post">
+                
+	                    <td class="o_mail_col_mv o_mail_col_container plr10 w180">
+	                        <div class="box">
+	                        
+	                            	<!-- Image -->
+		                          	<t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+					              	<t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+	
+									<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+									    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+									    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+									    <t t-raw="0"/>
+									</div>
+									
+	                            <div class="content">
+			                        <h5 t-field="blog_post.name"/>
+			                        <p t-field="blog_post.subtitle"></p>
+			                        <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)" class="btn_readmore">Read More</a>
+			                    </div>
+	                        </div>
+	                    </td>
+	                    
+	                </t>
+	                </t>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>	
+		
+</template>	
+
+
+<!-- blog 6 -->
+<template id="sh_emate_blog_tmpl_item_6" name="Blog 6 item">
+
+	<div class="js_cls_sh_mail_snippet_general">
+         <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+             <tbody>
+                 <tr>
+                 
+                 	<t t-if="blog_posts">           	
+	           		<t t-foreach="blog_posts" t-as="blog_post">
+                 
+	                     <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+	                         	<!-- Image -->
+	                          	<t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+				              	<t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+
+								<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+								    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+								    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+								    <t t-raw="0"/>
+								</div>
+	                     </td>
+	                     
+	                     <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 text-left p8">
+	                         <div class="content">
+		                       <h6 t-field="blog_post.name"/>
+		                       <p t-field="blog_post.subtitle"></p>
+		                       <hr/>
+		                       <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)" class="btn_readmore">READ MORE</a>
+		                     </div>
+	                     </td>
+	                     
+	                </t>
+	                </t>
+                     
+                 </tr>
+             </tbody>
+         </table>
+      </div>
+		
+</template>	
+
+
+<!-- blog 7 -->
+<template id="sh_emate_blog_tmpl_item_7" name="Blog 7 item">
+
+	<div class="js_cls_sh_mail_snippet_general">
+          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+              <tbody>
+                  <tr>
+                  
+                  	<t t-if="blog_posts">           	
+	           		<t t-foreach="blog_posts" t-as="blog_post">
+	           		
+	           		
+	                      <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+	                          <div class="box text-center">
+		                        <div class="img">
+		                        
+			                        <!-- Image -->
+		                          	<t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+					              	<t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+	
+									<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+									    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+									    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+									    <t t-raw="0"/>
+									</div>
+									
+			                        <div class="content">
+				                        <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)"><h5 t-field="blog_post.name"/></a>
+				                        <span t-field="blog_post.post_date" class="text-muted" t-options='{"format": "d MMMM, yyyy"}'/>
+				                    </div>
+			                    </div>
+		                    </div>
+	                      </td>
+					</t>
+					</t>
+                      
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+		
+</template>	
+
+<!-- blog 8 -->
+<template id="sh_emate_blog_tmpl_item_8" name="Blog 8 item">
+
+	<div class="js_cls_sh_mail_snippet_general">
+         <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+             <tbody>
+                 <tr>
+                 
+                 	<t t-if="blog_posts">           	
+	           		<t t-foreach="blog_posts" t-as="blog_post">
+                 
+	                     <td class="o_mail_col_mv o_mail_col_container w180 plr10">
+	                         <div class="box">
+		                       	<div class="img">
+		                       	
+			                        <!-- Image -->
+		                          	<t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+					              	<t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+	
+									<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+									    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+									    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+									    <t t-raw="0"/>
+									</div>
+									
+			                    </div>
+			                     <div class="content">
+			                        <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)"><h5 t-field="blog_post.name"/></a>
+			                        <p t-field="blog_post.subtitle"></p>
+			                        <hr/>
+			                        <p class="date"><span class="fa fa-calendar"></span>
+			                        	<span t-field="blog_post.post_date" class="text-muted" t-options='{"format": "d MMMM, yyyy"}'/>
+			                        </p>
+			                    </div>
+		                    </div>
+	                     </td>
+	                     
+	                     
+	                 </t>
+	                 </t>
+                     
+                 </tr>
+             </tbody>
+         </table>
+      </div>
+		
+</template>	
+
+<!-- blog 9 -->
+<template id="sh_emate_blog_tmpl_item_9" name="Blog 9 item">
+
+	<div class="js_cls_sh_mail_snippet_general">
+       <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+           <tbody>
+               <tr>
+               
+               		<t t-if="blog_posts">           	
+	           		<t t-foreach="blog_posts" t-as="blog_post">
+               
+	                   <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+	                       <div class="box text-center">
+		                      <div class="img">
+		                      
+		                          <!-- Image -->
+		                          	<t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+					              	<t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+	
+									<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+									    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+									    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+									    <t t-raw="0"/>
+									</div>
+									
+		                         	<div class="content">
+			                        	<a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)"><h5 t-field="blog_post.name"/></a>
+			                        	<h6>
+			                        		<span t-field="blog_post.post_date" class="text-muted" t-options='{"format": "d MMMM, yyyy"}'/>
+			                        	</h6>
+			                        	<p t-field="blog_post.subtitle"></p>
+			                        	<a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)" class="btn_readmore">READ MORE</a>
+			                    	</div>
+		                      </div>
+		                    </div>
+	                    </td>
+	                    
+					</t>
+					</t>
+                  
+               </tr>
+           </tbody>
+       </table>
+    </div>
+		
+</template>	
+
+<!-- blog 10 -->
+<template id="sh_emate_blog_tmpl_item_10" name="Blog 10 item">
+
+	<div class="js_cls_sh_mail_snippet_general">
+	
+		 <t t-if="blog_posts">           	
+	     <t t-foreach="blog_posts" t-as="blog_post">
+	
+	       <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+	           <tbody>
+	               <tr>
+	                   <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding img p10">
+	                       <!-- Image -->
+                          	<t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+			              	<t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+
+							<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+							    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="width: 170px;background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+							    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+							    <t t-raw="0"/>
+							</div>
+	                   </td>
+	                   <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding p10">
+	                       <div class="content">
+	                        <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)"><h5 t-field="blog_post.name"/></a>
+	                        <hr/>
+	                        <p t-field="blog_post.subtitle"></p>
+	                        <p class="date"><span class="fa fa-calendar"></span><span t-field="blog_post.post_date" class="text-muted" t-options='{"format": "d MMMM, yyyy"}'/></p>
+	                    </div>
+	                   </td>
+	               </tr>
+	           </tbody>
+	       </table>	       
+	       
+	    </t>
+	    </t>
+       
+    </div>
+		
+</template>	
+
+
+<!-- blog 11 -->
+<template id="sh_emate_blog_tmpl_item_11" name="Blog 11 item">
+
+	<div class="js_cls_sh_mail_snippet_general">
+       <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt-0">
+           <tbody>
+               <tr>
+               
+               		<t t-if="blog_posts">           	
+	     			<t t-foreach="blog_posts" t-as="blog_post">
+               
+		                   <td class="o_mail_col_mv o_mail_col_container">
+		                       <div class="box">
+			                       	<div class="img">
+			                       	
+			                       		<!-- Image -->
+			                          	<t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+						              	<t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+			
+										<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+										    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="width: 170px;background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+										    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+										    <t t-raw="0"/>
+										</div>
+										
+			                       	</div>
+			                           <div class="content">
+			                        	<p><span t-field="blog_post.post_date" class="text-muted" t-options='{"format": "d MMMM, yyyy"}'/></p>
+				                        <h5 t-field="blog_post.name"/>
+				                        <p t-field="blog_post.subtitle"></p>
+				                        <hr/>
+				                        <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)" class="btn_readmore">READ MORE</a>
+				                    </div>
+		                       </div>
+		                   </td>
+					
+					</t>
+					</t>
+					
+               </tr>
+           </tbody>
+       </table>
+    </div>
+		
+</template>	
+
+
+<!-- blog 12 -->
+<template id="sh_emate_blog_tmpl_item_12" name="Blog 12 item">
+
+	<div class="js_cls_sh_mail_snippet_general">
+         <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+             <tbody>
+                 <tr>
+                 
+                 	  <t t-if="blog_posts">           	
+	     			  <t t-foreach="blog_posts" t-as="blog_post">
+                 
+		                     <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding content width130 text-left p8">
+		                         <div class="content">
+			                        <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)"><h5 t-field="blog_post.name"/></a>
+			                        <p><span t-field="blog_post.post_date" class="text-muted" t-options='{"format": "d MMMM, yyyy"}'/></p>
+			                      </div>
+		                     </td>
+		                     <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding width120 p8">
+		                         <!-- Image -->
+	                          	<t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+				              	<t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+	
+								<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+								    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="width: 170px;background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+								    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+								    <t t-raw="0"/>
+								</div>
+		                     </td>
+	                     
+	                   </t>
+	                   </t>
+                     
+                 </tr>
+             </tbody>
+         </table>
+      </div>	
+		
+</template>	
+
+
+<!-- blog 13 -->
+<template id="sh_emate_blog_tmpl_item_13" name="Blog 13 item">
+
+	<div class="js_cls_sh_mail_snippet_general">
+	
+			<t t-if="blog_posts">           	
+	     	<t t-foreach="blog_posts" t-as="blog_post">
+		
+		         <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		           <tbody>
+		               <tr>
+		                   <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270">
+		                       <div class="content">
+		                        <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)"><h3 t-field="blog_post.name"/></a>
+		                        <hr/>
+		                        <p t-field="blog_post.subtitle"></p>
+		                    </div>
+		                   </td>
+		                   <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270">
+		                       <div class="img">
+		                        <!-- Image -->
+	                          	<t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+				              	<t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+	
+								<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+								    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+								    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+								    <t t-raw="0"/>
+								</div>
+		                    </div>
+		                   </td>
+		               </tr>
+		           </tbody>
+		       </table>
+		       
+	    </t>
+	    </t>
+       
+    </div>
+		
+</template>	
+
+
+<!-- blog 14 -->
+<template id="sh_emate_blog_tmpl_item_14" name="Blog 14 item">
+
+	<div class="js_cls_sh_mail_snippet_general">
+        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+            <tbody>
+                <tr>
+                
+                	<t t-if="blog_posts">           	
+	     			<t t-foreach="blog_posts" t-as="blog_post">
+                
+	                    <td class="o_mail_col_mv o_mail_col_container plr10 w180" style="width: 180px;">
+	                        <div class="box">
+	                        	<div class="img">
+	                        		<!-- Image -->
+		                          	<t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+					              	<t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+		
+									<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+									    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+									    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+									    <t t-raw="0"/>
+									</div>
+	                        	</div>
+	                            <div class="content">
+			                        <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)"><h5 t-field="blog_post.name"/></a>
+			                        <p t-field="blog_post.subtitle"></p>
+			                    </div>
+	                        </div>
+	                    </td>
+	                 
+	                </t>
+	                </t>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+		
+</template>	
+
+
+<!-- blog 15 -->
+<template id="sh_emate_blog_tmpl_item_15" name="Blog 15 item">
+
+	<div class="js_cls_sh_mail_snippet_general">
+	
+		 <t t-if="blog_posts">           	
+	     <t t-foreach="blog_posts" t-as="blog_post">
+		
+	        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+	            <tbody>
+	                <tr>
+	                	<td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270 p10">
+	                        <div class="content">
+		                        <h5 t-field="blog_post.name"/>
+		                        <h6><span t-field="blog_post.post_date" class="text-muted" t-options='{"format": "d MMMM, yyyy"}'/></h6>
+		                        <p t-field="blog_post.subtitle"></p>
+		                        <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)" class="btn_viewmore">VIEW MORE</a>
+		                    </div>
+	                    </td>
+	                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270 p10">
+	                        <div class="img">
+		                        <!-- Image -->
+	                          	<t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+				              	<t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+	
+								<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+								    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+								    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+								    <t t-raw="0"/>
+								</div>
+		                    </div>
+	                    </td>
+	                </tr>
+	            </tbody>
+	        </table>
+	        
+	     </t>
+	     </t>
+        
+    </div>
+		
+</template>	
+
+
+<!-- blog 16 -->
+<template id="sh_emate_blog_tmpl_item_16" name="Blog 16 item">
+
+	<div class="js_cls_sh_mail_snippet_general">
+        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+            <tbody>
+                <tr>
+                
+                	<t t-if="blog_posts">           	
+	     			<t t-foreach="blog_posts" t-as="blog_post">
+                
+	                	<td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w260 pr0 img">
+	                		<div class="box">
+		                        <div class="content">
+			                        <p t-field="blog_post.subtitle"></p>
+			                        <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)" class="btn_readmore">Read More</a>
+			                    </div>
+		                    </div>
+	                    </td>
+	                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding text-left content w260 pl0">
+	                        <!-- Image -->
+	                          	<t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+				              	<t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+	
+								<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+								    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+								    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+								    <t t-raw="0"/>
+								</div>
+	                    </td>
+	                    
+	                 </t>
+	                 </t>
+	                 
+                </tr>
+                
+            </tbody>
+        </table>
+     </div>
+</template>	
+
+
+<!-- blog 17 -->
+<template id="sh_emate_blog_tmpl_item_17" name="Blog 17 item">
+
+	<div class="js_cls_sh_mail_snippet_general">
+       <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+           <tbody>
+           
+           			<t t-if="blog_posts">           	
+	     			<t t-foreach="blog_posts" t-as="blog_post">
+               			<tr>
+	     			
+			               	<td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding text-left content w260 p10 img">
+			                       <!-- Image -->
+			                          	<t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+						              	<t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+			
+										<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+										    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+										    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+										    <t t-raw="0"/>
+										</div>
+			                  </td>
+				               	<td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w260 p10 img">
+				               		<div class="box">
+				                        <div class="content">
+					                    	<h5 t-field="blog_post.name"/>
+					                        <p t-field="blog_post.subtitle"></p>
+					                        <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)" class="btn_readmore">READ MORE</a>
+					                    </div>
+				                    </div>
+			                   </td>
+              			</tr>
+              			
+              	 </t>
+                 </t>
+               
+           </tbody>
+       </table>
+    </div>
+		
+</template>	
+
+<!-- blog 18 -->
+<template id="sh_emate_blog_tmpl_item_18" name="Blog 18 item">
+
+	<div class="js_cls_sh_mail_snippet_general">
+         <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+           <tbody>
+           
+           			<t t-if="blog_posts">           	
+	     			<t t-foreach="blog_posts" t-as="blog_post">
+           
+		               <tr>
+		               
+		               	<td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270">
+		                       <div class="img">
+		                        <!-- Image -->
+		                        	<t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+			              			<t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+		
+									<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+									    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+									    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+									    <t t-raw="0"/>
+									</div>
+		                    	</div>
+		                   </td>
+		                   <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270">
+		                       <div class="content">
+		                       	<p class="date"><span t-field="blog_post.post_date" class="text-muted" t-options='{"format": "d MMMM, yyyy"}'/></p>
+		                        <h3 t-field="blog_post.name"/>
+		                        <p t-field="blog_post.subtitle" class="text"></p>
+		                        <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)" class="btn_readmore">Read More <span class="fa fa-long-arrow-right"></span></a>
+		                    </div>
+		                   </td>
+		               </tr>
+		               
+		           </t>
+		           </t>
+		               
+           </tbody>
+       </table>
+    </div>
+		
+</template>	
+
+<!-- blog 19 -->
+<template id="sh_emate_blog_tmpl_item_19" name="Blog 19 item">
+
+	<div class="js_cls_sh_mail_snippet_general">
+      <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt-0">
+          <tbody>
+              <tr>
+              
+              		<t t-if="blog_posts">           	
+	     			<t t-foreach="blog_posts" t-as="blog_post">
+              
+		                  <td class="o_mail_col_mv o_mail_col_container">
+		                      <div class="box">
+		                      	<div class="img">
+		                      		<!-- Image -->
+		                        	<t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+			              			<t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+		
+									<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+									    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+									    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+									    <t t-raw="0"/>
+									</div>
+		                    	</div>
+		                          <div class="content">
+			                        <h5 t-field="blog_post.name"/>
+			                        <p t-field="blog_post.subtitle" class="text"></p>
+			                        <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)" class="btn_readmore">READ MORE</a>
+			                    </div>
+		                      </div>
+		                  </td>
+		                  
+		             </t>
+		             </t>
+
+              </tr>
+          </tbody>
+      </table>
+   </div>
+		
+</template>	
+
+<!-- blog 20 -->
+<template id="sh_emate_blog_tmpl_item_20" name="Blog 20 item">
+
+	<div class="js_cls_sh_mail_snippet_general">
+      <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt-0">
+          <tbody>
+              <tr>
+              
+              		<t t-if="blog_posts">           	
+	     			<t t-foreach="blog_posts" t-as="blog_post">
+              
+	                  <td class="o_mail_col_mv o_mail_col_container" width="50%">
+	                      <div class="box">
+	                      	<div class="img">
+	                      		<!-- Image -->
+	                        	<t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+		              			<t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+	
+								<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+								    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+								    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+								    <t t-raw="0"/>
+								</div>
+	                      	</div>
+	                          <div class="content">
+		                        <h5 t-field="blog_post.name"/>
+		                        <p t-field="blog_post.subtitle" class="text"></p>
+		                        <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)" class="btn_readmore">Read More</a>
+		                    </div>
+	                      </div>
+	                  </td>
+
+					</t>
+					</t>
+                  
+              </tr>
+          </tbody>
+      </table>
+   </div>
+		
+</template>	
+
+<!-- blog 21 -->
+<template id="sh_emate_blog_tmpl_item_21" name="Blog 21 item">
+
+	<div class="js_cls_sh_mail_snippet_general">
+      <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt-0">
+          <tbody>
+              <tr>
+              
+              		<t t-if="blog_posts">           	
+	     			<t t-foreach="blog_posts" t-as="blog_post">
+              
+	                  <td class="o_mail_col_mv o_mail_col_container" width="50%">
+	                      <div class="box">
+	                      	<div class="img">
+	                      		<!-- Image -->
+	                        	<t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+		              			<t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+	
+								<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+								    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+								    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+								    <t t-raw="0"/>
+								</div>
+	                      	</div>
+	                          <div class="content">
+		                        <h5 t-field="blog_post.name"/>
+		                        <p t-field="blog_post.subtitle" class="text"></p>
+		                        <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)" class="btn_readmore">Read More</a>
+		                    </div>
+	                      </div>
+	                  </td>
+
+                </t>
+                </t>
+                
+              </tr>
+          </tbody>
+      </table>
+   </div>
+		
+</template>	
+
+<!-- blog 22 -->
+<template id="sh_emate_blog_tmpl_item_22" name="Blog 22 item">
+
+	<div class="js_cls_sh_mail_snippet_general">
+     <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt-0">
+         <tbody>
+             <tr>
+             
+             		<t t-if="blog_posts">           	
+	     			<t t-foreach="blog_posts" t-as="blog_post">
+             	
+	                 <td class="o_mail_col_mv o_mail_col_container" width="50%">
+	                     <div class="box">
+	                     	<div class="img">
+	                     		<!-- Image -->
+	                        	<t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+		              			<t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+	
+								<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+								    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+								    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+								    <t t-raw="0"/>
+	                     		</div>
+	                     	</div>
+	                         <div class="content">
+		                       <h5 t-field="blog_post.name"/>
+		                       <p class="date"><span t-field="blog_post.post_date" class="text-muted" t-options='{"format": "d MMMM, yyyy"}'/></p> 
+		                       <p t-field="blog_post.subtitle" class="text"></p>
+		                       <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)" class="btn_readmore">Read More</a>
+		                   </div>
+	                     </div>
+	                 </td>
+				
+				</t>
+				</t>
+                
+             </tr>
+         </tbody>
+     </table>
+  </div>
+		
+</template>	
+
+<!-- blog 23 -->
+<template id="sh_emate_blog_tmpl_item_23" name="Blog 23 item">
+
+	<div class="js_cls_sh_mail_snippet_general">
+        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt-0">
+            <tbody>
+                <tr>
+                
+                	<t t-if="blog_posts">           	
+	     			<t t-foreach="blog_posts" t-as="blog_post">
+                
+	                    <td class="o_mail_col_mv o_mail_col_container" width="50%">
+	                        <div class="box">
+	                            <div class="img">
+	                                <!-- Image -->
+		                        	<t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+			              			<t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+		
+									<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+									    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+									    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+									    <t t-raw="0"/>
+		                     		</div>
+	                            </div>
+	                            <div class="content">
+	                                <h5 t-field="blog_post.name" class="o_default_snippet_text"/>
+	                                <p t-field="blog_post.subtitle" class="text o_default_snippet_text"></p>
+	                                <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)" class="btn_readmore o_default_snippet_text">Read More</a>
+	                            </div>
+	                        </div>
+	                    </td>
+	                    
+	                 </t>
+	                 </t>
+
+         
+                </tr>
+            </tbody>
+        </table>
+     </div>
+		
+</template>	
+
+
+		
+
+	
+
+<!-- 
+
+	                    <table align="center" cellspacing="0" cellpadding="0" border="0">
+	                        <tbody>
+	                   
+	                   
+      <tr>
+                                         
+	           	<t t-if="blog_posts">           	
+	           	<t t-foreach="blog_posts" t-as="blog_post">                            
+	  
+                        <td style="vertical-align:top;width:270px;" class="o_mail_col_mv o_mail_col_container">
+                            <div>
+                                
+                                
+
+
+		            <a t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)">
+		
+			            <t t-set="cover_properties" t-value="dic_blog_posts.get( blog_post.id  ) or {}"/>
+			            <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+		
+		      
+						<div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+						    <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+						    <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+						    <t t-raw="0"/>
+						</div>
+					    
+			         </a>	
+			
+                                
+                                
+                                
+                                <h4 class="text-center" t-field="blog_post.name">
+                                </h4>
+
+                                <p class="text-center o_mail_no_margin" t-field="blog_post.subtitle">
+                                </p>
+                                <div class="text-center" style="margin-top:15px;">
+                                    <a role="button" t-att-href="base_url + '/blog/%s/post/%s' % (blog_post.blog_id.id,blog_post.id)" class="btn btn-link">Read More...</a>
+                                </div>
+                                
+                                <span t-field="blog_post.post_date" class="text-muted" t-options='{"format": "d MMMM, yyyy"}'/>
+
+                                
+                            </div>
+                        </td>
+
+  
+	                    
+                 	               
+				</t>
+				</t>                            
+	                            
+	  </tr>	
+	
+	
+	                        </tbody>
+	                    </table>
+	                     -->
+	                    
+	 
+	
+
+
+
+
+
+</odoo>
+

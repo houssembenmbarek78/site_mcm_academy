@@ -16,7 +16,7 @@ from operator import itemgetter
 from odoo.exceptions import ValidationError
 from odoo import fields, http, SUPERUSER_ID, tools, _
 from odoo.osv import expression
-from datetime import datetime,date
+from datetime import datetime, date
 
 PPG = 20  # Products Per Page
 PPR = 4  # Products Per Row
@@ -24,12 +24,13 @@ PPR = 4  # Products Per Row
 
 class Website(Home):
 
-    @http.route(['''/''','''/<string:partenaire>''',]
+    @http.route(['''/''', '''/<string:partenaire>''', ]
         , type='http', auth="public", website=True)
-    def index(self, state='',partenaire='', **kw, ):
+    def index(self, state='', partenaire='', **kw, ):
         # homepage=super(Website, self).index()
         all_categs = request.env['product.public.category'].sudo().search([('parent_id', '=', False)])
-        all_states = request.env['res.country.state'].sudo().search([('country_id.code', 'ilike', 'FR')],order='id asc')
+        all_states = request.env['res.country.state'].sudo().search([('country_id.code', 'ilike', 'FR')],
+                                                                    order='id asc')
         taxi_category = request.env['product.public.category'].sudo().search([('name', 'ilike', 'Formation TAXI')])
         vtc_category = request.env['product.public.category'].sudo().search([('name', 'ilike', 'Formation VTC')])
         vmdtr_category = request.env['product.public.category'].sudo().search([('name', 'ilike', 'Formation VMDTR')])
@@ -49,7 +50,7 @@ class Website(Home):
         promo = False
         user_connected = request.env.user
         user_connected.partner_from = False
-        if (request.website.id == 2 and partenaire in ['ubereats', 'deliveroo', 'coursierjob']):
+        if (request.website.id == 2 and partenaire in ['ubereats', 'deliveroo', 'coursierjob', 'box2home']):
             user_connected.partner_from = str(partenaire)
             promo = request.env['product.pricelist'].sudo().search(
                 [('company_id', '=', 2), ('code', 'ilike', partenaire.upper())])
@@ -67,7 +68,7 @@ class Website(Home):
             'avancee_price': avancee_price if avancee_price else '',
             'premium_price': premium_price if premium_price else '',
         }
-        if (partenaire in ['', 'ubereats', 'deliveroo', 'coursierjob'] and request.website.id == 2):
+        if (partenaire in ['', 'ubereats', 'deliveroo', 'coursierjob', 'box2home'] and request.website.id == 2):
             values['partenaire'] = partenaire
             if (promo):
                 values['promo'] = promo
@@ -76,8 +77,6 @@ class Website(Home):
             return request.render("website.homepage", values)
         if (request.website.id == 1):
             return request.render("website.homepage", values)
-
-        
 
         # --------------------------------------------------------------------------
         # states Search Bar
@@ -114,7 +113,8 @@ class WebsiteSale(WebsiteSale):
         '''/shop/category/<model("product.public.category"):category>''',
         '''/shop/category/<model("product.public.category"):category>/page/<int:page>'''
     ], type='http', auth="public", website=True, sitemap=False)
-    def shop(self, page=0, category=None, state='', taxi_state='', vmdtr_state='',vtc_state='', search='', ppg=False, **post):
+    def shop(self, page=0, category=None, state='', taxi_state='', vmdtr_state='', vtc_state='', search='', ppg=False,
+             **post):
         add_qty = int(post.get('add_qty', 1))
         Category = request.env['product.public.category']
         if category and category != 'all':
@@ -332,7 +332,7 @@ class WebsiteSale(WebsiteSale):
         if tx and tx.state == 'done' and tx.amount > 0 and order.state != 'sale':
             order.sale_action_sent()
         PaymentProcessing.remove_payment_transaction(tx)
-        if order.company_id.id==1:
+        if order.company_id.id == 1:
             return request.redirect("/shop/confirmation")
         else:
             product_id = False
@@ -344,16 +344,19 @@ class WebsiteSale(WebsiteSale):
                 state = str(tx.state)
                 if product_id:
                     slugname = (product_id.name).strip().strip('-').replace(' ', '-').lower()
-                    if order.pricelist_id and order.pricelist_id.name in ['ubereats', 'deliveroo', 'coursierjob']:
-                        return request.redirect("/%s/%s/shop/confirmation/%s" % (slugname, order.pricelist_id.name,state))
+                    if order.pricelist_id and order.pricelist_id.name in ['ubereats', 'deliveroo', 'coursierjob',
+                                                                          'box2home']:
+                        return request.redirect(
+                            "/%s/%s/shop/confirmation/%s" % (slugname, order.pricelist_id.name, state))
                     else:
-                        return request.redirect("/%s/shop/confirmation/%s"% (slugname ,state))
+                        return request.redirect("/%s/shop/confirmation/%s" % (slugname, state))
                 else:
                     return request.redirect("/shop/confirmation")
             else:
                 return request.redirect("/shop/confirmation")
 
-    @http.route(['''/<string:product>/<string:partenaire>/shop/address''','''/<string:product>/shop/address''','''/shop/address'''], type='http', methods=['GET', 'POST'], auth="user", website=True, sitemap=False)
+    @http.route(['''/<string:product>/<string:partenaire>/shop/address''', '''/<string:product>/shop/address''',
+                 '''/shop/address'''], type='http', methods=['GET', 'POST'], auth="user", website=True, sitemap=False)
     def address(self, partenaire=None, product=None, **kw):
         Partner = request.env['res.partner'].with_context(show_address=1).sudo()
         order = request.website.sale_get_order()
@@ -428,7 +431,7 @@ class WebsiteSale(WebsiteSale):
                     if not kw.get('use_same'):
                         kw['callback'] = kw.get('callback') or \
                                          (not order.only_services and (
-                                                     mode[0] == 'edit' and '/shop/checkout' or '/shop/address'))
+                                                 mode[0] == 'edit' and '/shop/checkout' or '/shop/address'))
                 elif mode[1] == 'shipping':
                     order.partner_shipping_id = partner_id
 
@@ -473,7 +476,8 @@ class WebsiteSale(WebsiteSale):
         # Required fields from form
         required_fields = [f for f in (all_form_values.get('field_required') or '').split(',') if f]
         # Required fields from mandatory field function
-        required_fields += mode[1] == 'shipping' and self._get_mandatory_shipping_fields() or self._get_mandatory_billing_fields()
+        required_fields += mode[
+                               1] == 'shipping' and self._get_mandatory_shipping_fields() or self._get_mandatory_billing_fields()
         # Check if state required
         country = request.env['res.country']
         if data.get('country_id'):
@@ -486,14 +490,14 @@ class WebsiteSale(WebsiteSale):
             if not data.get(field_name):
                 error[field_name] = 'missing'
 
-        if not data.get('numero_permis'):
+        if not data.get('numero_permis') and request.website.id == 1:
             error["numero_permis"] = 'error'
             error_message.append(_('Numéro de permis doit être rempli'))
         if not data.get('adresse_facturation'):
             error["adresse_facturation"] = 'error'
             error_message.append(_("l'Adresse de facturation doit être rempli"))
         if 'adresse_facturation' in data:
-            if str(data['adresse_facturation'])=='societe':
+            if str(data['adresse_facturation']) == 'societe':
                 if not data.get('company_name'):
                     error["company_name"] = 'error'
                     error_message.append(_('Nom de la société doit être rempli'))
@@ -546,22 +550,24 @@ class VTC(http.Controller):
     def taxi(self, vtc_state='', **kw, ):
         return request.render("mcm_website_theme.mcm_website_theme_vtc", {})
 
+
 class Payment3x(http.Controller):
     @http.route(['/shop/payment/update_amount'], type='json', auth="public", methods=['POST'], website=True)
     def cart_update_amount(self, instalment):
         """This route is called when changing quantity from the cart or adding
         a product from the wishlist."""
         order = request.website.sale_get_order(force_create=1)
-        payment = request.env['payment.acquirer'].sudo().search([('name', 'ilike', 'stripe'),('company_id',"=",request.website.company_id.id)])
+        payment = request.env['payment.acquirer'].sudo().search(
+            [('name', 'ilike', 'stripe'), ('company_id', "=", request.website.company_id.id)])
         if instalment:
             if payment:
-                order.instalment=True
+                order.instalment = True
                 payment.instalment = True
-                if(order.company_id.id==2 and order.pricelist_id.name=='ubereats'):
+                if (order.company_id.id == 2 and order.pricelist_id.name == 'ubereats'):
                     for line in order.order_line:
-                        if line.product_id.default_code=='access':
-                            order.amount_total=450
-                            line.price_unit=450
+                        if line.product_id.default_code == 'access':
+                            order.amount_total = 450
+                            line.price_unit = 450
         else:
             payment.instalment = False
             order.instalment = False
@@ -576,10 +582,11 @@ class Payment3x(http.Controller):
     def cart_update_cpf(self, cpf):
         order = request.website.sale_get_order(force_create=1)
         if cpf:
-            order.partner_id.date_cpf=datetime.now()
-            order.partner_id.mode_de_financement='cpf'
-            order.partner_id.statut_cpf='untreated'
+            order.partner_id.date_cpf = datetime.now()
+            order.partner_id.mode_de_financement = 'cpf'
+            order.partner_id.statut_cpf = 'untreated'
         return True
+
 
 class Conditions(http.Controller):
 
@@ -590,9 +597,9 @@ class Conditions(http.Controller):
         order = request.website.sale_get_order(force_create=0)
         if order:
             if condition:
-                order.conditions=True
+                order.conditions = True
             else:
-                order.conditions=False
+                order.conditions = False
         return True
 
     @http.route(['/shop/payment/update_failures'], type='json', auth="public", methods=['POST'], website=True)
@@ -619,7 +626,13 @@ class Conditions(http.Controller):
                 order.accompagnement = False
         return True
 
+
 class CustomerPortal(CustomerPortal):
+    """
+    @override function 'portal_my_tasks' to add domain
+    'users_tasks_domain' to restrict users to display tasks
+    assigned to them.
+    """
     @http.route(['/my/tasks', '/my/tasks/page/<int:page>'], type='http', auth="user", website=True)
     def portal_my_tasks(self, page=1, date_begin=None, date_end=None, sortby=None, filterby=None, search=None,
                         search_in='content', groupby='project', **kw):
@@ -647,6 +660,7 @@ class CustomerPortal(CustomerPortal):
 
         # extends filterby criteria with project the customer has access to
         projects = request.env['project.project'].search([])
+        print(projects)
         for project in projects:
             searchbar_filters.update({
                 str(project.id): {'label': project.name, 'domain': [('project_id', '=', project.id)]}
@@ -690,21 +704,23 @@ class CustomerPortal(CustomerPortal):
                 search_domain = OR([search_domain, [('stage_id', 'ilike', search)]])
             domain += search_domain
 
+        # Display tasks of active user
+        users = request.env.user
+        users_tasks_domain = ['|', ('parent_id.user_id', '=', users.id), ('user_id', '=', users.id)]
         # task count
-        task_count = request.env['project.task'].search_count(domain)
+        task_count = request.env['project.task'].search_count(users_tasks_domain)
         # pager
         pager = portal_pager(
             url="/my/tasks",
-            url_args={'date_begin': date_begin, 'date_end': date_end, 'sortby': sortby, 'filterby': filterby,
-                      'search_in': search_in, 'search': search},
+            url_args={'date_begin': date_begin},
             total=task_count,
             page=page,
             step=self._items_per_page
         )
         # content according to pager and archive selected
-        if groupby == 'project':
+        if groupby == 'project_id':
             order = "project_id, %s" % order  # force sort on project first to group by project in view
-        tasks = request.env['project.task'].search(domain, order=order, limit=self._items_per_page,
+        tasks = request.env['project.task'].search(users_tasks_domain, order=order, limit=self._items_per_page,
                                                    offset=(page - 1) * self._items_per_page)
         request.session['my_tasks_history'] = tasks.ids[:100]
         if groupby == 'project':
@@ -712,16 +728,10 @@ class CustomerPortal(CustomerPortal):
                              groupbyelem(tasks, itemgetter('project_id'))]
         else:
             grouped_tasks = [tasks]
-        my_tasks=[]
-        users=request.env.user
-        for task in grouped_tasks:
-            for user in users:
-                my_tasks.append(task)
-
         values.update({
             'date': date_begin,
             'date_end': date_end,
-            'grouped_tasks': my_tasks,
+            'grouped_tasks': grouped_tasks,
             'page_name': 'task',
             'archive_groups': archive_groups,
             'default_url': '/my/tasks',
@@ -737,4 +747,86 @@ class CustomerPortal(CustomerPortal):
         })
         return request.render("project.portal_my_tasks", values)
 
+    # @override Function to Add Filter to invoice_count in portal invoice view
+    def _prepare_portal_layout_values(self):
+        values = super(CustomerPortal, self)._prepare_portal_layout_values()
+        invoice_count = request.env['account.move'].search_count([
+            ('type', 'in', ('out_invoice', 'in_invoice', 'out_refund', 'in_refund', 'out_receipt', 'in_receipt')),
+            ('type_facture', '=', 'web'), ('cpf_solde_invoice', '=', False), ('cpf_acompte_invoice', '=', False)
+        ])
+        values['invoice_count'] = invoice_count
+        #add users_tasks_domain to filter tasks in portal view
+        users = request.env.user
+        users_tasks_domain = ['|', ('parent_id.user_id', '=', users.id), ('user_id', '=', users.id)]
+        values['task_count'] = request.env['project.task'].search_count(users_tasks_domain)
+        return values
 
+    # @override Second Function to Add Filter to invoice_count in portal invoice view
+    def _prepare_home_portal_values(self):
+        values = super(CustomerPortal, self)._prepare_home_portal_values()
+        invoice_count = request.env['account.move'].search_count([
+            ('type', 'in', ('out_invoice', 'in_invoice', 'out_refund', 'in_refund', 'out_receipt', 'in_receipt')),
+            ('type_facture', '=', 'web'), ('cpf_solde_invoice', '=', False), ('cpf_acompte_invoice', '=', False)
+        ]) if request.env['account.move'].check_access_rights('read', raise_exception=False) else 0
+        values['invoice_count'] = invoice_count
+        # add users_tasks_domain to filter tasks in portal view
+        users = request.env.user
+        users_tasks_domain = ['|', ('parent_id.user_id', '=', users.id), ('user_id', '=', users.id)]
+        values['task_count'] = request.env['project.task'].search_count(users_tasks_domain)
+        return values
+
+    """@override this function to add filter can display 
+    all invoices Not CPF type linked to specific portal"""
+    @http.route(['/my/invoices', '/my/invoices/page/<int:page>'], type='http', auth="user", website=True)
+    def portal_my_invoices(self, page=1, date_begin=None, date_end=None, sortby=None, **kw):
+        values = self._prepare_portal_layout_values()
+        AccountInvoice = request.env['account.move']
+
+        domain = [
+            ('type', 'in', ('out_invoice', 'out_refund', 'in_invoice', 'in_refund', 'out_receipt', 'in_receipt')),
+            ('type_facture', '=', 'web'), ('cpf_solde_invoice', '=', False), ('cpf_acompte_invoice', '=', False)]
+
+        searchbar_sortings = {
+            'date': {'label': _('Invoice Date'), 'order': 'invoice_date desc'},
+            'duedate': {'label': _('Due Date'), 'order': 'invoice_date_due desc'},
+            'name': {'label': _('Reference'), 'order': 'name desc'},
+            'state': {'label': _('Status'), 'order': 'state'},
+        }
+        # default sort by order
+        if not sortby:
+            sortby = 'date'
+        order = searchbar_sortings[sortby]['order']
+
+        archive_groups = self._get_archive_groups('account.move', domain)
+        if date_begin and date_end:
+            domain += [('create_date', '>', date_begin), ('create_date', '<=', date_end)]
+
+        # count for pager
+        invoice_count = AccountInvoice.search_count(domain)
+        # pager
+        pager = portal_pager(
+            url="/my/invoices",
+            url_args={'date_begin': date_begin, 'date_end': date_end, 'sortby': sortby},
+            total=invoice_count,
+            page=page,
+            step=self._items_per_page
+        )
+        # content according to pager and archive selected
+
+        """ Add filter to client view to display all invoices 
+        contains type WEB also the cpf_solde_invoice, cpf_acompte_invoice
+        should be not ckecked using lambda """
+
+        invoices = AccountInvoice.search(domain, order=order, limit=self._items_per_page, offset=pager['offset']).filtered(lambda facture: facture.type_facture == 'web' and facture.cpf_solde_invoice == False and facture.cpf_acompte_invoice == False)
+        request.session['my_invoices_history'] = invoices.ids[:100]
+        values.update({
+            'date': date_begin,
+            'invoices': invoices,
+            'page_name': 'invoice',
+            'pager': pager,
+            'archive_groups': archive_groups,
+            'default_url': '/my/invoices',
+            'searchbar_sortings': searchbar_sortings,
+            'sortby': sortby,
+        })
+        return request.render("account.portal_my_invoices", values)

@@ -2,6 +2,18 @@
 <odoo>
     <template id="facebook_pixel_layout" name="Main layout" inherit_id="portal.frontend_layout">
         <xpath expr="//div[@id='wrapwrap']" position="after">
+            <!-- Smartsupp Live Chat script -->
+            <script type="text/javascript">
+                var _smartsupp = _smartsupp || {};
+                _smartsupp.key = '9366e17ff49b0097aea200cb9ecd979c37f5b1f8';
+                window.smartsupp||(function(d) {
+                var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+                s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+                c.type='text/javascript';c.charset='utf-8';c.async=true;
+                c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+                })(document);
+            </script>
+            <!-- END Smartsupp Live Chat script -->
             <!-- Facebook Pixel Code -->
             <script t-if="website and website.facebook_pixel_key">
                 !function(f,b,e,v,n,t,s)
@@ -22,14 +34,14 @@
             </noscript>
             <!-- End Facebook Pixel Code -->
             <!-- Cookies Integration Script START -->
-<!--            <script>-->
-<!--                var void0= false;-->
-<!--                void0 === window._axcb &amp;&amp; (window._axcb=[]);-->
-<!--                window._axcb.push(function(axeptio) {-->
-<!--                axeptio.on("cookies:complete", function(choices) {-->
-<!--                })-->
-<!--                })-->
-<!--            </script>-->
+            <!--            <script>-->
+            <!--                var void0= false;-->
+            <!--                void0 === window._axcb &amp;&amp; (window._axcb=[]);-->
+            <!--                window._axcb.push(function(axeptio) {-->
+            <!--                axeptio.on("cookies:complete", function(choices) {-->
+            <!--                })-->
+            <!--                })-->
+            <!--            </script>-->
             <!-- Cookies Integration Script END -->
         </xpath>
     </template>

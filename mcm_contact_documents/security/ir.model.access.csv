@@ -1,0 +1,4 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+partner_document_manager,mcm academy documents manager,model_partner_documents,base.group_user,1,1,1,1
+partner_document_read_all,mcm academy documents all,model_partner_documents,,1,1,1,1
+

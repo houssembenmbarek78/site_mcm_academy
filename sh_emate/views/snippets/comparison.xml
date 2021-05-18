@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- comparison template 1 -->
+<template id="sh_emate_comparison_tmpl_1" name="Comparison 1">
+	
+	<div class="sh_emate_comparison_1">
+		<div class="o_mail_block_comparison_table" data-name="Comparison" id="sh_comparison_11">
+		    <div class="o_mail_snippet_general">
+		    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt0 mlr10">
+			           <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+				                    <h3>LOREM IPSUM</h3>
+				                </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				</table>
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_h_padding o_mail_v_padding o_mail_col_mv plr10 w180">
+		                        <div class="box">
+			                        <div class="content">
+			                            <h4>LOREM IPSUM</h4>
+			                            <h2><sup>$</sup><span><sub>29</sub></span></h2>
+			                            <p class="text">LOREM IPSUM</p>
+			                            <a class="btn_booknow btn" href="#">BOOK NOW</a>
+			                        </div>
+			                    </div>
+		                    </td>
+		                    <td class="o_mail_h_padding o_mail_v_padding o_mail_col_mv plr10 w180">
+		                        <div class="box">
+			                        <div class="content">
+			                            <h4>LOREM IPSUM</h4>
+			                            <h2><sup>$</sup><span><sub>49</sub></span></h2>
+			                            <p class="text">LOREM IPSUM</p>
+			                            <a class="btn_booknow btn" href="#">BOOK NOW</a>
+			                        </div>
+			                    </div>
+		                    </td>
+		                    <td class="o_mail_h_padding o_mail_v_padding o_mail_col_mv plr10 w180">
+		                        <div class="box">
+			                        <div class="content">
+			                            <h4>LOREM IPSUM</h4>
+			                            <h2><sup>$</sup><span><sub>79</sub></span></h2>
+			                            <p class="text">LOREM IPSUM</p>
+			                            <a class="btn_booknow btn" href="#">BOOK NOW</a>
+			                        </div>
+			                    </div>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>  
+	</div>
+	
+</template>
+<!-- end comparison template 1  -->
+
+<!-- comparison template 2 -->
+<template id="sh_emate_comparison_tmpl_2" name="Comparison 2">
+	
+	<div class="sh_emate_comparison_2">
+		<div class="o_mail_block_comparison_table" data-name="Comparison" id="sh_comparison_12">
+		    <div class="o_mail_snippet_general">
+		    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt0 mlr10">
+			           <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+				                    <h3>LOREM IPSUM</h3>
+				                </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				</table>
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_h_padding o_mail_v_padding o_mail_col_mv plr10 w180 text-center">
+		                        <div class="box">
+			                        <div class="content">
+				                        <h4>LOREM IPSUM</h4>
+				                        <sup>$</sup><span><sub>24</sub></span>
+				                        <p class="text">LOREM IPSUM</p>
+				                        <a class="btn" href="#">BUY NOW</a>
+				                    </div>
+			                    </div>
+		                    </td>
+		                    <td class="o_mail_h_padding o_mail_v_padding o_mail_col_mv plr10 w180 text-center">
+		                        <div class="box">
+			                        <div class="content">
+				                        <h4>LOREM IPSUM</h4>
+				                        <sup>$</sup><span><sub>56</sub></span>
+				                        <p class="text">LOREM IPSUM</p>
+				                        <a class="btn" href="#">BUY NOW</a>
+				                    </div>
+			                    </div>
+		                    </td>
+		                    <td class="o_mail_h_padding o_mail_v_padding o_mail_col_mv plr10 w180 text-center">
+		                        <div class="box">
+			                        <div class="content">
+				                        <h4>LOREM IPSUM</h4>
+				                        <sup>$</sup><span><sub>89</sub></span>
+				                        <p class="text">LOREM IPSUM</p>
+				                        <a class="btn" href="#">BUY NOW</a>
+				                    </div>
+			                    </div>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+<!-- end comparison template 2  -->
+
+<!-- comparison template 3 -->
+<template id="sh_emate_comparison_tmpl_3" name="Comparison 3">
+	
+	<div class="sh_emate_comparison_3">
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_comparison_13">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+		            <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+				                    <h3>LOREM IPSUM</h3>
+				                   	<p class="detail">LOREM SIMPLY DUMMY INDUSTRY</p>
+				                </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				  </table>
+		        
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+		                        <div class="box text-center">
+			                        <div class="sh_price_box">
+			                            <div class="sh_amount bg-900">
+			                                <span class="o_default_snippet_text"><small>$</small>34</span>
+			                            </div>
+			                        </div>
+			                        <div class="content">
+			                            <h4>LOREM IPSUM</h4>
+			                            <p>LOREM IPSUM</p>
+			                            <a class="btn_booknow" href="#">BOOK NOW</a>
+			                        </div>
+		                       </div>
+		                    </td>
+		
+		                    <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+		                        <div class="box text-center">
+			                      	<div class="sh_price_box">
+			                            <div class="sh_amount bg-900">
+			                                <span class="o_default_snippet_text"><small>$</small>55</span>
+			                            </div>
+			                        </div>
+			                        <div class="content">
+			                            <h4>LOREM IPSUM</h4>
+			                            <p>LOREM IPSUM</p>
+			                            <a class="btn_booknow" href="#">BOOK NOW</a>
+			                        </div>
+		                  		</div>
+		                    </td>
+		
+		                    <td class="o_mail_col_mv o_mail_col_container plr10 width180">
+		                        <div class="box text-center">
+		                      		<div class="sh_price_box">
+			                            <div class="sh_amount bg-900">
+			                                <span class="o_default_snippet_text"><small>$</small>79</span>
+			                            </div>
+			                        </div>
+			                        <div class="content">
+			                            <h4>LOREM IPSUM</h4>
+			                            <p>LOREM IPSUM</p>
+			                            <a class="btn_booknow" href="#">BOOK NOW</a>
+			                        </div>
+		                  		</div>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+<!-- end comparison template 3  -->
+
+
+<!-- comparison template 4 -->
+<template id="sh_emate_comparison_tmpl_4" name="Comparison 4">
+	
+	<div class="sh_emate_comparison_4">
+		<div class="o_mail_block_comparison_table" data-name="Comparison" id="sh_comparison_8">
+		    <div class="o_mail_snippet_general">
+		    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+		          <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+				                    <h3>Our Events</h3>
+			                        <hr/>
+			                        <p class="detail">Lorem ipsum color sit amet, consectetur edipiscing elit. Curabitur placerat.</p>
+				                </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				</table>
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles plr10">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_h_padding o_mail_v_padding o_mail_col_mv plr10 border w260">
+		                        <table cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		                            <thead>
+		                                <tr>
+		                                    <th class="o_mail_v_padding o_mail_col_mv">
+		                                        <div class="img">
+						                            <img src="/sh_emate/static/src/img/tmpl_8/icon.png" alt="icon" title="icon" />
+						                        </div>
+		                                    </th>
+		                                </tr>
+		                            </thead>
+		                            <tbody>
+		                                <tr>
+		                                    <td class="text-center o_mail_col_mv">
+		                                        <div class="content">
+						                            <h4>FAMILY TABLE</h4>
+						                        </div>
+		                                    </td>
+		                                </tr>
+		                                <tr>
+		                                    <td valign="top" class="o_mail_v_padding o_mail_col_mv">
+		                                        <div class="content">
+						                            <sup>$</sup><span><sub>29</sub></span>
+						                        </div>
+		                                    </td>
+		                                </tr>
+		                                <tr>
+		                                    <td class="o_mail_col_mv">
+		                                        <div class="content">
+						                            <p class="text">4-6 Person</p>
+						                        </div>
+		                                    </td>
+		                                </tr>
+		                            </tbody>
+		                            <tfoot>
+		                                <tr>
+		                                    <td valign="top" class="o_mail_v_padding o_mail_col_mv">
+		                                        <div class="content">
+						                            <a class="btn_booknow" href="#">BOOK NOW</a>
+						                        </div>
+		                                    </td>
+		                                </tr>
+		                            </tfoot>
+		                        </table>
+		                    </td>
+		                    <td class="o_mail_h_padding o_mail_v_padding o_mail_col_mv plr10 border w260">
+		                        <table cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		                            <thead>
+		                                <tr>
+		                                    <th class="o_mail_v_padding o_mail_col_mv">
+		                                        <div class="img">
+						                            <img src="/sh_emate/static/src/img/tmpl_8/icon.png" alt="icon" title="icon" />
+						                        </div>
+		                                    </th>
+		                                </tr>
+		                            </thead>
+		                            <tbody>
+		                                <tr>
+		                                    <td class="text-center o_mail_col_mv">
+		                                        <div class="content">
+						                            <h4>GROUP TABLE</h4>
+						                        </div>
+		                                    </td>
+		                                </tr>
+		                                <tr>
+		                                    <td valign="top" class="o_mail_v_padding o_mail_col_mv">
+		                                        <div class="content">
+						                            <sup>$</sup><span><sub>39</sub></span>
+						                        </div>
+		                                    </td>
+		                                </tr>
+		                                <tr>
+		                                    <td class="o_mail_col_mv">
+		                                        <div class="content">
+						                            <p class="text">8-10 Person</p>
+						                        </div>
+		                                    </td>
+		                                </tr>
+		                            </tbody>
+		                            <tfoot>
+		                                <tr>
+		                                    <td valign="top" class="o_mail_v_padding o_mail_col_mv">
+		                                        <div class="content">
+						                            <a class="btn_booknow" href="#">BOOK NOW</a>
+						                        </div>
+		                                    </td>
+		                                </tr>
+		                            </tfoot>
+		                        </table>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+<!-- end comparison template 4  -->
+
+<!-- comparison template 5 -->
+<template id="sh_emate_comparison_tmpl_5" name="Comparison 5">
+	
+	<div class="sh_emate_comparison_5">
+		<div class="o_mail_block_two_cols" data-name="Two Columns" id="sh_comparision_32">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pb0">
+                    <tbody>
+                        <tr>
+                            <td class="o_mail_col_mv o_mail_col_container w180 p0">
+                                <div class="box bg_light">
+                                    <h6>Basic Package</h6>
+                                    <h2><sub>$</sub>250.<span>580</span></h2>
+                                    <p>PER MONTH</p>
+                                </div>
+                            </td>
+
+                            <td class="o_mail_col_mv o_mail_col_container w180 p0">
+                                <div class="box bg_dark">
+                                    <h6>Value Package</h6>
+                                    <h2><sub>$</sub>159.<span>520</span></h2>
+                                    <p>PER MONTH</p>
+                                </div>
+                            </td>
+
+                            <td class="o_mail_col_mv o_mail_col_container w180 p0">
+                                <div class="box bg_light">
+                                    <h6>Heavy Package</h6>
+                                    <h2><sub>$</sub>182.<span>538</span></h2>
+                                    <p>PER MONTH</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+	</div>
+	
+</template>
+<!-- end comparison template 5  -->
+
+
+	
+
+</odoo>

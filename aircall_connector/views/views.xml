@@ -1,0 +1,64 @@
+<odoo>
+    <data>
+
+        <!-- Inherit Form View to Modify it -->
+        <record id="user_token_get_form" model="ir.ui.view">
+            <field name="name">AirCall Data Import</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form_simple_modif"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='name']" position="after">
+
+                    <group string="AirCall Data Import">
+                        <group>
+
+                            <button name="import_contacts" type="object" string="Import Contacts"
+                                    class="fa-sign-in oe_highlight"/>
+                        </group>
+                        <group>
+
+                            <button name="import_calls" type="object" string="Import Calls"
+                                    class="fa-sign-in oe_highlight"/>
+                        </group>
+
+                    </group>
+
+
+                    <!-- Add your fields or attributes here -->
+                </xpath>
+
+            </field>
+        </record>
+
+        <record id="contact_new_action2" model="ir.actions.server">
+            <field name="name">Export to AirCalltest</field>
+            <field name="model_id" ref="model_res_partner"/>
+
+            <field name="binding_model_id" ref="model_res_partner"/>
+            <field name="binding_view_types">list,form</field>
+            <field name="state">code</field>
+            <field name="code">records.export_contact()</field>
+        </record>
+
+
+        <!-- Add smart button in partner       -->
+       <record id="res_partner_view_buttons_record" model="ir.ui.view">
+            <field name="name">res.partner.view.buttons</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form" />
+            <field name="priority" eval="1"/>
+            <field name="arch" type="xml">
+                <div name="button_box" position="inside">
+                    <button class="oe_stat_button" type="action" name="%(aircall_connector.call_detail_action)d"
+                            string="Voice Recordings"
+                            icon="fa-phone">
+<!--                        <field string="Voice Recording" name="call_count" />-->
+                    </button>
+                </div>
+
+            </field>
+        </record>
+    </data>
+
+</odoo>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+
+<!-- Theme "solar" default template -->
+<template id="theme_tmpl_24">
+     		
+             		
+<!-- header/menubar -->
+<div class="o_mail_block_header_social" id="sh_header_24" data-name="Left Logo">
+	<div class="o_mail_snippet_general">
+		<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+   			<tbody>
+   				<tr>
+       				<td width="30%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding logo">
+                 		<a href="#">
+                      		<h4>Construction</h4>
+                 		</a>
+       				</td>
+					<td width="70%" class="text-right o_mail_no_resize o_mail_col_mv o_mail_col_container">
+						<div class="o_mail_header_social menu">
+       						<a href="#" class="ml10">About</a>
+       						<a href="#" class="ml10">Services</a>
+       						<a href="#" class="ml10">Portfolio</a>
+      						<a href="#" class="ml10">Contact</a>
+						</div>
+					</td>
+   				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<!-- end header/menubar -->
+  
+<!-- banner -->
+<div class="o_mail_block_banner" id="sh_banner_24" data-name="Banner">
+    <div class="o_mail_snippet_general">
+        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+            <tbody>
+                <tr>
+	                <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+	                     <a href="#">
+	                         <img src="/sh_emate/static/src/img/tmpl_24/banner_24.png" class="d-block mx-auto" alt="Your Banner Image" />
+	                     </a>
+	                 </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div> 
+<!-- end banner -->
+
+
+<!-- Service -->
+ <div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_service_24">
+      <div class="o_mail_snippet_general">
+	      <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_h_padding o_mail_v_padding o_mail_col_table">
+	          <tbody>
+		        <tr>
+		            <td width="100%" class="heading">
+		                <center>
+		                    <h3>Our Services</h3>
+                    		<hr/>
+                    		<p></p>
+		                </center>
+		            </td>
+		        </tr>
+		     </tbody>
+		  </table>
+      
+          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table three_col pb0">
+              <tbody>
+                  <tr>
+                      <td class="o_mail_col_mv o_mail_col_container plr10" width="50%">
+                          <div class="box text-center">
+	                        <div class="icon"><span class="fa fa-building"></span></div>
+	                        <a href="#"><p class="text-center title">ARCHITECTURAL PLANS</p></a>
+	                        <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit. sed do euis mod tempor magna eliqua.</p>
+	                    </div>
+                      </td>
+
+                      <td class="o_mail_col_mv o_mail_col_container plr10" width="50%">
+                          <div class="box text-center">
+	                        <div class="icon"><span class="fa fa-pencil-square-o"></span></div>
+	                        <a href="#"><p class="text-center title">INTERIOR DESIGN</p></a>
+	                        <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit. sed do euis mod tempor magna eliqua.</p>
+	                    </div>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+          
+          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table three_col pt0">
+              <tbody>
+                  <tr>
+                      <td class="o_mail_col_mv o_mail_col_container plr10" width="50%">
+                          <div class="box text-center">
+	                        <div class="icon"><span class="fa fa-home"></span></div>
+	                        <a href="#"><p class="text-center title">BUILDING RENOVATION</p></a>
+	                        <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit. sed do euis mod tempor magna eliqua.</p>
+	                    </div>
+                      </td>
+
+                      <td class="o_mail_col_mv o_mail_col_container plr10" width="50%">
+                          <div class="box text-center">
+	                        <div class="icon"><span class="fa fa-building"></span></div>
+	                        <a href="#"><p class="text-center title">GREEN BUILDING</p></a>
+	                        <p class="text">Lorem ipsum sit amet, consectetur edipiscing elit. sed do euis mod tempor magna eliqua.</p>
+	                    </div>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+</div> 
+<!-- end Service -->
+
+<!-- Counter -->
+ <div class="o_mail_block_three_cols sh_emate_counter_8" data-name="Three Columns" id="sh_counter_24">
+      <div class="o_mail_snippet_general">
+          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table three_col">
+              <tbody>
+                  <tr>
+                      <td class="o_mail_col_mv o_mail_col_container plr10" width="33%">
+                          <div class="box text-center">
+                          	<div class="icon"><span class="fa fa-file-text-o"></span></div>
+	                        <p>Lorem Ipsum</p>
+	                        <h3>485+</h3>
+	                    </div>
+                      </td>
+
+                      <td class="o_mail_col_mv o_mail_col_container plr10" width="33%">
+                          <div class="box text-center">
+                          	<div class="icon"><span class="fa fa-bar-chart"></span></div>
+                          	<p>Lorem Ipsum</p>
+	                        <h3>745+</h3>
+	                    </div>
+                      </td>
+
+                      <td class="o_mail_col_mv o_mail_col_container plr10" width="33%">
+                          <div class="box text-center">
+                          	<div class="icon"><span class="fa fa-building-o"></span></div>
+                          	<p>Lorem Ipsum</p>
+	                        <h3>325+</h3>
+	                    </div>
+                      </td>
+                      
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+</div> 
+<!-- end Counter -->
+
+<!-- Blog -->
+<div class="o_mail_block_two_cols" data-name="Two Columns" id="sh_blog_24">
+    <div class="o_mail_snippet_general">
+    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table pt0 mlr10">
+	           <tbody>
+		        <tr>
+		            <td width="100%" class="heading">
+		                <center>
+		                    <h3>Our Blog</h3>
+                    		<hr/>
+                    		<p></p>
+		                </center>
+		            </td>
+		        </tr>
+		     </tbody>
+		</table>
+        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt-0">
+            <tbody>
+                <tr>
+                    <td class="o_mail_col_mv o_mail_col_container" width="50%">
+                        <div class="box">
+                        	<div class="img">
+                        		<img src="/sh_emate/static/src/img/tmpl_24/hand-construction-plans-with-yellow-helmet-drawing-tool_1232-2909.png" class="d-block mx-auto" alt="Your Picture" />
+                        	</div>
+                            <div class="content">
+		                        <h5>Lorem ipsum dolor sit amet</h5>
+		                        <!-- <p class="place"><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit amet</p> -->
+		                        <p class="text">Lorem ipsum dolor sit, consectetur adipiscing elit.Lorem ipsum dolor sit, consectetur adipiscing elit.</p>
+		                        <a href="#" class="btn_readmore">Read More</a>
+		                    </div>
+                        </div>
+                    </td>
+
+                    <td class="o_mail_col_mv o_mail_col_container" width="50%">
+                        <div class="box">
+                        	<div class="img">
+                        		<img src="/sh_emate/static/src/img/tmpl_24/working-housing-project_1098-17511.png" class="d-block mx-auto" alt="Your Picture" />
+                        	</div>
+                            <div class="content">
+		                        <h5>Lorem ipsum dolor sit amet</h5>
+		                        <!-- <p class="place"><span class="fa fa-map-marker"></span> Lorem ipsum dolor sit amet</p> -->
+		                        <p class="text">Lorem ipsum dolor sit, consectetur adipiscing elit.Lorem ipsum dolor sit, consectetur adipiscing elit.</p>
+		                        <a href="#" class="btn_readmore">Read More</a>
+		                    </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- end Blog -->
+
+<!-- Team -->
+ <div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_team_24">
+      <div class="o_mail_snippet_general">
+	      <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_h_padding o_mail_v_padding o_mail_col_table">
+	          <tbody>
+		        <tr>
+		            <td width="100%" class="heading">
+		                <center>
+		                    <h3>Our Team</h3>
+                    		<hr/>
+                    		<p></p>
+		                </center>
+		            </td>
+		        </tr>
+		     </tbody>
+		  </table>
+      
+          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_h_padding o_mail_col_table three_col">
+              <tbody>
+                  <tr>
+                      <td class="o_mail_col_mv o_mail_col_container plr10" width="33%">
+                          	<div class="box text-center">
+		                        <div class="img">
+		                        	<img src="/sh_emate/static/src/img/tmpl_24/builder-posing-site_23-2147711026.png" alt="Image"></img>
+								</div>
+		                        <div class="content">
+		                        	<a href="#"><h5 class="title">Lorem Ipsum</h5></a>
+		                        	<p>Architech</p>
+		                        </div>
+		                        <div class="bottom_icon">
+		                        	<a title="Facebook" href="#"> <span class="fa fa-facebook"></span> </a>
+	         						<a title="Twitter" href="#" class="ml10"> <span class="fa fa-twitter"></span> </a>
+	         						<a title="LinkedIn" href="#" class="ml10"> <span class="fa fa-linkedin"></span> </a>
+		                        </div>
+	                    	</div>
+                      </td>
+
+                      <td class="o_mail_col_mv o_mail_col_container plr10" width="33%">
+                          <div class="box text-center">
+		                        <div class="img">
+		                        	<img src="/sh_emate/static/src/img/tmpl_24/young-construction-workers-hard-hats_135427-355.png" alt="Image"></img>
+								</div>
+		                        <div class="content">
+		                        	<a href="#"><h5 class="title">Lorem Ipsum</h5></a>
+		                        	<p>Supervisor</p>
+		                        </div>
+		                        <div class="bottom_icon">
+		                        	<a title="Facebook" href="#"> <span class="fa fa-facebook"></span> </a>
+	         						<a title="Twitter" href="#" class="ml10"> <span class="fa fa-twitter"></span> </a>
+	         						<a title="LinkedIn" href="#" class="ml10"> <span class="fa fa-linkedin"></span> </a>
+		                        </div>
+	                    	</div>
+                      </td>
+
+                      <td class="o_mail_col_mv o_mail_col_container plr10" width="33%">
+                          <div class="box text-center">
+		                        <div class="img">
+		                        	<img src="/sh_emate/static/src/img/tmpl_24/happy-repairman-overall-showing-thumbs-up_23-2148073213.png" alt="Image"></img>
+								</div>
+		                        <div class="content">
+		                        	<a href="#"><h5 class="title">Lorem Ipsum</h5></a>
+		                        	<p>Agent</p>
+		                        </div>
+		                        <div class="bottom_icon">
+		                        	<a title="Facebook" href="#"> <span class="fa fa-facebook"></span> </a>
+	         						<a title="Twitter" href="#" class="ml10"> <span class="fa fa-twitter"></span> </a>
+	         						<a title="LinkedIn" href="#" class="ml10"> <span class="fa fa-linkedin"></span> </a>
+		                        </div>
+	                    	</div>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+</div> 
+<!-- end Team -->
+
+<!-- footer -->
+<div class="o_mail_block_title_footer sh_emate_footer_17" data-name="Footer" id="sh_footer_24">
+    <div class="o_mail_snippet_general">
+    	
+        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+            <tbody>
+                <tr>
+                    <td width="100%" class="o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10">
+	                  <center>
+	                      <ul>
+	                          <li t-if="company_id.social_facebook">
+	                              <a t-att-href="company_id.social_facebook">
+	                                  <span class="fa fa-facebook"></span>
+	                              </a>
+	                          </li>
+	
+	
+	                          <li t-if="company_id.social_twitter">
+	                              <a t-att-href="company_id.social_twitter">
+	                                  <span class="fa fa-twitter"></span>
+	                              </a>
+	                          </li>                            
+	
+	                          <li t-if="company_id.social_linkedin">
+	                              <a t-att-href="company_id.social_linkedin">
+	                                  <span class="fa fa-linkedin"></span>
+	                              </a>
+	                          </li> 
+	                          
+	                      </ul>
+	                  </center>    
+              		</td>
+			 </tr>
+			 <tr>
+	              <td width="100%" class="o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10 addr">
+	                  <center>
+			                <p>905, Corporate Levels, 150ft. Ring Road Rajkot.</p>
+	                  </center>    
+	              </td>
+	          </tr>
+	          <tr>
+	              <td width="100%" class="o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10 mail_add">
+	                  <center>
+			                <p>info@softhealer.com</p>
+	                  </center>    
+	              </td>
+	          </tr>
+	          <tr>
+	              <td width="100%" class="o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10 contc">
+	                  <center>
+			                <p>0123456789</p>
+	                  </center>    
+	              </td>
+	          </tr>
+	          <tr>
+	              <td width="100%" class="o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker bottom-footer">
+	              	  <hr/>
+	                  <center>
+				        <p>Copyright © Softhealer Technologies</p>
+	                  </center>    
+	              </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- end footer -->
+
+          			
+</template>
+
+    
+    
+    
+
+</odoo>

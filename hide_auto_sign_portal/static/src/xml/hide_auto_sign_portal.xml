@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="t_template" xml:space="preserve">
+    <t t-extend="web.sign_name_and_signature">
+        <t t-jquery='.sign_name_and_signature' t-operation='replace'>
+            <div class="card-header">Hello</div>
+        </t>
+    </t>
+</templates>
+

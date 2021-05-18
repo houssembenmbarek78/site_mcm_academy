@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="id_many_releve_note_print_report_pdf">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.basic_layout">
+                        <style type="text/css">
+                            .page {
+                            line-height: 2 !important;
+                            font-size:18px !important;
+                            }
+                        </style>
+                        <t t-if="docs.note_exam_id">
+                            <t t-foreach="docs.note_exam_id[-1]" t-as="res"
+                               style="line-height:1.5;font-family:Montserrat;font-size:12%;page-break-before:always;">
+                                <t t-if="res.resultat == 'recu'">
+                                    <div class="page">
+                                        <div class="oe_structure"/>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <br></br>
+                                                <img src='/partner_exam/static/src/img/new_reussite.png' height="260"
+                                                     width="970"/>
+                                                <br></br>
+                                                Je soussigné <b>Nasserddine Cherih</b> agissant en tant que Directeur
+                                                Général du
+                                                centre de
+                                                formation Digimoov, agréé par le préfet de la région Ile de France sous
+                                                le
+                                                numéro
+                                                d'agrément 2019-0110, après délibération du Jury,
+                                                <br/>
+                                                Atteste que :
+                                                <br></br>
+                                                Prénom et Nom :
+                                                <strong>
+                                                    <span t-raw="'%s' % o.name if o.name else ''"/>
+                                                </strong>
+                                                <br/>
+                                                Né(e) le :
+                                                <strong>
+                                                    <span t-field="o.birthday"/>
+                                                </strong>
+                                                <br/>
+                                                Demeurant au :
+                                                <strong>
+                                                    <span t-raw="'%s' % o.street if o.street else ''"/>
+                                                    <span t-raw="'%s' % o.zip if o.zip else ''"/>
+                                                    <span t-raw="'%s' % o.city if o.city else ''"/>
+                                                </strong>
+                                                <br></br>
+                                                A été
+                                                <strong>
+                                                    <span t-raw="'%s' % o.note_exam_id[-1].mention"/>
+
+                                                </strong>
+                                                aux épreuves d’examen pour l’obtention de
+                                                l’attestation de capacité de transport léger de marchandises
+                                                organisé au centre d’examen situé au
+                                                <strong>
+                                                    <t t-if="o.mcm_session_id.adresse_examen">
+                                                        <span t-field='o.mcm_session_id[0].adresse_examen'/>
+                                                    </t>
+                                                </strong>
+                                                <br></br>
+                                                le
+                                                <strong>
+                                                    <t t-if="o.mcm_session_id.date_exam">
+                                                        <span t-field='o.mcm_session_id[0].date_exam'
+                                                              t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                    </t>
+                                                </strong>
+                                                pour son
+                                                <strong>
+                                                    <t t-foreach="docs.note_exam_id[-1]" t-as="data">
+                                                        <t t-if="data.nombre_de_passage">
+                                                            <span t-raw="'%s' % data.nombre_de_passage if data.nombre_de_passage else ''"/>
+                                                        </t>
+                                                    </t>
+                                                </strong>
+                                                passage, en ayant obtenu les notes
+                                                suivantes :
+                                                <img src='/partner_exam/static/src/img/text_1_2.png'
+                                                     style="height:40px;width:840px;padding-left:50px;"/>
+                                                <br></br>
+                                                <p align="center">
+                                                    <b>
+                                                        Conformément à l’arrêté du 28 décembre 2011 relatif à la
+                                                        délivrance des
+                                                        attestations
+                                                        de capacité, professionnelle
+                                                        permettant l’exercice de la profession de transporteur public
+                                                        routier, article 7
+                                                    </b>
+                                                </p>
+                                                <div class="row" style="padding-top:5px!important;">
+                                                    <div class="col-1"></div>
+                                                    <div class="col-10">
+                                                        <table class="table table-bordered"
+                                                               style="border:1px solid black;">
+                                                            <tr align="center">
+                                                                <th>EPREUVES</th>
+                                                                <th>NOTES/20</th>
+                                                            </tr>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="center">
+                                                                        <b>EPREUVE A - QUESTIONS A CHOIX UNIQUE</b>
+                                                                    </td>
+                                                                    <td align="center">
+                                                                        <strong>
+                                                                            <t t-if="o.note_exam_id[-1].epreuve_a &gt; 0">
+                                                                                <span t-raw="'%s' % o.note_exam_id[-1].epreuve_a if o.note_exam_id[-1].epreuve_a else 'Absent'"/>
+                                                                            </t>
+                                                                            <t t-if="not o.note_exam_id[-1].epreuve_a &gt; 0">
+                                                                                <span>Absent</span>
+                                                                            </t>
+                                                                        </strong>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="center">
+                                                                        <b>EPREUVE B - QUESTION DE RÉDACTION</b>
+                                                                    </td>
+                                                                    <td align="center">
+                                                                        <strong>
+                                                                            <span t-raw="'%s' % o.note_exam_id[-1].epreuve_b"/>
+                                                                        </strong>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row" style="padding-top:10px!important;">
+                                                    <div class="col-1"></div>
+                                                    <div class="col-10">
+                                                        <table class="table table-bordered">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="center">
+                                                                        <b>Moyenne générale</b>
+                                                                    </td>
+                                                                    <td align="center">
+                                                                        <strong>
+                                                                            <span t-raw="'%s' % o.note_exam_id[-1].moyenne_generale"/>
+                                                                        </strong>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="center">
+                                                                        <b>Résultat</b>
+                                                                    </td>
+                                                                    <td align="center">
+                                                                        <strong>
+                                                                            <t t-if="docs.note_exam_id">
+                                                                                <t t-foreach="docs.note_exam_id[-1]"
+                                                                                   t-as="res"
+                                                                                   style="line-height:1.5;font-family:Montserrat;font-size:12%;page-break-before:always;">
+                                                                                    <t t-if="res.resultat == 'recu'">
+                                                                                        <span t-raw="'%s' % o.note_exam_id[-1].resultat"/>
+                                                                                    </t>
+                                                                                    <t t-else=""></t>
+                                                                                </t>
+                                                                            </t>
+                                                                        </strong>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <br></br>
+                                                <p align="center">
+                                                    <b>Il est rappelé que d’après l’arrêté du 28 décembre 2011 relatif à
+                                                        la
+                                                        délivrance des attestations de capacité
+                                                        professionnelle permettant l'exercice de la profession de
+                                                        transporteur
+                                                        public routier, sont déclarés reçus
+                                                        les candidats qui ont obtenu, pour l'ensemble des épreuves, une
+                                                        note au
+                                                        moins égale à 120 sur 200 soit
+                                                        12/20, sous réserve qu'ils aient obtenu au moins 50 points soit
+                                                        10/20
+                                                        pour
+                                                        le questionnaire à choix
+                                                        multiples et 40 points soit 8/20 pour l'épreuve à réponses
+                                                        rédigées.
+                                                    </b>
+                                                </p>
+                                                <br></br>
+                                                <div class="row" style="padding-left:100px!important;">
+                                                    <table border="0" width="700">
+                                                        <thead>
+                                                            <tr align="center">
+                                                                <th>Signature</th>
+                                                                <th width="400"></th>
+                                                                <th>Date</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center">
+                                                                    <img src='/partner_exam/static/src/img/signature.png'
+                                                                         style="height:100px; width:200px;"/>
+                                                                    <!--                                                        <span t-field="footer.date_today"-->
+                                                                    <!--                                                              t-field-options='{"format": "dd/MM/yyyy"}'/>-->
+                                                                </td>
+                                                                <td></td>
+                                                                <td align="center">
+                                                                    <span>Paris</span>
+<!--                                                                    <t t-if="docs.note_exam_id">-->
+<!--                                                                        <t t-foreach="docs.note_exam_id[-1]"-->
+<!--                                                                           t-as="date_envoi"-->
+<!--                                                                           style="line-height:1.5;font-family:Montserrat;font-size:12 %;page-break-before:always;">-->
+<!--                                                                            <t t-if="date_envoi.date_today">-->
+<!--                                                                                <span t-field="date_envoi.date_today"-->
+<!--                                                                                      t-field-options='{"format": "dd/MM/yyyy"}'/>-->
+<!--                                                                            </t>-->
+<!--                                                                        </t>-->
+<!--                                                                    </t>-->
+                                                                    <span t-field="o.note_exam_id[-1].date_today"
+                                                                                      t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <br></br>
+                                                <br></br>
+                                                <img src='/partner_exam/static/src/img/footer_attestation_r.png'
+                                                     height="150"
+                                                     width="1000"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </t>
+                            </t>
+                        </t>
+                        <!--                        This is the second Template if the last line added in the list of Examen(notes)= Ajourne or absent-->
+                        <t t-if="docs.note_exam_id">
+                            <!--                            Using the foreach with [-1] to get the last line in list-->
+                            <t t-foreach="docs.note_exam_id[-1]" t-as="res"
+                               style="line-height:1.5;font-family:Montserrat;font-size:12%;page-break-before:always;">
+                                <t t-if="not res.resultat == 'recu'">
+                                    <style type="text/css">
+                                        .page {
+                                        line-height: 2 !important;
+                                        }
+                                    </style>
+                                    <div class="page">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <img src='/partner_exam/static/src/img/attestation_ajournement.png'
+                                                     height="300"
+                                                     width="970"/>
+                                                <br></br>
+                                                Je soussigné <b>Nasserddine Cherih</b> agissant en tant que Directeur
+                                                Général du
+                                                centre de
+                                                formation Digimoov, agréé par le préfet de la région Ile de France sous
+                                                le
+                                                numéro
+                                                d'agrément 2019-0110, après délibération du Jury,
+                                                <br></br>
+
+                                                Atteste que :
+                                                <br></br>
+                                                Prénom et Nom :
+                                                <strong>
+                                                    <span t-raw="'%s' % o.name if o.name else ''"/>
+                                                </strong>
+                                                <br/>
+                                                Né(e) le :
+                                                <strong>
+                                                    <span t-field="o.birthday"/>
+                                                </strong>
+                                                <br/>
+                                                Demeurant au :
+                                                <strong>
+                                                    <span t-raw="'%s' % o.street if o.street else ''"/>
+                                                    <span t-raw="'%s' % o.zip if o.zip else ''"/>
+                                                    <span t-raw="'%s' % o.city if o.city else ''"/>
+                                                </strong>
+                                                <br></br>
+                                                A été
+                                                <strong>
+                                                        <span t-raw="'%s' % o.note_exam_id[-1].mention if o.note_exam_id[-1].mention else ''"/>
+                                                </strong>
+                                                aux épreuves d’examen pour l’obtention de
+                                                l’attestation de capacité de transport léger de marchandises
+                                                organisé au centre d’examen situé au
+                                                <strong>
+                                                    <span t-field='o.mcm_session_id[0].adresse_examen'/>
+                                                </strong>
+                                                <br></br>
+                                                le
+                                                <strong>
+                                                    <t t-if="o.mcm_session_id.date_exam">
+                                                        <span t-field='o.mcm_session_id[0].date_exam'
+                                                              t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                    </t>
+                                                </strong>
+                                                pour son
+                                                <strong>
+                                                        <span t-raw="'%s' % o.note_exam_id[-1].nombre_de_passage if o.note_exam_id[-1].nombre_de_passage else ''"/>
+                                                </strong>
+                                                passage, en ayant obtenu les notes
+                                                suivantes :
+                                                <img src='/partner_exam/static/src/img/text_1_2.png'
+                                                     style="height:40px;width:840px;padding-left:50px;"/>
+                                                <br></br>
+                                                <p align="center">
+                                                    <b>
+                                                        Conformément à l’arrêté du 28 décembre 2011 relatif à la
+                                                        délivrance des
+                                                        attestations
+                                                        de capacité, professionnelle
+                                                        permettant l’exercice de la profession de transporteur public
+                                                        routier, article 7
+                                                    </b>
+                                                </p>
+                                                <div class="row" style="padding-top:5px!important;">
+                                                    <div class="col-1"></div>
+                                                    <div class="col-10">
+                                                        <table class="table table-bordered"
+                                                               style="border:1px solid black;">
+                                                            <tr align="center">
+                                                                <th>EPREUVES</th>
+                                                                <th>NOTES/20</th>
+                                                            </tr>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="center">
+                                                                        <b>EPREUVE A - QUESTIONS A CHOIX UNIQUE</b>
+                                                                    </td>
+                                                                    <td align="center">
+                                                                        <strong>
+                                                                            <t t-if="o.note_exam_id[-1].epreuve_a &gt; 0">
+                                                                                <span t-raw="'%s' % o.note_exam_id[-1].epreuve_a if o.note_exam_id[-1].epreuve_a else 'Absent'"/>
+                                                                            </t>
+                                                                            <t t-if="not o.note_exam_id[-1].epreuve_a &gt; 0">
+                                                                                <span>Absent</span>
+                                                                            </t>
+
+                                                                        </strong>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="center">
+                                                                        <b>EPREUVE B - QUESTION DE RÉDACTION</b>
+                                                                    </td>
+                                                                    <td align="center">
+                                                                        <strong>
+                                                                            <!--                                                                            <t t-foreach="docs.note_exam_id[-1]"-->
+                                                                            <!--                                                                               t-as="b">-->
+                                                                            <!--                                                                                <t t-if="b.epreuve_b &gt; 0">-->
+                                                                            <!--                                                                                    <span t-field="b.epreuve_b"/>-->
+                                                                            <!--                                                                                </t>-->
+                                                                            <!--                                                                                <t t-else="">-->
+                                                                            <!--                                                                                    <span>Absent</span>-->
+                                                                            <!--                                                                                </t>-->
+                                                                            <!--                                                                            </t>-->
+                                                                            <span t-raw="'%s' % o.note_exam_id[-1].epreuve_b"/>
+                                                                        </strong>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="col-1"></div>
+                                                </div>
+
+                                                <div class="row" style="padding-top:10px!important;">
+                                                    <div class="col-1"></div>
+                                                    <div class="col-10">
+                                                        <table class="table table-bordered">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="center">
+                                                                        <b>Moyenne générale</b>
+                                                                    </td>
+                                                                    <td align="center">
+                                                                        <strong>
+                                                                            <!--                                                                            <t t-foreach="docs.note_exam_id[-1]"-->
+                                                                            <!--                                                                               t-as="moy">-->
+                                                                            <!--                                                                                <t t-if="moy.moyenne_generale &gt; 0">-->
+                                                                            <!--                                                                                    <span t-field="moy.moyenne_generale"/>-->
+                                                                            <!--                                                                                </t>-->
+                                                                            <!--                                                                                <t t-else="">-->
+                                                                            <!--                                                                                    <span>Absent</span>-->
+                                                                            <!--                                                                                </t>-->
+                                                                            <!--                                                                            </t>-->
+                                                                            <span t-raw="'%s' % o.note_exam_id[-1].moyenne_generale"/>
+                                                                        </strong>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="center">
+                                                                        <b>Résultat</b>
+                                                                    </td>
+                                                                    <td align="center">
+                                                                        <strong>
+                                                                            <t t-if="docs.note_exam_id">
+                                                                                <t t-foreach="docs.note_exam_id[-1]"
+                                                                                   t-as="res"
+                                                                                   style="line-height:1.5;font-family:Montserrat;font-size:12%;page-break-before:always;">
+                                                                                    <t t-if="res.resultat == 'ajourne'">
+                                                                                        <span t-raw="'%s' % o.note_exam_id[-1].resultat"/>
+                                                                                    </t>
+                                                                                    <t t-else=""></t>
+                                                                                </t>
+                                                                            </t>
+                                                                        </strong>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="col-1"></div>
+                                                </div>
+                                                <br></br>
+                                                <center>
+                                                    <b>Il est rappelé que d’après l’arrêté du 28 décembre 2011 relatif à
+                                                        la
+                                                        délivrance des attestations de capacité
+                                                        professionnelle permettant l'exercice de la profession de
+                                                        transporteur
+                                                        public routier, sont déclarés reçus
+                                                        les candidats qui ont obtenu, pour l'ensemble des épreuves, une
+                                                        note au
+                                                        moins égale à 120 sur 200 soit
+                                                        12/20, sous réserve qu'ils aient obtenu au moins 50 points soit
+                                                        10/20 pour
+                                                        le questionnaire à choix
+                                                        multiples et 40 points soit 8/20 pour l'épreuve à réponses
+                                                        rédigées.
+                                                    </b>
+                                                </center>
+                                                <br></br>
+                                                <div class="row" style="padding-left:100px!important;">
+                                                    <table border="0" width="700">
+                                                        <thead>
+                                                            <tr align="center">
+                                                                <th>Signature</th>
+                                                                <th width="400"></th>
+                                                                <th>Date</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center">
+                                                                    <img src='/partner_exam/static/src/img/signature.png'
+                                                                         style="height:100px; width:200px;"/>
+                                                                </td>
+                                                                <td></td>
+                                                                <td align="center">
+                                                                    <span>Paris</span>
+                                                                   <span t-field="o.note_exam_id[-1].date_today"
+                                                                                      t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <br></br>
+                                                <br></br>
+                                                <img src='/partner_exam/static/src/img/footer_attestation_r.png'
+                                                     height="150"
+                                                     width="1000"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </t>
+                            </t>
+                        </t>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

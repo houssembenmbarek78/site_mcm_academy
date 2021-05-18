@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Shape template 1 -->
+<template id="sh_emate_shape_tmpl_1" name="Shape 1">
+	
+	<div class="sh_emate_shape_1">
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_footer_top_29">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0 pb0">
+                    <tbody>
+                    	<tr>
+                            <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+                                <div>
+                                    <img src="/sh_emate/static/src/img/tmpl_29/footer_top.png" class="d-block mx-auto footer_top_img" alt="footer_top_img" />
+                                </div>
+                            </td>
+                        </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+	</div>
+	
+</template>
+<!-- end Shape template 1  -->
+
+</odoo>

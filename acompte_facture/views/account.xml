@@ -6,15 +6,34 @@
         <field name="inherit_id" ref="account.view_move_form"/>
         <field name="arch" type="xml">
             <xpath expr="//button[@name='action_reverse']" position="after">
-                <button name="action_create_acompte" id="account_invoice_acompte_btn" type="object" context="{'default_amount': amount_total}"
+                <button name="action_create_acompte" id="account_invoice_acompte_btn" type="object"
+                        context="{'default_amount': amount_untaxed}"
                         attrs="{'invisible': ['|', '|', ('state', '!=', 'posted'), ('invoice_payment_state', '!=', 'not_paid'), ('type', 'not in', ('out_invoice'))]}"
                         string="Créer une facture d’acompte" groups="account.group_account_invoice"/>
             </xpath>
+
             <xpath expr="//field[@name='amount_untaxed']" position="before">
-                <label for="pourcentage_acompte"/>
+                <field name="type_facture" invisible="1"/>
+                <label for="pourcentage_acompte" attrs="{'invisible': [('type_facture', '=', 'web')]}"/>
                 <div class="oe_subtotal_footer_separator">
-                    <field name="pourcentage_acompte" class="oe_inline"  attrs="{'invisible': [('pourcentage_acompte', '=', False)]}"/><span class="oe_inline">%</span>
+                    <field name="pourcentage_acompte" class="oe_inline" readonly="False"
+                           attrs="{'invisible': [('type_facture', '=', 'web')]}" force_save="1"/>
+                    <span attrs="{'invisible': [('type_facture', '=', 'web')]}">%</span>
                 </div>
+
+            </xpath>
+
+            <xpath expr="//field[@name='amount_untaxed']" position="after">
+                <field name="amount_paye" string = 'Payé'  force_save="1" attrs="{'invisible': [('type_facture', '=', 'web')]}"/>
+                <field name="restamount" force_save="1" attrs="{'invisible': [('type_facture', '=', 'web')]}"/>
+            </xpath>
+            <xpath expr="//notebook/page/group[1]" position="inside" attrs="{'invisible': [('type_facture', '=', 'web')]}" invisible="True">
+                <field name="amount_residual" class="oe_subtotal_footer_separator"
+                       attrs="{'invisible': [('state', '=', 'draft')]}" force_save="1" invisible="True"/>
+            </xpath>
+            <xpath expr="//notebook/page/group[1]" position="inside" attrs="{'invisible': [('type_facture', '=', 'web')]}" invisible="True">
+                <field name="amount_untaxed" class="oe_subtotal_footer_separator"
+                       attrs="{'invisible': [('state', '=', 'draft')]}" force_save="1" invisible="True"/>
             </xpath>
         </field>
     </record>

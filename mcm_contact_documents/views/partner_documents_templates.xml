@@ -26,7 +26,16 @@
     <template id="portal_my_documents" name="Mes Documents">
         <t t-call="portal.portal_layout">
             <t t-set="breadcrumbs_searchbar" t-value="True"/>
-            <form method="POST" t-attf-action="/new_documents">
+            <form method="POST" t-attf-action="/new_documents" t-if="website.id==1">
+                <h3>Documents
+                    <t t-call="portal.portal_searchbar"/>
+                    <button name="create_documents" type="action" class="btn btn-primary" groups="base.group_portal"
+                            style="float: right; margin-right: 5px;">Charger mes documents
+                    </button>
+                </h3>
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+            </form>
+            <form method="POST" t-attf-action="/charger_mes_documents" t-if="website.id==2">
                 <h3>Documents
                     <t t-call="portal.portal_searchbar"/>
                     <button name="create_documents" type="action" class="btn btn-primary" groups="base.group_portal"

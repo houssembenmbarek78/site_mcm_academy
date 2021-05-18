@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+									<!-- Image -->
+									 <t t-set="_cp" t-value="dic_events.get( event.id  ) or {}"/>
+								     <div t-attf-class="o_record_cover_container d-flex flex-column h-100 #{use_size and _cp.get('resize_class')} #{use_text_size and _cp.get('text_size_class')} #{use_text_align and _cp.get('text_align_class')} #{additionnal_classes}">
+							         <div class="o_record_cover_component o_record_cover_image" t-attf-style="width: 100%;height: 100px;background-image: #{_cp.get('background-image')};"/>
+							        	<t t-raw="0"/>
+							    	 </div>
+								    	
+	                            <!-- Short Date Month & Day only -->
+	                            <div class="o_wevent_event_date position-absolute bg-white shadow-sm">
+	                                <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'format': 'LLL'}" class="o_wevent_event_month"/>
+	                                <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'format': 'dd'}" class="o_wevent_event_day"/>
+	                            </div>
+	                            
+		                        <!-- Start Date & Time -->
+		                        <time itemprop="startDate" t-att-datetime="event.date_begin">
+		                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'date_only': 'true', 'format': 'long'}"/> -
+		                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'time_only': 'true', 'format': 'short'}"/>
+		                        </time>   
+		                        
+                                <!-- short description -->
+                                <p class="text-center o_mail_no_margin" t-field="event.sh_emate_short_description"/>
+                                
+		                        <!-- Title -->
+		                        <h5 t-attf-class="card-title mt-2 mb-0 text-truncate #{(not event.website_published) and 'text-danger'}">
+		                            <a t-attf-href="/event/#{ event.id }" class="text-reset text-decoration-none" itemprop="url">
+		                                <span t-field="event.name" itemprop="name"/>
+		                            </a>
+		                        </h5>
+		                                                        	
+		                        <!-- Organizer -->
+		                        <div t-if="event.organizer_id" class="mb-3">
+		                            <small class="text-muted text-truncate">Organizer: <span t-field="event.organizer_id" itemprop="organizer"/></small>
+		                        </div>
+                        
+                        
+                        		<!-- Organizer in paragraph -->
+		                		<p t-if="event.organizer_id" class="author">Organized By: <span t-field="event.organizer_id" itemprop="organizer"/> </p>                        
+                        
+		                        <!-- Location -->
+		                        <div t-if="event.is_online">Online</div>
+		                        <div t-else="" itemprop="location" t-field="event.address_id" t-options="{'widget': 'contact', 'fields': ['city'], 'no_marker': 'true'}"/>
+		                        
+		                        <!-- Read More Button -->
+                                <div class="text-center" style="margin-top:15px;">
+                                    <a role="button" class="btn btn-link" t-attf-href="/event/#{ event.id }">Read More...</a>
+                                </div>		                                                                                		                        	                            
+	                            								    	
+								    	
+
+
+            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+                <tbody>
+                    <tr>
+
+
+	           		<t t-if="events">           	
+	           		<t t-foreach="events" t-as="event">     
+
+                    
+                        <td style="vertical-align:top;width:180px;" class="o_mail_col_mv o_mail_col_container">
+                            <div>
+                                
+                                <!-- 
+                                <img src="/mass_mailing/static/src/img/theme_basic/s_default_image_block_three_cols_1.jpg" class="d-block mx-auto" alt="Your Picture" />
+                                 -->
+                               
+									 <t t-set="_cp" t-value="dic_events.get( event.id  ) or {}"/>
+								    	<div t-attf-class="o_record_cover_container d-flex flex-column h-100 #{use_size and _cp.get('resize_class')} #{use_text_size and _cp.get('text_size_class')} #{use_text_align and _cp.get('text_align_class')} #{additionnal_classes}">
+								        <div class="o_record_cover_component o_record_cover_image" t-attf-style="width: 100%;height: 100px;background-image: #{_cp.get('background-image')};"/>
+								        
+								        <!-- 
+								        <div t-if="use_filters" t-attf-class="o_record_cover_component o_record_cover_filter #{_cp.get('background-color')}" t-attf-style="opacity: #{_cp.get('opacity', 0.0)};"/>
+								         -->
+								        
+								        <t t-raw="0"/>
+								    </div>
+                                    
+                                
+                                <!-- short description -->
+                                <p class="text-center o_mail_no_margin" t-field="event.sh_emate_short_description"/>
+                                    
+	                            <!-- Short Date -->
+	                            <div class="o_wevent_event_date position-absolute bg-white shadow-sm">
+	                                <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'format': 'LLL'}" class="o_wevent_event_month"/>
+	                                <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'format': 'dd'}" class="o_wevent_event_day"/>
+	                            </div>
+                            
+                        
+		                        <!-- Title -->
+		                        <h5 t-attf-class="card-title mt-2 mb-0 text-truncate #{(not event.website_published) and 'text-danger'}">
+		                            <a t-attf-href="/event/#{ event.id }" class="text-reset text-decoration-none" itemprop="url">
+		                                <span t-field="event.name" itemprop="name"/>
+		                            </a>
+		                        </h5>
+                            
+		                        <!-- Organizer -->
+		                        <div t-if="event.organizer_id" class="mb-3">
+		                            <small class="text-muted text-truncate">Organizer: <span t-field="event.organizer_id" itemprop="organizer"/></small>
+		                        </div>
+                        
+                        
+                        		<!-- Organizer in paragraph -->
+		                		<p t-if="event.organizer_id" class="author">Organized By: <span t-field="event.organizer_id" itemprop="organizer"/> </p>                        
+                        
+                        
+		                        <!-- Location -->
+		                        <div t-if="event.is_online">Online</div>
+		                        <div t-else="" itemprop="location" t-field="event.address_id" t-options="{'widget': 'contact', 'fields': ['city'], 'no_marker': 'true'}"/>
+		                        
+		                        <!-- Start Date & Time -->
+		                        <time itemprop="startDate" t-att-datetime="event.date_begin">
+		                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'date_only': 'true', 'format': 'long'}"/> -
+		                            <span t-field="event.with_context(tz=event.date_tz).date_begin" t-options="{'time_only': 'true', 'format': 'short'}"/>
+		                        </time>                            
+                            
+                                
+                                <div class="text-center" style="margin-top:15px;">
+                                    <a role="button" class="btn btn-link" t-attf-href="/event/#{ event.id }">Read More...</a>
+                                </div>
+                            </div>
+                        </td>
+
+				</t>
+				</t>
+
+
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<template id="sh_emate_event_tmpl_1" name="Event 1">
+   
+
+	
+	    <div class="sh_emate_event_div_1 o_mail_block_two_cols">
+	        <div id="sh_emate_event_div_1" data-tmpl-item="sh_emate_event_tmpl_item_1">
+	           
+   
+   
+    <div class="o_mail_block_three_cols">
+        <div class="o_mail_snippet_general js_cls_sh_mail_snippet_general">
+            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+                <tbody>
+                    <tr>
+                        <td style="vertical-align:top;width:180px;" class="o_mail_col_mv o_mail_col_container">
+                            <div>
+                                <img src="/mass_mailing/static/src/img/theme_basic/s_default_image_block_three_cols_1.jpg" class="d-block mx-auto" alt="Your Picture" />
+                                <h4 class="text-center">Column Title</h4>
+                                <p class="text-center o_mail_no_margin">
+                                    A short description
+                                </p>
+                                <div class="text-center" style="margin-top:15px;">
+                                    <a role="button" href="#" class="btn btn-link">Read More...</a>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td style="vertical-align:top;width:180px;" class="o_mail_col_mv o_mail_col_container">
+                            <div>
+                                <img src="/mass_mailing/static/src/img/theme_basic/s_default_image_block_three_cols_2.jpg" class="d-block mx-auto" alt="Your Picture" />
+                                <h4 class="text-center">Column Title</h4>
+                                <p class="text-center o_mail_no_margin">
+                                    A short description
+                                </p>
+                                <div class="text-center" style="margin-top:15px;">
+                                    <a role="button" href="#" class="btn btn-link">Read More...</a>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td style="vertical-align:top;width:180px;" class="o_mail_col_mv o_mail_col_container">
+                            <div>
+                                <img src="/mass_mailing/static/src/img/theme_basic/s_default_image_block_three_cols_3.jpg" class="d-block mx-auto" alt="Your Picture" />
+                                <h4 class="text-center">Column Title</h4>
+                                <p class="text-center o_mail_no_margin">
+                                    A short description
+                                </p>
+                                <div class="text-center" style="margin-top:15px;">
+                                    <a role="button" href="#" class="btn btn-link">Read More...</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</div>
+</div>
+
+    
+    
+</template>
+
+
+
+
+
+</odoo>

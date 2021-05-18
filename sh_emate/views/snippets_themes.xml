@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <template id="qunit_suite" inherit_id="web_editor.assets_wysiwyg">
+        <xpath expr="." position="inside">
+
+            <script type="text/javascript" src="/sh_emate/static/src/js/s_product_editor.js"/>
+
+        </xpath>
+    </template>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+           
+
+
+
+
+
+
+<template id="sh_emate_snippets" inherit_id="mass_mailing.email_designer_snippets">
+   
+    <xpath expr="//div[@id='email_designer_body_elements']" position="inside">
+    	
+	   	
+		<!-- HEADER -->
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/header/1.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_2" t-thumbnail="/sh_emate/static/src/img/blocks/header/2.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_3" t-thumbnail="/sh_emate/static/src/img/blocks/header/3.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_4" t-thumbnail="/sh_emate/static/src/img/blocks/header/4.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_5" t-thumbnail="/sh_emate/static/src/img/blocks/header/5.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_6" t-thumbnail="/sh_emate/static/src/img/blocks/header/6.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_7" t-thumbnail="/sh_emate/static/src/img/blocks/header/7.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_8" t-thumbnail="/sh_emate/static/src/img/blocks/header/8.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_9" t-thumbnail="/sh_emate/static/src/img/blocks/header/9.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_10" t-thumbnail="/sh_emate/static/src/img/blocks/header/10.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_11" t-thumbnail="/sh_emate/static/src/img/blocks/header/11.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_12" t-thumbnail="/sh_emate/static/src/img/blocks/header/2.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_13" t-thumbnail="/sh_emate/static/src/img/blocks/header/13.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_14" t-thumbnail="/sh_emate/static/src/img/blocks/header/14.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_15" t-thumbnail="/sh_emate/static/src/img/blocks/header/15.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_16" t-thumbnail="/sh_emate/static/src/img/blocks/header/16.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_17" t-thumbnail="/sh_emate/static/src/img/blocks/header/17.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_18" t-thumbnail="/sh_emate/static/src/img/blocks/header/18.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_19" t-thumbnail="/sh_emate/static/src/img/blocks/header/19.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_20" t-thumbnail="/sh_emate/static/src/img/blocks/header/20.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_21" t-thumbnail="/sh_emate/static/src/img/blocks/header/21.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_22" t-thumbnail="/sh_emate/static/src/img/blocks/header/22.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_23" t-thumbnail="/sh_emate/static/src/img/blocks/header/23.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_24" t-thumbnail="/sh_emate/static/src/img/blocks/header/24.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_25" t-thumbnail="/sh_emate/static/src/img/blocks/header/25.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_26" t-thumbnail="/sh_emate/static/src/img/blocks/header/26.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_27" t-thumbnail="/sh_emate/static/src/img/blocks/header/27.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_28" t-thumbnail="/sh_emate/static/src/img/blocks/header/28.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_29" t-thumbnail="/sh_emate/static/src/img/blocks/header/29.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_header_tmpl_30" t-thumbnail="/sh_emate/static/src/img/blocks/header/30.svg" />
+
+            <!-- Banner -->
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/banner/1.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_2" t-thumbnail="/sh_emate/static/src/img/blocks/banner/2.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_3" t-thumbnail="/sh_emate/static/src/img/blocks/banner/3.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_4" t-thumbnail="/sh_emate/static/src/img/blocks/banner/4.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_5" t-thumbnail="/sh_emate/static/src/img/blocks/banner/5.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_6" t-thumbnail="/sh_emate/static/src/img/blocks/banner/6.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_7" t-thumbnail="/sh_emate/static/src/img/blocks/banner/7.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_8" t-thumbnail="/sh_emate/static/src/img/blocks/banner/8.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_9" t-thumbnail="/sh_emate/static/src/img/blocks/banner/9.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_10" t-thumbnail="/sh_emate/static/src/img/blocks/banner/10.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_11" t-thumbnail="/sh_emate/static/src/img/blocks/banner/11.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_12" t-thumbnail="/sh_emate/static/src/img/blocks/banner/12.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_13" t-thumbnail="/sh_emate/static/src/img/blocks/banner/13.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_14" t-thumbnail="/sh_emate/static/src/img/blocks/banner/14.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_15" t-thumbnail="/sh_emate/static/src/img/blocks/banner/15.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_16" t-thumbnail="/sh_emate/static/src/img/blocks/banner/16.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_17" t-thumbnail="/sh_emate/static/src/img/blocks/banner/17.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_18" t-thumbnail="/sh_emate/static/src/img/blocks/banner/18.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_19" t-thumbnail="/sh_emate/static/src/img/blocks/banner/19.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_20" t-thumbnail="/sh_emate/static/src/img/blocks/banner/20.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_21" t-thumbnail="/sh_emate/static/src/img/blocks/banner/21.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_22" t-thumbnail="/sh_emate/static/src/img/blocks/banner/22.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_23" t-thumbnail="/sh_emate/static/src/img/blocks/banner/23.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_24" t-thumbnail="/sh_emate/static/src/img/blocks/banner/24.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_25" t-thumbnail="/sh_emate/static/src/img/blocks/banner/25.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_26" t-thumbnail="/sh_emate/static/src/img/blocks/banner/26.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_27" t-thumbnail="/sh_emate/static/src/img/blocks/banner/banner_26.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_28" t-thumbnail="/sh_emate/static/src/img/blocks/banner/static_event_banner_26.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_29" t-thumbnail="/sh_emate/static/src/img/blocks/banner/27.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_30" t-thumbnail="/sh_emate/static/src/img/blocks/banner/28.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_31" t-thumbnail="/sh_emate/static/src/img/blocks/banner/29.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_32" t-thumbnail="/sh_emate/static/src/img/blocks/banner/30.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_33" t-thumbnail="/sh_emate/static/src/img/blocks/banner/31.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_banner_tmpl_34" t-thumbnail="/sh_emate/static/src/img/blocks/banner/32.svg" />
+
+            <!-- topbar -->
+
+            <t t-snippet="sh_emate.sh_emate_topbar_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/topbar/1.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_topbar_tmpl_2" t-thumbnail="/sh_emate/static/src/img/blocks/topbar/2.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_topbar_tmpl_3" t-thumbnail="/sh_emate/static/src/img/blocks/topbar/3.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_topbar_tmpl_4" t-thumbnail="/sh_emate/static/src/img/blocks/topbar/4.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_topbar_tmpl_5" t-thumbnail="/sh_emate/static/src/img/blocks/topbar/5.svg" />
+
+            <!-- Text_Image -->
+
+            <t t-snippet="sh_emate.sh_emate_image_text_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/Text_Image/1.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_image_text_tmpl_2" t-thumbnail="/sh_emate/static/src/img/blocks/Text_Image/2.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_image_text_tmpl_3" t-thumbnail="/sh_emate/static/src/img/blocks/Text_Image/3.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_image_text_tmpl_4" t-thumbnail="/sh_emate/static/src/img/blocks/Text_Image/4.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_image_text_tmpl_5" t-thumbnail="/sh_emate/static/src/img/blocks/Text_Image/5.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_image_text_tmpl_6" t-thumbnail="/sh_emate/static/src/img/blocks/Text_Image/6.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_image_text_tmpl_7" t-thumbnail="/sh_emate/static/src/img/blocks/Text_Image/7.svg" />
+
+            <!-- Category -->
+
+            <t t-snippet="sh_emate.sh_emate_category_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/category/category.svg" />
+
+            <!-- Deal -->
+
+            <t t-snippet="sh_emate.sh_emate_deal_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/deal/deal.svg" />
+
+            <!-- Features -->
+
+            <t t-snippet="sh_emate.sh_emate_feature_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/features/feature.svg" />
+
+            <!-- footer -->
+
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/footer/1.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_2" t-thumbnail="/sh_emate/static/src/img/blocks/footer/2.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_3" t-thumbnail="/sh_emate/static/src/img/blocks/footer/3.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_4" t-thumbnail="/sh_emate/static/src/img/blocks/footer/4.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_5" t-thumbnail="/sh_emate/static/src/img/blocks/footer/5.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_6" t-thumbnail="/sh_emate/static/src/img/blocks/footer/6.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_7" t-thumbnail="/sh_emate/static/src/img/blocks/footer/7.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_8" t-thumbnail="/sh_emate/static/src/img/blocks/footer/8.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_9" t-thumbnail="/sh_emate/static/src/img/blocks/footer/9.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_10" t-thumbnail="/sh_emate/static/src/img/blocks/footer/10.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_11" t-thumbnail="/sh_emate/static/src/img/blocks/footer/11.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_12" t-thumbnail="/sh_emate/static/src/img/blocks/footer/12.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_13" t-thumbnail="/sh_emate/static/src/img/blocks/footer/13.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_14" t-thumbnail="/sh_emate/static/src/img/blocks/footer/14.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_15" t-thumbnail="/sh_emate/static/src/img/blocks/footer/15.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_16" t-thumbnail="/sh_emate/static/src/img/blocks/footer/16.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_17" t-thumbnail="/sh_emate/static/src/img/blocks/footer/17.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_18" t-thumbnail="/sh_emate/static/src/img/blocks/footer/18.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_19" t-thumbnail="/sh_emate/static/src/img/blocks/footer/19.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_20" t-thumbnail="/sh_emate/static/src/img/blocks/footer/20.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_21" t-thumbnail="/sh_emate/static/src/img/blocks/footer/21.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_22" t-thumbnail="/sh_emate/static/src/img/blocks/footer/22.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_23" t-thumbnail="/sh_emate/static/src/img/blocks/footer/23.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_24" t-thumbnail="/sh_emate/static/src/img/blocks/footer/24.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_footer_tmpl_25" t-thumbnail="/sh_emate/static/src/img/blocks/footer/25.svg" />
+
+            <!-- copyright -->
+
+            <t t-snippet="sh_emate.sh_emate_copyright_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/copyright/1.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_copyright_tmpl_2" t-thumbnail="/sh_emate/static/src/img/blocks/copyright/2.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_copyright_tmpl_3" t-thumbnail="/sh_emate/static/src/img/blocks/copyright/3.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_copyright_tmpl_4" t-thumbnail="/sh_emate/static/src/img/blocks/copyright/4.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_copyright_tmpl_5" t-thumbnail="/sh_emate/static/src/img/blocks/copyright/5.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_copyright_tmpl_6" t-thumbnail="/sh_emate/static/src/img/blocks/copyright/6.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_copyright_tmpl_7" t-thumbnail="/sh_emate/static/src/img/blocks/copyright/7.svg" />
+
+            <!-- partner -->
+
+            <t t-snippet="sh_emate.sh_emate_partner_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/partner/partner.svg" />
+
+            <!-- testimonial -->
+
+            <t t-snippet="sh_emate.sh_emate_testimonial_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/testimonial/1.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_testimonial_tmpl_2" t-thumbnail="/sh_emate/static/src/img/blocks/testimonial/2.svg" />
+
+            <!-- call to action -->
+
+            <t t-snippet="sh_emate.sh_emate_calltoaction_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/call_to_action/1.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_calltoaction_tmpl_2" t-thumbnail="/sh_emate/static/src/img/blocks/call_to_action/2.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_calltoaction_tmpl_3" t-thumbnail="/sh_emate/static/src/img/blocks/call_to_action/3.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_calltoaction_tmpl_4" t-thumbnail="/sh_emate/static/src/img/blocks/call_to_action/4.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_calltoaction_tmpl_5" t-thumbnail="/sh_emate/static/src/img/blocks/call_to_action/5.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_calltoaction_tmpl_6" t-thumbnail="/sh_emate/static/src/img/blocks/call_to_action/6.svg" />
+
+            <!-- counter -->
+
+            <t t-snippet="sh_emate.sh_emate_counter_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/counter/1.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_counter_tmpl_2" t-thumbnail="/sh_emate/static/src/img/blocks/counter/2.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_counter_tmpl_3" t-thumbnail="/sh_emate/static/src/img/blocks/counter/3.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_counter_tmpl_4" t-thumbnail="/sh_emate/static/src/img/blocks/counter/4.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_counter_tmpl_5" t-thumbnail="/sh_emate/static/src/img/blocks/counter/5.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_counter_tmpl_6" t-thumbnail="/sh_emate/static/src/img/blocks/counter/6.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_counter_tmpl_7" t-thumbnail="/sh_emate/static/src/img/blocks/counter/7.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_counter_tmpl_8" t-thumbnail="/sh_emate/static/src/img/blocks/counter/8.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_counter_tmpl_9" t-thumbnail="/sh_emate/static/src/img/blocks/counter/9.svg" />
+
+            <!-- follow us -->
+
+            <t t-snippet="sh_emate.sh_emate_followus_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/follow_us/followus.svg" />
+
+            <!-- image gallery -->
+
+            <t t-snippet="sh_emate.sh_emate_img_gallery_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/img_gallery/1.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_img_gallery_tmpl_2" t-thumbnail="/sh_emate/static/src/img/blocks/img_gallery/2.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_img_gallery_tmpl_3" t-thumbnail="/sh_emate/static/src/img/blocks/img_gallery/3.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_img_gallery_tmpl_4" t-thumbnail="/sh_emate/static/src/img/blocks/img_gallery/4.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_img_gallery_tmpl_5" t-thumbnail="/sh_emate/static/src/img/blocks/img_gallery/5.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_img_gallery_tmpl_6" t-thumbnail="/sh_emate/static/src/img/blocks/img_gallery/6.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_img_gallery_tmpl_7" t-thumbnail="/sh_emate/static/src/img/blocks/img_gallery/7.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_img_gallery_tmpl_8" t-thumbnail="/sh_emate/static/src/img/blocks/img_gallery/8.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_img_gallery_tmpl_9" t-thumbnail="/sh_emate/static/src/img/blocks/img_gallery/9.svg" />
+
+            <!-- service -->
+
+            <t t-snippet="sh_emate.sh_emate_service_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/service/1.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_service_tmpl_2" t-thumbnail="/sh_emate/static/src/img/blocks/service/2.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_service_tmpl_3" t-thumbnail="/sh_emate/static/src/img/blocks/service/3.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_service_tmpl_4" t-thumbnail="/sh_emate/static/src/img/blocks/service/4.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_service_tmpl_5" t-thumbnail="/sh_emate/static/src/img/blocks/service/5.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_service_tmpl_6" t-thumbnail="/sh_emate/static/src/img/blocks/service/6.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_service_tmpl_7" t-thumbnail="/sh_emate/static/src/img/blocks/service/7.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_service_tmpl_8" t-thumbnail="/sh_emate/static/src/img/blocks/service/8.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_service_tmpl_9" t-thumbnail="/sh_emate/static/src/img/blocks/service/9.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_service_tmpl_10" t-thumbnail="/sh_emate/static/src/img/blocks/service/10.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_service_tmpl_11" t-thumbnail="/sh_emate/static/src/img/blocks/service/11.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_service_tmpl_12" t-thumbnail="/sh_emate/static/src/img/blocks/service/12.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_service_tmpl_13" t-thumbnail="/sh_emate/static/src/img/blocks/service/13.svg" />
+
+            <!-- single product with discription -->
+
+            <t t-snippet="sh_emate.sh_emate_single_product_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/single_product/1.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_single_product_tmpl_2" t-thumbnail="/sh_emate/static/src/img/blocks/single_product/2.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_single_product_tmpl_3" t-thumbnail="/sh_emate/static/src/img/blocks/single_product/3.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_single_product_tmpl_4" t-thumbnail="/sh_emate/static/src/img/blocks/single_product/4.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_single_product_tmpl_5" t-thumbnail="/sh_emate/static/src/img/blocks/single_product/5.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_single_product_tmpl_6" t-thumbnail="/sh_emate/static/src/img/blocks/single_product/6.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_single_product_tmpl_7" t-thumbnail="/sh_emate/static/src/img/blocks/single_product/7.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_single_product_tmpl_8" t-thumbnail="/sh_emate/static/src/img/blocks/single_product/8.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_single_product_tmpl_9" t-thumbnail="/sh_emate/static/src/img/blocks/single_product/9.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_single_product_tmpl_10" t-thumbnail="/sh_emate/static/src/img/blocks/single_product/10.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_single_product_tmpl_11" t-thumbnail="/sh_emate/static/src/img/blocks/single_product/11.svg" />
+
+            <!-- product items -->
+
+            <t t-snippet="sh_emate.sh_emate_product_item_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/product_item/1.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_product_item_tmpl_2" t-thumbnail="/sh_emate/static/src/img/blocks/product_item/2.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_product_item_tmpl_3" t-thumbnail="/sh_emate/static/src/img/blocks/product_item/3.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_product_item_tmpl_4" t-thumbnail="/sh_emate/static/src/img/blocks/product_item/4.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_product_item_tmpl_5" t-thumbnail="/sh_emate/static/src/img/blocks/product_item/5.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_product_item_tmpl_6" t-thumbnail="/sh_emate/static/src/img/blocks/product_item/6.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_product_item_tmpl_7" t-thumbnail="/sh_emate/static/src/img/blocks/product_item/7.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_product_item_tmpl_8" t-thumbnail="/sh_emate/static/src/img/blocks/product_item/8.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_product_item_tmpl_9" t-thumbnail="/sh_emate/static/src/img/blocks/product_item/9.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_product_item_tmpl_10" t-thumbnail="/sh_emate/static/src/img/blocks/product_item/10.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_product_item_tmpl_11" t-thumbnail="/sh_emate/static/src/img/blocks/product_item/11.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_product_item_tmpl_12" t-thumbnail="/sh_emate/static/src/img/blocks/product_item/12.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_product_item_tmpl_13" t-thumbnail="/sh_emate/static/src/img/blocks/product_item/13.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_product_item_tmpl_14" t-thumbnail="/sh_emate/static/src/img/blocks/product_item/14.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_product_item_tmpl_15" t-thumbnail="/sh_emate/static/src/img/blocks/product_item/15.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_product_item_tmpl_16" t-thumbnail="/sh_emate/static/src/img/blocks/product_item/16.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_product_item_tmpl_17" t-thumbnail="/sh_emate/static/src/img/blocks/product_item/17.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_product_item_tmpl_18" t-thumbnail="/sh_emate/static/src/img/blocks/product_item/18.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_product_item_tmpl_19" t-thumbnail="/sh_emate/static/src/img/blocks/product_item/19.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_product_item_tmpl_20" t-thumbnail="/sh_emate/static/src/img/blocks/product_item/20.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_product_item_tmpl_21" t-thumbnail="/sh_emate/static/src/img/blocks/product_item/21.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_product_item_tmpl_22" t-thumbnail="/sh_emate/static/src/img/blocks/product_item/22.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_product_item_tmpl_23" t-thumbnail="/sh_emate/static/src/img/blocks/product_item/23.svg" />
+
+            <!-- our chef -->
+
+            <t t-snippet="sh_emate.sh_emate_our_chef_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/team/1.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_our_chef_tmpl_2" t-thumbnail="/sh_emate/static/src/img/blocks/team/1.svg" />
+
+            <!-- video -->
+
+            <t t-snippet="sh_emate.sh_emate_video_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/video/1.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_video_tmpl_2" t-thumbnail="/sh_emate/static/src/img/blocks/video/2.svg" />
+
+            <!-- offer -->
+
+            <t t-snippet="sh_emate.sh_emate_offer_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/offer/1.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_offer_tmpl_2" t-thumbnail="/sh_emate/static/src/img/blocks/offer/2.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_offer_tmpl_3" t-thumbnail="/sh_emate/static/src/img/blocks/offer/3.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_offer_tmpl_4" t-thumbnail="/sh_emate/static/src/img/blocks/offer/4.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_offer_tmpl_5" t-thumbnail="/sh_emate/static/src/img/blocks/offer/5.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_offer_tmpl_6" t-thumbnail="/sh_emate/static/src/img/blocks/offer/6.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_offer_tmpl_7" t-thumbnail="/sh_emate/static/src/img/blocks/offer/7.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_offer_tmpl_8" t-thumbnail="/sh_emate/static/src/img/blocks/offer/8.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_offer_tmpl_9" t-thumbnail="/sh_emate/static/src/img/blocks/offer/9.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_offer_tmpl_10" t-thumbnail="/sh_emate/static/src/img/blocks/offer/10.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_offer_tmpl_11" t-thumbnail="/sh_emate/static/src/img/blocks/offer/11.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_offer_tmpl_12" t-thumbnail="/sh_emate/static/src/img/blocks/offer/12.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_offer_tmpl_13" t-thumbnail="/sh_emate/static/src/img/blocks/offer/13.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_offer_tmpl_14" t-thumbnail="/sh_emate/static/src/img/blocks/offer/14.svg" />
+
+            <!-- blog -->
+
+            <t t-snippet="sh_emate.sh_emate_blog_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/blog/1.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_blog_tmpl_2" t-thumbnail="/sh_emate/static/src/img/blocks/blog/2.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_blog_tmpl_3" t-thumbnail="/sh_emate/static/src/img/blocks/blog/3.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_blog_tmpl_4" t-thumbnail="/sh_emate/static/src/img/blocks/blog/4.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_blog_tmpl_5" t-thumbnail="/sh_emate/static/src/img/blocks/blog/5.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_blog_tmpl_6" t-thumbnail="/sh_emate/static/src/img/blocks/blog/6.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_blog_tmpl_7" t-thumbnail="/sh_emate/static/src/img/blocks/blog/7.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_blog_tmpl_8" t-thumbnail="/sh_emate/static/src/img/blocks/blog/8.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_blog_tmpl_9" t-thumbnail="/sh_emate/static/src/img/blocks/blog/9.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_blog_tmpl_10" t-thumbnail="/sh_emate/static/src/img/blocks/blog/10.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_blog_tmpl_11" t-thumbnail="/sh_emate/static/src/img/blocks/blog/11.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_blog_tmpl_12" t-thumbnail="/sh_emate/static/src/img/blocks/blog/12.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_blog_tmpl_13" t-thumbnail="/sh_emate/static/src/img/blocks/blog/13.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_blog_tmpl_14" t-thumbnail="/sh_emate/static/src/img/blocks/blog/14.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_blog_tmpl_15" t-thumbnail="/sh_emate/static/src/img/blocks/blog/15.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_blog_tmpl_16" t-thumbnail="/sh_emate/static/src/img/blocks/blog/16.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_blog_tmpl_17" t-thumbnail="/sh_emate/static/src/img/blocks/blog/17.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_blog_tmpl_18" t-thumbnail="/sh_emate/static/src/img/blocks/blog/18.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_blog_tmpl_19" t-thumbnail="/sh_emate/static/src/img/blocks/blog/19.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_blog_tmpl_20" t-thumbnail="/sh_emate/static/src/img/blocks/blog/20.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_blog_tmpl_21" t-thumbnail="/sh_emate/static/src/img/blocks/blog/21.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_blog_tmpl_22" t-thumbnail="/sh_emate/static/src/img/blocks/blog/22.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_blog_tmpl_23" t-thumbnail="/sh_emate/static/src/img/blocks/blog/23.svg" />
+
+            <!-- user -->
+
+            <t t-snippet="sh_emate.sh_emate_user_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/user/1.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_user_tmpl_2" t-thumbnail="/sh_emate/static/src/img/blocks/user/2.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_user_tmpl_3" t-thumbnail="/sh_emate/static/src/img/blocks/user/3.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_user_tmpl_4" t-thumbnail="/sh_emate/static/src/img/blocks/user/4.svg" />
+
+            <!-- content_box -->
+
+            <t t-snippet="sh_emate.sh_emate_content_box_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/content_box/content_box.svg" />
+            
+            <!-- Shape -->
+            
+            <t t-snippet="sh_emate.sh_emate_shape_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/shape/1.svg" />
+
+            <!-- comparison -->
+
+            <t t-snippet="sh_emate.sh_emate_comparison_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/comparison/1.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_comparison_tmpl_2" t-thumbnail="/sh_emate/static/src/img/blocks/comparison/2.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_comparison_tmpl_3" t-thumbnail="/sh_emate/static/src/img/blocks/comparison/3.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_comparison_tmpl_4" t-thumbnail="/sh_emate/static/src/img/blocks/comparison/4.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_comparison_tmpl_5" t-thumbnail="/sh_emate/static/src/img/blocks/comparison/5.svg" />
+            
+            <!-- about -->
+            
+            <t t-snippet="sh_emate.sh_emate_about_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/about/1.svg" />
+            
+            <!-- Get In Touch -->
+            
+            <t t-snippet="sh_emate.sh_emate_get_in_touch_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/get_in_touch/1.svg" />
+
+            <!-- event -->
+
+            <t t-snippet="sh_emate.sh_emate_event_tmpl_1" t-thumbnail="/sh_emate/static/src/img/blocks/event/1.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_event_tmpl_2" t-thumbnail="/sh_emate/static/src/img/blocks/event/2.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_event_tmpl_3" t-thumbnail="/sh_emate/static/src/img/blocks/event/3.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_event_tmpl_4" t-thumbnail="/sh_emate/static/src/img/blocks/event/4.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_event_tmpl_5" t-thumbnail="/sh_emate/static/src/img/blocks/event/5.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_event_tmpl_6" t-thumbnail="/sh_emate/static/src/img/blocks/event/6.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_event_tmpl_7" t-thumbnail="/sh_emate/static/src/img/blocks/event/7.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_event_tmpl_8" t-thumbnail="/sh_emate/static/src/img/blocks/event/8.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_event_tmpl_9" t-thumbnail="/sh_emate/static/src/img/blocks/event/9.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_event_tmpl_10" t-thumbnail="/sh_emate/static/src/img/blocks/event/10.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_event_tmpl_11" t-thumbnail="/sh_emate/static/src/img/blocks/event/11.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_event_tmpl_12" t-thumbnail="/sh_emate/static/src/img/blocks/event/12.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_event_tmpl_13" t-thumbnail="/sh_emate/static/src/img/blocks/event/13.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_event_tmpl_14" t-thumbnail="/sh_emate/static/src/img/blocks/event/14.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_event_tmpl_15" t-thumbnail="/sh_emate/static/src/img/blocks/event/15.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_event_tmpl_16" t-thumbnail="/sh_emate/static/src/img/blocks/event/16.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_event_tmpl_17" t-thumbnail="/sh_emate/static/src/img/blocks/event/17.svg" />
+
+            <t t-snippet="sh_emate.sh_emate_event_tmpl_18" t-thumbnail="/sh_emate/static/src/img/blocks/event/18.svg" />
+            
+            <t t-snippet="sh_emate.sh_emate_event_tmpl_19" t-thumbnail="/sh_emate/static/src/img/blocks/event/19.svg" />
+            
+           
+
+    </xpath>
+
+
+
+
+</template>
+
+
+
+
+
+
+<!-- Snippets' Options -->
+<template id="sh_emate_snippet_options" inherit_id="mass_mailing.snippet_options">
+
+    <xpath expr="//div[@data-js='colorpicker']" position="before">
+        <div data-js="js_sh_emate_get_product_select_slider" 
+        data-selector=".s_cls_sh_emate_product_item_1,.s_cls_sh_emate_product_item_2,.s_cls_sh_emate_product_item_3,
+        .s_cls_sh_emate_product_item_4,.s_cls_sh_emate_product_item_5,.s_cls_sh_emate_product_item_6,.s_cls_sh_emate_product_item_7,
+        .s_cls_sh_emate_product_item_8,.s_cls_sh_emate_product_item_9,.s_cls_sh_emate_product_item_10,.s_cls_sh_emate_product_item_11,
+        .s_cls_sh_emate_product_item_12,.s_cls_sh_emate_product_item_13,.s_cls_sh_emate_product_item_19,.s_cls_sh_emate_product_item_21,
+        .s_cls_sh_emate_product_item_22,.s_cls_sh_emate_product_item_23">
+            <we-collapse-area>
+                <we-toggler><i class="fa fa-folder-open"/> Choose a Config</we-toggler>
+                <we-collapse data-no-preview="true">
+
+                		<we-button data-select-class="sh_emate_slider_id_0">No Config</we-button>
+                    
+            			<t t-set="sh_sliders" t-value="request.env['sh.emate.slider'].search([ ('slider_type','=','product') ])" />
+	                    <t t-if="len(sh_sliders)">
+       						
+       						<t t-foreach="sh_sliders" t-as="sh_slider">	                    	
+       						
+  								<t t-set="sh_slider_cls" t-value="'sh_emate_slider_id_' + str(sh_slider.id)"/>
+                				<we-button t-att-data-select-class="sh_slider_cls">
+                					<t t-esc="sh_slider.name"/>
+                				</we-button>
+                  								
+ 									 				                
+					       </t>
+					    </t>	
+                </we-collapse>                
+                
+            </we-collapse-area>
+            
+            
+
+			<!-- Shows   -->		
+	        <we-collapse-area>
+	            <we-toggler>Shows</we-toggler>
+	            <we-collapse>                                                
+	                <we-button data-toggle-class="is_show_product_desc">Product Description</we-button>
+	                <we-button data-toggle-class="is_show_sale_price">Sale Price</we-button>	
+	            </we-collapse>
+	        </we-collapse-area>	            
+            
+            
+        </div>
+
+
+
+
+
+
+		<!-- 
+		============================
+		BLOG POST
+		============================
+		 -->
+
+        <div data-js="js_sh_emate_get_product_select_slider" 
+        data-selector="#sh_emate_blog_div_1,
+        #sh_emate_blog_div_2,#sh_emate_blog_div_3,#sh_emate_blog_div_4,#sh_emate_blog_div_5,#sh_emate_blog_div_6,
+        #sh_emate_blog_div_7,#sh_emate_blog_div_8,#sh_emate_blog_div_9,#sh_emate_blog_div_10,#sh_emate_blog_div_11,
+        #sh_emate_blog_div_12,#sh_emate_blog_div_13,#sh_emate_blog_div_14,#sh_emate_blog_div_15,#sh_emate_blog_div_16,
+        #sh_emate_blog_div_17,#sh_emate_blog_div_18,#sh_emate_blog_div_19,#sh_emate_blog_div_20,#sh_emate_blog_div_21,
+        #sh_emate_blog_div_22,#sh_emate_blog_div_23">
+            <we-collapse-area>
+                <we-toggler><i class="fa fa-folder-open"/> Choose a Config</we-toggler>
+                
+                <we-collapse data-no-preview="true">
+					    
+                		<we-button data-select-class="sh_emate_slider_id_0">No Config</we-button>
+                    
+            			<t t-set="sh_sliders" t-value="request.env['sh.emate.slider'].search([ ('slider_type','=','blog') ])" />
+	                    <t t-if="len(sh_sliders)">
+       						
+       						<t t-foreach="sh_sliders" t-as="sh_slider">	                    	
+       						
+  								<t t-set="sh_slider_cls" t-value="'sh_emate_slider_id_' + str(sh_slider.id)"/>
+                				<we-button t-att-data-select-class="sh_slider_cls">
+                					<t t-esc="sh_slider.name"/>
+                				</we-button>
+                  								
+ 									 				                
+					       </t>
+					    </t>						    	
+				                 
+                </we-collapse>
+                                
+            </we-collapse-area>
+            
+            
+       
+            
+            
+        </div>
+
+
+
+		<!-- 
+		============================
+		EVENTS
+		============================
+		 -->
+
+        <div data-js="js_sh_emate_get_product_select_slider" 
+        data-selector="#sh_emate_event_div_1,#sh_emate_event_div_2,#sh_emate_event_div_3,#sh_emate_event_div_4
+        ,#sh_emate_event_div_5,#sh_emate_event_div_6,#sh_emate_event_div_7,#sh_emate_event_div_8,#sh_emate_event_div_9
+        ,#sh_emate_event_div_10,#sh_emate_event_div_11,#sh_emate_event_div_12,#sh_emate_event_div_13
+        ,#sh_emate_event_div_14,#sh_emate_event_div_15,#sh_emate_event_div_16,#sh_emate_event_div_17,#sh_emate_event_div_18,
+        #sh_emate_event_div_19">
+            <we-collapse-area>
+                <we-toggler><i class="fa fa-folder-open"/> Choose a Config</we-toggler>
+                
+                <we-collapse data-no-preview="true">
+
+                		<we-button data-select-class="sh_emate_slider_id_0">No Config</we-button>
+                    
+            			<t t-set="sh_sliders" t-value="request.env['sh.emate.slider'].search([ ('slider_type','=','event') ])" />
+	                    <t t-if="len(sh_sliders)">
+       						
+       						<t t-foreach="sh_sliders" t-as="sh_slider">	                    	
+       						
+  								<t t-set="sh_slider_cls" t-value="'sh_emate_slider_id_' + str(sh_slider.id)"/>
+                				<we-button t-att-data-select-class="sh_slider_cls">
+                					<t t-esc="sh_slider.name"/>
+                				</we-button>
+                  								
+ 									 				                
+					       </t>
+					    </t>		
+                                       
+                </we-collapse>
+                                                
+            </we-collapse-area>
+            
+
+        </div>
+
+
+
+
+
+
+
+    </xpath>
+
+
+</template>
+
+
+
+
+
+
+
+
+
+
+</odoo>

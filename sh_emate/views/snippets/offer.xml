@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- offer template 1 -->
+<template id="sh_emate_offer_tmpl_1" name="Offer 1">
+	
+	<div class="sh_emate_offer_1">
+		<div class="o_mail_block_text_image" data-name="Text - Image" id="sh_offer_6">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w220">
+		                        <div class="left-content">
+			                        <p class="top-text">40% OFF</p>
+			                        <h4>LOREM IPSUM</h4>
+			                        <p class="text">LOREM IPSUM</p>
+			                        <h3><b>$180.00</b></h3><br/>
+			                        <a href="#" class="btn">BUY NOW</a><br/>
+			                    </div>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w300 p0">
+		                        <div class="sh_right_img">
+			                        <img src="/sh_emate/static/src/img/tmpl_6/pretty-woman-eating-popcorn-studio_136403-2380.jpg" alt="image" />
+			                    </div>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>     
+	</div>
+	
+</template>
+<!-- end offer template 1  -->
+
+<!-- offer template 2 -->
+<template id="sh_emate_offer_tmpl_2" name="Offer 2">
+	
+	<div class="sh_emate_offer_2">
+		<div class="o_mail_block_text_image" data-name="Text - Image" id="sh_single_product_7">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270 pr0">
+		                        <div class="box">
+			                        <div class="content">
+			                            <h3 class="title">OFF SEASON SALE</h3>
+			                            <p>UPTO 50% OFF</p>
+			                        </div>
+			                    </div>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270 pl0">
+		                        <div class="sh_right_content">
+			                        <img src="/sh_emate/static/src/img/tmpl_7/beautiful-stylish-young-girl-casual-clothes_85574-6352(3).jpg" alt="image" />
+			                    </div>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>   
+	</div>
+	
+</template>
+<!-- end offer template 2  -->
+
+
+<!-- offer template 3 -->
+<template id="sh_emate_offer_tmpl_3" name="Offer 3">
+	
+	<div class="sh_emate_offer_3">
+		<div class="o_mail_block_image_text" data-name="Image - Text" id="sh_show_more_offer_4">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w250 pr0">
+		                        <img src="/sh_emate/static/src/img/tmpl_4/woman-with-curly-hair_144627-4116.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w250 box text-center pl0">
+		                        <div class="content">
+		                           <p class="detail">NEW COLLECTION</p>
+		                           <h2 class="title">35% OFFER</h2>
+		                           <a class="btn" href="#">SHOW MORE</a>
+		                       </div>
+							</td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+<!-- end offer template 3  -->
+
+<!-- offer template 4 -->
+<template id="sh_emate_offer_tmpl_4" name="Offer 4">
+	
+	<div class="sh_emate_offer_4">
+		<div class="o_mail_block_banner" id="sh_offer_banner_10" data-name="Banner">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+			                <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+			                     <a href="#">
+			                         <img src="/sh_emate/static/src/img/tmpl_10/OFFER10.png" class="d-block mx-auto" alt="Your Banner Image" />
+			                     </a>
+			                 </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div> 
+	</div>
+	
+</template>
+<!-- end offer template 4  -->
+
+
+<!-- offer template 5 -->
+<template id="sh_emate_offer_tmpl_5" name="Offer 5">
+	
+	<div class="sh_emate_offer_5">
+		<div class="o_mail_block_call_to_action" id="sh_call_to_action_14" data-name="Call to Action">
+			<div class="o_mail_snippet_general">
+		  		<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		      		<tbody>
+		      			<tr>
+		          			<td width="40%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding left-content plr0">
+		                    	<h4>40% OFF<br/><span>EVERYTHING</span></h4>
+		          			</td>
+							<td width="60%" class="o_mail_col_mv o_mail_col_container o_mail_no_resize v_middle">
+		  						<div class="right_paragraph">
+		          					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+		  						</div>
+							</td>
+		      			</tr>
+		  			</tbody>
+		  		</table>
+			</div>
+		</div>
+	</div>
+	
+</template>
+<!-- end offer template 5  -->
+
+<!-- offer template 6 -->
+<template id="sh_emate_offer_tmpl_6" name="Offer 6">
+	
+	<div class="sh_emate_offer_6">
+		<div class="o_mail_block_two_cols" data-name="Two Columns" id="sh_offer_14">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pb0">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_col_container pr0 vmiddle" width="30%">
+		                        <div class="box box1">
+			                        <a class="btn" href="#">60% OFF</a>
+			                    </div>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_col_container pl0" width="70%">
+		                       	<div class="img">
+		                       		<img src="/sh_emate/static/src/img/tmpl_14/luxury-modern-interior-living-room.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                       	</div>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt0">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_col_container pr0" width="70%">
+		                       	<div class="img">
+		                       		<img src="/sh_emate/static/src/img/tmpl_14/interior-bright-living-room-with-pillows-sofa-armchair-plants-lamp-empty-blue-wall-background_41470-708.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                       	</div>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_col_container pl0 vmiddle" width="30%">
+		                        <div class="box box2">
+			                        <a class="btn" href="#">40% OFF</a>
+			                    </div>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+<!-- end offer template 6  -->
+
+<!-- offer template 7 -->
+<template id="sh_emate_offer_tmpl_7" name="Offer 7">
+	
+	<div class="sh_emate_offer_7">
+		<div class="o_mail_block_banner" id="sh_offer_banner_6" data-name="Banner">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+		                         <img src="/sh_emate/static/src/img/tmpl_6/emate_OFFER6.png" class="d-block mx-auto" alt="Your Banner Image" />
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+<!-- end offer template 7  -->
+
+<!-- offer template 8 -->
+<template id="sh_emate_offer_tmpl_8" name="Offer 8">
+	
+	<div class="sh_emate_offer_8">
+		<div class="o_mail_block_text_image" data-name="Text - Image" id="second_banner_8">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w250 pr0">
+		                        <div class="box">
+			                        <div class="content content-left text-left">
+			                            <h3 class="title">Lorem ipsum</h3>
+			                            <p class="detail">Lorem ipsum dolor sit amet, consectetur<br/>adipiscing elit. Curabitur placerat<br/>tellus sit amet ipsum ornare.</p>
+			                            <a href="#">READ MORE</a>
+			                        </div>
+			                    </div>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w250 pl0">
+		                        <div class="box">
+			                        <div class="content content-right text-center">
+			                            <p class="detail">Lorem ipsum</p>
+			                            <h3 class="title">Lorem ipsum</h3>
+			                            <div class="rate text-center">
+			                                <input type="radio" id="star5" name="rate" value="5" />
+			                                    <label for="star5" title="text"></label>
+			                                    <span class="fa fa-star fa-lg"></span>
+			                                <input type="radio" id="star4" name="rate" value="4" />
+			                                    <label for="star4" title="text"></label>
+			                                    <span class="fa fa-star fa-lg"></span>
+			                                <input type="radio" id="star3" name="rate" value="3" />
+			                                    <label for="star3" title="text"></label>
+			                                    <span class="fa fa-star fa-lg"></span>
+			                                <input type="radio" id="star2" name="rate" value="2" />
+			                                    <label for="star2" title="text"></label>
+			                                    <span class="fa fa-star-half-o fa-lg"></span>
+			                                <input type="radio" id="star1" name="rate" value="1" />
+			                                    <label for="star1" title="text"></label>
+			                                    <span class="fa fa-star-o fa-lg"></span>
+			                            </div>
+			                            <a class="btn_buynow" href="#">BUY NOW</a>
+			                        </div>
+			                    </div>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+<!-- end offer template 8  -->
+
+
+<!-- offer template 9 -->
+<template id="sh_emate_offer_tmpl_9" name="Offer 9">
+	
+	<div class="sh_emate_offer_9">
+		<div class="o_mail_block_image_text" data-name="Image - Text" id="sh_new_arrival_product_13">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding text-left content w230 pr0">
+		                        <div class="box1">
+			                        <p class="top-text">GET YOUR $99 CASH OFFER</p>
+			                        <img src="/sh_emate/static/src/img/tmpl_13/3d-rendering-interior-modern-living-room-with-sofa-couch-table_3146-156.jpg" alt="img1" title="img1" />
+			                    </div>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w230 p0 img">
+		                    	<div class="box2-right text-center">
+			                        <a class="top-text btn" href="#">BUY NOW</a>
+			                    </div>
+		                        <div class="box">
+			                        <h1>NEW<br/>ARRIVALS</h1>
+			                        <p class="text">2020 COLLECTIONS</p>
+			                        <a class="btn_shopnow" href="#">SHOP NOW</a>
+			                    </div>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+<!-- end offer template 9  -->
+
+
+
+<!-- offer template 10 -->
+<template id="sh_emate_offer_tmpl_10" name="Offer 10">
+	
+	<div class="sh_emate_offer_10">
+		<div class="o_mail_block_offer" data-name="Three Columns" id="sh_offer_26">
+	      <div class="o_mail_snippet_general">
+		      <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+		           <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+				                    <h4>EXCLUSIVE FESTIVE SALES</h4>
+				                    <h2>50% OFF ON PRODUCTS</h2>
+				                </center>
+				            </td>
+				        </tr>
+		     		</tbody>
+		    	</table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+<!-- end offer template 10  -->
+
+<!-- offer template 11 -->
+<template id="sh_emate_offer_tmpl_11" name="Offer 11">
+	
+	<div class="sh_emate_offer_11">
+		<div class="o_mail_block_offer" id="sh_offer_27" data-name="Offer">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                            <td width="70%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding left-content">
+                                <h4 class="o_default_snippet_text">Sale Upto 60% Off</h4>
+                                <h4 class="o_default_snippet_text">Black Friday Limited Sale</h4>
+                            </td>
+                            <td width="30%" class="text-right o_mail_col_mv o_mail_col_container o_mail_no_resize v_middle">
+                                <div class="btn-right">
+                                    <a class="btn_shopnow o_default_snippet_text" href="#">SHOP NOW</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+	</div>
+	
+</template>
+<!-- end offer template 11  -->
+
+<!-- offer template 12 -->
+<template id="sh_emate_offer_tmpl_12" name="Offer 12">
+	
+	<div class="sh_emate_offer_12">
+		<div class="o_mail_block_text_image" data-name="Text - Image" id="sh_offer_28">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                            <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270">
+                                <div class="content">
+                                    <h3>New Year Offers</h3>
+                                    <img class="heading_bottom" src="/sh_emate/static/src/img/tmpl_28/header_bottom.png" alt="heading_img" />
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                                    </p>
+                                    <a class="btn_explore" href="#">Explore More</a>
+                                </div>
+                            </td>
+                            <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270">
+                                <div class="sh_right_img">
+                                    <img src="/sh_emate/static/src/img/tmpl_28/santa_img.png" alt="image" />
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+	</div>
+	
+</template>
+<!-- end offer template 12  -->
+
+<!-- offer template 13 -->
+<template id="sh_emate_offer_tmpl_13" name="Offer 13">
+	
+	<div class="sh_emate_offer_13">
+		<div class="o_mail_block_offer" id="sh_offer_29" data-name="Offer">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                            <td width="70%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding left-content">
+                                <h4 class="o_default_snippet_text">FLAT 40% OFF</h4>
+                            </td>
+                            <td width="30%" class="text-right o_mail_col_mv o_mail_col_container o_mail_no_resize v_middle">
+                                <div class="btn-right">
+                                    <a class="btn_shopnow o_default_snippet_text" href="#">Shop Now</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+	</div>
+	
+</template>
+<!-- end offer template 13  -->
+
+
+
+<!-- offer template 14 -->
+<template id="sh_emate_offer_tmpl_14" name="Offer 14">
+	
+	<div class="sh_emate_offer_14">
+		<div class="o_mail_block_offer" id="sh_offer_30" data-name="offer">
+            <div class="o_mail_snippet_general">
+            	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt0 mlr10">
+                    <tbody>
+                        <tr>
+                            <td width="100%" class="heading">
+                                <center>
+                                    <h3 class="title">OUR OFFERS</h3>
+                                </center>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_table_styles o_mail_h_padding">
+                    <tbody>
+                        <tr>
+                            <td width="40%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker o_mail_col_mv o_mail_col_container left_image">
+                                <img src="/sh_emate/static/src/img/tmpl_30/gif.gif" alt="box" />
+                            </td>
+                            <td width="50%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker o_mail_col_mv o_mail_col_container sh_right_content">
+                                <h2>Celebrate <span>Christmas</span></h2>
+                                <h2>with 50% off</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <a href="#" class="btn btn_shop_now">Shop Now</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+	</div>
+	
+</template>
+<!-- end offer template 14  -->
+
+
+
+
+
+	
+
+</odoo>

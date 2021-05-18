@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- user template 1 -->
+<template id="sh_emate_content_box_tmpl_1" name="Content Box 1">
+	
+	<div class="sh_emate_content_box_1">
+		<div class="o_mail_block_four_product" id="sh_ideas_18" data-name="four_product">
+		      <div class="o_mail_snippet_general">
+		      	  <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_h_padding o_mail_v_padding o_mail_col_table">
+			          <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+				                    <h3>Your Best Ideas</h3>
+				                   	<hr/>
+		                    		<p class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do euismodtempor incididunt ut.</p>
+				                </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				  </table>
+		          <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_table_styles o_mail_h_padding">
+		              <tbody>
+		                  <tr rowsapn="2">
+		                      <td width="40%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker o_mail_col_mv o_mail_col_container left_content">
+		                          <div class="left_image">
+		                          	  <img src="/sh_emate/static/src/img/tmpl_18/2.png" alt="image"></img>
+		                          </div>
+		                      </td>
+		                      <!-- <td width="50%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker o_mail_col_mv o_mail_col_container left_content">
+		                          <div class="right_content">
+		                          	  <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+		                          	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+		                          </div>
+		                      </td> -->
+		                      <td width="25%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker o_mail_col_mv o_mail_col_container img_text">
+		                       	<div class="img_content">
+		                         	<div class="icon"><span class="fa fa-window-restore"></span></div>
+		                         	<div class="text">
+		                             	<p><a href="#">LOREM IPSUM</a></p>
+		                         	</div>
+		                     		
+		                         	<div class="icon"><span class="fa fa-shield"></span></div>
+		                         	<div class="text">
+		                             	<p><a href="#">LOREM IPSUM</a></p>
+		                         	</div>
+			                	</div>
+		                  	</td>
+		                  <td width="25%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker o_mail_col_mv o_mail_col_container img_text">
+		                       <div class="img_content">
+		                     		<div class="icon"><span class="fa fa-pencil-square-o"></span></div>
+		                         	<div class="text">
+		                             	<p><a href="#">LOREM IPSUM</a></p>
+		                         	</div>
+		                     		
+		                         	<div class="icon"><span class="fa fa-pencil"></span></div>
+		                         	<div class="text">
+		                             	<p><a href="#">LOREM IPSUM</a></p>
+		                         	</div>
+			                	</div>
+		                  	 </td>
+		                  </tr>
+		              </tbody>
+		          </table>
+		      </div>
+		</div>
+	</div>
+	
+</template>
+
+<!-- end user template 1  -->
+
+
+
+
+
+</odoo>
+
+
+
+
+
+

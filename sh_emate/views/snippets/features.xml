@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- Feature template 1 -->
+<template id="sh_emate_feature_tmpl_1" name="Feature 1">
+	
+	<div class="sh_emate_feature_1">
+		<div class="o_mail_block_text_image" data-name="Text - Image" id="sh_features_22">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270">
+		                        <div class="content">
+			                        <h3>Popular features that your business needs</h3>
+				                    <hr/>
+				                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Curabitur placerat tellus sit amet ipsum ornare.</p>
+				                    <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		            					<tbody>
+		                					<tr>
+							                    <td class="icon vmiddle m10" width="20%">
+				                                    <span class="fa fa-cloud" role="img" title="Cloud"></span>
+				                                </td>
+				                                <td width="80%" class="m10">
+				                                    <h6 class="o_mail_no_margin o_default_snippet_text title">Lorem ipsum</h6>
+				                                    <p class="o_mail_no_margin o_default_snippet_text text">Lorem ipsum dolor sit amet, consectetur edipiscing elit, sed do.</p>
+				                                </td>
+				                              </tr>
+		                                	  <tr>
+							                    <td class="icon vmiddle m10" width="20%">
+				                                    <span class="fa fa-paper-plane-o" role="img" title="Paper_plane"></span>
+				                                </td>
+				                                <td width="80%" class="m10">
+				                                    <h6 class="o_mail_no_margin o_default_snippet_text title">Lorem ipsum</h6>
+				                                    <p class="o_mail_no_margin o_default_snippet_text text">Lorem ipsum dolor sit amet, consectetur edipiscing elit, sed do.</p>
+				                                </td>
+				                               </tr>
+				                               <tr>
+								                    <td class="icon vmiddle m10" width="20%">
+					                                    <span class="fa fa-cubes" role="img" title="Cubes"></span>
+					                                </td>
+					                                <td width="80%" class="m10">
+					                                    <h6 class="o_mail_no_margin o_default_snippet_text title">Lorem ipsum</h6>
+				                                    	<p class="o_mail_no_margin o_default_snippet_text text">Lorem ipsum dolor sit amet, consectetur edipiscing elit, sed do.</p>
+					                                </td>
+					                            </tr>
+					                        </tbody>
+					                    </table>
+				                 </div>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270">
+		                        <div class="img">
+			                        <img src="/sh_emate/static/src/img/tmpl_22/2.png" alt="image" />
+			                    </div>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div> 
+	</div>
+	
+</template>
+<!-- end Feature template 1  -->
+
+
+
+
+
+	
+
+</odoo>

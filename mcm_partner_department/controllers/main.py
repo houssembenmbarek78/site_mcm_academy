@@ -37,7 +37,6 @@ class WebsiteSale(WebsiteSale):
         no_variant_attribute_values = None
         if kw.get('no_variant_attribute_values'):
             no_variant_attribute_values = json.loads(kw.get('no_variant_attribute_values'))
-        print('promo 1')
         if promo:
             print(promo)
         sale_order._cart_update(
@@ -124,6 +123,6 @@ class WebsiteSale(WebsiteSale):
                 pricelist = request.env['product.pricelist'].sudo().search(
                     [('company_id', '=', 2), ('id',"=",promo)])
                 if pricelist:
-                    if pricelist.name in ['ubereats','deliveroo','coursierjob']:
+                    if pricelist.name in ['ubereats','deliveroo','coursierjob','box2home']:
                         return request.redirect("/%s/%s/shop/cart" % (slugname,pricelist.name))
         return request.redirect("/shop/cart")

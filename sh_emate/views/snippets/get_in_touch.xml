@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+	<!-- Get In Touch template 1 -->
+	<template id="sh_emate_get_in_touch_tmpl_1" name="Get In Touch 1">
+		
+		<div class="o_mail_block_banner" id="sh_get_in_touch_banner_32" data-name="Banner">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                            <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+                                <a href="#">
+                                    <img src="/sh_emate/static/src/img/tmpl_32/get_in_touch.png" class="d-block mx-auto banner_img" alt="Your Banner Image" />
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+		
+	</template>
+	<!-- end Get In Touch template 1  -->
+
+
+</odoo>

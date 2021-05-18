@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- follow us template 1 -->
+<template id="sh_emate_followus_tmpl_1" name="Follow us 1">
+	
+	<div class="sh_emate_followus_1">
+		<div class="o_mail_block_followus_social o_mail_followus_social_center" data-name="Footer Center" id="sh_followus_6">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_full_width_padding">
+		            <tbody>
+		            	<tr>
+		                    <td>
+		                        <p class="o_mail_footer_copy o_default_snippet_text">FOLLOW US</p>
+		                    </td>
+		                </tr>
+		    			<tr>
+		        			<td class="o_mail_footer_social icon text-center">
+						        <a aria-label="Facebook" title="Facebook" href="#">
+						          <span class="fa fa-facebook"></span>
+						        </a>
+						        <a style="margin-left:10px" aria-label="Instagram" title="Instagram" href="#">
+						            <span class="fa fa-instagram"></span>
+						        </a>
+						        <a style="margin-left:10px" aria-label="Twitter" title="Twitter" href="#">
+						            <span class="fa fa-twitter"></span>
+						        </a>
+						        <a style="margin-left:10px" aria-label="LinkedIn" title="LinkedIn" href="#">
+						            <span class="fa fa-linkedin"></span>
+						        </a>
+						        <a style="margin-left:10px" aria-label="Pinterest" title="Pinterest" href="#">
+						            <span class="fa fa-pinterest-p"></span>
+						        </a>
+		        			</td>
+		    			</tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+
+<!-- end follow us template 1  -->
+
+</odoo>
+
+
+
+
+
+

@@ -13,7 +13,7 @@
         'l10n_fr',
         'account',
         'product',
-        'base',
+         'base',
         'contacts',
         'web'
     ],
@@ -25,6 +25,7 @@
         'views/res_partner.xml',
         'views/res_partner_bank.xml',
         'views/session.xml',
+        'views/account.xml',
         'report/report_invoice.xml',
         'security/ir.model.access.csv',
     ],

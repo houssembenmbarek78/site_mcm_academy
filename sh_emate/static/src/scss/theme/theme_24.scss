@@ -1,0 +1,122 @@
+// ==========================
+// Mass Mailing "Theme 1 variables"
+// ==========================
+
+
+/*
+$sh-emate-mm-theme2-color-alpha: #8e6b5a;
+$sh-emate-mm-theme2-color-beta: white;
+$sh-emate-mm-theme2-color-gamma: #ff3c00;
+$sh-emate-mm-theme2-color-delta: darken($sh-emate-mm-theme2-color-gamma, 5%);
+$sh-emate-mm-theme2-color-epsilon: black;
+$sh-emate-mm-theme2-color-zeta: #f4f0e7;
+*/
+
+// ==========================
+// Mass Mailing "Theme 1 variables"
+// ==========================
+
+
+
+
+
+.o_mail_snippet_general{
+
+padding-left: 0px;
+padding-right: 0px;
+
+}
+
+
+/*========= header =======*/
+#sh_header_24{background-color: transparent;}
+#sh_header_24 .logo a{text-decoration:none;float:none;}
+#sh_header_24 .logo h4{font-size: 25px;font-weight: bold;font-family: 'Mulish', sans-serif;margin-bottom: 0px;color: $sh_emate_theme1_color_text_content;}
+#sh_header_24 .menu a{font-size: 15px;text-decoration: none;font-family: 'Mulish', sans-serif;color: $sh_emate_theme1_color_text_content;font-weight: normal;}
+#sh_header_24 .ml10{margin-left: 10px;}
+
+/*==== banner =====*/
+
+
+/*======= Service =====*/
+#sh_service_24{margin-bottom: 20px;}
+#sh_service_24 .heading h3{position: relative;color: $sh_emate_theme1_color_text_header;font-size: 25px;font-weight: 700;margin-bottom: 0px;padding: 10px 0px;font-family: 'Mulish', sans-serif;}
+#sh_service_24 .heading hr{margin: 0rem 0rem;margin-bottom: 5px;border-top-color: $sh_emate_theme1_color_primary;border-top-style: solid;border-top-width: 1px;border-left-width: 0px;border-bottom-width: 0px;border-right-width: 0px;overflow-y: visible;overflow-x: visible;height: 0px;width: 12%;box-sizing: content-box;}
+#sh_service_24 .heading p{margin: 0rem 0rem;margin-bottom: 1rem;border-top-color: $sh_emate_theme1_color_primary;border-top-style: solid;border-top-width: 1px;border-left-width: 0px;border-bottom-width: 0px;border-right-width: 0px;overflow-y: visible;overflow-x: visible;height: 0px;width: 8%;box-sizing: content-box;}
+#sh_service_24 .three_col .icon{margin-bottom: 15px;}
+#sh_service_24 .three_col .icon span,#sh_service_24 .three_col .icon img{font-size: 40px;margin-bottom: 0px;color: $sh_emate_theme1_color_primary;}
+#sh_service_24 .three_col .title{font-weight: bold;font-size: 15px;margin-bottom: 10px;font-family: 'Mulish', sans-serif;color: $sh_emate_theme1_color_text_header;font-weight: bold;}
+#sh_service_24 .three_col .text{margin-bottom: 5px;font-family: 'Mulish', sans-serif;font-size: 14px;color: $sh_emate_theme1_color_text_content;}
+#sh_service_24 .three_col a{text-decoration: none;color: $sh_emate_theme1_color_primary;font-family: 'Mulish', sans-serif;}
+#sh_service_24 .three_col .box{border: 1px solid #E0E0E0;padding: 15px 7px;}
+#sh_service_24 .three_col .plr10{padding: 10px;}
+
+
+/*===== counter ======*/
+.sh_emate_counter_8{background: $sh_emate_theme1_color_primary;}
+#sh_counter_24{padding: 10px 0px;}
+#sh_counter_24 .plr10{padding: 10px;}
+#sh_counter_24 .box .icon span,#sh_counter_24 .box .icon img{color: #fff;font-size: 30px;margin-bottom: 10px;}
+#sh_counter_24 .box h3{font-size: 25px;font-weight: bold;color: #fff;font-family: 'Mulish', sans-serif;margin-bottom: 0px;}
+#sh_counter_24 .box p{font-size: 15px;font-weight: bold;color: #fff;font-family: 'Mulish', sans-serif;margin-bottom: 10px;}
+
+
+/*====== Blog ======*/
+#sh_blog_24 {margin: 20px 0px;}
+#sh_blog_24 .heading h3{position: relative;color: $sh_emate_theme1_color_text_header;font-size: 25px;font-weight: 700;margin-bottom: 0px;padding: 10px 0px;font-family: 'Mulish', sans-serif;}
+#sh_blog_24 .heading hr{margin: 0rem 0rem;margin-bottom: 5px;border-top-color: $sh_emate_theme1_color_primary;border-top-style: solid;border-top-width: 1px;border-left-width: 0px;border-bottom-width: 0px;border-right-width: 0px;overflow-y: visible;overflow-x: visible;height: 0px;width: 12%;box-sizing: content-box;}
+#sh_blog_24 .heading p{margin: 0rem 0rem;margin-bottom: 1rem;border-top-color: $sh_emate_theme1_color_primary;border-top-style: solid;border-top-width: 1px;border-left-width: 0px;border-bottom-width: 0px;border-right-width: 0px;overflow-y: visible;overflow-x: visible;height: 0px;width: 8%;box-sizing: content-box;}
+
+#sh_blog_24 .box .img img{height: 150px;width: 100%;object-fit: cover;}
+#sh_blog_24 .box .content h5{font-weight: bold;font-size: 18px;margin: 0;padding: 8px 0;color: $sh_emate_theme1_color_text_header;text-align: left;font-family: 'Mulish', sans-serif;}
+#sh_blog_24 .box .content p.place{font-size: 15px;color: $sh_emate_theme1_color_text_content;font-weight: normal;text-align: left;display: block;font-family: 'Mulish', sans-serif;margin-bottom: 15px;}
+#sh_blog_24 .box .content p.text{font-size: 15px;color: $sh_emate_theme1_color_text_content;font-weight: normal;text-align: left;display: block;font-family: 'Mulish', sans-serif;margin-bottom: 30px;}
+#sh_blog_24 .box .content p span,#sh_blog_24 .box .content p img{margin-right: 10px;font-size: 20px;color: $sh_emate_theme1_color_primary;}
+#sh_blog_24 .box .content a.btn_readmore{text-decoration: none;font-size: 15px;background: $sh_emate_theme1_color_primary;color: #fff;text-align: left;font-family: 'Mulish', sans-serif;border-radius: 0px;padding: 10px 30px;}
+#sh_blog_24 .box .content{padding: 20px 0px;background: transparent;text-align: left;font-family: 'Mulish', sans-serif;}
+
+
+/*====== team =====*/
+#sh_team_24 .heading h3{position: relative;color: $sh_emate_theme1_color_text_header;font-size: 25px;font-weight: 700;margin-bottom: 0px;padding: 10px 0px;font-family: 'Mulish', sans-serif;}
+#sh_team_24 .heading h3{position: relative;color: $sh_emate_theme1_color_text_header;font-size: 25px;font-weight: 700;margin-bottom: 0px;padding: 10px 0px;font-family: 'Mulish', sans-serif;}
+#sh_team_24 .heading hr{margin: 0rem 0rem;margin-bottom: 5px;border-top-color: $sh_emate_theme1_color_primary;border-top-style: solid;border-top-width: 1px;border-left-width: 0px;border-bottom-width: 0px;border-right-width: 0px;overflow-y: visible;overflow-x: visible;height: 0px;width: 12%;box-sizing: content-box;}
+#sh_team_24 .heading p{margin: 0rem 0rem;margin-bottom: 1rem;border-top-color: $sh_emate_theme1_color_primary;border-top-style: solid;border-top-width: 1px;border-left-width: 0px;border-bottom-width: 0px;border-right-width: 0px;overflow-y: visible;overflow-x: visible;height: 0px;width: 8%;box-sizing: content-box;}
+
+#sh_team_24 .plr10{padding: 10px;}
+#sh_team_24 .box .img{margin-bottom: 10px;}
+#sh_team_24 .box .img img{width: 100%;object-fit: cover;height: 220px;}
+#sh_team_24 .box .content a{text-decoration: none;color: $sh_emate_theme1_color_text_content;}
+#sh_team_24 .box .content h5.title{color: $sh_emate_theme1_color_text_content;font-size: 16px;margin-bottom: 8px;font-family: 'Mulish', sans-serif;font-weight: bold;}
+#sh_team_24 .box .content p{color: $sh_emate_theme1_color_text_content;font-size: 15px;margin-bottom: 8px;font-family: 'Mulish', sans-serif;font-weight: normal;}
+#sh_team_24 .box .bottom_icon{display: inline-block;}
+#sh_team_24 .box .bottom_icon a{text-decoration: none;}
+#sh_team_24 .box .bottom_icon span,#sh_team_24 .box .bottom_icon img{color: $sh_emate_theme1_color_text_content;padding: 5px 7px;font-size: 15px;}
+
+/*========= footer ==========*/
+.sh_emate_footer_17{background-color: #ebebeb;}
+
+#sh_footer_24 {padding: 30px 0px 10px 0px;font-family: 'Mulish', sans-serif;}
+#sh_footer_24 ul{padding: 0;}
+#sh_footer_24 ul li{display: inline-block;font-family: 'Mulish', sans-serif;}
+#sh_footer_24 ul li{display: inline-block;text-align: center;padding:0px 15px;margin-bottom: 0px; }
+#sh_footer_24 ul li a{color: $sh_emate_theme1_color_text_content;text-decoration: none;}
+#sh_footer_24 .p10{padding: 10px;}
+#sh_footer_24 .bottom-footer p{color: $sh_emate_theme1_color_text_content;font-size: 15px;margin-bottom: 0px;margin-top: 10px;}
+#sh_footer_24 .addr p{color: $sh_emate_theme1_color_text_content;text-align: center;font-size: 15px;font-family: 'Mulish', sans-serif;margin-bottom: 10px;}
+#sh_footer_24 .mail_add p{color: $sh_emate_theme1_color_text_content;text-align: center;font-size: 15px;font-family: 'Mulish', sans-serif;margin-bottom: 10px;}
+#sh_footer_24 .mail_add p a,#sh_footer_24 .contc p a{text-decoration: none;color: $sh_emate_theme1_color_text_content;}
+#sh_footer_24 .contc p{color: $sh_emate_theme1_color_text_content;text-align: center;font-size: 15px;font-family: 'Mulish', sans-serif;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

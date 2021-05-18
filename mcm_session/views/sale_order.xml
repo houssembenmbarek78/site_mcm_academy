@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-        <record id="mcmacademy_session_view_sale_order_form" model="ir.ui.view">
+    <record id="mcmacademy_session_view_sale_order_form" model="ir.ui.view">
         <field name="name">sale.order.form</field>
         <field name="model">sale.order</field>
         <field name="inherit_id" ref="sale.view_order_form"/>
@@ -12,6 +12,10 @@
             </xpath>
             <xpath expr="//header//button[@name='action_draft']" position="after">
                 <button name="action_link_contract" type="object" string="Lier contrats avec modules"/>
+            </xpath>
+            <xpath expr="//field[@name='payment_term_id']" position="after">
+                <field name="conditions" string="Conditions de paiement"/>
+                <field name="failures" string="Renonce de droit de rétractation"/>
             </xpath>
         </field>
     </record>

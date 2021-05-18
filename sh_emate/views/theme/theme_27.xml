@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Theme "solar" default template -->
+    <template id="theme_tmpl_27">
+        <!-- header/menubar -->
+        <div class="o_mail_block_header_logo" id="sh_header_27">
+			<div class="o_mail_snippet_general">
+				<table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding">
+		 			<tbody>
+                        <tr>
+                            <td width="30%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding logo">
+                                <a href="#">
+                                    <img src="/sh_emate/static/src/img/tmpl_27/logo.png" alt="logo" />
+                                </a>
+                            </td>
+                            <td width="70%" class="text-right o_mail_no_resize o_mail_col_mv o_mail_col_container">
+                                <div class="o_mail_header_social menu right_menu">
+                                    <a href="#" class="ml10">MENS</a>
+                                    <a href="#" class="ml10">WOMENS</a>
+                                    <a href="#" class="ml10">KIDS</a>
+                                    <a href="#" class="ml10">STORE</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+				</table>	
+			</div>
+		</div>	
+        <!-- end header/menubar -->
+
+        <!-- banner -->
+        <div class="o_mail_block_banner" id="sh_banner_27" data-name="Banner">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                            <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+                                <a href="#">
+                                    <img src="/sh_emate/static/src/img/tmpl_27/banner.gif" class="d-block mx-auto" alt="Your Banner Image" />
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- end banner -->
+
+        <!-- Image_Text -->
+        <div class="o_mail_block_image_text" data-name="Image - Text" id="sh_image_text_27">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                        	<td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270 plr10">
+                                <div class="sh_left_image">
+                                    <img src="/sh_emate/static/src/img/tmpl_27/christmas-postcard-santa-claus-with-sleigh-sky-village_68971-599.png" alt="image" />
+                                </div>
+                            </td>
+                            <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270 plr10">
+                                <div class="sh_content">
+                                    <h3>New Year Sales</h3>
+                                    <h6>Extra 10% Cashback</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                                    <a class="btn btn_shopnow" href="#">SHOP NOW</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> 
+        <!-- end Image_Text -->
+        
+        
+        <!-- offer -->
+        <div class="o_mail_block_offer" id="sh_offer_27" data-name="Offer">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                            <td width="70%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding left-content">
+                                <h4 class="o_default_snippet_text">Sale Upto 60% Off</h4>
+                                <h4 class="o_default_snippet_text">Black Friday Limited Sale</h4>
+                            </td>
+                            <td width="30%" class="text-right o_mail_col_mv o_mail_col_container o_mail_no_resize v_middle">
+                                <div class="btn-right">
+                                    <a class="btn_shopnow o_default_snippet_text" href="#">SHOP NOW</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- end offer -->
+        
+        <!-- Product_item -->
+        <div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_product_27">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt0">
+                    <tbody>
+                        <tr>
+                            <td width="100%" class="heading">
+                                <center>
+                                    <h3 class="o_default_snippet_text">Happy, Happy, Happy</h3>
+                                    <p class="detail o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                    <div class="tree_img heading_design">
+                                    	<img src="/sh_emate/static/src/img/tmpl_27/pattern.png" alt="tree"></img>
+                                    </div>
+                                </center>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table two_col pt0">
+                    <tbody>
+                        <tr>
+                            <td class="o_mail_col_mv o_mail_col_container plr10 width200 text-center">
+                                <div>
+                                    <img src="/sh_emate/static/src/img/tmpl_27/running-shoes-white-background_10541-635.png" class="d-block mx-auto pro_image" alt="Your Picture" loading="lazy" />
+                                    
+                                    <div class="d-flex bottom_section">
+	                                    <p class="text-center o_mail_no_margin o_default_snippet_text left_text">
+	                                        <a href="#" class="o_default_snippet_text">Latest Brands</a>
+	                                    </p>
+	                                    <p class="text-center o_mail_no_margin o_default_snippet_text right_text">
+	                                    	<a href="#" class="btn_shop o_default_snippet_text">Shop</a>
+	                                    </p>
+	                                 </div>
+                                </div>
+                            </td>
+
+                            <td class="o_mail_col_mv o_mail_col_container plr10 width200 text-center">
+                                <div>
+                                    <img src="/sh_emate/static/src/img/tmpl_27/shirt_1203-8194.png" class="d-block mx-auto pro_image" alt="Your Picture" loading="lazy" />
+                                    
+                                    <div class="d-flex bottom_section">
+	                                    <p class="text-center o_mail_no_margin o_default_snippet_text left_text">
+	                                        <a href="#" class="o_default_snippet_text">Latest Brands</a>
+	                                    </p>
+	                                    <p class="text-center o_mail_no_margin o_default_snippet_text right_text">
+	                                    	<a href="#" class="btn_shop o_default_snippet_text">Shop</a>
+	                                    </p>
+	                                </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- end Product_item -->
+     
+        <!-- footer -->
+        <div class="o_mail_block_title_footer" data-name="Footer" id="sh_footer_27">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                            <td width="100%" class="o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10 pt30">
+                                <center>
+                                    <ul>
+                                        <li>
+                                            <a t-if="company_id.social_facebook" t-att-href="company_id.social_facebook">
+                                                <span class="fa fa-facebook"></span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a t-if="company_id.social_twitter" t-att-href="company_id.social_twitter">
+                                                <span class="fa fa-twitter"></span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a t-if="company_id.social_instagram" t-att-href="company_id.social_instagram">
+                                                <span class="fa fa-instagram"></span>
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a t-if="company_id.social_youtube" t-att-href="company_id.social_youtube">
+                                                <span class="fa fa-youtube-play"></span>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="100%" class="o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10 add_info">
+                                <center>
+                                    <ul>
+                                    	<li><span class="fa fa-envelope"></span> <t t-raw="company_id.email" /> </li>
+                                    	<li><span class="fa fa-phone"></span> <t t-raw="company_id.phone" /> </li>
+                                    	<li><span class="fa fa-globe"></span> <t t-raw="company_id.website" /> </li>
+                                    </ul>
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="100%" class="o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10 address">
+                                <center>
+                                    <p>
+                                        <span class="o_default_snippet_text">905, Corporate Levels, 150ft. Ring Road,</span>
+                                        
+                                        <span class="o_default_snippet_text">Rajkot.</span>
+                                    </p>
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="100%" class="o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker">
+                                <center>
+                                    <p class="c_text">Copyright © <t t-raw="company_id.name" /> </p>
+                                </center>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- end footer -->
+    </template>
+</odoo>

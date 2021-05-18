@@ -1,0 +1,144 @@
+// ==========================
+// Mass Mailing "Theme 9"
+// ==========================
+
+$sh-emate-mm-theme11-color-alpha: #8e6b5a;
+$sh-emate-mm-theme11-color-beta: white;
+$sh-emate-mm-theme11-color-gamma: #ff3c00;
+$sh-emate-mm-theme11-color-delta: darken($sh-emate-mm-theme2-color-gamma, 5%);
+$sh-emate-mm-theme11-color-epsilon: black;
+$sh-emate-mm-theme11-color-zeta: #f4f0e7;
+
+
+/*======= header ========*/
+#sh_header_11{background-color: $sh_emate_theme1_color_secondary;padding: 5px 0;font-family: 'Montserrat', sans-serif;}
+#sh_header_11 .logo h1{margin-bottom: 0px;font-size: 22px;font-weight: 600;text-decoration: none;color: #fff;font-family: 'Montserrat', sans-serif;}
+#sh_header_11 .menu a{text-decoration: none;color: #fff;font-size: 13px;transition: all .4s;font-family: 'Montserrat', sans-serif;}
+#sh_header_11 .icon a{color: #fff;text-decoration: none;font-family: 'Montserrat', sans-serif;font-size: 15px;}
+#sh_header_11 .icon span,#sh_header_11 .icon img{color: #fff;margin-right: 5px;}
+#sh_header_11 .ml10{margin-left: 10px;}
+#sh_header_11 .p10{padding: 10px 0px;}
+
+/*==== banner ====*/
+
+/*====== product ======*/
+#sh_product_11 {padding: 20px 20px;font-family: 'Montserrat', sans-serif;}
+#sh_product_11 .heading h3{color: $sh_emate_theme1_color_text_header;font-size: 22px;font-weight: 700;padding:0px;font-family: 'Montserrat', sans-serif;}
+
+#sh_product_11 h3{position: relative;color: $sh_emate_theme1_color_text_content;font-size: 30px;font-weight: 700;padding: 10px 0px;font-family: 'Montserrat', sans-serif;}
+#sh_product_11 .img img{width: 100%;height: 200px;object-fit: cover;margin-bottom: 15px;}
+#sh_product_11 .box{text-align: center;font-family: 'Montserrat', sans-serif;}
+#sh_product_11 .box a{text-decoration: none;color: $sh_emate_theme1_color_text_content;}
+#sh_product_11 .box .text{padding: 5px 0px 10px 0px;font-weight: 600;margin-bottom: 0px;color: $sh_emate_theme1_color_text_content;font-family: 'Montserrat', sans-serif;font-size: 15px;}
+#sh_product_11 .box .price{padding: 0px 0px 10px 0px;font-weight: normal;margin-bottom: 0px;color: $sh_emate_theme1_color_text_content;font-family: 'Montserrat', sans-serif;font-size: 14px;}
+#sh_product_11 .plr10{padding: 0px 10px;}
+#sh_product_11 .width180{width: 180px;}
+
+
+/*====== product_item ======*/
+
+#sh_product_item_11 {padding: 20px 20px;font-family: 'Montserrat', sans-serif;}
+#sh_product_item_11 .heading h3{color: $sh_emate_theme1_color_text_header;font-size: 22px;font-weight: 700;padding:0px;font-family: 'Montserrat', sans-serif;}
+#sh_product_item_11 .dflex{display: flex;justify-content: space-between;}
+#sh_product_item_11  img{width: 100%;object-fit: cover;height: 265px;}
+#sh_product_item_11 .box{background-color: #ebebeb;color: $sh_emate_theme1_color_text_content;padding: 40px 30px;text-align: left;}
+#sh_product_item_11 .box p{color: $sh_emate_theme1_color_text_content;font-size: 15px;margin: 15px 0px 10px 0px;display: block;}
+#sh_product_item_11 .box h1{font-size: 20px;color: $sh_emate_theme1_color_text_content;margin: 0px;font-weight: bold;text-align: left;margin-bottom: 15px;}
+#sh_product_item_11 .box h4{font-weight: bold;margin-bottom: 19px;color: $sh_emate_theme1_color_text_content;}
+#sh_product_item_11 a.btn{text-decoration: none;color: #fff;font-size: 15px;}
+#sh_product_item_11 .btn_ordernow{background-color: $sh_emate_theme1_color_primary;color: #fff;border:none;border-radius: 0px;padding: 7px 20px;margin-top: 0px;}
+#sh_product_item_11 .pl0{padding-left: 0px;}
+#sh_product_item_11 .pr0{padding-right: 0px;}
+ 
+/*===== sh_call_to_action ======*/
+
+.sh_emate_calltoaction_3{background: $sh_emate_theme1_color_primary;}
+#sh_call_to_action_11 .plr15{padding-right: 15px;padding-left: 15px;}
+#sh_call_to_action_11 .text-center{text-align: center;}
+#sh_call_to_action_11{margin-bottom: 30px;}
+#sh_call_to_action_11 h2{font-size: 25px;color: #fff;letter-spacing: 1px;margin: 0px 0px 20px 0px;font-weight: bold;}
+#sh_call_to_action_11 a.btn{text-decoration: none;color: #fff;}
+#sh_call_to_action_11 .btn{background: transparent;color: #fff;border:2px solid #fff;padding: 8px 20px;}
+
+
+/*======gallery ======*/
+#sh_gallery_11{padding: 0px 20px;font-family: 'Montserrat', sans-serif;}
+#sh_gallery_11 .img img{width: 100%;height: 180px;object-fit: cover;}
+#sh_gallery_11 .w270{vertical-align:top;width:270px;}
+#sh_gallery_11 .w180{vertical-align:top;width:180px;}
+#sh_gallery_11 .p10{padding: 10px;}
+#sh_gallery_11 .pt0{padding-top: 0px;}
+#sh_gallery_11 .pb0{padding-bottom: 0px;}
+
+
+/*====== EVENT =====*/
+#sh_event_11{margin: 20px 0px;}
+#sh_event_11 .heading h3{color: $sh_emate_theme1_color_text_header;font-size: 22px;font-weight: 700;padding:0px;font-family: 'Montserrat', sans-serif;}
+#sh_event_11 .w270{vertical-align:top;width:270px;}
+#sh_event_11 .box .content h5{font-weight: bold;font-size: 22px;margin: 0;padding: 10px 0px 20px 0px;color: $sh_emate_theme1_color_text_content;text-align: left;font-family: 'Montserrat', sans-serif;}
+#sh_event_11 .box .content p{font-size: 15px;color: #616161;margin-bottom: 10px;text-align: left;display: block;font-family: 'Montserrat', sans-serif;}
+#sh_event_11 .box .content a{text-decoration: none;font-size: 18px;color: $sh_emate_theme1_color_text_content;text-align: left;font-family: 'Montserrat', sans-serif;}
+#sh_event_11 .box .content{padding: 10px 10px 10px 0px;background: #fff;text-align: left;font-family: 'Montserrat', sans-serif;}
+#sh_event_11 .box .content .bottom img{margin-right: 10px;margin-left: 0px;}
+#sh_event_11 .box p.author{position: relative;color: #919191;font-size: 15px;margin-bottom: 15px;}
+#sh_event_11 .box .content a.btn_reg{color: #616161;text-decoration: none;padding: 10px 0px;font-size: 15px;}
+
+/*====== Comparison =====*/
+#sh_comparison_11{margin: 20px 0px;text-align: center;}
+#sh_comparison_11 .heading h3{color: $sh_emate_theme1_color_text_header;font-size: 22px;font-weight: 700;padding:0px;font-family: 'Montserrat', sans-serif;}
+
+#sh_comparison_11 .content{padding: 5px 0px 25px 0px;background: #ebebeb;font-family: 'Montserrat', sans-serif;}
+#sh_comparison_11 .text{position: relative;padding: 20px 0px 20px 0px;margin: 0px;font-size: 15px;font-family: 'Montserrat', sans-serif;}
+#sh_comparison_11 h2{background: $sh_emate_theme1_color_primary;padding: 20px 0px 28px 0px;margin: 0px;font-family: 'Montserrat', sans-serif;}
+#sh_comparison_11 h4{font-size: 18px;margin: 15px 0px;font-family: 'Montserrat', sans-serif;color: $sh_emate_theme1_color_text_content;}
+#sh_comparison_11 sup{color: #fff;font-size: 15px;margin: 0px 5px;font-weight: bold;font-family: 'Montserrat', sans-serif;}
+#sh_comparison_11 p{color: $sh_emate_theme1_color_text_content;}
+#sh_comparison_11  span{font-size: 30px;font-weight: 800;color: #fff;font-family: 'Montserrat', sans-serif;}
+#sh_comparison_11  span sub{font-size: 40px;}
+#sh_comparison_11 a.btn_booknow{text-decoration: none;color: $sh_emate_theme1_color_text_content;font-size: 15px;font-family: 'Montserrat', sans-serif;}
+#sh_comparison_11 .btn{border:2px solid $sh_emate_theme1_color_primary;color: $sh_emate_theme1_color_text_content;padding: 8px 20px;margin: 0px 0px;border-radius: 0;font-family: 'Montserrat', sans-serif;}
+#sh_comparison_11 .w180{width: 180px;}
+#sh_comparison_11 .plr10{padding: 10px;}
+
+
+/*====== Blog =====*/
+#sh_blog_11{margin: 20px 0px;}
+#sh_blog_11 .heading h3{color: $sh_emate_theme1_color_text_header;font-size: 22px;font-weight: 700;padding:0px;font-family: 'Montserrat', sans-serif;}
+#sh_blog_11 .w270{vertical-align:top;width:270px;}
+#sh_blog_11 .box .img img{height: 150px;width: 100%;object-fit: cover;}
+#sh_blog_11 .box .content h5{font-weight: bold;font-size: 20px;margin: 0;padding: 8px 0;color: $sh_emate_theme1_color_text_content;text-align: left;font-family: 'Montserrat', sans-serif;}
+#sh_blog_11 .box .content p{font-size: 15px;color: #616161;font-weight: normal;margin-bottom: 10px;text-align: left;display: block;font-family: 'Montserrat', sans-serif;}
+#sh_blog_11 .box .content a.btn_readmore{text-decoration: none;font-size: 15px;color: #616161;text-align: left;font-family: 'Montserrat', sans-serif;}
+#sh_blog_11 .box .content{padding: 20px 0px;background: transparent;text-align: left;font-family: 'Montserrat', sans-serif;}
+
+
+/*========= footer ==========*/
+.sh_emate_footer_7{background-color: $sh_emate_theme1_color_secondary;}
+
+#sh_footer_11 {padding: 50px 0px;font-family: 'Montserrat', sans-serif;}
+#sh_footer_11 ul{padding: 0;}
+#sh_footer_11 ul li{display: inline-block;font-family: 'Montserrat', sans-serif;}
+#sh_footer_11 ul li{display: inline-block;text-align: center;padding:0px 15px;margin-bottom: 0px; }
+#sh_footer_11 .address p{color: #fff;border-top: 0px solid #fff;border-bottom: 1px solid #fff;width: 70%;padding: 10px 0px;margin-bottom: 10px;font-family: 'Montserrat', sans-serif;}
+#sh_footer_11 .btn{cursor: pointer;border:1px solid #fff;padding: 10px 40px;color: #fff;font-size: 16px;font-family: 'Montserrat', sans-serif;}
+#sh_footer_11 .btn img{background:transparent;color: #fff;font-weight: 700;padding-right:20px;font-size: 18px;margin-top: 0px;}
+#sh_footer_11 a img{background-color: transparent;color: #fff;border-radius: 0%;height: 15px;width: 15px;line-height: 25px;}
+#sh_footer_11 ul li img{padding: 0px;cursor: pointer;}
+#sh_footer_11 ul li a{color: #fff;text-decoration: none;}
+#sh_footer_11 .p10{padding: 10px;}
+#sh_footer_11 .mail p{color: #fff;margin-bottom: 0px;font-family: 'Montserrat', sans-serif;}
+#sh_footer_11 p{color: #fff;margin-bottom: 0px;font-family: 'Montserrat', sans-serif;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

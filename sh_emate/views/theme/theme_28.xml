@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Theme "solar" default template -->
+    <template id="theme_tmpl_28">
+        <!-- header/menubar -->
+
+        <div class="o_mail_block_header_social" id="sh_header_28" data-name="Left Logo">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                            <td width="25%" class="o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding logo">
+                                <a href="#">
+                                    <img src="/sh_emate/static/src/img/tmpl_28/logo.png" alt="logo" />
+                                </a>
+                            </td>
+                            <td width="75%" class="text-right o_mail_no_resize o_mail_col_mv o_mail_col_container">
+                                <div class="o_mail_header_social menu">
+                                    <a href="#" class="ml10">MEN</a>
+                                    <a href="#" class="ml10">|</a>
+                                    <a href="#" class="ml10">WOMEN</a>
+                                    <a href="#" class="ml10">|</a>
+                                    <a href="#" class="ml10">OFFER</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- end header/menubar -->
+
+        <!-- banner -->
+
+        <div class="o_mail_block_banner" id="sh_banner_28" data-name="Banner">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                            <td width="100%" valign="top" class="o_mail_full_width_padding o_mail_no_colorpicker bg_img">
+                                <a href="#">
+                                    <img src="/sh_emate/static/src/img/tmpl_28/banner.png" class="d-block mx-auto" alt="Your Banner Image" />
+                                    <img src="/sh_emate/static/src/img/tmpl_28/gif.gif" class="d-block mx-auto" alt="Your Banner Image" />
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- end banner -->
+
+        <!-- offer -->
+        <div class="o_mail_block_text_image" data-name="Text - Image" id="sh_offer_28">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                            <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270">
+                                <div class="content">
+                                    <h3>New Year Offers</h3>
+                                    <img class="heading_bottom" src="/sh_emate/static/src/img/tmpl_28/header_bottom.png" alt="heading_img" />
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                                    </p>
+                                    <a class="btn_explore" href="#">Explore More</a>
+                                </div>
+                            </td>
+                            <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270">
+                                <div class="sh_right_img">
+                                    <img src="/sh_emate/static/src/img/tmpl_28/santa_img.png" alt="image" />
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- end offer -->
+
+		<!-- video -->
+
+        <div class="o_mail_block_video" data-name="Centered" id="sh_video_28">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding">
+                    <tbody>
+                        <tr>
+                            <td valign="center" width="100%" class="p10 text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding sh_content">
+                                <h2>Welcome to Midnight Party</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                <a class="btn_play" href="#"><span class="play_icon"><img src="/sh_emate/static/src/img/tmpl_28/video.png" alt="video_img"></img></span>Watch Video</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- end video -->
+        
+        <!-- event -->
+
+        <div class="o_mail_block_event" data-name="Centered" id="sh_event_28">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles o_mail_h_padding">
+                    <tbody>
+                        <tr>
+                        	<td valign="center" width="100%" class="p10 text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding sh_heading">
+                        		<div class="heading">
+                        			<h3>Welcome To New Year Celebration</h3>
+                                    <img class="heading_bottom" src="/sh_emate/static/src/img/tmpl_28/header_bottom.png" alt="heading_img" />
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                 </div>
+                             </td>
+                          </tr>
+                          <tr>
+                             <td valign="center" width="100%" class="p10 text-center o_mail_col_mv o_mail_col_container o_mail_h_padding o_mail_v_padding sh_content">
+                                <h2 class="sh_date">DATE : <span class="inner_text"> Thursday, December 31st 2020 </span></h2>
+                                <h2 class="sh_timing">DOOR OPENS AT : <span class="inner_text"> 8.00 PM TO 12.00 PM </span></h2>
+                                <h2 class="sh_event_name">EVENTS : <span class="inner_text"> LIVE MUSIC &amp; DJ </span></h2>
+                                <a class="btn_join btn" href="#">Join Now</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- end event -->
+
+
+        <!-- footer -->
+        <div class="o_mail_block_title_footer" data-name="Footer" id="sh_footer_28">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" border="0" class="o_mail_table_styles">
+                    <tbody>
+                    	<tr>
+                            <td width="100%" class="o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10 paragraph_text">
+                                <center>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                                    </p>
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="100%" class="o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10 menu_link">
+                                <center>
+                                    <ul>
+                                    	<li><a href="#">MY ACCOUNT</a></li>
+                                    	<li><a href="#">YOUR SERVICE</a></li>
+                                    	<li><a href="#">CAREERS</a></li>
+                                    	<li><a href="#">PRIVACY POLICY</a></li>
+                                    </ul>
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="100%" class="o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker">
+                                <center>
+                                    <p class="c_text">Copyright © <t t-raw="company_id.name" /> </p>
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="100%" class="o_mail_h_padding o_mail_v_padding o_mail_no_colorpicker p10 social_icon">
+                                <center>
+                                    <ul>
+                                        <li>
+                                            <a t-if="company_id.social_facebook" t-att-href="company_id.social_facebook">
+                                                <span class="fa fa-facebook"></span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a t-if="company_id.social_twitter" t-att-href="company_id.social_twitter">
+                                                <span class="fa fa-twitter"></span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a t-if="company_id.social_instagram" t-att-href="company_id.social_instagram">
+                                                <span class="fa fa-instagram"></span>
+                                            </a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a t-if="company_id.social_youtube" t-att-href="company_id.social_youtube">
+                                                <span class="fa fa-youtube-play"></span>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </center>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- end footer -->
+    </template>
+</odoo>

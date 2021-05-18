@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- Text_Image template 1 -->
+<template id="sh_emate_image_text_tmpl_1" name="Image_Text 1">
+	
+	<div class="sh_emate_image_text_1">
+		<div class="o_mail_block_text_image" data-name="Text - Image" id="sh_text_image_19">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270">
+		                        <div class="sh_content">
+			                        <h3>Lorem ipsum dolor sit amet.</h3>
+			                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			                        <ul class="tickmark">
+			                        	<li><span class="fa fa-check"></span> Lorem ipsum dolor sit amet</li>
+			                        	<li><span class="fa fa-check"></span> Lorem ipsum dolor sit amet</li>
+			                        	<li><span class="fa fa-check"></span> Lorem ipsum dolor sit amet</li>
+			                        </ul>
+			                        <a class="btn btn_readmore" href="#">Read More</a>
+			                    </div>
+		                    </td>
+		                    
+		                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270">
+		                        <div class="sh_right_content">
+			                        <img src="/sh_emate/static/src/img/tmpl_19/2.png" alt="image" />
+			                    </div>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div> 
+	</div>
+	
+</template>
+<!-- end Text_Image template 1  -->
+
+<!-- Text_Image template 2 -->
+<template id="sh_emate_image_text_tmpl_2" name="Image_Text 2">
+	
+	<div class="sh_emate_image_text_2">
+		<div class="o_mail_block_text_image" data-name="Text - Image" id="sh_text_image_22">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                	<td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270">
+		                        <div class="img">
+			                        <img src="/sh_emate/static/src/img/tmpl_22/3.png" alt="image" />
+			                    </div>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270">
+		                        <div class="content">
+			                        <h3>Build for your daily schedule reporting</h3>
+				                    <hr/>
+				                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Curabitur placerat tellus sit amet ipsum ornare.</p>
+			                        <ul class="tickmark">
+			                        	<li><span class="fa fa-check"></span> Lorem ipsum dolor sit amet</li>
+			                        	<li><span class="fa fa-check"></span> Lorem ipsum dolor sit amet</li>
+			                        	<li><span class="fa fa-check"></span> Lorem ipsum dolor sit amet</li>
+			                        	<li><span class="fa fa-check"></span> Lorem ipsum dolor sit amet</li>
+			                        </ul>
+			                        <a class="btn btn_readmore" href="#">Read More</a>
+			                    </div>
+		                    </td>
+		                    
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div> 
+	</div>
+	
+</template>
+<!-- end Text_Image template 2  -->
+
+<!-- Text_Image template 3 -->
+<template id="sh_emate_image_text_tmpl_3" name="Image_Text 3">
+	
+	<div class="sh_emate_image_text_3">
+		<div class="o_mail_block_text_image" data-name="Text - Image" id="sh_image_text_23">
+		    <div class="o_mail_snippet_general">
+		    	
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                	<td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270 p10">
+		                        <div class="img">
+			                        <img src="/sh_emate/static/src/img/tmpl_23/2.png" alt="image" />
+			                    </div>
+		                    </td>
+		                    
+		                	<td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270 p10 vmiddle">
+		                        <div class="content">
+			                        <p class="small_text">Lorem ipsum dolor sit</p>
+			                        <h5>Lorem ipsum dolor sit amet, consectetur.</h5>
+			                        <p class="para_text">Lorem ipsum dolor sit amet consectetur edipiscing elit tempor suscipit consectetur enim sit amet poro consectetur. Lorem ipsum dolor sit amet...</p>
+			                        <a href="#" class="btn_readmore">Read More</a>
+			                    </div>
+		                    </td>
+		                    
+		                </tr>
+		            </tbody>
+		        </table>
+		        
+		    </div>
+		</div> 
+	</div>
+	
+</template>
+<!-- end Text_Image template 3  -->
+
+<!-- Text_Image template 4 -->
+<template id="sh_emate_image_text_tmpl_4" name="Image_Text 4">
+	
+	<div class="sh_emate_image_text_4">
+		<div class="o_mail_block_text_image" data-name="Text - Image" id="sh_text_image_25">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270 plr10">
+		                        <div class="sh_content">
+		                        	<h5>OUR MISSION</h5>
+		                        	<hr/>
+			                        <h3>SERVICES YOU GET</h3>
+			                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			                        <ul class="tickmark">
+			                        	<li><span class="fa fa-check"></span> Lorem ipsum dolor sit amet</li>
+			                        	<li><span class="fa fa-check"></span> Lorem ipsum dolor sit amet</li>
+			                        	<li><span class="fa fa-check"></span> Lorem ipsum dolor sit amet</li>
+			                        	<li><span class="fa fa-check"></span> Lorem ipsum dolor sit amet</li>
+			                        	<li><span class="fa fa-check"></span> Lorem ipsum dolor sit amet</li>
+			                        </ul>
+			                        <a class="btn btn_readmore" href="#">Read More</a>
+			                    </div>
+		                    </td>
+		                    
+		                    <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270 plr10">
+		                        <div class="sh_right_content">
+			                        <img src="/sh_emate/static/src/img/tmpl_25/working-housing-project_1098-17511.png" alt="image" />
+			                    </div>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div> 
+	</div>
+	
+</template>
+<!-- end Text_Image template 4  -->
+
+<!-- Text_Image template 5 -->
+<template id="sh_emate_image_text_tmpl_5" name="Image_Text 5">
+	
+	<div class="sh_emate_image_text_5">
+		<div class="o_mail_block_image_text" data-name="Image - Text" id="sh_image_text_26">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                        	<td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270 plr10">
+                                <div class="sh_left_image">
+                                    <img src="/sh_emate/static/src/img/tmpl_26/aboutus.png" alt="image" />
+                                </div>
+                            </td>
+                            <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270 plr10">
+                                <div class="sh_content">
+                                    <h5>About Us</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                                    <a class="btn btn_readmore" href="#">READ MORE</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+	</div>
+	
+</template>
+<!-- end Text_Image template 5  -->
+
+
+<!-- Text_Image template 6 -->
+<template id="sh_emate_image_text_tmpl_6" name="Image_Text 6">
+	
+	<div class="sh_emate_image_text_6">
+		<div class="o_mail_block_image_text" data-name="Image - Text" id="sh_image_text_27">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                        	<td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w270 plr10">
+                                <div class="sh_left_image">
+                                    <img src="/sh_emate/static/src/img/tmpl_27/christmas-postcard-santa-claus-with-sleigh-sky-village_68971-599.png" alt="image" />
+                                </div>
+                            </td>
+                            <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding w270 plr10">
+                                <div class="sh_content">
+                                    <h3>New Year Sales</h3>
+                                    <h6>Extra 10% Cashback</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                                    <a class="btn btn_shopnow" href="#">SHOP NOW</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> 
+	</div>
+	
+</template>
+<!-- end Text_Image template 6  -->
+
+<!-- Text_Image template 7 -->
+<template id="sh_emate_image_text_tmpl_7" name="Image_Text 7">
+	
+	<div class="sh_emate_image_text_7">
+		<div class="o_mail_block_text_image" data-name="Image - Text" id="sh_text_image_30">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles">
+                    <tbody>
+                        <tr>
+                            <td class="o_mail_col_mv o_mail_h_padding o_mail_v_padding text-center w230">
+                            	<div class="sh_content">
+	                                <h3>Black</h3>
+	                                <h1>FRI<span>DAY</span></h1>
+	                                <h2>60% OFF</h2>
+	                                <h4>27 NOVEMBER 2020</h4>
+	                                <a href="#" class="btn btn_shop_now">Shop Now</a>
+	                            </div>
+                            </td>
+                            <td class="o_mail_col_mv o_mail_img_container o_mail_h_padding o_mail_v_padding w230 p0 right_image">
+                                <img src="/sh_emate/static/src/img/tmpl_30/pretty-white-woman.png" class="d-block mx-auto" alt="Your Picture" loading="lazy" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+	</div>
+	
+</template>
+<!-- end Text_Image template 7  -->
+
+	
+
+</odoo>

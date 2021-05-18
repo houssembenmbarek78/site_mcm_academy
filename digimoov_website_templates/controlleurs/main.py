@@ -2,6 +2,24 @@ from odoo import http
 from odoo.http import request
 from datetime import datetime,date
 import base64
+from werkzeug.exceptions import NotFound
+from odoo.addons.website.controllers.main import Website #import website controller
+
+class Website(Website):
+    #inherit sitemap route function
+    @http.route('/sitemap.xml', type='http', auth="public", website=True, multilang=False, sitemap=False)
+    def sitemap_xml_index(self, **kwargs):
+        current_website = request.website
+        Attachment = request.env['ir.attachment'].sudo()#get ir attachment class
+        mimetype = 'application/xml;charset=utf-8'
+        content = None
+        dom = [('url', '=', '/sitemap-%d.xml' % current_website.id), ('type', '=', 'binary')]
+        sitemap = Attachment.search(dom, limit=1) #check existing of a sitemap attachment in database
+        if sitemap and sitemap.datas: # if sitemap exist get it from database and don't generate a new one
+            content = base64.b64decode(sitemap.datas)
+            return request.make_response(content, [('Content-Type', mimetype)])
+        else: # if doesn't exist in database generate new sitemap
+            return super(Website,self).sitemap_xml_index(**kwargs)
 
 class FAQ(http.Controller):
 
@@ -94,14 +112,25 @@ class FINANCEMENT(http.Controller):
     def cpf_thanks(self, **kw, ):
         return request.render("digimoov_website_templates.cpf_thank_you", {})
 
+    @http.route('/maintenance', type='http', auth='public', website=True)
+    def cpf_thanks(self, **kw, ):
+        return request.render("digimoov_website_templates.digimoov_template_maintenance", {})
+
     @http.route('/pricing', type='http', auth='public', website=True)
     def pricing_table(self, **kw, ):
         user_connected=request.env.user
         if user_connected:
-            if user_connected.partner_id.partner_from and user_connected.partner_id.partner_from in ['ubereats', 'deliveroo', 'coursierjob']:
+            if user_connected.partner_id.partner_from and user_connected.partner_id.partner_from in ['ubereats', 'deliveroo', 'coursierjob','','box2home']:
                 return request.redirect("/%s#pricing"% str(user_connected.partner_id.partner_from))
             else:
                 return request.redirect("/#pricing")
+    @http.route('/ebook-gratuit', type='http', auth='public', website=True)
+    def ebook(self, **kw, ):
+        if request.website.id==2:
+            return request.render("digimoov_website_templates.free_ebook", {})
+        else:
+            raise NotFound()
+
 
 
 class DIGIEXAMEN(http.Controller):
@@ -145,6 +174,7 @@ class Services(http.Controller):
 
     @http.route('/service-clientele', type='http', auth='public', website=True)
     def clientele(self, **kw, ):
+        return request.redirect('/maintenance')
         public_user = http.request.env['res.users'].sudo().search([('id', '=', 4), ('active', '=', False)])
 
         if http.request.uid == public_user.id:
@@ -168,6 +198,7 @@ class Services(http.Controller):
 
     @http.route('/administration', type='http', auth='public', website=True)
     def administration(self, **kw, ):
+        return request.redirect('/maintenance')
         public_user = http.request.env['res.users'].sudo().search([('id', '=', 4), ('active', '=', False)])
 
         if http.request.uid == public_user.id:
@@ -191,6 +222,7 @@ class Services(http.Controller):
 
     @http.route('/partenariat', type='http', auth='public', website=True)
     def partenariat(self, **kw, ):
+        return request.redirect('/maintenance')
         public_user = http.request.env['res.users'].sudo().search([('id', '=', 4), ('active', '=', False)])
 
         if http.request.uid == public_user.id:
@@ -214,6 +246,7 @@ class Services(http.Controller):
 
     @http.route('/service-comptabilite', type='http', auth='public', website=True)
     def comptabilite(self, **kw, ):
+        return request.redirect('/maintenance')
         public_user = http.request.env['res.users'].sudo().search([('id', '=', 4), ('active', '=', False)])
 
         if http.request.uid == public_user.id:
@@ -237,6 +270,7 @@ class Services(http.Controller):
 
     @http.route('/service-pedagogique', type='http', auth='public', website=True)
     def pedagogique(self, **kw, ):
+        return request.redirect('/maintenance')
         public_user = http.request.env['res.users'].sudo().search([('id', '=', 4), ('active', '=', False)])
 
         if http.request.uid == public_user.id:
@@ -276,7 +310,8 @@ class Services(http.Controller):
         if kwargs.get('name_company'):
             name_company=kwargs.get('name_company')
         service=kwargs.get('service')
-        user = http.request.env['res.users'].sudo().search([('login',"=",str(email_from))])
+        user = http.request.env['res.users'].sudo().search([('login',"=",str(email_from))],limit=1)
+
         if not user:
             user = request.env['res.users'].sudo().create({
                 'name': str(contact_name) + " " + str(contact_last_name),
@@ -286,11 +321,16 @@ class Services(http.Controller):
                 'phone':phone,
                 'notification_type': 'email',
                 'website_id': 2,
-                'company_ids': [2],
+                'company_ids': [1,2],
                 'company_id': 2
             })
         if user and name_company:
             user.partner_id.company_name=name_company
+        if user:
+            ticket_name = 'Digimoov : '+ str( name)
+            ticket = request.env['helpdesk.ticket'].sudo().search([('name', "=", ticket_name),('partner_id',"=",user.partner_id.id),('description',"=",str(description),)], limit=1)
+            if ticket:
+                return request.redirect('/contact')
         if service == 'client':
             vals = {
                 'partner_email': str(email_from),
@@ -298,7 +338,7 @@ class Services(http.Controller):
                 'description':str(description),
                 'name':'Digimoov : '+ str( name),
                 'team_id': request.env['helpdesk.team'].sudo().search(
-                    [('name', 'like', 'Client'), ('company_id', "=", 1)],
+                    [('name', 'like', 'Client'), ('company_id', "=", 2)],
                     limit=1).id,
             }
             new_ticket = request.env['helpdesk.ticket'].sudo().create(
@@ -321,7 +361,7 @@ class Services(http.Controller):
                 'description': str(description),
                 'name': 'Digimoov : ' + str(name),
                 'team_id': request.env['helpdesk.team'].sudo().search(
-                    [('name', 'like', 'Admini'), ('company_id', "=", 1)],
+                    [('name', 'like', 'Admini'), ('company_id', "=", 2)],
                     limit=1).id,
             }
             new_ticket = request.env['helpdesk.ticket'].sudo().create(
@@ -334,7 +374,7 @@ class Services(http.Controller):
                 'description': str(description) ,
                 'name': 'Digimoov : ' + str(name),
                 'team_id': request.env['helpdesk.team'].sudo().search(
-                    [('name', 'like', 'Admini'), ('company_id', "=", 1)],
+                    [('name', 'like', 'Admini'), ('company_id', "=", 2)],
                     limit=1).id,
             }
             new_ticket = request.env['helpdesk.ticket'].sudo().create(
@@ -347,7 +387,7 @@ class Services(http.Controller):
                 'description': str(description),
                 'name': 'Digimoov : ' + str(name),
                 'team_id': request.env['helpdesk.team'].sudo().search(
-                    [('name', 'like', 'Compta'), ('company_id', "=", 1)],
+                    [('name', 'like', 'Compta'), ('company_id', "=", 2)],
                     limit=1).id,
             }
             new_ticket = request.env['helpdesk.ticket'].sudo().create(
@@ -360,7 +400,7 @@ class Services(http.Controller):
                 'description': str(description),
                 'name': 'Digimoov : ' + str(name),
                 'team_id': request.env['helpdesk.team'].sudo().search(
-                    [('name', 'like', 'gogique'), ('company_id', "=", 1)],
+                    [('name', 'like', 'gogique'), ('company_id', "=", 2)],
                     limit=1).id,
             }
             new_ticket = request.env['helpdesk.ticket'].sudo().create(
@@ -404,7 +444,7 @@ class HOME2(http.Controller):
                 if (product.default_code == 'premium'):
                     premium_price = round(product.list_price)
         promo = False
-        if (request.website.id == 2 and partenaire in ['ubereats', 'deliveroo', 'coursierjob']):
+        if (request.website.id == 2 and partenaire in ['ubereats', 'deliveroo', 'coursierjob','box2home']):
             promo = request.env['product.pricelist'].sudo().search(
                 [('company_id', '=', 2), ('code', 'ilike', partenaire.upper())])
         values = {
@@ -413,7 +453,7 @@ class HOME2(http.Controller):
             'avancee_price': avancee_price if avancee_price else '',
             'premium_price': premium_price if premium_price else '',
         }
-        if (partenaire in ['', 'ubereats', 'deliveroo', 'coursierjob'] and request.website.id == 2):
+        if (partenaire in ['', 'ubereats', 'deliveroo', 'coursierjob','box2home'] and request.website.id == 2):
             values['partenaire'] = partenaire
             if (promo):
                 values['promo'] = promo

@@ -522,24 +522,46 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6 align-self-center">
-                                <h6 class="subtitle" style="font-size:25px;color:#202647">
-                                    <b>FORMATION EN CAPACITÉ
-                                        DE TRANSPORT LÉGER DE
-                                    </b>
-                                    <span class="stabiloblue">
-                                        <h3 style="font-size:25px">
-                                            <b>MARCHANDISES</b>
-                                        </h3>
-                                    </span>
-                                    <b style="font-size:25px;color:#202647">POUR DEVENIR LIVREUR EN</b>
-                                    <b>
-                                        <span class="typewrite" data-period="2000"
-                                              data-type="[ &quot;SCOOTER,VOITURE OU CAMIONNETTE&quot; ]">
-                                            <span class="wrap">SCOOTER,VOITURE OU CAMIONNETTE</span>
+                                <t t-if="partenaire=='' or partenaire!='box2home'">
+                                    <h1 class="subtitle"
+                                        style="font-size:25px;color:#202647;line-height:0.8cm !important"
+                                        t-if="partenaire=='' or partenaire!='box2home'">
+                                        <b>FORMATION EN CAPACITÉ DE TRANSPORT LÉGER DE</b>
+                                        <span class="stabiloblue">MARCHANDISES
                                         </span>
-                                    </b>
-                                    <br/>
-                                </h6>
+                                        <b style="font-size:25px;color:#202647;line-height:0.8cm !important">POUR
+                                            DEVENIR
+                                            LIVREUR EN
+                                        </b>
+                                        <b>
+                                            <span class="typewrite" data-period="2000"
+                                                  data-type="[ &quot;SCOOTER, VOITURE OU CAMIONNETTE&quot; ]">
+                                                <span class="wrap">SCOOTER, VOITURE OU CAMIONNETTE</span>
+                                            </span>
+                                        </b>
+                                        <br/>
+                                    </h1>
+                                </t>
+                                <t t-if="partenaire=='box2home'">
+                                    <h1 class="subtitle"
+                                        style="font-size:25px;color:#202647;line-height:0.8cm !important"
+                                        t-if="partenaire=='box2home'">
+                                        <b>FORMATION EN CAPACITÉ DE TRANSPORT LÉGER DE</b>
+                                        <span class="stabiloblue">MARCHANDISES
+                                        </span>
+                                        <b style="font-size:25px;color:#202647;line-height:0.8cm !important">POUR
+                                            DEVENIR
+                                            LIVREUR EN
+                                        </b>
+                                        <b>
+                                            <span class="typewrite" data-period="2000"
+                                                  data-type="[ &quot;PARTENARIAT AVEC BOX2HOME&quot; ]">
+                                                <span class="wrap">PARTENARIAT AVEC BOX2HOME</span>
+                                            </span>
+                                        </b>
+                                        <br/>
+                                    </h1>
+                                </t>
                                 <br/>
                                 <a class="btn btn-alpha rounded-circle btn-md arrow-btn m-t-20 m-b-10 o_default_snippet_text"
                                    href="https://bit.ly/essgrat">
@@ -1030,11 +1052,11 @@
                                                             </p>
                                                         </font>
                                                     </p>
-                                                    <t t-if="promo">
+                                                    <t t-if="promo and promo.name!='box2home'">
                                                         <p class="text-center font-weight-bolder text-secondary">
                                                             <b style="font-size:80%">
                                                                 <t>avec le code</t>
-                                                                <t t-esc="promo.code"/>
+                                                                <!--                                                                <t t-esc="promo.code"/>-->
                                                             </b>
                                                         </p>
                                                     </t>

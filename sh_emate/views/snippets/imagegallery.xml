@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- image gallery template 1 -->
+<template id="sh_emate_img_gallery_tmpl_1" name="Image Gallery 1">
+	
+	<div class="sh_emate_img_gallery_1">
+		<div class="o_mail_block_gallery" data-name="Three Columns" id="sh_gallery_2">
+	        <div class="o_mail_snippet_general">
+	        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table pt0">
+	            <tbody>
+			        <tr>
+			            <td width="100%" class="heading">
+			                <center>
+			                    <h3>LOREM IPSUM</h3>
+		                    	<p class="detail">Lorem ipsum dolor sit amet</p>
+			                </center>
+			            </td>
+			        </tr>
+			     </tbody>
+			  </table>
+	        
+	            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+	                <tbody>
+	                    <tr>
+	                        <td class="o_mail_col_mv o_mail_col_container p8 width180">
+	                            <div>
+	                                <img src="/sh_emate/static/src/img/tmpl_2/blurred-bookshelf-many-old-books-book-shop-library_36051-477.jpg" class="d-block mx-auto h130" alt="Your Picture" />
+	                            </div>
+	                        </td>
+	
+	                        <td class="o_mail_col_mv o_mail_col_container p8 width180">
+	                            <div>
+	                                <img src="/sh_emate/static/src/img/tmpl_2/blurred-bookshelf-many-old-books-book-shop-library_36051-477.jpg" class="d-block mx-auto h130" alt="Your Picture" />
+	                            </div>
+	                        </td>
+	
+	                        <td class="o_mail_col_mv o_mail_col_container p8 width180">
+	                            <div>
+	                                <img src="/sh_emate/static/src/img/tmpl_2/blurred-bookshelf-many-old-books-book-shop-library_36051-477.jpg" class="d-block mx-auto h130" alt="Your Picture" />
+	                            </div>
+	                        </td>
+	                    </tr>
+	                    <tr>
+	                        <td class="o_mail_col_mv o_mail_col_container p8 width360" colspan="2">
+	                            <div>
+	                                <img src="/sh_emate/static/src/img/tmpl_2/blurred-bookshelf-many-old-books-book-shop-library_36051-477.jpg" class="d-block mx-auto h130" alt="Your Picture" />
+	                            </div>
+	                        </td>
+	
+	                        <td class="o_mail_col_mv o_mail_col_container p8 width180">
+	                            <div>
+	                                <img src="/sh_emate/static/src/img/tmpl_2/blurred-bookshelf-many-old-books-book-shop-library_36051-477.jpg" class="d-block mx-auto h130" alt="Your Picture" />
+	                            </div>
+	                        </td>
+	                    </tr>
+	                </tbody>
+	            </table>
+	        </div>
+	    </div>     
+	</div>
+	
+</template>
+
+<!-- end image gallery template 1  -->
+
+
+<!-- image gallery template 2 -->
+<template id="sh_emate_img_gallery_tmpl_2" name="Image Gallery 2">
+	
+	<div class="sh_emate_img_gallery_2">
+		<div class="o_mail_block_two_cols" data-name="Two Columns" id="sh_gallery_9">
+		      <div class="o_mail_snippet_general">
+		          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table two_col">
+		              <tbody>
+		                  <tr>
+		                      <td class="o_mail_col_mv o_mail_col_container w270 p20">
+		                       	  <div class="img">
+		                           	<img src="/sh_emate/static/src/img/tmpl_9/delicious-home-made-pizza_62847-359.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                           </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container w270 p20">
+		                       	  <div class="img">
+		                           		<img src="/sh_emate/static/src/img/tmpl_9/delicious-fresh-homemade-burger-wooden-plate_44537-794.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                           </div>
+		                      </td>
+		                  </tr>
+		                  
+		                  <tr>
+		                      <td class="o_mail_col_mv o_mail_col_container w270 p20">
+		                       	  <div class="img">
+		                           	<img src="/sh_emate/static/src/img/tmpl_9/mexican-tacos-with-meat-vegetables-red-onion_2829-8286.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                           </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container w270 p20">
+		                       	  <div class="img">
+		                           		<img src="/sh_emate/static/src/img/tmpl_9/tortilla-wrap-with-falafel-fresh-salad_2829-3418.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                           </div>
+		                      </td>
+		                  </tr>
+		              </tbody>
+		          </table>
+		      </div>
+		</div> 		    
+	</div>
+	
+</template>
+
+<!-- end image gallery template 2  -->
+
+
+<!-- image gallery template 3 -->
+<template id="sh_emate_img_gallery_tmpl_3" name="Image Gallery 3">
+	
+	<div class="sh_emate_img_gallery_3">
+		<div class="o_mail_block_two_cols" data-name="Two Columns" id="sh_gallery_10">
+		      <div class="o_mail_snippet_general">
+		      	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+			          <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+			                        <h3 class="title">LOREM IPSUM</h3>
+		                    		<hr/>
+		                    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do euismodtempor incididunt ut.</p>
+			                    </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				  </table>
+		          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table two_col pb0">
+		              <tbody>
+		                  <tr>
+		                      <td class="o_mail_col_mv o_mail_col_container w270 p10">
+		                       	  <div class="img">
+		                           	<img src="/sh_emate/static/src/img/tmpl_10/mexican-tacos-with-meat-vegetables-red-onion_2829-8286.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                           </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container w270 p10">
+		                       	  <div class="img">
+		                           		<img src="/sh_emate/static/src/img/tmpl_10/tasty-doner-kebabs-with-fresh-salad-trimmings-shaved-roasted-meat-served-tortilla-wraps-brown-paper-as-takeaway-snack_124865-2179.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                           </div>
+		                      </td>
+		                  </tr>
+		               </tbody>
+		            </table>
+		            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+		              <tbody>
+		                  <tr>
+		                      <td class="o_mail_col_mv o_mail_col_container w180 p10">
+		                       	  <div class="img">
+		                           	<img src="/sh_emate/static/src/img/tmpl_10/top-view-fast-food-with-tomatoes_23-2148242523.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                           </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container w180 p10">
+		                       	  <div class="img">
+		                           		<img src="/sh_emate/static/src/img/tmpl_10/fried-spicy-chicken-wings_1339-42043.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                           </div>
+		                      </td>
+		                      
+		                      <td class="o_mail_col_mv o_mail_col_container w180 p10">
+		                       	  <div class="img">
+		                           		<img src="/sh_emate/static/src/img/tmpl_10/big-sandwich-hamburger-burger-with-beef-red-onion-tomato-fried-bacon_2829-5352.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                           </div>
+		                      </td>
+		                  </tr>
+		              </tbody>
+		          </table>
+		      </div>
+		</div>     
+	</div>
+	
+</template>
+
+<!-- end image gallery template 3  -->
+
+
+<!-- image gallery template 4 -->
+<template id="sh_emate_img_gallery_tmpl_4" name="Image Gallery 4">
+	
+	<div class="sh_emate_img_gallery_4">
+		<div class="o_mail_block_two_cols" data-name="Two Columns" id="sh_gallery_12">
+		      <div class="o_mail_snippet_general">
+		      	  <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+		        	<tbody>
+				      <tr>
+				          <td width="100%" class="heading">
+				              <center>
+				                   <h3>LOREM IPSUM</h3>
+				               </center>
+				          </td>
+				      </tr>
+				   </tbody>
+				</table>
+				  <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pb0">
+		              <tbody>
+		                  <tr>
+		                      <td class="o_mail_col_mv o_mail_col_container w180 p10">
+		                       	  <div class="img">
+		                           	<img src="/sh_emate/static/src/img/tmpl_12/design-cabinet-shelf-wooden-japanese-style-empty-room-minimal-3d-rendering_43151-2216.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                           </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container w180 p10">
+		                       	  <div class="img">
+		                           		<img src="/sh_emate/static/src/img/tmpl_12/interior-frame-living-room-with-colorful-white-sofa_46483-430.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                           </div>
+		                      </td>
+		                      
+		                      <td class="o_mail_col_mv o_mail_col_container w180 p10">
+		                       	  <div class="img">
+		                           		<img src="/sh_emate/static/src/img/tmpl_12/modern-kitchen-countertop-sink-mockup_43614-259.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                           </div>
+		                      </td>
+		                  </tr>
+		              </tbody>
+		          </table>
+		          <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table two_col pt0">
+		              <tbody>
+		                  <tr>
+		                      <td class="o_mail_col_mv o_mail_col_container w180 p10">
+		                       	  <div class="img">
+		                           	<img src="/sh_emate/static/src/img/tmpl_12/wooden-box-mockup_23-2147721872.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                           </div>
+		                      </td>
+		
+		                      <td class="o_mail_col_mv o_mail_col_container w180 p10">
+		                       	  <div class="img">
+		                           		<img src="/sh_emate/static/src/img/tmpl_12/living-room-interior_1048-9888.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                           </div>
+		                      </td>
+		                      
+		                      <td class="o_mail_col_mv o_mail_col_container w180 p10">
+		                       	  <div class="img">
+		                           		<img src="/sh_emate/static/src/img/tmpl_12/empty-room-interior-with-armchair-side-table-minimalist-living-room-interior_41470-1033.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                           </div>
+		                      </td>
+		                  </tr>
+		              </tbody>
+		           </table>
+		      </div>
+		</div> 
+	</div>
+	
+</template>
+
+<!-- end image gallery template 4  -->
+
+
+<!-- image gallery template 5 -->
+<template id="sh_emate_img_gallery_tmpl_5" name="Image Gallery 5">
+	
+	<div class="sh_emate_img_gallery_5">
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_gallery_14">
+		     <div class="o_mail_snippet_general">
+		           <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+		             <tbody>
+		                 <tr>
+		                     <td class="o_mail_col_mv o_mail_col_container w180 p0">
+		                      	  <div class="img">
+		                          	<img src="/sh_emate/static/src/img/tmpl_14/interior-has-pink-armchair-with-dark-empty-mockup-wall-beige-armchair_41470-1132.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                          </div>
+		                     </td>
+		
+		                     <td class="o_mail_col_mv o_mail_col_container w180 p0">
+		                      	  <div class="img">
+		                          		<img src="/sh_emate/static/src/img/tmpl_14/modern-living-room-with-blue-armchair-have-cabinet-wood-shelves-wood-flooring-white-wall-3d-rendering_46483-355.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                          </div>
+		                     </td>
+		                     
+		                     <td class="o_mail_col_mv o_mail_col_container w180 p0">
+		                      	  <div class="img">
+		                          		<img src="/sh_emate/static/src/img/tmpl_14/interior-poster-mock-up-living-room-with-colorful-white-sofa-3d-rendering_46483-523.jpg" class="d-block mx-auto" alt="Your Picture" />
+		                          </div>
+		                     </td>
+		                 </tr>
+		             </tbody>
+		         </table>
+		     </div>
+		</div> 
+	</div>
+	
+</template>
+
+<!-- end image gallery template 5  -->
+
+
+<!-- image gallery template 6 -->
+<template id="sh_emate_img_gallery_tmpl_6" name="Image Gallery 6">
+	
+	<div class="sh_emate_img_gallery_6">
+		<div class="o_mail_block_two_cols" data-name="Two Columns" id="sh_gallery_16">
+		    <div class="o_mail_snippet_general">
+		    	<table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+			          <tbody>
+				        <tr>
+				            <td width="100%" class="heading">
+				                <center>
+				                    <a class="title-btn">LOREM IPSUM</a>
+				                </center>
+				            </td>
+				        </tr>
+				     </tbody>
+				  </table>
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_col_container p10" rowspan="2" width="65%">
+		                        <div class="img">    
+			                        <img src="/sh_emate/static/src/img/tmpl_16/engagement-ring-with-diamond_8353-9972.jpg" alt="img1" title="img1" />
+			                    </div>
+		                    </td>
+		
+		                    <td class="o_mail_col_mv o_mail_col_container p10" width="35%">
+		                        <div class="img2">
+			                        <img src="/sh_emate/static/src/img/tmpl_16/silver-ring-black-background-macro-picture_10069-2155.jpg" alt="img2" title="img2" />
+			                    </div>
+			                    <div class="img3">
+			                        <img src="/sh_emate/static/src/img/tmpl_16/royal-wedding-rings_109285-257.jpg" alt="img3" title="img2" />
+			                    </div>
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		</div>
+	</div>
+	
+</template>
+
+<!-- end image gallery template 6  -->
+
+
+<!-- image gallery template 7 -->
+<template id="sh_emate_img_gallery_tmpl_7" name="Image Gallery 7">
+	
+	<div class="sh_emate_img_gallery_7">
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_gallery_17">
+		    <div class="o_mail_snippet_general">
+		        <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+		            <tbody>
+		                <tr>
+		                    <td class="o_mail_col_mv o_mail_col_container p0 width60">
+			                   <div class="img">
+			                       <img src="/sh_emate/static/src/img/tmpl_17/royal-wedding-rings_109285-257.jpg" alt="Your Image" title="Your Image"/>
+			                   </div>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_col_container p0 width60">
+			                   <div class="img">
+			                       <img src="/sh_emate/static/src/img/tmpl_17/closeup-old-diamond-ring-blurred-marble-floor-background_85347-249.jpg" alt="Your Image" title="Your Image"/>
+			                   </div>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_col_container p0 width60">
+			                   <div class="img">
+			                       <img src="/sh_emate/static/src/img/tmpl_17/royal-wedding-rings_109285-257.jpg" alt="Your Image" title="Your Image"/>
+			                   </div>
+		                    </td>
+		                    <td class="o_mail_col_mv o_mail_col_container p0 width60">
+			                   <div class="img">
+			                       <img src="/sh_emate/static/src/img/tmpl_17/closeup-old-diamond-ring-blurred-marble-floor-background_85347-249.jpg" alt="Your Image" title="Your Image"/>
+			                   </div>
+		                    </td>
+		                </tr>
+		                
+		            </tbody>
+		        </table>
+		    </div>
+		</div> 
+	</div>
+	
+</template>
+
+<!-- end image gallery template 7  -->
+
+
+<!-- image gallery template 8 -->
+<template id="sh_emate_img_gallery_tmpl_8" name="Image Gallery 8">
+	
+	<div class="sh_emate_img_gallery_8">
+		<div class="o_mail_block_three_cols" data-name="Three Columns" id="sh_gallery_26">
+            <div class="o_mail_snippet_general">
+
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+                    <tbody>
+                        <tr>
+                            <td class="o_mail_col_mv o_mail_col_container plr0 width180">
+                                <div class="box text-center">
+                                    <div class="img">
+                                        <img src="/sh_emate/static/src/img/tmpl_26/gallery_1st.png" alt="gallery_image1" title="gallery_image" loading="lazy" />
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td class="o_mail_col_mv o_mail_col_container plr0 width180">
+                                <div class="box text-center">
+                                    <div class="img">
+                                        <img src="/sh_emate/static/src/img/tmpl_26/gallery_2nd.png" alt="gallery_image2" title="gallery_image" loading="lazy" />
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td class="o_mail_col_mv o_mail_col_container plr0 width180">
+                                <div class="box text-center">
+                                    <div class="img">
+                                        <img src="/sh_emate/static/src/img/tmpl_26/gallery_3rd.png" alt="gallery_image3" title="gallery_image" loading="lazy" />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+                    <tbody>
+                        <tr>
+                            <td class="o_mail_col_mv o_mail_col_container plr0 width180">
+                                <div class="box text-center">
+                                    <div class="img">
+                                        <img src="/sh_emate/static/src/img/tmpl_26/gallery_4th.png" alt="gallery_image4" title="gallery_image" loading="lazy" />
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td class="o_mail_col_mv o_mail_col_container plr0 width180">
+                                <div class="box text-center">
+                                    <div class="img">
+                                        <img src="/sh_emate/static/src/img/tmpl_26/gallery_5th.png" alt="gallery_image5" title="gallery_image" loading="lazy" />
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td class="o_mail_col_mv o_mail_col_container plr0 width180">
+                                <div class="box text-center">
+                                    <div class="img">
+                                        <img src="/sh_emate/static/src/img/tmpl_26/gallery_6th.png" alt="gallery_image6" title="gallery_image" loading="lazy" />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+	</div>
+	
+</template>
+
+<!-- end image gallery template 8  -->
+
+<!-- image gallery template 9 -->
+<template id="sh_emate_img_gallery_tmpl_9" name="Image Gallery 9">
+	
+	<div class="sh_emate_img_gallery_9">
+		<div class="o_mail_block_two_cols" data-name="Two Columns" id="sh_gallery_32">
+            <div class="o_mail_snippet_general">
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+                    <tbody>
+                        <tr>
+                            <td width="100%" class="heading">
+                                <center>
+                                	<h6>Check Out the Photo Gallery</h6>
+                                    <h3>Our Photo Gallery</h3>
+                                    <p class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                </center>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pb0">
+                    <tbody>
+                        <tr>
+                            <td class="o_mail_col_mv o_mail_col_container w180 p10">
+                                <div class="img">
+                                    <img src="/sh_emate/static/src/img/tmpl_32/skyscrapers-sunset_1112-1870.jpg" class="d-block mx-auto" alt="Your Picture" loading="lazy" />
+                                </div>
+                            </td>
+
+                            <td class="o_mail_col_mv o_mail_col_container w180 p10">
+                                <div class="img">
+                                    <img src="/sh_emate/static/src/img/tmpl_32/interior-with-bid-dining-room-modern-private-house_181624-17504.jpg" class="d-block mx-auto" alt="Your Picture" loading="lazy" />
+                                </div>
+                            </td>
+
+                            <td class="o_mail_col_mv o_mail_col_container w180 p10">
+                                <div class="img">
+                                    <img src="/sh_emate/static/src/img/tmpl_32/beautiful-big-luxurious-green-brick-house-with-garage-paved-driveway-two-12.jpg" class="d-block mx-auto" alt="Your Picture" loading="lazy" />
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table three_col pt0">
+                    <tbody>
+                        <tr>
+                            <td class="o_mail_col_mv o_mail_col_container p10" rowspan="2" width="67%">
+                                <div class="sh_left_part">
+                                    <img src="/sh_emate/static/src/img/tmpl_32/3d-rendering-house-visualisation_62754-1778.jpg" alt="img1" title="img1" loading="lazy" />
+                                </div>
+                            </td>
+
+                            <td class="o_mail_col_mv o_mail_col_container p10" width="33%">
+                                <div class="sh_right_top">
+                                    <img src="/sh_emate/static/src/img/tmpl_32/3d-rendering-house-visualisation_62754-1769.jpg" alt="img2" title="img2" loading="lazy" />
+                                </div>
+                                <div class="sh_right_bottom">
+                                    <img src="/sh_emate/static/src/img/tmpl_32/3d-rendering-modern-house_62754-1884.jpg" alt="img2" title="img2" loading="lazy" />
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+      </div>
+	
+</template>
+
+<!-- end image gallery template 9  -->
+
+
+
+
+
+
+</odoo>
+
+
+
+
+
+

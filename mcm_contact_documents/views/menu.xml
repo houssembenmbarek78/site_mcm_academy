@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="mcm_academy_documents_action_main" model="ir.actions.act_window">
+        <field name="name">Documents</field>
+        <field name="res_model">partner.documents</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Créer votre nouveau document
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="mcm_academy_documents_root_menu" name="Documents" sequence="10" web_icon="mcm_contact_documents,static/description/icon.png"/>
+    <menuitem id="mcm_academy_documents_menu" name="Toutes les documents"
+              parent="mcm_academy_documents_root_menu" action="mcm_academy_documents_action_main" sequence="10"/>
+
+
+</odoo>

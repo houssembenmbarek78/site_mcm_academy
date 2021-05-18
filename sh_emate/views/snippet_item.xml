@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+
+
+
+
+<!-- snippet 3 -->
+<template id="sh_emate_tmpl_item_3" name="emate tmpl item 3">
+   
+
+  <div class="o_mail_snippet_general js_cls_sh_mail_snippet_general">      
+            <table align="center" cellspacing="0" cellpadding="0" class="o_mail_table_styles o_mail_v_padding o_mail_col_table">
+                <tbody>
+                    <tr>
+                    
+           	<t t-if="products">
+           	<t t-foreach="products" t-as="product">
+           	
+
+                        <td style="vertical-align:top;width:180px;" class="o_mail_col_mv o_mail_col_container">
+                            <div>
+                            
+                    <a itemprop="url" t-att-href="base_url + '/shop/product/%s' %(product.id)">
+	                    <span t-field="product.image_1920"
+	                        t-options="{'widget': 'image', 'preview_image': 'image_1024'}"
+	                        class="d-flex h-100 justify-content-center align-items-center d-block mx-auto"/>
+                    </a>                                
+                                
+                                
+                                
+                                <h4 class="text-center">
+                                
+           							<a itemprop="name" t-att-href="base_url + '/shop/product/%s' %(product.id)" t-att-content="product.name" t-field="product.name" />                                
+                                
+                                </h4>
+                                
+					            <!-- Product Description -->
+					            <t t-if="is_show_product_desc">
+					            
+			                          <p class="text-center o_mail_no_margin" t-field="product.description_sale">
+			                              
+			                          </p>		            
+					            
+					            </t>                                
+                                
+                                
+                                <!-- buy now or read more -->
+                                <div class="text-center" style="margin-top:15px;">
+                                    <a role="button" t-att-href="base_url + '/shop/product/%s' %(product.id)" class="btn btn-link">Read More...</a>
+                                </div>
+                                
+                                
+                            </div>
+                        </td>
+           	
+           	
+           	
+           	</t>
+           	</t>                    
+                    
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+</template>
+
+
+
+
+
+
+
+
+<template id="sh_emate_product_tmpl_item_2" name="Product 2 item">
+
+            <div class="o_mail_snippet_general js_cls_sh_mail_snippet_general">
+
+                <div id="sh_text_img_3">
+                    <table align="center" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            
+           	<t t-if="products">
+           	<t t-set="sh_left" t-value="'yes'"/>
+           	
+           	<t t-foreach="products" t-as="product">                            
+                    
+                    <t t-if="sh_left == 'yes'">
+                    
+                            <tr>
+                                <td>
+                                    <div class="box">
+                                        <div class="content">
+                                            <h3 class="title">
+                                            	                     
+           							<a itemprop="name" t-att-href="base_url + '/shop/product/%s' %(product.id)" t-att-content="product.name" t-field="product.name" />                                
+                                
+                                            </h3>
+                                            
+                                 
+                                            
+					            <!-- Product Description -->
+					            <t t-if="is_show_product_desc">
+					            
+			                          <p class="detail" t-field="product.description_sale">
+			                              
+			                          </p>		            
+					            
+					            </t>                                               
+                                            
+                                            
+                                         
+                        <t t-if="is_show_sale_price">
+                   
+  								<h4 class="price" t-field="product.list_price" t-options="{'widget': 'monetary', 'display_currency': currency_id}"/>
+       
+                        </t>                                             
+                                            
+                                            
+                                            <a t-att-href="base_url + '/shop/product/%s' %(product.id)"  class="btn">BUY NOW</a>
+                                        
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="img">
+                                    
+                    <a itemprop="url" t-att-href="base_url + '/shop/product/%s' %(product.id)">
+	                    <span t-field="product.image_1920"
+	                        t-options="{'widget': 'image', 'preview_image': 'image_1024'}"
+	                        class="d-flex h-100 justify-content-center align-items-center d-block mx-auto"/>
+                    </a>                                     
+                                    
+                                    </div>
+                                </td>
+                            </tr>  
+                            
+                         
+                    
+                    </t>
+
+                    <t t-if="sh_left != 'yes'">
+                    
+                    
+                            <tr>
+                                <td>
+                                    <div class="box">
+
+
+                                        <div class="content">
+                                            <h3 class="title">
+                                            	                     
+           							<a itemprop="name" t-att-href="base_url + '/shop/product/%s' %(product.id)" t-att-content="product.name" t-field="product.name" />                                
+                                
+                                            </h3>
+                                            
+                                 
+                                            
+					            <!-- Product Description -->
+					            <t t-if="is_show_product_desc">
+					            
+			                          <p class="detail" t-field="product.description_sale">
+			                              
+			                          </p>		            
+					            
+					            </t>                                               
+                                            
+                                            
+                                         
+                        <t t-if="is_show_sale_price">
+                   
+  								<h4 class="price" t-field="product.list_price" t-options="{'widget': 'monetary', 'display_currency': currency_id}"/>
+       
+                        </t>                                             
+                                            
+                                            
+                                            <a t-att-href="base_url + '/shop/product/%s' %(product.id)"  class="btn">BUY NOW</a>
+                                        
+                                        </div>
+
+
+                                    </div>
+                                </td>
+                                <td>
+
+                                    <div class="img">
+                                    
+                    <a itemprop="url" t-att-href="base_url + '/shop/product/%s' %(product.id)">
+	                    <span t-field="product.image_1920"
+	                        t-options="{'widget': 'image', 'preview_image': 'image_1024'}"
+	                        class="d-flex h-100 justify-content-center align-items-center d-block mx-auto"/>
+                    </a>                                     
+                                    
+                                    </div>
+
+                                </td>
+                            </tr>                     
+                    
+                    </t>
+                        
+                        
+                        
+                   <!-- alternative logic -->
+                    <t t-if="sh_left == 'yes'">
+                    	 	<t t-set="sh_left" t-value="'no'"/>
+                    </t>
+                    <t t-else="">
+                    	 	<t t-set="sh_left" t-value="'yes'"/>
+                    </t>  
+                            
+
+                            
+		</t>
+		
+		</t>                            
+                            
+
+
+
+                        </tbody>
+                    </table>
+                </div> 
+
+            </div>
+
+</template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<template id="sh_emate_product_tmpl_item_3" name="Product 3 item">
+
+            <div class="o_mail_snippet_general js_cls_sh_mail_snippet_general">
+                <div id="sh_product_4">
+                    <table align="center" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            <tr>
+                                
+                                
+          	<t t-if="products">
+           	<t t-foreach="products" t-as="product">
+           	                                
+                                
+                                
+                                <td>
+                                    <div class="box">
+                                        <div class="img">
+                                            
+                                            
+                    <a itemprop="url" t-att-href="base_url + '/shop/product/%s' %(product.id)">
+	                    <span t-field="product.image_1920"
+	                        t-options="{'widget': 'image', 'preview_image': 'image_1024'}"
+	                        class="d-flex h-100 justify-content-center align-items-center d-block mx-auto"/>
+                    </a>                                              
+                                            
+                                            
+                                            <p class="text">
+                                            
+           							<a itemprop="name" t-att-href="base_url + '/shop/product/%s' %(product.id)" t-att-content="product.name" t-field="product.name" />                                             
+                                            
+                                            </p>
+                                            
+                        <t t-if="is_show_sale_price">
+  								<p class="price" t-field="product.list_price" t-options="{'widget': 'monetary', 'display_currency': currency_id}"/>
+
+                        </t>                                             
+                                            
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                </td>
+              
+              
+              </t>
+              </t>
+                                
+                                
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+</template>    
+
+
+
+
+
+
+
+
+
+
+
+<template id="sh_emate_product_tmpl_item_4" name="Product 4 item">
+          
+            <div class="o_mail_snippet_general js_cls_sh_mail_snippet_general">
+                <div id="sh_fashion_product_5">
+                    <table align="center" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            <tr>
+                                
+                                
+          	<t t-if="products">
+           	<t t-foreach="products" t-as="product">                                
+                                
+                                
+                                <td>
+                                    <div class="box">
+                                        <div class="img">
+                                            
+                    <a itemprop="url" t-att-href="base_url + '/shop/product/%s' %(product.id)">
+	                    <span t-field="product.image_1920"
+	                        t-options="{'widget': 'image', 'preview_image': 'image_1024'}"
+	                        class="d-flex h-100 justify-content-center align-items-center d-block mx-auto"/>
+                    </a>   
+                                            
+
+
+                                            <p class="text">
+                                            
+           							<a itemprop="name" t-att-href="base_url + '/shop/product/%s' %(product.id)" t-att-content="product.name" t-field="product.name" />                                             
+                                            
+                                            </p>
+
+                                            
+                        <t t-if="is_show_sale_price">
+  								<p class="price" t-field="product.list_price" t-options="{'widget': 'monetary', 'display_currency': currency_id}"/>
+
+                        </t>                                                
+                                            
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                </td>
+                                
+                 
+                </t>
+                </t>
+                               
+                                
+                                
+                                
+                                
+                                
+
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+</template> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<template id="sh_emate_product_tmpl_item_5" name="Product 5">
+
+            <div class="o_mail_snippet_general js_cls_sh_mail_snippet_general">
+                <div id="sh_offer_product_6">
+    <table align="center" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+            <tr>
+                
+                
+                
+                
+                
+                          	<t t-if="products">
+           	<t t-foreach="products" t-as="product"> 
+                
+                
+                <td>
+                    <div class="box">
+                        <div class="img">
+                            <p class="top-text">
+                            
+           							<a itemprop="name" t-att-href="base_url + '/shop/product/%s' %(product.id)" t-att-content="product.name" t-field="product.name" />                                             
+                                                                       
+                            
+                            </p>
+                            
+
+
+                    <a itemprop="url" t-att-href="base_url + '/shop/product/%s' %(product.id)">
+	                    <span t-field="product.image_1920"
+	                        t-options="{'widget': 'image', 'preview_image': 'image_1024'}"
+	                        class="d-flex h-100 justify-content-center align-items-center d-block mx-auto"/>
+                    </a>  
+
+                            
+                            <div class="dflex">
+                            
+                        <t t-if="is_show_sale_price">
+  								<p class="dolor-price" t-field="product.list_price" t-options="{'widget': 'monetary', 'display_currency': currency_id}"/>
+
+                        </t>                              
+                            
+
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                
+                
+              </t>
+              </t>
+              
+              
+
+
+            </tr>
+        </tbody>
+    </table>
+</div>      
+            </div>
+
+</template>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<template id="sh_emate_product_tmpl_item_6" name="Product 6 item">
+
+            <div class="o_mail_snippet_general js_cls_sh_mail_snippet_general">
+                <div id="sh_product_7">
+                    <table align="center" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tbody>
+                            <tr>
+                                
+                                
+                                
+                                
+                
+                          	<t t-if="products">
+           	<t t-foreach="products" t-as="product">                                 
+                                
+                                
+                                
+                                <td>
+                                    <div class="box">
+                                        <div class="img">
+                                           
+                                           
+
+                    <a itemprop="url" t-att-href="base_url + '/shop/product/%s' %(product.id)">
+	                    <span t-field="product.image_1920"
+	                        t-options="{'widget': 'image', 'preview_image': 'image_1024'}"
+	                        class="d-flex h-100 justify-content-center align-items-center d-block mx-auto"/>
+                    </a> 
+
+                                            
+                                            
+                                            <p class="text">
+           							
+           							<a itemprop="name" t-att-href="base_url + '/shop/product/%s' %(product.id)" t-att-content="product.name" t-field="product.name" />                                             
+                                    
+                                            </p>
+
+                                            
+                        <t t-if="is_show_sale_price">
+  								<p class="price" t-field="product.list_price" t-options="{'widget': 'monetary', 'display_currency': currency_id}"/>
+
+                        </t>                                             
+                                            
+                                            
+                                            <a class="btn" t-att-href="base_url + '/shop/product/%s' %(product.id)">BUY NOW</a>
+                                            
+                                        </div>
+                                    </div>
+                                </td>
+                                
+            
+            </t>
+            </t>
+            
+            
+
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+</template>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<template id="sh_emate_product_tmpl_item_7" name="Product 7 item">
+
+
+
+
+            
+            <div class="js_cls_sh_mail_snippet_general">
+            
+	            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="bg_white plr15">
+	                <tr>
+	                    
+	                    
+	                    
+                          	<t t-if="products">
+           	<t t-foreach="products" t-as="product">                                 
+                                
+                               	                    
+	                    
+	                    
+	                    <td class="three-box" width="33%">
+	                        <div class="box">
+	                            <div class="img">
+
+                    <a itemprop="url" t-att-href="base_url + '/shop/product/%s' %(product.id)">
+	                    <span t-field="product.image_1920"
+	                        t-options="{'widget': 'image', 'preview_image': 'image_1024'}"
+	                        class="d-flex h-100 justify-content-center align-items-center d-block mx-auto"/>
+                    </a> 
+
+	                                <p>
+	                                
+           							
+           							<a itemprop="name" t-att-href="base_url + '/shop/product/%s' %(product.id)" t-att-content="product.name" t-field="product.name" />                                             
+                                    	                                
+	                                
+	                                </p>
+	                               
+	                               
+	                               
+
+                        <t t-if="is_show_sale_price">
+  								<p class="p2" t-field="product.list_price" t-options="{'widget': 'monetary', 'display_currency': currency_id}"/>
+
+                        </t>  	                               
+	                               
+	                               
+	                                <a class="btn_ordernow" t-att-href="base_url + '/shop/product/%s' %(product.id)">ORDER NOW</a>
+	                            </div>
+	                        </div>
+	                    </td>
+	                    
+	       </t>
+	       </t>
+	       
+
+
+
+	                </tr>
+	            </table>
+            
+             </div>
+
+
+</template> 
+
+
+
+
+
+
+
+
+
+
+
+
+<template id="sh_emate_product_tmpl_item_8" name="Product 8 item">
+
+            <div class="o_mail_snippet_general js_cls_sh_mail_snippet_general">
+                <div id="sh_product_10">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="plr15 bg_white">
+                        <tbody>
+                            <tr>
+                                
+                                
+                          	<t t-if="products">
+           	<t t-foreach="products" t-as="product">                                 
+                                
+                                                       
+                                
+                                <td>
+                                    <div class="box">
+                                        <div class="img">
+
+
+                    <a itemprop="url" t-att-href="base_url + '/shop/product/%s' %(product.id)">
+	                    <span t-field="product.image_1920"
+	                        t-options="{'widget': 'image', 'preview_image': 'image_1024'}"
+	                        class="d-flex h-100 justify-content-center align-items-center d-block mx-auto"/>
+                    </a> 
+                                            
+
+                                            
+                        <t t-if="is_show_sale_price">
+  								<p class="price" t-field="product.list_price" t-options="{'widget': 'monetary', 'display_currency': currency_id}"/>
+
+                        </t>  	                                             
+                                            
+                                            
+
+
+                                        </div>
+                                    </div>
+                                </td>
+                                
+                                
+                         </t>
+                         </t>
+                         
+                         
+
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+               
+</template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<template id="sh_emate_product_tmpl_item_9" name="Product 9 item">
+
+            <div class="o_mail_snippet_general js_cls_sh_mail_snippet_general">
+                <div id="sh_product11">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="bg_white plr15">
+                        <tr>
+                            
+                            
+                      
+                                
+            <t t-if="products">
+           	<t t-foreach="products" t-as="product">                                 
+                                
+                                              
+                            
+                            <td width="33%" class="three-box">
+                                <div class="box">
+                                    <div class="img">
+
+                    <a itemprop="url" t-att-href="base_url + '/shop/product/%s' %(product.id)">
+	                    <span t-field="product.image_1920"
+	                        t-options="{'widget': 'image', 'preview_image': 'image_1024'}"
+	                        class="d-flex h-100 justify-content-center align-items-center d-block mx-auto"/>
+                    </a> 
+
+                                        
+  
+                                        
+                                            <p class="text">
+           							
+           							<a itemprop="name" t-att-href="base_url + '/shop/product/%s' %(product.id)" t-att-content="product.name" t-field="product.name" />                                             
+                                    
+                                            </p>                                        
+                                        
+                                        
+                                        
+
+                       <t t-if="is_show_sale_price">
+  								<p class="price" t-field="product.list_price" t-options="{'widget': 'monetary', 'display_currency': currency_id}"/>
+
+                        </t>  
+
+                                    </div>
+                                </div>
+                            </td>
+                            
+                            
+                 </t>
+                 </t>           
+                            
+
+
+
+                        </tr>
+                    </table>
+                </div>    
+            </div>
+
+
+</template>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<template id="sh_emate_product_tmpl_item_10" name="Product 10 item">
+
+            <div class="o_mail_snippet_general js_cls_sh_mail_snippet_general">
+                <div id="sh_product13">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="plr15">
+                        <tr>
+    
+    
+                                
+            <t t-if="products">
+           	<t t-foreach="products" t-as="product">                                
+                           
+                            <td width="33%" class="three-box">
+                                <div class="box">
+                                    <div class="img">
+                                       
+                    <a itemprop="url" t-att-href="base_url + '/shop/product/%s' %(product.id)">
+	                    <span t-field="product.image_1920"
+	                        t-options="{'widget': 'image', 'preview_image': 'image_1024'}"
+	                        class="d-flex h-100 justify-content-center align-items-center d-block mx-auto"/>
+                    </a> 
+
+                                       
+                                        
+                                            <p class="text">
+           							
+           							<a itemprop="name" t-att-href="base_url + '/shop/product/%s' %(product.id)" t-att-content="product.name" t-field="product.name" />                                             
+                                    
+                                            </p> 
+                                       
+                                       
+                       <t t-if="is_show_sale_price">
+  								<p class="price" t-field="product.list_price" t-options="{'widget': 'monetary', 'display_currency': currency_id}"/>
+
+                        </t> 
+                                       
+                                       
+                                        <a class="btn" t-att-href="base_url + '/shop/product/%s' %(product.id)">BUY NOW</a>
+                                    
+                                    
+                                    </div>
+                                </div>
+                            </td>
+                           
+                           
+                           
+            </t>
+            </t>               
+                           
+                           
+
+                            
+                            
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+
+</template> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<template id="sh_emate_product_tmpl_item_11" name="Product 11 item">
+
+            <div class="o_mail_snippet_general js_cls_sh_mail_snippet_general">
+                <div id="sh_productdetail14">
+                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="plr15">
+                       
+                       
+           	<t t-if="products">
+           	<t t-set="sh_left" t-value="'yes'"/>
+           	
+           	<t t-foreach="products" t-as="product">                            
+                    
+                    <t t-if="sh_left == 'yes'">                        
+                        
+                        <tr>
+                            <td class="images" width="50%">
+                            
+                    <a itemprop="url" t-att-href="base_url + '/shop/product/%s' %(product.id)">
+	                    <span t-field="product.image_1920"
+	                        t-options="{'widget': 'image', 'preview_image': 'image_1024'}"
+	                        class="d-flex h-100 justify-content-center align-items-center d-block mx-auto"/>
+                    </a>                             
+                            
+                            </td>
+                            
+                            <td width="50%">
+                                <div class="box box1">
+                                
+                                    <h1>
+           						
+           							<a itemprop="name" t-att-href="base_url + '/shop/product/%s' %(product.id)" t-att-content="product.name" t-field="product.name" />                                
+                                                                    
+                                    </h1>
+                                    
+                                   
+					            <!-- Product Description -->
+					            <t t-if="is_show_product_desc">
+					            
+			                          <p class="text" t-field="product.description_sale">
+			                              
+			                          </p>		            
+					            
+					            </t>                                    
+                                    
+
+                                    <div class="bottom">
+
+
+                        <t t-if="is_show_sale_price">
+                   
+  								<h4  t-field="product.list_price" t-options="{'widget': 'monetary', 'display_currency': currency_id}"/>
+       
+                        </t>  
+
+                                        <a class="btn" t-att-href="base_url + '/shop/product/%s' %(product.id)">BUY NOW</a>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+                     </t>
+                        
+                        
+                    <t t-if="sh_left != 'yes'">                    
+                        
+                        <tr>
+                            <td width="50%">
+                            
+                            
+                                <div class="box2 box">
+                                
+                                    <h1>
+           						
+           							<a itemprop="name" t-att-href="base_url + '/shop/product/%s' %(product.id)" t-att-content="product.name" t-field="product.name" />                                
+                                                                    
+                                    </h1>
+                                    
+                                   
+					            <!-- Product Description -->
+					            <t t-if="is_show_product_desc">
+					            
+			                          <p class="text" t-field="product.description_sale">
+			                              
+			                          </p>		            
+					            
+					            </t>                                    
+                                    
+
+                                    <div class="bottom">
+
+
+                        <t t-if="is_show_sale_price">
+                   
+  								<h4  t-field="product.list_price" t-options="{'widget': 'monetary', 'display_currency': currency_id}"/>
+       
+                        </t>  
+
+                                        <a class="btn" t-att-href="base_url + '/shop/product/%s' %(product.id)">BUY NOW</a>
+                                        
+                                        
+                                    </div>
+                                </div>                            
+                            
+
+                            </td>
+                            <td width="50%">
+
+                    <a itemprop="url" t-att-href="base_url + '/shop/product/%s' %(product.id)">
+	                    <span t-field="product.image_1920"
+	                        t-options="{'widget': 'image', 'preview_image': 'image_1024'}"
+	                        class="d-flex h-100 justify-content-center align-items-center d-block mx-auto"/>
+                    </a>  
+
+                            </td>
+                        </tr>
+                        
+                     </t>
+                        
+                    
+                    
+                    
+                   <!-- alternative logic -->
+                    <t t-if="sh_left == 'yes'">
+                    	 	<t t-set="sh_left" t-value="'no'"/>
+                    </t>
+                    <t t-else="">
+                    	 	<t t-set="sh_left" t-value="'yes'"/>
+                    </t>  
+                                              
+                    
+                    
+                   </t>
+                   </t>
+                       
+                        
+                        
+                    </table>
+                </div>    
+            </div>
+
+</template> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<template id="sh_emate_product_tmpl_item_12" name="Product 12 item">
+
+
+
+            <div class="o_mail_snippet_general js_cls_sh_mail_snippet_general">
+                <div id="sh_product_heading17">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="plr15">
+                        <tr>
+                            
+                            
+                            
+                                
+            <t t-if="products">
+           	<t t-foreach="products" t-as="product">                              
+                            
+                            <td width="33%" class="three-box">
+                                <div class="box">
+                                    <div class="img">
+                    
+                    <a itemprop="url" t-att-href="base_url + '/shop/product/%s' %(product.id)">
+	                    <span t-field="product.image_1920"
+	                        t-options="{'widget': 'image', 'preview_image': 'image_1024'}"
+	                        class="d-flex h-100 justify-content-center align-items-center d-block mx-auto"/>
+                    </a>                                    
+                    
+                                    </div>
+                    
+                                    <div class="content">
+
+					            <!-- Product Description -->
+					            <t t-if="is_show_product_desc">
+					            
+			                          <p class="text" t-field="product.description_sale">
+			                              
+			                          </p>		            
+					            
+					            </t>
+
+                                    </div>
+                                    <div class="discount">
+
+                                        
+                       <t t-if="is_show_sale_price">
+  								<p class="amount" t-field="product.list_price" t-options="{'widget': 'monetary', 'display_currency': currency_id}"/>
+
+                        </t>                                         
+                                        
+                                    </div>
+                                </div>
+                            </td>
+                            
+            
+            </t>
+            </t>
+            
+            
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+
+</template>   
+
+
+
+
+
+
+
+
+</odoo>
+

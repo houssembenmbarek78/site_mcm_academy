@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- session form view -->
+        <record model="ir.ui.view" id="mcmacademy_partner_documents_form_view">
+            <field name="name">partner.documents.form</field>
+            <field name="model">partner.documents</field>
+            <field name="arch" type="xml">
+                <form string="Pièce Jointe">
+                    <header>
+                        <button name="action_refuse_document" string="Refuser" type="object" states="attente"
+                                class="btn-danger"/>
+                        <button name="action_validate_document" string="Valider" type="object" states="attente"
+                                class="btn-primary"/>
+                        <field name="state" widget="statusbar" clickable="True"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="attachment_id"/>
+                            <field name="attachment_number"/>
+                            <field name="confirmation"/>
+                        </group>
+                        <group>
+                            <field name="partner_id"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- session tree/list view -->
+        <record model="ir.ui.view" id="mcmacademy_partner_documents_tree_view">
+            <field name="name">partner.documents.tree</field>
+            <field name="model">partner.documents</field>
+            <field name="arch" type="xml">
+                <tree string="Pièce Jointe">
+                    <field name="name"/>
+                    <field name="partner_id"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="partner_documents_view_search" model="ir.ui.view">
+            <field name="name">partner.documents.view.search</field>
+            <field name="model">partner.documents</field>
+            <field name="arch" type="xml">
+                <search>
+                    <separator/>
+                    <filter name="refuse" string="Réfusé" domain="[('state', '=', 'refuse')]"/>
+                    <filter name="en_attente" string="En Attente" domain="[('state', '=', 'attente')]"/>
+                    <filter name="valide" string="Validé" domain="[('state', '=', 'valide')]"/>
+                    <separator/>
+                    <group expand="0" string="Group By">
+                        <filter string="Client" name="group_partner" domain="[]" context="{'group_by':'partner_id'}"/>
+                        <filter string="Etat" name="group_partner" domain="[]" context="{'group_by':'state'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+        <record id="partner_documents_view_search_2" model="ir.ui.view">
+            <field name="name">partner.documents.view.search2</field>
+            <field name="model">partner.documents</field>
+            <field name="arch" type="xml">
+                <search string="Search">
+
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>
