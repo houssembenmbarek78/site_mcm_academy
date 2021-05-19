@@ -73,11 +73,7 @@
                                                 </strong>
                                                 pour son
                                                 <strong>
-                                                    <t t-foreach="docs.note_exam_id[-1]" t-as="data">
-                                                        <t t-if="data.nombre_de_passage">
-                                                            <span t-raw="'%s' % data.nombre_de_passage if data.nombre_de_passage else ''"/>
-                                                        </t>
-                                                    </t>
+                                                    <span t-raw="'%s' % o.note_exam_id[-1].nombre_de_passage if o.note_exam_id[-1].nombre_de_passage else ''"/>
                                                 </strong>
                                                 passage, en ayant obtenu les notes
                                                 suivantes :
