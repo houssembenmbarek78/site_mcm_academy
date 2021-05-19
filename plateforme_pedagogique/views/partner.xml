@@ -46,7 +46,7 @@
         <field name="arch" type="xml">
          <xpath expr="//form//sheet" position="before">
             <header>
-                <button name="Ajouter_iOne_manuelle" string="Ajouter sur 360"
+                <button name="ajouter_iOne_manuelle" string="Ajouter sur 360"
                         type="object"></button>
                     <button name="supprimer_ione_manuelle" string="Supprimer de 360"
                             type="object" confirm="Êtes-vous sûr de vouloir supprimer cet apprenant de la plateforme?"/>
