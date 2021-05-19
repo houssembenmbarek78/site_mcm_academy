@@ -77,6 +77,7 @@ class partner(models.Model):
                     if (minute == 0):
                         times = '0min'
                 average = ''
+                
                 # Vérifier l'existance de champ dans table_user
                 if 'averageScore' in table_user:
                     average = str(table_user['averageScore'])
