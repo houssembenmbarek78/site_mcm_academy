@@ -304,7 +304,9 @@ class partner(models.Model):
                 data_user = '{"mail":"' + partner.email + '" , "password":"' + user.password360 + '" , "firstName":"' + partner.firstName + '", "lastName":"' + partner.lastName + '", "phone":"' + partner.phone + '", "sendCredentials":"true"}'
                 resp = requests.post(urluser, headers=headers, data=data_user)
                 print(data_user, 'user', resp.status_code)
+                _logger.info("/°/°/°/°//°/°/°/°//°/°/°/°/Cron password360 avant data_user /°/°/°/°//°/°/°/°//°/°/°/°/", data_user)
                 if (resp.status_code == 200):
+                    _logger.info("_______________________Cron password360 aprés data_user _________________________", data_user)
                     create=True
             data_group = {}
 
