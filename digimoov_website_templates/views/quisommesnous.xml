@@ -2,9 +2,11 @@
     <template id="digimoov_website_templates.digimoov_template_quisommesnous" name="Qui Sommes Nous | Digimoov">
         <t t-call="website.layout">
             <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
+            <!-- <script defer='defer' type="text/javascript" src="/digimoov_website_templates/static/src/js/bg-examen.js" /> -->
+
 
             <div id="wrap" class="oe_structure oe_empty">
-                <section class="s_furniture_with_bg_imag_para lg-banner-area lg-banner-bg pt104 pb128 oe_img_bg oe_custom_bg" style="background-image: url(&quot;/digimoov_website_templates/static/img/Qui sont Digimoov.webp&quot;); width: 100%;" data-name="Background imagge with button and paragraph">
+                <section id="img-quisommenous" class="s_furniture_with_bg_imag_para lg-banner-area lg-banner-bg pt104 pb128 oe_img_bg oe_custom_bg" style="background-image: url(&quot;/digimoov_website_templates/static/img/Qui sont Digimoov.webp&quot;); width: 100%;" data-name="Background imagge with button and paragraph">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-10 col-lg-6">
@@ -75,7 +77,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <img data-src="/digimoov_website_templates/static/img/Digimoov - des centres d'examen partout en france.webp" data-srcSafari="/digimoov_website_templates/static/img/Centres d'examen digimoov france.jpg" class="img-fluid lazy" alt="bizople" data-original-title="" title="" aria-describedby="tooltip969892" style="transform: translateX(-0.9%) translateY(18.4%) scaleX(1.05) scaleY(1.05);"/>
+                                    <img data-src="/digimoov_website_templates/static/img/Digimoov - des centres d'examen partout en france.webp" data-srcSafari="/digimoov_website_templates/static/img/Digimoov_-_des-centres-d'examen-partout-en-france.jpg" class="img-fluid lazy" alt="bizople" data-original-title="" title="" aria-describedby="tooltip969892" style="transform: translateX(-0.9%) translateY(18.4%) scaleX(1.05) scaleY(1.05);"/>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="card-body">
@@ -107,7 +109,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="s_furniture_fun-fact-section oe_img_bg oe_custom_bg pt40" style="background-image: url(&quot;/digimoov_website_templates/static/img/Monter boite de transport.webp&quot;);" data-name="Counter with parallex image">
+                <section id="img-fond" class="s_furniture_fun-fact-section oe_img_bg oe_custom_bg pt40" style="background-image: url(&quot;/digimoov_website_templates/static/img/Monter boite de transport.webp&quot;);" data-name="Counter with parallex image">
                     <div class="container">
                         <div class="row clearfix">
                             <div class="title-column col-lg-6 col-md-12 col-sm-12">

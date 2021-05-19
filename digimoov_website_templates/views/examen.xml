@@ -18,7 +18,8 @@
                     }
                     }
                 </style>
-                <script defer='defer' type="text/javascript" src="/digimoov_website_templates/static/src/js/background-image.js" />
+
+                <!-- <script defer='defer' type="text/javascript" src="/digimoov_website_templates/static/src/js/bg-examen.js" /> -->
                 <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
 
                 <section id="slider-sec" class="web_agency_banner slider4 oe_img_bg oe_custom_bg" data-name="Home Banner Eight" style="background-image: url(&quot;/web/image/13078/Digimoov%20qui%20somme%20nous.png&quot;); background-position: 37.71% 54.72%;width:100%">
@@ -289,7 +290,7 @@
                                     <div class="card-body">
                                         <div class="icon-space">
                                             <section class="icon-round bg-alpha "/>
-                                            <img class="img-fluid o_we_custom_image lazy" data-srcSafri="/home/salwen-digimoov/PycharmProjects/odoo13/odoo-13.0/mcm_academy_prod/digimoov_website_templates/static/img/examen/puzzle.png" data-src="/digimoov_website_templates/static/img/conditions d'obtention de diplôme capacité de marchandise.webp" data-original-title="" title="" aria-describedby="tooltip407474"/>
+                                            <img class="img-fluid o_we_custom_image lazy" data-src="/digimoov_website_templates/static/img/conditions d'obtention de diplôme capacité de marchandise.webp" data-srcSafari="/digimoov_website_templates/static/img/conditions_d'obtention_de_diplôme_capacité_de_marchandise.png" data-original-title="" title="" aria-describedby="tooltip407474"/>
                                             <section class="icon-round bg-alpha "/>
                                         </div>
                                         <h3 class="m-b-30 m-t-20 text-beta" style="text-align: center; ">

@@ -42,7 +42,7 @@
                 </p>
                 <div class="row" style="width:100% !important;">
                     <div class="pt0 col-lg-6">
-                        <img class="lazy" src="/digimoov_website_templates/static/img/Les centres d'examen de digimoov.webp" data-srcSafari="/digimoov_website_templates/static/img/les centres d'examens de digimoov.jpg" width="50%" height="auto" style="margin-left:10%" data-original-title="" title="" aria-describedby="tooltip294189"/>
+                        <img class="lazy" data-src="/digimoov_website_templates/static/img/Les centres d'examen de digimoov.webp" data-srcSafari="/digimoov_website_templates/static/img/les centres d'examens de digimoov.jpg" width="50%" height="auto" style="margin-left:10%" data-original-title="" title="" aria-describedby="tooltip294189"/>
                     </div>
                     <div class="col-lg-6 pt160">
                         <h2 style="text-align: left; margin-bottom: 10px; font-weight: 600; line-height: 1.3; color: rgb(58, 58, 71); font-size: 28px;">

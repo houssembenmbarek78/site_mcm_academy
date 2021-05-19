@@ -10,6 +10,8 @@ from odoo import models, fields,api
 from odoo.exceptions import ValidationError
 from unidecode import  unidecode
 
+import logging
+_logger = logging.getLogger(__name__)
 
 class partner(models.Model):
     _inherit = 'res.partner'
@@ -143,9 +145,9 @@ class partner(models.Model):
         record=super(partner, self).write(vals)
         return record
 
-
     #Ajouter ione manuellement
-    def Ajouter_iOne_manuelle(self):
+    def ajouter_iOne_manuelle(self):
+        _logger.info("++++++++++++Cron ajouter_iOne_manuelle++++++++++++++++++++++")
         sale_order = self.env['sale.order'].sudo().search([('partner_id', '=', self.id),
                                                            ('session_id', '=', self.mcm_session_id.id),
                                                            ('module_id', '=', self.module_id.id),
@@ -162,8 +164,8 @@ class partner(models.Model):
                 print('valide')
         print('count', count, 'len', len(documents))
         if (count == len(documents) and count != 0):
+            _logger.info("++++++++++++Cron DOC VALIDER++++++++++++++++++++++")
             document_valide = True
-
         # Vérifier si partner a choisi une formation et si ses documents sont validés
         if ((sale_order) and (document_valide)):
             # delai de retractation
@@ -171,9 +173,11 @@ class partner(models.Model):
             statut = self.statut
             # Vérifier si contrat signé ou non
             if (sale_order.state == 'sale' and self.passage_exam == False):
+                _logger.info("++++++++++++Cron sale contrat signé++++++++++++++++++++++")
                 print('contrat signé')
                 date_signature = sale_order.signed_on
                 if ((self.email == "gorob71147@cnxingye.com") and (failure == True) and (statut == 'won')):
+                    _logger.info("++++++++++++Cron failure++++++++++++++++++++++")
                     print('it works')
                     self.ajouter_iOne(self)
                 # Vérifier si delai de retractaion et demande de renoncer  ne sont pas coché,
@@ -229,7 +233,7 @@ class partner(models.Model):
             if (sale_order.state == 'sale' and partner.passage_exam == False):
               print('contrat signé')
               date_signature = sale_order.signed_on
-              if ((partner.email == "gorob71147@cnxingye.com") and (failure == True) and (statut =='won')):
+              if ((partner.email == "") and (failure == True) and (statut =='won')):
                     print('it works')
                     self.ajouter_iOne(partner)
               #Vérifier si delai de retractaion et demande de renoncer  ne sont pas coché,
@@ -267,7 +271,6 @@ class partner(models.Model):
         # print('date, ville', ville, date_session)
         # Récuperer le mot de passe à partir de res.users
         user = self.env['res.users'].sudo().search([('partner_id', '=', partner.id)])
-
         if user:
             id_Digimoov_bienvenue = '56f5520e11d423f46884d594'
             id_Digimoov_Examen_Attestation = '5f9af8dae5769d1a2c9d5047'
@@ -294,18 +297,23 @@ class partner(models.Model):
                 #     invit=True
             #Si non si mot de passe récupéré on l'ajoute sur la plateforme avec le meme mot de passe
             if user.password360:
+                _logger.info("_______________________Cron password360_________________________")
                 partner.password360 = user.password360
+                _logger.info("11111111111111111111111111111111111111111111111111111111111111111111111")
                 print(user.password)
                 # Ajouter i-One to table user
                 data_user = '{"mail":"' + partner.email + '" , "password":"' + user.password360 + '" , "firstName":"' + partner.firstName + '", "lastName":"' + partner.lastName + '", "phone":"' + partner.phone + '", "sendCredentials":"true"}'
                 resp = requests.post(urluser, headers=headers, data=data_user)
                 print(data_user, 'user', resp.status_code)
+                _logger.info("/°/°/°/°//°/°/°/°//°/°/°/°/Cron password360 avant data_user /°/°/°/°//°/°/°/°//°/°/°/°/")
                 if (resp.status_code == 200):
+                    _logger.info("_______________________Cron password360 aprés data_user _________________________")
                     create=True
             data_group = {}
 
             # Si l'apprenant a été ajouté sur table user on l'affecte aux autres groupes
-            if ( create ):
+            if create:
+                _logger.info("222222222222222222222222222222222222222222222222")
                 today=date.today()
                 new_format = '%d %B %Y'
                 # Changer format de date et la mettre en majuscule

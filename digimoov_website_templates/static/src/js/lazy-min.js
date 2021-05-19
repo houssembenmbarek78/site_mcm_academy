@@ -40,22 +40,77 @@ navigator.saysWho = (() => {
 })();
 
 var nav = navigator.saysWho.substr(0, navigator.saysWho.indexOf(" "));
-console.log(nav); // log browser
+
 //Safari Browser
 
 if (nav.toUpperCase() == "SAFARI") {
-  //replace webp image if Safari browser
-  console.log("FIREFOX browser --- ");
-  let allImgs = [].slice.call(document.getElementsByTagName("IMG"));
-  allImgs.forEach((element) => {
-    console.log(element.getAttribute("data-srcSafari"));
-    if (element.getAttribute("data-srcSafari")) {
-      element.dataset.src = element.getAttribute("data-srcSafari");
+  console.log("Browser: ", nav.toUpperCase());
+  const fondImageUrl = `url("/digimoov_website_templates/static/img/fond.jpg")`;
+
+  if (window.location.pathname == "/examen-capacite-transport-marchandises") {
+    const examenUrl = `url("/digimoov_website_templates/static/img/Examen_de_capacité_de_transport_léger_de_marchandise.jpg")`;
+
+    if (document.getElementById("examen-fond")) {
+      document.getElementById("examen-fond").style.backgroundImage =
+        fondImageUrl;
+
+      console.log(
+        "changed: ",
+        document.getElementById("examen-fond").style.backgroundImage
+      );
     }
-  });
+    if (document.getElementById("examen-fond-2")) {
+      document.getElementById("examen-fond").style.backgroundImage =
+        fondImageUrl;
+
+      console.log(
+        "changed: ",
+        document.getElementById("examen-fond").style.backgroundImage
+      );
+    }
+    if (document.getElementById("examen-background-examen")) {
+      document.getElementById(
+        "examen-background-examen"
+      ).style.backgroundImage = examenUrl;
+
+      console.log(
+        "changed: ",
+        document.getElementById("examen-background-examen").style
+          .backgroundImage
+      );
+    }
+  } else if (window.location.pathname == "/qui-sommes-nous") {
+    const quisommesnousUrl = `url("/digimoov_website_templates/static/img/quisommenous.png")`;
+    if (document.getElementById("img-quisommenous")) {
+      document.getElementById("img-quisommenous").style.backgroundImage =
+        quisommesnousUrl;
+
+      console.log(
+        "change",
+        document.getElementById("img-quisommenous").style.backgroundImage
+      );
+    }
+    if (document.getElementById("img-fond")) {
+      document.getElementById("img-fond").style.backgroundImage = fondImageUrl;
+
+      console.log(
+        "change",
+        document.getElementById("img-fond").style.backgroundImage
+      );
+    }
+  }
+    let allImgs = [].slice.call(document.getElementsByTagName("IMG"));
+    allImgs.forEach((element) => {
+      console.log(element.getAttribute("data-srcSafari"));
+      if (element.getAttribute("data-srcSafari")) {
+        element.dataset.src = element.getAttribute("data-srcSafari");
+      }
+    });
+
 } else {
-  console.log("rien à changer");
+  console.log("Navigateur: ", nav); // log browser
 }
+
 document.addEventListener("DOMContentLoaded", function () {
   var e = [].slice.call(document.querySelectorAll("img.lazy"));
   if ("IntersectionObserver" in window) {
