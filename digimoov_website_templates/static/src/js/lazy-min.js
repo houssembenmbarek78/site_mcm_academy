@@ -43,7 +43,7 @@ var nav = navigator.saysWho.substr(0, navigator.saysWho.indexOf(" "));
 
 //Safari Browser
 
-if (nav.toUpperCase() == "FIREFOX") {
+if (nav.toUpperCase() == "SAFARI") {
   console.log("Browser: ", nav.toUpperCase());
   const fondImageUrl = `url("/digimoov_website_templates/static/img/fond.jpg")`;
 
@@ -98,7 +98,7 @@ if (nav.toUpperCase() == "FIREFOX") {
         document.getElementById("img-fond").style.backgroundImage
       );
     }
-  } else {
+  }
     let allImgs = [].slice.call(document.getElementsByTagName("IMG"));
     allImgs.forEach((element) => {
       console.log(element.getAttribute("data-srcSafari"));
@@ -106,7 +106,7 @@ if (nav.toUpperCase() == "FIREFOX") {
         element.dataset.src = element.getAttribute("data-srcSafari");
       }
     });
-  }
+
 } else {
   console.log("Navigateur: ", nav); // log browser
 }
