@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# Part of Odoo. See LICENSE file for full copyright and licensing details.
+
 {
     'name': 'Partner Exam',
     'description': "Ce module permet d'ajouter une interface qui comporte toutes les informations des examens "
@@ -26,7 +29,6 @@
         'views/add_signature.xml',
         'report/generation_covocation_en_pdf.xml',
         'report/menu.xml',
-        'report/generate_releve_de_notes.xml',
         'report/convocation_contact.xml',
         'report/print_releve_note_mass.xml',
     ],

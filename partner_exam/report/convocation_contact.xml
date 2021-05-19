@@ -9,28 +9,7 @@
                              style="line-height:1.5;font-family:Montserrat;font-size:12 %;page-break-before: always;">
                             <div class="row">
                                 <div class="col-12">
-                                    <!--<div name="left-upper-side" class="col-5" t-if="not pre_printed_report"
-                                         align="center">
-                                        <img t-if="docs.partner_id.company_id.logo"
-                                             t-att-src="image_data_uri(docs.partner_id.company_id.logo)"
-                                             style="max-height: 85px;" alt="Logo"/>
-                                    </div>-->
-
-                                    <!--<h1 align="center" style="color:#656295;font-size:25px;">
-                                        Convocation à l'examen de la Capacité de Marchandise (- de 3.5T)
-                                    </h1>-->
-                                    <!--<p align="center">Digimoov centre de formation, organisateur de premier examen pour
-                                        l’obtention
-                                        de la capacité professionnelle en transports routier léger de marchandise agréé
-                                        par
-                                        le préfet de la région Ile de France sous le numéro d’agrément 2019-0110
-                                    </p>-->
                                     <br>
-                                        <!--<strong>Arrêté du 28 décembre 2011 relatif à la délivrance des attestations de
-                                            capacité
-                                            professionnelle permettant
-                                            l’exercice de la profession de transporteur public routier, article 7
-                                        </strong>-->
                                         <img src='/partner_exam/static/src/img/header.png' height="500" width="1000"/>
                                         <p>
                                             Vous êtes invité(e) à vous présenter à l'examen de capacité de transport de
@@ -64,8 +43,10 @@
                                                     <span t-field="matin.heure_examen_matin"/>
                                                     Matin
                                                 </strong>
-                                                 (Tous les candidats doivent impérativement se présenter <b style="text-decoration : underline;">30 minutes</b> avant
-                                        l'épreuve).
+                                                (Tous les candidats doivent impérativement se présenter <b
+                                                    style="text-decoration : underline;">30 minutes
+                                            </b> avant
+                                                l'épreuve).
                                             </t>
                                         </t>
                                         <t t-foreach="docs.mcm_session_id" t-as="apres_midi">
@@ -74,8 +55,11 @@
                                                     <span t-field="apres_midi.heure_examen_apres_midi"/>
                                                     Après-Midi
                                                 </strong>
-                                                 (Tous les candidats doivent impérativement se présenter <b style="text-decoration : underline;">30 minutes</b> avant
-                                        l'épreuve).<br></br>
+                                                (Tous les candidats doivent impérativement se présenter <b
+                                                    style="text-decoration : underline;">30 minutes
+                                            </b> avant
+                                                l'épreuve).
+                                                <br></br>
                                             </t>
                                         </t>
                                         <t t-foreach="docs.mcm_session_id" t-as="none">
@@ -84,7 +68,8 @@
                                             </t>
                                         </t>
                                         <br></br>
-                                        <p>Merci de vous munir de la présente convocation, d'une pièce d'identité (passeport ou
+                                        <p>Merci de vous munir de la présente convocation, d'une pièce d'identité
+                                            (passeport ou
                                             carte
                                             d'identité) ainsi que d'un stylo bille noir ou bleu, d'un blanco et d'une
                                             calculatrice
@@ -92,7 +77,8 @@
                                         </p>
                                         <br></br>
                                         <center>
-                                            <strong>Pour vous préparer, nous vous invitons à consulter le guide de l'examen en cliquant sur
+                                            <strong>Pour vous préparer, nous vous invitons à consulter le guide de
+                                                l'examen en cliquant sur
                                                 le
                                                 lien
                                                 ci-dessous :
@@ -122,18 +108,20 @@
                                                 <tr align="center">
                                                     <td>
                                                         <t t-foreach="docs.mcm_session_id" t-as="footer">
-                                                            <span t-field="footer.date_convocation" t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                            <span t-field="footer.date_convocation"
+                                                                  t-field-options='{"format": "dd/MM/yyyy"}'/>
                                                         </t>
                                                     </td>
                                                     <td></td>
                                                     <td>
-                                                        <img src='/partner_exam/static/src/img/signature.png' style="height: 100px; width: 200px;"/>
+                                                        <img src='/partner_exam/static/src/img/signature.png'
+                                                             style="height: 100px; width: 200px;"/>
                                                     </td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
-                                     <div class="row" style="padding-top:150px!important;">
+                                    <div class="row" style="padding-top:150px!important;">
                                         <img src='/partner_exam/static/src/img/footer.png' height="250" width="1000"/>
                                     </div>
                                 </div>
