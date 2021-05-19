@@ -299,19 +299,21 @@ class partner(models.Model):
             if user.password360:
                 _logger.info("_______________________Cron password360_________________________")
                 partner.password360 = user.password360
+                _logger.info("11111111111111111111111111111111111111111111111111111111111111111111111")
                 print(user.password)
                 # Ajouter i-One to table user
                 data_user = '{"mail":"' + partner.email + '" , "password":"' + user.password360 + '" , "firstName":"' + partner.firstName + '", "lastName":"' + partner.lastName + '", "phone":"' + partner.phone + '", "sendCredentials":"true"}'
                 resp = requests.post(urluser, headers=headers, data=data_user)
                 print(data_user, 'user', resp.status_code)
-                _logger.info("/°/°/°/°//°/°/°/°//°/°/°/°/Cron password360 avant data_user /°/°/°/°//°/°/°/°//°/°/°/°/", data_user)
+                _logger.info("/°/°/°/°//°/°/°/°//°/°/°/°/Cron password360 avant data_user /°/°/°/°//°/°/°/°//°/°/°/°/")
                 if (resp.status_code == 200):
-                    _logger.info("_______________________Cron password360 aprés data_user _________________________", data_user)
+                    _logger.info("_______________________Cron password360 aprés data_user _________________________")
                     create=True
             data_group = {}
 
             # Si l'apprenant a été ajouté sur table user on l'affecte aux autres groupes
-            if ( create ):
+            if create:
+                _logger.info("222222222222222222222222222222222222222222222222")
                 today=date.today()
                 new_format = '%d %B %Y'
                 # Changer format de date et la mettre en majuscule
