@@ -73,11 +73,7 @@
                                                 </strong>
                                                 pour son
                                                 <strong>
-                                                    <t t-foreach="docs.note_exam_id[-1]" t-as="data">
-                                                        <t t-if="data.nombre_de_passage">
-                                                            <span t-raw="'%s' % data.nombre_de_passage if data.nombre_de_passage else ''"/>
-                                                        </t>
-                                                    </t>
+                                                    <span t-raw="'%s' % o.note_exam_id[-1].nombre_de_passage if o.note_exam_id[-1].nombre_de_passage else ''"/>
                                                 </strong>
                                                 passage, en ayant obtenu les notes
                                                 suivantes :
@@ -133,7 +129,6 @@
                                                         </table>
                                                     </div>
                                                 </div>
-
                                                 <div class="row" style="padding-top:10px!important;">
                                                     <div class="col-1"></div>
                                                     <div class="col-10">
@@ -206,24 +201,12 @@
                                                                 <td align="center">
                                                                     <img src='/partner_exam/static/src/img/signature.png'
                                                                          style="height:100px; width:200px;"/>
-                                                                    <!--                                                        <span t-field="footer.date_today"-->
-                                                                    <!--                                                              t-field-options='{"format": "dd/MM/yyyy"}'/>-->
                                                                 </td>
                                                                 <td></td>
                                                                 <td align="center">
                                                                     <span>Paris</span>
-<!--                                                                    <t t-if="docs.note_exam_id">-->
-<!--                                                                        <t t-foreach="docs.note_exam_id[-1]"-->
-<!--                                                                           t-as="date_envoi"-->
-<!--                                                                           style="line-height:1.5;font-family:Montserrat;font-size:12 %;page-break-before:always;">-->
-<!--                                                                            <t t-if="date_envoi.date_today">-->
-<!--                                                                                <span t-field="date_envoi.date_today"-->
-<!--                                                                                      t-field-options='{"format": "dd/MM/yyyy"}'/>-->
-<!--                                                                            </t>-->
-<!--                                                                        </t>-->
-<!--                                                                    </t>-->
                                                                     <span t-field="o.note_exam_id[-1].date_today"
-                                                                                      t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                                          t-field-options='{"format": "dd/MM/yyyy"}'/>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
@@ -240,9 +223,9 @@
                                 </t>
                             </t>
                         </t>
-                        <!--                        This is the second Template if the last line added in the list of Examen(notes)= Ajourne or absent-->
+                        <!--  This is the second Template if the last line added in the list of Examen(notes)= Ajourne or absent-->
                         <t t-if="docs.note_exam_id">
-                            <!--                            Using the foreach with [-1] to get the last line in list-->
+                            <!--  Using the foreach with [-1] to get the last line in list-->
                             <t t-foreach="docs.note_exam_id[-1]" t-as="res"
                                style="line-height:1.5;font-family:Montserrat;font-size:12%;page-break-before:always;">
                                 <t t-if="not res.resultat == 'recu'">
@@ -288,7 +271,7 @@
                                                 <br></br>
                                                 A été
                                                 <strong>
-                                                        <span t-raw="'%s' % o.note_exam_id[-1].mention if o.note_exam_id[-1].mention else ''"/>
+                                                    <span t-raw="'%s' % o.note_exam_id[-1].mention if o.note_exam_id[-1].mention else ''"/>
                                                 </strong>
                                                 aux épreuves d’examen pour l’obtention de
                                                 l’attestation de capacité de transport léger de marchandises
@@ -306,7 +289,7 @@
                                                 </strong>
                                                 pour son
                                                 <strong>
-                                                        <span t-raw="'%s' % o.note_exam_id[-1].nombre_de_passage if o.note_exam_id[-1].nombre_de_passage else ''"/>
+                                                    <span t-raw="'%s' % o.note_exam_id[-1].nombre_de_passage if o.note_exam_id[-1].nombre_de_passage else ''"/>
                                                 </strong>
                                                 passage, en ayant obtenu les notes
                                                 suivantes :
@@ -355,15 +338,6 @@
                                                                     </td>
                                                                     <td align="center">
                                                                         <strong>
-                                                                            <!--                                                                            <t t-foreach="docs.note_exam_id[-1]"-->
-                                                                            <!--                                                                               t-as="b">-->
-                                                                            <!--                                                                                <t t-if="b.epreuve_b &gt; 0">-->
-                                                                            <!--                                                                                    <span t-field="b.epreuve_b"/>-->
-                                                                            <!--                                                                                </t>-->
-                                                                            <!--                                                                                <t t-else="">-->
-                                                                            <!--                                                                                    <span>Absent</span>-->
-                                                                            <!--                                                                                </t>-->
-                                                                            <!--                                                                            </t>-->
                                                                             <span t-raw="'%s' % o.note_exam_id[-1].epreuve_b"/>
                                                                         </strong>
                                                                     </td>
@@ -385,15 +359,6 @@
                                                                     </td>
                                                                     <td align="center">
                                                                         <strong>
-                                                                            <!--                                                                            <t t-foreach="docs.note_exam_id[-1]"-->
-                                                                            <!--                                                                               t-as="moy">-->
-                                                                            <!--                                                                                <t t-if="moy.moyenne_generale &gt; 0">-->
-                                                                            <!--                                                                                    <span t-field="moy.moyenne_generale"/>-->
-                                                                            <!--                                                                                </t>-->
-                                                                            <!--                                                                                <t t-else="">-->
-                                                                            <!--                                                                                    <span>Absent</span>-->
-                                                                            <!--                                                                                </t>-->
-                                                                            <!--                                                                            </t>-->
                                                                             <span t-raw="'%s' % o.note_exam_id[-1].moyenne_generale"/>
                                                                         </strong>
                                                                     </td>
@@ -459,8 +424,8 @@
                                                                 <td></td>
                                                                 <td align="center">
                                                                     <span>Paris</span>
-                                                                   <span t-field="o.note_exam_id[-1].date_today"
-                                                                                      t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                                    <span t-field="o.note_exam_id[-1].date_today"
+                                                                          t-field-options='{"format": "dd/MM/yyyy"}'/>
                                                                 </td>
                                                             </tr>
                                                         </tbody>

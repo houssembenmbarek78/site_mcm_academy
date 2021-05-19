@@ -253,8 +253,6 @@
                                                                 <td align="center">
                                                                     <img src='/partner_exam/static/src/img/signature.png'
                                                                          style="height:100px; width:200px;"/>
-                                                                    <!--                                                        <span t-field="footer.date_today"-->
-                                                                    <!--                                                              t-field-options='{"format": "dd/MM/yyyy"}'/>-->
                                                                 </td>
                                                                 <td></td>
                                                                 <td align="center">
@@ -285,9 +283,9 @@
                                 </t>
                             </t>
                         </t>
-                        <!--                        This is the second Template if the last line added in the list of Examen(notes)= Ajourne or absent-->
+                        <!--  This is the second Template if the last line added in the list of Examen(notes)= Ajourne or absent-->
                         <t t-if="docs.note_exam_id">
-                            <!--                            Using the foreach with [-1] to get the last line in list-->
+                            <!-- Using the foreach with [-1] to get the last line in list-->
                             <t t-foreach="docs.note_exam_id[-1]" t-as="res"
                                style="line-height:1.5;font-family:Montserrat;font-size:12%;page-break-before:always;">
                                 <t t-if="not res.resultat == 'recu'">
@@ -333,7 +331,7 @@
                                                     <t t-foreach="docs" t-as="adresse"
                                                        style="line-height:1.5;font-family:Montserrat;font-size:12 %;page-break-before: always;">
                                                         <span t-field="adresse.street"/>
-                                                        <span> </span>
+                                                        <span></span>
                                                         <span t-field="adresse.zip"/>
                                                         <span t-field="adresse.city"/>
                                                     </t>

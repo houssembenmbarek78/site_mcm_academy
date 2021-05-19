@@ -18,6 +18,7 @@
                     }
                     }
                 </style>
+                <script defer='defer' type="text/javascript" src="/digimoov_website_templates/static/src/js/background-image.js" />
                 <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
 
                 <section id="slider-sec" class="web_agency_banner slider4 oe_img_bg oe_custom_bg" data-name="Home Banner Eight" style="background-image: url(&quot;/web/image/13078/Digimoov%20qui%20somme%20nous.png&quot;); background-position: 37.71% 54.72%;width:100%">
@@ -26,7 +27,7 @@
                             <li data-target="#myCarousel1605624033206" data-slide-to="0" class="active"/>
                         </ol>
                         <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item oe_img_bg pt56 pb96 oe_custom_bg active" style="background-image: url(&quot;/digimoov_website_templates/static/img/Examen de capacité de transport léger de marchandise.webp&quot;);">
+                            <div id= "examen-background-examen" class="carousel-item oe_img_bg pt56 pb96 oe_custom_bg active" style="background-image: url(&quot;/digimoov_website_templates/static/img/Examen de capacité de transport léger de marchandise.webp&quot;);">
                                 <div class="container">
                                     <div class="row" style="width:100% !important;">
                                         <div class="col-md-9 col-lg-6">
@@ -267,7 +268,7 @@
                 </section>
                 <section class="centric_template" data-name="Subscriber" style="">
                     <section class="service-banner s_cover parallax s_parallax_is_fixed s_parallax_no_overflow_hidden bg-black-75 pt32 pb144" data-scroll-background-ratio="1" data-name="Cover" style="background-image: none;">
-                        <span class="oe_img_bg s_parallax_bg oe_custom_bg" style="background-image: url(&quot;/digimoov_website_templates/static/img/fond.webp&quot;); background-position: 77.19% 24.8%;"/>
+                        <span id="examen-fond" class="oe_img_bg s_parallax_bg oe_custom_bg" style="background-image: url(/digimoov_website_templates/static/img/fond.webp); background-position: 77.19% 24.8%;"/>
                         <div class="container">
                             <div class="subs-content text-center">
                                 <span class="discount">EXAMEN FINAL</span>
@@ -398,7 +399,7 @@
                             </div>
                             <div class="pb0 pt0 col-lg-3 offset-lg-3">
                                 <figure class="figure">
-                                    <img data-src="/digimoov_website_templates/static/img/Jury pour la délibération.webp" data-srcsafari="/digimoov_website_templates/static/img/examen/Jury.png" class="lazy figure-img img-fluid img-thumbnail padding-large rounded float-right" alt="Odoo • une photo avec une légende" data-original-title="" title="" aria-describedby="tooltip997559" style="transform: translateX(54.1%) translateY(6.2%) scaleX(1.35) scaleY(1.35);"/>
+                                    <img data-src="/digimoov_website_templates/static/img/Jury pour la délibération.webp" data-srcSafari="/digimoov_website_templates/static/img/examen/Jury.png" class="lazy figure-img img-fluid img-thumbnail padding-large rounded float-right" alt="Odoo • une photo avec une légende" data-original-title="" title="" aria-describedby="tooltip997559" style="transform: translateX(54.1%) translateY(6.2%) scaleX(1.35) scaleY(1.35);"/>
                                     <figcaption class="figure-caption py-3 text-center">&amp;nbsp;</figcaption>
                                 </figure>
                             </div>
@@ -420,7 +421,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="s_newsletter_block oe_img_bg o_animate pb40 pt40 o_anim_zoom_in oe_custom_bg" style="background-image: url(&quot;/digimoov_website_templates/static/img/fond.webp&quot;); animation-name: o_anim_zoom_in; visibility: visible; animation-play-state: paused; background-position: 75.48% 30.96%;" data-name="Newsletter block">
+                <section id="examen-fond-2" class="s_newsletter_block oe_img_bg o_animate pb40 pt40 o_anim_zoom_in oe_custom_bg" style="background-image: url(&quot;/digimoov_website_templates/static/img/fond.webp&quot;); animation-name: o_anim_zoom_in; visibility: visible; animation-play-state: paused; background-position: 75.48% 30.96%;" data-name="Newsletter block">
                     <div class="container" id="nouvelle-tentative">
                         <div class="row">
                             <div class="bg-white-75 col-lg-12 pt16 pb16">
