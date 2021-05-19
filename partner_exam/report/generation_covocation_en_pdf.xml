@@ -10,11 +10,6 @@
                             <div class="row">
                                 <div class="col-12">
                                     <br>
-                                        <!--<strong>Arrêté du 28 décembre 2011 relatif à la délivrance des attestations de
-                                            capacité
-                                            professionnelle permettant
-                                            l’exercice de la profession de transporteur public routier, article 7
-                                        </strong>-->
                                         <img src='/partner_exam/static/src/img/header.png' height="500" width="1000"/>
                                         <p>
                                             Vous êtes invité(e) à vous présenter à l'examen de capacité de transport de
@@ -27,19 +22,19 @@
                                                 <span t-field="client.name"/>
                                             </t>
                                         </strong>
-                                        <br></br>
+                                        <br> </br>
                                         <strong>Adresse :
                                             <t t-foreach="docs.partner_id.mcm_session_id" t-as="adresse">
                                                 <span t-esc="adresse.adresse_examen"/>
                                             </t>
                                         </strong>
-                                        <br></br>
+                                        <br> </br>
                                         <strong>Date :
                                             <t t-foreach="docs.partner_id.mcm_session_id" t-as="line">
                                                 <span t-field="line.date_exam"/>
                                             </t>
                                         </strong>
-                                        <br></br>
+                                        <br> </br>
                                         <strong>Heure :</strong>
                                         <t t-foreach="docs.partner_id.mcm_session_id" t-as="matin">
                                             <t t-if="matin.temps_convocation == 'matin'">
@@ -53,7 +48,7 @@
                                                 l'épreuve).
                                             </t>
                                         </t>
-                                        <br></br>
+                                        <br> </br>
                                         <t t-foreach="docs.partner_id.mcm_session_id" t-as="apres_midi">
                                             <t t-if="apres_midi.temps_convocation == 'apresmidi'">
                                                 <strong>
@@ -69,10 +64,10 @@
                                         </t>
                                         <t t-foreach="docs.partner_id.mcm_session_id" t-as="none">
                                             <t t-if="none.temps_convocation == ''">
-                                                <p></p>
+                                                <p> </p>
                                             </t>
                                         </t>
-                                        <br></br>
+                                        <br> </br>
                                         <p>Merci de vous munir de la présente convocation, d'une pièce d'identité
                                             (passeport ou
                                             carte
@@ -80,7 +75,7 @@
                                             calculatrice
                                             non scientifique.
                                         </p>
-                                        <br></br>
+                                        <br> </br>
                                         <center>
                                             <strong>Pour vous préparer, nous vous invitons à consulter le guide de
                                                 l'examen en cliquant sur
@@ -89,8 +84,7 @@
                                                 ci-dessous :
                                             </strong>
                                         </center>
-                                        <br></br>
-
+                                        <br> </br>
                                         <center>
                                             <bold>
                                                 <a class="alert-link"
@@ -100,7 +94,7 @@
                                             </bold>
                                         </center>
                                     </br>
-                                    <br></br>
+                                    <br> </br>
                                     <div class="row" style="padding-left:100px;padding-top:100px!important;">
                                         <table border="0" width="800">
                                             <thead>
@@ -117,7 +111,7 @@
                                                             <span t-field="footer.date_today" t-field-options='{"format": "dd/MM/yyyy"}'/>
                                                         </t>
                                                     </td>
-                                                    <td></td>
+                                                    <td> </td>
                                                     <td>
                                                         <img src='/partner_exam/static/src/img/signature.png'
                                                              style="height: 100px; width: 200px;"/>

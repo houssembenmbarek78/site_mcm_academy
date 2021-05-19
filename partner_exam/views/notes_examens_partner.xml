@@ -5,7 +5,6 @@
             <field name="name">Examen Informations</field>
             <field name="res_model">info.examen</field>
             <field name="view_mode">tree,form</field>
-            <!--            <field name="search_view_id" ref="info_examen_view_search"/>-->
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">Create the first Information</p>
             </field>
@@ -17,10 +16,6 @@
             <field name="model">info.examen</field>
             <field name="arch" type="xml">
                 <form string="Notes des examens Form">
-                    <!--<header>
-                        <button name="action_get_attachment" string="Generate Attachment" type="object"/>
-                        <button name="action_send_email" string="Send by email" type="object"/>
-                    </header>-->
                     <sheet>
                         <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
                                 attrs="{'invisible': [('active', '=', True)]}"/>
@@ -63,7 +58,8 @@
             <field name="name">info.examen.tree</field>
             <field name="model">info.examen</field>
             <field name="arch" type="xml">
-                <tree string="Notes des examens Tree" decoration-danger="(presence == 'Absent')" default_order="create_date desc">
+                <tree string="Notes des examens Tree" decoration-danger="(presence == 'Absent')"
+                      default_order="create_date desc">
                     <field name="partner_id"/>
                     <field name="date_exam"/>
                     <field name="epreuve_a"/>

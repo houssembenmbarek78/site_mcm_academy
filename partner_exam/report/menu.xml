@@ -16,17 +16,6 @@
         <field name="dpi">90</field>
     </record>
 
-<!--    <report id="convocation_print_report_pdf'"
-            string="Convocation"
-            model="mailing.contact"
-            report_type="qweb-pdf"
-            name="partner_exam.id_convocation_print_report_pdf"
-            file="partner_exam.convocation_print_report_pdf"
-            attachment_use="True"
-            print_report_name="'Convocation - %s' % (object.partner_id.name).replace('/', '')"
-            paperformat="partner_exam.paperformat_convocation"
-    />-->
-
     <report id="id_convocation_print_report_pdf_ids'"
             string="Convocation"
             model="res.partner"
@@ -55,7 +44,7 @@
         <field name="dpi">90</field>
     </record>
 
-<!--    This is the action to create a print pdf for "relevé de note", using the template(xml) ID-->
+    <!--    This is the action to create a print pdf for "relevé de note", using the template(xml) ID-->
     <report id="report_releve_note_id"
             model="res.partner"
             string="Relevé de notes"
@@ -76,14 +65,5 @@
             menu="True"
             print_report_name="'Relevé de notes - %s' % (object.name).replace('/', '')"
             paperformat="partner_exam.paperformat_releve_note_id"/>
-
-<!--    <report id="id_releve_note_ajournement_pdf_id"
-            model="res.partner"
-            string="Relevé de note D'ajournement"
-            report_type="qweb-pdf"
-            name="partner_exam.id_releve_note_ajournement_id"
-            file="partner_exam.id_releve_note_ajournement_pdf_id"
-            menu="False"
-            paperformat="partner_exam.paperformat_releve_note_id"/>-->
 
 </odoo>
