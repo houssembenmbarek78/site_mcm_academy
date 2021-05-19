@@ -43,7 +43,7 @@ var nav = navigator.saysWho.substr(0, navigator.saysWho.indexOf(" "));
 console.log(nav); // log browser
 //Safari Browser
 
-if (nav.toUpperCase() == "SAFARI") {
+if (nav.toUpperCase() == "FIREFOX") {
   //replace webp image if Safari browser
   console.log("SAFARI browser --- ");
   let allImgs = [].slice.call(document.getElementsByTagName("IMG"));
