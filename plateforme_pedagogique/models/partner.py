@@ -6,6 +6,7 @@ from datetime import datetime,timedelta,date
 import re
 import json
 from odoo import _
+
 from odoo import models, fields,api
 from odoo.exceptions import ValidationError
 from unidecode import  unidecode
@@ -23,7 +24,7 @@ class partner(models.Model):
     # champs pour recuperer les statistiques
     assignedPrograms = fields.Integer(string='Nombre de programmes attribués')
 
-    last_login = fields.Char(string="Derniere Activité", readonly=True)
+    last_login = fields.Char(string="Derniere Activité", readonly=True, translate=False)
     # learner_achivement=fields.Char(string="Réalisations des apprenants")
     averageScore = fields.Integer(string="Score Moyen", readonly=True)
     totalTimeSpentInMinutes = fields.Char(string="temps passé en minutes", readonly=True)
@@ -268,7 +269,7 @@ class partner(models.Model):
         date_exam = partner.mcm_session_id.date_exam
         # Changer format de date et la mettre en majuscule
         datesession = date_exam.strftime(new_format).upper()
-        date_session = unidecode(datesession)
+        date_session = unidecode(datesession) # Eliminer les accents
         # print('date, ville', ville, date_session)
         # Récuperer le mot de passe à partir de res.users
         user = self.env['res.users'].sudo().search([('partner_id', '=', partner.id)])
