@@ -304,11 +304,12 @@ class partner(models.Model):
                 print(user.password)
                 # Ajouter i-One to table user
                 data_user = '{"mail":"' + partner.email + '" , "password":"' + user.password360 + '" , "firstName":"' + partner.firstName + '", "lastName":"' + partner.lastName + '", "phone":"' + partner.phone + '", "sendCredentials":"true"}'
+                _logger.info('_______________________Cron password360 avant post_________________________ %s' % data_user)
                 resp = requests.post(urluser, headers=headers, data=data_user)
                 print(data_user, 'user', resp.status_code)
-                _logger.info("/°/°/°/°//°/°/°/°//°/°/°/°/Cron password360 avant data_user /°/°/°/°//°/°/°/°//°/°/°/°/")
+                _logger.info('_______________________Cron password360 apret post________________________ %s' % data_user)
                 if (resp.status_code == 200):
-                    _logger.info("_______________________Cron password360 aprés data_user _________________________")
+                    _logger.info('_______________________Cron password360 if resp_________________________ %s' % data_user)
                     create=True
             data_group = {}
 
