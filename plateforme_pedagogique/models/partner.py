@@ -88,7 +88,7 @@ class partner(models.Model):
                     date_split = lastlogin[0:19]
                     date = datetime.strptime(date_split, "%Y-%m-%dT%H:%M:%S")
                     new_format = '%d %B, %Y'
-                    last_login = date.strftime(new_format)
+                    last_login = str(date.strftime(new_format))
                     print(last_login)
                 message="0"
                 if ('messages' in table_user):
@@ -268,7 +268,7 @@ class partner(models.Model):
         new_format = '%d %B %Y'
         date_exam = partner.mcm_session_id.date_exam
         # Changer format de date et la mettre en majuscule
-        datesession = date_exam.strftime(new_format).upper()
+        datesession = str(date_exam.strftime(new_format).upper())
         date_session = unidecode(datesession) # Eliminer les accents
         # print('date, ville', ville, date_session)
         # Récuperer le mot de passe à partir de res.users
