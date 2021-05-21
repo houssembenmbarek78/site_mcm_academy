@@ -4,6 +4,8 @@
         <xpath expr="script[last()]" position="after">
             <script type="text/javascript" src="/digimoov_website_templates/static/src/js/portal.js"/>
 
+
+
             <!-- <script type="text/javascript" src="/digimoov_website_templates/static/src/js/browser.js" /> -->
 
 
@@ -18,7 +20,7 @@
         </xpath>
         <xpath expr="//link[last()]" position="after">
             <!-- <link rel="stylesheet" type="text/scss" href="/digimoov_website_templates/static/src/css/dist/home.min.css"/> -->
-            <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+            <link href="/digimoov_website_templates/static/src/img/LOGO_DIGIMOOV.png" rel="apple-touch-icon" />
 
         </xpath>
     </template>

@@ -60,12 +60,12 @@ if (nav.toUpperCase() == "SAFARI") {
       );
     }
     if (document.getElementById("examen-fond-2")) {
-      document.getElementById("examen-fond").style.backgroundImage =
+      document.getElementById("examen-fond-2").style.backgroundImage =
         fondImageUrl;
 
       console.log(
         "changed: ",
-        document.getElementById("examen-fond").style.backgroundImage
+        document.getElementById("examen-fond-2").style.backgroundImage
       );
     }
     if (document.getElementById("examen-background-examen")) {
@@ -99,14 +99,13 @@ if (nav.toUpperCase() == "SAFARI") {
       );
     }
   }
-    let allImgs = [].slice.call(document.getElementsByTagName("IMG"));
-    allImgs.forEach((element) => {
-      console.log(element.getAttribute("data-srcSafari"));
-      if (element.getAttribute("data-srcSafari")) {
-        element.dataset.src = element.getAttribute("data-srcSafari");
-      }
-    });
-
+  let allImgs = [].slice.call(document.getElementsByTagName("IMG"));
+  allImgs.forEach((element) => {
+    console.log(element.getAttribute("data-srcSafari"));
+    if (element.getAttribute("data-srcSafari")) {
+      element.dataset.src = element.getAttribute("data-srcSafari");
+    }
+  });
 } else {
   console.log("Navigateur: ", nav); // log browser
 }

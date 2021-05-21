@@ -12,11 +12,12 @@ if (window.location.pathname == "/examen-capacite-transport-marchandises") {
     );
   }
   if (document.getElementById("examen-fond-2")) {
-    document.getElementById("examen-fond").style.backgroundImage = fondImageUrl;
+    document.getElementById("examen-fond-2").style.backgroundImage =
+      fondImageUrl;
 
     console.log(
       "changed: ",
-      document.getElementById("examen-fond").style.backgroundImage
+      document.getElementById("examen-fond-2").style.backgroundImage
     );
   }
   if (document.getElementById("examen-background-examen")) {

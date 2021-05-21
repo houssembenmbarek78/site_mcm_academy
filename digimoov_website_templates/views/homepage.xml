@@ -3,16 +3,13 @@
     <xpath expr="//div[@id='wrap']" position="replace">
       <br />
 
-      <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
+
       <link rel="stylesheet" type="text/scss" href="/digimoov_website_templates/static/src/css/dist/home.min.css"/>
-      <script>
-        window.intercomSettings = {
-          app_id: "waw4riyk"
-        };
-      </script>
-      <script>
-        (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/waw4riyk';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-      </script>
+
+
+      <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
+      <!-- <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-library.js" />
+      <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-id.js" /> -->
 
 
       <!-- <section class="s_one_page_banner static-slider2" data-name="Home Banner Ten">
@@ -39,7 +36,7 @@
                       <span class="wrap">SCOOTER, VOITURE OU CAMIONNETTE</span>
 
                     </b>
-                    <br />
+                    <br  />
 
                   </div>
 
@@ -92,20 +89,31 @@
         </div>
       </div>
     </section> -->
-      <section class=" home-banner pt128 s_one_page_banner static-slider2" id="home_page" style="padding-bottom: -150px !important;">
+
+
+      <section class=" home-banner pt128 s_one_page_banner static-slider2" data-name="Home Banner Ten" id="home_page">
 
         <div class="container">
           <div class="row">
             <div class="bannarcol col-lg-6 col-md-12">
 
-              <h1 class="subtitle animate__fadeInDown" style="
+
+              <h1 class="subtitle " style="
                     font-size: 25px;
                     color: #202647;
                     line-height: 0.8cm !important;
-                  ">FORMATION EN CAPACITÉ DE TRANSPORT LÉGER DE MARCHANDISES POUR DEVENIR LIVREUR EN SCOOTER, VOITURE OU CAMIONNETTE</h1>
-              <p class="paratext o_default_snippet_text">
+                    height: 120px;
+                  ">FORMATION EN  <span class="stabiloblue">CAPACITÉ DE TRANSPORT LÉGER DE MARCHANDISES POUR DEVENIR LIVREUR EN 
+                </span>
+                <span class="typewrite" data-period="2000" data-type='[ "SCOOTER, VOITURE OU CAMIONNETTE" ]'>
+                  <span class="wrap">SCOOTER, VOITURE OU <br></br> CAMIONNETTE</span>
+                </span>
+              </h1>
+              <!-- <p class="paratext o_default_snippet_text">
 									Digimoov vous accompagne jusqu'à l'obtention de votre attestation en capacité de transport léger de marchandises
-              </p>
+              </p> -->
+
+
               <div class="banner-btn s_btn" style="padding: 0.1rem 0.1rem !important;">
                 <a class="bannerbtn btn btn-alpha rounded-circle o_default_snippet_text" href="/#en-savoir-plus" style="padding-bottom: 1rem">En-savoir plus</a>
                 <a class="bannerbtn btn btn-alpha rounded-circle o_default_snippet_text" href="/contact">Contactez-nous
@@ -122,6 +130,7 @@
         </div>
 
       </section>
+
       <br />
       <br />
       <section class="bg-white-50 lazy">
@@ -184,7 +193,7 @@ Acquérir les connaissances nécessaires afin de
                     <section class="card">
                       <div class="card-body text-center">
                         <div class="icon-space">
-                          <img data-src="/digimoov_website_templates/static/img/Apprenez à votre rythme - Digimoov.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Apprenez à votre rythme - Digimoov.png" alt="Choisir pour combien de temps apprendre" class="img img-fluid lazy lazy" data-original-title="" title="Apprenez à votre rythme" aria-describedby="tooltip965860" />
+                          <img data-src="/digimoov_website_templates/static/img/Apprenez à votre rythme - Digimoov.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Apprenez à votre rythme - Digimoov.jpg" alt="Choisir pour combien de temps apprendre" class="img img-fluid lazy lazy" data-original-title="" title="Apprenez à votre rythme" aria-describedby="tooltip965860" />
                         </div>
                         <h3>
                           <font style="font-size: 20px">Apprenez à votre rythme</font
@@ -251,7 +260,7 @@ Acquérir les connaissances nécessaires afin de
               </div>
             </div>
           </section>
-          <!-- <section class="pb32 pt24 bg-100" data-name="Title">
+          <section class="pb32 pt24 bg-100" data-name="Title">
             <div class="container">
               <div class="row s_nb_column_fixed" id="en-savoir-plus">
                 <div class="s_title pt16 offset-lg-2 col-lg-8 pb0" style="text-align: center">
@@ -270,7 +279,7 @@ Acquérir les connaissances nécessaires afin de
                 </div>
               </div>
             </div>
-          </section> -->
+          </section>
           <section class="s_business_text_with_img_left_right" data-name="Left Right image with text">
             <div class="spacer feature26">
               <div class="container">
@@ -296,9 +305,9 @@ Acquérir les connaissances nécessaires afin de
                             box-shadow: rgba(82, 87, 166, 0.5) 0px 0px 0px
                               0.2rem;
                           ">
-
+                          
                           Détails sur la formation&amp;nbsp;&amp;nbsp;
-
+                          
                         </a>
                       </div> -->
 
@@ -341,7 +350,7 @@ Acquérir les connaissances nécessaires afin de
                           outline: 0px;
                         ">
                         Détails sur l'examen&amp;nbsp;&amp;nbsp;
-
+                        
                     </a>
                   </div>
 
@@ -386,8 +395,7 @@ Acquérir les connaissances nécessaires afin de
                             outline: 0px;
                             margin-top: 50px !important;
                           ">
-                          En-savoir plus&amp;nbsp; &amp;nbsp;
-&amp;nbsp;
+                          En-savoir plus
                     </a>
                     <!-- <span style="font-size: 1rem">&amp;nbsp;</span> -->
                   </div>
@@ -406,7 +414,7 @@ Acquérir les connaissances nécessaires afin de
                         visibility: visible;
                         animation-play-state: running;
                       ">
-                      <img class="rounded img-responsive lazy" data-src="/digimoov_website_templates/static/img/Transport léger sur scooter.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Transport léger sur scooter.jpg" alt="Scooter pour faire de la livraison" data-original-title="" title="Transport léger sur scooter" aria-describedby="tooltip533278" style="transform: scaleX(0.78) scaleY(0.85)" />
+                      <img class="rounded img-responsive lazy" data-src="/digimoov_website_templates/static/img/Transport léger sur scooter.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Transport léger sur scooter.png" alt="Scooter pour faire de la livraison" data-original-title="" title="Transport léger sur scooter" aria-describedby="tooltip533278" style="transform: scaleX(0.78) scaleY(0.85)" />
                       <div class="m-t-30">
                         <h3 class="font-medium" style="text-align: center">
                           Devenir livreur en scooter
@@ -426,7 +434,7 @@ Acquérir les connaissances nécessaires afin de
                         visibility: visible;
                         animation-play-state: running;
                       ">
-                      <img class="rounded img-responsive lazy" data-src="/digimoov_website_templates/static/img/Transport léger  sur voiture.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Transport léger  sur voiture.jpg" alt="Voiture pour Transport léger de marchandise" data-original-title="" title="Transport léger  sur voiture" aria-describedby="tooltip970873" style="transform: scaleX(0.85) scaleY(0.89)" />
+                      <img class="rounded img-responsive lazy" data-src="/digimoov_website_templates/static/img/Transport léger  sur voiture.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Transport léger  sur voiture.png" alt="Voiture pour Transport léger de marchandise" data-original-title="" title="Transport léger  sur voiture" aria-describedby="tooltip970873" style="transform: scaleX(0.85) scaleY(0.89)" />
                       <div class="m-t-30">
                         <h3 class="font-medium" style="text-align: center">
                           Devenir livreur en voiture
@@ -446,7 +454,7 @@ Acquérir les connaissances nécessaires afin de
                         visibility: visible;
                         animation-play-state: running;
                       ">
-                      <img class="rounded img-responsive lazy" data-src="/digimoov_website_templates/static/img/Transport léger sur camionnette 3,5t.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Transport léger sur camionnette 3,5t.jpg" alt="camionnette pour transport -3.5t PTAC" data-original-title="" title="Transport léger sur camionnette 3,5t" aria-describedby="tooltip38151" style="transform: scaleX(0.89) scaleY(0.9)" />
+                      <img class="rounded img-responsive lazy" data-src="/digimoov_website_templates/static/img/Transport léger sur camionnette 3,5t.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Transport léger sur camionnette 3,5t.png" alt="camionnette pour transport -3.5t PTAC" data-original-title="" title="Transport léger sur camionnette 3,5t" aria-describedby="tooltip38151" style="transform: scaleX(0.89) scaleY(0.9)" />
                       <div class="m-t-30">
                         <h3 class="font-medium lazy" style="text-align: center">
                           Devenir livreur en camionnette
@@ -552,7 +560,7 @@ Inscrivez-vous dès maintenant !
             <div class="col-md-4 col-sm-6">
               <div class="card border-0 shadow" style="border-radius: 25px 25px">
                 <div class="text-center text-white border-0" style="
-                    background-color: #865FD9;
+                    background-color: #6e209f;
                     border-top-left-radius: 25px;
                     border-top-right-radius: 25px;
                   ">
@@ -659,7 +667,7 @@ Révision du programme avant examen &amp;nbsp;
             <div class="col-md-4 col-sm-6">
               <div class="card border-0 shadow" style="border-radius: 25px 25px">
                 <div class="text-center text-white border-0" style="
-                    background-color: #865FD9;
+                    background-color: #6e209f;
                     border-top-left-radius: 25px;
                     border-top-right-radius: 25px;
                   ">
@@ -919,7 +927,7 @@ Directs pour explication avec les formateurs
 
                 <div class="col-sm-2" t-if="partenaire=='' or partenaire=='ubereats'">
                   <a href="https://www.ubereats.com/fr">
-                    <img data-src="/digimoov_website_templates/static/img/compressed/ubereats partenaire Digimoov.webp" data-srcSafari="digimoov_website_templates/static/img/uber.png" class="img img-fluid lazy" alt="Logo partenaire ubereats" data-original-title="" title="Ubereats partenaire Digimoov" aria-describedby="tooltip843653" style="margin-top: 30px;"/>
+                    <img data-src="/digimoov_website_templates/static/img/compressed/ubereats partenaire Digimoov.webp" data-srcSafari="digimoov_website_templates/static/img/Homepage/uber.png" class="img img-fluid lazy" alt="Logo partenaire ubereats" data-original-title="" title="Ubereats partenaire Digimoov" aria-describedby="tooltip843653" style="margin-top: 30px;"/>
                   </a>
                 </div>
                 <div class="col-sm-2" t-if="partenaire=='' or partenaire=='deliveroo'">
@@ -935,12 +943,12 @@ Directs pour explication avec les formateurs
                 </div>
                 <div class="col-sm-2" t-if="partenaire=='' or partenaire=='box2home'">
                   <a href="https://www.box2home.fr/">
-                    <img data-src="/digimoov_website_templates/static/img/compressed/Box2home-partenaire-digimoov.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Box2home-partenaire-digimoov.jpeg" class="img img-fluid lazy" alt="Logo partenaire Box2home" data-original-title="" title="Box2home partenaire Digimoov" aria-describedby="tooltip175558" style="margin-top: 30px;"/>
+                    <img data-src="/digimoov_website_templates/static/img/compressed/Box2home-partenaire-digimoov.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Box2home-partenaire-digimoov.png" class="img img-fluid lazy" alt="Logo partenaire Box2home" data-original-title="" title="Box2home partenaire Digimoov" aria-describedby="tooltip175558" style="margin-top: 30px;"/>
                   </a>
                 </div>
                 <div class="col-sm-2">
                   <a href="http://www.comptable-douai.com/">
-                    <img data-src="/digimoov_website_templates/static/img/compressed/Cabinet Comptable Joel Pruvost.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Cabinet_Comptable_Joel_Pruvost.jpeg" class="img img-fluid lazy" alt="Logo partenaire Cabinet Comptable Joël Pruvost" data-original-title="" title="Cabinet Comptable Joël Pruvost partenaire Digimoov" aria-describedby="tooltip175558" style="margin-top: 30px;"/>
+                    <img data-src="/digimoov_website_templates/static/img/compressed/Cabinet Comptable Joel Pruvost.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Cabinet_Comptable_Joel_Pruvost.png" class="img img-fluid lazy" alt="Logo partenaire Cabinet Comptable Joël Pruvost" data-original-title="" title="Cabinet Comptable Joël Pruvost partenaire Digimoov" aria-describedby="tooltip175558" style="margin-top: 30px;"/>
                   </a>
                 </div>
               </div>
