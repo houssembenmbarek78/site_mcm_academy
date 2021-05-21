@@ -42,13 +42,11 @@ class partner(models.Model):
     passage_exam=fields.Boolean("Examen passé",default=False)
     stats_ids=fields.Many2one('plateforme_pedagogique.user_stats')
 
-    def change_value_old(self):
-        for record in self.env['res.partner'].sudo().search([]):
-            if record.password360==False:
-                record.old=True
+   
 
     # Recuperer les utilisateurs de 360learning
     def getusers(self):
+            locale.setlocale(locale.LC_TIME, self.env.context['lang'] + '.utf8')
             params = (
                 ('company', '56f5520e11d423f46884d593'),
                 ('apiKey', 'cnkcbrhHKyfzKLx4zI7Ub2P5'),
@@ -64,6 +62,7 @@ class partner(models.Model):
                 lastlogin=""
                 if 'lastLoginAt' in table_user:
                  lastlogin = str(table_user['lastLoginAt'])
+                    
                 print('user date supp', table_user['toDeactivateAt'])
                 times = ''
                 # Ecrire le temps récupéré de 360 sous forme d'heures et minutes
@@ -88,7 +87,11 @@ class partner(models.Model):
                     date_split = lastlogin[0:19]
                     date = datetime.strptime(date_split, "%Y-%m-%dT%H:%M:%S")
                     new_format = '%d %B, %Y'
+                    new_format = '%d %B, %Y'
                     last_login = str(date.strftime(new_format))
+                    lang = str(self.env.context['lang'])
+                    _logger.info('dateeeeeeee lang %s' % lang)
+                    _logger.info('dateeeeeeee  %s' % last_login)
                     print(last_login)
                 message="0"
                 if ('messages' in table_user):
