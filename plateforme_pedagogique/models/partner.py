@@ -47,7 +47,7 @@ class partner(models.Model):
 
     # Recuperer les utilisateurs de 360learning
     def getusers(self):
-            locale.setlocale(locale.LC_ALL, self.env.context['lang'] + 'fr_FR')
+            locale.setlocale(locale.LC_ALL, 'fr_FR.utf-8')
             params = (
                 ('company', '56f5520e11d423f46884d593'),
                 ('apiKey', 'cnkcbrhHKyfzKLx4zI7Ub2P5'),
