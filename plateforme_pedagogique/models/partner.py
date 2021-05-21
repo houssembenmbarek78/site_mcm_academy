@@ -43,11 +43,9 @@ class partner(models.Model):
     passage_exam=fields.Boolean("Examen passé",default=False)
     stats_ids=fields.Many2one('plateforme_pedagogique.user_stats')
 
-   
-
     # Recuperer les utilisateurs de 360learning
     def getusers(self):
-            locale.setlocale(locale.LC_ALL, 'fr_FR.utf-8')
+            locale.setlocale(locale.LC_TIME, self.env.context['lang'] + '.utf8')
             params = (
                 ('company', '56f5520e11d423f46884d593'),
                 ('apiKey', 'cnkcbrhHKyfzKLx4zI7Ub2P5'),
