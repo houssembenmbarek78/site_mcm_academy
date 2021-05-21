@@ -6,6 +6,7 @@ from datetime import datetime,timedelta,date
 import re
 import json
 from odoo import _
+import locale
 
 from odoo import models, fields,api
 from odoo.exceptions import ValidationError
@@ -293,7 +294,6 @@ class partner(models.Model):
             headers["Content-Type"] = "application/json"
             invit=False
             create=False
-
             #Si le mot de passe n'est pas récupérée au moment d'inscrit on invite l'apprennant
             # if user.password360==False:
                 # data_user ='{"mail":"' + partner.email + '"}'
