@@ -8,68 +8,6 @@
 img {
   /* min-height: 45px; */
 }
-.stabilo,
-.stabiloblue {
-  display: inline-block;
-  position: relative;
-}
-.stabilo:before {
-  content: "";
-  display: block;
-  background: #2dd04b;
-  position: absolute;
-  top: 40%;
-  left: 0;
-  right: 0;
-  bottom: 5%;
-  transform: rotate(-5deg);
-  z-index: -1;
-  border-radius: 100% 100% 10% 10%/100% 100% 100% 100%;
-}
-.stabiloblue:before {
-  content: "";
-  display: block;
-  background: rgba(0, 137, 255, 0.3);
-  position: absolute;
-  top: 40%;
-  left: 0;
-  right: 0;
-  bottom: 5%;
-  transform: rotate(-5deg);
-  z-index: -1;
-  border-radius: 100% 100% 10% 10%/100% 100% 100% 100%;
-}
-.stabiloblue {
-  display: inline-block;
-  position: relative;
-  z-index: 100;
-}
-.stabilo:before {
-  content: "";
-  display: block;
-  background: #790057;
-  position: absolute;
-  top: 40%;
-  left: 0;
-  right: 0;
-  bottom: 5%;
-  transform: rotate(-5deg);
-  z-index: -1;
-  border-radius: 100% 100% 10% 10%/100% 100% 100% 100%;
-}
-.stabiloblue:before {
-  content: "";
-  display: block;
-  background: rgba(0, 137, 255, 0.3);
-  position: absolute;
-  top: 40%;
-  left: 0;
-  right: 0;
-  bottom: 5%;
-  transform: rotate(-5deg);
-  z-index: -1;
-  border-radius: 100% 100% 10% 10%/100% 100% 100% 100%;
-}
 
 .counter-box {
   background-color: transparent;

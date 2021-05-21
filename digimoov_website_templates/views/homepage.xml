@@ -8,10 +8,72 @@
 
 
       <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
-      <!-- <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-library.js" />
-      <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-id.js" /> -->
+      <script defer="defer" type="text/javascript" src="digimoov_website_templates/static/src/js/crisp-bot.js" />
 
-
+      <style>
+  .stabilo,
+.stabiloblue {
+  display: inline-block;
+  position: relative;
+}
+.stabilo:before {
+  content: "";
+  display: block;
+  background: #2dd04b;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  bottom: 5%;
+  transform: rotate(-5deg);
+  z-index: -1;
+  border-radius: 100% 100% 10% 10%/100% 100% 100% 100%;
+}
+.stabiloblue:before {
+  content: "";
+  display: block;
+  background: rgba(0, 137, 255, 0.3);
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  bottom: 5%;
+  transform: rotate(-5deg);
+  z-index: -1;
+  border-radius: 100% 100% 10% 10%/100% 100% 100% 100%;
+}
+.stabiloblue {
+  display: inline-block;
+  position: relative;
+  z-index: 100;
+}
+.stabilo:before {
+  content: "";
+  display: block;
+  background: #790057;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  bottom: 5%;
+  transform: rotate(-5deg);
+  z-index: -1;
+  border-radius: 100% 100% 10% 10%/100% 100% 100% 100%;
+}
+.stabiloblue:before {
+  content: "";
+  display: block;
+  background: rgba(0, 137, 255, 0.3);
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  bottom: 5%;
+  transform: rotate(-5deg);
+  z-index: -1;
+  border-radius: 100% 100% 10% 10%/100% 100% 100% 100%;
+}
+      </style>
       <!-- <section class="s_one_page_banner static-slider2" data-name="Home Banner Ten">
         <div class="container">
           <div class="row">
@@ -103,10 +165,12 @@
                     color: #202647;
                     line-height: 0.8cm !important;
                     height: 120px;
-                  ">FORMATION EN  <span class="stabiloblue">CAPACITÉ DE TRANSPORT LÉGER DE MARCHANDISES POUR DEVENIR LIVREUR EN 
-                </span>
+                  ">FORMATION EN  CAPACITÉ DE TRANSPORT LÉGER DE <span class="stabiloblue">MARCHANDISES </span>
+ POUR DEVENIR LIVREUR EN 
+               
                 <span class="typewrite" data-period="2000" data-type='[ "SCOOTER, VOITURE OU CAMIONNETTE" ]'>
-                  <span class="wrap">SCOOTER, VOITURE OU <br></br> CAMIONNETTE</span>
+                  <span class="wrap">SCOOTER, VOITURE OU <br />
+ CAMIONNETTE</span>
                 </span>
               </h1>
               <!-- <p class="paratext o_default_snippet_text">
@@ -393,7 +457,7 @@ Acquérir les connaissances nécessaires afin de
                             border-color: rgb(0, 0, 0);
                             font-size: 14px;
                             outline: 0px;
-                            margin-top: 50px !important;
+                        
                           ">
                           En-savoir plus
                     </a>
