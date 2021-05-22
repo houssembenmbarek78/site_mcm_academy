@@ -44,9 +44,7 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"></field>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='order_line']" position="attributes">
-            <attribute name="context">{'lang': 'fr_FR'}</attribute>
-            </xpath>
+
          <xpath expr="//form//sheet" position="before">
             <header>
                 <button name="ajouter_iOne_manuelle" string="Ajouter sur 360"
