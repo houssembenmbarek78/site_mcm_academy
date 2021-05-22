@@ -180,14 +180,14 @@ class partner(models.Model):
                 _logger.info("++++++++++++Cron sale contrat signé++++++++++++++++++++++")
                 print('contrat signé')
                 date_signature = sale_order.signed_on
-                if ((self.email == "gorob71147@cnxingye.com") and (failure == True) and (statut == 'won')):
+                if ((self.email == "lipotif222@itwbuy.com") and (failure == True) and (statut == 'won')):
                     _logger.info("++++++++++++Cron failure++++++++++++++++++++++")
                     print('it works')
                     self.ajouter_iOne(self)
                 # Vérifier si delai de retractaion et demande de renoncer  ne sont pas coché,
                 # si aujourd'hui est la date d'ajout,et si le statut est gagné
                 # alors on ajoute l'apprenant à 360
-                if ((failure == False) and (statut == 'won') and (self.email == "gorob71147@cnxingye.com")):
+                if ((failure == False) and (statut == 'won') and (self.email == "lipotif222@itwbuy.com")):
                     # Calculer date d'ajout apres 14jours de date de signature
                     date_ajout = date_signature + timedelta(days=14)
                     today = datetime.today()
@@ -237,13 +237,13 @@ class partner(models.Model):
             if (sale_order.state == 'sale' and partner.passage_exam == False):
               print('contrat signé')
               date_signature = sale_order.signed_on
-              if ((partner.email == "") and (failure == True) and (statut =='won')):
+              if ((partner.email == "lipotif222@itwbuy.com") and (failure == True) and (statut =='won')):
                     print('it works')
                     self.ajouter_iOne(partner)
               #Vérifier si delai de retractaion et demande de renoncer  ne sont pas coché,
               # si aujourd'hui est la date d'ajout,et si le statut est gagné
               # alors on ajoute l'apprenant à 360
-              if ( (failure == False)  and (statut =='won') and (partner.email== "gorob71147@cnxingye.com") ):
+              if ( (failure == False)  and (statut =='won') and (partner.email== "lipotif222@itwbuy.com") ):
                     # Calculer date d'ajout apres 14jours de date de signature
                     date_ajout = date_signature + timedelta(days=14)
                     today = datetime.today()
@@ -259,6 +259,7 @@ class partner(models.Model):
                       self.ajouter_iOne(partner)
 
     def ajouter_iOne(self, partner):
+        locale.setlocale(locale.LC_TIME, self.env.context['lang'] + '.utf8')
         product_name = partner.module_id.product_id.name
         if (not (product_name)):
             product_name = ''
