@@ -25,7 +25,7 @@ class partner(models.Model):
     # champs pour recuperer les statistiques
     assignedPrograms = fields.Integer(string='Nombre de programmes attribués')
 
-    last_login = fields.Char(string="Derniere Activité", readonly=True, translate=False)
+    last_login = fields.Char(string="Derniere Activité", readonly=True)
     # learner_achivement=fields.Char(string="Réalisations des apprenants")
     averageScore = fields.Integer(string="Score Moyen", readonly=True)
     totalTimeSpentInMinutes = fields.Char(string="temps passé en minutes", readonly=True)

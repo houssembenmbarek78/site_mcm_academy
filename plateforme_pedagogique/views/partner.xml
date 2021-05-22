@@ -44,9 +44,12 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"></field>
         <field name="arch" type="xml">
+            <xpath expr="//field[@name='order_line']" position="attributes">
+            <attribute name="context">{'lang': 'fr_FR'}</attribute>
+            </xpath>
          <xpath expr="//form//sheet" position="before">
             <header>
-                <button name="Ajouter_iOne_manuelle" string="Ajouter sur 360"
+                <button name="ajouter_iOne_manuelle" string="Ajouter sur 360"
                         type="object"></button>
                     <button name="supprimer_ione_manuelle" string="Supprimer de 360"
                             type="object" confirm="Êtes-vous sûr de vouloir supprimer cet apprenant de la plateforme?"/>
@@ -154,6 +157,7 @@
         <field name="name">Les Apprenants</field>
         <field name="res_model">res.partner</field>
         <field name="view_mode">tree,form</field>
+
     </record>
 
     <menuitem id="contact_menu" name="Apprenants"
