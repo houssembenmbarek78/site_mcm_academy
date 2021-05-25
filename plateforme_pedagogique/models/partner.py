@@ -180,14 +180,14 @@ class partner(models.Model):
                 _logger.info("++++++++++++Cron sale contrat signé++++++++++++++++++++++")
                 print('contrat signé')
                 date_signature = sale_order.signed_on
-                if ((self.email == "lipotif222@itwbuy.com") and (failure == True) and (statut == 'won')):
+                if ( (failure == True) and (statut == 'won')):
                     _logger.info("++++++++++++Cron failure++++++++++++++++++++++")
                     print('it works')
                     self.ajouter_iOne(self)
                 # Vérifier si delai de retractaion et demande de renoncer  ne sont pas coché,
                 # si aujourd'hui est la date d'ajout,et si le statut est gagné
                 # alors on ajoute l'apprenant à 360
-                if ((failure == False) and (statut == 'won') and (self.email == "lipotif222@itwbuy.com")):
+                if ((failure == False) and (statut == 'won')):
                     # Calculer date d'ajout apres 14jours de date de signature
                     date_ajout = date_signature + timedelta(days=14)
                     today = datetime.today()

@@ -52,7 +52,7 @@
                             type="object" confirm="Êtes-vous sûr de vouloir supprimer cet apprenant de la plateforme?"/>
             </header>
         </xpath>
-       <xpath expr="//group//div[@class='row form-panel']//div[1]//div[3]//div[5]" position="after">
+       <xpath expr="//group//div[@class='row form-panel']//field[@name='note_exam']" position="after">
                 <div class="col-sm-12">
                      <div>
                         <label for="passage_exam" string="Examen passé :" class="oe_edit_only">Examen passé</label>
