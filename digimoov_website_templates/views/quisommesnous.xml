@@ -206,8 +206,7 @@
                     <center>
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-1">
-                                </div>
+
                                 <div class="col-lg-2">
                                     <img data-src="/digimoov_website_templates/static/img/MCMACADEMY.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/MCMACADEMY.png" style="width:50%" class="img img-fluid lazy" alt="Logo partenaire MCM Academy" data-original-title="" title="" aria-describedby="tooltip843653"/>
                                 </div>
@@ -221,10 +220,12 @@
                                     <img data-src="/digimoov_website_templates/static/img/coursierjob partenaire Digimoov.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/coursierjob.png" style="width:50%" class="img img-fluid lazy" alt="Logo partenaire Coursierjob" data-original-title="" title="" aria-describedby="tooltip175558"/>
                                 </div>
                                 <div class="col-lg-2">
+                                    <img data-src="/digimoov_website_templates/static/img/compressed/Box2home-partenaire-digimoov.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Box2home-partenaire-digimoov.png" class="img img-fluid lazy" alt="Logo partenaire Box2home" data-original-title="" title="Box2home partenaire Digimoov" aria-describedby="tooltip175558" />
+                                </div>
+                                <div class="col-lg-2">
                                     <img data-src="/digimoov_website_templates/static/img/Cabinet Comptable Joel Pruvost.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Cabinet_Comptable_Joel_Pruvost.png" style="width:50%" class="img img-fluid lazy" alt="Logo partenaire Cabinet Comptable Joël Pruvost" data-original-title="" title="Cabinet Comptable Joël Pruvost partenaire Digimoov" aria-describedby="tooltip175558"/>
                                 </div>
-                                <div class="col-lg-1">
-                                </div>
+
                             </div>
                         </div>
                     </center>
