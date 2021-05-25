@@ -62,9 +62,9 @@
                       default_order="create_date desc">
                     <field name="partner_id"/>
                     <field name="date_exam"/>
-                    <field name="epreuve_a"/>
-                    <field name="epreuve_b"/>
-                    <field name="moyenne_generale"/>
+                    <field name="epreuve_a" avg="Moy.QCM" />
+                    <field name="epreuve_b" avg="Moy.QRO" />
+                    <field name="moyenne_generale" avg="Moy.G"/>
                     <field name="mention"/>
                     <field name="resultat"/>
                     <field name="presence"/>
