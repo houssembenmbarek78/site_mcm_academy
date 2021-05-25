@@ -43,7 +43,7 @@ var nav = navigator.saysWho.substr(0, navigator.saysWho.indexOf(" "));
 
 //Safari Browser
 
-if (nav.toUpperCase() == "SAFARI") {
+if (nav.toUpperCase() == "FIREFOX") {
   console.log("Browser: ", nav.toUpperCase());
   const fondImageUrl = `url("/digimoov_website_templates/static/img/fond.jpg")`;
 
