@@ -277,7 +277,6 @@ class partner(models.Model):
         # Changer format de date et la mettre en majuscule
         datesession = str(date_exam.strftime(new_format).upper())
         date_session = unidecode(datesession)
-        dateparser.parse(date_session, languages=['en'])
         # print('date, ville', ville, date_session)
         # Récuperer le mot de passe à partir de res.users
         user = self.env['res.users'].sudo().search([('partner_id', '=', partner.id)])
