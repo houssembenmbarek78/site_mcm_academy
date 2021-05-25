@@ -258,13 +258,17 @@ class partner(models.Model):
                       print('renonce', partner.name, 'failure', failure, 'statut', partner.statut, 'date_ajout',  date_ajout )
                       self.ajouter_iOne(partner)
 
+
+
     def ajouter_iOne(self, partner):
+        # Remplacez les paramètres régionaux de l'heure par le paramètre de langue actuel 
+        # du compte dans odoo
         locale.setlocale(locale.LC_TIME, self.env.context['lang'] + '.utf8')
         product_name = partner.module_id.product_id.name
         if (not (product_name)):
             product_name = ''
-        if not(partner.phone):
-            partner.phone=''
+        if not (partner.phone):
+            partner.phone = ''
         # Extraire firstName et lastName à partir du champs name
         self.diviser_nom(partner)
         ville = str(partner.mcm_session_id.ville).upper()
@@ -272,10 +276,12 @@ class partner(models.Model):
         date_exam = partner.mcm_session_id.date_exam
         # Changer format de date et la mettre en majuscule
         datesession = str(date_exam.strftime(new_format).upper())
-        date_session = unidecode(datesession) # Eliminer les accents
+        date_session = unidecode(datesession)
+        dateparser.parse(date_session, languages=['en'])
         # print('date, ville', ville, date_session)
         # Récuperer le mot de passe à partir de res.users
         user = self.env['res.users'].sudo().search([('partner_id', '=', partner.id)])
+
         if user:
             id_Digimoov_bienvenue = '56f5520e11d423f46884d594'
             id_Digimoov_Examen_Attestation = '5f9af8dae5769d1a2c9d5047'
@@ -291,39 +297,19 @@ class partner(models.Model):
             url_unsubscribeToEmailNotifications = 'https://app.360learning.com/api/v1/users/unsubscribeToEmailNotifications?company=' + company_id + '&apiKey=' + api_key
             headers = CaseInsensitiveDict()
             headers["Content-Type"] = "application/json"
-            invit=False
-            create=False
-            #Si le mot de passe n'est pas récupérée au moment d'inscrit on invite l'apprennant
-            # if user.password360==False:
-                # data_user ='{"mail":"' + partner.email + '"}'
-                # resp_invit = requests.post(urluser, headers=headers, data=data_user)
-                # if(resp_invit.status_code == 200):
-                #     invit=True
-            #Si non si mot de passe récupéré on l'ajoute sur la plateforme avec le meme mot de passe
-            if user.password360:
-                _logger.info("_______________________Cron password360_________________________")
-                partner.password360 = user.password360
-                _logger.info("11111111111111111111111111111111111111111111111111111111111111111111111")
-                print(user.password)
-                # Ajouter i-One to table user
-                data_user = '{"mail":"' + partner.email + '" , "password":"' + user.password360 + '" , "firstName":"' + partner.firstName + '", "lastName":"' + partner.lastName + '", "phone":"' + partner.phone + '", "sendCredentials":"true"}'
-                _logger.info('_______________________Cron password360 avant post_________________________ %s' % data_user)
-                resp = requests.post(urluser, headers=headers, data=data_user)
-                print(data_user, 'user', resp.status_code)
-                _logger.info('_______________________Cron password360 apret post________________________ %s' % data_user)
-                if (resp.status_code == 200):
-                    _logger.info('_______________________Cron password360 if resp_________________________ %s' % data_user)
-                    create=True
-            data_group = {}
+            invit = False
+            create = False
 
-            # Si l'apprenant a été ajouté sur table user on l'affecte aux autres groupes
-            if create:
-                _logger.info("222222222222222222222222222222222222222222222222")
-                today=date.today()
-                new_format = '%d %B %Y'
-                # Changer format de date et la mettre en majuscule
-                date_ajout = today.strftime(new_format)
-                partner.date_creation=date_ajout
+            # Si le mot de passe n'est pas récupérée au moment d'inscrit on invite l'apprennant
+            # if user.password360==False:
+            # data_user ='{"mail":"' + partner.email + '"}'
+            # resp_invit = requests.post(urluser, headers=headers, data=data_user)
+            # if(resp_invit.status_code == 200):
+            #     invit=True
+            # Si non si mot de passe récupéré on l'ajoute sur la plateforme avec le meme mot de passe
+            if user.password360:
+                partner.password360 = user.password360
+                print(user.password)
                 # Désactiver les notifications par email
                 data_email = json.dumps({
                     "usersEmails": [
@@ -332,6 +318,23 @@ class partner(models.Model):
                 })
                 resp_unsub_email = requests.put(url_unsubscribeToEmailNotifications, headers=headers, data=data_email)
                 print("desactiver email", resp_unsub_email.status_code)
+                # Ajouter i-One to table user
+                data_user = '{"mail":"' + partner.email + '" , "password":"' + user.password360 + '" , "firstName":"' + partner.firstName + '", "lastName":"' + partner.lastName + '", "phone":"' + partner.phone + '", "sendCredentials":"true"}'
+                resp = requests.post(urluser, headers=headers, data=data_user)
+                print(data_user, 'user', resp.status_code)
+                _logger.info('_______________________Cron password360_________________________ %s' % data_user)
+                if (resp.status_code == 200):
+                    create = True
+            data_group = {}
+
+            # Si l'apprenant a été ajouté sur table user on l'affecte aux autres groupes
+            if (create):
+                today = date.today()
+                new_format = '%d %B %Y'
+                # Changer format de date et la mettre en majuscule
+                date_ajout = today.strftime(new_format)
+                partner.date_creation = date_ajout
+
                 # Affecter i-One to groupe digimoov-bienvenue
                 respgroupe = requests.put(urlgroup_Bienvenue, headers=headers, data=data_group)
                 print('bienvenue ', respgroupe.status_code, partner.date_creation)
@@ -348,7 +351,7 @@ class partner(models.Model):
                     print('nom groupe', groupe)
                     id_groupe = groupe['_id']
                     # affecter à groupe digimoov
-                    digimoov_examen = "Digimoov - Examen Attestation de capacité du transport léger de marchandises"
+                    digimoov_examen = "Digimoov - Attestation de capacité de transport de marchandises de moins de 3.5t"
                     # Si la company est digimoov on ajoute i-One sur 360
                     if (company == '2'):
                         if (nom_groupe == digimoov_examen.upper()):
@@ -357,8 +360,7 @@ class partner(models.Model):
                             print("examen", 'ajouté à examen digimoov', respsession.status_code, 'groupe', nom_groupe)
                             print('groupe')
                             # Affecter à un pack solo
-                        solo = "solo"
-                        packsolo = "Digimoov - Solo go"
+                        packsolo = "Digimoov - Pack Solo"
                         if (("solo" in product_name) and (nom_groupe == packsolo.upper())):
                             print(partner.module_id.name)
                             urlgrp_solo = 'https://app.360learning.com/api/v1/groups/' + id_groupe + '/users/' + partner.email + '?company=' + company_id + '&apiKey=' + api_key
@@ -366,8 +368,7 @@ class partner(models.Model):
                             print('affecté à solo', respgrp_solo.status_code)
 
                         # Affecter à un pack pro
-                        pro = "pro"
-                        pack_pro = "Digimoov - Pro go"
+                        pack_pro = "Digimoov - Pack Pro"
                         if (("pro" in product_name) and (nom_groupe == pack_pro.upper())):
                             print(partner.module_id.name)
                             urlgrp_pro = 'https://app.360learning.com/api/v1/groups/' + id_groupe + '/users/' + partner.email + '?company=' + company_id + '&apiKey=' + api_key
@@ -375,8 +376,7 @@ class partner(models.Model):
                             print('affecté à pro', respgrp_pro.status_code)
 
                         # Affecter à unpremium
-                        premium = "premium"
-                        packprem = "Digimoov - Premuim go"
+                        packprem = "Digimoov - Pack Premium"
                         if (("premium" in product_name) and (nom_groupe == packprem.upper())):
                             print(partner.module_id.name)
                             urlgrp_prim = 'https://app.360learning.com/api/v1/groups/' + id_groupe + '/users/' + partner.email + '?company=' + company_id + '&apiKey=' + api_key
@@ -384,7 +384,7 @@ class partner(models.Model):
                             print('affecté à premium', respgrp_prim.status_code)
 
                         # Affecter apprenant à Digimoov-Révision
-                        revision = "Digimoov-Révision"
+                        revision = "Digimoov - Repassage Examen"
                         if (("Repassage d'examen" in product_name) and (nom_groupe == revision.upper())):
                             urlgrp_revision = 'https://app.360learning.com/api/v1/groups/' + id_groupe + '/users/' + partner.email + '?company=' + company_id + '&apiKey=' + api_key
                             respgrp_revision = requests.put(urlgrp_revision, headers=headers, data=data_group)
@@ -401,8 +401,8 @@ class partner(models.Model):
                 # Si la session n'est pas trouvée sur 360 on l'ajoute
                 print('exist', existe)
                 if not (existe):
-                    nom= ville + ' - ' + date_session
-                    nomgroupe=unidecode(nom)
+                    nom = ville + ' - ' + date_session
+                    nomgroupe = unidecode(nom)
                     print(nomgroupe)
                     urlgroups = 'https://app.360learning.com/api/v1/groups?company=' + company_id + '&apiKey=' + api_key
                     data_session = '{"name":"' + nomgroupe + '","parent":"' + id_Digimoov_Examen_Attestation + '"  , "public":"false" }'

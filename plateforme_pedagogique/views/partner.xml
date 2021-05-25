@@ -44,24 +44,31 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"></field>
         <field name="arch" type="xml">
-
-         <xpath expr="//form//sheet" position="before">
+        <xpath expr="//form//sheet" position="before">
             <header>
                 <button name="ajouter_iOne_manuelle" string="Ajouter sur 360"
                         type="object"></button>
                     <button name="supprimer_ione_manuelle" string="Supprimer de 360"
                             type="object" confirm="Êtes-vous sûr de vouloir supprimer cet apprenant de la plateforme?"/>
             </header>
-         </xpath>
-         <xpath expr="//page/group[@name='session']" position="inside">
+        </xpath>
+        <xpath expr="//group//div[@class='row form-panel']//field[@name='note_exam']" position="after">
+                <div class="col-sm-12">
+                    <div>
+                        <label for="passage_exam" string="Examen passé :" class="oe_edit_only">Examen passé</label>
+                        <field name="passage_exam"   class="oe_edit_only" />
+                    </div>
+                </div>
+        </xpath>
+        <xpath expr="//page/group[@name='session']" position="inside">
                     <field name="renounce_request" />
-         </xpath>
-         <xpath expr="//page[@name='internal_notes']" position="after">
+        </xpath>
+        <xpath expr="//page[@name='internal_notes']" position="after">
                 <page string="Statistiques sur 360 Learning">
                     <group>
                         <group  col="12">
                         </group>
-                    <group col="8" colspan="4" string="Géneral">
+                        <group col="8" colspan="4" string="Géneral">
                           <div>
                               <span  class="o_stat_text" >
                               <field name="averageScore" widget="percentpie" />
@@ -101,8 +108,8 @@
                               <field name="date_creation"></field>
                               </span>
                          </div>
-                    </group>
-                         <group col="8" colspan="4"  string="Participation">
+                        </group>
+                        <group col="8" colspan="4"  string="Participation">
                           <div>
                               <span class="o_stat_text">
                                   <i  class="fa fa-comment"/> Messages Postés
@@ -139,10 +146,10 @@
                                   <field name="publications"/>
                               </span>
                           </div>
+                        </group>
                     </group>
-                </group>
                 </page>
-         </xpath>
+        </xpath>
         </field>
    </record>
 
