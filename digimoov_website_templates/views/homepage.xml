@@ -153,7 +153,7 @@
     </section> -->
 
 
-      <section class=" home-banner pt128 s_one_page_banner static-slider2" data-name="Home Banner Ten" id="home_page">
+      <section class="home-banner pt128 s_one_page_banner static-slider2" data-name="Home Banner Ten" id="home_page" style="padding-top: 76px !important;">
 
         <div class="container">
           <div class="row">
@@ -161,7 +161,7 @@
 
 
               <h1 class="subtitle " style="
-                    font-size: 25px;
+                    font-size: 31px;
                     color: #202647;
                     line-height: 0.8cm !important;
                     height: 120px;
@@ -169,8 +169,10 @@
  POUR DEVENIR LIVREUR EN 
                
                 <span class="typewrite" data-period="2000" data-type='[ "SCOOTER, VOITURE OU CAMIONNETTE" ]'>
-                  <span class="wrap">SCOOTER, VOITURE OU <br />
- CAMIONNETTE</span>
+                  <span class="wrap">SCOOTER, VOITURE <br />
+ OU
+ CAMIONNETTE
+                  </span>
                 </span>
               </h1>
               <!-- <p class="paratext o_default_snippet_text">
@@ -984,35 +986,36 @@ Directs pour explication avec les formateurs
                 <div class="col-sm-2">
                   <a href="https://www.mcm-academy.fr/">
 
-                    <img data-src="/digimoov_website_templates/static/img/compressed/MCMACADEMY.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/MCMACADEMY.png" class="img img-fluid lazy" alt="Logo partenaire MCM ACADEMY" data-original-title="" title="MCM ACADEMY" aria-describedby="tooltip843653" style="margin-top: 30px;" />
+
+                    <img data-src="/digimoov_website_templates/static/img/compressed/MCMACADEMY.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/MCMACADEMY.png" class="img img-fluid lazy" alt="Logo partenaire MCM ACADEMY" data-original-title="" title="MCM ACADEMY" aria-describedby="tooltip843653" style="margin-top: 30px; width:50%;" />
                   </a>
                 </div>
 
 
                 <div class="col-sm-2" t-if="partenaire=='' or partenaire=='ubereats'">
                   <a href="https://www.ubereats.com/fr">
-                    <img data-src="/digimoov_website_templates/static/img/compressed/ubereats partenaire Digimoov.webp" data-srcSafari="digimoov_website_templates/static/img/Homepage/uber.png" class="img img-fluid lazy" alt="Logo partenaire ubereats" data-original-title="" title="Ubereats partenaire Digimoov" aria-describedby="tooltip843653" style="margin-top: 30px;"/>
+                    <img data-src="/digimoov_website_templates/static/img/compressed/ubereats partenaire Digimoov.webp" data-srcSafari="digimoov_website_templates/static/img/Homepage/uber.png" class="img img-fluid lazy" alt="Logo partenaire ubereats" data-original-title="" title="Ubereats partenaire Digimoov" aria-describedby="tooltip843653" style="margin-top: 30px; width:50%;"/>
                   </a>
                 </div>
                 <div class="col-sm-2" t-if="partenaire=='' or partenaire=='deliveroo'">
 
                   <a href="https://deliveroo.fr/fr/">
-                    <img data-src="/digimoov_website_templates/static/img/compressed/deliveroo partenaire Digimoov.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/deliveroo.png" class="img img-fluid lazy" alt="Logo partenaire Deliveroo" data-original-title="" title="Deliveroo partenaire Digimoov" aria-describedby="tooltip623872" style="margin-top: 30px;" />
+                    <img data-src="/digimoov_website_templates/static/img/compressed/deliveroo partenaire Digimoov.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/deliveroo.png" class="img img-fluid lazy" alt="Logo partenaire Deliveroo" data-original-title="" title="Deliveroo partenaire Digimoov" aria-describedby="tooltip623872" style="margin-top: 30px; width:70%;" />
                   </a>
                 </div>
                 <div class="col-sm-2" t-if="partenaire=='' or partenaire=='coursierjob'">
                   <a href="https://www.coursierjob.com/">
-                    <img data-src="/digimoov_website_templates/static/img/compressed/coursierjob partenaire Digimoov.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/coursierjob.png" class="img img-fluid lazy" alt="Logo partenaire Coursierjob" data-original-title="" title="Coursierjob partenaire Digimoov" aria-describedby="tooltip175558" style="margin-top: 30px;"/>
+                    <img data-src="/digimoov_website_templates/static/img/compressed/coursierjob partenaire Digimoov.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/coursierjob.png" class="img img-fluid lazy" alt="Logo partenaire Coursierjob" data-original-title="" title="Coursierjob partenaire Digimoov" aria-describedby="tooltip175558" style="margin-top: 30px; width:50%;"/>
                   </a>
                 </div>
                 <div class="col-sm-2" t-if="partenaire=='' or partenaire=='box2home'">
                   <a href="https://www.box2home.fr/">
-                    <img data-src="/digimoov_website_templates/static/img/compressed/Box2home-partenaire-digimoov.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Box2home-partenaire-digimoov.png" class="img img-fluid lazy" alt="Logo partenaire Box2home" data-original-title="" title="Box2home partenaire Digimoov" aria-describedby="tooltip175558" style="margin-top: 30px;"/>
+                    <img data-src="/digimoov_website_templates/static/img/compressed/Box2home-partenaire-digimoov.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Box2home-partenaire-digimoov.png" class="img img-fluid lazy" alt="Logo partenaire Box2home" data-original-title="" title="Box2home partenaire Digimoov" aria-describedby="tooltip175558" style="margin-top: 30px; width:50%;"/>
                   </a>
                 </div>
                 <div class="col-sm-2">
                   <a href="http://www.comptable-douai.com/">
-                    <img data-src="/digimoov_website_templates/static/img/compressed/Cabinet Comptable Joel Pruvost.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Cabinet_Comptable_Joel_Pruvost.png" class="img img-fluid lazy" alt="Logo partenaire Cabinet Comptable Joël Pruvost" data-original-title="" title="Cabinet Comptable Joël Pruvost partenaire Digimoov" aria-describedby="tooltip175558" style="margin-top: 30px;"/>
+                    <img data-src="/digimoov_website_templates/static/img/compressed/Cabinet Comptable Joel Pruvost.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Cabinet_Comptable_Joel_Pruvost.png" class="img img-fluid lazy" alt="Logo partenaire Cabinet Comptable Joël Pruvost" data-original-title="" title="Cabinet Comptable Joël Pruvost partenaire Digimoov" aria-describedby="tooltip175558" style="margin-top: 30px; width:50%;"/>
                   </a>
                 </div>
               </div>

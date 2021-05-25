@@ -42,14 +42,14 @@
                 </p>
                 <div class="row" style="width:100% !important;">
                     <div class="pt0 col-lg-6">
-                        <img class="lazy" data-src="/digimoov_website_templates/static/img/Les centres d'examen de digimoov.webp" data-srcSafari="/digimoov_website_templates/static/img/les centres d'examens de digimoov.jpg" width="50%" height="auto" style="margin-left:10%" data-original-title="" title="" aria-describedby="tooltip294189"/>
+                        <img class="lazy" data-src="/digimoov_website_templates/static/img/Les centres d'examen de digimoov.webp" data-srcSafari="/digimoov_website_templates/static/img/Les centres d'examen de digimoov.png" width="50%" height="auto" style="margin-left:10%" data-original-title="" title="" aria-describedby="tooltip294189"/>
                     </div>
                     <div class="col-lg-6 pt160">
                         <h2 style="text-align: left; margin-bottom: 10px; font-weight: 600; line-height: 1.3; color: rgb(58, 58, 71); font-size: 28px;">
                         </h2>
                         <h2 style="margin-bottom: 10px; font-weight: 600; line-height: 1.3; color: rgb(58, 58, 71); font-size: 28px;">
                             <font style="color: rgb(0, 0, 0); font-size: 48px;">
-                                <h3 class="text-alpha" style="padding-left:10px">Nos centres d'examen
+                                <h3 class="text-alpha" style="padding-left:10px; color:black !important">Nos centres d'examen
                                     <br/>
                                     <span class="font-weight-lighter">Digimoov met à votre disposition des centres
                                         d’examen partout en France.&amp;nbsp;
@@ -84,7 +84,7 @@
                         <div class="col-md-12 col-sm-12">
                             <h1 class="s_title_default">
                                 <center class="font-weight-lighter">
-                                    <img data-src="/digimoov_website_templates/static/img/Centres d'examen digimoov france.webp" data-srcSafari="digimoov_website_templates/static/img/Centres d'examen digimoov france.jpg" class="mb-2 lazy" data-original-title="" title="" aria-describedby="tooltip294189"/>
+                                    <img data-src="/digimoov_website_templates/static/img/Centres d'examen digimoov france.webp" data-srcSafari="digimoov_website_templates/static/img/Centres d'examen digimoov france.png" class="mb-2 lazy" data-original-title="" title="" aria-describedby="tooltip294189"/>
                                 </center>
                                 <br/>
                             </h1>
