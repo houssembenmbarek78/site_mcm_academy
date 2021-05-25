@@ -66,4 +66,15 @@
             print_report_name="'Relevé de notes - %s' % (object.name).replace('/', '')"
             paperformat="partner_exam.paperformat_releve_note_id"/>
 
+    <!-- This is the action to create a print pdf in module info.examen for "Générer les relevés de notes", using the template(xml) ID-->
+    <report id="mass_pdf_relevé_de_note_examen"
+            model="info.examen"
+            string="Générer les relevés de notes"
+            report_type="qweb-pdf"
+            name="partner_exam.mass_pdf_relevé_de_note_examen_ids"
+            file="partner_exam.report_releve_note_id"
+            menu="True"
+            print_report_name="'Relevé-de-notes- %s' % (object.partner_id.name).replace('/', '')"
+            paperformat="partner_exam.paperformat_releve_note_id"/>
+
 </odoo>

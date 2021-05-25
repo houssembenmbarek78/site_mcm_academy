@@ -31,6 +31,7 @@
         'report/generate_releve_de_notes.xml',
         'report/convocation_contact.xml',
         'report/print_releve_note_mass.xml',
+        'report/mass_pdf_relevé_de_note_examen.xml',
     ],
     'qweb': [],
     'demo': [
