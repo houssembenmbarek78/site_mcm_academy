@@ -71,7 +71,7 @@
   z-index: -1;
   border-radius: 100% 100% 10% 10%/100% 100% 100% 100%;
 }
-                                                                                                                                                                                                                                                                                                                                                                                                                <!-- .btn-action {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <!-- .btn-action {
   font-family: "Montserrat";
   display: inline-block;
   height: 38px;
@@ -164,12 +164,12 @@
                 </h1>
               </t>
               <br />
-              <a class=" font-medium m-b-10 m-t-20 btn btn-alpha rounded-circle" href="/#en-savoir-plus" data-original-title="" title="">En-savoir plus
-                <i class="fa fa-1x fa-fw fa-long-arrow-right ml-1" data-original-title="" title="" aria-describedby="tooltip633757" />
+              <a class=" font-medium m-b-10 m-t-20 btn btn-alpha rounded-circle" href="/#en-savoir-plus" data-original-title="" title="">&amp;nbsp;En-savoir plus&amp;nbsp;
+
               </a>
               <a class="m-t-20 m-b-10 font-medium underline btn btn-alpha rounded-circle" href="/contact" data-original-title="" title="" aria-describedby="tooltip881944">
                 Contactez-nous
-                <i class="fa fa-1x fa-fw fa-long-arrow-right ml-1" />
+
               </a>
             </div>
             <div class="col-md-6 img-anim">
