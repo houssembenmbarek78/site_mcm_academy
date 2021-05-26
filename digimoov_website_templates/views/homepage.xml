@@ -7,9 +7,6 @@
       <link rel="stylesheet" type="text/scss" href="/digimoov_website_templates/static/src/css/dist/home.min.css"/>
 
 
-      <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
-      <script defer="defer" type="text/javascript" src="digimoov_website_templates/static/src/js/crisp-bot.js" />
-
       <style>
   .stabilo,
 .stabiloblue {
@@ -73,7 +70,7 @@
   z-index: -1;
   border-radius: 100% 100% 10% 10%/100% 100% 100% 100%;
 }
-                                                                                                                                                                                                                                                                                                                                                <!-- .btn-action {
+                                                                                                                                                                                                                                                                                                                                                                                        <!-- .btn-action {
   font-family: "Montserrat";
   display: inline-block;
   height: 38px;
@@ -204,8 +201,8 @@
                     line-height: 0.8cm !important;
                     height: 120px;
                   ">FORMATION EN  CAPACITÉ DE TRANSPORT LÉGER DE <span class="stabiloblue">MARCHANDISES </span>
- POUR DEVENIR LIVREUR EN
-
+ POUR DEVENIR LIVREUR EN 
+               
                 <span class="typewrite" data-period="2000" data-type='[ "SCOOTER, VOITURE OU CAMIONNETTE" ]'>
                   <span class="wrap">SCOOTER, VOITURE <br />
  OU
@@ -404,11 +401,11 @@ Acquérir les connaissances nécessaires afin de
                         <a href="/blog/digimoov-3/post/bon-a-savoir-sur-la-formation-capacite-de-transport-leger-6#details-formation" class="arrow-btn bizople_button m-t-16 mt16 btn btn-primary rounded-circle" data-original-title="" title="" aria-describedby="tooltip272185" style="
                             font-size: 14px;
                             outline: 0px;
-
+                            
                           ">
-
+                          
                           Détails sur la formation&amp;nbsp;&amp;nbsp;
-
+                          
                         </a>
                       </div>
 
@@ -446,12 +443,12 @@ Acquérir les connaissances nécessaires afin de
 
                     </p>
                     <a href="/examen-capacite-transport-marchandises" class="arrow-btn bizople_button m-t-16 mt16 btn btn-primary rounded-circle" data-original-title="" title="" aria-describedby="tooltip959694" style="
-
+                        
                           font-size: 14px;
                           outline: 0px;
                         ">
                         Détails sur l'examen&amp;nbsp;&amp;nbsp;
-
+                        
                     </a>
                   </div>
 
@@ -463,7 +460,7 @@ Acquérir les connaissances nécessaires afin de
             </div>
           </section>
           <section class="s_business_text_with_img_left_right" data-name="Left Right image with text">
-            <div class="spacer feature26">
+            <div class="feature26">
               <div class="container">
                 <div class="row wrap-feature-26">
                   <div class="col-md-7 align-self-center">
@@ -480,15 +477,15 @@ Acquérir les connaissances nécessaires afin de
                         de monter votre propre boîte de livraison.
                         <br />
                       </p>
-                      <div class="s_btn pt16 pb16 " data-name="Button" style="text-align: right">
+                      <div class="s_btn  pb16" data-name="Button" style="text-align: right">
                         <a href="/blog/digimoov-3/post/bon-a-savoir-sur-la-formation-capacite-de-transport-leger-6#details-formation" class="arrow-btn bizople_button m-t-16 mt16 btn btn-primary rounded-circle" data-original-title="" title="" aria-describedby="tooltip272185" style="
                             font-size: 14px;
                             outline: 0px;
-
+                           
                           ">
-
+                          
                           En-savoir plus&amp;nbsp;&amp;nbsp;
-
+                          
                         </a>
                       </div>
                       <p class="m-t-30 custom_p">
@@ -505,11 +502,11 @@ Acquérir les connaissances nécessaires afin de
                             border-color: rgb(0, 0, 0);
                             font-size: 14px;
                             outline: 0px;
-
+                        
                           ">
                           En-savoir plus
                     </a>
-                    <span style="font-size: 1rem">&amp;nbsp;</span>
+                    <span style="font-size: 1rem">&amp;nbsp;</span> 
                   </div> -->
 
                 </div>
@@ -518,7 +515,7 @@ Acquérir les connaissances nécessaires afin de
           </section>
           <p />
           <section class="s_accounting_three_blocks" data-name="Three block with image and paragraphs">
-            <div class="spacer feature7">
+            <div class="feature7">
               <div class="container">
                 <div class="row m-t-40">
                   <div class="col-md-4 wrap-feature7-box">
