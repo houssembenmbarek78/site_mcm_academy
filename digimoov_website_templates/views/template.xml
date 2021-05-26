@@ -4,7 +4,7 @@
         <xpath expr="script[last()]" position="after">
             <script type="text/javascript" src="/digimoov_website_templates/static/src/js/portal.js"/>
 
-            <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
+
             <script defer="defer" type="text/javascript" src="digimoov_website_templates/static/src/js/crisp-bot.js" />
 
 

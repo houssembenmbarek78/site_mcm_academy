@@ -3,6 +3,7 @@
     <xpath expr="//div[@id='wrap']" position="replace">
       <br />
 
+      <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
 
       <link rel="stylesheet" type="text/scss" href="/digimoov_website_templates/static/src/css/dist/home.min.css"/>
 
@@ -70,7 +71,7 @@
   z-index: -1;
   border-radius: 100% 100% 10% 10%/100% 100% 100% 100%;
 }
-                                                                                                                                                                                                                                                                                                                                                                                        <!-- .btn-action {
+                                                                                                                                                                                                                                                                                                                                                                                                <!-- .btn-action {
   font-family: "Montserrat";
   display: inline-block;
   height: 38px;
