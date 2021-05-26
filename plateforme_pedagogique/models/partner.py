@@ -237,13 +237,13 @@ class partner(models.Model):
             if (sale_order.state == 'sale' and partner.passage_exam == False):
               print('contrat signé')
               date_signature = sale_order.signed_on
-              if ((partner.email == "lipotif222@itwbuy.com") and (failure == True) and (statut =='won')):
+              if ((failure == True) and (statut =='won')):
                     print('it works')
                     self.ajouter_iOne(partner)
               #Vérifier si delai de retractaion et demande de renoncer  ne sont pas coché,
               # si aujourd'hui est la date d'ajout,et si le statut est gagné
               # alors on ajoute l'apprenant à 360
-              if ( (failure == False)  and (statut =='won') and (partner.email== "lipotif222@itwbuy.com") ):
+              if ( (failure == False)  and (statut =='won') ):
                     # Calculer date d'ajout apres 14jours de date de signature
                     date_ajout = date_signature + timedelta(days=14)
                     today = datetime.today()
