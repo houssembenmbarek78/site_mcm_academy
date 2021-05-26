@@ -5,6 +5,8 @@
             <script type="text/javascript" src="/digimoov_website_templates/static/src/js/portal.js"/>
 
 
+            <script defer="defer" type="text/javascript" src="digimoov_website_templates/static/src/js/crisp-bot.js" />
+
 
             <!-- <script type="text/javascript" src="/digimoov_website_templates/static/src/js/browser.js" /> -->
 
