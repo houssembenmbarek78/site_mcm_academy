@@ -426,17 +426,28 @@ class partner(models.Model):
      api_key = 'cnkcbrhHKyfzKLx4zI7Ub2P5'
      headers = CaseInsensitiveDict()
      headers["Accept"] = "*/*"
-     #Pour chaque partner verifier si date_suppression est aujourd'hui
-     # pour assurer la suppresion automatique
-     for partner in self.env['res.partner'].sudo().search([]):
-         if partner.mcm_session_id.date_exam:
+     params = (
+            ('company', '56f5520e11d423f46884d593'),
+            ('apiKey', 'cnkcbrhHKyfzKLx4zI7Ub2P5'),
+        )
+     response = requests.get('https://app.360learning.com/api/v1/users', params=params)
+     users = response.json()
+     for user in users:
+         iduser = user['_id']
+         email = user['mail']
+
+         #Pour chaque partner verifier si date_suppression est aujourd'hui
+         # pour assurer la suppresion automatique
+         partner= self.env['res.partner'].sudo().search([('email',"=",email)],limit=1)
+
+         if(partner and partner.mcm_session_id.date_exam) :
              #date de suppression est date d'examen + 4jours
              date_suppression = partner.mcm_session_id.date_exam + timedelta(days=4)
              today = date.today()
-             if(date_suppression == today):
+             if(date_suppression <= today):
               email=partner['email']
               print('date_sup',email,date_suppression,today)
-              url = 'https://app.360learning.com/api/v1/users/cidorod487@laraskey.com?company=' + company_id + '&apiKey=' + api_key
+              url = 'https://app.360learning.com/api/v1/users/tmejri@digimoov.fr?company=' + company_id + '&apiKey=' + api_key
               resp = requests.delete(url)
               if resp.status_code==204:
                 partner.passage_exam=True
