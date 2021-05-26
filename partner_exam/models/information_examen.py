@@ -14,32 +14,6 @@ class NoteExamen(models.Model):
     partner_id = fields.Many2one('res.partner', string="Client")
     epreuve_a = fields.Float(string="Epreuve A(QCM):")
     epreuve_b = fields.Float(string="Epreuve B(QRO)")
-    moyenne_generale = fields.Float(string="Moyenne Générale", track_visibility='always', store=True)
-    mention = fields.Selection(selection=[
-        ('recu', 'reçu'),
-        ('ajourne', 'ajourné')],
-        string="Mention", default=False)
-    resultat = fields.Selection(selection=[
-        ('recu', 'Reçu'),
-        ('ajourne', 'Ajourné')], string="Résultat")
-    date_exam = fields.Date(related="partner_id.mcm_session_id.date_exam", string="Date Examen")
-    active = fields.Boolean('Active', default=True)
-    module_ids = fields.One2many('mcmacademy.module', 'info_examen_id')
-    date_today = fields.Date(string="Date d'envoi de relevée de note: ", default=datetime.today())
-    company_id = fields.Many2one(
-        'res.company', string='Company', change_default=True,
-        default=lambda self: self.env.company,
-        required=False, readonly=False)
-    nombre_de_passage = fields.Selection(selection=[
-        ('premier', 'premier'),
-        ('deuxieme', 'deuxième'),
-        ('troisieme', 'troisième')],
-        string="Nombre De Passage", default="premier")
-
-    presence = fields.Selection(selection=[
-        ('present', 'Présent'),
-        ('Absent', 'Absent')],
-        string="Présence")
 
     @api.onchange('epreuve_a', 'epreuve_b', 'presence')
     def _compute_moyenne_generale(self):
@@ -66,6 +40,34 @@ class NoteExamen(models.Model):
                     rec.presence = 'present'
                 elif rec.epreuve_a < 1 and rec.epreuve_b < 1:
                     rec.presence = 'Absent'
+                    
+    moyenne_generale = fields.Float(string="Moyenne Générale", track_visibility='always', default="_compute_moyenne_generale")
+    mention = fields.Selection(selection=[
+        ('recu', 'reçu'),
+        ('ajourne', 'ajourné')],
+        string="Mention", default=False)
+    resultat = fields.Selection(selection=[
+        ('recu', 'Reçu'),
+        ('ajourne', 'Ajourné')], string="Résultat")
+    date_exam = fields.Date(related="partner_id.mcm_session_id.date_exam", string="Date Examen")
+    active = fields.Boolean('Active', default=True)
+    module_ids = fields.One2many('mcmacademy.module', 'info_examen_id')
+    date_today = fields.Date(string="Date d'envoi de relevée de note: ", default=datetime.today())
+    company_id = fields.Many2one(
+        'res.company', string='Company', change_default=True,
+        default=lambda self: self.env.company,
+        required=False, readonly=False)
+    nombre_de_passage = fields.Selection(selection=[
+        ('premier', 'premier'),
+        ('deuxieme', 'deuxième'),
+        ('troisieme', 'troisième')],
+        string="Nombre De Passage", default="premier")
+
+    presence = fields.Selection(selection=[
+        ('present', 'Présent'),
+        ('Absent', 'Absent')],
+        string="Présence")
+
 
 
 
