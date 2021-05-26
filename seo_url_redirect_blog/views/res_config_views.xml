@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<odoo>
+    <data>
+        <record id="website_seo_rewrite_view_blog_inherit" model="ir.ui.view">
+            <field name="name">website.seo.rewrite.settings.form</field>
+            <field name="model">website.seo.rewrite.settings</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="seo_url_redirect.website_seo_rewrite_view"/>
+            <field name="arch" type="xml">
+                <group name="suffix" position="after">
+                    <separator string="Blog Suffix"/>
+                    <group>
+                        <group>
+                            <label for="suffix_blog"/>
+                            <b><field name="suffix_blog"/></b>
+                        </group>
+                        <group>
+                            <label for="suffix_post"/>
+                            <b><field name="suffix_post"/></b>
+                        </group>
+                    </group>
+                    <separator string="Pattern for Blog URL Key"/>
+                    <group>
+                        <group>
+                            <label for="pattern_blog"/>
+                            <b><field name="pattern_blog"/></b>
+                        </group>
+                        <group>
+                            <label for="pattern_post"/>
+                            <b><field name="pattern_post"/></b>
+                        </group>
+                    </group>
+                </group>
+            </field>
+        </record>
+    </data>
+</odoo>
