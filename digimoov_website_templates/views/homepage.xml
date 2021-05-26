@@ -71,7 +71,7 @@
   z-index: -1;
   border-radius: 100% 100% 10% 10%/100% 100% 100% 100%;
 }
-                                                                                                                                                                                                                                                                                                                                                                                                <!-- .btn-action {
+                                                                                                                                                                                                                                                                                                                                                                                                                <!-- .btn-action {
   font-family: "Montserrat";
   display: inline-block;
   height: 38px;
@@ -174,14 +174,7 @@
             </div>
             <div class="col-md-6 img-anim">
               <img class="img img-fluid" src="/digimoov_website_templates/static/img/compressed/Formation capacité de transport léger.gif" alt="Formation capacité transport léger de marchandises" style="
-                  @media (max-width: 720px) {
-                    width: 100% !important;
-                  }
-                  @media (min-width: 720px) {
-                    width: 50% !important;
-                  }
-                  transform: translateX(46.1%) translateY(59.5%) scaleX(2.32)
-                    scaleY(2.32);
+
                 " data-original-title="" title="Formation capacité de transport leger de marchandise" aria-describedby="tooltip407937" />
             </div>
           </div>
