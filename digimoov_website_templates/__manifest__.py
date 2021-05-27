@@ -38,6 +38,7 @@
         'views/cpf_thanks.xml',
         'views/portal_my_details.xml',
         'views/maintenance.xml',
+        'views/free_ebook.xml',
         # 'views/confidentialite.xml',
         # 'views/sitemap.xml',
     ],
