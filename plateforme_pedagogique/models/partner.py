@@ -485,10 +485,9 @@ class partner(models.Model):
               espace = re.search("\s", partner.name)
               if espace:
                   name = re.split(r'\s', partner.name, maxsplit=1)
-                  if name[0]:
+                  if name:
                       partner.firstName = name[0]
-                  print('name', name, 'first', partner.firstName)
-                  if name[1]:
+                      print('name', name, 'first', partner.firstName)
                       partner.lastName = name[1]
                   print('first', partner.firstName, 'last', partner.lastName)
            
