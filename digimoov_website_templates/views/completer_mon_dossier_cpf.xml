@@ -34,7 +34,7 @@
                                                                     t-if="modules_digimoov">
                                                                 <option value="all">Sélectionnez votre centre d'examen
                                                                 </option>
-                                                                <b>
+                                                                 <b>
                                                                     <option value="bordeaux">
                                                                         Bordeaux
                                                                     </option>
@@ -58,6 +58,27 @@
                                                                     </option>
                                                                     <option value="toulouse">
                                                                         Toulouse
+                                                                    </option>
+                                                                    <option value="nice">
+                                                                        Nice
+                                                                    </option>
+                                                                    <option value="montpellier">
+                                                                        Montpellier
+                                                                    </option>
+                                                                    <option value="rouen">
+                                                                        Rouen
+                                                                    </option>
+                                                                    <option value="grenoble">
+                                                                        Grenoble
+                                                                    </option>
+                                                                    <option value="rennes">
+                                                                        Rennes
+                                                                    </option>
+                                                                    <option value="metz">
+                                                                        Metz
+                                                                    </option>
+                                                                    <option value="bourges">
+                                                                        Bourges
                                                                     </option>
                                                                 </b>
                                                             </select>
