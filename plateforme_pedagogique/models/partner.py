@@ -39,7 +39,6 @@ class partner(models.Model):
     reactions =fields.Char(string="Réactions dans les forums d'activités")
     renounce_request = fields.Boolean("Renonciation au droit de rétractation conformément aux dispositions de l'article L.221-28 1°")
     toDeactivateAt=fields.Char("Date de suppression")
-    old = fields.Boolean("Anciens apprenants",compute="change_value_old",default=False,store=True)
     passage_exam=fields.Boolean("Examen passé",default=False)
     stats_ids=fields.Many2one('plateforme_pedagogique.user_stats')
 
@@ -448,7 +447,7 @@ class partner(models.Model):
              if(date_suppression <= today):
               email=partner['email']
               print('date_sup',email,date_suppression,today)
-              url = 'https://app.360learning.com/api/v1/users/lipotif222@itwbuy.com?company=' + company_id + '&apiKey=' + api_key
+              url = 'https://app.360learning.com/api/v1/users/tmejri@digimoov.fr?company=' + company_id + '&apiKey=' + api_key
               resp = requests.delete(url)
               if resp.status_code==204:
                 partner.passage_exam=True
