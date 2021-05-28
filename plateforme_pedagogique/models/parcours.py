@@ -53,7 +53,6 @@ class Parcours(models.Model):
           end_date = str(session['endDate'])
           date_split = end_date[0:19]
           date_end = datetime.strptime(date_split, "%Y-%m-%dT%H:%M:%S")
-          print('parcours***************',len(session_stat['usersStats']),session_name,completed)
 
           #Chercher si parcours existant sur odoo ou non
           # un parcours identifié par son nom et son date debut
@@ -68,7 +67,6 @@ class Parcours(models.Model):
               print(today, date_end)
               if (date_end < today):
                   etat = "fermé"
-                  print(etat, today, date_end)
               else:
                   etat = "ouvert"
               print('notfind',etat, today, end_date)
@@ -134,7 +132,6 @@ class Parcours(models.Model):
             end_date = str(session['endDate'])
             date_split = end_date[0:19]
             date_end = datetime.strptime(date_split, "%Y-%m-%dT%H:%M:%S")
-            print('parcours***************', len(session_stat['usersStats']), session_name,session_stat, completed)
 
             #Chercher parcours sur odoo
             find_parcours = self.env['plateforme_pedagogique.parcours'].sudo().search([('name', "=", session_name),
@@ -184,7 +181,6 @@ class Parcours(models.Model):
                           new_format = '%d %B, %Y'
                           startdate = str(start_date.strftime(new_format))
 
-                        print('userstat', firstname ,startdate, mail, total_time)
                         exist = False
                         for user_statiq in  find_parcours.User_stats:
                             if (user_statiq.mail == mail):
@@ -210,9 +206,7 @@ class Parcours(models.Model):
                                     'parcours_ids': find_parcours.id,
                                 })
                                 list.append(find_user.id)
-                                print('list', list)
                             if not (find_user)   :
-                                print("fffffff",list,find_user)
                                 find_user=self.env['plateforme_pedagogique.user_stats'].sudo().create({
                                         'firstName':firstname,
                                         'lastName':lastname,
@@ -230,7 +224,6 @@ class Parcours(models.Model):
                 find_parcours.sudo().write({
                         'User_stats': [(6,0, list)],
                            })
-                print('listttttt',list)
 
     #Découper le temps en seconde , minutes ,heures
     def decoupe( self ,seconde):
