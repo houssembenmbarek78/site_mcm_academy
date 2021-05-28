@@ -140,13 +140,14 @@ class partner(models.Model):
 
     #En cas de changement de statut de client cette methode est exécutée
 
-    # def write(self, vals):
-    #     if 'statut' in vals:
-    #         #Si statut annulé on supprime i-One
-    #         if vals['statut'] == 'canceled':
-    #             self.supprimer_ione_manuelle()
-    #     record=super(partner, self).write(vals)
-    #     return record
+    def write(self, vals):
+        if 'statut' in vals:
+            #Si statut annulé on supprime i-One
+            if vals['statut'] == 'canceled':
+                
+                self.supprimer_ione_manuelle()
+        record=super(partner, self).write(vals)
+        return record
 
     #Ajouter ione manuellement
     def ajouter_iOne_manuelle(self):
@@ -475,7 +476,7 @@ class partner(models.Model):
 
     # Extraire firstName et lastName à partir du champs name
     def diviser_nom(self,partner):
-            if partner.name=='':
+            if partner.name == '':
                 partner.firstName = partner.name
                 partner.lastName = partner.name
 
@@ -483,11 +484,14 @@ class partner(models.Model):
             else:
               espace = re.search("\s", partner.name)
               if espace:
-                    name = re.split(r'\s', partner.name,maxsplit=1)
-                    partner.firstName = name[0]
-                    print('name',name,'first',partner.firstName)
-                    partner.lastName = name[1]
-                    print('first',partner.firstName,'last',partner.lastName)
+                  name = re.split(r'\s', partner.name, maxsplit=1)
+                  if name[0]:
+                      partner.firstName = name[0]
+                  print('name', name, 'first', partner.firstName)
+                  if name[1]:
+                      partner.lastName = name[1]
+                  print('first', partner.firstName, 'last', partner.lastName)
+           
                 # Cas d'un seul nom
               else:
                     partner.firstName = partner.name
