@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="course_search_view" model="ir.ui.view">
+            <field name="name">groupe.form</field>
+            <field name="model">plateforme_pedagogique.groupe</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"></field>
+                    <field name="description"></field>
+                </search>
+            </field>
+        </record>
+
+
+        <record id="course_form_view" model="ir.ui.view">
+            <field name="name">groupe.form</field>
+            <field name="model">plateforme_pedagogique.groupe</field>
+            <field name="arch" type="xml">
+                <form string="course_form">
+                    <sheet>
+                        <group>
+                            <group string="General">
+                                <field name="parent_id"></field>
+                                <field name="name"></field>
+                                <field name="users_count"></field>
+
+
+                            </group>
+
+                        </group>
+
+                        <label for="parcours_ids"></label>
+                        <field name="parcours_ids"></field>
+
+                    </sheet>
+                    <sheet>
+                        <label for="partner_ids"></label>
+                        <field name="partner_ids"></field>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="list_groupes">
+            <field name="name">plateforme_pedagogique list</field>
+            <field name="model">plateforme_pedagogique.groupe</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="users_count"/>
+                    <field name="parent_id"/>
+                    <field name="parcours_count"/>
+
+                </tree>
+            </field>
+        </record>
+
+        <!-- action definition for a window action-->
+        <record model="ir.actions.act_window" id="groups_list_action">
+            <field name="name">Liste des Groupes</field>
+            <field name="res_model">plateforme_pedagogique.groupe</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">creer le premier groupe</p>
+
+            </field>
+        </record>
+        <menuitem id="main_learning_plateform_menu" name="360 Learning"></menuitem>
+        <menuitem id="learning_plateform_menu" name="360 Learning" parent="main_learning_plateform_menu"/>
+        <menuitem id="groupe_menu" name="groupes" parent="learning_plateform_menu" action="groups_list_action"/>
+
+
+
+
+
+
+
+
+    </data>
+</odoo>

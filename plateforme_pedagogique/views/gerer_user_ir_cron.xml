@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!--        Get stat_users from 360learning-->
+        <record id="ir_cron_get_stat_users" model="ir.cron">
+            <field name="name">Géneration des statistiques</field>
+            <field name="model_id" ref="model_res_partner"/>
+            <field name="active" eval="True"></field>
+
+            <field name="state">code</field>
+            <field name="code">model.getusers()</field>
+            <field name="interval_number">5</field>
+            <field name="interval_type">minutes</field>
+            <field name="numbercall">-1</field>
+
+
+        </record>
+<!--        supprimer i-One de 360learning -->
+       <record id="ir_cron_delete_users" model="ir.cron">
+            <field name="name">Suppression automatique d'i-Ones</field>
+            <field name="model_id" ref="model_res_partner"/>
+             <field name="active" eval="True"></field>
+
+            <field name="state">code</field>
+            <field name="code">model.supprimer_ione_auto()</field>
+            <field name="interval_number">24</field>
+            <field name="interval_type">hours</field>
+            <field name="numbercall">-1</field>
+
+
+        </record>
+
+  <!--        supprimer groupe de session de 360learning -->
+       <record id="ir_cron_delete_session" model="ir.cron">
+            <field name="name">Suppression automatique des sessions</field>
+            <field name="model_id" ref="model_mcmacademy_session"/>
+             <field name="active" eval="True"></field>
+
+            <field name="state">code</field>
+            <field name="code">model.supprimer_session_automatque()</field>
+            <field name="interval_number">24</field>
+            <field name="interval_type">hours</field>
+            <field name="numbercall">-1</field>
+
+
+        </record>
+
+               # Ajouter i-One sur 360learning après 14jours si Délai de rétractation n'est pas coché
+       <record id="ir_cron_delete_groups" model="ir.cron">
+            <field name="name">Ajouter i-One sur 360learning  </field>
+            <field name="model_id" ref="model_res_partner"/>
+             <field name="active" eval="True"></field>
+
+            <field name="state">code</field>
+            <field name="code">model.Ajouter_iOne_auto()</field>
+            <field name="interval_number">5</field>
+            <field name="interval_type">minutes</field>
+            <field name="numbercall">-1</field>
+
+
+        </record>
+
+
+
+
+</odoo>

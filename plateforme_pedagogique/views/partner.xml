@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+<!-- filter par apprenant -->
+     <record id="partner_search_view" model="ir.ui.view">
+            <field name="name">partner.form</field>
+            <field name="model">res.partner</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"></field>
+                    <filter name="apprenants" string="les apprenants"
+                            domain="[('apprenant','=','True')]"/>
+                </search>
+            </field>
+        </record>
+
+
+    <!-- Vue Apprenants sous forme de graph-->
+    <record model="ir.ui.view" id="session_graph">
+            <field name="name">partnergraph</field>
+            <field name="model">res.partner</field>
+            <field name="arch" type="xml">
+                <graph string="Temps Passé sur 360 par apprenant">
+                    <field name="email"></field>
+                    <field name="averageScore"></field>
+                </graph>
+            </field>
+    </record>
+
+    <!-- Vue Apprenants sous forme d'une liste -->
+   <record model="ir.ui.view" id="partner_tree_view">
+        <field name="name">Partners</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree"></field>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='email']" position="after">
+                    <field name="last_login"/>
+                    <field name="totalTimeSpentInMinutes"/>
+            </xpath>
+        </field>
+   </record>
+   <record model="ir.ui.view" id="partner_form_view">
+        <field name="name">Apprenants</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"></field>
+        <field name="arch" type="xml">
+        <xpath expr="//form//sheet" position="before">
+            <header>
+                <button name="ajouter_iOne_manuelle" string="Ajouter sur 360"
+                        type="object"></button>
+                    <button name="supprimer_ione_manuelle" string="Supprimer de 360"
+                            type="object" confirm="Êtes-vous sûr de vouloir supprimer cet apprenant de la plateforme?"/>
+            </header>
+        </xpath>
+       <xpath expr="//group//div[@class='row form-panel']//div[1]//div[3]//div[5]" position="after">
+                <div class="col-sm-12">
+                     <div>
+                        <label for="passage_exam" string="Examen passé :" class="oe_edit_only">Examen passé</label>
+                        <field name="passage_exam"   class="oe_edit_only" />
+                     </div>
+                </div>
+        </xpath>
+        <xpath expr="//page/group[@name='session']" position="inside">
+                    <field name="renounce_request" />
+        </xpath>
+        <xpath expr="//page[@name='internal_notes']" position="after">
+                <page string="Statistiques sur 360 Learning">
+                    <group>
+                        <group  col="12">
+                        </group>
+                        <group col="8" colspan="4" string="Géneral">
+                          <div>
+                              <span  class="o_stat_text" >
+                              <field name="averageScore" widget="percentpie" />
+                              </span>
+                          </div>
+                          <div>
+                              <span class="o_stat_text">
+                                  <i class="fa fa-check" />
+                                  Dernière Connexion
+                              </span>
+                              <br/>
+                              <span >
+                              <field name="last_login"/>
+                              </span>
+                          </div>
+                         <div>
+                               <span>
+                                      <i class="fa fa-clock-o"/>
+                               </span>
+                              <span class="o_stat_text">
+                                  Temps passé par minute
+                              </span>
+                              <br/>
+                              <span  class="o_stat_text">
+                              <field name="totalTimeSpentInMinutes"></field>
+                              </span>
+                         </div>
+                         <div>
+                             <span>
+                                 <i class="fa fa-sign-in" style="align:center"/>
+                             </span>
+                              <span class="o_stat_text">
+                                  Date d'inscription
+                              </span>
+                             <br/>
+                              <span >
+                              <field name="date_creation"></field>
+                              </span>
+                         </div>
+                        </group>
+                        <group col="8" colspan="4"  string="Participation">
+                          <div>
+                              <span class="o_stat_text">
+                                  <i  class="fa fa-comment"/> Messages Postés
+                              </span>
+                               <br/>
+                              <span class="o_stat_value">
+                                  <field name="messages"/>
+                              </span>
+                          </div>
+                             <div>
+                              <span class="o_stat_text">
+                                  <i  class="fa fa-comments"/> Commentaires Postés
+                              </span>
+                                  <br/>
+                              <span class="o_stat_value">
+                                  <field name="comments"/>
+                              </span>
+                          </div>
+                              <div>
+                              <span class="o_stat_text">
+                                  <i  class="fa fa-thumbs-up"/> Réactions
+                              </span>
+                                  <br/>
+                              <span class="o_stat_value">
+                                  <field name="reactions"/>
+                              </span>
+                          </div>
+                          <div>
+                              <span class="o_stat_text">
+                                  <i  class="fa fa-tasks"/> Cours/Programmes publiés
+                              </span>
+                                  <br/>
+                              <span class="o_stat_value">
+                                  <field name="publications"/>
+                              </span>
+                          </div>
+                        </group>
+                    </group>
+                </page>
+        </xpath>
+        </field>
+   </record>
+
+
+    <menuitem id="statistique_menu" name="Statistique"
+              parent="main_learning_plateform_menu"/>
+
+
+    <record model="ir.actions.act_window" id="contact_list_action">
+        <field name="name">Les Apprenants</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">tree,form</field>
+
+    </record>
+
+    <menuitem id="contact_menu" name="Apprenants"
+              parent="statistique_menu"
+              action="contact_list_action">
+    </menuitem>
+
+
+
+</odoo>

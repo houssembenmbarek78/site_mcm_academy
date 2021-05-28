@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+groupe_manager,groupe manager,model_plateforme_pedagogique_groupe,,1,1,1,1
+parcours_manager,parcours manager,model_plateforme_pedagogique_parcours,,1,1,1,1
+user_stat_manager,user_stat manager,model_plateforme_pedagogique_user_stats,,1,1,1,1
+
+
