@@ -41,72 +41,6 @@ class NoteExamen(models.Model):
         ('Absent', 'Absent')],
         string="Présence")
 
-    def action_get_attachment(self):
-        """ this method called from button action in view xml """
-        pdf = self.env.ref('partner_exam.report_id').render_qweb_pdf(self.ids)
-        b64_pdf = base64.b64encode(pdf[0])
-        # save pdf as attachment
-        name = self.partner_id.name
-        return self.env['ir.attachment'].create({
-            'name': name,
-            'type': 'binary',
-            'datas': b64_pdf,
-            'res_model': self._name,
-            'res_id': self.id,
-            'mimetype': 'application/x-pdf'
-        })
-
-    def action_send_email(self):
-        '''
-        This function opens a window to compose an email, with the emai template message loaded by default
-        '''
-
-        self.ensure_one()
-        ir_model_data = self.env['ir.model.data']
-        try:
-            template_id = \
-                ir_model_data.get_object_reference('partner_exam', 'email_template_edi_invoice_id')[1]
-        except ValueError:
-            template_id = False
-        try:
-            compose_form_id = ir_model_data.get_object_reference('mail', 'email_compose_message_wizard_form')[1]
-        except ValueError:
-            compose_form_id = False
-        ctx = {
-            'default_model': 'info.examen',
-            'default_res_id': self.ids[0],
-            'default_use_template': bool(template_id),
-            'default_template_id': template_id,
-            'default_composition_mode': 'comment',
-        }
-
-        lang = self.env.context.get('lang')
-        if {'default_template_id', 'default_model', 'default_res_id'} <= ctx.keys():
-            template = self.env['mail.template'].browse(ctx['default_template_id'])
-            if template and template.lang:
-                lang = template._render_template(template.lang, ctx['default_model'], ctx['default_res_id'])
-
-        self = self.with_context(lang=lang)
-
-        # for record in records:
-        #     attachment = self.env['ir.attachment'].create( \
-        #         {'name': 'Tax Exemption',
-        #          'type': 'binary',
-        #          'datas': record.x_tax_exemption,
-        #          'res_model': 'crm.lead',
-        #          'res_id': record.id, })
-
-        return {
-            'name': _('Compose Email'),
-            'type': 'ir.actions.act_window',
-            'view_mode': 'form',
-            'res_model': 'mail.compose.message',
-            'views': [(compose_form_id, 'form')],
-            'view_id': compose_form_id,
-            'target': 'new',
-            'context': ctx,
-        }
-
     @api.onchange('epreuve_a', 'epreuve_b', 'presence')
     def _compute_moyenne_generale(self):
         """ This function used to auto display some result
@@ -132,6 +66,12 @@ class NoteExamen(models.Model):
                     rec.presence = 'present'
                 elif rec.epreuve_a < 1 and rec.epreuve_b < 1:
                     rec.presence = 'Absent'
+                    
+    @api.model
+    def create(self, vals):
+        resultat = super(NoteExamen, self).create(vals)
+        resultat._compute_moyenne_generale()
+        return resultat
 
 
 
