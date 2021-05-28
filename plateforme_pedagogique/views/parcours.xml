@@ -85,9 +85,9 @@
                     </group>
                 </sheet>
                 <sheet>
-                    <group>
+
                     <field name="User_stats"></field>
-                    </group>
+
                 </sheet>
             </form>
         </field>
