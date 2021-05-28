@@ -139,14 +139,14 @@ class partner(models.Model):
             print("courses:", session['name'],'*******',pogramstat)
 
     #En cas de changement de statut de client cette methode est exécutée
-    @api.model
-    def write(self, vals):
-        if 'statut' in vals:
-            #Si statut annulé on supprime i-One
-            if vals['statut'] == 'canceled':
-                self.supprimer_ione_manuelle()
-        record=super(partner, self).write(vals)
-        return record
+
+    # def write(self, vals):
+    #     if 'statut' in vals:
+    #         #Si statut annulé on supprime i-One
+    #         if vals['statut'] == 'canceled':
+    #             self.supprimer_ione_manuelle()
+    #     record=super(partner, self).write(vals)
+    #     return record
 
     #Ajouter ione manuellement
     def ajouter_iOne_manuelle(self):
@@ -272,6 +272,7 @@ class partner(models.Model):
         self.diviser_nom(partner)
         ville = str(partner.mcm_session_id.ville).upper()
         new_format = '%d %B %Y'
+        
         if (partner.mcm_session_id.date_exam):
             date_exam = partner.mcm_session_id.date_exam
             # Changer format de date et la mettre en majuscule
