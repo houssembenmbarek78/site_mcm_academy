@@ -11,7 +11,6 @@ import locale
 from odoo import models, fields,api
 from odoo.exceptions import ValidationError
 from unidecode import  unidecode
-
 import logging
 _logger = logging.getLogger(__name__)
 
@@ -140,14 +139,14 @@ class partner(models.Model):
 
     #En cas de changement de statut de client cette methode est exécutée
 
-    def write(self, vals):
-        if 'statut' in vals:
-            #Si statut annulé on supprime i-One
-            if vals['statut'] == 'canceled':
-                
-                self.supprimer_ione_manuelle()
-        record=super(partner, self).write(vals)
-        return record
+    # def write(self, vals):
+    #     if 'statut' in vals:
+    #         #Si statut annulé on supprime i-One
+    #         if vals['statut'] == 'canceled':
+    #
+    #             self.supprimer_ione_manuelle()
+    #     record=super(partner, self).write(vals)
+    #     return record
 
     #Ajouter ione manuellement
     def ajouter_iOne_manuelle(self):
@@ -488,7 +487,8 @@ class partner(models.Model):
                   if name:
                       partner.firstName = name[0]
                       print('name', name, 'first', partner.firstName)
-                      partner.lastName = name[1]
+                      if name[1]:
+                       partner.lastName = name[1]
                   print('first', partner.firstName, 'last', partner.lastName)
            
                 # Cas d'un seul nom
