@@ -3,7 +3,40 @@
     <xpath expr="//div[@id='wrap']" position="replace">
       <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
       <link href="/digimoov_website_templates/static/src/css/styledigimoov.css" rel="stylesheet" />
+      <!-- <link rel="preload" as="image" href="/digimoov_website_templates/static/img/Formation 100 pour cent en ligne.webp" /> -->
+
       <style>
+       @media only screen and (min-width: 1199px) {
+  .homebuttonspacing {
+    margin-top: -66px !important;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .homebuttonspacing {
+    margin-top: 17px !important;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .homebuttonspacing {
+    margin-top: 44px !important;
+  }
+}
+@media only screen and (min-width: 575px) {
+  .homebuttonspacing {
+    margin-top: -15px !important;
+  }
+}
+@media only screen and (min-width: 405px) {
+  .homebuttonspacing {
+    margin-top: 23px ​ !important;
+  }
+}
+@media only screen and (min-width: 345px) {
+  .homebuttonspacing {
+    margin-top: 72px !important;
+  }
+}
         table {
           width: 100%;
           text-align: left;
@@ -670,8 +703,8 @@
             </t>
             <br />
             <div class="boosting-section tab-btn s_btn">
-              <a href="/#en-savoir-plus" class="boosting-section boostingbtn btn btn-alpha rounded-circle" style="    margin-top: -115px !important;">En-savoir plus</a>
-              <a class="boosting-section boostingbtn btn btn-alpha rounded-circle" href="/contact" style="    margin-top: -115px !important;">
+              <a href="/#en-savoir-plus" class="homebuttonspacing boosting-section boostingbtn btn btn-alpha rounded-circle">En-savoir plus</a>
+              <a class="homebuttonspacing boosting-section boostingbtn btn btn-alpha rounded-circle" href="/contact">
 									Contactez-nous    
               </a>
             </div>
