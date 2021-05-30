@@ -9,31 +9,38 @@
       <style>
         @media only screen and (min-width: 1199px) {
           .homebuttonspacing {
-            margin-top: -66px !important;
+            margin-top: -15px !important;
           }
         }
-        @media only screen and (min-width: 991px and max-width: 1198px) {
+       
+        @media only screen and (min-width: 991px) and (max-width: 1198px) {
           .homebuttonspacing {
             margin-top: 17px !important;
           }
         }
-
-        @media only screen and (min-width: 767px and max-width: 1198px) {
+        
+        @media only screen and (min-width: 992px) and (max-width: 1198px) {
           .homebuttonspacing {
-            margin-top: 44px !important;
+            margin-top: 26px !important;
           }
         }
-        @media only screen and (min-width: 575px and max-width: 766px) {
+
+        @media only screen and (min-width: 767px) and (max-width: 991px) {
+          .homebuttonspacing {
+            margin-top: 50px !important;
+          }
+        }
+        @media only screen and (min-width: 575px) and (max-width: 766px) {
           .homebuttonspacing {
             margin-top: -15px !important;
           }
         }
-        @media only screen and (min-width: 405px and max-width: 574px) {
+        @media only screen and (min-width: 405px) and (max-width: 574px) {
           .homebuttonspacing {
             margin-top: 23px ​ !important;
           }
         }
-        @media only screen and (min-width: 345px and max-width: 404px) {
+        @media only screen and (min-width: 345px) and (max-width: 404px) {
           .homebuttonspacing {
             margin-top: 72px !important;
           }

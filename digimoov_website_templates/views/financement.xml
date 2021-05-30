@@ -40,7 +40,7 @@
                                 <br/>
                                 <span class="font-weight-lighter o_default_snippet_text">
                                     <h3>
-                                        <center>À QUI S'ADRESSE LE COMPTE PERSONNEL DE FORMATION ?</center>
+                                        <center>À QUI S'ADRESSE LE COMPTE PERSONNEL DE FORMATION ?</center>
                                     </h3>
                                 </span>
                             </div>
@@ -54,7 +54,7 @@
                                                 </div>
                                             </div>
                                             <h3 id="feat" class="o_default_snippet_text">Comment est-ce que ça
-                                                fonctionne ?
+                                                fonctionne&amp;nbsp;?
                                             </h3>
                                             <p class="o_default_snippet_text">Si vous avez un CPF depuis 2015 et que
                                                 vous ne l'avez jamais utilisé, vous aurez à votre disposition 1 440 €.
@@ -67,15 +67,25 @@
                                         <section class="feature-item1">
                                             <div class="icon">
                                                 <div class="dotted-img">
-                                                    <i class="fa fa-laptop"/>
+                                                    <a href="/blog/digimoov-3/post/le-compte-personnel-de-formation-cpf-tout-comprendre-7">
+                                                        <i class="fa fa-laptop" data-original-title="" title="" aria-describedby="tooltip609644"/>
+                                                    </a>
                                                 </div>
                                             </div>
-                                            <h3 id="feat" class="o_default_snippet_text">Mon compte de formation</h3>
-                                            <p class="o_default_snippet_text">Le Compte Personnel de Formation s'adresse
-                                                à chaque actif désormais crédité de 500 € par an (somme versée autour du
-                                                mois d'avril). Cela peut monter à 800 € pour les salariés moins
-                                                qualifiés et les personnes en situation de handicap.
-                                            </p>
+                                            <h3 id="feat">
+                                                <a href="/blog/digimoov-3/post/le-compte-personnel-de-formation-cpf-tout-comprendre-7" data-original-title="" title="" aria-describedby="tooltip41144">
+                                                    <font style="color: rgb(66, 66, 66);">Mon compte de formation&amp;nbsp;</font>
+                                                    <br/>
+                                                    <br/>
+                                                    <font style="color: rgb(66, 66, 66);" data-original-title="" title="" aria-describedby="tooltip368095">Le Compte Personnel
+                                                        de Formation s'adresse à chaque actif désormais crédité de 500&amp;nbsp;€
+                                                        par an (somme versée autour du mois d'avril). Cela peut monter à
+                                                        800&amp;nbsp;€ pour les salariés moins qualifiés et les
+                                                        personnes en situation de handicap.
+                                                    </font>
+                                                </a>
+                                                <font style="color: rgb(66, 66, 66);">&amp;nbsp;</font>
+                                            </h3>
                                         </section>
                                         <br/>
                                         <a href="/#pricing" class="bannerbtn btn btn-alpha rounded-circle o_default_snippet_text mb32">
