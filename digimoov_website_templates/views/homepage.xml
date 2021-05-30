@@ -1,8 +1,9 @@
 <odoo>
   <template id="digimoov_website_templates.digimoov_template" inherit_id="website.homepage">
     <xpath expr="//div[@id='wrap']" position="replace">
-      <link href="/digimoov_website_templates/static/src/css/animate.css" rel="stylesheet" />
+      <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
       <link href="/digimoov_website_templates/static/src/css/styledigimoov.css" rel="stylesheet" />
+ -->
       <style>
         table {
           width: 100%;
@@ -180,7 +181,6 @@
         font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier
         New",monospace;
         .centric_template span{
-
         font-size:20px;
         }
 
@@ -338,7 +338,7 @@
 
         }
 
-        }
+        
 
         .plan-features li:last-child {
         border-bottom: none;
@@ -671,8 +671,8 @@
             </t>
             <br />
             <div class="boosting-section tab-btn s_btn">
-              <a href="/#en-savoir-plus" class="boosting-section boostingbtn btn btn-alpha rounded-circle">En-savoir plus</a>
-              <a class="boosting-section boostingbtn btn btn-alpha rounded-circle" href="/contact">
+              <a href="/#en-savoir-plus" class="boosting-section boostingbtn btn btn-alpha rounded-circle" style="    margin-top: -25px !important;">En-savoir plus</a>
+              <a class="boosting-section boostingbtn btn btn-alpha rounded-circle" href="/contact" style="    margin-top: -25px !important;">
 									Contactez-nous    
               </a>
             </div>
@@ -709,16 +709,7 @@
             </a> -->
           </div>
           <div class="col-md-6 img-anim">
-            <img class="img img-fluid" src="/digimoov_website_templates/static/img/Formation capacité de transport léger.gif" alt="Formation capacité transport léger de marchandises" style="
-                  @media (max-width: 720px) {
-                    width: 100% !important;
-                  }
-                  @media (min-width: 720px) {
-                    width: 50% !important;
-                  }
-                  transform: translateX(46.1%) translateY(59.5%) scaleX(2.32)
-                    scaleY(2.32);
-                " data-original-title="" title="Formation capacité de transport leger de marchandise" aria-describedby="tooltip407937" />
+            <img class="img img-fluid" src="/digimoov_website_templates/static/img/Formation capacité de transport léger.gif" alt="Formation capacité transport léger de marchandises" data-original-title="" title="Formation capacité de transport leger de marchandise" aria-describedby="tooltip407937" />
           </div>
         </div>
       </div>
@@ -758,7 +749,7 @@ Acquérir les connaissances nécessaires afin de
                   </p>
                 </div>
                 <div class="col-lg-4 col-md-4 text-center">
-                  <img src="/digimoov_website_templates/static/img/Formation 100 pour cent en ligne.webp" class="img-responsive" alt="Livreur indépendant formation en ligne" data-original-title="" title="Formation 100 pour cent en ligne" aria-describedby="tooltip183706" style="transform: scaleX(1.27) scaleY(1.27)" />
+                  <img data-src="/digimoov_website_templates/static/img/Formation 100 pour cent en ligne.webp" data-srcSafari="/digimoov_website_templates/static/img/compressed/2-_Formation_100_pour_cent_en_ligne.png" class="img-responsive lazy" alt="Livreur indépendant formation en ligne" data-original-title="" title="Formation 100 pour cent en ligne" aria-describedby="tooltip183706" style="transform: scaleX(1.27) scaleY(1.27)" />
                 </div>
                 <div class="col-lg-4 col-md-4 text-center m-b-30">
                   <span class="display-5 fa fa-3x fa-flag" data-original-title="" title="" aria-describedby="tooltip158070" style="color: rgb(99, 74, 165)" />
@@ -777,7 +768,7 @@ Acquérir les connaissances nécessaires afin de
             </div>
           </section>
         </section>
-        <section class="s_charity_help_block" data-name="Center Paragraph with three blocks" style="">
+        <section class="s_charity_help_block" data-name="Center Paragraph with three blocks">
           <div class="spacer feature1">
             <div class="container">
               <div class="row m-t-40">
@@ -785,7 +776,7 @@ Acquérir les connaissances nécessaires afin de
                   <section class="card">
                     <div class="card-body text-center">
                       <div class="icon-space">
-                        <img src="/digimoov_website_templates/static/img/Apprenez à votre rythme - Digimoov.webp" alt="Choisir pour combien de temps apprendre" class="img img-fluid" data-original-title="" title="Apprenez à votre rythme" aria-describedby="tooltip965860" style="" />
+                        <img data-src="/digimoov_website_templates/static/img/Apprenez à votre rythme - Digimoov.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Apprenez à votre rythme - Digimoov.jpg" alt="Choisir pour combien de temps apprendre" class="img img-fluid lazy lazy" data-original-title="" title="Apprenez à votre rythme" aria-describedby="tooltip965860" />
                       </div>
                       <h3>
                         <font style="font-size: 20px">Apprenez à votre rythme</font
@@ -808,7 +799,7 @@ Acquérir les connaissances nécessaires afin de
                   <section class="card">
                     <div class="card-body text-center">
                       <div class="icon-space">
-                        <img src="/digimoov_website_templates/static/img/Des formateurs Qualifiés - Digimoov.webp" alt="bizople" class="img img-fluid" data-original-title="" title="Des formateurs Qualifiés chez Digimoov" aria-describedby="tooltip549355" />
+                        <img data-src="/digimoov_website_templates/static/img/Des formateurs Qualifiés - Digimoov.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Des_formateurs_Qualifiés_-_Digimoov.jpg" alt="bizople" class="img img-fluid lazy" data-original-title="" title="Des formateurs Qualifiés chez Digimoov" aria-describedby="tooltip549355" />
                       </div>
                       <h3>
                         <font style="font-size: 20px">Des formateurs qualifiés</font
@@ -828,10 +819,10 @@ Acquérir les connaissances nécessaires afin de
                   </section>
                 </div>
                 <div class="col-md-4 wrap-feature1-box">
-                  <section class="card" style="">
+                  <section class="card">
                     <div class="card-body text-center">
                       <div class="icon-space">
-                        <img src="/digimoov_website_templates/static/img/Examens Blancs capacité de transport léger - Digimoov.webp" alt="Examens Blancs pour entraînement" class="img img-fluid" data-original-title="" title="Examens Blancs capacité de transport léger chez Digimoov" aria-describedby="tooltip149456" />
+                        <img data-src="/digimoov_website_templates/static/img/Examens Blancs capacité de transport léger - Digimoov.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Examens Blancs capacité de transport léger - Digimoov.jpg" alt="Examens Blancs pour entraînement" class="img img-fluid lazy" data-original-title="" title="Examens Blancs capacité de transport léger chez Digimoov" aria-describedby="tooltip149456"/>
                       </div>
                       <h3>
                         <font style="font-size: 20px">Examens blancs</font>
@@ -840,7 +831,7 @@ Acquérir les connaissances nécessaires afin de
                         <span style="
                               font-family: Roboto, 'Odoo Unicode Support Noto',
                                 sans-serif;
-                            ">
+                            " id="en-savoir-plus">
                             Afin de se préparer efficacement à l'examen final
                         </span>
                         <br />
@@ -852,7 +843,7 @@ Acquérir les connaissances nécessaires afin de
             </div>
           </div>
         </section>
-        <section class="pb32 pt24 bg-100" data-name="Title" style="">
+        <section class="pb32 pt24 bg-100" data-name="Title">
           <div class="container">
             <div class="row s_nb_column_fixed" id="en-savoir-plus">
               <div class="s_title pt16 offset-lg-2 col-lg-8 pb0" style="text-align: center">
@@ -872,11 +863,11 @@ Acquérir les connaissances nécessaires afin de
             </div>
           </div>
         </section>
-        <section class="s_business_text_with_img_left_right" data-name="Left Right image with text" style="">
+        <section class="s_business_text_with_img_left_right" data-name="Left Right image with text">
           <div class="spacer feature26">
             <div class="container">
               <div class="row wrap-feature-26">
-                <div class="col-md-7 align-self-center" style="">
+                <div class="col-md-7 align-self-center">
                   <div class="max-box">
                     <h3 id="formation" class="title m-t-20 text-beta">
                       <font style="font-size: 30px">La formation</font>
@@ -890,45 +881,37 @@ Acquérir les connaissances nécessaires afin de
                         cours, exercices, examens blancs d'entraînement...
                       <br />
                     </p>
-
-                    <!-- <div class="s_btn pt16 pb16 text-right" data-name="Button" style="text-align: right">
-                      <a href="/blog/digimoov-3/post/bon-a-savoir-sur-la-formation-capacite-de-transport-leger-6#details-formation" class="
-                            arrow-btn
-                            bizople_button
-                            m-t-16
-                            mt16
-                            btn btn-primary
-                            rounded-circle
-                          " data-original-title="" title="" aria-describedby="tooltip272185" style="
+                    <div class="s_btn pt16 pb16 " data-name="Button" style="text-align: right">
+                      <a href="/blog/digimoov-3/post/bon-a-savoir-sur-la-formation-capacite-de-transport-leger-6#details-formation" class="arrow-btn bizople_button m-t-16 mt16 btn btn-primary rounded-circle" data-original-title="" title="" aria-describedby="tooltip272185" style="
                             font-size: 14px;
                             outline: 0px;
-                            box-shadow: rgba(82, 87, 166, 0.5) 0px 0px 0px
-                              0.2rem;
+                            
                           ">
+                          
                           Détails sur la formation&amp;nbsp;&amp;nbsp;
-                        <span class="fa fa-1x fa-fw fa-long-arrow-right ml-1" style="width: 1.28571em" />
-                      </a>
-                    </div> -->
-                    <div class="boosting-section tab-btn s_btn text-right">
-
-                      <a href="/blog/digimoov-3/post/bon-a-savoir-sur-la-formation-capacite-de-transport-leger-6#details-formation" class="boosting-section boostingbtn btn btn-alpha rounded-circle">
-                          Détails sur la formation
+                          
                       </a>
                     </div>
+
+
                   </div>
                 </div>
                 <div class="col-md-5 col-md-5">
-                  <img src="/digimoov_website_templates/static/img/formation en ligne.webp" alt=" Apprenant en formation à distance" class="img-responsive img img-fluid" data-original-title="" title="formation en ligne" aria-describedby="tooltip971717" style="
+                  <img data-src="/digimoov_website_templates/static/img/compressed/formation en ligne.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/formation en ligne.jpg" alt=" Apprenant en formation à distance" class="img-responsive img img-fluid lazy" data-original-title="" title="formation en ligne" aria-describedby="tooltip971717" style="
                         transform: translateX(6.9%) translateY(1.3%)
                           scaleX(1.11) scaleY(1.11);
                       " />
                 </div>
+                <!-- <div class="banner-btn s_btn text-right" style="margin-top: 20px" data-name="Button" aria-describedby="tooltip272185">
+                    <a class="bannerbtn btn btn-alpha rounded-circle o_default_snippet_text" href="/blog/digimoov-3/post/bon-a-savoir-sur-la-formation-capacite-de-transport-leger-6#details-formation">Détails sur la formation&amp;nbsp;&amp;nbsp;</a>
+                  </div> -->
+
               </div>
               <div class="row wrap-feature-26 m-t-40 p-t-30">
                 <div class="col-md-6">
-                  <img src="/digimoov_website_templates/static/img/Examen capacité de marchandise.webp" alt="Candidat passe l'examen de capacité en transport léger" class="img-responsive img img-fluid" data-original-title="" title="Examen capacité de marchandise" aria-describedby="tooltip338603" style="transform: scaleX(0.88) scaleY(0.88)" />
+                  <img data-src="/digimoov_website_templates/static/img/compressed/Examen capacité de marchandise.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Examen capacité de marchandise.jpg" alt="Candidat passe l'examen de capacité en transport léger" class="img-responsive img img-fluid lazy" data-original-title="" title="Examen capacité de marchandise" aria-describedby="tooltip338603" style="transform: scaleX(0.88) scaleY(0.88)" />
                 </div>
-                <div class="col-md-6 align-self-center" style="">
+                <div class="col-md-6 align-self-center">
                   <h3 class="title m-t-20 text-beta">
                     <font style="font-size: 30px">L'examen</font>
                   </h3>
@@ -941,29 +924,26 @@ Acquérir les connaissances nécessaires afin de
                       Bordeaux, Lille, Lyon, Marseille, Nantes, Paris,
                       Strasbourg, Toulouse...
                     <br />
-                    <a href="/examen-capacite-transport-marchandises" class="
-                          arrow-btn
-                          bizople_button
-                          m-t-16
-                          mt16
-                          btn btn-primary
-                          rounded-circle
-                        " data-original-title="" title="" aria-describedby="tooltip959694" style="
-                          border-color: rgb(0, 0, 0);
+
+                  </p>
+                  <a href="/examen-capacite-transport-marchandises" class="arrow-btn bizople_button m-t-16 mt16 btn btn-primary rounded-circle" data-original-title="" title="" aria-describedby="tooltip959694" style="
+                        
                           font-size: 14px;
                           outline: 0px;
                         ">
                         Détails sur l'examen&amp;nbsp;&amp;nbsp;
-                      <span class="fa fa-1x fa-fw fa-long-arrow-right ml-1" style="width: 1.28571em" />
-                    </a>
-                    <br />
-                  </p>
+                        
+                  </a>
                 </div>
+
+
+                <br />
+
               </div>
             </div>
           </div>
         </section>
-        <section class="s_business_text_with_img_left_right" data-name="Left Right image with text" style="">
+        <section class="s_business_text_with_img_left_right" data-name="Left Right image with text">
           <div class="spacer feature26">
             <div class="container">
               <div class="row wrap-feature-26">
@@ -981,48 +961,54 @@ Acquérir les connaissances nécessaires afin de
                         de monter votre propre boîte de livraison.
                       <br />
                     </p>
-                    <div style="text-align: right">
-                      <a href="/blog/digimoov-3/post/tout-savoir-sur-la-capacite-de-transport-leger-de-marchandises-5" class="
-                            arrow-btn
-                            bizople_button
-                            m-t-16
-                            mt16
-                            btn btn-primary
-                            rounded-circle
-                          " data-original-title="" title="" aria-describedby="tooltip959694" style="
-                            border-color: rgb(0, 0, 0);
+                    <div class="s_btn  pb16" data-name="Button" style="text-align: right">
+                      <a href="/blog/digimoov-3/post/bon-a-savoir-sur-la-formation-capacite-de-transport-leger-6#details-formation" class="arrow-btn bizople_button m-t-16 mt16 btn btn-primary rounded-circle" data-original-title="" title="" aria-describedby="tooltip272185" style="
                             font-size: 14px;
                             outline: 0px;
+                           
                           ">
-                          En-savoir plus&amp;nbsp; &amp;nbsp;<span class="fa fa-1x fa-fw fa-long-arrow-right ml-1" style="width: 1.28571em" />
-&amp;nbsp;
+                          
+                          En-savoir plus&amp;nbsp;&amp;nbsp;
+                          
                       </a>
-                      <span style="font-size: 1rem">&amp;nbsp;</span>
                     </div>
                     <p class="m-t-30 custom_p">
                       <br />
                     </p>
                   </div>
                 </div>
+
                 <div class="col-md-5 col-md-5">
-                  <img src="/digimoov_website_templates/static/img/Diplome attestation de capacité de transport léger.webp" alt="Homme et Femme diplomés après réussite" class="img-responsive img img-fluid" data-original-title="" title="Diplome attestation de capacité de transport léger" aria-describedby="tooltip805036" />
+                  <img data-src="/digimoov_website_templates/static/img/Diplome attestation de capacité de transport léger.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Diplome attestation de capacité de transport léger.jpg" alt="Homme et Femme diplomés après réussite" class="img-responsive img img-fluid lazy" data-original-title="" title="Diplome attestation de capacité de transport léger" aria-describedby="tooltip805036" />
                 </div>
+                <!-- <div style="text-align: right">
+                    <a href="/blog/digimoov-3/post/tout-savoir-sur-la-capacite-de-transport-leger-de-marchandises-5" class="arrow-btn bizople_button mt16 btn btn-primary rounded-circle" data-original-title="" title="" aria-describedby="tooltip959694" style="
+                            border-color: rgb(0, 0, 0);
+                            font-size: 14px;
+                            outline: 0px;
+                        
+                          ">
+                          En-savoir plus
+                    </a>
+                    <span style="font-size: 1rem">&amp;nbsp;</span> 
+                  </div> -->
+
               </div>
             </div>
           </div>
         </section>
         <p />
-        <section class="s_accounting_three_blocks" data-name="Three block with image and paragraphs" style="">
+        <section class="s_accounting_three_blocks" data-name="Three block with image and paragraphs">
           <div class="spacer feature7">
             <div class="container">
               <div class="row m-t-40">
-                <div class="col-md-4 wrap-feature7-box" style="">
+                <div class="col-md-4 wrap-feature7-box">
                   <section class="o_anim_zoom_in o_animate o_animated" style="
                         animation-name: o_anim_zoom_in;
                         visibility: visible;
                         animation-play-state: running;
                       ">
-                    <img class="rounded img-responsive" src="/digimoov_website_templates/static/img/Transport léger sur scooter.webp" alt="Scooter pour faire de la livraison" data-original-title="" title="Transport léger sur scooter" aria-describedby="tooltip533278" style="transform: scaleX(0.78) scaleY(0.85)" />
+                    <img class="rounded img-responsive lazy" data-src="/digimoov_website_templates/static/img/Transport léger sur scooter.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Transport léger sur scooter.png" alt="Scooter pour faire de la livraison" data-original-title="" title="Transport léger sur scooter" aria-describedby="tooltip533278" style="transform: scaleX(0.78) scaleY(0.85)" />
                     <div class="m-t-30">
                       <h3 class="font-medium" style="text-align: center">
                           Devenir livreur en scooter
@@ -1036,13 +1022,13 @@ Acquérir les connaissances nécessaires afin de
                     </div>
                   </section>
                 </div>
-                <div class="col-md-4 wrap-feature7-box" style="">
+                <div class="col-md-4 wrap-feature7-box">
                   <section class="o_animate o_anim_zoom_in o_animated" style="
                         animation-name: o_anim_zoom_in;
                         visibility: visible;
                         animation-play-state: running;
                       ">
-                    <img class="rounded img-responsive" src="/digimoov_website_templates/static/img/Transport léger  sur voiture.webp" alt="Voiture pour Transport léger de marchandise" data-original-title="" title="Transport léger  sur voiture" aria-describedby="tooltip970873" style="transform: scaleX(0.85) scaleY(0.89)" />
+                    <img class="rounded img-responsive lazy" data-src="/digimoov_website_templates/static/img/Transport léger  sur voiture.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Transport léger  sur voiture.png" alt="Voiture pour Transport léger de marchandise" data-original-title="" title="Transport léger  sur voiture" aria-describedby="tooltip970873" style="transform: scaleX(0.85) scaleY(0.89)" />
                     <div class="m-t-30">
                       <h3 class="font-medium" style="text-align: center">
                           Devenir livreur en voiture
@@ -1056,15 +1042,15 @@ Acquérir les connaissances nécessaires afin de
                     </div>
                   </section>
                 </div>
-                <div class="col-md-4 wrap-feature7-box" style="">
+                <div class="col-md-4 wrap-feature7-box">
                   <section class="o_animate o_anim_zoom_in o_animated" style="
                         animation-name: o_anim_zoom_in;
                         visibility: visible;
                         animation-play-state: running;
                       ">
-                    <img class="rounded img-responsive" src="/digimoov_website_templates/static/img/Transport léger sur camionnette 3,5t.webp" alt="camionnette pour transport -3.5t PTAC" data-original-title="" title="Transport léger sur camionnette 3,5t" aria-describedby="tooltip38151" style="transform: scaleX(0.89) scaleY(0.9)" />
+                    <img class="rounded img-responsive lazy" data-src="/digimoov_website_templates/static/img/Transport léger sur camionnette 3,5t.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Transport léger sur camionnette 3,5t.png" alt="camionnette pour transport -3.5t PTAC" data-original-title="" title="Transport léger sur camionnette 3,5t" aria-describedby="tooltip38151" style="transform: scaleX(0.89) scaleY(0.9)" />
                     <div class="m-t-30">
-                      <h3 class="font-medium" style="text-align: center">
+                      <h3 class="font-medium lazy" style="text-align: center">
                           Devenir livreur en camionnette
                       </h3>
                       <p class="custom_p m-b-30 m-t-30" style="text-align: center">
@@ -1081,7 +1067,7 @@ Acquérir les connaissances nécessaires afin de
           </div>
         </section>
         <section class="s_furniture_fun-fact-section oe_img_bg oe_custom_bg" style="
-              background-image: url('/digimoov_website_templates/static/img/Monter boite de transport.webp');
+              background-image: url('/digimoov_website_templates/static/img/Monter boite de transport.png');
               background-position: 55.8% 54.4%;
             " alt="Transport routier de marchandise" data-name="Counter with parallex image">
           <div class="container">
@@ -1106,10 +1092,9 @@ Acquérir les connaissances nécessaires afin de
                       <div class="count-box counter-box">
                         <span class="count-text counter">90</span>
                         <br />
-%
+                      %
                         <h5 class="counter-title">
-                          <font style="font-size: 16px">de recommandation</font
-                            >
+                          <font style="font-size: 16px">de recommandation</font>
                         </h5>
                       </div>
                     </div>
@@ -1140,11 +1125,11 @@ Acquérir les connaissances nécessaires afin de
             </div>
           </div>
         </section>
-        <section class="s_one_page_pricing_plan bg-light-1" data-name="Pricing plan two" style="">
+        <section class="s_one_page_pricing_plan bg-light-1" data-name="Pricing plan two">
           <div class="pricing1 spacer" id="pricing">
             <div class="container">
               <div class="row justify-content-center">
-                <div class="col-md-8 text-center col-lg-11" style="">
+                <div class="col-md-8 text-center col-lg-11">
                   <h2 class="text-beta title">
                       LET'S GO !<br />
 Inscrivez-vous dès maintenant !
@@ -1174,6 +1159,7 @@ Inscrivez-vous dès maintenant !
                     border-top-right-radius: 25px;
                   ">
                 <br />
+                <br />
                 <p>
                   <strong style="color: white">
                     <font style="font-size: 30px">SOLO</font>
@@ -1184,6 +1170,7 @@ Inscrivez-vous dès maintenant !
                     &amp;nbsp;&amp;nbsp;
                 </p>
                 <br />
+
               </div>
               <t t-foreach="digimoov_products" t-as="product">
                 <t t-if="product.default_code=='basique'">
@@ -1391,6 +1378,7 @@ Directs pour explication avec les formateurs
                                 mb-0
                               ">
                             <span t-esc="round(product.list_price)" />
+
                             <span t-esc="product.currency_id.symbol" />
                           </p>
                         </font>
@@ -1547,38 +1535,43 @@ Directs pour explication avec les formateurs
           </div>
         </div>
       </div>
-      <section class="clients s_references bg-200 pt16 pb16" data-name="References" style="">
+      <section class="clients s_references bg-200 pt16 pb16" data-name="References">
         <center>
           <div class="container">
             <div class="row">
-              <div class="col-lg-2">
+              <div class="col-sm-2">
                 <a href="https://www.mcm-academy.fr/">
-                  <img src="/digimoov_website_templates/static/img/MCMACADEMY.webp" style="width: 50%" class="img img-fluid" alt="Logo partenaire MCM ACADEMY" data-original-title="" title="MCM ACADEMY" aria-describedby="tooltip843653" />
+
+
+                  <img data-src="/digimoov_website_templates/static/img/compressed/MCMACADEMY.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/MCMACADEMY.png" class="img img-fluid lazy" alt="Logo partenaire MCM ACADEMY" data-original-title="" title="MCM ACADEMY" aria-describedby="tooltip843653" style="margin-top: 30px; width:50%;" />
                 </a>
               </div>
-              <div class="col-lg-2" t-if="partenaire=='' or partenaire=='ubereats'">
+
+
+              <div class="col-sm-2" t-if="partenaire=='' or partenaire=='ubereats'">
                 <a href="https://www.ubereats.com/fr">
-                  <img src="/digimoov_website_templates/static/img/ubereats partenaire Digimoov.webp" style="width: 50%" class="img img-fluid" alt="Logo partenaire ubereats" data-original-title="" title="Ubereats partenaire Digimoov" aria-describedby="tooltip843653" />
+                  <img data-src="/digimoov_website_templates/static/img/compressed/ubereats partenaire Digimoov.webp" data-srcSafari="digimoov_website_templates/static/img/Homepage/uber.png" class="img img-fluid lazy" alt="Logo partenaire ubereats" data-original-title="" title="Ubereats partenaire Digimoov" aria-describedby="tooltip843653" style="margin-top: 30px; width:50%;"/>
                 </a>
               </div>
-              <div class="col-lg-2" t-if="partenaire=='' or partenaire=='deliveroo'">
+              <div class="col-sm-2" t-if="partenaire=='' or partenaire=='deliveroo'">
+
                 <a href="https://deliveroo.fr/fr/">
-                  <img src="/digimoov_website_templates/static/img/deliveroo partenaire Digimoov.webp" style="width: 70%" class="img img-fluid" alt="Logo partenaire Deliveroo" data-original-title="" title="Deliveroo partenaire Digimoov" aria-describedby="tooltip623872" />
+                  <img data-src="/digimoov_website_templates/static/img/compressed/deliveroo partenaire Digimoov.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/deliveroo.png" class="img img-fluid lazy" alt="Logo partenaire Deliveroo" data-original-title="" title="Deliveroo partenaire Digimoov" aria-describedby="tooltip623872" style="margin-top: 30px; width:70%;" />
                 </a>
               </div>
-              <div class="col-lg-2" t-if="partenaire=='' or partenaire=='coursierjob'">
+              <div class="col-sm-2" t-if="partenaire=='' or partenaire=='coursierjob'">
                 <a href="https://www.coursierjob.com/">
-                  <img src="/digimoov_website_templates/static/img/coursierjob partenaire Digimoov.webp" style="width: 50%" class="img img-fluid" alt="Logo partenaire Coursierjob" data-original-title="" title="Coursierjob partenaire Digimoov" aria-describedby="tooltip175558" />
+                  <img data-src="/digimoov_website_templates/static/img/compressed/coursierjob partenaire Digimoov.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/coursierjob.png" class="img img-fluid lazy" alt="Logo partenaire Coursierjob" data-original-title="" title="Coursierjob partenaire Digimoov" aria-describedby="tooltip175558" style="margin-top: 30px; width:50%;"/>
                 </a>
               </div>
-              <div class="col-lg-2" t-if="partenaire=='' or partenaire=='box2home'">
+              <div class="col-sm-2" t-if="partenaire=='' or partenaire=='box2home'">
                 <a href="https://www.box2home.fr/">
-                  <img src="/digimoov_website_templates/static/img/Box2home-partenaire-digimoov.webp" style="width: 50%" class="img img-fluid" alt="Logo partenaire Box2home" data-original-title="" title="Box2home partenaire Digimoov" aria-describedby="tooltip175558" />
+                  <img data-src="/digimoov_website_templates/static/img/compressed/Box2home-partenaire-digimoov.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Box2home-partenaire-digimoov.png" class="img img-fluid lazy" alt="Logo partenaire Box2home" data-original-title="" title="Box2home partenaire Digimoov" aria-describedby="tooltip175558" style="margin-top: 30px; width:50%;"/>
                 </a>
               </div>
-              <div class="col-lg-2">
-                <a href="http://www.comptable-douai.com/" t-if="partenaire!='box2home'">
-                  <img src="/digimoov_website_templates/static/img/Cabinet Comptable Joel Pruvost.webp" style="width: 50%" class="img img-fluid" alt="Logo partenaire Cabinet Comptable Joël Pruvost" data-original-title="" title="Cabinet Comptable Joël Pruvost partenaire Digimoov" aria-describedby="tooltip175558" />
+              <div class="col-sm-2">
+                <a href="http://www.comptable-douai.com/">
+                  <img data-src="/digimoov_website_templates/static/img/compressed/Cabinet Comptable Joel Pruvost.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Cabinet_Comptable_Joel_Pruvost.png" class="img img-fluid lazy" alt="Logo partenaire Cabinet Comptable Joël Pruvost" data-original-title="" title="Cabinet Comptable Joël Pruvost partenaire Digimoov" aria-describedby="tooltip175558" style="margin-top: 30px; width:50%;"/>
                 </a>
               </div>
             </div>
@@ -1588,13 +1581,14 @@ Directs pour explication avec les formateurs
     </section>
     <section class="s_faq_collapse pt48 pb32" data-name="Accordion">
       <div class="container">
+
         <div class="row s_col_no_bgcolor">
           <div class="pt16 pb16 col-lg-4" style="border-style: none; border-width: 0px">
             <div id="myCollapse" class="accordion" role="tablist">
-              <div class="card bg-white" style="">
+              <div class="card bg-white">
                 <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-parent="#myCollapse" data-target="#myCollapseTab1616754726586" data-original-title="" title="" aria-describedby="tooltip5917">Capacité de transport
                 </a>
-                <div class="collapse" role="tabpanel" id="myCollapseTab1616754726586" style="">
+                <div class="collapse" role="tabpanel" id="myCollapseTab1616754726586">
                   <div class="card-body">
                     <p class="card-text">
                         Formation capacité de transport 100% en ligne pour
@@ -1618,7 +1612,7 @@ Directs pour explication avec les formateurs
               <div class="card bg-white">
                 <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-parent="#myCollapse" data-original-title="" title="" aria-describedby="tooltip5917" data-target="#myCollapseTab1616754743649">Formation capacité de transport
                 </a>
-                <div class="collapse" role="tabpanel" style="" id="myCollapseTab1616754743649">
+                <div class="collapse" role="tabpanel" id="myCollapseTab1616754743649">
                   <div class="card-body">
                     <p class="card-text">
                         La formation capacité en transport routier léger de
@@ -1642,7 +1636,7 @@ Directs pour explication avec les formateurs
               <div class="card bg-white">
                 <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-parent="#myCollapse" data-original-title="" title="" aria-describedby="tooltip5917" data-target="#myCollapseTab1616754743646">Examen capacité de transport
                 </a>
-                <div class="collapse" role="tabpanel" style="" id="myCollapseTab1616754743646">
+                <div class="collapse" role="tabpanel" id="myCollapseTab1616754743646">
                   <div class="card-body">
                     <p class="card-text">
                         Une fois la formation en capacité de transport de
@@ -1664,9 +1658,6 @@ Directs pour explication avec les formateurs
         </div>
       </div>
     </section>
-    <!--            <script src="/digimoov_website_templates/static/src/js/jquery.min.js"/>-->
-    <!--            <script src="/digimoov_website_templates/static/src/js/main.js"/>-->
-    <!--            <script src="/digimoov_website_templates/static/src/js/jquery.magnific-popup.min.js"/>-->
   </xpath>
 </template>
 </odoo>
