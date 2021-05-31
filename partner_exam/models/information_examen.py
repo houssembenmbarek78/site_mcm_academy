@@ -13,7 +13,7 @@ class NoteExamen(models.Model):
 
     partner_id = fields.Many2one('res.partner', string="Client")
     epreuve_a = fields.Float(string="Epreuve A(QCM):", track_visibility='always')
-    epreuve_b = fields.Float(string="Epreuve B(QRO)", track_visibility='always')
+    epreuve_b = fields.Float(string="Epreuve B(QRO)", track_visibility='always', default=1)
     moyenne_generale = fields.Float(string="Moyenne Générale", track_visibility='always', store=True)
     mention = fields.Selection(selection=[
         ('recu', 'reçu'),
@@ -39,7 +39,7 @@ class NoteExamen(models.Model):
     presence = fields.Selection(selection=[
         ('present', 'Présent'),
         ('Absent', 'Absent')],
-        string="Présence")
+        string="Présence", default='present')
 
     @api.onchange('epreuve_a', 'epreuve_b', 'presence')
     def _compute_moyenne_generale(self):
