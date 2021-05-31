@@ -488,14 +488,14 @@ class partner(models.Model):
 
                 name = partner.name.split(" ", 1)
                 if name:
-
+                    _logger.info('name   if name  %s' % partner.name)
                         partner.firstName = name[0]
 
-                        _logger.info('name  first in  if name  %s' % partner.name % partner.firstName)
+                        _logger.info('name  first in  if name  %s'  % partner.firstName)
 
                         partner.lastName = name[1]
 
-                        _logger.info('name  last in  if name  %s' % partner.name % partner.lastName)
+                        _logger.info('name  last in  if name  %s'  % partner.lastName)
 
                 print('first', partner.firstName, 'last', partner.lastName)
 
