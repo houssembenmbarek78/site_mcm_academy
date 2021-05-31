@@ -480,8 +480,10 @@ class partner(models.Model):
 
            # Cas d'un nom composé
             else:
+              _logger.info('name avant devision %s' % partner.name)
               espace = re.search("\s", partner.name)
               if espace:
+                  logger.info('if espace %s' %partner.name)
                   name = re.split(r'\s', partner.name, maxsplit=1)
                   _logger.info('name_devision %s' %name)
                   if name:
