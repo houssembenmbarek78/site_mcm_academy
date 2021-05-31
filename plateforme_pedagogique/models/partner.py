@@ -117,6 +117,7 @@ class partner(models.Model):
                             'assignedPrograms': table_user['assignedPrograms'],
                             'toDeactivateAt': table_user['toDeactivateAt'],
                             'apprenant': True
+
                         })
                         print("partner",partner.name, partner.last_login)
 
@@ -309,14 +310,7 @@ class partner(models.Model):
                 if user.password360:
                     partner.password360 = user.password360
                     print(user.password)
-                    # Désactiver les notifications par email
-                    data_email = json.dumps({
-                        "usersEmails": [
-                            partner.email
-                        ]
-                    })
-                    resp_unsub_email = requests.put(url_unsubscribeToEmailNotifications, headers=headers, data=data_email)
-                    print("desactiver email", resp_unsub_email.status_code)
+
                     # Ajouter i-One to table user
                     data_user = '{"mail":"' + partner.email + '" , "password":"' + user.password360 + '" , "firstName":"' + partner.firstName + '", "lastName":"' + partner.lastName + '", "phone":"' + partner.phone + '", "sendCredentials":"true"}'
                     resp = requests.post(urluser, headers=headers, data=data_user)
@@ -325,6 +319,14 @@ class partner(models.Model):
                     if (resp.status_code == 200):
                         create = True
                 data_group = {}
+                # Désactiver les notifications par email
+                data_email = json.dumps({
+                    "usersEmails": [
+                        partner.email
+                    ]
+                })
+                resp_unsub_email = requests.put(url_unsubscribeToEmailNotifications, headers=headers, data=data_email)
+                print("desactiver email", resp_unsub_email.status_code)
 
                 # Si l'apprenant a été ajouté sur table user on l'affecte aux autres groupes
                 if (create):
@@ -480,19 +482,21 @@ class partner(models.Model):
 
            # Cas d'un nom composé
             else:
-              _logger.info('name avant devision %s' % partner.name)
               espace = re.search("\s", partner.name)
               if espace:
-                  _logger.info('if espace %s' %partner.name)
+                
                   name = re.split(r'\s', partner.name, maxsplit=1)
                   _logger.info('name_devision %s' %name)
                   if name:
-                      partner.firstName = name[0]
-                      print('name', name, 'first', partner.firstName)
+                      if name[0]:
+                          partner.firstName = name[0]
+                          _logger.info('name %s' % name )
+                          _logger.info('prenom %s' %partner.firstName)
                       if name[1]:
                        partner.lastName = name[1]
-                  print('first', partner.firstName, 'last', partner.lastName)
-           
+                  _logger.info('prenom %s' % partner.lastName)
+                  _logger.info('nom %s' % partner.firstName)
+
                 # Cas d'un seul nom
               else:
                     partner.firstName = partner.name
