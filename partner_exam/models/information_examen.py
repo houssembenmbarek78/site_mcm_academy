@@ -58,11 +58,11 @@ class NoteExamen(models.Model):
                 rec.epreuve_b = rec.epreuve_b
                 rec.mention = 'ajourne'
                 rec.resultat = 'ajourne'
-                if rec.epreuve_a > 1 and rec.epreuve_a < 21:
+                if rec.epreuve_a >= 1 and rec.epreuve_a < 21:
                     rec.presence = 'present'
                 elif rec.epreuve_a < 1 and rec.epreuve_b < 1:
                     rec.presence = 'Absent'
-                if rec.epreuve_b > 1 and rec.epreuve_b < 21:
+                if rec.epreuve_b >= 1 and rec.epreuve_b < 21:
                     rec.presence = 'present'
                 elif rec.epreuve_a < 1 and rec.epreuve_b < 1:
                     rec.presence = 'Absent'
