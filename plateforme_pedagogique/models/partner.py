@@ -476,6 +476,8 @@ class partner(models.Model):
 
     # Extraire firstName et lastName à partir du champs name
     def diviser_nom(self, partner):
+
+        _logger.info('name au debut  %s' %partner.name)
         if partner.name == '':
             partner.firstName = partner.name
             partner.lastName = partner.name
@@ -483,14 +485,18 @@ class partner(models.Model):
         # Cas d'un nom composé
         else:
             if " " in partner.name:
-            
+
                 name = partner.name.split(" ", 1)
                 if name:
 
                         partner.firstName = name[0]
-                        print('name', name, 'first', partner.firstName)
+
+                        _logger.info('name  first in  if name  %s' % partner.name % partner.firstName)
 
                         partner.lastName = name[1]
+
+                        _logger.info('name  last in  if name  %s' % partner.name % partner.lastName)
+
                 print('first', partner.firstName, 'last', partner.lastName)
 
             # Cas d'un seul nom
