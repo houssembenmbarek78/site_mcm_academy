@@ -116,8 +116,7 @@ class partner(models.Model):
                             'totalTimeSpentInMinutes': times,
                             'assignedPrograms': table_user['assignedPrograms'],
                             'toDeactivateAt': table_user['toDeactivateAt'],
-                            'apprenant': True,
-                            # 'messages':table_user['messages']
+                            'apprenant': True
                         })
                         print("partner",partner.name, partner.last_login)
 
