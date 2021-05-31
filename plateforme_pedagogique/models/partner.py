@@ -475,31 +475,27 @@ class partner(models.Model):
             print('supprimé avec succès', resp.status_code,'passage',self.passage_exam)
 
     # Extraire firstName et lastName à partir du champs name
-    def diviser_nom(self,partner):
-            if partner.name == '':
+    def diviser_nom(self, partner):
+        if partner.name == '':
+            partner.firstName = partner.name
+            partner.lastName = partner.name
+
+        # Cas d'un nom composé
+        else:
+            espace = re.search("\s", partner.name)
+            if espace:
+                name = partner.name.split(" ", 1)
+                if name:
+                    if name[0]:
+                        partner.firstName = name[0]
+                        print('name', name, 'first', partner.firstName)
+                    if name[1]:
+                        partner.lastName = name[1]
+                print('first', partner.firstName, 'last', partner.lastName)
+
+            # Cas d'un seul nom
+            else:
                 partner.firstName = partner.name
                 partner.lastName = partner.name
-
-           # Cas d'un nom composé
-            else:
-              espace = re.search("\s", partner.name)
-              if espace:
-
-                  name = re.split(r'\s', partner.name, maxsplit=1)
-                  _logger.info('name_devision %s' %name)
-                  if name:
-                      if name[0]:
-                          partner.firstName = name[0]
-                          _logger.info('name %s' % name )
-                          _logger.info('prenom %s' %partner.firstName)
-                      if name[1]:
-                       partner.lastName = name[1]
-                  _logger.info('prenom %s' % partner.lastName)
-                  _logger.info('nom %s' % partner.firstName)
-
-                # Cas d'un seul nom
-              else:
-                    partner.firstName = partner.name
-                    partner.lastName = partner.name
-                    print('first',partner.firstName)
+                print('first', partner.firstName)
 
