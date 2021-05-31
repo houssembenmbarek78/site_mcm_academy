@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<odoo>
+        <menuitem id="menu_url_rewrite_blog_settings" parent="seo_url_redirect.menu_url_rewrite_settings" name="Blog" action="action_rewrite_blog"/>
+        <menuitem id="menu_url_rewrite_post_settings" parent="seo_url_redirect.menu_url_rewrite_settings" name="Blog Post" action="action_rewrite_post"/>
+</odoo>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2015-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- "License URL : <https://store.webkul.com/license.html/>" -->
+
+<odoo>
+    <data>
+      	<record id="view_blog_post_form_seo_view" model="ir.ui.view">
+            <field name="name">blog.post.form.inherit</field>
+            <field name="model">blog.post</field>
+      			<field name="inherit_id" ref="website_blog.view_blog_post_form"/>
+      			<field name="arch" type="xml">
+      				<field name="tag_ids" position="after">
+                        <field name="url_key"/>
+      				</field>
+      			</field>
+  		</record>
+
+      <record id="view_blog_blog_form_seo_view" model="ir.ui.view">
+            <field name="name">blog.blog.form.inherit</field>
+            <field name="model">blog.blog</field>
+      			<field name="inherit_id" ref="website_blog.view_blog_blog_form"/>
+      			<field name="arch" type="xml">
+      				<field name="subtitle" position="after">
+                        <field name="url_key"/>
+      				</field>
+  			    </field>
+  		</record>
+    </data>
+</odoo>
