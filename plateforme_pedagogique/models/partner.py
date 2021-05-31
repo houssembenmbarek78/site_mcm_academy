@@ -114,8 +114,8 @@ class partner(models.Model):
                             'publications':publication,
                             'messages':message,
                             'totalTimeSpentInMinutes': times,
-                            'assignedPrograms': table_user['assignedPrograms'],
-                            'toDeactivateAt': table_user['toDeactivateAt']
+                            'assignedPrograms': table_user['assignedPrograms']
+                            # 'toDeactivateAt': table_user['toDeactivateAt']
                             # 'apprenant': True
 
                         })
