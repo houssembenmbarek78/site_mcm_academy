@@ -115,8 +115,8 @@ class partner(models.Model):
                             'messages':message,
                             'totalTimeSpentInMinutes': times,
                             'assignedPrograms': table_user['assignedPrograms'],
-                            'toDeactivateAt': table_user['toDeactivateAt'],
-                            'apprenant': True
+                            'toDeactivateAt': table_user['toDeactivateAt']
+                            # 'apprenant': True
 
                         })
                         print("partner",partner.name, partner.last_login)
@@ -484,7 +484,7 @@ class partner(models.Model):
             else:
               espace = re.search("\s", partner.name)
               if espace:
-                
+
                   name = re.split(r'\s', partner.name, maxsplit=1)
                   _logger.info('name_devision %s' %name)
                   if name:
