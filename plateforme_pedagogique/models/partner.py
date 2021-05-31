@@ -490,7 +490,7 @@ class partner(models.Model):
                         partner.firstName = name[0]
                         print('name', name, 'first', partner.firstName)
 
-                        partner.lastName = name[1]
+                        partner.lastName = name[1:]
                 print('first', partner.firstName, 'last', partner.lastName)
 
             # Cas d'un seul nom
