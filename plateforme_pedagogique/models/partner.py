@@ -482,15 +482,15 @@ class partner(models.Model):
 
         # Cas d'un nom composé
         else:
-            espace = re.search("\s", partner.name)
-            if espace:
+            if " " in partner.name:
+            
                 name = partner.name.split(" ", 1)
                 if name:
 
                         partner.firstName = name[0]
                         print('name', name, 'first', partner.firstName)
 
-                        partner.lastName = name[1:]
+                        partner.lastName = name[1]
                 print('first', partner.firstName, 'last', partner.lastName)
 
             # Cas d'un seul nom
