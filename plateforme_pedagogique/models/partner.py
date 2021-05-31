@@ -43,7 +43,9 @@ class partner(models.Model):
 
     # Recuperer les utilisateurs de 360learning
     def getusers(self):
-            locale.setlocale(locale.LC_TIME, self.env.context['lang'] + '.utf8')
+            lang = str(self.env.context.get('lang'))
+            _logger.info('dateeeeeeee lang %s' % lang)
+            locale.setlocale(locale.LC_TIME, self.env.context.get('lang')+ '.utf8')
             params = (
                 ('company', '56f5520e11d423f46884d593'),
                 ('apiKey', 'cnkcbrhHKyfzKLx4zI7Ub2P5'),
@@ -86,8 +88,7 @@ class partner(models.Model):
                     new_format = '%d %B, %Y'
                     new_format = '%d %B, %Y'
                     last_login = str(date.strftime(new_format))
-                    lang = str(self.env.context['lang'])
-                    _logger.info('dateeeeeeee lang %s' % lang)
+
                     _logger.info('dateeeeeeee  %s' % last_login)
                     print(last_login)
                 message="0"
@@ -262,7 +263,7 @@ class partner(models.Model):
     def ajouter_iOne(self, partner):
         # Remplacez les paramètres régionaux de l'heure par le paramètre de langue actuel 
         # du compte dans odoo
-        locale.setlocale(locale.LC_TIME, self.env.context['lang'] + '.utf8')
+        locale.setlocale(locale.LC_TIME, self.env.context.get('lang') + '.utf8')
         product_name = partner.module_id.product_id.name
         if (not (product_name)):
             product_name = ''
