@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<odoo>
+    <data>
+        <record id="inherit_website_redirect_form_view" model="ir.ui.view">
+            <field name="name">website.rewrite.form</field>
+            <field name="model">website.rewrite</field>
+            <field name="inherit_id" ref="website.view_website_rewrite_form"/>
+            <field name="arch" type="xml">
+                <field name="url_to" position="after">
+                    <field name="rewrite_val"/>
+                    <field name="record_id" attrs="{'invisible': [('rewrite_val','=', 'custom')]}"/>
+                </field>
+                <field name="active" position="after">
+                    <field name="create_type"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="inherit_website_redirect_tree_view" model="ir.ui.view">
+            <field name="name">website.rewrite.tree</field>
+            <field name="model">website.rewrite</field>
+            <field name="inherit_id" ref="website.action_website_rewrite_tree" />
+            <field name="arch" type="xml">
+                <field name="url_to" position="after">
+                    <field name="rewrite_val"/>
+                </field>
+                <field name="active" position="after">
+                    <field name="create_type"/>
+                </field>
+            </field>
+        </record>
+
+        <!-- Search View for Website Redirect -->
+        <record id="website_redirect_search" model="ir.ui.view">
+          <field name="name">website.rewrite.search</field>
+          <field name="model">website.rewrite</field>
+          <field name="arch" type="xml">
+            <search string="SEO">
+              <field name="url_to" filter_domain="['|',('url_to','ilike',self),('url_from','ilike',self)]"/>
+              <field name="rewrite_val"/>
+              <field name="create_type"/>
+              <group expand="0" string="Group By">
+                  <filter string="Create URL Rewrite" name="filter_by_rewrite_val" domain="[]" context="{'group_by':'rewrite_val'}"/>
+              </group>
+            </search>
+          </field>
+        </record>
+
+        <record id="website.action_website_rewrite_list" model="ir.actions.act_window">
+            <field name="name">Website Redirects</field>
+            <field name="res_model">website.rewrite</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="website.action_website_rewrite_tree"/>
+            <field name="target">current</field>
+            <field name="search_view_id" ref = "website_redirect_search"/>
+            <field name="context">{"search_default_filter_by_rewrite_val":1}</field>
+        </record>
+    </data>
+</odoo>
