@@ -27,8 +27,7 @@ class Parcours(models.Model):
 
     #Récupérer la liste des parcours
     def getParcours(self):
-        locale.setlocale(locale.LC_TIME, self.env.context['lang'] + '.utf8')
-
+        locale.setlocale(locale.LC_TIME, str(self.env.user.lang) + '.utf8')
         params = (
             ('company', '56f5520e11d423f46884d593'),
             ('apiKey', 'cnkcbrhHKyfzKLx4zI7Ub2P5'),
@@ -105,7 +104,7 @@ class Parcours(models.Model):
 
     #Récupérer les statistiques des utilisateurs de chaque parcours
     def getUser_Stats(self):
-        locale.setlocale(locale.LC_TIME, self.env.context['lang'] + '.utf8')
+        locale.setlocale(locale.LC_TIME, str(self.env.user.lang) + '.utf8')
 
         params = (
             ('company', '56f5520e11d423f46884d593'),
