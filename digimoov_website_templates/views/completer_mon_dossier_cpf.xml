@@ -59,6 +59,27 @@
                                                                     <option value="toulouse">
                                                                         Toulouse
                                                                     </option>
+                                                                    <option value="nice">
+                                                                        Nice
+                                                                    </option>
+                                                                    <option value="montpellier">
+                                                                        Montpellier
+                                                                    </option>
+                                                                    <option value="rouen">
+                                                                        Rouen
+                                                                    </option>
+                                                                    <option value="grenoble">
+                                                                        Grenoble
+                                                                    </option>
+                                                                    <option value="rennes">
+                                                                        Rennes
+                                                                    </option>
+                                                                    <option value="metz">
+                                                                        Metz
+                                                                    </option>
+                                                                    <option value="bourges">
+                                                                        Bourges
+                                                                    </option>
                                                                 </b>
                                                             </select>
                                                             <p t-if="error_ville"

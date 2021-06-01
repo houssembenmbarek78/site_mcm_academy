@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2015-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- "License URL : <https://store.webkul.com/license.html/>" -->
+
+<odoo>
+    <data noupdate="0">
+        <!-- ####################################  SERVER ACTIONS  ###################################### -->
+
+        <record id="action_update_blog_post_seo_url_redirect" model="ir.actions.server">
+            <field name="name">Update SEO Url</field>
+            <field name="model_id" ref="website_blog.model_blog_post"/>
+            <field name="state">code</field>
+            <field name="code">action = env["blog.post"].update_seo_url()</field>
+            <field name="binding_model_id" ref="website_blog.model_blog_post"/>
+        </record>
+
+        <record id="action_update_blog_seo_url_redirect" model="ir.actions.server">
+            <field name="name">Update SEO Url</field>
+            <field name="model_id" ref="website_blog.model_blog_blog"/>
+            <field name="state">code</field>
+            <field name="code">action = env["blog.blog"].update_seo_url()</field>
+            <field name="binding_model_id" ref="website_blog.model_blog_blog"/>
+        </record>
+
+        <!-- #################################### END OF SERVER ACTION ######################################  -->
+
+    </data>
+</odoo>

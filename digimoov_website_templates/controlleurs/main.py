@@ -67,8 +67,8 @@ class FINANCEMENT(http.Controller):
 
     @http.route('/cpf-complete', type='http', auth='user', website=True)
     def submit_cpf(self, **kw, ):
-        ville = kw.get('centre_examen')
-        date_examen = kw.get('date_examen')
+        ville = kw.get('centre_d_examen')
+        date_examen = kw.get('date_d_examen')
         error_ville = False
         error_exam_date = False
         if ville == 'all' and date_examen != 'all':
