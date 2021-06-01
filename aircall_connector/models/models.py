@@ -651,7 +651,7 @@ class ResPartner(models.Model):
                     #     raise ValidationError(
                     #         json.loads(response.content)['error'] + ',' + json.loads(response.content)['troubleshoot'])
 
-                    response = json.loads(response.content)
+                    # response = json.loads(response.content)
                     # self.air_contact_id = response['contact']['id']
                     return res
 
