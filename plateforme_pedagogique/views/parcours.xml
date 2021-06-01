@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <!-- automatically generated list view for parcours -->
+    <record model="ir.ui.view" id="course_tree_view">
+        <field name="name">parcours.tree</field>
+        <field name="model">plateforme_pedagogique.parcours</field>
+        <field name="arch" type="xml">
+            <tree string="course Tree">
+                <field name="name"/>
+                <field name="completed"/>
+                <field name="registered"/>
+                <field name="attendees"/>
+            </tree>
+        </field>
+    </record>
+    <!-- Parcours sous forme de kanban-->
+    <record model="ir.ui.view" id="parcours_kanban_view">
+        <field name="name">parcours.kanban</field>
+        <field name="model">plateforme_pedagogique.parcours</field>
+        <field name="arch" type="xml">
+            <kanban class="oe_background_grey o_salesteam_kanban" create="false" archivable="false"
+                    on_create="quick_create">
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_content oe_kanban_global_click">
+                            <div class="o_dropdown_kanban dropdown" t-if="!selection_mode" groups="base.group_user">
+                                <a role="button" class="dropdown-toggle o-no-caret btn" data-toggle="dropdown"
+                                   data-display="static" href="#" aria-label="Dropdown menu" title="Dropdown menu">
+                                    <span class="fa fa-ellipsis-v"/>
+                                </a>
+                                <div class="dropdown-menu" role="menu">
+                                    <a t-if="widget.editable" role="menuitem" type="edit" class="dropdown-item">
+                                        Modifier la session
+                                    </a>
+                                    <a t-if="widget.deletable" role="menuitem" type="delete" class="dropdown-item">
+                                        supprimer
+                                    </a>
+                                    <div role="separator" class="dropdown-divider"/>
+                                    <ul class="oe_kanban_colorpicker" data-field="color"/>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="o_kanban_record_headings">
+                                    <strong class="o_kanban_record_title" style="font-weight: bold; color: #3498DB;">
+                                        <field name="name"/>
+                                    </strong>
+                                </div>
+                            </div>
+                            <div class="o_kanban_record_body">
+                                <div>
+                                    <small style="font-weight: bold">
+                                        <field name="completed"/>
+                                        ont terminé la session
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="o_kanban_record_bottom">
+                                <div class="oe_kanban_bottom_left o_kanban_record_subtitle text-muted">
+                                    <field name="registered"/>
+                                    Enregistrés
+                                </div>
+                                <i class="fa fa-fw o_button_icon fa-users"/>
+                                <field name="attendees"/>
+                                Participants
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+    <!-- Parcours sous forme de form view-->
+    <record model="ir.ui.view" id="parcours_form_view">
+        <field name="name">Parcours</field>
+        <field name="model">plateforme_pedagogique.parcours</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group string="General">
+                            <field name="name"></field>
+                            <field name="etat"></field>
+                        </group>
+                    </group>
+                </sheet>
+                <sheet>
+
+                    <field name="User_stats"></field>
+
+                </sheet>
+            </form>
+        </field>
+
+    </record>
+    <record model="ir.actions.act_window" id="parcours_list_action">
+        <field name="name">Parcours</field>
+        <field name="res_model">plateforme_pedagogique.parcours</field>
+        <field name="view_mode">kanban,tree,form</field>
+    </record>
+
+    <menuitem id="parcours_menu" name="Parcours"
+              parent="statistique_menu"
+              action="parcours_list_action"></menuitem>
+
+</odoo>

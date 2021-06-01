@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!--     Géneration des stats users par parcours-->
+        <record id="ir_cron_get_parcours_stats" model="ir.cron">
+            <field name="name">Géneration des  statistiques par parcours</field>
+            <field name="model_id" ref="model_plateforme_pedagogique_parcours"/>
+             <field name="active" eval="True"></field>
+            <field name="state">code</field>
+            <field name="code">model.getUser_Stats()</field>
+            <field name="interval_number">5</field>
+            <field name="interval_type">hours</field>
+            <field name="numbercall">-1</field>
+        </record>
+
+<!--  Géneration des parcours-->
+        <record id="ir_cron_get_parcours" model="ir.cron">
+            <field name="name">Géneration des  parcours</field>
+            <field name="model_id" ref="model_plateforme_pedagogique_parcours"/>
+             <field name="active" eval="True"></field>
+            <field name="state">code</field>
+            <field name="code">model.getParcours()</field>
+            <field name="interval_number">5</field>
+            <field name="interval_type">hours</field>
+            <field name="numbercall">-1</field>
+        </record>
+
+
+</odoo>
