@@ -43,9 +43,7 @@ class partner(models.Model):
 
     # Recuperer les utilisateurs de 360learning
     def getusers(self):
-           
             locale.setlocale(locale.LC_TIME, str(self.env.user.lang) + '.utf8')
-
             params = (
                 ('company', '56f5520e11d423f46884d593'),
                 ('apiKey', 'cnkcbrhHKyfzKLx4zI7Ub2P5'),
@@ -89,8 +87,6 @@ class partner(models.Model):
                     new_format = '%d %B, %Y'
                     last_login = str(date.strftime(new_format))
 
-                    _logger.info('dateeeeeeee  %s' % last_login)
-                    print(last_login)
                 message="0"
                 if ('messages' in table_user):
                     message=table_user['messages']
@@ -151,7 +147,7 @@ class partner(models.Model):
 
     #Ajouter ione manuellement
     def ajouter_iOne_manuelle(self):
-        _logger.info("++++++++++++Cron ajouter_iOne_manuelle++++++++++++++++++++++")
+        # _logger.info("++++++++++++Cron ajouter_iOne_manuelle++++++++++++++++++++++")
         sale_order = self.env['sale.order'].sudo().search([('partner_id', '=', self.id),
                                                            ('session_id', '=', self.mcm_session_id.id),
                                                            ('module_id', '=', self.module_id.id),
@@ -168,7 +164,7 @@ class partner(models.Model):
                 print('valide')
         print('count', count, 'len', len(documents))
         if (count == len(documents) and count != 0):
-            _logger.info("++++++++++++Cron DOC VALIDER++++++++++++++++++++++")
+            # _logger.info("++++++++++++Cron DOC VALIDER++++++++++++++++++++++")
             document_valide = True
         # Vérifier si partner a choisi une formation et si ses documents sont validés
         if ((sale_order) and (document_valide)):
@@ -177,11 +173,11 @@ class partner(models.Model):
             statut = self.statut
             # Vérifier si contrat signé ou non
             if (sale_order.state == 'sale' and self.passage_exam == False):
-                _logger.info("++++++++++++Cron sale contrat signé++++++++++++++++++++++")
+                # _logger.info("++++++++++++Cron sale contrat signé++++++++++++++++++++++")
                 print('contrat signé')
                 date_signature = sale_order.signed_on
                 if ( (failure == True) and (statut == 'won')):
-                    _logger.info("++++++++++++Cron failure++++++++++++++++++++++")
+                    # _logger.info("++++++++++++Cron failure++++++++++++++++++++++")
                     print('it works')
                     self.ajouter_iOne(self)
                 # Vérifier si delai de retractaion et demande de renoncer  ne sont pas coché,
@@ -273,7 +269,6 @@ class partner(models.Model):
         self.diviser_nom(partner)
         ville = str(partner.mcm_session_id.ville).upper()
         new_format = '%d %B %Y'
-        
         if (partner.mcm_session_id.date_exam):
             date_exam = partner.mcm_session_id.date_exam
             # Changer format de date et la mettre en majuscule
@@ -300,7 +295,6 @@ class partner(models.Model):
                 headers["Content-Type"] = "application/json"
                 invit = False
                 create = False
-
                 # Si le mot de passe n'est pas récupérée au moment d'inscrit on invite l'apprennant
                 # if user.password360==False:
                 # data_user ='{"mail":"' + partner.email + '"}'
@@ -316,7 +310,7 @@ class partner(models.Model):
                     data_user = '{"mail":"' + partner.email + '" , "password":"' + user.password360 + '" , "firstName":"' + partner.firstName + '", "lastName":"' + partner.lastName + '", "phone":"' + partner.phone + '", "sendCredentials":"true"}'
                     resp = requests.post(urluser, headers=headers, data=data_user)
                     print(data_user, 'user', resp.status_code)
-                    _logger.info('_______________________Cron password360_________________________ %s' % data_user)
+                    # _logger.info('_______________________Cron password360_________________________ %s' % data_user)
                     if (resp.status_code == 200):
                         create = True
                 data_group = {}
@@ -400,7 +394,7 @@ class partner(models.Model):
                                 respsession = requests.put(urlsession, headers=headers, data=data_group)
                                 print(existe, 'ajouté à son session', respsession.status_code)
 
-                    # Si la session n'est pas trouvée sur 360 on l'ajoute
+                  # Si la session n'est pas trouvée sur 360 on l'ajoute
                     print('exist', existe)
                     if not (existe):
                         nom = ville + ' - ' + date_session
@@ -439,11 +433,9 @@ class partner(models.Model):
      for user in users:
          iduser = user['_id']
          email = user['mail']
-
          #Pour chaque partner verifier si date_suppression est aujourd'hui
          # pour assurer la suppresion automatique
          partner= self.env['res.partner'].sudo().search([('email',"=",email)],limit=1)
-
          if(partner and partner.mcm_session_id.date_exam) :
              #date de suppression est date d'examen + 4jours
              date_suppression = partner.mcm_session_id.date_exam + timedelta(days=4)
@@ -464,42 +456,26 @@ class partner(models.Model):
         api_key = 'cnkcbrhHKyfzKLx4zI7Ub2P5'
         headers = CaseInsensitiveDict()
         headers["Accept"] = "*/*"
-
-
         url = 'https://app.360learning.com/api/v1/users/'+ self.email +'?company=' + company_id + '&apiKey=' + api_key
         resp = requests.delete(url)
-
         if resp.status_code == 204:
-
             self.passage_exam = True
-
             print('supprimé avec succès', resp.status_code,'passage',self.passage_exam)
 
     # Extraire firstName et lastName à partir du champs name
     def diviser_nom(self, partner):
-
-        _logger.info('name au debut  %s' %partner.name)
+        # _logger.info('name au debut  %s' %partner.name)
         if partner.name == '':
             partner.firstName = partner.name
             partner.lastName = partner.name
-
         # Cas d'un nom composé
         else:
             if " " in partner.name:
-
                 name = partner.name.split(" ", 1)
                 if name:
-                    _logger.info('name   if name  %s' % partner.name)
                     partner.firstName = name[0]
-
-                    _logger.info('name  first in  if name  %s'  % partner.firstName)
-
                     partner.lastName = name[1]
-
-                    _logger.info('name  last in  if name  %s'  % partner.lastName)
-
-                print('first', partner.firstName, 'last', partner.lastName)
-
+                    # _logger.info('name  last in  if name  %s'  % partner.lastName)
             # Cas d'un seul nom
             else:
                 partner.firstName = partner.name
