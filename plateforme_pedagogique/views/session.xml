@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!-- Vue Liste des sessions -->
+    <record model="ir.ui.view" id="learning_session_tree_view">
+        <field name="name">Sessions</field>
+        <field name="model">mcmacademy.session</field>
+        <field name="inherit_id" ref="mcm_session.mcmacademy_session_tree_view"></field>
+        <field name="arch" type="xml">
+        <data>
+            </data>
+        </field>
+    </record>
+    <!-- Vue Form session-->
+    <record model="ir.ui.view" id="learning_session_form_view">
+    <field name="name">Session</field>
+    <field name="model">mcmacademy.session</field>
+    <field name="inherit_id" ref="mcm_session.mcmacademy_session_form_view"/>
+    <field name="arch" type="xml">
+            <header>
+                <button name="supprimer_session_manuelle" string="supprimer session de 360"
+                        type="object"  confirm="Êtes-vous sûr de vouloir supprimer cette session?">
+                </button>
+            </header>
+           <data>
+            </data>
+    </field>
+    </record>
+    <record model="ir.actions.act_window" id="session_list_action">
+        <field name="name">Les Session</field>
+        <field name="res_model">mcmacademy.session</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+   <menuitem id="session_menu"  name="Session"
+             parent="learning_plateform_menu"
+             action="session_list_action">
+   </menuitem>
+</odoo>

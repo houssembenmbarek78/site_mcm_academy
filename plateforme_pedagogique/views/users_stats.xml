@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+<record model="ir.ui.view" id="view_tree">
+<field name="name">users_stats.tree</field>
+    <field name="model">plateforme_pedagogique.user_stats</field>
+    <field name="arch" type="xml">
+        <tree>
+            <field name="firstName"></field>
+            <field name="lastName"/>
+            <field name="mail"></field>
+             <field name="score"></field>
+            <field name="progress"></field>
+            <field name="totalTimeSpentInSeconds"></field>
+
+        </tree>
+
+    </field>
+</record>
+    <record model="ir.actions.act_window" id="action_list_stats">
+        <field name="name">Stats</field>
+        <field name="res_model">plateforme_pedagogique.user_stats</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+<!--    <menuitem id="stat" name="Statistique"-->
+<!--      parent="learning_plateform_menu"-->
+<!--       action="action_list_stats">-->
+<!--    </menuitem>-->
+
+
+</odoo>
