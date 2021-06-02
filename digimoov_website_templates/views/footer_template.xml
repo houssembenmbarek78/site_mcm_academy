@@ -3,7 +3,7 @@
     <template id="digimoov_website_templates.digimoov_footer_template" inherit_id="website.footer_custom" active="True">
         <xpath expr="//div[@id='footer']" position="replace">
             <style>
-                @import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+               
                 .social-icons {
                 list-style-type: none;
                 margin: 0 auto 20px;
@@ -26,6 +26,7 @@
                 background: #fff;
                 border-radius: 20px;
                 border: solid 1px;
+
                 }
                 .fa-facebook {
                 color: hsl(221, 44%, 41%);
@@ -169,8 +170,7 @@
 
 
             </style>
-            <section class="footer-page align-items-left text-left d-flex min-vh-40 oe_img_bg oe_custom_bg"
-                     style="background-position: 0.85% 97.33%;" id="footer_page">
+            <section class="footer-page align-items-left text-left d-flex min-vh-40 oe_img_bg oe_custom_bg" style="background-position: 0.85% 97.33%;" id="footer_page">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-md-4">
@@ -181,9 +181,7 @@
                                     </h3>
                                     <h3>
                                         <font style="color: rgb(255, 255, 255); font-size: 14px; font-weight: normal;">
-                                            <a href="/blog/digimoov-3/post/tout-savoir-sur-la-capacite-de-transport-leger-de-marchandises-5?anim"
-                                               style="color:white;" data-original-title="" title=""
-                                               aria-describedby="tooltip225935">Tout savoir sur la Capacité de
+                                            <a href="/blog/digimoov-3/post/tout-savoir-sur-la-capacite-de-transport-leger-de-marchandises-5?anim" style="color:white;" data-original-title="" title="" aria-describedby="tooltip225935">Tout savoir sur la Capacité de
                                                 Marchandises
                                             </a>
                                         </font>
@@ -191,18 +189,14 @@
                                     </h3>
                                     <h3>
                                         <font style="font-size: 14px; font-weight: normal;">
-                                            <a href="/blog/digimoov-3/post/bon-a-savoir-sur-la-formation-capacite-de-transport-leger-6"
-                                               data-original-title="" title="" aria-describedby="tooltip65497"
-                                               style="color:#FFF;">Bon à
+                                            <a href="/blog/digimoov-3/post/bon-a-savoir-sur-la-formation-capacite-de-transport-leger-6" data-original-title="" title="" aria-describedby="tooltip65497" style="color:#FFF;">Bon à
                                                 savoir sur la formation capacité de transport léger&amp;nbsp;
                                             </a>
                                         </font>
                                     </h3>
                                     <h3>
                                         <font style="font-size: 14px; font-weight: normal;">
-                                            <a href="/blog/digimoov-3/post/a-quoi-sert-l-attestation-de-capacite-en-transport-leger-3"
-                                               data-original-title="" title="" aria-describedby="tooltip65497"
-                                               style="color:#FFF;">À quoi sert l'attestation de capacité en transport
+                                            <a href="/blog/digimoov-3/post/a-quoi-sert-l-attestation-de-capacite-en-transport-leger-3" data-original-title="" title="" aria-describedby="tooltip65497" style="color:#FFF;">À quoi sert l'attestation de capacité en transport
                                                 léger ?
                                                 <br/>
                                             </a>
@@ -210,9 +204,7 @@
                                     </h3>
                                     <h3>
                                         <font style="font-size: 14px; font-weight: normal;">
-                                            <a href="/blog/digimoov-3/post/preparer-lexamen-de-capacite-en-transport-de-marchandises-et-la-creation-d-une-entreprise-de-transport-4"
-                                               data-original-title="" title="" aria-describedby="tooltip65497"
-                                               style="color:#FFF;">Les démarches administratives pour créer son
+                                            <a href="/blog/digimoov-3/post/preparer-lexamen-de-capacite-en-transport-de-marchandises-et-la-creation-d-une-entreprise-de-transport-4" data-original-title="" title="" aria-describedby="tooltip65497" style="color:#FFF;">Les démarches administratives pour créer son
                                                 entreprise de transport de marchandises
                                             </a>
                                         </font>
@@ -224,10 +216,8 @@
                             <div class="footer-area2">
                                 <div class="footer-head">
                                     <h3 style="text-align: left;">
-                                        <a style="color:white;" href="/contact" data-original-title="" title=""
-                                           aria-describedby="tooltip408616">
-                                            <font style="font-size: 18px;" data-original-title="" title=""
-                                                  aria-describedby="tooltip948479">&amp;nbsp;Contacter Digimoov
+                                        <a style="color:white;" href="/contact" data-original-title="" title="" aria-describedby="tooltip408616">
+                                            <font style="font-size: 18px;" data-original-title="" title="" aria-describedby="tooltip948479">&amp;nbsp;Contacter Digimoov
                                             </font>
                                         </a>
                                         <font style="font-size: 18px;">&amp;nbsp;</font>
@@ -236,14 +226,12 @@
                                 <ul class="footer-links" style="text-align: center;">
                                     <li>
                                         <a href="tel:+33 9 86 87 88 66">
-                                            <span class="fa fa-phone float-left" data-original-title="" title=""
-                                                  aria-describedby="tooltip853200" style="color: rgb(255, 255, 255);"/>
+                                            <span class="fa fa-phone float-left" data-original-title="" title="" aria-describedby="tooltip853200" style="color: rgb(255, 255, 255);"/>
                                         </a>
                                         <div style="text-align: left;">
                                             <span style="font-size: 0.875rem;">&amp;nbsp;</span>
-                                            <font style="color: rgb(255, 255, 255); text-align: left;"><a
-                                                    href="tel:+33 9 86 87 88 66" data-original-title="" title=""
-                                                    aria-describedby="tooltip757473">+33 9 86 87 88 66</a>&amp;nbsp;(Disponible
+                                            <font style="color: rgb(255, 255, 255); text-align: left;">
+                                                <a href="tel:+33 9 86 87 88 66" data-original-title="" title="" aria-describedby="tooltip757473">+33 9 86 87 88 66</a>&amp;nbsp;(Disponible
                                                 de 9h à 12h)
 
                                             </font>
@@ -251,21 +239,17 @@
                                     </li>
                                     <li style="text-align: left">
                                         <a href="/contact">
-                                            <span class="fa fa-envelope float-left" data-original-title="" title=""
-                                                  aria-describedby="tooltip920610" style="color: white;"/>
+                                            <span class="fa fa-envelope float-left" data-original-title="" title="" aria-describedby="tooltip920610" style="color: white;"/>
                                         </a>
                                         <font style="color: white;text-align: left">
-                                            <a href="/contact" data-original-title="" title=""
-                                               aria-describedby="tooltip754257">&amp;nbsp; Envoyez nous un message
+                                            <a href="/contact" data-original-title="" title="" aria-describedby="tooltip754257">&amp;nbsp; Envoyez nous un message
                                             </a>
                                         </font>
                                     </li>
                                     <li style="text-align: left">
-                                        <span class="fa fa-info-circle" data-original-title="" title=""
-                                              aria-describedby="tooltip590995" style="color: rgb(255, 255, 255);"/>
-                                        <font style="color: white; text-align: left;"><a href="/contact"
-                                                                                         data-original-title="" title=""
-                                                                                         aria-describedby="tooltip754257">
+                                        <span class="fa fa-info-circle" data-original-title="" title="" aria-describedby="tooltip590995" style="color: rgb(255, 255, 255);"/>
+                                        <font style="color: white; text-align: left;">
+                                            <a href="/contact" data-original-title="" title="" aria-describedby="tooltip754257">
                                             &amp;nbsp;</a>Digimoov est une filiale du groupe MCM Academy. Numéro
                                             d'agrément : DRIEA IDF N° 2019-0110
                                         </font>
@@ -277,59 +261,80 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4">
-                            <div class="contactus">
-                                <div class="footer-contact">
-                                    <ul class="footer-links">
+                            <div class="footer-area2">
+                                <div class="footer-head">
+                                    <!-- <h3 style="text-align: left;">
+                                        <a href="/politique-de-confidentialite">Politique de Confidentialité</a>
+                                    </h3>
+                                    <h3 style="text-align: left;">
+                                        <a href="/conditions" data-original-title="" title="" aria-describedby="tooltip767819">Conditions Générales de Vente
+                                        </a>
+                                    </h3>
+
+                                    <h3 style="text-align: left;">
+                                        <a href="/faq" data-original-title="" title="" aria-describedby="tooltip324872">Foire Aux Questions
+                                        </a>
+                                    </h3> -->
+                                    <ul class="footer-links" style="text-align: center;">
                                         <li>
-                                            <h3>
-                                                <a href="/politique-de-confidentialite">Politique de Confidentialité</a>
-                                            </h3>
-                                            <h3>
-                                                <br/>
-                                                <a href="/conditions" data-original-title="" title=""
-                                                   aria-describedby="tooltip767819">Conditions Générales de Vente
-                                                </a>
-                                            </h3>
+
+                                            <div style="text-align: left;">
+                                                <span style="font-size: 0.875rem;">&amp;nbsp;</span>
+                                                <font style="color: rgb(255, 255, 255); text-align: left;">
+                                                    <a href="/politique-de-confidentialite">Politique de Confidentialité</a>
+                                                </font>
+                                            </div>
                                         </li>
-                                        <li>
-                                            <h3>
-                                                <a href="/faq" data-original-title="" title=""
-                                                   aria-describedby="tooltip324872">Foire Aux Questions
-                                                </a>
-                                            </h3>
+                                        <li style="text-align: left">
+                                            <div style="text-align: left;">
+                                                <span style="font-size: 0.875rem;">&amp;nbsp;</span>
+                                                <font style="color: rgb(255, 255, 255); text-align: left;">
+                                                    <a href="/conditions" data-original-title="" title="" aria-describedby="tooltip767819">Conditions Générales de Vente
+                                                    </a>
+                                                </font>
+                                            </div>
                                         </li>
+                                        <li style="text-align: left">
+                                            <div style="text-align: left;">
+                                                <span style="font-size: 0.875rem;">&amp;nbsp;</span>
+                                                <font style="color: rgb(255, 255, 255); text-align: left;">
+                                                    <a href="/faq" data-original-title="" title="" aria-describedby="tooltip324872">Foire Aux Questions
+                                                    </a>
+                                                </font>
+                                            </div>
+                                        </li>
+
                                     </ul>
+
                                 </div>
                             </div>
-                            <footer>
-                                <ul class="social-icons shadow">
-                                    <li class="tab">
-                                        <a href="https://www.facebook.com/Digimoov" data-original-title="" title=""
-                                           aria-describedby="tooltip67821" target="_blank"><i
-                                                class="fa fa-facebook circle" data-original-title="" title=""
-                                                aria-describedby="tooltip741703"/>&amp;nbsp;
-                                        </a>
-                                    </li>
-                                    <li class="tab">
-                                        <a href="https://www.instagram.com/digimoov.formation/" data-original-title=""
-                                           title="" aria-describedby="tooltip9968"><i class="circle fa fa-instagram"
-                                                                                      data-original-title="" title=""
-                                                                                      aria-describedby="tooltip864579"/>&amp;nbsp;&amp;nbsp;
-                                        </a>
-                                    </li>
-                                </ul>
-                            </footer>
-                            <a href="javascript:showAxeptioButton()" data-original-title="" title=""
-                               aria-describedby="tooltip366530">&amp;nbsp;
-                            </a>
+                            <div class="d-flex d-flex justify-content-center">
+
+                                <a href="https://www.facebook.com/Digimoov" data-original-title="" title="" aria-describedby="tooltip67821" target="_blank">
+                                    <i class="fa fa-facebook circle" data-original-title="" title="" aria-describedby="tooltip741703" style="margin: 1rem"/>
+
+                                </a>
+
+
+                                <a href="https://www.instagram.com/digimoov.formation/" data-original-title="" title="" aria-describedby="tooltip9968">
+                                    <i class="circle fa fa-instagram" data-original-title="" title="" aria-describedby="tooltip864579" style="margin: 1rem"/>
+
+                                </a>
+
+
+                            </div>
+
                         </div>
                     </div>
                 </div>
-                <div id="to-top" style="">
+                <div id="to-top">
                     <a id="to-top bg-alpha">
-                        <span class="fa fa-arrow-up"/>
+                        <span class="fa fa-arrow-up pointer"/>
                     </a>
+
                 </div>
+                <a href="javascript:showAxeptioButton()" data-original-title="" title="" aria-describedby="tooltip366530">&amp;nbsp;
+                </a>
                 <script>
                     window.axeptioSettings = {
                     clientId: "60005024632ebb7d2482c2d6",

@@ -1,37 +1,31 @@
 <odoo>
     <template id="digimoov_website_templates.completer_mon_dossier_cpf" name="Dossier CPF| Digimoov">
         <t t-call="website.layout">
+            <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
+
             <div id="wrap" class="oe_structure oe_empty">
                 <section class="s_contact_with_img" data-name="Contact Us Two" style="">
+
                     <div class="contact3 mini-spacer">
                         <div class="container">
                             <div class="row">
                                 <div class="row m-0">
                                     <div class="col-lg-6">
                                         <div class="card-shadow ">
-                                            <img src="/digimoov_website_templates/static/img/Financer la formtaion digimoov avec cpf mon compte formation.webp"
-                                                 class="img-responsive img img-fluid"
-                                                 data-original-title="" title="" aria-describedby="tooltip508208"/>
+                                            <img data-src="/digimoov_website_templates/static/img/Financer la formtaion digimoov avec cpf mon compte formation.webp" data-srcSafari="/digimoov_website_templates/static/img/Financer-formtaion-digimoov-avec-cpf-mon-compte-formation (3).jpg" class="img-responsive img img-fluid lazy" data-original-title="" title="" aria-describedby="tooltip508208"/>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="contact-box " id="cpf_centre_date_examen">
                                             <span style="font-size: 28px;">Completer mon dossier cpf</span>
                                             <br/>
-                                            <form action="/cpf-complete" method="post" data-model_name="crm.lead"
-                                                  data-success_page="/cpf-thank-you"
-                                                  class="s_website_form container-fluid mt32 o_fake_not_editable"
-                                                  enctype="multipart/form-data" data-editable-form="false"
-                                                  data-name="Form Builder">
-                                                <input type="hidden" name="csrf_token"
-                                                       t-att-value="request.csrf_token()"/>
+                                            <form action="/cpf-complete" method="post" data-model_name="crm.lead" data-success_page="/cpf-thank-you" class="s_website_form container-fluid mt32 o_fake_not_editable" enctype="multipart/form-data" data-editable-form="false" data-name="Form Builder">
+                                                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
                                                 <h3 t-if="modules_digimoov" class="mb24">Centre d'examen &amp; Date</h3>
                                                 <p t-if="modules_digimoov">
                                                     <b>
                                                         <div style="margin-left:0%;" id="exam_center">
-                                                            <select name="centre_d_examen" id="centre_examen"
-                                                                    class="form-control search-slt "
-                                                                    t-if="modules_digimoov">
+                                                            <select name="centre_d_examen" id="centre_examen" class="form-control search-slt " t-if="modules_digimoov">
                                                                 <option value="all">Sélectionnez votre centre d'examen
                                                                 </option>
                                                                 <b>
@@ -59,32 +53,9 @@
                                                                     <option value="toulouse">
                                                                         Toulouse
                                                                     </option>
-                                                                    <option value="nice">
-                                                                        Nice
-                                                                    </option>
-                                                                    <option value="montpellier">
-                                                                        Montpellier
-                                                                    </option>
-                                                                    <option value="rouen">
-                                                                        Rouen
-                                                                    </option>
-                                                                    <option value="grenoble">
-                                                                        Grenoble
-                                                                    </option>
-                                                                    <option value="rennes">
-                                                                        Rennes
-                                                                    </option>
-                                                                    <option value="metz">
-                                                                        Metz
-                                                                    </option>
-                                                                    <option value="bourges">
-                                                                        Bourges
-                                                                    </option>
                                                                 </b>
                                                             </select>
-                                                            <p t-if="error_ville"
-                                                               id="error_exam_center" class="alert alert-warning"
-                                                               style="margin-left:0%;display:inline-block;">
+                                                            <p t-if="error_ville" id="error_exam_center" class="alert alert-warning" style="margin-left:0%;display:inline-block;">
                                                                 Vous devez Sélectionnez une ville
                                                             </p>
                                                         </div>
@@ -94,9 +65,7 @@
                                                 <p t-if="modules_digimoov">
                                                     <b>
                                                         <div style="margin-left:0%;">
-                                                            <select name="date_d_examen" id="exam_date"
-                                                                    class="form-control search-slt "
-                                                                    t-if="modules_digimoov" style="display:none">
+                                                            <select name="date_d_examen" id="exam_date" class="form-control search-slt " t-if="modules_digimoov" style="display:none">
                                                                 <option value="all" id="all">Sélectionnez votre date
                                                                     d'examen
                                                                 </option>
@@ -104,8 +73,7 @@
                                                                     <t t-if="module">
                                                                         <t t-if="module.website_published==True">
                                                                             <b>
-                                                                                <option t-att-value="module.ville"
-                                                                                        t-att-id="module.id">
+                                                                                <option t-att-value="module.ville" t-att-id="module.id">
                                                                                     <t t-esc="module.date_exam.strftime('%d/%m/%Y')"/>
                                                                                 </option>
                                                                             </b>
@@ -113,9 +81,7 @@
                                                                     </t>
                                                                 </t>
                                                             </select>
-                                                            <p t-if="error_exam_date"
-                                                               id="error_exam_center" class="alert alert-warning"
-                                                               style="margin-left:0%;display:inline-block;">
+                                                            <p t-if="error_exam_date" id="error_exam_center" class="alert alert-warning" style="margin-left:0%;display:inline-block;">
                                                                 Vous devez sélectionnez une date d'examen
                                                             </p>
                                                         </div>
