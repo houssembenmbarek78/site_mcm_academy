@@ -1,7 +1,8 @@
 <odoo>
-    <template id="digimoov_website_templates.digimoov_template_noscentre"
-              name="Choisissez le centre d'examen qui vous convient | Digimoov">
+    <template id="digimoov_website_templates.digimoov_template_noscentre" name="Choisissez le centre d'examen qui vous convient | Digimoov">
         <t t-call="website.layout">
+            <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
+
             <style>
                 @media (min-width: 720px){
                 .s_title_default{
@@ -35,23 +36,20 @@
                 }
                 }
             </style>
-            <section class="banner oe_img_bg oe_custom_bg"
-                     style="background: linear-gradient(90deg, rgba(249,250,252,1) 0%, rgba(242,241,241,0.7203256302521008) 100%);">
+            <section class="banner oe_img_bg oe_custom_bg" style="background: linear-gradient(93deg, rgb(255 255 255) 0%, rgb(206 189 229) 62%);">
                 <p>
                     <br/>
                 </p>
                 <div class="row" style="width:100% !important;">
                     <div class="pt0 col-lg-6">
-                        <img src="/digimoov_website_templates/static/img/Les centres d'examen de digimoov.webp"
-                             width="50%" height="auto" style="margin-left:10%" data-original-title="" title=""
-                             aria-describedby="tooltip294189"/>
+                        <img class="lazy" data-src="/digimoov_website_templates/static/img/Les centres d'examen de digimoov.webp" data-srcSafari="/digimoov_website_templates/static/img/Les centres d'examen de digimoov.png" width="50%" height="auto" style="margin-left:10%" data-original-title="" title="" aria-describedby="tooltip294189"/>
                     </div>
                     <div class="col-lg-6 pt160">
                         <h2 style="text-align: left; margin-bottom: 10px; font-weight: 600; line-height: 1.3; color: rgb(58, 58, 71); font-size: 28px;">
                         </h2>
                         <h2 style="margin-bottom: 10px; font-weight: 600; line-height: 1.3; color: rgb(58, 58, 71); font-size: 28px;">
                             <font style="color: rgb(0, 0, 0); font-size: 48px;">
-                                <h3 class="text-alpha" style="padding-left:10px">Nos centres d'examen
+                                <h3 class="text-alpha" style="padding-left:10px; color:black !important">Nos centres d'examen
                                     <br/>
                                     <span class="font-weight-lighter">Digimoov met à votre disposition des centres
                                         d’examen partout en France.&amp;nbsp;
@@ -70,8 +68,9 @@
                             <br/>
                             <span class="font-weight-lighter">
                                 <h3>
-                                    <center>Choisissez le centre le plus proche de chez vous:<br/>&amp;nbsp;Bordeaux |
-                                        Lille | Lyon | Marseille | Nantes | Paris | Strasbourg | Toulouse | Nice | Montpellier | Rouen | Grenoble | Rennes | Metz | Bourges
+                                    <center>Choisissez le centre le plus proche de chez vous:<br/>
+&amp;nbsp;Bordeaux |
+                                        Lille | Lyon | Marseille | Nantes | Paris | Strasbourg | Toulouse
                                     </center>
                                 </h3>
                             </span>
@@ -79,15 +78,13 @@
                     </div>
                 </div>
             </section>
-            <section class="pb0 pt0 oe_img_bg oe_custom_bg" data-name="Title"
-                     style="background-repeat: no-repeat; background-image: url(&quot;/web/image/2500/backgroundimage-01.png&quot;)">
+            <section class="pb0 pt0 oe_img_bg oe_custom_bg" data-name="Title" style="background-repeat: no-repeat; background-image: url(&quot;/web/image/2500/backgroundimage-01.png&quot;)">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 col-sm-12">
                             <h1 class="s_title_default">
                                 <center class="font-weight-lighter">
-                                    <img src="/digimoov_website_templates/static/img/Centres d'examen digimoov france.webp"
-                                         class="mb-2" data-original-title="" title="" aria-describedby="tooltip294189"/>
+                                    <img data-src="/digimoov_website_templates/static/img/Centres d'examen digimoov france.webp" data-srcSafari="digimoov_website_templates/static/img/Centres d'examen digimoov france.png" class="mb-2 lazy" data-original-title="" title="" aria-describedby="tooltip294189"/>
                                 </center>
                                 <br/>
                             </h1>
@@ -109,8 +106,7 @@
                                 <font style="color: rgb(0, 0, 0); font-size: 18px;">&amp;nbsp;Formation 100% en ligne&amp;nbsp;
                                     &amp;nbsp;
                                 </font>
-                                <span class="fa fa-check" style="font-size: 18px;" data-original-title="" title=""
-                                      aria-describedby="tooltip534778">
+                                <span class="fa fa-check" style="font-size: 18px;" data-original-title="" title="" aria-describedby="tooltip534778">
                                     <font color="#000000" face="Roboto, Odoo Unicode Support Noto, sans-serif">&amp;nbsp;</font>
                                 </span>
                                 <span style="font-size: 1rem;">
@@ -118,20 +114,15 @@
                                 <font style="color: rgb(0, 0, 0); font-size: 18px;">Examen en présentiel&amp;nbsp; &amp;nbsp;</font>
                                 <span style="font-size: 1rem;">
                                 </span>
-                                <span class="fa fa-check" style="font-size: 1rem;" data-original-title="" title=""
-                                      aria-describedby="tooltip414728"/>
+                                <span class="fa fa-check" style="font-size: 1rem;" data-original-title="" title="" aria-describedby="tooltip414728"/>
                                 <span style="font-size: 1rem;">
                                 </span>
                                 <font style="color: rgb(0, 0, 0); font-size: 18px;">&amp;nbsp;Éligible au CPF</font>
                                 <br/>
                             </p>
                             <div class="pb16 pt16 s_btn text-center" data-name="Button">
-                                <button type="submit"
-                                        class="btn btn-alpha o_anim_fade_in_up o_animate" data-original-title=""
-                                        title="" aria-describedby="tooltip906293"
-                                        style="animation-name: o_anim_fade_in_up; visibility: visible; animation-play-state: paused;">
-                                    <a href="/pricing" data-original-title="" title=""
-                                       aria-describedby="tooltip562802">
+                                <button type="submit" class="btn btn-alpha o_anim_fade_in_up o_animate" data-original-title="" title="" aria-describedby="tooltip906293" style="animation-name: o_anim_fade_in_up; visibility: visible; animation-play-state: paused;">
+                                    <a href="/pricing" data-original-title="" title="" aria-describedby="tooltip562802">
                                         <font style="color: rgb(255, 255, 255);">S'inscrire maintenant</font>
                                     </a>
                                 </button>

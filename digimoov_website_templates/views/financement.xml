@@ -1,27 +1,25 @@
 <odoo>
-    <template id="digimoov_website_templates.digimoov_template_financement"
-              name="Financer votre formation avec le CPF | Digimoov">
+    <template id="digimoov_website_templates.digimoov_template_financement" name="Financer votre formation avec le CPF | Digimoov">
         <t t-call="website.layout">
             <style>
                 @media (min-width: 1024px){
                 .pt160{
-                padding-top: 160px !important;
+                    padding-top: 160px !important;
                 }
                 }
                 @media (max-width: 1024px){
                 .pt160{
-                padding-top: 20px !important;
+                    padding-top: 20px !important;
                 }
                 }
             </style>
+            <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
+
             <section class="banner oe_img_bg oe_custom_bg">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 mb32 col-lg-5">
-                            <img class="img-fluid o_we_custom_image"
-                                 src="/digimoov_website_templates/static/img/Financer-formtaion-digimoov-avec-cpf-mon-compte-formation.webp"
-                                 data-original-title="" alt="formation éligible à mon compte formation CPF"
-                                 title="Formtaion chez digimoov éligible au CPF" aria-describedby="tooltip722494"/>
+                            <img class="img-fluid o_we_custom_image lazy" data-src="/digimoov_website_templates/static/img/Financer-formtaion-digimoov-avec-cpf-mon-compte-formation.webp" data-srcSafari="/digimoov_website_templates/static/img/Financer-formtaion-digimoov-avec-cpf-mon-compte-formation (3).jpg" data-original-title="" alt="formation éligible à mon compte formation CPF" title="Formtaion chez digimoov éligible au CPF" aria-describedby="tooltip722494"/>
                         </div>
                         <div class="col-lg-6 col-xs-12 pt160">
                             <h2 style="margin-bottom: 10px; font-weight: 600; line-height: 1.3; color: rgb(58, 58, 71); font-size: 28px;">
@@ -42,7 +40,7 @@
                                 <br/>
                                 <span class="font-weight-lighter o_default_snippet_text">
                                     <h3>
-                                        <center>À QUI S'ADRESSE LE COMPTE PERSONNEL DE FORMATION&amp;nbsp;?</center>
+                                        <center>À QUI S'ADRESSE LE COMPTE PERSONNEL DE FORMATION ?</center>
                                     </h3>
                                 </span>
                             </div>
@@ -59,7 +57,7 @@
                                                 fonctionne&amp;nbsp;?
                                             </h3>
                                             <p class="o_default_snippet_text">Si vous avez un CPF depuis 2015 et que
-                                                vous ne l'avez jamais utilisé, vous aurez à votre disposition 1 440&amp;nbsp;€.
+                                                vous ne l'avez jamais utilisé, vous aurez à votre disposition 1 440 €.
                                                 Vous pouvez également saisir vos heures de DIF (Droit individuel à la
                                                 formation) s'il vous en reste.
                                             </p>
@@ -70,19 +68,16 @@
                                             <div class="icon">
                                                 <div class="dotted-img">
                                                     <a href="/blog/digimoov-3/post/le-compte-personnel-de-formation-cpf-tout-comprendre-7">
-                                                        <i class="fa fa-laptop" data-original-title="" title=""
-                                                           aria-describedby="tooltip609644"/>
+                                                        <i class="fa fa-laptop" data-original-title="" title="" aria-describedby="tooltip609644"/>
                                                     </a>
                                                 </div>
                                             </div>
                                             <h3 id="feat">
-                                                <a href="/blog/digimoov-3/post/le-compte-personnel-de-formation-cpf-tout-comprendre-7"
-                                                   data-original-title="" title="" aria-describedby="tooltip41144">
+                                                <a href="/blog/digimoov-3/post/le-compte-personnel-de-formation-cpf-tout-comprendre-7" data-original-title="" title="" aria-describedby="tooltip41144">
                                                     <font style="color: rgb(66, 66, 66);">Mon compte de formation&amp;nbsp;</font>
                                                     <br/>
                                                     <br/>
-                                                    <font style="color: rgb(66, 66, 66);" data-original-title=""
-                                                          title="" aria-describedby="tooltip368095">Le Compte Personnel
+                                                    <font style="color: rgb(66, 66, 66);" data-original-title="" title="" aria-describedby="tooltip368095">Le Compte Personnel
                                                         de Formation s'adresse à chaque actif désormais crédité de 500&amp;nbsp;€
                                                         par an (somme versée autour du mois d'avril). Cela peut monter à
                                                         800&amp;nbsp;€ pour les salariés moins qualifiés et les
@@ -93,9 +88,8 @@
                                             </h3>
                                         </section>
                                         <br/>
-                                        <a href="/blog/digimoov-3/post/le-compte-personnel-de-formation-cpf-tout-comprendre-7"
-                                           class="bannerbtn mb32 btn btn-alpha rounded-circle" data-original-title=""
-                                           title="" aria-describedby="tooltip117958">En-savoir plus
+                                        <a href="/#pricing" class="bannerbtn btn btn-alpha rounded-circle o_default_snippet_text mb32">
+                                            JE M'INSCRIS
                                         </a>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4">

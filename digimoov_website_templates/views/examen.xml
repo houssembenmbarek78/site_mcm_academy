@@ -18,17 +18,17 @@
                     }
                     }
                 </style>
-                <section id="slider-sec" class="web_agency_banner slider4 oe_img_bg oe_custom_bg"
-                         data-name="Home Banner Eight"
-                         style="background-image: url(&quot;/web/image/13078/Digimoov%20qui%20somme%20nous.png&quot;); background-position: 37.71% 54.72%;width:100%">
-                    <div id="myCarousel1605624033206" class="s_carousel carousel slide s_carousel_default"
-                         data-ride="carousel" data-pause="hover" data-interval="7000" data-name="Carousel">
+
+                <!-- <script defer='defer' type="text/javascript" src="/digimoov_website_templates/static/src/js/bg-examen.js" /> -->
+                <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
+
+                <section id="slider-sec" class="web_agency_banner slider4 oe_img_bg oe_custom_bg" data-name="Home Banner Eight" style="background-image: url(&quot;/web/image/13078/Digimoov%20qui%20somme%20nous.png&quot;); background-position: 37.71% 54.72%;width:100%">
+                    <div id="myCarousel1605624033206" class="s_carousel carousel slide s_carousel_default" data-ride="carousel" data-pause="hover" data-interval="7000" data-name="Carousel">
                         <ol class="carousel-indicators d-none">
                             <li data-target="#myCarousel1605624033206" data-slide-to="0" class="active"/>
                         </ol>
                         <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item oe_img_bg pt56 pb96 oe_custom_bg active"
-                                 style="background-image: url(&quot;/digimoov_website_templates/static/img/Examen de capacité de transport léger de marchandise.webp&quot;);">
+                            <div id= "examen-background-examen" class="carousel-item oe_img_bg pt56 pb96 oe_custom_bg active" style="background-image: url(&quot;/digimoov_website_templates/static/img/Examen de capacité de transport léger de marchandise.webp&quot;);">
                                 <div class="container">
                                     <div class="row" style="width:100% !important;">
                                         <div class="col-md-9 col-lg-6">
@@ -59,13 +59,11 @@
                                 </div>
                             </div>
                             <div class="slider-control">
-                                <a class="left carousel-control-prev text-white font-14 d-none"
-                                   data-target="#myCarousel1605624033206" role="button" data-slide="prev">
+                                <a class="left carousel-control-prev text-white font-14 d-none" data-target="#myCarousel1605624033206" role="button" data-slide="prev">
                                     <span class="fa fa-arrow-left"/>
                                     <b class="sr-only font-normal o_default_snippet_text">Previous</b>
                                 </a>
-                                <a class="right carousel-control-next text-white font-14 d-none"
-                                   data-target="#myCarousel1605624033206" role="button" data-slide="next">
+                                <a class="right carousel-control-next text-white font-14 d-none" data-target="#myCarousel1605624033206" role="button" data-slide="next">
                                     <span class="fa fa-arrow-right"/>
                                     <b class="sr-only font-normal o_default_snippet_text">Next</b>
                                 </a>
@@ -73,9 +71,7 @@
                         </div>
                     </div>
                 </section>
-                <section
-                        class="service-banner s_cover parallax s_parallax_is_fixed s_parallax_no_overflow_hidden pt32 pb128"
-                        data-scroll-background-ratio="1" data-name="Cover" style="background-image: none;">
+                <section class="service-banner s_cover parallax s_parallax_is_fixed s_parallax_no_overflow_hidden pt32 pb128" data-scroll-background-ratio="1" data-name="Cover" style="background-image: none;">
                     <span class="s_parallax_bg o_bg_img_opt_contain" style=""/>
                     <div class="container">
                         <div class="subs-content text-center">
@@ -88,8 +84,7 @@
                                     qui comporte
                                     <b>
                                         <u>
-                                            <a href="/blog/digimoov-3/post/bon-a-savoir-sur-la-formation-capacite-de-transport-leger-6"
-                                               target="_blank">6 matières
+                                            <a href="/blog/digimoov-3/post/bon-a-savoir-sur-la-formation-capacite-de-transport-leger-6" target="_blank">6 matières
                                             </a>
                                         </u>
                                     </b>
@@ -108,8 +103,7 @@
                 </section>
                 <ul/>
                 <ul/>
-                <section class="s_business_three_blocks_icons bg-light-1 feature11" data-name="Three Blocks Of Icons"
-                         style="">
+                <section class="s_business_three_blocks_icons bg-light-1 feature11" data-name="Three Blocks Of Icons" style="">
                     <div class="container">
                         <div class="row" style="width:100% !important;">
                             <div class="col-md-4 wrap-feature11-box col-lg-6">
@@ -125,10 +119,9 @@
                                                 <br/>
                                             </b>
                                         </h5>
+
                                         <h5 class="font-medium">
-                                            <img class="img-fluid o_we_custom_image d-block mx-auto padding-xl"
-                                                 src="/digimoov_website_templates/static/img/Partie QCM de l'examen.webp"
-                                                 data-original-title="" title="" aria-describedby="tooltip973985"/>
+                                            <img class="img-fluid o_we_custom_image d-block mx-auto padding-xl lazy" data-src="/digimoov_website_templates/static/img/Partie QCM de l'examen.webp" data-srcSafari="/digimoov_website_templates/static/img/examen/Partie QCM de l'examen.png" data-original-title="" title="" aria-describedby="tooltip973985"/>
                                         </h5>
                                         <h5 class="font-medium">
                                             <b style="color: rgb(103, 67, 148); font-size: 24px;">
@@ -205,10 +198,7 @@
                                                     <br/>
                                                 </b>
                                             </span>
-                                            <img class="img-fluid o_we_custom_image d-block mx-auto padding-xl"
-                                                 src="digimoov_website_templates/static/img/Partie questions à réponses courtes de l'examen.webp"
-                                                 data-original-title="" title="" aria-describedby="tooltip240442"
-                                                 style=""/>
+                                            <img class="img-fluid o_we_custom_image d-block mx-auto padding-xl lazy" data-src="/digimoov_website_templates/static/img/compressed/Examen capacité de marchandise.webp" data-srcSafari="/digimoov_website_templates/static/img/Homepage/Examen capacité de marchandise.jpg" data-original-title="" title="" aria-describedby="tooltip240442" style=""/>
                                             <b style="color: rgb(103, 67, 148); font-size: 24px;">L'épreuve Questions
                                                 Rédigées
                                             </b>
@@ -278,11 +268,8 @@
 
                 </section>
                 <section class="centric_template" data-name="Subscriber" style="">
-                    <section
-                            class="service-banner s_cover parallax s_parallax_is_fixed s_parallax_no_overflow_hidden bg-black-75 pt32 pb144"
-                            data-scroll-background-ratio="1" data-name="Cover" style="background-image: none;">
-                        <span class="oe_img_bg s_parallax_bg oe_custom_bg"
-                              style="background-image: url(&quot;/digimoov_website_templates/static/img/fond.webp&quot;); background-position: 77.19% 24.8%;"/>
+                    <section class="service-banner s_cover parallax s_parallax_is_fixed s_parallax_no_overflow_hidden bg-black-75 pt32 pb144" data-scroll-background-ratio="1" data-name="Cover" style="background-image: none;">
+                        <span id="examen-fond" class="oe_img_bg s_parallax_bg oe_custom_bg" style="background-image: url(/digimoov_website_templates/static/img/fond.webp); background-position: 77.19% 24.8%;"/>
                         <div class="container">
                             <div class="subs-content text-center">
                                 <span class="discount">EXAMEN FINAL</span>
@@ -295,8 +282,7 @@
                 </section>
                 <ul/>
                 <ol/>
-                <section class="s_business_three_blocks_icons bg-light-1 feature11" data-name="Three Blocks Of Icons"
-                         style="">
+                <section class="s_business_three_blocks_icons bg-light-1 feature11" data-name="Three Blocks Of Icons" style="">
                     <div class="container">
                         <div class="row" style="width:100% !important;">
                             <div class="col-md-4 wrap-feature11-box" style="">
@@ -304,9 +290,7 @@
                                     <div class="card-body">
                                         <div class="icon-space">
                                             <section class="icon-round bg-alpha "/>
-                                            <img class="img-fluid o_we_custom_image"
-                                                 src="/digimoov_website_templates/static/img/conditions d'obtention de diplôme capacité de marchandise.webp"
-                                                 data-original-title="" title="" aria-describedby="tooltip407474"/>
+                                            <img class="img-fluid o_we_custom_image lazy" data-src="/digimoov_website_templates/static/img/conditions d'obtention de diplôme capacité de marchandise.webp" data-srcSafari="/digimoov_website_templates/static/img/conditions_d'obtention_de_diplôme_capacité_de_marchandise.png" data-original-title="" title="" aria-describedby="tooltip407474"/>
                                             <section class="icon-round bg-alpha "/>
                                         </div>
                                         <h3 class="m-b-30 m-t-20 text-beta" style="text-align: center; ">
@@ -337,10 +321,7 @@
                                     <div class="card-body">
                                         <div class="icon-space">
                                             <section class="icon-round bg-alpha"/>
-                                            <img class="img-fluid o_we_custom_image"
-                                                 src="/digimoov_website_templates/static/img/Les conditions administratives.webp"
-                                                 data-original-title="" title="" aria-describedby="tooltip306191"
-                                                 style=""/>
+                                            <img class="img-fluid o_we_custom_image lazy" data-src="/digimoov_website_templates/static/img/Les conditions administratives.webp" data-srcSafari="/digimoov_website_templates/static/img/examen/Jury pour la délibération.png" data-original-title="" title="" aria-describedby="tooltip306191" style=""/>
                                             <section class="icon-round bg-alpha"/>
                                         </div>
                                         <h3 class="m-b-30 m-t-20 text-beta" style="text-align: center; ">
@@ -374,10 +355,7 @@
                                     <div class="card-body">
                                         <div class="icon-space">
                                             <section class="icon-round bg-alpha"/>
-                                            <img class="img-fluid o_we_custom_image"
-                                                 src="/digimoov_website_templates/static/img/dossier d'inscription pour l'examen final.webp"
-                                                 data-original-title="" title="" aria-describedby="tooltip409501"
-                                                 style=""/>
+                                            <img class="img-fluid o_we_custom_image lazy" data-src="/digimoov_website_templates/static/img/dossier d'inscription pour l'examen final.webp" data-srcSafari="/digimoov_website_templates/static/img/examen/dossier d'inscription pour l'examen final.png" title="" aria-describedby="tooltip409501" style=""/>
                                             <section class="icon-round bg-alpha"/>
                                         </div>
                                         <h3 class="m-b-30 m-t-20 text-beta" style="text-align: center; ">
@@ -422,11 +400,7 @@
                             </div>
                             <div class="pb0 pt0 col-lg-3 offset-lg-3">
                                 <figure class="figure">
-                                    <img src="/digimoov_website_templates/static/img/Jury pour la délibération.webp"
-                                         class="figure-img img-fluid img-thumbnail padding-large rounded float-right"
-                                         alt="Odoo • une photo avec une légende" data-original-title="" title=""
-                                         aria-describedby="tooltip997559"
-                                         style="transform: translateX(54.1%) translateY(6.2%) scaleX(1.35) scaleY(1.35);"/>
+                                    <img data-src="/digimoov_website_templates/static/img/Jury pour la délibération.webp" data-srcSafari="/digimoov_website_templates/static/img/examen/Jury.png" class="lazy figure-img img-fluid img-thumbnail padding-large rounded float-right" alt="Odoo • une photo avec une légende" data-original-title="" title="" aria-describedby="tooltip997559" style="transform: translateX(54.1%) translateY(6.2%) scaleX(1.35) scaleY(1.35);"/>
                                     <figcaption class="figure-caption py-3 text-center">&amp;nbsp;</figcaption>
                                 </figure>
                             </div>
@@ -448,9 +422,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="s_newsletter_block oe_img_bg o_animate pb40 pt40 o_anim_zoom_in oe_custom_bg"
-                         style="background-image: url(&quot;/digimoov_website_templates/static/img/fond.webp&quot;); animation-name: o_anim_zoom_in; visibility: visible; animation-play-state: paused; background-position: 75.48% 30.96%;"
-                         data-name="Newsletter block">
+                <section id="examen-fond-2" class="s_newsletter_block oe_img_bg o_animate pb40 pt40 o_anim_zoom_in oe_custom_bg" style="background-image: url(&quot;/digimoov_website_templates/static/img/fond.webp&quot;); animation-name: o_anim_zoom_in; visibility: visible; animation-play-state: paused; background-position: 75.48% 30.96%;" data-name="Newsletter block">
                     <div class="container" id="nouvelle-tentative">
                         <div class="row">
                             <div class="bg-white-75 col-lg-12 pt16 pb16">
@@ -476,14 +448,9 @@
                                     <div class="pb16 pt16 s_btn text-center" data-name="Button">
                                         <t t-if="echec_examen">
                                             <form action="/shop/cart/update" method="post">
-                                                <input type="hidden" class="product_id" name="product_id"
-                                                       t-att-value="echec_examen.id"/>
+                                                <input type="hidden" class="product_id" name="product_id" t-att-value="echec_examen.id"/>
                                                 <td>
-                                                    <button type="submit"
-                                                            class="btn btn-alpha o_anim_fade_in_up o_animate"
-                                                            data-original-title="" title=""
-                                                            aria-describedby="tooltip906293"
-                                                            style="animation-name: o_anim_fade_in_up; visibility: visible; animation-play-state: paused;">
+                                                    <button type="submit" class="btn btn-alpha o_anim_fade_in_up o_animate" data-original-title="" title="" aria-describedby="tooltip906293" style="animation-name: o_anim_fade_in_up; visibility: visible; animation-play-state: paused;">
                                                         Réservez votre tentative
                                                     </button>
                                                 </td>
