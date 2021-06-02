@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+    <template id="assets_frontend" inherit_id="website.assets_frontend" name="assets_digimoov_cpf">
+        <xpath expr="script[last()]" position="after">
+            <script type="text/javascript" src="/digimoov_website_templates/static/src/js/portal.js"></script>
+        </xpath>
+    </template>
     <template id="assets_frontend" inherit_id="website.assets_frontend" name="assets_digimoov_home">
         <xpath expr="script[last()]" position="after">
-            <script type="text/javascript" src="/digimoov_website_templates/static/src/js/portal.js"/>
+            <!-- <script type="text/javascript" src="/digimoov_website_templates/static/src/js/portal.js"/> -->
             <!-- <script defer="defer" type="text/javascript" src="digimoov_website_templates/static/src/js/crisp-bot.js" /> -->
             <!-- <script type="text/javascript" src="/digimoov_website_templates/static/src/js/browser.js" /> -->
         </xpath>
