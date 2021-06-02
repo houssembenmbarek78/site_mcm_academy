@@ -8,6 +8,9 @@
             <!-- <script defer="defer" type="text/javascript" src="digimoov_website_templates/static/src/js/crisp-bot.js" /> -->
 
 
+
+
+
             <!-- <script type="text/javascript" src="/digimoov_website_templates/static/src/js/browser.js" /> -->
 
 
@@ -19,13 +22,21 @@
 
 
 
+
+
+
         </xpath>
         <xpath expr="//link[last()]" position="after">
             <!-- <link rel="stylesheet" type="text/scss" href="/digimoov_website_templates/static/src/css/dist/home.min.css"/> -->
             <link href="/digimoov_website_templates/static/src/img/LOGO_DIGIMOOV.png" rel="apple-touch-icon" />
 
         </xpath>
+        <xpath expr="." position="inside">
+
+
+        </xpath>
     </template>
+
     <!-- <template id="my_menus_template_id" xml:space="preserve">
         <t t-name="UserMenu.Actions">
             <li class="logout">
