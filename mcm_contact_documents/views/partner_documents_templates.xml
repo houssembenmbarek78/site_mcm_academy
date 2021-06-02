@@ -22,6 +22,37 @@
                 <t t-set="count" t-value="document_count"/>
             </t>
         </xpath>
+        <xpath expr="//div[@class='o_portal_docs list-group']" position="after">
+            <style>
+                @media (max-width: 767px) {
+                .renonce{
+                padding-bottom: 14px;
+                }
+                }
+
+            </style>
+            <div class="input checkbox renonce" id="request_renonce">
+                <h5 class="list-group-item" t-if="user_id.partner_id.renounce_request==True">
+                    <span class="d-flex align-items-center justify-content-between">
+                        Renonciation au droit de rétractation conformément aux dispositions de l'article L.221-28 1°
+                        <i class="fa fa-check-circle text-success" role="img" aria-label="Success" title="Success"/>
+                    </span>
+                </h5>
+                <div class="renonce" style="padding-top:24px;" t-if="user_id.partner_id.renounce_request==False">
+                    <input type="checkbox" id="renonce_request_box" name="renonce"
+                           t-att-checked="user_id.partner_id.renounce_request"
+                           style="white-space: nowrap;width:20px;height:14px;"
+                           class="text-xl-left border-0">
+                        <label for="renonce" style="display:inline;color:#202647;font-weight:bold;">
+                            Je souhaite accéder à la formation dès maintenant sans attendre 14 jours. Je reconnais que
+                            DIGIMOOV procédera à l'exécution immédiate de ma formation en ligne et à ce titre, je
+                            renonce expressément à exercer mon droit de rétractation conformément aux dispositions de
+                            l'article L.221-28 1° du code de la consommation.
+                        </label>
+                    </input>
+                </div>
+            </div>
+        </xpath>
     </template>
     <template id="portal_my_documents" name="Mes Documents">
         <t t-call="portal.portal_layout">
