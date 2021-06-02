@@ -45,10 +45,10 @@ console.log(nav); // log browser
 
 if (nav.toUpperCase() == "SAFARI") {
   //replace webp image if Safari browser
-  console.log("SAFARI browser --- ");
+  // console.log("SAFARI browser --- ");
   let allImgs = [].slice.call(document.getElementsByTagName("IMG"));
   allImgs.forEach((element) => {
-    console.log(element.getAttribute("data-srcsafari"));
+    // console.log(element.getAttribute("data-srcsafari"));
     if (element.getAttribute("data-srcsafari")) {
       element.dataset.src = element.getAttribute("data-srcsafari");
     }
