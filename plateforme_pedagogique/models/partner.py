@@ -204,16 +204,16 @@ class partner(models.Model):
     # Ajouter i-One sur 360learning après 14jours
     # si Délai de rétractation n'est pas coché
     def Ajouter_iOne_auto(self):
-      for partner in self.env['res.partner'].sudo().search([('statut',"=","won")]):
+      for partner in self.env['res.partner'].sudo().search([('statut', "=", "won")]):
         #Pour chaque apprenant extraire le delai de retractation
         sale_order = self.env['sale.order'].sudo().search([('partner_id', '=', partner.id),
                                                            ('session_id', '=', partner.mcm_session_id.id),
                                                            ('module_id', '=', partner.module_id.id),
                                                            ('state', '=', 'sale'),
-                                                           ('session_id.date_exam','>',date.today())
+                                                           ('session_id.date_exam', '>', date.today())
                                                            ], limit=1,order="id desc")
 
-        _logger.info('sale order %s' % sale_order.name)
+        print('sale order',sale_order.name)
         #Récupérer les documents et vérifier si ils sont validés ou non
         documents = self.env['documents.document'].sudo().search([('partner_id','=',partner.id)])
         document_valide=False
@@ -234,7 +234,7 @@ class partner(models.Model):
             if (sale_order.state == 'sale' and partner.passage_exam == False):
               print('contrat signé')
               date_signature = sale_order.signed_on
-              if (failure == True) :
+              if (failure == True):
                     print('it works')
                     self.ajouter_iOne(partner)
               #Vérifier si delai de retractaion et demande de renoncer  ne sont pas coché,
@@ -476,7 +476,7 @@ class partner(models.Model):
                 if name:
                     partner.firstName = name[0]
                     partner.lastName = name[1]
-                    # _logger.info('name  last in  if name  %s'  % partner.lastName)
+                # _logger.info('name  last in  if name  %s'  % partner.name)
             # Cas d'un seul nom
             else:
                 partner.firstName = partner.name
