@@ -32,6 +32,7 @@
         'report/convocation_contact.xml',
         'report/print_releve_note_mass.xml',
         'report/mass_pdf_relevé_de_note_examen.xml',
+        'report/attestation_suivi_formation.xml',
     ],
     'qweb': [],
     'demo': [

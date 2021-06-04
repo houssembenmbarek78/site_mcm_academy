@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="attestation_suivi_formation_id">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.basic_layout">
+                        <style type="text/css">
+                            .page {
+                            line-height: 2 !important;
+                            font-size:20px !important;
+                            }
+                        </style>
+                        <div class="page">
+                            <div class="oe_structure"/>
+                            <div class="row">
+                                <div class="col-12">
+
+                                    <div class="col-12">
+                                        <img src='/partner_exam/static/src/img/suivi_formation_1.png' height="200"
+                                             width="1100" style="padding-top:5px!important;"/>
+                                        <img src='/partner_exam/static/src/img/suivi_formation_2.png' height="300"
+                                             width="1150" style="padding-top:5px!important;"/>
+                                    </div>
+                                    <t t-if="len(o.note_exam_id) &lt; 4">
+                                        <center>
+                                            <b>Déclaration relative au suivi de la formation et aux examens</b>
+                                        </center>
+                                        <br/>
+                                        Civilité : M/Mme nom et prénom :
+                                        <strong>
+                                            <span t-field="o.name"/>
+                                        </strong>
+                                        <br/>
+                                        Adresse complète :
+                                        <strong>
+                                            <span t-field="o.street"/>
+                                            <span t-field="o.zip"/>
+                                            <span t-field="o.city"/>
+                                        </strong>
+                                        <br/>
+                                        Né(e) le :
+                                        <strong>
+                                            <span t-field="o.birthday"/>
+                                            à
+                                            <span t-field="o.birth_city"/>
+                                            <span t-field="o.birth_state"/>
+                                        </strong>
+                                        <br/>
+                                        Intitulé de la formation :
+                                        <t t-if="o.mcm_session_id[0].diplome_vise">
+                                            <strong>
+                                                <span t-raw="'%s' % o.mcm_session_id[0].diplome_vise if o.mcm_session_id[0].diplome_vise else ''"/>
+                                            </strong>
+                                        </t>
+                                        <br/>
+                                        Lieu et dates de la formation :
+                                        <strong>DIGIMOOV 10 rue de PENTHIVRE 75008 PARIS,
+                                            <span t-field="o.sale_order_ids[-1].signed_on"/>
+                                            <span t-field="o.module_id.date_exam"
+                                                  t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                        </strong>
+                                        <hr></hr>
+                                        <b>1° Suivi de la formation et premier examen.</b>
+                                        <br/>
+                                        Lieu et date de l’examen :
+                                        <t t-if="o.historic_sessions_ids[0].session_id[0].ville">
+                                            <strong>
+                                                <span t-raw="'%s' % o.historic_sessions_ids[0].session_id[0].ville if o.historic_sessions_ids[0].session_id[0].ville else ''"/>
+                                                -
+                                                <span t-field="o.historic_sessions_ids[0].session_id[0].date_exam"
+                                                      t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                            </strong>
+                                        </t>
+                                        <br/>
+                                        Le directeur du centre de formation, organisateur du premier examen, déclare que
+                                        M/Mme
+                                        <strong>
+                                            <span t-esc="o.display_name"/>
+                                        </strong>
+                                        a suivi la formation mentionnée ci-dessus et a passé
+                                        sans succès le premier examen.
+                                        <br/>
+                                        <center>
+                                            <strong>
+                                                Date :
+                                                <strong>
+                                                    <span t-field="o.note_exam_id[-1].date_today"
+                                                          t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                </strong>
+                                                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                                &amp;nbsp;&amp;nbsp;
+                                                Signature :
+                                                <img src='/partner_exam/static/src/img/signature.png'
+                                                     style="height:100px; width:200px;"/>
+                                            </strong>
+                                        </center>
+                                        <hr></hr>
+                                        <b>2° Deuxième examen.</b>
+                                        <br/>
+                                        Lieu et date de l’examen :
+                                        <t t-if="len(o.historic_sessions_ids) &gt; 1">
+                                            <strong>
+                                                <span t-raw=" '%s' % o.historic_sessions_ids[1].session_id[0].ville"/>
+                                            </strong>
+                                        </t>
+                                        <t t-if="len(o.historic_sessions_ids) &gt; 1">
+                                            <t t-if="o.historic_sessions_ids[1].session_id[0].date_exam">
+                                                <strong>
+                                                    <span t-field='o.historic_sessions_ids[1].session_id[0].date_exam'
+                                                          t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                </strong>
+                                            </t>
+                                        </t>
+                                        <br/>
+                                        Le directeur du centre de formation, organisateur du deuxième examen, agrée par
+                                        le
+                                        préfet de la région
+                                        <strong>
+                                            <t t-if="len(o.historic_sessions_ids) &gt; 1">
+                                                <t t-if="o.company_id[0].region">
+                                                    <strong>
+                                                        <span t-raw=" '%s' % o.company_id[0].region"/>
+                                                    </strong>
+                                                </t>
+                                            </t>
+                                            <t t-else="">
+                                                <span>........</span>
+                                            </t>
+                                        </strong>
+                                        <br/>
+                                        (n° d’agrément <strong>IDF 2019-0110</strong>),
+                                        déclare que M/Mme
+                                        <strong>
+                                            <span t-esc="o.display_name"/>
+                                        </strong>
+                                        a passé sans succès le deuxième examen.
+                                        <br/>
+                                        <center>
+                                            <strong>
+                                                Date :
+                                                <strong>
+                                                    <t t-if="len(o.note_exam_id) &gt; 1">
+                                                        <span t-field="o.note_exam_id[-2].date_today"
+                                                              t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                    </t>
+                                                </strong>
+                                                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                                &amp;nbsp;&amp;nbsp;
+                                                Signature
+                                            </strong>
+                                            <t t-if="len(o.historic_sessions_ids) &gt; 1">
+                                                <img src='/partner_exam/static/src/img/signature.png'
+                                                     style="height:100px; width:200px;"/>
+                                            </t>
+                                        </center>
+                                        <hr></hr>
+                                        <b>3° Troisième examen.</b>
+                                        <br/>
+                                        Lieu et date de l’examen :
+                                        <t t-if="len(o.historic_sessions_ids) &gt; 2">
+                                            <strong>
+                                                <span t-raw=" '%s' % o.historic_sessions_ids[2].session_id[0].ville"/>
+                                            </strong>
+                                        </t>
+                                        <t t-if="len(o.historic_sessions_ids) &gt; 2">
+                                            <t t-if="o.historic_sessions_ids[2].session_id[0].date_exam">
+                                                <strong>
+                                                    <span t-field='o.historic_sessions_ids[2].session_id[0].date_exam'
+                                                          t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                </strong>
+                                            </t>
+                                        </t>
+                                        <br/>
+                                        Le directeur du centre de formation, organisateur du troisième examen, agrée
+                                        par le préfet de la région
+                                        <strong>
+                                            <t t-if="len(o.historic_sessions_ids) &gt; 2">
+                                                <t t-if="o.company_id[0].region">
+                                                    <strong>
+                                                        <span t-raw=" '%s' % o.company_id[0].region"/>
+                                                    </strong>
+                                                </t>
+                                            </t>
+                                            <t t-else="">
+                                                <span>........</span>
+                                            </t>
+                                        </strong>
+                                        <br/>
+                                        (n° d’agrément <strong>IDF 2019-0110</strong>),
+                                        déclare que M/Mme
+                                        <strong>
+                                            <span t-esc="o.display_name"/>
+                                        </strong>
+                                        a passé sans succès le troisième examen.
+                                        <br/>
+                                        <center>
+                                            <strong>
+                                                Date :
+                                                <strong>
+                                                    <t t-if="len(o.note_exam_id) &gt; 2">
+                                                        <span t-field="o.note_exam_id[-3].date_today"
+                                                              t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                    </t>
+                                                </strong>
+                                                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                                &amp;nbsp;&amp;nbsp;
+                                                Signature
+                                            </strong>
+                                            <t t-if="len(o.historic_sessions_ids) &gt; 2">
+                                                <img src='/partner_exam/static/src/img/signature.png'
+                                                     style="height:100px; width:200px;"/>
+                                            </t>
+                                        </center>
+                                        <br></br>
+                                        <img src='/partner_exam/static/src/img/footer_attestation_r.png'
+                                             height="180"
+                                             width="1200"/>
+                                    </t>
+                                    <t t-else="">
+                                        <center>
+                                            <b>Déclaration relative au suivi de la formation et aux examens</b>
+                                        </center>
+                                        <br/>
+                                        Civilité : M/Mme nom et prénom :
+                                        <strong>
+                                            <span t-field="o.name"/>
+                                        </strong>
+                                        <br/>
+                                        Adresse complète :
+                                        <strong>
+                                            <span t-field="o.street"/>
+                                            <span t-field="o.zip"/>
+                                            <span t-field="o.city"/>
+                                        </strong>
+                                        <br/>
+                                        Né(e) le :
+                                        <strong>
+                                            <span t-field="o.birthday"/>
+                                            à
+                                            <span t-field="o.birth_city"/>
+                                            <span t-field="o.birth_state"/>
+                                        </strong>
+                                        <br/>
+                                        Intitulé de la formation :
+                                        <t t-if="o.mcm_session_id[0].diplome_vise">
+                                            <strong>
+                                                <span t-raw="'%s' % o.mcm_session_id[0].diplome_vise if o.mcm_session_id[0].diplome_vise else ''"/>
+                                            </strong>
+                                        </t>
+                                        <br/>
+                                        Lieu et dates de la formation :
+                                        <strong>DIGIMOOV 10 rue de PENTHIVRE 75008 PARIS,
+                                            <span t-field="o.sale_order_ids[-1].signed_on"/>
+                                            <span t-field="o.module_id.date_exam"
+                                                  t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                        </strong>
+                                        <hr></hr>
+                                        <b>1° Suivi de la formation et premier examen.</b>
+                                        <br/>
+                                        Lieu et date de l’examen :
+                                        <t t-if="len(o.historic_sessions_ids) &gt; 3">
+                                            <strong>
+                                                <span t-raw="'%s' % o.historic_sessions_ids[3].session_id[0].ville if o.historic_sessions_ids[3].session_id[0].ville else ''"/>
+                                                -
+                                                <span t-field="o.historic_sessions_ids[3].session_id[0].date_exam"
+                                                      t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                            </strong>
+                                        </t>
+                                        <br/>
+                                        Le directeur du centre de formation, organisateur du premier examen, déclare que
+                                        M/Mme
+                                        <strong>
+                                            <span t-esc="o.display_name"/>
+                                        </strong>
+                                        a suivi la formation mentionnée ci-dessus et a passé
+                                        sans succès le premier examen.
+                                        <br/>
+                                        <center>
+                                            <strong>
+                                                Date :
+                                                <strong>
+                                                    <span t-field="o.note_exam_id[-1].date_today"
+                                                          t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                </strong>
+                                                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                                &amp;nbsp;&amp;nbsp;
+
+                                                Signature :
+                                                <img src='/partner_exam/static/src/img/signature.png'
+                                                     style="height:100px; width:200px;"/>
+                                            </strong>
+                                        </center>
+                                        <hr></hr>
+                                        <b>2° Deuxième examen.</b>
+                                        <br/>
+                                        Lieu et date de l’examen :
+                                        <t t-if="len(o.historic_sessions_ids) &gt; 4">
+                                            <strong>
+                                                <span t-raw=" '%s' % o.historic_sessions_ids[4].session_id[0].ville"/>
+                                            </strong>
+                                        </t>
+                                        <t t-if="len(o.historic_sessions_ids) &gt; 4">
+                                            <t t-if="o.historic_sessions_ids[4].session_id[0].date_exam">
+                                                <strong>
+                                                    <span t-field='o.historic_sessions_ids[4].session_id[0].date_exam'
+                                                          t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                </strong>
+                                            </t>
+                                        </t>
+                                        <br/>
+                                        Le directeur du centre de formation, organisateur du deuxième examen, agrée par
+                                        le
+                                        préfet de la région
+                                        <strong>
+                                            <t t-if="len(o.historic_sessions_ids) &gt; 4">
+                                                <t t-if="o.company_id[0].region">
+                                                    <strong>
+                                                        <span t-raw=" '%s' % o.company_id[0].region"/>
+                                                    </strong>
+                                                </t>
+                                            </t>
+                                            <t t-else="">
+                                                <span>........</span>
+                                            </t>
+                                        </strong>
+                                        <br/>
+                                        (n° d’agrément <strong>IDF 2019-0110</strong>),
+                                        déclare que M/Mme
+                                        <strong>
+                                            <span t-esc="o.display_name"/>
+                                        </strong>
+                                        a passé sans succès le deuxième examen.
+                                        <br/>
+                                        <center>
+                                            <strong>
+                                                Date :
+                                                <strong>
+                                                    <t t-if="len(o.note_exam_id) &gt; 4">
+                                                        <span t-field="o.note_exam_id[-4].date_today"
+                                                              t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                    </t>
+                                                </strong>
+                                                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                                &amp;nbsp;&amp;nbsp;
+                                                Signature
+                                            </strong>
+                                            <t t-if="len(o.historic_sessions_ids) &gt; 4">
+                                                <img src='/partner_exam/static/src/img/signature.png'
+                                                     style="height:100px; width:200px;"/>
+                                            </t>
+                                        </center>
+                                        <hr></hr>
+                                        <b>3° Troisième examen.</b>
+                                        <br/>
+                                        Lieu et date de l’examen :
+                                        <t t-if="len(o.historic_sessions_ids) &gt; 4">
+                                            <strong>
+                                                <span t-raw=" '%s' % o.historic_sessions_ids[5].session_id[0].ville"/>
+                                            </strong>
+                                        </t>
+                                        <t t-if="len(o.historic_sessions_ids) &gt; 4">
+                                            <t t-if="o.historic_sessions_ids[5].session_id[0].date_exam">
+                                                <strong>
+                                                    <span t-field='o.historic_sessions_ids[5].session_id[0].date_exam'
+                                                          t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                </strong>
+                                            </t>
+                                        </t>
+                                        <br/>
+                                        Le directeur du centre de formation, organisateur du troisième examen, agrée
+                                        par le préfet de la région
+                                        <strong>
+                                            <t t-if="len(o.historic_sessions_ids) &gt; 4">
+                                                <t t-if="o.company_id[0].region">
+                                                    <strong>
+                                                        <span t-raw=" '%s' % o.company_id[0].region"/>
+                                                    </strong>
+                                                </t>
+                                            </t>
+                                            <t t-else="">
+                                                <span>........</span>
+                                            </t>
+                                        </strong>
+                                        <br/>
+                                        (n° d’agrément <strong>IDF 2019-0110</strong>),
+                                        déclare que M/Mme
+                                        <strong>
+                                            <span t-esc="o.display_name"/>
+                                        </strong>
+                                        a passé sans succès le troisième examen.
+                                        <br/>
+                                        <center>
+                                            <strong>
+                                                Date :
+                                                <strong>
+                                                    <t t-if="len(o.note_exam_id) &gt; 4">
+                                                        <span t-field="o.note_exam_id[-4].date_today"
+                                                              t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                    </t>
+                                                </strong>
+                                                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                                &amp;nbsp;&amp;nbsp;
+                                                Signature
+                                            </strong>
+                                            <t t-if="len(o.historic_sessions_ids) &gt; 4">
+                                                <img src='/partner_exam/static/src/img/signature.png'
+                                                     style="height:100px; width:200px;"/>
+                                            </t>
+                                        </center>
+                                        <br></br>
+                                        <img src='/partner_exam/static/src/img/footer_attestation_r.png'
+                                             height="180"
+                                             width="1200"/>
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>
