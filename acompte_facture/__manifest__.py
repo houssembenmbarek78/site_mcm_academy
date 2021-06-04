@@ -14,6 +14,7 @@
         'account',
         'mcm_add_fields',
         'mcm_session',
+        'payment'
     ],
     'description': " Créer une facture d'acompte  ",
     'data': [
@@ -21,6 +22,7 @@
         'views/account_acompte_wizard.xml',
         'security/ir.model.access.csv',
         'views/other_info_inherit_view.xml',
+
     ],
     'qweb': [],
     'demo': [
