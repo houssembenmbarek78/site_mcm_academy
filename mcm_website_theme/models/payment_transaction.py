@@ -31,6 +31,8 @@ class PaymentTransaction(models.Model):
                                                                                  )
                 test=sale.get_portal_url(report_type='pdf', download=True)
 
+    # Ce programme a été modifié par seifeddinne le 31/05/2021
+    # ajout du champs methode_payment qui stock la valeur carte bleu si le payment et par carte bleu
 
     def _reconcile_after_transaction_done(self):
         transaction=super(PaymentTransaction,self)._reconcile_after_transaction_done()
@@ -47,6 +49,7 @@ class PaymentTransaction(models.Model):
                 moves = sale._create_invoices(final=False)
                 for move in moves:
                     move.type_facture='web'
+                    move.methodes_payment = 'cartebleu'
                     move.module_id=sale.module_id
                     move.session_id=sale.session_id
                     if sale.pricelist_id.code:

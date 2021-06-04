@@ -117,16 +117,14 @@ class ClientCPFController(http.Controller):
                             line.price_unit= so.amount_total
                         so.action_confirm()
                         ref=False
-                        #Creation de la Facture interne
-                        #Si la facture est en interne :  On parse le pourcentage qui est 25 %
-                        #cpf_compte_invoice prend la valeur True pour savoir bien qui est une facture creer par Zoe
-
-
+                        # Creation de la Facture Cpf
+                        # Si la facture est de type CPF :  On parse le pourcentage qui est 25 %
+                        # methode_payment prend la valeur CPF pour savoir bien qui est une facture CPF qui prend la valeur 25 % par default
                         if so.amount_total>0 and so.order_line:
                             moves = so._create_invoices(final=True)
                             for move in moves:
                                 move.type_facture = 'interne'
-                                move.cpf_acompte_invoice=True
+                                move.methodes_payment ='cpf'
                                 move.pourcentage_acompte = 25
                                 move.module_id = so.module_id
                                 move.session_id = so.session_id
@@ -197,8 +195,8 @@ class ClientCPFController(http.Controller):
                     moves = so._create_invoices(final=True)
                     for move in moves:
                         move.type_facture = 'interne'
+                        move.methodes_payment = 'cpf'
                         move.module_id = so.module_id
-                        move.cpf_acompte_invoice=True
                         move.pourcentage_acompte = 25
                         move.session_id = so.session_id
                         move.company_id=so.company_id
