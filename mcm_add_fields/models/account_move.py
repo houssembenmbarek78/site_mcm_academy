@@ -17,6 +17,7 @@ class AccountMove(models.Model):
     acompte_invoice = fields.Boolean(default=False)
     cpf_solde_invoice = fields.Boolean(default=False)
     cpf_acompte_invoice = fields.Boolean(default=False)
+    cpf_solde_invoice =fields.Boolean(default=False)
     amount_residual = fields.Monetary(string='Montant due',compute='_get_mcm_paid_amount',store=True)
     amount = fields.Monetary(string='Montant',compute='_compute_payments_widget_to_reconcile_info',store=True)
     amount_paye = fields.Monetary(string='Montant payé',store=True,readonly=True,compute='_compute_change_amount')
