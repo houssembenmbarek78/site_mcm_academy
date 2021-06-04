@@ -418,7 +418,7 @@
                     </div>
                 </div>
             </xpath>
-            <xpath expr="//div[hasclass('page')]//p[3]" position="replace">
+            <xpath expr="//div[hasclass('page')]//p[2]" position="replace">
                 <div id="total" class="row">
                     <div class="col-3">
                     </div>
