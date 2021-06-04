@@ -8,9 +8,11 @@ class AccountMove(models.Model):
     _inherit = "account.move"
     restamount = fields.Monetary(string='Reste à payé ', store=True)
     amount_paye= fields.Monetary(string='payé ', store=True)
+
 #Création de l'acompte
+
     def action_create_acompte(self):
-        for record in self:
+        for rec in self:
             print('montant total')
             print(self.amount_total)
             return {
@@ -28,24 +30,26 @@ class AccountMove(models.Model):
     # Fonction qui calcule le reste à payé ,le montant de la formation et le pourcentage de l'acompte dans la facture
     # Calculer les montants: restamount , amount_residual , amount_paye l'hors du chagement du pourcentage d'acompte
     # Valeurs changer l'hors de  la modification du pourcentage et en calculant le montant payé et le reste à payer
+    # On sépare le process de facturation par le champs principal methode_payment qui peux etre sois cpf sois carte_bleu
     @api.onchange('pourcentage_acompte')
     def _compute_amount(self):
         invoice=super(AccountMove,self)._compute_amount()
-
         for rec in self:
-            if (rec.type_facture == 'interne'):
+            if (rec.methodes_payment == 'cpf') :
                 amount_untaxed_initiale = rec.amount_untaxed
                 rec.amount_paye=(rec.amount_untaxed*rec.pourcentage_acompte)/100
                 # rec.amount_untaxed = (rec.amount_untaxed * rec.pourcentage_acompte) / 100
                 rec.restamount = amount_untaxed_initiale - rec.amount_paye
                 # rec.amount_residual = rec.restamount
-                # amount_residual_signed = rec.restamount
+                # rec.amount_residual= rec.amount_untaxed
+                amount_residual_signed = rec.restamount
                 print(rec.amount_total)
                 print(rec.amount_untaxed)
                 print(rec.restamount)
                 print(rec.amount_residual)
                 return invoice
-            elif (rec.type_facture =='web'):
+            elif (rec.methodes_payment == 'cartebleu') :
+
                 rec.amount_untaxed = rec.amount_total
 class resPartnerWizard(models.TransientModel):
     _name = 'account.invoice.acompte.wizard'
