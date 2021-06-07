@@ -12,20 +12,15 @@
 
 
             </style>
-            <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js"/>
+            <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
 
-            <section class="banner oe_img_bg oe_custom_bg"
-                     style="background: linear-gradient(90deg, rgba(249,250,252,1) 0%, rgba(242,241,241,0.7203256302521008) 100%);">
+            <section class="banner oe_img_bg oe_custom_bg" style="background: linear-gradient(90deg, rgba(249,250,252,1) 0%, rgba(242,241,241,0.7203256302521008) 100%);">
                 <p>
                     <br/>
                 </p>
                 <div class="row">
                     <div class="offset-lg-1 col-lg-4" style="text-align: center; ">
-                        <img class="img-fluid o_we_custom_image lazy"
-                             data-src="/digimoov_website_templates/static/img/Foire Aux Questions Capacité de transport léger.webp"
-                             data-srcSafari="/digimoov_website_templates/static/src/img/Foire Aux Questions Capacité de transport léger.png"
-                             alt="Foire Aux Questions FAQ Digimoov" data-original-title=""
-                             title="Foire Aux Questions Capacité de Transport Léger" aria-describedby="tooltip523685"/>
+                        <img class="img-fluid o_we_custom_image lazy" data-src="/digimoov_website_templates/static/img/Foire Aux Questions Capacité de transport léger.webp" data-srcSafari="/digimoov_website_templates/static/src/img/Foire Aux Questions Capacité de transport léger.png" alt="Foire Aux Questions FAQ Digimoov" data-original-title="" title="Foire Aux Questions Capacité de Transport Léger" aria-describedby="tooltip523685"/>
                     </div>
                     <div class="col-lg-6">
                         <h2 style="text-align: center; margin-bottom: 10px; font-weight: 600; line-height: 1.3; color: rgb(58, 58, 71); font-size: 28px;">
@@ -52,74 +47,57 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-4">
-                                <div class="nav nav-pills faq-nav" id="faq-tabs" role="tablist"
-                                     aria-orientation="vertical">
-                                    <a href="#tab1" class="nav-link active" data-toggle="pill" role="tab"
-                                       aria-controls="tab1" aria-selected="true" data-original-title="" title="">
+                                <div class="nav nav-pills faq-nav" id="faq-tabs" role="tablist" aria-orientation="vertical">
+                                    <a href="#tab1" class="nav-link active" data-toggle="pill" role="tab" aria-controls="tab1" aria-selected="true" data-original-title="" title="">
                                         <b>
                                             <i class="mdi mdi-help-circle"/>
                                         </b>
-                                        <font style="font-size: 16px;" data-original-title="" title=""
-                                              aria-describedby="tooltip487201">
-                                            <i class="fa fa-caret-right" style="font-weight: bold;"
-                                               data-original-title="" title="" aria-describedby="tooltip83044"/>
+                                        <font style="font-size: 16px;" data-original-title="" title="" aria-describedby="tooltip487201">
+                                            <i class="fa fa-caret-right" style="font-weight: bold;" data-original-title="" title="" aria-describedby="tooltip83044"/>
                                             <b data-original-title="" title="" aria-describedby="tooltip700574">Digimoov
                                             </b>
                                         </font>
                                     </a>
-                                    <a href="#tab2" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab2"
-                                       aria-selected="false" data-original-title="" title="">
+                                    <a href="#tab2" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab2" aria-selected="false" data-original-title="" title="">
                                         <b>
                                             <i class="mdi mdi-account"/>
-                                            <font style="font-size: 16px;" data-original-title="" title=""
-                                                  aria-describedby="tooltip935360">
-                                                <i class="fa fa-caret-right" data-original-title="" title=""
-                                                   aria-describedby="tooltip582712"/>
+                                            <font style="font-size: 16px;" data-original-title="" title="" aria-describedby="tooltip935360">
+                                                <i class="fa fa-caret-right" data-original-title="" title="" aria-describedby="tooltip582712"/>
                                                 La formation
                                             </font>
                                         </b>
                                     </a>
-                                    <a href="#tab3" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab3"
-                                       aria-selected="false" data-original-title="" title=""
-                                       aria-describedby="tooltip903118">
+                                    <a href="#tab3" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab3" aria-selected="false" data-original-title="" title="" aria-describedby="tooltip903118">
                                         <b>
                                             <i class="mdi mdi-account-settings"/>
                                             <font style="font-size: 16px;">
-                                                <i class="fa fa-caret-right" data-original-title="" title=""
-                                                   aria-describedby="tooltip566849"/>
+                                                <i class="fa fa-caret-right" data-original-title="" title="" aria-describedby="tooltip566849"/>
                                                 L’examen
                                             </font>
                                         </b>
                                     </a>
-                                    <a href="#tab4" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab4"
-                                       aria-selected="false" data-original-title="" title="">
+                                    <a href="#tab4" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab4" aria-selected="false" data-original-title="" title="">
                                         <b>
                                             <i class="mdi mdi-heart"/>
                                             <font style="font-size: 16px;">
-                                                <i class="fa fa-caret-right" data-original-title="" title=""
-                                                   aria-describedby="tooltip219938"/>
+                                                <i class="fa fa-caret-right" data-original-title="" title="" aria-describedby="tooltip219938"/>
                                                 L’attestation de Capacité de transport de marchandise léger
 
                                             </font>
                                         </b>
                                     </a>
-                                    <a href="#tab5" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab5"
-                                       aria-selected="false" data-original-title="" title=""
-                                       aria-describedby="tooltip230958">
+                                    <a href="#tab5" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab5" aria-selected="false" data-original-title="" title="" aria-describedby="tooltip230958">
                                         <i class="mdi mdi-coin"/>
                                         <font style="font-size: 16px;">
-                                            <i class="fa fa-caret-right" data-original-title="" title=""
-                                               aria-describedby="tooltip582122"/>
+                                            <i class="fa fa-caret-right" data-original-title="" title="" aria-describedby="tooltip582122"/>
                                             <b>Le financement</b>
                                         </font>
                                     </a>
-                                    <a href="#tab6" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab6"
-                                       aria-selected="false" data-original-title="" title="">
+                                    <a href="#tab6" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab6" aria-selected="false" data-original-title="" title="">
                                         <b>
                                             <i class="mdi mdi-help"/>
                                             <font style="font-size: 16px;">
-                                                <i class="fa fa-caret-right" data-original-title="" title=""
-                                                   aria-describedby="tooltip340701"/>
+                                                <i class="fa fa-caret-right" data-original-title="" title="" aria-describedby="tooltip340701"/>
                                                 Divers
                                             </font>
                                         </b>
@@ -133,20 +111,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-1-heading-1">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-1-content-1"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-1-content-1"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip276001">Qu’est ce que Digimoov
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-1" aria-expanded="false" aria-controls="accordion-tab-1-content-1" data-original-title="" title="" aria-describedby="tooltip276001">Qu’est ce que Digimoov
                                                             ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-1-content-1"
-                                                     aria-labelledby="accordion-tab-1-heading-1"
-                                                     data-parent="#accordion-tab-1" style="">
+                                                <div class="collapse" id="accordion-tab-1-content-1" aria-labelledby="accordion-tab-1-heading-1" data-parent="#accordion-tab-1" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Digimoov est un centre de
@@ -172,19 +142,11 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-1-heading-2">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-1-content-2"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-1-content-2"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip346345">Que propose Digimoov ?
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-2" aria-expanded="false" aria-controls="accordion-tab-1-content-2" data-original-title="" title="" aria-describedby="tooltip346345">Que propose Digimoov ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-1-content-2"
-                                                     aria-labelledby="accordion-tab-1-heading-2"
-                                                     data-parent="#accordion-tab-1" style="">
+                                                <div class="collapse" id="accordion-tab-1-content-2" aria-labelledby="accordion-tab-1-heading-2" data-parent="#accordion-tab-1" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Notre centre propose une
@@ -200,20 +162,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-1-heading-3">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-1-content-3"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-1-content-3"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip389775">Êtes-vous un centre
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-3" aria-expanded="false" aria-controls="accordion-tab-1-content-3" data-original-title="" title="" aria-describedby="tooltip389775">Êtes-vous un centre
                                                             agréé par l’Etat (DRIEA) ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-1-content-3"
-                                                     aria-labelledby="accordion-tab-1-heading-3"
-                                                     data-parent="#accordion-tab-1" style="">
+                                                <div class="collapse" id="accordion-tab-1-content-3" aria-labelledby="accordion-tab-1-heading-3" data-parent="#accordion-tab-1" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Oui, numéro d'agrément :
@@ -231,20 +185,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-2-heading-1">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-2-content-1"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-2-content-1"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip589610">À quoi servira la
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-1" aria-expanded="false" aria-controls="accordion-tab-2-content-1" data-original-title="" title="" aria-describedby="tooltip589610">À quoi servira la
                                                             formation ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-2-content-1"
-                                                     aria-labelledby="accordion-tab-2-heading-1"
-                                                     data-parent="#accordion-tab-2" style="">
+                                                <div class="collapse" id="accordion-tab-2-content-1" aria-labelledby="accordion-tab-2-heading-1" data-parent="#accordion-tab-2" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <span id="docs-internal-guid-c8476293-7fff-ade3-b687-3c65575f025a">
@@ -265,20 +211,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-2-heading-2">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-2-content-2"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-2-content-2"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip594112">Comment se passe la
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-2" aria-expanded="false" aria-controls="accordion-tab-2-content-2" data-original-title="" title="" aria-describedby="tooltip594112">Comment se passe la
                                                             formation en ligne ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-2-content-2"
-                                                     aria-labelledby="accordion-tab-2-heading-2"
-                                                     data-parent="#accordion-tab-2" style="">
+                                                <div class="collapse" id="accordion-tab-2-content-2" aria-labelledby="accordion-tab-2-heading-2" data-parent="#accordion-tab-2" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font color="#000000" face="Arial">
@@ -307,30 +245,15 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-2-heading-3">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-2-content-3"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-2-content-3"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip139034"/>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-2-content-3"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-2-content-3"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip139034">Qu’est-ce que je vais
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-3" aria-expanded="false" aria-controls="accordion-tab-2-content-3" data-original-title="" title="" aria-describedby="tooltip139034"/>
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-3" aria-expanded="false" aria-controls="accordion-tab-2-content-3" data-original-title="" title="" aria-describedby="tooltip139034">Qu’est-ce que je vais
                                                             apprendre pendant la formation ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-2-content-3"
-                                                     aria-labelledby="accordion-tab-2-heading-3"
-                                                     data-parent="#accordion-tab-2" style="">
+                                                <div class="collapse" id="accordion-tab-2-content-3" aria-labelledby="accordion-tab-2-heading-3" data-parent="#accordion-tab-2" style="">
                                                     <div class="card-body">
-                                                        <p dir="ltr"
-                                                           style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;">
+                                                        <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;">
                                                             <span style="background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;">
                                                                 <font color="#000000" face="Arial">
                                                                     <span style="font-size: 14.6667px;">
@@ -377,8 +300,7 @@
                                                             </span>
                                                             <br/>
                                                         </p>
-                                                        <p dir="ltr"
-                                                           style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;">
+                                                        <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;">
                                                             <br/>
                                                         </p>
                                                     </div>
@@ -387,21 +309,13 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-2-heading-4">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-2-content-4"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-2-content-9"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip751657">Est-ce que je peux
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-4" aria-expanded="false" aria-controls="accordion-tab-2-content-9" data-original-title="" title="" aria-describedby="tooltip751657">Est-ce que je peux
                                                             choisir de faire qu'une partie des modules formation en
                                                             ligne ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-2-content-4"
-                                                     aria-labelledby="accordion-tab-2-heading-4"
-                                                     data-parent="#accordion-tab-2" style="">
+                                                <div class="collapse" id="accordion-tab-2-content-4" aria-labelledby="accordion-tab-2-heading-4" data-parent="#accordion-tab-2" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <span id="docs-internal-guid-dd0c1628-7fff-6836-c8c8-692979a17fd2">
@@ -418,20 +332,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-2-heading-5">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-2-content-5"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-2-content-5"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip819315">Combien de temps dure
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-5" aria-expanded="false" aria-controls="accordion-tab-2-content-5" data-original-title="" title="" aria-describedby="tooltip819315">Combien de temps dure
                                                             la formation ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-2-content-5"
-                                                     aria-labelledby="accordion-tab-2-heading-5"
-                                                     data-parent="#accordion-tab-2" style="">
+                                                <div class="collapse" id="accordion-tab-2-content-5" aria-labelledby="accordion-tab-2-heading-5" data-parent="#accordion-tab-2" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <span id="docs-internal-guid-7cf579a8-7fff-e2e8-0050-7ff07867b82a">
@@ -449,20 +355,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-2-heading-6">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-2-content-6"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-2-content-6"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip819315">Est-ce qu’on doit faire
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-6" aria-expanded="false" aria-controls="accordion-tab-2-content-6" data-original-title="" title="" aria-describedby="tooltip819315">Est-ce qu’on doit faire
                                                             un minimum d'heures de formation par jour ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-2-content-6"
-                                                     aria-labelledby="accordion-tab-2-heading-6"
-                                                     data-parent="#accordion-tab-2" style="">
+                                                <div class="collapse" id="accordion-tab-2-content-6" aria-labelledby="accordion-tab-2-heading-6" data-parent="#accordion-tab-2" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <span id="docs-internal-guid-7cf579a8-7fff-e2e8-0050-7ff07867b82a">
@@ -484,20 +382,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-2-heading-7">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-2-content-7"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-2-content-7"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip864719">Comment m'inscrire à la
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-7" aria-expanded="false" aria-controls="accordion-tab-2-content-7" data-original-title="" title="" aria-describedby="tooltip864719">Comment m'inscrire à la
                                                             formation ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-2-content-7"
-                                                     aria-labelledby="accordion-tab-2-heading-7"
-                                                     data-parent="#accordion-tab-2" style="">
+                                                <div class="collapse" id="accordion-tab-2-content-7" aria-labelledby="accordion-tab-2-heading-7" data-parent="#accordion-tab-2" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font color="#000000" face="Arial">
@@ -525,20 +415,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-2-heading-8">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-2-content-8"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-2-content-8"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip860922">Une fois le paiement
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-8" aria-expanded="false" aria-controls="accordion-tab-2-content-8" data-original-title="" title="" aria-describedby="tooltip860922">Une fois le paiement
                                                             validé, quelle sera la prochaine étape ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-2-content-8"
-                                                     aria-labelledby="accordion-tab-2-heading-8"
-                                                     data-parent="#accordion-tab-2" style="">
+                                                <div class="collapse" id="accordion-tab-2-content-8" aria-labelledby="accordion-tab-2-heading-8" data-parent="#accordion-tab-2" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <span id="docs-internal-guid-6a603723-7fff-b161-d28a-a87db446ec06">
@@ -558,20 +440,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-2-heading-9">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-2-content-9"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-2-content-9"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip201179">Quand est ce que
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-9" aria-expanded="false" aria-controls="accordion-tab-2-content-9" data-original-title="" title="" aria-describedby="tooltip201179">Quand est ce que
                                                             j’obtiens les accès à ma formation en ligne ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-2-content-9"
-                                                     aria-labelledby="accordion-tab-2-heading-9"
-                                                     data-parent="#accordion-tab-2" style="">
+                                                <div class="collapse" id="accordion-tab-2-content-9" aria-labelledby="accordion-tab-2-heading-9" data-parent="#accordion-tab-2" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <span id="docs-internal-guid-6ab5d0c1-7fff-0b47-2d8e-4a7314b4130a">
@@ -593,20 +467,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-2-heading-10">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-2-content-10"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-2-content-10"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip4098">La formation, est-elle
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-10" aria-expanded="false" aria-controls="accordion-tab-2-content-10" data-original-title="" title="" aria-describedby="tooltip4098">La formation, est-elle
                                                             obligatoire ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-2-content-10"
-                                                     aria-labelledby="accordion-tab-2-heading-10"
-                                                     data-parent="#accordion-tab-2" style="">
+                                                <div class="collapse" id="accordion-tab-2-content-10" aria-labelledby="accordion-tab-2-heading-10" data-parent="#accordion-tab-2" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <span id="docs-internal-guid-465e210c-7fff-4264-0285-3969b1be7a75">
@@ -627,20 +493,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-3-heading-1">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-3-content-1"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-3-content-1"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip528114">Quand est ce je peux
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-1" aria-expanded="false" aria-controls="accordion-tab-3-content-1" data-original-title="" title="" aria-describedby="tooltip528114">Quand est ce je peux
                                                             passer l’examen ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-3-content-1"
-                                                     aria-labelledby="accordion-tab-3-heading-1"
-                                                     data-parent="#accordion-tab-3" style="">
+                                                <div class="collapse" id="accordion-tab-3-content-1" aria-labelledby="accordion-tab-3-heading-1" data-parent="#accordion-tab-3" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Vous pourrez passer
@@ -654,27 +512,19 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-3-heading-2">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-3-content-2"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-3-content-2"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip528114">Où est ce je peux
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-2" aria-expanded="false" aria-controls="accordion-tab-3-content-2" data-original-title="" title="" aria-describedby="tooltip528114">Où est ce je peux
                                                             passer l’examen ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-3-content-2"
-                                                     aria-labelledby="accordion-tab-3-heading-2"
-                                                     data-parent="#accordion-tab-3" style="">
+                                                <div class="collapse" id="accordion-tab-3-content-2" aria-labelledby="accordion-tab-3-heading-2" data-parent="#accordion-tab-3" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Vous avez la possibilité
                                                                 de passer l'examen dans l'un des centres suivants :
                                                                 Bordeaux, Bourges, Grenoble, Lille, Lyon, Marseille,
                                                                 Metz, Montpellier, Nantes, Nice, Paris, Rennes, Rouen,
-                                                                Strasbourg, Toulouse
+                                                                Strasbourg, Toulouse.
                                                             </font>
                                                         </p>
                                                         <p/>
@@ -684,20 +534,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-3-heading-3">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-3-content-3"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-3-content-3"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip528114">Est ce que je peux
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-3" aria-expanded="false" aria-controls="accordion-tab-3-content-3" data-original-title="" title="" aria-describedby="tooltip528114">Est ce que je peux
                                                             passer l'examen en candidat libre (sans formation) ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-3-content-3"
-                                                     aria-labelledby="accordion-tab-3-heading-3"
-                                                     data-parent="#accordion-tab-3" style="">
+                                                <div class="collapse" id="accordion-tab-3-content-3" aria-labelledby="accordion-tab-3-heading-3" data-parent="#accordion-tab-3" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Non. Vous devez
@@ -712,20 +554,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-3-heading-4">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-3-content-4"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-3-content-4"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip528114">Comment se déroule
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-4" aria-expanded="false" aria-controls="accordion-tab-3-content-4" data-original-title="" title="" aria-describedby="tooltip528114">Comment se déroule
                                                             l’examen de capacité de transport léger de marchandise ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-3-content-4"
-                                                     aria-labelledby="accordion-tab-3-heading-4"
-                                                     data-parent="#accordion-tab-3" style="">
+                                                <div class="collapse" id="accordion-tab-3-content-4" aria-labelledby="accordion-tab-3-heading-4" data-parent="#accordion-tab-3" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">C’est un examen en salle
@@ -744,20 +578,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-3-heading-5">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-3-content-5"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-3-content-5"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip528114">Quelles sont les
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-5" aria-expanded="false" aria-controls="accordion-tab-3-content-5" data-original-title="" title="" aria-describedby="tooltip528114">Quelles sont les
                                                             conditions pour réussir l’examen ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-3-content-5"
-                                                     aria-labelledby="accordion-tab-3-heading-5"
-                                                     data-parent="#accordion-tab-3" style="">
+                                                <div class="collapse" id="accordion-tab-3-content-5" aria-labelledby="accordion-tab-3-heading-5" data-parent="#accordion-tab-3" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Le candidat doit obtenir
@@ -774,20 +600,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-3-heading-6">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-3-content-6"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-3-content-6"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip528114">Quel est le niveau de
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-6" aria-expanded="false" aria-controls="accordion-tab-3-content-6" data-original-title="" title="" aria-describedby="tooltip528114">Quel est le niveau de
                                                             difficulté de l’examen de capacité de marchandise ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-3-content-6"
-                                                     aria-labelledby="accordion-tab-3-heading-6"
-                                                     data-parent="#accordion-tab-3" style="">
+                                                <div class="collapse" id="accordion-tab-3-content-6" aria-labelledby="accordion-tab-3-heading-6" data-parent="#accordion-tab-3" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">L’examen est à la portée
@@ -808,20 +626,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-3-heading-7">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-3-content-7"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-3-content-7"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip528114">Quand est ce qu'a lieu
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-7" aria-expanded="false" aria-controls="accordion-tab-3-content-7" data-original-title="" title="" aria-describedby="tooltip528114">Quand est ce qu'a lieu
                                                             l’examen ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-3-content-7"
-                                                     aria-labelledby="accordion-tab-3-heading-7"
-                                                     data-parent="#accordion-tab-3" style="">
+                                                <div class="collapse" id="accordion-tab-3-content-7" aria-labelledby="accordion-tab-3-heading-7" data-parent="#accordion-tab-3" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Les dates d’examen
@@ -838,20 +648,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-3-heading-8">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-3-content-8"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-3-content-8"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip528114">Est ce qu’on peut
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-8" aria-expanded="false" aria-controls="accordion-tab-3-content-8" data-original-title="" title="" aria-describedby="tooltip528114">Est ce qu’on peut
                                                             reporter l’examen à une autre date ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-3-content-8"
-                                                     aria-labelledby="accordion-tab-3-heading-8"
-                                                     data-parent="#accordion-tab-3" style="">
+                                                <div class="collapse" id="accordion-tab-3-content-8" aria-labelledby="accordion-tab-3-heading-8" data-parent="#accordion-tab-3" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Non, ce n’est pas
@@ -866,20 +668,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-3-heading-9">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-3-content-9"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-3-content-9"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip909647">Si j'échoue à l'examen
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-9" aria-expanded="false" aria-controls="accordion-tab-3-content-9" data-original-title="" title="" aria-describedby="tooltip909647">Si j'échoue à l'examen
                                                             une première fois, que se passe-t-il ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-3-content-9"
-                                                     aria-labelledby="accordion-tab-3-heading-9"
-                                                     data-parent="#accordion-tab-3" style="">
+                                                <div class="collapse" id="accordion-tab-3-content-9" aria-labelledby="accordion-tab-3-heading-9" data-parent="#accordion-tab-3" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Si vous avez échoué à
@@ -898,20 +692,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-3-heading-10">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-3-content-10"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-3-content-10"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip909647">Quand est-ce que je
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-10" aria-expanded="false" aria-controls="accordion-tab-3-content-10" data-original-title="" title="" aria-describedby="tooltip909647">Quand est-ce que je
                                                             recevrai les résultats de l’examen ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-3-content-10"
-                                                     aria-labelledby="accordion-tab-3-heading-10"
-                                                     data-parent="#accordion-tab-3" style="">
+                                                <div class="collapse" id="accordion-tab-3-content-10" aria-labelledby="accordion-tab-3-heading-10" data-parent="#accordion-tab-3" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Vos copies seront
@@ -938,20 +724,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-3-heading-11">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-3-content-11"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-3-content-11"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip909647">Quand est-ce que je
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-11" aria-expanded="false" aria-controls="accordion-tab-3-content-11" data-original-title="" title="" aria-describedby="tooltip909647">Quand est-ce que je
                                                             recevrai mon attestation de capacité de transport ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-3-content-11"
-                                                     aria-labelledby="accordion-tab-3-heading-11"
-                                                     data-parent="#accordion-tab-3" style="">
+                                                <div class="collapse" id="accordion-tab-3-content-11" aria-labelledby="accordion-tab-3-heading-11" data-parent="#accordion-tab-3" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Vous allez recevoir votre
@@ -971,21 +749,13 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-4-heading-1">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-4-content-1"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-4-content-1"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip377677">À quoi sert
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-4-content-1" aria-expanded="false" aria-controls="accordion-tab-4-content-1" data-original-title="" title="" aria-describedby="tooltip377677">À quoi sert
                                                             l'attestation de capacité professionnelle en
                                                             transport routier léger de marchandises ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-4-content-1"
-                                                     aria-labelledby="accordion-tab-4-heading-1"
-                                                     data-parent="#accordion-tab-4" style="">
+                                                <div class="collapse" id="accordion-tab-4-content-1" aria-labelledby="accordion-tab-4-heading-1" data-parent="#accordion-tab-4" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Pour pouvoir créer une
@@ -1007,21 +777,13 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-4-heading-2">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-4-content-2"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-4-content-2"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip577642">Comment obtenir
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-4-content-2" aria-expanded="false" aria-controls="accordion-tab-4-content-2" data-original-title="" title="" aria-describedby="tooltip577642">Comment obtenir
                                                             l'attestation de capacité professionnelle en transport
                                                             routier léger de marchandises ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-4-content-2"
-                                                     aria-labelledby="accordion-tab-4-heading-2"
-                                                     data-parent="#accordion-tab-4" style="">
+                                                <div class="collapse" id="accordion-tab-4-content-2" aria-labelledby="accordion-tab-4-heading-2" data-parent="#accordion-tab-4" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font color="#000000">La voie classique : formation puis
@@ -1044,31 +806,21 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-4-heading-3">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-4-content-3"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-4-content-3"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip683839">Dans quels cas puis-je
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-4-content-3" aria-expanded="false" aria-controls="accordion-tab-4-content-3" data-original-title="" title="" aria-describedby="tooltip683839">Dans quels cas puis-je
                                                             être dispensé de la formation et de l’examen ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-4-content-3"
-                                                     aria-labelledby="accordion-tab-4-heading-3"
-                                                     data-parent="#accordion-tab-4" style="">
+                                                <div class="collapse" id="accordion-tab-4-content-3" aria-labelledby="accordion-tab-4-heading-3" data-parent="#accordion-tab-4" style="">
                                                     <div class="card-body">
-                                                        <p dir="ltr"
-                                                           style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;">
+                                                        <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;">
                                                             <font style="color: rgb(0, 0, 0);">Vous pouvez être dispensé
                                                                 si :
                                                             </font>
                                                         </p>
                                                         <ul>
                                                             <li>
-                                                                <p dir="ltr"
-                                                                   style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;">
+                                                                <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;">
                                                                     <font style="color: rgb(0, 0, 0);">Vous êtes
                                                                         titulaire du baccalauréat professionnel
                                                                         Exploitation des transports ou du baccalauréat
@@ -1077,8 +829,7 @@
                                                                 </p>
                                                             </li>
                                                             <li>
-                                                                <p dir="ltr"
-                                                                   style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;">
+                                                                <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;">
                                                                     <font style="color: rgb(0, 0, 0);">Vous avez géré de
                                                                         manière continue une entreprise de transport
                                                                         public routier de marchandises pendant au moins
@@ -1088,8 +839,7 @@
                                                                 </p>
                                                             </li>
                                                             <li>
-                                                                <p dir="ltr"
-                                                                   style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;">
+                                                                <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;">
                                                                     <font style="color: rgb(0, 0, 0);">Si vous êtes dans
                                                                         l’une de ces deux situations, vous pouvez
                                                                         constituer un dossier de demande d’attestation
@@ -1112,20 +862,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-5-heading-1">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-5-content-1"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-5-content-1"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip927818">Quelle est la
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-5-content-1" aria-expanded="false" aria-controls="accordion-tab-5-content-1" data-original-title="" title="" aria-describedby="tooltip927818">Quelle est la
                                                             différence entre les offres Solo, Pro et Premium ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-5-content-1"
-                                                     aria-labelledby="accordion-tab-5-heading-1"
-                                                     data-parent="#accordion-tab-5" style="">
+                                                <div class="collapse" id="accordion-tab-5-content-1" aria-labelledby="accordion-tab-5-heading-1" data-parent="#accordion-tab-5" style="">
                                                     <div class="card-body">
                                                         <ul>
                                                             <li>
@@ -1179,21 +921,13 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-5-heading-2">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-5-content-2"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-5-content-2"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip927818">La formation en ligne
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-5-content-2" aria-expanded="false" aria-controls="accordion-tab-5-content-2" data-original-title="" title="" aria-describedby="tooltip927818">La formation en ligne
                                                             de la Capacité Transport de Marchandises léger est-elle
                                                             éligible au CPF ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-5-content-2"
-                                                     aria-labelledby="accordion-tab-5-heading-2"
-                                                     data-parent="#accordion-tab-5" style="">
+                                                <div class="collapse" id="accordion-tab-5-content-2" aria-labelledby="accordion-tab-5-heading-2" data-parent="#accordion-tab-5" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Seulement les packs de
@@ -1208,20 +942,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-5-heading-3">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-5-content-3"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-5-content-3"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip927818">Pourquoi le pack de
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-5-content-3" aria-expanded="false" aria-controls="accordion-tab-5-content-3" data-original-title="" title="" aria-describedby="tooltip927818">Pourquoi le pack de
                                                             formation Solo n'est-il pas éligible au CPF ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-5-content-3"
-                                                     aria-labelledby="accordion-tab-5-heading-3"
-                                                     data-parent="#accordion-tab-5" style="">
+                                                <div class="collapse" id="accordion-tab-5-content-3" aria-labelledby="accordion-tab-5-heading-3" data-parent="#accordion-tab-5" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Comme son nom l’indique,
@@ -1243,20 +969,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-5-heading-4">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-5-content-4"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-5-content-4"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip927818">Pourquoi les tarifs de
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-5-content-4" aria-expanded="false" aria-controls="accordion-tab-5-content-4" data-original-title="" title="" aria-describedby="tooltip927818">Pourquoi les tarifs de
                                                             Digimoov ont-ils changé?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-5-content-4"
-                                                     aria-labelledby="accordion-tab-5-heading-4"
-                                                     data-parent="#accordion-tab-5" style="">
+                                                <div class="collapse" id="accordion-tab-5-content-4" aria-labelledby="accordion-tab-5-heading-4" data-parent="#accordion-tab-5" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Afin de fournir la
@@ -1277,20 +995,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-5-heading-5">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-5-content-5"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-5-content-5"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip927818">Quels sont les modes de
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-5-content-5" aria-expanded="false" aria-controls="accordion-tab-5-content-5" data-original-title="" title="" aria-describedby="tooltip927818">Quels sont les modes de
                                                             paiements que je peux utiliser pour payer ma formation ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-5-content-5"
-                                                     aria-labelledby="accordion-tab-5-heading-5"
-                                                     data-parent="#accordion-tab-5" style="">
+                                                <div class="collapse" id="accordion-tab-5-content-5" aria-labelledby="accordion-tab-5-heading-5" data-parent="#accordion-tab-5" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Vous avez le choix de
@@ -1305,21 +1015,13 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-5-heading-6">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-5-content-6"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-5-content-6"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip927818">Je veux m’inscrire à la
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-5-content-6" aria-expanded="false" aria-controls="accordion-tab-5-content-6" data-original-title="" title="" aria-describedby="tooltip927818">Je veux m’inscrire à la
                                                             formation mais je n'ai pas du tout confiance au paiement en
                                                             ligne.
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-5-content-6"
-                                                     aria-labelledby="accordion-tab-5-heading-6"
-                                                     data-parent="#accordion-tab-5" style="">
+                                                <div class="collapse" id="accordion-tab-5-content-6" aria-labelledby="accordion-tab-5-heading-6" data-parent="#accordion-tab-5" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Le site web Digimoov.fr
@@ -1337,20 +1039,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-5-heading-7">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-5-content-7"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-5-content-7"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip927818">Comment financer la
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-5-content-7" aria-expanded="false" aria-controls="accordion-tab-5-content-7" data-original-title="" title="" aria-describedby="tooltip927818">Comment financer la
                                                             formation avec mon compte CPF ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-5-content-7"
-                                                     aria-labelledby="accordion-tab-5-heading-7"
-                                                     data-parent="#accordion-tab-5" style="">
+                                                <div class="collapse" id="accordion-tab-5-content-7" aria-labelledby="accordion-tab-5-heading-7" data-parent="#accordion-tab-5" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Cliquez sur Nos tarifs
@@ -1374,20 +1068,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-5-heading-8">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-5-content-8"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-5-content-8"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip927818">Je n’ai pas un solde
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-5-content-8" aria-expanded="false" aria-controls="accordion-tab-5-content-8" data-original-title="" title="" aria-describedby="tooltip927818">Je n’ai pas un solde
                                                             suffisant sur mon compte CPF, comment faire ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-5-content-8"
-                                                     aria-labelledby="accordion-tab-5-heading-8"
-                                                     data-parent="#accordion-tab-5" style="">
+                                                <div class="collapse" id="accordion-tab-5-content-8" aria-labelledby="accordion-tab-5-heading-8" data-parent="#accordion-tab-5" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Vous pouvez alimenter
@@ -1410,21 +1096,13 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-5-heading-9">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-5-content-9"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-5-content-9"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip927818">Est ce que je peux
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-5-content-9" aria-expanded="false" aria-controls="accordion-tab-5-content-9" data-original-title="" title="" aria-describedby="tooltip927818">Est ce que je peux
                                                             payer un
                                                             nouveau passage à l'examen avec mon compte CPF ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-5-content-9"
-                                                     aria-labelledby="accordion-tab-5-heading-9"
-                                                     data-parent="#accordion-tab-5" style="">
+                                                <div class="collapse" id="accordion-tab-5-content-9" aria-labelledby="accordion-tab-5-heading-9" data-parent="#accordion-tab-5" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Non, le CPF permet juste
@@ -1443,22 +1121,14 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-6-heading-1">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-6-content-1"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-6-content-1"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip427915">Est ce que on peut
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-6-content-1" aria-expanded="false" aria-controls="accordion-tab-6-content-1" data-original-title="" title="" aria-describedby="tooltip427915">Est ce que on peut
                                                             créer
                                                             une société de déménagement avec cette attestation de
                                                             capacité ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-6-content-1"
-                                                     aria-labelledby="accordion-tab-6-heading-1"
-                                                     data-parent="#accordion-tab-6" style="">
+                                                <div class="collapse" id="accordion-tab-6-content-1" aria-labelledby="accordion-tab-6-heading-1" data-parent="#accordion-tab-6" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Oui, à condition que les
@@ -1473,22 +1143,14 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-6-heading-2">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-6-content-2"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-6-content-2"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip375056">J’ai les permis C/CE,
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-6-content-2" aria-expanded="false" aria-controls="accordion-tab-6-content-2" data-original-title="" title="" aria-describedby="tooltip375056">J’ai les permis C/CE,
                                                             est
                                                             ce que j'ai besoin de passer la formation de Capacité de
                                                             Transport léger de marchandises ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-6-content-2"
-                                                     aria-labelledby="accordion-tab-6-heading-2"
-                                                     data-parent="#accordion-tab-6" style="">
+                                                <div class="collapse" id="accordion-tab-6-content-2" aria-labelledby="accordion-tab-6-heading-2" data-parent="#accordion-tab-6" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Oui.</font>
@@ -1500,22 +1162,14 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-6-heading-3">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-6-content-3"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-6-content-3"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip537404">J'ai la formation à la
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-6-content-3" aria-expanded="false" aria-controls="accordion-tab-6-content-3" data-original-title="" title="" aria-describedby="tooltip537404">J'ai la formation à la
                                                             Fimo
                                                             et FCO, est ce que j'ai besoin de passer la formation de
                                                             Capacité de Transport léger de marchandises ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-6-content-3"
-                                                     aria-labelledby="accordion-tab-6-heading-3"
-                                                     data-parent="#accordion-tab-6" style="">
+                                                <div class="collapse" id="accordion-tab-6-content-3" aria-labelledby="accordion-tab-6-heading-3" data-parent="#accordion-tab-6" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Oui.</font>
@@ -1526,20 +1180,12 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-6-heading-4">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-6-content-4"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-6-content-4"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip991849">Êtes-vous joignables
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-6-content-4" aria-expanded="false" aria-controls="accordion-tab-6-content-4" data-original-title="" title="" aria-describedby="tooltip991849">Êtes-vous joignables
                                                             par téléphone?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-6-content-4"
-                                                     aria-labelledby="accordion-tab-6-heading-4"
-                                                     data-parent="#accordion-tab-6" style="">
+                                                <div class="collapse" id="accordion-tab-6-content-4" aria-labelledby="accordion-tab-6-heading-4" data-parent="#accordion-tab-6" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Vous pouvez nous joindre
@@ -1554,21 +1200,13 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-6-heading-5">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-6-content-5"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-6-content-5"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip991849">Ai-je besoin besoin de
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-6-content-5" aria-expanded="false" aria-controls="accordion-tab-6-content-5" data-original-title="" title="" aria-describedby="tooltip991849">Ai-je besoin besoin de
                                                             repasser la formation de Capacité de Transport léger de
                                                             marchandises pour travailler en Europe ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-6-content-5"
-                                                     aria-labelledby="accordion-tab-6-heading-5"
-                                                     data-parent="#accordion-tab-6" style="">
+                                                <div class="collapse" id="accordion-tab-6-content-5" aria-labelledby="accordion-tab-6-heading-5" data-parent="#accordion-tab-6" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Non.</font>
@@ -1579,22 +1217,14 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-6-heading-6">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-6-content-6"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-6-content-6"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip483484">Est-ce qu'on doit
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-6-content-6" aria-expanded="false" aria-controls="accordion-tab-6-content-6" data-original-title="" title="" aria-describedby="tooltip483484">Est-ce qu'on doit
                                                             signer un
                                                             document comme un contrat de formation avant de débuter la
                                                             formation ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-6-content-6"
-                                                     aria-labelledby="accordion-tab-6-heading-6"
-                                                     data-parent="#accordion-tab-6" style="">
+                                                <div class="collapse" id="accordion-tab-6-content-6" aria-labelledby="accordion-tab-6-heading-6" data-parent="#accordion-tab-6" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Oui.</font>
@@ -1605,21 +1235,13 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-6-heading-7">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button"
-                                                                data-toggle="collapse"
-                                                                data-target="#accordion-tab-6-content-7"
-                                                                aria-expanded="false"
-                                                                aria-controls="accordion-tab-6-content-7"
-                                                                data-original-title="" title=""
-                                                                aria-describedby="tooltip246905">Est-ce qu'il faut un
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-6-content-7" aria-expanded="false" aria-controls="accordion-tab-6-content-7" data-original-title="" title="" aria-describedby="tooltip246905">Est-ce qu'il faut un
                                                             permis
                                                             AM (BSR) pour être transporteur ?
                                                         </button>
                                                     </h5>
                                                 </div>
-                                                <div class="collapse" id="accordion-tab-6-content-7"
-                                                     aria-labelledby="accordion-tab-6-heading-7"
-                                                     data-parent="#accordion-tab-6" style="">
+                                                <div class="collapse" id="accordion-tab-6-content-7" aria-labelledby="accordion-tab-6-heading-7" data-parent="#accordion-tab-6" style="">
                                                     <div class="card-body">
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Pour tous ceux qui sont

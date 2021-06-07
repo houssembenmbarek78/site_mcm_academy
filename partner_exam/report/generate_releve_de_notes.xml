@@ -3,7 +3,7 @@
     <data>
         <template id="id_releve_note_print_report_pdf">
             <t t-call="web.html_container">
-                <t t-foreach="docs" t-as="note">
+                <t t-foreach="docs" t-as="o">
                     <t t-call="web.basic_layout">
                         <style type="text/css">
                             .page {
@@ -31,7 +31,7 @@
                                                 numéro
                                                 d'agrément 2019-0110, après délibération du Jury,
                                                 <br/>
-                                                Atteste que :
+                                                Atteste que
                                                 <strong>
                                                     <t t-foreach="docs" t-as="prenom"
                                                        style="line-height:1.5;font-family:Montserrat;font-size:12%;page-break-before:always;">
@@ -51,7 +51,7 @@
                                                 <strong>
                                                     <t t-foreach="docs" t-as="adresse"
                                                        style="line-height:1.5;font-family:Montserrat;font-size:12 %;page-break-before: always;">
-                                                        <span t-field="adresse.street"/>
+                                                        <span t-field="adresse.street"/>,
                                                         <span t-field="adresse.zip"/>
                                                         <span t-field="adresse.city"/>
                                                     </t>
@@ -63,7 +63,7 @@
                                                         <t t-foreach="docs.note_exam_id[-1]" t-as="mention"
                                                            style="line-height:1.5;font-family:Montserrat;font-size:12 %;page-break-before: always;">
                                                             <t t-if="mention.mention == 'recu'">
-                                                                <span>reçu</span>
+                                                                <span>reçu(e)</span>
                                                             </t>
                                                             <t t-else=""></t>
                                                         </t>
@@ -207,7 +207,7 @@
                                                                                    t-as="res"
                                                                                    style="line-height:1.5;font-family:Montserrat;font-size:12%;page-break-before:always;">
                                                                                     <t t-if="res.resultat == 'recu'">
-                                                                                        <b>Reçu</b>
+                                                                                        <b>Reçu(e)</b>
                                                                                     </t>
                                                                                     <t t-else=""></t>
                                                                                 </t>
@@ -243,35 +243,19 @@
                                                     <table border="0" width="700">
                                                         <thead>
                                                             <tr align="center">
-                                                                <th>Signature</th>
-                                                                <th width="400"></th>
-                                                                <th>Date</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td align="center">
+                                                                <th>Signature
                                                                     <img src='/partner_exam/static/src/img/signature.png'
                                                                          style="height:100px; width:200px;"/>
-                                                                    <!--                                                        <span t-field="footer.date_today"-->
-                                                                    <!--                                                              t-field-options='{"format": "dd/MM/yyyy"}'/>-->
-                                                                </td>
-                                                                <td></td>
-                                                                <td align="center">
-                                                                    <span>Paris</span>
-                                                                    <t t-if="docs.note_exam_id">
-                                                                        <t t-foreach="docs.note_exam_id[-1]"
-                                                                           t-as="date_envoi"
-                                                                           style="line-height:1.5;font-family:Montserrat;font-size:12 %;page-break-before:always;">
-                                                                            <t t-if="date_envoi.date_today">
-                                                                                <span t-field="date_envoi.date_today"
-                                                                                      t-field-options='{"format": "dd/MM/yyyy"}'/>
-                                                                            </t>
-                                                                        </t>
-                                                                    </t>
-                                                                </td>
+                                                                </th>
+                                                                <th width="400"></th>
+                                                                <th>À Paris,
+                                                                    <span>le</span>
+                                                                    <br/>
+                                                                    <span t-field="o.note_exam_id[-1].date_today"
+                                                                          t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                                </th>
                                                             </tr>
-                                                        </tbody>
+                                                        </thead>
                                                     </table>
                                                 </div>
                                                 <br></br>
@@ -312,7 +296,7 @@
                                                 d'agrément 2019-0110, après délibération du Jury,
                                                 <br></br>
 
-                                                Atteste que :
+                                                Atteste que
                                                 <strong>
                                                     <t t-foreach="docs" t-as="prenom"
                                                        style="line-height:1.5;font-family:Montserrat;font-size:12%;page-break-before:always;">
@@ -332,7 +316,7 @@
                                                 <strong>
                                                     <t t-foreach="docs" t-as="adresse"
                                                        style="line-height:1.5;font-family:Montserrat;font-size:12 %;page-break-before: always;">
-                                                        <span t-field="adresse.street"/>
+                                                        <span t-field="adresse.street"/>,
                                                         <span></span>
                                                         <span t-field="adresse.zip"/>
                                                         <span t-field="adresse.city"/>
@@ -345,7 +329,7 @@
                                                         <t t-foreach="docs.note_exam_id[-1]" t-as="mention"
                                                            style="line-height:1.5;font-family:Montserrat;font-size:12 %;page-break-before: always;">
                                                             <t t-if="mention.mention">
-                                                                <span t-field="mention.mention"/>
+                                                                <span t-field="mention.mention"/>(e)
                                                             </t>
                                                         </t>
                                                     </t>
@@ -495,7 +479,7 @@
                                                                                    t-as="res"
                                                                                    style="line-height:1.5;font-family:Montserrat;font-size:12%;page-break-before:always;">
                                                                                     <t t-if="res.resultat == 'ajourne'">
-                                                                                        <b>Ajourné</b>
+                                                                                        <b>Ajourné(e)</b>
                                                                                     </t>
                                                                                     <t t-else=""></t>
                                                                                 </t>
@@ -531,33 +515,19 @@
                                                     <table border="0" width="700">
                                                         <thead>
                                                             <tr align="center">
-                                                                <th>Signature</th>
-                                                                <th width="400"></th>
-                                                                <th>Date</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td align="center">
+                                                                <th>Signature
                                                                     <img src='/partner_exam/static/src/img/signature.png'
                                                                          style="height:100px; width:200px;"/>
-                                                                </td>
-                                                                <td></td>
-                                                                <td align="center">
-                                                                    <span>Paris</span>
-                                                                    <t t-if="docs.note_exam_id">
-                                                                        <t t-foreach="docs.note_exam_id[-1]"
-                                                                           t-as="date_envoi"
-                                                                           style="line-height:1.5;font-family:Montserrat;font-size:12 %;page-break-before:always;">
-                                                                            <t t-if="date_envoi.date_today">
-                                                                                <span t-field="date_envoi.date_today"
-                                                                                      t-field-options='{"format": "dd/MM/yyyy"}'/>
-                                                                            </t>
-                                                                        </t>
-                                                                    </t>
-                                                                </td>
+                                                                </th>
+                                                                <th width="400"></th>
+                                                                <th>À Paris,
+                                                                    <span>le</span>
+                                                                    <br/>
+                                                                    <span t-field="o.note_exam_id[-1].date_today"
+                                                                          t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                                </th>
                                                             </tr>
-                                                        </tbody>
+                                                        </thead>
                                                     </table>
                                                 </div>
                                                 <br></br>
