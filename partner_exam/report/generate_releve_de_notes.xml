@@ -243,35 +243,19 @@
                                                     <table border="0" width="700">
                                                         <thead>
                                                             <tr align="center">
-                                                                <th>Signature</th>
-                                                                <th width="400"></th>
-                                                                <th>Date</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td align="center">
+                                                                <th>Signature
                                                                     <img src='/partner_exam/static/src/img/signature.png'
                                                                          style="height:100px; width:200px;"/>
-                                                                    <!--                                                        <span t-field="footer.date_today"-->
-                                                                    <!--                                                              t-field-options='{"format": "dd/MM/yyyy"}'/>-->
-                                                                </td>
-                                                                <td></td>
-                                                                <td align="center">
-                                                                    <span>Paris</span>
-                                                                    <t t-if="docs.note_exam_id">
-                                                                        <t t-foreach="docs.note_exam_id[-1]"
-                                                                           t-as="date_envoi"
-                                                                           style="line-height:1.5;font-family:Montserrat;font-size:12 %;page-break-before:always;">
-                                                                            <t t-if="date_envoi.date_today">
-                                                                                <span t-field="date_envoi.date_today"
-                                                                                      t-field-options='{"format": "dd/MM/yyyy"}'/>
-                                                                            </t>
-                                                                        </t>
-                                                                    </t>
-                                                                </td>
+                                                                </th>
+                                                                <th width="400"></th>
+                                                                <th>À Paris,
+                                                                    <span>le</span>
+                                                                    <br/>
+                                                                    <span t-field="o.note_exam_id[-1].date_today"
+                                                                          t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                                </th>
                                                             </tr>
-                                                        </tbody>
+                                                        </thead>
                                                     </table>
                                                 </div>
                                                 <br></br>
@@ -531,33 +515,19 @@
                                                     <table border="0" width="700">
                                                         <thead>
                                                             <tr align="center">
-                                                                <th>Signature</th>
-                                                                <th width="400"></th>
-                                                                <th>Date</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td align="center">
+                                                                <th>Signature
                                                                     <img src='/partner_exam/static/src/img/signature.png'
                                                                          style="height:100px; width:200px;"/>
-                                                                </td>
-                                                                <td></td>
-                                                                <td align="center">
-                                                                    <span>Paris</span>
-                                                                    <t t-if="docs.note_exam_id">
-                                                                        <t t-foreach="docs.note_exam_id[-1]"
-                                                                           t-as="date_envoi"
-                                                                           style="line-height:1.5;font-family:Montserrat;font-size:12 %;page-break-before:always;">
-                                                                            <t t-if="date_envoi.date_today">
-                                                                                <span t-field="date_envoi.date_today"
-                                                                                      t-field-options='{"format": "dd/MM/yyyy"}'/>
-                                                                            </t>
-                                                                        </t>
-                                                                    </t>
-                                                                </td>
+                                                                </th>
+                                                                <th width="400"></th>
+                                                                <th>À Paris,
+                                                                    <span>le</span>
+                                                                    <br/>
+                                                                    <span t-field="o.note_exam_id[-1].date_today"
+                                                                          t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                                </th>
                                                             </tr>
-                                                        </tbody>
+                                                        </thead>
                                                     </table>
                                                 </div>
                                                 <br></br>
