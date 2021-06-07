@@ -32,8 +32,6 @@
                                                 d'agrément 2019-0110, après délibération du Jury,
                                                 <br/>
                                                 Atteste que
-                                                <br></br>
-                                                Prénom et Nom :
                                                 <strong>
                                                     <span t-raw="'%s' % o.name if o.name else ''"/>
                                                 </strong>
@@ -242,7 +240,6 @@
                                                 numéro
                                                 d'agrément 2019-0110, après délibération du Jury,
                                                 <br></br>
-
                                                 Atteste que
                                                 <strong>
                                                     <span t-raw="'%s' % o.name if o.name else ''"/>
