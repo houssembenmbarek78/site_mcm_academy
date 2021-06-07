@@ -31,7 +31,7 @@
                                                 numéro
                                                 d'agrément 2019-0110, après délibération du Jury,
                                                 <br/>
-                                                Atteste que :
+                                                Atteste que
                                                 <strong>
                                                     <t t-foreach="docs" t-as="prenom"
                                                        style="line-height:1.5;font-family:Montserrat;font-size:12%;page-break-before:always;">
@@ -207,7 +207,7 @@
                                                                                    t-as="res"
                                                                                    style="line-height:1.5;font-family:Montserrat;font-size:12%;page-break-before:always;">
                                                                                     <t t-if="res.resultat == 'recu'">
-                                                                                        <b>Reçu</b>
+                                                                                        <b>Reçu(e)</b>
                                                                                     </t>
                                                                                     <t t-else=""></t>
                                                                                 </t>
@@ -296,7 +296,7 @@
                                                 d'agrément 2019-0110, après délibération du Jury,
                                                 <br></br>
 
-                                                Atteste que :
+                                                Atteste que
                                                 <strong>
                                                     <t t-foreach="docs" t-as="prenom"
                                                        style="line-height:1.5;font-family:Montserrat;font-size:12%;page-break-before:always;">
@@ -479,7 +479,7 @@
                                                                                    t-as="res"
                                                                                    style="line-height:1.5;font-family:Montserrat;font-size:12%;page-break-before:always;">
                                                                                     <t t-if="res.resultat == 'ajourne'">
-                                                                                        <b>Ajourné</b>
+                                                                                        <b>Ajourné(e)</b>
                                                                                     </t>
                                                                                     <t t-else=""></t>
                                                                                 </t>
