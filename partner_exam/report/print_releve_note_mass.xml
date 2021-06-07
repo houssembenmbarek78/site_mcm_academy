@@ -107,7 +107,7 @@
                                                                                 <span t-raw="'%s' % o.note_exam_id[-1].epreuve_a if o.note_exam_id[-1].epreuve_a else 'Absent'"/>
                                                                             </t>
                                                                             <t t-if="not o.note_exam_id[-1].epreuve_a &gt; 0">
-                                                                                <span>Absent</span>
+                                                                                <span>Absent(e)</span>
                                                                             </t>
                                                                         </strong>
                                                                     </td>
@@ -122,7 +122,7 @@
                                                                             <span t-raw="'%s' % o.note_exam_id[-1].epreuve_b if o.note_exam_id[-1].epreuve_b else 'Absent'"/>
                                                                         </t>
                                                                         <t t-if="not o.note_exam_id[-1].epreuve_b &gt; 0">
-                                                                            <span>Absent</span>
+                                                                            <span>Absent(e)</span>
                                                                         </t>
                                                                         </strong>
                                                                     </td>
@@ -322,7 +322,7 @@
                                                                                 <span t-raw="'%s' % o.note_exam_id[-1].epreuve_a if o.note_exam_id[-1].epreuve_a else 'Absent'"/>
                                                                             </t>
                                                                             <t t-if="not o.note_exam_id[-1].epreuve_a &gt; 0">
-                                                                                <span>Absent</span>
+                                                                                <span>Absent(e)</span>
                                                                             </t>
                                                                         </strong>
                                                                     </td>
@@ -337,7 +337,7 @@
                                                                         <span t-raw="'%s' % o.note_exam_id[-1].epreuve_b if o.note_exam_id[-1].epreuve_b else 'Absent'"/>
                                                                     </t>
                                                                     <t t-if="not o.note_exam_id[-1].epreuve_b &gt; 0">
-                                                                        <span>Absent</span>
+                                                                        <span>Absent(e)</span>
                                                                     </t>
                                                                         </strong>
                                                                     </td>
