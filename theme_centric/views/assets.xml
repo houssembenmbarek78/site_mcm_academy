@@ -52,7 +52,7 @@
 			<!-- Snippets scss -->
 			<link href="/theme_centric/static/src/scss/snippets.scss" rel="stylesheet" type="text/scss" />
 			<link href="/theme_centric/static/src/scss/snippet-common.scss" rel="stylesheet" type="text/scss" />
-			<link href="/theme_centric/static/src/scss/megamenu.scss" rel="stylesheet" type="text/scss" />
+			<!-- <link href="/theme_centric/static/src/scss/megamenu.scss" rel="stylesheet" type="text/scss" /> -->
 
 			<!-- Headers scss-->
 			<!-- <link href="/theme_centric/static/src/scss/header_eleven.scss" rel="stylesheet" type="text/scss" />

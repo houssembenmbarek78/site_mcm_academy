@@ -157,3 +157,7 @@ sh_snippet_adv/__pycache__/__init__.cpython-36.pyc
 theme_centric/__pycache__/__init__.cpython-36.pyc
 theme_centric/models/__pycache__/__init__.cpython-36.pyc
 theme_centric/models/__pycache__/theme_centric.cpython-36.pyc
+digimoov_website_templates/static/src/css/animation.css
+digimoov_website_templates/static/src/img/cercle-2.png
+digimoov_website_templates/static/src/img/cercle.png
+digimoov_website_templates/views/in.html
