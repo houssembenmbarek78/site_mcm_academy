@@ -31,7 +31,7 @@
                                                 numéro
                                                 d'agrément 2019-0110, après délibération du Jury,
                                                 <br/>
-                                                Atteste que :
+                                                Atteste que
                                                 <br></br>
                                                 Prénom et Nom :
                                                 <strong>
@@ -45,15 +45,14 @@
                                                 <br/>
                                                 Demeurant au :
                                                 <strong>
-                                                    <span t-raw="'%s' % o.street if o.street else ''"/>
+                                                    <span t-raw="'%s' % o.street if o.street else ''"/>,
                                                     <span t-raw="'%s' % o.zip if o.zip else ''"/>
                                                     <span t-raw="'%s' % o.city if o.city else ''"/>
                                                 </strong>
                                                 <br></br>
                                                 A été
                                                 <strong>
-                                                    <span t-raw="'%s' % o.note_exam_id[-1].mention"/>
-
+                                                    <span t-raw="'%s' % o.note_exam_id[-1].mention"/>(e)
                                                 </strong>
                                                 aux épreuves d’examen pour l’obtention de
                                                 l’attestation de capacité de transport léger de marchandises
@@ -250,7 +249,7 @@
                                                 d'agrément 2019-0110, après délibération du Jury,
                                                 <br></br>
 
-                                                Atteste que :
+                                                Atteste que
                                                 <br></br>
                                                 Prénom et Nom :
                                                 <strong>
@@ -264,14 +263,14 @@
                                                 <br/>
                                                 Demeurant au :
                                                 <strong>
-                                                    <span t-raw="'%s' % o.street if o.street else ''"/>
+                                                    <span t-raw="'%s' % o.street if o.street else ''"/>,
                                                     <span t-raw="'%s' % o.zip if o.zip else ''"/>
                                                     <span t-raw="'%s' % o.city if o.city else ''"/>
                                                 </strong>
                                                 <br></br>
                                                 A été
                                                 <strong>
-                                                    <span t-raw="'%s' % o.note_exam_id[-1].mention if o.note_exam_id[-1].mention else ''"/>
+                                                    <span t-raw="'%s' % o.note_exam_id[-1].mention if o.note_exam_id[-1].mention else ''"/>(e)
                                                 </strong>
                                                 aux épreuves d’examen pour l’obtention de
                                                 l’attestation de capacité de transport léger de marchandises

@@ -51,7 +51,7 @@
                                                 <strong>
                                                     <t t-foreach="docs" t-as="adresse"
                                                        style="line-height:1.5;font-family:Montserrat;font-size:12 %;page-break-before: always;">
-                                                        <span t-field="adresse.street"/>
+                                                        <span t-field="adresse.street"/>,
                                                         <span t-field="adresse.zip"/>
                                                         <span t-field="adresse.city"/>
                                                     </t>
@@ -63,7 +63,7 @@
                                                         <t t-foreach="docs.note_exam_id[-1]" t-as="mention"
                                                            style="line-height:1.5;font-family:Montserrat;font-size:12 %;page-break-before: always;">
                                                             <t t-if="mention.mention == 'recu'">
-                                                                <span>reçu</span>
+                                                                <span>reçu(e)</span>
                                                             </t>
                                                             <t t-else=""></t>
                                                         </t>
@@ -332,7 +332,7 @@
                                                 <strong>
                                                     <t t-foreach="docs" t-as="adresse"
                                                        style="line-height:1.5;font-family:Montserrat;font-size:12 %;page-break-before: always;">
-                                                        <span t-field="adresse.street"/>
+                                                        <span t-field="adresse.street"/>,
                                                         <span></span>
                                                         <span t-field="adresse.zip"/>
                                                         <span t-field="adresse.city"/>
@@ -345,7 +345,7 @@
                                                         <t t-foreach="docs.note_exam_id[-1]" t-as="mention"
                                                            style="line-height:1.5;font-family:Montserrat;font-size:12 %;page-break-before: always;">
                                                             <t t-if="mention.mention">
-                                                                <span t-field="mention.mention"/>
+                                                                <span t-field="mention.mention"/>(e)
                                                             </t>
                                                         </t>
                                                     </t>
