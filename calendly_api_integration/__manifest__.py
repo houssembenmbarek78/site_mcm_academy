@@ -16,7 +16,7 @@
         'views/partner.xml',
         'views/menu.xml',
         'views/calendly.xml',
-        'views/lead.xml',
+        # 'views/lead.xml',
     ],
     'demo': [
     ],
