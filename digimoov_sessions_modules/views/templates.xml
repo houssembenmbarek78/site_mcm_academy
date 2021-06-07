@@ -14,6 +14,12 @@
                                     <option value="bordeaux">
                                         Bordeaux
                                     </option>
+                                    <option value="bourges">
+                                        Bourges
+                                    </option>
+                                    <option value="grenoble">
+                                        Grenoble
+                                    </option>
                                     <option value="lille">
                                         Lille
                                     </option>
@@ -23,38 +29,32 @@
                                     <option value="marseille">
                                         Marseille
                                     </option>
+                                    <option value="metz">
+                                        Metz
+                                    </option>
+                                    <option value="montpellier">
+                                        Montpellier
+                                    </option>
                                     <option value="nantes">
                                         Nantes
                                     </option>
+                                    <option value="nice">
+                                        Nice
+                                    </option>
                                     <option value="paris">
                                         Paris
+                                    </option>
+                                    <option value="rennes">
+                                        Rennes
+                                    </option>
+                                    <option value="rouen">
+                                        Rouen
                                     </option>
                                     <option value="strasbourg">
                                         Strasbourg
                                     </option>
                                     <option value="toulouse">
                                         Toulouse
-                                    </option>
-                                    <option value="nice">
-                                        Nice
-                                    </option>
-                                    <option value="montpellier">
-                                        Montpellier
-                                    </option>
-                                    <option value="rouen">
-                                        Rouen
-                                    </option>
-                                    <option value="grenoble">
-                                        Grenoble
-                                    </option>
-                                    <option value="rennes">
-                                        Rennes
-                                    </option>
-                                    <option value="metz">
-                                        Metz
-                                    </option>
-                                    <option value="bourges">
-                                        Bourges
                                     </option>
                                 </b>
                             </select>
