@@ -186,8 +186,9 @@
                                 <div>
                                     ajouter les villes au niveau de contrat dans les lieu
                                     <span style="font-size:12px;font-weight: bold;">Lieu d'examens possible :</span>
-                                    <span style="font-size:12px">Bordeaux, Lyon, Marseille, Nantes, Paris,
-                                        Strasbourg, Toulouse, Lille,Nice,Montpellier,Rouen,Grenoble,Rennes,Metz,Bourges
+                                    <span style="font-size:12px">Bordeaux, Bourges, Grenoble, Lille, Lyon, Marseille,
+                                        Metz, Montpellier, Nantes, Nice, Paris, Rennes, Rouen,
+                                        Strasbourg, Toulouse
                                     </span>
                                 </div>
                                 <div>
@@ -197,8 +198,8 @@
                                     <span style="font-size:12px"
                                           t-field="doc.module_id.ville"/>
                                     <span style="font-size:12px;">le</span>
-                                        <span style="font-size:12px"
-                                              t-field="doc.module_id.date_exam"/>
+                                    <span style="font-size:12px"
+                                          t-field="doc.module_id.date_exam"/>
                                 </div>
                                 <div>
                                     <p style="font-size:12px">*En cas d'absence à l'examen, le candidat sera
@@ -227,7 +228,7 @@
                                     </span>
                                     <span style="font-size:12px"
                                           t-field="doc.module_id.ville"/>
-                                    <span style="font-size:12px"> à compterde la réception de vos
+                                    <span style="font-size:12px">à compterde la réception de vos
                                         identifiants pour effectuer les 102h de formation en ligne.Les formations en
                                         ligne consistent dans la fourniture d’un contenu numérique non fourni sur un
                                         support matériel accessible par le biais d’un espace électronique sécurisé
