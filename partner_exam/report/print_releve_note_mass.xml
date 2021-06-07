@@ -143,7 +143,12 @@
                                                                     </td>
                                                                     <td align="center">
                                                                         <strong>
-                                                                            <span t-raw="'%s' % o.note_exam_id[-1].moyenne_generale"/>
+                                                                            <t t-if="o.note_exam_id[-1].moyenne_generale &gt; 0">
+                                                                                <span t-raw="'%s' % o.note_exam_id[-1].moyenne_generale if o.note_exam_id[-1].moyenne_generale else 'Absent'"/>
+                                                                            </t>
+                                                                            <t t-if="not o.note_exam_id[-1].moyenne_generale &gt; 0">
+                                                                                <span>Absent(e)</span>
+                                                                            </t>
                                                                         </strong>
                                                                     </td>
                                                                 </tr>
@@ -359,7 +364,12 @@
                                                                     </td>
                                                                     <td align="center">
                                                                         <strong>
-                                                                            <span t-raw="'%s' % o.note_exam_id[-1].moyenne_generale"/>
+                                                                            <t t-if="o.note_exam_id[-1].moyenne_generale &gt; 0">
+                                                                                <span t-raw="'%s' % o.note_exam_id[-1].moyenne_generale if o.note_exam_id[-1].moyenne_generale else 'Absent'"/>
+                                                                            </t>
+                                                                            <t t-if="not o.note_exam_id[-1].moyenne_generale &gt; 0">
+                                                                                <span>Absent(e)</span>
+                                                                            </t>
                                                                         </strong>
                                                                     </td>
                                                                 </tr>
