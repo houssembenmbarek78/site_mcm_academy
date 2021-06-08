@@ -17,9 +17,9 @@
                                 <div class="col-12">
                                     <div class="col-12">
                                         <img src='/partner_exam/static/src/img/suivi_formation_1.png' height="200"
-                                             width="1150" style="padding-top:5px!important;"/>
-                                        <img src='/partner_exam/static/src/img/suivi_formation_2.png' height="300"
-                                             width="1150" style=""/>
+                                             width="1200" style="padding-top:5px!important;"/>
+                                        <img src='/partner_exam/static/src/img/suivi_formation_2.png' height="260"
+                                             width="1250" style=""/>
                                     </div>
                                     <t t-if="len(o.note_exam_id) &lt; 4">
                                         <center>
