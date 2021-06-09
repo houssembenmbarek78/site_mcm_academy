@@ -5,7 +5,7 @@
 #Modification de l'aperçu de la facturation
 from odoo import api, fields, models,_
 from odoo.exceptions import RedirectWarning, UserError, ValidationError
-from datetime import datetime
+from datetime import date
 
 
 class AccountJournalSynchronisation(models.Model):
