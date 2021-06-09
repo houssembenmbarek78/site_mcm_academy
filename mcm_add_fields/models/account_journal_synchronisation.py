@@ -18,7 +18,8 @@ class AccountJournalSynchronisation(models.Model):
     # Synchroniser les factures recentes
     def synchronisation_recent_invoice(self):
         factures = self.env['account.move'].search([])
-        currentDate = datetime.now()
+        currentDate = date.now()
+
         for facture in factures:
             if ((facture.cpf_solde_invoice == True and (facture.invoice_date) <= currentDate) or (facture.cpf_acompte_invoice == True and  facture.invoice_date < currentDate) or (facture.invoice_user_id == 'ZOÉ' and facture.invoice_date < currentDate)):
                 facture.methodes_payment = 'cpf'
