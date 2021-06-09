@@ -5,7 +5,8 @@
 #Modification de l'aperçu de la facturation
 from odoo import api, fields, models,_
 from odoo.exceptions import RedirectWarning, UserError, ValidationError
-from datetime import date
+from datetime import datetime
+
 
 
 class AccountJournalSynchronisation(models.Model):
@@ -14,9 +15,9 @@ class AccountJournalSynchronisation(models.Model):
     # Synchroniser les factures recentes
     def synchronisation_recent_invoice(self):
         factures = self.env['account.move'].search([])
-        date_du_jour = fields.Date(string='Date-Aujourdui', default=date.today())
+        currentDate = datetime.datetime.strptime('09/06/2021', '%d/%m/%Y').date()
         for facture in factures:
-            if ((facture.cpf_solde_invoice == True and facture.invoice_date <= date_du_jour ) or (facture.cpf_acompte_invoice == True and  facture.invoice_date < date_du_jour) or (facture.invoice_user_id == 'ZOÉ' and facture.invoice_date < date_du_jour)):
+            if ((facture.cpf_solde_invoice == True and (facture.invoice_date) <= currentDate ) or (facture.cpf_acompte_invoice == True and  facture.invoice_date < currentDate) or (facture.invoice_user_id == 'ZOÉ' and facture.invoice_date < currentDate)):
                 facture.methodes_payment = 'cpf'
             elif (facture.invoice_user_id != 'ZOÉ'):
                 facture.methodes_payment = 'cartebleu'
