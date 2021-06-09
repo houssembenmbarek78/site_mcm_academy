@@ -61,11 +61,11 @@ class SaleOrder(models.Model):
                                                                                    composition_mode='comment',
                                                                                    email_layout_xmlid="contract_send_documents.portal_contract_document_mail")
             subtype_id = self.env['ir.model.data'].xmlid_to_res_id('mt_note')
-            # attachments = self.env['ir.attachment'].search(
-            #     [("name", "=", "cerfa_11414-05.pdf"), ("description", "=", "cerfa_mail_template_attachment"),
-            #      ('res_model', "=", "sale.order")])
-            # for attachment in attachments:
-            #     attachment.sudo().unlink()
+            attachments = self.env['ir.attachment'].search(
+                [("name", "=", "cerfa_11414-05.pdf"), ("description", "=", "cerfa_mail_template_attachment"),
+                 ('res_model', "=", "sale.order")])
+            for attachment in attachments:
+                attachment.sudo().unlink()
             message = self.env['mail.message'].sudo().create({
                 'subject': 'Contrat signé',
                 'model': 'res.partner',
