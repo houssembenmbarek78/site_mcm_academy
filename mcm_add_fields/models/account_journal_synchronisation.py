@@ -6,7 +6,9 @@
 from odoo import api, fields, models,_
 from odoo.exceptions import RedirectWarning, UserError, ValidationError
 from datetime import datetime
-from  datetime import date
+from datetime import date, datetime
+
+
 
 
 
@@ -16,7 +18,7 @@ class AccountJournalSynchronisation(models.Model):
     # Synchroniser les factures recentes
     def synchronisation_recent_invoice(self):
         factures = self.env['account.move'].search([])
-        currentDate = datetime.datetime.strptime('09/06/2021', '%d-%m-%Y').date()
+        currentDate = datetime.now()
         for facture in factures:
             if ((facture.cpf_solde_invoice == True and (facture.invoice_date) <= currentDate) or (facture.cpf_acompte_invoice == True and  facture.invoice_date < currentDate) or (facture.invoice_user_id == 'ZOÉ' and facture.invoice_date < currentDate)):
                 facture.methodes_payment = 'cpf'
