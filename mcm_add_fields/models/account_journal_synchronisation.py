@@ -20,11 +20,12 @@ class AccountJournalSynchronisation(models.Model):
     # Synchroniser les factures recentes
     def synchronisation_recent_invoice(self):
         factures = self.env['account.move'].search([])
-        currentDate = datetime.datetime.strptime('09062021', '%d%m%Y').date()
+        # currentDate = datetime.datetime.strptime('09062021', '%d%m%Y').date()
+        My_date = datetime.datetime.strptime('08062021', '%d%m%Y').date()
 
 
         for facture in factures:
-            if ((facture.cpf_solde_invoice == True and (facture.invoice_date) <= currentDate) or (facture.cpf_acompte_invoice == True and  facture.invoice_date < currentDate) or (facture.invoice_user_id == 'ZOÉ' and facture.invoice_date < currentDate)):
+            if ((facture.cpf_solde_invoice == True and (facture.invoice_date) < My_date) or (facture.cpf_acompte_invoice == True and  facture.invoice_date < My_date) or (facture.invoice_user_id == 'ZOÉ' and facture.invoice_date < My_date)):
                 facture.methodes_payment = 'cpf'
             elif (facture.invoice_user_id != 'ZOÉ'):
                 facture.methodes_payment = 'cartebleu'
