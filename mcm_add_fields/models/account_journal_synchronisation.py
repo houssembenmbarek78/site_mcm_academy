@@ -16,7 +16,6 @@ class AccountJournalSynchronisation(models.Model):
     def synchronisation_recent_invoice(self):
         factures = self.env['account.move'].search([])
         # currentDate = datetime.datetime.strptime('09062021', '%d%m%Y').date()
-        My_date = datetime.datetime.strptime('08062021','%d%m%Y').date()
 
 
         for facture in factures:
