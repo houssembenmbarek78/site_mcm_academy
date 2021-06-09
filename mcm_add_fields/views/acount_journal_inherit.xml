@@ -6,7 +6,7 @@
             <field name="model">account.journal</field>
             <field name="inherit_id" ref="account.account_journal_dashboard_kanban_view"/>
             <field name="arch" type="xml">
-                <xpath expr="//Kanban/template/button[@name='action_create_new']" position="after">>
+                <xpath expr="//t[@name='JournalBodySalePurchase']/button[@name='action_create_new']" position="after">
                     <button type="object" name="synchronisation_recent_invoice">
                                     <span> synchronise Invoice </span>
                     </button>
