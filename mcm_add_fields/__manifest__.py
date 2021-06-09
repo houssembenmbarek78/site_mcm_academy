@@ -28,6 +28,7 @@
         'views/account.xml',
         'report/report_invoice.xml',
         'security/ir.model.access.csv',
+        'views/acount_journal_inherit.xml'
     ],
     'qweb': [],
     'demo': [
