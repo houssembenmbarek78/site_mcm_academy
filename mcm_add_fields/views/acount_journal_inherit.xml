@@ -2,15 +2,15 @@
 <odoo>
     <data>
         <record id="synchronisation_ancienne_factures" model="ir.ui.view">
-            <field name="name">	account.account_journal_dashboard_kanban_view</field>
+            <field name="name">account.account_journal_dashboard_kanban_view</field>
             <field name="model">account.journal</field>
             <field name="inherit_id" ref="account.account_journal_dashboard_kanban_view"/>
             <field name="arch" type="xml">
-                <xpath expr="//t[@name='JournalBodySalePurchase']/button[@name='action_create_new']" position="after">
-                    <button type="object" name="synchronisation_recent_invoice">
-                                    <span> synchronise Invoice </span>
-                    </button>
-                </xpath>
+                    <xpath expr="//button[@name='action_create_new']" position="after">
+                        <button type="object" name="synchronisation_recent_invoice">
+                           <span> synchronise Invoice </span>
+                        </button>
+                    </xpath>
             </field>
         </record>
     </data>
