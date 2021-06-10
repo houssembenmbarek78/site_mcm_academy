@@ -503,11 +503,11 @@
                     </div>
                 </div>
             </xpath>
-<!--            <xpath expr="//div[hasclass('page')]//p[4]" position="replace">-->
-<!--                            <p t-if="o.fiscal_position_id.note" name="note">-->
-<!--                                <span></span>-->
-<!--                            </p>-->
-<!--            </xpath>-->
+            <xpath expr="//div[hasclass('page')]//p[4]" position="replace">
+                            <p t-if="o.fiscal_position_id.note" name="note">
+                                <span></span>
+                            </p>
+            </xpath>
             <xpath expr="//div[@id='qrcode']" position="replace">
                 <div id="qrcode"
                      t-if="(o.company_id.qr_code) and (o.currency_id.name == 'EUR') and (o.invoice_partner_bank_id.acc_number != False)">
