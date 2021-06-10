@@ -86,6 +86,7 @@
             menu="True"
             paperformat="partner_exam.paperformat_releve_note_id"/>
 
+        <!--This is the action to create a print pdf in module res.partner for "Attestation de suivi de formation", using the template(xml) ID-->
         <report id="id_attestation"
             model="res.partner"
             string="Attestation Suivi Formation"
