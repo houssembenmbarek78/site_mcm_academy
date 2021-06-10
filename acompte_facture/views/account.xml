@@ -19,8 +19,8 @@
                 <label for="pourcentage_acompte" attrs="{'invisible': [('methodes_payment','=','cartebleu')]}"/>
                 <div class="oe_subtotal_footer_separator">
                     <field name="pourcentage_acompte" class="oe_inline" readonly="False"
-                           attrs="{'invisible': [('methode_paymentss','=','cartebleu')]}" force_save="1"/>
-                    <span attrs="{'invisible': [('methode_paymentss','=','cartebleu')]}">%</span>
+                           attrs="{'invisible': [('methodes_payment','=','cartebleu')]}" force_save="1"/>
+                    <span attrs="{'invisible': [('methodes_payment','=','cartebleu')]}">%</span>
                 </div>
 
             </xpath>

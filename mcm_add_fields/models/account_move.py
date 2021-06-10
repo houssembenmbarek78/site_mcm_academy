@@ -50,7 +50,7 @@ class AccountMove(models.Model):
     # et on peux la changer en pourcentage qu' on veux tout en calculant le montant payée et le reste à payer correctement
     #Si non si la méthode de payment est par carte bleu et le champs methode_payment== 'cartebleu' : l'acompte ne  s'affiche pas et la facture prend la somme de la formation
 #
-    @api.depends('invoice_line_ids.price_subtotal','pourcentage_acompte','methode_paymentss')
+    @api.depends('invoice_line_ids.price_subtotal','pourcentage_acompte','methodes_payment')
     def _compute_change_amount(self):
          date_precis = date(2021, 6, 10)
 
@@ -59,7 +59,7 @@ class AccountMove(models.Model):
             invoice_date=rec.invoice_date
             if  date_precis and rec.invoice_date :
                  daysDiff =  ((date_precis) - rec.invoice_date).days
-                 if (rec.methode_paymentss == 'cpf' and daysDiff > 0 ):
+                 if (rec.methodes_payment == 'cpf' and daysDiff > 0 ):
                     rec.pourcentage_acompte = 0
                     print(rec.invoice_date)
                     print (date_precis)
@@ -69,7 +69,7 @@ class AccountMove(models.Model):
                     # rec.amount_residual = rec.restamount
                     rec.amount_residual_signed = rec.restamount
                     rec.amount_total_signed = rec.restamount
-                 elif (rec.methode_paymentss == 'cpf' and daysDiff < 0 ) :
+                 elif (rec.methodes_payment == 'cpf' and daysDiff < 0 ) :
                     rec.pourcentage_acompte = 25
                     rec.amount_paye = (rec.amount_untaxed * rec.pourcentage_acompte) / 100
                     rec.restamount = amount_untaxed_initiale - rec.amount_paye

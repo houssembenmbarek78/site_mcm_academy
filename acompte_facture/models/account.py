@@ -48,7 +48,7 @@ class AccountMove(models.Model):
                 print(rec.restamount)
                 print(rec.amount_residual)
                 return invoice
-            elif (rec.methode_paymentss == 'cartebleu') :
+            elif (rec.methodes_payment == 'cartebleu') :
 
                 rec.amount_untaxed = rec.amount_total
 class resPartnerWizard(models.TransientModel):
