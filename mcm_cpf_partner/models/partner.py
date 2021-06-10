@@ -17,5 +17,5 @@ class resComapny(models.Model):
         ('service_validated', 'Service Fait Validé'),
         ('bill', 'Facturé'),
         ('canceled', 'Annulé'),
-    ], string='Statut CPF')
+    ], string='Statut CPF',default='untreated')
     date_cpf=fields.Datetime('Date CPF')
