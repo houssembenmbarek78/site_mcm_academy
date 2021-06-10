@@ -40,6 +40,7 @@ class NoteExamen(models.Model):
         ('present', 'Présent'),
         ('Absent', 'Absent')],
         string="Présence", default='present')
+    ville = fields.Char(string="Session de ")
 
     @api.onchange('epreuve_a', 'epreuve_b', 'presence')
     def _compute_moyenne_generale(self):
@@ -72,10 +73,5 @@ class NoteExamen(models.Model):
         resultat = super(NoteExamen, self).create(vals)
         resultat._compute_moyenne_generale()
         return resultat
-
-    def write(self, vals):
-        self._compute_moyenne_generale()
-        res = super(NoteExamen, self).write(vals)
-        return res
 
 
