@@ -75,7 +75,8 @@ class NoteExamen(models.Model):
 
     def write(self, values):
         res = super(NoteExamen, self).write(values)
-        res._compute_moyenne_generale()
+        if res:
+            self._compute_moyenne_generale()
         return res
 
 
