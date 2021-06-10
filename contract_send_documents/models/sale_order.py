@@ -37,9 +37,9 @@ class SaleOrder(models.Model):
                 'body': 'Contrat signé par ' + str(values['signed_by']),
             })
         if 'signed_by' in values and 'signed_on' in values and 'signature' in values and self.state != 'cancel' and self.state != 'draft' and self.company_id.id==2:
-            if self.env.su:
-                # sending mail in sudo was meant for it being sent from superuser
-                self = self.with_user(SUPERUSER_ID)
+            # if self.env.su:
+            #     # sending mail in sudo was meant for it being sent from superuser
+            #     self = self.with_user(SUPERUSER_ID)
             template_id = int(self.env['ir.config_parameter'].sudo().get_param('contract_send_documents.mail_template_client_info_document_digimoov'))
             template_id = self.env['mail.template'].search([('id', '=', template_id)]).id
             if not template_id:
