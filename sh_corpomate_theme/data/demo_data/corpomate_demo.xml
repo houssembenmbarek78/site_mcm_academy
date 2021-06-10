@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+
+		<!-- 
+		==========================
+		Testimonial
+		==========================
+		 -->
+
+
+		<!-- Testimonial Partner -->
+        <record id="sh_corpomate_testimonial_res_partner_1" model="res.partner">
+            <field name="name">Corpomate Partner 1</field>
+            <field name="company_type">person</field>
+            <field name="function">Functional Consultant</field>            
+            <field name="image_1920" type="base64" file="sh_corpomate_theme/static/src/img/demo_data/testimonial/testimonial_rp_1.jpg"/>
+        </record>
+
+        <record id="sh_corpomate_testimonial_res_partner_2" model="res.partner">
+            <field name="name">Corpomate Partner 2</field>
+            <field name="company_type">person</field>
+            <field name="function">Marketing Manager</field>         
+            <field name="image_1920" type="base64" file="sh_corpomate_theme/static/src/img/demo_data/testimonial/testimonial_rp_2.jpg"/>
+        </record>
+        
+        <record id="sh_corpomate_testimonial_res_partner_3" model="res.partner">
+            <field name="name">Corpomate Partner 3</field>
+            <field name="company_type">person</field>
+            <field name="function">Store Manager</field>       
+            <field name="image_1920" type="base64" file="sh_corpomate_theme/static/src/img/demo_data/testimonial/testimonial_rp_3.jpg"/>
+        </record>
+
+
+
+
+		<!-- Testimonial -->
+        <record id="sh_corpomate_testimonial_1" model="sh.corpomate.theme.testimonial">
+            <field name="name" ref="sh_corpomate_testimonial_res_partner_1"/>
+            <field name="sequence" type="int">1</field>
+            <field name="active">True</field>
+            <field name="function">Functional Consultant</field>            
+            <field name="image" type="base64" file="sh_corpomate_theme/static/src/img/demo_data/testimonial/testimonial_rp_1.jpg"/>
+            <field name="comment">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</field>              
+        </record>
+
+        <record id="sh_corpomate_testimonial_2" model="sh.corpomate.theme.testimonial">
+            <field name="name" ref="sh_corpomate_testimonial_res_partner_2"/>
+            <field name="sequence" type="int">2</field>
+            <field name="active">True</field>
+            <field name="function">Marketing Manager</field>         
+            <field name="image" type="base64" file="sh_corpomate_theme/static/src/img/demo_data/testimonial/testimonial_rp_2.jpg"/>
+            <field name="comment">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</field>          
+        </record>
+        
+        <record id="sh_corpomate_testimonial_3" model="sh.corpomate.theme.testimonial">
+            <field name="name" ref="sh_corpomate_testimonial_res_partner_3"/>
+            <field name="sequence" type="int">3</field>            
+            <field name="active">True</field>
+            <field name="function">Store Manager</field>       
+            <field name="image" type="base64" file="sh_corpomate_theme/static/src/img/demo_data/testimonial/testimonial_rp_3.jpg"/>
+            <field name="comment">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</field>           
+        </record>
+
+        
+        
+        
+		<!-- 
+		==========================
+		Our Partners
+		==========================
+		 -->
+
+
+        <record id="sh_corpomate_partner_res_partner_1" model="res.partner">
+            <field name="name">Corpomate Partner 4</field>
+<field name="company_type">company</field>        
+            <field name="image_1920" type="base64" file="sh_corpomate_theme/static/src/img/demo_data/our_partner/our_partner_1.png"/>
+        </record>
+        
+        <record id="sh_corpomate_partner_res_partner_2" model="res.partner">
+            <field name="name">Corpomate Partner 5</field>
+<field name="company_type">company</field>          
+            <field name="image_1920" type="base64" file="sh_corpomate_theme/static/src/img/demo_data/our_partner/our_partner_2.png"/>
+        </record>
+
+        <record id="sh_corpomate_partner_res_partner_3" model="res.partner">
+            <field name="name">Corpomate Partner 6</field>
+<field name="company_type">company</field>         
+            <field name="image_1920" type="base64" file="sh_corpomate_theme/static/src/img/demo_data/our_partner/our_partner_3.png"/>
+        </record>
+
+        <record id="sh_corpomate_partner_res_partner_4" model="res.partner">
+            <field name="name">Corpomate Partner 7</field>
+<field name="company_type">company</field>       
+            <field name="image_1920" type="base64" file="sh_corpomate_theme/static/src/img/demo_data/our_partner/our_partner_4.png"/>
+        </record>
+
+        <record id="sh_corpomate_partner_res_partner_5" model="res.partner">
+            <field name="name">Corpomate Partner 8</field>
+<field name="company_type">company</field>      
+            <field name="image_1920" type="base64" file="sh_corpomate_theme/static/src/img/demo_data/our_partner/our_partner_5.png"/>
+        </record>        
+        
+        
+        
+		<!-- 
+		Our Partner Data
+		 -->        
+ 
+ 
+        <record id="sh_corpomate_our_partner_res_partner_1" model="sh.corpomate.theme.our.partner">
+            <field name="name" ref="sh_corpomate_partner_res_partner_1"/>
+            <field name="sequence" type="int">1</field>   
+            <field name="active">True</field>                             
+            <field name="image" type="base64" file="sh_corpomate_theme/static/src/img/demo_data/our_partner/our_partner_1.png"/>
+        </record>
+        
+        <record id="sh_corpomate_our_partner_res_partner_2" model="sh.corpomate.theme.our.partner">
+            <field name="name" ref="sh_corpomate_partner_res_partner_2"/>
+            <field name="sequence" type="int">2</field>     
+            <field name="active">True</field>                      
+            <field name="image" type="base64" file="sh_corpomate_theme/static/src/img/demo_data/our_partner/our_partner_2.png"/>
+        </record>
+
+        <record id="sh_corpomate_our_partner_res_partner_3" model="sh.corpomate.theme.our.partner">
+            <field name="name" ref="sh_corpomate_partner_res_partner_3"/>
+            <field name="sequence" type="int">3</field>    
+            <field name="active">True</field>                              
+            <field name="image" type="base64" file="sh_corpomate_theme/static/src/img/demo_data/our_partner/our_partner_3.png"/>
+        </record>
+
+        <record id="sh_corpomate_our_partner_res_partner_4" model="sh.corpomate.theme.our.partner">
+            <field name="name" ref="sh_corpomate_partner_res_partner_4"/>
+            <field name="sequence" type="int">4</field>   
+            <field name="active">True</field>                              
+            <field name="image" type="base64" file="sh_corpomate_theme/static/src/img/demo_data/our_partner/our_partner_4.png"/>
+        </record>
+
+        <record id="sh_corpomate_our_partner_res_partner_5" model="sh.corpomate.theme.our.partner">
+            <field name="name" ref="sh_corpomate_partner_res_partner_5"/>
+            <field name="sequence" type="int">5</field>    
+            <field name="active">True</field>                             
+            <field name="image" type="base64" file="sh_corpomate_theme/static/src/img/demo_data/our_partner/our_partner_5.png"/>
+        </record>   
+ 
+ 
+        
+        
+        
+        
+        
+    </data>
+</odoo>

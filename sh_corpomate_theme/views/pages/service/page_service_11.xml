@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- SERVICE 11 -->
+	<template id="sh_corpomate_tmpl_service_11" name="service">
+	    <t t-call="website.layout"> 
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			      
+			      
+      			
+      			   <section id="sh_corpomate_theme_section_285" class="s_banner parallax s_parallax_no_overflow_hidden" data-name="services Snippet 1(Banner)" style="background-image: none;">
+        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/theme11/servicebanner.png'); background-position: 50% 0;background-attachment: fixed;"/>
+        <div class="container">
+          <div class="sh_banner">
+            <div class="sh_title sh_animation_part">
+              <h4 class="o_default_snippet_text">Services</h4>
+            </div>
+            <div class="sh_breadcrumb sh_animation_part">
+              <ul>
+                <li>
+                  <a href="#" class="btn sh_main o_default_snippet_text">home <span class="fa fa-link"/></a>
+                </li>
+                <li>
+                  <a href="#" class="btn o_default_snippet_text">Services</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_286" data-name="services Snippet 2">
+        <div class="container">
+          <div class="sh_title sh_animation_part">
+            <h2 class="o_default_snippet_text">quality services</h2>
+            <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 sh_animation_part">
+              <div class="sh_content">
+                <div class="sh_icon">
+                  <span class="fa fa-ambulance"/>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">emergency services</h4>
+                  <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 sh_animation_part">
+              <div class="sh_content">
+                <div class="sh_icon">
+                  <span class="fa fa-ambulance"/>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">medicine</h4>
+                  <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 sh_animation_part">
+              <div class="sh_content">
+                <div class="sh_icon">
+                  <span class="fa fa-ambulance"/>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">eye care</h4>
+                  <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 sh_animation_part">
+              <div class="sh_content">
+                <div class="sh_icon">
+                  <span class="fa fa-ambulance"/>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">neurology</h4>
+                  <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 sh_animation_part">
+              <div class="sh_content">
+                <div class="sh_icon">
+                  <span class="fa fa-ambulance"/>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">pediatrics</h4>
+                  <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 sh_animation_part">
+              <div class="sh_content">
+                <div class="sh_icon">
+                  <span class="fa fa-ambulance"/>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">dental care</h4>
+                  <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+			      
+			      
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

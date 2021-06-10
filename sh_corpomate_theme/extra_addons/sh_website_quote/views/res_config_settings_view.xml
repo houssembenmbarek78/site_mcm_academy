@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    
+        <record id="sh_wq_website_quote_res_config_settings" model="ir.ui.view">
+            <field name="name">sh.wq.website.quote.res.config.settings</field>
+            <field name="model">res.config.settings</field>
+            <field name="inherit_id" ref="website.res_config_settings_view_form"/>
+            <field name="arch" type="xml">   
+            
+                 <xpath expr="//div[@id='website_settings']" position="after">  
+					
+					<!-- color js -->
+<!-- 					<script type="text/javascript" src="/sh_corpomate_theme/extra_addons/sh_website_quote/static/src/js/jscolor.js"></script> -->         
+                       
+                       <h2>Website Quote</h2>
+                       <div class="row mt16 o_settings_container" id="sh_wq_website_quote_settings">
+                          <div class="col-12 col-md-6 o_setting_box">
+ 							<group name="sh_wq_website_quote_settings_group">
+ 							
+ 								<field name="sh_wq_is_display_quote"/>
+ 								<field name="sh_wq_quote_button_style" attrs="{'invisible': [('sh_wq_is_display_quote','=',False)],'required': [('sh_wq_is_display_quote', '=', True)] }"/>
+ 								
+ 								<!-- rectangle -->
+ 								<field name="sh_wq_quote_button_label" placeholder="e.g Get a Quote" attrs="{'invisible': ['|',('sh_wq_is_display_quote','=',False),('sh_wq_quote_button_style','==','fball')],'required': [('sh_wq_quote_button_style', '==', 'fbutton')] }"/> 
+ 								<field name="sh_wq_quote_button_label_color" placeholder="e.g 00AFF0" class="jscolor" attrs="{'invisible': ['|',('sh_wq_is_display_quote','=',False),('sh_wq_quote_button_style','==','fball')],'required': [('sh_wq_quote_button_style', '==', 'fbutton')] }"/> 
+ 								<field name="sh_wq_quote_button_color" placeholder="e.g 00AFF0" class="jscolor" attrs="{'invisible': ['|',('sh_wq_is_display_quote','=',False),('sh_wq_quote_button_style','==','fball')],'required': [('sh_wq_quote_button_style', '==', 'fbutton')] }"/> 
+ 								
+ 								
+								<!-- bubble -->
+								<field name="sh_wq_quote_bubble_image" widget="image" class="oe_avatar" options="{'preview_image': 'image_medium', 'size': [90, 90]}" attrs="{'invisible': ['|',('sh_wq_is_display_quote','=',False),('sh_wq_quote_button_style','!=','fball')],'required': [('sh_wq_quote_button_style', '==', 'fball'),('sh_wq_is_display_quote', '=', True)] }"/> 
+								
+								<!-- 
+								<field name="sh_wq_quote_bubble_hover_label" placeholder="e.g Get a Quote" attrs="{'invisible': ['|',('sh_wq_is_display_quote','=',False),('sh_wq_quote_button_style','!=','fball')],'required': [('sh_wq_quote_button_style', '==', 'fball')] }"/> 								
+								<field name="sh_wq_quote_bubble_hover_label_color" placeholder="e.g FFFFFF" class="jscolor" attrs="{'invisible': ['|',('sh_wq_is_display_quote','=',False),('sh_wq_quote_button_style','!=','fball')],'required': [('sh_wq_quote_button_style', '==', 'fball')] }"/>
+								<field name="sh_wq_quote_bubble_hover_color" placeholder="e.g 000000" class="jscolor" attrs="{'invisible': ['|',('sh_wq_is_display_quote','=',False),('sh_wq_quote_button_style','!=','fball')],'required': [('sh_wq_quote_button_style', '==', 'fball')] }"/>
+								 -->
+								 							 								
+ 								<field name="sh_wq_quote_button_position" attrs="{'invisible': [('sh_wq_is_display_quote','=',False)],'required': [('sh_wq_is_display_quote', '=', True)] }"/>	
+ 								
+ 								<!-- for fields visibility -->
+ 								<field name="sh_wq_is_contact_name" attrs="{'invisible': [('sh_wq_is_display_quote','=',False)]}"/>	 								
+ 								<field name="sh_wq_is_phone" attrs="{'invisible': [('sh_wq_is_display_quote','=',False)]}"/>	
+ 								<field name="sh_wq_is_email_from" attrs="{'invisible': [('sh_wq_is_display_quote','=',False)]}"/>	
+ 								<field name="sh_wq_is_partner_name" attrs="{'invisible': [('sh_wq_is_display_quote','=',False)]}"/>	
+ 								<field name="sh_wq_is_name" attrs="{'invisible': [('sh_wq_is_display_quote','=',False)]}"/>	
+ 								<field name="sh_wq_is_description" attrs="{'invisible': [('sh_wq_is_display_quote','=',False)]}"/>	
+ 								
+ 								 								 								 								 															
+							</group>
+                          </div>    
+                       </div>                      
+                 
+                 </xpath>              
+                                         
+            </field>
+        </record>
+
+    </data>
+</odoo>
+
+
+
+

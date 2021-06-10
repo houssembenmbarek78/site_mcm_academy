@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="sh_website_coming_soon_assets_frontend" inherit_id="website.assets_frontend" name="Coming Soon">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/css" href="/sh_corpomate_theme/extra_addons/sh_website_coming_soon/static/src/css/animate.css" />
+            <link rel="stylesheet" type="text/css" href="/sh_corpomate_theme/extra_addons/sh_website_coming_soon/static/src/css/coming_soon.css" />
+
+            <script src="/sh_corpomate_theme/extra_addons/sh_website_coming_soon/static/src/js/countdown.js" type="text/javascript" />
+        </xpath>
+    </template>
+</odoo>

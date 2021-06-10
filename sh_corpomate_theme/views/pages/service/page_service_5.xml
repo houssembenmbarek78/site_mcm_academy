@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- SERVICE 5 -->
+	<template id="sh_corpomate_tmpl_service_5" name="service">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			
+
+
+
+
+<section id="sh_corpomate_theme_section_119" class="home-area bg-item margin-top-space-2" style="background-image: url('/sh_corpomate_theme/static/src/img/banner1.jpg')">
+    <style class="o_default_snippet_text">
+        .navbar-light {
+            background: transparent !important;
+            z-index: 1;
+        }
+        
+        .navbar-light #top_menu_collapse .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+        
+        .o_affix_enabled .navbar-light {
+            background: transparent !important;
+        }
+        
+        @media (max-width: 768px) {
+            .navbar-light {
+                background: #fff !important;
+                z-index: 1;
+            }
+            .navbar-light #top_menu_collapse .navbar-nav .nav-link {
+                color: #585b60 !important;
+            }
+            .o_affix_enabled .navbar-light {
+                background-color: #fff !important;
+            }
+        }
+    </style>
+    <div class="bg-overlay-4" />
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 mx-auto">
+                <div class="banner-content text-center">
+                    <h1 class="o_default_snippet_text">Services</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb align-items-center">
+                            <li class="breadcrumb-item">
+                                <a href="index.html" class="o_default_snippet_text">HOME</a>
+                                <span class="fa fa-chevron-right" />
+                            </li>
+                            <li class="breadcrumb-item active o_default_snippet_text" aria-current="page">Services 5</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-shape">
+        <img class="img-fluid" src="/sh_corpomate_theme/static/src/img/bg_home_shape.png" alt="bottom-shape image" />
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_117">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-6 mt-lg-30 sh_animation_part">
+                <div class="wrapper section-title text-right">
+                    <h2 class="o_default_snippet_text">Lorem ipsum dolor sit amet,</h2>
+                    <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci</p>
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="mission-box">
+                                <div class="content section-title">
+                                    <h3 class="o_default_snippet_text">Lorem ipsum dolor sit amet,</h3>
+                                    <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci</p>
+                                    <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sh_column_container col-sm-12 col-lg-6 col-md-12 row sh_animation_part">
+                <div class="col-sm-12 col-lg-6 col-md-6">
+                    <div style="">
+                        <div class="sh-fancybox-layout7 animated">
+                            <div class="sh-fancybox-inner">
+                                <div class="sh-fancybox-icon">
+                                    <div class="sh-fancybox-icon-inner">
+                                        <span class="fa fa-rocket" />
+                                    </div>
+                                    <div class="sh-fancybox-rotate" />
+                                </div>
+                                <h3 class="sh-fancybox-title o_default_snippet_text"> Lorem ipsum dolor sit amet,</h3>
+                                <div class="sh-fancybox-content o_default_snippet_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-sm-12 col-lg-6 col-md-6">
+                    <div class="sh-fancybox-layout7 animated">
+                        <div class="sh-fancybox-inner">
+                            <div class="sh-fancybox-icon">
+                                <div class="sh-fancybox-icon-inner">
+                                    <span class="fa fa-rocket" />
+                                </div>
+                                <div class="sh-fancybox-rotate" />
+                            </div>
+                            <h3 class="sh-fancybox-title o_default_snippet_text"> Lorem ipsum dolor sit amet</h3>
+                            <div class="sh-fancybox-content o_default_snippet_text"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_118" class="padding-section bg-grey">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-6 col-md-6 sh_animation_part">
+                <div class="services-box">
+                    <div class="icon">
+                        <span class="fa fa-rocket" />
+                    </div>
+                    <div class="content section-title">
+                        <h3 class="o_default_snippet_text">Lorem ipsum </h3>
+                        <p class="o_default_snippet_text"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+                    </div>
+                </div>
+                <div class="services-box">
+                    <div class="icon">
+                        <span class="fa fa-rocket" />
+                    </div>
+                    <div class="content section-title">
+                        <h3 class="o_default_snippet_text">Lorem ipsum </h3>
+                        <p class="o_default_snippet_text"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+                    </div>
+                </div>
+                <div class="services-box mb-0">
+                    <div class="icon">
+                        <span class="fa fa-rocket" />
+                    </div>
+                    <div class="content section-title">
+                        <h3 class="o_default_snippet_text">Lorem ipsum </h3>
+                        <p class="o_default_snippet_text"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 sh_animation_part">
+                <div class="wrapper section-title text-right mt-md-30">
+                    <h2 class="o_default_snippet_text">Lorem ipsum </h2>
+                    <p class="o_default_snippet_text"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+                    <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+      
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <data noupdate="1">
+	
+	  <template id="sh_snippet_builder_snippets" name="Snippet Builder" inherit_id="website.snippets">
+	  
+		  <xpath expr="//div[@id='snippet_structure']" position="after">
+			<div id="sh_snippet_builder_snippets" class="o_panel">
+				
+				<div class="o_panel_header">
+					Snippet Builder
+				</div>		
+				
+				<div class="o_panel_body">
+				
+				   <t t-snippet="sh_corpomate_theme.sh_snippet_builder_std_tmpl_1" 
+				   t-thumbnail="/sh_corpomate_theme/static/src/img/extra_addons/sh_snippet_builder/s_1.png"/>
+				   
+				</div>
+				
+			</div>
+		  
+		  </xpath>
+	      
+	  </template>
+	
+	</data>
+	
+   <function model="sh.snippet.builder" name="action_noupdate_tmpl" eval="[[]]"/>	
+	
+
+
+</odoo>

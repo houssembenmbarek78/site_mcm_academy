@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- FAQ PAGE 9 -->
+	<template id="sh_corpomate_tmpl_faq_9" name="FAQ">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure">
+			
+				<section id="sh_corpomate_theme_section_252" class="parallax s_parallax_no_overflow_hidden bg-black-75" data-name="Banner" style="background-image: none;" data-scroll-background-ratio="0">
+    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/faq-banner.png'); background-position: 50% 0px;" />
+    <div class="container">
+        <div class="s_nb_column_fixed">
+            <div class="rounded pt32 pb32">
+                <h2>FAQ</h2>
+                <h4><a href="/" class="o_default_snippet_text">Home </a><span class="o_default_snippet_text">||</span>FAQ</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_211" class="sh_animation_part" data-name="FAQ 3">
+    <div class="container">
+        <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+            <div class="card">
+                <div class="card-header" role="tab" id="headingOne81">
+                    <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne81" aria-expanded="true" aria-controls="collapseOne81" data-target="#collapseOne81">
+                        <h5 class="mb-0">
+                            <span class="sh_text o_default_snippet_text">Can I change the theme color? </span>
+                            <span class="fa fa-plus sh_icon_down" />
+                        </h5>
+                    </a>
+                </div>
+                <div id="collapseOne81" class="collapse show" role="tabpanel" aria-labelledby="headingOne81" data-parent="#accordionEx">
+                    <div class="card-body">
+                        <p class="o_default_snippet_text">
+                            Aliquam mattis ultricies dolor ac vulputate. Pellentesque lectus tellus, varius vitae est et, ullamcorper porttitor urna. Praesent tristique tempor erat quis tincidunt. Sed elementum porta ullamcorper.
+                        </p>
+                        <p class="o_default_snippet_text">
+                            Cras mattis dui ac elit sollicitudin, eu rutrum quam pharetra. Etiam consectetur nunc vitae nibh egestas scelerisque. Nam sed auctor eros, et euismod leo. Integer ut fringilla nunc. Donec eget lacus lobortis,
+                            aliquam nulla ultricies, cursus libero.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="headingOne82">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne82" aria-expanded="true" aria-controls="collapseOne82" data-target="#collapseOne82">
+                        <h5 class="mb-0">
+                            <span class="sh_text o_default_snippet_text">Can I change the theme color?</span>
+                            <span class="fa fa-plus sh_icon_down" />
+                        </h5>
+                    </a>
+                </div>
+                <div id="collapseOne82" class="collapse" role="tabpanel" aria-labelledby="headingOne82" data-parent="#accordionEx">
+                    <div class="card-body">
+                        <p class="o_default_snippet_text">
+                            Aliquam mattis ultricies dolor ac vulputate. Pellentesque lectus tellus, varius vitae est et, ullamcorper porttitor urna. Praesent tristique tempor erat quis tincidunt. Sed elementum porta ullamcorper.
+                        </p>
+                        <p class="o_default_snippet_text">
+                            Cras mattis dui ac elit sollicitudin, eu rutrum quam pharetra. Etiam consectetur nunc vitae nibh egestas scelerisque. Nam sed auctor eros, et euismod leo. Integer ut fringilla nunc. Donec eget lacus lobortis,
+                            aliquam nulla ultricies, cursus libero.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="headingOne83">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne83" aria-expanded="true" aria-controls="collapseOne83" data-target="#collapseOne83">
+                        <h5 class="mb-0">
+                            <span class="sh_text o_default_snippet_text">Can I change the theme color?</span>
+                            <span class="fa fa-plus sh_icon_down" />
+                        </h5>
+                    </a>
+                </div>
+                <div id="collapseOne83" class="collapse" role="tabpanel" aria-labelledby="headingOne83" data-parent="#accordionEx">
+                    <div class="card-body">
+                        <p class="o_default_snippet_text">
+                            Aliquam mattis ultricies dolor ac vulputate. Pellentesque lectus tellus, varius vitae est et, ullamcorper porttitor urna. Praesent tristique tempor erat quis tincidunt. Sed elementum porta ullamcorper.
+                        </p>
+                        <p class="o_default_snippet_text">
+                            Cras mattis dui ac elit sollicitudin, eu rutrum quam pharetra. Etiam consectetur nunc vitae nibh egestas scelerisque. Nam sed auctor eros, et euismod leo. Integer ut fringilla nunc. Donec eget lacus lobortis,
+                            aliquam nulla ultricies, cursus libero.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+				
+				
+			</div>
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

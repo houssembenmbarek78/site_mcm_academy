@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- OUR TEAM 9 -->
+	<template id="sh_corpomate_tmpl_our_team_9" name="our team">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			     
+			     
+			     
+			     
+      <section id="sh_corpomate_theme_section_250" class="parallax s_parallax_no_overflow_hidden bg-black-75" data-name="Banner" style="background-image: none;" data-scroll-background-ratio="0">
+        <span class="s_parallax_bg oe_img_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/theme9/tem.jpg'); background-position: 50% 0;"/>
+        <div class="container">
+          <div class="s_nb_column_fixed">
+            <div class="rounded pt32 pb32">
+              <h2>Our Team</h2>
+              <h4 class="o_default_snippet_text"><a href="/" class="o_default_snippet_text">Home</a><span class="o_default_snippet_text">||</span>Our Team</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_251" data-name="Our Team">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme9/12.png"/>
+                  <span class="fa fa-plus"/>
+                  <div class="sh_media">
+                    <a href="#">
+                      <span class="fa fa-facebook"/>
+                    </a>
+                    <a href="#">
+                      <span class="fa fa-twitter"/>
+                    </a>
+                    <a href="#">
+                      <span class="fa fa-linkedin"/>
+                    </a>
+                  </div>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                  <p class="o_default_snippet_text">Lorem Ipsum</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme9/10.png"/>
+                  <span class="fa fa-plus"/>
+                  <div class="sh_media">
+                    <a href="#">
+                      <span class="fa fa-facebook"/>
+                    </a>
+                    <a href="#">
+                      <span class="fa fa-twitter"/>
+                    </a>
+                    <a href="#">
+                      <span class="fa fa-linkedin"/>
+                    </a>
+                  </div>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                  <p class="o_default_snippet_text">Lorem Ipsum</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme9/11.png"/>
+                  <span class="fa fa-plus"/>
+                  <div class="sh_media">
+                    <a href="#">
+                      <span class="fa fa-facebook"/>
+                    </a>
+                    <a href="#">
+                      <span class="fa fa-twitter"/>
+                    </a>
+                    <a href="#">
+                      <span class="fa fa-linkedin"/>
+                    </a>
+                  </div>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                  <p class="o_default_snippet_text">Lorem Ipsum</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme9/7.png"/>
+                  <span class="fa fa-plus"/>
+                  <div class="sh_media">
+                    <a href="#">
+                      <span class="fa fa-facebook"/>
+                    </a>
+                    <a href="#">
+                      <span class="fa fa-twitter"/>
+                    </a>
+                    <a href="#">
+                      <span class="fa fa-linkedin"/>
+                    </a>
+                  </div>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                  <p class="o_default_snippet_text">Lorem Ipsum</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme9/12.png"/>
+                  <span class="fa fa-plus"/>
+                  <div class="sh_media">
+                    <a href="#">
+                      <span class="fa fa-facebook"/>
+                    </a>
+                    <a href="#">
+                      <span class="fa fa-twitter"/>
+                    </a>
+                    <a href="#">
+                      <span class="fa fa-linkedin"/>
+                    </a>
+                  </div>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                  <p class="o_default_snippet_text">Lorem Ipsum</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme9/10.png"/>
+                  <span class="fa fa-plus"/>
+                  <div class="sh_media">
+                    <a href="#">
+                      <span class="fa fa-facebook"/>
+                    </a>
+                    <a href="#">
+                      <span class="fa fa-twitter"/>
+                    </a>
+                    <a href="#">
+                      <span class="fa fa-linkedin"/>
+                    </a>
+                  </div>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                  <p class="o_default_snippet_text">Lorem Ipsum</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme9/11.png"/>
+                  <span class="fa fa-plus"/>
+                  <div class="sh_media">
+                    <a href="#">
+                      <span class="fa fa-facebook"/>
+                    </a>
+                    <a href="#">
+                      <span class="fa fa-twitter"/>
+                    </a>
+                    <a href="#">
+                      <span class="fa fa-linkedin"/>
+                    </a>
+                  </div>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                  <p class="o_default_snippet_text">Lorem Ipsum</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme9/7.png"/>
+                  <span class="fa fa-plus"/>
+                  <div class="sh_media">
+                    <a href="#">
+                      <span class="fa fa-facebook"/>
+                    </a>
+                    <a href="#">
+                      <span class="fa fa-twitter"/>
+                    </a>
+                    <a href="#">
+                      <span class="fa fa-linkedin"/>
+                    </a>
+                  </div>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                  <p class="o_default_snippet_text">Lorem Ipsum</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>			     
+			     
+			     
+			     
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+
+

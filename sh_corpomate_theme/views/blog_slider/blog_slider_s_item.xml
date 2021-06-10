@@ -1,0 +1,2808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+ 
+
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 1
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+		<template id="sh_corpomate_theme_tmpl_202_nav_tabs" name="Sh slider nav item 202">
+			
+			
+	
+			
+           <div class="card-header">
+               <ul class="nav nav-tabs card-header-tabs js_cls_corpomate_blog_slider_nav_tabs_ul_202" role="tablist">
+               
+	 	 			<t t-set="active_class" t-value="'active'"/>
+	 	 			
+	 	 			<t t-foreach="list_nav_items" t-as="nav_item">
+		 	 			<li class="nav-item">
+		    				<a t-att-class="'nav-link %s' %(active_class)"  t-att-data-tab_id ="nav_item['id']"  data-toggle="tab" t-att-href="nav_item['href']" role="tab" aria-controls="all" aria-selected="true">
+		    					<t t-esc="nav_item['name']"/>
+		    				</a>
+		  				</li>
+		  				
+		  				<t t-set="active_class" t-value="''"/>
+	  				</t>
+  				               
+               </ul>
+           </div>			
+			
+					
+		
+		</template>
+
+
+
+		<template id="sh_corpomate_theme_tmpl_202_tab_pane" name="Sh Slider tab pane 202">
+		
+		
+		
+                <div class="card-body tab-content js_cls_corpomate_blog_slider_tab_content_202">
+                    
+ 	 			<t t-set="active_class" t-value="'active'"/>
+ 	 			<t t-foreach="list_tab_pane" t-as="tab_pane">
+ 	 			
+ 	 			
+		 			<div t-att-class="'tab-pane fade show js_cls_corpomate_blog_slider_tab_pane_202 %s' %(active_class)" t-att-id="tab_pane['id_tab_pane']" role="tabpanel" aria-labelledby="all-tab">
+
+
+
+                        <div class="row">
+                        
+                        
+                        
+                        
+					  			
+ 	 							<t t-foreach="tab_pane['list_blog_posts']" t-as="blog_post">					  			
+
+
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+
+			   								            <a t-att-href="blog_post['blog_post_href']">
+										                    <t t-set="cover_properties" t-value="blog_post['cover_properties']"/>
+										                    <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+				
+												            
+														    <div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+														        <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+														        <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+														        <t t-raw="0"/>
+														    </div>
+											            </a>	
+                                    
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>
+                                        
+											        		<a t-att-href="blog_post['blog_post_href']">
+											        			<t t-esc="blog_post['name']"/>
+											        		</a>	                                        
+                                        
+                                        </h4>
+                                        <p><span class="fa fa-calendar"></span>
+                                               	<t t-esc="blog_post['post_date']"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+	
+					  			</t>                        
+                        
+
+                            
+                            
+                        </div>
+
+                    </div> 	 			
+ 	 			
+ 	 			
+ 	 			
+ 	 			
+				<t t-set="active_class" t-value="''"/> 	 			
+ 	 			
+ 	 			</t>
+ 	 			                    
+
+
+                </div>		
+		
+		
+		
+
+		</template>				  
+				  			
+
+
+
+
+
+
+
+		<template id="sh_corpomate_theme_tmpl_202_tab_pane_one" name="Sh Slider tab pane one 202">
+ 	 			<t t-foreach="list_tab_pane" t-as="tab_pane">
+		 			<div class="tab-pane fade show js_cls_corpomate_blog_slider_tab_pane_202 active" t-att-id="tab_pane['id_tab_pane']" role="tabpanel" aria-labelledby="all-tab">
+	                	
+	                	
+	                	
+
+
+                        <div class="row">
+                        
+                        
+                        
+                        
+					  			
+ 	 							<t t-foreach="tab_pane['list_blog_posts']" t-as="blog_post">					  			
+
+
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+
+			   								            <a t-att-href="blog_post['blog_post_href']">
+										                    <t t-set="cover_properties" t-value="blog_post['cover_properties']"/>
+										                    <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+				
+												            
+														    <div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+														        <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+														        <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+														        <t t-raw="0"/>
+														    </div>
+											            </a>	
+                                    
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>
+                                        
+											        		<a t-att-href="blog_post['blog_post_href']">
+											        			<t t-esc="blog_post['name']"/>
+											        		</a>	                                        
+                                        
+                                        </h4>
+                                        <p><span class="fa fa-calendar"></span>
+                                               	<t t-esc="blog_post['post_date']"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+	
+					  			</t>                        
+                        
+
+                            
+                            
+                        </div>
+						
+						
+						
+						
+						
+					</div>
+				</t>
+				
+
+		</template>	
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 1
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 2
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+		<template id="sh_corpomate_theme_tmpl_203_nav_tabs" name="Sh slider nav item 203">
+			
+			
+                <div class="card-header">
+                    
+                    
+                    <ul class="nav nav-tabs card-header-tabs js_cls_corpomate_blog_slider_nav_tabs_ul_203" role="tablist">
+                    
+		 	 			<t t-set="active_class" t-value="'active'"/>
+		 	 			
+		 	 			<t t-foreach="list_nav_items" t-as="nav_item">
+		 	 			
+                        		 	 			
+			 	 			<li class="nav-item">
+			    				<a t-att-class="'nav-link %s' %(active_class)"  t-att-data-tab_id ="nav_item['id']"  data-toggle="tab" t-att-href="nav_item['href']" role="tab" aria-controls="all" aria-selected="true">
+			    					<t t-esc="nav_item['name']"/>
+			    				</a>
+			  				</li>
+			  				
+			  				<t t-set="active_class" t-value="''"/>
+		  				</t>
+  				            
+  				                                
+                    </ul>
+                </div>			
+			
+	
+			
+			
+					
+		
+		</template>
+
+
+
+		<template id="sh_corpomate_theme_tmpl_203_tab_pane" name="Sh Slider tab pane 203">
+		
+		
+		
+                <div class="card-body tab-content js_cls_corpomate_blog_slider_tab_content_203">
+                    
+ 	 			<t t-set="active_class" t-value="'active'"/>
+ 	 			<t t-foreach="list_tab_pane" t-as="tab_pane">
+ 	 			
+ 	 			
+		 			<div t-att-class="'tab-pane fade show js_cls_corpomate_blog_slider_tab_pane_203 %s' %(active_class)" t-att-id="tab_pane['id_tab_pane']" role="tabpanel" aria-labelledby="all-tab">
+
+
+
+                        <div class="row">
+                        
+				  			
+ 	 							<t t-foreach="tab_pane['list_blog_posts']" t-as="blog_post">					  			
+
+
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                    
+
+			   								            <a t-att-href="blog_post['blog_post_href']">
+										                    <t t-set="cover_properties" t-value="blog_post['cover_properties']"/>
+										                    <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+				
+												            
+														    <div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+														        <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+														        <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+														        <t t-raw="0"/>
+														    </div>
+											            </a>	
+
+                                    
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>
+											        		<a t-att-href="blog_post['blog_post_href']">
+											        			<t t-esc="blog_post['name']"/>
+											        		</a>
+                                        </h4>
+                                        <p><span class="fa fa-calendar"></span>
+                                            	<t t-esc="blog_post['post_date']"/>
+                                        </p>
+                                        
+                                           <a t-att-href="blog_post['blog_post_href']" class="btn">Read More</a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+	
+					  			</t>                        
+                        
+
+                            
+                            
+                        </div>
+
+                    </div> 	 			
+ 	 			
+ 	 			
+ 	 			
+ 	 			
+				<t t-set="active_class" t-value="''"/> 	 			
+ 	 			
+ 	 			</t>
+ 	 			                    
+
+
+                </div>		
+		
+		
+		
+
+		</template>				  
+				  			
+
+
+
+
+
+
+
+		<template id="sh_corpomate_theme_tmpl_203_tab_pane_one" name="Sh Slider tab pane one 203">
+ 	 			<t t-foreach="list_tab_pane" t-as="tab_pane">
+		 			<div class="tab-pane fade show js_cls_corpomate_blog_slider_tab_pane_203 active" t-att-id="tab_pane['id_tab_pane']" role="tabpanel" aria-labelledby="all-tab">
+	                	
+
+
+                        <div class="row">
+                        
+				  			
+ 	 							<t t-foreach="tab_pane['list_blog_posts']" t-as="blog_post">					  			
+
+
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                    
+
+			   								            <a t-att-href="blog_post['blog_post_href']">
+										                    <t t-set="cover_properties" t-value="blog_post['cover_properties']"/>
+										                    <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+				
+												            
+														    <div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+														        <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+														        <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+														        <t t-raw="0"/>
+														    </div>
+											            </a>	
+
+                                    
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>
+											        		<a t-att-href="blog_post['blog_post_href']">
+											        			<t t-esc="blog_post['name']"/>
+											        		</a>
+                                        </h4>
+                                        <p><span class="fa fa-calendar"></span>
+                                            	<t t-esc="blog_post['post_date']"/>
+                                        </p>
+                                        
+       									<a t-att-href="blog_post['blog_post_href']" class="btn">Read More</a>                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+	
+					  			</t>                        
+                        
+
+                            
+                            
+                        </div>	                	
+                	
+						
+						
+					</div>
+				</t>
+				
+
+		</template>	
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 2
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 3
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+		<template id="sh_corpomate_theme_tmpl_204_nav_tabs" name="Sh slider nav item 204">
+			
+			
+			
+                <div class="card-header">
+                    
+                    <ul class="nav nav-tabs card-header-tabs js_cls_corpomate_blog_slider_nav_tabs_ul_204" role="tablist">
+
+		 	 			<t t-set="active_class" t-value="'active'"/>
+		 	 			
+		 	 			<t t-foreach="list_nav_items" t-as="nav_item">
+		 	 			
+                        		 	 			
+			 	 			<li class="nav-item">
+			    				<a t-att-class="'nav-link %s' %(active_class)"  t-att-data-tab_id ="nav_item['id']"  data-toggle="tab" t-att-href="nav_item['href']" role="tab" aria-controls="all" aria-selected="true">
+			    					<t t-esc="nav_item['name']"/>
+			    				</a>
+			  				</li>
+			  				
+			  				<t t-set="active_class" t-value="''"/>
+		  				</t>
+
+                    </ul>
+                </div>			
+			
+
+					
+		
+		</template>
+
+
+
+		<template id="sh_corpomate_theme_tmpl_204_tab_pane" name="Sh Slider tab pane 204">
+		
+		
+		
+		
+		
+		
+		
+                <div class="card-body tab-content js_cls_corpomate_blog_slider_tab_content_204">
+                    
+ 	 			<t t-set="active_class" t-value="'active'"/>
+ 	 			<t t-foreach="list_tab_pane" t-as="tab_pane">
+ 	 			
+ 	 			
+		 			<div t-att-class="'tab-pane fade show js_cls_corpomate_blog_slider_tab_pane_204 %s' %(active_class)" t-att-id="tab_pane['id_tab_pane']" role="tabpanel" aria-labelledby="all-tab">
+
+
+
+                        <div class="row">
+                        
+				  			
+ 	 							<t t-foreach="tab_pane['list_blog_posts']" t-as="blog_post">					  			
+
+
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                    
+			   								            <a t-att-href="blog_post['blog_post_href']">
+										                    <t t-set="cover_properties" t-value="blog_post['cover_properties']"/>
+										                    <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+				
+												            
+														    <div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+														        <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+														        <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+														        <t t-raw="0"/>
+														    </div>
+											            </a>	                                    
+                                    
+                                    </div>
+                                    <div class="sh_des">
+
+                                        <h4>
+											        		<a t-att-href="blog_post['blog_post_href']">
+											        			<t t-esc="blog_post['name']"/>
+											        		</a>
+                                        </h4>
+
+                                        <p>
+                                        	<span class="fa fa-calendar"></span>
+                                        	<t t-esc="blog_post['post_date']"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+	
+					  			</t>                        
+                        
+
+                            
+                            
+                        </div>
+
+                    </div> 	 			
+ 	 			
+ 	 			
+ 	 			
+ 	 			
+				<t t-set="active_class" t-value="''"/> 	 			
+ 	 			
+ 	 			</t>                    
+                    
+                    
+
+                    
+
+
+
+
+                </div>		
+		
+		
+		
+		
+
+		
+		
+		
+
+		</template>				  
+				  			
+
+
+
+
+
+
+
+		<template id="sh_corpomate_theme_tmpl_204_tab_pane_one" name="Sh Slider tab pane one 204">
+ 	 			<t t-foreach="list_tab_pane" t-as="tab_pane">
+		 			<div class="tab-pane fade show js_cls_corpomate_blog_slider_tab_pane_204 active" t-att-id="tab_pane['id_tab_pane']" role="tabpanel" aria-labelledby="all-tab">
+	                	
+
+
+
+                        <div class="row">
+                        
+				  			
+ 	 							<t t-foreach="tab_pane['list_blog_posts']" t-as="blog_post">					  			
+
+
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                    
+			   								            <a t-att-href="blog_post['blog_post_href']">
+										                    <t t-set="cover_properties" t-value="blog_post['cover_properties']"/>
+										                    <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+				
+												            
+														    <div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+														        <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+														        <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+														        <t t-raw="0"/>
+														    </div>
+											            </a>	                                    
+                                    
+                                    </div>
+                                    <div class="sh_des">
+
+                                        <h4>
+											        		<a t-att-href="blog_post['blog_post_href']">
+											        			<t t-esc="blog_post['name']"/>
+											        		</a>
+                                        </h4>
+
+                                        <p>
+                                        	<span class="fa fa-calendar"></span>
+                                        	<t t-esc="blog_post['post_date']"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+	
+					  			</t>                        
+                        
+
+                            
+                            
+                        </div>              	
+                	
+						
+						
+					</div>
+				</t>
+				
+
+		</template>	
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 3
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 4
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+		<template id="sh_corpomate_theme_tmpl_205_nav_tabs" name="Sh slider nav item 205">
+			
+			
+                <div class="card-header">
+                    
+
+                    <ul class="nav nav-tabs card-header-tabs js_cls_corpomate_blog_slider_nav_tabs_ul_205" role="tablist">
+
+		 	 			<t t-set="active_class" t-value="'active'"/>
+		 	 			
+		 	 			<t t-foreach="list_nav_items" t-as="nav_item">
+		 	 			
+                        		 	 			
+			 	 			<li class="nav-item">
+			    				<a t-att-class="'nav-link %s' %(active_class)"  t-att-data-tab_id ="nav_item['id']"  data-toggle="tab" t-att-href="nav_item['href']" role="tab" aria-controls="all" aria-selected="true">
+			    					<t t-esc="nav_item['name']"/>
+			    				</a>
+			  				</li>
+			  				
+			  				<t t-set="active_class" t-value="''"/>
+		  				</t>
+
+                    </ul>
+
+                </div>			
+			
+			
+						
+		
+		</template>
+
+
+
+		<template id="sh_corpomate_theme_tmpl_205_tab_pane" name="Sh Slider tab pane 205">
+		
+		
+		
+		
+		
+		
+		
+                <div class="card-body tab-content js_cls_corpomate_blog_slider_tab_content_205">
+                    
+ 	 			<t t-set="active_class" t-value="'active'"/>
+ 	 			<t t-foreach="list_tab_pane" t-as="tab_pane">
+ 	 			
+ 	 			
+		 			<div t-att-class="'tab-pane fade show js_cls_corpomate_blog_slider_tab_pane_205 %s' %(active_class)" t-att-id="tab_pane['id_tab_pane']" role="tabpanel" aria-labelledby="all-tab">
+
+
+
+                        <div class="row">
+                        
+				  			
+ 	 							<t t-foreach="tab_pane['list_blog_posts']" t-as="blog_post">					  			
+
+
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                    
+			   								            <a t-att-href="blog_post['blog_post_href']">
+										                    <t t-set="cover_properties" t-value="blog_post['cover_properties']"/>
+										                    <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+				
+												            
+														    <div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+														        <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+														        <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+														        <t t-raw="0"/>
+														    </div>
+											            </a>	                                    
+                                    
+                                    </div>
+                                    
+                                    <div class="sh_des">
+                                        <h4>
+                                        
+											        		<a t-att-href="blog_post['blog_post_href']">
+											        			<t t-esc="blog_post['name']"/>
+											        		</a>                                        
+                                        
+                                        </h4>
+                                        
+                                        <p>
+											<t t-esc="blog_post['subtitle']"/>                                        
+                                        </p>
+                                        
+                                        
+                                    </div>                                    
+                                    
+
+
+
+                                </div>
+                            </div>
+
+
+
+	
+					  			</t>                        
+                        
+
+                            
+                            
+                        </div>
+
+                    </div> 	 			
+ 	 			
+ 	 			
+ 	 			
+ 	 			
+				<t t-set="active_class" t-value="''"/> 	 			
+ 	 			
+ 	 			</t>                    
+                    
+                    
+
+                    
+
+
+
+
+                </div>		
+		
+		
+		
+		
+
+		
+		
+		
+
+		</template>				  
+				  			
+
+
+
+
+
+
+
+		<template id="sh_corpomate_theme_tmpl_205_tab_pane_one" name="Sh Slider tab pane one 205">
+ 	 			<t t-foreach="list_tab_pane" t-as="tab_pane">
+		 			<div class="tab-pane fade show js_cls_corpomate_blog_slider_tab_pane_205 active" t-att-id="tab_pane['id_tab_pane']" role="tabpanel" aria-labelledby="all-tab">
+	                	
+
+
+
+
+                        <div class="row">
+                        
+				  			
+ 	 							<t t-foreach="tab_pane['list_blog_posts']" t-as="blog_post">					  			
+
+
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                    
+			   								            <a t-att-href="blog_post['blog_post_href']">
+										                    <t t-set="cover_properties" t-value="blog_post['cover_properties']"/>
+										                    <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+				
+												            
+														    <div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+														        <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+														        <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+														        <t t-raw="0"/>
+														    </div>
+											            </a>	                                    
+                                    
+                                    </div>
+                                    
+                                    <div class="sh_des">
+                                        <h4>
+                                        
+											        		<a t-att-href="blog_post['blog_post_href']">
+											        			<t t-esc="blog_post['name']"/>
+											        		</a>                                        
+                                        
+                                        </h4>
+                                        
+                                        <p>
+											<t t-esc="blog_post['subtitle']"/>                                        
+                                        </p>
+                                        
+                                        
+                                    </div>                                    
+                                    
+
+
+
+                                </div>
+                            </div>
+
+
+
+	
+					  			</t>                        
+                        
+
+                            
+                            
+                        </div>
+            	
+                	
+						
+						
+					</div>
+				</t>
+				
+
+		</template>	
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 4
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 5
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+		<template id="sh_corpomate_theme_tmpl_206_nav_tabs" name="Sh slider nav item 206">
+			
+			
+			
+                <div class="card-header">
+                    
+
+                    <ul class="nav nav-tabs card-header-tabs js_cls_corpomate_blog_slider_nav_tabs_ul_206" role="tablist">
+
+		 	 			<t t-set="active_class" t-value="'active'"/>
+		 	 			
+		 	 			<t t-foreach="list_nav_items" t-as="nav_item">
+		 	 			
+                        		 	 			
+			 	 			<li class="nav-item">
+			    				<a t-att-class="'nav-link %s' %(active_class)"  t-att-data-tab_id ="nav_item['id']"  data-toggle="tab" t-att-href="nav_item['href']" role="tab" aria-controls="all" aria-selected="true">
+			    					<t t-esc="nav_item['name']"/>
+			    				</a>
+			  				</li>
+			  				
+			  				<t t-set="active_class" t-value="''"/>
+		  				</t>
+
+                    </ul>
+
+                </div>			
+			
+
+			
+						
+		
+		</template>
+
+
+
+		<template id="sh_corpomate_theme_tmpl_206_tab_pane" name="Sh Slider tab pane 206">
+		
+		
+		
+		
+		
+		
+		
+                <div class="card-body tab-content js_cls_corpomate_blog_slider_tab_content_206">
+                    
+ 	 			<t t-set="active_class" t-value="'active'"/>
+ 	 			<t t-foreach="list_tab_pane" t-as="tab_pane">
+ 	 			
+ 	 			
+		 			<div t-att-class="'tab-pane fade show js_cls_corpomate_blog_slider_tab_pane_206 %s' %(active_class)" t-att-id="tab_pane['id_tab_pane']" role="tabpanel" aria-labelledby="all-tab">
+
+
+
+                        <div id="owl-demo" class="owl-carousel owl-theme">
+                        
+				  			
+ 	 							<t t-foreach="tab_pane['list_blog_posts']" t-as="blog_post">					  			
+
+
+
+                            <div class="item">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                    
+
+			   								            <a t-att-href="blog_post['blog_post_href']">
+										                    <t t-set="cover_properties" t-value="blog_post['cover_properties']"/>
+										                    <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+				
+												            
+														    <div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+														        <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;width: 180px;background-image: #{cover_properties.get('background-image')};"/>
+														        <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+														        <t t-raw="0"/>
+														    </div>
+											            </a>	  
+                                    
+                                    
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>
+                                        
+											        		<a t-att-href="blog_post['blog_post_href']">
+											        			<t t-esc="blog_post['name']"/>
+											        		</a>                                            
+                                        
+                                        </h4>
+                                        
+                                        <p>
+                                        		<t t-esc="blog_post['subtitle']"/>    
+                                        </p>
+                                        
+                                        
+                                        <p class="sh_date">
+                                        	<span class="fa fa-calendar"></span>
+                                          	<t t-esc="blog_post['post_date']"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+	
+					  			</t>                        
+                        
+
+                            
+                            
+                        </div>
+
+                    </div> 	 			
+ 	 			
+ 	 			
+ 	 			
+ 	 			
+				<t t-set="active_class" t-value="''"/> 	 			
+ 	 			
+ 	 			</t>                    
+                    
+                    
+
+                    
+
+
+
+
+                </div>		
+		
+		
+		
+		
+
+		
+		
+		
+
+		</template>				  
+				  			
+
+
+
+
+
+
+
+		<template id="sh_corpomate_theme_tmpl_206_tab_pane_one" name="Sh Slider tab pane one 206">
+ 	 			<t t-foreach="list_tab_pane" t-as="tab_pane">
+		 			<div class="tab-pane fade show js_cls_corpomate_blog_slider_tab_pane_206 active" t-att-id="tab_pane['id_tab_pane']" role="tabpanel" aria-labelledby="all-tab">
+	                	
+
+
+                        <div id="owl-demo" class="owl-carousel owl-theme">
+                        
+				  			
+ 	 							<t t-foreach="tab_pane['list_blog_posts']" t-as="blog_post">					  			
+
+                            <div class="item">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                    
+			   								            <a t-att-href="blog_post['blog_post_href']">
+										                    <t t-set="cover_properties" t-value="blog_post['cover_properties']"/>
+										                    <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+				
+												            
+														    <div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+														        <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;width: 180px;background-image: #{cover_properties.get('background-image')};"/>
+														        <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+														        <t t-raw="0"/>
+														    </div>
+											            </a>	                                    
+                                    
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>
+                                        
+											        		<a t-att-href="blog_post['blog_post_href']">
+											        			<t t-esc="blog_post['name']"/>
+											        		</a>                                            
+                                        
+                                        </h4>
+                                        
+                                        <p>
+                                        		<t t-esc="blog_post['subtitle']"/>    
+                                        </p>
+                                        
+                                        
+                                        <p class="sh_date">
+                                        	<span class="fa fa-calendar"></span>
+                                          	<t t-esc="blog_post['post_date']"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+	
+					  			</t>                        
+                                                    
+                            
+                        </div>
+            	
+                	
+						
+						
+					</div>
+				</t>
+				
+
+		</template>	
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 5
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 6
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+		<template id="sh_corpomate_theme_tmpl_207_nav_tabs" name="Sh slider nav item 207">
+			
+			
+			
+                <div class="card-header">
+                    
+
+                    <ul class="nav nav-tabs card-header-tabs js_cls_corpomate_blog_slider_nav_tabs_ul_207" role="tablist">
+
+		 	 			<t t-set="active_class" t-value="'active'"/>
+		 	 			
+		 	 			<t t-foreach="list_nav_items" t-as="nav_item">
+		 	 			
+                        		 	 			
+			 	 			<li class="nav-item">
+			    				<a t-att-class="'nav-link %s' %(active_class)"  t-att-data-tab_id ="nav_item['id']"  data-toggle="tab" t-att-href="nav_item['href']" role="tab" aria-controls="all" aria-selected="true">
+			    					<t t-esc="nav_item['name']"/>
+			    				</a>
+			  				</li>
+			  				
+			  				<t t-set="active_class" t-value="''"/>
+		  				</t>
+
+                    </ul>
+
+                </div>			
+			
+			
+		
+			
+
+			
+						
+		
+		</template>
+
+
+
+		<template id="sh_corpomate_theme_tmpl_207_tab_pane" name="Sh Slider tab pane 207">
+		
+		
+		
+		
+		
+		
+		
+                <div class="card-body tab-content js_cls_corpomate_blog_slider_tab_content_207">
+                    
+ 	 			<t t-set="active_class" t-value="'active'"/>
+ 	 			<t t-foreach="list_tab_pane" t-as="tab_pane">
+ 	 			
+ 	 			
+		 			<div t-att-class="'tab-pane fade show js_cls_corpomate_blog_slider_tab_pane_207 %s' %(active_class)" t-att-id="tab_pane['id_tab_pane']" role="tabpanel" aria-labelledby="all-tab">
+
+
+
+                        <div class="row">
+                        
+				  			
+ 	 							<t t-foreach="tab_pane['list_blog_posts']" t-as="blog_post">					  			
+
+
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                    
+			   								            <a t-att-href="blog_post['blog_post_href']">
+										                    <t t-set="cover_properties" t-value="blog_post['cover_properties']"/>
+										                    <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+				
+												            
+														    <div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+														        <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+														        <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+														        <t t-raw="0"/>
+														    </div>
+											            </a>	   
+                                    
+                                    </div>
+                                    <div class="sh_des">
+                                        <h5>
+                                        	<span class="fa fa-calendar"></span>
+                                        	<t t-esc="blog_post['post_date']"/>
+                                        </h5>
+                                        <h4>
+                                        
+											        		<a t-att-href="blog_post['blog_post_href']">
+											        			<t t-esc="blog_post['name']"/>
+											        		</a>                                          
+                                        
+                                        </h4>
+                                        <p>
+                                        	<t t-esc="blog_post['subtitle']"/>    
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+	
+					  			</t>                        
+                        
+
+                            
+                            
+                        </div>
+
+                    </div> 	 			
+ 	 			
+ 	 			
+ 	 			
+ 	 			
+				<t t-set="active_class" t-value="''"/> 	 			
+ 	 			
+ 	 			</t>                    
+                    
+                    
+
+                    
+
+
+
+
+                </div>		
+		
+		
+		
+		
+
+		
+		
+		
+
+		</template>				  
+				  			
+
+
+
+
+
+
+
+		<template id="sh_corpomate_theme_tmpl_207_tab_pane_one" name="Sh Slider tab pane one 207">
+ 	 			<t t-foreach="list_tab_pane" t-as="tab_pane">
+		 			<div class="tab-pane fade show js_cls_corpomate_blog_slider_tab_pane_207 active" t-att-id="tab_pane['id_tab_pane']" role="tabpanel" aria-labelledby="all-tab">
+	                	
+
+
+
+                        <div class="row">
+                        
+				  			
+ 	 							<t t-foreach="tab_pane['list_blog_posts']" t-as="blog_post">					  			
+
+
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                    
+			   								            <a t-att-href="blog_post['blog_post_href']">
+										                    <t t-set="cover_properties" t-value="blog_post['cover_properties']"/>
+										                    <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+				
+												            
+														    <div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+														        <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+														        <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+														        <t t-raw="0"/>
+														    </div>
+											            </a>	   
+                                    
+                                    </div>
+                                    <div class="sh_des">
+                                        <h5>
+                                        	<span class="fa fa-calendar"></span>
+                                        	<t t-esc="blog_post['post_date']"/>
+                                        </h5>
+                                        <h4>
+                                        
+											        		<a t-att-href="blog_post['blog_post_href']">
+											        			<t t-esc="blog_post['name']"/>
+											        		</a>                                          
+                                        
+                                        </h4>
+                                        <p>
+                                        	<t t-esc="blog_post['subtitle']"/>    
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+	
+					  			</t>                        
+                        
+
+                            
+                            
+                        </div>
+            	
+                	
+						
+						
+					</div>
+				</t>
+				
+
+		</template>	
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 6
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 7 template 208
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+		<template id="sh_corpomate_theme_tmpl_208_nav_tabs" name="Sh slider nav item 208">
+			
+			
+			
+                <div class="card-header">
+                    
+
+                    <ul class="nav nav-tabs card-header-tabs js_cls_corpomate_blog_slider_nav_tabs_ul_208" role="tablist">
+
+		 	 			<t t-set="active_class" t-value="'active'"/>
+		 	 			
+		 	 			<t t-foreach="list_nav_items" t-as="nav_item">
+		 	 			
+                        		 	 			
+			 	 			<li class="nav-item">
+			    				<a t-att-class="'nav-link %s' %(active_class)"  t-att-data-tab_id ="nav_item['id']"  data-toggle="tab" t-att-href="nav_item['href']" role="tab" aria-controls="all" aria-selected="true">
+			    					<t t-esc="nav_item['name']"/>
+			    				</a>
+			  				</li>
+			  				
+			  				<t t-set="active_class" t-value="''"/>
+		  				</t>
+
+                    </ul>
+
+                </div>			
+			
+			
+	
+						
+		
+		</template>
+
+
+
+		<template id="sh_corpomate_theme_tmpl_208_tab_pane" name="Sh Slider tab pane 208">
+		
+		
+		
+		
+		
+		
+		
+                <div class="card-body tab-content js_cls_corpomate_blog_slider_tab_content_208">
+                    
+ 	 			<t t-set="active_class" t-value="'active'"/>
+ 	 			<t t-foreach="list_tab_pane" t-as="tab_pane">
+ 	 			
+ 	 			
+		 			<div t-att-class="'tab-pane fade show js_cls_corpomate_blog_slider_tab_pane_208 %s' %(active_class)" t-att-id="tab_pane['id_tab_pane']" role="tabpanel" aria-labelledby="all-tab">
+
+
+
+                        <div id="owl-demo" class="owl-carousel owl-theme">
+                        
+				  			
+ 	 							<t t-foreach="tab_pane['list_blog_posts']" t-as="blog_post">					  			
+
+
+
+
+                            <div class="item">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                    
+			   								            <a t-att-href="blog_post['blog_post_href']">
+										                    <t t-set="cover_properties" t-value="blog_post['cover_properties']"/>
+										                    <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+				
+												            
+														    <div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+														        <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+														        <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+														        <t t-raw="0"/>
+														    </div>
+											            </a>	
+                                    
+                                    </div>
+                                    <div class="sh_des">
+                                        <p class="sh_date"><span class="fa fa-calendar"></span>
+                                        	<t t-esc="blog_post['post_date']"/>
+                                        </p>
+                                        <h4>
+                                        
+											        		<a t-att-href="blog_post['blog_post_href']">
+											        			<t t-esc="blog_post['name']"/>
+											        		</a>                                            
+                                        
+                                        </h4>
+                                        <p>
+                                             	<t t-esc="blog_post['subtitle']"/>    
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+	
+					  			</t>                        
+                        
+
+                            
+                            
+                        </div>
+
+                    </div> 	 			
+ 	 			
+ 	 			
+ 	 			
+ 	 			
+				<t t-set="active_class" t-value="''"/> 	 			
+ 	 			
+ 	 			</t>                    
+                    
+                    
+
+                    
+
+
+
+
+                </div>		
+		
+		
+		
+		
+
+		
+		
+		
+
+		</template>				  
+				  			
+
+
+
+
+
+
+
+		<template id="sh_corpomate_theme_tmpl_208_tab_pane_one" name="Sh Slider tab pane one 208">
+ 	 			<t t-foreach="list_tab_pane" t-as="tab_pane">
+		 			<div class="tab-pane fade show js_cls_corpomate_blog_slider_tab_pane_208 active" t-att-id="tab_pane['id_tab_pane']" role="tabpanel" aria-labelledby="all-tab">
+	                	
+
+
+                        <div id="owl-demo" class="owl-carousel owl-theme">
+                        
+				  			
+ 	 							<t t-foreach="tab_pane['list_blog_posts']" t-as="blog_post">					  			
+
+
+
+
+                            <div class="item">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                    
+			   								            <a t-att-href="blog_post['blog_post_href']">
+										                    <t t-set="cover_properties" t-value="blog_post['cover_properties']"/>
+										                    <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+				
+												            
+														    <div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+														        <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+														        <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+														        <t t-raw="0"/>
+														    </div>
+											            </a>	
+                                    
+                                    </div>
+                                    <div class="sh_des">
+                                        <p class="sh_date"><span class="fa fa-calendar"></span>
+                                        	<t t-esc="blog_post['post_date']"/>
+                                        </p>
+                                        <h4>
+                                        
+											        		<a t-att-href="blog_post['blog_post_href']">
+											        			<t t-esc="blog_post['name']"/>
+											        		</a>                                            
+                                        
+                                        </h4>
+                                        <p>
+                                             	<t t-esc="blog_post['subtitle']"/>    
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+	
+					  			</t>                        
+                        
+
+                            
+                            
+                        </div>
+            	
+                	
+						
+						
+					</div>
+				</t>
+				
+
+		</template>	
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 7 template 208
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 8 template 209
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+		<template id="sh_corpomate_theme_tmpl_209_nav_tabs" name="Sh slider nav item 209">
+			
+			
+			
+                <div class="card-header">
+                    
+
+                    <ul class="nav nav-tabs card-header-tabs js_cls_corpomate_blog_slider_nav_tabs_ul_209" role="tablist">
+
+		 	 			<t t-set="active_class" t-value="'active'"/>
+		 	 			
+		 	 			<t t-foreach="list_nav_items" t-as="nav_item">
+		 	 			
+                        		 	 			
+			 	 			<li class="nav-item">
+			    				<a t-att-class="'nav-link %s' %(active_class)"  t-att-data-tab_id ="nav_item['id']"  data-toggle="tab" t-att-href="nav_item['href']" role="tab" aria-controls="all" aria-selected="true">
+			    					<t t-esc="nav_item['name']"/>
+			    				</a>
+			  				</li>
+			  				
+			  				<t t-set="active_class" t-value="''"/>
+		  				</t>
+
+                    </ul>
+
+                </div>
+                			
+	
+			
+			
+	
+						
+		
+		</template>
+
+
+
+		<template id="sh_corpomate_theme_tmpl_209_tab_pane" name="Sh Slider tab pane 209">
+		
+		
+		
+		
+		
+		
+		
+                <div class="card-body tab-content js_cls_corpomate_blog_slider_tab_content_209">
+                    
+ 	 			<t t-set="active_class" t-value="'active'"/>
+ 	 			<t t-foreach="list_tab_pane" t-as="tab_pane">
+ 	 			
+ 	 			
+		 			<div t-att-class="'tab-pane fade show js_cls_corpomate_blog_slider_tab_pane_209 %s' %(active_class)" t-att-id="tab_pane['id_tab_pane']" role="tabpanel" aria-labelledby="all-tab">
+
+
+
+                        <div class="row">
+                        
+				  			
+ 	 							<t t-foreach="tab_pane['list_blog_posts']" t-as="blog_post">					  			
+
+
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                    
+			   								            <a t-att-href="blog_post['blog_post_href']">
+										                    <t t-set="cover_properties" t-value="blog_post['cover_properties']"/>
+										                    <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+				
+												            
+														    <div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+														        <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+														        <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+														        <t t-raw="0"/>
+														    </div>
+											            </a>	
+                                    
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>
+
+											        		<a t-att-href="blog_post['blog_post_href']">
+											        			<t t-esc="blog_post['name']"/>
+											        		</a>   
+											        		
+                                        </h4>
+                                        <h5><span class="fa fa-calendar"></span> 
+                                           	<t t-esc="blog_post['post_date']"/>
+                                        </h5>  
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+	
+					  			</t>                        
+                        
+
+                            
+                            
+                        </div>
+
+                    </div> 	 			
+ 	 			
+ 	 			
+ 	 			
+ 	 			
+				<t t-set="active_class" t-value="''"/> 	 			
+ 	 			
+ 	 			</t>                    
+                    
+                    
+
+                    
+
+
+
+
+                </div>		
+		
+		
+		
+		
+
+		
+		
+		
+
+		</template>				  
+				  			
+
+
+
+
+
+
+
+		<template id="sh_corpomate_theme_tmpl_209_tab_pane_one" name="Sh Slider tab pane one 209">
+ 	 			<t t-foreach="list_tab_pane" t-as="tab_pane">
+		 			<div class="tab-pane fade show js_cls_corpomate_blog_slider_tab_pane_209 active" t-att-id="tab_pane['id_tab_pane']" role="tabpanel" aria-labelledby="all-tab">
+	                	
+
+
+
+
+                        <div class="row">
+                        
+				  			
+ 	 							<t t-foreach="tab_pane['list_blog_posts']" t-as="blog_post">					  			
+
+
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                    
+			   								            <a t-att-href="blog_post['blog_post_href']">
+										                    <t t-set="cover_properties" t-value="blog_post['cover_properties']"/>
+										                    <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+				
+												            
+														    <div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+														        <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+														        <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+														        <t t-raw="0"/>
+														    </div>
+											            </a>	
+                                    
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>
+
+											        		<a t-att-href="blog_post['blog_post_href']">
+											        			<t t-esc="blog_post['name']"/>
+											        		</a>   
+											        		
+                                        </h4>
+                                        <h5><span class="fa fa-calendar"></span> 
+                                           	<t t-esc="blog_post['post_date']"/>
+                                        </h5>  
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+	
+					  			</t>                        
+                        
+
+                            
+                            
+                        </div>
+            	
+                	
+						
+						
+					</div>
+				</t>
+				
+
+		</template>	
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 8 template 209
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 9 template 210
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+		<template id="sh_corpomate_theme_tmpl_210_nav_tabs" name="Sh slider nav item 210">
+			
+			
+			
+                <div class="card-header">
+                 
+                    <ul class="nav nav-tabs card-header-tabs js_cls_corpomate_blog_slider_nav_tabs_ul_210" role="tablist">
+
+		 	 			<t t-set="active_class" t-value="'active'"/>
+		 	 			
+		 	 			<t t-foreach="list_nav_items" t-as="nav_item">
+		 	 			
+                        		 	 			
+			 	 			<li class="nav-item">
+			    				<a t-att-class="'nav-link %s' %(active_class)"  t-att-data-tab_id ="nav_item['id']"  data-toggle="tab" t-att-href="nav_item['href']" role="tab" aria-controls="all" aria-selected="true">
+			    					<t t-esc="nav_item['name']"/>
+			    				</a>
+			  				</li>
+			  				
+			  				<t t-set="active_class" t-value="''"/>
+		  				</t>
+
+                    </ul>
+
+                </div>
+                			
+
+	
+						
+		
+		</template>
+
+
+
+		<template id="sh_corpomate_theme_tmpl_210_tab_pane" name="Sh Slider tab pane 210">
+		
+		
+		
+		
+		
+		
+		
+                <div class="card-body tab-content js_cls_corpomate_blog_slider_tab_content_210">
+                    
+ 	 			<t t-set="active_class" t-value="'active'"/>
+ 	 			<t t-foreach="list_tab_pane" t-as="tab_pane">
+ 	 			
+ 	 			
+		 			<div t-att-class="'tab-pane fade show js_cls_corpomate_blog_slider_tab_pane_210 %s' %(active_class)" t-att-id="tab_pane['id_tab_pane']" role="tabpanel" aria-labelledby="all-tab">
+
+
+
+                        <div class="row">
+                        
+				  			
+ 	 							<t t-foreach="tab_pane['list_blog_posts']" t-as="blog_post">					  			
+
+
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                    
+                                    
+			   								            <a t-att-href="blog_post['blog_post_href']">
+										                    <t t-set="cover_properties" t-value="blog_post['cover_properties']"/>
+										                    <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+				
+												            
+														    <div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+														        <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+														        <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+														        <t t-raw="0"/>
+														    </div>
+											            </a>	                                    
+                                    
+                                    
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>
+                                        
+											        		<a t-att-href="blog_post['blog_post_href']">
+											        			<t t-esc="blog_post['name']"/>
+											        		</a>                                           
+                                        
+                                        </h4>
+                                        <p>
+                                     		   <t t-esc="blog_post['subtitle']"/>   
+                                        </p>
+                                        <hr/>
+                                        <h5><span class="fa fa-calendar"></span> 
+                                                   	<t t-esc="blog_post['post_date']"/>
+                                        </h5>  
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+	
+					  			</t>                        
+                        
+
+                            
+                            
+                        </div>
+
+                    </div> 	 			
+ 	 			
+ 	 			
+ 	 			
+ 	 			
+				<t t-set="active_class" t-value="''"/> 	 			
+ 	 			
+ 	 			</t>                    
+                    
+                    
+
+                    
+
+
+
+
+                </div>		
+		
+		
+		
+		
+
+		
+		
+		
+
+		</template>				  
+				  			
+
+
+
+
+
+
+
+		<template id="sh_corpomate_theme_tmpl_210_tab_pane_one" name="Sh Slider tab pane one 210">
+ 	 			<t t-foreach="list_tab_pane" t-as="tab_pane">
+		 			<div class="tab-pane fade show js_cls_corpomate_blog_slider_tab_pane_210 active" t-att-id="tab_pane['id_tab_pane']" role="tabpanel" aria-labelledby="all-tab">
+	                	
+
+
+
+
+                        <div class="row">
+                        
+				  			
+ 	 							<t t-foreach="tab_pane['list_blog_posts']" t-as="blog_post">					  			
+
+
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                    
+                                    
+			   								            <a t-att-href="blog_post['blog_post_href']">
+										                    <t t-set="cover_properties" t-value="blog_post['cover_properties']"/>
+										                    <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+				
+												            
+														    <div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+														        <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+														        <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+														        <t t-raw="0"/>
+														    </div>
+											            </a>	                                    
+                                    
+                                    
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>
+                                        
+											        		<a t-att-href="blog_post['blog_post_href']">
+											        			<t t-esc="blog_post['name']"/>
+											        		</a>                                           
+                                        
+                                        </h4>
+                                        <p>
+                                     		   <t t-esc="blog_post['subtitle']"/>   
+                                        </p>
+                                        <hr/>
+                                        <h5><span class="fa fa-calendar"></span> 
+                                                   	<t t-esc="blog_post['post_date']"/>
+                                        </h5>  
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+	
+					  			</t>                        
+                        
+
+                            
+                            
+                        </div>
+
+            	
+                	
+						
+						
+					</div>
+				</t>
+				
+
+		</template>	
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 9 template 210
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 10 template 263
+	==========================================================================================	
+	########################################################################################	
+	 -->
+	 
+	 
+
+
+
+		<template id="sh_corpomate_theme_tmpl_263_nav_tabs" name="Sh slider nav item 263">
+			
+			
+								
+		
+		</template>
+
+
+
+
+
+
+		<template id="sh_corpomate_theme_tmpl_263_tab_pane" name="Sh Slider tab pane 263">
+		
+		
+		
+
+ 	 			<t t-foreach="list_tab_pane" t-as="tab_pane">
+ 	 			
+ 	 			
+                        
+				  			
+ 	 							<t t-foreach="tab_pane['list_blog_posts']" t-as="blog_post">					  			
+
+
+	    	       <div class="col-md-4 sh_animation_part">
+	    	          <div class="sh_content">
+	    	             <div class="sh_img">
+			   								           
+   								            <a t-att-href="blog_post['blog_post_href']">
+							                    <t t-set="cover_properties" t-value="blog_post['cover_properties']"/>
+							                    <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+	
+									            
+											    <div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+											        <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+											        <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+											        <t t-raw="0"/>
+											    </div>
+								            </a>	 
+											            
+	    	                <span>
+	    	                		<t t-esc="blog_post['post_date']"/>
+	    	                </span>
+	    	             </div>
+	    	             <div class="sh_des">
+	    	                <h4>
+											        		<a t-att-href="blog_post['blog_post_href']">
+											        			<t t-esc="blog_post['name']"/>
+											        		</a>     
+											        			    	                
+	    	                </h4>
+                                        <p>
+                                     		   <t t-esc="blog_post['subtitle']"/>   
+                                        </p>
+                                        
+	    	                <a t-att-href="blog_post['blog_post_href']" class="btn">Read more <span class="fa fa-angle-right"></span></a>
+	    	             
+	    	             </div>
+	    	          </div>
+	    	       </div>
+	    	       
+	    	       
+
+
+
+
+
+	
+					  			</t>                        
+                        
+
+                            
+                            
+
+
+		
+			</t>
+
+		
+		
+		
+
+		</template>				  
+				  			
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 10 template 263
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 11 template 280
+	==========================================================================================	
+	########################################################################################	
+	 -->
+	 
+	 
+
+
+
+		<template id="sh_corpomate_theme_tmpl_280_nav_tabs" name="Sh slider nav item 280">
+			
+			
+								
+		
+		</template>
+
+
+
+
+
+
+		<template id="sh_corpomate_theme_tmpl_280_tab_pane" name="Sh Slider tab pane 280">
+		
+		
+		
+
+ 	 			<t t-foreach="list_tab_pane" t-as="tab_pane">
+ 	 			
+ 	 			
+                        
+				  			
+ 	 							<t t-foreach="tab_pane['list_blog_posts']" t-as="blog_post">					  			
+
+
+
+
+
+
+   	        <div class="col-lg-6 col-md-12 sh_animation_part">
+   	           <div class="sh_content">
+   	           	  <div class="sh_img">
+   								            <a t-att-href="blog_post['blog_post_href']">
+							                    <t t-set="cover_properties" t-value="blog_post['cover_properties']"/>
+							                    <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+	
+									            
+											    <div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+											        <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+											        <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+											        <t t-raw="0"/>
+											    </div>
+								            </a>	 
+   	           	  </div>
+   	           	  <div class="sh_des">
+   	           	     
+   	           	     <h4>
+											        		<a t-att-href="blog_post['blog_post_href']">
+											        			<t t-esc="blog_post['name']"/>
+											        		</a>   
+											        		   	           	     
+   	           	     </h4>
+	    	                
+	    	                <span>
+	    	                		<t t-esc="blog_post['post_date']"/>
+	    	                </span>
+                                        <p>
+                                     		   <t t-esc="blog_post['subtitle']"/>   
+                                        </p>
+   	           	  </div>
+   	           </div>
+   	        </div>
+   	        
+   	        
+
+
+
+	
+					  			</t>                        
+                        
+
+                            
+                            
+
+
+		
+			</t>
+
+		
+		
+		
+
+		</template>				  
+				  			
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 11 template 280
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 12 template 298
+	==========================================================================================	
+	########################################################################################	
+	 -->
+	 
+	 
+
+
+
+		<template id="sh_corpomate_theme_tmpl_298_nav_tabs" name="Sh slider nav item 298">
+			
+			
+								
+		
+		</template>
+
+
+
+
+
+
+		<template id="sh_corpomate_theme_tmpl_298_tab_pane" name="Sh Slider tab pane 298">
+		
+		
+		
+
+ 	 			<t t-foreach="list_tab_pane" t-as="tab_pane">
+ 	 			
+ 	 			
+                        
+				  			
+ 	 							<t t-foreach="tab_pane['list_blog_posts']" t-as="blog_post">					  			
+
+
+
+
+   	  	    <div class="col-md-4">
+   	  	       <div class="sh_content">
+   	  	          <div class="sh_img">
+   								            <a t-att-href="blog_post['blog_post_href']">
+							                    <t t-set="cover_properties" t-value="blog_post['cover_properties']"/>
+							                    <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+	
+									            
+											    <div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+											        <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+											        <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+											        <t t-raw="0"/>
+											    </div>
+								            </a>	
+   	  	          </div>   	  	          
+   	  	          <div class="sh_des">
+   	           	     <h4>
+		        		<a t-att-href="blog_post['blog_post_href']">
+		        			<t t-esc="blog_post['name']"/>
+		        		</a>   				        		   	           	     
+   	           	     </h4>
+   	           	     
+                      <p>
+                   		   <t t-esc="blog_post['subtitle']"/>   
+                      </p>
+   	  	             <hr></hr>
+   	  	             <ul>
+   	  	                <li><span class="fa fa-user"></span>
+   	  	                	<t t-esc="blog_post['author_name']"/>
+   	  	                </li>
+   	  	                <li><span class="fa fa-calendar"></span>
+   	  	                	<t t-esc="blog_post['post_date']"/>
+   	  	                </li>
+   	  	             </ul>
+   	  	          </div>   	  	          
+   	  	       </div>
+   	  	    </div>
+
+
+
+
+   	        
+   	        	
+					  			</t>                        
+                        
+			</t>
+		</template>				  
+				  			
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 12 template 298
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 13 template 323
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+		<template id="sh_corpomate_theme_tmpl_323_nav_tabs" name="Sh slider nav item 323">
+			
+			
+								
+		
+		</template>
+		
+
+<template id="sh_corpomate_theme_tmpl_323_tab_pane" name="Sh Slider tab pane 323">
+
+
+<t t-foreach="list_tab_pane" t-as="tab_pane">
+	<t t-foreach="tab_pane['list_blog_posts']" t-as="blog_post">					  			
+
+   	  	    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+   	  	       <div class="sh_box">
+   	  	          <div class="img">
+
+   								            <a t-att-href="blog_post['blog_post_href']">
+							                    <t t-set="cover_properties" t-value="blog_post['cover_properties']"/>
+							                    <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+	
+									            
+											    <div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+											        <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+											        <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+											        <t t-raw="0"/>
+											    </div>
+								            </a>	
+
+   	  	          </div>  
+   	  	          <div class="content">
+   	  	          		<h4>
+			        		<a t-att-href="blog_post['blog_post_href']">
+			        			<t t-esc="blog_post['name']"/>
+			        		</a>     	  	          		
+   	  	          		</h4>
+   	  	          		<p> 
+   	  	          			<t t-esc="blog_post['subtitle']"/> 
+   	  	          		</p>
+   	  	          		<a t-att-href="blog_post['blog_post_href']" class="btn btn_readmore">Read More</a>
+   	  	          </div> 	  	          
+   	  	       </div>
+   	  	    </div>
+	</t>
+</t>
+	
+</template>   	  	 
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 13 template 323
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 14 template 348
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+		<template id="sh_corpomate_theme_tmpl_348_nav_tabs" name="Sh slider nav item 348">
+			
+			
+								
+		
+		</template>
+		
+
+<template id="sh_corpomate_theme_tmpl_348_tab_pane" name="Sh Slider tab pane 348">
+
+
+
+    			
+    			
+
+
+<t t-foreach="list_tab_pane" t-as="tab_pane">
+	<t t-foreach="tab_pane['list_blog_posts']" t-as="blog_post">					  			
+
+   	  	    <div class="col-md-4">
+   	  	       <div class="sh_content">
+   	  	          <div class="sh_img">
+
+   								            <a t-att-href="blog_post['blog_post_href']">
+							                    <t t-set="cover_properties" t-value="blog_post['cover_properties']"/>
+							                    <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+	
+									            
+											    <div t-attf-class="o_blog_cover_container #{cover_properties.get('resize_class')} #{additionnal_classes or ''}">
+											        <div class="o_blog_cover_component o_blog_cover_image" t-attf-style="background-size: cover;background-position: center;background-repeat: no-repeat;height:200px;background-image: #{cover_properties.get('background-image')};"/>
+											        <div t-attf-class="o_blog_cover_component o_blog_cover_filter #{cover_properties.get('background-color')}" t-attf-style="opacity: #{cover_properties.get('opacity', 0.0)};"/>
+											        <t t-raw="0"/>
+											    </div>
+								            </a>	
+
+   	  	          </div>  
+    					<div class="sh_arrow">
+    						<a t-att-href="blog_post['blog_post_href']">
+    							<span class="fa fa-arrow-right"></span>
+    						</a>
+    					</div>
+    					   	  
+    					<div class="sh_description">
+   	  	          		<h4>
+			        		<a t-att-href="blog_post['blog_post_href']">
+			        			<t t-esc="blog_post['name']"/>
+			        		</a>     	  	          		
+   	  	          		</h4>
+   	  	          		<p> 
+   	  	          			<t t-esc="blog_post['subtitle']"/> 
+   	  	          		</p>
+    						<a t-att-href="blog_post['blog_post_href']" class="btn">
+    							<t t-esc="blog_post['post_date']"/>
+    						</a>
+    					</div>
+    					    					   	  
+    					   	  	            	          
+   	  	       </div>
+   	  	    </div>
+	</t>
+</t>
+	
+</template>  
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 14 template 348
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+
+
+
+
+
+
+</odoo>

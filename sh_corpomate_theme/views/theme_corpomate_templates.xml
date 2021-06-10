@@ -1,0 +1,3969 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+
+	<!-- assets_primary_variables -->
+    <template id="assets_primary_variables_1" inherit_id="sh_corpomate_theme._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/theme/color/color_01.scss"/>
+        </xpath>
+    </template>
+    
+
+    <template id="assets_primary_variables_2" inherit_id="sh_corpomate_theme._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/theme/color/color_02.scss"/>
+        </xpath>
+    </template>
+
+
+    <template id="assets_primary_variables_3" inherit_id="sh_corpomate_theme._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/theme/color/color_03.scss"/>
+        </xpath>
+    </template>
+    
+    
+    <template id="assets_primary_variables_4" inherit_id="sh_corpomate_theme._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/theme/color/color_04.scss"/>
+        </xpath>
+    </template>
+    
+    
+    <template id="assets_primary_variables_5" inherit_id="sh_corpomate_theme._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/theme/color/color_05.scss"/>
+        </xpath>
+    </template>        
+
+    
+
+    <template id="assets_primary_variables_6" inherit_id="sh_corpomate_theme._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/theme/color/color_06.scss"/>
+        </xpath>
+    </template>    
+
+
+    <template id="assets_primary_variables_7" inherit_id="sh_corpomate_theme._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/theme/color/color_07.scss"/>
+        </xpath>
+    </template>    
+
+
+
+    <template id="assets_primary_variables_8" inherit_id="sh_corpomate_theme._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/theme/color/color_08.scss"/>
+        </xpath>
+    </template>    
+
+
+
+    <template id="assets_primary_variables_9" inherit_id="sh_corpomate_theme._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/theme/color/color_09.scss"/>
+        </xpath>
+    </template>    
+    
+    
+    <template id="assets_primary_variables_10" inherit_id="sh_corpomate_theme._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/theme/color/color_10.scss"/>
+        </xpath>
+    </template>    
+    
+        
+    <template id="assets_primary_variables_11" inherit_id="sh_corpomate_theme._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/theme/color/color_11.scss"/>
+        </xpath>
+    </template>         
+        
+    <template id="assets_primary_variables_12" inherit_id="sh_corpomate_theme._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/theme/color/color_12.scss"/>
+        </xpath>
+    </template>  
+    
+
+    <template id="assets_primary_variables_13" inherit_id="sh_corpomate_theme._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/theme/color/color_13.scss"/>
+        </xpath>
+    </template> 
+
+    <template id="assets_primary_variables_14" inherit_id="sh_corpomate_theme._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/theme/color/color_14.scss"/>
+        </xpath>
+    </template>
+
+	<template id="assets_primary_variables_15" inherit_id="sh_corpomate_theme._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/theme/color/color_15.scss"/>
+    
+<link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/theme/font/font_15.scss"/>
+
+
+	
+	    </xpath>
+    </template> 
+
+	<template id="assets_primary_variables_16" inherit_id="sh_corpomate_theme._assets_primary_variables" active="False">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/theme/color/color_16.scss"/>
+        </xpath>
+    </template>
+     
+    
+
+    <!-- HIDE OR SHOW MENU FOR READYMADE THEME 1 -->
+    <template id="sh_corpomate_theme_layout_readymade_1" name="readymade theme 1" active="False">
+
+    </template>
+    
+    
+    
+    <!-- HIDE OR SHOW MENU FOR READYMADE THEME 2  -->
+    <template id="sh_corpomate_theme_layout_readymade_2" name="readymade theme 2" active="False">
+
+    </template>    
+    
+
+    <!-- HIDE OR SHOW MENU FOR READYMADE THEME 3  -->
+    <template id="sh_corpomate_theme_layout_readymade_3" name="readymade theme 2" active="False">
+
+    </template>    
+    
+    
+    <!-- HIDE OR SHOW MENU FOR READYMADE THEME 4  -->
+    <template id="sh_corpomate_theme_layout_readymade_4" name="readymade theme 2" active="False">
+
+    </template>    
+    
+    
+    <!-- HIDE OR SHOW MENU FOR READYMADE THEME 5  -->
+    <template id="sh_corpomate_theme_layout_readymade_5" name="readymade theme 2" active="False">
+
+    </template>    
+            
+    
+    
+    <!-- HIDE OR SHOW MENU FOR READYMADE THEME 6  -->
+    <template id="sh_corpomate_theme_layout_readymade_6" name="readymade theme 6" active="False">
+
+    </template>  
+    
+    
+    <!-- HIDE OR SHOW MENU FOR READYMADE THEME 7  -->
+    <template id="sh_corpomate_theme_layout_readymade_7" name="readymade theme 7" active="False">
+
+    </template>  
+        
+
+    <!-- HIDE OR SHOW MENU FOR READYMADE THEME 8  -->
+    <template id="sh_corpomate_theme_layout_readymade_8" name="readymade theme 8" active="False">
+
+    </template>  
+
+
+    <!-- HIDE OR SHOW MENU FOR READYMADE THEME 9  -->
+    <template id="sh_corpomate_theme_layout_readymade_9" name="readymade theme 9" active="False">
+
+    </template>  
+    
+
+    <!-- HIDE OR SHOW MENU FOR READYMADE THEME 10  -->
+    <template id="sh_corpomate_theme_layout_readymade_10" name="readymade theme 10" active="False">
+
+    </template>  
+
+
+    <!-- HIDE OR SHOW MENU FOR READYMADE THEME 11  -->
+    <template id="sh_corpomate_theme_layout_readymade_11" name="readymade theme 11" active="False">
+
+    </template>  
+    
+
+    <!-- HIDE OR SHOW MENU FOR READYMADE THEME 12  -->
+    <template id="sh_corpomate_theme_layout_readymade_12" name="readymade theme 12" active="False">
+
+    </template>  
+                
+
+    <!-- HIDE OR SHOW MENU FOR READYMADE THEME 13  -->
+    <template id="sh_corpomate_theme_layout_readymade_13" name="readymade theme 13" active="False">
+
+    </template>  
+
+    <!-- HIDE OR SHOW MENU FOR READYMADE THEME 14  -->
+    <template id="sh_corpomate_theme_layout_readymade_14" name="readymade theme 14" active="False">
+
+    </template>
+
+	<!-- HIDE OR SHOW MENU FOR READYMADE THEME 15  -->
+    <template id="sh_corpomate_theme_layout_readymade_15" name="readymade theme 15" active="False">
+
+    </template> 
+
+	<!-- HIDE OR SHOW MENU FOR READYMADE THEME 16  -->
+    <template id="sh_corpomate_theme_layout_readymade_16" name="readymade theme 16" active="False">
+
+    </template> 
+    
+
+    <!-- HIDE OR SHOW MENU FOR READYMADE THEME 8  -->
+    <template id="sh_corpomate_theme_layout_readymade_none" name="readymade theme None" active="False">
+
+    </template>      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <template id="sh_corpomate_theme_style_lang_show" name="Show Language" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_lang/lang_show.scss"/>
+        </xpath>
+    </template> 
+
+    <template id="sh_corpomate_theme_style_lang_hide" name="Hide Language" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_lang/lang_hide.scss"/>
+        </xpath>
+    </template>         
+    
+    
+    <!-- 
+  
+    Theme Customize Templates   
+    Top Bar
+     
+    -->
+    
+    
+    <template id="sh_corpomate_theme_style_top_bar_1" name="Top Bar Style 1" inherit_id="website.layout" active="False">
+        <xpath expr="//div[@id='wrapwrap']//header" position="before">   
+			
+			<!--  start your code from here -->   	
+			<section id="sh_top_bar_1">
+				<div class="container">
+					<div class="row">
+						<div class="sh_tb_left col-lg-7 col-md-12">
+							<span><a t-att-href="'tel: %s' %(res_company.phone)"><i class="fa fa-phone-square"></i>
+							<t t-esc="res_company.phone"/>
+							</a></span>|
+							<span><i class="fa fa-clock-o"></i>Mon - Sat: 7:00 - 17:00</span>|
+							<span><a t-att-href="'mailto: %s' %(res_company.email)"><i class="fa fa-envelope-o"></i>
+							<t t-esc="res_company.email"/>
+							</a></span>
+						</div>
+						<div class="sh_tb_right col-lg-5 col-md-12">
+							<div class="sh_social_icon">
+							<a t-if="website.social_facebook" t-att-href="website.social_facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+							</div>
+							<div class="sh_social_icon">
+							<a t-if="website.social_twitter" t-att-href="website.social_twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+							</div>
+							<div class="sh_social_icon">
+							<a t-if="website.social_youtube" t-att-href="website.social_youtube" target="_blank"><i class="fa fa-youtube"></i></a>
+							</div>
+							<div class="sh_social_icon m-r-0">
+							<a t-if="website.social_instagram" t-att-href="website.social_instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+							</div>
+							
+    <ul class="js_language_selector mb0 list-inline" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+        <li class="list-inline-item">
+            <div class="dropdown">
+                <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][2].split('/').pop()"/>
+                    <span class="caret ml4"/>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                    <t t-foreach="languages" t-as="lg">
+                        <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+                           class="dropdown-item js_change_lang"
+                           t-att-data-url_code="lg[1]">
+                            <t t-esc="lg[2].split('/').pop()"/>
+                        </a>
+                    </t>
+                </div>
+            </div>
+        </li>
+        <li groups="website.group_website_publisher" class="list-inline-item">
+            <t t-set="url_return" t-value="quote_plus(url_for('', '[lang]') + '?' + keep_query())"/>
+            <a class="d-none d-sm-block" t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}">
+                <i class="fa fa-plus-circle"/>
+                Add a language...
+            </a>
+        </li>
+    </ul>
+											
+						</div>
+											
+					
+						    
+						
+				
+						
+						
+						
+					</div>
+				</div>
+			</section>  	 
+		
+	    	<!-- End your code -->
+        </xpath>
+    </template>
+
+
+
+    <template id="sh_corpomate_theme_style_top_bar_2" name="Top Bar Style 2" inherit_id="website.layout" active="False">
+        <xpath expr="//div[@id='wrapwrap']//header" position="before">   
+			
+			<!--  start your code from here -->
+			<section id="sh_top_bar_2">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-sm-12 col-12 align-left">
+						
+							<div class="sh-element element-editor phone">
+								<a t-att-href="'tel: %s' %(res_company.phone)">
+									<t t-esc="res_company.phone"/>
+								</a>
+							</div>
+							
+							<div class="sh-element element-editor email">
+								<a t-att-href="'mailto: %s' %(res_company.email)">
+									<t t-esc="res_company.email"/>
+								</a>								
+							</div>
+							
+						</div>
+						<div class="col-lg-6 col-sm-12 col-12 align-right">
+							<ul class="social">
+							<li>
+							<a t-if="website.social_facebook" t-att-href="website.social_facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li><a t-if="website.social_twitter" t-att-href="website.social_twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+
+							</ul>
+							<div class="sh-element custom-login">
+							<a href="/web/login" title="Login">Login</a>
+							
+							<t t-if="website.auth_signup_uninvited == 'b2c'">
+								<span>or</span>
+								<a href="/web/signup?" title="Register">Register</a>
+							</t>
+							</div>
+							
+    <ul class="js_language_selector mb0 list-inline" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+        <li class="list-inline-item">
+            <div class="dropdown">
+                <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][2].split('/').pop()"/>
+                    <span class="caret ml4"/>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                    <t t-foreach="languages" t-as="lg">
+                        <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+                           class="dropdown-item js_change_lang"
+                           t-att-data-url_code="lg[1]">
+                            <t t-esc="lg[2].split('/').pop()"/>
+                        </a>
+                    </t>
+                </div>
+            </div>
+        </li>
+        <li groups="website.group_website_publisher" class="list-inline-item">
+            <t t-set="url_return" t-value="quote_plus(url_for('', '[lang]') + '?' + keep_query())"/>
+            <a class="d-none d-sm-block" t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}">
+                <i class="fa fa-plus-circle"/>
+                Add a language...
+            </a>
+        </li>
+    </ul>
+						    						
+						</div>
+					</div><!--row -->
+				</div><!--container -->
+			</section>
+	    	
+	    	<!-- End your code -->
+			
+        </xpath>
+    </template>
+
+
+
+
+    
+    <template id="sh_corpomate_theme_style_top_bar_3" name="Top Bar Style 3" inherit_id="website.layout" active="False">
+        <xpath expr="//div[@id='wrapwrap']//header" position="before">   
+        
+		<!--  start your code from here -->
+		<section id="sh_top_bar_3">
+			<div class="container">
+				      <!-- Top Left -->
+				      <div class="top-left">
+				         <ul class="clearfix">
+				            <li><a href="#">We have more than 25 years of experiences</a></li>
+				         </ul>
+				      </div>
+				      <!-- Top Right -->
+				      <div class="top-right">
+				         <ul class="clearfix">
+				            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-270">
+				            <a title="sitemap" href="#" >sitemap</a>
+				            </li>
+				            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-271">
+				            <a title="quick links" href="#" >quick links</a>
+				            </li>
+				            <li  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-272">
+				            <a title="support" href="/contactus">support</a>
+				            </li>
+<!-- 
+				            <li>
+				            <a class="search-box-btn" href="#">
+				            <span class="fa fa-search"></span>
+				            </a>
+				            </li>
+ -->				            
+				         </ul>
+				         
+    <ul class="js_language_selector mb0 list-inline" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+        <li class="list-inline-item">
+            <div class="dropdown">
+                <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][2].split('/').pop()"/>
+                    <span class="caret ml4"/>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                    <t t-foreach="languages" t-as="lg">
+                        <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+                           class="dropdown-item js_change_lang"
+                           t-att-data-url_code="lg[1]">
+                            <t t-esc="lg[2].split('/').pop()"/>
+                        </a>
+                    </t>
+                </div>
+            </div>
+        </li>
+        <li groups="website.group_website_publisher" class="list-inline-item">
+            <t t-set="url_return" t-value="quote_plus(url_for('', '[lang]') + '?' + keep_query())"/>
+            <a class="d-none d-sm-block" t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}">
+                <i class="fa fa-plus-circle"/>
+                Add a language...
+            </a>
+        </li>
+    </ul>
+						    
+						    					
+				      </div>
+	            </div>
+		</section>
+	    	
+	    	<!-- End your code -->
+        </xpath>
+    </template>  
+
+    <template id="sh_corpomate_theme_style_top_bar_4" name="Top Bar Style 4" inherit_id="website.layout" active="False">
+        <xpath expr="//div[@id='wrapwrap']//header" position="before">   
+			<section id="sh_top_bar_4">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 col-md-12 col-sm-12 col-12 header-column justify-content-start">
+							<span class="d-none phone">
+								<a t-att-href="'tel: %s' %(res_company.phone)">
+									<t t-esc="res_company.phone"/>
+								</a>
+							</span>
+							<span class="d-none email">
+								<a t-att-href="'mailto: %s' %(res_company.email)">
+									<t t-esc="res_company.email"/>
+								</a>	
+							</span>
+						</div>
+						<div class="col-lg-7 col-md-12 col-sm-12 col-12 header-column justify-content-end" style="display: flex;">
+							<ul class="nav">
+								<li class="nav-item">
+									<a href="/my/home" class="nav-link">MY ACCOUNT</a>
+								</li>
+								
+							
+								<li class="nav-item">
+									<a href="#" class="nav-link">DAILY DEAL</a>
+								</li>
+							
+								<li class="nav-item">
+									<a href="/shop/wishlist" class="nav-link">MY WISHLIST</a>
+								</li>
+								 
+								<li class="nav-item d-none d-sm-block">
+									<a href="/blog" class="nav-link">BLOG</a>
+								</li>
+								
+								
+							</ul>
+							
+
+    <ul class="js_language_selector mb0 list-inline" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+        <li class="list-inline-item">
+            <div class="dropdown">
+                <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][2].split('/').pop()"/>
+                    <span class="caret ml4"/>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                    <t t-foreach="languages" t-as="lg">
+                        <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+                           class="dropdown-item js_change_lang"
+                           t-att-data-url_code="lg[1]">
+                            <t t-esc="lg[2].split('/').pop()"/>
+                        </a>
+                    </t>
+                </div>
+            </div>
+        </li>
+        <li groups="website.group_website_publisher" class="list-inline-item">
+            <t t-set="url_return" t-value="quote_plus(url_for('', '[lang]') + '?' + keep_query())"/>
+            <a class="d-none d-sm-block" t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}">
+                <i class="fa fa-plus-circle"/>
+                Add a language...
+            </a>
+        </li>
+    </ul>
+
+
+				</div>
+							</div>
+				</div>
+			</section>
+        </xpath>
+    </template>
+    
+    <template id="sh_corpomate_theme_style_top_bar_5" name="Top Bar Style 5" inherit_id="website.layout" active="False">
+        <xpath expr="//div[@id='wrapwrap']//header" position="before">   
+			
+			<section id="sh_top_bar_5">
+				<div class="container">
+					<div class="row">
+							  <div class="col-lg-4 col-md-12 col-sm-12 col-12 d-none d-md-block sh_left_part">
+									<nav class="header-nav-top">
+										<ul class="nav nav-pills text-uppercase text-2">
+											<li class="nav-item nav-item-anim-icon d-none d-md-block">
+												<a class="nav-link pl-0" href="/aboutus5">
+												<i class="fa fa-angle-right"></i> About Us</a>
+												</li>
+												<li class="nav-item nav-item-anim-icon d-none d-md-block">
+												<a class="nav-link" href="/contactus5">
+												<i class="fa fa-angle-right"></i> Contact Us</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+								<div class="col-lg-8 col-md-12 col-sm-12 col-12 sh_right_part">
+									<nav class="header-nav-top">
+									   <ul class="nav sh-nav-pills">
+									      <li class="nav-item">									  
+									     	 <a t-att-href="'tel: %s' %(res_company.phone)">
+									     	    <i class="fa fa-whatsapp text-4 text-color-primary" style="top: 0;"></i>
+												<t t-esc="res_company.phone"/>
+											</a>									         
+									      </li>
+									      <li class="nav-item">
+									   	        <a t-att-href="'mailto: %s' %(res_company.email)">
+									   	        	<i class="fa fa-envelope text-4 text-color-primary" style="top: 1px;"></i>
+													<t t-esc="res_company.email"/>
+												</a>	
+									      </li>
+									   </ul>
+									</nav>
+									
+									
+    <ul class="js_language_selector mb0 list-inline" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+        <li class="list-inline-item">
+            <div class="dropdown">
+                <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][2].split('/').pop()"/>
+                    <span class="caret ml4"/>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                    <t t-foreach="languages" t-as="lg">
+                        <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+                           class="dropdown-item js_change_lang"
+                           t-att-data-url_code="lg[1]">
+                            <t t-esc="lg[2].split('/').pop()"/>
+                        </a>
+                    </t>
+                </div>
+            </div>
+        </li>
+        <li groups="website.group_website_publisher" class="list-inline-item">
+            <t t-set="url_return" t-value="quote_plus(url_for('', '[lang]') + '?' + keep_query())"/>
+            <a class="d-none d-sm-block" t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}">
+                <i class="fa fa-plus-circle"/>
+                Add a language...
+            </a>
+        </li>
+    </ul>
+						    
+						    
+						    				
+								</div>
+							</div>
+				</div>
+			</section>			
+        </xpath>
+    </template>          
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<template id="sh_corpomate_theme_style_top_bar_7" name="Top Bar Style 7" inherit_id="website.layout" active="False">
+        <xpath expr="//div[@id='wrapwrap']//header" position="before">   
+			
+			<section id="sh_top_bar_7">
+				<div class="container">
+					
+					
+					
+					<div class="row">
+						<div class="sh_tb_left col-lg-7 col-md-12">
+							<span><a t-att-href="'tel: %s' %(res_company.phone)"><i class="fa fa-phone-square"></i>
+							<t t-esc="res_company.phone"/>
+							</a></span>|
+							<span><i class="fa fa-clock-o"></i>Mon - Sat: 7:00 - 17:00</span>|
+							<span><a t-att-href="'mailto: %s' %(res_company.email)"><i class="fa fa-envelope-o"></i>
+							<t t-esc="res_company.email"/>
+							</a></span>
+						</div>
+						<div class="sh_tb_right col-lg-5 col-md-12">
+							<div class="sh_social_icon">
+							<a t-if="website.social_facebook" t-att-href="website.social_facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+							</div>
+							<div class="sh_social_icon">
+							<a t-if="website.social_twitter" t-att-href="website.social_twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+							</div>
+							<div class="sh_social_icon">
+							<a t-if="website.social_youtube" t-att-href="website.social_youtube" target="_blank"><i class="fa fa-youtube"></i></a>
+							</div>
+							<div class="sh_social_icon m-r-0">
+							<a t-if="website.social_instagram" t-att-href="website.social_instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+							</div>
+							
+    <ul class="js_language_selector mb0 list-inline" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+        <li class="list-inline-item">
+            <div class="dropdown">
+                <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][2].split('/').pop()"/>
+                    <span class="caret ml4"/>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                    <t t-foreach="languages" t-as="lg">
+                        <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+                           class="dropdown-item js_change_lang"
+                           t-att-data-url_code="lg[1]">
+                            <t t-esc="lg[2].split('/').pop()"/>
+                        </a>
+                    </t>
+                </div>
+            </div>
+        </li>
+        <li groups="website.group_website_publisher" class="list-inline-item">
+            <t t-set="url_return" t-value="quote_plus(url_for('', '[lang]') + '?' + keep_query())"/>
+            <a class="d-none d-sm-block" t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}">
+                <i class="fa fa-plus-circle"/>
+                Add a language...
+            </a>
+        </li>
+    </ul>
+											
+						</div>
+											
+					
+						    
+						
+				
+						
+						
+						
+					</div>
+					
+					
+					
+					
+				</div>
+			</section>			
+        </xpath>
+    </template>         
+    
+    
+    
+    
+    
+
+<template id="sh_corpomate_theme_style_top_bar_8" name="Top Bar Style 8" inherit_id="website.layout" active="False">
+        <xpath expr="//div[@id='wrapwrap']//header" position="before">   
+			
+			<!--  start your code from here -->
+			<section id="sh_top_bar_8">
+				<div class="container">
+					<div class="row">
+						<div class="sh_tb_left col-lg-7 col-md-12">
+							<span><a t-att-href="'tel: %s' %(res_company.phone)"><i class="fa fa-phone-square"></i>
+							<t t-esc="res_company.phone"/>
+							</a></span>|
+							<span><i class="fa fa-clock-o"></i>Mon - Sat: 7:00 - 17:00</span>|
+							<span><a t-att-href="'mailto: %s' %(res_company.email)"><i class="fa fa-envelope-o"></i>
+							<t t-esc="res_company.email"/>
+							</a></span>
+						</div>
+						<div class="sh_tb_right col-lg-5 col-md-12">
+							<div class="sh_social_icon">
+							<a t-if="website.social_facebook" t-att-href="website.social_facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+							</div>
+							<div class="sh_social_icon">
+							<a t-if="website.social_twitter" t-att-href="website.social_twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+							</div>
+							<div class="sh_social_icon">
+							<a t-if="website.social_youtube" t-att-href="website.social_youtube" target="_blank"><i class="fa fa-youtube"></i></a>
+							</div>
+							<div class="sh_social_icon m-r-0">
+							<a t-if="website.social_instagram" t-att-href="website.social_instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+							</div>
+							
+    <ul class="js_language_selector mb0 list-inline" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+        <li class="list-inline-item">
+            <div class="dropdown">
+                <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][2].split('/').pop()"/>
+                    <span class="caret ml4"/>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                    <t t-foreach="languages" t-as="lg">
+                        <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+                           class="dropdown-item js_change_lang"
+                           t-att-data-url_code="lg[1]">
+                            <t t-esc="lg[2].split('/').pop()"/>
+                        </a>
+                    </t>
+                </div>
+            </div>
+        </li>
+        <li groups="website.group_website_publisher" class="list-inline-item">
+            <t t-set="url_return" t-value="quote_plus(url_for('', '[lang]') + '?' + keep_query())"/>
+            <a class="d-none d-sm-block" t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}">
+                <i class="fa fa-plus-circle"/>
+                Add a language...
+            </a>
+        </li>
+    </ul>
+											
+						</div>
+											
+											
+					</div>
+				</div>
+			</section>     	
+	    	<!-- End your code -->
+        </xpath>
+    </template>    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- topbar 10 -->
+    <template id="sh_corpomate_theme_style_top_bar_10" name="Top Bar Style 10" inherit_id="website.layout" active="False">
+        <xpath expr="//div[@id='wrapwrap']//header" position="before">   
+			
+			<!--  start your code from here -->
+			<section id="sh_top_bar_10">
+				<div class="container">
+					
+					<div class="sh_topbar_content">
+					   <div class="sh_logo">
+					      <a class="navbar-brand" href="index.html">
+							  <img t-att-src="image_data_uri(website.logo)" id="logo-footer" class="img-fluid" alt="logo icon" style=""/>
+				 		  </a>
+					   </div>
+					   
+					   <div class="sh_des">
+					      <div class="sh_phone">
+					         <span class="fa fa-phone"></span>
+					         <div class="sh_number">
+					            
+					            <h4>
+					            
+							<span><a t-att-href="'tel: %s' %(res_company.phone)">
+							<t t-esc="res_company.phone"/>
+							</a></span>
+					            
+					            </h4>
+					            
+					            
+					            <p>
+							
+							<span><a t-att-href="'mailto: %s' %(res_company.email)">
+							<t t-esc="res_company.email"/>
+							</a></span>
+												            
+					            </p>
+					         
+					         </div>
+					      </div>
+					      
+					      <div class="sh_time">
+					         <span class="fa fa-clock-o"></span>
+					         <div class="sh_number">
+					            <h4>Mon-Sat 9:30 - 7:00</h4>
+					            <p>Sunday Closed</p>
+					         </div>
+					      </div>					      
+					   </div>					   
+					</div>
+					
+				</div>
+			</section>     	
+	    	<!-- End your code -->
+        </xpath>
+    </template> 
+  <!-- topbar 10 -->
+  
+  
+  
+  <!-- topbar 11 -->
+    <template id="sh_corpomate_theme_style_top_bar_11" name="Top Bar Style 11" inherit_id="website.layout" active="False">
+        <xpath expr="//div[@id='wrapwrap']//header" position="before">   
+			
+			<!--  start your code from here -->
+			<section id="sh_top_bar_11">
+				<div class="container">
+				   <div class="sh_topbar_content">
+				      <div class="sh_left_content">
+				         <ul>
+		                    <!--  <li>
+		                         <a href="#" class="sh_btn"><span class="fa fa-map-marker"></span>
+					
+					<span  t-field="res_company.partner_id" t-options='{
+		                "widget": "contact",
+		                "fields": [ "address"],
+		                "no_marker": True,
+		                }'/>	
+		                		                         
+		                         </a>
+		                     </li> -->
+		                     <li>
+		                         <a t-att-href="'tel: %s' %(res_company.phone)" class="sh_btn"><span class="fa fa-phone"></span> any question: 
+		                         <t t-esc="res_company.phone"/>
+		                         </a>
+		                     </li>
+		                     <li>
+		                         <a t-att-href="'mailto: %s' %(res_company.email)" class="sh_btn"><span class="fa fa-envelope"></span>
+		                         <t t-esc="res_company.email"/>
+		                         </a>
+		                     </li>		         
+				         </ul>
+				      </div>
+				      
+				      <div class="sh_right_content">
+				         <ul>
+		                     <li t-if="website.social_facebook">
+		                         <a t-att-href="website.social_facebook" target="_blank" class="sh_btn"><span class="fa fa-facebook"></span></a>
+		                     </li>
+		                     <li t-if="website.social_twitter">
+		                         <a t-att-href="website.social_twitter"  target="_blank"  class="sh_btn"><span class="fa fa-twitter"></span></a>
+		                     </li>
+		                     <li t-if="website.social_linkedin">
+		                         <a t-att-href="website.social_linkedin" target="_blank" class="sh_btn"><span class="fa fa-linkedin"></span></a>
+		                     </li>
+		                     <li t-if="website.social_youtube">
+		                         <a t-att-href="website.social_youtube" target="_blank" class="sh_btn"><span class="fa fa-youtube"></span></a>
+		                     </li>		         
+				         </ul>
+				      </div>
+				      
+				   </div>
+				</div>
+			</section>
+		</xpath>
+	</template>			
+   <!-- topbar 11 -->
+  
+  
+  
+  
+  
+  <!-- topbar 12 -->
+    <template id="sh_corpomate_theme_style_top_bar_12" name="Top Bar Style 12" inherit_id="website.layout" active="False">
+        <xpath expr="//div[@id='wrapwrap']//header" position="before">   
+			
+			<!--  start your code from here -->
+			<section id="sh_top_bar_12">
+				<div class="container">
+					
+					<div class="sh_topbar_content">
+					   <div class="sh_logo">
+					      <a class="navbar-brand" href="/">
+							  <img t-att-src="image_data_uri(website.logo)" id="logo-footer" class="img-fluid" alt="logo icon" style=""/>
+				 		  </a>
+					   </div>
+					   
+					   <div class="sh_des">
+					      <div class="sh_phone">
+					         <span class="fa fa-phone"></span>
+					         <div class="sh_number">
+					            
+					            <h4>
+					            
+							<span><a t-att-href="'tel: %s' %(res_company.phone)">
+							<t t-esc="res_company.phone"/>
+							</a></span>
+					            
+					            </h4>
+					            
+					            
+					            <p>
+							
+							
+												            
+					            </p>
+					         
+					         </div>
+					      </div>
+					      
+					      <div class="sh_time">
+					         <span class="fa fa-envelope"><a t-att-href="'mailto: %s' %(res_company.email)">
+								<t t-esc="res_company.email"/></a>
+							 </span>
+
+							<ul class="js_language_selector mb0 list-inline" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+								<li class="list-inline-item">
+									<div class="dropdown">
+										<button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+											<span t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][2].split('/').pop()"/>
+											<span class="caret ml4"/>
+										</button>
+										<div class="dropdown-menu" role="menu">
+											<t t-foreach="languages" t-as="lg">
+												<a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+												class="dropdown-item js_change_lang"
+												t-att-data-url_code="lg[1]">
+													<t t-esc="lg[2].split('/').pop()"/>
+												</a>
+											</t>
+										</div>
+									</div>
+								</li>
+								<li groups="website.group_website_publisher" class="list-inline-item">
+									<t t-set="url_return" t-value="quote_plus(url_for('', '[lang]') + '?' + keep_query())"/>
+									<a class="d-none d-sm-block" t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}">
+										<i class="fa fa-plus-circle"/>
+										Add a language...
+									</a>
+								</li>
+							</ul>
+
+					      </div>					      
+					   </div>					   
+					</div>
+					
+				</div>
+			</section>     	
+	    	<!-- End your code -->
+        </xpath>
+    </template> 
+  <!-- topbar 12 -->
+  
+  
+  <!-- topbar 13 -->
+    <template id="sh_corpomate_theme_style_top_bar_13" name="Top Bar Style 13" inherit_id="website.layout" active="False">
+        <xpath expr="//div[@id='wrapwrap']//header" position="before">   
+			
+			<!--  start your code from here -->
+			<section id="sh_top_bar_13">
+				<div class="container">
+				   <div class="sh_topbar_content">
+				      <div class="sh_left_content">
+				         <ul>
+				         	<li>
+		                         <a class="sh_btn" t-att-href="'mailto: %s' %(res_company.email)"><span class="fa fa-envelope" data-oe-model="ir.ui.view" data-oe-id="1648" data-oe-field="arch" data-oe-xpath="/data/xpath/section/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]/span[1]"></span>
+		                         <t t-esc="res_company.email"></t>
+		                         </a>
+		                     </li>
+		                    <li>
+		                         <a class="sh_btn" t-att-href="'tel: %s' %(res_company.phone)"><span class="fa fa-phone" data-oe-model="ir.ui.view" data-oe-id="1648" data-oe-field="arch" data-oe-xpath="/data/xpath/section/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]/span[1]"></span> 
+		                         <t t-esc="res_company.phone"></t> 
+		                         </a>
+		                     </li>
+				         </ul>
+				      </div>
+				      
+				      <div class="sh_right_content">
+				         <ul>
+		                     <li>
+		                         <a target="_blank" class="sh_btn" data-oe-model="ir.ui.view" data-oe-id="1648" data-oe-field="arch" data-oe-xpath="/data/xpath/section/div[1]/div[1]/div[2]/ul[1]/li[1]/a[1]" href="https://www.facebook.com/Odoo"><span class="fa fa-facebook"></span></a>
+		                     </li>
+		                     <li>
+		                         <a target="_blank" class="sh_btn" data-oe-model="ir.ui.view" data-oe-id="1648" data-oe-field="arch" data-oe-xpath="/data/xpath/section/div[1]/div[1]/div[2]/ul[1]/li[2]/a[1]" href="https://twitter.com/Odoo"><span class="fa fa-twitter"></span></a>
+		                     </li>
+		                     <li>
+		                         <a target="_blank" class="sh_btn" data-oe-model="ir.ui.view" data-oe-id="1648" data-oe-field="arch" data-oe-xpath="/data/xpath/section/div[1]/div[1]/div[2]/ul[1]/li[3]/a[1]" href="https://www.linkedin.com/company/odoo"><span class="fa fa-linkedin"></span></a>
+		                     </li>
+		                     <li>
+		                         <a target="_blank" class="sh_btn" data-oe-model="ir.ui.view" data-oe-id="1648" data-oe-field="arch" data-oe-xpath="/data/xpath/section/div[1]/div[1]/div[2]/ul[1]/li[4]/a[1]" href="https://www.youtube.com/user/OpenERPonline"><span class="fa fa-youtube"></span></a>
+		                     </li>		         
+				         </ul>
+				      </div>
+				      
+				   </div>
+				</div>
+			</section>
+	    	<!-- End your code -->
+        </xpath>
+    </template> 
+  <!-- topbar 13 -->
+  
+  
+ <!-- topbar 14 -->
+    <template id="sh_corpomate_theme_style_top_bar_14" name="Top Bar Style 14" inherit_id="website.layout" active="False">
+        
+        
+        <xpath expr="//div[@id='wrapwrap']//header" position="before">  
+            
+            <!--  start your code from here -->
+            <section id="sh_top_bar_14">
+                <div class="container">
+                   <div class="sh_topbar_content">
+                      <div class="sh_left_content">
+                         <ul>
+                            <li>
+                                 <a href="#" class="sh_btn" ><span class="fa fa-clock-o"></span>
+                                 9:00 AM to 7:00 PM
+                                 </a>
+                             </li>
+                            <li>
+                                 <a class="sh_btn" t-att-href="'mailto: %s' %(res_company.email)"><span class="fa fa-envelope" data-oe-model="ir.ui.view" data-oe-id="1648" data-oe-field="arch" data-oe-xpath="/data/xpath/section/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]/span[1]"></span>
+                                 <t t-esc="res_company.email"></t>
+                                 </a>
+                             </li>                         
+                         </ul>
+                      </div>
+                      
+                      <div class="sh_right_content">
+                         <ul>
+                             <li>
+                                 <a href="#" class="sh_btn">FAQ</a>
+                             </li>
+                             <li>
+                                 <a href="#" class="sh_btn">T&amp;C</a>
+                             </li>
+                             <li>
+                                 <a href="#" class="sh_btn">Privacy Policy</a>
+                             </li>
+                                   
+                         </ul>
+                      </div>                      
+                   </div>
+
+                   </div>
+
+                    <div class="sh_bottom_part">
+                        <div class="container">
+                            <div class="sh_main_part">    
+                                <div class="sh_mail-box">
+                                    <span class="fa fa-envelope"></span>
+                                    <div class="sh_text">
+                                      <h5>Mail us</h5>
+                                      <p>
+                                        <a class="sh_btn" t-att-href="'mailto: %s' %(res_company.email)">
+                                           <t t-esc="res_company.email"></t>
+                                        </a>
+                                      </p>
+                                    </div>
+                                </div>
+                                <div class="sh_mail-box">
+                                    <span class="fa fa-phone"></span>
+                                    <div class="sh_text">
+                                      <h5>call us</h5>
+                                      <p>
+                                         <a class="sh_btn" t-att-href="'tel: %s' %(res_company.phone)"> 
+                                            <t t-esc="res_company.phone"></t> 
+                                         </a>
+                                      </p>
+                                    </div>
+                                </div>
+                                <div class="sh_box_btn">
+                                    <a href="#" class="btn btn-primary">request an appointment</a>  
+                                </div>
+                            </div>
+                        </div>      
+                    </div>
+
+                
+            </section>
+            <!-- End your code -->
+        </xpath>
+    </template> 
+  <!-- topbar 14 -->   
+    
+
+
+  <!-- topbar 15 -->
+<template id="sh_corpomate_theme_style_top_bar_15" name="Top Bar Style 15" inherit_id="website.layout" active="False">     
+    <xpath expr="//div[@id='wrapwrap']//header" position="before">   
+		<section id="sh_top_bar_15">
+    		<div class="container">
+    			<div class="sh_topbar_content">
+    				<div class="sh_logo">
+    					<a class="navbar-brand" href="index.html">
+							<img t-att-src="image_data_uri(website.logo)" id="logo-footer" class="img-fluid" alt="logo icon" style=""/>
+				 		</a>
+    				</div>
+    				<div class="sh_info">
+    					<div class="sh_call_info">
+    						<div class="sh_icon">
+    							<span class="fa fa-phone"></span>
+    						</div>
+    						<div class="sh_callus">
+    							<h4>call us on:</h4>
+    							<p><a t-att-href="'tel: %s' %(res_company.phone)">
+									<t t-esc="res_company.phone"/></a>
+								</p>
+    						</div>
+    					</div>
+
+    					<div class="sh_call_info">
+    						<div class="sh_icon">
+    							<span class="fa fa-envelope"></span>
+    						</div>
+    						<div class="sh_callus">
+    							<h4>mail us on:</h4>
+    							<p><a t-att-href="'mailto: %s' %(res_company.email)">
+									<t t-esc="res_company.email"/></a>
+								</p>
+    						</div>
+    					</div>
+
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    </xpath>
+</template>    
+<!-- topbar 15 -->  
+    
+    
+<!-- topbar 16 -->
+<template id="sh_corpomate_theme_style_top_bar_16" name="Top Bar Style 16" inherit_id="website.layout" active="False">     
+    <xpath expr="//div[@id='wrapwrap']//header" position="before">   
+		<section id="sh_top_bar_16">
+    		<div class="container">
+    			<div class="sh_topbar_content">
+    				<div class="sh_logo">
+    					<a class="navbar-brand" href="index.html">
+							<img t-att-src="image_data_uri(website.logo)" id="logo-footer" class="img-fluid" alt="logo icon" style=""/>
+				 		</a>
+    				</div>
+    				<div class="sh_info">
+    					<div class="sh_call_info">
+    						<div class="sh_icon">
+    							<span class="fa fa-phone"></span>
+    						</div>
+    						<div class="sh_callus">
+    							<h4>call us on:</h4>
+    							<p><a t-att-href="'tel: %s' %(res_company.phone)">
+									<t t-esc="res_company.phone"/></a>
+								</p>
+    						</div>
+    					</div>
+
+    					<div class="sh_call_info">
+    						<div class="sh_icon">
+    							<span class="fa fa-envelope"></span>
+    						</div>
+    						<div class="sh_callus">
+    							<h4>mail us on:</h4>
+    							<p><a t-att-href="'mailto: %s' %(res_company.email)">
+									<t t-esc="res_company.email"/></a>
+								</p>
+    						</div>
+    					</div>
+
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    </xpath>
+</template>    
+<!-- topbar 16 -->        
+    
+    
+    <!-- 
+  
+    Theme Customize Templates   
+    Copyrights Bar
+     
+    -->
+    
+    
+    <template id="sh_corpomate_theme_style_copyright_hide" name="Hide Copyrights" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_copyright/copyright_hide.scss"/>
+        </xpath>
+    </template>  
+    
+          
+    
+    
+    <template id="sh_corpomate_theme_style_copyright_1" name="Copyright 1" inherit_id="website.layout" active="False">
+        <xpath expr="//footer" position="inside"> 
+        	<section id="sh_copyright_1"> 
+						<div class=" copyright-section text-center">
+							<p class="container-wide copyright"> © 2019,<a t-att-href="'%s' %(res_company.website)">
+								<t t-esc="res_company.name"/>
+							</a>
+							. Made with passion by
+							<a target="_blank" t-att-href="'%s' %(res_company.website)">
+								<t t-esc="res_company.website"/>
+							</a>							
+							</p>
+						</div>
+        	</section>
+        </xpath>
+    </template>    
+
+    <template id="sh_corpomate_theme_style_copyright_2" name="Copyright 2" inherit_id="website.layout" active="False">
+        <xpath expr="//footer" position="inside">    
+			<section id="sh_copyright_2">
+			   <div class="container">
+			      <div class="row">
+			         
+			         <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-left font-arial sm-text-left">			            
+			            <p class="muted">Copyright © 2019 
+			            <a t-att-href="'%s' %(res_company.website)" target="_blank" style="color:#fff;font-weight:600">
+							<t t-esc="res_company.name"/>
+						</a>
+			            .All Rights Reserved.</p>
+			         </div>
+			         <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+			            
+			            		           
+			            <div class="m-t-10 ">
+			               <ul class="no-style fs-11 no-padding font-arial">
+			                  <li class="inline no-padding"><a href="/faq2" class="link text-white p-r-10 b-r b-transparent-white">Faq</a></li>			            
+			                  <li class="inline no-padding"><a href="/termsandcondition2" class="link text-white p-l-10 p-r-10 b-r b-transparent-white">Terms &amp; Conditions</a></li>			                 
+			                  <li class="inline no-padding"><a href="/privacypolicy2" class="link text-white p-l-10 p-r-10 b-r b-transparent-white">Privacy Policy</a></li>			                 			               
+			                  <li class="inline no-padding"><a href="/contactus2" class="link text-white p-l-10 p-r-10 xs-no-padding xs-m-t-10">Support</a></li>			               	
+			               </ul>
+			            </div>
+			         </div>
+			      </div>
+			   </div>
+			</section>
+        </xpath>
+    </template>       
+
+    <template id="sh_corpomate_theme_style_copyright_3" name="Copyright 3" inherit_id="website.layout" active="False">
+        <xpath expr="//footer" position="inside">   
+			<section id="sh_copyright_3">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 text-center">
+								<span class="sub">
+								    © Copright 2019 								
+						            <a t-att-href="'%s' %(res_company.website)" target="_blank" style="color:#fff;font-weight:600">
+										<t t-esc="res_company.name"/>
+									</a>						
+								</span>
+								
+						
+								<ul>
+								    <li><a href="/faq3">Faq</a></li>
+									<li><a href="/termsandcondition3">Terms Of Use</a></li>
+									<li><a href="/privacypolicy3">Privacy &amp; Policy</a></li>																		
+								</ul>
+						
+								
+							</div>							
+							<!-- <div class="col-lg-2 col-md-2 col-sm-2 text-right">
+								<ul class="social-icons">
+									<li>
+										<a t-if="website.social_twitter" t-att-href="website.social_twitter" target="_blank">
+											<i class="fa fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a t-if="website.social_facebook" t-att-href="website.social_facebook" target="_blank">
+											<i class="fa fa-facebook"></i>
+										</a>
+									</li>
+								</ul>	
+							</div> -->
+						</div>
+					</div>
+			</section>
+        </xpath>
+    </template>  
+    
+    <template id="sh_corpomate_theme_style_copyright_4" name="Copyright 4" inherit_id="website.layout" active="False">
+        <xpath expr="//footer" position="inside">  
+	        <section id="sh_copyright_4">
+						<div class="footer-bottom">
+				        	<div class="container">
+				                <p>Copyright © 2019 <i class="fa fa-heart"></i> By 
+						            <a t-att-href="'%s' %(res_company.website)" target="_blank" style="color:#fff;">
+										<t t-esc="res_company.name"/>
+									</a>				                
+				                </p>
+				            </div>
+		        		</div>
+	        </section> 
+        </xpath>
+    </template>     
+    
+    <template id="sh_corpomate_theme_style_copyright_5" name="Copyright 5" inherit_id="website.layout" active="False">
+        <xpath expr="//footer" position="inside">   
+       		 <section id="sh_copyright_5">
+					  <div class="container">
+					    <div class="row">
+					      <div class="col-md-12 text-center">
+
+					          <p>Copyright © 2019 
+					                <a t-att-href="'%s' %(res_company.website)" target="_blank" style="color:#fff;">
+										<t t-esc="res_company.name"/>
+									</a>.all rights reserved.
+							 </p>
+					      </div>
+					    </div>
+					  </div>
+			</section>
+        </xpath>
+    </template>    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <template id="sh_corpomate_theme_style_copyright_6" name="Copyright 6" inherit_id="website.layout" active="False">
+        <xpath expr="//footer" position="inside">   
+       		 <section id="sh_copyright_6">
+					  <div class="container">
+					    <div class="row">
+					      <div class="col-md-12 text-center">
+
+					          <p>Copyright © 2019 
+					                <a t-att-href="'%s' %(res_company.website)" target="_blank" style="color:#fff;">
+										<t t-esc="res_company.name"/>
+									</a>
+
+								<ul class="js_language_selector mb0 list-inline" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+        <li class="list-inline-item">
+            <div class="dropup">
+                <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][2].split('/').pop()"/>
+                    <span class="caret ml4"/>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                    <t t-foreach="languages" t-as="lg">
+                        <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+                           class="dropdown-item js_change_lang"
+                           t-att-data-url_code="lg[1]">
+                            <t t-esc="lg[2].split('/').pop()"/>
+                        </a>
+                    </t>
+                </div>
+            </div>
+        </li>
+        <li groups="website.group_website_publisher" class="list-inline-item">
+            <t t-set="url_return" t-value="quote_plus(url_for('', '[lang]') + '?' + keep_query())"/>
+            <a class="d-none d-sm-block" t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}">
+                <i class="fa fa-plus-circle"/>
+                Add a language...
+            </a>
+        </li>
+    </ul>
+
+
+							 </p>
+					      </div>
+					    </div>
+					  </div>
+			</section>
+        </xpath>
+    </template> 
+    
+    
+<template id="sh_corpomate_theme_style_copyright_7" name="Copyright 7" inherit_id="website.layout" active="False">
+        <xpath expr="//footer" position="inside">   
+       		 <section id="sh_copyright_7">
+					  <div class="container">
+					    <div class="row">
+					      <div class="col-md-12 text-center">
+
+					          <p>Copyright © 2019 
+					                <a t-att-href="'%s' %(res_company.website)" target="_blank" style="color:#fff;">
+										<t t-esc="res_company.name"/>
+									</a>
+							 </p>
+					      </div>
+					    </div>
+					  </div>
+			</section>
+        </xpath>
+    </template>     
+    
+    
+    
+
+    <template id="sh_corpomate_theme_style_copyright_8" name="Copyright 8" inherit_id="website.layout" active="False">
+        <xpath expr="//footer" position="inside">   
+       		 <section id="sh_copyright_8">
+					  <div class="container">
+					    <div class="row">
+					      <div class="col-md-12 text-center">
+
+					          <p>Copyright © 
+					                <a t-att-href="'%s' %(res_company.website)" target="_blank" style="color:#fff;">
+										<t t-esc="res_company.name"/>
+									</a>
+							 </p>
+					      </div>
+					    </div>
+					  </div>
+			</section>
+        </xpath>
+    </template> 
+
+  
+    <template id="sh_corpomate_theme_style_copyright_9" name="Copyright 9" inherit_id="website.layout" active="False">
+        <xpath expr="//footer" position="inside">   
+       		 <section id="sh_copyright_9">
+				  <div class="container">
+				    <div class="row">
+				      <div class="col-md-12">
+				          <div class="sh_copyright">
+				             <ul>
+				                
+				                <li t-if="website.social_facebook">
+				                	<a t-att-href="website.social_facebook"><span class="fa fa-facebook"></span></a>
+				                </li>
+				                
+				                <li t-if="website.social_twitter">
+				                	<a t-att-href="website.social_twitter"><span class="fa fa-twitter"></span></a>
+				                </li>
+				                
+				                <li t-if="website.social_instagram">
+				                	<a t-att-href="website.social_instagram"><span class="fa fa-instagram"></span></a>
+				                </li>
+				                
+				                <li t-if="website.social_youtube">
+				                	<a t-att-href="website.social_youtube"><span class="fa fa-youtube"></span></a>
+				                </li>
+				                
+				                <li t-if="website.social_linkedin">
+				                	<a t-att-href="website.social_linkedin"><span class="fa fa-linkedin"></span></a>
+				                </li>
+				             
+				             </ul>
+				             
+
+<!-- Logo -->
+        <a href="/" class="sh_cm_copyright_9_website_logo navbar-brand logo">
+            <span t-field="website.logo" t-options="{'widget': 'image'}" role="img" t-att-aria-label="'Logo of %s' % website.name" t-att-title="website.name" />
+        </a>
+        
+        
+
+
+				             
+				             <p>Copyright © <t t-esc="res_company.name"/>
+				             </p>
+				             
+				          </div>				          
+				      </div>
+				    </div>
+				  </div>
+			</section>
+        </xpath>
+    </template> 
+  
+  
+   <template id="sh_corpomate_theme_style_copyright_10" name="Copyright 10" inherit_id="website.layout" active="False">
+        <xpath expr="//footer" position="inside"> 
+        	<section id="sh_copyright_10"> 
+				<div class=" copyright-section text-center">
+					<p class="container-wide copyright">Copyright © <a t-att-href="'%s' %(res_company.website)">
+						<t t-esc="res_company.name"/>
+					</a>
+					<ul class="js_language_selector mb0 list-inline" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+						<li class="list-inline-item">
+							<div class="dropup">
+								<button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<span t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][2].split('/').pop()"/>
+									<span class="caret ml4"/>
+								</button>
+								<div class="dropdown-menu" role="menu">
+									<t t-foreach="languages" t-as="lg">
+										<a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+										class="dropdown-item js_change_lang"
+										t-att-data-url_code="lg[1]">
+											<t t-esc="lg[2].split('/').pop()"/>
+										</a>
+									</t>
+								</div>
+							</div>
+						</li>
+						<li groups="website.group_website_publisher" class="list-inline-item">
+							<t t-set="url_return" t-value="quote_plus(url_for('', '[lang]') + '?' + keep_query())"/>
+							<a class="d-none d-sm-block" t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}">
+								<i class="fa fa-plus-circle"/>
+								Add a language...
+							</a>
+						</li>
+					</ul>							
+					</p>
+				</div>
+        	</section>
+        </xpath>
+    </template> 
+    
+    
+    <template id="sh_corpomate_theme_style_copyright_11" name="Copyright 11" inherit_id="website.layout" active="False">
+        <xpath expr="//footer" position="inside"> 
+        	<section id="sh_copyright_11"> 
+				<div class=" copyright-section text-center">
+					<p class="container-wide copyright">Copyright © <a t-att-href="'%s' %(res_company.website)">
+						<t t-esc="res_company.name"/>
+					</a>
+					<ul class="js_language_selector mb0 list-inline" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+						<li class="list-inline-item">
+							<div class="dropup">
+								<button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<span t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][2].split('/').pop()"/>
+									<span class="caret ml4"/>
+								</button>
+								<div class="dropdown-menu" role="menu">
+									<t t-foreach="languages" t-as="lg">
+										<a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+										class="dropdown-item js_change_lang"
+										t-att-data-url_code="lg[1]">
+											<t t-esc="lg[2].split('/').pop()"/>
+										</a>
+									</t>
+								</div>
+							</div>
+						</li>
+						<li groups="website.group_website_publisher" class="list-inline-item">
+							<t t-set="url_return" t-value="quote_plus(url_for('', '[lang]') + '?' + keep_query())"/>
+							<a class="d-none d-sm-block" t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}">
+								<i class="fa fa-plus-circle"/>
+								Add a language...
+							</a>
+						</li>
+					</ul>							
+					</p>
+				</div>
+        	</section>
+        </xpath>
+    </template> 
+  
+    <template id="sh_corpomate_theme_style_copyright_12" name="Copyright 12" inherit_id="website.layout" active="False">
+        <xpath expr="//footer" position="inside"> 
+        	<section id="sh_copyright_12"> 
+				<div class="container">
+					<div class=" copyright-section text-center">
+						<p class="container-wide copyright">Copyright © <a t-att-href="'%s' %(res_company.website)">
+							<t t-esc="res_company.name"/>
+						</a>
+													
+						</p>
+						
+						<ul>
+	            		    <li t-if="website.social_facebook">
+								<a t-att-href="website.social_facebook" target="_blank"><span class="fa fa-facebook"></span></a>
+	            		    </li>
+            		    
+	            		    <li t-if="website.social_twitter">
+								<a t-att-href="website.social_twitter"  target="_blank"><span class="fa fa-twitter"></span></a>
+	            		    </li>
+            		    
+	            		    <li t-if="website.social_linkedin">
+								<a  t-att-href="website.social_linkedin" target="_blank"><span class="fa fa-linkedin"></span></a>
+	            		    </li>
+            		    
+	            		    <li t-if="website.social_youtube">
+								<a t-att-href="website.social_youtube" target="_blank"><span class="fa fa-youtube"></span></a>
+	            		    </li>
+            		    
+						</ul>
+						
+					</div>
+				</div>
+        	</section>
+        </xpath>
+    </template>
+  
+	<template id="sh_corpomate_theme_style_copyright_13" name="Copyright 13" inherit_id="website.layout" active="False">
+        <xpath expr="//footer" position="inside"> 
+        	<section id="sh_copyright_13"> 
+						<div class=" copyright-section text-center">
+							<p class="container-wide copyright"> Copyright © <a t-att-href="'%s' %(res_company.website)">
+								<t t-esc="res_company.name"/>
+							</a>
+
+	<ul class="js_language_selector mb0 list-inline" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+        <li class="list-inline-item">
+            <div class="dropup">
+                <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][2].split('/').pop()"/>
+                    <span class="caret ml4"/>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                    <t t-foreach="languages" t-as="lg">
+                        <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+                           class="dropdown-item js_change_lang"
+                           t-att-data-url_code="lg[1]">
+                            <t t-esc="lg[2].split('/').pop()"/>
+                        </a>
+                    </t>
+                </div>
+            </div>
+        </li>
+        <li groups="website.group_website_publisher" class="list-inline-item">
+            <t t-set="url_return" t-value="quote_plus(url_for('', '[lang]') + '?' + keep_query())"/>
+            <a class="d-none d-sm-block" t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}">
+                <i class="fa fa-plus-circle"/>
+                Add a language...
+            </a>
+        </li>
+    </ul>
+														
+							</p>
+						</div>
+        	</section>
+        </xpath>
+    </template> 
+  
+  
+    <template id="sh_corpomate_theme_style_copyright_14" name="Copyright 14" inherit_id="website.layout" active="False">
+        <xpath expr="//footer" position="inside"> 
+            <section id="sh_copyright_14"> 
+                <div class=" copyright-section text-center">
+                    <p class="container-wide copyright">Copyright © <a t-att-href="'%s' %(res_company.website)">
+                        <t t-esc="res_company.name"/>
+                    </a>
+
+					<ul class="js_language_selector mb0 list-inline" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+						<li class="list-inline-item">
+							<div class="dropup">
+								<button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<span t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][2].split('/').pop()"/>
+									<span class="caret ml4"/>
+								</button>
+								<div class="dropdown-menu" role="menu">
+									<t t-foreach="languages" t-as="lg">
+										<a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+										class="dropdown-item js_change_lang"
+										t-att-data-url_code="lg[1]">
+											<t t-esc="lg[2].split('/').pop()"/>
+										</a>
+									</t>
+								</div>
+							</div>
+						</li>
+						<li groups="website.group_website_publisher" class="list-inline-item">
+							<t t-set="url_return" t-value="quote_plus(url_for('', '[lang]') + '?' + keep_query())"/>
+							<a class="d-none d-sm-block" t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}">
+								<i class="fa fa-plus-circle"/>
+								Add a language...
+							</a>
+						</li>
+					</ul>
+
+                    </p>
+                </div>
+            </section>
+        </xpath>
+    </template>
+  
+    
+	<template id="sh_corpomate_theme_style_copyright_15" name="Copyright 15" inherit_id="website.layout" active="False">
+        <xpath expr="//footer" position="inside"> 
+            <section id="sh_copyright_15"> 
+                <div class=" copyright-section text-center">
+                    <p class="container-wide copyright">Copyright © <a t-att-href="'%s' %(res_company.website)">
+                        <t t-esc="res_company.name"/>
+                    </a>
+
+					<ul class="js_language_selector mb0 list-inline" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+						<li class="list-inline-item">
+							<div class="dropup">
+								<button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<span t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][2].split('/').pop()"/>
+									<span class="caret ml4"/>
+								</button>
+								<div class="dropdown-menu" role="menu">
+									<t t-foreach="languages" t-as="lg">
+										<a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+										class="dropdown-item js_change_lang"
+										t-att-data-url_code="lg[1]">
+											<t t-esc="lg[2].split('/').pop()"/>
+										</a>
+									</t>
+								</div>
+							</div>
+						</li>
+						<li groups="website.group_website_publisher" class="list-inline-item">
+							<t t-set="url_return" t-value="quote_plus(url_for('', '[lang]') + '?' + keep_query())"/>
+							<a class="d-none d-sm-block" t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}">
+								<i class="fa fa-plus-circle"/>
+								Add a language...
+							</a>
+						</li>
+					</ul> 
+
+                    </p>
+                </div>
+            </section>
+        </xpath>
+    </template>
+
+	 <template id="sh_corpomate_theme_style_copyright_16" name="Copyright 16" inherit_id="website.layout" active="False">
+        <xpath expr="//footer" position="inside"> 
+            <section id="sh_copyright_16"> 
+                <div class="container">
+                    <div class=" copyright-section">
+                        <p class="container-wide copyright">Copyright © <a t-att-href="'%s' %(res_company.website)">
+                            <t t-esc="res_company.name"/>
+                        </a>                              
+						<ul class="js_language_selector mb0 list-inline" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+						<li class="list-inline-item">
+							<div class="dropup">
+								<button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<span t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][2].split('/').pop()"/>
+									<span class="caret ml4"/>
+								</button>
+								<div class="dropdown-menu" role="menu">
+									<t t-foreach="languages" t-as="lg">
+										<a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+										class="dropdown-item js_change_lang"
+										t-att-data-url_code="lg[1]">
+											<t t-esc="lg[2].split('/').pop()"/>
+										</a>
+									</t>
+								</div>
+							</div>
+						</li>
+						<li groups="website.group_website_publisher" class="list-inline-item">
+							<t t-set="url_return" t-value="quote_plus(url_for('', '[lang]') + '?' + keep_query())"/>
+							<a class="d-none d-sm-block" t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}">
+								<i class="fa fa-plus-circle"/>
+								Add a language...
+							</a>
+						</li>
+					</ul>                  
+                        </p>
+                        <ul>
+                            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </xpath>
+    </template> 
+
+    
+    
+     <!--   
+    Theme Customize Templates   
+    Header
+    -->
+    <template id="sh_corpomate_theme_style_header_1" name="Header 1" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_header/style_header_1.scss"/>
+        </xpath>
+    </template>    
+    
+    <template id="sh_corpomate_theme_style_header_2" name="Header 2" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_header/style_header_2.scss"/>
+        </xpath>
+    </template>      
+
+    <template id="sh_corpomate_theme_style_header_3" name="Header 3" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_header/style_header_3.scss"/>
+        </xpath>
+    </template>           
+
+    <template id="sh_corpomate_theme_style_header_4" name="Header 4" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_header/style_header_4.scss"/>
+        </xpath>
+    </template>      
+
+    <template id="sh_corpomate_theme_style_header_5" name="Header 5" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_header/style_header_5.scss"/>
+        </xpath>
+    </template>   
+    
+     
+    <template id="sh_corpomate_theme_style_header_6" name="Header 6" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_header/style_header_6.scss"/>
+        </xpath>
+    </template>   
+     
+     
+   
+   <!-- Header 2 layout -->
+    <template id="sh_corpomate_theme_portal_frontend_layout_header_2" name="Frontend Layout Header 2" inherit_id="portal.frontend_layout" active="False">    
+	
+		<xpath expr="//header" position="replace">
+		
+                <header>
+                    <nav class="navbar navbar-expand-md navbar-light bg-light">
+                        <div class="container">
+                            <a href="/" class="navbar-brand logo">
+            <span t-field="website.logo" t-options="{'widget': 'image'}" role="img" t-att-aria-label="'Logo of %s' % website.name" t-att-title="website.name" />
+                            </a>
+                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#top_menu_collapse">
+                                <span class="navbar-toggler-icon"/>
+                            </button>
+                            <div class="collapse navbar-collapse" id="top_menu_collapse">
+                                <!-- FIXME We want menu to open to the right by default (except cases handled in JS) -->
+                                <ul class="nav navbar-nav ml-auto text-right" id="top_menu">
+                                    <li class="nav-item divider" t-ignore="true" t-if="not user_id._is_public()"/>
+                                    <li class="nav-item dropdown" t-ignore="true" t-if="not user_id._is_public()">
+                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                            <b>
+                                                <span t-esc="user_id.name[:23] + '...' if user_id.name and len(user_id.name) &gt; 25 else user_id.name"/>
+                                            </b>
+                                        </a>
+                                        <div class="dropdown-menu js_usermenu" role="menu">
+                                            <a id="o_logout" class="dropdown-item" t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>		
+		</xpath>	
+    </template>     
+   
+    
+    
+    <template id="sh_corpomate_theme_style_header_7" name="Header 7" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_header/style_header_7.scss"/>
+        </xpath>
+    </template>       
+    
+    
+    <template id="sh_corpomate_theme_style_header_8" name="Header 8" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_header/style_header_8.scss"/>
+        </xpath>
+    </template> 
+
+    <template id="sh_corpomate_theme_style_header_9" name="Header 9" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_header/style_header_9.scss"/>
+        </xpath>
+    </template>
+    <template id="sh_corpomate_theme_style_header_10" name="Header 10" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_header/style_header_10.scss"/>
+        </xpath>
+    </template>
+    
+    <template id="sh_corpomate_theme_style_header_11" name="Header 11" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_header/style_header_11.scss"/>
+        </xpath>
+    </template> 
+   
+    <template id="sh_corpomate_theme_style_header_12" name="Header 12" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_header/style_header_12.scss"/>
+        </xpath>
+    </template>  
+    
+    <template id="sh_corpomate_theme_style_header_13" name="Header 13" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_header/style_header_13.scss"/>
+        </xpath>
+    </template>
+
+    <template id="sh_corpomate_theme_style_header_14" name="Header 14" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_header/style_header_14.scss"/>
+        </xpath>
+    </template> 
+
+	<template id="sh_corpomate_theme_style_header_15" name="Header 15" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_header/style_header_15.scss"/>
+        </xpath>
+    </template>
+
+	<template id="sh_corpomate_theme_style_header_16" name="Header 16" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_header/style_header_16.scss"/>
+        </xpath>
+    </template>       
+    
+    
+    <!-- 
+    Theme Customize Templates   
+    Footer     
+    -->
+    <template id="sh_corpomate_theme_style_footer_1" name="Footer 1" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_footer/style_footer_1.scss"/>
+        </xpath>
+    </template>    
+    <template id="sh_corpomate_theme_style_footer_2" name="Footer 2" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_footer/style_footer_2.scss"/>
+        </xpath>
+    </template>     
+    <template id="sh_corpomate_theme_style_footer_3" name="Footer 3" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_footer/style_footer_3.scss"/>
+        </xpath>
+    </template> 
+    <template id="sh_corpomate_theme_style_footer_4" name="Footer 4" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_footer/style_footer_4.scss"/>
+        </xpath>
+    </template>  
+    
+    <template id="sh_corpomate_theme_style_footer_5" name="Footer 5" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_footer/style_footer_5.scss"/>
+        </xpath>
+    </template> 
+    
+    
+    <template id="sh_corpomate_theme_style_footer_6" name="Footer 6" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_footer/style_footer_6.scss"/>
+        </xpath>
+    </template>       
+    
+
+    <template id="sh_corpomate_theme_style_footer_7" name="Footer 7" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_footer/style_footer_7.scss"/>
+        </xpath>
+    </template>  
+
+    <template id="sh_corpomate_theme_style_footer_8" name="Footer 8" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_footer/style_footer_8.scss"/>
+        </xpath>
+    </template>
+    
+    <template id="sh_corpomate_theme_style_footer_9" name="Footer 9" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_footer/style_footer_9.scss"/>
+        </xpath>
+    </template>
+    
+    <template id="sh_corpomate_theme_style_footer_10" name="Footer 10" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_footer/style_footer_10.scss"/>
+        </xpath>
+    </template> 
+    
+    <template id="sh_corpomate_theme_style_footer_11" name="Footer 11" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_footer/style_footer_11.scss"/>
+        </xpath>
+    </template> 
+    
+    <template id="sh_corpomate_theme_style_footer_12" name="Footer 12" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_footer/style_footer_12.scss"/>
+        </xpath>
+    </template> 
+    
+    
+    <template id="sh_corpomate_theme_style_footer_13" name="Footer 13" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_footer/style_footer_13.scss"/>
+        </xpath>
+    </template> 
+
+    <template id="sh_corpomate_theme_style_footer_14" name="Footer 14" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_footer/style_footer_14.scss"/>
+        </xpath>
+    </template> 
+
+	<template id="sh_corpomate_theme_style_footer_15" name="Footer 15" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_footer/style_footer_15.scss"/>
+        </xpath>
+    </template> 
+
+	<template id="sh_corpomate_theme_style_footer_16" name="Footer 16" inherit_id="website.assets_frontend" active="False">    
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/sh_corpomate_theme/static/src/scss/style_footer/style_footer_16.scss"/>
+        </xpath>
+    </template> 
+
+
+         
+    
+        
+    
+   <!--Footer 1 layout -->
+    <template id="sh_corpomate_theme_footer_custom_1" name="Footer 1" inherit_id="website.footer_custom" active="False">    
+	
+	    <xpath expr="//div[@id='footer']" position="replace">
+	        <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">  
+	            <section class="s_text_block pt16 pb8">
+	                <div class="container">
+	                    <div class="row">
+	                    
+	                   
+   <div class="col-lg-5 col-md-8 col-sm-8">
+      <aside id="text-5" class="widget widget_text">
+         <h3 class="widget-title">About</h3>
+         <div class="textwidget">
+            <p>Lorem ipsum dolor sit amet, consectetur dipiscing elit.Cras volutpat id sapien ac varius.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur dipiscing elit.Cras volutpat id sapien ac varius.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur dipiscing elit.Cras volutpat id sapien ac varius.</p>
+            
+         </div>
+      </aside>
+   </div>
+   <div class="col-lg-2 col-md-4 col-sm-4">
+      <aside id="text-4" class="widget widget_text">
+         <h3 class="widget-title">Pages</h3>
+         <div class="textwidget">
+            <ul>
+         
+               <li class="mb-2"><span class="fa fa-angle-right text-primary"></span><a class="ml-2" href="/home1">Home</a></li>     
+               <li class="mb-2"><span class="fa fa-angle-right text-primary"></span><a class="ml-2" href="/aboutus1">About Us</a></li>
+               <li class="mb-2"><span class="fa fa-angle-right text-primary"></span><a class="ml-2" href="/service1">Services</a></li>
+               <li class="mb-2"><span class="fa fa-angle-right text-primary"></span><a class="ml-2" href="/ourteam1">Team</a></li>
+               <li class="mb-2"><span class="fa fa-angle-right text-primary"></span><a class="ml-2" href="/termsandcondition1">Terms &amp; Conditions</a></li>
+               <li class="mb-2"><span class="fa fa-angle-right text-primary"></span><a class="ml-2" href="/faq1">FAQ</a></li>
+               <li class="mb-2"><span class="fa fa-angle-right text-primary"></span><a class="ml-2" href="/privacypolicy1">Privacy Policy</a></li>
+               <li class="mb-2"><span class="fa fa-angle-right text-primary"></span><a class="ml-2" href="/contactus1">Contact Us</a></li>
+            </ul>
+         </div>
+      </aside>
+   </div>
+   <div class="col-lg-3 col-md-8 col-sm-8">
+      <aside id="contact-info-widget-2" class="widget contact-info">
+         <h3 class="widget-title">Contact Us</h3>
+         <div class="contact-info">
+            <ul class="contact-details">
+               <li><strong>Address:</strong> 
+              
+					<span  t-field="res_company.partner_id" t-options='{
+                "widget": "contact",
+                "fields": [ "address"],
+                "no_marker": True,
+                }'/>
+					
+				</li>
+               <li><strong>Phone:</strong> <span>
+							<a t-att-href="'tel: %s' %(res_company.phone)">
+									<t t-esc="res_company.phone"/>
+								</a>
+               
+               </span></li>
+               <li><strong>Email:</strong> <span>
+               
+								<a t-att-href="'mailto: %s' %(res_company.email)">
+									<t t-esc="res_company.email"/>
+								</a>
+               
+               </span></li>
+            </ul>
+         </div>
+      </aside>
+   </div>
+                   
+	   <div class="col-lg-2 col-md-4 col-sm-4">
+	      <aside id="follow-us-widget-2" class="widget follow-us">
+	        <h3 class="widget-title">Follow Us</h3>
+	        <div class="share-links">	        
+				<a t-if="website.social_facebook" t-att-href="website.social_facebook" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-facebook"></span></a>
+				<a t-if="website.social_twitter"  t-att-href="website.social_twitter"  target="_blank" class="btn btn-sm btn-link"><span class="fa fa-twitter"></span></a>
+				<a t-if="website.social_linkedin" t-att-href="website.social_linkedin" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-linkedin"></span></a>
+				<a t-if="website.social_github" t-att-href="website.social_github" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-github"></span></a>
+				<a t-if="website.social_instagram" t-att-href="website.social_instagram" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-instagram"></span></a>
+				<a t-if="website.social_youtube" t-att-href="website.social_youtube" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-youtube"></span></a>
+			</div>
+	      </aside>
+	   </div>
+
+	                    </div>
+	                </div>
+	            </section>
+	            
+	        </div>
+	    </xpath>
+	
+    </template>
+    
+    
+   <!-- Footer 2 layout -->
+   <template id="sh_corpomate_theme_footer_custom_2" name="Footer 2" inherit_id="website.footer_custom" active="False">    	
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+            
+            <section class="s_text_block pt16 pb8">
+                <div class="container">
+			   <div class="footer-ribbon">Get In Touch</div>
+			   <div class="row">
+			      <div class="col-lg-6 col-md-6">
+			         <aside id="text-4" class="widget widget_text">
+			            <div class="textwidget">
+			               <p class="mb-1">
+			       	        
+			       	        	<img t-att-src="image_data_uri(website.logo)" width="30%" class="logo" t-att-alt="website.name"/>
+			       	        	
+			               	</p>
+			               <p class="mt-2 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Phasellus semper scelerisque purus, et semper nisl lacinia sit amet. Praesent venenatis turpis vitae purus semper…</p>
+			               <p><a class="text-color-light" href="/">
+			               <strong class="text-sm">VIEW MORE</strong>
+			               <span class="fa fa-angle-right pl-2"></span>
+			               </a>
+			               </p>
+			            </div>
+			         </aside>
+			      </div>
+			      <div class="col-lg-4 col-md-4">
+			         <aside id="contact-info-widget-3" class="widget contact-info">
+			            <h3 class="widget-title">Contact Us</h3>
+			            <div class="contact-info">
+			               <ul class="contact-details list list-icons">
+			               <li><strong>Address:</strong>
+							<span  t-field="res_company.partner_id" t-options='{
+		                "widget": "contact",
+		                "fields": [ "address"],
+		                "no_marker": True,
+		                }'/>
+							</li>
+			               <li><strong>Phone:</strong><span>	
+			   					<a t-att-href="'tel: %s' %(res_company.phone)">
+									<t t-esc="res_company.phone"/>
+								</a>			               		
+			               	</span></li>
+			               <li>
+			               	<strong>Email:</strong>
+			               		<span>			               	
+								<a t-att-href="'mailto: %s' %(res_company.email)">
+									<t t-esc="res_company.email"/>
+								</a>			               	
+			               		</span>
+			               	</li>
+			               </ul>
+			            </div>
+			         </aside>
+			      </div>
+			      <div class="col-lg-2 col-md-2">
+			         <aside id="text-5" class="widget widget_text">
+			            <h3 class="widget-title">Quick Links</h3>
+			            <div class="textwidget">
+			               <ul class="list list-icons list-icons-sm">
+			                  <li><span class="fa fa-angle-right"></span><a href="/faq2">FAQ’s</a></li>
+			                  <li><span class="fa fa-angle-right"></span><a href="/termsandcondition2">Terms &amp; Conditions</a></li>
+			                  <li><span class="fa fa-angle-right"></span><a href="/privacypolicy2">Privacy Policy</a></li>
+			                  <li><span class="fa fa-angle-right"></span><a href="/contactus2">Contact Us</a></li>
+			               </ul>
+			            </div>
+			         </aside>
+			      </div>
+			      
+			      
+	   <div class="d-none col-lg-2 col-md-4 col-sm-4">
+	      <aside id="follow-us-widget-2" class="widget follow-us">
+	        <h3 class="widget-title">Follow Us</h3>
+	        <div class="share-links">	        
+				<a t-if="website.social_facebook" t-att-href="website.social_facebook" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-facebook"></span></a>
+				<a t-if="website.social_twitter"  t-att-href="website.social_twitter"  target="_blank" class="btn btn-sm btn-link"><span class="fa fa-twitter"></span></a>
+				<a t-if="website.social_linkedin" t-att-href="website.social_linkedin" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-linkedin"></span></a>
+				<a t-if="website.social_github" t-att-href="website.social_github" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-github"></span></a>
+				<a t-if="website.social_instagram" t-att-href="website.social_instagram" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-instagram"></span></a>
+				
+			</div>
+	      </aside>
+	   </div>
+	   
+	   			      
+			      
+			   </div>
+			</div>
+		</section>            
+        </div>
+    </xpath>
+    </template>                      
+    
+     
+     
+     
+     <!-- Footer 3 layout -->
+    <template id="sh_corpomate_theme_footer_custom_3" name="Footer 3" inherit_id="website.footer_custom" active="False">    
+	
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+             <section class="s_text_block pt16 pb8">
+                <div class="container">
+            <div class="row">
+			   <div class="col-lg-9 col-md-8">
+			      <aside id="block-widget-4" class="widget widget-block">
+			         <h3 class="sh-widget-title">About Us</h3>
+			         <div class="divider"></div>
+			         <div class="sh-block">
+			            <div class="sh-porto-block">
+			               <div class="row">
+			                  <div class="col-md-12">
+			                     <div class="sh_column-inner">
+			                        <div class="sh_content_element">
+			                           <div class="sh_wrapper">
+			                              <p class="mt-2 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Phasellus semper scelerisque purus, et semper nisl lacinia sit amet. Praesent venenatis turpis vitae purus semper, eget sagittis velit venenatis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos...</p>
+			                              <p><a class="text-color-light" href="/"><strong class="font-size-sm">VIEW MORE</strong><i class="fa fa-angle-right pl-2"></i></a></p>
+			                           </div>
+			                        </div>
+			                     </div>
+			                  </div>
+			               </div>
+			               <div class=" row">
+			                  <div class="col-lg-3 col-md-4 col-6">
+			                     <div class="sh-column-inner">
+			                        <h3 class="sh-custom_heading widget-title align-left">PAGES</h3>
+			                        <div class="divider"></div>
+			                        <ul  class="sh-porto-info-list link-hover-style-1">
+			                           <li class="sh-porto-info-list-item">
+			                              <span class="sh-porto-info-icon fa fa-angle-right"></span>
+			                              <div class="sh-porto-info-list-item-desc"><a href="/home3">Home</a></div>
+			                           </li>
+			                           <li class="sh-porto-info-list-item">
+			                              <span class="sh-porto-info-icon fa fa-angle-right"></span>
+			                              <div class="sh-porto-info-list-item-desc"><a href="/aboutus3">About Us</a></div>
+			                           </li>
+			                           <li class="sh-porto-info-list-item">
+			                              <span class="sh-porto-info-icon fa fa-angle-right"></span>
+			                              <div class="sh-porto-info-list-item-desc"><a href="/service3">Services</a></div>
+			                           </li>
+			                           <li class="sh-porto-info-list-item">
+			                              <span class="sh-porto-info-icon fa fa-angle-right"></span>
+			                              <div class="sh-porto-info-list-item-desc"><a href="/contactus3">Contact Us</a></div>
+			                           </li>
+			                        </ul>
+			                     </div>
+			                  </div>
+
+			                  <div class="col-lg-3 col-md-4 col-6">
+			                     <div class="sh-column-inner">
+			                        <h3 class="sh-custom_heading widget-title align-left">Extra</h3>
+			                        <div class="divider"></div>
+			                        <ul class="sh-porto-info-list link-hover-style-1">
+			                           <li class="sh-porto-info-list-item">
+			                              <span class="sh-porto-info-icon fa fa-angle-right"></span>
+			                              <div class="sh-porto-info-list-item-desc"><a href="/termsandcondition3">Terms &amp; Conditions</a></div>
+			                           </li>
+			                           <li class="sh-porto-info-list-item">
+			                              <span class="sh-porto-info-icon fa fa-angle-right"></span>
+			                              <div class="sh-porto-info-list-item-desc"><a href="/ourteam3">Our Team</a></div>
+			                           </li>
+			                           <li class="sh-porto-info-list-item">
+			                              <span class="sh-porto-info-icon fa fa-angle-right"></span>
+			                              <div class="sh-porto-info-list-item-desc"><a href="/privacypolicy3">Privacy Policy</a></div>
+			                           </li>
+			                           <li class="sh-porto-info-list-item">
+			                              <span class="sh-porto-info-icon fa fa-angle-right"></span>
+			                              <div class="sh-porto-info-list-item-desc"><a href="/faq3">Faq</a></div>
+			                           </li>
+			                        </ul>
+			                     </div>
+			                  </div>
+			               </div>
+			            </div>
+			         </div>
+			      </aside>
+			   </div>
+			   <div class="col-lg-3 col-md-4">
+			      <aside id="text-4" class="widget widget_text">
+			         <h3 class="widget-title">Contact Us</h3>
+			         <div class="divider"></div>  
+			         <div class="textwidget">
+			            <h2 class="font-weight-bold mb-0">
+			            	<t t-esc="res_company.phone"/>
+			            </h2>
+			         </div>
+			      </aside>
+			      <aside id="contact-info-widget-2" class="widget contact-info">
+			         <div class="contact-info">
+			            <ul class="contact-details list list-icons">
+			               <li><strong>Address:</strong> 			               
+							<span  t-field="res_company.partner_id" t-options='{
+		                "widget": "contact",
+		                "fields": [ "address"],
+		                "no_marker": True,
+		                }'/>								
+							</li>
+			               <li><strong>Phone:</strong>
+			               <span>
+			               		<a t-att-href="'tel: %s' %(res_company.phone)">
+									<t t-esc="res_company.phone"/>
+								</a>
+			               	</span>
+			               	</li>
+			               <li><strong>Email:</strong>
+			               <span>			               	
+								<a t-att-href="'mailto: %s' %(res_company.email)">
+								<t t-esc="res_company.email"/>
+								</a>				               	
+			               	</span>
+			               	</li>
+			            </ul>
+			         </div>
+			      </aside>
+			      <aside id="follow-us-widget-2" class="widget follow-us">
+			         <div class="share-links">
+			        	<a t-if="website.social_facebook" t-att-href="website.social_facebook" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-facebook"></span></a>
+						<a t-if="website.social_twitter"  t-att-href="website.social_twitter" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-twitter"></span></a>
+						<a t-if="website.social_linkedin" t-att-href="website.social_linkedin" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-linkedin"></span></a>
+	   
+						<a t-if="website.social_instagram" t-att-href="website.social_instagram" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-instagram"></span></a>
+						<a t-if="website.social_github" t-att-href="website.social_github" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-github"></span></a>
+					    <a t-if="website.social_youtube" t-att-href="website.social_youtube" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-youtube"></span></a>
+		         
+			         
+			         </div>
+			      </aside>
+			   </div>
+			</div>
+            </div>
+           </section>
+            
+        </div>
+    </xpath>
+	
+    </template>  
+    
+    
+    
+     
+     <!-- Footer 4 layout -->
+    <template id="sh_corpomate_theme_footer_custom_4" name="Footer 4" inherit_id="website.footer_custom" active="False">    
+	
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+            
+            <section class="s_text_block pt16 pb8">
+                <div class="container">
+                    <div class="row">
+   <div class="col-lg-5">
+      <aside id="media_image-3" class="widget widget_media_image">
+      <a href="/" class="logo">
+      
+              
+     
+       	<img t-att-src="image_data_uri(website.logo)" style="max-width: 40%; height: auto;" class="image wp-image-2059  attachment-full size-full" t-att-alt="website.name"/>
+     
+      </a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu, ac tincidunt mauris lacus sed leo.</p>
+      </aside>
+   </div>
+   <div class="col-lg-2 col-sm-3">
+      <aside id="text-4" class="widget widget_text">
+         <h3 class="widget-title">Pages</h3>
+         <span></span>
+         <div class="textwidget">
+            <ul class="list list-icons list-icons-sm">
+               <li><span class="fa fa-angle-right"></span><a href="/home4">Home</a></li>
+               <li><span class="fa fa-angle-right"></span><a href="/aboutus4">About Us</a></li>
+               <li><span class="fa fa-angle-right"></span><a href="/service4">Services</a></li>
+               <li><span class="fa fa-angle-right"></span><a href="/ourteam4">Our Team</a></li>
+               <li><span class="fa fa-angle-right"></span><a href="/contactus4">Contact Us</a></li>
+            </ul>
+         </div>
+      </aside>
+   </div>
+   <div class="col-lg-2 col-sm-3">
+      <aside id="text-5" class="widget widget_text">
+         <h3 class="widget-title">Links</h3>
+         <p></p>
+         <div class="textwidget">
+            <ul class="list list-icons list-icons-sm">
+               <li><span class="fa fa-angle-right"></span><a href="/faq4">FAQ’s</a></li>
+               <li><span class="fa fa-angle-right"></span><a href="/termsandcondition4">Terms &amp; Conditions</a></li>
+               <li><span class="fa fa-angle-right"></span><a href="/privacypolicy4">Privacy Policy</a></li>
+            </ul>
+         </div>
+      </aside>
+   </div>
+   <div class="col-lg-3 col-sm-6">
+      <aside id="text-2" class="widget widget_text">
+         <h3 class="widget-title">Newsletter</h3>
+         <span></span>
+         <div class="textwidget">
+            <div role="form" class="wpcf7" id="wpcf7-f742-o1" lang="en-US" dir="ltr">
+               <div class="screen-reader-response"></div>
+               <form action="/wordpress/porto/corporate1/#wpcf7-f742-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+               </form>
+            </div>
+         </div>
+      </aside>
+      <aside id="contact-info-widget-3" class="widget contact-info">
+         <div class="contact-info">
+            <ul class="contact-details list list-icons">
+               <li><span class="fa fa-whatsapp"></span><span>
+               					<a t-att-href="'tel: %s' %(res_company.phone)">
+									<t t-esc="res_company.phone"/>
+								</a>
+               </span></li>
+			    <li><span class="fa fa-envelope"></span><span>			    
+								<a t-att-href="'mailto: %s' %(res_company.email)">
+									<t t-esc="res_company.email"/>
+								</a>			    
+			    </span></li>
+            </ul>
+         </div>
+      </aside>
+   </div>
+   
+   
+	   <div class="d-none col-lg-2 col-md-4 col-sm-4">
+	      <aside id="follow-us-widget-2" class="widget follow-us">
+	        <h3 class="widget-title">Follow Us</h3>
+	        <div class="share-links">	        
+				<a t-if="website.social_facebook" t-att-href="website.social_facebook" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-facebook"></span></a>
+				<a t-if="website.social_twitter"  t-att-href="website.social_twitter"  target="_blank" class="btn btn-sm btn-link"><span class="fa fa-twitter"></span></a>
+				<a t-if="website.social_linkedin" t-att-href="website.social_linkedin" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-linkedin"></span></a>
+				<a t-if="website.social_github" t-att-href="website.social_github" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-github"></span></a>
+				<a t-if="website.social_instagram" t-att-href="website.social_instagram" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-instagram"></span></a>
+				
+			</div>
+	      </aside>
+	   </div>	   
+   
+   
+</div>
+                </div>
+            </section>
+            
+            
+        </div>
+    </xpath>
+	
+    </template> 
+    
+    
+     <!-- Footer 5 layout -->
+     <template id="sh_corpomate_theme_footer_custom_5" name="Footer 5" inherit_id="website.footer_custom" active="False">    
+	
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">           
+            <footer id="footer" class="footer-area">
+    <div class="bg-overlay"></div>
+    <div class="bottom-footer-shape">
+        <img class="img-fluid" src="/sh_corpomate_theme/static/src/img/bg_footer.png" alt="bottom-shape image"/>
+    </div>
+    <div class="container">
+        <div class="row padding-footer">
+            <div class="col-lg-5 col-md-12 footer-widget">
+                <a class="navbar-brand" href="index.html">
+
+                
+                 	<img t-att-src="image_data_uri(website.logo)" id="logo-footer" class="img-fluid" alt="logo icon" style="width: 40%;"/>
+                
+                
+                </a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar imperdiet elementum. Cras vehicula, nisl vitae luctus vehicula, risus ligula feugiat eros, commodo semper sem enim non magna. Phasellus ultricies blandit massa</p>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <div class="helpfull-links">
+                    <h5>PAGES</h5>
+                    <ul class="footer-nav">
+                        <li><a href="/home5" class="anim-link">Home</a></li>
+                        <li><a href="/aboutus5" class="anim-link">About Us</a></li>
+                        <li><a href="/service5" class="anim-link">Service</a></li>
+                        <li><a href="/ourteam5" class="anim-link">Team</a></li>
+                        <li><a href="/contactus5" class="anim-link">Contact Us</a></li>
+                        <li><a href="/faq5" class="anim-link">Faq</a></li>
+                        <li><a href="/termsandcondition5" class="anim-link">Terms &amp; Conditions</a></li>
+                        <li><a href="/privacypolicy5" class="anim-link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="recent-posts">
+                    <h5>CONTACT US</h5>
+                    <div class="contact-box footer-nav clearfix">
+                        <div class="box-content">
+
+							<span  t-field="res_company.partner_id" t-options='{
+		                "widget": "contact",
+		                "fields": [ "address"],
+		                "no_marker": True,
+		                }'/>	
+
+                        </div>
+                    </div>
+                    <div class="contact-box clearfix">
+                        <div class="box-content">
+                            <span>
+                            
+               					<a t-att-href="'tel: %s' %(res_company.phone)">
+									<t t-esc="res_company.phone"/>
+								</a>
+                            
+                            </span>
+                        </div>
+                    </div>
+                    <div class="contact-box clearfix">
+                        <div class="box-content">
+                            <span>
+                            
+								<a t-att-href="'mailto: %s' %(res_company.email)">
+									<t t-esc="res_company.email"/>
+								</a>		
+                            
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+	   <div class="col-lg-2 col-md-4 col-sm-4">
+	      <aside id="follow-us-widget-2" class="widget follow-us">
+	        <h5 class="widget-title">Follow Us</h5>
+	        <div class="share-links">	        
+				<a t-if="website.social_facebook" t-att-href="website.social_facebook" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-facebook"></span></a>
+				<a t-if="website.social_twitter"  t-att-href="website.social_twitter"  target="_blank" class="btn btn-sm btn-link"><span class="fa fa-twitter"></span></a>
+				<a t-if="website.social_linkedin" t-att-href="website.social_linkedin" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-linkedin"></span></a>
+				<a t-if="website.social_github" t-att-href="website.social_github" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-github"></span></a>
+				<a t-if="website.social_instagram" t-att-href="website.social_instagram" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-instagram"></span></a>
+				<a t-if="website.social_youtube" t-att-href="website.social_youtube" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-youtube"></span></a>
+			</div>
+	      </aside>
+	   </div>	
+	   
+	               
+            
+        </div>
+
+    </div>
+</footer>
+            
+            
+        </div>
+    </xpath>
+	
+    </template>   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!-- Footer 6 layout -->
+     <template id="sh_corpomate_theme_footer_custom_6" name="Footer 6" inherit_id="website.footer_custom" active="False">    
+	
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">           
+            <footer id="footer" class="footer-area">
+   
+			
+<section id="sh_footer">
+    <div class="container">
+    	<div class="sh_footer_logo">
+	    	<a class="navbar-brand" href="index.html">
+				<img t-att-src="image_data_uri(website.logo)" id="logo-footer" class="img-fluid" alt="logo icon" style="width: 40%;"/>
+	 		</a>
+    	</div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+            	<div class="sh_left_link sh_link">
+            		<h4>About Us</h4>
+            		<ul>
+            		    <li>
+            		        <a href="/home6">Home</a>
+            		    </li>
+            		    <li>
+            		        <a href="/aboutus6">About Us</a>
+            		    </li>
+            		    <li>
+            		        <a href="/service6">Services</a>
+            		    </li>
+            		    <li>
+            		        <a href="/ourteam6">Our Team</a>
+            		    </li>
+            		    <li>
+            		        <a href="/contactus6">Contact Us</a>
+            		    </li>
+            		</ul>
+            	</div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+            	<div class="sh_center_link sh_link">
+            		<h4>Our Policy</h4>
+            		<ul>
+            		    <li>
+            		        <a href="/privacypolicy6">Licence Agreement</a>
+            		    </li>
+            		    <li>
+            		        <a href="/privacypolicy6">Privacy Policy</a>
+            		    </li>
+            		    <li>
+            		        <a href="/faq6">Refund Policy</a>
+            		    </li>
+            		    <li>
+            		        <a href="/contactus6">Support Policy</a>
+            		    </li>
+            		    <li>
+            		        <a href="/termsandcondition6">Terms &amp; Conditions</a>
+            		    </li>
+            		</ul>
+            	</div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+            	<div class="sh_right_link sh_link">
+            		<h4>Contact</h4>
+            		<ul class="sh_contect">
+            		   <li>
+            		      
+               					<a t-att-href="'tel: %s' %(res_company.phone)">
+								<span class="fa fa-whatsapp"></span> <span> <t t-esc="res_company.phone"/> </span>	
+								</a>            		      
+            		      
+            		      
+								<a t-att-href="'mailto: %s' %(res_company.email)">
+									<span class="fa fa-envelope-o"></span> <span> <t t-esc="res_company.email"/> </span>
+								</a>	            		      
+            		      
+            		      
+            		      
+            		   </li>
+            		</ul>
+            		<ul class="sh_social_media">
+            		    <li t-if="website.social_facebook">
+							<a t-att-href="website.social_facebook" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-facebook"></span></a>
+            		    </li>
+            		    <li t-if="website.social_twitter">
+							<a t-att-href="website.social_twitter"  target="_blank" class="btn btn-sm btn-link"><span class="fa fa-twitter"></span></a>
+            		    </li>
+            		    <li t-if="website.social_linkedin">
+							<a  t-att-href="website.social_linkedin" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-linkedin"></span></a>
+            		    </li>
+            		    <li t-if="website.social_instagram">
+							<a t-att-href="website.social_instagram" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-instagram"></span></a>
+            		    </li>    
+            		    <li t-if="website.social_youtube">
+							<a t-if="website.social_youtube" t-att-href="website.social_youtube" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-youtube"></span></a>
+            		    </li>
+            		    <li t-if="website.social_github">
+							<a t-if="website.social_github" t-att-href="website.social_github" target="_blank" class="btn btn-sm btn-link"><span class="fa fa-github"></span></a>
+            		    </li> 
+            		            		    
+            		</ul>
+            	</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+			</footer>
+            
+            
+        </div>
+    </xpath>
+	
+    </template>    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ <!-- Footer 7 layout -->
+     <template id="sh_corpomate_theme_footer_custom_7" name="Footer 7" inherit_id="website.footer_custom" active="False">    
+	
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">           
+            <footer id="footer" class="footer-area">
+   
+			
+			<section id="sh_footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12 part1 col">
+                <h2>
+                	<a class="navbar-brand" href="index.html">
+						<img t-att-src="image_data_uri(website.logo)" id="logo-footer" class="img-fluid" alt="logo icon" style=""/>
+			 		</a>
+				</h2>
+       			<p>Lorem ipsum is simply dummy text of the<br/> printing and typesetting industry.</p> 
+       			<h6><a href="#">View More <i class="fa fa-chevron-right"></i></a></h6>
+            </div>
+            <div class="col-lg-2 col-md-12 col-sm-12 col-12 part2 col">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="/home7">Home</a></li>
+                    <li><a href="/aboutus7">About Us</a></li>
+                    <li><a href="/service7">Services</a></li>
+                    <li><a href="/ourteam7">Our Team</a></li>
+                    <li><a href="/contactus7">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 col-12 part3 col">
+                <h4>Our Policy</h4>
+                <ul>
+                    <li><a href="/faq7">License Agreement</a></li>
+                    <li><a href="/privacypolicy7">Privacy Policy</a></li>
+                    <li><a href="/faq7">Refund Policy</a></li>
+                    <li><a href="/contactus7">Support Policy</a></li>
+                    <li><a href="/termsandcondition7">Terms &amp; Conditions</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 col-12 part4 col">
+                <h4>Language</h4>
+  
+    <ul class="js_language_selector mb0 list-inline" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+        <li class="list-inline-item">
+            <div class="dropup">
+                <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][2].split('/').pop()"/>
+                    <span class="caret ml4"/>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                    <t t-foreach="languages" t-as="lg">
+                        <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+                           class="dropdown-item js_change_lang"
+                           t-att-data-url_code="lg[1]">
+                            <t t-esc="lg[2].split('/').pop()"/>
+                        </a>
+                    </t>
+                </div>
+            </div>
+        </li>
+        <li groups="website.group_website_publisher" class="list-inline-item">
+            <t t-set="url_return" t-value="quote_plus(url_for('', '[lang]') + '?' + keep_query())"/>
+            <a class="d-none d-sm-block" t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}">
+                <i class="fa fa-plus-circle"/>
+                Add a language...
+            </a>
+        </li>
+    </ul>
+    
+    
+				<h6>Visit Us On:</h6>
+                <ul class="icon">
+                    
+                    <li t-if="website.social_facebook"><a t-att-href="website.social_facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li t-if="website.social_twitter"><a t-att-href="website.social_twitter"  target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li t-if="website.social_linkedin"><a t-att-href="website.social_linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li t-if="website.social_instagram"><a t-att-href="website.social_instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                   
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+			</footer>
+            
+            
+        </div>
+    </xpath>
+	
+    </template>     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+<!-- Footer 8 layout -->
+<template id="sh_corpomate_theme_footer_custom_8" name="Footer 8" inherit_id="website.footer_custom" active="False">    	
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">           
+            <footer id="footer" class="footer-area">			
+				<section id="sh_footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+								<div class="sh_logo_part">
+									<a class="navbar-brand" href="index.html">
+										<img t-att-src="image_data_uri(website.logo)" id="logo-footer" class="img-fluid" alt="logo icon" style=""/>
+							 		</a>
+									
+    <div class="input-group js_subscribe" data-list-id="0">
+        <input type="email" name="email" class="js_subscribe_email form-control" placeholder="your email..."/>
+        <span class="input-group-append">
+            <a role="button" href="#" class="btn btn-primary js_subscribe_btn"><span class="fa fa-paper-plane-o"></span></a>
+            
+            <a role="button" href="#" class="btn btn-primary js_subscribed_btn d-none" disabled="disabled">Thanks</a>
+        </span>
+    </div>									
+									
+									<!-- <form>
+										<input type="text" class="sh_text" placeholder="Your Email"></input>
+										<button class="btn"><span class="fa fa-paper-plane-o"></span></button>
+									</form> -->
+									<p>Lorem ipsum is simply dummy text of the printing and type setting industry.</p>									
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+								<div class="sh_link">
+									<h4>About Us</h4>
+									<ul>
+										<li><a href="/home8">Home</a></li>
+										<li><a href="/aboutus8">About</a></li>
+										<li><a href="/service8">Services</a></li>
+										<li><a href="/ourteam8">Our Team</a></li>
+										<li><a href="/contactus8">Contact Us</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+								<div class="sh_link">
+									<h4>Our Policy</h4>
+									<ul>
+										<li><a href="/faq8">Licence Agreement</a></li>
+										<li><a href="/privacypolicy8">Privacy Policy</a></li>
+										<li><a href="/contactus8">Refund Policy</a></li>
+										<li><a href="/contactus8">Support Policy</a></li>
+										<li><a href="/termsandcondition8">Terms &amp; Condition</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+								<div class="sh_link">
+									<h4>Our Policy</h4>
+									<ul>
+										<li>
+
+											
+               					<a t-att-href="'tel: %s' %(res_company.phone)">
+									<span class="fa fa-phone"></span> <t t-esc="res_company.phone"/>
+								</a>											
+											
+										</li>
+										<li>
+										
+								<a t-att-href="'mailto: %s' %(res_company.email)">
+									<span class="fa fa-envelope-o"></span> <t t-esc="res_company.email"/>
+								</a>											
+										
+										
+										</li>
+										<!--  <li>
+											<a href="#"><span class="fa fa-map-marker"></span> Softhealer Technologies</a>
+										</li>-->
+									</ul>
+									<div class="sh_social_icon">
+										
+										<!-- 
+										<span class="fa fa-facebook"></span>
+										<span class="fa fa-twitter"></span>
+										<span class="fa fa-linkedin"></span>
+										<span class="fa fa-instagram"></span>
+										 -->
+										
+                    
+                    <li t-if="website.social_facebook"><a t-att-href="website.social_facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li t-if="website.social_twitter"><a t-att-href="website.social_twitter"  target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li t-if="website.social_linkedin"><a t-att-href="website.social_linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li t-if="website.social_instagram"><a t-att-href="website.social_instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                       										
+										
+									</div>
+								</div>
+							</div>		
+
+						</div>
+					</div>
+				</section>
+		    </footer>
+		</div>
+	</xpath>
+</template>				
+
+
+
+
+
+
+<!-- Footer 9 layout -->
+<template id="sh_corpomate_theme_footer_custom_9" name="Footer 9" inherit_id="website.footer_custom" active="False">    	
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">           
+            <footer id="footer" class="footer-area">			
+				<section id="sh_footer">
+					<div class="container">
+						<div class="row">
+						   <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+						       <div class="sh_first_column">
+						       	  <h4>About Us</h4>
+						       	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+	<ul class="js_language_selector mb0 list-inline" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+        <li class="list-inline-item">
+            <div class="dropdown">
+                <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][2].split('/').pop()"/>
+                    <span class="caret ml4"/>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                    <t t-foreach="languages" t-as="lg">
+                        <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+                           class="dropdown-item js_change_lang"
+                           t-att-data-url_code="lg[1]">
+                            <t t-esc="lg[2].split('/').pop()"/>
+                        </a>
+                    </t>
+                </div>
+            </div>
+        </li>
+        <li groups="website.group_website_publisher" class="list-inline-item">
+            <t t-set="url_return" t-value="quote_plus(url_for('', '[lang]') + '?' + keep_query())"/>
+            <a class="d-none d-sm-block" t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}">
+                <i class="fa fa-plus-circle"/>
+                Add a language...
+            </a>
+        </li>
+    </ul>
+							   
+							   </div>
+						   </div>
+						   
+						   <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+						   	  <div class="sh_column sh_second_column">
+						   	  	 <h4>Practice Area</h4>
+						   	  	 <ul>
+						   	  	    <li><a href="/">admiralty &amp; maritime</a></li>
+						   	  	    <li><a href="/">arbitration &amp; ADR</a></li>
+						   	  	    <li><a href="/">accounting &amp; Finance</a></li>
+						   	  	    <li><a href="/">finance &amp; investment</a></li>
+						   	  	    <li><a href="/">criminal prosecution</a></li>
+						   	  	    <li><a href="/">land &amp; property</a></li>
+						   	  	    <li><a href="/">family matters</a></li>
+						   	  	 </ul>
+						   	  </div>
+						   </div>
+						   
+						   <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+						   	  <div class="sh_column sh_third_column">
+						   	  	 <h4></h4>
+						   	  	 <ul>
+						   	  	    <li><a href="/">life insurance</a></li>
+						   	  	    <li><a href="/">business manage</a></li>
+						   	  	    <li><a href="/">cheating</a></li>
+						   	  	    <li><a href="/">high court matters</a></li>
+						   	  	    <li><a href="/">case solution</a></li>
+						   	  	    <li><a href="/">fruad matters</a></li>
+						   	  	    <li><a href="/">social issue</a></li>
+						   	  	 </ul>
+						   	  </div>
+						   </div>
+						   
+						   <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+						   	  <div class="sh_column sh_fourth_column">
+						   	  	 <h4>important links</h4>
+						   	  	 <ul>
+						   	  	    <li><a href="/">home</a></li>
+						   	  	    <li><a href="/aboutus9">about us</a></li>
+						   	  	    <li><a href="/service9">services</a></li>
+						   	  	    <li><a href="/contactus9">support</a></li>
+						   	  	    <li><a href="/ourteam9">team</a></li>
+						   	  	    <li><a href="/privacypolicy9">privacy policy</a></li>
+						   	  	    <li><a href="/termsandcondition9">terms &amp; conditions</a></li>
+						   	  	 </ul>
+						   	  </div>
+						   </div>
+						   
+						</div>
+					</div>
+				</section>
+			</footer>
+		</div>
+	</xpath>
+</template>					
+<!-- Footer 9 layout -->
+
+
+
+
+
+
+
+<!-- Footer 10 layout -->
+<template id="sh_corpomate_theme_footer_custom_10" name="Footer 10" inherit_id="website.footer_custom" active="False">    	
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">           
+            <footer id="footer" class="footer-area">			
+				<section id="sh_footer">
+					<div class="container">
+						<div class="row">
+						   <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+						       <div class="sh_first_column">
+						       	  <a class="navbar-brand" href="index.html">
+									  <img t-att-src="image_data_uri(website.logo)" id="logo-footer" class="img-fluid" alt="logo icon" style=""/>
+						 		  </a>
+						       	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+						       </div>
+						   </div>
+						   
+						   <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+						   	  <div class="sh_column sh_second_column">
+						   	  	 <h4>Useful Links</h4>
+						   	  	 <ul>
+						   	  	    <li><a href="/aboutus10">About Us</a></li>
+						   	  	    <li><a href="/service10">services</a></li>
+						   	  	    <li><a href="/">projects</a></li>
+						   	  	    <li><a href="/">cases</a></li>
+						   	  	    <li><a href="/blog">blogs</a></li>
+						   	  	    <li><a href="/contactus10">contact</a></li>
+						   	  	 </ul>
+						   	  </div>
+						   </div>
+						   
+						   <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+						   	  <div class="sh_column sh_third_column">
+						   	  	 <h4>categories</h4>
+						   	  	 <ul>
+						   	  	    <li><a href="/">insurance</a></li>
+						   	  	    <li><a href="/">banking service</a></li>
+						   	  	    <li><a href="/">overdraft</a></li>
+						   	  	    <li><a href="/">tax help</a></li>
+						   	  	    <li><a href="/">investment</a></li>
+						   	  	    <li><a href="/">currence &amp; stocks</a></li>
+						   	  	 </ul>
+						   	  </div>
+						   </div>
+						   
+						   <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+						   	  <div class="sh_column sh_fourth_column">
+						   	  	 <h4>contact us</h4>
+						   	  	 <ul>
+						   	  	    <li>
+						   	  	       <span class="fa fa-map-marker"></span>
+						   	  	       <p>
+						   	  	       
+							<span  t-field="res_company.partner_id" t-options='{
+		                "widget": "contact",
+		                "fields": [ "address"],
+		                "no_marker": True,
+		                }'/>	
+		                						   	  	       
+						   	  	       
+						   	  	       </p>						   	  	       
+						   	  	    </li>
+						   	  	    <li>
+						   	  	       <span class="fa fa-phone"></span>
+						   	  	       <p>
+						   	  	       
+							<span><a t-att-href="'tel: %s' %(res_company.phone)">
+							<t t-esc="res_company.phone"/> 
+							</a></span>
+													   	  	       
+						   	  	       </p>
+						   	  	    </li>
+						   	  	    <li>
+						   	  	       <span class="fa fa-envelope-o"></span>
+						   	  	       <p>
+						   	  	       
+							<span><a t-att-href="'mailto: %s' %(res_company.email)">
+							<t t-esc="res_company.email"/>
+							</a></span>
+													   	  	       
+						   	  	       
+						   	  	       </p>
+						   	  	    </li>						   	  	    
+						   	  	 </ul>
+						   	  </div>
+						   </div>
+						   
+						</div>
+					</div>
+				</section>
+			</footer>
+		</div>
+	</xpath>
+</template>					
+<!-- Footer 10 layout -->
+    
+    
+    
+    
+    
+<!-- Footer 11 layout -->
+<template id="sh_corpomate_theme_footer_custom_11" name="Footer 11" inherit_id="website.footer_custom" active="False">    	
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">           
+            <footer id="footer" class="footer-area">			
+				<section id="sh_footer">
+					<div class="container">
+						<div class="row">
+						   <div class="col-lg-4 col-md-12 col-sm-6 col-12">
+						       <div class="sh_first_column">
+						       	  <a class="navbar-brand" href="index.html">
+									  <img t-att-src="image_data_uri(website.logo)" id="logo-footer" class="img-fluid" alt="logo icon" style=""/>
+						 		  </a>
+						       	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
+						          <ul>
+						             <li><a href="#"><span class="fa fa-map-marker"></span> 
+						  
+						  <span  t-field="res_company.partner_id" t-options='{
+		                "widget": "contact",
+		                "fields": [ "address"],
+		                "no_marker": True,
+		                }'/>
+		                
+						              </a></li>
+						             <li><a t-att-href="'tel: %s' %(res_company.phone)"><span class="fa fa-phone"></span> Any Question: 
+						             	<t t-esc="res_company.phone"/>
+						             </a></li>
+						             <li><a t-att-href="'mailto: %s' %(res_company.email)"><span class="fa fa-envelope"></span> 
+						                  <t t-esc="res_company.email"/>
+						              </a></li>
+						          </ul>
+						       
+						       </div>
+						   </div>
+						   
+						   <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+						   	  <div class="row">						   	  
+						   	     <div class="col-md-4">
+						   	     	 <div class="sh_column sh_second_column">
+								   	  	 <h4>Departments</h4>
+								   	  	 <ul>
+								   	  	    <li><a href="/">Who we are</a></li>
+								   	  	    <li><a href="/">our mission</a></li>
+								   	  	    <li><a href="/">awards</a></li>
+								   	  	    <li><a href="/">experience</a></li>
+								   	  	    <li><a href="/">success story</a></li>
+								   	  	 </ul>
+								   	  </div>
+						   	     </div>
+						   	     
+						   	     <div class="col-md-4">
+						   	     	 <div class="sh_column sh_second_column">
+								   	  	 <h4>Quick Links</h4>
+								   	  	 <ul>
+								   	  	    <li><a href="/aboutus11">About Us</a></li>
+								   	  	    <li><a href="/">Departments</a></li>
+								   	  	    <li><a href="/">our team</a></li>
+								   	  	    <li><a href="/">book appointment</a></li>
+								   	  	    <li><a href="/contactus11">contact</a></li>
+								   	  	 </ul>
+								   	  </div>
+						   	     </div>
+						   	     
+						   	     <div class="col-md-4">
+						   	     	 <div class="sh_column sh_second_column">
+								   	  	 <h4>Services</h4>
+								   	  	 <ul>
+								   	  	    <li><a href="/">surgery</a></li>
+								   	  	    <li><a href="/">cardiology</a></li>
+								   	  	    <li><a href="/">pediatric</a></li>
+								   	  	    <li><a href="/">orthopedics</a></li>
+								   	  	    <li><a href="/">psychological</a></li>
+								   	  	 </ul>
+								   	  </div>
+						   	     </div>
+						   	     
+						   	  </div> 	  
+						   </div>
+						   
+						   						   
+						</div>
+						
+						<div class="sh_subcribe_content">
+						   <div class="sh_media">
+						   	   <h4>Follow Us</h4>
+						   	   <ul>
+						   	      <li t-if="website.social_facebook">
+						   	         <a t-att-href="website.social_facebook" target="_blank"><span class="fa fa-facebook"></span></a>
+						   	      </li>
+						   	      <li t-if="website.social_twitter">
+						   	         <a t-att-href="website.social_twitter" target="_blank"><span class="fa fa-twitter"></span></a>
+						   	      </li>
+						   	      <li t-if="website.social_linkedin">
+						   	         <a t-att-href="website.social_linkedin" target="_blank"><span class="fa fa-linkedin"></span></a>
+						   	      </li>
+						   	      <li t-if="website.social_youtube">
+						   	         <a t-att-href="website.social_youtube" target="_blank"><span class="fa fa-youtube"></span></a>
+						   	      </li>
+						   	   </ul>
+						   </div>
+						   
+						   <div class="sh_subscribe">
+						      <h4>signup newsletter</h4>
+						      <div class="input-group js_subscribe" data-list-id="0">
+							    <input type="email" name="email" class="js_subscribe_email form-control" placeholder="your email..." />
+							    <span class="input-group-append">
+							        <a role="button" href="#" class="btn btn-primary js_subscribe_btn"><span class="fa fa-paper-plane-o"></span></a>
+							
+							        <a role="button" href="#" class="btn btn-primary js_subscribed_btn d-none" disabled="disabled">Thanks</a>
+							    </span>
+							</div>
+
+						      
+						   </div>
+						   
+						</div>
+						
+						
+					</div>
+				</section>
+			</footer>
+		</div>
+	</xpath>
+</template>					
+<!-- Footer 11 layout -->
+       
+       
+       
+<!-- Footer 12 layout -->
+<template id="sh_corpomate_theme_footer_custom_12" name="Footer 12" inherit_id="website.footer_custom" active="False">    	
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">           
+            <footer id="footer" class="footer-area">			
+				<section id="sh_footer">
+					<div class="container">
+						
+						<div class="sh_newslatter">
+						   <div class="sh_left">
+						      <h3>subscribe to our newsletter!</h3>
+						      <p>Lorem Ipsum is simply dummy text of the printing</p>
+						   </div>
+						   
+						   <div class="sh_right">
+						      <div class="input-group js_subscribe" data-list-id="0">
+							    <input type="email" name="email" class="js_subscribe_email form-control" placeholder="your email..." />
+							    <span class="input-group-append">
+							        <a role="button" href="#" class="btn btn-primary js_subscribe_btn">Send</a>							
+							        <a role="button" href="#" class="btn btn-primary js_subscribed_btn d-none" disabled="disabled">Thanks</a>
+							    </span>
+							   </div>
+						   </div>
+						   
+						</div>
+						
+						<div class="row">
+						   <div class="col-lg-4 col-md-6">
+						      <div class="sh_content sh_first">
+						       	 <a class="navbar-brand" href="/">
+									 <img t-att-src="image_data_uri(website.logo)" id="logo-footer" class="img-fluid" alt="logo icon" style=""/>
+						 		 </a>
+						 		 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						      </div>
+						      
+						      <div class="sh_address">
+						         <div class="sh_icon">
+						            <span class="fa fa-map-marker"></span>
+						         </div>
+						         <div class="sh_des">
+						         	<h6>address</h6>
+						         	<!-- 
+						         	<p>905, Corporate Levels, 150ft, Ring Road, Rajkot.</p>
+							         -->
+							        <p t-esc="res_company.partner_id" t-options='{
+							                "widget": "contact",
+							                "fields": ["address"],
+							                "no_marker": True}'/>
+						         	
+						         	
+						         </div>
+						      </div>
+						      
+						   </div>
+						   
+						   <div class="col-lg-4 col-md-6">
+						   	  <div class="sh_content sh_second">
+						   	     <h4>important links</h4>
+						   	     <div class="row">
+						   	        <div class="col-6">
+						   	           <ul>
+						   	              <li><a href="/aboutus12">about us</a></li>
+						   	              <li><a href="/service12">services</a></li>
+						   	              <li><a href="/ourteam12">our team</a></li>
+						   	              <li><a href="#">project</a></li>
+						   	           </ul>
+						   	        </div>
+						   	        <div class="col-6">
+						   	           <ul>
+						   	              <li><a href="#">portfolio</a></li>
+						   	              <li><a href="/blog">latest blogs</a></li>
+						   	              <li><a href="/faq12">faq</a></li>
+						   	              <li><a href="/privacypolicy12">privacy policy</a></li>
+						   	           </ul>
+						   	        </div>
+						   	     </div> 
+						   	  </div>
+						   	  
+						   	  <div class="sh_contact">
+						         <div class="sh_icon">
+						            <span class="fa fa-phone"></span>
+						         </div>
+						         <div class="sh_des">
+						         	<h6>contact</h6>
+						         	<p>
+						         	<a t-att-href="'tel: %s' %(res_company.phone)">
+										<t t-esc="res_company.phone"/>
+									</a>
+						         	</p>
+						         	<p>+917984575681</p>
+						         </div>
+						      </div>
+						   	  
+						   </div>
+						   
+						   <div class="col-lg-4 col-md-6">
+						   	  <div class="sh_content sh_last">
+						   	     <h4>business hours</h4>
+						   	     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						   	     <h5><b>Mon-Sat</b>: 9:30 AM - 7 PM</h5>
+						   	     <h5><b>Sunday:</b> closed</h5>
+						   	   </div>   
+						   	   <div class="sh_email">
+						         <div class="sh_icon">
+						            <span class="fa fa-envelope-open"></span>
+						         </div>
+						         <div class="sh_des">
+						         	<h6>email</h6>
+						         	<a t-att-href="'mailto: %s' %(res_company.email)">
+						         		<t t-esc="res_company.email"/>
+						         	</a>
+						         	<a href="#">support@softhealer.com</a>
+						         </div>
+						      </div>
+						   </div>
+						   
+						   
+						</div>
+						
+						
+					</div>
+				</section>
+			</footer>
+		</div>
+	</xpath>
+</template>					
+<!-- Footer 12 layout -->       
+       
+       
+<!-- Footer 13 layout -->
+<template id="sh_corpomate_theme_footer_custom_13" name="Footer 13" inherit_id="website.footer_custom" active="False">    	
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">           
+            <footer id="footer" class="footer-area">	
+            
+
+  
+              
+            		
+				<section id="sh_footer_13">
+				
+				
+				
+   <section id="sh_corpomate_theme_section_337" class="sh_animation_part">
+   	  <div class="container">
+   	  	<div class="row">
+   	  		<div class="col-lg-6 col-md-6 col-sm-12 col-12">
+   	  			<div class="left_content">
+   	  				<h3>Lorem ipsum dolor sit amet</h3>
+   	  			</div>
+   	  		</div>
+   	  		<div class="col-lg-6 col-md-6 col-sm-12 col-12">
+   	  			<div class="right_subscribe_box">
+   	  				<div class="input-group js_subscribe sub_box" data-list-id="0">
+					    <input type="email" name="email" class="js_subscribe_email form-control" placeholder="Enter Your Email..." />
+					    <span class="input-group-append">
+					        <a role="button" href="#" class="btn btn-primary js_subscribe_btn">Send</a>							
+					        <a role="button" href="#" class="btn btn-primary js_subscribed_btn d-none" disabled="disabled">Thanks</a>
+					    </span>
+					</div>
+   	  			</div>
+   	  		</div>
+   	  	</div>
+   	  </div>
+  </section>
+  				
+				
+					<div class="container">
+					
+						<div class="row">
+						   <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+						      
+						      <div class="sh_address">
+						         <div class="sh_icon">
+						            <span class="fa fa-map-marker"></span>
+						         </div>
+						         <div class="sh_des">
+						         	<!-- 
+						         	<p>905, Corporate Levels, 150ft, Ring Road, Rajkot.</p>
+							         -->
+							        <p t-esc="res_company.partner_id" t-options='{
+							                "widget": "contact",
+							                "fields": ["address"],
+							                "no_marker": True}'/>
+						         	
+						         	
+						         </div>
+						      </div>
+						      
+						   </div>
+						   
+						   <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+						   	    
+							<div class="sh_contact">
+						         <div class="sh_icon">
+						            <span class="fa fa-phone"></span>
+						         </div>
+						         <div class="sh_des">
+						         	<p>
+						         	<a t-att-href="'tel: %s' %(res_company.phone)">
+										<t t-esc="res_company.phone"/>
+									</a>
+						         	</p>
+						         	<p>
+						         		<a href="#">+917984575681</a>
+						         	</p>
+						         </div>
+						      </div>
+						   	  
+						   </div>
+						   
+						   <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+						   	  
+						   	   <div class="sh_email">
+						         <div class="sh_icon">
+						            <span class="fa fa-envelope-open"></span>
+						         </div>
+						         <div class="sh_des">
+						         	<a href="#">support@softhealer.com</a>
+						         	<a t-att-href="'mailto: %s' %(res_company.email)">
+						         		<t t-esc="res_company.email"/>
+						         	</a>
+						         </div>
+						      </div>
+						   </div>
+						</div>
+						
+						<div class="row">
+							<div class="col-12">
+								<div class="footer_para">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								</div>
+							</div>
+						</div>
+						
+						
+					</div>
+				</section>
+			</footer>
+		</div>
+	</xpath>
+</template>					
+<!-- Footer 13 layout -->       
+       
+       
+       
+ <!-- Footer 14 layout -->
+<template id="sh_corpomate_theme_footer_custom_14" name="Footer 14" inherit_id="website.footer_custom" active="False">      
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">           
+            <footer id="footer" class="footer-area">    
+            
+
+  
+                <section id="sh_footer">
+                    <div class="container">
+                        <div class="sh_main">
+                            <div class="sh_text">
+                                <h2>lorem ipsum dolor sit amet conseceture</h2>
+                            </div>
+                            <div class="input-group js_subscribe" data-list-id="0">
+                                <input type="email" name="email" class="js_subscribe_email form-control" placeholder="your email..." />
+                                <span class="input-group-append">
+                                    <a role="button" href="#" class="btn btn-primary js_subscribe_btn">Send</a>                         
+                                    <a role="button" href="#" class="btn btn-primary js_subscribed_btn d-none" disabled="disabled">Thanks</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="sh_logo_part">
+                                    <h6><a class="navbar-brand" href="index.html">
+                                      <img t-att-src="image_data_uri(website.logo)" id="logo-footer" class="img-fluid" alt="logo icon" style=""/>
+                                  </a></h6>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                    <ul>
+
+                                        <li t-if="website.social_facebook">
+                                            <a t-att-href="website.social_facebook" class="btn"><span class="fa fa-facebook"></span></a>
+                                        </li>
+                                        <li t-if="website.social_twitter">
+                                            <a t-att-href="website.social_twitter" class="btn"><span class="fa fa-twitter"></span></a>
+                                        </li>
+                                        <li t-if="website.social_instagram">
+                                            <a t-att-href="website.social_instagram" class="btn"><span class="fa fa-instagram"></span></a>
+                                        </li>
+                                        <li t-if="website.social_youtube">
+                                            <a t-att-href="website.social_youtube" class="btn"><span class="fa fa-youtube"></span></a>
+                                        </li>
+
+
+                                    </ul>
+                                 </div>   
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="sh_link">
+                                    <h4>services</h4>
+                                    <ul>
+                                        <li><a href="#" class="">dog walking</a></li>
+                                        <li><a href="#" class="">overnight care</a></li>
+                                        <li><a href="#" class="">pet sitting</a></li>
+                                        <li><a href="#" class="">vaccinations</a></li>
+                                        <li><a href="#" class="">pet dentistry</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="sh_link">
+                                    <h4>quick links</h4>
+                                    <ul>
+                                        <li><a href="#" class="">company history</a></li>
+                                        <li><a href="#" class="">about us</a></li>
+                                        <li><a href="#" class="">contact us</a></li>
+                                        <li><a href="#" class="">services</a></li>
+                                        <li><a href="#" class="">privacy policy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="sh_link sh_link3">
+                                    <h4>working hours</h4>
+                                    <ul>
+                                        <li><a href="#" class="">Monday: 9:30 AM - 7 PM</a></li>
+                                        <li><a href="#" class="">Tuesday: 9:30 AM - 7 PM</a></li>
+                                        <li><a href="#" class="">Wednesday: 9:30 AM - 7 PM</a></li>
+                                        <li><a href="#" class="">Thursday: 9:30 AM - 7 PM</a></li>
+                                        <li><a href="#" class="">Friday: 9:30 AM - 7 PM</a></li>
+                                        <li><a href="#" class="">Saturday: 9:30 AM - 7 PM</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </section>        
+                    
+                 
+                
+                
+                
+   
+            </footer>
+        </div>
+    </xpath>
+</template>                 
+<!-- Footer 14 layout -->        
+       
+       
+<!-- Footer 15 layout -->
+<template id="sh_corpomate_theme_footer_custom_15" name="Footer 15" inherit_id="website.footer_custom" active="False">      
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">           
+            <footer id="footer" class="footer-area">    
+            
+
+  
+                <section id="sh_footer">
+                    <div class="container">                        
+
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="sh_logo_part">
+                                    <h6><a class="navbar-brand" href="index.html">
+                                      <img t-att-src="image_data_uri(website.logo)" id="logo-footer" class="img-fluid" alt="logo icon" style=""/>
+                                  </a></h6>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                    <ul>
+                                        <li t-if="website.social_facebook">
+                                             <a class="btn" t-att-href="website.social_facebook" target="_blank"><span class="fa fa-facebook"></span></a>
+                                          </li>
+                                          <li t-if="website.social_twitter">
+                                             <a class="btn" t-att-href="website.social_twitter" target="_blank"><span class="fa fa-twitter"></span></a>
+                                          </li>
+                                          <li t-if="website.social_linkedin">
+                                             <a class="btn" t-att-href="website.social_linkedin" target="_blank"><span class="fa fa-linkedin"></span></a>
+                                          </li>
+                                          <li t-if="website.social_youtube">
+                                             <a class="btn" t-att-href="website.social_youtube" target="_blank"><span class="fa fa-youtube"></span></a>
+                                          </li>
+                                    </ul>
+                                 </div>   
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="sh_link">
+                                    <h4>company</h4>
+                                    <ul>
+                                        <li><a href="#" class="">about</a></li>
+                                        <li><a href="#" class="">latest events</a></li>
+                                        <li><a href="#" class="">how it work</a></li>
+                                        <li><a href="#" class="">news and articals</a></li>
+                                        <li><a href="#" class="">contact us</a></li>
+                                        <li><a href="#" class="">latest projects</a></li>
+                                        <li><a href="#" class="">get a quote</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="sh_link">
+                                    <h4>services</h4>
+                                    <ul>
+                                        <li><a href="#" class="">petroleum and gas</a></li>
+                                        <li><a href="#" class="">industrial construction</a></li>
+                                        <li><a href="#" class="">chemical research</a></li>
+                                        <li><a href="#" class="">mechanical engineering</a></li>
+                                        <li><a href="#" class="">power energies</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="sh_link sh_link3">
+                                    <h4>contact</h4>
+                                    <ul>
+                                        <li>
+                                            <div class="sh_icon">
+                                                <span class="fa fa-map-marker"></span>
+                                                <p>905, Corporate Levels, 150 ft.Ring Road, Rajkot.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="sh_icon">
+                                                <span class="fa fa-envelope"></span>
+                                                <p><a t-att-href="'mailto: %s' %(res_company.email)">
+                                                        <t t-esc="res_company.email"/>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="sh_icon">
+                                                <span class="fa fa-phone"></span>
+                                                <p><a t-att-href="'tel: %s' %(res_company.phone)">
+                                                    <t t-esc="res_company.phone"/>
+                                                </a></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-offset-6">
+                                <div class="sh_subscribe">    
+                                    <div class="input-group js_subscribe" data-list-id="0">
+                                        <input type="email" name="email" class="js_subscribe_email form-control" placeholder="your email..."/>
+                                        <span class="input-group-append">
+                                            <a role="button" href="#" class="btn btn-primary js_subscribe_btn"><span class="fa fa-paper-plane-o"></span></a>
+                                            
+                                            <a role="button" href="#" class="btn btn-primary js_subscribed_btn d-none" disabled="disabled">Thanks</a>
+                                        </span>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+
+                    </div>
+                </section>                      
+                
+   
+            </footer>
+        </div>
+    </xpath>
+</template>                 
+<!-- Footer 15 layout -->        
+       
+       
+  <!-- Footer 16 layout -->
+<template id="sh_corpomate_theme_footer_custom_16" name="Footer 16" inherit_id="website.footer_custom" active="False">      
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">           
+            <footer id="footer" class="footer-area">    
+            
+
+                <div class="sh_call_to_action">
+                    <div class="container">
+                        <div class="sh_main">   
+                            <div class="sh_left">
+                                <div class="sh_icon">
+                                    <span class="fa fa-envelope-open"></span>
+                                </div>
+                                <div class="sh_des">
+                                   <h4>subscribe to our newsletter</h4>
+                                   <p>stay in touch with us to get latest news and discount coupons</p> 
+                                </div>
+                            </div> 
+                            <div class="sh_right">
+                                <div class="input-group js_subscribe" data-list-id="0">
+                                    <input type="email" name="email" class="js_subscribe_email form-control" placeholder="your email..."/>
+                                    <span class="input-group-append">
+                                        <a role="button" href="#" class="btn btn-primary js_subscribe_btn"><span class="fa fa-paper-plane-o"></span></a>
+                                        
+                                        <a role="button" href="#" class="btn btn-primary js_subscribed_btn d-none" disabled="disabled">Thanks</a>
+                                    </span>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section id="sh_footer">
+                    <div class="container"> 
+						
+						<div class="row">
+						    <div class="col-lg-4 col-md-6 col-sm-6"> 
+								<div class="sh_icon_box">
+									<div class="sh_icon">
+										<span class="fa fa-map-marker"></span>
+									</div>
+									<div class="sh_add">
+										<h5>location</h5>
+										<p>905, corporate level, 150ft. ring road, rajkot</p> 
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 col-sm-6">
+								<div class="sh_icon_box">
+									<div class="sh_icon">
+										<span class="fa fa-phone"></span>
+									</div>
+									<div class="sh_add">
+										<h5>call us on</h5>
+										<p><a t-att-href="'tel: %s' %(res_company.phone)">
+												<t t-esc="res_company.phone"/>
+											</a></p> 
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4">
+							    <div class="sh_icon_box">
+                                    <div class="sh_icon">
+                                        <span class="fa fa-envelope"></span>
+                                    </div>
+                                    <div class="sh_add">
+                                        <h5>mail us</h5>
+                                        <p><a t-att-href="'mailto: %s' %(res_company.email)">
+												<t t-esc="res_company.email"/>
+											</a>
+										</p> 
+                                    </div>
+                                </div>
+							</div>
+						</div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="sh_content">
+                                    <div class="sh_logo_part">
+                                        <a href="/" class="sh_cm_copyright_9_website_logo navbar-brand logo">
+                                            <span t-field="website.logo" t-options="{'widget': 'image'}" role="img" t-att-aria-label="'Logo of %s' % website.name" t-att-title="website.name" />
+                                        </a>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                        <div class="sh_btn">
+                                            <a href="#" class="btn">read more</a>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>							
+
+                            <div class="col-lg-4">
+                                <div class="sh_content">
+                                    <div class="sh_usefull_link">
+                                        <h3>usefull links</h3>
+                                        <ul>
+                                            <li><a href="#">about company</a></li>
+                                            <li><a href="#">customer insights</a></li>
+                                            <li><a href="#">free consulttation</a></li>
+                                            <li><a href="#">meet our team</a></li>
+                                            <li><a href="#">our service</a></li>
+                                            <li><a href="#">forensic science</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">scientific</a></li>
+                                            <li><a href="#">chemistry</a></li>
+                                            <li><a href="#">gemological</a></li>
+                                            <li><a href="#">privacy policy</a></li>
+                                            <li><a href="#">testimonials</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="sh_recent_post">
+                                    <h3>recent posts</h3>
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4 col-6">
+                                            <div class="sh_img">
+                                                <img src="/sh_corpomate_theme/static/src/img/theme_16/12.jpg"></img>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-6">
+                                            <div class="sh_img">
+                                                <img src="/sh_corpomate_theme/static/src/img/theme_16/20.jpg"></img>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-6">
+                                            <div class="sh_img">
+                                                <img src="/sh_corpomate_theme/static/src/img/theme_16/21.jpg"></img>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-6">
+                                            <div class="sh_img">
+                                                <img src="/sh_corpomate_theme/static/src/img/theme_16/22.jpg"></img>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-6">
+                                            <div class="sh_img">
+                                                <img src="/sh_corpomate_theme/static/src/img/theme_16/23.jpg"></img>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-6">
+                                            <div class="sh_img">
+                                                <img src="/sh_corpomate_theme/static/src/img/theme_16/24.jpg"></img>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </section>        
+                    
+                 
+                
+                
+                
+   
+            </footer>
+        </div>
+    </xpath>
+</template>                 
+<!-- Footer 16 layout -->      
+       
+       
+       
+       
+       
+       
+       
+
+</odoo>

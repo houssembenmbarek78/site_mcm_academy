@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- CONTACT US PAGE 13 -->
+	<template id="sh_corpomate_tmpl_contact_us_13" name="contact us">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+	
+
+
+<section id="sh_corpomate_theme_section_334" class="s_banner parallax s_parallax_no_overflow_hidden bg-black-50" data-name="Banner 13" style="background-image: none;" data-scroll-background-ratio="0">
+    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/theme_13/6.png'); background-position: 50% 0; background-attachment: fixed;"/>
+    <div class="container">
+        <div class="sh_banner">
+            <div class="sh_title">
+                <h4 class="o_default_snippet_text">Contact Us</h4>
+            </div>
+            <div class="sh_breadcrumb">
+                <ul>
+                    <li>
+                        <a href="/" class="btn sh_main o_default_snippet_text">
+                            <span class="fa fa-home"/> &amp;nbsp; &amp;nbsp; &amp;nbsp; 
+                            <span class="fa fa-chevron-right"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contactus" class="btn o_default_snippet_text">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_335" class="sh_animation_part" data-name="Map 13">
+    <div class="container">
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14764.162888844217!2d70.76170147993821!3d22.31429961505925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca18fbb8df83%3A0xc5d2508a38a14110!2sSofthealer%20Technologies!5e0!3m2!1sen!2sin!4v1608729855171!5m2!1sen!2sin"  height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_336" class="sh_animation_part" data-name="Contactus Form 13">
+    <div class="container">
+        <div class="sh_section_heading text-center">
+            <h5 class="o_default_snippet_text">Contact Us</h5>
+            <h2 class="o_default_snippet_text">Get In Touch</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                <div class="box">
+                    <div class="icon">
+                        <span class="fa fa-envelope"/>
+                    </div>
+                    <div class="content">
+                        <h3 class="o_default_snippet_text">Email</h3>
+                        <p>
+                            <a href="mailto: info@yourcompany.example.com" class="o_default_snippet_text">
+info@yourcompany.example.com</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <span class="fa fa-phone"/>
+                    </div>
+                    <div class="content">
+                        <h3 class="o_default_snippet_text">Call Us</h3>
+                        <p>
+                            <a href="tel: +1 (650) 691-3277 " class="o_default_snippet_text">+1 (650) 691-3277 </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <span class="fa fa-map-marker"/>
+                    </div>
+                    <div class="content">
+                        <h3 class="o_default_snippet_text">Location</h3>
+                        <div class="contact_address">
+                            <address class="mb-0" itemscope="itemscope" itemtype="http://schema.org/Organization">
+                                <div itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress">
+                                    <div class="d-flex align-items-baseline">
+                                        <div class="w-100 o_default_snippet_text" itemprop="streetAddress">250 Executive Park Blvd, Suite 3400
+                                            <br/>San Francisco
+                                            <br/>California
+                                            <br/>94134
+                                            <br/>United Kingdom
+                                        </div>
+                                    </div>
+                                </div>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                <form action="/website_form/" method="post" data-model_name="crm.lead" data-success_page="/contactus-thank-you" class="s_website_form container-fluid mt32 o_fake_not_editable" enctype="multipart/form-data" data-editable-form="false">
+                    <div class="form-group row form-field o_website_form_required_custom o_fake_not_editable" data-model_name="crm.lead" data-success_page="/contactus-thank-you">
+                        <div class="col-6">
+                            <input type="text" class="form-control o_website_form_input" name="contact_name" placeholder="Name*" required="" value=""/>
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="form-control o_website_form_input" name="phone" placeholder="Phone*" value=""/>
+                        </div>
+                    </div>
+                    <div class="form-group row form-field o_website_form_required_custom o_fake_not_editable" data-model_name="crm.lead" data-success_page="/contactus-thank-you">
+                        <div class="col-6">
+                            <input type="text" class="form-control o_website_form_input" name="email_from" required="" placeholder="Email*" value=""/>
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="form-control o_website_form_input" name="name" required="" placeholder="Subject*" value=""/>
+                        </div>
+                    </div>
+                    <div class="form-group row form-field o_website_form_required o_fake_not_editable" data-model_name="crm.lead" data-success_page="/contactus-thank-you">
+                        <div class="col-12">
+                            <textarea class="form-control o_website_form_input" name="description" required="" placeholder="Message*"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <a href="#" role="button" class="btn btn-primary btn-lg o_website_form_send btn_submit o_default_snippet_text">Submit</a>
+                            <span id="o_website_form_result"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+				
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

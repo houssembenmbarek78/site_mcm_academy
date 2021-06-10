@@ -1,0 +1,35 @@
+.navbar-light{background: rgba(0, 0, 0, 0.5) !important ;padding: 1.2rem 1rem;}
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active{color: #fff;}
+.navbar-light .navbar-nav .nav-link{color:#fff;font-weight: 600;}
+.navbar-light .navbar-nav .nav-link{position: relative}
+.navbar-light .navbar-nav .nav-link span:before {content: '';height: 3px;width: 0;-webkit-border-radius: 2px;-khtml-border-radius: 2px;-moz-border-radius: 2px; -ms-border-radius: 2px;-o-border-radius: 2px;border-radius: 2px;background-color: #fff;position: absolute;top: calc(50% + 17px);top: -webkit-calc(50% + 17px);left: 0;opacity: 0px;-webkit-transition: all 300ms linear 0ms;-khtml-transition: all 300ms linear 0ms; -moz-transition: all 300ms linear 0ms;-ms-transition: all 300ms linear 0ms;-o-transition: all 300ms linear 0ms;transition: all 300ms linear 0ms;}
+.navbar-light .navbar-nav .nav-link:hover{color:#fff;}
+.navbar-light .navbar-nav .nav-link:hover span:before{width: 100%;opacity: 1;}
+.navbar-light .navbar-nav .nav-link.active span:before{width: 100%;opacity: 1;}
+.navbar .nav-item{margin: 0px 5px;}
+
+
+
+.navbar-light .navbar-nav .nav-link span{position: relative;text-transform: uppercase;color: #fff;}
+header.o_affix_enabled {
+    z-index: 1;
+}
+#oe_main_menu_navbar + #wrapwrap .o_header_affix .navbar-light{background: $-color-Primary !important;}
+#top_menu .nav-item.dropdown .dropdown-menu.js_usermenu.dropdown-menu-right {right: auto;}
+
+#top_menu .nav-item.dropdown.o_extra_menu_items .dropdown-menu li a span{text-transform: uppercase;}
+#top_menu .nav-item.dropdown.o_extra_menu_items ul.dropdown-menu{min-width: 12rem;}
+
+
+@media only screen and (max-width: 768px){
+	.navbar-light{background-color: #F9F9F9 !important;}
+	
+	.navbar-light .navbar-nav .nav-link{color: #333 !important;}
+	.navbar-light .navbar-nav .nav-link span{color: #333;}
+	.navbar-light .navbar-nav .nav-link span:before{display: none;}
+}
+
+header#top{z-index: 1;}
+
+
+

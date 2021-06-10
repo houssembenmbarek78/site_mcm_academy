@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- CONTACT US PAGE 14 -->
+    <template id="sh_corpomate_tmpl_contact_us_14" name="contact us">
+        <t t-call="website.layout">
+          <div id="wrap" class="oe_structure">
+            <div class="oe_structure"/>	
+
+	<section id="sh_corpomate_theme_section_361" class="parallax s_parallax_no_overflow_hidden o_colored_level sh_animation_part" data-snippet="sh_corpomate_theme_tmpl_361" data-name="contact Banner">
+    <span class="s_parallax_bg oe_img_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/pets_14/3.jpg'); background-position: center;" />
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-12 o_colored_level sh_animation_part">
+                <div class="sh_content">
+                    <h2 class="o_default_snippet_text">contact</h2>
+                    <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="sh_navigation">
+                    <a href="/" class="btn o_default_snippet_text">home</a>
+                    <span class="fa fa-link" />
+                    <a href="#" class="btn o_default_snippet_text">contact</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-12 o_colored_level"></div>
+        </div>
+        
+    </div>
+    <div class="svg_img">
+        <img src="/sh_corpomate_theme/static/src/img/pets_14/1.svg" loading="lazy" />
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_362" data-snippet="sh_corpomate_theme_tmpl_362" class="o_colored_level sh_animation_part" data-name="map">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 o_colored_level sh_animation_part wow fadeInLeft">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14764.162888844217!2d70.76170147993821!3d22.31429961505925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca18fbb8df83%3A0xc5d2508a38a14110!2sSofthealer%20Technologies!5e0!3m2!1sen!2sin!4v1608729855171!5m2!1sen!2sin"
+                    height="450"
+                    frameborder="0"
+                    style="border: 0;"
+                    allowfullscreen=""
+                    aria-hidden="false"
+                    tabindex="0"
+                >
+                </iframe>
+            </div>
+            <div class="col-md-4 o_colored_level sh_animation_part wow fadeInRight">
+                <div class="sh_contect sh_animation_part">
+                    <div class="sh_icon">
+                        <span class="fa fa-map-marker" />
+                    </div>
+                    <div class="sh_address">
+                        <h2 class="o_default_snippet_text">address</h2>
+                        <p class="o_default_snippet_text">905, corporate level, 150ft. ring road, rajkot.</p>
+                    </div>
+                </div>
+                <div class="sh_contect sh_animation_part">
+                    <div class="sh_icon">
+                        <span class="fa fa-envelope-o" />
+                    </div>
+                    <div class="sh_address">
+                        <h2 class="o_default_snippet_text">email</h2>
+                        <a class="sh_btn btn" t-att-href="'mailto: %s' %(res_company.email)">
+                        <t t-esc="res_company.email"></t>
+                        </a>
+                    </div>
+                </div>
+                <div class="sh_contect sh_animation_part">
+                    <div class="sh_icon">
+                        <span class="fa fa-phone" />
+                    </div>
+                    <div class="sh_address">
+                        <h2 class="o_default_snippet_text">contact</h2>
+                        <p class="o_default_snippet_text">
+                            <a class="sh_btn" t-att-href="'tel: %s' %(res_company.phone)"> 
+                               <t t-esc="res_company.phone"></t> 
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_363" data-snippet="sh_corpomate_theme_tmpl_363" class="oe_img_bg o_colored_level wow fadeInUp" data-name="form" style="background-image: url('/sh_corpomate_theme/static/src/img/pets_14/14.jpg');">
+    <div class="container">
+        <div class="sh_title sh_animation_part">
+            <h4 class="o_default_snippet_text">get in touch</h4>
+            <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+        <form action="/website_form/" method="post" data-model_name="crm.lead" data-success_page="/contactus-thank-you" class="s_website_form container-fluid mt32" enctype="multipart/form-data" data-editable-form="false">
+            <div class="form-group row form-field o_website_form_required_custom">
+                <div class="col-6 o_colored_level">
+                    <input type="text" class="form-control o_website_form_input" name="contact_name" placeholder="Name*" required="" value="" />
+                </div>
+                <div class="col-6 o_colored_level">
+                    <input type="text" class="form-control o_website_form_input" name="phone" placeholder="Phone*" value="" />
+                </div>
+            </div>
+            <div class="form-group row form-field o_website_form_required_custom">
+                <div class="col-6 o_colored_level">
+                    <input type="text" class="form-control o_website_form_input" name="email_from" required="" placeholder="Email*" value="" />
+                </div>
+                <div class="col-6 o_colored_level">
+                    <input type="text" class="form-control o_website_form_input" name="name" required="" placeholder="Subject*" value="" />
+                </div>
+            </div>
+            <div class="form-group row form-field o_website_form_required">
+                <div class="col-12 o_colored_level">
+                    <textarea class="form-control o_website_form_input" name="description" required="" placeholder="Message*" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-12 o_colored_level">
+                    <a href="#" role="button" class="btn btn-secondary btn-lg o_website_form_send btn_submit o_default_snippet_text">Send Message</a>
+                    <span id="o_website_form_result" />
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+</div>
+</t>
+</template>
+</odoo>
+
+

@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- OUR TEAM 1 -->
+	<template id="sh_corpomate_tmpl_our_team_1" name="our team">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			
+
+
+      <section id="sh_corpomate_theme_section_160" class="s_banner parallax s_parallax_no_overflow_hidden bg-black-75" data-scroll-background-ratio="0" style="background-image: none;">
+        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/team-banner.png'); background-position: 50% 0;background-attachment: fixed;"/>
+        <div class="container">
+          <h1 class="o_default_snippet_text">Our Team</h1>
+          <div class="breadcrumbs-description o_default_snippet_text">
+                Meet the amazing team behind this project and find out more about how we work.
+            </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_149">
+        <div class="container">
+          <div class="row">
+            <div class="title">
+              <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+              <h2 class="o_default_snippet_text">Lorem Ipsum is simply dummy</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_148">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 sh_disable_hover_part sh_animation_part">
+              <article class="brk-team-persone-circle brk-base-box-shadow text-center">
+                <div class="brk-team-persone-circle__name-position">
+                  <a href="#">
+                    <h4 class="font__family-montserrat font__weight-bold font__size-18 o_default_snippet_text">Lorem Ipsum</h4>
+                  </a>
+                  <span class="font__family-montserrat font__weight-normal font__size-16 line__height-24 o_default_snippet_text">Team Leader</span>
+                </div>
+                <section class="brk-team-persone-circle__bg lazyloaded" style="background-image: url(/sh_corpomate_theme/static/src/img/6.jpg);">
+                  <span class="brk-team-persone-circle__bg-overlay">
+                    <section class="before brk-base-bg-gradient-90deg"/>
+                    <svg viewbox="0 0 270 37">
+                      <path d="M270,37H0V0A267.6,267.6,0,0,0,135.53,36.5,267.52,267.52,0,0,0,270,0Z" fill="rgb(255, 255, 255)"/>
+                    </svg>
+                  </span>
+                  <ul class="brk-team-persone-circle__contacts">
+                    <li>
+                      <span class="fa fa-instagram" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Instagram</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-google-plus" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Google+</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-youtube" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Youtube</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-vimeo" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Vimeo</a>
+                    </li>
+                  </ul>
+                </section>
+                <div class="brk-team-persone-circle__social-links">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-vk" aria-hidden="true"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-linkedin" aria-hidden="true"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-skype" aria-hidden="true"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-dribbble" aria-hidden="true"/>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 sh_disable_hover_part sh_animation_part">
+              <article class="brk-team-persone-circle brk-base-box-shadow text-center">
+                <div class="brk-team-persone-circle__name-position">
+                  <a href="#">
+                    <h4 class="font__family-montserrat font__weight-bold font__size-18 o_default_snippet_text">Lorem Ipsum</h4>
+                  </a>
+                  <span class="font__family-montserrat font__weight-normal font__size-16 line__height-24 o_default_snippet_text">Team Leader</span>
+                </div>
+                <section class="brk-team-persone-circle__bg lazyloaded" data-bg="http://wp.berserk.nikadevs.com/wp-content/uploads/2017/10/marry.jpg" style="background-image: url(/sh_corpomate_theme/static/src/img/7.jpg);">
+                  <span class="brk-team-persone-circle__bg-overlay">
+                    <section class="before brk-base-bg-gradient-90deg"/>
+                    <svg viewbox="0 0 270 37">
+                      <path d="M270,37H0V0A267.6,267.6,0,0,0,135.53,36.5,267.52,267.52,0,0,0,270,0Z" fill="rgb(255, 255, 255)"/>
+                    </svg>
+                  </span>
+                  <ul class="brk-team-persone-circle__contacts">
+                    <li>
+                      <span class="fa fa-instagram" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Instagram</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-google-plus" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Google+</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-youtube" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Youtube</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-vimeo" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Vimeo</a>
+                    </li>
+                  </ul>
+                </section>
+                <div class="brk-team-persone-circle__social-links">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-vk" aria-hidden="true"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-linkedin" aria-hidden="true"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-skype" aria-hidden="true"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-dribbble" aria-hidden="true"/>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 sh_disable_hover_part sh_animation_part">
+              <article class="brk-team-persone-circle brk-base-box-shadow text-center">
+                <div class="brk-team-persone-circle__name-position">
+                  <a href="#">
+                    <h4 class="font__family-montserrat font__weight-bold font__size-18 o_default_snippet_text">Lorem Ipsum</h4>
+                  </a>
+                  <span class="font__family-montserrat font__weight-normal font__size-16 line__height-24 o_default_snippet_text">Team Leader</span>
+                </div>
+                <section class="brk-team-persone-circle__bg lazyloaded" data-bg="http://wp.berserk.nikadevs.com/wp-content/uploads/2017/10/marry.jpg" style="background-image: url(/sh_corpomate_theme/static/src/img/8.jpg);">
+                  <span class="brk-team-persone-circle__bg-overlay">
+                    <section class="before brk-base-bg-gradient-90deg"/>
+                    <svg viewbox="0 0 270 37">
+                      <path d="M270,37H0V0A267.6,267.6,0,0,0,135.53,36.5,267.52,267.52,0,0,0,270,0Z" fill="rgb(255, 255, 255)"/>
+                    </svg>
+                  </span>
+                  <ul class="brk-team-persone-circle__contacts">
+                    <li>
+                      <span class="fa fa-instagram" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Instagram</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-google-plus" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Google+</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-youtube" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Youtube</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-vimeo" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Vimeo</a>
+                    </li>
+                  </ul>
+                </section>
+                <div class="brk-team-persone-circle__social-links">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-vk" aria-hidden="true"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-linkedin" aria-hidden="true"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-skype" aria-hidden="true"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-dribbble" aria-hidden="true"/>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 sh_disable_hover_part sh_animation_part">
+              <article class="brk-team-persone-circle brk-base-box-shadow text-center">
+                <div class="brk-team-persone-circle__name-position">
+                  <a href="#">
+                    <h4 class="font__family-montserrat font__weight-bold font__size-18 o_default_snippet_text">Lorem Ipsum</h4>
+                  </a>
+                  <span class="font__family-montserrat font__weight-normal font__size-16 line__height-24 o_default_snippet_text">Team Leader</span>
+                </div>
+                <section class="brk-team-persone-circle__bg lazyloaded" data-bg="http://wp.berserk.nikadevs.com/wp-content/uploads/2017/10/marry.jpg" style="background-image: url(/sh_corpomate_theme/static/src/img/9.jpg);">
+                  <span class="brk-team-persone-circle__bg-overlay">
+                    <section class="before brk-base-bg-gradient-90deg"/>
+                    <svg viewbox="0 0 270 37">
+                      <path d="M270,37H0V0A267.6,267.6,0,0,0,135.53,36.5,267.52,267.52,0,0,0,270,0Z" fill="rgb(255, 255, 255)"/>
+                    </svg>
+                  </span>
+                  <ul class="brk-team-persone-circle__contacts">
+                    <li>
+                      <span class="fa fa-instagram" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Instagram</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-google-plus" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Google+</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-youtube" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Youtube</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-vimeo" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Vimeo</a>
+                    </li>
+                  </ul>
+                </section>
+                <div class="brk-team-persone-circle__social-links">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-vk" aria-hidden="true"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-linkedin" aria-hidden="true"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-skype" aria-hidden="true"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-dribbble" aria-hidden="true"/>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 sh_disable_hover_part sh_animation_part">
+              <article class="brk-team-persone-circle brk-base-box-shadow text-center">
+                <div class="brk-team-persone-circle__name-position">
+                  <a href="#">
+                    <h4 class="font__family-montserrat font__weight-bold font__size-18 o_default_snippet_text">Lorem Ipsum</h4>
+                  </a>
+                  <span class="font__family-montserrat font__weight-normal font__size-16 line__height-24 o_default_snippet_text">Team Leader</span>
+                </div>
+                <section class="brk-team-persone-circle__bg lazyloaded" data-bg="http://wp.berserk.nikadevs.com/wp-content/uploads/2017/10/marry.jpg" style="background-image: url(/sh_corpomate_theme/static/src/img/6.jpg);">
+                  <span class="brk-team-persone-circle__bg-overlay">
+                    <section class="before brk-base-bg-gradient-90deg"/>
+                    <svg viewbox="0 0 270 37">
+                      <path d="M270,37H0V0A267.6,267.6,0,0,0,135.53,36.5,267.52,267.52,0,0,0,270,0Z" fill="rgb(255, 255, 255)"/>
+                    </svg>
+                  </span>
+                  <ul class="brk-team-persone-circle__contacts">
+                    <li>
+                      <span class="fa fa-instagram" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Instagram</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-google-plus" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Google+</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-youtube" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Youtube</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-vimeo" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Vimeo</a>
+                    </li>
+                  </ul>
+                </section>
+                <div class="brk-team-persone-circle__social-links">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-vk" aria-hidden="true"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-linkedin" aria-hidden="true"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-skype" aria-hidden="true"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-dribbble" aria-hidden="true"/>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 sh_disable_hover_part sh_animation_part">
+              <article class="brk-team-persone-circle brk-base-box-shadow text-center">
+                <div class="brk-team-persone-circle__name-position">
+                  <a href="#">
+                    <h4 class="font__family-montserrat font__weight-bold font__size-18 o_default_snippet_text">Lorem Ipsum</h4>
+                  </a>
+                  <span class="font__family-montserrat font__weight-normal font__size-16 line__height-24 o_default_snippet_text">Team Leader</span>
+                </div>
+                <section class="brk-team-persone-circle__bg lazyloaded" data-bg="http://wp.berserk.nikadevs.com/wp-content/uploads/2017/10/marry.jpg" style="background-image: url(/sh_corpomate_theme/static/src/img/7.jpg);">
+                  <span class="brk-team-persone-circle__bg-overlay">
+                    <section class="before brk-base-bg-gradient-90deg"/>
+                    <svg viewbox="0 0 270 37">
+                      <path d="M270,37H0V0A267.6,267.6,0,0,0,135.53,36.5,267.52,267.52,0,0,0,270,0Z" fill="rgb(255, 255, 255)"/>
+                    </svg>
+                  </span>
+                  <ul class="brk-team-persone-circle__contacts">
+                    <li>
+                      <span class="fa fa-instagram" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Instagram</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-google-plus" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Google+</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-youtube" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Youtube</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-vimeo" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Vimeo</a>
+                    </li>
+                  </ul>
+                </section>
+                <div class="brk-team-persone-circle__social-links">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-vk" aria-hidden="true"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-linkedin" aria-hidden="true"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-skype" aria-hidden="true"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-dribbble" aria-hidden="true"/>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 sh_disable_hover_part sh_animation_part">
+              <article class="brk-team-persone-circle brk-base-box-shadow text-center">
+                <div class="brk-team-persone-circle__name-position">
+                  <a href="#">
+                    <h4 class="font__family-montserrat font__weight-bold font__size-18 o_default_snippet_text">Lorem Ipsum</h4>
+                  </a>
+                  <span class="font__family-montserrat font__weight-normal font__size-16 line__height-24 o_default_snippet_text">Team Leader</span>
+                </div>
+                <section class="brk-team-persone-circle__bg lazyloaded" data-bg="http://wp.berserk.nikadevs.com/wp-content/uploads/2017/10/marry.jpg" style="background-image: url(/sh_corpomate_theme/static/src/img/8.jpg);">
+                  <span class="brk-team-persone-circle__bg-overlay">
+                    <section class="before brk-base-bg-gradient-90deg"/>
+                    <svg viewbox="0 0 270 37">
+                      <path d="M270,37H0V0A267.6,267.6,0,0,0,135.53,36.5,267.52,267.52,0,0,0,270,0Z" fill="rgb(255, 255, 255)"/>
+                    </svg>
+                  </span>
+                  <ul class="brk-team-persone-circle__contacts">
+                    <li>
+                      <span class="fa fa-instagram" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Instagram</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-google-plus" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Google+</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-youtube" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Youtube</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-vimeo" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Vimeo</a>
+                    </li>
+                  </ul>
+                </section>
+                <div class="brk-team-persone-circle__social-links">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-vk" aria-hidden="true"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-linkedin" aria-hidden="true"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-skype" aria-hidden="true"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-dribbble" aria-hidden="true"/>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 sh_disable_hover_part sh_animation_part">
+              <article class="brk-team-persone-circle brk-base-box-shadow text-center">
+                <div class="brk-team-persone-circle__name-position">
+                  <a href="#">
+                    <h4 class="font__family-montserrat font__weight-bold font__size-18 o_default_snippet_text">Lorem Ipsum</h4>
+                  </a>
+                  <span class="font__family-montserrat font__weight-normal font__size-16 line__height-24 o_default_snippet_text">Team Leader</span>
+                </div>
+                <section class="brk-team-persone-circle__bg lazyloaded" data-bg="http://wp.berserk.nikadevs.com/wp-content/uploads/2017/10/marry.jpg" style="background-image: url(/sh_corpomate_theme/static/src/img/9.jpg);">
+                  <span class="brk-team-persone-circle__bg-overlay">
+                    <section class="before brk-base-bg-gradient-90deg"/>
+                    <svg viewbox="0 0 270 37">
+                      <path d="M270,37H0V0A267.6,267.6,0,0,0,135.53,36.5,267.52,267.52,0,0,0,270,0Z" fill="rgb(255, 255, 255)"/>
+                    </svg>
+                  </span>
+                  <ul class="brk-team-persone-circle__contacts">
+                    <li>
+                      <span class="fa fa-instagram" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Instagram</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-google-plus" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Google+</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-youtube" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Youtube</a>
+                    </li>
+                    <li>
+                      <span class="fa fa-vimeo" aria-hidden="true"/>
+                      <a href="#" class="o_default_snippet_text">Vimeo</a>
+                    </li>
+                  </ul>
+                </section>
+                <div class="brk-team-persone-circle__social-links">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-vk" aria-hidden="true"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-linkedin" aria-hidden="true"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-skype" aria-hidden="true"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fa fa-dribbble" aria-hidden="true"/>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+          
+      
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+
+

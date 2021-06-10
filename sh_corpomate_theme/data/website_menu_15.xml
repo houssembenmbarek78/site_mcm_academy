@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+
+
+
+
+
+
+
+    
+        <!-- 
+        ===============
+        ABOUT US PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- ABOUT US PAGE 15 -->
+        <record id="sh_corpomate_page_about_us_15" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/aboutus15</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_about_us_15"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_about_us_15" model="website.menu">
+            <field name="name">about us</field>
+            <field name="url">/aboutus15</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">3</field>
+            <field name="page_id" ref="sh_corpomate_page_about_us_15" />            
+        </record>   
+
+
+
+    
+        <!-- 
+        ===============
+        HOME PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- HOME PAGE 15 -->
+        <record id="sh_corpomate_page_home_15" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/home15</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_home_15"/>
+            <field name="website_indexed" eval="False"/>
+            
+                        
+        </record>
+        
+
+        <record id="sh_corpomate_menu_home_15" model="website.menu">
+            <field name="name">home</field>
+            <field name="url">/home15</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">1</field>
+            <field name="page_id" ref="sh_corpomate_page_home_15" />               
+        </record>
+        
+        
+         <!-- 
+        ===============
+        SERVICE PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- SERVICE PAGE 15 -->
+        <record id="sh_corpomate_page_service_15" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/service15</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_service_15"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_service_15" model="website.menu">
+            <field name="name">service</field>
+            <field name="url">/service15</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">4</field>
+            <field name="page_id" ref="sh_corpomate_page_service_15" />               
+        </record>   
+            
+        <!-- 
+        ===============
+        CONTACT US PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- CONTACT US PAGE 15 -->
+        <record id="sh_corpomate_page_contact_us_15" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/contactus15</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_contact_us_15"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_contact_us_15" model="website.menu">
+            <field name="name">contact us</field>
+            <field name="url">/contactus15</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">6</field>
+            <field name="page_id" ref="sh_corpomate_page_contact_us_15" />                
+        </record> 
+        
+        
+       
+  
+        
+       
+            
+        
+    </data>
+
+</odoo>        
+        

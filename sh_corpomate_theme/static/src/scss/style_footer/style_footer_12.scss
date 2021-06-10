@@ -1,0 +1,45 @@
+/*sh_footer*/
+#sh_footer{background: #252525;border: 0;padding: 50px 0 30px;margin-top: 30px;}
+#sh_footer .sh_newslatter{position: relative;top: -100px;background: $-color-secondary;display: flex;justify-content: space-between;align-items: center;padding: 20px;}
+#sh_footer .sh_newslatter h3{margin-bottom: 10px;font-size: 20px;font-weight: 600;text-transform: uppercase;letter-spacing: 1px;color: #fff;}
+#sh_footer .sh_newslatter p{margin: 0;font-size: 14px;color: #fff;}
+#sh_footer .sh_newslatter .sh_right .js_subscribe_email{border-radius: 0;background: #252525;border-color: #252525;color: #fff;}
+#sh_footer .sh_newslatter .sh_right .js_subscribe .input-group-append a{background: #111;border-color: #111;padding-left: 20px;padding-right: 20px;font-weight: 600;font-size: 14px;}
+#sh_footer .sh_content .navbar-brand img{width: auto;height: 2.3125rem;max-width: none;margin-bottom: 20px;}
+#sh_footer .sh_content.sh_first p{color: #fff;font-size: 14px;margin-bottom: 20px;}
+#sh_footer .sh_address{display: flex;background: #111;padding: 15px 25px;align-items: center;}
+#sh_footer .sh_address .sh_icon span{font-size: 30px;color: $-color-secondary;}
+#sh_footer .sh_address .sh_des{padding-left: 20px;}
+#sh_footer .sh_address .sh_des h6{text-transform: capitalize;font-size: 18px;font-weight: 600;color: #fff;}
+#sh_footer .sh_address .sh_des p{margin: 0;font-size: 14px;color: #fff;}
+#sh_footer .sh_contact{display: flex;background: #111;padding: 15px 25px;align-items: center;}
+#sh_footer .sh_contact .sh_icon span{font-size: 30px;color: $-color-secondary;}
+#sh_footer .sh_contact .sh_des{padding-left: 20px;}
+#sh_footer .sh_contact .sh_des h6{text-transform: capitalize;font-size: 18px;font-weight: 600;color: #fff;}
+#sh_footer .sh_contact .sh_des p,
+#sh_footer .sh_contact .sh_des p a,
+#sh_footer .sh_address .sh_des div.w-100{margin: 0;font-size: 14px;color: #fff;}
+#sh_footer .sh_email{display: flex;background: #111;padding: 15px 25px;align-items: center;}
+#sh_footer .sh_email .sh_icon span{font-size: 30px;color: $-color-secondary;}
+#sh_footer .sh_email .sh_des{padding-left: 20px;}
+#sh_footer .sh_email .sh_des h6{text-transform: capitalize;font-size: 18px;font-weight: 600;color: #fff;}
+#sh_footer .sh_email .sh_des p{margin: 0;font-size: 14px;color: #fff;}
+#sh_footer .sh_content h4{color: #fff;font-size: 22px;text-transform: capitalize;font-weight: 600;letter-spacing: 1px;margin-bottom: 40px;}
+#sh_footer .sh_content ul{padding: 0;margin: 0;}
+#sh_footer .sh_content ul li a{text-transform: capitalize;color: #fff;padding-bottom: 5px;display: block;}
+#sh_footer .sh_content.sh_second{margin-bottom: 35px;}
+#sh_footer .sh_content.sh_last p{color: #fff;}
+#sh_footer .sh_content.sh_last h5{color: #fff;font-size: 16px;}
+#sh_footer .sh_content.sh_last h5 b{padding-right: 5px;}
+#sh_footer .sh_content.sh_last{margin-bottom: 35px;}
+#sh_footer .sh_email .sh_des a{color: #fff;}
+
+#sh_footer .sh_address,#sh_footer .sh_contact,#sh_footer .sh_email{min-height: 165px;}
+
+@media (max-width: 991px){
+  #sh_footer .sh_content.sh_last{margin-top: 30px;}
+}
+@media (max-width: 768px){
+  #sh_footer .sh_newslatter{display: block;}
+  #sh_footer .sh_newslatter .sh_left{margin-bottom: 30px;}
+}

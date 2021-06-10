@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<!-- Horizontal News Template 1 -->
+	<template id="sh_nb_notice_board_horizontal_tmpl_1" name="Latest News 1">    
+	    
+	    <section id="sh_nb_notice_board_main_horizontal_section_1" style="background:rgb(0, 160, 157);">
+	        <div class="container-fluid">
+            	<div class="row">
+            	<div class="col-md-2 col-sm-3 col-4 left_box">
+            	<span id="sh_nbs_heading">Latest News</span>
+            	</div>
+            	<div class="col-md-10 col-sm-9 col-8 right_box">
+		      	<marquee  class="sh_nb_notice_board_main_horizontal_marquee_cls_1" direction = "left" onmouseover="this.stop();" onmouseout="this.start();"></marquee>
+				</div>
+				</div>
+	        </div>
+	    </section>
+	    
+	</template>
+	
+
+	<!-- Horizontal News Template 2 -->
+	<template id="sh_nb_notice_board_horizontal_tmpl_2" name="Latest News 2">    
+	    
+	 <section id="sh_nb_notice_board_main_horizontal_section_2" class="animation-bg bg-primary">
+        <div class="container-fluid" style="padding:0;">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-3 col-lg-2" style="margin-top:-5px;padding:0;background-color: rgb(0, 112, 109);">  
+                    <a type="submit" class="btn btn-default btn-sm btn-secret">Breaking News</a>
+                </div>
+                <div class="col-8 col-sm-9 col-md-9 col-lg-10" style="margin-top: -5px;padding-top: 5px;">
+                <marquee class="sh_nb_notice_board_main_horizontal_marquee_cls_2" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+
+                </marquee>
+               </div>
+            </div>
+        </div>
+    </section>
+	    
+	</template>
+	
+	<!-- Horizontal News Template 3 -->
+	<template id="sh_nb_notice_board_horizontal_tmpl_3" name="Latest News 3">    
+	    
+		<section id="sh_nb_notice_board_main_horizontal_section_3" class="bg-primary">
+		  <div class="container-fluid">
+		    <div class="row">
+		       <div class="col-md-3 col-sm-3 col-4" style="padding: 0;">
+		          <div class="news_bg">
+		              <span>Breaking News</span>
+		          </div>
+		          </div>
+		          <div class="col-md-9 col-sm-9 col-8" style="padding-left: 2%;">
+		          <marquee class="sh_nb_notice_board_main_horizontal_marquee_cls_3" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+
+		          </marquee>     
+		         </div>
+		       </div>
+		    </div>
+		 </section>  
+	    
+	</template>
+	
+
+	<!-- Vertical News Template 1 -->
+	<template id="sh_nb_notice_board_vertical_tmpl_1" name="Latest News 4">    
+	    
+		<section id="sh_nb_notice_board_main_vertical_section_1" class="bg-primary">
+	        <div class="container-fluid" style="padding:0;">
+	            <div class="sh_vertical_main row" style="margin:0;">
+	            	<div class="sh_vertical_title col-lg-12" style="background:rgb(78, 52, 46);">
+	            	    <span>Latest News</span>
+	            	</div>
+	            	<marquee class="sh_nb_notice_board_main_vertical_marquee_cls_1 sh_vertical_marquee col-lg-12" direction = "left" onmouseover="this.stop();" onmouseout="this.start();">
+	            	   
+	            	</marquee> 
+	             </div>  
+	        </div>
+		 </section>  
+	    
+	</template>
+
+		    
+	<!-- Vertical News Template 2 -->
+	<template id="sh_nb_notice_board_vertical_tmpl_2" name="Latest News 5">    
+	    
+		<section id="sh_nb_notice_board_main_vertical_section_2" class="bg-beta">
+
+		     <div class="container-fluid row" style="margin:0;">
+		         <div class="sh_vertical_news_title col-lg-12">
+		             <span>Breaking News</span>
+		         </div>
+		
+		        <marquee class="sh_nb_notice_board_main_vertical_marquee_cls_2 sh_vertical_marquee col-lg-12" direction = "left" onmouseover="this.stop();" onmouseout="this.start();">
+
+		        </marquee>
+		
+		     </div>
+
+		 </section>  
+	    
+	</template>		    
+		  
+	    
+
+
+	<!-- Vertical News Template 3 -->
+	<template id="sh_nb_notice_board_vertical_tmpl_3" name="Latest News 6">    
+	    
+		<section id="sh_nb_notice_board_main_vertical_section_3" class="bg-primary">
+
+		     <div class="container-fluid row" style="padding:0;margin:0;">
+		         <div class="sh_vertical_news_title col-lg-12" style="background:rgb(0, 84, 82);">
+		             <span>Breaking News</span>
+		         </div>
+		
+		        <marquee class="sh_nb_notice_board_main_vertical_marquee_cls_3 col-lg-12" direction = "left" onmouseover="this.stop();" onmouseout="this.start();">
+
+		        </marquee>
+		
+		     </div>
+
+		 </section>  
+	    
+	</template>		
+	
+		
+	
+	<!-- Snippets left panel -->
+	<template id="sh_nb_notice_board_website_snippets" inherit_id="website.snippets" name="Latest News">
+	  <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+	  
+			<!-- Horizontal -->
+	  	  <t t-snippet="sh_corpomate_theme.sh_nb_notice_board_horizontal_tmpl_1" 
+	   	   	t-thumbnail="/sh_corpomate_theme/static/src/img/extra_addons/h_block_1.png"/>     
+
+	  	  <t t-snippet="sh_corpomate_theme.sh_nb_notice_board_horizontal_tmpl_2" 
+	   	   	t-thumbnail="/sh_corpomate_theme/static/src/img/extra_addons/h_block_2.png"/>  
+	   	   	
+	  	  <t t-snippet="sh_corpomate_theme.sh_nb_notice_board_horizontal_tmpl_3" 
+	   	   	t-thumbnail="/sh_corpomate_theme/static/src/img/extra_addons/h_block_3.png"/>  
+	   	   	
+	   	   	<!-- Vertical -->
+	  	  <t t-snippet="sh_corpomate_theme.sh_nb_notice_board_vertical_tmpl_1" 
+	   	   	t-thumbnail="/sh_corpomate_theme/static/src/img/extra_addons/v_block_1.png"/>
+	   	   	
+	  	  <t t-snippet="sh_corpomate_theme.sh_nb_notice_board_vertical_tmpl_2" 
+	   	   	t-thumbnail="/sh_corpomate_theme/static/src/img/extra_addons/v_block_2.png"/> 
+	   	   	
+	  	  <t t-snippet="sh_corpomate_theme.sh_nb_notice_board_vertical_tmpl_3" 
+	   	   	t-thumbnail="/sh_corpomate_theme/static/src/img/extra_addons/v_block_3.png"/>  		   	   	 	   	   	   
+	   	   	
+ 	                            
+	  </xpath>
+	</template>	
+
+	<!-- snippet options -->
+	<template id="sh_nb_notice_board_snippet_options" inherit_id="website.snippet_options">	   	     
+	    
+	    <xpath expr="//div" position="after">
+			
+			<!-- horizontal snippet options 1 -->
+	        <div data-js="sh_nb_notice_board_horizontal_sec_editor_js_1" 
+	        	data-selector="#sh_nb_notice_board_main_horizontal_section_1">
+	            <we-collapse-area>
+	                <we-toggler>News Direction</we-toggler>
+	                <we-collapse>
+	                    <we-button data-direction="newsdir_left">left</we-button>
+	                    <we-button data-direction="newsdir_right">right</we-button>                    
+	                </we-collapse>
+	            </we-collapse-area>   
+	               
+				<we-collapse-area> 
+	                <we-toggler>Number of News</we-toggler>
+		                <we-collapse>
+		                    <we-button data-select-class="newscount_1">1</we-button>
+		                    <we-button data-select-class="newscount_2">2</we-button>
+		                    <we-button data-select-class="newscount_3">3</we-button>
+		                    <we-button data-select-class="newscount_4">4</we-button>
+		                    <we-button data-select-class="newscount_5">5</we-button>
+		                    <we-button data-select-class="newscount_6">6</we-button>
+		                    <we-button data-select-class="newscount_7">7</we-button>
+		                    <we-button data-select-class="newscount_8">8</we-button>
+		                    <we-button data-select-class="newscount_9">9</we-button>
+		                    <we-button data-select-class="newscount_10">10</we-button>
+		                    <we-button data-select-class="newscount_11">11</we-button>
+		                    <we-button data-select-class="newscount_12">12</we-button>
+		                    <we-button data-select-class="newscount_13">13</we-button>
+		                    <we-button data-select-class="newscount_14">14</we-button>
+		                    <we-button data-select-class="newscount_15">15</we-button>
+		                </we-collapse>
+	            </we-collapse-area>
+	        </div>			
+			
+			
+			
+	        
+			<!-- horizontal snippet options 2 -->
+        	<div data-js="sh_nb_notice_board_horizontal_sec_editor_js_2"
+        		data-selector="#sh_nb_notice_board_main_horizontal_section_2">
+            	<we-collapse-area>
+                	<we-toggler>News Direction</we-toggler>
+               		<we-collapse>
+	                    <we-button data-direction="newsdir_left">left</we-button>
+	                    <we-button data-direction="newsdir_right">right</we-button>                    
+               		</we-collapse>
+				</we-collapse-area>
+                
+                <we-collapse-area>
+                	<we-toggler>Number of News</we-toggler>
+               		<we-collapse>
+	                    <we-button data-select-class="newscount_1">1</we-button>
+	                    <we-button data-select-class="newscount_2">2</we-button>
+	                    <we-button data-select-class="newscount_3">3</we-button>
+	                    <we-button data-select-class="newscount_4">4</we-button>
+	                    <we-button data-select-class="newscount_5">5</we-button>
+	                    <we-button data-select-class="newscount_6">6</we-button>
+	                    <we-button data-select-class="newscount_7">7</we-button>
+	                    <we-button data-select-class="newscount_8">8</we-button>
+	                    <we-button data-select-class="newscount_9">9</we-button>
+	                    <we-button data-select-class="newscount_10">10</we-button>
+	                    <we-button data-select-class="newscount_11">11</we-button>
+	                    <we-button data-select-class="newscount_12">12</we-button>
+	                    <we-button data-select-class="newscount_13">13</we-button>
+	                    <we-button data-select-class="newscount_14">14</we-button>
+	                    <we-button data-select-class="newscount_15">15</we-button>
+               		</we-collapse>
+            	</we-collapse-area>
+        	</div>			
+						
+
+	        
+	        
+			<!-- horizontal snippet options 3 -->
+			<div data-js='sh_nb_notice_board_horizontal_sec_editor_js_3'
+				data-selector="#sh_nb_notice_board_main_horizontal_section_3">
+	            	
+	            <we-collapse-area>
+                	<we-toggler>News Direction</we-toggler>
+               		<we-collapse>
+	                    <we-button data-direction="newsdir_left">left</we-button>
+	                    <we-button data-direction="newsdir_right">right</we-button>                    
+               		</we-collapse>
+				</we-collapse-area>
+                
+                <we-collapse-area>
+                	<we-toggler>Number of News</we-toggler>
+               		<we-collapse>
+	                    <we-button data-select-class="newscount_1">1</we-button>
+	                    <we-button data-select-class="newscount_2">2</we-button>
+	                    <we-button data-select-class="newscount_3">3</we-button>
+	                    <we-button data-select-class="newscount_4">4</we-button>
+	                    <we-button data-select-class="newscount_5">5</we-button>
+	                    <we-button data-select-class="newscount_6">6</we-button>
+	                    <we-button data-select-class="newscount_7">7</we-button>
+	                    <we-button data-select-class="newscount_8">8</we-button>
+	                    <we-button data-select-class="newscount_9">9</we-button>
+	                    <we-button data-select-class="newscount_10">10</we-button>
+	                    <we-button data-select-class="newscount_11">11</we-button>
+	                    <we-button data-select-class="newscount_12">12</we-button>
+	                    <we-button data-select-class="newscount_13">13</we-button>
+	                    <we-button data-select-class="newscount_14">14</we-button>
+	                    <we-button data-select-class="newscount_15">15</we-button>
+               		</we-collapse>
+            	</we-collapse-area>
+	        </div>	 
+	        
+	        
+	        
+			<!-- Vertical snippet options 1 -->
+			<div data-js='sh_nb_notice_board_vertical_sec_editor_js_1'
+	            data-selector="#sh_nb_notice_board_main_vertical_section_1">
+	            <we-collapse-area>
+                	<we-toggler>News Direction</we-toggler>
+               		<we-collapse>
+	                    <we-button data-direction="newsdir_left">left</we-button>
+	                    <we-button data-direction="newsdir_right">right</we-button>                    
+               		</we-collapse>
+				</we-collapse-area>
+                
+                <we-collapse-area>
+                	<we-toggler>Number of News</we-toggler>
+               		<we-collapse>
+	                    <we-button data-select-class="newscount_1">1</we-button>
+	                    <we-button data-select-class="newscount_2">2</we-button>
+	                    <we-button data-select-class="newscount_3">3</we-button>
+	                    <we-button data-select-class="newscount_4">4</we-button>
+	                    <we-button data-select-class="newscount_5">5</we-button>
+	                    <we-button data-select-class="newscount_6">6</we-button>
+	                    <we-button data-select-class="newscount_7">7</we-button>
+	                    <we-button data-select-class="newscount_8">8</we-button>
+	                    <we-button data-select-class="newscount_9">9</we-button>
+	                    <we-button data-select-class="newscount_10">10</we-button>
+	                    <we-button data-select-class="newscount_11">11</we-button>
+	                    <we-button data-select-class="newscount_12">12</we-button>
+	                    <we-button data-select-class="newscount_13">13</we-button>
+	                    <we-button data-select-class="newscount_14">14</we-button>
+	                    <we-button data-select-class="newscount_15">15</we-button>
+               		</we-collapse>
+            	</we-collapse-area>	            	
+	            
+	            
+	        </div>	
+	        
+			<!-- Vertical snippet options 2 -->
+			<div data-js='sh_nb_notice_board_vertical_sec_editor_js_2'
+	            data-selector="#sh_nb_notice_board_main_vertical_section_2">
+	            <we-collapse-area>
+                	<we-toggler>News Direction</we-toggler>
+               		<we-collapse>
+	                    <we-button data-direction="newsdir_left">left</we-button>
+	                    <we-button data-direction="newsdir_right">right</we-button>                    
+               		</we-collapse>
+				</we-collapse-area>
+                
+                <we-collapse-area>
+                	<we-toggler>Number of News</we-toggler>
+               		<we-collapse>
+	                    <we-button data-select-class="newscount_1">1</we-button>
+	                    <we-button data-select-class="newscount_2">2</we-button>
+	                    <we-button data-select-class="newscount_3">3</we-button>
+	                    <we-button data-select-class="newscount_4">4</we-button>
+	                    <we-button data-select-class="newscount_5">5</we-button>
+	                    <we-button data-select-class="newscount_6">6</we-button>
+	                    <we-button data-select-class="newscount_7">7</we-button>
+	                    <we-button data-select-class="newscount_8">8</we-button>
+	                    <we-button data-select-class="newscount_9">9</we-button>
+	                    <we-button data-select-class="newscount_10">10</we-button>
+	                    <we-button data-select-class="newscount_11">11</we-button>
+	                    <we-button data-select-class="newscount_12">12</we-button>
+	                    <we-button data-select-class="newscount_13">13</we-button>
+	                    <we-button data-select-class="newscount_14">14</we-button>
+	                    <we-button data-select-class="newscount_15">15</we-button>
+               		</we-collapse>
+            	</we-collapse-area>				
+	        </div>	
+	        
+	        
+			<!-- Vertical snippet options 3 -->
+			<div data-js='sh_nb_notice_board_vertical_sec_editor_js_3'
+	            data-selector="#sh_nb_notice_board_main_vertical_section_3">
+	            <we-collapse-area>
+                	<we-toggler>News Direction</we-toggler>
+               		<we-collapse>
+	                    <we-button data-direction="newsdir_left">left</we-button>
+	                    <we-button data-direction="newsdir_right">right</we-button>                    
+               		</we-collapse>
+				</we-collapse-area>
+                
+                <we-collapse-area>
+                	<we-toggler>Number of News</we-toggler>
+               		<we-collapse>
+	                    <we-button data-select-class="newscount_1">1</we-button>
+	                    <we-button data-select-class="newscount_2">2</we-button>
+	                    <we-button data-select-class="newscount_3">3</we-button>
+	                    <we-button data-select-class="newscount_4">4</we-button>
+	                    <we-button data-select-class="newscount_5">5</we-button>
+	                    <we-button data-select-class="newscount_6">6</we-button>
+	                    <we-button data-select-class="newscount_7">7</we-button>
+	                    <we-button data-select-class="newscount_8">8</we-button>
+	                    <we-button data-select-class="newscount_9">9</we-button>
+	                    <we-button data-select-class="newscount_10">10</we-button>
+	                    <we-button data-select-class="newscount_11">11</we-button>
+	                    <we-button data-select-class="newscount_12">12</we-button>
+	                    <we-button data-select-class="newscount_13">13</we-button>
+	                    <we-button data-select-class="newscount_14">14</we-button>
+	                    <we-button data-select-class="newscount_15">15</we-button>
+               		</we-collapse>
+            	</we-collapse-area>				
+	        </div>	 	         	         		        	        
+	                
+	        
+	    </xpath>
+	</template>
+	
+</odoo>
+
+
+
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- project PAGE 12 -->
+	<template id="sh_corpomate_tmpl_project_12" name="project">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+			
+				
+			  <section id="sh_corpomate_theme_section_306" class="s_banner parallax s_parallax_no_overflow_hidden" data-name="project Snippet 1(Banner)" style="background-image: none;">
+    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/theme12/building.png'); background-position: 50% 0;" />
+    <div class="container">
+        <div class="sh_banner">
+            <div class="sh_title sh_animation_part">
+                <h4 class="o_default_snippet_text">Projects</h4>
+                <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur.</p>
+                <div class="sh_breadcrumb o_default_snippet_text"><a href="/" class="o_default_snippet_text">Home</a> / Project</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_307" class="sh_animation_part" data-name="about 12 snippet 2">
+    <div class="container">
+        <div class="sh_text_image_12">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="left_text">
+                        <h3 class="o_default_snippet_text">Lorem ipsum dolor sit amet consectetur <span class="o_default_snippet_text">adipiscing</span> elit</h3>
+                        <p class="o_default_snippet_text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        </p>
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="btn btn_rdm o_default_snippet_text">Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="right_image">
+                        <div class="behind_img">
+                            <img src="/sh_corpomate_theme/static/src/img/theme12/text_image1.png" alt="Image" />
+                        </div>
+                        <div class="front_img">
+                            <img src="/sh_corpomate_theme/static/src/img/theme12/text_image2.png" alt="Image" />
+                        </div>
+                        <div class="video_btn">
+                            <a href="#" class="btn btn_rdm o_default_snippet_text"><span class="fa fa-play-circle-o" /> Play Video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+			  
+			
+						
+	      </div>
+	    </t>
+	</template>	
+<!-- project PAGE 12 -->
+
+</odoo>
+
+
+
+

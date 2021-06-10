@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- ABOUT US PAGE 9 -->
+	<template id="sh_corpomate_tmpl_about_us_9" name="about us">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			
+
+
+      <section id="sh_corpomate_theme_section_243" class="parallax s_parallax_no_overflow_hidden bg-black-75" data-name="Banner" style="background-image: none;" data-scroll-background-ratio="0">
+        <span class="s_parallax_bg oe_img_bg" style="background-image: url(&quot;/sh_corpomate_theme/static/src/img/theme9/about.jpg&quot;); background-position: 50% 0px;"/>
+        <div class="container">
+          <div class="s_nb_column_fixed">
+            <div class="rounded pt32 pb32">
+              <h2 class="o_default_snippet_text">About Us</h2>
+              <h4 class="o_default_snippet_text"><a href="/" class="o_default_snippet_text">Home</a><span class="o_default_snippet_text">||</span>About Us</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_244" data-name="img text">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="sh_content">
+                <h2 class="o_default_snippet_text">Our Practice Area</h2>
+                <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                <ul>
+                  <li>
+                    <div class="sh_icon">
+                      <span class="fa fa-paper-plane-o"/>
+                    </div>
+                    <div class="sh_des">
+                      <h4 class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                      <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sh_icon">
+                      <span class="fa fa-paper-plane-o"/>
+                    </div>
+                    <div class="sh_des">
+                      <h4 class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sh_icon">
+                      <span class="fa fa-paper-plane-o"/>
+                    </div>
+                    <div class="sh_des">
+                      <h4 class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sh_icon">
+                      <span class="fa fa-paper-plane-o"/>
+                    </div>
+                    <div class="sh_des">
+                      <h4 class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="sh_img">
+                <img src="/sh_corpomate_theme/static/src/img/theme9/5.png"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_245" data-name="call to action">
+        <div class="container">
+          <div class="sh_content">
+            <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+            <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            <a href="/contactus9" class="btn o_default_snippet_text">Discover More</a>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_246" data-name="Practice Area">
+    <div class="container">
+        <div class="sh_title">
+            <h2 class="o_default_snippet_text">Our Practice Area</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <div class="sh_cotent">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/theme9/2.png" />
+                    </div>
+                    <div class="sh_des">
+                        <h4 class="o_default_snippet_text">Criminal Case &amp;amp; Attorney</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="sh_cotent">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/theme9/2.png" />
+                    </div>
+                    <div class="sh_des">
+                        <h4 class="o_default_snippet_text">Criminal Case &amp;amp; Attorney</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="sh_cotent">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/theme9/2.png" />
+                    </div>
+                    <div class="sh_des">
+                        <h4 class="o_default_snippet_text">Criminal Case &amp;amp; Attorney</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+      <section id="sh_corpomate_theme_section_247" data-name="Contact Us">
+        <div class="container">
+          <div class="sh_content">
+            <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+            <div class="sh_btn">
+              <a href="/contactus9" class="btn o_default_snippet_text">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+			
+	      </div>
+	    </t>
+	</template>	
+<!-- ABOUT US PAGE 9 -->
+
+</odoo>
+
+
+
+

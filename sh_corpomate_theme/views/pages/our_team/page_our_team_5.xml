@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- OUR TEAM 5 -->
+	<template id="sh_corpomate_tmpl_our_team_5" name="our team">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			
+
+          <section id="sh_corpomate_theme_section_119" class="home-area bg-item margin-top-space-2" style="background-image: url('/sh_corpomate_theme/static/src/img/banner1.jpg')">
+    <style class="o_default_snippet_text">
+        .navbar-light {
+            background: transparent !important;
+            z-index: 1;
+        }
+        
+        .navbar-light #top_menu_collapse .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+        
+        .o_affix_enabled .navbar-light {
+            background: transparent !important;
+        }
+        
+        @media (max-width: 768px) {
+            .navbar-light {
+                background: #fff !important;
+                z-index: 1;
+            }
+            .navbar-light #top_menu_collapse .navbar-nav .nav-link {
+                color: #585b60 !important;
+            }
+            .o_affix_enabled .navbar-light {
+                background-color: #fff !important;
+            }
+        }
+    </style>
+    <div class="bg-overlay-4" />
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 mx-auto">
+                <div class="banner-content text-center">
+                    <h1>Our team</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb align-items-center">
+                            <li class="breadcrumb-item">
+                                <a href="index.html" class="o_default_snippet_text">HOME</a>
+                                <span class="fa fa-chevron-right" />
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">our team</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-shape">
+        <img class="img-fluid" src="/sh_corpomate_theme/static/src/img/bg_home_shape.png" alt="bottom-shape image" />
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_139">
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6 m-30px-b sh_animation_part">
+                            <div class="our-team-01">
+                                <div class="team-img theme-after">
+                                    <div class="img">
+                                        <img src="/sh_corpomate_theme/static/src/img/home5_team_2.jpg" title="" alt="" />
+                                    </div>
+                                </div>
+                                <div class="team-info">
+                                    <h6 class="theme-color o_default_snippet_text">Lorem ipsum</h6>
+                                    <p class="o_default_snippet_text">Lorem ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 m-30px-b sh_animation_part">
+                            <div class="our-team-01">
+                                <div class="team-img theme-after">
+                                    <div class="img">
+                                        <img src="/sh_corpomate_theme/static/src/img/home5_team_1.jpg" title="" alt="" />
+                                    </div>
+                                </div>
+                                <div class="team-info">
+                                    <h6 class="theme-color o_default_snippet_text">Lorem ipsum</h6>
+                                    <p class="o_default_snippet_text">Lorem ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 m-30px-b sh_animation_part">
+                            <div class="our-team-01">
+                                <div class="team-img theme-after">
+                                    <div class="img">
+                                        <img src="/sh_corpomate_theme/static/src/img/home5_team_4.jpg" title="" alt="" />
+                                    </div>
+                                </div>
+                                <div class="team-info">
+                                    <h6 class="theme-color o_default_snippet_text">Lorem ipsum</h6>
+                                    <p class="o_default_snippet_text">Lorem ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 m-30px-b sh_animation_part">
+                            <div class="our-team-01">
+                                <div class="team-img theme-after">
+                                    <div class="img">
+                                        <img src="/sh_corpomate_theme/static/src/img/home5_team_3.jpg" title="" alt="" />
+                                    </div>
+                                </div>
+                                <div class="team-info">
+                                    <h6 class="theme-color o_default_snippet_text">Lorem ipsum</h6>
+                                    <p class="o_default_snippet_text">Lorem ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 m-30px-b sh_animation_part">
+                            <div class="our-team-01">
+                                <div class="team-img theme-after">
+                                    <div class="img">
+                                        <img src="/sh_corpomate_theme/static/src/img/home5_team_2.jpg" title="" alt="" />
+                                    </div>
+                                </div>
+                                <div class="team-info">
+                                    <h6 class="theme-color o_default_snippet_text">Stefan Harary</h6>
+                                    <p class="o_default_snippet_text">CTO &amp;amp; Senior Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 m-30px-b sh_animation_part">
+                            <div class="our-team-01">
+                                <div class="team-img theme-after">
+                                    <div class="img">
+                                        <img src="/sh_corpomate_theme/static/src/img/home5_team_1.jpg" title="" alt="" />
+                                    </div>
+                                </div>
+                                <div class="team-info">
+                                    <h6 class="theme-color o_default_snippet_text">Lorem ipsum</h6>
+                                    <p class="o_default_snippet_text">Lorem ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 m-30px-b sh_animation_part">
+                            <div class="our-team-01">
+                                <div class="team-img theme-after">
+                                    <div class="img">
+                                        <img src="/sh_corpomate_theme/static/src/img/home5_team_2.jpg" title="" alt="" />
+                                    </div>
+                                </div>
+                                <div class="team-info">
+                                    <h6 class="theme-color o_default_snippet_text">Lorem ipsum</h6>
+                                    <p class="o_default_snippet_text">Lorem ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 m-30px-b sh_animation_part">
+                            <div class="our-team-01">
+                                <div class="team-img theme-after">
+                                    <div class="img">
+                                        <img src="/sh_corpomate_theme/static/src/img/home5_team_1.jpg" title="" alt="" />
+                                    </div>
+                                </div>
+                                <div class="team-info">
+                                    <h6 class="theme-color o_default_snippet_text">Lorem ipsum</h6>
+                                    <p class="o_default_snippet_text">Lorem ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<!-- <section id="sh_corpomate_theme_section_140">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 sh_animation_part">
+                <div class="sh_team">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/home5_team_1.jpg" />
+                        <section class="sh_media_list">
+                            <li>
+                                <a href="#" class="btn btn-primary">
+                                    <span class="fa fa-facebook" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-primary">
+                                    <span class="fa fa-twitter" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-primary">
+                                    <span class="fa fa-google-plus" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-primary">
+                                    <span class="fa fa-linkedin" />
+                                </a>
+                            </li>
+                        </section>
+                    </div>
+                    <section class="sh_team_name">
+                        <h6 class="o_default_snippet_text">Lorem Ipsum</h6>
+                        <span class="o_default_snippet_text">Lorem Ipsum</span>
+                    </section>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 sh_animation_part">
+                <div class="sh_team">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/home5_team_2.jpg" />
+                        <section class="sh_media_list">
+                            <li>
+                                <a href="#" class="btn btn-primary">
+                                    <span class="fa fa-facebook" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-primary">
+                                    <span class="fa fa-twitter" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-primary">
+                                    <span class="fa fa-google-plus" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-primary">
+                                    <span class="fa fa-linkedin" />
+                                </a>
+                            </li>
+                        </section>
+                    </div>
+                    <section class="sh_team_name">
+                        <h6 class="o_default_snippet_text">Lorem Ipsum</h6>
+                        <span class="o_default_snippet_text">Lorem Ipsum</span>
+                    </section>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 sh_animation_part">
+                <div class="sh_team">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/home5_team_3.jpg" />
+                        <section class="sh_media_list">
+                            <li>
+                                <a href="#" class="btn btn-primary">
+                                    <span class="fa fa-facebook" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-primary">
+                                    <span class="fa fa-twitter" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-primary">
+                                    <span class="fa fa-google-plus" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-primary">
+                                    <span class="fa fa-linkedin" />
+                                </a>
+                            </li>
+                        </section>
+                    </div>
+                    <section class="sh_team_name">
+                        <h6 class="o_default_snippet_text">Lorem Ipsum</h6>
+                        <span class="o_default_snippet_text">Lorem Ipsum</span>
+                    </section>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 sh_animation_part">
+                <div class="sh_team">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/home5_team_4.jpg" />
+                        <section class="sh_media_list">
+                            <li>
+                                <a href="#" class="btn btn-primary">
+                                    <span class="fa fa-facebook" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-primary">
+                                    <span class="fa fa-twitter" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-primary">
+                                    <span class="fa fa-google-plus" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-primary">
+                                    <span class="fa fa-linkedin" />
+                                </a>
+                            </li>
+                        </section>
+                    </div>
+                    <section class="sh_team_name">
+                        <h6 class="o_default_snippet_text">Lorem Ipsum</h6>
+                        <span class="o_default_snippet_text">Lorem Ipsum</span>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+      
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+
+

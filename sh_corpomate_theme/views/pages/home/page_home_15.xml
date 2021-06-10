@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+<!-- HOME PAGE 15 -->
+    <template id="sh_corpomate_tmpl_home_15" name="home">
+        <t t-call="website.layout">
+          <div id="wrap" class="oe_structure">
+
+            
+            
+                <section id="sh_corpomate_theme_section_364" data-snippet="sh_corpomate_theme_tmpl_364" class="o_colored_level" data-name="Banner">
+        <div id="myCarousel1612348509300" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators o_we_no_overlay">
+            <li data-target="#myCarousel1612348509300" data-slide-to="0" class="active"/>
+            <li data-target="#myCarousel1612348509300" data-slide-to="1"/>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item o_colored_level active" style="">
+              <figure>
+                <img src="/sh_corpomate_theme/static/src/img/theme_15/25.jpg" loading="lazy"/>
+                <figcaption class="sh_animation_part">
+                  <div class="sh_content">
+                    <div class="container sh_content_text text-left">
+                      <h3 class="o_default_snippet_text">expert technical support</h3>
+                      <h1 class="o_default_snippet_text">reliable services <br/> for your industries</h1>
+                      <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ipsum is simply dummy text of the printing</p>
+                      <a href="#" class="sh_more_btn btn btn-primary o_default_snippet_text">Discover More </a>
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item o_colored_level" style="">
+              <figure>
+                <img src="/sh_corpomate_theme/static/src/img/theme_15/25.jpg" loading="lazy"/>
+                <figcaption class="sh_animation_part">
+                  <div class="sh_content">
+                    <div class="container sh_content_text text-left">
+                      <h3 class="o_default_snippet_text">expert technical support</h3>
+                      <h1 class="o_default_snippet_text">reliable services <br/> for your industries</h1>
+                      <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ipsum is simply dummy text of the printing</p>
+                      <a href="#" class="sh_more_btn btn btn-primary o_default_snippet_text">Discover More </a>
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <a class="carousel-control-prev o_we_no_overlay" href="#myCarousel1612348509300" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"/>
+            <span class="sr-only o_default_snippet_text">Previous</span>
+          </a>
+          <a class="carousel-control-next o_we_no_overlay" href="#myCarousel1612348509300" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"/>
+            <span class="sr-only o_default_snippet_text">Next</span>
+          </a>
+        </div>
+        <svg viewbox="0 0 100 100" preserveaspectratio="none">
+          <polygon fill="white" points="0,100 100,0 100,100"/>
+        </svg>
+      </section>
+      <section id="sh_corpomate_theme_section_365" class="sh_animation_part o_colored_level" data-snippet="sh_corpomate_theme_tmpl_365" data-name="Key Points">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 o_colored_level">
+              <div class="sh_left_content">
+                <div class="sh_icon">
+                  <span class="fa fa-cog"/>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">lorem ipsum</h4>
+                  <p class="o_default_snippet_text">lorem ipsum dolor sit amet,consecture adip</p>
+                </div>
+              </div>
+              <div class="sh_left_content">
+                <div class="sh_icon">
+                  <span class="fa fa-cog"/>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">lorem ipsum</h4>
+                  <p class="o_default_snippet_text">lorem ipsum dolor sit amet,consecture adip</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 o_colored_level">
+              <div class="sh_middle_content">
+                <div class="sh_icon">
+                  <span class="fa fa-user"/>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">lorem ipsum</h4>
+                  <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 o_colored_level">
+              <div class="sh_left_content">
+                <div class="sh_icon">
+                  <span class="fa fa-cog"/>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">lorem ipsum</h4>
+                  <p class="o_default_snippet_text">lorem ipsum dolor sit amet,consecture adip</p>
+                </div>
+              </div>
+              <div class="sh_left_content">
+                <div class="sh_icon">
+                  <span class="fa fa-truck"/>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">lorem ipsum</h4>
+                  <p class="o_default_snippet_text">lorem ipsum dolor sit amet,consecture adip</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_366" class="sh_animation_part o_colored_level" data-snippet="sh_corpomate_theme_tmpl_366" data-name="about us">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 sh_animation_part o_colored_level">
+              <div class="sh_left_content">
+                <div class="sh_top_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme_15/26.jpg" loading="lazy"/>
+                </div>
+                <div class="sh_bottom_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme_15/31.jpg" loading="lazy"/>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 sh_animation_part o_colored_level">
+              <div class="sh_right_content">
+                <h6 class="o_default_snippet_text">about us</h6>
+                <div class="sh_icon">
+                <span class="fa fa-cog"></span>
+                </div>
+                <h2 class="o_default_snippet_text">lorem ipsum dolor sit amet conseceture</h2>
+                <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/><br/>
+
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <a href="#" class="btn btn-primary o_default_snippet_text">discover more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_367" class="sh_animation_part oe_img_bg o_colored_level" data-snippet="sh_corpomate_theme_tmpl_367" data-name="services" style="background-image: url(&quot;/sh_corpomate_theme/static/src/img/theme_15/30.jpg&quot;);">
+        <div class="container">
+          <div class="sh_title sh_animation_part">
+            <h6 class="o_default_snippet_text">our services</h6>
+            <div class="sh_icon">
+                <span class="fa fa-industry"></span>
+             </div>
+            <h2 class="o_default_snippet_text">lorem ipsum dolor sit </h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4 sh_animation_part o_colored_level">
+              <div class="sh_content">
+                <div class="sh_shape"/>
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme_15/25.jpg" loading="lazy"/>
+                </div>
+                <div class="sh_text">
+                  <h5 class="o_default_snippet_text">lorem ipsum</h5>
+                  <h4 class="o_default_snippet_text">lorem ipsum</h4>
+                  <a href="#" class="btn o_default_snippet_text">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 sh_animation_part o_colored_level">
+              <div class="sh_content">
+                <div class="sh_shape"/>
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme_15/26.jpg" loading="lazy"/>
+                </div>
+                <div class="sh_text">
+                  <h5 class="o_default_snippet_text">lorem ipsum</h5>
+                  <h4 class="o_default_snippet_text">lorem ipsum</h4>
+                  <a href="#" class="btn o_default_snippet_text">view more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 sh_animation_part o_colored_level">
+              <div class="sh_content">
+                <div class="sh_shape"/>
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme_15/28.jpg" loading="lazy"/>
+                </div>
+                <div class="sh_text">
+                  <h5 class="o_default_snippet_text">lorem ipsum</h5>
+                  <h4 class="o_default_snippet_text">lorem ipsum</h4>
+                  <a href="#" class="btn o_default_snippet_text">view more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_368" class="sh_animation_part o_colored_level" data-snippet="sh_corpomate_theme_tmpl_368" data-name="project">
+        <div class="container">
+          <div class="sh_title sh_animation_part">
+            <h6 class="o_default_snippet_text">recent project</h6>
+             <div class="sh_icon">
+                  <span class="fa fa-cog"/>
+                </div>
+            <h2 class="o_default_snippet_text">lorem ipsum dolor sit </h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4 sh_animation_part o_colored_level">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme_15/31.jpg" loading="lazy"/>
+                </div>
+                <div class="sh_text">
+                  <h3 class="o_default_snippet_text">lorem ipsum</h3>
+                  <p class="o_default_snippet_text">lorem ipsum</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 sh_animation_part o_colored_level">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme_15/32.jpg" loading="lazy"/>
+                </div>
+                <div class="sh_text">
+                  <h3 class="o_default_snippet_text">lorem ipsum</h3>
+                  <p class="o_default_snippet_text">lorem ipsum</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 sh_animation_part o_colored_level">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme_15/28.jpg" loading="lazy"/>
+                </div>
+                <div class="sh_text">
+                  <h3 class="o_default_snippet_text">lorem ipsum</h3>
+                  <p class="o_default_snippet_text">lorem ipsum</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="sh_corpomate_theme_section_370" class="js_cls_sh_corpomate_s_counter sh_animation_part oe_img_bg o_colored_level" data-snippet="sh_corpomate_theme_tmpl_370" data-name="counter" style="background-image: url(&quot;/sh_corpomate_theme/static/src/img/theme_15/31.jpg&quot;);">
+        <div class="container">
+          <div class="sh_img">
+            <div class="sh_title sh_animation_part">
+              <h6 class="o_default_snippet_text">client testimonial</h6>
+               <div class="sh_icon">
+                <span class="fa fa-industry"></span>
+             </div>
+              <h2 class="o_default_snippet_text">lorem ipsum dolor sit </h2>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-6 sh_animation_part o_colored_level">
+                <div class="sh_counter">
+                  <h5 class="js_cls_counter_number o_default_snippet_text">126</h5>
+                  <h4 class="o_default_snippet_text">lorem ipsum</h4>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 sh_animation_part o_colored_level">
+                <div class="sh_counter">
+                  <h5 class="js_cls_counter_number o_default_snippet_text">306</h5>
+                  <h4 class="o_default_snippet_text">lorem ipsum</h4>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 sh_animation_part o_colored_level">
+                <div class="sh_counter">
+                  <h5 class="js_cls_counter_number o_default_snippet_text">200</h5>
+                  <h4 class="o_default_snippet_text">lorem ipsum</h4>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 sh_animation_part o_colored_level">
+                <div class="sh_counter">
+                  <h5 class="js_cls_counter_number o_default_snippet_text">123</h5>
+                  <h4 class="o_default_snippet_text">lorem ipsum</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="sh_corpomate_theme_section_371" class="js_cls_sh_corpomate_theme_section_371 sh_animation_part o_colored_level" data-snippet="sh_corpomate_theme_tmpl_371" data-name="testimonial">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 sh_animation_part o_colored_level">
+              <div class="sh_video_btn">
+                <a href="#" class="btn">
+                  <span class="fa fa-play"/>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-9 sh_animation_part o_colored_level">
+              <div id="owl-demo" class="owl-carousel owl-theme">
+                <div class="item">
+                  <div class="sh_content">
+                    <div class="sh_img">
+                      <img src="/sh_corpomate_theme/static/src/img/theme_15/15.png" loading="lazy"/>
+                    </div>
+                    <div class="sh_text">
+                      <h4 class="o_default_snippet_text">lorem ipsum</h4>
+                      <p class="o_default_snippet_text">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="sh_corpomate_theme_section_369" class="sh_animation_part o_colored_level" data-snippet="sh_corpomate_theme_tmpl_369" data-name="team">
+        <div class="container">
+          <div class="sh_title sh_animation_part">
+            <h6 class="o_default_snippet_text">team members</h6>
+            <div class="sh_icon">
+			    <span class="fa fa-users"></span>
+			</div>
+            <h2 class="o_default_snippet_text">lorem ipsum dolor sit </h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4 sh_animation_part o_colored_level">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme_15/13.png" loading="lazy"/>
+                </div>
+                <div class="sh_text">
+                  <h3 class="o_default_snippet_text">lorem ipsum</h3>
+                  <p class="o_default_snippet_text">lorem ipsum</p>
+                  <ul>
+                    <li>
+                      <a href="#" class="btn">
+                        <span class="fa fa-facebook"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn">
+                        <span class="fa fa-twitter"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn">
+                        <span class="fa fa-instagram"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn">
+                        <span class="fa fa-youtube"/>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 sh_animation_part o_colored_level">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme_15/13.png" loading="lazy"/>
+                </div>
+                <div class="sh_text">
+                  <h3 class="o_default_snippet_text">lorem ipsum</h3>
+                  <p class="o_default_snippet_text">lorem ipsum</p>
+                  <ul>
+                    <li>
+                      <a href="#" class="btn">
+                        <span class="fa fa-facebook"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn">
+                        <span class="fa fa-twitter"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn">
+                        <span class="fa fa-instagram"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn">
+                        <span class="fa fa-youtube"/>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 sh_animation_part o_colored_level">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme_15/13.png" loading="lazy"/>
+                </div>
+                <div class="sh_text">
+                  <h3 class="o_default_snippet_text">lorem ipsum</h3>
+                  <p class="o_default_snippet_text">lorem ipsum</p>
+                  <ul>
+                    <li>
+                      <a href="#" class="btn">
+                        <span class="fa fa-facebook"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn">
+                        <span class="fa fa-twitter"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn">
+                        <span class="fa fa-instagram"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn">
+                        <span class="fa fa-youtube"/>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      <section id="sh_corpomate_theme_section_372" class="sh_animation_part o_colored_level" data-snippet="sh_corpomate_theme_tmpl_372" data-name="pricing">
+        <div class="container">
+          <div class="sh_title sh_animation_part">
+            <h6 class="o_default_snippet_text">pricing plans</h6>
+            <div class="sh_icon">
+			    <span class="fa fa-ticket"></span>
+			</div>
+            <h2 class="o_default_snippet_text">lorem ipsum dolor sit </h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4 sh_animation_part o_colored_level">
+              <div class="sh_content">
+                <div class="sh_prise">
+                  <h6 class="o_default_snippet_text">lorem ipsum</h6>
+                  <h2 class="o_default_snippet_text">$ 90.00</h2>
+                </div>
+                <ul>
+                  <li class="o_default_snippet_text">lorem ipsum dolor</li>
+                  <li class="o_default_snippet_text">lorem ipsum dolor</li>
+                  <li class="o_default_snippet_text">lorem ipsum dolor</li>
+                  <li class="o_default_snippet_text">lorem ipsum dolor</li>
+                </ul>
+                <div class="sh_btn">
+                  <a href="#" class="btn o_default_snippet_text">discover more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 sh_animation_part o_colored_level">
+              <div class="sh_content sh_active">
+                <div class="sh_prise">
+                  <h6 class="o_default_snippet_text">lorem ipsum</h6>
+                  <h2 class="o_default_snippet_text">$ 120.00</h2>
+                </div>
+                <ul>
+                  <li class="o_default_snippet_text">lorem ipsum dolor</li>
+                  <li class="o_default_snippet_text">lorem ipsum dolor</li>
+                  <li class="o_default_snippet_text">lorem ipsum dolor</li>
+                  <li class="o_default_snippet_text">lorem ipsum dolor</li>
+                </ul>
+                <div class="sh_btn">
+                  <a href="#" class="btn o_default_snippet_text">discover more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 sh_animation_part o_colored_level">
+              <div class="sh_content">
+                <div class="sh_prise">
+                  <h6 class="o_default_snippet_text">lorem ipsum</h6>
+                  <h2 class="o_default_snippet_text">$ 150.00</h2>
+                </div>
+                <ul>
+                  <li class="o_default_snippet_text">lorem ipsum dolor</li>
+                  <li class="o_default_snippet_text">lorem ipsum dolor</li>
+                  <li class="o_default_snippet_text">lorem ipsum dolor</li>
+                  <li class="o_default_snippet_text">lorem ipsum dolor</li>
+                </ul>
+                <div class="sh_btn">
+                  <a href="#" class="btn o_default_snippet_text">discover more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_373" class="sh_animation_part o_colored_level" data-snippet="sh_corpomate_theme_tmpl_373" data-name="news">
+        <div class="container">
+          <div class="sh_title sh_animation_part">
+            <h6 class="o_default_snippet_text">news &amp;amp; articles</h6>
+            <div class="sh_icon">
+			    <span class="fa fa-newspaper-o"></span>
+			</div>
+            <h2 class="o_default_snippet_text">lorem ipsum dolor sit </h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 sh_animation_part o_colored_level">
+              <div class="sh_right_content sh_animation_part">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme_15/25.jpg" loading="lazy"/>
+                </div>
+                <div class="sh_text">
+                  <span class="o_default_snippet_text">june 17, 2020</span>
+                  <h4 class="o_default_snippet_text">lorem ipsum dolor sit amet</h4>
+                  <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                </div>
+              </div>
+              <div class="sh_right_content sh_animation_part">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme_15/26.jpg" loading="lazy"/>
+                </div>
+                <div class="sh_text">
+                  <span class="o_default_snippet_text">june 17, 2020</span>
+                  <h4 class="o_default_snippet_text">lorem ipsum dolor sit amet</h4>
+                  <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                </div>
+              </div>
+              <div class="sh_right_content sh_animation_part">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme_15/28.jpg" loading="lazy"/>
+                </div>
+                <div class="sh_text">
+                  <span class="o_default_snippet_text">june 17, 2020</span>
+                  <h4 class="o_default_snippet_text">lorem ipsum dolor sit amet</h4>
+                  <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 sh_animation_part o_colored_level">
+              <div class="sh_right_content sh_animation_part">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme_15/31.jpg" loading="lazy"/>
+                </div>
+                <div class="sh_text">
+                  <span class="o_default_snippet_text">june 17, 2020</span>
+                  <h4 class="o_default_snippet_text">lorem ipsum dolor sit amet</h4>
+                  <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                </div>
+              </div>
+              <div class="sh_right_content sh_animation_part">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme_15/32.jpg" loading="lazy"/>
+                </div>
+                <div class="sh_text">
+                  <span class="o_default_snippet_text">june 17, 2020</span>
+                  <h4 class="o_default_snippet_text">lorem ipsum dolor sit amet</h4>
+                  <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                </div>
+              </div>
+              <div class="sh_right_content sh_animation_part">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme_15/25.jpg" loading="lazy"/>
+                </div>
+                <div class="sh_text">
+                  <span class="o_default_snippet_text">june 17, 2020</span>
+                  <h4 class="o_default_snippet_text">lorem ipsum dolor sit amet</h4>
+                  <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+	
+
+            </div>
+        </t>
+</template>
+
+</odoo>
+
+

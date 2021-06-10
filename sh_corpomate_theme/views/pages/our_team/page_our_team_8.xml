@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- OUR TEAM 8 -->
+	<template id="sh_corpomate_tmpl_our_team_8" name="our team">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			
+            
+
+
+            <section id="sh_corpomate_theme_section_230" class="s_banner parallax s_parallax_no_overflow_hidden bg-black-75" data-name="Ourteam8 Banner" style="background-image: none;" data-scroll-background-ratio="0">
+    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/team-banner.png'); background-position: 50% 0; background-attachment: fixed;" />
+    <div class="container">
+        <div class="sh_heading">
+            <h1>Our Team</h1>
+            <div class="sh_breadcrumbs">
+                <ul class="breadcrumbs">
+                    <li>
+                        <a href="/" class="home o_default_snippet_text">Home</a>
+                    </li>
+                    <li>
+                        <span class="o_default_snippet_text">Our Team</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_222" class="sh_animation_part" data-name="Theme 8 heading">
+    <div class="container">
+        <div class="sh_title">
+            <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+            <p class="o_default_snippet_text">Lorem ipsum dolor sit consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labor et dolore magna aliqua</p>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_231" class="sh_animation_part" data-name="theme8 team">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 sh_animation_part">
+                <div class="sh_content">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/theme7/team2.png" />
+                    </div>
+                    <div class="sh_heading">
+                        <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum</p>
+                    </div>
+                    <div class="sh_desc">
+                        <ul>
+                            <li>
+                                <span class="fa fa-facebook" />
+                            </li>
+                            <li>
+                                <span class="fa fa-twitter" />
+                            </li>
+                            <li>
+                                <span class="fa fa-linkedin" />
+                            </li>
+                            <li>
+                                <span class="fa fa-github" />
+                            </li>
+                        </ul>
+                        <p class="o_default_snippet_text">Lorem ipsum is simply dummy text of the printing and type setting industry.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 sh_animation_part">
+                <div class="sh_content">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/theme7/team2.png" />
+                    </div>
+                    <div class="sh_heading">
+                        <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum</p>
+                    </div>
+                    <div class="sh_desc">
+                        <ul>
+                            <li>
+                                <span class="fa fa-facebook" />
+                            </li>
+                            <li>
+                                <span class="fa fa-twitter" />
+                            </li>
+                            <li>
+                                <span class="fa fa-linkedin" />
+                            </li>
+                            <li>
+                                <span class="fa fa-github" />
+                            </li>
+                        </ul>
+                        <p class="o_default_snippet_text">Lorem ipsum is simply dummy text of the printing and type setting industry.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 sh_animation_part">
+                <div class="sh_content">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/theme7/team2.png" />
+                    </div>
+                    <div class="sh_heading">
+                        <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum</p>
+                    </div>
+                    <div class="sh_desc">
+                        <ul>
+                            <li>
+                                <span class="fa fa-facebook" />
+                            </li>
+                            <li>
+                                <span class="fa fa-twitter" />
+                            </li>
+                            <li>
+                                <span class="fa fa-linkedin" />
+                            </li>
+                            <li>
+                                <span class="fa fa-github" />
+                            </li>
+                        </ul>
+                        <p class="o_default_snippet_text">Lorem ipsum is simply dummy text of the printing and type setting industry.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 sh_animation_part">
+                <div class="sh_content">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/theme7/team2.png" />
+                    </div>
+                    <div class="sh_heading">
+                        <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum</p>
+                    </div>
+                    <div class="sh_desc">
+                        <ul>
+                            <li>
+                                <span class="fa fa-facebook" />
+                            </li>
+                            <li>
+                                <span class="fa fa-twitter" />
+                            </li>
+                            <li>
+                                <span class="fa fa-linkedin" />
+                            </li>
+                            <li>
+                                <span class="fa fa-github" />
+                            </li>
+                        </ul>
+                        <p class="o_default_snippet_text">Lorem ipsum is simply dummy text of the printing and type setting industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            
+
+
+
+
+      
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+
+

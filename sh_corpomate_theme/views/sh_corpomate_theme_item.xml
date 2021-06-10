@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<template id="sh_corpomate_theme_item_6" name="Sh Snippet item 6">
+  <div class="item">
+     <div class="sh_content">
+        <img t-att-src="image_data_uri(testimonial.image)" />
+        
+        <p><t t-esc="testimonial.comment"/></p>
+        <h3><t t-esc="testimonial.name.name"/></h3>
+        <h6><t t-esc="testimonial.function"/></h6>
+     </div>
+  </div>
+</template>       
+            
+<template id="sh_corpomate_theme_item_16" name="home2 Testimonials 2">
+  <div class="item row">
+      <div class="sh_content col-md-6">
+         <div class="sh_icon">
+            <span class="fa fa-quote-left"></span>
+         </div>
+         <p><t t-esc="testimonial.comment"/></p>
+         <hr></hr>
+         <div class="sh_description">
+             <img t-att-src="image_data_uri(testimonial.image)"/>
+            <h3><t t-esc="testimonial.name.name"/></h3>
+            <p><t t-esc="testimonial.function"/></p>
+         </div>
+      </div>
+   </div>
+</template>
+
+<template id="sh_corpomate_theme_item_23" name="home3 testimonial 5">
+    <div class="item">
+	    <section class="sh_testimonial">
+		 <!-- <div class="sh_rating">
+		      <section class="sh_star">
+		          <li><span class="fa fa-star"></span></li>
+		          <li><span class="fa fa-star"></span></li>
+		          <li><span class="fa fa-star"></span></li>
+		          <li><span class="fa fa-star"></span></li>
+		          <li><span class="fa fa-star"></span></li>
+		      </section>
+		   </div> -->  
+		   <div class="sh_testimonial_content">
+		      <div class="sh_img_title">
+		          <div class="sh_img">
+		                           <img t-att-src="image_data_uri(testimonial.image)"/>
+		          </div>
+		          <h4><t t-esc="testimonial.name.name"/> <span><t t-esc="testimonial.function"/></span></h4>
+		      </div>
+		      <p><t t-esc="testimonial.comment"/></p>
+		   </div>                    		   
+		</section>
+	</div>
+</template>
+
+
+<template id="sh_corpomate_theme_item_32" name="home4 testimonial">
+    <div class="item">
+        <div class="sh_testimonial">
+            <div class="sh_content">
+                <p><t t-esc="testimonial.comment"/></p>
+                <h4><t t-esc="testimonial.name.name"/></h4>
+                <p class="sh_position"><t t-esc="testimonial.function"/></p>
+            </div>
+            <div class="sh_img">
+                      <img t-att-src="image_data_uri(testimonial.image)"/>
+            </div>
+        </div>
+    </div>
+</template>
+
+
+<template id="sh_corpomate_theme_item_41" name="Home5 Testimonial">
+    <div class="item">
+        <div class="sh_testimonial">
+            <div class="sh_left_part">
+                <a href="#">
+                                 <img t-att-src="image_data_uri(testimonial.image)"/>
+                </a>
+            </div>
+            <section class="sh_right_part">
+                <div class="sh_content">
+                    <h3><t t-esc="testimonial.name.name"/></h3>
+                    <p><t t-esc="testimonial.function"/></p>
+                    <div class="sh_right_text">
+                        <p><t t-esc="testimonial.comment"/></p>
+                        <!-- <ul>
+                            <li><span class="fa fa-star"></span></li>
+                            <li><span class="fa fa-star"></span></li>
+                            <li><span class="fa fa-star"></span></li>
+                            <li><span class="fa fa-star"></span></li>
+                            <li><span class="fa fa-star"></span></li>
+                        </ul> -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</template>
+
+
+
+
+
+
+<!-- <template id="sh_corpomate_theme_item_23" name="Sh Snippet item 23">    
+   <div class="item">
+       <section class="sh_testimonial">
+  		   <div class="sh_testimonial_content">
+  		      <div class="sh_img_title">
+  		          <div class="sh_img">
+  		                      <img t-att-src="image_data_uri(testimonial.image)"/>
+  		          </div>
+  		          <h4> 
+  		          		<t t-esc="testimonial.name.name"/>
+  		          		<span><t t-esc="testimonial.function"/></span>
+  		          </h4>
+  		      </div>
+  		      <p>
+  		      		<t t-esc="testimonial.comment"/>
+  		      </p>
+  		   </div>                    		   
+  		</section>
+   </div>            
+</template> -->
+
+
+
+<template id="sh_corpomate_theme_item_9" name="Sh Snippet item 23">
+  <div>                        
+      <img t-att-src="image_data_uri(our_partner.image)"/>
+  </div>            
+</template>
+
+<template id="sh_corpomate_theme_item_18" name="home2 partners">
+  <div class="item">                        
+      <img t-att-src="image_data_uri(our_partner.image)"/>
+  </div>            
+</template>
+
+<template id="sh_corpomate_theme_item_36" name="Home4 Partner">
+  <div class="item">                        
+           <img t-att-src="image_data_uri(our_partner.image)"/>
+  </div>            
+</template>
+
+<template id="sh_corpomate_theme_item_42" name="Home5 Partner">
+  <div class="item">                        
+       <img t-att-src="image_data_uri(our_partner.image)"/>
+  </div>            
+</template>
+
+
+
+
+
+
+
+
+<!-- 
+=====================================
+	THEME 6 TESTIMONIAL
+=====================================
+ -->
+<template id="sh_corpomate_theme_item_168" name="theme6 testimonial item">
+
+      <div class="item">
+          <div class="box">
+              <div class="img">
+                                <img t-att-src="image_data_uri(testimonial.image)"/>
+              </div>
+              <div class="content">
+                  <h5>
+                  		<t t-esc="testimonial.name.name"/>	
+                  </h5>
+                  <p class="sub-text">
+                  		<t t-esc="testimonial.function"/>
+                  </p>
+                  <p class="paragraph">
+                  		<t t-esc="testimonial.comment"/>
+                  </p>
+              </div>
+          </div>
+      </div>
+                    
+</template>        
+<!-- 
+=====================================
+	THEME 6 TESTIMONIAL
+=====================================
+ -->
+
+
+
+<!-- 
+=====================================
+	THEME 7 TESTIMONIAL
+=====================================
+ -->
+<template id="sh_corpomate_theme_item_177" name="theme7 testimonial">
+
+     <div class="item">
+         <div class="box">
+             <div class="img">
+                                  <img t-att-src="image_data_uri(testimonial.image)"/>
+             </div>
+             <div class="content">
+                 <h5>
+              			<t t-esc="testimonial.name.name"/>	                 
+                 </h5>
+                 <p class="sub-text">
+                  		<t t-esc="testimonial.function"/>                 
+                 </p>
+                 <p class="paragraph">
+                      	<t t-esc="testimonial.comment"/>
+                 </p>
+             </div>
+         </div>
+     </div>
+
+</template>    
+<!-- 
+=====================================
+	THEME 7 TESTIMONIAL
+=====================================
+ -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+=====================================
+	THEME 8 TESTIMONIAL
+=====================================
+ -->
+ 
+<template id="sh_corpomate_theme_item_239" name="theme7 testimonial">
+    	       
+    	       
+    	        <div class="item">
+					<div class="sh_content">
+					    <div class="sh_img">
+					              <img t-att-src="image_data_uri(testimonial.image)"/>
+					    </div>
+					    <h4> <t t-esc="testimonial.name.name"/> </h4>
+					    <span> <t t-esc="testimonial.function"/>  </span>
+					    <p> <t t-esc="testimonial.comment"/> </p>
+					</div>
+    	        </div>
+    	            	       
+
+    			    	        
+</template>    
+<!-- 
+=====================================
+	THEME 8 TESTIMONIAL
+=====================================
+ -->
+
+
+
+
+
+
+
+
+
+
+<!-- 
+=====================================
+	THEME 10 TESTIMONIAL
+=====================================
+ -->
+ 
+<template id="sh_corpomate_theme_item_259" name="theme8 testimonial">
+
+
+            	<div class="item">
+    				<div class="sh_content">
+    				   <div class="sh_img">
+    				         <img t-att-src="image_data_uri(testimonial.image)"/>
+    				   </div>
+    				   <p> <t t-esc="testimonial.comment"/> </p>
+    				   <a class="btn">
+    				    	<t t-esc="testimonial.name.name"/>
+    				   </a>
+    				</div>
+    			</div>
+    	        	        
+    	        
+    	        
+</template>    
+<!-- 
+=====================================
+	THEME 10 TESTIMONIAL
+=====================================
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+=====================================
+	THEME 11 TESTIMONIAL
+=====================================
+ -->
+ 
+<template id="sh_corpomate_theme_item_281" name="theme 11 testimonial">
+
+   	        	        
+    	        
+          <div class="item">
+             <div class="sh_content">
+                <div class="sh_commet">
+                   <p>  <t t-esc="testimonial.comment"/> </p>
+                </div>                
+                <div class="sh_des">
+                   <div class="sh_img"> 
+                          <img t-att-src="image_data_uri(testimonial.image)"/>
+                   </div>
+                   <div class="sh_heading">
+                      <h4> <t t-esc="testimonial.name.name"/> </h4>
+                      <p> <t t-esc="testimonial.function"/>  </p>
+                   </div>
+                </div>                
+             </div>
+          </div>
+          
+              	        
+    	        
+    	        
+    	        
+</template>    
+<!-- 
+=====================================
+	THEME 11 TESTIMONIAL
+=====================================
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+=====================================
+	THEME 12 TESTIMONIAL
+=====================================
+ -->
+ 
+<template id="sh_corpomate_theme_item_297" name="theme 12 testimonial">
+
+   	        	        
+         
+            <div class="item">
+               <div class="sh_content">
+                  <div class="sh_img_content">
+                     <div class="sh_img">
+                           <img t-att-src="image_data_uri(testimonial.image)"/>
+                     </div>
+                     <div class="sh_heading">
+	                      <h4> <t t-esc="testimonial.name.name"/> </h4>
+	                      <p> <t t-esc="testimonial.function"/>  </p>
+                     </div>
+                  </div>                  
+                  <p class="sh_des">
+                    <t t-esc="testimonial.comment"/>
+                  </p>                  
+               </div>
+            </div>         
+              	        
+    	        
+    	        
+    	        
+</template>    
+<!-- 
+=====================================
+	THEME 12 TESTIMONIAL
+=====================================
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+=====================================
+	THEME 13 TESTIMONIAL
+=====================================
+ -->
+ 
+<template id="sh_corpomate_theme_item_322" name="theme 13 testimonial">
+
+   	        	        
+         
+             <div class="item row">
+                <div class="sh_content col-12 text-center">
+                   <div class="sh_image">
+                           <img t-att-src="image_data_uri(testimonial.image)"/>                   
+                   </div>
+	               <h4> <t t-esc="testimonial.name.name"/> </h4>
+	               <p> <t t-esc="testimonial.function"/>  </p>
+                   
+                   <div class="sh_description">
+                      <p><t t-esc="testimonial.comment"/></p>
+                   </div>
+                </div>
+             </div>
+             
+        	        
+    	           	        
+    	        
+</template>    
+<!-- 
+=====================================
+	THEME 13 TESTIMONIAL
+=====================================
+ -->
+
+
+<!-- 
+=====================================
+  THEME 14 TESTIMONIAL
+=====================================
+  -->
+<template id="sh_corpomate_theme_item_347" name="theme 14 testimonial">
+    <div class="item">
+        <div class="sh_content">                       
+            <p><t t-esc="testimonial.comment"/></p>
+            <div class="sh_img_content">
+                <img t-att-src="image_data_uri(testimonial.image)"/>
+                <div class="sh_text">
+                 <h3><t t-esc="testimonial.name.name"/></h3>
+                 <h6><t t-esc="testimonial.function"/></h6>
+              </div>
+            </div>                        
+        </div>
+    </div>
+</template>
+<!--  
+=====================================
+  THEME 14 TESTIMONIAL
+=====================================
+  -->
+
+<!-- 
+=====================================
+  THEME 14 TESTIMONIAL 2
+=====================================
+  -->
+<template id="sh_corpomate_theme_item_352" name="theme 14 testimonial">
+    <div class="item">
+        <div class="sh_team">
+            <p><t t-esc="testimonial.comment"/></p>
+            <div class="sh_img_content">
+                <img t-att-src="image_data_uri(testimonial.image)"></img>
+                <div class="sh_text">
+                    <h5><t t-esc="testimonial.name.name"/></h5>
+                    <p><t t-esc="testimonial.function"/></p>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="sh_content">                       
+            <p><t t-esc="testimonial.comment"/></p>
+            <div class="sh_img_content">
+                <img t-att-src="image_data_uri(testimonial.image)"/>
+                <div class="sh_text">
+                 <h3><t t-esc="testimonial.name.name"/></h3>
+                 <h6><t t-esc="testimonial.function"/></h6>
+              </div>
+            </div>                        
+        </div> -->
+    </div>
+</template>
+<!--  
+=====================================
+  THEME 14 TESTIMONIAL 2
+=====================================
+  -->
+
+
+<!--  
+=====================================
+  		THEME 15 TESTIMONIAL
+=====================================
+  -->
+<template id="sh_corpomate_theme_item_371" name="theme 15 testimonial">
+    <div class="item">
+        <div class="sh_content">
+            <div class="sh_img">
+                <img t-att-src="image_data_uri(testimonial.image)"></img>
+            </div>
+            <div class="sh_text">
+                <h4><t t-esc="testimonial.name.name"/></h4>
+                <p><t t-esc="testimonial.comment"/></p>
+            </div>
+        </div>                
+    </div>
+</template>
+
+<!--  
+=====================================
+  		THEME 15 TESTIMONIAL 
+=====================================
+  -->
+
+
+<!--  
+=====================================
+  THEME 16 TESTIMONIAL
+=====================================
+  -->
+<template id="sh_corpomate_theme_item_394" name="theme 16 testimonial">
+    <div class="item">
+    	<div class="sh_content">    
+             <div class="sh_des">
+             	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+             </div>                    
+             <div class="sh_img_part">
+	              <div class="sh_img">
+	                  <img t-att-src="image_data_uri(testimonial.image)"></img>
+	              </div>                        
+	              <div class="sh_text">
+	              	<h3><t t-esc="testimonial.name.name"/></h3>
+	              	<h6><t t-esc="testimonial.function"/></h6>
+	              </div>
+             </div>
+         </div>
+    
+                     
+    </div>
+</template>
+
+<!--  
+=====================================
+  THEME 16 TESTIMONIAL 
+====================================
+  -->
+
+
+
+
+
+<!-- 
+=====================================
+	THEME 6 PARTNER
+=====================================
+ -->
+
+<template id="sh_corpomate_theme_item_169" name="theme6 partner item">
+
+      <div class="col">
+          <a href="#">
+      	     <img t-att-src="image_data_uri(our_partner.image)"/>
+          </a>
+      </div>
+
+</template>   
+<!-- 
+=====================================
+	THEME 6 PARTNER
+=====================================
+ -->
+
+
+<!-- 
+=====================================
+	THEME 7 PARTNER
+=====================================
+ -->
+<template id="sh_corpomate_theme_item_178" name="theme7 partner item">
+
+        <div class="col">
+            <a href="#">
+          	 <img t-att-src="image_data_uri(our_partner.image)"/>
+            </a>
+        </div>
+
+</template>            
+<!-- 
+=====================================
+	THEME 7 PARTNER
+=====================================
+ -->
+
+
+
+
+
+
+<!-- 
+=====================================
+	THEME 8 PARTNER
+=====================================
+ -->
+<template id="sh_corpomate_theme_item_191" name="theme8 partner item">
+        
+        <div>
+        	<img t-att-src="image_data_uri(our_partner.image)" />
+        </div>        
+
+</template>            
+<!-- 
+=====================================
+	THEME 8 PARTNER
+=====================================
+ -->
+
+
+
+
+<!-- 
+=====================================
+	THEME 10 PARTNER
+=====================================
+ -->
+<template id="sh_corpomate_theme_item_264" name="theme10 partner item">
+        
+        
+            	<div class="item">
+            	   <div class="sh_img">
+        				<img t-att-src="image_data_uri(our_partner.image)" />
+            	   </div>
+            	</div>   
+            	        
+              
+
+</template>            
+<!-- 
+=====================================
+	THEME 10 PARTNER
+=====================================
+ -->
+
+
+
+
+
+
+
+
+
+
+</odoo>
+
+
+
+

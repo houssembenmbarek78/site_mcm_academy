@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- OUR TEAM 11 -->
+	<template id="sh_corpomate_tmpl_our_team_11" name="our team">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			     
+			     
+			     
+			     
+			     
+      			     
+			     
+			     
+			     
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+
+

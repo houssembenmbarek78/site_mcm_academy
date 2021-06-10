@@ -1,0 +1,67 @@
+/* 
+-------------------------------------------------------------------------------------------------------
+Add custom font in font selection.
+-------------------------------------------------------------------------------------------------------
+*/
+
+
+
+$o-theme-fonts: (
+    ('Dosis', sans-serif),
+    ('Abel', sans-serif),
+    ('Lato', sans-serif),
+    ('Karla', sans-serif),
+    ('Laila', serif),
+    ('Raleway', sans-serif),
+    ('Poppins', sans-serif),    
+);
+$o-theme-font-urls: (
+    'Dosis:300,300i,400,400i,700,700i',
+    'Abel:300,300i,400,400i,700,700i',
+    'Lato:300,300i,400,400i,700,700i',
+    'Karla:300,300i,400,400i,700,700i',
+    'Laila:300,300i,400,400i,700,700i',
+    'Raleway:300,300i,400,400i,700,700i',
+    'Poppins:300,300i,400,400i,700,700i',    
+);
+$o-theme-font-names: (
+    'Dosis',
+    'Abel',
+    'Lato',
+    'Karla',
+    'Laila',
+    'Raleway',
+    'Poppins',    
+);
+
+
+
+
+
+/* 
+-------------------------------------------------------------------------------------------------------
+Add Font in Website Value palettes
+-------------------------------------------------------------------------------------------------------
+*/
+
+$o-website-values-palettes: (
+    //Default website palette,
+    (
+        'logo-height': null, // Default to navbar height (see portal)
+        'header-font-size': null, // Default to BS (normal font-size)
+        'font-number': 1,
+        'headings-font-number': 1,
+        'navbar-font-number': 1,
+        'buttons-font-number': 1,
+        'google-fonts': null,
+    ),
+    (
+        // Font
+        'font-number': 7,
+        'headings-font-number': 7,
+        'buttons-font-number': 7,
+        'navbar-font-number': 7,
+
+    ),
+
+);

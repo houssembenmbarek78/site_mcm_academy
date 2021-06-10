@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- SERVICE 16 -->
+	<template id="sh_corpomate_tmpl_service_16" name="service">
+	    <t t-call="website.layout"> 
+	       <div id="wrap" class="oe_structure">
+	        
+
+                <section id="sh_corpomate_theme_section_400" data-snippet="sh_corpomate_theme_tmpl_400" class="oe_img_bg o_colored_level" data-name="services banner" style="background-image: url('/sh_corpomate_theme/static/src/img/theme_16/8.jpg');">
+    <div class="container">
+        <h4 class="o_default_snippet_text">services us</h4>
+        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+        <div class="sh_breacrumb">
+            <a href="#" class="o_default_snippet_text">home</a>
+            <span class="fa fa-link" />
+            <a href="#" class="o_default_snippet_text">services</a>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_401" data-snippet="sh_corpomate_theme_tmpl_401" class="o_colored_level" data-name="services snippet 1">
+    <div class="container">
+        <div class="sh_title">
+            <h5 class="o_default_snippet_text">our specialties</h5>
+            <h2 class="o_default_snippet_text">explore our main services</h2>
+            <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4 o_colored_level">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <span class="fa fa-cutlery" />
+                    </div>
+                    <div class="sh_des">
+                        <h4 class="o_default_snippet_text">pathologycam testing</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        <a href="#" class="btn sh_btn o_default_snippet_text">read more <span class="fa fa-angle-double-right" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 o_colored_level">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <span class="fa fa-eye" />
+                    </div>
+                    <div class="sh_des">
+                        <h4 class="o_default_snippet_text">mineral assay &amp;amp; testing</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        <a href="#" class="btn sh_btn o_default_snippet_text">read more <span class="fa fa-angle-double-right" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 o_colored_level">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <span class="fa fa-life-ring" />
+                    </div>
+                    <div class="sh_des">
+                        <h4 class="o_default_snippet_text">pharmaceutical research</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        <a href="#" class="btn sh_btn o_default_snippet_text">read more <span class="fa fa-angle-double-right" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 o_colored_level">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <span class="fa fa-cutlery" />
+                    </div>
+                    <div class="sh_des">
+                        <h4 class="o_default_snippet_text">pathologycam testing</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        <a href="#" class="btn sh_btn o_default_snippet_text">read more <span class="fa fa-angle-double-right" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 o_colored_level">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <span class="fa fa-eye" />
+                    </div>
+                    <div class="sh_des">
+                        <h4 class="o_default_snippet_text">mineral assay &amp;amp; testing</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        <a href="#" class="btn sh_btn o_default_snippet_text">read more <span class="fa fa-angle-double-right" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 o_colored_level">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <span class="fa fa-life-ring" />
+                    </div>
+                    <div class="sh_des">
+                        <h4 class="o_default_snippet_text">pharmaceutical research</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        <a href="#" class="btn sh_btn o_default_snippet_text">read more <span class="fa fa-angle-double-right" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_402" data-snippet="sh_corpomate_theme_tmpl_402" class="o_colored_level" data-name="services snippet 2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 o_colored_level">
+                <div class="sh_content">
+                    <h4 class="o_default_snippet_text">about us</h4>
+                    <h2 class="o_default_snippet_text">we employ latest research technology &amp;amp; company</h2>
+                    <p class="o_default_snippet_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                    </p>
+                    <div class="sh_btn_link">
+                        <a href="#" class="btn o_default_snippet_text">read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 o_colored_level">
+                <div class="sh_img">
+                    <img src="/sh_corpomate_theme/static/src/img/theme_16/1.jpg" loading="lazy" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_403" data-snippet="sh_corpomate_theme_tmpl_403" class="o_colored_level" data-name="services snippet 3">
+    <div class="container">
+        <div class="sh_title">
+            <h5 class="o_default_snippet_text">way we work</h5>
+            <h2 class="o_default_snippet_text">our working process</h2>
+            <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4 o_colored_level">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <span class="fa fa-flask" />
+                    </div>
+                    <h4 class="o_default_snippet_text">check &amp;amp; collect data</h4>
+                    <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+            </div>
+            <div class="col-md-4 o_colored_level">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <span class="fa fa-eye" />
+                    </div>
+                    <h4 class="o_default_snippet_text">check &amp;amp; collect data</h4>
+                    <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+            </div>
+            <div class="col-md-4 o_colored_level">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <span class="fa fa-life-ring" />
+                    </div>
+                    <h4 class="o_default_snippet_text">check &amp;amp; collect data</h4>
+                    <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                
+
+
+			
+	       </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

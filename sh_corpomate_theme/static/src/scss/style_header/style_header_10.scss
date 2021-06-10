@@ -1,0 +1,18 @@
+header .navbar a.navbar-brand{display: none;}
+header.o_affix_enabled ul{margin-left: 0 !important;width: 100%;}
+header .navbar{background-color: #363636 !important;padding: 0 !important;}
+header ul li > a{color: #fff !important;text-transform: capitalize;padding: 15px 22px !important;font-weight: 600;letter-spacing: 0.7px;}
+header ul li > a.active,
+header ul li > a:hover,
+header ul li > a.show{background: $-color-Primary;}
+header ul li:last-child .js_usermenu{right: auto;}
+header ul li.o_extra_menu_items ul li a{color: #212529 !important;padding: 0.25rem 1.5rem !important;}
+header ul li.o_extra_menu_items ul{min-width: 14rem;} 
+
+@media (max-width: 767px){
+
+  header .navbar a.navbar-brand {display: block;padding: 15px 10px !important;}
+  header .navbar{background-color: #ffffff !important;}
+  
+  
+}

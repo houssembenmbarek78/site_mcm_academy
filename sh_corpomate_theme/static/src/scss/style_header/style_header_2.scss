@@ -1,0 +1,42 @@
+.navbar-light {background-color: $hd-primary!important;box-shadow: 0 0 10px rgba(0,0,0,.1);}
+.navbar{padding: 1rem 1rem 1rem;}
+.navbar-light .navbar-nav .nav-link{transition: color .3s,background-color .3s;padding: .2rem 1rem;font-size: 14px;font-weight: 600;text-transform: uppercase;color:$hd-text}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {color: $hd-text;}
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active{border: 2px solid $-color-Primary;}
+#top_menu_collapse .navbar-nav{align-items: center;}
+
+#top_menu_collapse_clone .navbar-nav{align-items: center;}
+
+
+
+@media(min-width:768px){
+#top_menu_collapse .text-right {text-align: left !important;}
+.navbar-brand.logo{order: 2;}
+ .ml-auto, .o_affix_enabled .mx-auto{margin-left: 0px !important;}
+}
+.dropdown-menu{margin: 0.6rem 0 0;border-radius: 0rem;border:0px;padding: 0rem 0;}
+.dropdown-item{background-color: #f4f6f7;padding: 15px 30px;border-bottom: 1px solid #e2dfdf;}
+.dropdown-item:hover,.o_affix_enabled .dropdown-item:focus{border-left: 3px solid #616060;padding-left: 27px;}
+.navbar .nav-item{margin: 0px 5px;}
+.navbar-expand-md ul.nav > li.divider{visibility: hidden;}
+
+#top_menu .nav-item.dropdown.o_extra_menu_items .dropdown-menu{min-width: 12rem;}
+#top .nav-item.dropdown.o_extra_menu_items ul li a span{text-transform: uppercase;}
+#top .nav-item.dropdown.o_extra_menu_items ul li a.dropdown-item{padding: 15px;font-size: 14px;font-weight: 600;text-transform: uppercase;}
+
+
+.navbar-light .navbar-nav .nav-link{padding: .2rem 0.7rem;}
+.navbar-light .navbar-nav {min-width: 80%;width: 100%;}
+header#top .navbar-light{z-index: 8;}
+
+header#top{z-index: 6;}
+
+#top_menu .nav-item.dropdown .dropdown-menu.js_usermenu.dropdown-menu-right{right: auto;}
+#top_menu_collapse .text-right li.nav-item:first-child {
+    margin-left: 0;
+}
+
+@media only screen and (max-width: 768px){
+	header .navbar-brand.logo{width: 30%;}
+}
+

@@ -1,0 +1,67 @@
+.bottom-footer-shape {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: -1px;
+    z-index: 0;
+}
+.footer-area .bg-overlay {
+   background: linear-gradient(90deg, theme-color('gamma'), theme-color('gamma') 10%, theme-color('gamma') 15%, theme-color('delta'));
+	    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+        opacity: 0.9;
+    
+}
+.footer-area {
+    background-image: url(/sh_corpomate_theme/static/src/img/banner1.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+padding-footer {
+    padding-top: 260px;
+}
+.footer-widget {
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: .3px;
+    line-height: 1.8;
+}
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+.footer-widget p {
+    margin-top: 20px;
+}
+.padding-footer{padding-top: 120px;padding-bottom: 40px;}
+.padding-footer ul{padding:0px;list-style:none}
+.footer-nav a{color: #fff;font-size: 14px;}
+.padding-footer h5{color: #fff;font-weight: bolder;}
+.recent-posts{color:#fff;}
+.box-content{margin:10px 0px}
+.box-content a{color:#fff;}
+.box-content a:hover{color:#fff;}
+
+
+
+#follow-us-widget-2 h5.widget-title{color: #fff;font-weight: bolder;}
+#follow-us-widget-2 .share-links a{color: #f53c78;width: 30px;height: 30px;background: #fff;line-height: 30px;border-radius: 50%;text-align: center;padding: 0;margin-right: 5px;margin-bottom: 5px;}
+
+
+
+
+
+
+

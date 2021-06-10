@@ -1,0 +1,11 @@
+
+.o_header_affix .navbar-light .navbar-nav .nav-link:hover,
+.o_header_affix .navbar-light .navbar-nav .nav-link:active,
+.o_header_affix .navbar-light .navbar-nav .nav-link:focus
+.o_header_affix .navbar-light .navbar-nav .nav-link.active{color: $-color-Primary !important;}
+
+
+.affixed .navbar-light .navbar-nav .show > .nav-link,
+.affixed .navbar-light .navbar-nav .active > .nav-link,
+.affixed .o_affix_enabled .navbar-light .navbar-nav .nav-link.show,
+.affixed .navbar-light .navbar-nav .nav-link.active{color: $-color-Primary !important;}

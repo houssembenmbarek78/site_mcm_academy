@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	
+	<!-- product category tree view -->
+	<record id="sh_website_portfolio_category_tree_view" model="ir.ui.view">
+		<field name="name">sh.website.portfolio.category.tree.view</field>
+		<field name="model">website.portfolio.category</field>
+		<field name="arch" type="xml">
+			<tree string="Category" editable="bottom">
+				<field name="name"/>	
+				<field name="website_id" options="{'no_create': True}"/>
+				<field name="is_active"/>		
+			</tree>
+		</field>
+	</record>
+	
+	<!-- product portfolio form view -->
+	<record id="sh_website_portfolio_form_view" model="ir.ui.view">
+		<field name="name">sh.website.portfolio.form.view</field>
+		<field name="model">website.portfolio</field>
+		<field name="arch" type="xml">
+			<form string="Portfolio">
+				<group>
+					<group>
+						<field name="category_id" options="{'no_create': True}"/>
+						<field name="website_id" options="{'no_create': True}"/>						
+						<field name="name"/>
+						<field name="desc"/>
+						<field name="img" widget="image" class="w-25 mt-2"  />
+						<field name="is_active"/>
+					</group>
+				</group>
+			</form>
+		</field>
+	</record>
+	<!-- product portfolio tree view -->
+	<record id="sh_website_portfolio_tree_view" model="ir.ui.view">
+		<field name="name">sh.website.portfolio.tree.view</field>
+		<field name="model">website.portfolio</field>
+		<field name="arch" type="xml">
+			<tree string="Portfolio">
+				<field name="category_id"/>
+				<field name="website_id"/>					
+				<field name="name"/>
+				<field name="desc"/>
+				<field name="is_active"/>
+			</tree>
+		</field>
+	</record>
+	
+	
+
+		
+	<!-- Action for product Category view -->	
+	<record id="sh_website_portfolio_category_action" model="ir.actions.act_window">
+		<field name="name">Portfolio Category</field>
+		<field name="res_model">website.portfolio.category</field>
+		<field name="view_mode">tree</field>
+		<field name="help">Add your product's category here </field>		
+	</record>
+	<!-- Action for products showcase -->
+	<record id="sh_website_portfolio_action" model="ir.actions.act_window">
+		<field name="name">Portfolio</field>
+		<field name="res_model">website.portfolio</field>
+		<field name="view_mode">tree,form</field>
+		<field name="help">Add your product's portfolio here</field>
+	</record>
+	
+	<!-- Menu Item -->
+	<menuitem 
+		id="sh_website_portfolio_main_menu"
+		parent="website.menu_website_configuration"
+        groups="website.group_website_designer"	
+		name="Portfolio"
+		/>
+		
+	<menuitem
+		id="sh_website_portfolio_category_menu"
+		parent="sh_corpomate_theme.sh_website_portfolio_main_menu"
+		name="Category"
+		action="sh_website_portfolio_category_action"
+        groups="website.group_website_designer"/>		
+
+	<menuitem
+		id="sh_website_portfolio_menu"
+		parent="sh_corpomate_theme.sh_website_portfolio_main_menu"
+		name="Portfolio"
+		action="sh_website_portfolio_action"
+        groups="website.group_website_designer"/>		
+
+		
+		
+
+</odoo>

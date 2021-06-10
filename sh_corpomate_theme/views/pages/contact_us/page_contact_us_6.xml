@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- CONTACT US PAGE 5 -->
+	<template id="sh_corpomate_tmpl_contact_us_6" name="contact us">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			
+
+
+        <section id="sh_corpomate_theme_section_180" data-name="About6 banner">
+    <style class="o_default_snippet_text">
+        .o_affix_enabled .navbar-light {
+            background: rgba(0, 0, 0, 0.2) !important;
+        }
+        
+        .o_affix_enabled .navbar-light .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+        
+        .o_affix_enabled .navbar-light .navbar-nav .show &gt;
+        .nav-link,
+        .o_affix_enabled .navbar-light .navbar-nav .active &gt;
+        .nav-link,
+        .o_affix_enabled .navbar-light .navbar-nav .nav-link.show,
+        .o_affix_enabled .navbar-light .navbar-nav .nav-link.active {
+            color: #fff !important;
+        }
+        
+        #sh_corpomate_theme_section_131 .sh_shape {
+            bottom: 0;
+            height: 315px;
+        }
+    </style>
+    <div class="container">
+        <div class="sh_content">
+            <div class="sh_heading">
+                <h4>Contact Us</h4>
+                <p>Lorem ipsum dolar sit amet, consectetur adipisicing</p>
+            </div>
+            <div class="sh_breadcrumb"><span class="fa fa-home sh_home" /><span class="fa fa-chevron-right sh_icon" /><span class="sh_page_name">Contact Us</span>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;</div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_131" data-name="Shape Devider 9">
+    <div class="sh_shape">
+        <svg xmlns="http://www.w3.org/2000/svg" class="nectar-shape-divider" fill="" viewbox="0 0 1000 300" preserveaspectratio="none">
+            <path d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z" style="opacity: 0.15;" />
+            <path d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z" style="opacity: 0.3;" />
+            <path d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z" />
+        </svg>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_83" data-name="contact us snippet 1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 sh_animation_part">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <a href="#">
+                            <span class="fa fa-phone" />
+                        </a>
+                    </div>
+                    <h3 class="o_default_snippet_text">Call Now</h3>
+                    <a href="tel:+919033366091" class="o_default_snippet_text">+919033366091</a>
+                    <a href="tel:+917984575681" class="o_default_snippet_text">+917984575681</a>
+                </div>
+            </div>
+            <div class="col-md-4 sh_animation_part">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <a href="#">
+                            <span class="fa fa-map-marker" />
+                        </a>
+                    </div>
+                    <h3 class="o_default_snippet_text">Location</h3>
+                    <span class="o_default_snippet_text">905, Corporate Levels, 150 Ft. Ring RD Nr. Ayodya Chowk, opp. Synergy Hospital, Rajkot, Gujarat 360006</span>
+                </div>
+            </div>
+            <div class="col-md-4 sh_animation_part">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <a href="#">
+                            <span class="fa fa-envelope" />
+                        </a>
+                    </div>
+                    <h3 class="o_default_snippet_text">Email Support</h3>
+                    <a href="mailto:info@softhealer.com" class="o_default_snippet_text">info@softhealer.com</a>
+                    <a href="mailto:sales@softhealer.com" class="o_default_snippet_text">sales@softhealer.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_84" data-name="contact us snippet 2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 sh_animation_part" style="margin: auto;">
+                <div class="sh_form">
+                    <form action="/website_form/" method="post" data-model_name="crm.lead" data-success_page="/contactus-thank-you" class="s_website_form container-fluid mt32 o_fake_not_editable" enctype="multipart/form-data" data-editable-form="false">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group form-field custom-form o_website_form_required_custom o_fake_not_editable">
+                                    <input type="text" class="form-control o_website_form_input" placeholder="Your Name" name="contact_name" required="" value="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group custom-form form-field o_website_form_required_custom o_fake_not_editable">
+                                    <input type="text" class="form-control o_website_form_input" placeholder="Phone Number" name="phone" value="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group custom-form form-field o_website_form_required_custom o_fake_not_editable">
+                                    <input type="text" class="form-control o_website_form_input" placeholder="Email" name="email_from" required="" value="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group custom-form form-field o_fake_not_editable">
+                                    <input type="text" class="form-control o_website_form_input" placeholder="Your Company" name="partner_name" value="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group custom-form form-field o_fake_not_editable">
+                                    <input type="text" class="form-control o_website_form_input" placeholder="Subject" name="name" required="" value="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group custom-form form-field o_fake_not_editable">
+                                    <textarea class="form-control o_website_form_input" placeholder="Your Question" name="description" required="">
+                                    </textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 text-center">
+                                <a href="#" role="button" class="btn btn-primary sh_btn_cm_6 sh_submit_btn btn-lg o_website_form_send o_default_snippet_text">Send</a>
+                                <span id="o_website_form_result" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

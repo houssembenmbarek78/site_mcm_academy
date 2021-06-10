@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- OUR TEAM 2 -->
+	<template id="sh_corpomate_tmpl_our_team_2" name="our team">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure oe_empty">
+    <section id="sh_corpomate_theme_section_156" class="s_banner parallax s_parallax_no_overflow_hidden bg-black-75" data-name="about us2 about 1" style="background-image: none;">
+        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/team-banner.png'); background-position: 50% 0; background-attachment: fixed;" />
+        <style class="o_default_snippet_text">
+            #sh_top_bar_1 {
+                background-color: transparent;
+                z-index: 9;
+                border-bottom: 1px solid #a0a0a0;
+            }
+            #sh_top_bar_2 {
+                background-color: transparent;
+                z-index: 9;
+                border-bottom: 1px solid #a0a0a0;
+            }
+            #sh_top_bar_3 {
+                background-color: transparent;
+                z-index: 9;
+                border-bottom: 1px solid #a0a0a0;
+            }
+            #sh_top_bar_4 {
+                background-color: transparent;
+                z-index: 9;
+                border-bottom: 1px solid #a0a0a0;
+            }
+            #sh_top_bar_5 {
+                background-color: transparent;
+                z-index: 9;
+                border-bottom: 1px solid #a0a0a0;
+            }
+            .o_affix_enabled .navbar-light {
+                background-color: transparent !important;
+            }
+            .o_affix_enabled .navbar-light .navbar-nav .nav-link {
+                color: #fff !important;
+            }
+            .navbar-light #top_menu_collapse .navbar-nav .nav-link {
+                color: #ffffff;
+            }
+
+            .navbar-light {
+                background-color: transparent;
+                z-index: 9;
+            }
+            @media (max-width: 768px) {
+                .o_affix_enabled .navbar-light {
+                    background: #fff !important;
+                    z-index: 1;
+                }
+                .navbar-light .navbar-nav .nav-link {
+                    color: #585b60 !important;
+                }
+                .o_affix_enabled .navbar-light .navbar-nav .nav-link {
+                    color: #585b60 !important;
+                }
+
+                #sh_top_bar_2 {
+                    color: #000;
+                }
+                #sh_top_bar_2 .element-editor.phone:before {
+                    color: #000;
+                }
+                #sh_top_bar_2 .align-left a {
+                    color: #000;
+                }
+                #sh_top_bar_2 .element-editor.email:before {
+                    color: #000;
+                }
+                #sh_top_bar_2 ul.social li a {
+                    color: #000;
+                }
+                #sh_top_bar_2 .sh-element.custom-login,
+                #sh_top_bar_2 .sh-element.custom-login a {
+                    color: #000;
+                }
+                #sh_top_bar_2 .sh_corpomate_theme_show_hide_lang .add-lang a {
+                    color: #000;
+                }
+            }
+        </style>
+        <div class="yolo-page-title-overlay"></div>
+        <div class="content-page-title">
+            <div class="container">
+                <div class="page-title-inner block-center">
+                    <div class="block-inner">
+                        <h1 style="color: #ffffff;" class="o_default_snippet_text">Our Team</h1>
+                    </div>
+                </div>
+                <div class="yolo-breadcrumb-wrap s-color">
+                    <ul class="breadcrumbs">
+                        <li>
+                            <a href="/" class="home o_default_snippet_text">Home</a>
+                        </li>
+                        <li>
+                            <span class="o_default_snippet_text">Our Team</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sh_corpomate_theme_section_155" data-name="heading 2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <div class="sh_heading">
+                        <h3 class="o_default_snippet_text">Lorem Ipsum</h3>
+                    </div>
+                </div>
+                <div class="col-md-9 col-sm-12">
+                    <div class="sh_description">
+                        <p class="o_default_snippet_text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen book.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sh_corpomate_theme_section_138" data-name="Team Snippet 2">
+        <section class="section gray-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 m-15px-tb sh_disable_hover_part">
+                        <div class="our-team box-shadow sh_animation_part">
+                            <div class="team-img">
+                                <img src="/sh_corpomate_theme/static/src/img/6.jpg" title="" alt="" />
+                                <ul class="social-icons">
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-facebook" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-twitter" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-linkedin" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-google-plus" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-info">
+                                <h5 class="dark-color o_default_snippet_text">Lorem ipsum</h5>
+                                <label class="o_default_snippet_text">Lorem ipsum</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 m-15px-tb sh_disable_hover_part">
+                        <div class="our-team box-shadow sh_animation_part">
+                            <div class="team-img">
+                                <img src="/sh_corpomate_theme/static/src/img/9.jpg" title="" alt="" />
+                                <ul class="social-icons">
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-facebook" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-twitter" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-linkedin" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-google-plus" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-info">
+                                <h5 class="dark-color o_default_snippet_text">Lorem ipsum</h5>
+                                <label class="o_default_snippet_text">Lorem ipsum</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 m-15px-tb sh_disable_hover_part">
+                        <div class="our-team box-shadow sh_animation_part">
+                            <div class="team-img">
+                                <img src="/sh_corpomate_theme/static/src/img/8.jpg" title="" alt="" />
+                                <ul class="social-icons">
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-facebook" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-twitter" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-linkedin" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-google-plus" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-info">
+                                <h5 class="dark-color o_default_snippet_text">Lorem ipsum</h5>
+                                <label class="o_default_snippet_text">Lorem ipsum</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 m-15px-tb sh_disable_hover_part">
+                        <div class="our-team box-shadow sh_animation_part">
+                            <div class="team-img">
+                                <img src="/sh_corpomate_theme/static/src/img/7.jpg" title="" alt="" />
+                                <ul class="social-icons">
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-facebook" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-twitter" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-linkedin" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-google-plus" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-info">
+                                <h5 class="dark-color o_default_snippet_text">Lorem ipsum</h5>
+                                <label class="o_default_snippet_text">Lorem ipsum</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 m-15px-tb sh_disable_hover_part">
+                        <div class="our-team box-shadow sh_animation_part">
+                            <div class="team-img">
+                                <img src="/sh_corpomate_theme/static/src/img/9.jpg" title="" alt="" />
+                                <ul class="social-icons">
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-facebook" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-twitter" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-linkedin" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-google-plus" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-info">
+                                <h5 class="dark-color o_default_snippet_text">Lorem ipsum</h5>
+                                <label class="o_default_snippet_text">Lorem ipsum</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 m-15px-tb sh_disable_hover_part">
+                        <div class="our-team box-shadow sh_animation_part">
+                            <div class="team-img">
+                                <img src="/sh_corpomate_theme/static/src/img/8.jpg" title="" alt="" />
+                                <ul class="social-icons">
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-facebook" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-twitter" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-linkedin" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-google-plus" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-info">
+                                <h5 class="dark-color o_default_snippet_text">Lorem ipsum</h5>
+                                <label class="o_default_snippet_text">Lorem ipsum</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 m-15px-tb sh_disable_hover_part">
+                        <div class="our-team box-shadow sh_animation_part">
+                            <div class="team-img">
+                                <img src="/sh_corpomate_theme/static/src/img/7.jpg" title="" alt="" />
+                                <ul class="social-icons">
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-facebook" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-twitter" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-linkedin" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-google-plus" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-info">
+                                <h5 class="dark-color o_default_snippet_text">Lorem ipsum</h5>
+                                <label class="o_default_snippet_text">Lorem ipsum</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 m-15px-tb sh_disable_hover_part">
+                        <div class="our-team box-shadow sh_animation_part">
+                            <div class="team-img">
+                                <img src="/sh_corpomate_theme/static/src/img/6.jpg" title="" alt="" />
+                                <ul class="social-icons">
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-facebook" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-twitter" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-linkedin" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-google-plus" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-info">
+                                <h5 class="dark-color o_default_snippet_text">Lorem ipsum</h5>
+                                <label class="o_default_snippet_text">Lorem ipsum</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</div>
+
+	    </t>
+	</template>	
+
+
+</odoo>
+
+
+

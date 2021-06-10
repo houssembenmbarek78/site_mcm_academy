@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- ABOUT US PAGE 3 -->
+	<template id="sh_corpomate_tmpl_about_us_6" name="about us">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			
+
+      <section id="sh_corpomate_theme_section_180" data-name="About6 banner">
+    <style class="o_default_snippet_text">
+        .o_affix_enabled .navbar-light {
+            background: rgba(0, 0, 0, 0.2) !important;
+        }
+        
+        .o_affix_enabled .navbar-light .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+        
+        .o_affix_enabled .navbar-light .navbar-nav .show &gt;
+        .nav-link,
+        .o_affix_enabled .navbar-light .navbar-nav .active &gt;
+        .nav-link,
+        .o_affix_enabled .navbar-light .navbar-nav .nav-link.show,
+        .o_affix_enabled .navbar-light .navbar-nav .nav-link.active {
+            color: #fff !important;
+        }
+        
+        #sh_corpomate_theme_section_131 .sh_shape {
+            bottom: 0;
+            height: 315px;
+        }
+    </style>
+    <div class="container">
+        <div class="sh_content">
+            <div class="sh_heading">
+                <h4 class="o_default_snippet_text">About Us</h4>
+                <p class="o_default_snippet_text">Lorem ipsum dolar sit amet, consectetur adipisicing</p>
+            </div>
+            <div class="sh_breadcrumb">
+                <span class="fa fa-home sh_home" />
+                <span class="fa fa-chevron-right sh_icon" />
+                <span class="sh_page_name o_default_snippet_text">About Us</span>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_131" data-name="Shape Devider 9">
+    <div class="sh_shape">
+        <svg xmlns="http://www.w3.org/2000/svg" class="nectar-shape-divider" fill="" viewbox="0 0 1000 300" preserveaspectratio="none">
+            <path d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z" style="opacity: 0.15;" />
+            <path d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z" style="opacity: 0.3;" />
+            <path d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z" />
+        </svg>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_59" data-name="About us snippet 2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 sh_animation_part">
+                <div class="sh_content_img">
+                    <div class="sh_bg" />
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/banner1.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 sh_animation_part d-flex align-items-center">
+                <div class="sh_right_content">
+                    <h2 class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing</h2>
+                    <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <a href="#" class="btn btn-primary sh_btn_cm_6 sh_read_btn o_default_snippet_text">READ MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_60" data-name="About us snippet 3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 align-items-center sh_animation_part" style="display: flex;">
+                <div class="sh_left_content">
+                    <h2 class="o_default_snippet_text">Lorem Ipsum is simply dummy!</h2>
+                    <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </div>
+            </div>
+            <div class="col-md-6 sh_animation_part">
+                <div class="sh_content_right">
+                    <a class="sh_video" href="https://www.youtube.com/watch?v=-rCZNFARSfQ" target="_blank">
+                        <span class="fa fa-play" />
+                    </a>
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/1.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_181" data-name="theme6 heading">
+    <div class="container">
+        <div class="sh_heading">
+            <h3 class="o_default_snippet_text">Lorem Ipsum</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="66.000000pt" height="6.000000pt" viewbox="0 0 66.000000 10.000000" preserveaspectratio="xMidYMid meet">
+                <g transform="translate(0.000000,10.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                    <path d="M22 70 c-12 -16 -22 -37 -22 -46 0 -16 1 -16 18 0 18 15 20 15 37 -4 23 -26 47 -25 63 1 l13 21 23 -21 c28 -26 52 -27 68 -2 12 19 12 19 36 0 30 -23 40 -24 63 -3 16 15 20 14 48 -2 29 -17 31 -17 51 1 17 16 24 17 38 7 33 -24 43 -24 66 -3 l23 21 18 -20 c10 -11 24 -20 32 -20 21 0 62 52 63 80 l0 24 -16 -22 -15 -22 -26 20 c-33 25 -49 25 -63 0 l-11 -21 -26 21 c-32 25 -49 25 -65 1 -12 -19 -12 -19 -39 0 -34 24 -42 24 -64 -1 l-18 -20 -22 20 c-12 11 -26 20 -32 20 -5 0 -18 -9 -28 -20 l-18 -20 -22 20 c-27 25 -37 25 -60 0 l-18 -20 -22 20 c-29 27 -47 25 -73 -10z" />
+                </g>
+            </svg>
+            <p class="o_default_snippet_text">Lorem Ipsum is Dummy Text.</p>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_61" data-name="About us snippet 4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 sh_animation_part">
+                <section class="sh_content">
+                    <div class="sh_icon">
+                        <section class="sh_circle1" />
+                        <section class="sh_circle2" />
+                        <span class="fa fa-line-chart" />
+                    </div>
+                    <h3 class="o_default_snippet_text">Lorem Ipsum</h3>
+                    <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </section>
+            </div>
+            <div class="col-md-4 sh_animation_part">
+                <section class="sh_content">
+                    <div class="sh_icon">
+                        <section class="sh_circle1" />
+                        <section class="sh_circle2" />
+                        <span class="fa fa-usd" />
+                    </div>
+                    <h3 class="o_default_snippet_text">Lorem Ipsum</h3>
+                    <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </section>
+            </div>
+            <div class="col-md-4 sh_animation_part">
+                <section class="sh_content">
+                    <div class="sh_icon">
+                        <section class="sh_circle1" />
+                        <section class="sh_circle2" />
+                        <span class="fa fa-search" />
+                    </div>
+                    <h3 class="o_default_snippet_text">Lorem Ipsum</h3>
+                    <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_181" data-name="theme6 heading">
+    <div class="container">
+        <div class="sh_heading">
+            <h3 class="o_default_snippet_text">Lorem Ipsum</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="66.000000pt" height="6.000000pt" viewbox="0 0 66.000000 10.000000" preserveaspectratio="xMidYMid meet">
+                <g transform="translate(0.000000,10.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                    <path d="M22 70 c-12 -16 -22 -37 -22 -46 0 -16 1 -16 18 0 18 15 20 15 37 -4 23 -26 47 -25 63 1 l13 21 23 -21 c28 -26 52 -27 68 -2 12 19 12 19 36 0 30 -23 40 -24 63 -3 16 15 20 14 48 -2 29 -17 31 -17 51 1 17 16 24 17 38 7 33 -24 43 -24 66 -3 l23 21 18 -20 c10 -11 24 -20 32 -20 21 0 62 52 63 80 l0 24 -16 -22 -15 -22 -26 20 c-33 25 -49 25 -63 0 l-11 -21 -26 21 c-32 25 -49 25 -65 1 -12 -19 -12 -19 -39 0 -34 24 -42 24 -64 -1 l-18 -20 -22 20 c-12 11 -26 20 -32 20 -5 0 -18 -9 -28 -20 l-18 -20 -22 20 c-27 25 -37 25 -60 0 l-18 -20 -22 20 c-29 27 -47 25 -73 -10z" />
+                </g>
+            </svg>
+            <p class="o_default_snippet_text">Lorem Ipsum is Dummy Text.</p>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_62" data-name="About us snippet 5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 sh_animation_part">
+                <div class="sh_left_content">
+                    <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                    <p class="o_default_snippet_text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <p class="o_default_snippet_text">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+                </div>
+            </div>
+            <div class="col-md-8 sh_animation_part">
+                <section class="sh_first_progress">
+                    <div class="progress">
+                        <div class="progress-bar wow fadeInLeft              animated animated animated animated animated animated animated animated animated animated animated animated animated" data-wow-duration="1.5s" data-wow-delay="1s" style="width: 70%; visibility: visible; animation-duration: 1.5s; animation-delay: 1s;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" />
+                    </div>
+                    <p class="o_default_snippet_text">BACKEND <span class="sh_right_pers o_default_snippet_text">70%</span></p>
+                </section>
+                <section class="sh_first_progress">
+                    <div class="progress">
+                        <div class="progress-bar wow fadeInLeft              animated animated animated animated animated animated animated animated animated animated animated animated animated" data-wow-duration="1.5s" data-wow-delay="1s" style="width: 85%; visibility: visible; animation-duration: 1.5s; animation-delay: 1s;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" />
+                    </div>
+                    <p class="o_default_snippet_text">WORDPRESS <span class="sh_right_pers o_default_snippet_text">85%</span></p>
+                </section>
+                <section class="sh_first_progress">
+                    <div class="progress">
+                        <div class="progress-bar wow fadeInLeft              animated animated animated animated animated animated animated animated animated animated animated animated animated" data-wow-duration="1.5s" data-wow-delay="1s" style="width: 95%; visibility: visible; animation-duration: 1.5s; animation-delay: 1s;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" />
+                    </div>
+                    <p class="o_default_snippet_text">RESPONSIVE WEB DESIGN <span class="sh_right_pers o_default_snippet_text">95%</span></p>
+                </section>
+                <section class="sh_first_progress">
+                    <div class="progress">
+                        <div class="progress-bar wow fadeInLeft              animated animated animated animated animated animated animated animated animated animated animated animated animated" data-wow-duration="1.5s" data-wow-delay="1s" style="width: 90%; visibility: visible; animation-duration: 1.5s; animation-delay: 1s;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" />
+                    </div>
+                    <p class="o_default_snippet_text">JAVASCRIPT <span class="sh_right_pers o_default_snippet_text">90%</span></p>
+                </section>
+                <section class="sh_first_progress">
+                    <div class="progress">
+                        <div class="progress-bar wow fadeInLeft              animated animated animated animated animated animated animated animated animated animated animated animated animated" data-wow-duration="1.5s" data-wow-delay="1s" style="width: 80%; visibility: visible; animation-duration: 1.5s; animation-delay: 1s;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" />
+                    </div>
+                    <p class="o_default_snippet_text">APP DEVELOPMENT <span class="sh_right_pers o_default_snippet_text">80%</span></p>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" class="o_default_snippet_text">
+        $(document).ready(function() {
+            $("#sh_corpomate_theme_section_62 .sh_first_progress").each(function(index) {
+                var sh_progress_span = $(this).find('.sh_right_pers');
+                if (sh_progress_span.length) {
+                    $(this).find('.progress-bar').css("width", sh_progress_span.text());
+                }
+            });
+        });
+    </script>
+</section>
+<section id="sh_corpomate_theme_section_181" data-name="theme6 heading">
+    <div class="container">
+        <div class="sh_heading">
+            <h3 class="o_default_snippet_text">Lorem Ipsum</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="66.000000pt" height="6.000000pt" viewbox="0 0 66.000000 10.000000" preserveaspectratio="xMidYMid meet">
+                <g transform="translate(0.000000,10.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                    <path d="M22 70 c-12 -16 -22 -37 -22 -46 0 -16 1 -16 18 0 18 15 20 15 37 -4 23 -26 47 -25 63 1 l13 21 23 -21 c28 -26 52 -27 68 -2 12 19 12 19 36 0 30 -23 40 -24 63 -3 16 15 20 14 48 -2 29 -17 31 -17 51 1 17 16 24 17 38 7 33 -24 43 -24 66 -3 l23 21 18 -20 c10 -11 24 -20 32 -20 21 0 62 52 63 80 l0 24 -16 -22 -15 -22 -26 20 c-33 25 -49 25 -63 0 l-11 -21 -26 21 c-32 25 -49 25 -65 1 -12 -19 -12 -19 -39 0 -34 24 -42 24 -64 -1 l-18 -20 -22 20 c-12 11 -26 20 -32 20 -5 0 -18 -9 -28 -20 l-18 -20 -22 20 c-27 25 -37 25 -60 0 l-18 -20 -22 20 c-29 27 -47 25 -73 -10z" />
+                </g>
+            </svg>
+            <p class="o_default_snippet_text">Lorem Ipsum is Dummy Text.</p>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_63" data-name="About us snippet 6">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 sh_animation_part">
+                <div class="sh_content">
+                    <div class="sh_top_part">
+                        <div class="sh_number o_default_snippet_text">1</div>
+                        <div class="sh_heading">
+                            <h6 class="o_default_snippet_text">First Step</h6>
+                            <p class="o_default_snippet_text">Research &amp;amp; Analyze</p>
+                        </div>
+                    </div>
+                    <div class="sh_content_text">
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci</p>
+                        <a href="#" class="sh_more_btn btn o_default_snippet_text">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 sh_animation_part">
+                <div class="sh_content">
+                    <div class="sh_top_part">
+                        <div class="sh_number o_default_snippet_text">2</div>
+                        <div class="sh_heading">
+                            <h6 class="o_default_snippet_text">Second Step</h6>
+                            <p class="o_default_snippet_text">Research &amp;amp; Analyze</p>
+                        </div>
+                    </div>
+                    <div class="sh_content_text">
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci</p>
+                        <a href="#" class="sh_more_btn btn o_default_snippet_text">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 sh_animation_part">
+                <div class="sh_content">
+                    <div class="sh_top_part">
+                        <div class="sh_number o_default_snippet_text">3</div>
+                        <div class="sh_heading">
+                            <h6 class="o_default_snippet_text">Third Step</h6>
+                            <p class="o_default_snippet_text">Research &amp;amp; Analyze</p>
+                        </div>
+                    </div>
+                    <div class="sh_content_text">
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci</p>
+                        <a href="#" class="sh_more_btn btn o_default_snippet_text">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+      
+			
+	      </div>
+	    </t>
+	</template>	
+<!-- ABOUT US PAGE 3 -->
+
+</odoo>
+
+
+
+

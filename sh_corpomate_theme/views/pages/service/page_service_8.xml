@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- SERVICE 6 -->
+	<template id="sh_corpomate_tmpl_service_8" name="service">
+	    <t t-call="website.layout"> 
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			
+
+
+           
+
+<section id="sh_corpomate_theme_section_226" class="s_banner parallax s_parallax_no_overflow_hidden bg-black-75" data-name="Services8 Banner" style="background-image: none;" data-scroll-background-ratio="0">
+    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/services-banner.png'); background-position: 50% 0px; background-attachment: fixed;" />
+    <div class="container">
+        <div class="sh_heading">
+            <h1 class="o_default_snippet_text">Services</h1>
+            <div class="sh_breadcrumbs">
+                <ul class="breadcrumbs">
+                    <li>
+                        <a href="/" class="home o_default_snippet_text">Home</a>
+                    </li>
+                    <li>
+                        <span class="o_default_snippet_text">Services</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_222" class="sh_animation_part" data-name="Theme 8 heading">
+    <div class="container">
+        <div class="sh_title">
+            <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+            <p class="o_default_snippet_text">Lorem ipsum dolor sit consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labor et dolore magna aliqua</p>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_227" class="sh_animation_part" data-name="Services8 icon box">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="sh_icon_box">
+                    <div class="sh_icon">
+                        <span class="fa fa-cloud" />
+                    </div>
+                    <div class="sh_desc">
+                        <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="sh_icon_box">
+                    <div class="sh_icon">
+                        <span class="fa fa-cloud" />
+                    </div>
+                    <div class="sh_desc">
+                        <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="sh_icon_box">
+                    <div class="sh_icon">
+                        <span class="fa fa-cloud" />
+                    </div>
+                    <div class="sh_desc">
+                        <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="sh_icon_box">
+                    <div class="sh_icon">
+                        <span class="fa fa-cloud" />
+                    </div>
+                    <div class="sh_desc">
+                        <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_228" class="sh_animation_part" data-name="theme8 services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 sh_animation_part">
+                <div class="sh_content">
+                    <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                    <p class="o_default_snippet_text">Lorem ipsum dolor sit consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labor et dolore magna aliqua</p>
+                    <div class="row">
+                        <div class="col-md-6 sh_animation_part">
+                            <div class="sh_list">
+                                <h5 class="o_default_snippet_text">
+                                    <a href="#"><span class="fa fa-ellipsis-h" /></a> Lorem Ipsum
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-md-6 sh_animation_part">
+                            <div class="sh_list">
+                                <h5 class="o_default_snippet_text">
+                                    <a href="#"><span class="fa fa-ellipsis-h" /></a> Lorem Ipsum
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-md-6 sh_animation_part">
+                            <div class="sh_list">
+                                <h5 class="o_default_snippet_text">
+                                    <a href="#"><span class="fa fa-ellipsis-h" /></a> Lorem Ipsum
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-md-6 sh_animation_part">
+                            <div class="sh_list">
+                                <h5 class="o_default_snippet_text">
+                                    <a href="#"><span class="fa fa-ellipsis-h" /></a> Lorem Ipsum
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-md-6 sh_animation_part">
+                            <div class="sh_list">
+                                <h5 class="o_default_snippet_text">
+                                    <a href="#"><span class="fa fa-ellipsis-h" /></a> Lorem Ipsum
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-md-6 sh_animation_part">
+                            <div class="sh_list">
+                                <h5 class="o_default_snippet_text">
+                                    <a href="#"><span class="fa fa-ellipsis-h" /></a> Lorem Ipsum
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-md-6 sh_animation_part">
+                            <div class="sh_list">
+                                <h5 class="o_default_snippet_text">
+                                    <a href="#"><span class="fa fa-ellipsis-h" /></a> Lorem Ipsum
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-md-6 sh_animation_part">
+                            <div class="sh_list">
+                                <h5 class="o_default_snippet_text">
+                                    <a href="#"><span class="fa fa-ellipsis-h" /></a> Lorem Ipsum
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 sh_animation_part">
+                <div class="sh_img">
+                    <img src="/sh_corpomate_theme/static/src/img/27310702.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_229" class="sh_animation_part" data-name="theme8 services counter">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-6">
+                <div class="sh_counter">
+                    <h4 class="sh_count o_default_snippet_text">95</h4>
+                    <p class="o_default_snippet_text">Lorem Ipsum</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-6">
+                <div class="sh_counter">
+                    <h4 class="sh_count o_default_snippet_text">110</h4>
+                    <p class="o_default_snippet_text">Lorem Ipsum</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-6">
+                <div class="sh_counter">
+                    <h4 class="sh_count o_default_snippet_text">30</h4>
+                    <p class="o_default_snippet_text">Lorem Ipsum</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-6">
+                <div class="sh_counter">
+                    <h4 class="sh_count o_default_snippet_text">76</h4>
+                    <p class="o_default_snippet_text">Lorem Ipsum</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+      
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

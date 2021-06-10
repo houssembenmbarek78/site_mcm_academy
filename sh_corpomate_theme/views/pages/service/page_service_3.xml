@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- SERVICE 3 -->
+	<template id="sh_corpomate_tmpl_service_3" name="service">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			
+
+
+
+
+				<section id="sh_corpomate_theme_section_115" class="section-main bg-img-3 s_banner parallax s_parallax_no_overflow_hidden bg-black-75" data-name="home3 about 1" style="background-image: none;" data-scroll-background-ratio="0">
+        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/b3.jpeg'); background-position: 50% 0; background-attachment: fixed;" />
+        <section id="breadcrumb-section" class="breadcrumb-section clearfix">
+            <div class="jarallax" style="background-image: none; position: relative; z-index: 0;" data-jarallax-original-styles="background-image: url(/sh_corpomate_theme/static/src/img/services-banner.png);">
+                <div class="overlay-black">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="breadcrumb-title text-center mb-50">
+                                    <span class="sub-title o_default_snippet_text">all you need to know</span>
+                                    <h2 class="big-title">
+                                        <strong>Services</strong>
+                                    </h2>
+                                </div>
+                                <div class="breadcrumb-list">
+                                    <ul>
+                                        <li class="breadcrumb-item">
+                                            <a href="/web/dataset/call_kw/ir.ui.view/index-1.html" class="breadcrumb-link o_default_snippet_text">Home</a>
+                                        </li>
+                                        <li class="breadcrumb-item active" aria-current="page">Services</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section id="sh_corpomate_theme_section_152" data-name="home3 Title 1">
+        <div class="container">
+            <div class="row">
+                <h1 class="elementor-size-default o_default_snippet_text">Lorem <span class="highlight o_default_snippet_text">Ipsum</span></h1>
+            </div>
+        </div>
+    </section>
+    <section id="sh_corpomate_theme_section_98" data-name="services snippet 6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="sh_content">
+                        <div class="sh_img_content">
+                            <img src="/sh_corpomate_theme/static/src/img/blocks/service1_1.jpg" />
+                        </div>
+                        <div class="sh_description">
+                            <h3>
+                                <a href="#" class="o_default_snippet_text">Lorem Ipsum</a>
+                            </h3>
+                            <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                            <a href="#" class="sh_more_btn o_default_snippet_text">Read More <span class="fa fa-chevron-right" /></a>
+                            <a href="#" class="sh_icon">
+                                <span class="fa fa-chevron-circle-up sh_first_icon" />
+                                <span class="fa fa-chevron-circle-down sh_two_icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sh_content">
+                        <div class="sh_img_content">
+                            <img src="/sh_corpomate_theme/static/src/img/blocks/service1_4.jpg" />
+                        </div>
+                        <div class="sh_description">
+                            <h3>
+                                <a href="#" class="o_default_snippet_text">Lorem Ipsum</a>
+                            </h3>
+                            <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                            <a href="#" class="sh_more_btn o_default_snippet_text">Read More <span class="fa fa-chevron-right" /></a>
+                            <a href="#" class="sh_icon">
+                                <span class="fa fa-chevron-circle-up sh_first_icon" />
+                                <span class="fa fa-chevron-circle-down sh_two_icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sh_content">
+                        <div class="sh_img_content">
+                            <img src="/sh_corpomate_theme/static/src/img/blocks/service1_7.jpg" />
+                        </div>
+                        <div class="sh_description">
+                            <h3>
+                                <a href="#" class="o_default_snippet_text">Lorem Ipsum</a>
+                            </h3>
+                            <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                            <a href="#" class="sh_more_btn o_default_snippet_text">Read More <span class="fa fa-chevron-right" /></a>
+                            <a href="#" class="sh_icon">
+                                <span class="fa fa-chevron-circle-up sh_first_icon" />
+                                <span class="fa fa-chevron-circle-down sh_two_icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sh_content">
+                        <div class="sh_img_content">
+                            <img src="/sh_corpomate_theme/static/src/img/blocks/service1_2.jpg" />
+                        </div>
+                        <div class="sh_description">
+                            <h3>
+                                <a href="#" class="o_default_snippet_text">Lorem Ipsum</a>
+                            </h3>
+                            <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                            <a href="#" class="sh_more_btn o_default_snippet_text">Read More <span class="fa fa-chevron-right" /></a>
+                            <a href="#" class="sh_icon">
+                                <span class="fa fa-chevron-circle-up sh_first_icon" />
+                                <span class="fa fa-chevron-circle-down sh_two_icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sh_content">
+                        <div class="sh_img_content">
+                            <img src="/sh_corpomate_theme/static/src/img/blocks/service1_5.jpg" />
+                        </div>
+                        <div class="sh_description">
+                            <h3>
+                                <a href="#" class="o_default_snippet_text">Lorem Ipsum</a>
+                            </h3>
+                            <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                            <a href="#" class="sh_more_btn o_default_snippet_text">Read More <span class="fa fa-chevron-right" /></a>
+                            <a href="#" class="sh_icon">
+                                <span class="fa fa-chevron-circle-up sh_first_icon" />
+                                <span class="fa fa-chevron-circle-down sh_two_icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sh_content">
+                        <div class="sh_img_content">
+                            <img src="/sh_corpomate_theme/static/src/img/blocks/service1_8.jpg" />
+                        </div>
+                        <div class="sh_description">
+                            <h3>
+                                <a href="#" class="o_default_snippet_text">Lorem Ipsum</a>
+                            </h3>
+                            <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                            <a href="#" class="sh_more_btn o_default_snippet_text">Read More <span class="fa fa-chevron-right" /></a>
+                            <a href="#" class="sh_icon">
+                                <span class="fa fa-chevron-circle-up sh_first_icon" />
+                                <span class="fa fa-chevron-circle-down sh_two_icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sh_content">
+                        <div class="sh_img_content">
+                            <img src="/sh_corpomate_theme/static/src/img/blocks/service1_2.jpg" />
+                        </div>
+                        <div class="sh_description">
+                            <h3>
+                                <a href="#" class="o_default_snippet_text">Lorem Ipsum</a>
+                            </h3>
+                            <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                            <a href="#" class="sh_more_btn o_default_snippet_text">Read More <span class="fa fa-chevron-right" /></a>
+                            <a href="#" class="sh_icon">
+                                <span class="fa fa-chevron-circle-up sh_first_icon" />
+                                <span class="fa fa-chevron-circle-down sh_two_icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sh_content">
+                        <div class="sh_img_content">
+                            <img src="/sh_corpomate_theme/static/src/img/blocks/service1_5.jpg" />
+                        </div>
+                        <div class="sh_description">
+                            <h3>
+                                <a href="#" class="o_default_snippet_text">Lorem Ipsum</a>
+                            </h3>
+                            <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                            <a href="#" class="sh_more_btn o_default_snippet_text">Read More <span class="fa fa-chevron-right" /></a>
+                            <a href="#" class="sh_icon">
+                                <span class="fa fa-chevron-circle-up sh_first_icon" />
+                                <span class="fa fa-chevron-circle-down sh_two_icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sh_content">
+                        <div class="sh_img_content">
+                            <img src="/sh_corpomate_theme/static/src/img/blocks/service1_8.jpg" />
+                        </div>
+                        <div class="sh_description">
+                            <h3>
+                                <a href="#" class="o_default_snippet_text">Lorem Ipsum</a>
+                            </h3>
+                            <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                            <a href="#" class="sh_more_btn o_default_snippet_text">Read More <span class="fa fa-chevron-right" /></a>
+                            <a href="#" class="sh_icon">
+                                <span class="fa fa-chevron-circle-up sh_first_icon" />
+                                <span class="fa fa-chevron-circle-down sh_two_icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sh_corpomate_theme_section_99" data-name="services snippet 7">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="sh_left_content">
+                        <h3 class="o_default_snippet_text">Waste No More Time!</h3>
+                        <p class="o_default_snippet_text">Rimply dummy text of the printing and typesetting industry Ipsum has been the industry's.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sh_right_content">
+                        <a href="#" class="btn sh_btn_cm_3 btn-primary o_default_snippet_text">Get a Quote <span class="fa fa-angle-right" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+      
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- FAQ PAGE 5 -->
+	<template id="sh_corpomate_tmpl_faq_5" name="FAQ">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			
+
+
+     
+     
+     
+     <section id="sh_corpomate_theme_section_119" class="home-area bg-item margin-top-space-2 oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/faq-banner.png');" data-name="services banner">
+    <style class="o_default_snippet_text">
+        .navbar-light {
+            background: transparent !important;
+            z-index: 1;
+        }
+
+        .navbar-light #top_menu_collapse .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+
+        .o_affix_enabled .navbar-light {
+            background: transparent !important;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-light {
+                background: #fff !important;
+                z-index: 1;
+            }
+            .navbar-light #top_menu_collapse .navbar-nav .nav-link {
+                color: #585b60 !important;
+            }
+            .o_affix_enabled .navbar-light {
+                background-color: #fff !important;
+            }
+        }
+    </style>
+    <div class="bg-overlay-4" />
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 mx-auto">
+                <div class="banner-content text-center">
+                    <h1>FAQ</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb align-items-center">
+                            <li class="breadcrumb-item">
+                                <a href="/web/dataset/call_kw/ir.ui.view/index.html" class="o_default_snippet_text">HOME</a>
+                                <span class="fa fa-chevron-right" />
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">FAQ</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-shape">
+        <img class="img-fluid" src="/sh_corpomate_theme/static/src/img/bg_home_shape.png" alt="bottom-shape image" data-original-title="" title="" aria-describedby="tooltip357305" />
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_217" data-name="FAQ 5">
+    <div class="container">
+        <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+            <div class="card">
+                <div class="card-header" role="tab" id="headingOne1761">
+                    <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1761" aria-expanded="true" aria-controls="collapseOne1761" data-target="#collapseOne1761">
+                        <h5 class="mb-0">
+                            <span class="sh_text o_default_snippet_text">How can we help your business?</span>
+                            <span class="fa fa-plus sh_icon_down" />
+                        </h5>
+                    </a>
+                </div>
+                <div id="collapseOne1761" class="collapse show" role="tabpanel" aria-labelledby="headingOne1761" data-parent="#accordionEx">
+                    <div class="card-body">
+                        <p class="o_default_snippet_text">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                            3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad
+                            vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="headingOne1762">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1762" aria-expanded="true" aria-controls="collapseOne1762" data-target="#collapseOne1762">
+                        <h5 class="mb-0">
+                            <span class="sh_text o_default_snippet_text">How can we help your business?</span>
+                            <span class="fa fa-plus sh_icon_down" />
+                        </h5>
+                    </a>
+                </div>
+                <div id="collapseOne1762" class="collapse" role="tabpanel" aria-labelledby="headingOne1762" data-parent="#accordionEx">
+                    <div class="card-body">
+                        <p class="o_default_snippet_text">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                            3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad
+                            vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="headingOne1763">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1763" aria-expanded="true" aria-controls="collapseOne1763" data-target="#collapseOne1763">
+                        <h5 class="mb-0">
+                            <span class="sh_text o_default_snippet_text">How can we help your business?</span>
+                            <span class="fa fa-plus sh_icon_down" />
+                        </h5>
+                    </a>
+                </div>
+                <div id="collapseOne1763" class="collapse" role="tabpanel" aria-labelledby="headingOne1763" data-parent="#accordionEx">
+                    <div class="card-body">
+                        <p class="o_default_snippet_text">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                            3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad
+                            vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+      
+      
+      
+      
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

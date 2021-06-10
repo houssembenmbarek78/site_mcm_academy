@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+
+	<!-- Snippet Template -->
+  <template id="sh_html_snippet_tmpl_1" name="HTML Snippet">
+    <section class="sh_html_snippet_section_1">
+    
+    	<div class="js_cls_html_snippet_div_1">
+    	
+    	</div>
+    
+     HTML CODE GOES HERE
+    </section>
+  </template>
+  
+    
+    <!-- Snippet Options -->
+    <template id="sh_html_snippet_snippet_options" name="HTML Snippet Options" inherit_id="website.snippet_options">
+        
+    
+    <xpath expr="//div" position="after">
+        
+        <div data-js="js_editor_sh_html_snippet"
+            data-selector=".sh_html_snippet_section_1">
+            <we-button data-no-preview="true">Change HTML Snippet</we-button>
+        </div>
+        
+    </xpath>    
+    
+    
+  </template>
+
+
+
+
+
+  <template id="sh_html_snippet_snippets" name="HTML Snippet" inherit_id="website.snippets">
+  
+	  <xpath expr="//div[@id='snippet_structure']" position="after">
+		<div id="sh_html_snippet_snippets" class="o_panel">
+			
+			<div class="o_panel_header">
+				HTML Snippet
+			</div>		
+			
+			<div class="o_panel_body">
+			
+			   <t t-snippet="sh_corpomate_theme.sh_html_snippet_tmpl_1" 
+			   t-thumbnail="/sh_corpomate_theme/static/src/img/extra_addons/s_1.png"/>
+			   
+			</div>
+			
+		</div>
+	  
+	  </xpath>
+      
+  </template>
+  
+</odoo>

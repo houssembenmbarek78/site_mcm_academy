@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- OUR TEAM 13 -->
+	<template id="sh_corpomate_tmpl_our_team_13" name="our team">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			     
+			 	<section id="sh_corpomate_theme_section_332" class="s_banner parallax s_parallax_no_overflow_hidden bg-black-50" data-name="Banner 13" style="background-image: none;" data-scroll-background-ratio="0">
+		        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/theme_13/6.png'); background-position: 50% 0; background-attachment: fixed;"/>
+		        <div class="container">
+		          <div class="sh_banner">
+		            <div class="sh_title">
+		              <h4 class="o_default_snippet_text">Our Team</h4>
+		            </div>
+		            <div class="sh_breadcrumb">
+		              <ul>
+		                <li>
+		                  <a href="/" class="btn sh_main o_default_snippet_text"><span class="fa fa-home"/> &amp;nbsp; &amp;nbsp; &amp;nbsp; <span class="fa fa-chevron-right"/></a>
+		                </li>
+		                <li>
+		                  <a href="#" class="btn o_default_snippet_text">Team</a>
+		                </li>
+		              </ul>
+		            </div>
+		          </div>
+		        </div>
+		      </section>
+		      <section id="sh_corpomate_theme_section_333" class="sh_animation_part" data-name="Team Snippet 13">
+		        <div class="container">
+		          <div class="sh_section_heading text-center">
+		            <h5 class="o_default_snippet_text">Stylish Team</h5>
+		            <h2 class="o_default_snippet_text">Meet Our Experts</h2>
+		          </div>
+		          <div class="sh_team_13">
+		            <div class="row">
+		              <div class="col-lg-3 col-md-6 col-sm-12 col-12 sh_disable_hover_part">
+		                <div class="sh_team">
+		                  <img src="/sh_corpomate_theme/static/src/img/theme_13/8.png" alt=""/>
+		                  <section class="social">
+		                    <li>
+		                      <a href="#" class="btn">
+		                        <span class="fa fa-facebook"/>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="#" class="btn">
+		                        <span class="fa fa-twitter"/>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="#" class="btn">
+		                        <span class="fa fa-linkedin"/>
+		                      </a>
+		                    </li>
+		                  </section>
+		                  <div class="sh_team_content">
+		                    <a href="#">
+		                      <h3 class="title o_default_snippet_text">Lorem ipsum</h3>
+		                    </a>
+		                    <span class="post o_default_snippet_text">Lorem ipsum dolor sit</span>
+		                  </div>
+		                </div>
+		              </div>
+		              <div class="col-lg-3 col-md-6 col-sm-12 col-12 sh_disable_hover_part">
+		                <div class="sh_team">
+		                  <img src="/sh_corpomate_theme/static/src/img/theme_13/11.png" alt=""/>
+		                  <section class="social">
+		                    <li>
+		                      <a href="#" class="btn">
+		                        <span class="fa fa-facebook"/>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="#" class="btn">
+		                        <span class="fa fa-twitter"/>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="#" class="btn">
+		                        <span class="fa fa-linkedin"/>
+		                      </a>
+		                    </li>
+		                  </section>
+		                  <div class="sh_team_content">
+		                    <a href="#">
+		                      <h3 class="title o_default_snippet_text">Lorem ipsum</h3>
+		                    </a>
+		                    <span class="post o_default_snippet_text">Lorem ipsum dolor sit</span>
+		                  </div>
+		                </div>
+		              </div>
+		              <div class="col-lg-3 col-md-6 col-sm-12 col-12 sh_disable_hover_part">
+		                <div class="sh_team">
+		                  <img src="/sh_corpomate_theme/static/src/img/theme_13/9.png" alt=""/>
+		                  <section class="social">
+		                    <li>
+		                      <a href="#" class="btn">
+		                        <span class="fa fa-facebook"/>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="#" class="btn">
+		                        <span class="fa fa-twitter"/>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="#" class="btn">
+		                        <span class="fa fa-linkedin"/>
+		                      </a>
+		                    </li>
+		                  </section>
+		                  <div class="sh_team_content">
+		                    <a href="#">
+		                      <h3 class="title o_default_snippet_text">Lorem ipsum</h3>
+		                    </a>
+		                    <span class="post o_default_snippet_text">Lorem ipsum dolor sit</span>
+		                  </div>
+		                </div>
+		              </div>
+		              <div class="col-lg-3 col-md-6 col-sm-12 col-12 sh_disable_hover_part">
+		                <div class="sh_team">
+		                  <img src="/sh_corpomate_theme/static/src/img/theme_13/7.png" alt=""/>
+		                  <section class="social">
+		                    <li>
+		                      <a href="#" class="btn">
+		                        <span class="fa fa-facebook"/>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="#" class="btn">
+		                        <span class="fa fa-twitter"/>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="#" class="btn">
+		                        <span class="fa fa-linkedin"/>
+		                      </a>
+		                    </li>
+		                  </section>
+		                  <div class="sh_team_content">
+		                    <a href="#">
+		                      <h3 class="title o_default_snippet_text">Lorem ipsum</h3>
+		                    </a>
+		                    <span class="post o_default_snippet_text">Lorem ipsum dolor sit</span>
+		                  </div>
+		                </div>
+		              </div>
+		              <div class="col-lg-3 col-md-6 col-sm-12 col-12 sh_disable_hover_part">
+		                <div class="sh_team">
+		                  <img src="/sh_corpomate_theme/static/src/img/theme_13/8.png" alt=""/>
+		                  <section class="social">
+		                    <li>
+		                      <a href="#" class="btn">
+		                        <span class="fa fa-facebook"/>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="#" class="btn">
+		                        <span class="fa fa-twitter"/>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="#" class="btn">
+		                        <span class="fa fa-linkedin"/>
+		                      </a>
+		                    </li>
+		                  </section>
+		                  <div class="sh_team_content">
+		                    <a href="#">
+		                      <h3 class="title o_default_snippet_text">Lorem ipsum</h3>
+		                    </a>
+		                    <span class="post o_default_snippet_text">Lorem ipsum dolor sit</span>
+		                  </div>
+		                </div>
+		              </div>
+		              <div class="col-lg-3 col-md-6 col-sm-12 col-12 sh_disable_hover_part">
+		                <div class="sh_team">
+		                  <img src="/sh_corpomate_theme/static/src/img/theme_13/11.png" alt=""/>
+		                  <section class="social">
+		                    <li>
+		                      <a href="#" class="btn">
+		                        <span class="fa fa-facebook"/>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="#" class="btn">
+		                        <span class="fa fa-twitter"/>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="#" class="btn">
+		                        <span class="fa fa-linkedin"/>
+		                      </a>
+		                    </li>
+		                  </section>
+		                  <div class="sh_team_content">
+		                    <a href="#">
+		                      <h3 class="title o_default_snippet_text">Lorem ipsum</h3>
+		                    </a>
+		                    <span class="post o_default_snippet_text">Lorem ipsum dolor sit</span>
+		                  </div>
+		                </div>
+		              </div>
+		              <div class="col-lg-3 col-md-6 col-sm-12 col-12 sh_disable_hover_part">
+		                <div class="sh_team">
+		                  <img src="/sh_corpomate_theme/static/src/img/theme_13/9.png" alt=""/>
+		                  <section class="social">
+		                    <li>
+		                      <a href="#" class="btn">
+		                        <span class="fa fa-facebook"/>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="#" class="btn">
+		                        <span class="fa fa-twitter"/>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="#" class="btn">
+		                        <span class="fa fa-linkedin"/>
+		                      </a>
+		                    </li>
+		                  </section>
+		                  <div class="sh_team_content">
+		                    <a href="#">
+		                      <h3 class="title o_default_snippet_text">Lorem ipsum</h3>
+		                    </a>
+		                    <span class="post o_default_snippet_text">Lorem ipsum dolor sit</span>
+		                  </div>
+		                </div>
+		              </div>
+		              <div class="col-lg-3 col-md-6 col-sm-12 col-12 sh_disable_hover_part">
+		                <div class="sh_team">
+		                  <img src="/sh_corpomate_theme/static/src/img/theme_13/7.png" alt=""/>
+		                  <section class="social">
+		                    <li>
+		                      <a href="#" class="btn">
+		                        <span class="fa fa-facebook"/>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="#" class="btn">
+		                        <span class="fa fa-twitter"/>
+		                      </a>
+		                    </li>
+		                    <li>
+		                      <a href="#" class="btn">
+		                        <span class="fa fa-linkedin"/>
+		                      </a>
+		                    </li>
+		                  </section>
+		                  <div class="sh_team_content">
+		                    <a href="#">
+		                      <h3 class="title o_default_snippet_text">Lorem ipsum</h3>
+		                    </a>
+		                    <span class="post o_default_snippet_text">Lorem ipsum dolor sit</span>
+		                  </div>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		      </section>
+			
+	       </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+
+

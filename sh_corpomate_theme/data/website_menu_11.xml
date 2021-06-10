@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+
+
+
+
+
+
+
+
+		<!-- 
+		===============
+		MEGA MENU PAGE MAIN
+		================
+		 -->        
+        
+		
+		<!-- MEGA MENU PAGE 11  -->
+        <record id="sh_corpomate_page_mega_menu_11" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/megamenu11</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_mega_menu_11"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_mega_menu_11" model="website.menu">
+            <field name="name">mega menu</field>
+            <field name="url">/megamenu11</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">2</field>
+      	    <field name="page_id" ref="sh_corpomate_page_mega_menu_11" />    
+      	    <field name="sh_website_mega_menu_html" type="html">
+      	    
+      	    
+      	    
+    <!-- put your code here -->
+      	    
+      	    
+    <section id="sh_megamenubar_17">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>Departments</h4>
+                        <ul>
+                            <section><a href="#"> orthopaedics 1</a></section>
+                            <section><a href="#"> gynecology</a></section>
+                            <section><a href="#"> medicine</a></section>
+                            <section><a href="#"> cardiology</a></section>
+                            <section><a href="#"> dental care</a></section>
+                        </ul>
+                        <div class="sh_img">
+                           <img src="/sh_corpomate_theme/static/src/img/mega_menu/theme_11/megamenu1.jpg"></img>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>our doctors</h4>
+                        <ul>
+                            <section><a href="#"> doctor one</a></section>
+                            <section><a href="#"> doctor two</a></section>
+                            <section><a href="#"> doctor three</a></section>
+                            <section><a href="#"> doctor four</a></section>
+                            <section><a href="#"> doctor five</a></section>
+                        </ul>
+                        <div class="sh_img">
+                           <img src="/sh_corpomate_theme/static/src/img/mega_menu/theme_11/megamenu2.jpg"></img>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>our gallery</h4>
+                        <ul>
+                            <section><a href="#"> gallery 2 column</a></section>
+                            <section><a href="#"> gallery 3 column</a></section>
+                            <section><a href="#"> gallery 4 column</a></section>
+                            <section><a href="#"> gallery full width</a></section>
+                            <section><a href="#"> gallery full width no gap</a></section>
+                        </ul>
+                        <div class="sh_img">
+                           <img src="/sh_corpomate_theme/static/src/img/mega_menu/theme_11/megamenu3.jpg"></img>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>general services</h4>
+                        <ul>
+                            <section><a href="#"> cardiology</a></section>
+                            <section><a href="#"> orthopaedics</a></section>
+                            <section><a href="#"> pediatric</a></section>
+                            <section><a href="#"> oncology</a></section>
+                            <section><a href="#"> anesthesiology</a></section>    
+                        </ul>
+                        <div class="sh_img">
+                           <img src="/sh_corpomate_theme/static/src/img/mega_menu/theme_11/megamenu4.jpg"></img>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            
+
+        </div>
+    </section>    
+      	    
+      	    
+    <!-- put your code here -->   	    	
+      	    
+
+   	    	</field>     	    
+      	    
+      	    
+      	    
+      	            
+        </record>	
+
+
+
+
+
+
+
+
+
+    
+        <!-- 
+        ===============
+        ABOUT US PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- ABOUT US PAGE 11 -->
+        <record id="sh_corpomate_page_about_us_11" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/aboutus11</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_about_us_11"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_about_us_11" model="website.menu">
+            <field name="name">about us</field>
+            <field name="url">/aboutus11</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">3</field>
+            <field name="page_id" ref="sh_corpomate_page_about_us_11" />            
+        </record>   
+
+
+
+    
+        <!-- 
+        ===============
+        HOME PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- HOME PAGE 11 -->
+        <record id="sh_corpomate_page_home_11" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/home11</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_home_11"/>
+            <field name="website_indexed" eval="False"/>
+            
+                        
+        </record>
+        
+
+        <record id="sh_corpomate_menu_home_11" model="website.menu">
+            <field name="name">home</field>
+            <field name="url">/home11</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">1</field>
+            <field name="page_id" ref="sh_corpomate_page_home_11" />               
+        </record>
+        
+        
+         <!-- 
+        ===============
+        SERVICE PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- SERVICE PAGE 11 -->
+        <record id="sh_corpomate_page_service_11" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/service11</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_service_11"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_service_11" model="website.menu">
+            <field name="name">service</field>
+            <field name="url">/service11</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">4</field>
+            <field name="page_id" ref="sh_corpomate_page_service_11" />               
+        </record>   
+            
+        <!-- 
+        ===============
+        CONTACT US PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- CONTACT US PAGE 11 -->
+        <record id="sh_corpomate_page_contact_us_11" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/contactus11</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_contact_us_11"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_contact_us_11" model="website.menu">
+            <field name="name">contact us</field>
+            <field name="url">/contactus11</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">6</field>
+            <field name="page_id" ref="sh_corpomate_page_contact_us_11" />                
+        </record> 
+        
+        
+        <!-- 
+        ===============
+        OUR TEAM MAIN
+        ================
+         -->        
+        
+        
+        <!-- OUR TEAM PAGE 11
+        <record id="sh_corpomate_page_our_team_11" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/ourteam11</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_our_team_11"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_our_team_11" model="website.menu">
+            <field name="name">our team</field>
+            <field name="url">/ourteam11</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">5</field>
+            <field name="page_id" ref="sh_corpomate_page_our_team_11" />                
+        </record> 
+        
+         -->
+        
+       <!-- 
+        ===============
+        FAQ PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- FAQ PAGE 11 -->
+        <record id="sh_corpomate_page_faq_11" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/faq11</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_faq_11"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_faq_11" model="website.menu">
+            <field name="name">FAQ</field>
+            <field name="url">/faq11</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">7</field>
+            <field name="page_id" ref="sh_corpomate_page_faq_11" />                    
+        </record> 
+        
+        
+        
+        
+        <!-- 
+        ===============
+        TERMS AND CONDITIONS PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- TERMS AND CONDITIONS PAGE 11 -->
+        <record id="sh_corpomate_page_terms_and_conditions_11" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/termsandcondition11</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_terms_and_conditions_11"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_terms_and_conditions_11" model="website.menu">
+            <field name="name">terms and conditions</field>
+            <field name="url">/termsandcondition11</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">11</field>
+            <field name="page_id" ref="sh_corpomate_page_terms_and_conditions_11" />               
+        </record>  
+        
+        
+        <!-- 
+        ===============
+        PRIVACY POLICY 11
+        ================
+         -->        
+        
+        
+        <!-- PRIVACY POLICY PAGE 11 -->
+        <record id="sh_corpomate_page_privacy_policy_11" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/privacypolicy11</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_privacy_policy_11"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_privacy_policy_11" model="website.menu">
+            <field name="name">privacy policy</field>
+            <field name="url">/privacypolicy11</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">8</field>
+            <field name="page_id" ref="sh_corpomate_page_privacy_policy_11" />               
+        </record>
+        
+        
+        
+        
+        
+            
+        
+    </data>
+
+</odoo>        
+        

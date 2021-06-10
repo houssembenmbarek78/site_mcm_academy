@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	
+
+	<template id="sh_website_megamenu_design_mega_menu_tmpl" name="Design Mega Menu">
+		<t t-call="website.layout">
+			<div id="wrap" t-ignore="True">
+				<hr />
+				<div class="container">
+					<div t-if="record">
+						<div t-field="record.sh_website_mega_menu_html" />
+					</div>
+				</div>
+			</div>
+		</t>
+	</template>
+	
+
+     
+<!-- Layout 	-->
+<template id="sh_website_megamenu_submenu" inherit_id="website.submenu" name="Submenu">
+
+
+		<xpath expr="//li[@t-if='submenu.is_visible and not has_visible_submenu']" position="replace">
+
+
+			<li t-if="submenu.is_visible and not has_visible_submenu" t-attf-class="#{item_class or ''} #{'dropdown' if submenu.sh_website_mega_menu_html else ''}">
+		        <a t-attf-data-toggle="#{'dropdown' if submenu.sh_website_mega_menu_html else ''}" 
+		        	t-att-href="submenu.clean_url()"
+		            t-attf-class="#{link_class or ''} #{'active' if submenu.clean_url() and unslug_url(request.httprequest.path) == unslug_url(submenu.clean_url()) else ''} #{'dropdown-toggle' if submenu.sh_website_mega_menu_html else ''}"
+		            role="menuitem"
+		            t-ignore="true"
+		            t-att-target="'_blank' if submenu.new_window else None">
+		            <span t-field="submenu.name"/>
+		        </a>
+		    
+		    
+                <ul class="oe_structure dropdown-menu"
+					t-if="submenu.sh_website_mega_menu_html">
+                    <div t-raw="submenu.sh_website_mega_menu_html"></div>
+                </ul>		    
+		    
+		    </li>
+
+
+		</xpath>
+		
+		
+
+
+</template>
+
+	
+ 
+	
+	
+</odoo>	

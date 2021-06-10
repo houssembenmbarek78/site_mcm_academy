@@ -1,0 +1,24 @@
+.o_footer{background-color: $-color-secondary !important;margin-top: 30px;}
+.s_text_block{position: relative;padding-top: 5rem!important;padding-bottom: 2.4rem!important;}
+.s_text_block .footer-ribbon{background-color: $-color-Primary;}
+.s_text_block .footer-ribbon {font-style: italic;position: absolute;top:0;margin: -16px 0 0 0;padding: 10px 20px 6px 20px;color: #fff;font-size: 1em; z-index: 101;}
+.s_text_block .footer-ribbon:before {right: 100%;border-right: 10px solid $-color-Primary;border-top: 16px solid transparent;content: "";display: block;height: 0;position: absolute;top: 0;width: 7px;}
+.s_text_block .textwidget a.text-color-light {color: $-color-Primary;text-decoration:none;padding-left: 0px;}
+.s_text_block .contact-info h3{color: $-color-Primary;font-size: 1em;text-transform: uppercase;font-weight: bolder;}
+.s_text_block .contact-info ul{padding:0px;list-style: none;}
+.s_text_block .contact-info .contact-details li{margin-bottom:10px;}
+.s_text_block .contact-info .contact-details span a:hover{color: $-color-Primary;}
+.s_text_block .textwidget ul{padding:0px;list-style: none;}
+.s_text_block .textwidget i{color:$-color-Primary;}
+.s_text_block .textwidget  a{padding-left: 13px;text-decoration:none;font-size: 14px;}
+.s_text_block .textwidget  a:hover{color:$-color-Primary;}
+.s_text_block .textwidget li{margin-bottom: 5px;}
+.o_footer .widget.widget_text .widget-title{font-size: 1em;text-transform: uppercase;font-weight: bolder;color: $-color-Primary;}
+.s_text_block{background: $-color-secondary !important;}
+
+section.s_text_block .widget .textwidget p:nth-child(2) {padding: 10px 0;}
+
+
+
+
+

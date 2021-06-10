@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- CONTACT US PAGE 1 -->
+	<template id="sh_corpomate_tmpl_contact_us_1" name="contact us">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			
+
+
+
+      <section id="sh_corpomate_theme_section_108" class="s_banner parallax s_parallax_no_overflow_hidden bg-black-50" data-scroll-background-ratio="0" style="background-image: none;">
+        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/contact-banner.png'); background-position: 50% 0;background-attachment: fixed;"/>
+        <div class="container">
+          <h1 class="o_default_snippet_text">Contact Us</h1>
+          <div class="breadcrumbs-description o_default_snippet_text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_88">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="sh_form">
+                <form action="/website_form/" method="post" data-model_name="crm.lead" data-success_page="/contactus-thank-you" class="s_website_form container-fluid mt32" enctype="multipart/form-data" data-editable-form="false">
+                  <h2 class="sh_form_heading o_default_snippet_text">Send us a message</h2>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group sh_name sh_group form-field o_website_form_required_custom">
+                        <input type="text" class="form-control o_website_form_input" placeholder="Name" name="contact_name" required="" value=""/>
+                        <div class="sh_border">
+                          <div class="sh_left_right_border"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group sh_email sh_group form-field">
+                        <input type="text" class="form-control o_website_form_input" placeholder="Phone" name="phone" value=""/>
+                        <div class="sh_border">
+                          <div class="sh_left_right_border"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group sh_number sh_group form-field o_website_form_required_custom">
+                        <input type="text" class="form-control o_website_form_input" placeholder="Email" name="email_from" required="" value=""/>
+                        <div class="sh_border">
+                          <div class="sh_left_right_border"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group sh_number sh_group form-field o_website_form_required_custom">
+                        <input type="text" class="form-control o_website_form_input" placeholder="Your Company" name="partner_name" value=""/>
+                        <div class="sh_border">
+                          <div class="sh_left_right_border"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group sh_number sh_group form-field o_website_form_required">
+                        <input type="text" class="form-control o_website_form_input" placeholder="Subject" name="name" required="" value=""/>
+                        <div class="sh_border">
+                          <div class="sh_left_right_border"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group sh_group">
+                        <textarea class="form-control wpcf7-form-control o_website_form_input" cols="40" rows="5" name="description" required="" placeholder="Message" value=""/>
+                        <div class="sh_border">
+                          <div class="sh_left_right_border"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="sh_btn">
+                        <a href="#" class="btn btn-primary sh_btn_cm_1 o_website_form_send o_default_snippet_text">Send Message</a>
+                        <span id="o_website_form_result"/>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="sh_right_content">
+                <h2 class="o_default_snippet_text">Contact Info</h2>
+                <p class="o_default_snippet_text">You can contact or visit us in our office from Monday to Friday from 8:00 - 17:00</p>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <span class="fa fa-map-marker"/>
+                    </a>
+                    <p class="o_default_snippet_text">905, Corporate Level, 
+                          150 Feet Ring Rd. Ayodhya Chowk, 
+                          Rajkot, Gujarat, India 360006</p>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="fa fa-phone"/>
+                    </a>
+                    <a href="tel:+917984575681" class="o_default_snippet_text">+917984575681</a>
+                    <a href="tel:+919033366091" class="o_default_snippet_text">+919033366091</a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="fa fa-envelope"/>
+                    </a>
+                    <a href="mailto:info@softhealer.com" class="o_default_snippet_text">info@softhealer.com</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_89">
+        <div class="container">
+          <div class="sh_content">
+            <div class="sh_heading sh_animation_part">
+              <h2 class="o_default_snippet_text">If you have any query for related investment ... We are Available</h2>
+            </div>
+            <div class="sh_right sh_animation_part">
+              <a href="#" class="btn btn-primary sh_btn_cm_1 sh_btn o_default_snippet_text">Contact Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+
+      
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

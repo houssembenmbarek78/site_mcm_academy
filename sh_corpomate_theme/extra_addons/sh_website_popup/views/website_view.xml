@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>    
+      <!-- website views -->
+      <record id="sh_website_popup_swp_website_form" model="ir.ui.view">
+          <field name="name">sh.website.popup.swp.website.form</field>
+          <field name="model">website</field>
+          <field name="inherit_id" ref="website.view_website_form"/> 
+          <field name="arch" type="xml">
+          	<xpath expr="//form/sheet" position="inside">
+                  <div>
+                      <div class="content-group">
+	                     <group name="sh_popup_website_swp" string="Popup Message">
+							<field name="swp_is_popup_msg" string="Popup Message"/>
+	                     	<field name="swp_titile" string="Title" attrs="{'invisible': [('swp_is_popup_msg','=',False)],'required': [('swp_is_popup_msg', '=', True)]}" />
+	                     	<field name="swp_message" string="Message" attrs="{'invisible': [('swp_is_popup_msg','=',False)],'required': [('swp_is_popup_msg', '=', True)] }"/>
+	                     	<field name="swp_link_btn_name" string="Link Button Name" attrs="{'invisible': [('swp_is_popup_msg','=',False)]}"/>
+	                     	<field name="swp_link_url" string = "Link URL" attrs="{'invisible': [('swp_is_popup_msg','=',False)]}"/>
+							<field name="swp_banner_img" string="Image" widget="image" class="w-25 mt-2" attrs="{'invisible': [('swp_is_popup_msg','=',False)]}"/>
+	                     </group>   
+                   	</div>                              
+                  </div>              		
+          	</xpath>
+          </field>
+      </record>
+</data>
+</odoo>
+
+
+        

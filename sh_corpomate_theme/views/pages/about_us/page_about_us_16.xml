@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!-- ABOUT US PAGE 15 -->
+    <template id="sh_corpomate_tmpl_about_us_16" name="about us">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+                
+               <section id="sh_corpomate_theme_section_396" data-snippet="sh_corpomate_theme_tmpl_396" class="oe_img_bg o_colored_level" data-name="about banner" style="background-image: url('/sh_corpomate_theme/static/src/img/theme_16/8.jpg');">
+    <div class="container">
+        <h4 class="o_default_snippet_text">about us</h4>
+        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+        <div class="sh_breacrumb">
+            <a href="#" class="o_default_snippet_text">home</a>
+            <span class="fa fa-link" />
+            <a href="#" class="o_default_snippet_text">about</a>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_397" data-snippet="sh_corpomate_theme_tmpl_397" class="o_colored_level" data-name="about snippet 1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 o_colored_level">
+                <div class="sh_content">
+                    <h4 class="o_default_snippet_text">about us</h4>
+                    <h2 class="o_default_snippet_text">we employ latest research technology &amp;amp; company</h2>
+                    <p class="o_default_snippet_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                    </p>
+                    <ul>
+                        <li class="o_default_snippet_text"><span class="fa fa-check-square-o" /> lorem ipsum dolor sit</li>
+                        <li class="o_default_snippet_text"><span class="fa fa-check-square-o" /> lorem ipsum dolor sit</li>
+                        <li class="o_default_snippet_text"><span class="fa fa-check-square-o" /> lorem ipsum dolor sit</li>
+                        <li class="o_default_snippet_text"><span class="fa fa-check-square-o" /> lorem ipsum dolor sit</li>
+                    </ul>
+                    <div class="sh_btn">
+                        <a href="#" class="btn btn-primary o_default_snippet_text">read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 o_colored_level">
+                <div class="sh_img">
+                    <img src="/sh_corpomate_theme/static/src/img/theme_16/9.jpg" loading="lazy" />
+                    <div class="sh_bottom_img">
+                        <img src="/sh_corpomate_theme/static/src/img/theme_16/27.jpg" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section
+    id="sh_corpomate_theme_section_398"
+    class="js_cls_sh_corpomate_s_counter oe_img_bg o_colored_level"
+    data-snippet="sh_corpomate_theme_tmpl_398"
+    data-name="about snippet 2"
+    style="background-image: url('/sh_corpomate_theme/static/src/img/theme_16/8.jpg');"
+>
+    <div class="container">
+        <div class="sh_title">
+            <h5 class="o_default_snippet_text">our specialties</h5>
+            <h2 class="o_default_snippet_text">why choose us</h2>
+            <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-3 o_colored_level">
+                <div class="sh_content">
+                    <span class="fa fa-eye" />
+                    <h4 class="o_default_snippet_text">high quality services</h4>
+                </div>
+            </div>
+            <div class="col-md-3 o_colored_level">
+                <div class="sh_content">
+                    <span class="fa fa-fast-forward" />
+                    <h4 class="o_default_snippet_text">fast working process</h4>
+                </div>
+            </div>
+            <div class="col-md-3 o_colored_level">
+                <div class="sh_content">
+                    <span class="fa fa-life-ring" />
+                    <h4 class="o_default_snippet_text">24/7 customer support</h4>
+                </div>
+            </div>
+            <div class="col-md-3 o_colored_level">
+                <div class="sh_content">
+                    <span class="fa fa-glass" />
+                    <h4 class="o_default_snippet_text">expert labtechician team</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_399" data-snippet="sh_corpomate_theme_tmpl_399" class="o_colored_level" data-name="about snippet 3">
+    <div class="container">
+        <div class="sh_title">
+            <h5 class="o_default_snippet_text">our specialties</h5>
+            <h2 class="o_default_snippet_text">explore our main services</h2>
+            <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6 o_colored_level">
+                <div class="sh_left_content">
+                    <h4 class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</h4>
+                    <p class="o_default_snippet_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                    </p>
+                    <section class="sh_left_progress sh_animation_part js_cls_render_dynamic_progress_area o_colored_level">
+                        <p class="o_default_snippet_text">Sample Preparation <span class="sh_right_pers js_cls_s_progress_percent_manual_span o_default_snippet_text">92%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar wow fadeInLeft js_cls_s_progress_percent_auto_style" data-wow-duration="1.5s" data-wow-delay="1s" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" />
+                        </div>
+                    </section>
+                    <section class="sh_left_progress sh_animation_part js_cls_render_dynamic_progress_area o_colored_level">
+                        <p class="o_default_snippet_text">Environmental Testing <span class="sh_right_pers js_cls_s_progress_percent_manual_span o_default_snippet_text">85%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar wow fadeInLeft js_cls_s_progress_percent_auto_style" data-wow-duration="1.5s" data-wow-delay="1s" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" />
+                        </div>
+                    </section>
+                    <section class="sh_left_progress sh_animation_part js_cls_render_dynamic_progress_area o_colored_level">
+                        <p class="o_default_snippet_text">Advanced Microscopy <span class="sh_right_pers js_cls_s_progress_percent_manual_span o_default_snippet_text">95%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar wow fadeInLeft js_cls_s_progress_percent_auto_style" data-wow-duration="1.5s" data-wow-delay="1s" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" />
+                        </div>
+                    </section>
+                    <section class="sh_left_progress sh_animation_part js_cls_render_dynamic_progress_area o_colored_level">
+                        <p class="o_default_snippet_text">medical research <span class="sh_right_pers js_cls_s_progress_percent_manual_span o_default_snippet_text">80%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar wow fadeInLeft js_cls_s_progress_percent_auto_style" data-wow-duration="1.5s" data-wow-delay="1s" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" />
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="col-md-6 o_colored_level">
+                <div class="sh_right_part">
+                    <img src="/sh_corpomate_theme/static/src/img/theme_16/10.jpg" loading="lazy" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+                    
+            </div>
+        </t>
+</template>
+
+
+</odoo>
+
+
+
+

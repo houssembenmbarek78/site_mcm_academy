@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- ABOUT US PAGE 3 -->
+	<template id="sh_corpomate_tmpl_about_us_5" name="about us">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			
+
+      
+           <section id="sh_corpomate_theme_section_105" class="home-area bg-item margin-top-space-2" style="background-image: url('/sh_corpomate_theme/static/src/img/about-banner.png')">
+    <style class="o_default_snippet_text">
+        .navbar-light {
+            background: transparent !important;
+            z-index: 1;
+        }
+        
+        .navbar-light #top_menu_collapse .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+        
+        .o_affix_enabled .navbar-light {
+            background: transparent !important;
+        }
+        
+        @media (max-width: 768px) {
+            .navbar-light {
+                background: #fff !important;
+                z-index: 1;
+            }
+            .navbar-light #top_menu_collapse .navbar-nav .nav-link {
+                color: #585b60 !important;
+            }
+            .o_affix_enabled .navbar-light {
+                background-color: #fff !important;
+            }
+        }
+    </style>
+    <div class="bg-overlay-4" />
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 mx-auto">
+                <div class="banner-content text-center">
+                    <h1 class="o_default_snippet_text">About Us</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb align-items-center">
+                            <li class="breadcrumb-item">
+                                <a href="index.html" class="o_default_snippet_text">HOME</a>
+                                <span class="fa fa-chevron-right" />
+                            </li>
+                            <li class="breadcrumb-item active o_default_snippet_text" aria-current="page">ABOUT US</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-shape">
+        <img class="img-fluid" src="/sh_corpomate_theme/static/src/img/bg_home_shape.png" alt="bottom-shape image" />
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_59">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 sh_animation_part">
+                <div class="sh_content_img">
+                    <div class="sh_bg" />
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/banner1.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 sh_animation_part d-flex align-items-center">
+                <div class="sh_right_content">
+                    <h2 class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing</h2>
+                    <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <a href="#" class="btn btn-primary sh_btn_cm_5 sh_read_btn o_default_snippet_text">READ MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_60">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 align-items-center sh_animation_part" style="display: flex;">
+                <div class="sh_left_content">
+                    <h2 class="o_default_snippet_text">Lorem Ipsum is simply dummy!</h2>
+                    <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </div>
+            </div>
+            <div class="col-md-6 sh_animation_part">
+                <div class="sh_content_right">
+                    <a class="sh_video" href="https://www.youtube.com/watch?v=-rCZNFARSfQ" target="_blank">
+                        <span class="fa fa-play" />
+                    </a>
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/1.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_61">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 sh_animation_part">
+                <section class="sh_content">
+                    <div class="sh_icon">
+                        <section class="sh_circle1" />
+                        <section class="sh_circle2" />
+                        <span class="fa fa-line-chart" />
+                    </div>
+                    <h3 class="o_default_snippet_text">Lorem Ipsum</h3>
+                    <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </section>
+            </div>
+            <div class="col-md-4 sh_animation_part">
+                <section class="sh_content">
+                    <div class="sh_icon">
+                        <section class="sh_circle1" />
+                        <section class="sh_circle2" />
+                        <span class="fa fa-usd" />
+                    </div>
+                    <h3 class="o_default_snippet_text">Lorem Ipsum</h3>
+                    <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </section>
+            </div>
+            <div class="col-md-4 sh_animation_part">
+                <section class="sh_content">
+                    <div class="sh_icon">
+                        <section class="sh_circle1" />
+                        <section class="sh_circle2" />
+                        <span class="fa fa-search" />
+                    </div>
+                    <h3 class="o_default_snippet_text">Lorem Ipsum</h3>
+                    <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_62">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 sh_animation_part">
+                <div class="sh_left_content">
+                    <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                    <p class="o_default_snippet_text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <p class="o_default_snippet_text">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+                </div>
+            </div>
+            <div class="col-md-8 sh_animation_part">
+                <section class="sh_first_progress">
+                    <div class="progress">
+                        <div class="progress-bar wow fadeInLeft              animated animated animated animated animated animated animated animated animated animated animated animated animated" data-wow-duration="1.5s" data-wow-delay="1s" style="width: 70%; visibility: visible; animation-duration: 1.5s; animation-delay: 1s;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" />
+                    </div>
+                    <p class="o_default_snippet_text">BACKEND <span class="sh_right_pers o_default_snippet_text">70%</span></p>
+                </section>
+                <section class="sh_first_progress">
+                    <div class="progress">
+                        <div class="progress-bar wow fadeInLeft              animated animated animated animated animated animated animated animated animated animated animated animated animated" data-wow-duration="1.5s" data-wow-delay="1s" style="width: 85%; visibility: visible; animation-duration: 1.5s; animation-delay: 1s;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" />
+                    </div>
+                    <p class="o_default_snippet_text">WORDPRESS <span class="sh_right_pers o_default_snippet_text">85%</span></p>
+                </section>
+                <section class="sh_first_progress">
+                    <div class="progress">
+                        <div class="progress-bar wow fadeInLeft              animated animated animated animated animated animated animated animated animated animated animated animated animated" data-wow-duration="1.5s" data-wow-delay="1s" style="width: 95%; visibility: visible; animation-duration: 1.5s; animation-delay: 1s;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" />
+                    </div>
+                    <p class="o_default_snippet_text">RESPONSIVE WEB DESIGN <span class="sh_right_pers o_default_snippet_text">95%</span></p>
+                </section>
+                <section class="sh_first_progress">
+                    <div class="progress">
+                        <div class="progress-bar wow fadeInLeft              animated animated animated animated animated animated animated animated animated animated animated animated animated" data-wow-duration="1.5s" data-wow-delay="1s" style="width: 90%; visibility: visible; animation-duration: 1.5s; animation-delay: 1s;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" />
+                    </div>
+                    <p class="o_default_snippet_text">JAVASCRIPT <span class="sh_right_pers o_default_snippet_text">90%</span></p>
+                </section>
+                <section class="sh_first_progress">
+                    <div class="progress">
+                        <div class="progress-bar wow fadeInLeft              animated animated animated animated animated animated animated animated animated animated animated animated animated" data-wow-duration="1.5s" data-wow-delay="1s" style="width: 80%; visibility: visible; animation-duration: 1.5s; animation-delay: 1s;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" />
+                    </div>
+                    <p class="o_default_snippet_text">APP DEVELOPMENT <span class="sh_right_pers o_default_snippet_text">80%</span></p>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" class="o_default_snippet_text">
+        $(document).ready(function() {
+            $("#sh_corpomate_theme_section_62 .sh_first_progress").each(function(index) {
+                var sh_progress_span = $(this).find('.sh_right_pers');
+                if (sh_progress_span.length) {
+                    $(this).find('.progress-bar').css("width", sh_progress_span.text());
+                }
+            });
+        });
+    </script>
+</section>
+<section id="sh_corpomate_theme_section_63">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 sh_animation_part">
+                <div class="sh_content">
+                    <div class="sh_top_part">
+                        <div class="sh_number o_default_snippet_text">1</div>
+                        <div class="sh_heading">
+                            <h6 class="o_default_snippet_text">First Step</h6>
+                            <p class="o_default_snippet_text">Research &amp;amp; Analyze</p>
+                        </div>
+                    </div>
+                    <div class="sh_content_text">
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci</p>
+                        <a href="#" class="sh_more_btn btn btn-primary sh_btn_cm_5 o_default_snippet_text">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 sh_animation_part">
+                <div class="sh_content">
+                    <div class="sh_top_part">
+                        <div class="sh_number o_default_snippet_text">2</div>
+                        <div class="sh_heading">
+                            <h6 class="o_default_snippet_text">Second Step</h6>
+                            <p class="o_default_snippet_text">Research &amp;amp; Analyze</p>
+                        </div>
+                    </div>
+                    <div class="sh_content_text">
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci</p>
+                        <a href="#" class="sh_more_btn btn btn-primary sh_btn_cm_5 o_default_snippet_text">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 sh_animation_part">
+                <div class="sh_content">
+                    <div class="sh_top_part">
+                        <div class="sh_number o_default_snippet_text">3</div>
+                        <div class="sh_heading">
+                            <h6 class="o_default_snippet_text">Third Step</h6>
+                            <p class="o_default_snippet_text">Research &amp;amp; Analyze</p>
+                        </div>
+                    </div>
+                    <div class="sh_content_text">
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci</p>
+                        <a href="#" class="sh_more_btn btn btn-primary sh_btn_cm_5 o_default_snippet_text">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <section id="sh_corpomate_theme_section_64">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 sh_animation_part">
+                <div class="sh_left">
+                    <h2 class="o_default_snippet_text">Got Questions? We Can Help.</h2>
+                    <p class="o_default_snippet_text">Our security expert never sleep</p>
+                </div>
+            </div>
+            <div class="col-md-6 sh_animation_part">
+                <div class="sh_right">
+                    <a href="#" class="btn o_default_snippet_text">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+
+
+           
+
+      
+			
+	      </div>
+	    </t>
+	</template>	
+<!-- ABOUT US PAGE 3 -->
+
+</odoo>
+
+
+
+

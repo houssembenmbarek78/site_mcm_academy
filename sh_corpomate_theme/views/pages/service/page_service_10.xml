@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- SERVICE 10 -->
+	<template id="sh_corpomate_tmpl_service_10" name="service">
+	    <t t-call="website.layout"> 
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			      
+			      
+      			<section id="sh_corpomate_theme_section_268" class="s_banner parallax s_parallax_no_overflow_hidden bg-black-50" data-name="Services Snippet 1(Banner)" style="background-image: none;" data-scroll-background-ratio="0">
+    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/services-banner.png'); background-position: 50% 0; background-attachment: fixed;" />
+    <div class="container">
+        <div class="sh_banner">
+            <div class="sh_des">
+                <h2 class="o_default_snippet_text">Services</h2>
+                <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="sh_bread">
+                <ul>
+                    <li>
+                        <a href="/" class="btn o_default_snippet_text">Home</a>
+                        <span class="fa fa-chevron-right" />
+                    </li>
+                    <li class="o_default_snippet_text">Services</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_269" data-name="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <span class="fa fa-globe" />
+                        <span class="o_default_snippet_text">international accounting</span>
+                    </div>
+                    <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <span class="fa fa-briefcase" />
+                        <span class="o_default_snippet_text">file archieve</span>
+                    </div>
+                    <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <span class="fa fa-futbol-o" />
+                        <span class="o_default_snippet_text">24/7 availability</span>
+                    </div>
+                    <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <span class="fa fa-thumbs-o-up" />
+                        <span class="o_default_snippet_text">100% Guarenteed</span>
+                    </div>
+                    <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <span class="fa fa-bank" />
+                        <span class="o_default_snippet_text">Tax consulting</span>
+                    </div>
+                    <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <span class="fa fa-pencil" />
+                        <span class="o_default_snippet_text">administrative services</span>
+                    </div>
+                    <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+      			
+			      
+			      
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

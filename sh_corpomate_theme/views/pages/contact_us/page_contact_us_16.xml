@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- CONTACT US PAGE 14 -->
+    <template id="sh_corpomate_tmpl_contact_us_16" name="contact us">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+           
+                <section id="sh_corpomate_theme_section_406" data-snippet="sh_corpomate_theme_tmpl_406" class="oe_img_bg o_colored_level" data-name="contact banner" style="background-image: url('/sh_corpomate_theme/static/src/img/theme_16/8.jpg');">
+    <div class="container">
+        <h4 class="o_default_snippet_text">contact</h4>
+        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+        <div class="sh_breacrumb">
+            <a href="#" class="o_default_snippet_text">home</a>
+            <span class="fa fa-link" />
+            <a href="#" class="o_default_snippet_text">contact</a>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_407" data-snippet="sh_corpomate_theme_tmpl_407" class="o_colored_level" data-name="contact  snippet 1">
+    <div class="">
+        <div class="sh_title">
+            <h5 class="o_default_snippet_text">book appointment</h5>
+            <h2 class="o_default_snippet_text">contact with us</h2>
+            <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14764.162888844217!2d70.76170147993821!3d22.31429961505925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca18fbb8df83%3A0xc5d2508a38a14110!2sSofthealer%20Technologies!5e0!3m2!1sen!2sin!4v1608729855171!5m2!1sen!2sin"
+            height="450"
+            frameborder="0"
+            style="border: 0;"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+        >
+        </iframe>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_408" data-snippet="sh_corpomate_theme_tmpl_408" class="o_colored_level" data-name="contact snippet 2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 o_colored_level">
+                <div class="sh_left">
+                    <div class="sh_title">
+                        <h2 class="o_default_snippet_text">our information</h2>
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="sh_icon_box">
+                        <div class="sh_icon">
+                            <span class="fa fa-map-marker" />
+                        </div>
+                        <div class="sh_des">
+                            <h4 class="o_default_snippet_text">location</h4>
+                            <p class="o_default_snippet_text">905, corporate level, 150ft. ring road, rajkot.</p>
+                        </div>
+                    </div>
+                    <div class="sh_icon_box">
+                        <div class="sh_icon">
+                            <span class="fa fa-envelope" />
+                        </div>
+                        <div class="sh_des">
+                            <h4 class="o_default_snippet_text">mail on</h4>
+                            <p class="o_default_snippet_text">support@softhealer.com</p>
+                        </div>
+                    </div>
+                    <div class="sh_icon_box">
+                        <div class="sh_icon">
+                            <span class="fa fa-phone" />
+                        </div>
+                        <div class="sh_des">
+                            <h4 class="o_default_snippet_text">call us</h4>
+                            <p class="o_default_snippet_text">+917984575681</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 o_colored_level">
+                <div class="sh_form">
+                    <h3 class="o_default_snippet_text">get in touch</h3>
+                    <form
+                        action="/website_form/"
+                        method="post"
+                        data-model_name="crm.lead"
+                        data-success_page="/contactus-thank-you"
+                        class="s_website_form container-fluid mt32 sh_animation_part"
+                        enctype="multipart/form-data"
+                        data-editable-form="false"
+                    >
+                        <div class="form-group row form-field o_website_form_required_custom">
+                            <div class="col-12 o_colored_level">
+                                <input type="text" class="form-control o_website_form_input" name="contact_name" placeholder="Name*" required="" value="" />
+                            </div>
+                            <div class="col-12 o_colored_level">
+                                <input type="text" class="form-control o_website_form_input" name="phone" placeholder="Phone*" value="" />
+                            </div>
+                        </div>
+                        <div class="form-group row form-field o_website_form_required_custom">
+                            <div class="col-12 o_colored_level">
+                                <input type="text" class="form-control o_website_form_input" name="email_from" required="" placeholder="Email*" value="" />
+                            </div>
+                            <div class="col-12 o_colored_level">
+                                <input type="text" class="form-control o_website_form_input" name="name" required="" placeholder="Subject*" value="" />
+                            </div>
+                        </div>
+                        <div class="form-group row form-field o_website_form_required">
+                            <div class="col-12 o_colored_level">
+                                <textarea class="form-control o_website_form_input" name="description" required="" placeholder="Message*" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-12 o_colored_level">
+                                <a href="#" role="button" class="btn btn-primary btn-lg o_website_form_send btn_submit o_default_snippet_text">Send Message</a>
+                                <span id="o_website_form_result" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+	           
+            </div>
+        </t>
+    </template>
+</odoo>
+
+

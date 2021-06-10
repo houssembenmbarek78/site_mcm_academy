@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- CONTACT US PAGE 2 -->
+	<template id="sh_corpomate_tmpl_contact_us_2" name="contact us">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			
+
+
+
+    
+      <section id="sh_corpomate_theme_section_157" class="s_banner parallax s_parallax_no_overflow_hidden bg-black-75" style="background-image: none;">
+        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/contact-banner.png'); background-position: 50% 0;background-attachment: fixed;"/>
+        <style class="o_default_snippet_text">
+	#sh_top_bar_1 {background-color: transparent;z-index:9;border-bottom: 1px solid #a0a0a0;}
+	#sh_top_bar_2 {background-color: transparent;z-index:9;border-bottom: 1px solid #a0a0a0;}
+	#sh_top_bar_3 {background-color: transparent;z-index:9;border-bottom: 1px solid #a0a0a0;}
+	#sh_top_bar_4 {background-color: transparent;z-index:9;border-bottom: 1px solid #a0a0a0;}
+	#sh_top_bar_5 {background-color: transparent;z-index:9;border-bottom: 1px solid #a0a0a0;}
+	.o_affix_enabled .navbar-light{background-color: transparent!important;}
+	.o_affix_enabled .navbar-light .navbar-nav .nav-link{color: #fff!important;}
+	.navbar-light #top_menu_collapse .navbar-nav .nav-link {color: #ffffff;}
+	
+	.navbar-light {background-color: transparent;z-index:9}
+	@media (max-width: 768px){
+	    .o_affix_enabled .navbar-light{background: #fff !important;z-index: 1;} 
+		.navbar-light .navbar-nav .nav-link{color: #585b60 !important;}
+		.o_affix_enabled .navbar-light .navbar-nav .nav-link{color: #585b60 !important;}
+		
+		#sh_top_bar_2{color: #000;}
+		#sh_top_bar_2 .element-editor.phone:before{color: #000;}
+		#sh_top_bar_2 .align-left a{color: #000;}
+		#sh_top_bar_2 .element-editor.email:before{color: #000;}
+		#sh_top_bar_2 ul.social li a{color: #000;}
+		#sh_top_bar_2 .sh-element.custom-login, #sh_top_bar_2 .sh-element.custom-login a{color: #000;}
+		#sh_top_bar_2 .sh_corpomate_theme_show_hide_lang .add-lang a{color: #000;}
+	}
+	</style>
+        <div class="yolo-page-title-overlay">
+	</div>
+        <div class="content-page-title">
+          <div class="container">
+            <div class="page-title-inner block-center">
+              <div class="block-inner">
+                <h1 style="color:#ffffff" class="o_default_snippet_text">Contact us</h1>
+              </div>
+            </div>
+            <div class="yolo-breadcrumb-wrap s-color">
+              <ul class="breadcrumbs">
+                <li>
+                  <a href="/" class="home o_default_snippet_text">Home</a>
+                </li>
+                <li>
+                  <span class="o_default_snippet_text">Contact us</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_155">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-12">
+              <div class="sh_heading">
+                <h3 class="o_default_snippet_text">Lorem Ipsum</h3>
+              </div>
+            </div>
+            <div class="col-md-9 col-sm-12">
+              <div class="sh_description">
+                <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_146">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/london.jpg"/>
+                </div>
+                <div class="sh_description">
+                  <h4 class="o_default_snippet_text">London Office</h4>
+                  <a href="#" class="sh_phone">
+                    <span class="fa fa-phone sh_phone_icon"/>
+                    <span class="sh_phone_num"/>
+                  </a>
+                  <a href="tel:+919033366091" class="o_default_snippet_text">+919033366091</a>
+                  <a href="#" class="sh_location">
+                    <span class="fa fa-map-marker sh_location_icon"/>
+                    <span class="sh_location_add o_default_snippet_text">313, Hira Panna Complex,Dr. Yagnik Road, Rajkot, Gujarat, India 360001</span>
+                  </a>
+                  <a href="#" class="sh_email">
+                    <span class="fa fa-envelope sh_email_icon"/>
+                    <span class="sh_email_add"/>
+                  </a>
+                  <a href="mailto:info@softhealer.com" class="o_default_snippet_text">info@softhealer.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/dubai.jpg"/>
+                </div>
+                <div class="sh_description">
+                  <h4 class="o_default_snippet_text">Dubai Office</h4>
+                  <a href="#" class="sh_phone">
+                    <span class="fa fa-phone sh_phone_icon"/>
+                    <span class="sh_phone_num"/>
+                  </a>
+                  <a href="tel:+919033366091" class="o_default_snippet_text">+919033366091</a>
+                  <a href="#" class="sh_location">
+                    <span class="fa fa-map-marker sh_location_icon"/>
+                    <span class="sh_location_add o_default_snippet_text">313, Hira Panna Complex,Dr. Yagnik Road, Rajkot, Gujarat, India 360001</span>
+                  </a>
+                  <a href="#" class="sh_email">
+                    <span class="fa fa-envelope sh_email_icon"/>
+                    <span class="sh_email_add"/>
+                  </a>
+                  <a href="mailto:info@softhealer.com" class="o_default_snippet_text">info@softhealer.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/new-yourk.jpg"/>
+                </div>
+                <div class="sh_description">
+                  <h4 class="o_default_snippet_text">New Yourk Office</h4>
+                  <a href="#" class="sh_phone">
+                    <span class="fa fa-phone sh_phone_icon"/>
+                    <span class="sh_phone_num"/>
+                  </a>
+                  <a href="tel:+919033366091" class="o_default_snippet_text">+919033366091</a>
+                  <a href="#" class="sh_location">
+                    <span class="fa fa-map-marker sh_location_icon"/>
+                    <span class="sh_location_add o_default_snippet_text">313, Hira Panna Complex,Dr. Yagnik Road, Rajkot, Gujarat, India 360001</span>
+                  </a>
+                  <a href="#" class="sh_email">
+                    <span class="fa fa-envelope sh_email_icon"/>
+                    <span class="sh_email_add"/>
+                  </a>
+                  <a href="mailto:info@softhealer.com" class="o_default_snippet_text">info@softhealer.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_86">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="sh_content">
+                <div class="sh_icon">
+                  <span class="fa fa-map-marker"/>
+                </div>
+                <div class="sh_description">
+                  <h5 class="o_default_snippet_text">Office Location</h5>
+                  <span class="sh_add o_default_snippet_text">313, Hira Panna Complex, Dr. Yagnik Road, New Jagnath, Jagnath Plot, Rajkot, Gujarat, India 360001</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="sh_content">
+                <div class="sh_icon">
+                  <span class="fa fa-clock-o"/>
+                </div>
+                <div class="sh_description">
+                  <h5 class="o_default_snippet_text">Office Hour</h5>
+                  <span class="sh_add o_default_snippet_text">Mon - Fri: 09am to 07pm</span>
+                  <span class="sh_add o_default_snippet_text">Sat - Sun: Off Day</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="sh_content">
+                <div class="sh_icon">
+                  <span class="fa fa-phone"/>
+                </div>
+                <div class="sh_description">
+                  <h5 class="o_default_snippet_text">Phone Number</h5>
+                  <a href="tel:+917984575681" class="sh_phone o_default_snippet_text">+917984575681</a>
+                  <a href="tel:+917984575681" class="sh_phone o_default_snippet_text">+917984575681</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="sh_content">
+                <div class="sh_icon">
+                  <span class="fa fa-envelope-o"/>
+                </div>
+                <div class="sh_description">
+                  <h5 class="o_default_snippet_text">Email Address</h5>
+                  <a href="mailto:info@softhealer.com" class="sh_email o_default_snippet_text">info@softhealer.com</a>
+                  <a href="mailto:info@softhealer.com" class="sh_email o_default_snippet_text">info@softhealer.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_87">
+        <div class="container">
+          <div class="sh_title">
+            <h2 class="o_default_snippet_text">Get In Touch</h2>
+            <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+          <form action="/website_form/" method="post" data-model_name="crm.lead" data-success_page="/contactus-thank-you" class="s_website_form container-fluid mt32" enctype="multipart/form-data" data-editable-form="false">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group sh_first sh_group form-field o_website_form_required_custom">
+                  <input type="text" class="form-control input-lg" placeholder="Name" name="contact_name" required="" value=""/>
+                  <span class="fa fa-user"/>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group sh_second sh_group form-field o_website_form_required_custom">
+                  <input type="email" class="form-control input-lg" placeholder="Email" name="email_from" required="" value=""/>
+                  <span class="fa fa-envelope-o"/>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group sh_third sh_group form-field o_website_form_required_custom">
+                  <input type="text" class="form-control input-lg" placeholder="Phone number" name="phone" value=""/>
+                  <span class="fa fa-phone"/>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group sh_five sh_group form-field o_website_form_required_custom">
+                  <input type="text" class="form-control input-lg o_website_form_input" name="partner_name" placeholder="Your Company" value=""/>
+                  <span class="fa fa-building"/>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group sh_six sh_group form-field o_website_form_required">
+                  <input type="text" class="form-control input-lg o_website_form_input" name="name" required="" placeholder="Subject" value=""/>
+                  <span class="fa fa-book"/>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group sh_fourth sh_group">
+                  <textarea class="form-control input-white shadow-5" name="description" id="message" cols="30" rows="7" placeholder="Your message" required=""/>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="sh_btn">
+                  <a href="#" role="button" class="btn o_website_form_send o_default_snippet_text">
+                        SUBMIT <span class="fa fa-long-arrow-right"/>
+                     </a>
+                  <span id="o_website_form_result"/>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      
+      
+      
+
+
+
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

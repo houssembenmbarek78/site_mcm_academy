@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- CONTACT US PAGE 10 -->
+	<template id="sh_corpomate_tmpl_contact_us_10" name="contact us">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+	
+
+
+      
+      			<section id="sh_corpomate_theme_section_272" class="s_banner parallax s_parallax_no_overflow_hidden bg-black-50" data-name="Contact Snippet 1(Banner)" style="background-image: none;" data-scroll-background-ratio="0">
+    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/contact-banner.png'); background-position: 50% 0; background-attachment: fixed;" />
+    <div class="container">
+        <div class="sh_banner">
+            <div class="sh_des">
+                <h2 class="o_default_snippet_text">Contact</h2>
+                <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="sh_bread">
+                <ul>
+                    <li>
+                        <a href="/" class="btn o_default_snippet_text">Home</a>
+                        <span class="fa fa-chevron-right" />
+                    </li>
+                    <li class="o_default_snippet_text">Contact</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_273" data-name="Contact Snippet 2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <span class="fa fa-envelope-o" />
+                    </div>
+                    <div class="sh_des">
+                        <h4 class="o_default_snippet_text">Mail Us On</h4>
+                        <a href="#" class="btn o_default_snippet_text">support@softhealer.com</a>
+                        <a href="#" class="btn o_default_snippet_text">info@softhealer.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <span class="fa fa-map-marker" />
+                    </div>
+                    <div class="sh_des">
+                        <h4 class="o_default_snippet_text">Visit On</h4>
+                        <p class="o_default_snippet_text">905, Corporate Levels, Ayodhya Chowk, 150 ft.Ring Road, Rajkot.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <span class="fa fa-phone" />
+                    </div>
+                    <div class="sh_des">
+                        <h4 class="o_default_snippet_text">Call Us On</h4>
+                        <a href="#" class="btn o_default_snippet_text">0123456789</a>
+                        <a href="#" class="btn o_default_snippet_text">0123456789</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_274" data-name="Contact Snippet 3">
+    <div class="container">
+        <div class="sh_title">
+            <h4 class="o_default_snippet_text">Send a <span class="o_default_snippet_text">Message</span></h4>
+        </div>
+        <form
+            action="/website_form/"
+            method="post"
+            data-model_name="crm.lead"
+            data-success_page="/contactus-thank-you"
+            class="s_website_form container-fluid mt32 o_fake_not_editable"
+            enctype="multipart/form-data"
+            data-editable-form="false"
+        >
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group sh_name sh_group form-field o_website_form_required_custom o_fake_not_editable" data-model_name="crm.lead" data-success_page="/contactus-thank-you">
+                        <input type="text" class="form-control o_website_form_input" placeholder="Name" name="contact_name" required="" value="" />
+                        <div class="sh_border">
+                            <div class="sh_left_right_border" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group sh_number sh_group form-field o_website_form_required o_fake_not_editable" data-model_name="crm.lead" data-success_page="/contactus-thank-you">
+                        <input type="text" class="form-control o_website_form_input" placeholder="Subject" name="name" required="" value="" />
+                        <div class="sh_border">
+                            <div class="sh_left_right_border" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group sh_number sh_group form-field o_website_form_required_custom o_fake_not_editable" data-model_name="crm.lead" data-success_page="/contactus-thank-you">
+                        <input type="text" class="form-control o_website_form_input" placeholder="Email" name="email_from" required="" value="" />
+                        <div class="sh_border">
+                            <div class="sh_left_right_border" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group sh_email sh_group form-field o_fake_not_editable" data-model_name="crm.lead" data-success_page="/contactus-thank-you">
+                        <input type="text" class="form-control o_website_form_input" placeholder="Phone" name="phone" value="" />
+                        <div class="sh_border">
+                            <div class="sh_left_right_border" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group sh_group">
+                        <textarea class="form-control wpcf7-form-control o_website_form_input" cols="40" rows="5" name="description" required="" placeholder="Message" />
+                        <div class="sh_border">
+                            <div class="sh_left_right_border" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="sh_btn">
+                        <a href="#" class="btn btn-primary sh_btn_cm_1 o_website_form_send o_default_snippet_text">Send Message</a>
+                        <span id="o_website_form_result" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+      			
+      
+      
+      
+
+
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+
