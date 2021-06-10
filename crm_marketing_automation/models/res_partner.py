@@ -11,6 +11,14 @@ class Partner(models.Model):
 
 
 
+
+    def create(self, vals):
+
+ 
+      partner = super(Partner, self).create(vals)
+      return partner
+
+
     def write(self, vals):
         if 'statut_cpf' in vals:
             # Si statut cpf non traité on classe l'apprenant dans le pipeline du crm  sous etat non traité
@@ -29,7 +37,6 @@ class Partner(models.Model):
                     print('statut',rec.statut_cpf)
 
         record = super(Partner, self).write(vals)
-
         return record
 
     def changestatut(self, name):

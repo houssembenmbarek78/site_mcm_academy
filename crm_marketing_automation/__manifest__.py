@@ -9,7 +9,7 @@
     'category': 'API',
     'author': 'MCM ACADEMY',
     'website': '',
-    'depends': ['base','crm'
+    'depends': ['base','crm','sale'
     ],
     'data': [
      # 'crm_lead.xml',
