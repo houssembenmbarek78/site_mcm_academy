@@ -324,7 +324,7 @@
         "views/pages/home/page_home_14.xml",
         "views/pages/home/page_home_15.xml",
         "views/pages/home/page_home_16.xml",
-        "views/pages/home/page_home_17.xml",
+     
 
 
     ],
