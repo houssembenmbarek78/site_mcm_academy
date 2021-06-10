@@ -5,6 +5,7 @@
 #Modification de l'aperçu de la facturation
 from odoo import api, fields, models,_
 from odoo.exceptions import RedirectWarning, UserError, ValidationError
+from  _datetime import datetime,date
 
 
 
@@ -48,6 +49,7 @@ class AccountMove(models.Model):
     # la vue de la facture change elle affiche l'acompte qui prend sa valeur default 25 %
     # et on peux la changer en pourcentage qu' on veux tout en calculant le montant payée et le reste à payer correctement
     #Si non si la méthode de payment est par carte bleu et le champs methode_payment== 'cartebleu' : l'acompte ne  s'affiche pas et la facture prend la somme de la formation
+    #Reste a signaler qu on ajouter une condition sur la date de la facture date_invoice avec laquelle on applique le 25 % que pour les nouvelles factures génèrer
 #
     @api.depends('invoice_line_ids.price_subtotal','pourcentage_acompte','methodes_payment')
     def _compute_change_amount(self):
