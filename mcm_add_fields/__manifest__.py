@@ -13,7 +13,7 @@
         'l10n_fr',
         'account',
         'product',
-         'base',
+        'base',
         'contacts',
         'web',
     ],
@@ -28,7 +28,7 @@
         'views/account.xml',
         'report/report_invoice.xml',
         'security/ir.model.access.csv',
-        'views/acount_journal_inherit.xml'
+        'views/acount_journal_inherit.xml',
     ],
     'qweb': [],
     'demo': [

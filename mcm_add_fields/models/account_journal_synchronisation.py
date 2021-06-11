@@ -6,21 +6,21 @@
 from odoo import api, fields, models,_
 from odoo.exceptions import RedirectWarning, UserError, ValidationError
 from datetime import datetime
-from datetime import date, datetime
-
+import datetime
 
 class AccountJournalSynchronisation(models.Model):
     _inherit = "account.journal"
 
     # Synchroniser les factures recentes
     def synchronisation_recent_invoice(self):
-        factures = self.env['account.move'].search([])
-        # currentDate = datetime.datetime.strptime('09062021', '%d%m%Y').date()
+      factures = self.env['account.move'].search([])
+      # date_du_jour = fields.Date(string='Date-Aujourdui', default=datetime.today())
 
+      My_date =datetime.datetime.strptime('08062021', '%d%m%Y').date()
 
-        for facture in factures:
-            if (facture.cpf_solde_invoice == True or facture.cpf_acompte_invoice == True  or facture.invoice_user_id == 'ZOÉ'):
-                facture.methodes_payment = 'cpf'
-            elif (facture.invoice_user_id != 'ZOÉ'):
-                facture.methodes_payment = 'cartebleu'
-
+      for facture in factures:
+        if (facture.cpf_solde_invoice == True  or facture.cpf_acompte_invoice == True or facture.invoice_user_id == 'ZOÉ') :
+            facture.methodes_payment = 'cpf'
+            facture.pourcentage_acompte = 0
+        elif facture.invoice_user_id != 'ZOÉ':
+            facture.methodes_payment = 'cartebleu'

@@ -5,7 +5,7 @@
 #Modification de l'aperçu de la facturation
 from odoo import api, fields, models,_
 from odoo.exceptions import RedirectWarning, UserError, ValidationError
-
+from  _datetime import datetime,date
 
 
 class AccountMove(models.Model):
@@ -15,14 +15,16 @@ class AccountMove(models.Model):
     #restamount / acompte_invoice /pourcentage_acompte
     mcm_paid_amount = fields.Monetary(string='Montant payé',compute='_get_mcm_paid_amount',store=True)
     acompte_invoice = fields.Boolean(default=False)
+    cpf_solde_invoice = fields.Boolean(default=False)
+    cpf_acompte_invoice = fields.Boolean(default=False)
     amount_residual = fields.Monetary(string='Montant due',compute='_get_mcm_paid_amount',store=True)
+    amount = fields.Monetary(string='Montant',compute='_compute_payments_widget_to_reconcile_info',store=True)
     amount_paye = fields.Monetary(string='Montant payé',store=True,readonly=True,compute='_compute_change_amount')
     restamount = fields.Monetary(string='Reste à payé ',compute='_compute_change_amount',store=True,readonly=True)
     module_id = fields.Many2one('mcmacademy.module','Module')
     session_id = fields.Many2one('mcmacademy.session','Session')
     pricelist_id = fields.Many2one('product.pricelist','Liste de prix')
-    cpf_solde_invoice = fields.Boolean(default=False)
-    cpf_acompte_invoice = fields.Boolean(default=False)
+    methodes_payment = fields.Selection(selection=[('cpf','CPF'),('cartebleu','Cartebleu')],String='Méthode de payment', required=True)
     cpf_acompte_amount = fields.Monetary('Montant acompte')
     pourcentage_acompte = fields.Integer(string="Pourcentage d'acompte",compute='_compute_change_amount',store=True,readonly=False)
 
@@ -43,39 +45,46 @@ class AccountMove(models.Model):
     #amount_residual_signed c'est pour l'avoir il prend le reste a paye
     #amount_total_signed c est aussi por l'avoir il prend le reste à payer
     #on a deux condition par site web ou en interne :
-    #En interne:
-    # la vue de la facture change elle affiche l'acompte qui prend sa valeur default 0 %
+    #Si la méthode de payment est cpf et le champs   methode_payment == CPF alors :
+    # la vue de la facture change elle affiche l'acompte qui prend sa valeur default 25 %
     # et on peux la changer en pourcentage qu' on veux tout en calculant le montant payée et le reste à payer correctement
-    #Par site_web : l'acompte ne  s'affiche pas et la facture prend la somme de la formation
+    #Si non si la méthode de payment est par carte bleu et le champs methode_payment== 'cartebleu' : l'acompte ne  s'affiche pas et la facture prend la somme de la formation
 #
-    @api.depends('invoice_line_ids.price_subtotal','pourcentage_acompte')
+    @api.depends('invoice_line_ids.price_subtotal','pourcentage_acompte','methodes_payment')
     def _compute_change_amount(self):
-           print(self.type_facture)
-           for rec in self:
-                amount_untaxed_initiale = rec.amount_untaxed
-                if (rec.type_facture == 'interne'):
-                    print(rec.type_facture)
+         date_precis = date(2021, 6, 10)
+
+         for rec in self:
+            amount_untaxed_initiale = rec.amount_untaxed
+            invoice_date=rec.invoice_date
+            if  date_precis and rec.invoice_date :
+                 daysDiff =  ((date_precis) - rec.invoice_date).days
+                 if (rec.methodes_payment == 'cpf' and daysDiff > 0 ):
+                    rec.pourcentage_acompte = 0
+                    print(rec.invoice_date)
+                    print (date_precis)
                     rec.amount_paye = (rec.amount_untaxed * rec.pourcentage_acompte) / 100
                     rec.restamount = amount_untaxed_initiale - rec.amount_paye
                     # rec.amount_untaxed =  rec.amount_paye
                     # rec.amount_residual = rec.restamount
-                
                     rec.amount_residual_signed = rec.restamount
                     rec.amount_total_signed = rec.restamount
-                    print("this is amountresidual amount move",rec.amount_residual)
-                    print(rec.amount_untaxed )
-                    print(rec.amount_untaxed)
-                    print(amount_untaxed_initiale)
-                    print(rec.pourcentage_acompte)
-                    print(rec.restamount)
-                    print("amount_residual_signed",rec.amount_residual_signed)
-                    print(rec.amount_paye)
-                elif (rec.type_facture == 'web'):
-                    rec.pourcentage_acompte = 0
-                    amount_untaxed = rec.invoice_line_ids.price_subtotal
-                    print("testmontant web")
-                    print(rec.invoice_line_ids.price_subtotal)
-                    print(rec.amount_untaxed)
+                 elif (rec.methodes_payment == 'cpf' and daysDiff < 0 ) :
+                    rec.pourcentage_acompte = 25
+                    rec.amount_paye = (rec.amount_untaxed * rec.pourcentage_acompte) / 100
+                    rec.restamount = amount_untaxed_initiale - rec.amount_paye
+                    # rec.amount_untaxed =  rec.amount_paye
+                    # rec.amount_residual = rec.restamount
+                    rec.amount_residual_signed = rec.restamount
+                    rec.amount_total_signed = rec.restamount
+
+
+                # elif (rec.methode_payment == 'cartebleu'):
+                #     # rec.pourcentage_acompte = 0
+                #     # amount_untaxed = rec.invoice_line_ids.price_subtotal
+                #     print("testmontant web")
+                #     print(rec.invoice_line_ids.price_subtotal)
+                #     print(rec.amount_untaxed)
 
     # @api.model
     # def write (self, vals):
@@ -92,3 +101,4 @@ class AccountMove(models.Model):
             move.name='/'
             move.line_ids.unlink()
             move.sudo().unlink()
+

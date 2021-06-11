@@ -752,7 +752,7 @@ class CustomerPortal(CustomerPortal):
         values = super(CustomerPortal, self)._prepare_portal_layout_values()
         invoice_count = request.env['account.move'].search_count([
             ('type', 'in', ('out_invoice', 'in_invoice', 'out_refund', 'in_refund', 'out_receipt', 'in_receipt')),
-            ('type_facture', '=', 'web'), ('cpf_solde_invoice', '=', False), ('cpf_acompte_invoice', '=', False)
+            ('type_facture', '=', 'web')
         ])
         values['invoice_count'] = invoice_count
         #add users_tasks_domain to filter tasks in portal view
@@ -766,7 +766,7 @@ class CustomerPortal(CustomerPortal):
         values = super(CustomerPortal, self)._prepare_home_portal_values()
         invoice_count = request.env['account.move'].search_count([
             ('type', 'in', ('out_invoice', 'in_invoice', 'out_refund', 'in_refund', 'out_receipt', 'in_receipt')),
-            ('type_facture', '=', 'web'), ('cpf_solde_invoice', '=', False), ('cpf_acompte_invoice', '=', False)
+            ('type_facture', '=', 'web')
         ]) if request.env['account.move'].check_access_rights('read', raise_exception=False) else 0
         values['invoice_count'] = invoice_count
         # add users_tasks_domain to filter tasks in portal view
@@ -784,7 +784,7 @@ class CustomerPortal(CustomerPortal):
 
         domain = [
             ('type', 'in', ('out_invoice', 'out_refund', 'in_invoice', 'in_refund', 'out_receipt', 'in_receipt')),
-            ('type_facture', '=', 'web'), ('cpf_solde_invoice', '=', False), ('cpf_acompte_invoice', '=', False)]
+            ('type_facture', '=', 'web')]
 
         searchbar_sortings = {
             'date': {'label': _('Invoice Date'), 'order': 'invoice_date desc'},
@@ -817,7 +817,7 @@ class CustomerPortal(CustomerPortal):
         contains type WEB also the cpf_solde_invoice, cpf_acompte_invoice
         should be not ckecked using lambda """
 
-        invoices = AccountInvoice.search(domain, order=order, limit=self._items_per_page, offset=pager['offset']).filtered(lambda facture: facture.type_facture == 'web' and facture.cpf_solde_invoice == False and facture.cpf_acompte_invoice == False)
+        invoices = AccountInvoice.search(domain, order=order, limit=self._items_per_page, offset=pager['offset']).filtered(lambda facture: facture.type_facture == 'web')
         request.session['my_invoices_history'] = invoices.ids[:100]
         values.update({
             'date': date_begin,

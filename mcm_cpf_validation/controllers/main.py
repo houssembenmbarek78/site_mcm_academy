@@ -37,7 +37,7 @@ class ClientCPFController(http.Controller):
             'partner_id': partner.id,
             'description': ' N°Dossier : %s \n Motif : %s ' % (dossier, motif),
             'name': 'CPF : Dossier non validé ',
-            'team_id': request.env['helpdesk.team'].sudo().search([('name', 'like', 'Client'),('company_id',"=",1)],
+            'team_id': request.env['helpdesk.team'].sudo().search([('name', 'like', 'Client')],
                                                                   limit=1).id,
 
         }
@@ -108,16 +108,18 @@ class ClientCPFController(http.Controller):
                             line.price_unit= so.amount_total
                         so.action_confirm()
                         ref=False
-                        #Creation de la Facture interne
-                        #Si la facture est en interne :  On parse le pourcentage qui est 25 %
-                        #cpf_compte_invoice prend la valeur True pour savoir bien qui est une facture creer par Zoe
+                        #Creation de la Facture Cpf
+                        #Si la facture est de type CPF :  On parse le pourcentage qui est 25 %
+                        # methode_payment prend la valeur CPF pour savoir bien qui est une facture CPF qui prend la valeur 25 % par default
 
 
                         if so.amount_total>0 and so.order_line:
                             moves = so._create_invoices(final=True)
                             for move in moves:
                                 move.type_facture = 'interne'
-                                move.cpf_acompte_invoice=True
+                                # move.cpf_acompte_invoice= True
+                                # move.cpf_invoice =True
+                                move.methodes_payment = 'cpf'
                                 move.pourcentage_acompte = 25
                                 move.module_id = so.module_id
                                 move.session_id = so.session_id
@@ -126,7 +128,9 @@ class ClientCPFController(http.Controller):
                                 move.company_id = so.company_id
                                 move.price_unit =  so.amount_total
                                 print(move.price_unit)
-                                move.cpf_acompte_invoice=True
+                                # move.cpf_acompte_invoice=True
+                                # move.cpf_invoice = True
+                                move.methodes_payment = 'cpf'
                                 move.post()
                                 ref=move.name
                                 print(line.price_unit)
@@ -184,7 +188,9 @@ class ClientCPFController(http.Controller):
                     for move in moves:
                         move.type_facture = 'interne'
                         move.module_id = so.module_id
-                        move.cpf_acompte_invoice=True
+                        # move.cpf_acompte_invoice=True
+                        # move.cpf_invoice =True
+                        move.methodes_payment = 'cpf'
                         move.pourcentage_acompte = 25
                         move.session_id = so.session_id
                         move.company_id=so.company_id
@@ -225,7 +231,7 @@ class ClientCPFController(http.Controller):
                     vals = {
                         'description': 'CPF: vérifier la date et ville de %s' % (user.name),
                         'name': 'CPF : Vérifier Date et Ville ',
-                        'team_id': request.env['helpdesk.team'].sudo().search([('name', 'like', 'Clientèle'),('company_id',"=",2)],
+                        'team_id': request.env['helpdesk.team'].sudo().search([('name', 'like', 'Clientèle')],
                                                                               limit=1).id,
                     }
                     description = "CPF: vérifier la date et ville de "+str(user.name)
@@ -239,7 +245,7 @@ class ClientCPFController(http.Controller):
                         'partner_id': False,
                         'description': 'CPF: id module edof %s non trouvé' % (module),
                         'name': 'CPF : ID module edof non trouvé ',
-                        'team_id': request.env['helpdesk.team'].sudo().search([('name', "=", _('Service Clientèle')),('company_id',"=",2)],
+                        'team_id': request.env['helpdesk.team'].sudo().search([('name', "=", _('Service Clientèle'))],
                                                                               limit=1).id,
                     }
                     description='CPF: id module edof '+str(module)+' non trouvé'

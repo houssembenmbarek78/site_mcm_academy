@@ -17,8 +17,8 @@
             </xpath>
             <xpath expr="//div[hasclass('page')]//h2" position="replace">
                 <h2>
-                    <span style="font-size: 20px;" t-if="o.type == 'out_invoice' and o.state == 'posted' and o.cpf_acompte_invoice==False">Facture</span>
-                    <span style="font-size: 20px;" t-if="o.type == 'out_invoice' and o.state == 'posted' and o.cpf_acompte_invoice==True">Facture Acompte</span>
+                    <span style="font-size: 20px;" t-if="o.type == 'out_invoice' and o.state == 'posted' "></span>
+<!--                    <span style="font-size: 20px;" t-if="o.type == 'out_invoice' and o.state == 'posted'">Facture Acompte</span>-->
                     <span style="font-size: 20px;" t-if="o.type == 'out_invoice' and o.state == 'draft'">Facture
                         brouillon
                     </span>
@@ -27,7 +27,7 @@
                     </span>
                     <span style="font-size: 20px;" t-if="o.type == 'out_refund'"></span>
                     <span style="font-size: 20px;" t-if="o.type == 'in_refund'">Note de crédit fournisseur</span>
-                    <span style="font-size: 20px;" t-if="o.type == 'in_invoice'">Facture</span>
+                    <span style="font-size: 20px;" t-if="o.type == 'in_invoice'"></span>
                     <span style="font-size: 20px;" t-if="o.name != '/'" t-field="o.name"/>
                 </h2>
             </xpath>
@@ -98,7 +98,7 @@
                             <span>Dates de la formation: du</span>
                             <span t-field="o.partner_id.module_id.date_debut"/>
                             <span>au</span>
-                            <span t-field="o.partner_id.module_id.date_fin"/>
+                            <span t-field="o.module_id.date_exam" t-options="{'widget': 'date'}"/>
                         </h6>
                         <h6 t-if="o.module_id and o.company_id.id==2">
                             <span>Dates de la formation: du</span>
@@ -138,12 +138,11 @@
                                 <span>Quantity</span>
                             </th>
                             <th name="th_priceunit"
-                                t-attf-class="text-center {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"
+                                t-attf-class="text-center"
                                 style="border: 1px solid black;">
                                 <span>Prix unitaire HT</span>
                             </th>
                             <th name="th_price_unit" t-if="display_discount"
-                                t-attf-class="text-center{{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"
                                 style="border: 1px solid black;">
                                 <span>Disc.%</span>
                                 <!-- TODO: remove in master -->
@@ -157,7 +156,6 @@
                     </thead>
                     <tbody class="invoice_tbody">
                         <t t-set="current_subtotal" t-value="0"/>
-
                         <t t-foreach="o.invoice_line_ids.sorted(key=lambda l: (-l.sequence, l.date, l.move_name, -l.id), reverse=True)"
                            t-as="line">
                             <t t-set="current_subtotal" t-value="current_subtotal + line.price_subtotal"
@@ -168,41 +166,48 @@
                             <tr t-att-class="'bg-200 font-weight-bold o_line_section' if line.display_type == 'line_section' else 'font-italic o_line_note' if line.display_type == 'line_note' else ''">
                                 <t t-if="not line.display_type" name="account_invoice_line_accountable">
                                     <td name="account_invoice_line_name" class="text-center"
-                                        style="border: 1px solid black;" t-if="o.cpf_acompte_invoice==False">
+                                        style="border: 1px solid black;" >
                                         <strong>
                                             <span t-field="line.product_id.name" t-options="{'widget': 'text'}"/>
                                         </strong>
                                     </td>
-                                    <td name="account_invoice_line_name" class="text-center"
-                                        style="border: 1px solid black;" t-if="o.cpf_acompte_invoice==True and o.company_id.id==2">
-                                        <strong>
-                                            <span>Acompte </span>
-                                            <span t-field="line.product_id.name" t-options="{'widget': 'text'}"/>
-                                        </strong>
-                                    </td>
+<!--                                    <td name="account_invoice_line_name" class="text-center"-->
+<!--                                        style="border: 1px solid black;" t-if="o.company_id.id==2">-->
+<!--&lt;!&ndash;                                        <strong>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <span>Acompte </span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <span t-field="line.product_id.name" t-options="{'widget': 'text'}"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        </strong>&ndash;&gt;-->
+<!--                                    </td>-->
                                     <td class="text-center" style="border: 1px solid black;">
                                         <span t-field="line.quantity"/>
                                         <span t-field="line.product_uom_id" groups="uom.group_uom"/>
                                     </td>
-                                    <td t-attf-class="text-center {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"
+                                    <td t-attf-class="text-center"
                                         style="border: 1px solid black;">
-                                        <span t-field="line.price_unit" />
-<!--                                        <span t-field="o.module_id.product_id.list_price" t-if="o.type_facture=='web'"/>-->
+                                        <span t-field="line.price_unit" t-options='{"widget": "monetary", "display_currency": o.currency_id}' t-if = "not o.pricelist_id" />
+                                        <span
+                                                t-foreach="o.pricelist_id.item_ids" t-as="item"
+                                            t-if="o.module_id.product_id==item.product_tmpl_id and o.pricelist_id"
+                                                t-field="o.module_id.product_id.list_price" t-options='{"widget": "monetary", "display_currency": o.currency_id}'
+                                        />
                                     </td>
                                     <td t-if="display_discount"
                                         t-attf-class="text-center {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"
                                         style="border: 1px solid black;">
                                         <span t-field="line.discount"/>
                                     </td>
-                                    <td class="text-center o_price_total" style="border: 1px solid black;">
-                                        <span t-field="line.price_subtotal"
-                                              groups="account.group_show_line_subtotals_tax_excluded"/>
-                                        <span t-field="line.price_total"
-                                              groups="account.group_show_line_subtotals_tax_included"/>
+                                    <td class="text-center o_price_total" style="border: 1px solid black;" >
+                                        <span t-if = "not o.pricelist_id" t-field="line.price_subtotal"  t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+                                        <span
+                                         t-foreach="o.pricelist_id.item_ids" t-as="item"
+                                        t-if="o.module_id.product_id==item.product_tmpl_id and o.pricelist_id"
+                                                t-field="o.module_id.product_id.list_price" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+<!--                                        <span t-field="line.price_total "-->
+<!--                                              groups="account.group_show_line_subtotals_tax_included" t-if="o.methodes_payment=='cpf'"/>-->
 <!--                                        <span t-field="o.module_id.product_id.list_price"-->
-<!--                                              groups="account.group_show_line_subtotals_tax_excluded" t-if="o.type_facture=='web'"/>-->
+<!--                                              groups="account.group_show_line_subtotals_tax_excluded" t-if="o.methodes_payment=='cartebleu'" t-attf-class="text-center {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>-->
 <!--                                        <span t-field="o.module_id.product_id.list_price"-->
-<!--                                              groups="account.group_show_line_subtotals_tax_included" t-if="o.type_facture=='web'"/>-->
+<!--                                              groups="account.group_show_line_subtotals_tax_included" t-if="o.methodes_payment=='cartebleu' and o.type_facture == 'interne'" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>-->
                                     </td>
                                 </t>
                                 <t t-if="line.display_type == 'line_section'">
@@ -228,21 +233,21 @@
                                                 <strong>
                                                 <span t-options="{'widget': 'text'}" >Code promo </span>
                                                 <span t-field="o.pricelist_id.code" t-options="{'widget': 'text'}" />
+
                                                  </strong>
                                     </td>
                                     <td style="border: 1px solid black;"></td>
                                     <td name="account_invoice_pricelist_price" class="text-center"
                                         style="border: 1px solid black;">
-                                        <t t-foreach="o.pricelist_id.item_ids" t-as="item">
-                                            <t t-if="o.module_id.product_id==item.product_tmpl_id and o.pricelist_id">
+
                                                 <td name="td_remise_price" class="text-center" style="border: 1px solid black;">
                                                     <span>-</span>
                                                     <span
                                                           t-field="item.price_difference"
                                                           t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
                                                 </td>
-                                            </t>
-                                        </t>
+
+
                                      </td>
 
                                 </t>
@@ -301,19 +306,19 @@
 <!--                </table>-->
             </xpath>
             <xpath expr="//table[@name='invoice_line_table']" position="after">
-                <table style="width: 100% ;border-color:#000" name="Acount_Client" t-if="o.type_facture=='interne'">
+                <table style="width: 100% ;border-color:#000" name="Acount_Client" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte !=0">
                                 <tr>
                                     <td class="text-center"
-                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px">
+                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte !=0">
                                         Acompte :
                                     </td>
                                      <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
-                                        <span t-field="o.pourcentage_acompte" readonly="False" t-if="o.type_facture=='interne'"/>%
+                                        <span t-field="o.pourcentage_acompte" readonly="False" t-if="o.methodes_payment == 'cpf'"/>%
                                      </td>
                                      <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
                                         <strong>
                                             <span t-field="o.amount_paye"/>
-                                            <span t-field="o.module_id.product_id.list_price" t-if="o.type_facture=='web'"/>
+                                            <span t-field="o.module_id.product_id.list_price" t-if="o.methodes_payment == 'cartebleu'"/>
                                         </strong>
                                     </td>
                                 </tr>
@@ -322,7 +327,7 @@
 
                 </br>
             </xpath>
-            <xpath expr="//div[hasclass('clearfix')]" position="replace" t-if="o.type_facture=='interne'">
+            <xpath expr="//div[hasclass('clearfix')]" position="replace" t-if="o.methodes_payment == 'cpf'">
                 <div class="clearfix">
                     <div id="total" class="row">
                         <div class="col-4">
@@ -330,6 +335,15 @@
                         <div class="col-8">
                             <table style="margin-bottom: 1rem;border-color:#000" name="total">
                                 <tr>
+                                    <td class="text-left"
+                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" >
+                                        Total HT
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black; padding: 5px" >
+                                        <span t-field="o.amount_untaxed" t-if="o.methodes_payment == 'cpf'" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+                                        <span t-field="o.invoice_line_ids.price_unit" t-if="o.methodes_payment  =='cartebleu'" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+                                    </td>
+                                    <tr>
                                     <td class="text-left"
                                         style="background-color: #E8E8E8; border: 1px solid black; padding: 5px">
                                         Prestations de formation en exonération de TVA, article 261-
@@ -340,17 +354,19 @@
                                             <span t-field="o.amount_tax"/>
                                         </strong>
 
+
                                     </td>
-                                    <tr t-if="o.type_facture=='web'">
+                                    </tr>
+                                    <tr t-if="o.methodes_payment =='cartebleu'">
                                     <td class="text-left"
                                         style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" >
-                                        Total HT
+                                        Total
                                     </td>
-                                    <td class="text-left" style="border: 1px solid black; padding: 5px" t-if="o.type_facture=='web'">
-                                        <span t-field="o.amount_total" t-if="o.type_facture=='web'"/>
+                                    <td class="text-left" style="border: 1px solid black; padding: 5px" t-if="o.methodes_payment =='cartebleu'">
+                                        <span t-field="o.amount_total" t-if="o.methodes_payment =='cartebleu'"/>
                                     </td>
-                                    <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px" t-if="o.type_facture=='interne'">
-                                        <span t-field="o.restamount" t-if="o.type_facture=='interne'"/>
+                                    <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px" t-if="o.methodes_payment == 'cpf'">
+                                        <span t-field="o.restamount" t-if="o.methodes_payment == 'cpf'"/>
                                     </td>
                                     </tr>
                                 </tr>
@@ -365,14 +381,15 @@
 <!--                                        </strong>-->
 <!--                                    </td>-->
 
-                                <tr>
+                                <tr t-if="o.methodes_payment == 'cpf'" >
                                     <td class="text-left"
-                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" t-if="o.type_facture=='interne'" >
-                                        <strong>Montant restant à encaisser:</strong>
+                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" t-if="o.methodes_payment == 'cpf'" >
+                                        <strong >Total</strong>
                                     </td>
-                                    <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px" t-if="o.type_facture=='interne'">
+                                    <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
                                         <strong>
-                                            <span t-field="o.restamount" t-if="o.type_facture=='interne'"/>
+                                            <span t-field="o.restamount" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte != 0"/>
+                                             <span t-field="o.amount_total" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte == 0"/>
                                         </strong>
                                     </td>
                                 </tr>
@@ -467,6 +484,8 @@
                                        t-as="bank">
                                         <strong t-if="bank.bic=='SOGEFRPP'">
                                             <span t-field="bank.acc_number"/>
+                                            <span></span>
+                                            <span></span>
                                         </strong>
                                     </t>
 
@@ -477,6 +496,8 @@
                                        t-as="bank">
                                         <strong t-if="bank.bic=='SOGEFRPP'">
                                             <span t-field="bank.bic"/>
+                                            <span></span>
+                                            <span></span>
                                         </strong>
                                     </t>
                                 </td>
@@ -485,12 +506,14 @@
                     </div>
                 </div>
             </xpath>
-
-            <!--            <xpath expr="//div[hasclass('page')]//p[4]" position="replace">-->
-            <!--                <p t-if="o.fiscal_position_id.note" name="note">-->
-            <!--                    <span></span>-->
-            <!--                </p>-->
-            <!--            </xpath>-->
+<!--            <xpath expr="//div[hasclass('page')]//p[4]" position="replace">-->
+<!--                            <p t-if="o.fiscal_position_id.note" name="note">-->
+<!--                                <span></span>-->
+<!--                            </p>-->
+<!--            </xpath>-->
+<!--             <xpath expr="//record[@id='fiscal_position_template_import_export'/field[@name='note']" position="replace">-->
+<!--                  <span></span>-->
+<!--            </xpath>-->
             <xpath expr="//div[@id='qrcode']" position="replace">
                 <div id="qrcode"
                      t-if="(o.company_id.qr_code) and (o.currency_id.name == 'EUR') and (o.invoice_partner_bank_id.acc_number != False)">

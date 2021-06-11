@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- session form view -->
+        <record model="ir.ui.view" id="mcmacademy_partner_wizard_session_form_view">
+            <field name="name">partner.statut.wizard.form</field>
+            <field name="model">res.partner.session.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Changer statut de client">
+                    <sheet>
+                        <group>
+                            <field name="partner_id" readonly="1"/>
+                            <field name="statut"/>
+                            <field name="session_id"/>
+                            <field name="module_id" domain="[('session_id', '=',session_id)]"/>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button string="Valider Changement" name="action_modify_partner"
+                                type="object" class="btn-primary"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <!-- session tree/list view -->
+        <record model="ir.ui.view" id="mcmacademy_partner_wizard_session_tree_view">
+            <field name="name">partner.statut.wizard.tree</field>
+            <field name="model">res.partner.session.wizard</field>
+            <field name="arch" type="xml">
+                <tree string="Statut client">
+                    <field name="partner_id"/>
+                    <field name="statut"/>
+                    <field name="session_id"/>
+                    <field name="module_id"/>
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</odoo>
