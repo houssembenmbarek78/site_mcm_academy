@@ -88,7 +88,7 @@
                                                 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
                                                 &amp;nbsp;&amp;nbsp;
                                                 Signature :
-                                                <img src='/partner_exam/static/src/img/signature.png'
+                                                <img src='/partner_exam/static/src/img/signature_suivi.png'
                                                      style="height:200px; width:300px;padding-top:5px!important;"/>
                                                 </center>
                                             </strong>
@@ -144,7 +144,7 @@
                                                 Signature :
                                             </strong>
                                             <t t-if="len(o.historic_sessions_ids) &gt; 1">
-                                                <img src='/partner_exam/static/src/img/signature.png'
+                                                <img src='/partner_exam/static/src/img/signature_suivi.png'
                                                      style="height:200px; width:300px;"/>
                                             </t>
                                         </center>
@@ -199,7 +199,7 @@
                                                 Signature
                                             </strong>
                                             <t t-if="len(o.historic_sessions_ids) &gt; 2">
-                                                <img src='/partner_exam/static/src/img/signature.png'
+                                                <img src='/partner_exam/static/src/img/signature_suivi.png'
                                                      style="height:200px; width:300px;"/>
                                             </t>
                                         </center>
@@ -274,7 +274,7 @@
                                                 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
                                                 &amp;nbsp;&amp;nbsp;
                                                 Signature :
-                                                <img src='/partner_exam/static/src/img/signature.png'
+                                                <img src='/partner_exam/static/src/img/signature_suivi.png'
                                                      style="height:200px; width:300px;"/>
                                             </strong>
                                         </center>
@@ -330,7 +330,7 @@
                                                 Signature
                                             </strong>
                                             <t t-if="len(o.historic_sessions_ids) &gt; 4">
-                                                <img src='/partner_exam/static/src/img/signature.png'
+                                                <img src='/partner_exam/static/src/img/signature_suivi.png'
                                                      style="height:200px; width:300px;"/>
                                             </t>
                                         </center>
@@ -385,7 +385,7 @@
                                                 Signature
                                             </strong>
                                             <t t-if="len(o.historic_sessions_ids) &gt; 4">
-                                                <img src='/partner_exam/static/src/img/signature.png'
+                                                <img src='/partner_exam/static/src/img/signature_suivi.png'
                                                      style="height:200px; width:300px;"/>
                                             </t>
                                         </center>
