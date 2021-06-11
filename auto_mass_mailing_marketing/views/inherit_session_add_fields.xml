@@ -30,6 +30,7 @@
                     <field name="heure_examen_apres_midi" string="Heure"
                            attrs="{'invisible': [('temps_convocation', '=', 'matin')]}"/>
                     <field name="date_convocation"/>
+                    <field name="lien"/>
                 </group>
             </xpath>
         </field>

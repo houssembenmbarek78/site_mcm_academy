@@ -24,6 +24,8 @@ class AccountMove(models.Model):
     horaire_email = fields.Char(compute="_compute_auto_horaire_email", string="Horaire Email",
                                 help="Heure d'examen qui sera affiché "
                                      "dans le text de l'email pour la convocation.")
+    # Add new field "lien" contains link of center adress exam
+    lien = fields.Char(string="Lien d'accées au centre d'examen", required=True)
 
     def _compute_auto_horaire_email(self):
         """ This function for dynamic field in email template,
