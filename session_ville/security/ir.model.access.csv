@@ -1,0 +1,3 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_session_ville,Session Ville,model_session_ville,,1,1,1,1,
+access_session_adresse_examen,Session Adresse Examen,model_session_adresse_examen,,1,1,1,1
