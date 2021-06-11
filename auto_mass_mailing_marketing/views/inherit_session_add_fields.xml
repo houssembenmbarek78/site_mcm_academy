@@ -21,7 +21,7 @@
                 <field name="adresse_examen" attrs="{'required':[('company_id', '=', 2)],'invisible':[('company_id','!=', 2)]}"/>
             </xpath>
             <xpath expr="//form/div/group/group[@name='dates']" position="after">
-                <group string="Horaire" attrs="{'invisible':[('company_id','!=', 2)]}">
+                <group name="horaire" string="Horaire" attrs="{'invisible':[('company_id','!=', 2)]}">
                     <field name="date_exam" attrs="{'required':[('company_id', '=', 2)]}"/>
                     <field name="temps_convocation" attrs="{'required':[('company_id', '=', 2)]}"/>
                     <field name="horaire_email" invisible="1"/>
