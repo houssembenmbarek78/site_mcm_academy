@@ -11,13 +11,3 @@ class SessionVille(models.Model):
     active = fields.Boolean('Active', default=True)
     description = fields.Text()
     session_adresse_examen_ids = fields.One2many('session.adresse.examen', 'session_ville_id')
-
-    def get_session_ville(self):
-        self.ensure_one()
-        return {
-            "name": self.name_ville,
-            "view_type": "form",
-            "view_mode": "tree,form",
-            "res_model": "session.adresse.examen",
-            "type": "ir.actions.act_window",
-        }
