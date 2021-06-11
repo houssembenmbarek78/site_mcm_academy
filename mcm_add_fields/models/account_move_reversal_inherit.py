@@ -21,5 +21,6 @@ class AccountMoveReversalInherit(models.TransientModel):
             'auto_post': True if self.date > fields.Date.context_today(self) else False,
             'invoice_user_id': move.invoice_user_id.id,
             'pourcentage_acompte': move.pourcentage_acompte,
+            'amount_residual' : move.amount_residual,
 
         }

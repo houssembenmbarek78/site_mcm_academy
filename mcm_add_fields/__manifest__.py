@@ -13,7 +13,7 @@
         'l10n_fr',
         'account',
         'product',
-         'base',
+        'base',
         'contacts',
         'web',
     ],
