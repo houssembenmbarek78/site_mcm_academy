@@ -4,6 +4,8 @@
 from odoo import api, fields, models,_
 import calendar
 from datetime import date,datetime
+import logging
+_logger = logging.getLogger(__name__)
 
 class Sale(models.Model):
     _inherit='sale.order'
@@ -14,11 +16,11 @@ class Sale(models.Model):
             if vals['state'] == 'sent':
                 partner = self.partner_id
                 print('sent', partner)
-                self.change_statut_lead("Contrat", partner)
+                self.change_statut_lead("Contrat Non Signé", partner)
             if vals['state'] == 'sale':
                 partner = self.partner_id
                 print('sale', partner)
-                self.change_statut_lead("Document", partner)
+                self.change_statut_lead("Contrat Signé", partner)
 
         return record
 

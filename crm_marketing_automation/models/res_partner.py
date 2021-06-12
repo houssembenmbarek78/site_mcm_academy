@@ -3,48 +3,46 @@
 #
 from odoo import api, fields, models, _
 import calendar
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 
 
 class Partner(models.Model):
     _inherit = 'res.partner'
 
-
-
-
     def create(self, vals):
 
- 
-      partner = super(Partner, self).create(vals)
-      return partner
-
+        partner = super(Partner, self).create(vals)
+        return partner
 
     def write(self, vals):
         if 'statut_cpf' in vals:
             # Si statut cpf non traité on classe l'apprenant dans le pipeline du crm  sous etat non traité
             if vals['statut_cpf'] == 'untreated':
-                self.changestatut("Non traité")
+                self.changestatut("Non traité", self)
             # Si statut cpf validé on classe l'apprenant dans le pipeline du crm  sous etat validé
             if vals['statut_cpf'] == 'validated':
-                self.changestatut("Validé")
+                self.changestatut("Validé", self)
             # Si statut cpf accepté on classe l'apprenant dans le pipeline du crm  sous statut  accepté
             if vals['statut_cpf'] == 'accepted':
-                self.changestatut("Accepté")
-        else:
-            for rec in self:
-                if rec.statut_cpf == 'untreated':
-                    self.changestatut("Non traité")
-                    print('statut',rec.statut_cpf)
+                self.changestatut("Accepté", self)
+
+        # else:
+
+        #     for rec in self:
+        #         if rec.statut_cpf == 'untreated':
+        #             self.changestatut("Non traité")
+        #             print('statut',rec.statut_cpf)
 
         record = super(Partner, self).write(vals)
+
         return record
 
-    def changestatut(self, name):
+    def changestatut(self, name, partner):
         stage = self.env['crm.stage'].sudo().search([("name", "like", _(name))])
         print('stageeeee', stage)
         if stage:
 
-            leads = self.env['crm.lead'].sudo().search([('partner_id', '=', self.id)])
+            leads = self.env['crm.lead'].sudo().search([('partner_id', '=', partner.id)])
             print('leeaaadd', leads)
             if leads:
                 for lead in leads:
@@ -54,19 +52,76 @@ class Partner(models.Model):
                     })
 
             if not leads:
-                num_dossier=""
+                num_dossier = ""
                 if self.numero_cpf:
-                    num_dossier=self.num_cpf
-                print("create lead self", self)
+                    num_dossier = partner.numero_cpf
+                print("create lead self", partner)
                 lead = self.env['crm.lead'].sudo().create({
-                    'name': self.name,
-                    'partner_name': self.name,
+                    'name': partner.name,
+                    'partner_name': partner.name,
                     'num_dossier': num_dossier,
-                    'email': self.email,
+                    'email': partner.email,
                     'type': "opportunity",
                     'stage_id': stage.id
                 })
-                partner = self.env['res.partner'].sudo().search([('id', '=', self.id)])
+                partner = self.env['res.partner'].sudo().search([('id', '=', partner.id)])
                 if partner:
                     print("parnterrrr", lead.partner_id)
                     lead.partner_id = partner
+
+    def change_statut_non_retracte(self):
+        partners = self.env['res.partner'].sudo().search([('statut', "=", "won")])
+
+        for partner in partners:
+            # Pour chaque apprenant extraire la session et la formation reservé pour passer l'examen
+            sale_order = self.env['sale.order'].sudo().search([('partner_id', '=', partner.id),
+                                                               ('session_id', '=', partner.mcm_session_id.id),
+                                                               ('module_id', '=', partner.module_id.id),
+                                                               ('state', '=', 'sale'),
+                                                               ('session_id.date_exam', '>', date.today())
+                                                               ], limit=1, order="id desc")
+
+            print('sale order', sale_order.name)
+            # Récupérer les documents et vérifier s'ils sont validés ou non
+            documents = self.env['documents.document'].sudo().search([('partner_id', '=', partner.id)])
+            document_valide = False
+            count = 0
+            for document in documents:
+                if (document.state == "validated"):
+                    count = count + 1
+                    print('valide')
+            print('count', count, 'len', len(documents))
+            if (count == len(documents) and count != 0):
+                document_valide = True
+            # Vérifier si partner a signé son contrat et si ses documents sont validés
+            if ((sale_order) and (document_valide)):
+                # delai de retractation
+                failure = sale_order.failures
+                renonciation = partner.renounce_request
+                # date_signature=""
+                # if sale_order.signed_on:
+                date_signature = sale_order.signed_on
+                #
+                # # Calculer date d'ajout sur 360 apres 14jours de date de signature
+                # date_ajout = date_signature + timedelta(days=14)
+                today = datetime.today()
+                # si l'apprenant a fait une renonce  ou a passé 14jours apres la signature de contrat
+                # On le supprime de crm car il va etre ajouté sur 360
+                if (failure) or (renonciation):
+                    print('parnter à supprimer  sale', partner.name, sale_order)
+                    leads = self.env['crm.lead'].sudo().search([('partner_id', '=', partner.id)])
+                    print('leeaaadd', leads)
+                    if leads:
+                        for lead in leads:
+                            lead.sudo().unlink()
+                elif (date_signature and (date_signature + timedelta(days=14)) <= (today)):
+                    print('parnter à supprimer  date', partner.name, sale_order)
+                    leads = self.env['crm.lead'].sudo().search([('partner_id', '=', partner.id)])
+                    print('leeaaadd', leads)
+                    if leads:
+                        for lead in leads:
+                            lead.sudo().unlink()
+                # Si non il est classé comme apprenant non retracté
+                else:
+                    print('non retracté')
+                    self.changestatut("Non Retracté", partner)

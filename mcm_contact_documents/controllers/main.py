@@ -798,6 +798,9 @@ class CustomerPortal(CustomerPortal):
                 document.sudo().write({'name':"CERFA 11414-05"})
         except Exception as e:
             logger.exception("Fail to upload document Carte d'identité ")
+        
+        
+        #verifier les document crées , si oui créer un lead si non modifier statut à document
         return http.request.render('mcm_contact_documents.success_documents')
 
     @http.route('/new_documents', type="http", auth="user", website=True)

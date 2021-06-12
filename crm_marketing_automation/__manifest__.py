@@ -13,6 +13,7 @@
     ],
     'data': [
      # 'crm_lead.xml',
+      'data/ir_cron.xml',
     ],
     'demo': [
     ],
