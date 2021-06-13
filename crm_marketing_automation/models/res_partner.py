@@ -4,7 +4,9 @@
 from odoo import api, fields, models, _
 import calendar
 from datetime import date, datetime, timedelta
+import logging
 
+_logger = logging.getLogger(__name__)
 
 class Partner(models.Model):
     _inherit = 'res.partner'
@@ -81,7 +83,7 @@ class Partner(models.Model):
                                                                ('session_id.date_exam', '>', date.today())
                                                                ], limit=1, order="id desc")
 
-            print('sale order', sale_order.name)
+            _logger.info('sale order %s' % sale_order.name)
             # Récupérer les documents et vérifier s'ils sont validés ou non
             documents = self.env['documents.document'].sudo().search([('partner_id', '=', partner.id)])
             document_valide = False
@@ -110,9 +112,10 @@ class Partner(models.Model):
                 if (failure) or (renonciation):
                     print('parnter à supprimer  sale', partner.name, sale_order)
                     leads = self.env['crm.lead'].sudo().search([('partner_id', '=', partner.id)])
-                    print('leeaaadd', leads)
+                    _logger.info('partner if failure to delete  %s' % partner.name)
                     if leads:
                         for lead in leads:
+                            _logger.info('lead order %s' % lead.name)
                             lead.sudo().unlink()
                 elif (date_signature and (date_signature + timedelta(days=14)) <= (today)):
                     print('parnter à supprimer  date', partner.name, sale_order)
@@ -123,5 +126,5 @@ class Partner(models.Model):
                             lead.sudo().unlink()
                 # Si non il est classé comme apprenant non retracté
                 else:
-                    print('non retracté')
+                    _logger.info('non retracté' )
                     self.changestatut("Non Retracté", partner)
