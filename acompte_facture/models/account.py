@@ -9,23 +9,23 @@ class AccountMove(models.Model):
     restamount = fields.Monetary(string='Reste à payé ', store=True)
     amount_paye= fields.Monetary(string='payé ', store=True)
 
-#Création de l'acompte
-
-    def action_create_acompte(self):
-        for rec in self:
-            print('montant total')
-            print(self.amount_total)
-            return {
-                'name':"Créer une facture d'acompte",
-                'type': 'ir.actions.act_window',
-                'view_mode': 'form',
-                'res_model': 'account.invoice.acompte.wizard',
-                'target': 'new',
-                'context': {
-                    'default_invoice_id': self.ids[0],
-                    'default_pourcentage': 100,
-                },
-            }
+# #Création de l'acompte
+#
+#     def action_create_acompte(self):
+#         for rec in self:
+#             print('montant total')
+#             print(self.amount_total)
+#             return {
+#                 'name':"Créer une facture d'acompte",
+#                 'type': 'ir.actions.act_window',
+#                 'view_mode': 'form',
+#                 'res_model': 'account.invoice.acompte.wizard',
+#                 'target': 'new',
+#                 'context': {
+#                     'default_invoice_id': self.ids[0],
+#                     'default_pourcentage': 100,
+#                 },
+#             }
 
     # Fonction qui calcule le reste à payé ,le montant de la formation et le pourcentage de l'acompte dans la facture
     # Calculer les montants: restamount , amount_residual , amount_paye l'hors du chagement du pourcentage d'acompte
@@ -35,7 +35,7 @@ class AccountMove(models.Model):
     def _compute_amount(self):
         invoice=super(AccountMove,self)._compute_amount()
         for rec in self:
-            if (rec.methodes_payment == 'cpf') :
+            if (rec.methodes_payment == 'cpf' and rec.company_id == 2) :
                 amount_untaxed_initiale = rec.amount_untaxed
                 rec.amount_paye=(rec.amount_untaxed*rec.pourcentage_acompte)/100
                 # rec.amount_untaxed = (rec.amount_untaxed * rec.pourcentage_acompte) / 100
@@ -48,7 +48,7 @@ class AccountMove(models.Model):
                 print(rec.restamount)
                 print(rec.amount_residual)
                 return invoice
-            elif (rec.methodes_payment == 'cartebleu') :
+            elif (rec.methodes_payment == 'cartebleu' and rec.company_id == 2) :
 
                 rec.amount_untaxed = rec.amount_total
 class resPartnerWizard(models.TransientModel):
