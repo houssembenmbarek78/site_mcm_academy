@@ -83,6 +83,7 @@ class Partner(models.Model):
                                                                ('session_id.date_exam', '>', date.today())
                                                                ], limit=1, order="id desc")
 
+            _logger.info('partner  %s' % partner.name)
             _logger.info('sale order %s' % sale_order.name)
             # Récupérer les documents et vérifier s'ils sont validés ou non
             documents = self.env['documents.document'].sudo().search([('partner_id', '=', partner.id)])
@@ -123,6 +124,7 @@ class Partner(models.Model):
                     print('leeaaadd', leads)
                     if leads:
                         for lead in leads:
+                            _logger.info('lead signature %s' % lead.name)
                             lead.sudo().unlink()
                 # Si non il est classé comme apprenant non retracté
                 else:
