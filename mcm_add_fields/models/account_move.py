@@ -69,7 +69,7 @@ class AccountMove(models.Model):
                     # rec.amount_residual = rec.restamount
                     rec.amount_residual_signed = rec.restamount
                     rec.amount_total_signed = rec.restamount
-                 elif (rec.methodes_payment == 'cpf' and daysDiff < 0 ) :
+                 elif (rec.methodes_payment == 'cpf' and daysDiff < 0 and rec.company_id == 2) :
                     rec.pourcentage_acompte = 25
                     rec.amount_paye = (rec.amount_untaxed * rec.pourcentage_acompte) / 100
                     rec.restamount = amount_untaxed_initiale - rec.amount_paye

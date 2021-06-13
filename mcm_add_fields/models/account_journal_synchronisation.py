@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
-#Ce programme a été modifié par seifeddinne le 22/03/2021
-#Modification du process de la facturation
-#Modification de l'aperçu de la facturation
+#Ce programme a été modifié par seifeddinne le 07/06/2021
+# synchronisation des factures anciennes et affichages des nouveau du champs methodes_payment : cpf / carte_bleu
 from odoo import api, fields, models,_
 from odoo.exceptions import RedirectWarning, UserError, ValidationError
 from datetime import datetime
