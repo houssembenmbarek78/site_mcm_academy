@@ -113,7 +113,7 @@ class ClientCPFController(http.Controller):
                         # methode_payment prend la valeur CPF pour savoir bien qui est une facture CPF qui prend la valeur 25 % par default
 
 
-                        if so.amount_total>0 and so.order_line:
+                        if so.amount_total>0 and so.order_line and so.company_id == 2:
                             moves = so._create_invoices(final=True)
                             for move in moves:
                                 move.type_facture = 'interne'

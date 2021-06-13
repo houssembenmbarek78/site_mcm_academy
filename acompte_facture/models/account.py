@@ -35,7 +35,7 @@ class AccountMove(models.Model):
     def _compute_amount(self):
         invoice=super(AccountMove,self)._compute_amount()
         for rec in self:
-            if (rec.methodes_payment == 'cpf') :
+            if (rec.methodes_payment == 'cpf' and rec.company_id == 2) :
                 amount_untaxed_initiale = rec.amount_untaxed
                 rec.amount_paye=(rec.amount_untaxed*rec.pourcentage_acompte)/100
                 # rec.amount_untaxed = (rec.amount_untaxed * rec.pourcentage_acompte) / 100
@@ -48,7 +48,7 @@ class AccountMove(models.Model):
                 print(rec.restamount)
                 print(rec.amount_residual)
                 return invoice
-            elif (rec.methodes_payment == 'cartebleu') :
+            elif (rec.methodes_payment == 'cartebleu' and rec.company_id == 2) :
 
                 rec.amount_untaxed = rec.amount_total
 class resPartnerWizard(models.TransientModel):
