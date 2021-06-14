@@ -92,6 +92,13 @@
                                                     https://www.digimoov.fr/examen-capacite-transport-marchandises
                                                 </a>
                                             </bold>
+                                            <br/>
+                                            <b>Plan D'accès de centre d'examen</b>
+                                            <br/>
+                                            <bold>
+                                                <a class="alert-link" t-field="docs.mcm_session_id.lien"
+                                                   style="color:#0000FF;"/>
+                                            </bold>
                                         </center>
                                     </br>
                                     <br></br>
