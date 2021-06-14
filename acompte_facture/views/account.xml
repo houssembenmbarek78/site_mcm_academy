@@ -15,7 +15,7 @@
             <xpath expr="//field[@name='amount_untaxed']" position="before">
                 <field name="type_facture" invisible="1"/>
                 <field name="methodes_payment" invisible="1"/>
-                <label for="pourcentage_acompte" attrs="{'invisible': [('methodes_payment','=','cartebleu')  or ('company_id','=','2')]}"/>
+                <label for="pourcentage_acompte" attrs="{'invisible': [('methodes_payment','=','cartebleu') or ('company_id','=','2')]}"/>
                 <div class="oe_subtotal_footer_separator">
                     <field name="pourcentage_acompte" class="oe_inline" readonly="False"
                            attrs="{'invisible': [('methodes_payment','=','cartebleu') or ('company_id','=','2')]}" force_save="1"/>
