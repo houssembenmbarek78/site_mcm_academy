@@ -25,7 +25,8 @@
                                         <center>
                                             <h2>Déclaration relative au suivi de la formation et aux examens</h2>
                                         </center>
-                                        Civilité : M/Mme <br/>
+                                        Civilité : M/Mme
+                                        <br/>
                                         nom et prénom :
                                         <strong>
                                             <span t-field="o.name"/>
@@ -60,7 +61,8 @@
                                             <span t-field="o.module_id.date_exam"
                                                   t-field-options='{"format": "dd/MM/yyyy"}'/>
                                         </strong>
-                                        <hr width="100%" style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin_top: 16px 0px 16px 0px;"/>
+                                        <hr width="100%"
+                                            style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin_top: 16px 0px 16px 0px;"/>
                                         <b>1° Suivi de la formation et premier examen.</b>
                                         <br/>
                                         Lieu et date de l’examen :
@@ -79,20 +81,27 @@
                                             <span t-esc="o.display_name"/>
                                         </strong>
                                         a suivi la formation mentionnée ci-dessus et a passé
-                                        sans succès le premier examen.<br/>
-                                            <strong>
-                                                <center>
+                                        <strong>
+                                        <t t-if="len(o.note_exam_id) &gt; 0">
+                                            <span t-field="o.note_exam_id[0].etat"/>
+                                        </t>
+                                        </strong>
+                                        le premier examen.
+                                        <br/>
+                                        <strong>
+                                            <center>
                                                 Date :
-                                                    <span t-field="o.note_exam_id[0].date_today"
-                                                          t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                <span t-field="o.note_exam_id[0].date_today"
+                                                      t-field-options='{"format": "dd/MM/yyyy"}'/>
                                                 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
                                                 &amp;nbsp;&amp;nbsp;
                                                 Signature :
                                                 <img src='/partner_exam/static/src/img/signature_suivi.png'
                                                      style="height:200px; width:300px;padding-top:5px!important;"/>
-                                                </center>
-                                            </strong>
-                                        <hr width="100%" style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin_top: 16px 0px 16px 0px;"/>
+                                            </center>
+                                        </strong>
+                                        <hr width="100%"
+                                            style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin_top: 16px 0px 16px 0px;"/>
                                         <b>2° Deuxième examen.</b>
                                         <br/>
                                         Lieu et date de l’examen :
@@ -131,14 +140,20 @@
                                         <strong>
                                             <span t-esc="o.display_name"/>
                                         </strong>
-                                        a passé sans succès le deuxième examen.
+                                        a passé
+                                        <strong>
+                                        <t t-if="len(o.note_exam_id) &gt; 1">
+                                            <span t-field="o.note_exam_id[2].etat"/>
+                                        </t>
+                                        </strong>
+                                        le deuxième examen.
                                         <center>
                                             <strong>
                                                 Date :
-                                                    <t t-if="len(o.note_exam_id) &gt; 1">
-                                                        <span t-field="o.note_exam_id[1].date_today"
-                                                              t-field-options='{"format": "dd/MM/yyyy"}'/>
-                                                    </t>
+                                                <t t-if="len(o.note_exam_id) &gt; 1">
+                                                    <span t-field="o.note_exam_id[1].date_today"
+                                                          t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                </t>
                                                 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
                                                 &amp;nbsp;&amp;nbsp;
                                                 Signature :
@@ -148,7 +163,8 @@
                                                      style="height:200px; width:300px;"/>
                                             </t>
                                         </center>
-                                        <hr width="100%" style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin_top: 16px 0px 16px 0px;"/>
+                                        <hr width="100%"
+                                            style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin_top: 16px 0px 16px 0px;"/>
                                         <b>3° Troisième examen.</b>
                                         <br/>
                                         Lieu et date de l’examen :
@@ -186,14 +202,20 @@
                                         <strong>
                                             <span t-esc="o.display_name"/>
                                         </strong>
-                                        a passé sans succès le troisième examen.
+                                        a passé
+                                        <strong>
+                                        <t t-if="len(o.note_exam_id) &gt; 2">
+                                            <span t-field="o.note_exam_id[2].etat"/>
+                                        </t>
+                                        </strong>
+                                        le troisième examen.
                                         <center>
                                             <strong>
                                                 Date :
-                                                    <t t-if="len(o.note_exam_id) &gt; 2">
-                                                        <span t-field="o.note_exam_id[2].date_today"
-                                                              t-field-options='{"format": "dd/MM/yyyy"}'/>
-                                                    </t>
+                                                <t t-if="len(o.note_exam_id) &gt; 2">
+                                                    <span t-field="o.note_exam_id[2].date_today"
+                                                          t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                </t>
                                                 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
                                                 &amp;nbsp;&amp;nbsp;
                                                 Signature
@@ -211,7 +233,8 @@
                                         <center>
                                             <h2>Déclaration relative au suivi de la formation et aux examens</h2>
                                         </center>
-                                        Civilité : M/Mme <br/>
+                                        Civilité : M/Mme
+                                        <br/>
                                         nom et prénom :
                                         <strong>
                                             <span t-field="o.name"/>
@@ -246,7 +269,8 @@
                                             <span t-field="o.module_id.date_exam"
                                                   t-field-options='{"format": "dd/MM/yyyy"}'/>
                                         </strong>
-                                        <hr width="100%" style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin_top: 16px 0px 16px 0px;"/>
+                                        <hr width="100%"
+                                            style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin_top: 16px 0px 16px 0px;"/>
                                         <b>1° Suivi de la formation et premier examen.</b>
                                         <br/>
                                         Lieu et date de l’examen :
@@ -265,12 +289,18 @@
                                             <span t-esc="o.display_name"/>
                                         </strong>
                                         a suivi la formation mentionnée ci-dessus et a passé
-                                        sans succès le premier examen.<br/>
+                                        <strong>
+                                        <t t-if="len(o.note_exam_id) &gt; 3">
+                                            <span t-field="o.note_exam_id[3].etat"/>
+                                        </t>
+                                        </strong>
+                                        le premier examen.
+                                        <br/>
                                         <center>
                                             <strong>
                                                 Date :
-                                                    <span t-field="o.note_exam_id[3].date_today"
-                                                          t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                <span t-field="o.note_exam_id[3].date_today"
+                                                      t-field-options='{"format": "dd/MM/yyyy"}'/>
                                                 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
                                                 &amp;nbsp;&amp;nbsp;
                                                 Signature :
@@ -278,7 +308,8 @@
                                                      style="height:200px; width:300px;"/>
                                             </strong>
                                         </center>
-                                        <hr width="100%" style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin_top: 16px 0px 16px 0px;"/>
+                                        <hr width="100%"
+                                            style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin_top: 16px 0px 16px 0px;"/>
                                         <b>2° Deuxième examen.</b>
                                         <br/>
                                         Lieu et date de l’examen :
@@ -317,14 +348,20 @@
                                         <strong>
                                             <span t-esc="o.display_name"/>
                                         </strong>
-                                        a passé sans succès le deuxième examen.
+                                        a passé
+                                        <strong>
+                                        <t t-if="len(o.note_exam_id) &gt; 4">
+                                            <span t-field="o.note_exam_id[4].etat"/>
+                                        </t>
+                                        </strong>
+                                        le deuxième examen.
                                         <center>
                                             <strong>
                                                 Date :
-                                                    <t t-if="len(o.note_exam_id) &gt; 4">
-                                                        <span t-field="o.note_exam_id[4].date_today"
-                                                              t-field-options='{"format": "dd/MM/yyyy"}'/>
-                                                    </t>
+                                                <t t-if="len(o.note_exam_id) &gt; 4">
+                                                    <span t-field="o.note_exam_id[4].date_today"
+                                                          t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                </t>
                                                 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
                                                 &amp;nbsp;&amp;nbsp;
                                                 Signature
@@ -334,7 +371,8 @@
                                                      style="height:200px; width:300px;"/>
                                             </t>
                                         </center>
-                                        <hr width="100%" style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin_top: 16px 0px 16px 0px;"/>
+                                        <hr width="100%"
+                                            style="background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin_top: 16px 0px 16px 0px;"/>
                                         <b>3° Troisième examen.</b>
                                         <br/>
                                         Lieu et date de l’examen :
@@ -372,14 +410,20 @@
                                         <strong>
                                             <span t-esc="o.display_name"/>
                                         </strong>
-                                        a passé sans succès le troisième examen.
+                                        a passé
+                                        <strong>
+                                        <t t-if="len(o.note_exam_id) &gt; 5">
+                                            <span t-field="o.note_exam_id[5].etat"/>
+                                        </t>
+                                        </strong>
+                                        le troisième examen.
                                         <center>
                                             <strong>
                                                 Date :
-                                                    <t t-if="len(o.note_exam_id) &gt; 4">
-                                                        <span t-field="o.note_exam_id[5].date_today"
-                                                              t-field-options='{"format": "dd/MM/yyyy"}'/>
-                                                    </t>
+                                                <t t-if="len(o.note_exam_id) &gt; 4">
+                                                    <span t-field="o.note_exam_id[5].date_today"
+                                                          t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                </t>
                                                 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
                                                 &amp;nbsp;&amp;nbsp;
                                                 Signature
