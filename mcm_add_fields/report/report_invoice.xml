@@ -135,7 +135,7 @@
                                 <span>Source Document</span>
                             </th>
                             <th name="th_quantity" class="text-center" style="border: 1px solid black;">
-                                <span>Quantity</span>
+                                <span>Quantité</span>
                             </th>
                             <th name="th_priceunit"
                                 t-attf-class="text-center"
@@ -313,7 +313,7 @@
                                         Acompte :
                                     </td>
                                      <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
-                                        <span t-field="o.pourcentage_acompte" readonly="False" t-if="o.methodes_payment == 'cpf'"/>%
+                                        <span t-field="o.pourcentage_acompte" readonly="False" t-if="o.methodes_payment == 'cpf' and o.company_id == 2 "/>%
                                      </td>
                                      <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
                                         <strong>
@@ -388,7 +388,7 @@
                                     </td>
                                     <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
                                         <strong>
-                                            <span t-field="o.restamount" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte != 0"/>
+                                            <span t-field="o.restamount" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte != 0 and rec.company_id == 2"/>
                                              <span t-field="o.amount_total" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte == 0"/>
                                         </strong>
                                     </td>

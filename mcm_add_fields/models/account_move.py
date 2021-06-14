@@ -77,8 +77,7 @@ class AccountMove(models.Model):
                     # rec.amount_residual = rec.restamount
                     rec.amount_residual_signed = rec.restamount
                     rec.amount_total_signed = rec.restamount
-                 else:
-                     rec.pourcentage_acompte = 0
+
 
 
                 # elif (rec.methode_payment == 'cartebleu'):
