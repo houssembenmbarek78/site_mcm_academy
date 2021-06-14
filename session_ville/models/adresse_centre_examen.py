@@ -13,4 +13,6 @@ class Adresse_Centre_Examen(models.Model):
     email = fields.Char(help="Ajouter l'email de centre d'examen.")
     active = fields.Boolean('Active', default=True)
     session_ville_id = fields.Many2one('session.ville', help="Choisir une ville.")
+    lien = fields.Char(string="Lien d'accées au centre d'examen", help="Lien de plan d'accès au centre d'examen sur Google Map")
+
 
