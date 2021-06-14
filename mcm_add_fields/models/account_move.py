@@ -50,7 +50,7 @@ class AccountMove(models.Model):
     # et on peux la changer en pourcentage qu' on veux tout en calculant le montant payée et le reste à payer correctement
     #Si non si la méthode de payment est par carte bleu et le champs methode_payment== 'cartebleu' : l'acompte ne  s'affiche pas et la facture prend la somme de la formation
 #
-    @api.depends('invoice_line_ids.price_subtotal','pourcentage_acompte','methodes_payment')
+    @api.depends('invoice_line_ids.price_subtotal','pourcentage_acompte','methodes_payment','company_id')
     def _compute_change_amount(self):
          date_precis = date(2021, 6, 10)
 
