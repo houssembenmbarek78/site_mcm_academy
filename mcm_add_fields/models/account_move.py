@@ -24,7 +24,7 @@ class AccountMove(models.Model):
     module_id = fields.Many2one('mcmacademy.module','Module')
     session_id = fields.Many2one('mcmacademy.session','Session')
     pricelist_id = fields.Many2one('product.pricelist','Liste de prix')
-    methodes_payment = fields.Selection(selection=[('cpf','CPF'),('cartebleu','Cartebleu')],String='Méthode de payment', required=True)
+    methodes_payment = fields.Selection(selection=[('cpf','CPF'),('cartebleu','Cartebleu')],String='Méthode de payment')
     cpf_acompte_amount = fields.Monetary('Montant acompte')
     pourcentage_acompte = fields.Integer(string="Pourcentage d'acompte",compute='_compute_change_amount',store=True,readonly=False)
 
