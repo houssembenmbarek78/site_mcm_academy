@@ -42,6 +42,10 @@ class NoteExamen(models.Model):
         string="Présence", default='present')
     ville = fields.Char(string="Session de ")
 
+    # Ajout le champ etat qui sera invisible dans l'interface "notes & examen"
+    # Utilisation de ce champ pour une information dans le fichier xml de "attestation de suivi de formation
+    etat = fields.Char(compute="etat_de_client_apres_examen")
+
     @api.onchange('epreuve_a', 'epreuve_b', 'presence')
     def _compute_moyenne_generale(self):
         """ This function used to auto display some result
@@ -67,6 +71,17 @@ class NoteExamen(models.Model):
                     rec.presence = 'present'
                 elif rec.epreuve_a < 1 and rec.epreuve_b < 1:
                     rec.presence = 'Absent'
+
+    @api.onchange("résultat")
+    def etat_de_client_apres_examen(self):
+        """Fonction pour mettre le champs etat
+        automatique depend de champ resultat,
+        pour l'utilisé dans la template de "Atestation de suivi de formation" """
+        for rec in self:
+            if rec.resultat == 'recu':
+                rec.etat = "avec succès"
+            if not rec.resultat == "recu":
+                rec.etat = "sans succès"
                     
     @api.model
     def create(self, vals):
