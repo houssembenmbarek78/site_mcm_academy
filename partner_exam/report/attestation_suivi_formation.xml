@@ -83,7 +83,7 @@
                                             <strong>
                                                 <center>
                                                 Date :
-                                                    <span t-field="o.note_exam_id[-1].date_today"
+                                                    <span t-field="o.note_exam_id[0].date_today"
                                                           t-field-options='{"format": "dd/MM/yyyy"}'/>
                                                 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
                                                 &amp;nbsp;&amp;nbsp;
@@ -136,7 +136,7 @@
                                             <strong>
                                                 Date :
                                                     <t t-if="len(o.note_exam_id) &gt; 1">
-                                                        <span t-field="o.note_exam_id[-2].date_today"
+                                                        <span t-field="o.note_exam_id[1].date_today"
                                                               t-field-options='{"format": "dd/MM/yyyy"}'/>
                                                     </t>
                                                 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
@@ -191,7 +191,7 @@
                                             <strong>
                                                 Date :
                                                     <t t-if="len(o.note_exam_id) &gt; 2">
-                                                        <span t-field="o.note_exam_id[-3].date_today"
+                                                        <span t-field="o.note_exam_id[2].date_today"
                                                               t-field-options='{"format": "dd/MM/yyyy"}'/>
                                                     </t>
                                                 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
@@ -269,7 +269,7 @@
                                         <center>
                                             <strong>
                                                 Date :
-                                                    <span t-field="o.note_exam_id[-1].date_today"
+                                                    <span t-field="o.note_exam_id[3].date_today"
                                                           t-field-options='{"format": "dd/MM/yyyy"}'/>
                                                 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
                                                 &amp;nbsp;&amp;nbsp;
@@ -322,7 +322,7 @@
                                             <strong>
                                                 Date :
                                                     <t t-if="len(o.note_exam_id) &gt; 4">
-                                                        <span t-field="o.note_exam_id[-4].date_today"
+                                                        <span t-field="o.note_exam_id[4].date_today"
                                                               t-field-options='{"format": "dd/MM/yyyy"}'/>
                                                     </t>
                                                 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
@@ -377,7 +377,7 @@
                                             <strong>
                                                 Date :
                                                     <t t-if="len(o.note_exam_id) &gt; 4">
-                                                        <span t-field="o.note_exam_id[-4].date_today"
+                                                        <span t-field="o.note_exam_id[5].date_today"
                                                               t-field-options='{"format": "dd/MM/yyyy"}'/>
                                                     </t>
                                                 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
