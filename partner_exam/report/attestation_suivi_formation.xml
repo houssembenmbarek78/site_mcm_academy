@@ -56,7 +56,7 @@
                                         <br/>
                                         Lieu et dates de la formation :
                                         <strong>En ligne, du
-                                            <span t-field="o.sale_order_ids[-1].signed_on"/>
+                                            <span t-field="o.sale_order_ids[0].signed_on"/>
                                             au
                                             <span t-field="o.module_id.date_exam"
                                                   t-field-options='{"format": "dd/MM/yyyy"}'/>
@@ -264,7 +264,7 @@
                                         <br/>
                                         Lieu et dates de la formation :
                                         <strong>En ligne, du
-                                            <span t-field="o.sale_order_ids[-1].signed_on"/>
+                                            <span t-field="o.sale_order_ids[0].signed_on"/>
                                             au
                                             <span t-field="o.module_id.date_exam"
                                                   t-field-options='{"format": "dd/MM/yyyy"}'/>
