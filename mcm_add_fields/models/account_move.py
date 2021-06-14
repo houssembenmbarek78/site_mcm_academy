@@ -55,21 +55,20 @@ class AccountMove(models.Model):
          date_precis = date(2021, 6, 10)
 
          for rec in self:
-            amount_untaxed_initiale = rec.amount_untaxed
-            invoice_date=rec.invoice_date
-            if  date_precis and rec.invoice_date and rec.company_id == 2 :
+            if (rec.company_id.id == 2):
+                amount_untaxed_initiale = rec.amount_untaxed
+                invoice_date=rec.invoice_date
+                if  date_precis and rec.invoice_date:
                  daysDiff =  ((date_precis) - rec.invoice_date).days
                  if (rec.methodes_payment == 'cpf' and daysDiff > 0 ):
                     rec.pourcentage_acompte = 0
-                    print(rec.invoice_date)
-                    print (date_precis)
                     rec.amount_paye = (rec.amount_untaxed * rec.pourcentage_acompte) / 100
                     rec.restamount = amount_untaxed_initiale - rec.amount_paye
                     # rec.amount_untaxed =  rec.amount_paye
                     # rec.amount_residual = rec.restamount
                     rec.amount_residual_signed = rec.restamount
                     rec.amount_total_signed = rec.restamount
-                 elif (rec.methodes_payment == 'cpf' and daysDiff < 0) :
+                elif (rec.methodes_payment == 'cpf' and daysDiff < 0) :
                     rec.pourcentage_acompte = 25
                     rec.amount_paye = (rec.amount_untaxed * rec.pourcentage_acompte) / 100
                     rec.restamount = amount_untaxed_initiale - rec.amount_paye
@@ -77,6 +76,9 @@ class AccountMove(models.Model):
                     # rec.amount_residual = rec.restamount
                     rec.amount_residual_signed = rec.restamount
                     rec.amount_total_signed = rec.restamount
+            elif(rec.company_id.id == 1) :
+                    rec.pourcentage_acompte = 0
+
 
 
 
