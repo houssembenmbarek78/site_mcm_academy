@@ -113,7 +113,7 @@ class ClientCPFController(http.Controller):
                         # methode_payment prend la valeur CPF pour savoir bien qui est une facture CPF qui prend la valeur 25 % par default
 
 
-                        if so.amount_total>0 and so.order_line and so.company_id == 2:
+                        if so.amount_total>0 and so.order_line:
                             moves = so._create_invoices(final=True)
                             for move in moves:
                                 move.type_facture = 'interne'
@@ -472,6 +472,230 @@ class ClientCPFController(http.Controller):
                         'team_id': request.env['helpdesk.team'].sudo().search(
                             [('name', "=", _('Service Clientèle')), ('company_id', "=", 2)],
                             limit=1).id,
+                    }
+                    description = 'CPF: id module edof ' + str(module) + ' non trouvé'
+                    ticket = request.env['helpdesk.ticket'].sudo().search([('description', 'ilike', description)])
+                    if not ticket:
+                        new_ticket = request.env['helpdesk.ticket'].sudo().create(
+                            vals)
+                return request.render("mcm_cpf_validation.mcm_website_module_not_found", {})
+        else:
+            return request.render("mcm_cpf_validation.mcm_website_partner_not_found", {})
+
+    @http.route(
+        '/cpf_accepted/<string:email>/<string:nom>/<string:prenom>/<string:diplome>/<string:tel>/<string:address>/<string:code_postal>/<string:ville>/<string:dossier>/<string:session>/<string:module>/',
+        type="http", auth="user", website=True, sitemap=False)
+    def cpf__client_accepted(self, email=None, nom=None, prenom=None, diplome=None, tel=None, address=None,
+                             code_postal=None, ville=None, dossier=None, session=None, module=None):
+        email = email.replace("%", ".")
+        email = str(email).lower()
+        email = email.replace(" ", "")
+        users = request.env['res.users'].sudo().search([('login', "=", email)])
+        if not users:
+            return request.redirect("/validate_cpf/%s/%s/%s/%s/%s/%s/%s/%s/%s/%s/%s/" % (
+            email, nom, prenom, diplome, tel, address, code_postal, ville, dossier, session, module))
+        user = False
+        if len(users) > 1:
+            user = users[1]
+            for utilisateur in users:
+                if utilisateur.partner_id.id_edof and utilisateur.partner_id.date_examen_edof and utilisateur.partner_id.ville:
+                    user = utilisateur
+        else:
+            user = users
+        if user:
+            user.partner_id.mode_de_financement = 'cpf'
+            user.partner_id.statut_cpf = 'accepted'
+            user.partner_id.funding_type = 'cpf'
+            user.partner_id.numero_cpf = dossier
+            module_id = False
+            product_id = False
+            if 'digimoov' in str(module):
+                product_id = request.env['product.template'].sudo().search(
+                    [('id_edof', "=", str(module)), ('company_id', "=", 2)], limit=1)
+            else:
+                module_id = request.env['mcmacademy.module'].sudo().search(
+                    [('id_edof', "=", str(module)), ('company_id', "=", 1)], limit=1)
+
+            if product_id and product_id.company_id.id == 2 and user.partner_id.id_edof and user.partner_id.date_examen_edof and user.partner_id.ville:
+                module_id = request.env['mcmacademy.module'].sudo().search(
+                    [('company_id', "=", 2), ('ville', "=", user.partner_id.ville),
+                     ('date_exam', "=", user.partner_id.date_examen_edof), ('product_id', "=", product_id.id)], limit=1)
+                if module_id:
+                    print('module_id ', module_id)
+                    user.partner_id.module_id = module_id
+                    user.partner_id.mcm_session_id = module_id.session_id
+                    product_id = request.env['product.product'].sudo().search(
+                        [('product_tmpl_id', '=', module_id.product_id.id)])
+                    user.partner_id.mcm_session_id = module_id.session_id
+                    user.partner_id.module_id = module_id
+                    request.env.user.company_id = 2
+                    order = request.env['sale.order'].sudo().search(
+                        [('module_id', "=", module_id.id), ('state', 'in', ('sent', 'sale')),
+                         ('partner_id', "=", user.partner_id.id)])
+                    if not order:
+                        so = request.env['sale.order'].sudo().create({
+                            'partner_id': user.partner_id.id,
+                            'company_id': 2,
+                        })
+                        so.module_id = module_id
+                        so.session_id = module_id.session_id
+
+                        so_line = request.env['sale.order.line'].sudo().create({
+                            'name': product_id.name,
+                            'product_id': product_id.id,
+                            'product_uom_qty': 1,
+                            'product_uom': product_id.uom_id.id,
+                            'price_unit': product_id.list_price,
+                            'order_id': so.id,
+                            'tax_id': product_id.taxes_id,
+                            'company_id': 2,
+                        })
+                        # prix de la formation dans le devis
+                        amount_before_instalment = so.amount_total
+                        # so.amount_total = so.amount_total * 0.25
+                        for line in so.order_line:
+                            line.price_unit = so.amount_total
+                        so.action_confirm()
+                        ref = False
+                        # Creation de la Facture Cpf
+                        # Si la facture est de type CPF :  On parse le pourcentage qui est 25 %
+                        # methode_payment prend la valeur CPF pour savoir bien qui est une facture CPF qui prend la valeur 25 % par default
+
+                        if so.amount_total > 0 and so.order_line:
+                            moves = so._create_invoices(final=True)
+                            for move in moves:
+                                move.type_facture = 'interne'
+                                # move.cpf_acompte_invoice= True
+                                # move.cpf_invoice =True
+                                move.methodes_payment = 'cpf'
+                                move.pourcentage_acompte = 25
+                                move.module_id = so.module_id
+                                move.session_id = so.session_id
+                                if so.pricelist_id.code:
+                                    move.pricelist_id = so.pricelist_id
+                                move.company_id = so.company_id
+                                move.price_unit = so.amount_total
+                                print(move.price_unit)
+                                # move.cpf_acompte_invoice=True
+                                # move.cpf_invoice = True
+                                move.methodes_payment = 'cpf'
+                                move.post()
+                                ref = move.name
+                                print(line.price_unit)
+
+                        #
+                        template_id = int(request.env['ir.config_parameter'].sudo().get_param(
+                            'portal_contract.mcm_mail_template_sale_confirmation'))
+                        template_id = request.env['mail.template'].sudo().search([('id', '=', template_id)]).id
+
+                        if not template_id:
+                            template_id = request.env['ir.model.data'].xmlid_to_res_id(
+                                'portal_contract.mcm_mail_template_sale_confirmation', raise_if_not_found=False)
+                        if not template_id:
+                            template_id = request.env['ir.model.data'].xmlid_to_res_id(
+                                'portal_contract.mcm_email_template_edi_sale', raise_if_not_found=False)
+
+                        user.partner_id.statut = 'won'
+                        return request.render("mcm_cpf_validation.mcm_website_cpf_accepted")
+                    else:
+                        return request.render("mcm_cpf_validation.mcm_website_contract_exist")
+            elif module_id:
+                print('module mcm ', module_id)
+                user.partner_id.module_id = module_id
+                user.partner_id.mcm_session_id = module_id.session_id
+                product_id = request.env['product.product'].sudo().search(
+                    [('product_tmpl_id', '=', module_id.product_id.id)])
+                user.partner_id.mcm_session_id = module_id.session_id
+                user.partner_id.module_id = module_id
+                request.env.user.company_id = 1
+                order = request.env['sale.order'].sudo().search(
+                    [('module_id', "=", module_id.id), ('state', 'in', ('sent', 'sale')),
+                     ('partner_id', "=", user.partner_id.id)])
+                if not order:
+                    so = request.env['sale.order'].sudo().create({
+                        'partner_id': user.partner_id.id,
+                        'company_id': 1,
+                    })
+                    request.env['sale.order.line'].sudo().create({
+                        'name': product_id.name,
+                        'product_id': product_id.id,
+                        'product_uom_qty': 1,
+                        'product_uom': product_id.uom_id.id,
+                        'price_unit': product_id.list_price,
+                        'order_id': so.id,
+                        'tax_id': product_id.taxes_id,
+                        'company_id': 1
+                    })
+                    # Enreggistrement des valeurs de la facture
+                    # Parser le pourcentage d'acompte
+                    # Creation de la fcture étape Finale
+                    # Facture comptabilisée
+                    so.action_confirm()
+                    so.module_id = module_id
+                    so.session_id = module_id.session_id
+                    moves = so._create_invoices(final=True)
+                    for move in moves:
+                        move.type_facture = 'interne'
+                        move.module_id = so.module_id
+                        # move.cpf_acompte_invoice=True
+                        # move.cpf_invoice =True
+                        move.methodes_payment = 'cpf'
+                        move.pourcentage_acompte = 25
+                        move.session_id = so.session_id
+                        move.company_id = so.company_id
+                        move.website_id = 1
+                        print('lines')
+                        for line in move.invoice_line_ids:
+                            if line.account_id != line.product_id.property_account_income_id and line.product_id.property_account_income_id:
+                                line.account_id = line.product_id.property_account_income_id
+                        move.post()
+                    so.action_cancel()
+                    so.sale_action_sent()
+                    if so.env.su:
+                        # sending mail in sudo was meant for it being sent from superuser
+                        so = so.with_user(SUPERUSER_ID)
+                    template_id = int(request.env['ir.config_parameter'].sudo().get_param(
+                        'portal_contract.mcm_mail_template_sale_confirmation'))
+                    template_id = request.env['mail.template'].sudo().search([('id', '=', template_id)]).id
+
+                    if not template_id:
+                        template_id = request.env['ir.model.data'].xmlid_to_res_id(
+                            'portal_contract.mcm_mail_template_sale_confirmation', raise_if_not_found=False)
+                    if not template_id:
+                        template_id = request.env['ir.model.data'].xmlid_to_res_id(
+                            'portal_contract.mcm_email_template_edi_sale', raise_if_not_found=False)
+                    so = so.with_user(SUPERUSER_ID)
+                    so.with_context(force_send=True).message_post_with_template(template_id,
+                                                                                composition_mode='comment',
+                                                                                email_layout_xmlid="portal_contract.mcm_mail_notification_paynow_online")
+                    so.sudo().write({'state': 'sent'})
+                    so.module_id = module_id
+                    so.session_id = module_id.session_id
+                    user.partner_id.statut = 'won'
+                    return request.render("mcm_cpf_validation.mcm_website_cpf_accepted")
+                else:
+                    return request.render("mcm_cpf_validation.mcm_website_contract_exist")
+            else:
+                if 'digimoov' in str(module):
+                    vals = {
+                        'description': 'CPF: vérifier la date et ville de %s' % (user.name),
+                        'name': 'CPF : Vérifier Date et Ville ',
+                        'team_id': request.env['helpdesk.team'].sudo().search([('name', 'like', 'Clientèle')],
+                                                                              limit=1).id,
+                    }
+                    description = "CPF: vérifier la date et ville de " + str(user.name)
+                    ticket = request.env['helpdesk.ticket'].sudo().search([("description", "=", description)])
+                    if not ticket:
+                        new_ticket = request.env['helpdesk.ticket'].sudo().create(
+                            vals)
+                else:
+                    vals = {
+                        'partner_email': '',
+                        'partner_id': False,
+                        'description': 'CPF: id module edof %s non trouvé' % (module),
+                        'name': 'CPF : ID module edof non trouvé ',
+                        'team_id': request.env['helpdesk.team'].sudo().search([('name', "=", _('Service Clientèle'))],
+                                                                              limit=1).id,
                     }
                     description = 'CPF: id module edof ' + str(module) + ' non trouvé'
                     ticket = request.env['helpdesk.ticket'].sudo().search([('description', 'ilike', description)])
