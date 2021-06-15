@@ -41,27 +41,35 @@ class Partner(models.Model):
 
     def changestatut(self, name, partner):
         stage = self.env['crm.stage'].sudo().search([("name", "like", _(name))])
-        print('stageeeee', stage)
+        _logger.info('stageeeee %s' %stage.name)
         if stage:
 
             leads = self.env['crm.lead'].sudo().search([('partner_id', '=', partner.id)])
             print('leeaaadd', leads)
             if leads:
                 for lead in leads:
+                    if parnter.numero_cpf:
+                        num_dossier = partner.numero_cpf
                     lead.sudo().write({
-                        'stage_id': stage.id,
+                        'name': partner.name,
+                        'partner_name': partner.name,
+                        'num_dossier': num_dossier,
+                        'num_tel': partner.phone,
+                        'email': partner.email,
                         'type': "opportunity",
+                        'stage_id': stage.id
                     })
 
             if not leads:
                 num_dossier = ""
-                if self.numero_cpf:
+                if parnter.numero_cpf:
                     num_dossier = partner.numero_cpf
                 print("create lead self", partner)
                 lead = self.env['crm.lead'].sudo().create({
                     'name': partner.name,
                     'partner_name': partner.name,
                     'num_dossier': num_dossier,
+                    'num_tel': partner.phone,
                     'email': partner.email,
                     'type': "opportunity",
                     'stage_id': stage.id

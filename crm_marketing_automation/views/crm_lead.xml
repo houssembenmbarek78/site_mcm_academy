@@ -14,16 +14,17 @@
                         </strong>
                     </div>
                     <div>
-                        <field name="name"/>
+                        <field name="num_dossier" string="N° de Dossier CPF"
+                       attrs="{'invisible': [('num_dossier', '==', '')]}"/>
 
                     </div>
                     <div>
-                        <field name="partner_id"/>
+                        <field name="num_tel"/>
                         -
 
                     </div>
                     <div>
-
+                        <field name="email"/>
                     </div>
 
                     <div class="o_kanban_record_bottom">
