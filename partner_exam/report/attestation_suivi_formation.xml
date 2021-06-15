@@ -82,9 +82,9 @@
                                         </strong>
                                         a suivi la formation mentionnée ci-dessus et a passé
                                         <strong>
-                                        <t t-if="len(o.note_exam_id) &gt; 0">
-                                            <span t-field="o.note_exam_id[0].etat"/>
-                                        </t>
+                                            <t t-if="len(o.note_exam_id) &gt; 0">
+                                                <span t-field="o.note_exam_id[0].etat"/>
+                                            </t>
                                         </strong>
                                         le premier examen.
                                         <br/>
@@ -142,9 +142,9 @@
                                         </strong>
                                         a passé
                                         <strong>
-                                        <t t-if="len(o.note_exam_id) &gt; 1">
-                                            <span t-field="o.note_exam_id[2].etat"/>
-                                        </t>
+                                            <t t-if="len(o.note_exam_id) &gt; 1">
+                                                <span t-field="o.note_exam_id[2].etat"/>
+                                            </t>
                                         </strong>
                                         le deuxième examen.
                                         <center>
@@ -204,9 +204,9 @@
                                         </strong>
                                         a passé
                                         <strong>
-                                        <t t-if="len(o.note_exam_id) &gt; 2">
-                                            <span t-field="o.note_exam_id[2].etat"/>
-                                        </t>
+                                            <t t-if="len(o.note_exam_id) &gt; 2">
+                                                <span t-field="o.note_exam_id[2].etat"/>
+                                            </t>
                                         </strong>
                                         le troisième examen.
                                         <center>
@@ -290,9 +290,9 @@
                                         </strong>
                                         a suivi la formation mentionnée ci-dessus et a passé
                                         <strong>
-                                        <t t-if="len(o.note_exam_id) &gt; 3">
-                                            <span t-field="o.note_exam_id[3].etat"/>
-                                        </t>
+                                            <t t-if="len(o.note_exam_id) &gt; 3">
+                                                <span t-field="o.note_exam_id[3].etat"/>
+                                            </t>
                                         </strong>
                                         le premier examen.
                                         <br/>
@@ -350,9 +350,9 @@
                                         </strong>
                                         a passé
                                         <strong>
-                                        <t t-if="len(o.note_exam_id) &gt; 4">
-                                            <span t-field="o.note_exam_id[4].etat"/>
-                                        </t>
+                                            <t t-if="len(o.note_exam_id) &gt; 4">
+                                                <span t-field="o.note_exam_id[4].etat"/>
+                                            </t>
                                         </strong>
                                         le deuxième examen.
                                         <center>
@@ -376,12 +376,15 @@
                                         <b>3° Troisième examen.</b>
                                         <br/>
                                         Lieu et date de l’examen :
-                                        <t t-if="len(o.historic_sessions_ids) &gt; 4">
+                                        <t t-if="len(o.historic_sessions_ids) &gt; 5">
                                             <strong>
                                                 <span t-raw=" '%s' % o.historic_sessions_ids[5].session_id[0].adresse_examen"/>
                                             </strong>
                                         </t>
-                                        <t t-if="len(o.historic_sessions_ids) &gt; 4">
+                                        <t t-else="">
+                                            <span>.............</span>
+                                        </t>
+                                        <t t-if="len(o.historic_sessions_ids) &gt; 5">
                                             <t t-if="o.historic_sessions_ids[5].session_id[0].date_exam">
                                                 <strong>
                                                     <span t-field='o.historic_sessions_ids[5].session_id[0].date_exam'
@@ -389,11 +392,14 @@
                                                 </strong>
                                             </t>
                                         </t>
+                                        <t t-else="">
+                                            <span>.............</span>
+                                        </t>
                                         <br/>
                                         Le directeur du centre de formation, organisateur du troisième examen, agrée
                                         par le préfet de la région
                                         <strong>
-                                            <t t-if="len(o.historic_sessions_ids) &gt; 4">
+                                            <t t-if="len(o.historic_sessions_ids) &gt; 5">
                                                 <t t-if="o.company_id[0].region">
                                                     <strong>
                                                         <span t-raw=" '%s' % o.company_id[0].region"/>
@@ -412,26 +418,35 @@
                                         </strong>
                                         a passé
                                         <strong>
-                                        <t t-if="len(o.note_exam_id) &gt; 5">
-                                            <span t-field="o.note_exam_id[5].etat"/>
-                                        </t>
+                                            <t t-if="len(o.note_exam_id) &gt; 5">
+                                                <span t-field="o.note_exam_id[5].etat"/>
+                                            </t>
+                                            <t t-else="">
+                                                <span>.............</span>
+                                            </t>
                                         </strong>
                                         le troisième examen.
                                         <center>
                                             <strong>
                                                 Date :
-                                                <t t-if="len(o.note_exam_id) &gt; 4">
+                                                <t t-if="len(o.note_exam_id) &gt; 5">
                                                     <span t-field="o.note_exam_id[5].date_today"
                                                           t-field-options='{"format": "dd/MM/yyyy"}'/>
+                                                </t>
+                                                <t t-else="">
+                                                    <span>.............</span>
                                                 </t>
                                                 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
                                                 &amp;nbsp;&amp;nbsp;
                                                 Signature
                                             </strong>
-                                            <t t-if="len(o.historic_sessions_ids) &gt; 4">
+                                            <t t-if="len(o.historic_sessions_ids) &gt; 5">
                                                 <img src='/partner_exam/static/src/img/signature_suivi.png'
                                                      style="height:200px; width:300px;"/>
                                             </t>
+                                            <t t-else="">
+                                            <span>.............</span>
+                                        </t>
                                         </center>
                                         <img src='/partner_exam/static/src/img/footer_attestation_r.png'
                                              height="180"
