@@ -143,7 +143,7 @@
                                         a passé
                                         <strong>
                                             <t t-if="len(o.note_exam_id) &gt; 1">
-                                                <span t-field="o.note_exam_id[2].etat"/>
+                                                <span t-field="o.note_exam_id[1].etat"/>
                                             </t>
                                         </strong>
                                         le deuxième examen.
