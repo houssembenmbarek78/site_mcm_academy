@@ -48,7 +48,7 @@ class Partner(models.Model):
             print('leeaaadd', leads)
             if leads:
                 for lead in leads:
-                    if parnter.numero_cpf:
+                    if partner.numero_cpf:
                         num_dossier = partner.numero_cpf
                     lead.sudo().write({
                         'name': partner.name,
