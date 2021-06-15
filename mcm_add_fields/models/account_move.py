@@ -27,6 +27,7 @@ class AccountMove(models.Model):
     methodes_payment = fields.Selection(selection=[('cpf','CPF'),('cartebleu','Cartebleu')],String='Méthode de payment')
     cpf_acompte_amount = fields.Monetary('Montant acompte')
     pourcentage_acompte = fields.Integer(string="Pourcentage d'acompte",compute='_compute_change_amount',store=True,readonly=False)
+    daysDiff = fields.Integer(string="Difference_date",default = 0 )
 
 
 
@@ -57,8 +58,8 @@ class AccountMove(models.Model):
          for rec in self:
             amount_untaxed_initiale = rec.amount_untaxed
             invoice_date=rec.invoice_date
-            daysDiff = ((date_precis) - rec.invoice_date).days
             if  date_precis and rec.invoice_date:
+                 daysDiff = ((date_precis) - rec.invoice_date).days
                  if (rec.methodes_payment == 'cpf' and daysDiff > 0 ):
                     rec.pourcentage_acompte = 0
                     rec.amount_paye = (rec.amount_untaxed * rec.pourcentage_acompte) / 100
@@ -67,7 +68,7 @@ class AccountMove(models.Model):
                     # rec.amount_residual = rec.restamount
                     rec.amount_residual_signed = rec.restamount
                     rec.amount_total_signed = rec.restamount
-            elif (rec.methodes_payment == 'cpf' and rec.company_id.id == 2 and daysDiff < 0 ):
+            elif (rec.methodes_payment == 'cpf' and rec.company_id.id == 2 and daysDiff <= 0 ):
                     rec.pourcentage_acompte = 25
                     rec.amount_paye = (rec.amount_untaxed * rec.pourcentage_acompte) / 100
                     rec.restamount = amount_untaxed_initiale - rec.amount_paye
