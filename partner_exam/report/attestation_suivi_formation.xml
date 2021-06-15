@@ -25,14 +25,17 @@
                                         <center>
                                             <h2>Déclaration relative au suivi de la formation et aux examens</h2>
                                         </center>
-                                        Civilité : M/Mme
+                                        Civilité :
+                                        <strong>
+                                            <span t-field="o.title"/>
+                                        </strong>
                                         <br/>
-                                        nom et prénom :
+                                        Prénom et nom:
                                         <strong>
                                             <span t-field="o.name"/>
                                         </strong>
                                         <br/>
-                                        Adresse complète :
+                                        Adresse :
                                         <strong>
                                             <span t-field="o.street"/>
                                             <span t-field="o.zip"/>
@@ -233,14 +236,17 @@
                                         <center>
                                             <h2>Déclaration relative au suivi de la formation et aux examens</h2>
                                         </center>
-                                        Civilité : M/Mme
+                                        Civilité :
+                                        <strong>
+                                            <span t-field="o.title"/>
+                                        </strong>
                                         <br/>
-                                        nom et prénom :
+                                        Prénom et nom:
                                         <strong>
                                             <span t-field="o.name"/>
                                         </strong>
                                         <br/>
-                                        Adresse complète :
+                                        Adresse :
                                         <strong>
                                             <span t-field="o.street"/>
                                             <span t-field="o.zip"/>
