@@ -292,7 +292,9 @@ class ClientCPFController(http.Controller):
             user = users
         if user:
             user.partner_id.mode_de_financement = 'cpf'
+            user.partner_id.funding_type = 'cpf'
             user.partner_id.statut_cpf = 'accepted'
+            user.partner_id.numero_cpf = dossier
             module_id = False
             product_id = False
             if 'digimoov' in str(module):
