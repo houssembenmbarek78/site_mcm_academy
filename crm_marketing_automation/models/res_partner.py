@@ -62,7 +62,7 @@ class Partner(models.Model):
 
             if not leads:
                 num_dossier = ""
-                if parnter.numero_cpf:
+                if partner.numero_cpf:
                     num_dossier = partner.numero_cpf
                 print("create lead self", partner)
                 lead = self.env['crm.lead'].sudo().create({
