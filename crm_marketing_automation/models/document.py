@@ -33,34 +33,42 @@ class Document(models.Model):
 
 
     def change_statut_lead(self,statut,partner):
+        sale_order = self.env['sale.order'].sudo().search([('partner_id', '=', partner.id),
+                                                           ('session_id', '=', partner.mcm_session_id.id),
+                                                           ('module_id', '=', partner.module_id.id),
+                                                           ('state', '=', 'sale'),
+                                                           ('session_id.date_exam', '>', date.today())
+                                                           ], limit=1, order="id desc")
 
-
-        print('if verifié')
-        stage = self.env['crm.stage'].sudo().search([("name", "like", _(statut))])
-        print('stageeeee', stage)
-        if stage:
-
-            leads = self.env['crm.lead'].sudo().search([('partner_id', '=', partner.id)])
-            print('leeaaadd', leads)
-            if leads:
-                for lead in leads:
-                    lead.sudo().write({
-                        'stage_id': stage.id,
+        _logger.info('partner  %s' % partner.name)
+        _logger.info('sale order %s' % sale_order.name)
+        if sale_order:
+            print('if verifié')
+            stage = self.env['crm.stage'].sudo().search([("name", "like", _(statut))])
+            print('stageeeee', stage)
+            if stage:
+    
+                leads = self.env['crm.lead'].sudo().search([('partner_id', '=', partner.id)])
+                print('leeaaadd', leads)
+                if leads:
+                    for lead in leads:
+                        lead.sudo().write({
+                            'stage_id': stage.id,
+                            'type': "opportunity",
+                        })
+    
+                if not leads:
+                    num_dossier = ""
+                    if partner.numero_cpf:
+                        num_dossier = partner.numero_cpf
+                    print("create lead self", partner.name,partner.email,num_dossier)
+                    lead = self.env['crm.lead'].sudo().create({
+                        'name': partner.name,
+                        'partner_name': partner.name,
+                        'num_dossier': num_dossier,
+                        'email': partner.email,
                         'type': "opportunity",
+                        'stage_id': stage.id
                     })
-
-            if not leads:
-                num_dossier = ""
-                if partner.numero_cpf:
-                    num_dossier = partner.numero_cpf
-                print("create lead self", partner.name,partner.email,num_dossier)
-                lead = self.env['crm.lead'].sudo().create({
-                    'name': partner.name,
-                    'partner_name': partner.name,
-                    'num_dossier': num_dossier,
-                    'email': partner.email,
-                    'type': "opportunity",
-                    'stage_id': stage.id
-                })
-
-                lead.partner_id = partner.id
+    
+                    lead.partner_id = partner.id
