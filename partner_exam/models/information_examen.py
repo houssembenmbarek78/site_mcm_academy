@@ -22,7 +22,7 @@ class NoteExamen(models.Model):
     resultat = fields.Selection(selection=[
         ('recu', 'Reçu'),
         ('ajourne', 'Ajourné')], string="Résultat")
-    date_exam = fields.Date(string="Date Examen", track_visibility='always')
+    date_exam = fields.Date(string="Date Examen",  track_visibility='always')
     active = fields.Boolean('Active', default=True)
     module_ids = fields.One2many('mcmacademy.module', 'info_examen_id')
     date_today = fields.Date(string="Date d'envoi de relevée de note: ", default=datetime.today())
