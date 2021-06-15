@@ -135,7 +135,7 @@
                                 <span>Source Document</span>
                             </th>
                             <th name="th_quantity" class="text-center" style="border: 1px solid black;">
-                                <span>Quantity</span>
+                                <span>Quantité</span>
                             </th>
                             <th name="th_priceunit"
                                 t-attf-class="text-center"
