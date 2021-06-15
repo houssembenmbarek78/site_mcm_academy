@@ -50,20 +50,19 @@ class AccountMove(models.Model):
     # la vue de la facture change elle affiche l'acompte qui prend sa valeur default 25 %
     # et on peux la changer en pourcentage qu' on veux tout en calculant le montant payée et le reste à payer correctement
     #Si non si la méthode de payment est par carte bleu et le champs methode_payment== 'cartebleu' : l'acompte ne  s'affiche pas et la facture prend la somme de la formation
-#   # le pourcentage d acompte ne sera appliquer que pour les factures de Digimoov
-    @api.depends('invoice_line_ids.price_subtotal','pourcentage_acompte','methodes_payment')
+#
+    @api.depends('invoice_line_ids.price_subtotal','pourcentage_acompte','methodes_payment','company_id')
     def _compute_change_amount(self):
          date_precis = date(2021, 6, 10)
 
          for rec in self:
             amount_untaxed_initiale = rec.amount_untaxed
             invoice_date=rec.invoice_date
+            daysDiff = 0
             if  date_precis and rec.invoice_date:
-                 daysDiff =  ((date_precis) - rec.invoice_date).days
-                 if (rec.methodes_payment == 'cpf' and daysDiff > 0):
+                 daysDiff = ((date_precis) - rec.invoice_date).days
+                 if (rec.methodes_payment == 'cpf' and daysDiff > 0 ):
                     rec.pourcentage_acompte = 0
-                    print(rec.invoice_date)
-                    print (date_precis)
                     rec.amount_paye = (rec.amount_untaxed * rec.pourcentage_acompte) / 100
                     rec.restamount = amount_untaxed_initiale - rec.amount_paye
                     # rec.amount_untaxed =  rec.amount_paye
@@ -71,7 +70,7 @@ class AccountMove(models.Model):
                 
                     rec.amount_residual_signed = rec.restamount
                     rec.amount_total_signed = rec.restamount
-                 elif (rec.methodes_payment == 'cpf' and rec.company_id.id == 2 and daysDiff < 0) :
+                 elif (rec.methodes_payment == 'cpf' and daysDiff <= 0  and rec.company_id.id == 2 ):
                     rec.pourcentage_acompte = 25
                     rec.amount_paye = (rec.amount_untaxed * rec.pourcentage_acompte) / 100
                     rec.restamount = amount_untaxed_initiale - rec.amount_paye
@@ -79,6 +78,9 @@ class AccountMove(models.Model):
                     # rec.amount_residual = rec.restamount
                     rec.amount_residual_signed = rec.restamount
                     rec.amount_total_signed = rec.restamount
+
+
+
 
 
                 # elif (rec.methode_payment == 'cartebleu'):
