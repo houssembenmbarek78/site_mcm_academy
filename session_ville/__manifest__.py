@@ -20,6 +20,7 @@
         'views/session_ville_view.xml',
         'views/adresse_centre_examen.xml',
         'views/inherit_mcmacademy_session.xml',
+        'views/inherit_info_exam.xml',
     ],
     'qweb': [],
     'images': [],
