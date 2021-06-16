@@ -184,7 +184,7 @@
                                     </td>
                                     <td t-attf-class="text-center"
                                         style="border: 1px solid black;">
-                                        <span t-field="line.price_unit" t-options='{"widget": "monetary", "display_currency": o.currency_id}' t-if = "not o.pricelist_id" />
+                                        <span t-field="line.price_unit" t-options='{"widget": "monetary", "display_currency": o.currency_id}' />
                                         <span
                                                 t-foreach="o.pricelist_id.item_ids" t-as="item"
                                             t-if="o.module_id.product_id==item.product_tmpl_id and o.pricelist_id"
