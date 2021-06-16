@@ -10,4 +10,15 @@
             </field>
         </field>
     </record>
+
+    <record id="inherit_info_examen_search" model="ir.ui.view">
+        <field name="name">info.examen.search</field>
+        <field name="model">info.examen</field>
+        <field name="inherit_id" ref="partner_exam.info_examen_view_search"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[1]" position="inside">
+                <filter string="Ville" name="ville_id" context="{'group_by':'ville_id'}"/>
+            </xpath>
+        </field>
+    </record>
 </odoo>
