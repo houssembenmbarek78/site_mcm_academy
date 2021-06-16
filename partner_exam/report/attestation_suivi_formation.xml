@@ -59,7 +59,7 @@
                                         <br/>
                                         Lieu et dates de la formation :
                                         <strong>En ligne, du
-                                            <span t-field="o.sale_order_ids[0].signed_on"/>
+                                            <span t-esc="(o.sale_order_ids[0].signed_on).strftime('%d/%m/%Y')"/>
                                             au
                                             <span t-field="o.module_id.date_exam"
                                                   t-field-options='{"format": "dd/MM/yyyy"}'/>
@@ -270,7 +270,7 @@
                                         <br/>
                                         Lieu et dates de la formation :
                                         <strong>En ligne, du
-                                            <span t-field="o.sale_order_ids[0].signed_on"/>
+                                            <span t-esc="(o.sale_order_ids[0].signed_on).strftime('%d/%m/%Y')"/>
                                             au
                                             <span t-field="o.module_id.date_exam"
                                                   t-field-options='{"format": "dd/MM/yyyy"}'/>
@@ -451,8 +451,8 @@
                                                      style="height:200px; width:300px;"/>
                                             </t>
                                             <t t-else="">
-                                            <span>.............</span>
-                                        </t>
+                                                <span>.............</span>
+                                            </t>
                                         </center>
                                         <img src='/partner_exam/static/src/img/footer_attestation_r.png'
                                              height="180"
