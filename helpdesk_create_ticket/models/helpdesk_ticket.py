@@ -23,19 +23,20 @@ class HelpdeskTicket(models.Model):
                     if partner:
                         partner.sudo().unlink() # supprimer la fiche contact de client si le client n'a pas de compte
         for ticket in tickets:
-            if 'caissedesdepots' in ticket.partner_email: # transferer les emails envoyés par caissedesdepots au service comptabilité
-                team = self.env['helpdesk.team'].sudo().search([('name', 'like', 'Compta'), ('company_id', "=", ticket.company_id.id)],limit=1)
-                if team:
-                    ticket.team_id=team.id
-            if 'billing' in ticket.partner_email: # transferer les emails envoyés par billing au service comptabilité
-                team = self.env['helpdesk.team'].sudo().search([('name', 'like', 'Compta'), ('company_id', "=", ticket.company_id.id)],limit=1)
-                if team:
-                    ticket.team_id=team.id
-            if 'servicefinance@dkv-euroservice.com' in ticket.partner_email: # transferer les emails envoyés par servicefinance@dkv-euroservice.com au service comptabilité
-                team = self.env['helpdesk.team'].sudo().search(
-                    [('name', 'like', 'Compta'), ('company_id', "=", ticket.company_id.id)], limit=1)
-                if team:
-                    ticket.team_id = team.id
+            if ticket and  ticket.partner_email:
+                if 'caissedesdepots' in ticket.partner_email: # transferer les emails envoyés par caissedesdepots au service comptabilité
+                    team = self.env['helpdesk.team'].sudo().search([('name', 'like', 'Compta'), ('company_id', "=", ticket.company_id.id)],limit=1)
+                    if team:
+                        ticket.team_id=team.id
+                if 'billing' in ticket.partner_email: # transferer les emails envoyés par billing au service comptabilité
+                    team = self.env['helpdesk.team'].sudo().search([('name', 'like', 'Compta'), ('company_id', "=", ticket.company_id.id)],limit=1)
+                    if team:
+                        ticket.team_id=team.id
+                if 'servicefinance@dkv-euroservice.com' in ticket.partner_email: # transferer les emails envoyés par servicefinance@dkv-euroservice.com au service comptabilité
+                    team = self.env['helpdesk.team'].sudo().search(
+                        [('name', 'like', 'Compta'), ('company_id', "=", ticket.company_id.id)], limit=1)
+                    if team:
+                        ticket.team_id = team.id
         return tickets
 
     def write(self, vals):
