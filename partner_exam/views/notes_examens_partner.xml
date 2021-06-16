@@ -38,7 +38,6 @@
                                 <field name="mention"/>
                                 <field name="resultat"/>
                                 <field name="etat" invisible="1"/>
-                                <field name="ville"/>
                             </group>
                             <group name="other">
                                 <field name="nombre_de_passage"/>
@@ -62,7 +61,6 @@
             <field name="arch" type="xml">
                 <tree string="Notes des examens Tree" decoration-danger="(presence == 'Absent')" default_order="create_date desc">
                     <field name="partner_id"/>
-                    <field name="ville"/>
                     <field name="date_exam"/>
                     <field name="epreuve_a" avg="Moy.QCM" />
                     <field name="epreuve_b" avg="Moy.QRO" />
@@ -81,7 +79,6 @@
             <field name="arch" type="xml">
                 <search string="Search">
                     <field name="partner_id"/>
-                    <field name="ville"/>
                     <field name="date_exam"/>
                     <field name="mention"/>
                     <field name="resultat"/>

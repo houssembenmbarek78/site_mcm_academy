@@ -40,8 +40,6 @@ class NoteExamen(models.Model):
         ('present', 'Présent'),
         ('Absent', 'Absent')],
         string="Présence", default='present')
-    ville = fields.Char(string="Session de ")
-
     # Ajout le champ etat qui sera invisible dans l'interface "notes & examen"
     # Utilisation de ce champ pour une information dans le fichier xml de "attestation de suivi de formation
     etat = fields.Char(compute="etat_de_client_apres_examen")
