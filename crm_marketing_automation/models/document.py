@@ -12,11 +12,11 @@ class Document(models.Model):
 
 
     def write(self,vals):
-
+        _logger.info(' write ' )
         if 'state' in vals and not('partner_id' in vals):
             if vals['state'] =='waiting':
                 partner=self.partner_id
-                print('waite',partner)
+                _logger.info('if state in write  %s' % partner.name)
                 self.change_statut_lead("Document", partner)
 
         if 'state' in vals and  'partner_id' in vals:
