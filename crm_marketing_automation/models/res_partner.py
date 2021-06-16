@@ -44,24 +44,23 @@ class Partner(models.Model):
         _logger.info('stageeeee %s' %stage.name)
         if stage:
 
-            leads = self.env['crm.lead'].sudo().search([('partner_id', '=', partner.id)])
-            print('leeaaadd', leads)
-            if leads:
-                for lead in leads:
-                    num_dossier = ""
-                    if partner.numero_cpf:
-                        num_dossier = partner.numero_cpf
-                    lead.sudo().write({
-                        'name': partner.name,
-                        'partner_name': partner.name,
-                        'num_dossier': num_dossier,
-                        'num_tel': partner.phone,
-                        'email': partner.email,
-                        'type': "opportunity",
-                        'stage_id': stage.id
-                    })
+            lead = self.env['crm.lead'].sudo().search([('partner_id', '=', partner.id)],limit=1)
+            if lead:
+                
+                num_dossier = ""
+                if partner.numero_cpf:
+                    num_dossier = partner.numero_cpf
+                lead.sudo().write({
+                    'name': partner.name,
+                    'partner_name': partner.name,
+                    'num_dossier': num_dossier,
+                    'num_tel': partner.phone,
+                    'email': partner.email,
+                    'type': "opportunity",
+                    'stage_id': stage.id
+                })
 
-            if not leads:
+            if not lead:
                 num_dossier = ""
                 if partner.numero_cpf:
                     num_dossier = partner.numero_cpf
@@ -80,6 +79,9 @@ class Partner(models.Model):
                     print("parnterrrr", lead.partner_id)
                     lead.partner_id = partner
 
+    
+    # Methode pour classer les apprenants dans crm lead comme non retracté
+    # Vérifier tout les conditions nécessaires pour ce classement
     def change_statut_non_retracte(self):
         partners = self.env['res.partner'].sudo().search([('statut', "=", "won")])
 
@@ -139,3 +141,42 @@ class Partner(models.Model):
                 else:
                     _logger.info('non retracté' )
                     self.changestatut("Non Retracté", partner)
+
+    # Methode pour classer les apprenants existant déja sur odoo
+
+    def change_statut_existant(self):
+        partners = self.env['res.partner'].sudo().search([])
+
+        for partner in partners:
+            if partner.statut == "indecis":
+                # Vérifier le statut  pour classer client  dans crm lead
+                if partner.statut_cpf and partner.statut_cpf == "untreated":
+                    print('non traité')
+                    self.changestatut("Non Traité", partner)
+                if partner.statut_cpf and partner.statut_cpf == "validated":
+                    print('Validé')
+                    self.changestatut("Validé", partner)
+                if partner.statut_cpf and partner.statut_cpf == "accepted":
+                    print('accepté')
+                    self.changestatut("Accepté", partner)
+
+            # recuperer le contrat pour vérifier son statut
+            # et classer client dans crm lead selon le statut de contrat
+            sale_order = self.env['sale.order'].sudo().search([('partner_id', '=', partner.id),
+                                                               ('session_id', '=', partner.mcm_session_id.id),
+                                                               ('module_id', '=', partner.module_id.id),
+                                                               ('session_id.date_exam', '>', date.today())
+                                                               ], limit=1, order="id desc")
+
+            if sale_order and sale_order.state == "sent":
+                print('contrat non signé')
+                self.changestatut("Contrat Non Signé", partner)
+            if sale_order and sale_order.state == "sale":
+                print('contrat signé')
+                self.changestatut("Contrat Signé", partner)
+                # Récupérer les documents
+                documents = self.env['documents.document'].sudo().search([('partner_id', '=', partner.id)])
+                # vérifier l'existance pour classer sous document dans crm lead
+                if documents and len(documents) >= 1:
+                    print("document")
+                    self.changestatut("Document", partner)

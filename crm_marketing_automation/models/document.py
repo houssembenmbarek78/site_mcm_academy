@@ -50,16 +50,24 @@ class Document(models.Model):
             print('stageeeee', stage)
             if stage:
     
-                leads = self.env['crm.lead'].sudo().search([('partner_id', '=', partner.id)])
-                print('leeaaadd', leads)
-                if leads:
-                    for lead in leads:
-                        lead.sudo().write({
-                            'stage_id': stage.id,
-                            'type': "opportunity",
-                        })
+                lead= self.env['crm.lead'].sudo().search([('partner_id', '=', partner.id)],limit=1)
+      
+                if lead:
+
+                    num_dossier = ""
+                    if partner.numero_cpf:
+                        num_dossier = partner.numero_cpf
+                    lead.sudo().write({
+                        'name': partner.name,
+                        'partner_name': partner.name,
+                        'num_dossier': num_dossier,
+                        'num_tel': partner.phone,
+                        'email': partner.email,
+                        'type': "opportunity",
+                        'stage_id': stage.id
+                    })
     
-                if not leads:
+                if not lead:
                     num_dossier = ""
                     if partner.numero_cpf:
                         num_dossier = partner.numero_cpf
