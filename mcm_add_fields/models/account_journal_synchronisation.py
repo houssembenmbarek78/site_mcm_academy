@@ -17,8 +17,8 @@ class AccountJournalSynchronisation(models.Model):
       daysDiff = 0
 
       for facture in factures:
-        daysDiff = ((My_date) - facture.invoice_date).days
         if (facture.invoice_date and My_date) :
+          daysDiff = ((My_date) - facture.invoice_date).days
           if daysDiff > 0 :
              if (facture.cpf_solde_invoice == True  or facture.cpf_acompte_invoice == True or facture.invoice_user_id == 'ZOÉ' ) :
                 facture.methodes_payment = 'cpf'
