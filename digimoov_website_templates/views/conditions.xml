@@ -1,7 +1,9 @@
 <odoo>
-    <template id="digimoov_website_templates.digimoov_template_conditions"
-              name="Conditions générales de vente | Digimoov">
+    <template id="digimoov_website_templates.digimoov_template_conditions" name="Conditions générales de vente | Digimoov">
         <t t-call="website.layout">
+            <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot.js" />
+            <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot-config.js" />
+
             <style>
                 .features {
                 padding: 100px 0;
@@ -578,7 +580,9 @@
                                         suivantes :
                                     </font>
                                 </p>
-                                <p><font style="color: rgb(0, 0, 0); font-size: 14px;"/>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                <p>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;"/>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
                                     <font style="color: rgb(0, 0, 0); font-size: 14px;">6.1.1 L’intégralité des pièces à
                                         transmettre doit être communiquée au plus tard 48 heures à&amp;nbsp;
                                     </font>
@@ -760,7 +764,9 @@
                                     </font>
                                     <font style="color: rgb(0, 0, 0); font-size: 14px;">confondues</font>
                                 </p>
-                                <p><font style="color: rgb(0, 0, 0); font-size: 14px;"/>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+                                <p>
+                                    <font style="color: rgb(0, 0, 0); font-size: 14px;"/>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
                                     <font style="color: rgb(0, 0, 0); font-size: 14px;">8.6.2 Au dépôt identique ou
                                         similaire d’une marque pour un Service identique ou similaire. &amp;nbsp;
                                     </font>

@@ -1,6 +1,9 @@
 <odoo>
     <template id="digimoov_website_sale_total" inherit_id="website_sale.total">
         <xpath expr="//tr[@id='order_total_taxes']" position="after">
+            <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot.js" />
+            <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot-config.js" />
+
             <tr id="order_instalment" t-if="website_sale_order.instalment_number==2 or website_sale_order.instalment_number==3" style="visibility:visible">
                 <td class="text-right border-0">
                     <label for="checkbox_instalment">
@@ -11,9 +14,7 @@
                 </td>
                 <td class="text-xl-right border-0">
 
-                    <input type="checkbox" id="checkbox_instalment" style="white-space: nowrap;"
-                           class="text-xl-right border-0" t-att-checked="website_sale_order.instalment"
-                           t-att-value="website_sale_order.instalment"/>
+                    <input type="checkbox" id="checkbox_instalment" style="white-space: nowrap;" class="text-xl-right border-0" t-att-checked="website_sale_order.instalment" t-att-value="website_sale_order.instalment"/>
 
                 </td>
             </tr>
@@ -33,8 +34,7 @@
                         <strong>Montant à payer:</strong>
                     </td>
                     <td class="text-xl-right">
-                        <strong t-field="website_sale_order.amount_to_pay" class="monetary_field"
-                                t-options='{"widget": "monetary", "display_currency": website_sale_order.pricelist_id.currency_id}'/>
+                        <strong t-field="website_sale_order.amount_to_pay" class="monetary_field" t-options='{"widget": "monetary", "display_currency": website_sale_order.pricelist_id.currency_id}'/>
                     </td>
                 </tr>
             </body>
