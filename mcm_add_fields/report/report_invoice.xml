@@ -180,16 +180,16 @@
 <!--                                    </td>-->
                                     <td class="text-center" style="border: 1px solid black;">
                                         <span t-field="line.quantity"/>
-                                        <span t-field="line.product_uom_id" groups="uom.group_uom"/>
+                                        <span t-field="line.product_uom_id" groups="uom.group_uom" t-if ="not o.pricelist_id"/>
                                     </td>
                                     <td t-attf-class="text-center"
                                         style="border: 1px solid black;">
-                                        <span t-field="line.price_unit" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
-<!--                                        <span-->
-<!--                                                t-foreach="o.pricelist_id.item_ids" t-as="item"-->
-<!--                                            t-if="o.module_id.product_id==item.product_tmpl_id and o.pricelist_id"-->
-<!--                                                t-field="o.module_id.product_id.list_price" t-options='{"widget": "monetary", "display_currency": o.currency_id}'-->
-<!--                                        />-->
+                                        <span t-field="line.price_unit" t-options='{"widget": "monetary", "display_currency": o.currency_id}' t-if = "not o.pricelist_id" />
+                                        <span
+                                                t-foreach="o.pricelist_id.item_ids" t-as="item"
+                                            t-if="o.module_id.product_id==item.product_tmpl_id and o.pricelist_id"
+                                                t-field="o.module_id.product_id.list_price" t-options='{"widget": "monetary", "display_currency": o.currency_id}'
+                                        />
                                     </td>
                                     <td t-if="display_discount"
                                         t-attf-class="text-center {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"
