@@ -19,6 +19,7 @@
             </field>
             <field name="reply_to">formation@digimoov.fr</field>
             <field name="use_default_to">True</field>
+            <field name="lang">${object.partner_id.lang}</field>
             <field name="auto_delete">False</field>
             <field name="report_template" ref="id_attestation"/>
             <field name="report_name">${object.display_name}</field>
