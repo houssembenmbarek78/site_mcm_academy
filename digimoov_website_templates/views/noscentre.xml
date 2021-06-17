@@ -2,8 +2,7 @@
     <template id="digimoov_website_templates.digimoov_template_noscentre" name="Choisissez le centre d'examen qui vous convient | Digimoov">
         <t t-call="website.layout">
             <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
-            <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot.js" />
-            <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot-config.js" />
+
 
             <style>
                 @media (min-width: 720px){

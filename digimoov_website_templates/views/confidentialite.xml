@@ -2,8 +2,7 @@
     <template id="digimoov_website_templates.digimoov_template_confidentialite"
               name="Politique De Confidentialité | Digimoov">
         <t t-call="website.layout">
-            <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot.js" />
-            <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot-config.js" />
+        
 
             <style>
                 .features {

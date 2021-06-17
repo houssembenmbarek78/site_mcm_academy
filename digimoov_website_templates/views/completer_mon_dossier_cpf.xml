@@ -2,8 +2,7 @@
     <template id="digimoov_website_templates.completer_mon_dossier_cpf" name="Dossier CPF| Digimoov">
         <t t-call="website.layout">
             <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
-            <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot.js" />
-            <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot-config.js" />
+
 
             <div id="wrap" class="oe_structure oe_empty">
                 <section class="s_contact_with_img" data-name="Contact Us Two" style="">

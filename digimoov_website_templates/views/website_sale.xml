@@ -1,8 +1,7 @@
 <odoo>
     <template id="digimoov_website_sale_total" inherit_id="website_sale.total">
         <xpath expr="//tr[@id='order_total_taxes']" position="after">
-            <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot.js" />
-            <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot-config.js" />
+
 
             <tr id="order_instalment" t-if="website_sale_order.instalment_number==2 or website_sale_order.instalment_number==3" style="visibility:visible">
                 <td class="text-right border-0">
