@@ -178,5 +178,10 @@ class Partner(models.Model):
                 documents = self.env['documents.document'].sudo().search([('partner_id', '=', partner.id)])
                 # vérifier l'existance pour classer sous document dans crm lead
                 if documents and len(documents) >= 1:
-                    print("document")
-                    self.changestatut("Document", partner)
+                    waiting=False
+                    for document in documents:
+                        if (document.state == "waiting"):
+                            _logger.info("document waiting")
+                            waiting=True
+                    if waiting:
+                        self.changestatut("Document", partner)
