@@ -168,17 +168,21 @@ class Partner(models.Model):
                                                                ('session_id.date_exam', '>', date.today()),
                                                                ], limit=1, order="id desc")
 
-            if sale_order and sale_order.state == "sent":
-                print('contrat non signé')
-                self.changestatut("Contrat Non Signé", partner)
-            if sale_order and sale_order.state == "sale":
-                dateexam=str(sale_order.session_id.date_exam)
-                _logger.info('contrat signé %s', dateexam)
-                self.changestatut("Contrat Signé", partner)
-                # Récupérer les documents
-                documents = self.env['documents.document'].sudo().search([('partner_id', '=', partner.id)])
-                # vérifier l'existance pour classer sous document dans crm lead
-                if documents and len(documents) >= 1:
+            # Récupérer les documents
+            documents = self.env['documents.document'].sudo().search([('partner_id', '=', partner.id)])
+
+            if sale_order:
+                if sale_order.state == "sent":
+                     print('contrat non signé')
+                     self.changestatut("Contrat Non Signé", partner)
+                if sale_order.state == "sale" and not(documents):
+                    dateexam=str(sale_order.session_id.date_exam)
+                    _logger.info('contrat signé %s', dateexam)
+                    self.changestatut("Contrat Signé", partner)
+                
+                    # vérifier l'existance des document en etat waiting
+                    # pour classer sous document dans crm lead
+                if documents and sale_order.state == "sale":
                     waiting=False
                     for document in documents:
                         if (document.state == "waiting"):
