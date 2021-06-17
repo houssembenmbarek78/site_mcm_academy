@@ -17,7 +17,6 @@ class AccountMove(models.Model):
     acompte_invoice = fields.Boolean(default=False)
     cpf_solde_invoice = fields.Boolean(default=False)
     cpf_acompte_invoice = fields.Boolean(default=False)
-    cpf_solde_invoice =fields.Boolean(default=False)
     amount_residual = fields.Monetary(string='Montant due',compute='_get_mcm_paid_amount',store=True)
     amount = fields.Monetary(string='Montant',compute='_compute_payments_widget_to_reconcile_info',store=True)
     amount_paye = fields.Monetary(string='Montant payé',store=True,readonly=True,compute='_compute_change_amount')
@@ -25,7 +24,7 @@ class AccountMove(models.Model):
     module_id = fields.Many2one('mcmacademy.module','Module')
     session_id = fields.Many2one('mcmacademy.session','Session')
     pricelist_id = fields.Many2one('product.pricelist','Liste de prix')
-    methodes_payment = fields.Selection(selection=[('cpf','CPF'),('cartebleu','Cartebleu')],String='Méthode de payment')
+    methodes_payment = fields.Selection(selection=[('cpf','CPF'),('cartebleu','Carte_bleu')],String='Méthode de payment')
     cpf_acompte_amount = fields.Monetary('Montant acompte')
     pourcentage_acompte = fields.Integer(string="Pourcentage d'acompte",compute='_compute_change_amount',store=True,readonly=False)
 
@@ -53,7 +52,7 @@ class AccountMove(models.Model):
 #
     @api.depends('invoice_line_ids.price_subtotal','pourcentage_acompte','methodes_payment','company_id')
     def _compute_change_amount(self):
-         date_precis = date(2021, 4, 28)
+         date_precis = date(2021, 6, 10)
 
          for rec in self:
             amount_untaxed_initiale = rec.amount_untaxed
@@ -67,7 +66,6 @@ class AccountMove(models.Model):
                     rec.restamount = amount_untaxed_initiale - rec.amount_paye
                     # rec.amount_untaxed =  rec.amount_paye
                     # rec.amount_residual = rec.restamount
-                
                     rec.amount_residual_signed = rec.restamount
                     rec.amount_total_signed = rec.restamount
                  elif (rec.methodes_payment == 'cpf' and daysDiff <= 0  and rec.company_id.id == 2 ):
