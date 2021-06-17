@@ -73,7 +73,7 @@
             </field>
         </record>
 
-        <menuitem id="session_ville_menu" name="Villes"
-                  parent="mcm_session.mcm_academy_session_root_menu" action="action_session_ville" sequence="13"/>
+       <menuitem id="session_ville_menu" name="Villes"
+                  parent="mcm_session.mcm_academy_session_config_main_menu" action="action_session_ville" sequence="15"/>
     </data>
 </odoo>
