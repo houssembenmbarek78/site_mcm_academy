@@ -19,13 +19,13 @@ class AccountJournalSynchronisation(models.Model):
       for facture in factures:
         if (facture.invoice_date and My_date) :
           daysDiff = ((My_date) - facture.invoice_date).days
-          if daysDiff > 0 :
+          if daysDiff == 1 :
              if (facture.cpf_solde_invoice == True  or facture.cpf_acompte_invoice == True or facture.invoice_user_id == 'ZOÉ' ) :
                 facture.methodes_payment = 'cpf'
                 facture.pourcentage_acompte = 0
              elif facture.invoice_user_id != 'ZOÉ' :
                 facture.methodes_payment = 'cartebleu'
-          elif daysDiff <= 0 :
+          elif daysDiff == 0 :
               if (facture.cpf_solde_invoice == True or facture.cpf_acompte_invoice == True or facture.invoice_user_id == 'ZOÉ'):
                   facture.methodes_payment = 'cpf'
               elif facture.invoice_user_id != 'ZOÉ':
