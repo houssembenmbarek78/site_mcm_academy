@@ -172,8 +172,8 @@ class Partner(models.Model):
                 print('contrat non signé')
                 self.changestatut("Contrat Non Signé", partner)
             if sale_order and sale_order.state == "sale":
-                date=str(sale_order.session_id.date_exam)
-                _logger.info('contrat signé %s', date)
+                dateexam=str(sale_order.session_id.date_exam)
+                _logger.info('contrat signé %s', dateexam)
                 self.changestatut("Contrat Signé", partner)
                 # Récupérer les documents
                 documents = self.env['documents.document'].sudo().search([('partner_id', '=', partner.id)])
