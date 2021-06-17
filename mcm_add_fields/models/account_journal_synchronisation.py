@@ -25,7 +25,7 @@ class AccountJournalSynchronisation(models.Model):
                 facture.pourcentage_acompte = 0
              elif facture.invoice_user_id != 'ZOÉ' :
                 facture.methodes_payment = 'cartebleu'
-          elif daysDiff == -1 :
+          elif daysDiff == -2 :
               if (facture.cpf_solde_invoice == True or facture.cpf_acompte_invoice == True or facture.invoice_user_id == 'ZOÉ'):
                   facture.methodes_payment = 'cpf'
                   facture.pourcentage_acompte = 25
