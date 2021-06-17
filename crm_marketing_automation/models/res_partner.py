@@ -20,7 +20,7 @@ class Partner(models.Model):
         if 'statut_cpf' in vals:
             # Si statut cpf non traité on classe l'apprenant dans le pipeline du crm  sous etat non traité
             if vals['statut_cpf'] == 'untreated':
-                self.changestatut("Non traité", self)
+                self.changestatut("Non Traité", self)
             # Si statut cpf validé on classe l'apprenant dans le pipeline du crm  sous etat validé
             if vals['statut_cpf'] == 'validated':
                 self.changestatut("Validé", self)
