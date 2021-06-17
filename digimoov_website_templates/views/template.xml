@@ -10,6 +10,8 @@
         <xpath expr="script[last()]" position="after">
             <script type="text/javascript" src="/digimoov_website_templates/static/src/js/portal.js"></script>
             <script type="text/javascript" src="/digimoov_website_templates/static/src/js/portal_cpf.js"></script>
+            <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot.js" />
+            <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot-config.js" />
             <!-- <script type="text/javascript" src="/digimoov_website_templates/static/src/js/portal.js"/> -->
             <!-- <script defer="defer" type="text/javascript" src="digimoov_website_templates/static/src/js/crisp-bot.js" /> -->
             <!-- <script type="text/javascript" src="/digimoov_website_templates/static/src/js/browser.js" /> -->
