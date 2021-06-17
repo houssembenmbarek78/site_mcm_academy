@@ -165,14 +165,15 @@ class Partner(models.Model):
             sale_order = self.env['sale.order'].sudo().search([('partner_id', '=', partner.id),
                                                                ('session_id', '=', partner.mcm_session_id.id),
                                                                ('module_id', '=', partner.module_id.id),
-                                                               ('session_id.date_exam', '>', date.today())
+                                                               ('session_id.date_exam', '>', date.today()),
                                                                ], limit=1, order="id desc")
 
             if sale_order and sale_order.state == "sent":
                 print('contrat non signé')
                 self.changestatut("Contrat Non Signé", partner)
             if sale_order and sale_order.state == "sale":
-                print('contrat signé')
+                date=str(sale_order.session_id.date_exam)
+                _logger.info('contrat signé %s', date)
                 self.changestatut("Contrat Signé", partner)
                 # Récupérer les documents
                 documents = self.env['documents.document'].sudo().search([('partner_id', '=', partner.id)])
