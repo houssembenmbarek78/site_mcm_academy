@@ -49,6 +49,7 @@ class AccountMove(models.Model):
     # la vue de la facture change elle affiche l'acompte qui prend sa valeur default 25 %
     # et on peux la changer en pourcentage qu' on veux tout en calculant le montant payée et le reste à payer correctement
     #Si non si la méthode de payment est par carte bleu et le champs methode_payment== 'cartebleu' : l'acompte ne  s'affiche pas et la facture prend la somme de la formation
+    #Days_diff c est la différence en jours des dates (date de la facture et la date de mise en prod des anciennes factures :leprocess de double facturation et unique facturation )
 #
     @api.depends('invoice_line_ids.price_subtotal','pourcentage_acompte','methodes_payment','company_id')
     def _compute_change_amount(self):
