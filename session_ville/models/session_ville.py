@@ -4,6 +4,7 @@ from odoo import api, fields, models, _
 class SessionVille(models.Model):
     _name = "session.ville"
     _rec_name = 'name_ville'
+    _order = 'name_ville asc'
     _inherit = ["mail.thread", "mail.activity.mixin"]
     _description = "Les villes"
 
