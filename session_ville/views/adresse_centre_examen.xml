@@ -31,7 +31,7 @@
                                 <field name="session_ville_id"/>
                                 <field name="phone"/>
                                 <field name="email"/>
-                                <field name="lien"/>
+                                <field name="lien" widget="url"/>
                             </group>
                         </group>
                     </sheet>
