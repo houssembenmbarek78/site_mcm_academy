@@ -53,7 +53,7 @@
                                         Intitulé de la formation :
                                         <t t-if="o.mcm_session_id[0].diplome_vise">
                                             <strong>
-                                                <span t-raw="'%s' % o.mcm_session_id[0].diplome_vise if o.mcm_session_id[0].diplome_vise else ''"/>
+                                                <span t-raw="'%s' % o.mcm_session_id[0].diplome_vise[14:].upper() if o.mcm_session_id[0].diplome_vise else ''"/>
                                             </strong>
                                         </t>
                                         <br/>
@@ -264,7 +264,7 @@
                                         Intitulé de la formation :
                                         <t t-if="o.mcm_session_id[0].diplome_vise">
                                             <strong>
-                                                <span t-raw="'%s' % o.mcm_session_id[0].diplome_vise if o.mcm_session_id[0].diplome_vise else ''"/>
+                                                <span t-raw="'%s' % o.mcm_session_id[0].diplome_vise[14:].upper() if o.mcm_session_id[0].diplome_vise else ''"/>
                                             </strong>
                                         </t>
                                         <br/>
