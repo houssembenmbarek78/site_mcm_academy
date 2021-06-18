@@ -11,7 +11,7 @@
                 <field name="session_adresse_examen"/>
                 <field name="phone"/>
                 <field name="email"/>
-                <field name="lien"/>
+                <field name="lien" widget="url"/>
                 </group>
             </xpath>
         </field>
