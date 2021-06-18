@@ -43,10 +43,7 @@ class AccountMove(models.Model):
                 # rec.amount_residual = rec.restamount
                 # rec.amount_residual= rec.amount_untaxed
                 amount_residual_signed = rec.restamount
-                print(rec.amount_total)
-                print(rec.amount_untaxed)
-                print(rec.restamount)
-                print(rec.amount_residual)
+
                 return invoice
             elif (rec.methodes_payment == 'cartebleu') :
 
@@ -85,7 +82,7 @@ class resPartnerWizard(models.TransientModel):
     def change_amount(self):
         for rec in self:
             rec.amount=(rec.amount*rec.pourcentage)/100
-            print (rec.amount)
+
 
 
 
