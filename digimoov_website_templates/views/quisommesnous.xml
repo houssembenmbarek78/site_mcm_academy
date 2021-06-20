@@ -3,8 +3,8 @@
         <t t-call="website.layout">
             <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
             <!-- <script defer='defer' type="text/javascript" src="/digimoov_website_templates/static/src/js/bg-examen.js" /> -->
-            <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot.js" />
-            <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot-config.js" />
+<!--            <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot.js" />-->
+<!--            <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot-config.js" />-->
 
 
             <div id="wrap" class="oe_structure oe_empty">

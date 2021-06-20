@@ -3,8 +3,8 @@
     <xpath expr="//div[@id='wrap']" position="replace">
       <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
       <link href="/digimoov_website_templates/static/src/css/css-dist/home.min.css" rel="stylesheet" />
-      <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot.js" />
-      <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot-config.js" />
+<!--      <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot.js" />-->
+<!--      <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot-config.js" />-->
 
       <br />
       <br />
