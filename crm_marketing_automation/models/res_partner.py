@@ -20,26 +20,26 @@ class Partner(models.Model):
         if 'statut_cpf' in vals:
             # Si statut cpf non traité on classe l'apprenant dans le pipeline du crm  sous etat non traité
             if vals['statut_cpf'] == 'untreated':
-                self.changestatut("Non Traité", self)
+                self.changestage("Non Traité", self)
             # Si statut cpf validé on classe l'apprenant dans le pipeline du crm  sous etat validé
             if vals['statut_cpf'] == 'validated':
-                self.changestatut("Validé", self)
+                self.changestage("Validé", self)
             # Si statut cpf accepté on classe l'apprenant dans le pipeline du crm  sous statut  accepté
             if vals['statut_cpf'] == 'accepted':
-                self.changestatut("Accepté", self)
+                self.changestage("Accepté", self)
 
         # else:
 
         #     for rec in self:
         #         if rec.statut_cpf == 'untreated':
-        #             self.changestatut("Non traité")
+        #             self.changestage("Non traité")
         #             print('statut',rec.statut_cpf)
 
         record = super(Partner, self).write(vals)
 
         return record
 
-    def changestatut(self, name, partner):
+    def changestage(self, name, partner):
         stage = self.env['crm.stage'].sudo().search([("name", "like", _(name))])
         _logger.info('stageeeee %s' %stage.name)
         if stage:
@@ -82,7 +82,7 @@ class Partner(models.Model):
     
     # Methode pour classer les apprenants dans crm lead comme non retracté
     # Vérifier tout les conditions nécessaires pour ce classement
-    def change_statut_non_retracte(self):
+    def change_stage_non_retracte(self):
         partners = self.env['res.partner'].sudo().search([('statut', "=", "won")])
 
         for partner in partners:
@@ -140,11 +140,11 @@ class Partner(models.Model):
                 # Si non il est classé comme apprenant non retracté
                 else:
                     _logger.info('non retracté' )
-                    self.changestatut("Non Retracté", partner)
+                    self.changestage("Rétractation non Coché", partner)
 
     # Methode pour classer les apprenants existant déja sur odoo
 
-    def change_statut_existant(self):
+    def change_stage_existant(self):
         partners = self.env['res.partner'].sudo().search([])
 
         for partner in partners:
@@ -152,16 +152,16 @@ class Partner(models.Model):
                 # Vérifier le statut  pour classer client  dans crm lead
                 if partner.statut_cpf and partner.statut_cpf == "untreated":
                     print('non traité')
-                    self.changestatut("Non Traité", partner)
+                    self.changestage("Non Traité", partner)
                 if partner.statut_cpf and partner.statut_cpf == "validated":
                     print('Validé')
-                    self.changestatut("Validé", partner)
+                    self.changestage("Validé", partner)
                 if partner.statut_cpf and partner.statut_cpf == "accepted":
                     print('accepté')
-                    self.changestatut("Accepté", partner)
+                    self.changestage("Accepté", partner)
 
-            # recuperer le contrat pour vérifier son statut
-            # et classer client dans crm lead selon le statut de contrat
+            #Recuperer le contrat pour vérifier son statut
+
             sale_order = self.env['sale.order'].sudo().search([('partner_id', '=', partner.id),
                                                                ('session_id', '=', partner.mcm_session_id.id),
                                                                ('module_id', '=', partner.module_id.id),
@@ -170,15 +170,15 @@ class Partner(models.Model):
 
             # Récupérer les documents
             documents = self.env['documents.document'].sudo().search([('partner_id', '=', partner.id)])
-
+            # Classer client dans crm lead selon le statut de contrat
             if sale_order:
                 if sale_order.state == "sent":
                      print('contrat non signé')
-                     self.changestatut("Contrat Non Signé", partner)
+                     self.changestage("Contrat non Signé", partner)
                 if sale_order.state == "sale" and not(documents):
                     dateexam=str(sale_order.session_id.date_exam)
                     _logger.info('contrat signé %s', dateexam)
-                    self.changestatut("Contrat Signé", partner)
+                    self.changestage("Contrat Signé", partner)
                 
                     # vérifier l'existance des document en etat waiting
                     # pour classer sous document dans crm lead
@@ -189,4 +189,4 @@ class Partner(models.Model):
                             _logger.info("document waiting")
                             waiting=True
                     if waiting:
-                        self.changestatut("Document", partner)
+                        self.changestage("Document", partner)

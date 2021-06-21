@@ -18,15 +18,15 @@ class Sale(models.Model):
             if vals['state'] == 'sent':
                 partner = self.partner_id
                 print('sent', partner)
-                self.change_statut_lead("Contrat Non Signé", partner)
+                self.change_stage_lead("Contrat non Signé", partner)
             if vals['state'] == 'sale':
                 partner = self.partner_id
                 print('sale', partner)
-                self.change_statut_lead("Contrat Signé", partner)
+                self.change_stage_lead("Contrat Signé", partner)
 
         return record
 
-    def change_statut_lead(self, statut, partner):
+    def change_stage_lead(self, statut, partner):
         print('change statut', partner.mcm_session_id.id, self.session_id.id)
         if (partner.mcm_session_id.id) and (partner.mcm_session_id.id == self.session_id.id):
 

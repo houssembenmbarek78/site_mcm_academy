@@ -17,24 +17,24 @@ class Document(models.Model):
             if vals['state'] =='waiting':
                 partner=self.partner_id
                 _logger.info('if state in write  %s' % partner.name)
-                self.change_statut_lead("Document", partner)
+                self.change_stage_lead("Document", partner)
 
         if 'state' in vals and  'partner_id' in vals:
             if vals['state'] == 'waiting':
                 partner = vals['partner_id']
                 print('waite', partner)
-                self.change_statut_lead("Document", partner)
+                self.change_stage_lead("Document", partner)
 
         if not('state' in vals) and 'partner_id' in vals:
             if self.state == 'waiting':
                 partner = vals['partner_id']
                 print('waite', partner)
-                self.change_statut_lead("Document", partner)
+                self.change_stage_lead("Document", partner)
         record = super(Document, self).write(vals)
         return record
 
 
-    def change_statut_lead(self,statut,partner):
+    def change_stage_lead(self,statut,partner):
         sale_order = self.env['sale.order'].sudo().search([('partner_id', '=', partner.id),
                                                            ('session_id', '=', partner.mcm_session_id.id),
                                                            ('module_id', '=', partner.module_id.id),
