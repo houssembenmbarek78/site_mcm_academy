@@ -1,5 +1,6 @@
 from odoo import http, SUPERUSER_ID, _
 from odoo.http import request
+import datetime
 
 
 class ClientCPFController(http.Controller):
@@ -631,3 +632,46 @@ class ClientCPFController(http.Controller):
                 new_ticket = request.env['helpdesk.ticket'].sudo().create(
                     vals)
                 return request.render("mcm_cpf_validation.mcm_website_module_not_found", {})
+    @http.route('/update_statut_cpf/<string:email>/<string:dossier>/<string:statut>/<string:date_cpf>', type="http", auth="user")
+    def cpf_in_formation(self, email=None,dossier=None,statut=None,date_cpf=None):
+        email = email.replace("%", ".")
+        email = str(email).lower()
+        email = email.replace(" ","")
+        users = request.env['res.users'].sudo().search([('login', "=", email)])
+        user=False
+        if len(users) > 1 :
+            user=users[1]
+            for utilisateur in users:
+                if utilisateur.partner_id.id_edof and utilisateur.partner_id.date_examen_edof and utilisateur.partner_id.ville:
+                    user=utilisateur
+        else:
+            user=users
+        if user:
+            user.partner_id.mode_de_financement = 'cpf'
+            user.partner_id.funding_type = 'cpf'
+            statut = statut.replace(" ","")
+            statut = str(statut).lower()
+            if statut=="enformation":
+                user.partner_id.statut_cpf = 'in_training'
+            elif statut=="sortiedeformation":
+                user.partner_id.statut_cpf = 'out_training'
+            elif statut=="servicefaitdéclaré":
+                user.partner_id.statut_cpf = 'service_declared'
+            elif statut=="servicefaitvalidé":
+                user.partner_id.statut_cpf = 'service_validated'
+            elif statut=="facturé":
+                user.partner_id.statut_cpf = 'bill'
+            elif statut=="annulé":
+                user.partner_id.statut_cpf = 'canceled'
+            else:
+                return request.render("mcm_cpf_validation.ko_places", {})
+            date_cpf = date_cpf.replace(" ","")
+            date_cpf = date_cpf
+            date_cpf = date_cpf.replace("-","/")
+            date_cpf=datetime.datetime.strptime(date_cpf, '%d/%m/%Y')
+            print('date cpf :', date_cpf)
+            user.partner_id.numero_cpf = str(dossier)
+            user.partner_id.date_cpf = date_cpf
+            return request.render("mcm_cpf_validation.ok_places", {})
+        else:
+            return request.render("mcm_cpf_validation.user_not_found", {})
