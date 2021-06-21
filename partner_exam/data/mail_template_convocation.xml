@@ -1,0 +1,249 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data noupdate="1">
+        <!--Email template -->
+        <record id="email_template_convocation_id" model="mail.template">
+            <field name="name">Modèle Convocation</field>
+            <field name="model_id" ref="partner_exam.model_res_partner"/>
+            <field name="email_from">formation@digimoov.fr</field>
+            <field name="email_to"></field>
+            <field name="subject">CONVOCATION EXAMEN - Capacité de transport de marchandises léger</field>
+            <field name="body_html" type="html">
+                <p style="margin-bottom: 10px;">
+                    <font style="background-color:rgb(255, 255, 255);">
+                        <font color="#000000" face="Lato">
+                            <span style="font-size:18px;">Bonjour ${object.display_name},</span>
+                        </font>
+                    </font>
+                    <br/>
+                    <font style="background-color:rgb(255, 255, 255);">
+                        <br/>
+                    </font>
+                </p>
+                <p style="font-size:12px;margin-bottom: 10px; color: rgb(80, 80, 80); font-family: Lato;">
+                    <font style="background-color:rgb(255, 255, 255);color: rgb(0, 0, 0); font-size: 18px;">Vous êtes
+                        convoqué(e) pour passer l'examen de l'attestation de capacité de transport léger de
+                        marchandises, vous trouverez ci-joint, votre convocation à l'examen ainsi que le plan
+                        d'accès.
+                    </font>
+                </p>
+                <p style="margin-bottom: 10px;">
+                    <b>
+                        <font style="color:rgb(0, 0, 0);">
+                            <br/>
+                        </font>
+                    </b>
+                </p>
+                <p style="margin-bottom: 10px;">
+                    <font color="#000000">
+                        <span style="font-size:18px;">
+                            <b>Lieu d'examen :</b>
+                        </span>
+                    </font>
+                    <span style="text-align:inherit;font-size: 18px;">
+                        <font color="#000000">
+                            <b>${object.mcm_session_id.adresse_examen}</b>
+                        </font>
+                    </span>
+                </p>
+                <p style="margin-bottom: 10px;">
+                    <font color="#000000">
+                        <span style="font-size:18px;">
+                            <b>Date d'examen :</b>
+                        </span>
+                    </font>
+                    <span style="text-align:inherit;font-size: 18px;">
+                        <font color="#000000">
+                            <b>${object.mcm_session_id.date_exam.strftime('%d-%m-%Y')}</b>
+                        </font>
+                    </span>
+                </p>
+                <p style="margin-bottom: 10px;">
+                    <span style="font-size:18px;">
+                        <b>
+                            <font color="#000000"></font>
+                        </b>
+                    </span>
+                </p>
+                <p style="margin-bottom: 10px;">
+                    <font color="#000000">
+                        <span style="font-size:18px;">
+                            <b>Heure d'examen : ${object.mcm_session_id.horaire_email}</b>
+                            <b>
+                                <br/>
+                            </b>
+                        </span>
+                    </font>
+                </p>
+                <p style="margin-bottom: 10px;">
+                    <font color="#000000">
+                        <span style="font-size:18px;">
+                            <span style="font-weight:bolder;">Numero de Centre D'examen :</span>
+                        </span>
+                    </font>
+                    <span style="text-align:inherit;font-size: 18px;">
+                        <font color="#000000">
+                            <span style="font-weight:bolder;">${object.mcm_session_id.adresse_examen}</span>
+                        </font>
+                    </span>
+                    <br/>
+                </p>
+                <p style="margin-bottom: 10px;">
+                    <font color="#000000">
+                        <b>
+                            <span style="text-align:inherit;font-size: 18px;"></span>
+                        </b>
+                    </font>
+                </p>
+                <p style="margin-bottom: 10px;">
+                    <b>
+                        <font style="color:rgb(255, 0, 0);">NB : Le numéro de centre d'examen sera disponible juste
+                            le jour d'examen.
+                        </font>
+                    </b>
+                </p>
+                <p style="margin-bottom:10px;">
+                    <span style="background-color:rgb(255, 255, 255);color: rgb(0, 0, 0); font-size: 18px; text-align: inherit;"></span>
+                    <span style="color:rgb(0, 0, 0);font-family: Lato; font-size: 18px;">Merci de vous présenter le jour
+                        de votre examen accompagné(e) de votre pièce d'identité, votre convocation, votre attestation de
+                        déplacement dérogatoire ainsi que :
+                    </span>
+                    <br/>
+                    <span style="color:rgb(0, 0, 0);font-family: Lato; font-size: 18px;"></span>
+                    <br/>
+                    <font style="font-size:18px;"></font>
+                    <b>
+                        <span style="color:rgb(0, 0, 0);font-family: Lato; font-size: 18px;">- Un stylo</span>
+                        <br/>
+                    </b>
+                    <font style="font-size:18px;"></font>
+                    <b>
+                        <span style="color:rgb(0, 0, 0);font-family: Lato; font-size: 18px;">- Une calculatrice non
+                            scientifique
+                        </span>
+                        <br/>
+                    </b>
+                    <font style="font-size:18px;"></font>
+                    <b>
+                        <span style="color:rgb(0, 0, 0);font-family: Lato; font-size: 18px;">- Un blanco</span>
+                        <br/>
+                    </b>
+                    <font style="font-size:18px;"></font>
+                    <b>
+                        <span style="color:rgb(0, 0, 0);font-family: Lato; font-size: 18px;">- Un masque</span>
+                    </b>
+                    <br/>
+                </p>
+                <h2 style="color:rgb(0, 0, 0);margin-right: 0px; margin-left: 0px; font-size: 2rem;"></h2>
+                <p style="font-size:12px;margin-bottom: 10px; color: rgb(80, 80, 80); font-family: Lato;">
+                    <font style="background-color:rgb(255, 255, 255);color: rgb(0, 0, 0);">
+                        <br/>
+                    </font>
+                </p>
+                <p style="font-size:12px;margin-bottom: 10px; color: rgb(80, 80, 80); font-family: Lato;">
+                    <font style="background-color:rgb(255, 255, 255);color: rgb(0, 0, 0); font-size: 18px;">Vous trouvez
+                        ci-dessous l'attestation de déplacement dérogatoire à remplir en ligne :
+                    </font>
+                </p>
+                <p style="font-size:12px;margin-bottom: 10px; color: rgb(80, 80, 80); font-family: Lato;">
+                    <b>
+                        <font style="background-color:rgb(255, 255, 255);color: rgb(0, 0, 0);">
+                            <br/>
+                        </font>
+                    </b>
+                </p>
+                <div style="text-align:center;">
+                    <table style="display:inline-table;vertical-align: middle;">
+                        <tbody>
+                            <tr>
+                                <td height="29"
+                                    style="margin:4.5px 9px;border-radius: 3px; background-color: rgba(0, 0, 0, 0);">
+                                    <a href="https://media.interieur.gouv.fr/attestation-deplacement-derogatoire-covid-19/?utm_source=Digimoov+-+Convocation+Examen+Paris+19+Mars+2021+2021-03-09+17%25253A36%25253A37+%252528copie%252529+%252528copie%252529+%252528copie%252529+%252528copie%252529&amp;utm_medium=Email"
+                                       target="_blank" rel="noreferrer"
+                                       style="outline:0px;border-radius: 0.25rem; border-style: solid; padding: 0.375rem 0.75rem; line-height: 1.5; font-size: 1rem; border-color: transparent; border-width: 1px; vertical-align: middle; display: inline-block;"
+                                       class="btn btn-alpha flat">Cliquer ici
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="font-size:12px;margin-bottom: 10px; color: rgb(80, 80, 80); font-family: Lato;">
+                    <b>
+                        <font style="background-color:rgb(255, 255, 255);color: rgb(0, 0, 0);">
+                            <br/>
+                        </font>
+                    </b>
+                </p>
+                <p style="font-size:12px;margin-bottom: 10px; color: rgb(80, 80, 80); font-family: Lato;">
+                    <b>
+                        <font style="background-color:rgb(255, 255, 255);color: rgb(0, 0, 0); font-size: 18px;">PS :
+                            Merci de vous présenter
+                        </font>
+                        <b>
+                            <u>
+                                <font style="background-color:rgb(255, 255, 255);color: rgb(0, 0, 0); font-size: 18px;">
+                                    30 minutes
+                                </font>
+                            </u>
+                        </b>
+                        <font style="background-color:rgb(255, 255, 255);color: rgb(0, 0, 0); font-size: 18px;">avant
+                            le début de l'épreuve.
+                        </font>
+                    </b>
+                </p>
+                <p style="font-size:12px;margin-bottom: 10px; color: rgb(80, 80, 80); font-family: Lato;">
+                    <b>
+                        <font style="background-color:rgb(255, 255, 255);color: rgb(0, 0, 0);">
+                            <br/>
+                        </font>
+                    </b>
+                </p>
+                <p style="font-size:12px;margin-bottom: 10px; color: rgb(80, 80, 80); font-family: Lato;">
+                    <font style="background-color:rgb(255, 255, 255);color: rgb(0, 0, 0); font-size: 18px;">Bon courage
+                        à tous !
+                    </font>
+                </p>
+                <div>
+                    <p style="color:rgb(0, 0, 0);font-family: &quot;Lucida Grande&quot;, Verdana, Arial, Helvetica, sans-serif; font-size: 12px; margin-bottom: 1rem; text-align: center;">
+                        <b>
+                            <span style="font-weight:bolder;">
+                                <font style="background-color: rgb(255, 255, 255); color: rgb(135, 90, 123); font-size: 18px;"
+                                      class="text-beta">DIGIMOOV
+                                </font>
+                            </span>
+                        </b>
+                    </p>
+                </div>
+                <div style="text-align:center;">
+                    <p>
+                        <b>
+                            <font style="background-color:rgb(255, 255, 255);color: rgb(0, 0, 0); font-size: 18px;">
+                                </font>
+                            <a href="https://www.digimoov.fr/mail/mailing/159/unsubscribe?db=mcm-academy-production-1358432&amp;res_id=1930&amp;email=kays.lazrag%40gmail.com&amp;token=e9045932aa0a7df94fd792ae3f630d0cb90f2c43dfe082932409bc0dab1da44b4a34754584d48867a7a5905aadcda9aef07df1c57e92de1b9b27af07aa9a1ebb"
+                               target="_blank" rel="noreferrer"
+                               style="color:rgb(0, 123, 255);outline: 0px; font-family: &quot;Lucida Grande&quot;, Verdana, Arial, Helvetica, sans-serif; text-align: center; border-radius: 0.25rem; border-style: solid; padding: 0.375rem 0.75rem; line-height: 1.5; font-size: 1rem; border-color: transparent; border-width: 1px; vertical-align: middle; display: inline-block;">
+                                <font style="font-size: 14px;" class="text-alpha">Se désabonner</font>
+                            </a>
+                            <span style="background-color: rgb(255, 255, 255); font-family: &quot;Lucida Grande&quot;, Verdana, Arial, Helvetica, sans-serif; font-size: 14px; text-align: center;"
+                                  class="text-alpha">|&amp;
+                            </span>
+                            <a href="https://www.digimoov.fr/service-pedagogique" target="_blank" rel="noreferrer"
+                               style="color:rgb(0, 123, 255);outline: 0px; font-family: &quot;Lucida Grande&quot;, Verdana, Arial, Helvetica, sans-serif; text-align: center; border-radius: 0.25rem; border-style: solid; padding: 0.375rem 0.75rem; line-height: 1.5; font-size: 1rem; border-color: transparent; border-width: 1px; vertical-align: middle; display: inline-block;">
+                                <font style="font-size: 14px;" class="text-alpha">Contact</font>
+                            </a>
+                            <span style="font-weight:bolder;">
+                                <br/>
+                            </span>
+                        </b>
+                    </p>
+                </div>
+            </field>
+            <field name="reply_to">formation@digimoov.fr</field>
+            <field name="use_default_to">True</field>
+            <field name="lang">${object.lang}</field>
+            <field name="auto_delete">False</field>
+            <field name="report_name">${object.display_name}</field>
+        </record>
+    </data>
+</odoo>
