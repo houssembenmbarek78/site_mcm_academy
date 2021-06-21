@@ -9,9 +9,8 @@ class McmacademySessionVille(models.Model):
     session_adresse_examen =fields.Many2one('session.adresse.examen')
     phone = fields.Char(related="session_adresse_examen.phone")
     email = fields.Char(related="session_adresse_examen.email")
-    # Add new field "lien" contains link of center adress exam
+    #Add new field "lien" contains link of center adress exam
     lien = fields.Char(related="session_adresse_examen.lien", string="Lien d'accées au centre d'examen")
-    
 
     @api.onchange('session_ville_id')
     def onchange_partner_id(self):
