@@ -21,10 +21,6 @@
 
                 <!-- <script defer='defer' type="text/javascript" src="/digimoov_website_templates/static/src/js/bg-examen.js" /> -->
                 <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
-<!--                <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot.js" />-->
-<!--                <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot-config.js" />-->
-
-
                 <section id="slider-sec" class="web_agency_banner slider4 oe_img_bg oe_custom_bg" data-name="Home Banner Eight" style="background-image: url(&quot;/web/image/13078/Digimoov%20qui%20somme%20nous.png&quot;); background-position: 37.71% 54.72%;width:100%">
                     <div id="myCarousel1605624033206" class="s_carousel carousel slide s_carousel_default" data-ride="carousel" data-pause="hover" data-interval="7000" data-name="Carousel">
                         <ol class="carousel-indicators d-none">

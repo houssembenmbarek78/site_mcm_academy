@@ -6,8 +6,10 @@
                 <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot.js"/>
                 <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot-config.js"/>
             </t>
-            <!--            <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-user.js" t-if="request.website.is_public_user()==False"/>-->
-            <!--            <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-user-config.js" t-if="request.website.is_public_user()==False"/>-->
+            <t t-if="request.website.is_public_user()==False">
+                <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-user.js"/>
+                <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-user-config.js"/>
+            </t>
             <style>
 
                 .social-icons {

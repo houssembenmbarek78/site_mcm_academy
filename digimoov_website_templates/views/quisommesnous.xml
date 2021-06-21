@@ -3,10 +3,6 @@
         <t t-call="website.layout">
             <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
             <!-- <script defer='defer' type="text/javascript" src="/digimoov_website_templates/static/src/js/bg-examen.js" /> -->
-<!--            <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot.js" />-->
-<!--            <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot-config.js" />-->
-
-
             <div id="wrap" class="oe_structure oe_empty">
                 <section id="img-quisommenous" class="s_furniture_with_bg_imag_para lg-banner-area lg-banner-bg pt104 pb128 oe_img_bg oe_custom_bg" style="background-image: url(&quot;/digimoov_website_templates/static/img/Qui sont Digimoov.webp&quot;); width: 100%;" data-name="Background imagge with button and paragraph">
                     <div class="container">

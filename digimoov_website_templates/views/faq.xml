@@ -12,10 +12,7 @@
 
 
             </style>
-<!--            <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />-->
-<!--<script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot.js" />-->
-<!--<script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot-config.js" />-->
-
+            <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
             <section class="banner oe_img_bg oe_custom_bg" style="background: linear-gradient(90deg, rgba(249,250,252,1) 0%, rgba(242,241,241,0.7203256302521008) 100%);">
                 <p>
                     <br/>
