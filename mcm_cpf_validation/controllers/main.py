@@ -1,6 +1,6 @@
 from odoo import http,SUPERUSER_ID,_
 from odoo.http import request
-
+import datetime
 #
 class ClientCPFController(http.Controller):
 
@@ -630,3 +630,46 @@ class ClientCPFController(http.Controller):
                 new_ticket = request.env['helpdesk.ticket'].sudo().create(
                     vals)
                 return request.render("mcm_cpf_validation.mcm_website_module_not_found", {})
+    #url of update state of cpf
+    @http.route('/update_statut_cpf/<string:email>/<string:dossier>/<string:statut>/<string:date_cpf>', type="http", auth="user")
+    def cpf_in_formation(self, email=None,dossier=None,statut=None,date_cpf=None):
+        email = email.replace("%", ".")
+        email = str(email).lower()
+        email = email.replace(" ","") # replace space in mail
+        users = request.env['res.users'].sudo().search([('login', "=", email)]) #search user with same email sended
+        user=False
+        if len(users) > 1 :
+            user=users[1]
+            for utilisateur in users:
+                if utilisateur.partner_id.id_edof and utilisateur.partner_id.date_examen_edof and utilisateur.partner_id.ville: #if more than user ,check between them wich user is come from edof
+                    user=utilisateur
+        else:
+            user=users
+        if user: # if user finded
+            user.partner_id.mode_de_financement = 'cpf' # update field mode de financement to cpf
+            user.partner_id.funding_type = 'cpf' # update field funding type to cpf
+            statut = statut.replace(" ","") # delete space from state
+            statut = str(statut).lower() # convert state in lowercase
+            if statut=="enformation": # if state in edof is in 'En formation'
+                user.partner_id.statut_cpf = 'in_training' # update statut cpf to 'En formation'
+            elif statut=="sortiedeformation":
+                user.partner_id.statut_cpf = 'out_training' # if state in edof is in 'Sortie de formation'
+            elif statut=="servicefaitdéclaré":  # update statut cpf to 'Sortie de formation'
+                user.partner_id.statut_cpf = 'service_declared' # if state in edof is in 'Service fait declaré'
+            elif statut=="servicefaitvalidé": # update statut cpf to 'Service fait validéé'
+                user.partner_id.statut_cpf = 'service_validated' # if state in edof is in 'Service fait validé'
+            elif statut=="facturé": # if state in edof is in 'facturé'
+                user.partner_id.statut_cpf = 'bill'  # update statut cpf to 'facturé'
+            elif statut=="annulé": # if state in edof is in 'annulé'
+                user.partner_id.statut_cpf = 'canceled' # update statut cpf to 'annulé'
+            else:
+                return request.render("mcm_cpf_validation.ko_places", {})
+            date_cpf = date_cpf.replace(" ","") #delete spaces if parametre date sended contains space(s)
+            date_cpf = date_cpf
+            date_cpf = date_cpf.replace("-","/")  # replace - in date sended by /
+            date_cpf=datetime.datetime.strptime(date_cpf, '%d/%m/%Y')  #convert string date to datetime
+            user.partner_id.numero_cpf = str(dossier) # update 'numero de dossier' of client
+            user.partner_id.date_cpf = date_cpf # update cpf date of client
+            return request.render("mcm_cpf_validation.ok_places", {})
+        else:
+            return request.render("mcm_cpf_validation.user_not_found", {})
