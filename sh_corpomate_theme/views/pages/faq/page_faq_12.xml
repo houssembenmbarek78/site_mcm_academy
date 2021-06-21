@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- FAQ PAGE 12 -->
+	<template id="sh_corpomate_tmpl_faq_12" name="FAQ">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure">
+			
+				
+				
+				<section id="sh_corpomate_theme_section_311" class="s_banner parallax s_parallax_no_overflow_hidden" data-name="contact Snippet 1(Banner)" style="background-image: none;">
+    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/theme12/building.png'); background-position: 50% 0;" />
+    <div class="container">
+        <div class="sh_banner">
+            <div class="sh_title sh_animation_part">
+                <h4>FAQ</h4>
+                <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur.</p>
+                <div class="sh_breadcrumb o_default_snippet_text"><a href="/" class="o_default_snippet_text">Home</a> / Contact</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_133" data-name="FAQ Snippet 1">
+    <div class="container">
+        <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+            <div class="card">
+                <div class="card-header" role="tab" id="headingOe1">
+                    <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOe1" aria-expanded="true" aria-controls="collapseOe1" class="sh_show" data-target="#collapseOe1">
+                        <h5 class="mb-0 o_default_snippet_text">Can I change the theme color? <span class="fa fa-minus rotate-icon" /></h5>
+                    </a>
+                </div>
+                <div id="collapseOe1" class="collapse show" role="tabpanel" aria-labelledby="headingOe1" data-parent="#accordionEx">
+                    <div class="card-body">
+                        <p class="o_default_snippet_text">
+                            Aliquam mattis ultricies dolor ac vulputate. Pellentesque lectus tellus, varius vitae est et, ullamcorper porttitor urna. Praesent tristique tempor erat quis tincidunt. Sed elementum porta ullamcorper.
+                        </p>
+                        <p class="o_default_snippet_text">
+                            Cras mattis dui ac elit sollicitudin, eu rutrum quam pharetra. Etiam consectetur nunc vitae nibh egestas scelerisque. Nam sed auctor eros, et euismod leo. Integer ut fringilla nunc. Donec eget lacus lobortis,
+                            aliquam nulla ultricies, cursus libero.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="headingTo2">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTo2" aria-expanded="true" aria-controls="collapseTo2" data-target="#collapseTo2">
+                        <h5 class="mb-0 o_default_snippet_text">Is your product compactible with Bootstrap 3.0? <span class="fa fa-minus rotate-icon" /></h5>
+                    </a>
+                </div>
+                <div id="collapseTo2" class="collapse" role="tabpanel" aria-labelledby="headingTo2" data-parent="#accordionEx">
+                    <div class="card-body">
+                        <p class="o_default_snippet_text">
+                            Aliquam mattis ultricies dolor ac vulputate. Pellentesque lectus tellus, varius vitae est et, ullamcorper porttitor urna. Praesent tristique tempor erat quis tincidunt. Sed elementum porta ullamcorper.
+                        </p>
+                        <p class="o_default_snippet_text">
+                            Cras mattis dui ac elit sollicitudin, eu rutrum quam pharetra. Etiam consectetur nunc vitae nibh egestas scelerisque. Nam sed auctor eros, et euismod leo. Integer ut fringilla nunc. Donec eget lacus lobortis,
+                            aliquam nulla ultricies, cursus libero.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="headingThee3">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThee3" aria-expanded="true" aria-controls="collapseThee3" data-target="#collapseThee3">
+                        <h5 class="mb-0 o_default_snippet_text">Do you provide product support? <span class="fa fa-minus rotate-icon" /></h5>
+                    </a>
+                </div>
+                <div id="collapseThee3" class="collapse" role="tabpanel" aria-labelledby="headingThee3" data-parent="#accordionEx">
+                    <div class="card-body">
+                        <p class="o_default_snippet_text">
+                            Pellentesque tincidunt sagittis velit vel tristique. Etiam pellentesque consequat odio in dictum. Nunc sed viverra nunc. commodo nisi in, lacinia luctus augue. Nunc rutrum eleifend
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+				
+				
+				
+				
+			</div>
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

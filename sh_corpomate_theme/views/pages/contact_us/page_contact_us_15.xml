@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- CONTACT US PAGE 15 -->
+    <template id="sh_corpomate_tmpl_contact_us_15" name="contact us">
+        <t t-call="website.layout">
+          <div id="wrap" class="oe_structure">
+            <div class="oe_structure"/>	
+
+                
+                
+                <section
+    id="sh_corpomate_theme_section_380"
+    class="sh_animation_part oe_img_bg o_colored_level"
+    data-snippet="sh_corpomate_theme_tmpl_380"
+    data-name="contact banner"
+    style="background-image: url('/sh_corpomate_theme/static/src/img/theme_15/31.jpg');"
+>
+    <div class="container">
+        <div class="sh_breacrumb">
+            <a href="#" class="o_default_snippet_text">home</a>
+            <span class="o_default_snippet_text">/</span>
+            <a href="#" class="o_default_snippet_text">contact</a>
+        </div>
+        <h4 class="o_default_snippet_text">contact</h4>
+    </div>
+    
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+	    <polygon fill="white" points="0,100 100,0 100,100"></polygon>
+	</svg>
+    
+    
+</section>
+<section id="sh_corpomate_theme_section_381" class="sh_animation_part o_colored_level" data-snippet="sh_corpomate_theme_tmpl_381" data-name="contact snippet 1">
+    <div class="container">
+        <div class="sh_address">
+            <div class="sh_map_address sh_animation_part">
+                <div class="sh_icon">
+                    <span class="fa fa-map-marker" />
+                </div>
+                <h4 class="o_default_snippet_text">office location</h4>
+                <p class="o_default_snippet_text">905, Corpomate Levels, 150 ft. Ring Road Rajkot.</p>
+            </div>
+            <div class="sh_map_address sh_animation_part">
+                <div class="sh_icon">
+                    <span class="fa fa-phone" />
+                </div>
+                <h4 class="o_default_snippet_text">phone number</h4>
+                <p>
+                    <a href="tel: +1 (650) 691-3277 " class="o_default_snippet_text">
+                        +1 (650) 691-3277
+                    </a>
+                </p>
+            </div>
+            <div class="sh_map_address sh_animation_part">
+                <div class="sh_icon">
+                    <span class="fa fa-envelope" />
+                </div>
+                <h4 class="o_default_snippet_text">E-mail Address</h4>
+                <p>
+                    <a href="mailto: info@yourcompany.com" class="o_default_snippet_text">
+                        info@yourcompany.com
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section
+    id="sh_corpomate_theme_section_382"
+    class="sh_animation_part oe_img_bg o_colored_level"
+    data-snippet="sh_corpomate_theme_tmpl_382"
+    data-name="contact form"
+    style="background-image: url('/sh_corpomate_theme/static/src/img/theme_15/9.png');"
+>
+    <div class="container">
+        <form action="/website_form/" method="post" data-model_name="crm.lead" data-success_page="/contactus-thank-you" class="s_website_form container-fluid mt32 sh_animation_part" enctype="multipart/form-data" data-editable-form="false">
+            <div class="form-group row form-field o_website_form_required_custom">
+                <div class="col-6 o_colored_level">
+                    <input type="text" class="form-control o_website_form_input" name="contact_name" placeholder="Name*" required="" value="" />
+                </div>
+                <div class="col-6 o_colored_level">
+                    <input type="text" class="form-control o_website_form_input" name="phone" placeholder="Phone*" value="" />
+                </div>
+            </div>
+            <div class="form-group row form-field o_website_form_required_custom">
+                <div class="col-6 o_colored_level">
+                    <input type="text" class="form-control o_website_form_input" name="email_from" required="" placeholder="Email*" value="" />
+                </div>
+                <div class="col-6 o_colored_level">
+                    <input type="text" class="form-control o_website_form_input" name="name" required="" placeholder="Subject*" value="" />
+                </div>
+            </div>
+            <div class="form-group row form-field o_website_form_required">
+                <div class="col-12 o_colored_level">
+                    <textarea class="form-control o_website_form_input" name="description" required="" placeholder="Message*" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-12 o_colored_level">
+                    <a href="#" role="button" class="btn btn-primary btn-lg o_website_form_send btn_submit o_default_snippet_text">Send Message</a>
+                    <span id="o_website_form_result" />
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_383" class="sh_animation_part o_colored_level" data-snippet="sh_corpomate_theme_tmpl_383" data-name="contact map">
+    
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14764.162888844217!2d70.76170147993821!3d22.31429961505925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca18fbb8df83%3A0xc5d2508a38a14110!2sSofthealer%20Technologies!5e0!3m2!1sen!2sin!4v1608729855171!5m2!1sen!2sin"
+            height="450"
+            frameborder="0"
+            style="border: 0;"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+        >
+        </iframe>
+  
+</section>
+                
+                
+                
+                
+	           
+            </div>
+        </t>
+    </template>
+</odoo>
+
+

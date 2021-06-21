@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ASSETS -->
+ <template id="sh_wq_website_quote_assets_frontend" inherit_id="website.assets_frontend" name="Sh Website Quote Assets">
+     <xpath expr="." position="inside">
+         <link rel="stylesheet" type="text/css" href="/sh_corpomate_theme/extra_addons/sh_website_quote/static/src/scss/website_quote.scss" />
+	     <script type="text/javascript" src="/sh_corpomate_theme/extra_addons/sh_website_quote/static/src/js/custom.js"/>         
+     </xpath>
+ </template>
+
+
+<template inherit_id="portal.frontend_layout" id="sh_wq_website_quote_portal_frontend_layout" name="Main layout">    
+	<xpath expr="//div[@id='wrapwrap']" position="before"> 
+		
+		<!-- is display quote enable then perform below -->
+		<t t-if="website.sh_wq_is_display_quote">
+			
+	
+				<!-- for rectangle style button -->
+				<t t-if="website.sh_wq_quote_button_style == 'fbutton'">
+					<a data-toggle="modal" data-target="#sh_wq_website_quote_model" t-attf-class="whatsapp whatsapp-badge #{website.sh_wq_quote_button_position}" t-attf-style="margin:1%;background-color: ##{website.sh_wq_quote_button_color}">
+	        			<span t-attf-style="background-color: ##{website.sh_wq_quote_button_color}">
+		    				<span t-field="website.sh_wq_quote_button_label" t-attf-style="background-color: ##{website.sh_wq_quote_button_color};color: ##{website.sh_wq_quote_button_label_color};"/> 
+		     			</span>
+	         		</a>     		
+         		</t>
+         		
+				<!-- for bubble style button -->
+				<t t-if="website.sh_wq_quote_button_style == 'fball'">	
+					<!-- <a data-toggle="modal" data-target="#sh_wq_website_quote_model" t-attf-class="float float-#{website.sh_wq_quote_button_position} float-floating"> -->
+					<a aria-haspopup="true" data-toggle="modal" data-target="#sh_wq_website_quote_model" t-attf-class="float float-#{website.sh_wq_quote_button_position} float-floating show">
+						 <!-- bubble image -->
+						 <t t-if="website.sh_wq_quote_bubble_image"> 
+	              			<img  t-attf-src="data:image/png;base64, #{website.sh_wq_quote_bubble_image}" class="img-fluid" />
+				 		</t>			 		
+				 	</a>
+	    				
+	    			<!-- hover text 
+					<div t-attf-class="label-container label-container-#{website.sh_wq_quote_button_position} float-floating">
+			            <div class="label-text" t-attf-style="background-color: ##{website.sh_wq_quote_bubble_hover_color};color: ##{website.sh_wq_quote_bubble_hover_label_color};">
+			            	<span t-field="website.sh_wq_quote_bubble_hover_label"/>
+			            </div>
+            				<i class="icon icon-play label-arrow"></i>
+			        </div>	   		
+			        -->		     
+         		</t>         		
+         		
+
+         		
+				<!-- Modal -->
+				<script type="text/javascript">
+				$(document).ready(function(){
+				  $("#sh_wq_website_quote_model").on('show.bs.modal', function(){
+				    $('#sh_wq_website_quote_form').show();
+				    $('#sh_wq_website_quote_thankyou_msg').hide();	
+				    $('#sh_wq_website_quote_form')[0].reset();
+				    			    
+				    
+				  });
+				  			  			  
+				  
+				});
+				</script>				
+				
+				
+				<div id="sh_wq_website_quote_model" class="modal fade" role="dialog" data-keyboard="false" data-backdrop="static">
+				  <div class="modal-dialog">
+				
+				    <!-- Modal content-->
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h6 class="modal-title"><i class="fa fa-pencil"></i>Contact us</h6>
+				        <button type="button" class="close" data-dismiss="modal"><h6>x</h6></button>
+				      </div>
+				      <div class="modal-body">
+				      
+				      <div id="sh_wq_website_quote_mb_form">
+						<form action="" id="sh_wq_website_quote_form" method="post" data-model_name="crm.lead" data-success_page="/contactus-thank-you" class="s_website_form container-fluid mt32" enctype="multipart/form-data" data-editable-form="false">
+					    
+					    <!-- Your Name -->
+					    <t t-if="website.sh_wq_is_contact_name">
+					    	<input type="text" class="YourName" placeholder="Your Name" name="contact_name" required=""/>
+					    	<br></br>
+					    </t>
+					    
+					    <!-- Phone Number -->
+					    <t t-if="website.sh_wq_is_phone">					    
+					    	<input type="text" class="PhoneNumber" placeholder="Phone Number" name="phone" required=""/>
+					    	<br></br>
+					    </t>
+					    
+					    <!-- Email -->
+					    <t t-if="website.sh_wq_is_email_from">						    
+					    	<input type="email" class="email" placeholder="Email" name="email_from" required=""/>
+					    	<br></br>
+					    </t>
+					    
+					    <!-- Your Company -->
+					    <t t-if="website.sh_wq_is_partner_name">						    
+					    	<input type="text" class="YourCompany" placeholder="Your Company" name="partner_name" required=""/>
+					    	<br></br>
+					    </t>
+					    
+					    <!-- Subject  - Required in odoo(name) -->
+					    <t t-if="website.sh_wq_is_name">						    
+					    	<input type="text" class="Subject" placeholder="Subject" name="name" required=""/>
+					    	<br></br> 
+					    </t>
+					    <t t-if="website.sh_wq_is_name == False">						    
+					    	<input type="hidden" class="Subject" placeholder="Subject" name="name" value="POPUP LEAD" required=""/>
+					    	<br></br> 
+					    </t>					    
+					    
+					    
+					    <!-- Your Question -->
+					    <t t-if="website.sh_wq_is_description">					    
+					    	<textarea type="text" class="Yourquestion" placeholder="Your question" name="description" required=""/>
+                        </t>
+                        
+                        
+                        <div class="form-group row">
+                            <div class="offset-lg-3 offset-md-4 col-md-8 col-lg-7">
+                                <span id="o_website_form_result"></span>                          
+                            	<button class="submit"><h6>submit</h6></button>
+                            
+                            	<button data-dismiss="modal" class="cancel"><p>Cancel</p></button>
+                       
+                            </div>
+                        </div>
+	                    
+	                    </form>				              
+				       </div>
+				       
+				       <!-- success message -->
+					 	<div id="sh_wq_website_quote_thankyou_msg" class="col-lg-8">
+
+                        </div>		       
+				        
+				        
+				        
+				      </div>
+				    </div>
+				  </div>
+				</div>
+         			
+		</t>
+		
+	</xpath>
+</template>
+
+</odoo>
+	

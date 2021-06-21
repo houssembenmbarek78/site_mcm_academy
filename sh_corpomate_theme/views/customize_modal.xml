@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- 
+    <template id="theme_customize" inherit_id="theme_common.theme_customize">
+        <xpath expr="//t[@t-set='_nb_fonts']" position="attributes">
+            <attribute name="t-value">7</attribute>
+        </xpath>
+    </template>
+ -->
+ 
+    
+
+
+        
+    
+    
+    
+    <!-- Theme Customize Options     -->
+    <template id="theme_customize" inherit_id="website.theme_customize">
+        <xpath expr="//div" position="inside">
+
+        <!-- Top Bar -->
+        <content id="sh_corpomate_theme_top_bar_style" string="Top Bar Style" title="Choose your top bar style">    
+            <list id="sh_corpomate_theme_top_bar_style_title" string="Top Bar Style">
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_top_bar_1" string="Style 1" data-icon="" data-reload="/"/>         
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_top_bar_2" string="Style 2" data-icon="" data-reload="/"/>  
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_top_bar_3" string="Style 3" data-icon="" data-reload="/"/>                     
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_top_bar_4" string="Style 4" data-icon="" data-reload="/"/>    
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_top_bar_5" string="Style 5" data-icon="" data-reload="/"/>   
+
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_top_bar_7" string="Style 7" data-icon="" data-reload="/"/>   
+                   
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_top_bar_8" string="Style 8" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_top_bar_10" string="Style 10" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_top_bar_11" string="Style 11" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_top_bar_12" string="Style 12" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_top_bar_13" string="Style 13" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_top_bar_14" string="Style 14" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_top_bar_15" string="Style 15" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_top_bar_16" string="Style 16" data-icon="" data-reload="/"/>
+                    
+                        
+				   <opt id="sh_corpomate_theme_no_top_bar" string="None" data-xmlid=""/>                                      
+                   <!-- 
+                   <opt data-disable="sh_corpomate_theme.sh_corpomate_theme_style_top_bar_1,sh_corpomate_theme.sh_corpomate_theme_style_top_bar_2,sh_corpomate_theme.sh_corpomate_theme_style_top_bar_3,sh_corpomate_theme.sh_corpomate_theme_style_top_bar_4,sh_corpomate_theme.sh_corpomate_theme_style_top_bar_5" string="None" data-icon=""/>     
+             -->
+            </list>   
+        </content>   
+        
+        <!-- Copyrights -->   
+        <content id="sh_corpomate_theme_copyright_style" string="Copyright Style" title="Choose your copyright style">    
+            <list id="sh_corpomate_theme_copyright_style_title" string="Copyright Style">
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_copyright_1,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide" string="Style 1" data-icon="" data-reload="/"/>         
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_copyright_2,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide" string="Style 2" data-icon="" data-reload="/"/>  
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_copyright_3,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide" string="Style 3" data-icon="" data-reload="/"/>                     
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_copyright_4,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide" string="Style 4" data-icon="" data-reload="/"/>    
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_copyright_5,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide" string="Style 5" data-icon="" data-reload="/"/>   
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_copyright_6,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide" string="Style 6" data-icon="" data-reload="/"/>   
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_copyright_7,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide" string="Style 7" data-icon="" data-reload="/"/>    
+			   	  
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_copyright_8,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide" string="Style 8" data-icon="" data-reload="/"/>   
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_copyright_9,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide" string="Style 9" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_copyright_10,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide" string="Style 10" data-icon="" data-reload="/"/>
+      			   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_copyright_11,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide" string="Style 11" data-icon="" data-reload="/"/>
+      			   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_copyright_12,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide" string="Style 12" data-icon="" data-reload="/"/>
+      			   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_copyright_13,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide" string="Style 13" data-icon="" data-reload="/"/>
+      			   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_copyright_14,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide" string="Style 14" data-icon="" data-reload="/"/>
+			   	   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_copyright_15,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide" string="Style 15" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_copyright_16,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide" string="Style 16" data-icon="" data-reload="/"/>
+			   	  
+
+			   	   <opt id="sh_corpomate_theme_no_copyright" string="None" data-xmlid="" data-reload="/"/>                                      
+            </list>   
+        </content>  
+
+
+        
+        <!-- Header Style -->
+        <content id="sh_corpomate_theme_header_style" string="Header Style" title="Choose your header style">
+                <list id="sh_corpomate_theme_header_style_title" string="Header Style">    
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_header_1" string="Style 1" data-icon="" data-reload="/"/>         
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_header_2" string="Style 2" data-icon="" data-reload="/"/>  
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_header_3" string="Style 3" data-icon="" data-reload="/"/>                     
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_header_4" string="Style 4" data-icon="" data-reload="/"/>    
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_header_5" string="Style 5" data-icon="" data-reload="/"/> 
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_header_6" string="Style 6" data-icon="" data-reload="/"/> 					
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_header_7" string="Style 7" data-icon="" data-reload="/"/> 
+
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_header_8" string="Style 8" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_header_9" string="Style 9" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_header_10" string="Style 10" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_header_11" string="Style 11" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_header_12" string="Style 12" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_header_13" string="Style 13" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_header_14" string="Style 14" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_header_15" string="Style 15" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_header_16" string="Style 16" data-icon="" data-reload="/"/>
+
+
+
+			   	   <opt id="sh_corpomate_theme_no_header" string="None" data-xmlid="" data-reload="/"/>   
+                </list>
+        </content>
+          
+        <!-- Footer Style -->
+        <content id="sh_corpomate_theme_footer_style" string="Footer Style" title="Choose your footer style">
+                <list id="sh_corpomate_theme_footer_style_title" string="Footer Style">    
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_footer_1,sh_corpomate_theme.sh_corpomate_theme_footer_custom_1" string="Style 1" data-icon="" data-reload="/"/>         
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_footer_2,sh_corpomate_theme.sh_corpomate_theme_footer_custom_2" string="Style 2" data-icon="" data-reload="/"/>  
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_footer_3,sh_corpomate_theme.sh_corpomate_theme_footer_custom_3" string="Style 3" data-icon="" data-reload="/"/>                     
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_footer_4,sh_corpomate_theme.sh_corpomate_theme_footer_custom_4" string="Style 4" data-icon="" data-reload="/"/>    
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_footer_5,sh_corpomate_theme.sh_corpomate_theme_footer_custom_5" string="Style 5" data-icon="" data-reload="/"/>
+				   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_footer_6,sh_corpomate_theme.sh_corpomate_theme_footer_custom_6" string="Style 6" data-icon="" data-reload="/"/>
+
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_footer_7,sh_corpomate_theme.sh_corpomate_theme_footer_custom_7" string="Style 7" data-icon="" data-reload="/"/>    
+
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_footer_8,sh_corpomate_theme.sh_corpomate_theme_footer_custom_8" string="Style 8" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_footer_9,sh_corpomate_theme.sh_corpomate_theme_footer_custom_9" string="Style 9" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_footer_10,sh_corpomate_theme.sh_corpomate_theme_footer_custom_10" string="Style 10" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_footer_11,sh_corpomate_theme.sh_corpomate_theme_footer_custom_11" string="Style 11" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_footer_12,sh_corpomate_theme.sh_corpomate_theme_footer_custom_12" string="Style 12" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_footer_13,sh_corpomate_theme.sh_corpomate_theme_footer_custom_13" string="Style 13" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_footer_14,sh_corpomate_theme.sh_corpomate_theme_footer_custom_14" string="Style 14" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_footer_15,sh_corpomate_theme.sh_corpomate_theme_footer_custom_15" string="Style 15" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_footer_16,sh_corpomate_theme.sh_corpomate_theme_footer_custom_16" string="Style 16" data-icon="" data-reload="/"/>
+                   
+
+			   	   <opt id="sh_corpomate_theme_no_footer" string="None" data-xmlid="" data-reload="/"/>   
+                </list>
+        </content>
+
+  
+  
+        <!-- Language Style -->
+        <content id="sh_corpomate_theme_lang_style" string="language" title="Show/Hide languages in top bar">
+                <list id="sh_corpomate_theme_lang_style_title" string="Show/Hide languages">    
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_lang_show" string="Show" data-icon="" data-reload="/"/>           
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_style_lang_hide" string="Hide" data-icon="" data-reload="/"/>  
+			   	  
+                
+                </list>
+        </content>   
+
+
+
+        <!-- PRE MADE THEMES -->
+        <content id="sh_corpomate_theme_readymade_theme_style" string="Themes" title="Choose Readymade themes">
+                <list id="sh_corpomate_theme_readymade_theme_style_title" string="Readymade themes">    
+
+                   <opt data-xmlid="sh_corpomate_theme.assets_primary_variables_1,sh_corpomate_theme.sh_corpomate_theme_layout_readymade_1,sh_corpomate_theme.sh_corpomate_theme_style_top_bar_1,sh_corpomate_theme.sh_corpomate_theme_style_copyright_1,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide,sh_corpomate_theme.sh_corpomate_theme_style_header_1,sh_corpomate_theme.sh_corpomate_theme_style_footer_1,sh_corpomate_theme.sh_corpomate_theme_footer_custom_1" string="Theme 1" data-icon="" data-reload="/"/>           
+
+                   <opt data-xmlid="sh_corpomate_theme.assets_primary_variables_2,sh_corpomate_theme.sh_corpomate_theme_layout_readymade_2,sh_corpomate_theme.sh_corpomate_theme_style_top_bar_2,sh_corpomate_theme.sh_corpomate_theme_style_copyright_2,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide,sh_corpomate_theme.sh_corpomate_theme_style_header_2,sh_corpomate_theme.sh_corpomate_theme_style_footer_2,sh_corpomate_theme.sh_corpomate_theme_footer_custom_2" string="Theme 2" data-icon="" data-reload="/"/>           
+
+                   <opt data-xmlid="sh_corpomate_theme.assets_primary_variables_3,sh_corpomate_theme.sh_corpomate_theme_layout_readymade_3,sh_corpomate_theme.sh_corpomate_theme_style_top_bar_3,sh_corpomate_theme.sh_corpomate_theme_style_copyright_3,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide,sh_corpomate_theme.sh_corpomate_theme_style_header_3,sh_corpomate_theme.sh_corpomate_theme_style_footer_3,sh_corpomate_theme.sh_corpomate_theme_footer_custom_3" string="Theme 3" data-icon="" data-reload="/"/>           
+
+                   <opt data-xmlid="sh_corpomate_theme.assets_primary_variables_4,sh_corpomate_theme.sh_corpomate_theme_layout_readymade_4,sh_corpomate_theme.sh_corpomate_theme_style_top_bar_4,sh_corpomate_theme.sh_corpomate_theme_style_copyright_4,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide,sh_corpomate_theme.sh_corpomate_theme_style_header_4,sh_corpomate_theme.sh_corpomate_theme_style_footer_4,sh_corpomate_theme.sh_corpomate_theme_footer_custom_4" string="Theme 4" data-icon="" data-reload="/"/>           
+
+                   <opt data-xmlid="sh_corpomate_theme.assets_primary_variables_5,sh_corpomate_theme.sh_corpomate_theme_layout_readymade_5,sh_corpomate_theme.sh_corpomate_theme_style_top_bar_5,sh_corpomate_theme.sh_corpomate_theme_style_copyright_5,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide,sh_corpomate_theme.sh_corpomate_theme_style_header_5,sh_corpomate_theme.sh_corpomate_theme_style_footer_5,sh_corpomate_theme.sh_corpomate_theme_footer_custom_5" string="Theme 5" data-icon="" data-reload="/"/>           
+
+                   
+                 
+                   <opt data-xmlid="sh_corpomate_theme.assets_primary_variables_6,sh_corpomate_theme.sh_corpomate_theme_layout_readymade_6,sh_corpomate_theme.sh_corpomate_theme_style_copyright_6,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide,sh_corpomate_theme.sh_corpomate_theme_style_header_6,sh_corpomate_theme.sh_corpomate_theme_style_footer_6,sh_corpomate_theme.sh_corpomate_theme_footer_custom_6" string="Theme 6" data-icon="" data-reload="/"/>           
+			 
+                   <opt data-xmlid="sh_corpomate_theme.assets_primary_variables_7,sh_corpomate_theme.sh_corpomate_theme_layout_readymade_7,sh_corpomate_theme.sh_corpomate_theme_style_top_bar_7,sh_corpomate_theme.sh_corpomate_theme_style_copyright_7,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide,sh_corpomate_theme.sh_corpomate_theme_style_header_7,sh_corpomate_theme.sh_corpomate_theme_style_footer_7,sh_corpomate_theme.sh_corpomate_theme_footer_custom_7" string="Theme 7" data-icon="" data-reload="/"/>
+
+                              
+                   <opt data-xmlid="sh_corpomate_theme.assets_primary_variables_8,sh_corpomate_theme.sh_corpomate_theme_layout_readymade_8,sh_corpomate_theme.sh_corpomate_theme_style_top_bar_8,sh_corpomate_theme.sh_corpomate_theme_style_copyright_8,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide,sh_corpomate_theme.sh_corpomate_theme_style_header_8,sh_corpomate_theme.sh_corpomate_theme_style_footer_8,sh_corpomate_theme.sh_corpomate_theme_footer_custom_8" string="Theme 8" data-icon="" data-reload="/"/>
+			 
+			 
+			 
+                   <opt data-xmlid="sh_corpomate_theme.assets_primary_variables_9,sh_corpomate_theme.sh_corpomate_theme_layout_readymade_9,sh_corpomate_theme.sh_corpomate_theme_style_copyright_9,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide,sh_corpomate_theme.sh_corpomate_theme_style_header_9,sh_corpomate_theme.sh_corpomate_theme_style_footer_9,sh_corpomate_theme.sh_corpomate_theme_footer_custom_9" string="Theme 9" data-icon="" data-reload="/"/>			 
+			 
+			 
+                   <opt data-xmlid="sh_corpomate_theme.assets_primary_variables_10,sh_corpomate_theme.sh_corpomate_theme_layout_readymade_10,sh_corpomate_theme.sh_corpomate_theme_style_top_bar_10,sh_corpomate_theme.sh_corpomate_theme_style_copyright_10,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide,sh_corpomate_theme.sh_corpomate_theme_style_header_10,sh_corpomate_theme.sh_corpomate_theme_style_footer_10,sh_corpomate_theme.sh_corpomate_theme_footer_custom_10" string="Theme 10" data-icon="" data-reload="/"/>			 
+			 
+			 
+                   <opt data-xmlid="sh_corpomate_theme.assets_primary_variables_11,sh_corpomate_theme.sh_corpomate_theme_layout_readymade_11,sh_corpomate_theme.sh_corpomate_theme_style_top_bar_11,sh_corpomate_theme.sh_corpomate_theme_style_copyright_11,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide,sh_corpomate_theme.sh_corpomate_theme_style_header_11,sh_corpomate_theme.sh_corpomate_theme_style_footer_11,sh_corpomate_theme.sh_corpomate_theme_footer_custom_11" string="Theme 11" data-icon="" data-reload="/"/>			 
+			 
+			 
+                   <opt data-xmlid="sh_corpomate_theme.assets_primary_variables_12,sh_corpomate_theme.sh_corpomate_theme_layout_readymade_12,sh_corpomate_theme.sh_corpomate_theme_style_top_bar_12,sh_corpomate_theme.sh_corpomate_theme_style_copyright_12,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide,sh_corpomate_theme.sh_corpomate_theme_style_header_12,sh_corpomate_theme.sh_corpomate_theme_style_footer_12,sh_corpomate_theme.sh_corpomate_theme_footer_custom_12" string="Theme 12" data-icon="" data-reload="/"/>			 
+			 
+			 
+                   <opt data-xmlid="sh_corpomate_theme.assets_primary_variables_13,sh_corpomate_theme.sh_corpomate_theme_layout_readymade_13,sh_corpomate_theme.sh_corpomate_theme_style_top_bar_13,sh_corpomate_theme.sh_corpomate_theme_style_copyright_13,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide,sh_corpomate_theme.sh_corpomate_theme_style_header_13,sh_corpomate_theme.sh_corpomate_theme_style_footer_13,sh_corpomate_theme.sh_corpomate_theme_footer_custom_13" string="Theme 13" data-icon="" data-reload="/"/>		
+                   
+                   			 
+                   <opt data-xmlid="sh_corpomate_theme.assets_primary_variables_14,sh_corpomate_theme.sh_corpomate_theme_layout_readymade_14,sh_corpomate_theme.sh_corpomate_theme_style_top_bar_14,sh_corpomate_theme.sh_corpomate_theme_style_copyright_14,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide,sh_corpomate_theme.sh_corpomate_theme_style_header_14,sh_corpomate_theme.sh_corpomate_theme_style_footer_14,sh_corpomate_theme.sh_corpomate_theme_footer_custom_14" string="Theme 14" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.assets_primary_variables_15,sh_corpomate_theme.sh_corpomate_theme_layout_readymade_15,sh_corpomate_theme.sh_corpomate_theme_style_top_bar_15,sh_corpomate_theme.sh_corpomate_theme_style_copyright_15,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide,sh_corpomate_theme.sh_corpomate_theme_style_header_15,sh_corpomate_theme.sh_corpomate_theme_style_footer_15,sh_corpomate_theme.sh_corpomate_theme_footer_custom_15" string="Theme 15" data-icon="" data-reload="/"/>
+                   <opt data-xmlid="sh_corpomate_theme.assets_primary_variables_16,sh_corpomate_theme.sh_corpomate_theme_layout_readymade_16,sh_corpomate_theme.sh_corpomate_theme_style_top_bar_16,sh_corpomate_theme.sh_corpomate_theme_style_copyright_16,sh_corpomate_theme.sh_corpomate_theme_style_copyright_hide,sh_corpomate_theme.sh_corpomate_theme_style_header_16,sh_corpomate_theme.sh_corpomate_theme_style_footer_16,sh_corpomate_theme.sh_corpomate_theme_footer_custom_16" string="Theme 16" data-icon="" data-reload="/"/>
+
+
+
+                   <opt data-xmlid="sh_corpomate_theme.sh_corpomate_theme_layout_readymade_none" string="None" data-icon="" data-reload="/"/>
+			 
+			 
+
+                   
+
+                              
+
+          
+                </list>
+        </content>  
+          
+          
+
+          
+
+        </xpath>
+    </template>    
+    
+</odoo>

@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+sh_access_notice_board_public,notice.board.public,model_sh_nb_notice_board,,1,0,0,0
+sh_access_notice_board_designer,notice.board.designer,model_sh_nb_notice_board,website.group_website_designer,1,1,1,1

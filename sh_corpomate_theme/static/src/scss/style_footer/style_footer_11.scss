@@ -1,0 +1,43 @@
+/*sh_footer*/
+#sh_footer{background: #363636;border: 0;padding: 50px 0 0px;}
+#sh_footer .sh_first_column h4{font-size: 24px;font-weight: 600;margin-bottom: 25px;color: $-color-Primary;}
+#sh_footer .sh_first_column p{margin: 0;color: #fff;font-size: 16px;padding-bottom: 10px;}
+#sh_footer .sh_column h4{font-size: 24px;font-weight: 600;margin-bottom: 25px;color: #ffffff;}
+#sh_footer .sh_column ul li a{color: #fff;text-transform: capitalize;font-size: 16px;padding-bottom: 5px;display: block;}
+#sh_footer .sh_column ul{padding: 0px;list-style: none;}
+#sh_footer .sh_column.sh_third_column h4{height: 28px;}
+#sh_footer .sh_first_column img{max-height: 30px;max-width: 160px;object-fit: contain;margin-bottom: 20px;}
+#sh_footer .sh_fourth_column ul li{display: flex;color: #fff;margin-bottom: 15px;}
+#sh_footer .sh_fourth_column ul li span{font-size: 24px;padding-right: 10px;}
+#sh_footer .sh_fourth_column ul li p {padding-top: 3px;}
+#sh_footer .sh_first_column ul{list-style: none;padding: 0;padding-top: 10px;}
+#sh_footer .sh_first_column ul li a{color: #fff;padding-bottom: 10px;display: inline-block;}
+#sh_footer .sh_first_column ul li a span{padding-right: 10px;font-size: 16px;}
+#sh_footer .sh_subcribe_content{background: #464646;display: flex;justify-content: space-between;align-items: center;padding: 20px;}
+#sh_footer .sh_subcribe_content .sh_media{display: flex;align-items: center;}
+#sh_footer .sh_subcribe_content .sh_media ul{display: flex;list-style: none;padding: 0;margin: 0px;}
+#sh_footer .sh_subcribe_content .sh_subscribe{display: flex;justify-content: space-between;align-items: center;}
+#sh_footer .sh_subcribe_content .sh_subscribe .js_subscribe{height: 40px;width: 60%;}
+#sh_footer .sh_subcribe_content h4{margin: 0;font-size: 18px;font-weight: 600;color: #fff;padding-right: 30px;text-transform: capitalize;}
+#sh_footer .sh_subcribe_content .sh_media ul li{padding: 0 10px;}
+#sh_footer .sh_subcribe_content .sh_media ul li a{color: #fff;font-size: 18px;}
+#sh_footer .sh_subcribe_content .sh_subscribe .js_subscribe .input-group-append a{padding: 0;width: 35px;line-height: 38px;border-top-right-radius: 5px;border-bottom-right-radius: 5px;}
+#sh_footer .sh_first_column{margin-bottom: 30px;}
+#sh_footer .sh_first_column ul li a span address{display: inline-block;vertical-align: top;}
+#sh_footer .sh_subcribe_content .sh_subscribe .js_subscribe input{height: 40px;}
+@media (min-width: 768px){
+  #sh_footer .sh_subcribe_content .sh_media,
+  #sh_footer .sh_subcribe_content .sh_subscribe{width: 50%;}
+  
+}
+@media (max-width: 768px){
+   #sh_footer .sh_subcribe_content{display: block;}
+   #sh_footer .sh_subcribe_content .sh_media{margin-bottom: 20px;}
+}
+
+@media (max-width: 576px){
+   #sh_footer .sh_subcribe_content .sh_media,
+   #sh_footer .sh_subcribe_content .sh_subscribe{display: block;}
+   #sh_footer .sh_subcribe_content .sh_subscribe .js_subscribe{width: 100%;margin-top: 10px;}
+   #sh_footer .sh_subcribe_content .sh_media ul{margin-top: 10px;}
+}

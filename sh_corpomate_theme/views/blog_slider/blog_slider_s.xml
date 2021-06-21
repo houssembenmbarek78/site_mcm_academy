@@ -1,0 +1,2249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 1
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+<template id="sh_corpomate_theme_tmpl_202" name="blog 1">
+
+    <section id="sh_corpomate_theme_section_202" class="js_cls_corpomate_blog_slider_section_202 sh_animation_part">
+        <div class="container">
+            <div class="heading text-center">
+                <p>Our Blog</p>
+                <h3>Read Our latest stories</h3>
+            </div>        
+        
+            <div class="card js_cls_corpomate_blog_slider_main_div_202">
+                <div class="card-header">
+
+                    <ul class="nav nav-tabs card-header-tabs js_cls_corpomate_blog_slider_nav_tabs_ul_202" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="nav_tabs_link_1" data-toggle="tab" href="#nav_tabs_content_1" role="tab" aria-controls="nav_tabs_content_1" aria-selected="true">Tab A</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav_tabs_link_2" data-toggle="tab" href="#nav_tabs_content_2" role="tab" aria-controls="nav_tabs_content_2" aria-selected="false">Tab B</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav_tabs_link_3" data-toggle="tab" href="#nav_tabs_content_3" role="tab" aria-controls="nav_tabs_content_3" aria-selected="false">Tab C</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-body tab-content js_cls_corpomate_blog_slider_tab_content_202">
+                    <div class="tab-pane fade show active" id="nav_tabs_content_1" role="tabpanel" aria-labelledby="nav_tabs_link_1">               
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p><span class="fa fa-calendar"></span> 20 NOv, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p><span class="fa fa-calendar"></span> 18 OCT, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- tab 1  -->
+                    
+
+                    <div class="tab-pane fade" id="nav_tabs_content_2" role="tabpanel" aria-labelledby="nav_tabs_link_2">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p><span class="fa fa-calendar"></span> 20 NOv, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p><span class="fa fa-calendar"></span> 18 OCT, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- tab 2 -->
+
+
+                    <div class="tab-pane fade" id="nav_tabs_content_3" role="tabpanel" aria-labelledby="nav_tabs_link_3">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p><span class="fa fa-calendar"></span> 20 NOv, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p><span class="fa fa-calendar"></span> 18 OCT, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- tab3 -->
+
+
+                </div>
+
+
+            </div>
+            <!-- card -->        
+        </div>
+    </section>
+    
+    
+</template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 2
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+
+
+<!-- blog 2 -->
+<template id="sh_corpomate_theme_tmpl_203" name="blog 2">
+    <section id="sh_corpomate_theme_section_203" class="js_cls_corpomate_blog_slider_section_203 sh_animation_part">
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <div class="sh_heading">
+                            <h3 class="o_default_snippet_text">Lorem Ipsum</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-12">
+                        <div class="sh_description">
+                            <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="card js_cls_corpomate_blog_slider_main_div_203">
+                <div class="card-header">
+                    
+                    <ul class="nav nav-tabs card-header-tabs js_cls_corpomate_blog_slider_nav_tabs_ul_203" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="nav_tabs_link_21" data-toggle="tab" href="#nav_tabs_content_21" role="tab" aria-controls="nav_tabs_content_21" aria-selected="true">Tab A</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav_tabs_link_22" data-toggle="tab" href="#nav_tabs_content_22" role="tab" aria-controls="nav_tabs_content_22" aria-selected="false">Tab B</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav_tabs_link_23" data-toggle="tab" href="#nav_tabs_content_23" role="tab" aria-controls="nav_tabs_content_23" aria-selected="false">Tab C</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-body tab-content js_cls_corpomate_blog_slider_tab_content_203">
+                    <div class="tab-pane fade show active" id="nav_tabs_content_21" role="tabpanel" aria-labelledby="nav_tabs_link_21">               
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <p><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <a href="#" class="btn">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <p><span class="fa fa-calendar"></span> 20 NOv, 2018</p>
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <a href="#" class="btn">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <p><span class="fa fa-calendar"></span> 18 OCT, 2018</p>
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <a href="#" class="btn">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- tab 1  -->
+                    
+
+                    <div class="tab-pane fade" id="nav_tabs_content_22" role="tabpanel" aria-labelledby="nav_tabs_link_22">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <p><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <a href="#" class="btn">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <p><span class="fa fa-calendar"></span> 20 NOv, 2018</p>
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <a href="#" class="btn">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <p><span class="fa fa-calendar"></span> 18 OCT, 2018</p>
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <a href="#" class="btn">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- tab 2 -->
+
+
+                    <div class="tab-pane fade" id="nav_tabs_content_23" role="tabpanel" aria-labelledby="nav_tabs_link_23">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <p><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <a href="#" class="btn">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <p><span class="fa fa-calendar"></span> 20 NOv, 2018</p>
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <a href="#" class="btn">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <p><span class="fa fa-calendar"></span> 18 OCT, 2018</p>
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <a href="#" class="btn">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- tab3 -->
+
+
+                </div>
+
+
+            </div>
+            <!-- card -->        
+        </div>
+    </section>
+</template>
+<!-- blog 2 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+########################################################################################
+==========================================================================================
+	blog 3
+==========================================================================================	
+########################################################################################	
+ -->
+
+
+
+<!-- blog 3 -->
+<template id="sh_corpomate_theme_tmpl_204" name="blog 3">
+    <section id="sh_corpomate_theme_section_204" class="js_cls_corpomate_blog_slider_section_204 sh_animation_part">
+        <div class="container">
+            <div class="heading text-center">
+                <h3>Lorem <span class="highlight">Ipsum</span></h3>
+            </div>
+            <div class="card js_cls_corpomate_blog_slider_main_div_204">
+                <div class="card-header">
+                    
+                    <ul class="nav nav-tabs card-header-tabs js_cls_corpomate_blog_slider_nav_tabs_ul_204" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="nav_tabs_link_31" data-toggle="tab" href="#nav_tabs_content_31" role="tab" aria-controls="nav_tabs_content_31" aria-selected="true">Tab A</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav_tabs_link_32" data-toggle="tab" href="#nav_tabs_content_32" role="tab" aria-controls="nav_tabs_content_32" aria-selected="false">Tab B</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav_tabs_link_33" data-toggle="tab" href="#nav_tabs_content_33" role="tab" aria-controls="nav_tabs_content_33" aria-selected="false">Tab C</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-body tab-content js_cls_corpomate_blog_slider_tab_content_204">
+                    <div class="tab-pane fade show active" id="nav_tabs_content_31" role="tabpanel" aria-labelledby="nav_tabs_link_31">               
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="sh_left_part">                                   
+                                    <div class="sh_des">
+                                        <h2>Read our latest story</h2>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                        <a href="#">Read more <span class="fa fa-chevron-circle-right"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p><span class="fa fa-calendar"></span> 20 NOv, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p><span class="fa fa-calendar"></span> 18 OCT, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- tab 1  -->
+                    
+
+                    <div class="tab-pane fade" id="nav_tabs_content_32" role="tabpanel" aria-labelledby="nav_tabs_link_32">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="sh_left_part">                                   
+                                    <div class="sh_des">
+                                        <h2>Read our latest story</h2>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                        <a href="#">Read more <span class="fa fa-chevron-circle-right"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p><span class="fa fa-calendar"></span> 20 NOv, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p><span class="fa fa-calendar"></span> 18 OCT, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- tab 2 -->
+
+
+                    <div class="tab-pane fade" id="nav_tabs_content_33" role="tabpanel" aria-labelledby="nav_tabs_link_33">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="sh_left_part">                                   
+                                    <div class="sh_des">
+                                        <h2>Read our latest story</h2>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                        <a href="#">Read more <span class="fa fa-chevron-circle-right"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p><span class="fa fa-calendar"></span> 20 NOv, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p><span class="fa fa-calendar"></span> 18 OCT, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- tab3 -->
+
+
+                </div>
+
+
+            </div>
+            <!-- card -->        
+        </div>
+    </section>
+</template>
+<!-- blog 3 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 4
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+
+<!-- blog 4 -->
+<template id="sh_corpomate_theme_tmpl_205" name="blog 4">
+    <section id="sh_corpomate_theme_section_205" class="js_cls_corpomate_blog_slider_section_205 sh_animation_part">
+        <div class="container">
+             <div class="heading text-center">                        
+                 <h3>Latest Blog</h3>
+                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+             </div>
+            <div class="card js_cls_corpomate_blog_slider_main_div_205">
+                <div class="card-header">
+                   
+                    <ul class="nav nav-tabs card-header-tabs js_cls_corpomate_blog_slider_nav_tabs_ul_205" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="nav_tabs_link_41" data-toggle="tab" href="#nav_tabs_content_41" role="tab" aria-controls="nav_tabs_content_41" aria-selected="true">Tab A</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav_tabs_link_42" data-toggle="tab" href="#nav_tabs_content_42" role="tab" aria-controls="nav_tabs_content_42" aria-selected="false">Tab B</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav_tabs_link_43" data-toggle="tab" href="#nav_tabs_content_43" role="tab" aria-controls="nav_tabs_content_43" aria-selected="false">Tab C</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-body tab-content js_cls_corpomate_blog_slider_tab_content_205">
+                    <div class="tab-pane fade show active" id="nav_tabs_content_41" role="tabpanel" aria-labelledby="nav_tabs_link_41">               
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- tab 1  -->
+                    
+
+                    <div class="tab-pane fade" id="nav_tabs_content_42" role="tabpanel" aria-labelledby="nav_tabs_link_42">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p><span class="fa fa-calendar"></span> 20 NOv, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p><span class="fa fa-calendar"></span> 18 OCT, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- tab 2 -->
+
+
+                    <div class="tab-pane fade" id="nav_tabs_content_43" role="tabpanel" aria-labelledby="nav_tabs_link_43">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p><span class="fa fa-calendar"></span> 20 NOv, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p><span class="fa fa-calendar"></span> 18 OCT, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- tab3 -->
+
+
+                </div>
+
+
+            </div>
+            <!-- card -->        
+        </div>
+    </section>
+</template>
+<!-- blog 4 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 5
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+<!-- blog 5 -->
+<template id="sh_corpomate_theme_tmpl_206" name="blog 5">
+    <section id="sh_corpomate_theme_section_206" class="js_cls_corpomate_blog_slider_section_206 sh_animation_part">
+        <div class="container">
+        		<div class="heading text-center">                        
+                   <h3>Latest Blog</h3>
+                </div>
+            <div class="card js_cls_corpomate_blog_slider_main_div_206">
+                <div class="card-header">
+                    
+                    <ul class="nav nav-tabs card-header-tabs js_cls_corpomate_blog_slider_nav_tabs_ul_206" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="nav_tabs_link_51" data-toggle="tab" href="#nav_tabs_content_51" role="tab" aria-controls="nav_tabs_content_51" aria-selected="true">Tab A</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav_tabs_link_52" data-toggle="tab" href="#nav_tabs_content_52" role="tab" aria-controls="nav_tabs_content_52" aria-selected="false">Tab B</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav_tabs_link_53" data-toggle="tab" href="#nav_tabs_content_53" role="tab" aria-controls="nav_tabs_content_53" aria-selected="false">Tab C</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-body tab-content js_cls_corpomate_blog_slider_tab_content_206">
+                    <div class="tab-pane fade show active" id="nav_tabs_content_51" role="tabpanel" aria-labelledby="nav_tabs_link_51">               
+
+                        <div id="owl-demo" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                        <p class="sh_date"><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                        <p class="sh_date"><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum</h4>
+                                        <p class="sh_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                        <p class="sh_date"><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- tab 1  -->
+                    
+
+                    <div class="tab-pane fade" id="nav_tabs_content_52" role="tabpanel" aria-labelledby="nav_tabs_link_52">
+                        <div id="owl-demo" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                        <p class="sh_date"><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                        <p class="sh_date"><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum</h4>
+                                        <p class="sh_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                        <p class="sh_date"><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- tab 2 -->
+
+
+                    <div class="tab-pane fade" id="nav_tabs_content_53" role="tabpanel" aria-labelledby="nav_tabs_link_53">
+                        <div id="owl-demo" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                        <p class="sh_date"><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                        <p class="sh_date"><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum</h4>
+                                        <p class="sh_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                        <p class="sh_date"><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- tab3 -->
+
+
+                </div>
+
+
+            </div>
+            <!-- card -->        
+        </div>
+    </section>
+</template>
+<!-- blog 5 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 6
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+<!-- blog 6 -->
+<template id="sh_corpomate_theme_tmpl_207" name="blog 6">
+    <section id="sh_corpomate_theme_section_207" class="js_cls_corpomate_blog_slider_section_207 sh_animation_part">
+        <div class="container">
+            <div class="heading text-center">                        
+                 <h3>Latest Blog</h3>
+                 <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="66.000000pt" height="6.000000pt" viewBox="0 0 66.000000 10.000000" preserveAspectRatio="xMidYMid meet">
+                     <g transform="translate(0.000000,10.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                         <path d="M22 70 c-12 -16 -22 -37 -22 -46 0 -16 1 -16 18 0 18 15 20 15 37 -4 23 -26 47 -25 63 1 l13 21 23 -21 c28 -26 52 -27 68 -2 12 19 12 19 36 0 30 -23 40 -24 63 -3 16 15 20 14 48 -2 29 -17 31 -17 51 1 17 16 24 17 38 7 33 -24 43 -24 66 -3 l23 21 18 -20 c10 -11 24 -20 32 -20 21 0 62 52 63 80 l0 24 -16 -22 -15 -22 -26 20 c-33 25 -49 25 -63 0 l-11 -21 -26 21 c-32 25 -49 25 -65 1 -12 -19 -12 -19 -39 0 -34 24 -42 24 -64 -1 l-18 -20 -22 20 c-12 11 -26 20 -32 20 -5 0 -18 -9 -28 -20 l-18 -20 -22 20 c-27 25 -37 25 -60 0 l-18 -20 -22 20 c-29 27 -47 25 -73 -10z"></path>
+                     </g>
+                 </svg>
+                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+             </div>
+            <div class="card js_cls_corpomate_blog_slider_main_div_207">
+                <div class="card-header">
+                    
+                    <ul class="nav nav-tabs card-header-tabs js_cls_corpomate_blog_slider_nav_tabs_ul_207" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="nav_tabs_link_61" data-toggle="tab" href="#nav_tabs_content_61" role="tab" aria-controls="nav_tabs_content_61" aria-selected="true">Tab A</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav_tabs_link_62" data-toggle="tab" href="#nav_tabs_content_62" role="tab" aria-controls="nav_tabs_content_62" aria-selected="false">Tab B</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav_tabs_link_63" data-toggle="tab" href="#nav_tabs_content_63" role="tab" aria-controls="nav_tabs_content_63" aria-selected="false">Tab C</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-body tab-content js_cls_corpomate_blog_slider_tab_content_207">
+                    <div class="tab-pane fade show active" id="nav_tabs_content_61" role="tabpanel" aria-labelledby="nav_tabs_link_61">               
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>
+                                        <h4>Lorem ipsum</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>
+                                        <h4>Lorem ipsum</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>
+                                        <h4>Lorem ipsum</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- tab 1  -->
+                    
+
+                    <div class="tab-pane fade" id="nav_tabs_content_62" role="tabpanel" aria-labelledby="nav_tabs_link_62">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- tab 2 -->
+
+
+                    <div class="tab-pane fade" id="nav_tabs_content_63" role="tabpanel" aria-labelledby="nav_tabs_link_63">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>
+                                        <h4>Lorem ipsum is simply dummy text of the</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- tab3 -->
+
+
+                </div>
+
+
+            </div>
+            <!-- card -->        
+        </div>
+    </section>
+</template>
+<!-- blog 6 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 7 template 208
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+
+
+<!-- blog 7 -->
+<template id="sh_corpomate_theme_tmpl_208" name="blog 7">
+    <section id="sh_corpomate_theme_section_208" class="js_cls_corpomate_blog_slider_section_208 sh_animation_part">
+        <div class="container">
+            <div class="heading text-center">                        
+                 <h3>Latest Blog</h3>
+                 <h4>Lorem Ipsum Is simply dummy</h4>
+                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+             </div>
+            <div class="card js_cls_corpomate_blog_slider_main_div_208">
+                <div class="card-header">
+                    
+                    <ul class="nav nav-tabs card-header-tabs js_cls_corpomate_blog_slider_nav_tabs_ul_208" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="nav_tabs_link_71" data-toggle="tab" href="#nav_tabs_content_71" role="tab" aria-controls="nav_tabs_content_71" aria-selected="true">Tab A</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav_tabs_link_72" data-toggle="tab" href="#nav_tabs_content_72" role="tab" aria-controls="nav_tabs_content_72" aria-selected="false">Tab B</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav_tabs_link_73" data-toggle="tab" href="#nav_tabs_content_73" role="tab" aria-controls="nav_tabs_content_73" aria-selected="false">Tab C</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-body tab-content js_cls_corpomate_blog_slider_tab_content_208">
+                    <div class="tab-pane fade show active" id="nav_tabs_content_71" role="tabpanel" aria-labelledby="nav_tabs_link_71">               
+
+                        <div id="owl-demo" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <p class="sh_date"><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                        <h4>Lorem ipsum</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <p class="sh_date"><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                        <h4>Lorem ipsum</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <p class="sh_date"><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                        <h4>Lorem ipsum</h4>
+                                        <p class="sh_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- tab 1  -->
+                    
+
+                    <div class="tab-pane fade" id="nav_tabs_content_72" role="tabpanel" aria-labelledby="nav_tabs_link_72">
+                        <div id="owl-demo" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <p class="sh_date"><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                        <h4>Lorem ipsum</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <p class="sh_date"><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                        <h4>Lorem ipsum</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <p class="sh_date"><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                        <h4>Lorem ipsum</h4>
+                                        <p class="sh_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- tab 2 -->
+
+
+                    <div class="tab-pane fade" id="nav_tabs_content_73" role="tabpanel" aria-labelledby="nav_tabs_link_73">
+                        <div id="owl-demo" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <p class="sh_date"><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                        <h4>Lorem ipsum</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <p class="sh_date"><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                        <h4>Lorem ipsum</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <p class="sh_date"><span class="fa fa-calendar"></span> 10 DEC, 2018</p>
+                                        <h4>Lorem ipsum</h4>
+                                        <p class="sh_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- tab3 -->
+
+
+                </div>
+
+
+            </div>
+            <!-- card -->        
+        </div>
+    </section>
+</template>
+<!-- blog 7 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 8 template 209
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+
+
+
+<!-- blog 8 -->
+<template id="sh_corpomate_theme_tmpl_209" name="blog 8">
+    <section id="sh_corpomate_theme_section_209" class="js_cls_corpomate_blog_slider_section_209 sh_animation_part">
+        <div class="container">
+            <div class="heading text-center">                        
+                 <h3>Read our latest story</h3>                        
+                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+             </div>
+            <div class="card js_cls_corpomate_blog_slider_main_div_209">
+                <div class="card-header">
+                    
+                    <ul class="nav nav-tabs card-header-tabs js_cls_corpomate_blog_slider_nav_tabs_ul_209" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="nav_tabs_link_81" data-toggle="tab" href="#nav_tabs_content_81" role="tab" aria-controls="nav_tabs_content_81" aria-selected="true">Tab A</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav_tabs_link_82" data-toggle="tab" href="#nav_tabs_content_82" role="tab" aria-controls="nav_tabs_content_82" aria-selected="false">Tab B</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav_tabs_link_83" data-toggle="tab" href="#nav_tabs_content_83" role="tab" aria-controls="nav_tabs_content_83" aria-selected="false">Tab C</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-body tab-content js_cls_corpomate_blog_slider_tab_content_209">
+                    <div class="tab-pane fade show active" id="nav_tabs_content_81" role="tabpanel" aria-labelledby="nav_tabs_link_81">               
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply</h4>
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply</h4>
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply</h4>
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- tab 1  -->
+                    
+
+                    <div class="tab-pane fade" id="nav_tabs_content_82" role="tabpanel" aria-labelledby="nav_tabs_link_82">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply</h4>
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply</h4>
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply</h4>
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- tab 2 -->
+
+
+                    <div class="tab-pane fade" id="nav_tabs_content_83" role="tabpanel" aria-labelledby="nav_tabs_link_83">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply</h4>
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply</h4>
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply</h4>
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>         
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- tab3 -->
+
+
+                </div>
+
+
+            </div>
+            <!-- card -->        
+        </div>
+    </section>
+</template>
+<!-- blog 8 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 9 template 210
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+<!-- blog 9 -->
+<template id="sh_corpomate_theme_tmpl_210" name="blog 9">
+    <section id="sh_corpomate_theme_section_210" class="js_cls_corpomate_blog_slider_section_210 sh_animation_part">
+        <div class="container">
+            <div class="heading text-center">                        
+                 <h3>Read Our Latest Stories</h3>         
+             </div>
+            <div class="card js_cls_corpomate_blog_slider_main_div_210">
+                <div class="card-header">
+                    
+                    <ul class="nav nav-tabs card-header-tabs js_cls_corpomate_blog_slider_nav_tabs_ul_210" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="nav_tabs_link_91" data-toggle="tab" href="#nav_tabs_content_91" role="tab" aria-controls="nav_tabs_content_91" aria-selected="true">Tab A</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav_tabs_link_92" data-toggle="tab" href="#nav_tabs_content_92" role="tab" aria-controls="nav_tabs_content_92" aria-selected="false">Tab B</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav_tabs_link_93" data-toggle="tab" href="#nav_tabs_content_93" role="tab" aria-controls="nav_tabs_content_93" aria-selected="false">Tab C</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-body tab-content js_cls_corpomate_blog_slider_tab_content_210">
+                    <div class="tab-pane fade show active" id="nav_tabs_content_91" role="tabpanel" aria-labelledby="nav_tabs_link_91">               
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                        <hr/>
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                        <hr/>
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                        <hr/>
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- tab 1  -->
+                    
+
+                    <div class="tab-pane fade" id="nav_tabs_content_92" role="tabpanel" aria-labelledby="nav_tabs_link_92">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                        <hr/>
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                        <hr/>
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                        <hr/>
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- tab 2 -->
+
+
+                    <div class="tab-pane fade" id="nav_tabs_content_93" role="tabpanel" aria-labelledby="nav_tabs_link_93">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                        <hr/>
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                        <hr/>
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sh_content">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg"></img>
+                                    </div>
+                                    <div class="sh_des">
+                                        <h4>Lorem ipsum is simply</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                        <hr/>
+                                        <h5><span class="fa fa-calendar"></span> 10 DEC, 2018</h5>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- tab3 -->
+
+
+                </div>
+
+
+            </div>
+            <!-- card -->        
+        </div>
+    </section>
+</template>
+<!-- blog 9 -->
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 10 template 263
+	==========================================================================================	
+	########################################################################################	
+	 -->
+	 
+<template id="sh_corpomate_theme_tmpl_263" name="Blog 10">
+    <section id="sh_corpomate_theme_section_263" class="js_cls_corpomate_blog_slider_section_263 sh_animation_part">
+    	<div class="container">
+    	   <div class="sh_title sh_animation_part">
+    	       <h4>our <span>latest</span> blogs</h4>
+    	    </div>
+    	    
+
+	    	    <div class="row js_cls_corpomate_blog_slider_main_div_263">
+	    	      
+	    	      
+	    	       <div class="col-md-4 sh_animation_part">
+	    	          <div class="sh_content">
+	    	             <div class="sh_img">
+	    	                <img src="/sh_corpomate_theme/static/src/img/theme10/2.png"></img>
+	    	                <span>15 january 2019</span>
+	    	             </div>
+	    	             <div class="sh_des">
+	    	                <h4>Lorem ipsum</h4>
+	    	                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+	    	                <a href="#" class="btn">Read more <span class="fa fa-angle-right"></span></a>
+	    	             </div>
+	    	          </div>
+	    	       </div>
+	    	       
+	    	       <div class="col-md-4 sh_animation_part">
+	    	          <div class="sh_content">
+	    	             <div class="sh_img">
+	    	                <img src="/sh_corpomate_theme/static/src/img/theme10/9.png"></img>
+	    	                <span>15 january 2019</span>
+	    	             </div>
+	    	             <div class="sh_des">
+	    	                <h4>Lorem ipsum</h4>
+	    	                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+	    	                <a href="#" class="btn">Read more <span class="fa fa-angle-right"></span></a>
+	    	             </div>
+	    	          </div>
+	    	       </div>
+	    	       
+	    	       <div class="col-md-4 sh_animation_part">
+	    	          <div class="sh_content">
+	    	             <div class="sh_img">
+	    	                <img src="/sh_corpomate_theme/static/src/img/theme10/15.png"></img>
+	    	                <span>15 january 2019</span>
+	    	             </div>
+	    	             <div class="sh_des">
+	    	                <h4>Lorem ipsum</h4>
+	    	                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+	    	                <a href="#" class="btn">Read more <span class="fa fa-angle-right"></span></a>
+	    	             </div>
+	    	          </div>
+	    	       </div>
+	    	    
+	    	    
+	    	    </div>
+
+    	</div>
+    </section>
+</template>    	  
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 10 template 263
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 11 template 280
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+<template id="sh_corpomate_theme_tmpl_280" name="Blog 11">	
+   <section id="sh_corpomate_theme_section_280" class="js_cls_corpomate_blog_slider_section_280 sh_animation_part">
+   	  <div class="container">
+   	  	 <div class="sh_title sh_animation_part">
+   	        <h2>recent post</h2>
+   	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+   	     </div>
+   	     
+   	     <div class="row js_cls_corpomate_blog_slider_main_div_280">
+   	        <div class="col-lg-6 col-md-12 sh_animation_part">
+   	           <div class="sh_content">
+   	           	  <div class="sh_img">
+   	           	     <img src="/sh_corpomate_theme/static/src/img/theme11/8.png"></img>
+   	           	  </div>
+   	           	  <div class="sh_des">
+   	           	     <h4>lorem ipsum dolor sit</h4>
+   	           	     <span>Oct 1, 2019</span>
+   	           	     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+   	           	  </div>
+   	           </div>
+   	        </div>
+   	        
+   	        <div class="col-lg-6 col-md-12 sh_animation_part">
+   	           <div class="sh_content">
+   	           	  <div class="sh_img">
+   	           	     <img src="/sh_corpomate_theme/static/src/img/theme11/9.png"></img>
+   	           	  </div>
+   	           	  <div class="sh_des">
+   	           	     <h4>lorem ipsum dolor sit</h4>
+   	           	     <span>Oct 1, 2019</span>
+   	           	     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+   	           	  </div>
+   	           </div>
+   	        </div>
+   	        <div class="col-lg-6 col-md-12 sh_animation_part">
+   	           <div class="sh_content">
+   	           	  <div class="sh_img">
+   	           	     <img src="/sh_corpomate_theme/static/src/img/theme11/10.png"></img>
+   	           	  </div>
+   	           	  <div class="sh_des">
+   	           	     <h4>lorem ipsum dolor sit</h4>
+   	           	     <span>Oct 1, 2019</span>
+   	           	     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+   	           	  </div>
+   	           </div>
+   	        </div>
+   	        
+   	        <div class="col-lg-6 col-md-12 sh_animation_part">
+   	           <div class="sh_content">
+   	           	  <div class="sh_img">
+   	           	     <img src="/sh_corpomate_theme/static/src/img/theme11/11.png"></img>
+   	           	  </div>
+   	           	  <div class="sh_des">
+   	           	     <h4>lorem ipsum dolor sit</h4>
+   	           	     <span>Oct 1, 2019</span>
+   	           	     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+   	           	  </div>
+   	           </div>
+   	        </div>
+   	        
+   	        
+   	     </div>
+   	     
+   	  </div>
+   </section>
+</template>    	      
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 11 template 280
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 12 template 298
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+<template id="sh_corpomate_theme_tmpl_298" name="Blog">	
+   <section id="sh_corpomate_theme_section_298" class="js_cls_corpomate_blog_slider_section_298 sh_animation_part">
+
+
+   	  <div class="container">
+   	     <div class="sh_title">
+   	  	 	
+           	<h3><span class="left_small_line"></span>Latest News &amp; Blogs<span class="right_small_line"></span></h3>
+           	
+           	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+   	  	 </div>
+   	  	 
+   	  	 <div class="row js_cls_corpomate_blog_slider_main_div_298">
+   	  	    <div class="col-md-4">
+   	  	       <div class="sh_content">
+   	  	          <div class="sh_img">
+   	  	              <img src="/sh_corpomate_theme/static/src/img/theme12/concept.png"></img>
+   	  	          </div>   	  	          
+   	  	          <div class="sh_des">
+   	  	             <h4>lorem ipsum dolor sit amet</h4>
+   	  	             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+   	  	             <hr></hr>
+   	  	             <ul>
+   	  	                <li><span class="fa fa-user"></span> Lorem Ipsum</li>
+   	  	                <li><span class="fa fa-calendar"></span> 10 May 2020</li>
+   	  	             </ul>
+   	  	          </div>   	  	          
+   	  	       </div>
+   	  	    </div>
+   	  	    
+   	  	    <div class="col-md-4">
+   	  	       <div class="sh_content">
+   	  	          <div class="sh_img">
+   	  	              <img src="/sh_corpomate_theme/static/src/img/theme12/concept.png"></img>
+   	  	          </div>   	  	          
+   	  	          <div class="sh_des">
+   	  	             <h4>lorem ipsum dolor sit amet</h4>
+   	  	             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+   	  	             <hr></hr>
+   	  	             <ul>
+   	  	                <li><span class="fa fa-user"></span> Lorem Ipsum</li>
+   	  	                <li><span class="fa fa-calendar"></span> 10 May 2020</li>
+   	  	             </ul>
+   	  	          </div>   	  	          
+   	  	       </div>
+   	  	    </div>
+   	  	    
+   	  	    <div class="col-md-4">
+   	  	       <div class="sh_content">
+   	  	          <div class="sh_img">
+   	  	              <img src="/sh_corpomate_theme/static/src/img/theme12/concept.png"></img>
+   	  	          </div>
+   	  	          
+   	  	          <div class="sh_des">
+   	  	             <h4>lorem ipsum dolor sit amet</h4>
+   	  	             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+   	  	             <hr></hr>
+   	  	             <ul>
+   	  	                <li><span class="fa fa-user"></span> Lorem Ipsum</li>
+   	  	                <li><span class="fa fa-calendar"></span> 10 May 2020</li>
+   	  	             </ul>
+   	  	          </div>   	  	          
+   	  	       </div>
+   	  	    </div>
+   	  	    
+   	  	 </div>
+   	  	 
+   	  </div>
+
+
+   </section>
+</template>    	      
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 12 template 298
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 13 template 323
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+<!-- snippet 323 -->
+<template id="sh_corpomate_theme_tmpl_323" name="Blog Snippet 13">	
+   <section id="sh_corpomate_theme_section_323" class="js_cls_corpomate_blog_slider_section_323 sh_animation_part">
+   	  <div class="container">
+   	  	 
+   	  	 <div class="sh_section_heading text-center">
+   	  	 	<h5>News Feed</h5>
+   	  	 	<h2>Latest Blogs &amp; News</h2>
+   	  	 </div>
+   	  	 
+   	  	 <div class="row js_cls_corpomate_blog_slider_main_div_323">
+   	  	    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+   	  	       <div class="sh_box">
+   	  	          <div class="img">
+   	  	          		<img src="/sh_corpomate_theme/static/src/img/theme_13/3.png" alt="image1" />
+   	  	          </div>  
+   	  	          <div class="content">
+   	  	          		<h4>Lorem ipsum dolor sit amet consec</h4>
+   	  	          		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+   	  	          		<a href="#" class="btn btn_readmore">Read More</a>
+   	  	          </div> 	  	          
+   	  	       </div>
+   	  	    </div>
+   	  	    
+   	  	    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+   	  	       <div class="sh_box">
+   	  	          <div class="img">
+   	  	          		<img src="/sh_corpomate_theme/static/src/img/theme_13/6.png" alt="image2" />
+   	  	          </div>  
+   	  	          <div class="content">
+   	  	          		<h4>Lorem ipsum dolor sit amet consec</h4>
+   	  	          		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+   	  	          		<a href="#" class="btn btn_readmore">Read More</a>
+   	  	          </div> 	  	          
+   	  	       </div>
+   	  	    </div>
+   	  	    
+   	  	    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+   	  	       <div class="sh_box">
+   	  	          <div class="img">
+   	  	          		<img src="/sh_corpomate_theme/static/src/img/theme_13/4.png" alt="image3" />
+   	  	          </div>  
+   	  	          <div class="content">
+   	  	          		<h4>Lorem ipsum dolor sit amet consec</h4>
+   	  	          		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+   	  	          		<a href="#" class="btn btn_readmore">Read More</a>
+   	  	          </div> 	  	          
+   	  	       </div>
+   	  	    </div>
+   	  	    
+   	  	  </div> 
+   	  </div>
+   </section>
+</template>   	  	 
+<!-- snippet 323 -->	      
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 13 template 323
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+
+
+
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 14 template 348
+	==========================================================================================	
+	########################################################################################	
+	 -->
+
+
+<template id="sh_corpomate_theme_tmpl_348" name="Blog">	
+    <section id="sh_corpomate_theme_section_348" class="js_cls_corpomate_blog_slider_section_348 sh_animation_part">
+    	<div class="container">
+    		<div class="sh_title sh_animation_part">
+    			<h4>news &amp; updates</h4>
+    			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+    		</div>
+
+    		<div class="row js_cls_corpomate_blog_slider_main_div_348">
+    			<div class="col-md-4 sh_animation_part">
+    				<div class="sh_content">
+    					<div class="sh_img">
+    						<img src="/sh_corpomate_theme/static/src/img/pets_14/23.jpg"></img>
+    					</div>
+    					<div class="sh_arrow">
+    						<span class="fa fa-arrow-right"></span>
+    					</div>
+    					<div class="sh_description">
+    						<h4>Lorem ipsum dolor sit amet consecture</h4>
+    						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    						<a href="#" class="btn">July 2, 2020</a>
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="col-md-4 sh_animation_part">
+    				<div class="sh_content">
+    					<div class="sh_img">
+    						<img src="/sh_corpomate_theme/static/src/img/pets_14/18.jpg"></img>
+    					</div>
+    					<div class="sh_arrow">
+    						<span class="fa fa-arrow-right"></span>
+    					</div>
+    					<div class="sh_description">
+    						<h4>Lorem ipsum dolor sit amet consecture</h4>
+    						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    						<a href="#" class="btn">Aug 12, 2020</a>
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="col-md-4 sh_animation_part">
+    				<div class="sh_content">
+    					<div class="sh_img">
+    						<img src="/sh_corpomate_theme/static/src/img/pets_14/19.jpg"></img>
+    					</div>
+    					<div class="sh_arrow">
+    						<span class="fa fa-arrow-right"></span>
+    					</div>
+    					<div class="sh_description">
+    						<h4>Lorem ipsum dolor sit amet consecture</h4>
+    						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    						<a href="#" class="btn">Sep 5, 2020</a>
+    					</div>
+    				</div>
+    			</div>
+
+    		</div>
+    	</div>
+    </section>
+</template>  
+
+
+
+
+	<!-- 
+	########################################################################################
+	==========================================================================================
+		blog 14 template 348
+	==========================================================================================	
+	########################################################################################	
+	 -->
+	 
+	 
+
+
+
+
+
+
+
+	
+	
+<!-- snippet options -->
+
+<template id="sh_corpomate_theme_blog_slider_website_snippet_options" inherit_id="website.snippet_options">
+    <xpath expr="//div" position="after">
+    
+        
+    		<!-- Blog -->
+	        <div data-selector="#sh_corpomate_theme_section_202,
+	        #sh_corpomate_theme_section_203,
+	        #sh_corpomate_theme_section_204,
+	        #sh_corpomate_theme_section_205,
+	        #sh_corpomate_theme_section_206,
+	        #sh_corpomate_theme_section_207,
+	        #sh_corpomate_theme_section_208,	            
+	        #sh_corpomate_theme_section_209,
+	        #sh_corpomate_theme_section_210,
+	        #sh_corpomate_theme_section_263,
+	        #sh_corpomate_theme_section_280,
+	        #sh_corpomate_theme_section_298,
+	        #sh_corpomate_theme_section_323,
+	        #sh_corpomate_theme_section_348">	        	 
+	                   
+		        <!-- SELECT SLIDER -->
+		        <we-collapse-area>
+		            <we-toggler>  Slider </we-toggler>
+		            <we-collapse>
+		                
+		                					    				    
+            			<t t-set="sh_sliders" t-value="request.env['sh.corpomate.blog.slider'].search([])" />
+	                    <t t-if="len(sh_sliders)">
+       						
+       						<t t-foreach="sh_sliders" t-as="sh_slider">	                    	
+	                   		 	<t t-set="sh_slider_data_cls" t-value="'sh_slider_' + str(sh_slider.id) + '_send'"/>	            					                
+									 
+									<we-button t-att-data-select-class="sh_slider_data_cls">
+										<t t-esc="sh_slider.name"/>
+									</we-button> 	 									 				                
+
+					          </t>
+					    </t>	
+					    
+	    	
+					    	
+					    
+						<we-button data-select-class="">
+							None
+						</we-button> 						    	                
+		                
+		                
+		            </we-collapse>
+		        </we-collapse-area>	            
+	            
+	            	            	            
+			</div>
+			
+			    
+  
+ 
+    </xpath>
+</template>	
+	
+	
+	
+
+
+
+
+
+
+
+
+</odoo>
+

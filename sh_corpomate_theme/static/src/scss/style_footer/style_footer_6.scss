@@ -1,0 +1,14 @@
+
+#sh_footer{background: $-color-Primary;padding: 50px 0 117px;margin-bottom: -67px;}
+#sh_footer .sh_footer_logo{text-align: center;}
+#sh_footer .sh_footer_logo .navbar-brand img{object-fit: contain;height: 2.2rem;width: auto !important;max-width: 100%;margin-bottom: 50px;}
+#sh_footer .sh_link h4{font-size: 24px;font-weight: 600;color: #fff;position: relative;padding-bottom: 15px;margin-bottom: 15px;}
+#sh_footer .sh_link h4:before{position: absolute;content: '';background: #fff;width: 40px;height: 2px;bottom: 0;}
+#sh_footer .sh_link ul{list-style: none;padding: 0;margin: 0;}
+#sh_footer .sh_link ul li a{color: #fff;font-weight: 600;font-size: 16px;padding-bottom: 10px;display: block;}
+#sh_footer .sh_right_link .sh_contect li a span.fa{font-size: 25px;vertical-align: bottom;padding-right: 10px;}
+#sh_footer .sh_link ul.sh_social_media li {display: inline-block;width: 35px;height: 35px;text-align: center;background: #fff;border-radius: 50%;margin-right: 5px;}
+#sh_footer .sh_link ul.sh_social_media li a{color: $-color-Primary;line-height: 35px;padding: 0;}
+#sh_footer .sh_link ul.sh_social_media {margin-top: 15px;}
+    
+#sh_footer .sh_link ul.sh_social_media li a:hover{color: #000;}    

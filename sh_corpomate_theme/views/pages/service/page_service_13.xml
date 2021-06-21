@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- SERVICE 13 -->
+	<template id="sh_corpomate_tmpl_service_13" name="service">
+	    <t t-call="website.layout"> 
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			      
+			   <section id="sh_corpomate_theme_section_329" class="s_banner parallax s_parallax_no_overflow_hidden bg-black-50" data-name="Banner 13" style="background-image: none;" data-scroll-background-ratio="0">
+			        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/theme_13/6.png'); background-position: 50% 0; background-attachment: fixed;"/>
+			        <div class="container">
+			          <div class="sh_banner">
+			            <div class="sh_title">
+			              <h4 class="o_default_snippet_text">Services</h4>
+			            </div>
+			            <div class="sh_breadcrumb">
+			              <ul>
+			                <li>
+			                  <a href="/" class="btn sh_main o_default_snippet_text"><span class="fa fa-home"/> &amp;nbsp; &amp;nbsp; &amp;nbsp; <span class="fa fa-chevron-right"/></a>
+			                </li>
+			                <li>
+			                  <a href="#" class="btn o_default_snippet_text">Services</a>
+			                </li>
+			              </ul>
+			            </div>
+			          </div>
+			        </div>
+			      </section>
+			      <section id="sh_corpomate_theme_section_330" class="sh_animation_part" data-name="Service Snippet 13">
+			        <div class="container">
+			          <div class="sh_section_heading text-center">
+			            <h5 class="o_default_snippet_text">Relax Zone</h5>
+			            <h2 class="o_default_snippet_text">Explore Our Services</h2>
+			          </div>
+			          <div class="sh_service_13">
+			            <div class="row">
+			              <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+			                <div class="s_box">
+			                  <div class="icon">
+			                    <span class="fa fa-smile-o"/>
+			                  </div>
+			                  <div class="sh_content">
+			                    <h4 class="title o_default_snippet_text">Facial &amp;amp; Theropy</h4>
+			                    <p class="para_text o_default_snippet_text">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+			                  </div>
+			                </div>
+			              </div>
+			              <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+			                <div class="s_box">
+			                  <div class="icon">
+			                    <span class="fa fa-search"/>
+			                  </div>
+			                  <div class="sh_content">
+			                    <h4 class="title o_default_snippet_text">Parlour &amp;amp; Beauty</h4>
+			                    <p class="para_text o_default_snippet_text">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+			                  </div>
+			                </div>
+			              </div>
+			              <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+			                <div class="s_box">
+			                  <div class="icon">
+			                    <span class="fa fa-pencil"/>
+			                  </div>
+			                  <div class="sh_content">
+			                    <h4 class="title o_default_snippet_text">Eye &amp;amp; Shadow</h4>
+			                    <p class="para_text o_default_snippet_text">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+			                  </div>
+			                </div>
+			              </div>
+			              <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+			                <div class="s_box">
+			                  <div class="icon">
+			                    <span class="fa fa-leaf"/>
+			                  </div>
+			                  <div class="sh_content">
+			                    <h4 class="title o_default_snippet_text">Waxing &amp;amp; Massage</h4>
+			                    <p class="para_text o_default_snippet_text">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+			                  </div>
+			                </div>
+			              </div>
+			              <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+			                <div class="s_box">
+			                  <div class="icon">
+			                    <span class="fa fa-smile-o"/>
+			                  </div>
+			                  <div class="sh_content">
+			                    <h4 class="title o_default_snippet_text">Facial &amp;amp; Theropy</h4>
+			                    <p class="para_text o_default_snippet_text">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+			                  </div>
+			                </div>
+			              </div>
+			              <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+			                <div class="s_box">
+			                  <div class="icon">
+			                    <span class="fa fa-search"/>
+			                  </div>
+			                  <div class="sh_content">
+			                    <h4 class="title o_default_snippet_text">Parlour &amp;amp; Beauty</h4>
+			                    <p class="para_text o_default_snippet_text">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+			                  </div>
+			                </div>
+			              </div>
+			              <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+			                <div class="s_box">
+			                  <div class="icon">
+			                    <span class="fa fa-pencil"/>
+			                  </div>
+			                  <div class="sh_content">
+			                    <h4 class="title o_default_snippet_text">Eye &amp;amp; Shadow</h4>
+			                    <p class="para_text o_default_snippet_text">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+			                  </div>
+			                </div>
+			              </div>
+			              <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+			                <div class="s_box">
+			                  <div class="icon">
+			                    <span class="fa fa-leaf"/>
+			                  </div>
+			                  <div class="sh_content">
+			                    <h4 class="title o_default_snippet_text">Waxing &amp;amp; Massage</h4>
+			                    <p class="para_text o_default_snippet_text">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+			                  </div>
+			                </div>
+			              </div>
+			            </div>
+			          </div>
+			        </div>
+			      </section>
+			      <section id="sh_corpomate_theme_section_331" class="sh_animation_part" data-name="Gallery Snippet 13">
+			        <div class="container">
+			          <div class="sh_image_gallery_13">
+			            <div class="row">
+			              <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+			                <img src="/sh_corpomate_theme/static/src/img/theme_13/2.png" alt="Image_1" title="Image_1"/>
+			              </div>
+			              <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+			                <img src="/sh_corpomate_theme/static/src/img/theme_13/4.png" alt="Image_2" title="Image_2"/>
+			              </div>
+			              <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+			                <img src="/sh_corpomate_theme/static/src/img/theme_13/3.png" alt="Image_3" title="Image_3"/>
+			              </div>
+			              <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+			                <img src="/sh_corpomate_theme/static/src/img/theme_13/5.png" alt="Image_4" title="Image_4"/>
+			              </div>
+			            </div>
+			          </div>
+			        </div>
+			      </section>  
+			
+	       </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

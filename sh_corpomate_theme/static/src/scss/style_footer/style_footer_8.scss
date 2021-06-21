@@ -1,0 +1,36 @@
+/*sh_footer*/
+#sh_footer{background: #f2f5f8;border: 0;padding: 50px 0;}
+#sh_footer .sh_logo_part h4{font-size: 30px;font-weight: 600;color: #212121;}
+#sh_footer .sh_logo_part form{display: flex;justify-content: space-between; border: 1px solid $-color-Primary;border-radius: 5px;margin: 20px 0;}
+#sh_footer .sh_logo_part form input{border: 0;background: transparent;width: 100%;padding: 0 10px;box-shadow: none;outline: none;}
+#sh_footer .sh_logo_part form button{background: $-color-Primary;color: #fff;border-top-left-radius: 0;border-bottom-left-radius: 0;}
+#sh_footer .sh_logo_part p{font-size: 12px;font-weight: 600;}
+
+
+
+/*
+#sh_footer .sh_logo_part a{background: $-color-Primary;color: #fff;border-radius: 5px;font-weight: 600;letter-spacing: 1px;padding: 7px 20px;border-radius: 0;}
+*/
+
+
+#sh_footer .sh_link h4{font-size: 20px;font-weight: 600;position: relative;padding-bottom: 15px;}
+#sh_footer .sh_link ul {list-style: none;padding: 0;}
+#sh_footer .sh_link ul li a {color: #333;font-weight: 600;padding: 5px 0; display: block;text-decoration: none;font-size: 14px;}
+#sh_footer .sh_link h4:after{content: '';position: absolute;left: 0;background: $-color-Primary;width: 50px;height: 2px; bottom: 0;}
+#sh_footer .sh_link ul li a span{font-size: 20px;font-weight: 600;padding-right: 10px;width: 30px;}
+#sh_footer .sh_link .sh_social_icon span{display: inline-block;background: #333;border-radius: 50%;width: 30px;height: 30px;text-align: center;line-height: 35px;color: #fff;margin-right: 5px;}
+
+
+
+#sh_footer .sh_social_icon li{list-style: none;display: inline-block;}
+#sh_footer .sh_social_icon li a i{display: inline-block;background: #333;border-radius: 50%;width: 30px;height: 30px;text-align: center;line-height: 30px;color: #fff;margin-right: 5px;}
+#sh_footer .sh_logo_part .js_subscribe{border: 1px solid $-color-Primary;border-radius: 5px;margin: 20px 0;}
+#sh_footer .sh_logo_part .js_subscribe input{border: 0; background: transparent;width: 100%;padding: 0 10px;}
+
+#sh_footer .sh_logo_part .navbar-brand #logo-footer{max-width: 100%;object-fit: contain;height: 2.25rem;}
+
+
+
+
+
+

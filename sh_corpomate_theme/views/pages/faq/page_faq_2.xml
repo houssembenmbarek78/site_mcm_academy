@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- FAQ PAGE 2 -->
+	<template id="sh_corpomate_tmpl_faq_2" name="FAQ">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			
+
+   
+   
+   
+     <section id="sh_corpomate_theme_section_102" class="s_banner parallax s_parallax_no_overflow_hidden bg-black-50" data-name="about us2 about 1" style="background-image: none;" data-scroll-background-ratio="0">
+    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/faq-banner.png'); background-position: 50% 0px; background-attachment: fixed;" />
+    <style class="o_default_snippet_text">
+        #sh_top_bar_1 {
+            background-color: transparent;
+            z-index: 9;
+            border-bottom: 1px solid #a0a0a0;
+        }
+        #sh_top_bar_2 {
+            background-color: transparent;
+            z-index: 9;
+            border-bottom: 1px solid #a0a0a0;
+        }
+        #sh_top_bar_3 {
+            background-color: transparent;
+            z-index: 9;
+            border-bottom: 1px solid #a0a0a0;
+        }
+        #sh_top_bar_4 {
+            background-color: transparent;
+            z-index: 9;
+            border-bottom: 1px solid #a0a0a0;
+        }
+        #sh_top_bar_5 {
+            background-color: transparent;
+            z-index: 9;
+            border-bottom: 1px solid #a0a0a0;
+        }
+        .o_affix_enabled .navbar-light {
+            background-color: transparent !important;
+        }
+        .o_affix_enabled .navbar-light .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+        .navbar-light #top_menu_collapse .navbar-nav .nav-link {
+            color: #ffffff;
+        }
+
+        .navbar-light {
+            background-color: transparent;
+            z-index: 9;
+        }
+        @media (max-width: 768px) {
+            .o_affix_enabled .navbar-light {
+                background: #fff !important;
+                z-index: 1;
+            }
+            .navbar-light .navbar-nav .nav-link {
+                color: #585b60 !important;
+            }
+            .o_affix_enabled .navbar-light .navbar-nav .nav-link {
+                color: #585b60 !important;
+            }
+
+            #sh_top_bar_2 {
+                color: #000;
+            }
+            #sh_top_bar_2 .element-editor.phone:before {
+                color: #000;
+            }
+            #sh_top_bar_2 .align-left a {
+                color: #000;
+            }
+            #sh_top_bar_2 .element-editor.email:before {
+                color: #000;
+            }
+            #sh_top_bar_2 ul.social li a {
+                color: #000;
+            }
+            #sh_top_bar_2 .sh-element.custom-login,
+            #sh_top_bar_2 .sh-element.custom-login a {
+                color: #000;
+            }
+            #sh_top_bar_2 .sh_corpomate_theme_show_hide_lang .add-lang a {
+                color: #000;
+            }
+        }
+    </style>
+    <div class="yolo-page-title-overlay"></div>
+    <div class="content-page-title">
+        <div class="container">
+            <div class="page-title-inner block-center">
+                <div class="block-inner">
+                    <h1 style="color: #ffffff;">FAQ</h1>
+                </div>
+            </div>
+            <div class="yolo-breadcrumb-wrap s-color">
+                <ul class="breadcrumbs">
+                    <li>
+                        <a href="/" class="home o_default_snippet_text">Home</a>
+                    </li>
+                    <li>
+                        <span>FAQ</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_135" data-name="faq 2">
+    <div class="container">
+        <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+            <div class="card">
+                <div class="card-header" role="tab" id="headingOne1">
+                    <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1" data-target="#collapseOne1">
+                        <h5 class="mb-0 o_default_snippet_text">Can I change the theme color? <span class="fa fa-plus rotate-icon" /></h5>
+                    </a>
+                </div>
+                <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordionEx" style="">
+                    <div class="card-body">
+                        <p class="o_default_snippet_text">
+                            Aliquam mattis ultricies dolor ac vulputate. Pellentesque lectus tellus, varius vitae est et, ullamcorper porttitor urna. Praesent tristique tempor erat quis tincidunt. Sed elementum porta ullamcorper.
+                        </p>
+                        <p class="o_default_snippet_text">
+                            Cras mattis dui ac elit sollicitudin, eu rutrum quam pharetra. Etiam consectetur nunc vitae nibh egestas scelerisque. Nam sed auctor eros, et euismod leo. Integer ut fringilla nunc. Donec eget lacus lobortis,
+                            aliquam nulla ultricies, cursus libero.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="headingTwo2">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2" aria-expanded="true" aria-controls="collapseTwo2" data-target="#collapseTwo2">
+                        <h5 class="mb-0 o_default_snippet_text">Is your product compactible with Bootstrap 3.0? <span class="fa fa-plus rotate-icon" /></h5>
+                    </a>
+                </div>
+                <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2" data-parent="#accordionEx">
+                    <div class="card-body">
+                        <p class="o_default_snippet_text">
+                            Aliquam mattis ultricies dolor ac vulputate. Pellentesque lectus tellus, varius vitae est et, ullamcorper porttitor urna. Praesent tristique tempor erat quis tincidunt. Sed elementum porta ullamcorper.
+                        </p>
+                        <p class="o_default_snippet_text">
+                            Cras mattis dui ac elit sollicitudin, eu rutrum quam pharetra. Etiam consectetur nunc vitae nibh egestas scelerisque. Nam sed auctor eros, et euismod leo. Integer ut fringilla nunc. Donec eget lacus lobortis,
+                            aliquam nulla ultricies, cursus libero.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="headingThree3">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3" aria-expanded="true" aria-controls="collapseThree3" data-target="#collapseThree3">
+                        <h5 class="mb-0 o_default_snippet_text">Do you provide product support? <span class="fa fa-plus rotate-icon" /></h5>
+                    </a>
+                </div>
+                <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3" data-parent="#accordionEx">
+                    <div class="card-body">
+                        <p class="o_default_snippet_text">
+                            Aliquam mattis ultricies dolor ac vulputate. Pellentesque lectus tellus, varius vitae est et, ullamcorper porttitor urna. Praesent tristique tempor erat quis tincidunt. Sed elementum porta ullamcorper.
+                        </p>
+                        <p class="o_default_snippet_text">
+                            Cras mattis dui ac elit sollicitudin, eu rutrum quam pharetra. Etiam consectetur nunc vitae nibh egestas scelerisque. Nam sed auctor eros, et euismod leo. Integer ut fringilla nunc. Donec eget lacus lobortis,
+                            aliquam nulla ultricies, cursus libero.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+      
+      
+     
+     
+      
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

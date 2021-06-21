@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- CONTACT US PAGE 8 -->
+	<template id="sh_corpomate_tmpl_contact_us_8" name="contact us">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			
+
+               <section id="sh_corpomate_theme_section_232" class="s_banner parallax s_parallax_no_overflow_hidden bg-black-75" data-name="Contact8 Banner" style="background-image: none;" data-scroll-background-ratio="0">
+    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/contact-banner.png'); background-position: 50% 0; background-attachment: fixed;" />
+    <div class="container">
+        <div class="sh_heading">
+            <h1 class="o_default_snippet_text">Contact Us</h1>
+            <div class="sh_breadcrumbs">
+                <ul class="breadcrumbs">
+                    <li>
+                        <a href="/" class="home o_default_snippet_text">Home</a>
+                    </li>
+                    <li>
+                        <span class="o_default_snippet_text">Contact Us</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_233" class="sh_animation_part" data-name="theme8 contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="sh_left_heading">
+                    <h4 class="o_default_snippet_text">Get in Touch</h4>
+                    <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <form
+                    action="/website_form/"
+                    method="post"
+                    data-model_name="crm.lead"
+                    data-success_page="/contactus-thank-you"
+                    class="s_website_form container-fluid mt32 o_fake_not_editable"
+                    enctype="multipart/form-data"
+                    data-editable-form="false"
+                >
+                    <div class="form-group sh_name sh_group form-field o_website_form_required_custom o_fake_not_editable" data-model_name="crm.lead" data-success_page="/contactus-thank-you">
+                        <input type="text" class="form-control o_website_form_input" placeholder="Name" name="contact_name" required="" value="" />
+                        <div class="sh_border">
+                            <div class="sh_left_right_border" />
+                        </div>
+                    </div>
+                    <div class="form-group sh_number sh_group form-field o_website_form_required_custom o_fake_not_editable" data-model_name="crm.lead" data-success_page="/contactus-thank-you">
+                        <input type="text" class="form-control o_website_form_input" placeholder="Email" name="email_from" required="" value="" />
+                        <div class="sh_border">
+                            <div class="sh_left_right_border" />
+                        </div>
+                    </div>
+                    <div class="form-group sh_number sh_group form-field o_website_form_required_custom o_fake_not_editable" data-model_name="crm.lead" data-success_page="/contactus-thank-you">
+                        <input type="text" class="form-control o_website_form_input" placeholder="Telephone" name="phone" required="" value="" />
+                        <div class="sh_border">
+                            <div class="sh_left_right_border" />
+                        </div>
+                    </div>
+                    <div class="form-group sh_group">
+                        <textarea class="form-control wpcf7-form-control o_website_form_input" cols="40" rows="5" name="description" required="" placeholder="Message" />
+                        <div class="sh_border">
+                            <div class="sh_left_right_border" />
+                        </div>
+                    </div>
+                    <div class="sh_btn">
+                        <a href="#" class="btn btn-primary o_website_form_send o_default_snippet_text sh_btn_cm_8">Send Message</a>
+                        <span id="o_website_form_result" />
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div class="sh_right_part">
+                    <h4 class="o_default_snippet_text">Address &amp;amp; Map</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                        </div>
+                    </div>
+                    <div class="sh_map">
+                        <img src="/sh_corpomate_theme/static/src/img/theme8/Layer 49.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

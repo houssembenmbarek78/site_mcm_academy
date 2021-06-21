@@ -1,0 +1,13 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sh_corpomate_theme_testimonial,access.sh.corpomate.theme.config.testimonial,model_sh_corpomate_theme_testimonial,,1,1,1,1
+access_sh_corpomate_theme_our_partner,access.sh.corpomate.theme.config.our.partner,model_sh_corpomate_theme_our_partner,,1,1,1,1
+access_sh_corpomate_blog_slider_public,access.sh.corpomate.blog.slider.public,model_sh_corpomate_blog_slider,,1,1,1,1
+access_sh_corpomate_blog_slider_tab_blog_post_line,access.sh.corpomate.blog.slider.tab.blog.post.line,model_sh_corpomate_blog_slider_tab_blog_post_line,,1,1,1,1
+sh_access_notice_board_public,notice.board.public,model_sh_nb_notice_board,,1,0,0,0
+sh_access_notice_board_designer,notice.board.designer,model_sh_nb_notice_board,website.group_website_designer,1,1,1,1
+access_sh_pwa_frontend_config,access_sh_pwa_frontend_config,model_sh_pwa_frontend_config,base.group_user,1,1,1,1
+access_website_portfolio_category,Access website.portfolio.category,model_website_portfolio_category,,1,0,0,0
+access_website_portfolio,Access website.portfolio,model_website_portfolio,,1,0,0,0
+access_website_portfolio_category_designer,access.website.portfolio.category.designer,model_website_portfolio_category,website.group_website_designer,1,1,1,1
+access_website_portfolio_designer,access.website.portfolio.designer,model_website_portfolio,website.group_website_designer,1,1,1,1
+access_sh_snippet_builder_public,access.sh.snippet.builder.public,model_sh_snippet_builder,,1,1,1,1

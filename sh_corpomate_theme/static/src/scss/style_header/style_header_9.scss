@@ -1,0 +1,13 @@
+.navbar-light .navbar-nav .nav-link{text-transform: uppercase;color: #212121;padding: 0 15px;letter-spacing: 0.7px;}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus{color: #333a4d;transition: all .4s;}
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active{color: #333a4d;}   
+.navbar-light .navbar-nav .nav-link:hover span{border-bottom: 2px solid #333a4d;}
+.navbar-light .navbar-nav .nav-link span{padding-bottom: 3px;font-weight: 600;transition: all .4s;border-bottom: 2px solid transparent;}
+.navbar-light .navbar-nav .nav-link.active span{border-bottom: 2px solid #333a4d;}
+
+.navbar-light .navbar-nav ul.dropdown-menu li a{text-transform: uppercase;color: #212121;padding-left: 15px;padding-right: 15px;letter-spacing: 0.7px;font-weight: 600;}
+.navbar-light .navbar-nav ul.dropdown-menu{min-width: 13rem;}
+header#top .navbar{padding: 1.5rem 1rem;}
+#top_menu .nav-item.dropdown:last-child{position: relative;}
+header.affixed nav.navbar{padding: 1.5rem 1rem;}
+

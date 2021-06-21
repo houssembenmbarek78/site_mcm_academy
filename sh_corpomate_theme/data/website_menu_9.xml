@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+
+
+
+
+
+
+
+
+		<!-- 
+		===============
+		MEGA MENU PAGE MAIN
+		================
+		 -->        
+        
+		
+		<!-- MEGA MENU PAGE 9  -->
+        <record id="sh_corpomate_page_mega_menu_9" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/megamenu9</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_mega_menu_9"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_mega_menu_9" model="website.menu">
+            <field name="name">mega menu</field>
+            <field name="url">/megamenu9</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">2</field>
+      	    <field name="page_id" ref="sh_corpomate_page_mega_menu_9" />    
+      	    <field name="sh_website_mega_menu_html" type="html">
+      	    
+      	    
+      	    
+    <!-- put your code here -->
+      	    
+      	    
+      	    <section id="sh_megamenubar_15">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>Portfolio Columns <span class="fa fa-chevron-down"></span></h4>
+                        <ul>
+                            <section><a href="#">Two Columns</a></section>
+                            <section><a href="#">Three Columns</a></section>
+                            <section><a href="#">Four Columns</a></section>
+                            <section><a href="#">Five Columns</a></section>
+                            <section><a href="#">Six Columns</a></section>
+                        </ul>
+                    </div> 
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>Portfolio Fullwidth <span class="fa fa-chevron-down"></span></h4>
+                        <ul>
+                            <section><a href="#">Portfolio Style 1</a></section>
+                            <section><a href="#">Portfolio Style 2</a></section>
+                            <section><a href="#">Portfolio Style 3</a></section>
+                            <section><a href="#">Portfolio Style 4</a></section>
+                            <section><a href="#">Portfolio Style 5</a></section>
+                        </ul>
+                    </div> 
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>Single Pages <span class="fa fa-chevron-down"></span></h4>
+                        <ul>
+                            <section><a href="#">Two Columns</a></section>
+                            <section><a href="#">Three Columns</a></section>
+                            <section><a href="#">Four Columns</a></section>
+                            <section><a href="#">Five Columns</a></section>
+                            <section><a href="#">Six Columns</a></section>
+                        </ul>
+                    </div> 
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>Masonry Portfolio <span class="fa fa-chevron-down"></span></h4>
+                        <ul>
+                            <section><a href="#">Extended Items</a></section>
+                            <section><a href="#">Full Width Slider</a></section>
+                            <section><a href="#">Full Width Video</a></section>
+                            <section><a href="#">Side Image Slider</a></section>
+                            <section><a href="#">Grid Gallery</a></section>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="sh_view_more">
+                <a href="#" class="btn">View More</a>
+            </div>
+
+        </div>
+    </section>
+      	    
+    <!-- put your code here -->   	    	
+      	    
+
+   	    	</field>     	    
+      	    
+      	    
+      	    
+      	            
+        </record>	
+
+
+
+
+
+
+
+
+
+    
+        <!-- 
+        ===============
+        ABOUT US PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- ABOUT US PAGE 9 -->
+        <record id="sh_corpomate_page_about_us_9" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/aboutus9</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_about_us_9"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_about_us_9" model="website.menu">
+            <field name="name">about us</field>
+            <field name="url">/aboutus9</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">3</field>
+            <field name="page_id" ref="sh_corpomate_page_about_us_9" />            
+        </record>   
+
+
+
+    
+        <!-- 
+        ===============
+        HOME PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- HOME PAGE 9 -->
+        <record id="sh_corpomate_page_home_9" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/home9</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_home_9"/>
+            <field name="website_indexed" eval="False"/>
+            
+                        
+        </record>
+        
+
+        <record id="sh_corpomate_menu_home_9" model="website.menu">
+            <field name="name">home</field>
+            <field name="url">/home9</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">1</field>
+            <field name="page_id" ref="sh_corpomate_page_home_9" />               
+        </record>
+        
+        
+         <!-- 
+        ===============
+        SERVICE PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- SERVICE PAGE 9 -->
+        <record id="sh_corpomate_page_service_9" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/service9</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_service_9"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_service_9" model="website.menu">
+            <field name="name">service</field>
+            <field name="url">/service9</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">4</field>
+            <field name="page_id" ref="sh_corpomate_page_service_9" />               
+        </record>   
+            
+        <!-- 
+        ===============
+        CONTACT US PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- CONTACT US PAGE 9 -->
+        <record id="sh_corpomate_page_contact_us_9" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/contactus9</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_contact_us_9"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_contact_us_9" model="website.menu">
+            <field name="name">contact us</field>
+            <field name="url">/contactus9</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">6</field>
+            <field name="page_id" ref="sh_corpomate_page_contact_us_9" />                
+        </record> 
+        
+        
+        <!-- 
+        ===============
+        OUR TEAM MAIN
+        ================
+         -->        
+        
+        
+        <!-- OUR TEAM PAGE 9 -->
+        <record id="sh_corpomate_page_our_team_9" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/ourteam9</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_our_team_9"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_our_team_9" model="website.menu">
+            <field name="name">our team</field>
+            <field name="url">/ourteam9</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">5</field>
+            <field name="page_id" ref="sh_corpomate_page_our_team_9" />                
+        </record> 
+        
+        
+        
+       <!-- 
+        ===============
+        FAQ PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- FAQ PAGE 9 -->
+        <record id="sh_corpomate_page_faq_9" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/faq9</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_faq_9"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_faq_9" model="website.menu">
+            <field name="name">FAQ</field>
+            <field name="url">/faq9</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">7</field>
+            <field name="page_id" ref="sh_corpomate_page_faq_9" />                    
+        </record> 
+        
+        
+        
+        
+        <!-- 
+        ===============
+        TERMS AND CONDITIONS PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- TERMS AND CONDITIONS PAGE 9 -->
+        <record id="sh_corpomate_page_terms_and_conditions_9" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/termsandcondition9</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_terms_and_conditions_9"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_terms_and_conditions_9" model="website.menu">
+            <field name="name">terms and conditions</field>
+            <field name="url">/termsandcondition9</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">9</field>
+            <field name="page_id" ref="sh_corpomate_page_terms_and_conditions_9" />               
+        </record>  
+        
+        
+        <!-- 
+        ===============
+        PRIVACY POLICY 9
+        ================
+         -->        
+        
+        
+        <!-- PRIVACY POLICY PAGE 9 -->
+        <record id="sh_corpomate_page_privacy_policy_9" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/privacypolicy9</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_privacy_policy_9"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_privacy_policy_9" model="website.menu">
+            <field name="name">privacy policy</field>
+            <field name="url">/privacypolicy9</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">8</field>
+            <field name="page_id" ref="sh_corpomate_page_privacy_policy_9" />               
+        </record>
+        
+        
+        
+        
+        
+            
+        
+    </data>
+
+</odoo>        
+        

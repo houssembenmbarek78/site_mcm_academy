@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- HOME PAGE 3 -->
+	<template id="sh_corpomate_tmpl_home_5" name="home">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+
+	        <div class="oe_structure"/>
+			
+      
+      
+  
+     <section id="sh_corpomate_theme_section_37">
+        <style class="o_default_snippet_text">
+            .navbar-light {
+                background: transparent !important;
+                z-index: 1;
+            }
+            
+            .navbar-light #top_menu_collapse .navbar-nav .nav-link {
+                color: #fff !important;
+            }
+            
+            .o_affix_enabled .navbar-light {
+                background: transparent !important;
+            }
+            
+            @media (max-width: 768px) {
+                .navbar-light {
+                    background: #fff !important;
+                    z-index: 1;
+                }
+                .navbar-light #top_menu_collapse .navbar-nav .nav-link {
+                    color: #585b60 !important;
+                }
+                .o_affix_enabled .navbar-light {
+                    background-color: #fff !important;
+                }
+            }
+        </style>
+        <div id="home-area" class="home-area custom-mt-2" style="background-image: url(/sh_corpomate_theme/static/src/img/b1.jpeg);">
+          <div class="bg-overlay"/>
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-7 col-lg-8 col-md-9 col-sm-12 sh_animation_part">
+                <div class="banner-content">
+                  <h1 class="o_default_snippet_text">Leading Digital Business For Technology | Solution</h1>
+                  <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                            </p>
+                  <div class="btn-box">
+                    <a href="#" class="btn sh_btn_cm_5 btn-primary left-btn left-btn-white o_default_snippet_text">GET STARTED</a>
+                    <a href="#" class="btn sh_btn_cm_5 btn-primary right-btn right-btn-transparent o_default_snippet_text">LEARN MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-shape">
+            <img class="img-fluid" src="/sh_corpomate_theme/static/src/img/bg_home_shape.png" alt="bottom-shape image"/>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_38">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 sh_animation_part">
+              <section class="sh_icon_box">
+                <div class="sh_icon">
+                  <span class="fa fa-users"/>
+                </div>
+                <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                <a href="#" class="o_default_snippet_text">Read More <span class="fa fa-angle-right "/></a>
+              </section>
+            </div>
+            <div class="col-md-4 sh_animation_part">
+              <section class="sh_icon_box">
+                <div class="sh_icon">
+                  <span class="fa fa-users"/>
+                </div>
+                <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                <a href="#" class="o_default_snippet_text">Read More <span class="fa fa-angle-right "/></a>
+              </section>
+            </div>
+            <div class="col-md-4 sh_animation_part">
+              <section class="sh_icon_box">
+                <div class="sh_icon">
+                  <span class="fa fa-users"/>
+                </div>
+                <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                <a href="#" class="o_default_snippet_text">Read More <span class="fa fa-angle-right "/></a>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_39">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 sh_animation_part">
+              <div class="sh_left_title">
+                <h2 class="o_default_snippet_text">Lorem Ipsum is simply</h2>
+                <span class="sh_border"/>
+              </div>
+              <p class="sh_left_text o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+              <a href="#" class="sh_left_btn btn btn-primary sh_btn_cm_5 o_default_snippet_text">Get Started</a>
+            </div>
+            <div class="col-md-6 sh_animation_part">
+              <section class="sh_right sh_animation_part">
+                <div class="sh_content">
+                  <div class="sh_icon">
+                    <span class="fa fa-bar-chart"/>
+                  </div>
+                  <div class="sh_right_text">
+                    <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                    <p class="o_default_snippet_text">Lorem ipsum dolor sit amet constur</p>
+                  </div>
+                </div>
+              </section>
+              <section class="sh_right sh_animation_part">
+                <div class="sh_content">
+                  <div class="sh_icon">
+                    <span class="fa fa-diamond"/>
+                  </div>
+                  <div class="sh_right_text">
+                    <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                    <p class="o_default_snippet_text">Lorem ipsum dolor sit amet constur</p>
+                  </div>
+                </div>
+              </section>
+              <section class="sh_right sh_animation_part">
+                <div class="sh_content">
+                  <div class="sh_icon">
+                    <span class="fa fa-television"/>
+                  </div>
+                  <div class="sh_right_text">
+                    <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                    <p class="o_default_snippet_text">Lorem ipsum dolor sit amet constur</p>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_153">
+        <div class="grax_title_holder">
+          <h3>
+            <span class="o_default_snippet_text">Lorem ipsum</span>
+          </h3>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_40">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6 sh_animation_part">
+              <section class="sh_feature_box">
+                <span class="fa fa-hand-pointer-o"/>
+                <h3 class="o_default_snippet_text">Lorem ipsum</h3>
+                <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+              </section>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 sh_animation_part">
+              <section class="sh_feature_box">
+                <span class="fa fa-diamond"/>
+                <h3 class="o_default_snippet_text">Lorem ipsum</h3>
+                <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+              </section>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 sh_animation_part">
+              <section class="sh_feature_box">
+                <span class="fa fa-television"/>
+                <h3 class="o_default_snippet_text">Lorem ipsum</h3>
+                <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+              </section>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 sh_animation_part">
+              <section class="sh_feature_box">
+                <span class="fa fa-rocket"/>
+                <h3 class="o_default_snippet_text">Lorem ipsum</h3>
+                <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+              </section>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 sh_animation_part">
+              <section class="sh_feature_box">
+                <span class="fa fa-rocket"/>
+                <h3 class="o_default_snippet_text">Lorem ipsum</h3>
+                <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+              </section>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 sh_animation_part">
+              <section class="sh_feature_box">
+                <span class="fa fa-rocket"/>
+                <h3 class="o_default_snippet_text">Lorem ipsum</h3>
+                <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_43" style="background-image:url(/sh_corpomate_theme/static/src/img/banner1.jpg)">
+        <div class="bg-overlay"/>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 sh_animation_part">
+              <div class="sh_counter">
+                <h4 class="sh_counter_num o_default_snippet_text">20</h4>
+                <p class="sh_count_name o_default_snippet_text">SKILLED TECHNICIANS</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 sh_animation_part">
+              <div class="sh_counter sh_small_size">
+                <h4 class="sh_counter_num o_default_snippet_text">120</h4>
+                <p class="sh_count_name o_default_snippet_text">HAPPY CLIENTS</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 sh_animation_part">
+              <div class="sh_counter">
+                <h4 class="sh_counter_num o_default_snippet_text">15</h4>
+                <p class="sh_count_name o_default_snippet_text">Years experience</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 sh_animation_part">
+              <div class="sh_counter sh_right_border">
+                <h4 class="sh_counter_num o_default_snippet_text">230</h4>
+                <p class="sh_count_name o_default_snippet_text">FINISHED PROJECTS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_153">
+        <div class="grax_title_holder">
+          <h3>
+            <span class="o_default_snippet_text">Lorem ipsum</span>
+          </h3>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_44">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 sh_animation_part">
+              <div class="sh_team">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/home5_team_1.jpg"/>
+                  <section class="sh_media_list">
+                    <li>
+                      <a href="#" class="btn btn-primary">
+                        <span class="fa fa-facebook"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-primary">
+                        <span class="fa fa-twitter"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-primary">
+                        <span class="fa fa-google-plus"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-primary">
+                        <span class="fa fa-linkedin"/>
+                      </a>
+                    </li>
+                  </section>
+                </div>
+                <section class="sh_team_name">
+                  <h6 class="o_default_snippet_text">Lorem Ipsum</h6>
+                  <span class="o_default_snippet_text">Lorem Ipsum is simply dummy</span>
+                </section>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 sh_animation_part">
+              <div class="sh_team">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/home5_team_2.jpg"/>
+                  <section class="sh_media_list">
+                    <li>
+                      <a href="#" class="btn btn-primary">
+                        <span class="fa fa-facebook"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-primary">
+                        <span class="fa fa-twitter"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-primary">
+                        <span class="fa fa-google-plus"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-primary">
+                        <span class="fa fa-linkedin"/>
+                      </a>
+                    </li>
+                  </section>
+                </div>
+                <section class="sh_team_name">
+                  <h6 class="o_default_snippet_text">Lorem Ipsum</h6>
+                  <span class="o_default_snippet_text">Lorem Ipsum is simply dummy</span>
+                </section>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 sh_animation_part">
+              <div class="sh_team">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/home5_team_3.jpg"/>
+                  <section class="sh_media_list">
+                    <li>
+                      <a href="#" class="btn btn-primary">
+                        <span class="fa fa-facebook"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-primary">
+                        <span class="fa fa-twitter"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-primary">
+                        <span class="fa fa-google-plus"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-primary">
+                        <span class="fa fa-linkedin"/>
+                      </a>
+                    </li>
+                  </section>
+                </div>
+                <section class="sh_team_name">
+                  <h6 class="o_default_snippet_text">Lorem Ipsum</h6>
+                  <span class="o_default_snippet_text">Lorem Ipsum is simply dummy</span>
+                </section>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 sh_animation_part">
+              <div class="sh_team">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/home5_team_4.jpg"/>
+                  <section class="sh_media_list">
+                    <li>
+                      <a href="#" class="btn btn-primary">
+                        <span class="fa fa-facebook"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-primary">
+                        <span class="fa fa-twitter"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-primary">
+                        <span class="fa fa-google-plus"/>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-primary">
+                        <span class="fa fa-linkedin"/>
+                      </a>
+                    </li>
+                  </section>
+                </div>
+                <section class="sh_team_name">
+                  <h6 class="o_default_snippet_text">Lorem Ipsum</h6>
+                  <span class="o_default_snippet_text">Lorem Ipsum is simply dummy</span>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_41" class="js_cls_sh_corpomate_theme_section_41">
+        <div class="bg-overlay"/>
+        <div class="container">
+          <div class="sh_title sh_animation_part">
+            <h2 class="o_default_snippet_text">Our Clients</h2>
+            <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+          <div id="owl-demo" class="owl-carousel owl-theme sh_animation_part">
+            <div class="item">
+              <div class="sh_testimonial">
+                <div class="sh_left_part">
+                  <a href="#">
+                    <img src="/sh_corpomate_theme/static/src/img/client-1.jpg"/>
+                  </a>
+                </div>
+                <section class="sh_right_part">
+                  <div class="sh_content">
+                    <h3 class="o_default_snippet_text">Lorem</h3>
+                    <p class="o_default_snippet_text">Lorem Ipsum</p>
+                    <div class="sh_right_text">
+                      <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <ul>
+                        <li>
+                          <span class="fa fa-star"/>
+                        </li>
+                        <li>
+                          <span class="fa fa-star"/>
+                        </li>
+                        <li>
+                          <span class="fa fa-star"/>
+                        </li>
+                        <li>
+                          <span class="fa fa-star"/>
+                        </li>
+                        <li>
+                          <span class="fa fa-star"/>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="item">
+              <div class="sh_testimonial">
+                <div class="sh_left_part">
+                  <a href="#">
+                    <img src="/sh_corpomate_theme/static/src/img/client-1.jpg"/>
+                  </a>
+                </div>
+                <section class="sh_right_part">
+                  <div class="sh_content">
+                    <h3 class="o_default_snippet_text">Lorem</h3>
+                    <p class="o_default_snippet_text">Lorem Ipsum</p>
+                    <div class="sh_right_text">
+                      <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <ul>
+                        <li>
+                          <span class="fa fa-star"/>
+                        </li>
+                        <li>
+                          <span class="fa fa-star"/>
+                        </li>
+                        <li>
+                          <span class="fa fa-star"/>
+                        </li>
+                        <li>
+                          <span class="fa fa-star"/>
+                        </li>
+                        <li>
+                          <span class="fa fa-star"/>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="item">
+              <div class="sh_testimonial">
+                <div class="sh_left_part">
+                  <a href="#">
+                    <img src="/sh_corpomate_theme/static/src/img/client-1.jpg"/>
+                  </a>
+                </div>
+                <section class="sh_right_part">
+                  <div class="sh_content">
+                    <h3 class="o_default_snippet_text">Lorem</h3>
+                    <p class="o_default_snippet_text">Lorem Ipsum</p>
+                    <div class="sh_right_text">
+                      <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <ul>
+                        <li>
+                          <span class="fa fa-star"/>
+                        </li>
+                        <li>
+                          <span class="fa fa-star"/>
+                        </li>
+                        <li>
+                          <span class="fa fa-star"/>
+                        </li>
+                        <li>
+                          <span class="fa fa-star"/>
+                        </li>
+                        <li>
+                          <span class="fa fa-star"/>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_153">
+        <div class="grax_title_holder">
+          <h3>
+            <span class="o_default_snippet_text">Lorem ipsum</span>
+          </h3>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_45">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 sh_animation_part">
+              <section class="sh_pricing">
+                <secton class="sh_hading_price">
+                  <section class="sh_price_heading">
+                    <h3>
+                      <b class="o_default_snippet_text">STARTER</b>
+                    </h3>
+                  </section>
+                  <section class="sh_heading_text">
+                    <small class="o_default_snippet_text">Perfect for freelancer</small>
+                  </section>
+                </secton>
+                <section class="sh_price">
+                  <span class="sh_currency o_default_snippet_text">$</span>
+                  <strong class="o_default_snippet_text">30</strong>
+                  <small class="o_default_snippet_text">Year</small>
+                </section>
+                <section class="sh_plan_list">
+                  <li class="o_default_snippet_text"><span class="fa fa-external-link"/><b class="o_default_snippet_text">Lorem</b> ipsum dolor</li>
+                  <li class="o_default_snippet_text"><span class="fa fa-external-link"/><b class="o_default_snippet_text">Lorem</b> ipsum dolor</li>
+                  <li class="o_default_snippet_text"><span class="fa fa-external-link"/><b class="o_default_snippet_text">Lorem</b> ipsum dolor</li>
+                  <li class="o_default_snippet_text"><span class="fa fa-external-link"/><b class="o_default_snippet_text">Lorem</b> ipsum dolor</li>
+                  <li class="o_default_snippet_text"><span class="fa fa-external-link"/> Lorem <b class="o_default_snippet_text">ipsum dolor</b></li>
+                </section>
+                <div class="sh_footer_btn">
+                  <a href="#" class="btn btn-primary sh_btn_cm_5 o_default_snippet_text">Sign Up <span class="fa fa-sign-in"/></a>
+                </div>
+              </section>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 sh_animation_part">
+              <section class="sh_pricing">
+                <secton class="sh_hading_price">
+                  <section class="sh_price_heading">
+                    <h3>
+                      <b class="o_default_snippet_text">STARTER</b>
+                    </h3>
+                  </section>
+                  <section class="sh_heading_text">
+                    <small class="o_default_snippet_text">Perfect for freelancer</small>
+                  </section>
+                </secton>
+                <section class="sh_price">
+                  <span class="sh_currency o_default_snippet_text">$</span>
+                  <strong class="o_default_snippet_text">30</strong>
+                  <small class="o_default_snippet_text">Year</small>
+                </section>
+                <section class="sh_plan_list">
+                  <li class="o_default_snippet_text"><span class="fa fa-external-link"/><b class="o_default_snippet_text">Lorem</b> ipsum dolor</li>
+                  <li class="o_default_snippet_text"><span class="fa fa-external-link"/><b class="o_default_snippet_text">Lorem</b> ipsum dolor</li>
+                  <li class="o_default_snippet_text"><span class="fa fa-external-link"/><b class="o_default_snippet_text">Lorem</b> ipsum dolor</li>
+                  <li class="o_default_snippet_text"><span class="fa fa-external-link"/><b class="o_default_snippet_text">Lorem</b> ipsum dolor</li>
+                  <li class="o_default_snippet_text"><span class="fa fa-external-link"/> Lorem <b class="o_default_snippet_text">ipsum dolor</b></li>
+                </section>
+                <div class="sh_footer_btn">
+                  <a href="#" class="btn btn-primary sh_btn_cm_5 o_default_snippet_text">Sign Up <span class="fa fa-sign-in"/></a>
+                </div>
+              </section>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 sh_animation_part">
+              <section class="sh_pricing">
+                <secton class="sh_hading_price">
+                  <section class="sh_price_heading">
+                    <h3>
+                      <b class="o_default_snippet_text">STARTER</b>
+                    </h3>
+                  </section>
+                  <section class="sh_heading_text">
+                    <small class="o_default_snippet_text">Perfect for freelancer</small>
+                  </section>
+                </secton>
+                <section class="sh_price">
+                  <span class="sh_currency o_default_snippet_text">$</span>
+                  <strong class="o_default_snippet_text">30</strong>
+                  <small class="o_default_snippet_text">Year</small>
+                </section>
+                <section class="sh_plan_list">
+                  <li class="o_default_snippet_text"><span class="fa fa-external-link"/><b class="o_default_snippet_text">Lorem</b> ipsum dolor</li>
+                  <li class="o_default_snippet_text"><span class="fa fa-external-link"/><b class="o_default_snippet_text">Lorem</b> ipsum dolor</li>
+                  <li class="o_default_snippet_text"><span class="fa fa-external-link"/><b class="o_default_snippet_text">Lorem</b> ipsum dolor</li>
+                  <li class="o_default_snippet_text"><span class="fa fa-external-link"/><b class="o_default_snippet_text">Lorem</b> ipsum dolor</li>
+                  <li class="o_default_snippet_text"><span class="fa fa-external-link"/> Lorem <b class="o_default_snippet_text">ipsum dolor</b></li>
+                </section>
+                <div class="sh_footer_btn">
+                  <a href="#" class="btn btn-primary sh_btn_cm_5 o_default_snippet_text">Sign Up <span class="fa fa-sign-in"/></a>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_42" class="js_cls_sh_corpomate_theme_section_42">
+        <div class="container">
+          <div id="owl-demo" class="owl-carousel owl-theme sh_animation_part">
+            <div class="item">
+              <div class="sh_partner_img">
+                <img src="/sh_corpomate_theme/static/src/img/h_5_par_1.png"/>
+              </div>
+            </div>
+            <div class="item">
+              <div class="sh_partner_img">
+                <img src="/sh_corpomate_theme/static/src/img/h_5_par_2.png"/>
+              </div>
+            </div>
+            <div class="item">
+              <div class="sh_partner_img">
+                <img src="/sh_corpomate_theme/static/src/img/h_5_par_3.png"/>
+              </div>
+            </div>
+            <div class="item">
+              <div class="sh_partner_img">
+                <img src="/sh_corpomate_theme/static/src/img/h_5_par_4.png"/>
+              </div>
+            </div>
+            <div class="item">
+              <div class="sh_partner_img">
+                <img src="/sh_corpomate_theme/static/src/img/h_5_par_1.png"/>
+              </div>
+            </div>
+            <div class="item">
+              <div class="sh_partner_img">
+                <img src="/sh_corpomate_theme/static/src/img/h_5_par_2.png"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+          
+      <section id="sh_corpomate_theme_section_206" class="js_cls_corpomate_blog_slider_section_206 sh_animation_part sh_slider_1_send" data-name="blog 5">
+    <div class="container">
+        <div class="heading text-center">
+            <h3 class="o_default_snippet_text">Latest Blog</h3>
+        </div>
+        <div class="card js_cls_corpomate_blog_slider_main_div_206">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs js_cls_corpomate_blog_slider_nav_tabs_ul_206" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active o_default_snippet_text" id="nav_tabs_link_51" data-toggle="tab" href="#nav_tabs_content_51" role="tab" aria-controls="nav_tabs_content_51" aria-selected="true">Tab A</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link o_default_snippet_text" id="nav_tabs_link_52" data-toggle="tab" href="#nav_tabs_content_52" role="tab" aria-controls="nav_tabs_content_52" aria-selected="false">Tab B</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link o_default_snippet_text" id="nav_tabs_link_53" data-toggle="tab" href="#nav_tabs_content_53" role="tab" aria-controls="nav_tabs_content_53" aria-selected="false">Tab C</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body tab-content js_cls_corpomate_blog_slider_tab_content_206">
+                <div class="tab-pane fade show active" id="nav_tabs_content_51" role="tabpanel" aria-labelledby="nav_tabs_link_51">
+                    <div id="owl-demo" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="sh_content">
+                                <div class="sh_img">
+                                    <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg" />
+                                </div>
+                                <div class="sh_des">
+                                    <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                                    <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    <p class="sh_date o_default_snippet_text"><span class="fa fa-calendar" /> 10 DEC, 2018</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="sh_content">
+                                <div class="sh_img">
+                                    <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg" />
+                                </div>
+                                <div class="sh_des">
+                                    <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                                    <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    <p class="sh_date o_default_snippet_text"><span class="fa fa-calendar" /> 10 DEC, 2018</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="sh_content">
+                                <div class="sh_img">
+                                    <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg" />
+                                </div>
+                                <div class="sh_des">
+                                    <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                                    <p class="sh_text o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    <p class="sh_date o_default_snippet_text"><span class="fa fa-calendar" /> 10 DEC, 2018</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav_tabs_content_52" role="tabpanel" aria-labelledby="nav_tabs_link_52">
+                    <div id="owl-demo" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="sh_content">
+                                <div class="sh_img">
+                                    <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg" />
+                                </div>
+                                <div class="sh_des">
+                                    <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                                    <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    <p class="sh_date o_default_snippet_text"><span class="fa fa-calendar" /> 10 DEC, 2018</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="sh_content">
+                                <div class="sh_img">
+                                    <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg" />
+                                </div>
+                                <div class="sh_des">
+                                    <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                                    <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    <p class="sh_date o_default_snippet_text"><span class="fa fa-calendar" /> 10 DEC, 2018</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="sh_content">
+                                <div class="sh_img">
+                                    <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg" />
+                                </div>
+                                <div class="sh_des">
+                                    <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                                    <p class="sh_text o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    <p class="sh_date o_default_snippet_text"><span class="fa fa-calendar" /> 10 DEC, 2018</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav_tabs_content_53" role="tabpanel" aria-labelledby="nav_tabs_link_53">
+                    <div id="owl-demo" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="sh_content">
+                                <div class="sh_img">
+                                    <img src="/sh_corpomate_theme/static/src/img/close-up-young-businesswoman-typing-laptop-computer_67155-2971.jpg" />
+                                </div>
+                                <div class="sh_des">
+                                    <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                                    <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    <p class="sh_date o_default_snippet_text"><span class="fa fa-calendar" /> 10 DEC, 2018</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="sh_content">
+                                <div class="sh_img">
+                                    <img src="/sh_corpomate_theme/static/src/img/hands-unrecognizable-young-woman-using-laptop-cafe_1098-20155.jpg" />
+                                </div>
+                                <div class="sh_des">
+                                    <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                                    <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    <p class="sh_date o_default_snippet_text"><span class="fa fa-calendar" /> 10 DEC, 2018</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="sh_content">
+                                <div class="sh_img">
+                                    <img src="/sh_corpomate_theme/static/src/img/woman-fruit-diet-while-working-computer-office_155003-6786.jpg" />
+                                </div>
+                                <div class="sh_des">
+                                    <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                                    <p class="sh_text o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                    <p class="sh_date o_default_snippet_text"><span class="fa fa-calendar" /> 10 DEC, 2018</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+      
+      
+      
+      
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+
+
+
+
+
+
+
+
+		<!-- 
+		===============
+		MEGA MENU PAGE MAIN
+		================
+		 -->        
+        
+		
+		<!-- MEGA MENU PAGE 10  -->
+        <record id="sh_corpomate_page_mega_menu_10" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/megamenu10</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_mega_menu_10"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_mega_menu_10" model="website.menu">
+            <field name="name">mega menu</field>
+            <field name="url">/megamenu10</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">2</field>
+      	    <field name="page_id" ref="sh_corpomate_page_mega_menu_10" />    
+      	    <field name="sh_website_mega_menu_html" type="html">
+      	    
+      	    
+      	    
+    <!-- put your code here -->
+      	    
+      	    
+      	    
+     <section id="sh_megamenubar_16">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>Company Overview</h4>
+                        <div class="sh_img">
+                           <img src="/sh_corpomate_theme/static/src/img/theme9/2.png"></img>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consecteture</p>
+                    </div> 
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>Example pages</h4>
+                        <ul>
+                            <section><a href="#"><span class="fa fa-arrow-right"></span> Testimonial 1</a></section>
+                            <section><a href="#"><span class="fa fa-arrow-right"></span> Testimonial 2</a></section>
+                            <section><a href="#"><span class="fa fa-arrow-right"></span> Graphs &amp; Charts</a></section>
+                            <section><a href="#"><span class="fa fa-arrow-right"></span> Typography</a></section>
+                            <section><a href="#"><span class="fa fa-arrow-right"></span> Webinars</a></section>
+                            <section><a href="#"><span class="fa fa-arrow-right"></span> Webinars single</a></section>
+                        </ul>
+                    </div> 
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>Events</h4>
+                        <ul>
+                            <section><a href="#"><span class="fa fa-arrow-right"></span> event grid</a></section>
+                            <section><a href="#"><span class="fa fa-arrow-right"></span> event classic</a></section>
+                            <section><a href="#"><span class="fa fa-arrow-right"></span> event modern</a></section>
+                            <section><a href="#"><span class="fa fa-arrow-right"></span> appointment</a></section>
+                            <section><a href="#"><span class="fa fa-arrow-right"></span> coming soon</a></section>
+                            <section><a href="#"><span class="fa fa-arrow-right"></span> cost calculator</a></section>
+                        </ul>
+                    </div> 
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>contacts</h4>
+                        <ul>
+                            <section><a href="#"><span class="fa fa-map-marker"></span> 905, corporate levels, ayodhya chowk, rajkot.</a></section>
+                            <section><a href="#"><span class="fa fa-phone"></span> +917984575681</a></section>
+                            <section><a href="#"><span class="fa fa-envelope-o"></span> support@softhealer.com</a></section>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+
+            
+
+        </div>
+    </section>
+      	    
+      	    
+      	    
+    <!-- put your code here -->   	    	
+      	    
+
+   	    	</field>     	    
+      	    
+      	    
+      	    
+      	            
+        </record>	
+
+
+
+
+
+
+
+
+
+    
+        <!-- 
+        ===============
+        ABOUT US PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- ABOUT US PAGE 10 -->
+        <record id="sh_corpomate_page_about_us_10" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/aboutus10</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_about_us_10"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_about_us_10" model="website.menu">
+            <field name="name">about us</field>
+            <field name="url">/aboutus10</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">3</field>
+            <field name="page_id" ref="sh_corpomate_page_about_us_10" />            
+        </record>   
+
+
+
+    
+        <!-- 
+        ===============
+        HOME PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- HOME PAGE 10 -->
+        <record id="sh_corpomate_page_home_10" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/home10</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_home_10"/>
+            <field name="website_indexed" eval="False"/>
+            
+                        
+        </record>
+        
+
+        <record id="sh_corpomate_menu_home_10" model="website.menu">
+            <field name="name">home</field>
+            <field name="url">/home10</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">1</field>
+            <field name="page_id" ref="sh_corpomate_page_home_10" />               
+        </record>
+        
+        
+         <!-- 
+        ===============
+        SERVICE PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- SERVICE PAGE 10 -->
+        <record id="sh_corpomate_page_service_10" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/service10</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_service_10"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_service_10" model="website.menu">
+            <field name="name">service</field>
+            <field name="url">/service10</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">4</field>
+            <field name="page_id" ref="sh_corpomate_page_service_10" />               
+        </record>   
+            
+        <!-- 
+        ===============
+        CONTACT US PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- CONTACT US PAGE 10 -->
+        <record id="sh_corpomate_page_contact_us_10" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/contactus10</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_contact_us_10"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_contact_us_10" model="website.menu">
+            <field name="name">contact us</field>
+            <field name="url">/contactus10</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">6</field>
+            <field name="page_id" ref="sh_corpomate_page_contact_us_10" />                
+        </record> 
+        
+        
+        <!-- 
+        ===============
+        OUR TEAM MAIN
+        ================
+         -->        
+        
+        
+        <!-- OUR TEAM PAGE 10 -->
+        <record id="sh_corpomate_page_our_team_10" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/ourteam10</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_our_team_10"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_our_team_10" model="website.menu">
+            <field name="name">our team</field>
+            <field name="url">/ourteam10</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">5</field>
+            <field name="page_id" ref="sh_corpomate_page_our_team_10" />                
+        </record> 
+        
+        
+        
+       <!-- 
+        ===============
+        FAQ PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- FAQ PAGE 10 -->
+        <record id="sh_corpomate_page_faq_10" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/faq10</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_faq_10"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_faq_10" model="website.menu">
+            <field name="name">FAQ</field>
+            <field name="url">/faq10</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">7</field>
+            <field name="page_id" ref="sh_corpomate_page_faq_10" />                    
+        </record> 
+        
+        
+        
+        
+        <!-- 
+        ===============
+        TERMS AND CONDITIONS PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- TERMS AND CONDITIONS PAGE 10 -->
+        <record id="sh_corpomate_page_terms_and_conditions_10" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/termsandcondition10</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_terms_and_conditions_10"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_terms_and_conditions_10" model="website.menu">
+            <field name="name">terms and conditions</field>
+            <field name="url">/termsandcondition10</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">10</field>
+            <field name="page_id" ref="sh_corpomate_page_terms_and_conditions_10" />               
+        </record>  
+        
+        
+        <!-- 
+        ===============
+        PRIVACY POLICY 10
+        ================
+         -->        
+        
+        
+        <!-- PRIVACY POLICY PAGE 10 -->
+        <record id="sh_corpomate_page_privacy_policy_10" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/privacypolicy10</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_privacy_policy_10"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_privacy_policy_10" model="website.menu">
+            <field name="name">privacy policy</field>
+            <field name="url">/privacypolicy10</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">8</field>
+            <field name="page_id" ref="sh_corpomate_page_privacy_policy_10" />               
+        </record>
+        
+        
+        
+        
+        
+            
+        
+    </data>
+
+</odoo>        
+        

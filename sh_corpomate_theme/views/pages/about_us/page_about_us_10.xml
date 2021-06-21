@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- ABOUT US PAGE 10 -->
+	<template id="sh_corpomate_tmpl_about_us_10" name="about us">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			
+
+
+     		<section id="sh_corpomate_theme_section_265" class="s_banner parallax s_parallax_no_overflow_hidden bg-black-50" data-name="About Snippet 1(Banner)" style="background-image: none;" data-scroll-background-ratio="0">
+    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/about-banner.png'); background-position: 50% 0; background-attachment: fixed;" />
+    <div class="container">
+        <div class="sh_banner">
+            <div class="sh_des">
+                <h2 class="o_default_snippet_text">About Us</h2>
+                <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="sh_bread">
+                <ul>
+                    <li>
+                        <a href="/" class="btn o_default_snippet_text">Home</a>
+                        <span class="fa fa-chevron-right" />
+                    </li>
+                    <li class="o_default_snippet_text">About</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_266" data-name="About Snippet 2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="sh_content">
+                    <div class="sh_title">
+                        <h4 class="o_default_snippet_text">Lorem <span class="o_default_snippet_text">Ipsum</span></h4>
+                    </div>
+                    <p class="o_default_snippet_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="sh_column">
+                                <h4 class="o_default_snippet_text">1. Lorem Ipsum</h4>
+                                <p class="o_default_snippet_text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="sh_column">
+                                <h4 class="o_default_snippet_text">2. Lorem Ipsum</h4>
+                                <p class="o_default_snippet_text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="sh_img">
+                    <img src="/sh_corpomate_theme/static/src/img/theme10/1.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_267" data-name="About Snippet 3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <span class="fa fa-pie-chart" />
+                    </div>
+                    <h4 class="o_default_snippet_text">1. lorem ipsum</h4>
+                    <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <span class="fa fa-bar-chart" />
+                    </div>
+                    <h4 class="o_default_snippet_text">2. lorem ipsum</h4>
+                    <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <span class="fa fa-usd" />
+                    </div>
+                    <h4 class="o_default_snippet_text">3. lorem ipsum</h4>
+                    <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <span class="fa fa-briefcase" />
+                    </div>
+                    <h4 class="o_default_snippet_text">4. lorem ipsum</h4>
+                    <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+     		
+
+      
+			
+	      </div>
+	    </t>
+	</template>	
+<!-- ABOUT US PAGE 10 -->
+
+</odoo>
+
+
+
+

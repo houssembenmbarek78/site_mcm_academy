@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- CONTACT US PAGE 9 -->
+	<template id="sh_corpomate_tmpl_contact_us_9" name="contact us">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+	
+
+
+      <section id="sh_corpomate_theme_section_252" class="parallax s_parallax_no_overflow_hidden bg-black-75" data-name="Banner" style="background-image: none;" data-scroll-background-ratio="0">
+        <span class="s_parallax_bg oe_img_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/theme9/contact.jpg'); background-position: 50% 0;"/>
+        <div class="container">
+          <div class="s_nb_column_fixed">
+            <div class="rounded pt32 pb32">
+              <h2 class="o_default_snippet_text">Contact Us</h2>
+              <h4 class="o_default_snippet_text"><a href="/" class="o_default_snippet_text">Home</a><span class="o_default_snippet_text">||</span>Contact Us</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_253" data-name="Contact Form">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="sh_form">
+                <div class="sh_title">
+                  <h2 class="o_default_snippet_text">Lorem Ipsum</h2>
+                  <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <form action="/website_form/" method="post" data-model_name="crm.lead" data-success_page="/contactus-thank-you" class="s_website_form container-fluid mt32 o_fake_not_editable" enctype="multipart/form-data" data-editable-form="false" data-name="Form Builder">
+                  <div class="form-group sh_name sh_group form-field o_website_form_required_custom o_fake_not_editable" data-model_name="crm.lead" data-success_page="/contactus-thank-you">
+                    <input type="text" class="form-control o_website_form_input" placeholder="Name" name="name" required="" value=""/>
+                    <div class="sh_border">
+                      <div class="sh_left_right_border"/>
+                    </div>
+                  </div>
+                  <div class="form-group sh_number sh_group form-field o_website_form_required_custom o_fake_not_editable" data-model_name="crm.lead" data-success_page="/contactus-thank-you">
+                    <input type="text" class="form-control o_website_form_input" placeholder="Email" name="email_from" required="" value=""/>
+                    <div class="sh_border">
+                      <div class="sh_left_right_border"/>
+                    </div>
+                  </div>
+                  <div class="form-group sh_number sh_group form-field o_website_form_required_custom o_fake_not_editable" data-model_name="crm.lead" data-success_page="/contactus-thank-you">
+                    <input type="text" class="form-control o_website_form_input" placeholder="Telephone" name="phone" value=""/>
+                    <div class="sh_border">
+                      <div class="sh_left_right_border"/>
+                    </div>
+                  </div>
+                  <div class="form-group sh_group">
+                    <textarea class="form-control wpcf7-form-control o_website_form_input" cols="40" rows="5" name="description" required="" placeholder="Message"/>
+                    <div class="sh_border">
+                      <div class="sh_left_right_border"/>
+                    </div>
+                  </div>
+                  <div class="sh_btn">
+                    <a href="#" class="btn btn-primary o_website_form_send sh_btn_cm_8 o_default_snippet_text">Send Message</a>
+                    <span id="o_website_form_result"/>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="sh_address">
+                <div class="sh_title">
+                  <h2 class="o_default_snippet_text">Lorem Ipsum</h2>
+                  <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <ul class="sh_des">
+                  <li class="o_default_snippet_text"><b class="o_default_snippet_text">Address</b> 905, Corporate Levels, Ayodhya Chowk, Rajkot</li>
+                  <li class="o_default_snippet_text"><b class="o_default_snippet_text">Phone</b> +91 7984575681</li>
+                  <li class="o_default_snippet_text"><b class="o_default_snippet_text">Email</b> info@softhealer.com</li>
+                  <li class="o_default_snippet_text"><b class="o_default_snippet_text">Opening</b> Monday to Friday : 9:30 AM to 7 PM</li>
+                </ul>
+                <ul class="sh_social">
+                  <li>
+                    <a href="https://www.facebook.com/Odoo">
+                      <span class="fa fa-facebook"/>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/Odoo">
+                      <span class="fa fa-twitter"/>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/explore/tags/odoo/">
+                      <span class="fa fa-instagram"/>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/user/OpenERPonline">
+                      <span class="fa fa-youtube"/>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/company/odoo">
+                      <span class="fa fa-linkedin"/>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_254" data-name="Contact">
+        <div class="container">
+          <div class="sh_content">
+            <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+            <div class="sh_btn">
+              <a href="/contactus9" class="btn o_default_snippet_text">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+
+
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

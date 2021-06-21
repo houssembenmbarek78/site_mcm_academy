@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- OUR TEAM 10 -->
+	<template id="sh_corpomate_tmpl_our_team_10" name="our team">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			     
+			     
+			     
+			     <section id="sh_corpomate_theme_section_270" class="s_banner parallax s_parallax_no_overflow_hidden bg-black-50" data-name="Team Snippet 1(Banner)" style="background-image: none;" data-scroll-background-ratio="0">
+    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/team-banner.png'); background-position: 50% 0; background-attachment: fixed;" />
+    <div class="container">
+        <div class="sh_banner">
+            <div class="sh_des">
+                <h2 class="o_default_snippet_text">Team</h2>
+                <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="sh_bread">
+                <ul>
+                    <li>
+                        <a href="/" class="btn o_default_snippet_text">Home</a>
+                        <span class="fa fa-chevron-right" />
+                    </li>
+                    <li class="o_default_snippet_text">Team</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_271" data-name="Team Snippet 2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="sh_content">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/theme10/12.jpg" />
+                    </div>
+                    <div class="sh_des">
+                        <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="sh_content">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/theme10/11.jpg" />
+                    </div>
+                    <div class="sh_des">
+                        <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="sh_content">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/theme10/12.jpg" />
+                    </div>
+                    <div class="sh_des">
+                        <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="sh_content">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/theme10/8.jpg" />
+                    </div>
+                    <div class="sh_des">
+                        <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="sh_content">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/theme10/12.jpg" />
+                    </div>
+                    <div class="sh_des">
+                        <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="sh_content">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/theme10/11.jpg" />
+                    </div>
+                    <div class="sh_des">
+                        <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="sh_content">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/theme10/12.jpg" />
+                    </div>
+                    <div class="sh_des">
+                        <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="sh_content">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/theme10/8.jpg" />
+                    </div>
+                    <div class="sh_des">
+                        <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sh_btn">
+            <a href="#" class="btn btn-primary o_default_snippet_text">meet team</a>
+        </div>
+    </div>
+</section>
+			     
+      			     
+			     
+			     
+			     
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+
+

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- FAQ PAGE 5 -->
+	<template id="sh_corpomate_tmpl_faq_7" name="FAQ">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			
+
+
+<section id="sh_corpomate_theme_section_182" class="sh_animation_part oe_img_bg oe_custom_bg" data-name="theme7 all banner" style="background-image: url('/sh_corpomate_theme/static/src/img/faq-banner.png');">
+    <style>
+	   .o_affix_enabled .navbar-light .navbar-nav .nav-link{color: #fff !important;}
+   	   #sh_top_bar_7{color: #fff;}
+	   #sh_top_bar_7 .sh_tb_left > span a{color: #fff;}
+	   #sh_top_bar_7 .sh_social_icon a{border: 2px solid #fff;color: #fff;}
+	   #sh_top_bar_7 .sh_tb_right .js_language_selector button{color: #fff;border: 1px solid #fff;}
+	   #sh_top_bar_7 .sh_tb_right .js_language_selector{border-left: 1px solid #fff;}
+	   #sh_top_bar_7 .sh_tb_right .js_language_selector li > a{color: #fff;}
+	</style>
+    
+    <div class="container">
+        <div class="content text-center sh_animation_part">
+            <h1>FAQ</h1>
+            <div class="sh_breadcrumb">
+                <span class="fa fa-home sh_home" />
+                <span class="fa fa-chevron-right" />
+                <span class="sh_banner_name">FAQ</span>
+            </div>
+            <p class="o_default_snippet_text">Lorem ipsum dolar sit amet, consectetur adipisicing</p>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_211" class="sh_animation_part" data-name="FAQ 3">
+
+   
+    <div class="container">
+        <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+            <div class="card">
+                <div class="card-header" role="tab" id="headingOne81">
+                    <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne81" aria-expanded="true" aria-controls="collapseOne81" data-target="#collapseOne81">
+                        <h5 class="mb-0">
+                            <span class="sh_text o_default_snippet_text">Can I change the theme color? </span>
+                            <span class="fa fa-plus sh_icon_down" />
+                        </h5>
+                    </a>
+                </div>
+                <div id="collapseOne81" class="collapse show" role="tabpanel" aria-labelledby="headingOne81" data-parent="#accordionEx">
+                    <div class="card-body">
+                        <p class="o_default_snippet_text">
+                            Aliquam mattis ultricies dolor ac vulputate. Pellentesque lectus tellus, varius vitae est et, ullamcorper porttitor urna. Praesent tristique tempor erat quis tincidunt. Sed elementum porta ullamcorper.
+                        </p>
+                        <p class="o_default_snippet_text">
+                            Cras mattis dui ac elit sollicitudin, eu rutrum quam pharetra. Etiam consectetur nunc vitae nibh egestas scelerisque. Nam sed auctor eros, et euismod leo. Integer ut fringilla nunc. Donec eget lacus lobortis,
+                            aliquam nulla ultricies, cursus libero.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="headingOne82">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne82" aria-expanded="true" aria-controls="collapseOne82" data-target="#collapseOne82">
+                        <h5 class="mb-0">
+                            <span class="sh_text o_default_snippet_text">Can I change the theme color?</span>
+                            <span class="fa fa-plus sh_icon_down" />
+                        </h5>
+                    </a>
+                </div>
+                <div id="collapseOne82" class="collapse" role="tabpanel" aria-labelledby="headingOne82" data-parent="#accordionEx">
+                    <div class="card-body">
+                        <p class="o_default_snippet_text">
+                            Aliquam mattis ultricies dolor ac vulputate. Pellentesque lectus tellus, varius vitae est et, ullamcorper porttitor urna. Praesent tristique tempor erat quis tincidunt. Sed elementum porta ullamcorper.
+                        </p>
+                        <p class="o_default_snippet_text">
+                            Cras mattis dui ac elit sollicitudin, eu rutrum quam pharetra. Etiam consectetur nunc vitae nibh egestas scelerisque. Nam sed auctor eros, et euismod leo. Integer ut fringilla nunc. Donec eget lacus lobortis,
+                            aliquam nulla ultricies, cursus libero.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="headingOne83">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne83" aria-expanded="true" aria-controls="collapseOne83" data-target="#collapseOne83">
+                        <h5 class="mb-0">
+                            <span class="sh_text o_default_snippet_text">Can I change the theme color?</span>
+                            <span class="fa fa-plus sh_icon_down" />
+                        </h5>
+                    </a>
+                </div>
+                <div id="collapseOne83" class="collapse" role="tabpanel" aria-labelledby="headingOne83" data-parent="#accordionEx">
+                    <div class="card-body">
+                        <p class="o_default_snippet_text">
+                            Aliquam mattis ultricies dolor ac vulputate. Pellentesque lectus tellus, varius vitae est et, ullamcorper porttitor urna. Praesent tristique tempor erat quis tincidunt. Sed elementum porta ullamcorper.
+                        </p>
+                        <p class="o_default_snippet_text">
+                            Cras mattis dui ac elit sollicitudin, eu rutrum quam pharetra. Etiam consectetur nunc vitae nibh egestas scelerisque. Nam sed auctor eros, et euismod leo. Integer ut fringilla nunc. Donec eget lacus lobortis,
+                            aliquam nulla ultricies, cursus libero.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            
+      
+      
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

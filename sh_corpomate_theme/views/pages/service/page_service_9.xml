@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- SERVICE 9 -->
+	<template id="sh_corpomate_tmpl_service_9" name="service">
+	    <t t-call="website.layout"> 
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			      
+			      
+      <section id="sh_corpomate_theme_section_248" class="parallax s_parallax_no_overflow_hidden bg-black-75" data-name="Banner" style="background-image: none;" data-scroll-background-ratio="0">
+        <span class="s_parallax_bg oe_img_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/theme9/services.jpg'); background-position: 50% 0;"/>
+        <div class="container">
+          <div class="s_nb_column_fixed">
+            <div class="rounded pt32 pb32">
+              <h2 class="o_default_snippet_text">Services</h2>
+              <h4 class="o_default_snippet_text"><a href="/" class="o_default_snippet_text">Home</a><span class="o_default_snippet_text">||</span>Services</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_249" data-name="practice">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme9/2.png"/>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">Criminal Case &amp;amp; Attorney</h4>
+                  <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme9/4.png"/>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">Criminal Case &amp;amp; Attorney</h4>
+                  <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme9/9.png"/>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">Criminal Case &amp;amp; Attorney</h4>
+                  <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme9/2.png"/>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">Criminal Case &amp;amp; Attorney</h4>
+                  <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme9/4.png"/>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">Criminal Case &amp;amp; Attorney</h4>
+                  <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme9/9.png"/>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">Criminal Case &amp;amp; Attorney</h4>
+                  <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>			      
+			      
+			      
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

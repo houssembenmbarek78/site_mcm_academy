@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+
+
+
+
+
+
+
+
+		<!-- 
+		===============
+		MEGA MENU PAGE MAIN
+		================
+		 -->        
+        
+		
+		<!-- MEGA MENU PAGE 12  -->
+        <record id="sh_corpomate_page_mega_menu_12" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/megamenu12</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_mega_menu_12"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_mega_menu_12" model="website.menu">
+            <field name="name">mega menu</field>
+            <field name="url">/megamenu12</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">2</field>
+      	    <field name="page_id" ref="sh_corpomate_page_mega_menu_12" />    
+      	    <field name="sh_website_mega_menu_html" type="html">
+      	    
+      	    
+      	    
+    <!-- put your code here -->
+      	    
+    <section id="sh_megamenubar_17">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>Interactive</h4>
+                        <ul>
+                            <section><a href="#"> Split Section</a></section>
+                            <section><a href="#"> Triple Frame Image</a></section>
+                            <section><a href="#"> Portfolio Lists</a></section>
+                            <section><a href="#"> Portfolio Slider</a></section>
+                            <section><a href="#"> Shop List</a></section>
+                        </ul>
+                        <div class="sh_img">
+                           <img src="/sh_corpomate_theme/static/src/img/mega_menu/theme_12/megamenu1.jpg"></img>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>our team</h4>
+                        <ul>
+                            <section><a href="#"> team one</a></section>
+                            <section><a href="#"> team two</a></section>
+                            <section><a href="#"> team three</a></section>
+                            <section><a href="#"> team four</a></section>
+                            <section><a href="#"> team five</a></section>
+                        </ul>
+                        <div class="sh_img">
+                           <img src="/sh_corpomate_theme/static/src/img/mega_menu/theme_12/megamenu2.jpg"></img>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>our gallery</h4>
+                        <ul>
+                            <section><a href="#"> gallery 2 column</a></section>
+                            <section><a href="#"> gallery 3 column</a></section>
+                            <section><a href="#"> gallery 4 column</a></section>
+                            <section><a href="#"> gallery full width</a></section>
+                            <section><a href="#"> gallery full width no gap</a></section>
+                        </ul>
+                        <div class="sh_img">
+                           <img src="/sh_corpomate_theme/static/src/img/mega_menu/theme_12/megamenu3.jpg"></img>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>general services</h4>
+                        <ul>
+                            <section><a href="#"> building construction</a></section>
+                            <section><a href="#"> property sketching</a></section>
+                            <section><a href="#"> building renovation</a></section>
+                            <section><a href="#"> interior design</a></section>
+                            <section><a href="#"> material supply</a></section>    
+                        </ul>
+                        <div class="sh_img">
+                           <img src="/sh_corpomate_theme/static/src/img/mega_menu/theme_12/megamenu4.jpg"></img>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            
+
+        </div>
+    </section>      	       	    
+      	    
+    <!-- put your code here -->   	    	
+      	    
+
+   	    	</field>     	    
+      	    
+      	    
+      	    
+      	            
+        </record>	
+
+
+
+
+
+
+
+
+
+    
+        <!-- 
+        ===============
+        ABOUT US PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- ABOUT US PAGE 12 -->
+        <record id="sh_corpomate_page_about_us_12" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/aboutus12</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_about_us_12"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_about_us_12" model="website.menu">
+            <field name="name">about us</field>
+            <field name="url">/aboutus12</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">3</field>
+            <field name="page_id" ref="sh_corpomate_page_about_us_12" />            
+        </record>   
+
+
+
+    
+        <!-- 
+        ===============
+        HOME PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- HOME PAGE 12 -->
+        <record id="sh_corpomate_page_home_12" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/home12</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_home_12"/>
+            <field name="website_indexed" eval="False"/>
+            
+                        
+        </record>
+        
+
+        <record id="sh_corpomate_menu_home_12" model="website.menu">
+            <field name="name">home</field>
+            <field name="url">/home12</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">1</field>
+            <field name="page_id" ref="sh_corpomate_page_home_12" />               
+        </record>
+        
+        
+         <!-- 
+        ===============
+        SERVICE PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- SERVICE PAGE 12 -->
+        <record id="sh_corpomate_page_service_12" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/service12</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_service_12"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_service_12" model="website.menu">
+            <field name="name">service</field>
+            <field name="url">/service12</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">4</field>
+            <field name="page_id" ref="sh_corpomate_page_service_12" />               
+        </record>   
+            
+        <!-- 
+        ===============
+        CONTACT US PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- CONTACT US PAGE 12 -->
+        <record id="sh_corpomate_page_contact_us_12" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/contactus12</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_contact_us_12"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_contact_us_12" model="website.menu">
+            <field name="name">contact us</field>
+            <field name="url">/contactus12</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">6</field>
+            <field name="page_id" ref="sh_corpomate_page_contact_us_12" />                
+        </record> 
+        
+        
+        <!-- 
+        ===============
+        OUR TEAM MAIN
+        ================
+         -->        
+        
+        
+        
+        <record id="sh_corpomate_page_our_team_12" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/ourteam12</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_our_team_12"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_our_team_12" model="website.menu">
+            <field name="name">our team</field>
+            <field name="url">/ourteam12</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">5</field>
+            <field name="page_id" ref="sh_corpomate_page_our_team_12" />                
+        </record> 
+        
+  
+        
+       <!-- 
+        ===============
+        FAQ PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- FAQ PAGE 12 -->
+        <record id="sh_corpomate_page_faq_12" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/faq12</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_faq_12"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_faq_12" model="website.menu">
+            <field name="name">FAQ</field>
+            <field name="url">/faq12</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">7</field>
+            <field name="page_id" ref="sh_corpomate_page_faq_12" />                    
+        </record> 
+        
+        
+        
+        
+        <!-- 
+        ===============
+        TERMS AND CONDITIONS PAGE MAIN
+        ================
+         -->        
+        
+        
+        <!-- TERMS AND CONDITIONS PAGE 12 -->
+        <record id="sh_corpomate_page_terms_and_conditions_12" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/termsandcondition12</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_terms_and_conditions_12"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_terms_and_conditions_12" model="website.menu">
+            <field name="name">terms and conditions</field>
+            <field name="url">/termsandcondition12</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">12</field>
+            <field name="page_id" ref="sh_corpomate_page_terms_and_conditions_12" />               
+        </record>  
+        
+        
+        <!-- 
+        ===============
+        PRIVACY POLICY 12
+        ================
+         -->        
+        
+        
+        <!-- PRIVACY POLICY PAGE 12 -->
+        <record id="sh_corpomate_page_privacy_policy_12" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/privacypolicy12</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_privacy_policy_12"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_privacy_policy_12" model="website.menu">
+            <field name="name">privacy policy</field>
+            <field name="url">/privacypolicy12</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">8</field>
+            <field name="page_id" ref="sh_corpomate_page_privacy_policy_12" />               
+        </record>
+        
+        
+        
+        
+        <!-- 
+        ===============
+        Project 12
+        ================
+         -->        
+        
+        
+        <!-- Project PAGE 12 -->
+        <record id="sh_corpomate_page_project_12" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/project12</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_project_12"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_project_12" model="website.menu">
+            <field name="name">project</field>
+            <field name="url">/project12</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">9</field>
+            <field name="page_id" ref="sh_corpomate_page_project_12" />               
+        </record>
+        
+                
+        
+        
+            
+        
+    </data>
+
+</odoo>        
+        

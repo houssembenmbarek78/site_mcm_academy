@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+
+
+
+
+
+
+<!-- sh_website_megamenu_tmpl_7 -->
+<template id="sh_website_megamenu_tmpl_7" name="Mega Menu 1">
+    <section id="sh_megamenubar_7" class="js_cls_sh_megamenu_section_7">
+        <div class="container js_cls_sh_megamenu_container_7">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="sh_content">
+                        <h4>About</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sh_right_img">
+                        <a href="#" class="d-block">
+                            <img src="/sh_corpomate_theme/static/src/img/mega_menu/slider.png"></img>
+                        </a>
+                    </div>
+                
+                
+                    <!-- <section id="myCarousel" class="s_features_carousel carousel slide" data-interval="10000" >
+                       
+                        <ol type="1" class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                        </ol>
+                        
+                        <div class="carousel-inner">
+                            <div class="carousel-item image_text active">
+                                <img class="img img-fluid d-block mx-auto" src="/sh_corpomate_theme/static/src/img/mega_menu/slider.png" alt=""/>                    
+                            </div>
+                            <div class="carousel-item image_text">
+                                <img class="img img-fluid d-block mx-auto" src="/sh_corpomate_theme/static/src/img/mega_menu/slider.png" alt=""/> 
+                            </div>
+                        </div>
+                        <div class="carousel-control-prev" data-target="#s_products_carousel" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                            <span class="carousel-control-prev-icon fa fa-chevron-left"/>
+                            <span class="sr-only">Previous</span>
+                        </div>
+                        <div class="carousel-control-next" data-target="#s_products_carousel" data-slide="next" role="img" aria-label="Next" title="Next">
+                            <span class="carousel-control-next-icon fa fa-chevron-right"/>
+                            <span class="sr-only">Next</span>
+                        </div>
+                    </section> -->
+                </div>
+            </div>
+        </div>
+    </section>
+</template>    
+<!-- sh_website_megamenu_tmpl_7 -->
+
+
+
+
+
+<!-- sh_website_megamenu_tmpl_8 -->
+<template id="sh_website_megamenu_tmpl_8" name="Mega Menu 2">
+    <section id="sh_megamenubar_8">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="sh_content">
+                        <h4>Contact info:</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <hr/>
+                        <ul class="sh_address">
+                            <li><b>Address:</b>Heera Panna Complex, Rajkot.</li>
+                            <li><b>Contact:</b><a href="#">79845 75681</a></li>
+                            <li><b>Email:</b><a href="#">info@softhealer.com</a></li>
+                            <li><b>Home:</b><a href="#">https://www.softhealer.com/</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="sh_map">
+                        <a href="#">   
+                         	<img src="/sh_corpomate_theme/static/src/img/mega_menu/map.png"></img>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+<!-- sh_website_megamenu_tmpl_8 -->     
+
+
+
+<!-- sh_website_megamenu_tmpl_9 -->
+<template id="sh_website_megamenu_tmpl_9" name="Mega Menu 3">
+    <section id="sh_megamenubar_9">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="sh_content">
+                        <div class="sh_img">
+                            <img src="/sh_corpomate_theme/static/src/img/mega_menu/Layer 2.png" />
+                            <div class="sh_social_shair">
+                                <a href="#"><span class="fa fa-facebook"></span></a>
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                                <a href="#"><span class="fa fa-instagram"></span></a>
+                            </div>
+                        </div>
+                        <h4>Lorem Ipsum</h4>
+                        <p>Lorem ipsum dollar sit</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="sh_content">
+                        <div class="sh_img">
+                            <img src="/sh_corpomate_theme/static/src/img/mega_menu/Layer 3.png" />
+                            <div class="sh_social_shair">
+                                <a href="#"><span class="fa fa-facebook"></span></a>
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                                <a href="#"><span class="fa fa-instagram"></span></a>
+                            </div>
+                        </div>
+                        <h4>Lorem Ipsum</h4>
+                        <p>Lorem ipsum dollar sit</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="sh_content">
+                        <div class="sh_img">
+                            <img src="/sh_corpomate_theme/static/src/img/mega_menu/Layer 2.png" />
+                            <div class="sh_social_shair">
+                                <a href="#"><span class="fa fa-facebook"></span></a>
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                                <a href="#"><span class="fa fa-instagram"></span></a>
+                            </div>
+                        </div>
+                        <h4>Lorem Ipsum</h4>
+                        <p>Lorem ipsum dollar sit</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="sh_content">
+                        <div class="sh_img">
+                            <img src="/sh_corpomate_theme/static/src/img/mega_menu/Layer 3.png" />
+                            <div class="sh_social_shair">
+                                <a href="#"><span class="fa fa-facebook"></span></a>
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                                <a href="#"><span class="fa fa-instagram"></span></a>
+                            </div>
+                        </div>
+                        <h4>Lorem Ipsum</h4>
+                        <p>Lorem ipsum dollar sit</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</template>        
+<!-- sh_website_megamenu_tmpl_9 -->
+
+
+
+
+<!-- sh_website_megamenu_tmpl_10 -->
+<template id="sh_website_megamenu_tmpl_10" name="Mega Menu 4">
+    <section id="sh_megamenubar_10">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <div class="sh_img">
+                            <img src="/sh_corpomate_theme/static/src/img/mega_menu/teamwork-concept-landing-page_52683-20164.png"></img>
+                        </div>
+                        <h4>Lorem Ipsum</h4>
+                        <p>Lorem Ipsum dolor sit amet,</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <div class="sh_img">
+                            <img src="/sh_corpomate_theme/static/src/img/mega_menu/landing-page-template-business_52683-20458.png"></img>
+                        </div>
+                        <h4>Lorem Ipsum</h4>
+                        <p>Lorem Ipsum dolor sit amet,</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <div class="sh_img">
+                            <img src="/sh_corpomate_theme/static/src/img/mega_menu/contact-us-concept-landing-page_52683-18636.png"></img>
+                        </div>
+                        <h4>Lorem Ipsum</h4>
+                        <p>Lorem Ipsum dolor sit amet,</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <div class="sh_img">
+                            <img src="/sh_corpomate_theme/static/src/img/mega_menu/business-people-seminar-with-professional-presenting-office-teamwork-business-meeting_40876-1219.png"></img>
+                        </div>
+                        <h4>Lorem Ipsum</h4>
+                        <p>Lorem Ipsum dolor sit amet,</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sh_btn">
+                <a href="#" class="btn btn-primary">View More</a>
+            </div>
+
+        </div>
+    </section>
+</template>        
+<!-- sh_website_megamenu_tmpl_10 -->
+
+
+
+
+<!-- sh_website_megamenu_tmpl_11 -->
+<template id="sh_website_megamenu_tmpl_11" name="Mega Menu 5">
+    <section id="sh_megamenubar_11">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <div class="sh_icon">
+                            <span class="fa fa-cubes"></span>
+                        </div>
+                        <h4>Lorem Ipsum</h4>
+                        <p>Lorem ipsum is simply dummy text of the printing and type setting industry.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <div class="sh_icon">
+                            <span class="fa fa-television"></span>
+                        </div>
+                        <h4>Lorem Ipsum</h4>
+                        <p>Lorem ipsum is simply dummy text of the printing and type setting industry.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <div class="sh_icon">
+                            <span class="fa fa-paper-plane-o"></span>
+                        </div>
+                        <h4>Lorem Ipsum</h4>
+                        <p>Lorem ipsum is simply dummy text of the printing and type setting industry.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <div class="sh_icon">
+                            <span class="fa fa-signal"></span>
+                        </div>
+                        <h4>Lorem Ipsum</h4>
+                        <p>Lorem ipsum is simply dummy text of the printing and type setting industry.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <div class="sh_icon">
+                            <span class="fa fa-cubes"></span>
+                        </div>
+                        <h4>Lorem Ipsum</h4>
+                        <p>Lorem ipsum is simply dummy text of the printing and type setting industry.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <div class="sh_icon">
+                            <span class="fa fa-television"></span>
+                        </div>
+                        <h4>Lorem Ipsum</h4>
+                        <p>Lorem ipsum is simply dummy text of the printing and type setting industry.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <div class="sh_icon">
+                            <span class="fa fa-paper-plane-o"></span>
+                        </div>
+                        <h4>Lorem Ipsum</h4>
+                        <p>Lorem ipsum is simply dummy text of the printing and type setting industry.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <div class="sh_icon">
+                            <span class="fa fa-signal"></span>
+                        </div>
+                        <h4>Lorem Ipsum</h4>
+                        <p>Lorem ipsum is simply dummy text of the printing and type setting industry.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</template>            
+<!-- sh_website_megamenu_tmpl_11 -->
+
+
+
+<!-- sh_website_megamenu_tmpl_12 -->
+<template id="sh_website_megamenu_tmpl_12" name="Mega Menu 6">
+    <section id="sh_megamenubar_12">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/mega_menu/teamwork-people-with-puzzle-pieces_24877-54950.png"></img>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="sh_des">
+                        <h4>About</h4>
+                        <hr/>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="sh_link">
+                        <h4>Links</h4>
+                        <hr/>
+                        <ul>
+                            <li><a href="#">Explore More</a></li>
+                            <li><a href="#">Why choose us?</a></li>
+                            <li><a href="#">Want to join us?</a></li>
+                            <li><a href="#">What we do?</a></li>
+                            <li><a href="#">Support team</a></li>
+                            <li><a href="#">Developer team</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>            
+<!-- sh_website_megamenu_tmpl_12 -->
+
+
+
+
+
+
+
+<!-- sh_website_megamenu_tmpl_13 -->
+<template id="sh_website_megamenu_tmpl_13" name="Mega Menu 7">
+    <section id="sh_megamenubar_13">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="sh_map">
+                        <a href="#"><img src="/sh_corpomate_theme/static/src/img/mega_menu/e188a0c5-d49a-47d6-8267-96856e3bf4f6.png"></img></a>
+                    </div> 
+                </div>
+
+                <div class="col-md-4">
+                    <div class="sh_title">
+                        <h4>About</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>             
+                </div>
+
+                <div class="col-md-4">
+                    <div class="sh_address">
+                        <div class="sh_title">    
+                            <h4>Address</h4>
+                        </div>
+                        <ul class="sh_address_detail">
+                            <li>
+                                 <a href="#"><span class="fa fa-map-marker"></span> Heera Panna Complex, Rajkot</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-phone"></span> 7984575681</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-envelope-open"></span> Info@softhealer.com</a> 
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-home"></span> https://www.softhealer.com/</a>
+                            </li>
+                        </ul>
+
+                        <ul class="sh_social_media">
+                            <li>
+                                <a href="#"><span class="fa fa-facebook"></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-youtube"></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-instagram"></span></a>
+                            </li>                            
+                        </ul>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+</template>
+<!-- sh_website_megamenu_tmpl_13 -->   
+
+
+
+
+
+
+
+
+<!-- sh_website_megamenu_tmpl_14 -->
+<template id="sh_website_megamenu_tmpl_14" name="Mega Menu 8">
+    <section id="sh_megamenubar_14">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="sh_content">
+                        <div class="sh_img">
+                            <img src="/sh_corpomate_theme/static/src/img/mega_menu/Layer 5.png"></img>
+                        </div>
+                        <div class="sh_des">
+                            <h4>Lorem Ipsum</h4>
+                            <p>Lorem ipsum dollar sit</p>
+                            <div class="sh_media">
+                                <a href="#"><span class="fa fa-facebook"></span></a>
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                                <a href="#"><span class="fa fa-instagram"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sh_content">
+                        <div class="sh_img">
+                            <img src="/sh_corpomate_theme/static/src/img/mega_menu/Layer 5.png"></img>
+                        </div>
+                        <div class="sh_des">
+                            <h4>Lorem Ipsum</h4>
+                            <p>Lorem ipsum dollar sit</p>
+                            <div class="sh_media">
+                                <a href="#"><span class="fa fa-facebook"></span></a>
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                                <a href="#"><span class="fa fa-instagram"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sh_content">
+                        <div class="sh_img">
+                            <img src="/sh_corpomate_theme/static/src/img/mega_menu/Layer 5.png"></img>
+                        </div>
+                        <div class="sh_des">
+                            <h4>Lorem Ipsum</h4>
+                            <p>Lorem ipsum dollar sit</p>
+                            <div class="sh_media">
+                                <a href="#"><span class="fa fa-facebook"></span></a>
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                                <a href="#"><span class="fa fa-instagram"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sh_content pb-0">
+                        <div class="sh_img">
+                            <img src="/sh_corpomate_theme/static/src/img/mega_menu/Layer 6.png"></img>
+                        </div>
+                        <div class="sh_des">
+                            <h4>Lorem Ipsum</h4>
+                            <p>Lorem ipsum dollar sit</p>
+                            <div class="sh_media">
+                                <a href="#"><span class="fa fa-facebook"></span></a>
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                                <a href="#"><span class="fa fa-instagram"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sh_content pb-0">
+                        <div class="sh_img">
+                            <img src="/sh_corpomate_theme/static/src/img/mega_menu/Layer 6.png"></img>
+                        </div>
+                        <div class="sh_des">
+                            <h4>Lorem Ipsum</h4>
+                            <p>Lorem ipsum dollar sit</p>
+                            <div class="sh_media">
+                                <a href="#"><span class="fa fa-facebook"></span></a>
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                                <a href="#"><span class="fa fa-instagram"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sh_content pb-0">
+                        <div class="sh_img">
+                            <img src="/sh_corpomate_theme/static/src/img/mega_menu/Layer 6.png"></img>
+                        </div>
+                        <div class="sh_des">
+                            <h4>Lorem Ipsum</h4>
+                            <p>Lorem ipsum dollar sit</p>
+                            <div class="sh_media">
+                                <a href="#"><span class="fa fa-facebook"></span></a>
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                                <a href="#"><span class="fa fa-instagram"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</template>    
+<!-- sh_website_megamenu_tmpl_14 -->
+
+
+
+<!-- sh_website_megamenu_tmpl_15 -->
+<template id="sh_website_megamenu_tmpl_15" name="Mega Menu 9">
+    <section id="sh_megamenubar_15">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>Portfolio Columns <span class="fa fa-chevron-down"></span></h4>
+                        <ul>
+                            <section><a href="#">Two Columns</a></section>
+                            <section><a href="#">Three Columns</a></section>
+                            <section><a href="#">Four Columns</a></section>
+                            <section><a href="#">Five Columns</a></section>
+                            <section><a href="#">Six Columns</a></section>
+                        </ul>
+                    </div> 
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>Portfolio Fullwidth <span class="fa fa-chevron-down"></span></h4>
+                        <ul>
+                            <section><a href="#">Portfolio Style 1</a></section>
+                            <section><a href="#">Portfolio Style 2</a></section>
+                            <section><a href="#">Portfolio Style 3</a></section>
+                            <section><a href="#">Portfolio Style 4</a></section>
+                            <section><a href="#">Portfolio Style 5</a></section>
+                        </ul>
+                    </div> 
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>Single Pages <span class="fa fa-chevron-down"></span></h4>
+                        <ul>
+                            <section><a href="#">Two Columns</a></section>
+                            <section><a href="#">Three Columns</a></section>
+                            <section><a href="#">Four Columns</a></section>
+                            <section><a href="#">Five Columns</a></section>
+                            <section><a href="#">Six Columns</a></section>
+                        </ul>
+                    </div> 
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>Masonry Portfolio <span class="fa fa-chevron-down"></span></h4>
+                        <ul>
+                            <section><a href="#">Extended Items</a></section>
+                            <section><a href="#">Full Width Slider</a></section>
+                            <section><a href="#">Full Width Video</a></section>
+                            <section><a href="#">Side Image Slider</a></section>
+                            <section><a href="#">Grid Gallery</a></section>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="sh_view_more">
+                <a href="#" class="btn">View More</a>
+            </div>
+
+        </div>
+    </section>
+</template>         
+<!-- sh_website_megamenu_tmpl_15 -->
+
+
+<!-- sh_website_megamenu_tmpl_16 -->
+<template id="sh_website_megamenu_tmpl_16" name="Mega Menu 10">
+    <section id="sh_megamenubar_16">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>Company Overview</h4>
+                        <div class="sh_img">
+                           <img src="/sh_corpomate_theme/static/src/img/theme9/2.png"></img>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consecteture</p>
+                    </div> 
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>Example pages</h4>
+                        <ul>
+                            <section><a href="#"><span class="fa fa-arrow-right"></span> Testimonial 1</a></section>
+                            <section><a href="#"><span class="fa fa-arrow-right"></span> Testimonial 2</a></section>
+                            <section><a href="#"><span class="fa fa-arrow-right"></span> Graphs &amp; Charts</a></section>
+                            <section><a href="#"><span class="fa fa-arrow-right"></span> Typography</a></section>
+                            <section><a href="#"><span class="fa fa-arrow-right"></span> Webinars</a></section>
+                            <section><a href="#"><span class="fa fa-arrow-right"></span> Webinars single</a></section>
+                        </ul>
+                    </div> 
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>Events</h4>
+                        <ul>
+                            <section><a href="#"><span class="fa fa-arrow-right"></span> event grid</a></section>
+                            <section><a href="#"><span class="fa fa-arrow-right"></span> event classic</a></section>
+                            <section><a href="#"><span class="fa fa-arrow-right"></span> event modern</a></section>
+                            <section><a href="#"><span class="fa fa-arrow-right"></span> appointment</a></section>
+                            <section><a href="#"><span class="fa fa-arrow-right"></span> coming soon</a></section>
+                            <section><a href="#"><span class="fa fa-arrow-right"></span> cost calculator</a></section>
+                        </ul>
+                    </div> 
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>contacts</h4>
+                        <ul>
+                            <section><a href="#"><span class="fa fa-map-marker"></span> 905, corporate levels, ayodhya chowk, rajkot.</a></section>
+                            <section><a href="#"><span class="fa fa-phone"></span> +917984575681</a></section>
+                            <section><a href="#"><span class="fa fa-envelope-o"></span> support@softhealer.com</a></section>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+
+            
+
+        </div>
+    </section>
+</template>         
+<!-- sh_website_megamenu_tmpl_16 -->
+
+
+
+
+<!-- sh_website_megamenu_tmpl_17 -->
+<template id="sh_website_megamenu_tmpl_17" name="Mega Menu 11">
+    
+    
+    <section id="sh_megamenubar_17">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>Departments</h4>
+                        <ul>
+                            <section><a href="#"> orthopaedics 1</a></section>
+                            <section><a href="#"> gynecology</a></section>
+                            <section><a href="#"> medicine</a></section>
+                            <section><a href="#"> cardiology</a></section>
+                            <section><a href="#"> dental care</a></section>
+                        </ul>
+                        <div class="sh_img">
+                           <img src="/sh_corpomate_theme/static/src/img/mega_menu/theme_11/megamenu1.jpg"></img>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>our doctors</h4>
+                        <ul>
+                            <section><a href="#"> doctor one</a></section>
+                            <section><a href="#"> doctor two</a></section>
+                            <section><a href="#"> doctor three</a></section>
+                            <section><a href="#"> doctor four</a></section>
+                            <section><a href="#"> doctor five</a></section>
+                        </ul>
+                        <div class="sh_img">
+                           <img src="/sh_corpomate_theme/static/src/img/mega_menu/theme_11/megamenu2.jpg"></img>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>our gallery</h4>
+                        <ul>
+                            <section><a href="#"> gallery 2 column</a></section>
+                            <section><a href="#"> gallery 3 column</a></section>
+                            <section><a href="#"> gallery 4 column</a></section>
+                            <section><a href="#"> gallery full width</a></section>
+                            <section><a href="#"> gallery full width no gap</a></section>
+                        </ul>
+                        <div class="sh_img">
+                           <img src="/sh_corpomate_theme/static/src/img/mega_menu/theme_11/megamenu3.jpg"></img>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>general services</h4>
+                        <ul>
+                            <section><a href="#"> cardiology</a></section>
+                            <section><a href="#"> orthopaedics</a></section>
+                            <section><a href="#"> pediatric</a></section>
+                            <section><a href="#"> oncology</a></section>
+                            <section><a href="#"> anesthesiology</a></section>    
+                        </ul>
+                        <div class="sh_img">
+                           <img src="/sh_corpomate_theme/static/src/img/mega_menu/theme_11/megamenu4.jpg"></img>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            
+
+        </div>
+    </section>    
+    
+    
+
+</template>         
+<!-- sh_website_megamenu_tmpl_17 -->
+
+
+
+
+
+
+<!-- sh_website_megamenu_tmpl_18 -->
+<template id="sh_website_megamenu_tmpl_18" name="Mega Menu 12">
+    <section id="sh_megamenubar_17">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>Interactive</h4>
+                        <ul>
+                            <section><a href="#"> Split Section</a></section>
+                            <section><a href="#"> Triple Frame Image</a></section>
+                            <section><a href="#"> Portfolio Lists</a></section>
+                            <section><a href="#"> Portfolio Slider</a></section>
+                            <section><a href="#"> Shop List</a></section>
+                        </ul>
+                        <div class="sh_img">
+                           <img src="/sh_corpomate_theme/static/src/img/mega_menu/theme_12/megamenu1.jpg"></img>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>our team</h4>
+                        <ul>
+                            <section><a href="#"> team one</a></section>
+                            <section><a href="#"> team two</a></section>
+                            <section><a href="#"> team three</a></section>
+                            <section><a href="#"> team four</a></section>
+                            <section><a href="#"> team five</a></section>
+                        </ul>
+                        <div class="sh_img">
+                           <img src="/sh_corpomate_theme/static/src/img/mega_menu/theme_12/megamenu2.jpg"></img>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>our gallery</h4>
+                        <ul>
+                            <section><a href="#"> gallery 2 column</a></section>
+                            <section><a href="#"> gallery 3 column</a></section>
+                            <section><a href="#"> gallery 4 column</a></section>
+                            <section><a href="#"> gallery full width</a></section>
+                            <section><a href="#"> gallery full width no gap</a></section>
+                        </ul>
+                        <div class="sh_img">
+                           <img src="/sh_corpomate_theme/static/src/img/mega_menu/theme_12/megamenu3.jpg"></img>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sh_content">
+                        <h4>general services</h4>
+                        <ul>
+                            <section><a href="#"> building construction</a></section>
+                            <section><a href="#"> property sketching</a></section>
+                            <section><a href="#"> building renovation</a></section>
+                            <section><a href="#"> interior design</a></section>
+                            <section><a href="#"> material supply</a></section>    
+                        </ul>
+                        <div class="sh_img">
+                           <img src="/sh_corpomate_theme/static/src/img/mega_menu/theme_12/megamenu4.jpg"></img>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            
+
+        </div>
+    </section>
+</template>         
+<!-- sh_website_megamenu_tmpl_18 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<template id="sh_website_megamenu_website_snippets" inherit_id="website.snippets" name="Mega Menu Snippet">
+  <xpath expr="//div[@id='snippet_structure']" position="after">
+  
+    <div id="sh_website_megamenu_snippets" class="o_panel">
+		<div class="o_panel_header">
+			Mega Menu snippet
+		</div>		
+		<div class="o_panel_body">
+  
+
+        <t t-snippet="sh_corpomate_theme.sh_website_megamenu_tmpl_7"
+           t-thumbnail="/sh_corpomate_theme/static/src/img/blocks/mega_menu/1.png"/>   
+        <t t-snippet="sh_corpomate_theme.sh_website_megamenu_tmpl_8"
+           t-thumbnail="/sh_corpomate_theme/static/src/img/blocks/mega_menu/2.png"/>  
+        <t t-snippet="sh_corpomate_theme.sh_website_megamenu_tmpl_9"
+           t-thumbnail="/sh_corpomate_theme/static/src/img/blocks/mega_menu/3.png"/> 
+        <t t-snippet="sh_corpomate_theme.sh_website_megamenu_tmpl_10"
+           t-thumbnail="/sh_corpomate_theme/static/src/img/blocks/mega_menu/4.png"/>
+        <t t-snippet="sh_corpomate_theme.sh_website_megamenu_tmpl_11"
+           t-thumbnail="/sh_corpomate_theme/static/src/img/blocks/mega_menu/5.png"/>
+        <t t-snippet="sh_corpomate_theme.sh_website_megamenu_tmpl_12"
+           t-thumbnail="/sh_corpomate_theme/static/src/img/blocks/mega_menu/6.png"/>
+        <t t-snippet="sh_corpomate_theme.sh_website_megamenu_tmpl_13"
+           t-thumbnail="/sh_corpomate_theme/static/src/img/blocks/mega_menu/7.png"/>   
+        <t t-snippet="sh_corpomate_theme.sh_website_megamenu_tmpl_14"
+           t-thumbnail="/sh_corpomate_theme/static/src/img/blocks/mega_menu/8.png"/>
+        <t t-snippet="sh_corpomate_theme.sh_website_megamenu_tmpl_15"
+           t-thumbnail="/sh_corpomate_theme/static/src/img/blocks/mega_menu/9.png"/>                          
+		<t t-snippet="sh_corpomate_theme.sh_website_megamenu_tmpl_16"
+           t-thumbnail="/sh_corpomate_theme/static/src/img/blocks/mega_menu/9.png"/>
+        <t t-snippet="sh_corpomate_theme.sh_website_megamenu_tmpl_17"
+           t-thumbnail="/sh_corpomate_theme/static/src/img/blocks/mega_menu/9.png"/>   
+        
+        <t t-snippet="sh_corpomate_theme.sh_website_megamenu_tmpl_18"
+           t-thumbnail="/sh_corpomate_theme/static/src/img/blocks/mega_menu/9.png"/>   
+                   
+
+        
+     </div>
+   </div>                          
+                                                                                              
+               
+  </xpath>
+</template>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</odoo>

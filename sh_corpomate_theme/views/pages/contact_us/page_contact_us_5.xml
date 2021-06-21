@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- CONTACT US PAGE 5 -->
+	<template id="sh_corpomate_tmpl_contact_us_5" name="contact us">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			
+
+
+            <section id="sh_corpomate_theme_section_112" class="home-area bg-item margin-top-space-2" style="background-image: url('/sh_corpomate_theme/static/src/img/banner1.jpg')">
+    <style class="o_default_snippet_text">
+        .navbar-light {
+            background: transparent !important;
+            z-index: 1;
+        }
+        
+        .navbar-light #top_menu_collapse .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+        
+        .o_affix_enabled .navbar-light {
+            background: transparent !important;
+        }
+        
+        @media (max-width: 768px) {
+            .navbar-light {
+                background: #fff !important;
+                z-index: 1;
+            }
+            .navbar-light #top_menu_collapse .navbar-nav .nav-link {
+                color: #585b60 !important;
+            }
+            .o_affix_enabled .navbar-light {
+                background-color: #fff !important;
+            }
+        }
+    </style>
+    <div class="bg-overlay-4" />
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 mx-auto">
+                <div class="banner-content text-center">
+                    <h1 class="o_default_snippet_text">Contact Us</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb align-items-center">
+                            <li class="breadcrumb-item">
+                                <a href="index.html" class="o_default_snippet_text">HOME</a>
+                                <span class="fa fa-chevron-right" />
+                            </li>
+                            <li class="breadcrumb-item active o_default_snippet_text" aria-current="page">Contact Us 5</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-shape">
+        <img class="img-fluid" src="/sh_corpomate_theme/static/src/img/bg_home_shape.png" alt="bottom-shape image" />
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_83">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 sh_animation_part">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <a href="#">
+                            <span class="fa fa-phone" />
+                        </a>
+                    </div>
+                    <h3 class="o_default_snippet_text">Call Now</h3>
+                    <a href="tel:+919033366091" class="o_default_snippet_text">+919033366091</a>
+                    <a href="tel:+919033366091" class="o_default_snippet_text">+919033366091</a>
+                </div>
+            </div>
+            <div class="col-md-4 sh_animation_part">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <a href="#">
+                            <span class="fa fa-map-marker" />
+                        </a>
+                    </div>
+                    <h3 class="o_default_snippet_text">Location</h3>
+                    <span class="o_default_snippet_text">313, Hira Panna Complex,
+                            Dr. Yagnik Road, New Jagnath, Jagnath Plot,
+                            Rajkot, Gujarat, India 360001</span>
+                </div>
+            </div>
+            <div class="col-md-4 sh_animation_part">
+                <div class="sh_content">
+                    <div class="sh_icon">
+                        <a href="#">
+                            <span class="fa fa-envelope" />
+                        </a>
+                    </div>
+                    <h3 class="o_default_snippet_text">Email Support</h3>
+                    <a href="mailto:info@softhealer.com" class="o_default_snippet_text">info@softhealer.com</a>
+                    <a href="mailto:info@softhealer.com" class="o_default_snippet_text">info@softhealer.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_153">
+    <div class="grax_title_holder">
+        <h3>
+            <span class="o_default_snippet_text">Lorem ipsum</span>
+          </h3>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_84">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 sh_animation_part" style="margin: auto;">
+                <div class="sh_form">
+                    <form action="/website_form/" method="post" data-model_name="crm.lead" data-success_page="/contactus-thank-you" class="s_website_form container-fluid mt32" enctype="multipart/form-data" data-editable-form="false">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group form-field custom-form o_website_form_required_custom">
+                                    <input type="text" class="form-control o_website_form_input" placeholder="Your Name" name="contact_name" required="" value="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group custom-form form-field o_website_form_required_custom">
+                                    <input type="text" class="form-control o_website_form_input" placeholder="Phone Number" name="phone" value="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group custom-form form-field o_website_form_required_custom">
+                                    <input type="text" class="form-control o_website_form_input" placeholder="Email" name="email_from" required="" value="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group custom-form form-field">
+                                    <input type="text" class="form-control o_website_form_input" placeholder="Your Company" name="partner_name" value="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group custom-form form-field">
+                                    <input type="text" class="form-control o_website_form_input" placeholder="Subject" name="name" required="" value="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group custom-form form-field">
+                                    <textarea class="form-control o_website_form_input" placeholder="Your Question" name="description" required="">
+                                    </textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 text-center">
+                                <a href="#" role="button" class="btn btn-primary sh_btn_cm_5 sh_submit_btn btn-lg o_website_form_send o_default_snippet_text">Send</a>
+                                <span id="o_website_form_result" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+      
+
+
+
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

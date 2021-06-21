@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- OUR TEAM 3 -->
+	<template id="sh_corpomate_tmpl_our_team_3" name="our team">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			
+
+  
+<section id="sh_corpomate_theme_section_158" class="section-main bg-img-3 s_banner parallax s_parallax_no_overflow_hidden bg-black-75" data-scroll-background-ratio="0" style="background-image: none;">
+    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/services-banner.png'); background-position: 50% 0;background-attachment: fixed;" />
+        <section id="breadcrumb-section" class="breadcrumb-section clearfix">
+            <div class="jarallax" style="background-image: none; position: relative; z-index: 0;" data-jarallax-original-styles="background-image: url(assets/images/breadcrumb/0.breadcrumb-bg.jpg);">
+                <div class="overlay-black">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="breadcrumb-title text-center mb-50">
+                                    <span class="sub-title o_default_snippet_text">all you need to know</span>
+                                    <h2 class="big-title o_default_snippet_text"><strong class="o_default_snippet_text">Our</strong> Team</h2>
+                                </div>
+                                <div class="breadcrumb-list">
+                                    <ul>
+                                        <li class="breadcrumb-item">
+                                            <a href="index-1.html" class="breadcrumb-link o_default_snippet_text">Home</a>
+                                        </li>
+                                        <li class="breadcrumb-item active o_default_snippet_text" aria-current="page">about us</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section id="sh_corpomate_theme_section_152">
+        <div class="container">
+            <div class="row">
+                <h1 class="elementor-size-default o_default_snippet_text">Lorem <span class="highlight o_default_snippet_text">Ipsum</span></h1>
+            </div>
+        </div>
+    </section>
+    <section id="sh_corpomate_theme_section_141">
+        <section class="wakfi-team-area section_t_100 section_b_70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3" style="visibility: visible; animation-name: fadeIn;">
+                        <div class="single-team">
+                            <div class="team-image">
+                                <img src="/sh_corpomate_theme/static/src/img/6.jpg" />
+                            </div>
+                            <div class="team-info">
+                                <div class="team-overlay-one">
+                                    <h3 class="o_default_snippet_text">Jylin Scott</h3>
+                                    <p class="o_default_snippet_text">Founder &amp;amp; CEO</p>
+                                </div>
+                            </div>
+                            <div class="team-info-two">
+                                <div class="team-overlay-two">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <span class="fa fa-facebook" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="fa fa-twitter" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="fa fa-linkedin" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="fa fa-google-plus" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3" style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="single-team">
+                            <div class="team-image">
+                                <img src="/sh_corpomate_theme/static/src/img/7.jpg" />
+                            </div>
+                            <div class="team-info">
+                                <div class="team-overlay-one">
+                                    <h3 class="o_default_snippet_text">Charles Luke</h3>
+                                    <p class="o_default_snippet_text">Tech Advisor</p>
+                                </div>
+                            </div>
+                            <div class="team-info-two">
+                                <div class="team-overlay-two">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <span class="fa fa-facebook" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="fa fa-twitter" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="fa fa-linkedin" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="fa fa-google-plus" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3" style="visibility: visible; animation-name: fadeIn;">
+                        <div class="single-team">
+                            <div class="team-image">
+                                <img src="/sh_corpomate_theme/static/src/img/8.jpg" />
+                            </div>
+                            <div class="team-info">
+                                <div class="team-overlay-one">
+                                    <h3 class="o_default_snippet_text">Catherine Matt</h3>
+                                    <p class="o_default_snippet_text">apps developer</p>
+                                </div>
+                            </div>
+                            <div class="team-info-two">
+                                <div class="team-overlay-two">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <span class="fa fa-facebook" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="fa fa-twitter" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="fa fa-linkedin" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="fa fa-google-plus" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3" style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="single-team">
+                            <div class="team-image">
+                                <img src="/sh_corpomate_theme/static/src/img/9.jpg" />
+                            </div>
+                            <div class="team-info">
+                                <div class="team-overlay-one">
+                                    <h3 class="o_default_snippet_text">James Sienna </h3>
+                                    <p class="o_default_snippet_text">apps developer</p>
+                                </div>
+                            </div>
+                            <div class="team-info-two">
+                                <div class="team-overlay-two">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <span class="fa fa-facebook" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="fa fa-twitter" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="fa fa-linkedin" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="fa fa-google-plus" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+      
+      
+      
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+
+

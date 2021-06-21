@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- TERMS AND CONDITIONS 8 -->
+	<template id="sh_corpomate_tmpl_terms_and_conditions_8" name="terms and conditions">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			
+
+
+
+
+<section id="sh_corpomate_theme_section_232" class="s_banner parallax s_parallax_no_overflow_hidden bg-black-75" data-name="Contact8 Banner" style="background-image: none;" data-scroll-background-ratio="0">
+    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/terms-condiation-banner.png'); background-position: 50% 0px; background-attachment: fixed;" />
+    <div class="container">
+        <div class="sh_heading">
+            <h1>Terms and Condition</h1>
+            <div class="sh_breadcrumbs">
+                <ul class="breadcrumbs">
+                    <li>
+                        <a href="/" class="home o_default_snippet_text">Home</a>
+                    </li>
+                    <li>
+                        <span>Terms and Condition</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_213" data-name="Privacy Policy 3">
+    <div class="container">
+        <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+            <div class="card">
+                <div class="card-header" role="tab" id="headingOne121">
+                    <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne121" aria-expanded="true" aria-controls="collapseOne121" data-target="#collapseOne121">
+                        <h5 class="mb-0">
+                            <span class="fa fa-plus sh_icon_down" />
+                            <span class="sh_text o_default_snippet_text">How can we help your business?</span>
+                        </h5>
+                    </a>
+                </div>
+                <div id="collapseOne121" class="collapse show" role="tabpanel" aria-labelledby="headingOne121" data-parent="#accordionEx">
+                    <div class="card-body">
+                        <p class="o_default_snippet_text">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                            3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad
+                            vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="headingOne122">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne122" aria-expanded="true" aria-controls="collapseOne122" data-target="#collapseOne122">
+                        <h5 class="mb-0">
+                            <span class="fa fa-plus sh_icon_down" />
+                            <span class="sh_text o_default_snippet_text">How can we help your business?</span>
+                        </h5>
+                    </a>
+                </div>
+                <div id="collapseOne122" class="collapse" role="tabpanel" aria-labelledby="headingOne122" data-parent="#accordionEx">
+                    <div class="card-body">
+                        <p class="o_default_snippet_text">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                            3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad
+                            vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="headingOne123">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne123" aria-expanded="true" aria-controls="collapseOne123" data-target="#collapseOne123">
+                        <h5 class="mb-0">
+                            <span class="fa fa-plus sh_icon_down" />
+                            <span class="sh_text o_default_snippet_text">How can we help your business?</span>
+                        </h5>
+                    </a>
+                </div>
+                <div id="collapseOne123" class="collapse" role="tabpanel" aria-labelledby="headingOne123" data-parent="#accordionEx">
+                    <div class="card-body">
+                        <p class="o_default_snippet_text">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                            3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad
+                            vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab" id="headingOne124">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne124" aria-expanded="true" aria-controls="collapseOne124" data-target="#collapseOne124">
+                        <h5 class="mb-0">
+                            <span class="fa fa-plus sh_icon_down" />
+                            <span class="sh_text o_default_snippet_text">How can we help your business?</span>
+                        </h5>
+                    </a>
+                </div>
+                <div id="collapseOne124" class="collapse" role="tabpanel" aria-labelledby="headingOne124" data-parent="#accordionEx">
+                    <div class="card-body">
+                        <p class="o_default_snippet_text">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                            3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad
+                            vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+      
+      
+      
+      
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

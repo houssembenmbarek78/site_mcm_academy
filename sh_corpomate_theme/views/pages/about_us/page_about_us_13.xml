@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- ABOUT US PAGE 13 -->
+	<template id="sh_corpomate_tmpl_about_us_13" name="about us">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			
+
+		   	<section id="sh_corpomate_theme_section_324" class="s_banner parallax s_parallax_no_overflow_hidden bg-black-50" data-name="Banner 13" style="background-image: none;" data-scroll-background-ratio="0">
+		        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/theme_13/6.png'); background-position: 50% 0; background-attachment: fixed;"/>
+		        <div class="container">
+		          <div class="sh_banner">
+		            <div class="sh_title">
+		              <h4 class="o_default_snippet_text">About Us</h4>
+		            </div>
+		            <div class="sh_breadcrumb">
+		              <ul>
+		                <li>
+		                  <a href="/" class="btn sh_main o_default_snippet_text"><span class="fa fa-home"/> &amp;nbsp; &amp;nbsp; &amp;nbsp; <span class="fa fa-chevron-right"/></a>
+		                </li>
+		                <li>
+		                  <a href="#" class="btn o_default_snippet_text">About</a>
+		                </li>
+		              </ul>
+		            </div>
+		          </div>
+		        </div>
+		      </section>
+		      <section id="sh_corpomate_theme_section_325" class="sh_animation_part" data-name="Text_Image 13">
+		        <div class="container">
+		          <div class="sh_text_image_13">
+		            <div class="row">
+		              <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+		                <div class="left_text">
+		                  <h5 class="o_default_snippet_text">Lorem ipsum dolor sit amet</h5>
+		                  <h3 class="o_default_snippet_text">Lorem ipsum dolor sit amet</h3>
+		                  <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		                  <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+		                  <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+		                  <a href="#" class="btn btn_viewmore o_default_snippet_text">View More</a>
+		                </div>
+		              </div>
+		              <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+		                <div class="right_image">
+		                  <div class="behind_img">
+		                    <img src="/sh_corpomate_theme/static/src/img/theme_13/4.png" alt="Image"/>
+		                  </div>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		      </section>
+		      <section id="sh_corpomate_theme_section_326" class="sh_animation_part" data-name="Progressbar 13">
+		        <div class="container">
+		          <div class="sh_progressbar_13">
+		            <div class="row">
+		              <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+		                <div class="sh_division">
+		                  <section class="sh_first_progress sh_progress">
+		                    <p class="o_default_snippet_text">Fashwash <span class="sh_right_pers o_default_snippet_text">90%</span></p>
+		                    <div class="progress">
+		                      <div class="progress-bar wow fadeInLeft                                                          animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated" data-wow-duration="1.5s" data-wow-delay="1s" style="width: 90%; visibility: visible; animation-duration: 1.5s; animation-delay: 1s;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"/>
+		                    </div>
+		                  </section>
+		                  <section class="sh_sec_progress sh_progress">
+		                    <p class="o_default_snippet_text">Hair Cut <span class="sh_right_pers o_default_snippet_text">70%</span></p>
+		                    <div class="progress">
+		                      <div class="progress-bar wow fadeInLeft                                                          animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated" data-wow-duration="1.5s" data-wow-delay="1s" style="width: 70%; visibility: visible; animation-duration: 1.5s; animation-delay: 1s;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"/>
+		                    </div>
+		                  </section>
+		                </div>
+		              </div>
+		              <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+		                <div class="sh_division">
+		                  <section class="sh_third_progress sh_progress">
+		                    <p class="o_default_snippet_text">Spa Treatment <span class="sh_right_pers o_default_snippet_text">75%</span></p>
+		                    <div class="progress">
+		                      <div class="progress-bar wow fadeInLeft                                                          animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated" data-wow-duration="1.5s" data-wow-delay="1s" style="width: 75%; visibility: visible; animation-duration: 1.5s; animation-delay: 1s;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"/>
+		                    </div>
+		                  </section>
+		                  <section class="sh_fourth_progress sh_progress">
+		                    <p class="o_default_snippet_text">Body Massage <span class="sh_right_pers o_default_snippet_text">95%</span></p>
+		                    <div class="progress">
+		                      <div class="progress-bar wow fadeInLeft                                                          animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated" data-wow-duration="1.5s" data-wow-delay="1s" style="width: 95%; visibility: visible; animation-duration: 1.5s; animation-delay: 1s;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"/>
+		                    </div>
+		                  </section>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		      </section>
+		      <section id="sh_corpomate_theme_section_327" class="sh_animation_part" data-name="Counter 13">
+		        <div class="container">
+		          <div class="row">
+		            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+		              <div class="sh_counter">
+		                <p class="sh_count_num o_default_snippet_text">80</p>
+		                <h4 class="sh_text o_default_snippet_text">Lorem ipsum dolor sit</h4>
+		              </div>
+		            </div>
+		            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+		              <div class="sh_counter">
+		                <p class="sh_count_num o_default_snippet_text">80</p>
+		                <h4 class="sh_text o_default_snippet_text">Lorem ipsum dolor sit</h4>
+		              </div>
+		            </div>
+		            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+		              <div class="sh_counter">
+		                <p class="sh_count_num o_default_snippet_text">80</p>
+		                <h4 class="sh_text o_default_snippet_text">Lorem ipsum dolor sit</h4>
+		              </div>
+		            </div>
+		            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+		              <div class="sh_counter">
+		                <p class="sh_count_num o_default_snippet_text">80</p>
+		                <h4 class="sh_text o_default_snippet_text">Lorem ipsum dolor sit</h4>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		      </section>
+		      <section id="sh_corpomate_theme_section_328" class="sh_animation_part" data-name="Image_Text 13">
+		        <div class="container">
+		          <div class="sh_image_text_13">
+		            <div class="row">
+		              <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+		                <div class="left_image">
+		                  <div class="behind_img">
+		                    <img src="/sh_corpomate_theme/static/src/img/theme_13/2.png" alt="Image"/>
+		                  </div>
+		                </div>
+		              </div>
+		              <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+		                <div class="right_text">
+		                  <h5 class="o_default_snippet_text">Lorem ipsum dolor sit amet</h5>
+		                  <h3 class="o_default_snippet_text">Lorem ipsum dolor sit amet</h3>
+		                  <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		                  <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+		                  <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+		                  <a href="#" class="btn btn_viewmore o_default_snippet_text">View More</a>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		      </section>
+					
+	      </div>
+	    </t>
+	</template>	
+<!-- ABOUT US PAGE 13 -->
+
+</odoo>
+
+
+
+

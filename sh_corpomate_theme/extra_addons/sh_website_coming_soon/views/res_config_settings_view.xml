@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- RES CONFIG SETTING FOR SKYPE SETTINGS -->
+    <record id="sh_website_coming_soon_res_config_settings" model="ir.ui.view">
+        <field name="name">sh.website.coming.soon.res.config.settings</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="website.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='website_settings']" position="after">
+                <h2>Website Coming Soon</h2>
+                <div class="row mt16 o_settings_container" id="sh_website_coming_soon_settings">
+                    <div class="col-12 col-md-12 o_setting_box">
+                        <group name="sh_website_coming_soon_settings_group">
+                            <field name="sh_website_coming_soon_is_coming_soon" />
+                            <field name="sh_website_coming_soon_title" attrs="{'invisible': [('sh_website_coming_soon_is_coming_soon','=',False)],'required': [('sh_website_coming_soon_is_coming_soon', '=', True)] }" />
+
+                            <field
+                                name="sh_website_coming_soon_bg_img"
+                                widget="image"
+                                options="{'preview_image': 'image_medium', 'size': [90, 90]}"
+                                attrs="{'invisible': [('sh_website_coming_soon_is_coming_soon','=',False)],'required': [('sh_website_coming_soon_is_coming_soon', '=', True)] }"
+                            />
+                            <field name="sh_website_coming_soon_launch_date" attrs="{'invisible': [('sh_website_coming_soon_is_coming_soon','=',False)],'required': [('sh_website_coming_soon_is_coming_soon', '=', True)] }" />
+                            <field name="sh_website_coming_soon_style" attrs="{'invisible': [('sh_website_coming_soon_is_coming_soon','=',False)],'required': [('sh_website_coming_soon_is_coming_soon', '=', True)] }" />
+                        </group>
+
+                        <label for="sh_website_coming_soon_desc" string="Description" />
+                        <field name="sh_website_coming_soon_desc" attrs="{'invisible': [('sh_website_coming_soon_is_coming_soon','=',False)],'required': [('sh_website_coming_soon_is_coming_soon', '=', True)] }" />
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

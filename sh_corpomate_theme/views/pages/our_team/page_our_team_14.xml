@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+
+<!-- OUR TEAM 14 -->
+    <template id="sh_corpomate_tmpl_our_team_14" name="our team">
+        <t t-call="website.layout">
+          <div id="wrap" class="oe_structure">
+            <div class="oe_structure"/>
+	
+	<section id="sh_corpomate_theme_section_357" class="parallax s_parallax_no_overflow_hidden o_colored_level sh_animation_part" data-snippet="sh_corpomate_theme_tmpl_357" data-name="team Banner">
+    <span class="s_parallax_bg oe_img_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/pets_14/3.jpg'); background-position: center;" />
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-12 o_colored_level sh_animation_part">
+                <div class="sh_content">
+                    <h2 class="o_default_snippet_text">Our Team</h2>
+                    <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="sh_navigation">
+                    <a href="/" class="btn o_default_snippet_text">home</a>
+                    <span class="fa fa-link" />
+                    <a href="#" class="btn o_default_snippet_text">team</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-12 o_colored_level"></div>
+        </div>
+        
+    </div>
+    <div class="svg_img">
+        <img src="/sh_corpomate_theme/static/src/img/pets_14/1.svg" loading="lazy" />
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_358" data-snippet="sh_corpomate_theme_tmpl_358" class="o_colored_level sh_animation_part" data-name="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 o_colored_level sh_animation_part wow fadeInLeft">
+                <div class="sh_content">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/pets_14/5.jpg" loading="lazy" />
+                    </div>
+                    <div class="sh_hover_part">
+                        <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum</p>
+                    </div>
+                    <div class="sh_social_media">
+                        <a href="#">
+                            <span class="fa fa-facebook" />
+                        </a>
+                        <a href="#">
+                            <span class="fa fa-instagram" />
+                        </a>
+                        <a href="#">
+                            <span class="fa fa-twitter" />
+                        </a>
+                        <a href="#">
+                            <span class="fa fa-linkedin" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 o_colored_level sh_animation_part wow fadeInUp">
+                <div class="sh_content">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/pets_14/8.jpg" loading="lazy" />
+                    </div>
+                    <div class="sh_hover_part">
+                        <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum</p>
+                    </div>
+                    <div class="sh_social_media">
+                        <a href="#">
+                            <span class="fa fa-facebook" />
+                        </a>
+                        <a href="#">
+                            <span class="fa fa-instagram" />
+                        </a>
+                        <a href="#">
+                            <span class="fa fa-twitter" />
+                        </a>
+                        <a href="#">
+                            <span class="fa fa-linkedin" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 o_colored_level sh_animation_part wow fadeInRight">
+                <div class="sh_content">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/pets_14/9.jpg" loading="lazy" />
+                    </div>
+                    <div class="sh_hover_part">
+                        <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum</p>
+                    </div>
+                    <div class="sh_social_media">
+                        <a href="#">
+                            <span class="fa fa-facebook" />
+                        </a>
+                        <a href="#">
+                            <span class="fa fa-instagram" />
+                        </a>
+                        <a href="#">
+                            <span class="fa fa-twitter" />
+                        </a>
+                        <a href="#">
+                            <span class="fa fa-linkedin" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 o_colored_level sh_animation_part wow fadeInLeft">
+                <div class="sh_content">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/pets_14/5.jpg" loading="lazy" />
+                    </div>
+                    <div class="sh_hover_part">
+                        <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum</p>
+                    </div>
+                    <div class="sh_social_media">
+                        <a href="#">
+                            <span class="fa fa-facebook" />
+                        </a>
+                        <a href="#">
+                            <span class="fa fa-instagram" />
+                        </a>
+                        <a href="#">
+                            <span class="fa fa-twitter" />
+                        </a>
+                        <a href="#">
+                            <span class="fa fa-linkedin" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 o_colored_level sh_animation_part wow fadeInUp">
+                <div class="sh_content">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/pets_14/8.jpg" loading="lazy" />
+                    </div>
+                    <div class="sh_hover_part">
+                        <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum</p>
+                    </div>
+                    <div class="sh_social_media">
+                        <a href="#">
+                            <span class="fa fa-facebook" />
+                        </a>
+                        <a href="#">
+                            <span class="fa fa-instagram" />
+                        </a>
+                        <a href="#">
+                            <span class="fa fa-twitter" />
+                        </a>
+                        <a href="#">
+                            <span class="fa fa-linkedin" />
+                        </a>
+                    </div>
+                </div>
+            </div> 
+            <div class="col-md-4 col-sm-6 o_colored_level sh_animation_part wow fadeInRight">
+                <div class="sh_content">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/pets_14/9.jpg" loading="lazy" />
+                    </div>
+                    <div class="sh_hover_part">
+                        <h4 class="o_default_snippet_text">Lorem ipsum</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum</p>
+                    </div>
+                    <div class="sh_social_media">
+                        <a href="#">
+                            <span class="fa fa-facebook" />
+                        </a>
+                        <a href="#">
+                            <span class="fa fa-instagram" />
+                        </a>
+                        <a href="#">
+                            <span class="fa fa-twitter" />
+                        </a>
+                        <a href="#">
+                            <span class="fa fa-linkedin" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div>
+</t>
+</template>
+
+</odoo>
+
+
+

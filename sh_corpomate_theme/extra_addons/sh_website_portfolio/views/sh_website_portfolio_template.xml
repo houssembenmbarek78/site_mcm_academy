@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <odoo>
+
+        <template id="sh_website_portfolio_assets_frontend" inherit_id="web.assets_frontend" name="Website Frontend Assets">
+
+            <xpath expr="//link[last()]" position="after">
+                <link rel="stylesheet" type="text/css" href="/sh_corpomate_theme/extra_addons/sh_website_portfolio/static/src/css/sh_website_portfolio.scss" />
+            </xpath>
+            <xpath expr="//script[last()]" position="after">
+
+                <script type="text/javascript" src="/sh_corpomate_theme/extra_addons/sh_website_portfolio/static/src/js/jquery.isotope.min.js"></script>
+                <script type="text/javascript" src="/sh_corpomate_theme/extra_addons/sh_website_portfolio/static/src/js/sh_website_portfolio.js"></script>
+
+            </xpath>
+
+        </template>
+
+        <template id="portfolio" name="portfolio">
+            <t t-call="website.layout">
+                <div id="wrap">
+
+                    <!--PORTFOLIO start-->
+                    <section id="sh_portfolio">
+                        <div class="container">
+                            <div class="row" style="margin:0;">
+                                <div class="sub_portfolio">
+                                    <div class="port_head">
+                                        <h2 class="title"><span>Portfolio</span></h2>
+                                    </div>
+                                    <div class="pot_gallery">
+                                        <!--gallery-isolate-->
+                                        <div id="filters" class="button-group">
+                                            <button class="btn btn-primary button_bg active_port" data-filter="*">All</button>
+											<t t-if="categories">
+												<t t-foreach="categories" t-as="rec">
+                									<button class="btn btn-primary button_bg" t-att-data-filter="'.%s00' % (rec.id)">
+                										<t t-esc="rec.name"/>
+                									</button>													
+												</t>	
+											</t>                                             
+                            
+                                            <!-- <button class="btn btn-primary" data-filter=".design">MUSIC</button> -->
+                                        </div>
+                                        <div class="container no-gutter">
+                                            <div id="posts">
+                                                
+                                                
+                                                <!-- model start here -->
+                                                
+								 <t t-if="portfolio">
+								 	<t t-foreach="portfolio" t-as="rec">                                                
+                                                
+                                                
+                                                
+                                                
+                                                <div id="1" t-att-class="'item col-lg-4 col-md-4 col-sm-6 col-xs-6 %s00' % (rec.category_id.id)">
+                                                    <div class="item-wrap">
+                                                        <img class="img-responsive" t-attf-src="/website/image/website.portfolio/{{rec.id}}/img"/>
+                                                        <div class="overlay">
+                                                            <a t-att-href="'#myModal%s00' %(rec.id)" class="icon" t-att-title="'%s' %(rec.name)" data-toggle="modal" style="width: 100%;height: 100%;">
+                                                                <span class="fa fa-plus"></span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal" t-att-id="'myModal%s00' %(rec.id)">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+
+                                                                <button type="button" class="close" data-dismiss="modal"><span class="fa fa-times"></span></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <h5><t t-esc="rec.name"/></h5>
+                                                                <img t-attf-src="/website/image/website.portfolio/{{rec.id}}/img" style="width: 300px;height: 200px;object-fit: cover;"></img>
+                                                                <p>
+                                                                	<t t-esc="rec.desc"/>
+                                                                </p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-info" data-dismiss="modal">close</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+		                                      </t>
+		                                      </t>          
+                                                
+                                                <!-- model ends here -->
+                                            </div>
+                                        </div>
+                                        <!--gallery-isolate-->
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+
+                </div>
+            </t>
+        </template>
+
+    </odoo>

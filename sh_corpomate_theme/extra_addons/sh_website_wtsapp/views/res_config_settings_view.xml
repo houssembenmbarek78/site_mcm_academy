@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    
+        <record id="sh_inherit_res_config_settings_view_form_for_whatsapp_chat_and_share" model="ir.ui.view">
+            <field name="name">sh.inherit.res.config.settings.view.form.for.whatapp.chat.and.share</field>
+            <field name="model">res.config.settings</field>
+            <field name="inherit_id" ref="website.res_config_settings_view_form"/>
+            <field name="arch" type="xml">   
+            
+                 <xpath expr="//div[@id='website_settings']" position="after">  
+                                  
+                       <h2>WhatsApp Live Chat</h2>
+                       <div class="row mt16 o_settings_container" id="sh_whatsapp_chat_settings">
+                          <div class="col-12 col-md-6 o_setting_box">
+ 							<group name="sh_model_whatsapp_chat_group">
+								<field name="sww_is_wtsapp"/>										                     	
+								<field name="sww_type" attrs="{'invisible': [('sww_is_wtsapp','=',False)],'required': [('sww_is_wtsapp', '=', True)] }"/>								
+								<field name="sww_style" attrs="{'invisible': [('sww_is_wtsapp','=',False)],'required': [('sww_is_wtsapp', '=', True)] }"/>
+								<field name="sww_position" attrs="{'invisible': [('sww_is_wtsapp','=',False)],'required': [('sww_is_wtsapp', '=', True)] }"/>																
+		                     	<field name="sww_cn" help="Omit any zeroes, brackets or dashes when adding the phone number in international format." attrs="{'invisible': ['|',('sww_is_wtsapp','=',False),('sww_type','=','chat')],'required': [('sww_is_wtsapp', '=', True),('sww_type','=','contact')] }"/>
+		                     	<field name="sww_chat" attrs="{'invisible': ['|',('sww_is_wtsapp','=',False),('sww_type','=','contact')],'required': [('sww_is_wtsapp', '=', True),('sww_type','=','chat')] }"/>
+		                     	<field name="sww_message" attrs="{'invisible': [('sww_is_wtsapp','=',False)],'required': [('sww_is_wtsapp', '=', True)] }"/>
+		                     	<field name="sww_link_btn_title" attrs="{'invisible': [('sww_is_wtsapp','=',False)]}"/>
+								<field name="sww_banner_img" widget="image" class="oe_avatar" options="{'preview_image': 'image_medium', 'size': [90, 90]}" attrs="{'invisible': [('sww_is_wtsapp','=',False)],'required': [('sww_is_wtsapp', '=', True)] }"/>
+		                     	<field name="sww_color" widget="color" attrs="{'invisible': ['|',('sww_is_wtsapp','=',False),('sww_style','!=','fbutton')],'required': [('sww_is_wtsapp', '=', True),('sww_style','=','fbutton')] }"/>								
+		                     	<field name="sww_text_color" widget="color" attrs="{'invisible': ['|',('sww_is_wtsapp','=',False),('sww_style','!=','fbutton')],'required': [('sww_is_wtsapp', '=', True),('sww_style','=','fbutton')] }"/>							
+							</group>
+                          </div>    
+                       </div>                      
+                 
+                 </xpath>              
+                                         
+            </field>
+        </record>
+
+    </data>
+</odoo>
+
+

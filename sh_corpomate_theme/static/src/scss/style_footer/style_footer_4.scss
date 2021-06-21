@@ -1,0 +1,15 @@
+.s_text_block {padding-top: 70px !important;padding-bottom: 50px !important;background-color: $-color-secondary;}
+.s_text_block .widget-title {font-size: 19px;text-transform: none;margin-bottom: 15px;}
+.s_text_block .textwidget ul{padding:0px;list-style: none}
+.s_text_block .widget_text p{margin-bottom: 10px;background: #839FAD none repeat scroll 0 0;display: block; height: 1px; margin-top: 0;position: relative;width: 20%;}
+//.s_text_block .widget_text p::after {background: inherit;content: "";height: inherit;position: absolute;top: -4px;width: 50%;}
+.s_text_block .textwidget .list span{color: #777;padding-right: 10px;}
+.s_text_block .textwidget a{color:#777;text-decoration:none;font-size:13px;}
+.s_text_block .textwidget a:hover{color: $-color-Primary;}
+.s_text_block .contact-details{padding:0px;list-style: none}
+.s_text_block .contact-details li{margin-bottom: 0px;margin-right: 10px;}
+.s_text_block .contact-details span{color: #777; margin-right: 9px;font-size: 17px;}
+.s_text_block .contact-details a{color: #777;text-decoration:none;font-size: 14px;}
+.widget_media_image p{color: #777;padding-top: 10px;}
+.o_footer > #footer{border-top: 0px solid transparent;}
+.s_text_block .contact-details a:hover{color: $-color-Primary;}

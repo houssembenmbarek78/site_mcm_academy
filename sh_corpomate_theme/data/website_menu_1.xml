@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+
+
+
+
+
+
+		<!-- 
+		===============
+		MEGA MENU PAGE MAIN
+		================
+		 -->        
+        
+		
+		<!-- MEGA MENU PAGE 1 -->
+        <record id="sh_corpomate_page_mega_menu_1" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/megamenu1</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_mega_menu_1"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_mega_menu_1" model="website.menu">
+            <field name="name">mega menu</field>
+            <field name="url">/megamenu1</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">2</field>
+      	    <field name="page_id" ref="sh_corpomate_page_mega_menu_1" />    
+      	    <field name="sh_website_mega_menu_html" type="html">
+      	    
+      	    
+      	    
+      	    
+      	    <!-- paste your mega menu code here start -->      	    
+      	    
+      	    
+      	    
+      	    
+    <section id="sh_megamenubar_7" class="js_cls_sh_megamenu_section_7">
+        <div class="container js_cls_sh_megamenu_container_7">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="sh_content">
+                        <h4>About</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sh_right_img">
+                        <a href="#" class="d-block">
+                            <img src="/sh_corpomate_theme/static/src/img/mega_menu/slider.png"></img>
+                        </a>
+                    </div>
+                    <!-- <section id="myCarousel" class="s_features_carousel carousel slide" data-interval="10000" >
+                        
+                        <ol type="1" class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                        </ol>
+                        
+                        <div class="carousel-inner">
+                            <div class="carousel-item image_text active">
+                                <img class="img img-fluid d-block mx-auto" src="/sh_corpomate_theme/static/src/img/mega_menu/slider.png" alt=""/>                    
+                            </div>
+                            <div class="carousel-item image_text">
+                                <img class="img img-fluid d-block mx-auto" src="/sh_corpomate_theme/static/src/img/mega_menu/slider.png" alt=""/> 
+                            </div>
+                        </div>
+                        <div class="carousel-control-prev" data-target="#s_products_carousel" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                            <span class="carousel-control-prev-icon fa fa-chevron-left"/>
+                            <span class="sr-only">Previous</span>
+                        </div>
+                        <div class="carousel-control-next" data-target="#s_products_carousel" data-slide="next" role="img" aria-label="Next" title="Next">
+                            <span class="carousel-control-next-icon fa fa-chevron-right"/>
+                            <span class="sr-only">Next</span>
+                        </div>
+                    </section> -->
+                </div>
+            </div>
+        </div>
+    </section>      	    
+      	
+      	
+
+
+
+      	    <!-- paste your mega menu code here end -->
+
+      	    
+      	    
+      	    
+ </field>     	    
+      	    
+      	    
+      	    
+      	            
+        </record>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<!-- 
+		===============
+		ABOUT US PAGE MAIN
+		================
+		 -->        
+        
+		
+		<!-- ABOUT US PAGE 1 -->
+        <record id="sh_corpomate_page_about_us_1" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/aboutus1</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_about_us_1"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_about_us_1" model="website.menu">
+            <field name="name">about us</field>
+            <field name="url">/aboutus1</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">3</field>
+      	    <field name="page_id" ref="sh_corpomate_page_about_us_1" />            
+        </record>	
+	
+	
+	
+	
+		<!-- 
+		===============
+		CONTACT US PAGE MAIN
+		================
+		 -->        
+        
+		
+		<!-- CONTACT US PAGE 1 -->
+        <record id="sh_corpomate_page_contact_us_1" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/contactus1</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_contact_us_1"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_contact_us_1" model="website.menu">
+            <field name="name">contact us</field>
+            <field name="url">/contactus1</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">6</field>
+      	    <field name="page_id" ref="sh_corpomate_page_contact_us_1" />                
+        </record>		
+	
+	
+	
+	
+		<!-- 
+		===============
+		FAQ PAGE MAIN
+		================
+		 -->        
+        
+		
+		<!-- FAQ PAGE 1 -->
+        <record id="sh_corpomate_page_faq_1" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/faq1</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_faq_1"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_faq_1" model="website.menu">
+            <field name="name">FAQ</field>
+            <field name="url">/faq1</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">7</field>
+      	    <field name="page_id" ref="sh_corpomate_page_faq_1" />                    
+        </record>		
+	
+	
+	
+
+	
+		<!-- 
+		===============
+		HOME PAGE MAIN
+		================
+		 -->        
+        
+		
+		<!-- HOME PAGE 1 -->
+        <record id="sh_corpomate_page_home_1" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/home1</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_home_1"/>            
+            <field name="website_indexed" eval="False"/>
+                      
+        </record>
+        
+
+        <record id="sh_corpomate_menu_home_1" model="website.menu">
+            <field name="name">home</field>
+            <field name="url">/home1</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">1</field>
+      	    <field name="page_id" ref="sh_corpomate_page_home_1" />               
+        </record>
+        
+        	
+	
+	
+	
+	
+		<!-- 
+		===============
+		OUR TEAM MAIN
+		================
+		 -->        
+        
+		
+		<!-- OUR TEAM PAGE 1 -->
+        <record id="sh_corpomate_page_our_team_1" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/ourteam1</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_our_team_1"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_our_team_1" model="website.menu">
+            <field name="name">our team</field>
+            <field name="url">/ourteam1</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">5</field>
+      	    <field name="page_id" ref="sh_corpomate_page_our_team_1" />                
+        </record>		
+        
+        
+        	
+	
+	
+	
+		<!-- 
+		===============
+		PRIVACY POLICY MAIN
+		================
+		 -->        
+        
+		
+		<!-- PRIVACY POLICY PAGE 1 -->
+        <record id="sh_corpomate_page_privacy_policy_1" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/privacypolicy1</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_privacy_policy_1"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_privacy_policy_1" model="website.menu">
+            <field name="name">privacy policy</field>
+            <field name="url">/privacypolicy1</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">8</field>
+      	    <field name="page_id" ref="sh_corpomate_page_privacy_policy_1" />               
+        </record>		
+	
+	
+	
+		
+		<!-- 
+		===============
+		SERVICE PAGE MAIN
+		================
+		 -->        
+        
+		
+		<!-- SERVICE PAGE 1 -->
+        <record id="sh_corpomate_page_service_1" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/service1</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_service_1"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_service_1" model="website.menu">
+            <field name="name">service</field>
+            <field name="url">/service1</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">4</field>
+      	    <field name="page_id" ref="sh_corpomate_page_service_1" />               
+        </record>			
+		
+		
+		
+		
+		
+	
+		
+		<!-- 
+		===============
+		TERMS AND CONDITIONS PAGE MAIN
+		================
+		 -->        
+        
+		
+		<!-- TERMS AND CONDITIONS PAGE 1 -->
+        <record id="sh_corpomate_page_terms_and_conditions_1" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/termsandcondition1</field>
+            <field name="view_id" ref="sh_corpomate_theme.sh_corpomate_tmpl_terms_and_conditions_1"/>
+            <field name="website_indexed" eval="False"/>
+        </record>
+        
+
+        <record id="sh_corpomate_menu_terms_and_conditions_1" model="website.menu">
+            <field name="name">terms and conditions</field>
+            <field name="url">/termsandcondition1</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">9</field>
+      	    <field name="page_id" ref="sh_corpomate_page_terms_and_conditions_1" />               
+        </record>			
+		
+				
+		
+		
+        
+	</data>
+
+</odoo>        
+        

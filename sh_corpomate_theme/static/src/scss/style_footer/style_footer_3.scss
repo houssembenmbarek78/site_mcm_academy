@@ -1,0 +1,31 @@
+
+
+
+
+
+.o_footer{background-color:$-color-secondary!important;}
+.o_footer .sh-widget-title{color: #fff;font-size: 15px;text-transform: uppercase;}
+.o_footer h3:before {content: '';position: absolute; top: 0px;bottom: 4px;left: 0;background: $-color-Primary;background-repeat: repeat-x;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF00A9FF', endColorstr='#FF00CAAD', GradientType=1);width: 4px;height: 19px;}
+.o_footer .divider{border-bottom: 1px solid #6a7688;}
+.o_footer .sh_wrapper p{color:#fff}
+.o_footer .sh_wrapper a{text-decoration: none;color:#fff;}
+.o_footer .sh_column-inner h3{color: #fff;font-size: 15px;text-transform: uppercase;}
+.o_footer .sh-column-inner h3{color: #fff;font-size: 15px;text-transform: uppercase;}
+.o_footer .sh-column-inner ul{padding-left: 0px;}
+.o_footer .sh_column-inner ul{padding-left: 0px;}
+.o_footer .sh-porto-info-list-item span{color:#fff;margin-right: 10px;}
+.o_footer .sh-porto-info-list-item-desc{display: inline-block;}
+.o_footer .sh-porto-info-list-item-desc a{display: inline-block;text-decoration:none;color: #fff;transition: all .1s ease-in-out;}
+.o_footer .sh-porto-info-list-item{padding-top: .5em; padding-bottom: .5em;list-style: none;}
+.o_footer .sh-porto-info-list-item-desc a:hover{transform: translateX(3px);color:#fff}
+.o_footer .widget_text .widget-title{color: #fff;font-size: 15px;text-transform: uppercase;}
+.o_footer .widget_text h2{color: #fff;font-size: 22px;}
+.o_footer .contact-info{color:#777}
+.o_footer .textwidget{margin-bottom:20px;margin-top:10px;}
+.o_footer  .contact-details{padding: 0px;list-style: none;}
+.o_footer  .contact-details li{margin-bottom:10px;}
+.o_footer  .contact-details a{color:#fff;text-decoration:none;}
+.o_footer .share-links a{background: #fff;color: #333;width: 30px;height: 30px;border-radius: 30px;margin: 2px;overflow: hidden;box-shadow: 0 2px 2px 0 rgba(0,0,0,.3);transition: all 0.2s ease 0s;font-size: 14px;}
+.o_footer .share-links a:hover{background: $-color-Primary;color:#fff;}
+.o_footer .share-links a span{line-height: 27px;}
+.o_footer .contact-details li{color: #fff;}

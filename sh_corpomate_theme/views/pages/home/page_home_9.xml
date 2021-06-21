@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- HOME PAGE 9 -->
+	<template id="sh_corpomate_tmpl_home_9" name="home">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+
+	        <div class="oe_structure"/>
+			     
+			     
+			     
+      <section id="sh_corpomate_theme_section_234" class="parallax s_parallax_no_overflow_hidden" data-name="Banner" style="background-image: none;">
+        <span class="s_parallax_bg oe_img_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/theme9/1.png'); background-position: 50% 0;"/>
+        <div class="container">
+          <div class="s_nb_column_fixed">
+            <div class="rounded pt32 pb32">
+              <h4 class="o_default_snippet_text">Commited to provide solution for all legel cases</h4>
+              <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="sh_btn">
+                <a href="#" class="btn btn-primary o_default_snippet_text">Lets Start</a>
+                <a href="#" class="btn sh_secondary o_default_snippet_text">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_235" data-name="Key Point">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="sh_conatent">
+                <div class="sh_icon">
+                  <span class="fa fa-users"/>
+                </div>
+                <div class="sh_des">
+                  <p class="o_default_snippet_text">Meet With</p>
+                  <h4 class="o_default_snippet_text">Our Experts</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="sh_conatent">
+                <div class="sh_icon">
+                  <span class="fa fa-users"/>
+                </div>
+                <div class="sh_des">
+                  <p class="o_default_snippet_text">Meet With</p>
+                  <h4 class="o_default_snippet_text">Our Experts</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="sh_conatent">
+                <div class="sh_icon">
+                  <span class="fa fa-users"/>
+                </div>
+                <div class="sh_des">
+                  <p class="o_default_snippet_text">Meet With</p>
+                  <h4 class="o_default_snippet_text">Our Experts</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="sh_conatent">
+                <div class="sh_icon">
+                  <span class="fa fa-users"/>
+                </div>
+                <div class="sh_des">
+                  <p class="o_default_snippet_text">Meet With</p>
+                  <h4 class="o_default_snippet_text">Our Experts</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_236" data-name="img text">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="sh_img">
+                <img src="/sh_corpomate_theme/static/src/img/theme9/8.png"/>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="sh_content">
+                <h4 class="o_default_snippet_text">Lorem ipsum is simply dummy</h4>
+                <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <div class="sh_main_counter">
+                  <div class="sh_counter">
+                    <h4 class="sh_count o_default_snippet_text">500</h4>
+                    <p class="sh_des o_default_snippet_text">Criminal Case Solved</p>
+                  </div>
+                  <div class="sh_counter">
+                    <h4 class="sh_count o_default_snippet_text">560</h4>
+                    <p class="sh_des o_default_snippet_text">Commercial Space</p>
+                  </div>
+                  <div class="sh_counter">
+                    <h4 class="sh_count o_default_snippet_text">67</h4>
+                    <p class="sh_des o_default_snippet_text">Active Lawyers</p>
+                  </div>
+                  <div class="sh_counter">
+                    <h4 class="sh_count o_default_snippet_text">250</h4>
+                    <p class="sh_des o_default_snippet_text">Wordwide Site Firm</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_237" data-name="Practice Area">
+    <div class="container">
+        <div class="sh_title">
+            <h2 class="o_default_snippet_text">Our Practice Area</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <div class="sh_cotent">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/theme9/2.png" />
+                    </div>
+                    <div class="sh_des">
+                        <h4 class="o_default_snippet_text">Criminal Case &amp;amp; Attorney</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="sh_cotent">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/theme9/2.png" />
+                    </div>
+                    <div class="sh_des">
+                        <h4 class="o_default_snippet_text">Criminal Case &amp;amp; Attorney</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="sh_cotent">
+                    <div class="sh_img">
+                        <img src="/sh_corpomate_theme/static/src/img/theme9/2.png" />
+                    </div>
+                    <div class="sh_des">
+                        <h4 class="o_default_snippet_text">Criminal Case &amp;amp; Attorney</h4>
+                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+      <section id="sh_corpomate_theme_section_238" data-name="img text">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-12">
+              <div class="sh_content">
+                <h2>Our Practice Area</h2>
+                <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                <ul>
+                  <li>
+                    <div class="sh_icon">
+                      <span class="fa fa-paper-plane-o"/>
+                    </div>
+                    <div class="sh_des">
+                      <h4 class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                      <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sh_icon">
+                      <span class="fa fa-paper-plane-o"/>
+                    </div>
+                    <div class="sh_des">
+                      <h4 class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sh_icon">
+                      <span class="fa fa-paper-plane-o"/>
+                    </div>
+                    <div class="sh_des">
+                      <h4 class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sh_icon">
+                      <span class="fa fa-paper-plane-o"/>
+                    </div>
+                    <div class="sh_des">
+                      <h4 class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-5 col-12">
+              <div class="sh_img">
+                <img src="/sh_corpomate_theme/static/src/img/theme9/5.png"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_239" class="js_cls_sh_corpomate_theme_section_239" data-name="testimonial">
+        <div class="container">
+          <div class="sh_title">
+            <h3 class="o_default_snippet_text">Our Client Review</h3>
+          </div>
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme9/14.jpg"/>
+                </div>
+                <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                <span class="o_default_snippet_text">Lorem Ipsum</span>
+                <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme9/14.jpg"/>
+                </div>
+                <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                <span class="o_default_snippet_text">Lorem Ipsum</span>
+                <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_240" data-name="Our Team">
+        <div class="container">
+          <div class="sh_title">
+            <h3 class="o_default_snippet_text">Meet Our Expert Attorneys</h3>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme9/12.png"/>
+                  <span class="fa fa-plus"/>
+                  <div class="sh_media">
+                    <span class="fa fa-facebook"/>
+                    <span class="fa fa-twitter"/>
+                    <span class="fa fa-linkedin"/>
+                  </div>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                  <p class="o_default_snippet_text">Lorem Ipsum</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme9/10.png"/>
+                  <span class="fa fa-plus"/>
+                  <div class="sh_media">
+                    <span class="fa fa-facebook"/>
+                    <span class="fa fa-twitter"/>
+                    <span class="fa fa-linkedin"/>
+                  </div>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                  <p class="o_default_snippet_text">Lorem Ipsum</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme9/11.png"/>
+                  <span class="fa fa-plus"/>
+                  <div class="sh_media">
+                    <span class="fa fa-facebook"/>
+                    <span class="fa fa-twitter"/>
+                    <span class="fa fa-linkedin"/>
+                  </div>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                  <p class="o_default_snippet_text">Lorem Ipsum</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme9/7.png"/>
+                  <span class="fa fa-plus"/>
+                  <div class="sh_media">
+                    <span class="fa fa-facebook"/>
+                    <span class="fa fa-twitter"/>
+                    <span class="fa fa-linkedin"/>
+                  </div>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                  <p class="o_default_snippet_text">Lorem Ipsum</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_241" data-name="News">
+        <div class="container">
+          <div class="sh_title">
+            <h3 class="o_default_snippet_text">Recent News</h3>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme9/13.png"/>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                  <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                  <a href="#" class="btn o_default_snippet_text">Read More <span class="fa fa-angle-right"/></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme9/6.png"/>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                  <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                  <a href="#" class="btn o_default_snippet_text">Read More <span class="fa fa-angle-right"/></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sh_content">
+                <div class="sh_img">
+                  <img src="/sh_corpomate_theme/static/src/img/theme9/9.png"/>
+                </div>
+                <div class="sh_des">
+                  <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                  <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                  <a href="#" class="btn o_default_snippet_text">Read More <span class="fa fa-angle-right"/></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_242" data-name="Pricing and Plan">
+        <div class="container">
+          <div class="sh_title">
+            <h3 class="o_default_snippet_text">Pricing &amp;amp; Plan</h3>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="sh_content">
+                <div class="sh_icon">
+                  <span class="fa fa-bank"/>
+                </div>
+                <h2 class="o_default_snippet_text"><sub class="o_default_snippet_text">$</sub> 580</h2>
+                <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                <a href="#" class="btn o_default_snippet_text">Buy Now</a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sh_content sh_middle">
+                <div class="sh_icon">
+                  <span class="fa fa-bank"/>
+                </div>
+                <h2 class="o_default_snippet_text"><sub class="o_default_snippet_text">$</sub> 780</h2>
+                <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                <a href="#" class="btn o_default_snippet_text">Buy Now</a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sh_content">
+                <div class="sh_icon">
+                  <span class="fa fa-bank"/>
+                </div>
+                <h2 class="o_default_snippet_text"><sub class="o_default_snippet_text">$</sub> 999</h2>
+                <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+                <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                <a href="#" class="btn o_default_snippet_text">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>			     
+			     
+			     
+			     			
+			
+			
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

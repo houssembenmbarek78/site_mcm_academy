@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- SERVICE 1 -->
+	<template id="sh_corpomate_tmpl_service_1" name="service">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			
+
+
+      
+      <section id="sh_corpomate_theme_section_113" class="s_banner parallax s_parallax_no_overflow_hidden bg-black-75" data-scroll-background-ratio="0" style="background-image: none;">
+        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/sh_corpomate_theme/static/src/img/services-banner.png'); background-position: 50% 0;background-attachment: fixed;"/>
+        <div class="container">
+          <h1 class="o_default_snippet_text">Services</h1>
+          <div class="breadcrumbs-description o_default_snippet_text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_149">
+        <div class="container">
+          <div class="row">
+            <div class="title">
+              <h4 class="o_default_snippet_text">Lorem Ipsum</h4>
+              <h2 class="o_default_snippet_text">Lorem Ipsum is simply dummy</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_94">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <div class="sh_content sh_animation_part">
+                <div class="sh_icon_text">
+                  <span class="fa fa-globe"/>
+                  <h5 class="o_default_snippet_text">Lorem Ipsum</h5>
+                </div>
+                <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="sh_content sh_animation_part">
+                <div class="sh_icon_text">
+                  <span class="fa fa-bar-chart"/>
+                  <h5 class="o_default_snippet_text">Lorem Ipsum</h5>
+                </div>
+                <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="sh_content sh_animation_part">
+                <div class="sh_icon_text">
+                  <span class="fa fa-building"/>
+                  <h5 class="o_default_snippet_text">Lorem Ipsum</h5>
+                </div>
+                <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="sh_content sh_animation_part">
+                <div class="sh_icon_text">
+                  <span class="fa fa-globe"/>
+                  <h5 class="o_default_snippet_text">Lorem Ipsum</h5>
+                </div>
+                <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="sh_content sh_animation_part">
+                <div class="sh_icon_text">
+                  <span class="fa fa-globe"/>
+                  <h5 class="o_default_snippet_text">Lorem Ipsum</h5>
+                </div>
+                <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="sh_content sh_animation_part">
+                <div class="sh_icon_text">
+                  <span class="fa fa-globe"/>
+                  <h5 class="o_default_snippet_text">Lorem Ipsum</h5>
+                </div>
+                <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sh_corpomate_theme_section_95">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 ">
+              <div class="sh_content sh_animation_part">
+                <h2 class="o_default_snippet_text">Subscribe for Latest News</h2>
+                <p class="o_default_snippet_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+              </div>
+            </div>
+            <div class="col-lg-6 sh_animation_part">
+              <p/>
+              <div class="input-group js_subscribe d-none" data-list-id="2" data-subscribe="off">
+                <input type="email" name="email" class="js_subscribe_email form-control" placeholder="your email..."/>
+                <span class="input-group-append">
+                  <a role="button" href="#" class="btn btn-primary js_subscribe_btn o_default_snippet_text">Subscribe</a>
+                  <a role="button" href="#" class="btn btn-success js_subscribed_btn d-none o_default_snippet_text" disabled="disabled">Thanks</a>
+                </span>
+                <div class="alert alert-success d-none o_default_snippet_text" role="status">Thanks for your subscription!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+
+      
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

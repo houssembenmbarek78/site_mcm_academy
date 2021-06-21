@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="sh_corpomate_button_tmpl_1" name="Button 1">
+    <div class="s_corpomate_btn s_btn text-center pt16 pb16">
+        <a href="#" class="btn btn-primary">Read more</a>
+    </div>
+</template>
+
+
+        
+<template id="sh_corpomate_button_tmpl_2" name="Button 2">
+    <div class="s_corpomate_btn s_btn text-center pt16 pb16">
+        <a href="#" class="btn btn-primary"><i class="fa fa-1x fa-fw fa-folder mr-1"/>Read more</a>
+    </div>
+</template>        
+        
+
+
+</odoo>

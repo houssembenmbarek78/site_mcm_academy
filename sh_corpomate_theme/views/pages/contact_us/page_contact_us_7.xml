@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	
+	<!-- CONTACT US PAGE 5 -->
+	<template id="sh_corpomate_tmpl_contact_us_7" name="contact us">
+	    <t t-call="website.layout">
+	      <div id="wrap" class="oe_structure">
+	        <div class="oe_structure"/>
+			
+
+                <section id="sh_corpomate_theme_section_182" data-name="theme7 all banner">
+                <style>
+	   .o_affix_enabled .navbar-light .navbar-nav .nav-link{color: #fff !important;}
+   	   #sh_top_bar_7{color: #fff;}
+	   #sh_top_bar_7 .sh_tb_left > span a{color: #fff;}
+	   #sh_top_bar_7 .sh_social_icon a{border: 2px solid #fff;color: #fff;}
+	   #sh_top_bar_7 .sh_tb_right .js_language_selector button{color: #fff;border: 1px solid #fff;}
+	   #sh_top_bar_7 .sh_tb_right .js_language_selector{border-left: 1px solid #fff;}
+	   #sh_top_bar_7 .sh_tb_right .js_language_selector li > a{color: #fff;}
+	</style>
+    
+    <div class="container">
+        <div class="content text-center sh_animation_part">
+            <h1>Contact Us</h1>
+            <div class="sh_breadcrumb"><span class="fa fa-home sh_home" /><span class="fa fa-chevron-right" /><span class="sh_banner_name">Contact Us</span>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;</div>
+            <p class="o_default_snippet_text">Lorem ipsum dolar sit amet, consectetur adipisicing</p>
+        </div>
+    </div>
+</section>
+<section id="sh_corpomate_theme_section_88" data-name="Contact Us snippet 2">
+
+	
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="sh_form">
+                    <form action="/website_form/" method="post" data-model_name="crm.lead" data-success_page="/contactus-thank-you" class="s_website_form container-fluid mt32 o_fake_not_editable" enctype="multipart/form-data" data-editable-form="false">
+                        <h2 class="sh_form_heading o_default_snippet_text">Send us a message</h2>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group sh_name sh_group form-field o_website_form_required_custom o_fake_not_editable">
+                                    <input type="text" class="form-control o_website_form_input" placeholder="Name" name="contact_name" required="" value="" />
+                                    <div class="sh_border">
+                                        <div class="sh_left_right_border" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group sh_email sh_group form-field o_fake_not_editable">
+                                    <input type="text" class="form-control o_website_form_input" placeholder="Phone" name="phone" value="" />
+                                    <div class="sh_border">
+                                        <div class="sh_left_right_border" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group sh_number sh_group form-field o_website_form_required_custom o_fake_not_editable">
+                                    <input type="text" class="form-control o_website_form_input" placeholder="Email" name="email_from" required="" value="" />
+                                    <div class="sh_border">
+                                        <div class="sh_left_right_border" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group sh_number sh_group form-field o_website_form_required_custom o_fake_not_editable">
+                                    <input type="text" class="form-control o_website_form_input" placeholder="Your Company" name="partner_name" value="" />
+                                    <div class="sh_border">
+                                        <div class="sh_left_right_border" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group sh_number sh_group form-field o_website_form_required o_fake_not_editable">
+                                    <input type="text" class="form-control o_website_form_input" placeholder="Subject" name="name" required="" value="" />
+                                    <div class="sh_border">
+                                        <div class="sh_left_right_border" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group sh_group">
+                                    <textarea class="form-control wpcf7-form-control o_website_form_input" cols="40" rows="5" name="description" required="" placeholder="Message" />
+                                    <div class="sh_border">
+                                        <div class="sh_left_right_border" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="sh_btn">
+                                    <a href="#" class="btn btn-primary sh_btn_cm_7 o_website_form_send o_default_snippet_text">Send Message</a>
+                                    <span id="o_website_form_result" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="sh_right_content">
+                    <h2 class="o_default_snippet_text">Contact Info</h2>
+                    <p class="o_default_snippet_text">You can contact or visit us in our office from Monday to Friday from 8:00 - 17:00</p>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-map-marker" />
+                            </a>
+                            <p class="o_default_snippet_text">313, Hira Panna Complex, Dr. Yagnik Road, New Jagnath, Jagnath Plot, Rajkot, Gujarat, India 360001</p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-phone" />
+                            </a>
+                            <a href="tel:+917984575681" class="o_default_snippet_text">+917984575681</a>
+                            <a href="tel:+919033366091" class="o_default_snippet_text">+919033366091</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-envelope" />
+                            </a>
+                            <a href="mailto:info@softhealer.com" class="o_default_snippet_text">info@softhealer.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+			
+	      </div>
+	    </t>
+	</template>	
+
+
+</odoo>
+
+

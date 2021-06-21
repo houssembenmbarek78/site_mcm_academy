@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <!-- website.page views -->
+        <record id="sh_corpomate_theme_testimonial_form_view" model="ir.ui.view">
+            <field name="name">sh.corpomate.theme.testimonial.form.view</field>
+            <field name="model">sh.corpomate.theme.testimonial</field>
+            <field name="arch" type="xml">
+                <form string="Testimonial Settings">
+                    <sheet>
+
+        				<field name="image" widget="image" class="oe_avatar" options="{&quot;preview_image&quot;: &quot;image_128&quot;}"/>
+        
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="sequence"/>
+                                 <field name="active"/>
+                            </group>
+                            <group>
+                                <field name="function"/>
+                                <field name="url_video"/>
+                            </group>
+                        </group>
+                        <label for="comment" string="Testimonial"/>
+                        <field name="comment"/>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="sh_corpomate_theme_testimonial_tree_view" model="ir.ui.view">
+            <field name="name">sh.corpomate.theme.testimonial.tree.view</field>
+            <field name="model">sh.corpomate.theme.testimonial</field>
+            <field name="arch" type="xml">
+                <tree string="Testimonial">
+                    <field name="sequence"/>
+					<field name="name"/>
+					<field name="function"/>
+					<field name="active" string="Visible in Website"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="sh_corpomate_theme_testimonial_search_view" model="ir.ui.view">
+            <field name="name">sh.corpomate.theme.testimonial.search.view</field>
+            <field name="model">sh.corpomate.theme.testimonial</field>
+            <field name="arch" type="xml">
+                <search string="Testimonial">
+                    <field name="name" filter_domain="[('name','ilike',self)]" string="Testimonial"/>
+                    <filter string="Active" name="active" domain="[('active', '=',True)]"/>
+                    <filter string="Inactive" name="inactive" domain="[('active', '=',False)]"/>
+             	</search>
+             </field>
+          </record>
+
+        <record id="action_sh_corpomate_theme_testimonial" model="ir.actions.act_window">
+            <field name="name">Testimonial</field>
+            <field name="res_model">sh.corpomate.theme.testimonial</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+
+        <menuitem name="Testimonial"
+            id="menu_sh_corpomate_theme_testimonial"
+            action="action_sh_corpomate_theme_testimonial"
+            parent="website.menu_website_global_configuration"
+            sequence="30"
+
+            />
+
+
+</odoo>
