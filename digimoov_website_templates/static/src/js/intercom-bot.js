@@ -1,3 +1,3 @@
 window.intercomSettings = {
-  app_id: "waw4riyk",
+  app_id: "pe98h7lm",
 };
