@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+    <!-- Dans ce rapport on traite la notion de multi_compagnie par compagnie_id  -->
+                        <!-- compagnie_id== 1 c'est pour MCM_Academy -->
+                        <!-- compagnie_id== 2 c'est pour Digimoov -->
 <odoo>
     <data>
         <!-- Inherit invoice report (from module account) -->
@@ -68,6 +71,9 @@
                     <div class="col-auto mw-200 mb-4">
                     </div>
                     <div class="col-auto mw-100 mb-2" name="formation_details">
+                        <!-- Dans ce rapport on traite la notion de multi_compagnie par compagnie_id  -->
+                        <!-- compagnie_id== 1 c'est pour MCM_Academy -->
+                        <!-- compagnie_id== 2 c'est pour Digimoov -->
                         <h6 t-if="o.company_id.id==1">
                             <span>Intitulé de la formation:</span>
                             <t t-foreach="o.invoice_line_ids"
@@ -321,15 +327,19 @@
 <!--                    </tbody>&ndash;&gt;-->
 <!--                </table>-->
             </xpath>
+             <!-- Dans ce rapport on traite la notion de multi_compagnie par compagnie_id  -->
+                        <!-- compagnie_id== 1 c'est pour MCM_Academy -->
+                        <!-- compagnie_id== 2 c'est pour Digimoov -->
+
             <xpath expr="//table[@name='invoice_line_table']" position="after">
-                <table style="width: 100% ;border-color:#000" name="Acount_Client" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte !=0">
+                <table style="width: 100% ;border-color:#000" name="Acount_Client" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte !=0 and o.company_id.id==2">
                                 <tr>
                                     <td class="text-center"
-                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte !=0">
+                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte !=0 and o.company_id.id==2">
                                         Acompte :
                                     </td>
                                      <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
-                                        <span t-field="o.pourcentage_acompte" readonly="False" t-if="o.methodes_payment == 'cpf' "/>%
+                                        <span t-field="o.pourcentage_acompte" readonly="False" t-if="o.methodes_payment == 'cpf' and o.company_id.id==2"/>%
                                      </td>
                                      <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
                                         <strong>
@@ -373,6 +383,9 @@
 
                                     </td>
                                     </tr>
+                                        <!-- Dans ce rapport on traite la notion de multi_compagnie par compagnie_id  -->
+                                        <!-- compagnie_id== 1 c'est pour MCM_Academy -->
+                                        <!-- compagnie_id== 2 c'est pour Digimoov -->
                                     <tr t-if="o.methodes_payment =='cartebleu'">
                                     <td class="text-left"
                                         style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" >
@@ -382,7 +395,7 @@
                                         <span t-field="o.amount_total" t-if="o.methodes_payment =='cartebleu'"/>
                                     </td>
                                     <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px" t-if="o.methodes_payment == 'cpf'">
-                                        <span t-field="o.restamount" t-if="o.methodes_payment == 'cpf'"/>
+                                        <span t-field="o.restamount" t-if="o.methodes_payment == 'cpf' and o.company_id.id==2 "/>
                                     </td>
                                     </tr>
                                 </tr>
@@ -404,7 +417,7 @@
                                     </td>
                                     <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
                                         <strong>
-                                            <span t-field="o.restamount" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte != 0 "/>
+                                            <span t-field="o.restamount" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte != 0 and o.company_id.id==2 "/>
                                              <span t-field="o.amount_total" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte == 0"/>
                                         </strong>
                                     </td>
