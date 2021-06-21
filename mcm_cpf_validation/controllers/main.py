@@ -1,7 +1,7 @@
 from odoo import http,SUPERUSER_ID,_
 from odoo.http import request
 
-
+#
 class ClientCPFController(http.Controller):
 
     @http.route(
