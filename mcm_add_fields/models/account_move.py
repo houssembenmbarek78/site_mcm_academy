@@ -52,7 +52,7 @@ class AccountMove(models.Model):
 #
     @api.depends('invoice_line_ids.price_subtotal','pourcentage_acompte','methodes_payment','company_id')
     def _compute_change_amount(self):
-         date_precis = date(2021,4, 28)
+         date_precis = date(2021,4,28)
 
          for rec in self:
             amount_untaxed_initiale = rec.amount_untaxed

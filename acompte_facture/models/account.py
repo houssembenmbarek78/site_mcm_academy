@@ -8,8 +8,8 @@ class AccountMove(models.Model):
     _inherit = "account.move"
     restamount = fields.Monetary(string='Reste à payé ', store=True)
     amount_paye= fields.Monetary(string='payé ', store=True)
-
-# #Création de l'acompte
+#Ancien _Process  :
+# #Création de l'acompte dans l'ancien process
 #
 #     def action_create_acompte(self):
 #         for rec in self:
@@ -27,7 +27,7 @@ class AccountMove(models.Model):
 #                 },
 #             }
 
-    # Fonction qui calcule le reste à payé ,le montant de la formation et le pourcentage de l'acompte dans la facture
+    # Fonction qui calcule le reste à payé ,le montant de la formation avec  pourcentage d'acompte dans la facture
     # Calculer les montants: restamount , amount_residual , amount_paye l'hors du chagement du pourcentage d'acompte
     # Valeurs changer l'hors de  la modification du pourcentage et en calculant le montant payé et le reste à payer
     # On sépare le process de facturation par le champs principal methode_payment qui peux etre sois cpf sois carte_bleu
@@ -43,10 +43,7 @@ class AccountMove(models.Model):
                 # rec.amount_residual = rec.restamount
                 # rec.amount_residual= rec.amount_untaxed
                 amount_residual_signed = rec.restamount
-                print(rec.amount_total)
-                print(rec.amount_untaxed)
-                print(rec.restamount)
-                print(rec.amount_residual)
+
                 return invoice
             elif (rec.methodes_payment == 'cartebleu') :
 
@@ -85,7 +82,7 @@ class resPartnerWizard(models.TransientModel):
     def change_amount(self):
         for rec in self:
             rec.amount=(rec.amount*rec.pourcentage)/100
-            print (rec.amount)
+
 
 
 
