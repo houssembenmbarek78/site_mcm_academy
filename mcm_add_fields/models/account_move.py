@@ -52,7 +52,7 @@ class AccountMove(models.Model):
 #
     @api.depends('invoice_line_ids.price_subtotal','pourcentage_acompte','methodes_payment','company_id')
     def _compute_change_amount(self):
-         date_precis = date(2021, 6, 10)
+         date_precis = date(2021,4, 28)
 
          for rec in self:
             amount_untaxed_initiale = rec.amount_untaxed
@@ -69,13 +69,30 @@ class AccountMove(models.Model):
                     rec.amount_residual_signed = rec.restamount
                     rec.amount_total_signed = rec.restamount
                  elif (rec.methodes_payment == 'cpf' and daysDiff <= 0  and rec.company_id.id == 2 ):
-                    rec.pourcentage_acompte = 25
-                    rec.amount_paye = (rec.amount_untaxed * rec.pourcentage_acompte) / 100
-                    rec.restamount = amount_untaxed_initiale - rec.amount_paye
-                    # rec.amount_untaxed =  rec.amount_paye
-                    # rec.amount_residual = rec.restamount
-                    rec.amount_residual_signed = rec.restamount
-                    rec.amount_total_signed = rec.restamount
+                     if ( rec.pourcentage_acompte == 25  and rec.company_id.id == 2 ):
+                        rec.pourcentage_acompte = 25
+                        rec.amount_paye = (rec.amount_untaxed * rec.pourcentage_acompte) / 100
+                        rec.restamount = amount_untaxed_initiale - rec.amount_paye
+                        # rec.amount_untaxed =  rec.amount_paye
+                        # rec.amount_residual = rec.restamount
+                        rec.amount_residual_signed = rec.restamount
+                        rec.amount_total_signed = rec.restamount
+                     elif(rec.pourcentage_acompte == 5  and rec.company_id.id == 2 ):
+                        rec.pourcentage_acompte = 5
+                        rec.amount_paye = (rec.amount_untaxed * rec.pourcentage_acompte) / 100
+                        rec.restamount = amount_untaxed_initiale - rec.amount_paye
+                        # rec.amount_untaxed =  rec.amount_paye
+                        # rec.amount_residual = rec.restamount
+                        rec.amount_residual_signed = rec.restamount
+                        rec.amount_total_signed = rec.restamount
+                     else :
+                         rec.pourcentage_acompte = 25
+                         rec.amount_paye = (rec.amount_untaxed * rec.pourcentage_acompte) / 100
+                         rec.restamount = amount_untaxed_initiale - rec.amount_paye
+                         # rec.amount_untaxed =  rec.amount_paye
+                         # rec.amount_residual = rec.restamount
+                         rec.amount_residual_signed = rec.restamount
+                         rec.amount_total_signed = rec.restamount
 
 
 
