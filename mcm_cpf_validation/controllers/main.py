@@ -42,7 +42,9 @@ class ClientCPFController(http.Controller):
 
         }
         description=' N°Dossier : '+str(dossier)
+        #change statut non traité crm 
         ticket=request.env['helpdesk.ticket'].sudo().search([('description', 'like', description)])
+        
         if not ticket:
             new_ticket = request.env['helpdesk.ticket'].sudo().create(
                 vals)

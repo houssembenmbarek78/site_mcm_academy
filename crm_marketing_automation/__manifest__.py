@@ -14,6 +14,7 @@
     'data': [
       'views/crm_lead.xml',
       'data/ir_cron.xml',
+      'data/mail_template.xml',
     ],
     'demo': [
     ],
