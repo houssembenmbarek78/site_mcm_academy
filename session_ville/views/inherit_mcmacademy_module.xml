@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="digimoov_module_form" model="ir.ui.view">
+        <field name="name">digimoov.module.form</field>
+        <field name="model">mcmacademy.module</field>
+        <field name="inherit_id" ref="mcm_session.mcmacademy_module_session_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='currency_id']" position="after">
+                <field name="session_ville_id" attrs="{'invisible': [('company_id', '!=', 2)]}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
