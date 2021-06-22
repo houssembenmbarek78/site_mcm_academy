@@ -20,25 +20,19 @@ class AccountJournalSynchronisation(models.Model):
         if (facture.invoice_date and My_date) :
           daysDiff = ((My_date) - facture.invoice_date).days
           if daysDiff >= 0 :
-             if (facture.cpf_solde_invoice == True and facture.company_id.id ==2  or facture.cpf_acompte_invoice == True and facture.company_id.id ==2 or facture.invoice_user_id == 'ZOÉ' and facture.company_id.id ==2 ) :
+             if (facture.cpf_solde_invoice == True and facture.company_id.id ==1  or facture.cpf_acompte_invoice == True and facture.company_id.id ==1 or facture.invoice_user_id == 'ZOÉ' and facture.company_id.id ==1 ) :
                 facture.methodes_payment = 'cpf'
                 facture.pourcentage_acompte = 0
              elif facture.invoice_user_id != 'ZOÉ' :
                 facture.methodes_payment = 'cartebleu'
           elif daysDiff < 0:
-              if (facture.cpf_solde_invoice == True and facture.company_id.id ==2 or facture.cpf_acompte_invoice == True and facture.company_id.id ==2 or facture.invoice_user_id == 'ZOÉ' and facture.company_id.id ==2 or facture.pourcentage_acompte != 0 and facture.company_id.id ==2 ):
-                  if( facture.pourcentage_acompte == 25 and facture.company_id.id == 2):
-                     facture.methodes_payment = 'cpf'
-                     facture.pourcentage_acompte = 25
-                  elif (facture.pourcentage_acompte == 5 and facture.company_id.id == 2):
-                      facture.methodes_payment = 'cpf'
-                      facture.pourcentage_acompte = 5
-                  else :
-                      facture.methodes_payment = 'cpf'
-                      facture.pourcentage_acompte = 25
-
+              if (facture.cpf_solde_invoice == True and facture.company_id.id ==1 or facture.cpf_acompte_invoice == True and facture.company_id.id ==1 or facture.invoice_user_id == 'ZOÉ' and facture.company_id.id ==1 or facture.pourcentage_acompte != 0 and facture.company_id.id ==1 ):
+                  facture.methodes_payment = 'cpf'
+                  facture.pourcentage_acompte = 0
               elif facture.invoice_user_id != 'ZOÉ':
                   facture.methodes_payment = 'cartebleu'
+
+
 
 
 
