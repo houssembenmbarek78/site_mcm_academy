@@ -16,7 +16,20 @@
             </xpath>
             <xpath expr="//page[last()]" position="after">
                 <page name="note_exam" string="Examen">
-                    <field name="note_exam_id"/>
+                    <field name="note_exam_id">
+                        <tree>
+                            <field name="partner_id"/>
+                            <field name="date_exam"/>
+                            <field name="date_today"/>
+                            <field name="epreuve_a"/>
+                            <field name="epreuve_b"/>
+                            <field name="moyenne_generale"/>
+                            <field name="presence"/>
+                            <field name="mention"/>
+                            <field name="resultat"/>
+                            <field name="nombre_de_passage"/>
+                        </tree>
+                    </field>
                 </page>
             </xpath>
 
