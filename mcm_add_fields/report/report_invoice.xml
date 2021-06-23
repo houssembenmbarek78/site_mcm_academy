@@ -516,11 +516,11 @@
                                     </td>
                                     </tr>
                                     <tr t-if="o.company_id==1">
-                                    <td class="text-left"
+                                      <td class="text-left"
                                         style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" >
                                         Total
-                                    </td>
-                                    <td class="text-left" style="border: 1px solid black; padding: 5px">
+                                      </td>
+                                      <td class="text-left" style="border: 1px solid black; padding: 5px">
                                         <span t-field="o.invoice_line_ids.price_unit" />
                                       </td>
                                     </tr>
