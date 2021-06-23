@@ -83,8 +83,8 @@ class NoteExamen(models.Model):
 
     @api.model
     def create(self, vals):
-        """ Lors de creation d'un nouveau enregistrement des notes d'examen 
-        Cette fonction permet de verifier si il y'a un autre enregistrement 
+        """ Lors de creation d'un nouveau enregistrement des notes d'examen, 
+        cette fonction permet de verifier si il y'a un autre enregistrement 
         contient meme date d'examen, l'ancienne ligne sera 
         supprimer et remplacer par la nouvelle ligne"""
         resultat = super(NoteExamen, self).create(vals)
@@ -98,3 +98,18 @@ class NoteExamen(models.Model):
                 if existing_date:
                     existing_date.unlink()
         return resultat
+
+    def write(self, vals):
+        """ Lors de modification d'un nouveau enregistrement des notes d'examen, 
+        cette fonction permet de verifier si il y'a un autre enregistrement 
+        contient meme date d'examen, l'ancienne ligne sera 
+        supprimer et remplacer par la nouvelle ligne"""
+        for record in self:
+            if record.date_exam:
+                existing_date = self.env['info.examen'].search(
+                    [('partner_id', '=', record.partner_id.name), ('id', '!=', record.id),
+                     ('date_exam', '=', record.date_exam)], limit=1)
+                print(existing_date)
+                if existing_date:
+                    existing_date.unlink()
+            return super(NoteExamen, self).write(vals)
