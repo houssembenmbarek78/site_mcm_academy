@@ -32,7 +32,6 @@
                         <field name="email"  attrs="{'invisible': [('email', '=',False)]}"/>
                     </div>
                      <div>
-                        <label for="description" attrs="{'invisible': [('description', '=',False)]}">Motif:</label>
                         <field name="description"  attrs="{'invisible': [('description', '=',False)]}"/>
                     </div>
 
