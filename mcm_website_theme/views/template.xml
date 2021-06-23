@@ -1033,19 +1033,6 @@
 
         </xpath>
     </template>
-    <template id="mcm_website_sale_cart_summary" inherit_id="website_sale.cart_summary">
-        <xpath expr="//div[hasclass('card')]" position="inside">
-            <script>
-                function onchangeButton(){
-                if(document.getElementById("pm_shop_text")){
-                document.getElementById("pm_shop_text").textContent = Créer une demande;
-                document.getElementById("pm_shop_check_text").textContent = Créer une demande;
-                document.getElementById("pm_shop_checkout_text").textContent = Créer une demande;
-                }
-                };
-            </script>
-        </xpath>
-    </template>
     <template id="mcm_reduction_code" inherit_id="website_sale.reduction_code" customize_show="True" name="Promo Code">
         <xpath expr="//a[hasclass('show_coupon')]" position="replace">
             <a href="#" class="show_coupon" id="promo_code" style="display:inline;" t-attf-onclick="show_coupon()">J'ai
