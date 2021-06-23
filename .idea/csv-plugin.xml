@@ -3,7 +3,7 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="/auto_mass_mailing_marketing/views/inherit_session_add_fields.xml">
+        <entry key="/session_ville/views/inherit_res_partner.xml">
           <value>
             <Attribute>
               <option name="separator" value="," />
