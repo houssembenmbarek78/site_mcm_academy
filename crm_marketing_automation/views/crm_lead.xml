@@ -46,14 +46,14 @@
         </field>
     </record>
 
-     <record id="marketing_automation_view_crm_lead_form" model="ir.ui.view">
-        <field name="name">crm.lead.form</field>
-        <field name="model">crm.lead</field>
-        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
-        <field name="arch" type="xml">
+<!--     <record id="marketing_automation_view_crm_lead_form" model="ir.ui.view">-->
+<!--        <field name="name">crm.lead.form</field>-->
+<!--        <field name="model">crm.lead</field>-->
+<!--        <field name="inherit_id" ref="crm.crm_lead_view_form"/>-->
+<!--        <field name="arch" type="xml">-->
 
-        </field>
-    </record>
+<!--        </field>-->
+<!--    </record>-->
 
 
 
