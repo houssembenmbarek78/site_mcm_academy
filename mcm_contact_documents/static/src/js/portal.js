@@ -78,7 +78,6 @@ publicWidget.registry.digi_documents = publicWidget.Widget.extend({
                 {
                     var file=document.getElementById("cerfa").files[0];
                     var type=file['type'];
-                    console.log(type);
                     if (type.includes("image/"))
                     {
                         div_cerfa_2.style.display='block';
@@ -161,7 +160,6 @@ publicWidget.registry.updated_documents = publicWidget.Widget.extend({
             {
                 var file=document.getElementById("updated_document_cerfa").files[0];
                 var type=file['type'];
-                console.log(type);
                 if (type.includes("image/"))
                 {
                     div_cerfa_2.style.display='flex';
