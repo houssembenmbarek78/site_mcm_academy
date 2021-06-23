@@ -49,7 +49,7 @@ class AccountMove(models.Model):
     # le montant residual doit avoir le rest du montant
     #amount_residual_signed c'est pour l'avoir il prend le reste a paye
     #amount_total_signed c est aussi por l'avoir il prend le reste à payer
-    #on a deux condition par site web ou en interne :
+    #on a deux valeurs: site web ou interne
     #Si la méthode de payment est cpf et le champs   methode_payment == CPF alors :
     # La vue de la facture change elle affiche l'acompte qui prend sa valeur default 25 %
     # Et on peux la changer en pourcentage qu' on veux tout en calculant le montant payée et le reste à payer correctement
