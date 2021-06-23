@@ -10,7 +10,7 @@
             </field>
         </record>
 
-        <!-- Views -->
+        <!-- Views Form des villes-->
         <record id="session_ville_form" model="ir.ui.view">
             <field name="name">session.ville.form</field>
             <field name="model">session.ville</field>
@@ -47,18 +47,19 @@
                 </form>
             </field>
         </record>
-
+        <!-- Views Tree des villes-->
         <record id="session_ville_tree_view" model="ir.ui.view">
             <field name="name">session.ville.tree</field>
             <field name="model">session.ville</field>
             <field name="arch" type="xml">
                 <tree string="session ville Tree" default_order="name_ville asc">
                     <field name="name_ville"/>
-                    <field name="session_adresse_examen_ids" string="Liste des adresses de centre d'examens de ce paye"/>
+                    <field name="session_adresse_examen_ids"
+                           string="Liste des adresses de centre d'examens de ce paye"/>
                 </tree>
             </field>
         </record>
-
+        <!-- Views search des villes-->
         <record id="session_ville_view_search" model="ir.ui.view">
             <field name="name">session.ville.search</field>
             <field name="model">session.ville</field>
@@ -72,8 +73,9 @@
                 </search>
             </field>
         </record>
-
+        <!--        menu des villes sera afficher sous menu de configuration dans l'interface de la session-->
         <menuitem id="session_ville_menu" name="Les villes"
-                  parent="mcm_session.mcm_academy_session_config_main_menu" action="action_session_ville" sequence="15"/>
+                  parent="mcm_session.mcm_academy_session_config_main_menu" action="action_session_ville"
+                  sequence="15"/>
     </data>
 </odoo>

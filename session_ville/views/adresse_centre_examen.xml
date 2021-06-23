@@ -10,7 +10,7 @@
             </field>
         </record>
 
-        <!-- Views -->
+        <!-- Views Form-->
         <record id="session_adresse_examen_form" model="ir.ui.view">
             <field name="name">session.adresse.examen.form</field>
             <field name="model">session.adresse.examen</field>
@@ -44,12 +44,12 @@
             </field>
         </record>
 
+        <!-- Views Tree-->
         <record id="session_adresse_examen_tree_view" model="ir.ui.view">
             <field name="name">session.adresse.examen.tree</field>
             <field name="model">session.adresse.examen</field>
             <field name="arch" type="xml">
-                <tree string="Session Adresse Examen Tree" >
-                    <field name="id"/>
+                <tree string="Session Adresse Examen Tree">
                     <field name="adresse_centre_examen"/>
                     <field name="session_ville_id"/>
                     <field name="phone"/>
@@ -58,6 +58,7 @@
             </field>
         </record>
 
+        <!-- Views search-->
         <record id="session_adresse_examen_view_search" model="ir.ui.view">
             <field name="name">session.adresse.examen.search</field>
             <field name="model">session.adresse.examen</field>
@@ -73,8 +74,9 @@
                 </search>
             </field>
         </record>
-
+        <!--        menu des adresses des centres d'examen qui sera afficher sous menu configuration dans l'interface de session -->
         <menuitem id="action_session_adresse_examen_menu" name="Adresses Des Centres D'examens"
-                  parent="mcm_session.mcm_academy_session_config_main_menu" action="action_session_adresse_examen" sequence="16"/>
+                  parent="mcm_session.mcm_academy_session_config_main_menu" action="action_session_adresse_examen"
+                  sequence="16"/>
     </data>
 </odoo>

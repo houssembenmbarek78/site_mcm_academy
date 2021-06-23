@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+    <!--    inherit la vue form de client pour ajouter la liste des villes
+    avec une condition de visibilité selon la socité-->
     <record id="inherit_view_res_partner_form" model="ir.ui.view">
         <field name="name">res.partner.form</field>
         <field name="model">res.partner</field>
