@@ -428,7 +428,7 @@
                         </div>
                     </div>
             </xpath>
-            <xpath expr="//div[hasclass('clearfix')]" position="replace" t-if="o.methodes_payment == 'cpf' and o.company_id.id== 2">
+            <xpath expr="//div[hasclass('clearfix')]" position="replace">
                 <div class="clearfix">
                     <div id="total" class="row">
                         <div class="col-4">
@@ -441,8 +441,8 @@
                                         Total HT
                                     </td>
                                     <td class="text-left" style="border: 1px solid black; padding: 5px" >
-                                        <span t-field="o.amount_untaxed" t-if="o.methodes_payment == 'cpf'" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
-                                        <span t-field="o.invoice_line_ids.price_unit" t-if="o.methodes_payment  =='cartebleu'" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+                                        <span t-field="o.amount_untaxed" t-if="o.methodes_payment == 'cpf' and o.company_id.id== 2" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+                                        <span t-field="o.invoice_line_ids.price_unit" t-if="o.methodes_payment  =='cartebleu' and o.company_id.id== 2 " t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
                                     </td>
                                     <tr>
                                     <td class="text-left"
@@ -454,39 +454,21 @@
                                         <strong>
                                             <span t-field="o.amount_tax"/>
                                         </strong>
-
-
                                     </td>
                                     </tr>
-                                        <!-- Dans ce rapport on traite la notion de multi_compagnie par compagnie_id  -->
-                                        <!-- compagnie_id== 1 c'est pour MCM_Academy -->
-                                        <!-- compagnie_id== 2 c'est pour Digimoov -->
-                                    <tr t-if="o.methodes_payment =='cartebleu'">
+                                    <tr t-if="o.methodes_payment == 'cartebleu'">
                                     <td class="text-left"
                                         style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" >
                                         Total
                                     </td>
-                                    <td class="text-left" style="border: 1px solid black; padding: 5px" t-if="o.methodes_payment =='cartebleu' and o.company_id.id==2">
+                                    <td class="text-left" style="border: 1px solid black; padding: 5px" t-if="o.methodes_payment =='cartebleu' and o.company_id.id == 2">
                                         <span t-field="o.amount_total" t-if="o.methodes_payment =='cartebleu'"/>
                                     </td>
                                     <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px" t-if="o.methodes_payment == 'cpf'">
                                         <span t-field="o.restamount" t-if="o.methodes_payment == 'cpf' and o.company_id.id==2 "/>
                                     </td>
                                     </tr>
-                                </tr>
-<!--                                    <td class="text-left"-->
-<!--                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px">-->
-<!--                                        Total-->
-<!--                                    </td>-->
-
-<!--                                    <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">-->
-<!--                                        <strong>-->
-<!--                                             <span t-field="o.amount_total" t-if="o.type_facture=='web'"/>-->
-<!--                                        </strong>-->
-<!--                                    </td>-->
-
-                                <tr t-if="o.methodes_payment == 'cpf'" >
-                                    <td class="text-left"
+                                    <tr t-if="o.methodes_payment == 'cpf'" ><td class="text-left"
                                         style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" t-if="o.methodes_payment == 'cpf'" >
                                         <strong >Total</strong>
                                     </td>
@@ -496,6 +478,7 @@
                                              <span t-field="o.amount_total" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte == 0"/>
                                         </strong>
                                     </td>
+                                    </tr>
                                 </tr>
                             </table>
 
@@ -532,9 +515,6 @@
 
                                     </td>
                                     </tr>
-                                        <!-- Dans ce rapport on traite la notion de multi_compagnie par compagnie_id  -->
-                                        <!-- compagnie_id== 1 c'est pour MCM_Academy -->
-                                        <!-- compagnie_id== 2 c'est pour Digimoov -->
                                     <tr t-if="o.company_id==1">
                                     <td class="text-left"
                                         style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" >
@@ -542,7 +522,7 @@
                                     </td>
                                     <td class="text-left" style="border: 1px solid black; padding: 5px">
                                         <span t-field="o.invoice_line_ids.price_unit" />
-                                    </td>
+                                      </td>
                                     </tr>
                                 </tr>
 <!--                                    <td class="text-left"-->
