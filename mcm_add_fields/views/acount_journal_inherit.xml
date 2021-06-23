@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Ce programme a été modifié par seifeddinne le 17/06/2021 -->
+<!-- ajout d' un boutton dans le menu de l'item comptabilité pour la synchronisation des factures  -->
 <odoo>
     <data>
         <record id="synchronisation_ancienne_factures" model="ir.ui.view">

@@ -3,6 +3,7 @@
 #Ce programme a été modifié par seifeddinne le 22/03/2021
 #Modification du process de la facturation
 #Modification de l'aperçu de la facturation
+# Ce code est mis pour la synchronisation des factures de MCM pour le champs Methodes_payment
 from odoo import api, fields, models,_
 from odoo.exceptions import RedirectWarning, UserError, ValidationError
 from datetime import datetime , date

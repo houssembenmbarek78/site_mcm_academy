@@ -1,8 +1,14 @@
+#Ce programme est écrit par houssem pour la validation des liens des factures CPF par Zoe
+#Ce code a été modifié par Seifeddinne dans l' ordre de changement de la process de facturation : application automatique de 25% pour les factures venant de ZoE
+#On oublie pas qu on travaille avec la notion de multi_compagnie :
+#Compagnie_id.id ==1 c est MCM_Academy
+#Compagnie_id.id ==2 c est Digimoov
+
 from odoo import http,SUPERUSER_ID,_
 from odoo.http import request
 import datetime
-#
 class ClientCPFController(http.Controller):
+
 
     @http.route(
         '/request_not_validated/<string:email>/<string:nom>/<string:prenom>/<string:tel>/<string:address>/<string:code_postal>/<string:ville>/<string:dossier>/<string:motif>',
@@ -192,7 +198,7 @@ class ClientCPFController(http.Controller):
                     })
                     # Enreggistrement des valeurs de la facture
                     # Parser le pourcentage d'acompte
-                    # Creation de la fcture étape Finale
+                    # Création de la fcture étape Finale
                     #Facture comptabilisée
                     so.action_confirm()
                     so.module_id=module_id
