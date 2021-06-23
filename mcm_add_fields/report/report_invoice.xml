@@ -353,7 +353,7 @@
 
                 </br>
             </xpath>
-            <xpath expr="//div[hasclass('clearfix')]" position="replace" t-if="o.methodes_payment == 'cpf' and o.company_id.id== 2">
+            <xpath expr="//div[hasclass('clearfix')]" position="replace" t-if="o.methodes_payment == 'cpf'">
                 <div class="clearfix">
                     <div id="total" class="row">
                         <div class="col-4">
@@ -386,7 +386,7 @@
                                         <!-- Dans ce rapport on traite la notion de multi_compagnie par compagnie_id  -->
                                         <!-- compagnie_id== 1 c'est pour MCM_Academy -->
                                         <!-- compagnie_id== 2 c'est pour Digimoov -->
-                                    <tr t-if="o.methodes_payment =='cartebleu' and o.comp">
+                                    <tr t-if="o.methodes_payment =='cartebleu'">
                                     <td class="text-left"
                                         style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" >
                                         Total
@@ -423,61 +423,6 @@
                                     </td>
                                 </tr>
                             </table>
-                        </div>
-
-                        </div>
-                    </div>
-            </xpath>
-            <xpath expr="//div[hasclass('clearfix')]" position="replace" t-if=" o.company_id.id== 1">
-                <div class="clearfix">
-                    <div id="total" class="row">
-                        <div class="col-4">
-                        </div>
-                        <div class="col-8">
-                            <table style="margin-bottom: 1rem;border-color:#000" name="total">
-                                <tr>
-                                    <td class="text-left"
-                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" >
-                                        Total HT
-                                    </td>
-                                    <td class="text-left" style="border: 1px solid black; padding: 5px" >
-                                        <span t-field="o.invoice_line_ids.price_unit" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
-                                    </td>
-                                    <tr>
-                                    <td class="text-left"
-                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px">
-                                        Prestations de formation en exonération de TVA, article 261-
-                                        4-4 du CGI
-                                    </td>
-                                    <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
-                                        <strong>
-                                            <span t-field="o.amount_tax"/>
-                                        </strong>
-
-                                    </td>
-                                    </tr>
-                                    <tr t-if="o.company_id==1">
-                                      <td class="text-left"
-                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" >
-                                        Total
-                                      </td>
-                                      <td class="text-left" style="border: 1px solid black; padding: 5px">
-                                        <span t-field="o.invoice_line_ids.price_unit" />
-                                      </td>
-                                    </tr>
-                                </tr>
-<!--                                    <td class="text-left"-->
-<!--                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px">-->
-<!--                                        Total-->
-<!--                                    </td>-->
-
-<!--                                    <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">-->
-<!--                                        <strong>-->
-<!--                                             <span t-field="o.amount_total" t-if="o.type_facture=='web'"/>-->
-<!--                                        </strong>-->
-<!--                                    </td>-->
-                            </table>
-
                         </div>
 
                         </div>
