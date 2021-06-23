@@ -16,7 +16,7 @@ class Sale(models.Model):
         partner_id = vals['partner_id']
         partner = self.env['res.partner'].sudo().search([('id', '=', partner_id)])
         print('partner', partner)
-        self.change_statut_lead("Prospection", partner)
+        self.change_stage_lead("Prospection", partner)
         res = super(Sale, self).create(vals)
 
         return res
