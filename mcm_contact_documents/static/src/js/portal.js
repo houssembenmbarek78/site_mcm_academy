@@ -112,7 +112,6 @@ publicWidget.registry.digi_documents = publicWidget.Widget.extend({
         },
         _onCheckType: function (ev)
         {
-            console.log('check changed file');
             var id_of_input=ev.target.id;
             var file=null;
             var type=null;
@@ -123,12 +122,9 @@ publicWidget.registry.digi_documents = publicWidget.Widget.extend({
                  var file=document.getElementById(id_of_input).files[0];
                  var input_id=document.getElementById(id_of_input)
 
-                 console.log(file);
                  if (file != null)
                  {
                     var type=file['type'];
-                    console.log('type');
-                    console.log(type);
                     if (type != null)
                     {
                      if (type.includes("image/") || type.includes("application/pdf"))
