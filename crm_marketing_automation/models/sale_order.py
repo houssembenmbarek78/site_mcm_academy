@@ -10,6 +10,17 @@ _logger = logging.getLogger(__name__)
 class Sale(models.Model):
     _inherit='sale.order'
 
+    @api.model
+    def create(self, vals):
+        print('drafttt', vals)
+        partner_id = vals['partner_id']
+        partner = self.env['res.partner'].sudo().search([('id', '=', partner_id)])
+        print('partner', partner)
+        self.change_statut_lead("Prospection", partner)
+        res = super(Sale, self).create(vals)
+
+        return res
+    
     def write(self, vals):
         record = super(Sale, self).write(vals)
         #Si le contrat a changé d'état 
@@ -18,18 +29,21 @@ class Sale(models.Model):
             if vals['state'] == 'sent':
                 partner = self.partner_id
                 print('sent', partner)
-                self.change_stage_lead("Contrat non Signé", partner)
+                print('change statut', partner.mcm_session_id.id, partner.session_id.id)
+                if (partner.mcm_session_id.id) and (partner.mcm_session_id.id == self.session_id.id):
+
+                    self.change_stage_lead("Contrat non Signé", partner)
             if vals['state'] == 'sale':
                 partner = self.partner_id
                 print('sale', partner)
-                self.change_stage_lead("Contrat Signé", partner)
+                print('change statut', partner.mcm_session_id.id, partner.session_id.id)
+                if (partner.mcm_session_id.id) and (partner.mcm_session_id.id == self.session_id.id):
+        
+                    self.change_stage_lead("Contrat Signé", partner)
 
         return record
 
     def change_stage_lead(self, statut, partner):
-        print('change statut', partner.mcm_session_id.id, self.session_id.id)
-        if (partner.mcm_session_id.id) and (partner.mcm_session_id.id == self.session_id.id):
-
             print('if verifié')
             stage = self.env['crm.stage'].sudo().search([("name", "like", _(statut))])
             print('stageeeee', stage)
