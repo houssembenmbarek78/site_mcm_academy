@@ -461,12 +461,12 @@
                                         <!-- Dans ce rapport on traite la notion de multi_compagnie par compagnie_id  -->
                                         <!-- compagnie_id== 1 c'est pour MCM_Academy -->
                                         <!-- compagnie_id== 2 c'est pour Digimoov -->
-                                    <tr t-if="o.methodes_payment =='cartebleu' and o.comp">
+                                    <tr t-if="o.methodes_payment =='cartebleu'">
                                     <td class="text-left"
                                         style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" >
                                         Total
                                     </td>
-                                    <td class="text-left" style="border: 1px solid black; padding: 5px" t-if="o.methodes_payment =='cartebleu'">
+                                    <td class="text-left" style="border: 1px solid black; padding: 5px" t-if="o.methodes_payment =='cartebleu' and o.company_id.id==2">
                                         <span t-field="o.amount_total" t-if="o.methodes_payment =='cartebleu'"/>
                                     </td>
                                     <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px" t-if="o.methodes_payment == 'cpf'">
@@ -541,7 +541,7 @@
                                         Total
                                     </td>
                                     <td class="text-left" style="border: 1px solid black; padding: 5px">
-                                        <span t-field="o.amount_total" />
+                                        <span t-field="o.invoice_line_ids.price_unit" />
                                     </td>
                                     </tr>
                                 </tr>
