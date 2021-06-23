@@ -3,12 +3,14 @@
 
 {
     'name': 'Session Ville',
-    'description': "",
+    'description': "Ce module contient principalement les deux classe pour les villes "
+                   "et les adresses des villes avec ses informations",
     'author': "Mejri Takwa",
     'maintainer': 'DIGIMOOV',
     'category': 'Partner',
     'sequence': 15,
-    'summary': 'Automatisation des villes dans la session',
+    'summary': 'Automatisation des villes dans la session et dans les autre enplacement '
+               'telque module vente, client, module',
     'depends': [
         'base',
         'mcm_session',

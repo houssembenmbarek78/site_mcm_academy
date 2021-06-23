@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+    <!--    inherit la vue form de la session pour ajouter le bloc des données sur la ville-->
     <record id="inherit_digimoov_session_form" model="ir.ui.view">
         <field name="name">digimoov.session.form</field>
         <field name="model">mcmacademy.session</field>
@@ -7,11 +8,11 @@
         <field name="arch" type="xml">
             <xpath expr="//form/div/group/group[@name='horaire']" position="after">
                 <group string="Villes et Adresses De centres d'examens">
-                <field name="session_ville_id"/>
-                <field name="session_adresse_examen"/>
-                <field name="phone"/>
-                <field name="email"/>
-                <field name="lien" widget="url"/>
+                    <field name="session_ville_id"/>
+                    <field name="session_adresse_examen"/>
+                    <field name="phone"/>
+                    <field name="email"/>
+                    <field name="lien" widget="url"/>
                 </group>
             </xpath>
         </field>

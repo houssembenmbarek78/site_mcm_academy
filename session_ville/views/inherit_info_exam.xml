@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+    <!--    inherit l'interface form des notes et examens dans la session pour ajouter les villes-->
     <record id="inherit_info_examen_form" model="ir.ui.view">
         <field name="name">info.examen.form</field>
         <field name="model">info.examen</field>
@@ -10,6 +11,7 @@
             </field>
         </field>
     </record>
+    <!--    inherit la vue search pour faire le groupement selon les villes a partir de notes et examens-->
     <record id="inherit_info_examen_search" model="ir.ui.view">
         <field name="name">info.examen.search</field>
         <field name="model">info.examen</field>
