@@ -1,9 +1,14 @@
+#Ce programme est écrit par houssem pour la validation des liens des factures CPF par Zoe
+#Ce code a été modifié par Seifeddinne dans l' ordre de changement de la process de facturation : application automatique de 25% pour les factures venant de ZoE
+#On oublie pas qu on travaille avec la notion de multi_compagnie :
+#Compagnie_id.id ==1 c est MCM_Academy
+#Compagnie_id.id ==2 c est Digimoov
+
 from odoo import http,SUPERUSER_ID,_
 from odoo.http import request
 import datetime
-
-
 class ClientCPFController(http.Controller):
+
 
     @http.route(
         '/request_not_validated/<string:email>/<string:nom>/<string:prenom>/<string:tel>/<string:address>/<string:code_postal>/<string:ville>/<string:dossier>/<string:motif>',
@@ -60,14 +65,14 @@ class ClientCPFController(http.Controller):
         email = str(email).lower()
         email = email.replace(" ","")
         users = request.env['res.users'].sudo().search([('login', "=", email)])
-        user=False
-        if len(users) > 1 :
-            user=users[1]
+        user = False
+        if len(users) > 1:
+            user = users[1]
             for utilisateur in users:
                 if utilisateur.partner_id.id_edof and utilisateur.partner_id.date_examen_edof and utilisateur.partner_id.ville:
-                    user=utilisateur
+                    user = utilisateur
         else:
-            user=users
+            user = users
         if user:
             user.partner_id.mode_de_financement = 'cpf'
             user.partner_id.statut_cpf = 'accepted'
@@ -81,9 +86,7 @@ class ClientCPFController(http.Controller):
 
             if product_id and product_id.company_id.id==2 and user.partner_id.id_edof and user.partner_id.date_examen_edof and user.partner_id.ville:
                 module_id = request.env['mcmacademy.module'].sudo().search(
-                    [('company_id', "=", 2), ('ville', "=", user.partner_id.ville),
-                     ('date_exam', "=", user.partner_id.date_examen_edof), ('product_id', "=", product_id.id),
-                     ('session_id.number_places_available', '>', 0)], limit=1)
+                    [('company_id', "=", 2) , ('ville',"=",user.partner_id.ville),('date_exam',"=",user.partner_id.date_examen_edof),('product_id',"=",product_id.id),('session_id.number_places_available', '>', 0)], limit=1)
                 if module_id:
                     user.partner_id.module_id = module_id
                     user.partner_id.mcm_session_id = module_id.session_id
@@ -118,16 +121,17 @@ class ClientCPFController(http.Controller):
                             line.price_unit= so.amount_total
                         so.action_confirm()
                         ref=False
-                        #Creation de la Facture interne
-                        #Si la facture est en interne :  On parse le pourcentage qui est 25 %
-                        #cpf_compte_invoice prend la valeur True pour savoir bien qui est une facture creer par Zoe
-
+                        #Creation de la Facture Cpf
+                        #Si la facture est de type CPF :  On parse le pourcentage qui est 25 %
+                        # methode_payment prend la valeur CPF pour savoir bien qui est une facture CPF qui prend la valeur 25 % par default
 
                         if so.amount_total>0 and so.order_line:
                             moves = so._create_invoices(final=True)
                             for move in moves:
                                 move.type_facture = 'interne'
-                                move.cpf_acompte_invoice=True
+                                # move.cpf_acompte_invoice= True
+                                # move.cpf_invoice =True
+                                move.methodes_payment = 'cpf'
                                 move.pourcentage_acompte = 25
                                 move.module_id = so.module_id
                                 move.session_id = so.session_id
@@ -135,15 +139,20 @@ class ClientCPFController(http.Controller):
                                     move.pricelist_id = so.pricelist_id
                                 move.company_id = so.company_id
                                 move.price_unit =  so.amount_total
+                                # move.cpf_acompte_invoice=True
+                                # move.cpf_invoice = True
+                                move.methodes_payment = 'cpf'
                                 move.post()
                                 ref=move.name
                         so.action_cancel()
                         for line in so.order_line:
-                            line.price_unit=amount_before_instalment
+                            line.price_unit = amount_before_instalment
                         so.sale_action_sent()
                         if so.env.su:
                             # sending mail in sudo was meant for it being sent from superuser
                             so = so.with_user(SUPERUSER_ID)
+
+                #
                         template_id = int(request.env['ir.config_parameter'].sudo().get_param(
                             'portal_contract.mcm_mail_template_sale_confirmation'))
                         template_id = request.env['mail.template'].sudo().search([('id', '=', template_id)]).id
@@ -156,9 +165,8 @@ class ClientCPFController(http.Controller):
                                 'portal_contract.mcm_email_template_edi_sale', raise_if_not_found=False)
                         if template_id:
                             so.with_context(force_send=True).message_post_with_template(template_id,
-                                                                                        composition_mode='comment',
-                                                                                        email_layout_xmlid="portal_contract.mcm_mail_notification_paynow_online"
-                                                                                       )
+                                                         composition_mode='comment',email_layout_xmlid="portal_contract.mcm_mail_notification_paynow_online")
+
                         user.partner_id.statut = 'won'
                         return request.render("mcm_cpf_validation.mcm_website_cpf_accepted")
                     else:
@@ -190,7 +198,7 @@ class ClientCPFController(http.Controller):
                     })
                     # Enreggistrement des valeurs de la facture
                     # Parser le pourcentage d'acompte
-                    # Creation de la fcture étape Finale
+                    # Création de la fcture étape Finale
                     #Facture comptabilisée
                     so.action_confirm()
                     so.module_id=module_id
@@ -199,7 +207,9 @@ class ClientCPFController(http.Controller):
                     for move in moves:
                         move.type_facture = 'interne'
                         move.module_id = so.module_id
-                        move.cpf_acompte_invoice=True
+                        # move.cpf_acompte_invoice=True
+                        # move.cpf_invoice =True
+                        move.methodes_payment = 'cpf'
                         move.pourcentage_acompte = 25
                         move.session_id = so.session_id
                         move.company_id=so.company_id
@@ -264,7 +274,8 @@ class ClientCPFController(http.Controller):
                 return request.render("mcm_cpf_validation.mcm_website_module_not_found", {})
         else:
             return request.render("mcm_cpf_validation.mcm_website_partner_not_found", {})
-    #new cpf accepted link with all parametres of client
+
+    # new cpf accepted link with all parametres of client
     @http.route(
         '/cpf_accepted/<string:email>/<string:nom>/<string:prenom>/<string:diplome>/<string:tel>/<string:address>/<string:code_postal>/<string:ville>/<string:dossier>/<string:session>/<string:module>/',
         type="http", auth="user", website=True, sitemap=False)
@@ -274,8 +285,8 @@ class ClientCPFController(http.Controller):
         email = str(email).lower()
         email = email.replace(" ", "")
         users = request.env['res.users'].sudo().search([('login', "=", email)])
-        if not users: # if client not created or validate cpf link not generated
-            # redirect link to generate validate cpf link to create the client with all info of client
+    # redirect link to generate validate cpf link to create the client with all info of client
+        if not users:
             return request.redirect("/validate_cpf/%s/%s/%s/%s/%s/%s/%s/%s/%s/%s/%s/" % (
             email, nom, prenom, diplome, tel, address, code_postal, ville, dossier, session, module))
         user = False
@@ -303,8 +314,7 @@ class ClientCPFController(http.Controller):
             if product_id and product_id.company_id.id == 2 and user.partner_id.id_edof and user.partner_id.date_examen_edof and user.partner_id.ville:
                 module_id = request.env['mcmacademy.module'].sudo().search(
                     [('company_id', "=", 2), ('ville', "=", user.partner_id.ville),
-                     ('date_exam', "=", user.partner_id.date_examen_edof), ('product_id', "=", product_id.id),
-                     ('session_id.number_places_available', '>', 0)], limit=1)
+                     ('date_exam', "=", user.partner_id.date_examen_edof), ('product_id', "=", product_id.id),('session_id.number_places_available', '>', 0)], limit=1)
                 if module_id:
                     user.partner_id.module_id = module_id
                     user.partner_id.mcm_session_id = module_id.session_id
@@ -341,15 +351,17 @@ class ClientCPFController(http.Controller):
                             line.price_unit = so.amount_total
                         so.action_confirm()
                         ref = False
-                        # Creation de la Facture interne
-                        # Si la facture est en interne :  On parse le pourcentage qui est 25 %
-                        # cpf_compte_invoice prend la valeur True pour savoir bien qui est une facture creer par Zoe
+                        # Creation de la Facture Cpf
+                        # Si la facture est de type CPF :  On parse le pourcentage qui est 25 %
+                        # methode_payment prend la valeur CPF pour savoir bien qui est une facture CPF qui prend la valeur 25 % par default
 
                         if so.amount_total > 0 and so.order_line:
                             moves = so._create_invoices(final=True)
                             for move in moves:
                                 move.type_facture = 'interne'
-                                move.cpf_acompte_invoice = True
+                                # move.cpf_acompte_invoice= True
+                                # move.cpf_invoice =True
+                                move.methodes_payment = 'cpf'
                                 move.pourcentage_acompte = 25
                                 move.module_id = so.module_id
                                 move.session_id = so.session_id
@@ -357,6 +369,9 @@ class ClientCPFController(http.Controller):
                                     move.pricelist_id = so.pricelist_id
                                 move.company_id = so.company_id
                                 move.price_unit = so.amount_total
+                                # move.cpf_acompte_invoice=True
+                                # move.cpf_invoice = True
+                                move.methodes_payment = 'cpf'
                                 move.post()
                                 ref = move.name
                         so.action_cancel()
@@ -366,6 +381,8 @@ class ClientCPFController(http.Controller):
                         if so.env.su:
                             # sending mail in sudo was meant for it being sent from superuser
                             so = so.with_user(SUPERUSER_ID)
+
+                        #
                         template_id = int(request.env['ir.config_parameter'].sudo().get_param(
                             'portal_contract.mcm_mail_template_sale_confirmation'))
                         template_id = request.env['mail.template'].sudo().search([('id', '=', template_id)]).id
@@ -377,10 +394,8 @@ class ClientCPFController(http.Controller):
                             template_id = request.env['ir.model.data'].xmlid_to_res_id(
                                 'portal_contract.mcm_email_template_edi_sale', raise_if_not_found=False)
                         if template_id:
-                            so.with_context(force_send=True).message_post_with_template(template_id,
-                                                                                        composition_mode='comment',
-                                                                                        email_layout_xmlid="portal_contract.mcm_mail_notification_paynow_online"
-                                                                                        )
+                            so.with_context(force_send=True).message_post_with_template(template_id, composition_mode='comment',email_layout_xmlid="portal_contract.mcm_mail_notification_paynow_online")
+
                         user.partner_id.statut = 'won'
                         return request.render("mcm_cpf_validation.mcm_website_cpf_accepted")
                     else:
@@ -422,7 +437,9 @@ class ClientCPFController(http.Controller):
                     for move in moves:
                         move.type_facture = 'interne'
                         move.module_id = so.module_id
-                        move.cpf_acompte_invoice = True
+                        # move.cpf_acompte_invoice=True
+                        # move.cpf_invoice =True
+                        move.methodes_payment = 'cpf'
                         move.pourcentage_acompte = 25
                         move.session_id = so.session_id
                         move.company_id = so.company_id
@@ -462,9 +479,8 @@ class ClientCPFController(http.Controller):
                     vals = {
                         'description': 'CPF: vérifier la date et ville de %s' % (user.name),
                         'name': 'CPF : Vérifier Date et Ville ',
-                        'team_id': request.env['helpdesk.team'].sudo().search(
-                            [('name', 'like', 'Clientèle'), ('company_id', "=", 2)],
-                            limit=1).id,
+                        'team_id': request.env['helpdesk.team'].sudo().search([('name', 'like', 'Clientèle'),('company_id', "=", 2)],
+                                                                              limit=1).id,
                     }
                     description = "CPF: vérifier la date et ville de " + str(user.name)
                     ticket = request.env['helpdesk.ticket'].sudo().search([("description", "=", description)])
@@ -477,9 +493,8 @@ class ClientCPFController(http.Controller):
                         'partner_id': False,
                         'description': 'CPF: id module edof %s non trouvé' % (module),
                         'name': 'CPF : ID module edof non trouvé ',
-                        'team_id': request.env['helpdesk.team'].sudo().search(
-                            [('name', "=", _('Service Clientèle')), ('company_id', "=", 2)],
-                            limit=1).id,
+                        'team_id': request.env['helpdesk.team'].sudo().search([('name', "=", _('Service Clientèle')),('company_id', "=", 2)],
+                                                                              limit=1).id,
                     }
                     description = 'CPF: id module edof ' + str(module) + ' non trouvé'
                     ticket = request.env['helpdesk.ticket'].sudo().search([('description', 'ilike', description)])

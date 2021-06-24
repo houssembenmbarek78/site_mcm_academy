@@ -36,6 +36,7 @@ publicWidget.registry.WebsiteSale.include({
                 document.getElementById("order_instalment_number").style.visibility = 'hidden';
                 }
 
+
     this._rpc({
     route: "/shop/payment/update_amount",
     params: {
@@ -55,7 +56,6 @@ publicWidget.registry.WebsiteSale.include({
              cpf=false
              }
          }
-
          this._rpc({
             route: "/shop/payment/update_cpf",
             params: {
