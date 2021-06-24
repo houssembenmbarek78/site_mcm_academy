@@ -425,7 +425,7 @@
                                         </strong>
                                     </td>
                                 </tr>
-                                <tr t-if="o.company_id==1">
+                                <tr t-if="o.company_id.id==1">
                                         <td class="text-left"
                                         style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" t-if="o.methodes_payment == 'cpf'" >
                                         <strong >Total</strong>
