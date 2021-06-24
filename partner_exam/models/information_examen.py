@@ -83,33 +83,19 @@ class NoteExamen(models.Model):
 
     @api.model
     def create(self, vals):
-        """ Lors de creation d'un nouveau enregistrement des notes d'examen, 
-        cette fonction permet de verifier si il y'a un autre enregistrement 
-        contient meme date d'examen, l'ancienne ligne sera 
-        supprimer et remplacer par la nouvelle ligne"""
         resultat = super(NoteExamen, self).create(vals)
         resultat._compute_moyenne_generale()
-        for record in self:
-            if record.date_exam:
-                existing_date = self.env['info.examen'].search(
-                    [('partner_id', '=', record.partner_id.name), ('id', '!=', record.id),
-                     ('date_exam', '=', record.date_exam)], limit=1)
-                print(existing_date)
-                if existing_date:
-                    existing_date.unlink()
         return resultat
 
     def write(self, vals):
-        """ Lors de modification d'un nouveau enregistrement des notes d'examen, 
-        cette fonction permet de verifier si il y'a un autre enregistrement 
-        contient meme date d'examen, l'ancienne ligne sera 
+        """ Lors de modification d'un nouveau enregistrement des notes d'examen,
+        cette fonction permet de verifier si il y'a un autre enregistrement
+        contient meme date d'examen, l'ancienne ligne sera
         supprimer et remplacer par la nouvelle ligne"""
-        for record in self:
-            if record.date_exam:
-                existing_date = self.env['info.examen'].search(
-                    [('partner_id', '=', record.partner_id.name), ('id', '!=', record.id),
-                     ('date_exam', '=', record.date_exam)], limit=1)
-                print(existing_date)
-                if existing_date:
-                    existing_date.unlink()
-            return super(NoteExamen, self).write(vals)
+        if vals.get('epreuve_a') and not vals.get('epreuve_b'):
+            vals['moyenne_generale'] = (vals['epreuve_a'] + self.epreuve_b) / 2
+        elif vals.get('epreuve_a') and vals.get('epreuve_b'):
+            vals['moyenne_generale'] = (vals['epreuve_a'] + vals['epreuve_b']) / 2
+        elif vals.get('epreuve_b') and not vals.get('epreuve_a'):
+            vals['moyenne_generale'] = (self.epreuve_a + vals['epreuve_b']) / 2
+        return super(NoteExamen, self).write(vals)
