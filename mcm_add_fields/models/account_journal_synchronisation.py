@@ -17,6 +17,7 @@ class AccountJournalSynchronisation(models.Model):
       daysDiff = 0
 
       for facture in factures:
+       if(facture.company_id.id==2) :
         if (facture.invoice_date and My_date) :
           daysDiff = ((My_date) - facture.invoice_date).days
           if daysDiff >= 0 :
@@ -33,11 +34,11 @@ class AccountJournalSynchronisation(models.Model):
                   elif (facture.pourcentage_acompte == 5 and facture.company_id.id == 2):
                       facture.methodes_payment = 'cpf'
                       facture.pourcentage_acompte = 5
-                  else :
+                  elif (facture.company_id.id == 2 ):
                       facture.methodes_payment = 'cpf'
                       facture.pourcentage_acompte = 25
 
-              elif facture.invoice_user_id != 'ZOÉ':
+              elif (facture.invoice_user_id != 'ZOÉ' and facture.company_id.id ==2):
                   facture.methodes_payment = 'cartebleu'
 
 
