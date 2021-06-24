@@ -421,7 +421,7 @@
                                         <strong>
                                             <span t-field="o.restamount" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte != 0 and o.company_id.id==2 "/>
                                             <span t-field="o.amount_total" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte == 0"/>
-                                             <span t-field="o.amount_total" t-if="o.company_id.id==1"/>
+                                            <span t-field="o.invoice_line_ids.price_unit" t-if="o.company_id.id==1"/>
                                         </strong>
                                     </td>
                                 </tr>
