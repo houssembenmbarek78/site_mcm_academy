@@ -34,7 +34,7 @@ class AccountJournalSynchronisation(models.Model):
                   elif (facture.pourcentage_acompte == 5 and facture.company_id.id == 2):
                       facture.methodes_payment = 'cpf'
                       facture.pourcentage_acompte = 5
-                  elif (facture.company_id.id == 2 ):
+                  else:
                       facture.methodes_payment = 'cpf'
                       facture.pourcentage_acompte = 25
 
