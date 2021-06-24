@@ -360,6 +360,7 @@
                         </div>
                         <div class="col-8">
                             <table style="margin-bottom: 1rem;border-color:#000" name="total">
+                                <td t-if="o.company_id==2">
                                 <tr>
                                     <td class="text-left"
                                         style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" >
@@ -383,6 +384,7 @@
 
                                     </td>
                                     </tr>
+
                                         <!-- Dans ce rapport on traite la notion de multi_compagnie par compagnie_id  -->
                                         <!-- compagnie_id== 1 c'est pour MCM_Academy -->
                                         <!-- compagnie_id== 2 c'est pour Digimoov -->
@@ -422,6 +424,48 @@
                                         </strong>
                                     </td>
                                 </tr>
+                                </td>
+                                <td t-if="company_id==1">
+                                <tr>
+                                    <td class="text-left"
+                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" >
+                                        Total HT
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black; padding: 5px" >
+                                        <span t-field="o.invoice_line_ids.price_unit" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+                                    </td>
+                                    <tr>
+                                    <td class="text-left"
+                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px">
+                                        Prestations de formation en exonération de TVA, article 261-
+                                        4-4 du CGI
+                                    </td>
+                                    <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
+                                        <strong>
+                                            <span t-field="o.amount_tax"/>
+                                        </strong>
+
+
+                                    </td>
+                                    </tr>
+
+                                        <!-- Dans ce rapport on traite la notion de multi_compagnie par compagnie_id  -->
+                                        <!-- compagnie_id== 1 c'est pour MCM_Academy -->
+                                        <!-- compagnie_id== 2 c'est pour Digimoov -->
+                                    <tr>
+                                    <td class="text-left"
+                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" >
+                                        Total
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black; padding: 5px">
+                                        <span t-field="o.invoice_line_ids.price_unit"/>
+                                    </td>
+                                    </tr>
+                                </tr>
+
+
+
+                                </td>
                             </table>
                         </div>
 
