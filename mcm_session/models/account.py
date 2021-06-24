@@ -164,8 +164,8 @@ class AccountMove(models.Model):
     _inherit = "account.move"
 
     type_facture = fields.Selection(selection=[
-        ('interne', 'Interne'),
-        ('web', 'Site web'),
+        ('interne', 'En Interne'),
+        ('web', 'Par le site web'),
     ], string='Facture générer')
 
     def _create_payment_transaction(self, vals):

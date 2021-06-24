@@ -28,9 +28,9 @@ class SaleOrder(models.Model):
                     module_id = self.env['mcmacademy.module'].sudo().search(
                         [('product_id', '=', product.id), ('session_id', '=', order.session_id.id)])
                     if module_id:
-                        for module in module_id:
-                            if order.partner_id.module_id == module:
-                                order.module_id = module
+                            for module in module_id:
+                                if order.partner_id.module_id==module:
+                                    order.module_id=module
         return True
     def _create_payment_transaction(self, vals):
         '''Similar to self.env['payment.transaction'].create(vals) but the values are filled with the
@@ -47,13 +47,16 @@ class SaleOrder(models.Model):
         partner = self[0].partner_id
         if any([so.partner_id != partner for so in self]):
             raise ValidationError(_('A transaction can\'t be linked to sales orders having different partners.'))
+
         # Try to retrieve the acquirer. However, fallback to the token's acquirer.
         acquirer_id = vals.get('acquirer_id')
         payment_token_id = vals.get('payment_token_id')
         acquirer=False
         if payment_token_id:
             payment_token = self.env['payment.token'].sudo().browse(payment_token_id)
+
             # Check payment_token/acquirer matching or take the acquirer from token
+
             if acquirer_id:
                 acquirer = self.env['payment.acquirer'].browse(acquirer_id)
                 if payment_token and payment_token.acquirer_id != acquirer:
@@ -64,24 +67,28 @@ class SaleOrder(models.Model):
                         payment_token.partner.name, partner.name))
             else:
                 acquirer = payment_token.acquirer_id
+
         # Check an acquirer is there.
         if not acquirer_id and not acquirer:
             raise ValidationError(_('A payment acquirer is required to create a transaction.'))
+
         if not acquirer:
             acquirer = self.env['payment.acquirer'].browse(acquirer_id)
+
         # Check a journal is set on acquirer.
         if not acquirer.journal_id:
             raise ValidationError(_('A journal must be specified of the acquirer %s.' % acquirer.name))
+
         if not acquirer_id and acquirer:
             vals['acquirer_id'] = acquirer.id
         amount = sum(self.mapped('amount_total'))
-        if self.instalment and amount > 1000 and self.company_id.id == 1:
-            amount = amount / 3
+        if self.instalment and amount>1000 and self.company_id.id==1:
+            amount=amount/3
         print('_create_payment_transaction')
         print(self.instalment)
         print(self.company_id.id)
-        if self.instalment and self.company_id.id == 2:
-            amount = amount/int(self.instalment_number)
+        if self.instalment and self.company_id.id==2:
+            amount=amount/int(self.instalment_number)
         vals.update({
             'amount': amount,
             'currency_id': currency.id,
@@ -89,7 +96,10 @@ class SaleOrder(models.Model):
             'sale_order_ids': [(6, 0, self.ids)],
         })
         transaction = self.env['payment.transaction'].create(vals)
+
+
         # Process directly if payment_token
         if transaction.payment_token_id:
             transaction.s2s_do_transaction()
+
         return transaction
