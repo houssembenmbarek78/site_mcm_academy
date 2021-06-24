@@ -70,6 +70,28 @@ class NoteExamen(models.Model):
                 elif rec.epreuve_a < 1 and rec.epreuve_b < 1:
                     rec.presence = 'Absent'
 
+    def write_compute_moyenne_generale(self, epreuve_a, epreuve_b):
+        """ This function used in write methode to update fields
+        when user import new notes """
+        self.moyenne_generale = (epreuve_a + epreuve_b) / 2
+        if epreuve_a >= 10 and epreuve_b >= 8 and self.moyenne_generale >= 12:
+            moyenne_generale = self.moyenne_generale
+            self.mention = 'recu'
+            self.resultat = 'recu'
+            self.presence = 'present'
+        else:
+            # reset your fields
+            self.mention = 'ajourne'
+            self.resultat = 'ajourne'
+            if epreuve_a >= 1 and epreuve_a < 21:
+                self.presence = 'present'
+            elif epreuve_a < 1 and epreuve_b < 1:
+                self.presence = 'Absent'
+            if epreuve_b >= 1 and epreuve_b < 21:
+                self.presence = 'present'
+            elif epreuve_a < 1 and epreuve_b < 1:
+                self.presence = 'Absent'
+
     @api.onchange("résultat")
     def etat_de_client_apres_examen(self):
         """Fonction pour mettre le champs etat
@@ -81,21 +103,16 @@ class NoteExamen(models.Model):
             if not rec.resultat == "recu":
                 rec.etat = "sans succès"
 
-    @api.model
-    def create(self, vals):
-        resultat = super(NoteExamen, self).create(vals)
-        resultat._compute_moyenne_generale()
-        return resultat
 
     def write(self, vals):
         """ Lors de modification d'un nouveau enregistrement des notes d'examen,
-        cette fonction permet de verifier si il y'a un autre enregistrement
-        contient meme date d'examen, l'ancienne ligne sera
-        supprimer et remplacer par la nouvelle ligne"""
-        if vals.get('epreuve_a') and not vals.get('epreuve_b'):
-            vals['moyenne_generale'] = (vals['epreuve_a'] + self.epreuve_b) / 2
-        elif vals.get('epreuve_a') and vals.get('epreuve_b'):
-            vals['moyenne_generale'] = (vals['epreuve_a'] + vals['epreuve_b']) / 2
-        elif vals.get('epreuve_b') and not vals.get('epreuve_a'):
-            vals['moyenne_generale'] = (self.epreuve_a + vals['epreuve_b']) / 2
+                cette fonction permet de verifier si il y'a un autre enregistrement
+                contient meme date d'examen, l'ancienne ligne sera
+                supprimer et remplacer par la nouvelle ligne avec les champs dynamique"""
+        if 'epreuve_a' in vals and not 'epreuve_b' in vals:
+            self.write_compute_moyenne_generale(vals['epreuve_a'], self.epreuve_b)
+        elif 'epreuve_a' in vals and 'epreuve_b' in vals:
+            self.write_compute_moyenne_generale(vals['epreuve_a'], vals['epreuve_b'])
+        elif 'epreuve_b' in vals and not 'epreuve_a' in vals:
+            self.write_compute_moyenne_generale(self.epreuve_a, vals['epreuve_b'])
         return super(NoteExamen, self).write(vals)
