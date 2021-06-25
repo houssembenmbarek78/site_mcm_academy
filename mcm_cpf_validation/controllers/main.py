@@ -505,6 +505,7 @@ class ClientCPFController(http.Controller):
         else:
             return request.render("mcm_cpf_validation.mcm_website_partner_not_found", {})
 
+    # new cpf validated  link with all parametres of client
     @http.route('/validate_cpf/<string:email>/<string:nom>/<string:prenom>/<string:diplome>/<string:tel>/<string:address>/<string:code_postal>/<string:ville>/<string:dossier>/<string:session>/<string:module>/', type="http", auth="user")
     def validate_cpf(self,email=None,nom=None,prenom=None,diplome=None,tel=None,address=None,code_postal=None,ville=None,dossier=None,session=None,module=None, **kw):
         email = email.replace("%", ".") # remplacer % par . dans l'email envoyé en paramètre
