@@ -367,7 +367,7 @@
                                     </td>
                                     <td class="text-left" style="border: 1px solid black; padding: 5px" >
                                         <span t-field="o.amount_untaxed" t-if="o.methodes_payment == 'cpf'" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
-                                        <span t-field="o.invoice_line_ids.price_unit" t-if="o.methodes_payment  =='cartebleu'" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+                                        <span t-field="o.amount_total" t-if="o.methodes_payment  =='cartebleu'" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
 
                                         <span t-field="o.amount_untaxed" t-if="o.company_id.id==1" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
                                     </td>
