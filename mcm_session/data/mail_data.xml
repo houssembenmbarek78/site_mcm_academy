@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="mcm_mt_order_confirmed" model="mail.message.subtype">
+            <field name="name">Contrat signé</field>
+            <field name="res_model">sale.order</field>
+            <field name="default" eval="False"/>
+            <field name="parent_id" eval="ref('sale.mt_order_confirmed')"/>
+            <field name="description">Contrat signé</field>
+        </record>
+        <record id="mcm_mt_order_sent" model="mail.message.subtype">
+            <field name="name">Contrat non signé envoyé</field>
+            <field name="res_model">sale.order</field>
+            <field name="default" eval="False"/>
+            <field name="parent_id" eval="ref('sale.mt_order_sent')"/>
+            <field name="description">Contrat non signé envoyé</field>
+        </record>
+    </data>
+</odoo>

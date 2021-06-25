@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Multi - Company Rules -->
+        <record model="ir.rule" id="session_comp_rule">
+            <field name="name">Session multi-company</field>
+            <field name="model_id" ref="model_mcmacademy_session"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        </record>
+        <record model="ir.rule" id="module_comp_rule">
+            <field name="name">Module multi-company</field>
+            <field name="model_id" ref="model_mcmacademy_module"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        </record>
+        <record model="ir.rule" id="stage_comp_rule">
+            <field name="name">Stage multi-company</field>
+            <field name="model_id" ref="model_mcmacademy_stage"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        </record>
+        <record model="ir.rule" id="action_comp_rule">
+            <field name="name">Action multi-company</field>
+            <field name="model_id" ref="model_mcmacademy_action"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        </record>
+        <record model="ir.rule" id="programme_comp_rule">
+            <field name="name">Programme multi-company</field>
+            <field name="model_id" ref="model_mcmacademy_programme"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        </record>
+        <record model="ir.rule" id="programme_objectif_comp_rule">
+            <field name="name">Programme objectif multi-company</field>
+            <field name="model_id" ref="model_mcmacademy_programme_objectif"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        </record>
+        <record model="ir.rule" id="programme_clientpotentiel_comp_rule">
+            <field name="name">Programme client potentiel multi-company</field>
+            <field name="model_id" ref="model_mcmacademy_programme_clientpotentiel"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        </record>
+        <record model="ir.rule" id="module_details_comp_rule">
+            <field name="name">Module details multi-company</field>
+            <field name="model_id" ref="model_mcmacademy_module_details"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        </record>
+        <record model="ir.rule" id="programme_prerequis_comp_rule">
+            <field name="name">Programme Prerequis multi-company</field>
+            <field name="model_id" ref="model_mcmacademy_programme_prerequis"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        </record>
+        <record model="ir.rule" id="suiviexecution_comp_rule">
+            <field name="name">Suivi Execution Prerequis multi-company</field>
+            <field name="model_id" ref="model_mcmacademy_suiviexecution"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        </record>
+        <record model="ir.rule" id="ressources_comp_rule">
+            <field name="name">Ressources multi-company</field>
+            <field name="model_id" ref="model_mcmacademy_ressources"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        </record>
+        <record model="ir.rule" id="ressources_comp_rule">
+            <field name="name">Domaine de formation multi-company</field>
+            <field name="model_id" ref="model_mcmacademy_domain"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+        </record>
+    </data>
+</odoo>

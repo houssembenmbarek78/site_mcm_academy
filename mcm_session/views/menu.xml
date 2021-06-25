@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="mcm_academy_session_action_main" model="ir.actions.act_window">
+        <field name="name">Sessions</field>
+        <field name="res_model">mcmacademy.session</field>
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Créer votre nouvelle session
+            </p>
+        </field>
+    </record>
+
+    <record id="mcm_academy_action_type_action" model="ir.actions.act_window">
+        <field name="name">Types d'actions</field>
+        <field name="res_model">mcmacademy.action</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Créer un type d'action
+            </p>
+        </field>
+    </record>
+
+    <record id="mcm_academy_domain_action" model="ir.actions.act_window">
+        <field name="name">État de session</field>
+        <field name="res_model">mcmacademy.domain</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Créer un domaine de formation
+            </p>
+        </field>
+    </record>
+
+    <record id="mcm_academy_stage_action" model="ir.actions.act_window">
+        <field name="name">État de session</field>
+        <field name="res_model">mcmacademy.stage</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Créer un état de session
+            </p>
+        </field>
+    </record>
+
+    <record id="mcm_academy_module_action_main" model="ir.actions.act_window">
+        <field name="name">Module</field>
+        <field name="res_model">mcmacademy.module</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Créer un nouveau module
+            </p>
+        </field>
+    </record>
+    <record id="mcm_academy_module_programme_main" model="ir.actions.act_window">
+        <field name="name">Programme</field>
+        <field name="res_model">mcmacademy.programme</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Créer un nouveau programme
+            </p>
+        </field>
+    </record>
+
+
+    <menuitem id="mcm_academy_session_root_menu" name="Sessions" sequence="10"/>
+    <menuitem id="mcm_academy_session_menu" name="Toutes les sessions"
+              parent="mcm_academy_session_root_menu" action="mcm_academy_session_action_main" sequence="10"/>
+    <menuitem id="mcm_academy_session_config_main_menu" name="Configuration"
+              parent="mcm_academy_session_root_menu" sequence="50"/>
+    <menuitem id="mcm_academy_session_action_menu" name="Types d'action"
+              parent="mcm_academy_session_config_main_menu" action="mcm_academy_action_type_action" sequence="10"/>
+    <menuitem id="mcm_academy_session_domain_menu" name="Domaine de formation"
+              parent="mcm_academy_session_config_main_menu" action="mcm_academy_domain_action" sequence="20"/>
+    <menuitem id="mcm_academy_session_stage_menu" name="États des sessions"
+              parent="mcm_academy_session_config_main_menu" action="mcm_academy_stage_action" sequence="30"/>
+    <menuitem id="mcm_academy_module_root_menu" parent="mcm_academy_session_root_menu" name="Modules" sequence="20"/>
+    <menuitem id="mcm_academy_module_menu" name="liste des modules"
+              parent="mcm_academy_module_root_menu" action="mcm_academy_module_action_main" sequence="10"/>
+    <menuitem id="mcm_academy_catalogue_main_menu" name="Catalogue"
+              parent="mcm_academy_session_root_menu" sequence="40"/>
+    <menuitem id="mcm_academy_programme_menu" name="Programmes"
+              parent="mcm_academy_catalogue_main_menu" action="mcm_academy_module_programme_main" sequence="10"/>
+
+</odoo>
