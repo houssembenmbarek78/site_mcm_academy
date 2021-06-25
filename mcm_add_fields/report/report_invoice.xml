@@ -335,10 +335,10 @@
                 <table style="width: 100% ;border-color:#000" name="Acount_Client" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte !=0 and o.company_id.id==2">
                                 <tr>
                                     <td class="text-center"
-                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px; width:80px" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte !=0 and o.company_id.id==2">
+                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte !=0 and o.company_id.id==2">
                                         Acompte :
                                     </td>
-                                     <td class="text-center o_price_total" style="border: 1px solid black; padding: 2px">
+                                     <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
                                         <span t-field="o.pourcentage_acompte" readonly="False" t-if="o.methodes_payment == 'cpf' and o.company_id.id==2"/>%
                                      </td>
                                      <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
