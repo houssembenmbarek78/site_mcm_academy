@@ -44,6 +44,8 @@ class ClientCPFController(http.Controller):
                     'stage_id': stage.id,
                     'type': "opportunity",
                     'description': 'Motif : %s ' % (motif),
+                    'num_dossier': dossier,
+
                 })
             if not lead:
                 print('if not lead')

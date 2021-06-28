@@ -152,7 +152,7 @@ class Partner(models.Model):
                 # Vérifier le statut  pour classer client  dans crm lead
                 if partner.statut_cpf and partner.statut_cpf == "untreated":
                     print('non traité')
-                    self.changestage("Non Traité", partner)
+                    self.changestage("Non Traité", partner) 
                 if partner.statut_cpf and partner.statut_cpf == "validated":
                     print('Validé')
                     self.changestage("Validé", partner)
