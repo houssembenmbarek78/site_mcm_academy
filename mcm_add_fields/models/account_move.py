@@ -60,7 +60,8 @@ class AccountMove(models.Model):
     # Reste à déclarer qu on a daysDiff ce champ  joue le role d'un répère axiale du temps avec lequel on sépare les deux process de travail pour la génération des factures
     # La process de la facturation avec deux facture pour chacque client qui a été mis avant on applique pour eux un pourcentage_acompte== 0
     # Les nouveau factures CPF avec le nouveau process prennent automatique 25 % modifiable par la suite en cas de besoin
-    #
+    # company_id.id == 1 ça indique qu' on travaille avec la compagnie  MCM_academy
+    #company_id.id == 2 ça indique qu' on travaille avec la compagnie  Digimoov
     @api.depends('invoice_line_ids.price_subtotal','pourcentage_acompte','methodes_payment','company_id')
     def _compute_change_amount(self):
          date_precis = date(2021,4,28)
