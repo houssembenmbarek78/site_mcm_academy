@@ -91,6 +91,25 @@ class NoteExamen(models.Model):
                 self.presence = 'present'
             elif epreuve_a < 1 and epreuve_b < 1:
                 self.presence = 'Absent'
+                
+    def remove_double_line_with_same_date(self):
+        duplicate_contacts = []
+        for partner in self:
+            if partner.date_exam and partner.id not in duplicate_contacts:
+                duplicates = self.env['info.examen'].search([('partner_id', '=', partner.partner_id.id), ('id', '!=', partner.id), ('date_exam', '=', partner.date_exam)])
+                print(duplicates)
+                for dup in duplicates:
+                    print("dup", dup)
+                    duplicate_contacts.append(dup.id)
+                    print("duplicate_contacts", duplicate_contacts)
+        self.browse(duplicate_contacts).unlink()
+        
+    @api.model
+    def create(self, vals_list):
+        res = super(NoteExamen, self).create(vals_list)
+        print(vals_list)
+        res._compute_moyenne_generale()
+        return res
 
     @api.onchange("résultat")
     def etat_de_client_apres_examen(self):
