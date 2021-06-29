@@ -11,6 +11,17 @@
             </field>
         </field>
     </record>
+    <!--    inherit vue tree des notes et examens dans la session pour ajouter les villes-->
+    <record id="inherit_info_examen_tree_view" model="ir.ui.view">
+        <field name="name">info.examen.form</field>
+        <field name="model">info.examen</field>
+        <field name="inherit_id" ref="partner_exam.collecte_info_tree_view"/>
+        <field name="arch" type="xml">
+            <field name="partner_id" position="after">
+                <field name="ville_id"/>
+            </field>
+        </field>
+    </record>
     <!--    inherit la vue search pour faire le groupement selon les villes a partir de notes et examens-->
     <record id="inherit_info_examen_search" model="ir.ui.view">
         <field name="name">info.examen.search</field>
