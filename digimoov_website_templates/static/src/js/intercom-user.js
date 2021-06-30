@@ -1,6 +1,6 @@
 window.intercomSettings = {
     app_id: "pe98h7lm",
-    name: "{{ request.user.name|escapejs }}", // Full name
-    email: "{{ request.user.email|escapejs }}", // Email address
-    created_at: "{{ request.user.date_joined|date:"U" }}" // Signup date as a Unix timestamp
+    name: "<%= current_user.name %>", // Full name
+    email: "<%= current_user.email %>", // Email address
+    created_at: "<%= current_user.created_at.to_i %>" // Signup date as a Unix timestamp
 };
