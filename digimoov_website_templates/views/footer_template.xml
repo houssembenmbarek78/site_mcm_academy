@@ -7,6 +7,10 @@
                 <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot-config.js"/>
             </t>
             <t t-if="request.website.is_public_user()==False">
+                <input type="hidden" name="intercom_user_name_connected" id="intercom_user_name_connected"
+                       t-att-value="request.website.get_user_name_logged()"/>
+                <input type="hidden" name="intercom_user_email_connected" id="intercom_user_email_connected"
+                       t-att-value="request.website.get_user_email_logged()"/>
                 <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-user.js"/>
                 <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-user-config.js"/>
             </t>
@@ -178,10 +182,6 @@
 
 
             </style>
-            <input type="hidden" name="user_name_connected" id="intercom_user_name_connected"
-                   t-att-value="request.website.get_user_name_logged()"/>
-            <input type="hidden" name="user_email_connected" id="intercom_user_email_connected"
-                   t-att-value="request.website.get_user_email_logged()"/>
             <section class="footer-page align-items-left text-left d-flex min-vh-40 oe_img_bg oe_custom_bg"
                      style="background-position: 0.85% 97.33%;" id="footer_page">
                 <div class="container">
