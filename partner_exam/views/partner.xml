@@ -31,7 +31,6 @@
                     </field>
                 </page>
             </xpath>
-
             <div name="button_box" position="inside">
                 <button class="oe_stat_button" context="{'search_default_partner_id': active_id}" type="object"
                         name="get_notes_history"
@@ -39,6 +38,17 @@
                     <field string="Notes" name="note_exam_count" widget="statinfo"/>
                 </button>
             </div>
+        </field>
+    </record>
+    <!-- Inherit Tree View from res.partner-->
+    <record model="ir.ui.view" id="base_view_partner_tree_inherit">
+        <field name="name">res.partner.tree.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//tree/field[@name='email']" position="after">
+                <field name="date_creation"/>
+            </xpath>
         </field>
     </record>
 </odoo>
