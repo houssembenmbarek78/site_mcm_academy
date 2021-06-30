@@ -331,8 +331,13 @@
                         <!-- compagnie_id== 1 c'est pour MCM_Academy -->
                         <!-- compagnie_id== 2 c'est pour Digimoov -->
 
-            <xpath expr="//table[@name='invoice_line_table']" position="after">
-                <table style="width: 100% ;border-color:#000" name="Acount_Client" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte !=0 and o.company_id.id==2">
+            <xpath expr="//div[hasclass('clearfix')]" position="replace" t-if="o.methodes_payment == 'cpf'">
+                <div class="clearfix">
+                    <div id="total" class="row">
+                        <div class="col-4">
+                        </div>
+                        <div class="col-8">
+                            <table style="width: 100% ;border-color:#000" name="Acount_Client" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte !=0 and o.company_id.id==2">
                                 <tr>
                                     <td class="text-center"
                                         style="background-color: #E8E8E8; border: 1px solid black; padding: 1px ; width:263px" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte !=0 and o.company_id.id==2">
@@ -348,17 +353,10 @@
                                         </strong>
                                     </td>
                                 </tr>
-                </table>
-                <br>
+                            </table>
+                            <br>
 
-                </br>
-            </xpath>
-            <xpath expr="//div[hasclass('clearfix')]" position="replace" t-if="o.methodes_payment == 'cpf'">
-                <div class="clearfix">
-                    <div id="total" class="row">
-                        <div class="col-4">
-                        </div>
-                        <div class="col-8">
+                            </br>
                             <table style="margin-bottom: 1rem;border-color:#000" name="total">
                                 <tr>
                                     <td class="text-left"
