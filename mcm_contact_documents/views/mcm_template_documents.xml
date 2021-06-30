@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="mcm_contact_documents_charger_mes_documents" name="Document: Submit a Document">
+    <template id="mcm_contact_documents_charger_mes_documents_mcm" name="Document: Submit a Document">
         <t name="Document" priority="29" t-name="document">
             <t t-call="website.layout">
                 <t t-set="additional_title">Document</t>

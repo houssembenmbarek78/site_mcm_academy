@@ -630,9 +630,14 @@ class CustomerPortal(CustomerPortal):
         name = http.request.env.user.name
         email = http.request.env.user.email
         partner_id = http.request.env.user.partner_id
-        return http.request.render('mcm_contact_documents.mcm_contact_document_charger_mes_documents', {
-            'email': email, 'name': name, 'partner_id': partner_id, 'error_identity': '', 'error_permis': '',
-            'error_identity_number': '', 'error_permis_number': '', 'error_domicile': ''})
+        if request.website.id==2:
+            return http.request.render('mcm_contact_documents.mcm_contact_document_charger_mes_documents', {
+                'email': email, 'name': name, 'partner_id': partner_id, 'error_identity': '', 'error_permis': '',
+                'error_identity_number': '', 'error_permis_number': '', 'error_domicile': ''})
+        else:
+            return http.request.render('mcm_contact_documents.mcm_contact_documents_charger_mes_documents_mcm', {
+                'email': email, 'name': name, 'partner_id': partner_id, 'error_identity': '', 'error_permis': '',
+                'error_identity_number': '', 'error_permis_number': '', 'error_domicile': ''})
 
     def _document_get_page_view_values(self, document, access_token, **kwargs):
         values = {
