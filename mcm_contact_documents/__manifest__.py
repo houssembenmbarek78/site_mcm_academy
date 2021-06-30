@@ -24,6 +24,7 @@
         'views/templates.xml',
         'views/document_template.xml',
         'views/digimoov_template_documents.xml',
+        'views/mcm_template_documents.xml',
         'data/mail_template.xml',
     ],
     'qweb': [],
