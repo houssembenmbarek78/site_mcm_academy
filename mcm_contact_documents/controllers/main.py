@@ -622,7 +622,7 @@ class CustomerPortal(CustomerPortal):
         email = http.request.env.user.email
         partner_id = http.request.env.user.partner_id
         print(partner_id.module_id.name)
-        return http.request.render('mcm_contact_documents.mcm_contact_documents_new_documents', {
+        return http.request.render('mcm_contact_documents.mcm_contact_documents_charger_mes_documents', {
             'email': email, 'name': name, 'partner_id':partner_id ,'error_identity':'','error_permis':'','error_identity_number':'','error_permis_number':'','error_domicile':'' })
 
     @http.route('/charger_mes_documents', type="http", auth="user", website=True)
