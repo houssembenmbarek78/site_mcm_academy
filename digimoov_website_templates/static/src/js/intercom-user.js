@@ -5,6 +5,7 @@ console.log(user_email);
 window.intercomSettings = {
     app_id: "pe98h7lm",
     name: user_name, // Full name
+    full_name: user_name, // Full name
     email: user_email, // Email address
     created_at: "<%= current_user.created_at.to_i %>" // Signup date as a Unix timestamp
 };
