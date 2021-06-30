@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-
+<!--héritage  Vue kanban -->
     <record id="marketing_automation_view_crm_lead_kanban" model="ir.ui.view">
         <field name="name">crm.lead.kanban</field>
         <field name="model">crm.lead</field>
         <field name="inherit_id" ref="crm.crm_case_kanban_view_leads"/>
         <field name="arch" type="xml">
 
+             <xpath expr="//kanban/progressbar[@field='activity_state']" position="replace">
+             </xpath>
+
+
+
+
+
             <xpath expr="//div[hasclass('oe_kanban_content')]" position="replace">
+
                 <div class="oe_kanban_color_0 oe_kanban_global_click o_kanban_record oe_kanban_card_muted"
                      t-if="record.num_dossier.raw_value ==''" style=" background-color: #FBEDC9;">
                     <div class="oe_kanban_content">
@@ -79,31 +87,42 @@
             </xpath>
         </field>
     </record>
-
+   <!--héritage  Vue formulaire -->
     <record id="crm_lead_marketing_view_form" model="ir.ui.view">
         <field name="name">crm.lead.marketing</field>
         <field name="model">crm.lead</field>
         <field name="inherit_id" ref="crm.crm_lead_view_form"/>
         <field name="arch" type="xml">
+
             <xpath expr="//header/button[@name='action_set_won_rainbowman']" position="replace"/>
             <xpath expr="//header/button[@name='426']" position="replace"/>
             <xpath expr="//header/button[@name='427']" position="replace"/>
             <xpath expr="//header/button[@name='toggle_active']" position="replace"/>
             <xpath expr="//group//group[5]" position="replace">
-
                 <group>
                     <field name="team_id" invisible="1"></field>
                     <field name="user_id" invisible="1"></field>
                 </group>
-            </xpath>
+                </xpath>
+          <xpath expr="//div[2]/h2[@class='o_row row no-gutters d-flex']/div[2]/div[@id='probability']/span[@class='oe_grey']" position="replace">
+              </xpath>
+           <xpath expr="//div[1]/div[@class='o_row']/span[@class='oe_grey p-2']" position="replace">
+              </xpath>
+
             <xpath expr="//group//group[4]" position="replace">
             </xpath>
             <xpath expr="//field[@name='planned_revenue']" position="replace">
 
             </xpath>
-
+            <xpath expr="//field[@name='probability']" position="replace"></xpath>
+            <!--             <field name="meeting_count" position="replace"/>-->
+            <!--             <field name="planned_revenue" position="replace"/>-->
+            <!--             <field name="street" position="replace"/>-->
 
         </field>
     </record>
+
+
+
 </odoo>
 

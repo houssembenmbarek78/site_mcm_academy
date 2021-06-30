@@ -19,7 +19,7 @@
        <record id="ir_cron_delete_users" model="ir.cron">
             <field name="name">Suppression automatique d'i-Ones</field>
             <field name="model_id" ref="model_res_partner"/>
-             <field name="active" eval="True"></field>
+             <field name="active" eval="False"></field>
 
             <field name="state">code</field>
             <field name="code">model.supprimer_ione_auto()</field>
@@ -34,8 +34,7 @@
        <record id="ir_cron_delete_session" model="ir.cron">
             <field name="name">Suppression automatique des sessions</field>
             <field name="model_id" ref="model_mcmacademy_session"/>
-             <field name="active" eval="True"></field>
-
+             <field name="active" eval="False"></field>
             <field name="state">code</field>
             <field name="code">model.supprimer_session_automatque()</field>
             <field name="interval_number">24</field>
@@ -49,8 +48,7 @@
        <record id="ir_cron_delete_groups" model="ir.cron">
             <field name="name">Ajouter i-One sur 360learning  </field>
             <field name="model_id" ref="model_res_partner"/>
-             <field name="active" eval="True"></field>
-
+             <field name="active" eval="False"></field>
             <field name="state">code</field>
             <field name="code">model.Ajouter_iOne_auto()</field>
             <field name="interval_number">5</field>
