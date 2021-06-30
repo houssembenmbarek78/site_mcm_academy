@@ -189,4 +189,4 @@ class Partner(models.Model):
                             _logger.info("document waiting")
                             waiting=True
                     if waiting:
-                        self.changestage("Document", partner)
+                        self.changestage("Document non Validé", partner)

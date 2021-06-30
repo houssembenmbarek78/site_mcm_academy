@@ -17,19 +17,19 @@ class Document(models.Model):
             if vals['state'] =='waiting':
                 partner=self.partner_id
                 _logger.info('if state in write  %s' % partner.name)
-                self.change_stage_lead("Document", partner)
+                self.change_stage_lead("Document non Validé", partner)
 
         if 'state' in vals and  'partner_id' in vals:
             if vals['state'] == 'waiting':
                 partner = vals['partner_id']
                 print('waite', partner)
-                self.change_stage_lead("Document", partner)
+                self.change_stage_lead("Document non Validé", partner)
 
         if not('state' in vals) and 'partner_id' in vals:
             if self.state == 'waiting':
                 partner = vals['partner_id']
                 print('waite', partner)
-                self.change_stage_lead("Document", partner)
+                self.change_stage_lead("Document non Validé", partner)
         record = super(Document, self).write(vals)
         return record
 
