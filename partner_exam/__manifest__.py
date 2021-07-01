@@ -35,7 +35,7 @@
         'report/attestation_suivi_formation.xml',
         'data/mail_template_suivi_formation.xml',
         'data/mail_template_convocation.xml',
-        'data/delete_double_cron.xml',
+        'data/ir_actions_server.xml',
     ],
     'qweb': [],
     'demo': [

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <record model="ir.actions.server" id="clear_duplicates_examen">
-        <field name="name">Clear Duplicate exam</field>
+        <field name="name">Supprimer duplications des Examens</field>
         <field name="model_id" ref="partner_exam.model_info_examen"/>
         <field name="binding_model_id" ref="partner_exam.model_info_examen"/>
         <field name="binding_view_types">list</field>
