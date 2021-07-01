@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Heritage du rapport other_info  plus  affichage  session_id , module_id , methodes_payment-->
 <odoo>
     <data>
         <record id="session_view_account_move_form" model="ir.ui.view">

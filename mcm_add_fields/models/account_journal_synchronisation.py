@@ -3,6 +3,9 @@
 #Ce programme a été modifié par seifeddinne le 22/03/2021
 #Modification du process de la facturation
 #Modification de l'aperçu de la facturation
+#ce process de synchronisation est mis seulement pour la compagnie Digimoov
+#company_id.id==1 MCM
+#company_id.id==2 Digimoov
 from odoo import api, fields, models,_
 from odoo.exceptions import RedirectWarning, UserError, ValidationError
 from datetime import datetime , date

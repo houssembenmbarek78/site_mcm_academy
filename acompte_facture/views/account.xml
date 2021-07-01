@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Dans ce rapport on traite la notion de multi_compagnie par compagnie_id  -->
-<!-- compagnie_id== 1 c'est pour MCM_Academy -->
-<!-- compagnie_id== 2 c'est pour Digimoov -->
+<!-- compagnie_id== 1  MCM_Academy -->
+<!-- compagnie_id== 2  Digimoov -->
 <odoo>
     <record id="mcmacademy_view_account_move_button_acompte" model="ir.ui.view">
         <field name="name">account.move.form</field>

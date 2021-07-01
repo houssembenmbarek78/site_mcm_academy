@@ -32,8 +32,8 @@ class AccountMove(models.Model):
     # Valeurs changer l'hors de  la modification du pourcentage et en calculant le montant payé et le reste à payer
     # On sépare le process de facturation par le champs principal methode_payment qui peux etre sois cpf sois carte_bleu
     #on n oublie pas qu'on travaille avec la multi_compagnie:
-    # company_id.id== 1 c est MCM_Academy
-    #company_id.id== 2 c est Digimoov
+    # company_id.id== 1  MCM_Academy
+    #company_id.id== 2   Digimoov
     @api.onchange('pourcentage_acompte')
     def _compute_amount(self):
         invoice=super(AccountMove,self)._compute_amount()
