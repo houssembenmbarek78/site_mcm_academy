@@ -20,6 +20,7 @@
                         <tree>
                             <field name="partner_id"/>
                             <field name="date_exam"/>
+                            <field name="ville_id"/>
                             <field name="epreuve_a"/>
                             <field name="epreuve_b"/>
                             <field name="moyenne_generale"/>
