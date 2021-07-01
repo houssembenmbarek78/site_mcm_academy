@@ -75,12 +75,10 @@ class Sale(models.Model):
                         'name': partner.name,
                         'partner_name': partner.name,
                         'num_dossier': num_dossier,
+                        'num_tel': partner.phone,
                         'email': partner.email,
                         'type': "opportunity",
                         'stage_id': stage.id
                     })
-                    sale = self.env['sale.order'].sudo().search([('id', '=', self.id),
-                                                                 ])
-                    if sale:
-                        print("parnterrrr", lead.partner_id)
-                        lead.partner_id = sale.partner_id
+                    print('leaddddd', partner)
+                    lead.partner_id = partner
