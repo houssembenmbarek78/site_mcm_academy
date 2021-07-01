@@ -102,7 +102,25 @@ class NoteExamen(models.Model):
                 rec.etat = "avec succès"
             if not rec.resultat == "recu":
                 rec.etat = "sans succès"
-
+    
+    def remove_double_line_with_same_date(self):
+        duplicate_exams = []
+        for partner in self:
+            if partner.date_exam and partner.id not in duplicate_exams:
+                duplicates = self.env['info.examen'].search([('partner_id', '=', partner.partner_id.id), ('id', '!=', partner.id), ('date_exam', '=', partner.date_exam)])
+                print(duplicates)
+                for dup in duplicates:
+                    print("dup", dup)
+                    duplicate_exams.append(dup.id)
+                    print("duplicate_contacts", duplicate_exams)
+        self.browse(duplicate_exams).unlink()
+        
+    @api.model
+    def create(self, vals_list):
+        res = super(NoteExamen, self).create(vals_list)
+        print(vals_list)
+        res._compute_moyenne_generale()
+        return res
 
     def write(self, vals):
         """ Lors de modification d'un nouveau enregistrement des notes d'examen,
