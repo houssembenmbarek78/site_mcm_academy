@@ -69,12 +69,12 @@
 
                         </div>
                         <div>
-                            <i   class="fa fa-phone" attrs="{'invisible': [('num_tel', '=',False)]}"> </i>
-                            <field name="num_tel" attrs="{'invisible': [('num_tel', '=',False)]}"/>
+                            <i   class="fa fa-phone" attrs="{'invisible': [('partner_adress_phone', '=',False)]}"> </i>
+                            <field name="partner_adress_phone" attrs="{'invisible': [('partner_adress_phone', '=',False)]}"/>
                         </div>
                         <div>
-                            <i class="fa fa-envelope" attrs="{'invisible': [('email', '=',False)]}"> </i>
-                            <field name="email" attrs="{'invisible': [('email', '=',False)]}"/>
+                            <i class="fa fa-envelope" attrs="{'invisible': [('email_from', '=',False)]}"> </i>
+                            <field name="email_from" attrs="{'invisible': [('email_from', '=',False)]}"/>
                         </div>
                         <div class="o_kanban_record_bottom">
                          <div>
