@@ -395,7 +395,7 @@
                                         <span t-field="o.amount_total" t-if="o.methodes_payment =='cartebleu'"/>
                                     </td>
                                     <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px" t-if="o.methodes_payment == 'cpf'">
-                                        <span t-field="o.restamount" t-if="o.methodes_payment == 'cpf' and o.company_id.id==2 "/>
+                                        <span t-field="o.restamount" t-if="o.company_id.id==2 "/>
                                     </td>
                                     </tr>
                                 </tr>
