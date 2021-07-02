@@ -337,7 +337,7 @@
                         <div class="col-4">
                         </div>
                         <div class="col-8">
-                            <table style="width: 100% ;border-color:#000" name="Acount_Client" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte !=0 and o.company_id.id==2">
+                            <table style="width: 100% ;border-color:#000" name="Acount_Client" t-if="o.pourcentage_acompte !=0 and o.company_id.id==2">
                                 <tr>
                                     <td class="text-center"
                                         style="background-color: #E8E8E8; border: 1px solid black; padding: 1px ; width:263px" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte !=0 and o.company_id.id==2">
