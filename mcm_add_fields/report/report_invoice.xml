@@ -331,7 +331,7 @@
                         <!-- compagnie_id== 1 c'est pour MCM_Academy -->
                         <!-- compagnie_id== 2 c'est pour Digimoov -->
 
-            <xpath expr="//div[hasclass('clearfix')]" position="replace" t-if="o.methodes_payment == 'cpf'">
+            <xpath expr="//div[hasclass('clearfix')]" position="replace">
                 <div class="clearfix">
                     <div id="total" class="row">
                         <div class="col-4">
