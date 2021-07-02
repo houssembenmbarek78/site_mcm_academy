@@ -342,7 +342,6 @@
                                      </td>
                                      <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
                                         <strong>
-                                            <span t-field="o.amount_paye"/>
                                             <span t-field="o.module_id.product_id.list_price" t-if="o.methodes_payment == 'cartebleu'"/>
                                         </strong>
                                     </td>
@@ -428,11 +427,6 @@
                                         </strong>
                                     </td>
                                 </tr>
-                                <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
-                                        <strong>
-                                            <span t-field="o.module_id.product_id.list_price" t-if="o.methodes_payment == 'cartebleu'"/>
-                                        </strong>
-                                </td>
                                 <tr t-if="o.company_id.id==1 and o.methodes_payment!='cpf' and o.methodes_payment !='cartebleu'">
                                         <td class="text-left"
                                         style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" >
