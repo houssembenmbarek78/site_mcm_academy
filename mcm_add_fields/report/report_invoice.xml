@@ -330,6 +330,20 @@
              <!-- Dans ce rapport on traite la notion de multi_compagnie par compagnie_id  -->
                         <!-- compagnie_id== 1 c'est pour MCM_Academy -->
                         <!-- compagnie_id== 2 c'est pour Digimoov -->
+             <xpath expr="//table[@name='invoice_line_table']" position="after">
+                <table style="width: 100% ;border-color:#000" name="Acount_Client" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte !=0 and o.company_id.id==2">
+
+                                     <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
+                                        <strong>
+                                            <span t-field="o.module_id.product_id.list_price" t-if="o.methodes_payment == 'cartebleu'"/>
+                                        </strong>
+                                    </td>
+
+                </table>
+                <br>
+
+                </br>
+            </xpath>
 
             <xpath expr="//div[hasclass('clearfix')]" position="replace">
                 <div class="clearfix">
