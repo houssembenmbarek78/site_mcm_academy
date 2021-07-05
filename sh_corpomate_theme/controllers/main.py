@@ -544,70 +544,70 @@ class main(http.Controller):
         
         return data
 
-    @http.route('/home1', type='http', auth="public", website=True)
-    def home1(self):
-        return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_1", {})
+    # @http.route('/home1', type='http', auth="public", website=True)
+    # def home1(self):
+    #     return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_1", {})
     
     
-    @http.route('/home2', type='http', auth="public", website=True)
-    def home2(self):
-        return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_2", {})
+    # @http.route('/home2', type='http', auth="public", website=True)
+    # def home2(self):
+    #     return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_2", {})
    
-    @http.route('/home3', type='http', auth="public", website=True)
-    def home3(self):
-        return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_3", {})
+    # @http.route('/home3', type='http', auth="public", website=True)
+    # def home3(self):
+    #     return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_3", {})
     
-    @http.route('/home4', type='http', auth="public", website=True)
-    def home4(self):
-        return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_4", {})
+    # @http.route('/home4', type='http', auth="public", website=True)
+    # def home4(self):
+    #     return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_4", {})
     
-    @http.route('/home5', type='http', auth="public", website=True)
-    def home5(self):
-        return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_5", {})
+    # @http.route('/home5', type='http', auth="public", website=True)
+    # def home5(self):
+    #     return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_5", {})
     
-    @http.route('/home6', type='http', auth="public", website=True)
-    def home6(self):
-        return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_6", {})
+    # @http.route('/home6', type='http', auth="public", website=True)
+    # def home6(self):
+    #     return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_6", {})
     
-    @http.route('/home7', type='http', auth="public", website=True)
-    def home7(self):
-        return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_7", {})
+    # @http.route('/home7', type='http', auth="public", website=True)
+    # def home7(self):
+    #     return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_7", {})
    
-    @http.route('/home8', type='http', auth="public", website=True)
-    def home8(self):
-        return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_8", {})
+    # @http.route('/home8', type='http', auth="public", website=True)
+    # def home8(self):
+    #     return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_8", {})
    
-    @http.route('/home9', type='http', auth="public", website=True)
-    def home9(self):
-        return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_9", {})
+    # @http.route('/home9', type='http', auth="public", website=True)
+    # def home9(self):
+    #     return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_9", {})
    
-    @http.route('/home10', type='http', auth="public", website=True)
-    def home10(self):
-        return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_10", {})
+    # @http.route('/home10', type='http', auth="public", website=True)
+    # def home10(self):
+    #     return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_10", {})
     
-    @http.route('/home11', type='http', auth="public", website=True)
-    def home11(self):
-        return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_11", {})
+    # @http.route('/home11', type='http', auth="public", website=True)
+    # def home11(self):
+    #     return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_11", {})
     
-    @http.route('/home12', type='http', auth="public", website=True)
-    def home12(self):
-        return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_12", {})
+    # @http.route('/home12', type='http', auth="public", website=True)
+    # def home12(self):
+    #     return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_12", {})
     
-    @http.route('/home13', type='http', auth="public", website=True)
-    def home13(self):
-        return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_13", {})
+    # @http.route('/home13', type='http', auth="public", website=True)
+    # def home13(self):
+    #     return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_13", {})
         
-    @http.route('/home14', type='http', auth="public", website=True)
-    def home14(self):
-        return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_14", {})
+    # @http.route('/home14', type='http', auth="public", website=True)
+    # def home14(self):
+    #     return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_14", {})
     
-    @http.route('/home15', type='http', auth="public", website=True)
-    def home15(self):
-        return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_15", {})
+    # @http.route('/home15', type='http', auth="public", website=True)
+    # def home15(self):
+    #     return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_15", {})
     
-    @http.route('/home16', type='http', auth="public", website=True)
-    def home16(self):
-        return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_16", {})
+    # @http.route('/home16', type='http', auth="public", website=True)
+    # def home16(self):
+    #     return request.render("sh_corpomate_theme.sh_corpomate_tmpl_home_16", {})
     
     
  
