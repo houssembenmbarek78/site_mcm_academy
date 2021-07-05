@@ -342,6 +342,7 @@
                                      </td>
                                      <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
                                         <strong>
+                                             <span t-field="o.amount_paye" t-if="o.methodes_payment == 'cpf' and o.company_id.id==2"/>
                                             <span t-field="o.module_id.product_id.list_price" t-if="o.methodes_payment == 'cartebleu'"/>
                                         </strong>
                                     </td>
