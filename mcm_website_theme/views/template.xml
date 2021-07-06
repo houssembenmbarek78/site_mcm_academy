@@ -618,7 +618,7 @@
                 <label>
                     <t t-foreach="website_sale_order.website_order_line" t-as="line">
                         <input type="radio" name="pm_method" data-acquirer-id="16" data-form-payment="True"
-                               data-provider="transfer" class="" id="cpf_pm" t-att-value="line.name_short"
+                               data-provider="transfer" class="" id="cpf_pm" t-att-value="line.name_short" t-if="line.product_id.product_tmpl_id.cpf_available"
                                t-attf-onclick="onchangeTextButton()">
 
                             <span class="payment_option_name">
