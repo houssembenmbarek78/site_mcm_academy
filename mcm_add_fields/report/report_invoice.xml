@@ -134,7 +134,7 @@
                         <tr style="background-color: #E8E8E8;">
                             <!-- TODO: remove in master -->
                             <t t-set="colspan" t-value="6"/>
-                            <th name="th_description" class="text-center" style="border: 1px solid black;">
+                            <th name="th_description" class="text-center" style="border: 1px solid black; width: 267px;">
                                 <span>Désignation</span>
                             </th>
                             <th name="th_source" class="d-none text-center" style="border: 1px solid black;">
@@ -334,7 +334,7 @@
                 <table style="width: 100% ;border-color:#000" name="Acount_Client" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte !=0 and o.company_id.id==2">
                                 <tr>
                                     <td class="text-center"
-                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte !=0 and o.company_id.id==2">
+                                        style="background-color: #E8E8E8; border: 1px solid black; padding: 5px; width: 267px;" t-if="o.methodes_payment == 'cpf' and o.pourcentage_acompte !=0 and o.company_id.id==2">
                                         Acompte :
                                     </td>
                                      <td class="text-center o_price_total" style="border: 1px solid black; padding: 5px">
