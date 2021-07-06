@@ -121,7 +121,7 @@ publicWidget.registry.digi_documents = publicWidget.Widget.extend({
                     {
                      if (!re.exec(type))
                      {
-                        check_type=true;
+                        check_type=false;
                      }
                      if (check_type==false)
                         {
