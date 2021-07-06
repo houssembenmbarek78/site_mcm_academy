@@ -120,15 +120,8 @@ publicWidget.registry.digi_documents = publicWidget.Widget.extend({
                     var type=file['type'];
                     var types = ['image/png' , 'image/jpg' , 'image/jpeg' , 'image/bmp' , 'image/gif' , 'application/pdf'];
                     if (types.includes(type)){
-                    console.log(' success test extension');
+                        check_type=true;
                     }
-                    var re = /(jpg|jpeg|bmp|gif|png|pdf)$/i;
-                    if (type != null)
-                    {
-                     if (!re.exec(type))
-                     {
-                        check_type=false;
-                     }
                      if (check_type==false)
                         {
                             input_id.value='';
