@@ -118,7 +118,7 @@ publicWidget.registry.digi_documents = publicWidget.Widget.extend({
                     console.log("type:");
                     console.log(file['type']);
                     var type=file['type'];
-                    var types = ['image/png' , 'image/jpg' , 'image/jpeg' , 'image/bmp' , 'image/gif' , 'application/pdf'];
+                    var types = ['image/png' , 'image/jpg' , 'image/jpeg' , 'image/bmp' , 'image/gif' , 'image/svg+xml' , 'application/pdf'];
                     if (types.includes(type)){
                         check_type=true;
                     }
