@@ -113,6 +113,8 @@ publicWidget.registry.digi_documents = publicWidget.Widget.extend({
                  var input_id=document.getElementById(id_of_input)
                  if (file != null)
                  {
+                    console.log("type:");
+                    console.log(file['type']);
                     var type=file['type'];
                     if (type != null)
                     {
