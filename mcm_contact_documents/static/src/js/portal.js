@@ -119,7 +119,7 @@ publicWidget.registry.digi_documents = publicWidget.Widget.extend({
                     var re = /(jpg|jpeg|bmp|gif|png|pdf)$/i;
                     if (type != null)
                     {
-                     if (!re.exec(fname))
+                     if (!re.exec(type))
                      {
                         check_type=true;
                      }
