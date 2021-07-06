@@ -122,6 +122,8 @@ publicWidget.registry.digi_documents = publicWidget.Widget.extend({
                     if (types.includes(type)){
                         check_type=true;
                     }
+                    if (type != null)
+                    {
                      if (check_type==false)
                         {
                             input_id.value='';
