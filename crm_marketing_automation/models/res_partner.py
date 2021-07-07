@@ -59,7 +59,7 @@ class Partner(models.Model):
                     'email_from': partner.email,
                     'type': "opportunity",
                     'stage_id': stage.id,
-                    'mode_financement':partner.mode_de_financement
+                    'mode_de_financement':partner.mode_de_financement
                 })
 
             if not lead:
