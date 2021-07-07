@@ -46,7 +46,7 @@ class Document(models.Model):
         _logger.info('sale order %s' % sale_order.name)
         if sale_order:
             print('if verifié')
-            stage = self.env['crm.stage'].sudo().search([("name", "like", _(statut))])
+            stage = self.env['crm.stage'].sudo().search([("name", "=", _(statut))])
             print('stageeeee', stage)
             if stage:
     

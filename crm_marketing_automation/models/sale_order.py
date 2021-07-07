@@ -45,7 +45,7 @@ class Sale(models.Model):
 
     def change_stage_lead(self, statut, partner):
             print('if verifié')
-            stage = self.env['crm.stage'].sudo().search([("name", "like", _(statut))])
+            stage = self.env['crm.stage'].sudo().search([("name", "=", _(statut))])
             print('stageeeee', stage)
             if stage:
 

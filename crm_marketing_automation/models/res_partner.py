@@ -40,7 +40,7 @@ class Partner(models.Model):
         return record
 
     def changestage(self, name, partner):
-        stage = self.env['crm.stage'].sudo().search([("name", "like", _(name))])
+        stage = self.env['crm.stage'].sudo().search([("name", "=", _(name))])
         
         if stage:
 
