@@ -9,7 +9,7 @@ from datetime import date,datetime
 class CRM(models.Model):
     _inherit = "crm.lead"
 
-    num_dossier=fields.Char(string="numéro de dossier",related='partner_id.numero_cpf')
-    num_tel=fields.Char(string="numéro de téléphone",related='partner_id.phone')
-    email=fields.Char(string="email",related='partner_id.email')
+    num_dossier=fields.Char(string="numéro de dossier")
+    num_tel=fields.Char(string="numéro de téléphone")
+    email=fields.Char(string="email")
     mode_financement=fields.Char(string="mode_financement")
