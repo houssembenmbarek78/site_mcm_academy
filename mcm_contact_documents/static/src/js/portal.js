@@ -124,16 +124,16 @@ publicWidget.registry.digi_documents = publicWidget.Widget.extend({
                  if (file != null)
                  {
                     var type=file['type'];
+                    var types = ['image/png' , 'image/jpg' , 'image/jpeg' , 'image/bmp' , 'image/gif' , 'image/svg+xml' , 'application/pdf'];
+                    if (types.includes(type)){
+                        check_type=true;
+                    }
                     if (type != null)
                     {
-                     if (type.includes("image/") || type.includes("application/pdf"))
-                     {
-                        check_type=true;
-                     }
                      if (check_type==false)
                         {
                             input_id.value='';
-                            alert('Les formats acceptés sont : Images ou PDF.');
+                            alert('Formats possibles : jpg, jpeg, png, bmp, svg, pdf');
                         }
                     }
                  }
@@ -208,10 +208,6 @@ publicWidget.registry.mcm_documents = publicWidget.Widget.extend({
                  var input_id=document.getElementById(id_of_input)
                  if (file != null)
                  {
-                    console.log(file);
-                    console.log(id_of_input);
-                    console.log("type:");
-                    console.log(file['type']);
                     var type=file['type'];
                     var types = ['image/png' , 'image/jpg' , 'image/jpeg' , 'image/bmp' , 'image/gif' , 'image/svg+xml' , 'application/pdf'];
                     if (types.includes(type)){
