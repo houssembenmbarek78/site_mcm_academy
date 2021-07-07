@@ -41,7 +41,7 @@ class Partner(models.Model):
 
     def changestage(self, name, partner):
         stage = self.env['crm.stage'].sudo().search([("name", "like", _(name))])
-        _logger.info('stageeeee %s' %stage.name)
+        
         if stage:
 
             lead = self.env['crm.lead'].sudo().search([('partner_id', '=', partner.id)],limit=1)
