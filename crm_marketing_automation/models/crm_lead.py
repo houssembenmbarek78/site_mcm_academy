@@ -9,7 +9,12 @@ from datetime import date,datetime
 class CRM(models.Model):
     _inherit = "crm.lead"
 
-    num_dossier=fields.Char(string="numéro de dossier")
+    num_dossier=fields.Char(string="numéro de dossier",)
     num_tel=fields.Char(string="numéro de téléphone")
     email=fields.Char(string="email")
-    mode_financement=fields.Char(string="mode_financement")
+    mode_de_financement = fields.Selection(selection=[
+        ('particulier', 'Personnel'),
+        ('cpf', 'Mon Compte Formation, CPF'),
+        ('chpf', 'Région Hauts-de-France, CHPF'),
+        ('aif', 'Pôle emploi, AIF'),
+    ], string='Mode de financement', default="particulier", related='partner_id.mode_de_financement')
