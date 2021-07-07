@@ -78,6 +78,7 @@ class Document(models.Model):
                         'partner_name': partner.name,
                         'num_dossier': num_dossier,
                         'email': partner.email,
+                        'email_from': partner.email,
                         'type': "opportunity",
                         'stage_id': stage.id
                     })

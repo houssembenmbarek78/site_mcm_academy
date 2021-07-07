@@ -22,6 +22,6 @@
             <field name="code">model.change_stage_existant()</field>
             <field name="interval_number">5</field>
             <field name="interval_type">hours</field>
-            <field name="numbercall">-1</field>
+            <field name="numbercall">1</field>
         </record>
 </odoo>

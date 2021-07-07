@@ -72,6 +72,7 @@ class Partner(models.Model):
                     'num_dossier': num_dossier,
                     'num_tel': partner.phone,
                     'email': partner.email,
+                    'email_from': partner.email,
                     'type': "opportunity",
                     'stage_id': stage.id
                 })
