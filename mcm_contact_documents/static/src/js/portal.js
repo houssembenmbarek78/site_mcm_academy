@@ -217,8 +217,7 @@ publicWidget.registry.mcm_documents = publicWidget.Widget.extend({
                      if (check_type==false)
                         {
                             input_id.value='';
-                            var str = new String("Formats possibles : jpg, jpeg, png, bmp, svg, pdf");
-                            alert(str.fontcolor( "red" ));
+                            alert('Formats possibles : jpg, jpeg, png, bmp, svg, pdf');
                         }
                     }
                  }
