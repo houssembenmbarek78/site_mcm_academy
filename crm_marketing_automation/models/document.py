@@ -65,7 +65,8 @@ class Document(models.Model):
                         'email': partner.email,
                         'email_from': partner.email,
                         'type': "opportunity",
-                        'stage_id': stage.id
+                        'stage_id': stage.id,
+                        'mode_de_financement':partner.mode_de_financement
                     })
     
                 if not lead:
@@ -80,7 +81,8 @@ class Document(models.Model):
                         'email': partner.email,
                         'email_from': partner.email,
                         'type': "opportunity",
-                        'stage_id': stage.id
+                        'stage_id': stage.id,
+                        'mode_de_financement':partner.mode_de_financement
                     })
     
                     lead.partner_id = partner.id

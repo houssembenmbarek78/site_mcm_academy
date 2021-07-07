@@ -75,7 +75,8 @@ class Partner(models.Model):
                     'email': partner.email,
                     'email_from': partner.email,
                     'type': "opportunity",
-                    'stage_id': stage.id
+                    'stage_id': stage.id,
+                    'mode_de_financement':partner.mode_de_financement
                 })
                 partner = self.env['res.partner'].sudo().search([('id', '=', partner.id)])
                 if partner:

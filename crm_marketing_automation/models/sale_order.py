@@ -64,7 +64,8 @@ class Sale(models.Model):
                         'email': partner.email,
                         'email_from': partner.email,
                         'type': "opportunity",
-                        'stage_id': stage.id
+                        'stage_id': stage.id,
+                        'mode_de_financement':partner.mode_de_financement
                     })
 
                 if not lead:
@@ -80,7 +81,8 @@ class Sale(models.Model):
                         'email': partner.email,
                         'email_from': partner.email,
                         'type': "opportunity",
-                        'stage_id': stage.id
+                        'stage_id': stage.id,
+                        'mode_de_financement':partner.mode_de_financement
                     })
                     print('leaddddd', partner)
                     lead.partner_id = partner
