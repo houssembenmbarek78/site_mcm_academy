@@ -30,10 +30,6 @@
                                                 <div class="col-lg-12 col-md-12">
                                                     <label class="col-form-label">Pièce d'identité recto/verso</label>
                                                 </div>
-                                                <p class="col-lg-12 col-md-12" style="font-size: 14px;color:#d32f2f;font-weight: bold;">(Formats
-                                                    possibles : jpg, jpeg, png, bmp, svg, pdf)
-                                                </p>
-
                                                 <div class="col-lg-9 col-md-9">
                                                     <label class="col-form-label" for="identity">Charger la piéce
                                                         d'identité recto :
@@ -84,9 +80,6 @@
                                                 <div class="col-lg-12 col-md-12">
                                                     <label class="col-form-label">Permis de conduire recto/verso</label>
                                                 </div>
-                                                <p style="font-style: italic;font-size: 12px;color:#d32f2f">(Formats
-                                                    possibles :jpg,jpeg,png,bmp,svg,pdf)
-                                                </p>
                                                 <div class="col-lg-9 col-md-9">
                                                     <label class="col-form-label" for="identity">Charger le permis de
                                                         conduire recto :
