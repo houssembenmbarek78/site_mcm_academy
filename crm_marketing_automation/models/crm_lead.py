@@ -12,4 +12,4 @@ class CRM(models.Model):
     num_dossier=fields.Char(string="numéro de dossier",related='partner_id.numero_cpf')
     num_tel=fields.Char(string="numéro de téléphone",related='partner_id.phone')
     email=fields.Char(string="email",related='partner_id.email')
-    mode_financement=fields.Char(string="mode_financement",related='partner_id.mode_de_financement')
+    mode_financement=fields.Char(string="mode_financement")
