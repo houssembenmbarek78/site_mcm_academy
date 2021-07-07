@@ -13,9 +13,9 @@
         'l10n_fr',
         'account',
         'product',
-         'base',
+        'base',
         'contacts',
-        'web'
+        'web',
     ],
     'description': "Rajout des champs",
     'data': [
@@ -25,9 +25,10 @@
         'views/res_partner.xml',
         'views/res_partner_bank.xml',
         'views/session.xml',
-        # 'views/account.xml',
+        'views/account.xml',
         'report/report_invoice.xml',
         'security/ir.model.access.csv',
+        'views/acount_journal_inherit.xml',
     ],
     'qweb': [],
     'demo': [

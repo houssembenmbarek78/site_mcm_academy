@@ -35,8 +35,7 @@ publicWidget.registry.WebsiteSale.include({
                 document.getElementById("order_amount_to_pay").style.visibility = 'hidden';
                 document.getElementById("order_instalment_number").style.visibility = 'hidden';
                 }
-     console.log('instalment');
-     console.log(instalment);
+
 
     this._rpc({
     route: "/shop/payment/update_amount",
@@ -57,8 +56,6 @@ publicWidget.registry.WebsiteSale.include({
              cpf=false
              }
          }
-         console.log('cpf');
-         console.log(cpf);
          this._rpc({
             route: "/shop/payment/update_cpf",
             params: {
@@ -69,9 +66,7 @@ publicWidget.registry.WebsiteSale.include({
               });
     },
     verify_pm: function (ev) {
-                console.log('verify');
                 stripe_pm=document.getElementById('stripe_pm');
-                console.log('verify');
                 if (stripe_pm){
                     if (stripe_pm.checked==true) {
                     document.getElementById('pm_shop').href='/shop/checkout?express=1';
@@ -106,8 +101,6 @@ publicWidget.registry.WebsiteSale.include({
                 condition=false;
             }
         }
-        console.log('condition');
-        console.log(condition);
         this._rpc({
             route: "/shop/payment/update_condition",
             params: {
@@ -127,8 +120,6 @@ publicWidget.registry.WebsiteSale.include({
                 failures=false;
             }
         }
-        console.log('failures');
-        console.log(failures);
         this._rpc({
             route: "/shop/payment/update_failures",
             params: {
@@ -148,8 +139,6 @@ publicWidget.registry.WebsiteSale.include({
                 accompagnement=false;
             }
         }
-        console.log('accompagnement');
-        console.log(accompagnement);
         this._rpc({
             route: "/shop/payment/update_accompagnement",
             params: {

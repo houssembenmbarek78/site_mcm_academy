@@ -37,6 +37,7 @@
                                 <field name="presence"/>
                                 <field name="mention"/>
                                 <field name="resultat"/>
+                                <field name="etat" invisible="1"/>
                             </group>
                             <group name="other">
                                 <field name="nombre_de_passage"/>

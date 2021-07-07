@@ -488,13 +488,13 @@
     </template>
     <template id="mcm_website_sale_total" inherit_id="website_sale.total">
         <xpath expr="//tr[@id='order_total_taxes']" position="after">
-            <tr id="order_instalment" t-if="website_sale_order.amount_total>1000" style="visibility:visible">
-                <td class="text-right border-0">
+            <tr t-if="website_sale_order.amount_total>1000">
+                <td class="text-right border-0" id="order_instalment" style="display:block">
                     <label for="checkbox_instalment">
                         Payer montant sur 3 fois
                     </label>
                 </td>
-                <td class="text-xl-right border-0">
+                <td class="text-xl-right border-0" id="order_instalment_checkbox"  style="display:table-cell">
 
                     <input type="checkbox" id="checkbox_instalment" style="white-space: nowrap;"
                            class="text-xl-right border-0" t-att-checked="website_sale_order.instalment"
@@ -503,9 +503,9 @@
                 </td>
             </tr>
             <body onload="verify_checked()">
-                <tr id="order_instalment_number" style="visibility: hidden;">
-                    <td class="text-right border-0">Tranches:</td>
-                    <td class="text-xl-right border-0">
+                <tr >
+                    <td class="text-right border-0" id="order_instalment_number" style="display: none;">Tranches:</td>
+                    <td class="text-xl-right border-0" id="order_instalment_number_order" style="display: none;">
                         <span t-field="website_sale_order.instalment_number" style="white-space: nowrap;"/>
                     </td>
                 </tr>
@@ -513,11 +513,11 @@
         </xpath>
         <xpath expr="//tr[@id='order_total']" position="after">
             <body onload="verify_checked()">
-                <tr id="order_amount_to_pay" style="visibility: hidden;">
-                    <td class="text-right">
+                <tr>
+                    <td class="text-right" id="order_amount_to_pay" style="display: none;">
                         <strong>Montant à payer:</strong>
                     </td>
-                    <td class="text-xl-right">
+                    <td class="text-xl-right" id="order_amount_to_pay_amount" style="display: none;">
                         <strong t-field="website_sale_order.amount_to_pay" class="monetary_field"
                                 t-options='{"widget": "monetary", "display_currency": website_sale_order.pricelist_id.currency_id}'/>
                     </td>
@@ -561,7 +561,7 @@
                         <input type="radio" name="pm_method" data-acquirer-id="8" data-form-payment="True"
                                data-provider="stripe_pm"
                                class="" t-att-value="line.name_short" id="stripe_pm" checked="True"
-                               t-attf-onclick="onchangeTextButton1()">
+                               t-attf-onclick="onchangeTextButton1()" >
 
                             <span class="payment_option_name">
                                 Carte de crédit
@@ -579,7 +579,7 @@
                         </input>
                     </t>
                 </label>
-                <div class="text-muted ml-3">
+                <div class="text-muted ml-3" t-if="website_sale_order.module_id.product_id.cpf_available">
                     <p>
                         <br/>
                     </p>
@@ -618,8 +618,7 @@
                 <label>
                     <t t-foreach="website_sale_order.website_order_line" t-as="line">
                         <input type="radio" name="pm_method" data-acquirer-id="16" data-form-payment="True"
-                               t-if="line.product_id.product_tmpl_id.cpf_available"
-                               data-provider="transfer" class="" id="cpf_pm" t-att-value="line.name_short"
+                               data-provider="transfer" class="" id="cpf_pm" t-att-value="line.name_short" t-if="line.product_id.product_tmpl_id.cpf_available"
                                t-attf-onclick="onchangeTextButton()">
 
                             <span class="payment_option_name">
@@ -759,7 +758,6 @@
                 var x=document.getElementById('checkbox_instalment');
 
                 if(x) {
-                console.log(x.checked);
                 if (document.getElementById('checkbox_instalment').checked==true) {
                 document.getElementById("order_amount_to_pay").style.visibility = 'visible';
                 document.getElementById("order_instalment_number").style.visibility = 'visible';
@@ -985,9 +983,12 @@
                 document.getElementById("promo_input").style.display = 'none';
                 }
                 if(document.getElementById("order_instalment")){
-                document.getElementById("order_instalment").style.visibility = 'hidden';
-                document.getElementById("order_instalment_number").style.visibility = 'hidden';
-                document.getElementById("order_amount_to_pay").style.visibility = 'hidden';
+                document.getElementById("order_instalment").style.display = 'none';
+                document.getElementById("order_instalment_checkbox").style.display = 'none';
+                document.getElementById("order_instalment_number").style.display = 'none';
+                document.getElementById("order_instalment_number_order").style.display = 'none';
+                document.getElementById("order_amount_to_pay").style.display = 'none';
+                document.getElementById("order_amount_to_pay_amount").style.display = 'none';
                 }
                 }
                 };
@@ -1004,14 +1005,17 @@
                 }
 
                 if(document.getElementById("order_instalment")){
-                document.getElementById("order_instalment").style.visibility = 'visible';
+                document.getElementById("order_instalment").style.display = 'block';
+                document.getElementById("order_instalment_checkbox").style.display = 'table-cell';
                 }
 
                 instalment=document.getElementById("checkbox_instalment");
                 if(instalment){
                 if(instalment.checked==true){
-                document.getElementById("order_instalment_number").style.visibility = 'visible';
-                document.getElementById("order_amount_to_pay").style.visibility = 'visible';
+                document.getElementById("order_instalment_number").style.display = 'block';
+                document.getElementById("order_instalment_number_order").style.display = 'table-cell';
+                document.getElementById("order_amount_to_pay").style.display = 'block';
+                document.getElementById("order_amount_to_pay_amount").style.display = 'table-cell';
                 }
                 }
                 }
@@ -1028,19 +1032,6 @@
 
         </xpath>
     </template>
-<!--    <template id="mcm_website_sale_cart_summary" inherit_id="website_sale.cart_summary">-->
-<!--        <xpath expr="//div[hasclass('card')]" position="inside">-->
-<!--            <script>-->
-<!--                function onchangeButton(){-->
-<!--                if(document.getElementById("pm_shop_text")){-->
-<!--                document.getElementById("pm_shop_text").textContent = Créer une demande;-->
-<!--                document.getElementById("pm_shop_check_text").textContent = Créer une demande;-->
-<!--                document.getElementById("pm_shop_checkout_text").textContent = Créer une demande;-->
-<!--                }-->
-<!--                };-->
-<!--            </script>-->
-<!--        </xpath>-->
-<!--    </template>-->
     <template id="mcm_reduction_code" inherit_id="website_sale.reduction_code" customize_show="True" name="Promo Code">
         <xpath expr="//a[hasclass('show_coupon')]" position="replace">
             <a href="#" class="show_coupon" id="promo_code" style="display:inline;" t-attf-onclick="show_coupon()">J'ai

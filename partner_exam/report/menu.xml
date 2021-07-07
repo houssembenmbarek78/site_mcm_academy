@@ -76,5 +76,14 @@
             menu="True"
             print_report_name="'Relevé-de-notes- %s' % (object.partner_id.name).replace('/', '')"
             paperformat="partner_exam.paperformat_releve_note_id"/>
+    <!--This is the action to create a print pdf in module res.partner for "Attestation de suivi de formation", using the template(xml) ID-->
+    <report id="id_attestation"
+            model="res.partner"
+            string="Attestation Suivi Formation"
+            report_type="qweb-pdf"
+            name="partner_exam.attestation_suivi_formation_id"
+            file="partner_exam.id_attestation"
+            menu="True"
+            paperformat="partner_exam.paperformat_releve_note_id"/>
 
 </odoo>

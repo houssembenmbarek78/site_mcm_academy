@@ -48,7 +48,7 @@
     </template>
     <template id="mcm_website_contract_exist">
         <p class="card-text"
-           style="text-align: left; ">CPF accepted
+           style="text-align: left; ">Le client a déjà un contrat
         </p>
     </template>
     <template id="ko_places">

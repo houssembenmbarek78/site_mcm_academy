@@ -73,7 +73,7 @@ class AccountMove(models.Model):
         return {
             'type': 'ir.actions.act_window',
             'name': 'Client Gagné',
-            'view_mode': 'tree',
+            'view_mode': 'tree,form',
             'res_model': 'res.partner',
             'domain': [('id', 'in', [x.id for x in self.client_ids])],
             'context': "{'create': True}"

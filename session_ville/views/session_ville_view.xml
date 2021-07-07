@@ -1,0 +1,81 @@
+<odoo>
+    <data>
+        <!-- Action -->
+        <record id="action_session_ville" model="ir.actions.act_window">
+            <field name="name">Session Ville</field>
+            <field name="res_model">session.ville</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Ajouter une ville!</p>
+            </field>
+        </record>
+
+        <!-- Views Form des villes-->
+        <record id="session_ville_form" model="ir.ui.view">
+            <field name="name">session.ville.form</field>
+            <field name="model">session.ville</field>
+            <field name="arch" type="xml">
+                <form string="ville">
+                    <sheet>
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
+                                attrs="{'invisible': [('active', '=', True)]}"/>
+                        <div class="oe_title">
+                            <label for="name_ville" class="oe_edit_only"/>
+                            <h1>
+                                <field name="name_ville" class="oe_inline"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group name="Informations">
+                                <field name="active" invisible="1"/>
+                                <field name="session_adresse_examen_ids">
+                                    <tree>
+                                        <field name="adresse_centre_examen"/>
+                                        <field name="phone"/>
+                                        <field name="email"/>
+                                    </tree>
+                                </field>
+                                <field name="description"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <!-- Views Tree des villes-->
+        <record id="session_ville_tree_view" model="ir.ui.view">
+            <field name="name">session.ville.tree</field>
+            <field name="model">session.ville</field>
+            <field name="arch" type="xml">
+                <tree string="session ville Tree" default_order="name_ville asc">
+                    <field name="name_ville"/>
+                    <field name="session_adresse_examen_ids"
+                           string="Liste des adresses de centre d'examens de ce paye"/>
+                </tree>
+            </field>
+        </record>
+        <!-- Views search des villes-->
+        <record id="session_ville_view_search" model="ir.ui.view">
+            <field name="name">session.ville.search</field>
+            <field name="model">session.ville</field>
+            <field name="arch" type="xml">
+                <search string="Search">
+                    <field name="name_ville"/>
+                    <separator/>
+                    <filter name="active" string="Active" domain="[('active', '=', True)]"/>
+                    <separator/>
+                    <filter name="active" string="Desactive" domain="[('active', '=', False)]"/>
+                </search>
+            </field>
+        </record>
+        <!--        menu des villes sera afficher sous menu de configuration dans l'interface de la session-->
+        <menuitem id="session_ville_menu" name="Les villes"
+                  parent="mcm_session.mcm_academy_session_config_main_menu" action="action_session_ville"
+                  sequence="15"/>
+    </data>
+</odoo>

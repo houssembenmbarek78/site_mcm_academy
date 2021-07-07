@@ -12,7 +12,6 @@ publicWidget.registry.WebsiteSaleExamCenterDate = publicWidget.Widget.extend(Var
         'change input[id="checkbox_conditions"]': 'verify_conditions',
     }),
     verify_date_exam: function (ev) {
-        console.log('verify date exam');
         var self = this;
         var center = false;
         var exam_date=document.getElementById('exam_date');
@@ -54,7 +53,6 @@ publicWidget.registry.WebsiteSaleExamCenterDate = publicWidget.Widget.extend(Var
             },
 
     verify_centre: function (ev) {
-        console.log('verify center');
         var self = this;
         var center = false;
         var center_exam = document.getElementById('centre_examen');
@@ -75,7 +73,6 @@ publicWidget.registry.WebsiteSaleExamCenterDate = publicWidget.Widget.extend(Var
         $('#exam_date option').each(function () {
             var self = this;
             var select_option= $(this);
-            console.log(self.value);
             var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
             var ios=false;
             if (isIOS) {

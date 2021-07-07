@@ -1,0 +1,82 @@
+<odoo>
+    <data>
+        <!-- Action -->
+        <record id="action_session_adresse_examen" model="ir.actions.act_window">
+            <field name="name">Session Adresse Examen</field>
+            <field name="res_model">session.adresse.examen</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Ajouter un centre d'examen!</p>
+            </field>
+        </record>
+
+        <!-- Views Form-->
+        <record id="session_adresse_examen_form" model="ir.ui.view">
+            <field name="name">session.adresse.examen.form</field>
+            <field name="model">session.adresse.examen</field>
+            <field name="arch" type="xml">
+                <form string="ville">
+                    <sheet>
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
+                                attrs="{'invisible': [('active', '=', True)]}"/>
+                        <div class="oe_title">
+                            <label for="adresse_centre_examen" class="oe_edit_only"/>
+                            <h1>
+                                <field name="adresse_centre_examen" class="oe_inline"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group name="Informations">
+                                <field name="active" invisible="1"/>
+                                <field name="session_ville_id"/>
+                                <field name="phone"/>
+                                <field name="email"/>
+                                <field name="lien" widget="url"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!-- Views Tree-->
+        <record id="session_adresse_examen_tree_view" model="ir.ui.view">
+            <field name="name">session.adresse.examen.tree</field>
+            <field name="model">session.adresse.examen</field>
+            <field name="arch" type="xml">
+                <tree string="Session Adresse Examen Tree">
+                    <field name="adresse_centre_examen"/>
+                    <field name="session_ville_id"/>
+                    <field name="phone"/>
+                    <field name="email"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Views search-->
+        <record id="session_adresse_examen_view_search" model="ir.ui.view">
+            <field name="name">session.adresse.examen.search</field>
+            <field name="model">session.adresse.examen</field>
+            <field name="arch" type="xml">
+                <search string="Search">
+                    <field name="adresse_centre_examen"/>
+                    <field name="phone"/>
+                    <field name="email"/>
+                    <separator/>
+                    <filter name="active" string="Active" domain="[('active', '=', True)]"/>
+                    <separator/>
+                    <filter name="active" string="Desactive" domain="[('active', '=', False)]"/>
+                </search>
+            </field>
+        </record>
+        <!--        menu des adresses des centres d'examen qui sera afficher sous menu configuration dans l'interface de session -->
+        <menuitem id="action_session_adresse_examen_menu" name="Adresses Des Centres D'examens"
+                  parent="mcm_session.mcm_academy_session_config_main_menu" action="action_session_adresse_examen"
+                  sequence="16"/>
+    </data>
+</odoo>

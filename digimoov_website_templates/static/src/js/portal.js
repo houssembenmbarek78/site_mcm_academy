@@ -11,7 +11,6 @@ publicWidget.registry.ExamCenterDate = publicWidget.Widget.extend({
     },
 
         verify_date_exam: function (ev) {
-        console.log('verify date exam');
         var self = this;
         var center = false;
         var exam_date=document.getElementById('exam_date');
@@ -53,7 +52,6 @@ publicWidget.registry.ExamCenterDate = publicWidget.Widget.extend({
             },
 
     verify_centre: function (ev) {
-        console.log('verify center');
         var self = this;
         var center = false;
         var center_exam = document.getElementById('centre_examen');
@@ -74,7 +72,6 @@ publicWidget.registry.ExamCenterDate = publicWidget.Widget.extend({
         $('#exam_date option').each(function () {
             var self = this;
             var select_option= $(this);
-            console.log(self.value);
             var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
             var ios=false;
             if (isIOS) {

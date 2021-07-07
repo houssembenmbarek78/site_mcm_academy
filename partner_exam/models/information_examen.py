@@ -22,7 +22,7 @@ class NoteExamen(models.Model):
     resultat = fields.Selection(selection=[
         ('recu', 'Reçu'),
         ('ajourne', 'Ajourné')], string="Résultat")
-    date_exam = fields.Date(related="partner_id.mcm_session_id.date_exam", string="Date Examen", track_visibility='always')
+    date_exam = fields.Date(string="Date Examen",  track_visibility='always')
     active = fields.Boolean('Active', default=True)
     module_ids = fields.One2many('mcmacademy.module', 'info_examen_id')
     date_today = fields.Date(string="Date d'envoi de relevée de note: ", default=datetime.today())
@@ -40,7 +40,9 @@ class NoteExamen(models.Model):
         ('present', 'Présent'),
         ('Absent', 'Absent')],
         string="Présence", default='present')
-
+    # Ajout le champ etat qui sera invisible dans l'interface "notes & examen"
+    # Utilisation de ce champ pour une information dans le fichier xml de "attestation de suivi de formation
+    etat = fields.Char(compute="etat_de_client_apres_examen")
     @api.onchange('epreuve_a', 'epreuve_b', 'presence')
     def _compute_moyenne_generale(self):
         """ This function used to auto display some result
@@ -66,6 +68,17 @@ class NoteExamen(models.Model):
                     rec.presence = 'present'
                 elif rec.epreuve_a < 1 and rec.epreuve_b < 1:
                     rec.presence = 'Absent'
+
+    @api.onchange("résultat")
+    def etat_de_client_apres_examen(self):
+        """Fonction pour mettre le champs etat
+        automatique depend de champ resultat,
+        pour l'utilisé dans la template de "Atestation de suivi de formation" """
+        for rec in self:
+            if rec.resultat == 'recu':
+                rec.etat = "avec succès"
+            if not rec.resultat == "recu":
+                rec.etat = "sans succès"
                     
     @api.model
     def create(self, vals):
