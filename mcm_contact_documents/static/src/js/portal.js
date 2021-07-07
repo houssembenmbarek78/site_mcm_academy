@@ -184,4 +184,45 @@ publicWidget.registry.updated_documents = publicWidget.Widget.extend({
         }
 
 })
+
+publicWidget.registry.mcm_documents = publicWidget.Widget.extend({
+    selector: '#mcm_my_documents_form',
+    events: {
+        'change input[type="file"]': '_onCheckType',
+    },
+        _onCheckType: function (ev)
+        {
+            var id_of_input=ev.target.id;
+            var file=null;
+            var type=null;
+            var input_id=null;
+            var check_type=false
+            if (id_of_input)
+            {
+                 var file=document.getElementById(id_of_input).files[0];
+                 var input_id=document.getElementById(id_of_input)
+                 if (file != null)
+                 {
+                    console.log(file);
+                    console.log(id_of_input);
+                    console.log("type:");
+                    console.log(file['type']);
+                    var type=file['type'];
+                    var types = ['image/png' , 'image/jpg' , 'image/jpeg' , 'image/bmp' , 'image/gif' , 'image/svg+xml' , 'application/pdf'];
+                    if (types.includes(type)){
+                        check_type=true;
+                    }
+                    if (type != null)
+                    {
+                     if (check_type==false)
+                        {
+                            input_id.value='';
+                            alert('Les formats acceptés sont : Images ou PDF.');
+                        }
+                    }
+                 }
+            }
+        }
+})
+
 });
