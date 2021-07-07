@@ -17,4 +17,4 @@ class CRM(models.Model):
         ('cpf', 'Mon Compte Formation, CPF'),
         ('chpf', 'Région Hauts-de-France, CHPF'),
         ('aif', 'Pôle emploi, AIF'),
-    ], string='Mode de financement', default="particulier", related='partner_id.mode_de_financement')
+    ], string='Mode de financement', default="particulier")
