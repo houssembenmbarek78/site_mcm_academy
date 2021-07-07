@@ -137,8 +137,6 @@ publicWidget.registry.digi_documents = publicWidget.Widget.extend({
                         }
                     }
                  }
-
-
             }
         }
 
