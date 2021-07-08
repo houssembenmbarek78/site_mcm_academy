@@ -13,7 +13,7 @@
             <xpath expr="//div[hasclass('oe_kanban_content')]" position="replace">
 
                 <div class="oe_kanban_color_0 oe_kanban_global_click o_kanban_record oe_kanban_card_muted"
-                     t-if="record.mode_de_financement.raw_value =='Personnel'" style=" background-color: #FBEDC9;">
+                     t-if="record.mode_de_financement.raw_value =='particulier'" style=" background-color: #FBEDC9;">
                     <div class="oe_kanban_content">
                         <div>
                             <strong class="o_kanban_record_title" style="font-weight: bold; font-size:17px; color:#00A09D;">
@@ -22,7 +22,7 @@
                         </div>
                         <div>
                             <strong class="o_kanban_record_title" style="font-weight: bold;">
-                                <field name="mode_de_financement"></field>
+                            Personnel
                             </strong>
 
                         </div>
@@ -49,7 +49,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="oe_kanban_color_0 oe_kanban_global_click o_kanban_record oe_kanban_card_muted" t-if="record.mode_de_financement.raw_value !='Particulier'" style="background-color: #D2E9E1;">
+                <div class="oe_kanban_color_0 oe_kanban_global_click o_kanban_record oe_kanban_card_muted" t-if="record.mode_de_financement.raw_value!='particulier'" style="background-color: #D2E9E1;">
                     <div class="oe_kanban_content">
                         <div>
                             <strong class="o_kanban_record_title" style="font-weight: bold; font-size:17px; color:#00A09D;">
@@ -58,7 +58,7 @@
                         </div>
                         <div>
                              <strong class="o_kanban_record_title" style="font-weight: bold;">
-                                <field name="mode_de_financement"></field>
+                                CPF
                             </strong>
 
                         </div>
