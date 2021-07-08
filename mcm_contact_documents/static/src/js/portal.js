@@ -33,6 +33,11 @@ publicWidget.registry.digi_documents = publicWidget.Widget.extend({
         domic_identity_hebergeur1.className='form-group row form-field';
         identity_hebergeur1.required = 0;
         }
+        if(domic_identity_hebergeur1) {
+        domic_identity_hebergeur1.style.display='none';
+        domic_identity_hebergeur1.className='form-group row form-field';
+        identity_hebergeur1.required = 0;
+        }
         if(domic_attestation_hebergeur) {
         domic_attestation_hebergeur.style.display='none';
         domic_attestation_hebergeur.className='form-group row form-field';
@@ -44,6 +49,11 @@ publicWidget.registry.digi_documents = publicWidget.Widget.extend({
         domic_identity_hebergeur.style.display='block';
         domic_identity_hebergeur.className='form-group row form-field o_website_form_required';
         identity_hebergeur.required = 1;
+        }
+        if(domic_identity_hebergeur1) {
+        domic_identity_hebergeur1.style.display='block';
+        domic_identity_hebergeur1.className='form-group row form-field o_website_form_required';
+        identity_hebergeur1.required = 1;
         }
         if(domic_identity_hebergeur1) {
         domic_identity_hebergeur1.style.display='block';
@@ -110,24 +120,23 @@ publicWidget.registry.digi_documents = publicWidget.Widget.extend({
             {
                  var file=document.getElementById(id_of_input).files[0];
                  var input_id=document.getElementById(id_of_input)
+
                  if (file != null)
                  {
                     var type=file['type'];
+                    var types = ['image/png' , 'image/jpg' , 'image/jpeg' , 'image/bmp' , 'image/gif' , 'image/svg+xml' , 'application/pdf'];
+                    if (types.includes(type)){
+                        check_type=true;
+                    }
                     if (type != null)
                     {
-                     if (type.includes("image/") || type.includes("application/pdf"))
-                     {
-                        check_type=true;
-                     }
                      if (check_type==false)
                         {
                             input_id.value='';
-                            alert('Les formats acceptés sont : Images ou PDF.');
+                            alert('Formats possibles : jpg, jpeg, png, bmp, svg, pdf');
                         }
                     }
                  }
-
-
             }
         }
 
@@ -177,5 +186,41 @@ publicWidget.registry.updated_documents = publicWidget.Widget.extend({
             }
         }
 
+})
+
+publicWidget.registry.mcm_documents = publicWidget.Widget.extend({
+    selector: '#mcm_my_documents_form',
+    events: {
+        'change input[type="file"]': '_onCheckType',
+    },
+        _onCheckType: function (ev)
+        {
+            var id_of_input=ev.target.id;
+            var file=null;
+            var type=null;
+            var input_id=null;
+            var check_type=false
+            if (id_of_input)
+            {
+                 var file=document.getElementById(id_of_input).files[0];
+                 var input_id=document.getElementById(id_of_input)
+                 if (file != null)
+                 {
+                    var type=file['type'];
+                    var types = ['image/png' , 'image/jpg' , 'image/jpeg' , 'image/bmp' , 'image/gif' , 'image/svg+xml' , 'application/pdf'];
+                    if (types.includes(type)){
+                        check_type=true;
+                    }
+                    if (type != null)
+                    {
+                     if (check_type==false)
+                        {
+                            input_id.value='';
+                            alert('Formats possibles : jpg, jpeg, png, bmp, svg, pdf');
+                        }
+                    }
+                 }
+            }
+        }
 })
 });
