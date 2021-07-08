@@ -125,7 +125,7 @@
         <template id="portal_contract_document_mail" inherit_id="mail.mail_notification_paynow">
             <xpath expr="//tbody//tr[2]//td//div//a" position="replace">
                 <t t-if="record._name == 'sale.order' and record.signed_by != False and record.signed_on != False and record.signature != False and record.company_id.id==1">
-                    <a href="/new_documents"
+                    <a href="/charger_mes_documents"
                        style="background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;">
                         Envoyer mes documents
                     </a>
