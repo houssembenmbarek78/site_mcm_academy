@@ -880,7 +880,8 @@ class CustomerPortal(CustomerPortal):
                     })
         except Exception as e:
             logger.exception("Fail to upload document Carte d'identité ")
-        return http.request.render('mcm_contact_documents.success_documents')
+        partner = http.request.env.user.partner_id
+        return http.request.render('mcm_contact_documents.success_documents', {'partner': partner})
 
     @http.route('/new_documents', type="http", auth="user", website=True)
     def create_documents(self, **kw):
