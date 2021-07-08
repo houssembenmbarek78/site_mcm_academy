@@ -50,6 +50,7 @@ class Partner(models.Model):
                 num_dossier = ""
                 if partner.numero_cpf:
                     num_dossier = partner.numero_cpf
+                    lead.num_dossier=num_dossier
                 lead.sudo().write({
                     'name': partner.name,
                     'partner_name': partner.name,
@@ -82,6 +83,7 @@ class Partner(models.Model):
                 if partner:
                     print("parnterrrr", lead.partner_id)
                     lead.partner_id = partner
+                    lead.num_dossier = num_dossier
 
     
     # Methode pour classer les apprenants dans crm lead comme non retracté
