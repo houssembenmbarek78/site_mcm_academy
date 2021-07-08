@@ -15,6 +15,7 @@ add css and js files to website model
     'data': [
         'views/ressources.xml',
         'views/template.xml',
+        # 'views/homepage.xml',
         'views/templates.xml',
         'views/product_public_category.xml',
         'views/payment_acquirer.xml',
