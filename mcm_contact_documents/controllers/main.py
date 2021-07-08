@@ -285,7 +285,8 @@ class CustomerPortal(CustomerPortal):
                 logger.exception("Fail to upload document Carte d'identité ")
         except:
             logger.exception("Fail to upload documents")
-        return http.request.render('mcm_contact_documents.success_documents')
+        partner = http.request.env.user.partner_id
+        return http.request.render('mcm_contact_documents.success_documents', {'partner': partner})
 # Upload documents digimoov
     @http.route('/upload_my_files', type="http", auth="user", methods=['POST'], website=True, csrf=False)
     def upload_my_files(self, **kw):
