@@ -35,8 +35,8 @@
 
                         </div>
                         <div>
-                            <i   class="fa fa-phone" attrs="{'invisible': [('partner_adress_phone', '=',False)]}"> </i>
-                            <field name="partner_adress_phone" attrs="{'invisible': [('partner_adress_phone', '=',False)]}"/>
+                            <i   class="fa fa-phone" attrs="{'invisible': [('partner_address_phone', '=',False)]}"> </i>
+                            <field name="partner_address_phone" attrs="{'invisible': [('partner_address_phone', '=',False)]}"/>
                         </div>
                         <div>
                             <i class="fa fa-envelope" attrs="{'invisible': [('email_from', '=',False)]}"> </i>
@@ -45,7 +45,6 @@
                         <div class="o_kanban_record_bottom">
                          <div>
                          <field name="description"  attrs="{'invisible': [('description', '=',False)]}"/>
-
                          </div>
                         </div>
                     </div>
