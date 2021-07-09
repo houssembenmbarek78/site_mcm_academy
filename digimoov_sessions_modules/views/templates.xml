@@ -14,8 +14,8 @@
                                     <option value="bordeaux">
                                         Bordeaux
                                     </option>
-                                    <option value="bourges">
-                                        Bourges
+                                    <option value="dijon">
+                                        Dijon
                                     </option>
                                     <option value="grenoble">
                                         Grenoble
@@ -29,9 +29,6 @@
                                     <option value="marseille">
                                         Marseille
                                     </option>
-                                    <option value="metz">
-                                        Metz
-                                    </option>
                                     <option value="montpellier">
                                         Montpellier
                                     </option>
@@ -40,6 +37,9 @@
                                     </option>
                                     <option value="nice">
                                         Nice
+                                    </option>
+                                    <option value="orleans">
+                                        Orléans
                                     </option>
                                     <option value="paris">
                                         Paris
