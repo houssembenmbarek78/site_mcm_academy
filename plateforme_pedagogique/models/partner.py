@@ -444,7 +444,7 @@ class partner(models.Model):
              if(date_suppression <= today):
               email=partner['email']
               print('date_sup',email,date_suppression,today)
-              url = 'https://app.360learning.com/api/v1/users/tmejri@digimoov.fr?company=' + company_id + '&apiKey=' + api_key
+              url = 'https://app.360learning.com/api/v1/users/kagaw47405@godpeed.com?company=' + company_id + '&apiKey=' + api_key
               resp = requests.delete(url)
               if resp.status_code==204:
                 partner.passage_exam=True
