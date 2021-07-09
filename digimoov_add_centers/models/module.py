@@ -6,5 +6,7 @@ from odoo import fields, models,api
 class Module(models.Model):
     _inherit = "mcmacademy.module"
 
-    #ajouter des nouveaux centres d'examens à l'aide de l'option selection_add
-    ville = fields.Selection(selection_add=[('nice', 'Nice'),('montpellier', 'Montpellier'),('rouen', 'Rouen'),('grenoble', 'Grenoble'),('rennes', 'Rennes'),('metz', 'Metz'),('bourges', 'Bourges')])
+    # ajouter des nouveaux centres d'examens à l'aide de l'option selection_add
+    ville = fields.Selection(
+        selection_add=[('nice', 'Nice'), ('montpellier', 'Montpellier'), ('rouen', 'Rouen'), ('dijon', 'Dijon'),
+                       ('rennes', 'Rennes'), ('orleans', 'Orléans')])
