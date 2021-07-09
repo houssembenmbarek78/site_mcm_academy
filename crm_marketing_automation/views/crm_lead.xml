@@ -44,7 +44,7 @@
                         </div>
                         <div class="o_kanban_record_bottom">
                          <div>
-                         <field name="description"  attrs="{'invisible': [('description', '=',False),('stage_id.name','!=','Non Traité')]}"/>
+                         <field name="description"  attrs="{'invisible': [('description', '=',False),('stage_id','!=','Non Traité')]}"/>
                          </div>
                         </div>
                     </div>
@@ -79,7 +79,7 @@
                         </div>
                         <div class="o_kanban_record_bottom">
                          <div>
-                             <field name="description"  attrs="{'invisible': [('description', '=',False),('stage_id.name','!=','Non Traité')]}"/>
+                             <field name="description"  attrs="{'invisible': [('description', '=',False),('stage_id','!=','Non Traité')]}"/>
                          </div>
                         </div>
                     </div>
