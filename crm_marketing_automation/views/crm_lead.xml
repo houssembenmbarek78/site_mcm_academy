@@ -59,7 +59,7 @@
                         </div>
                         <div>
                              <strong class="o_kanban_record_title" style="font-weight: bold;">
-                                 <field name="Mode_de_financement"></field>
+                                 <field name="mode_de_financement"></field>
                             </strong>
 
                         </div>
