@@ -201,7 +201,7 @@ class Services(http.Controller):
     @http.route('/service-clientele', type='http', auth='public', website=True)
     def clientele(self, **kw, ):
         if request.website.id==2:
-            return request.redirect('/maintenance')
+            # return request.redirect('/maintenance')
             public_user = http.request.env['res.users'].sudo().search([('id', '=', 4), ('active', '=', False)])
 
             if http.request.uid == public_user.id:
@@ -229,7 +229,7 @@ class Services(http.Controller):
     @http.route('/administration', type='http', auth='public', website=True)
     def administration(self, **kw, ):
         if request.website.id == 2:
-            return request.redirect('/maintenance')
+            # return request.redirect('/maintenance')
             public_user = http.request.env['res.users'].sudo().search([('id', '=', 4), ('active', '=', False)])
 
             if http.request.uid == public_user.id:
@@ -257,7 +257,7 @@ class Services(http.Controller):
     @http.route('/partenariat', type='http', auth='public', website=True)
     def partenariat(self, **kw, ):
         if request.website.id == 2:
-            return request.redirect('/maintenance')
+            # return request.redirect('/maintenance')
             public_user = http.request.env['res.users'].sudo().search([('id', '=', 4), ('active', '=', False)])
 
             if http.request.uid == public_user.id:
@@ -285,7 +285,7 @@ class Services(http.Controller):
     @http.route('/service-comptabilite', type='http', auth='user', website=True)
     def comptabilite(self, **kw, ):
         if request.website.id == 2:
-            return request.redirect('/maintenance')
+            # return request.redirect('/maintenance')
             public_user = http.request.env['res.users'].sudo().search([('id', '=', 4), ('active', '=', False)])
 
             if http.request.uid == public_user.id:
@@ -313,7 +313,7 @@ class Services(http.Controller):
     @http.route('/service-pedagogique', type='http', auth='user', website=True)
     def pedagogique(self, **kw, ):
         if request.website.id == 2:
-            return request.redirect('/maintenance')
+            # return request.redirect('/maintenance')
             public_user = http.request.env['res.users'].sudo().search([('id', '=', 4), ('active', '=', False)])
 
             if http.request.uid == public_user.id:
@@ -342,13 +342,14 @@ class Services(http.Controller):
     def contact1(self, **kw, ):
 
         if request.website.id == 2:
-            return request.redirect('/maintenance')
+            # return request.redirect('/maintenance')
             return request.render("digimoov_website_templates.digimoov_template_contact", {})
         else:
             return request.redirect("/helpdesk")
 
     @http.route('/maintenance', type='http', auth='public', website=True)
     def maintenance(self, **kw, ):
+        raise werkzeug.exceptions.NotFound()
         if request.website.id == 2:
             return request.render("digimoov_website_templates.support_maintenance", {})
         else:
@@ -399,7 +400,7 @@ class Services(http.Controller):
                 'description': str(description),
                 'name': 'Digimoov : ' + str(name),
                 'team_id': request.env['helpdesk.team'].sudo().search(
-                    [('name', 'like', 'Client'), ('company_id', "=", 1)],
+                    [('name', 'like', 'Client'), ('company_id', "=", 2)],
                     limit=1).id,
             }
             new_ticket = request.env['helpdesk.ticket'].sudo().create(
@@ -422,7 +423,7 @@ class Services(http.Controller):
                 'description': str(description),
                 'name': 'Digimoov : ' + str(name),
                 'team_id': request.env['helpdesk.team'].sudo().search(
-                    [('name', 'like', 'Admini'), ('company_id', "=", 1)],
+                    [('name', 'like', 'Admini'), ('company_id', "=", 2)],
                     limit=1).id,
             }
             new_ticket = request.env['helpdesk.ticket'].sudo().create(
@@ -435,7 +436,7 @@ class Services(http.Controller):
                 'description': str(description),
                 'name': 'Digimoov : ' + str(name),
                 'team_id': request.env['helpdesk.team'].sudo().search(
-                    [('name', 'like', 'Admini'), ('company_id', "=", 1)],
+                    [('name', 'like', 'Admini'), ('company_id', "=", 2)],
                     limit=1).id,
             }
             new_ticket = request.env['helpdesk.ticket'].sudo().create(
@@ -448,7 +449,7 @@ class Services(http.Controller):
                 'description': str(description),
                 'name': 'Digimoov : ' + str(name),
                 'team_id': request.env['helpdesk.team'].sudo().search(
-                    [('name', 'like', 'Compta'), ('company_id', "=", 1)],
+                    [('name', 'like', 'Compta'), ('company_id', "=", 2)],
                     limit=1).id,
             }
             new_ticket = request.env['helpdesk.ticket'].sudo().create(
@@ -461,7 +462,7 @@ class Services(http.Controller):
                 'description': str(description),
                 'name': 'Digimoov : ' + str(name),
                 'team_id': request.env['helpdesk.team'].sudo().search(
-                    [('name', 'like', 'gogique'), ('company_id', "=", 1)],
+                    [('name', 'like', 'gogique'), ('company_id', "=", 2)],
                     limit=1).id,
             }
             new_ticket = request.env['helpdesk.ticket'].sudo().create(
