@@ -39,7 +39,8 @@
                     }
                 </style>
                 <div class="container">
-                    <div class="warning">
+
+                    <div class="warning" style="text-align: center;">
                         <h1 class="title">Woops!</h1>
 
                         <svg
