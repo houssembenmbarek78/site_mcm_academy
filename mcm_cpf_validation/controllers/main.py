@@ -41,10 +41,14 @@ class ClientCPFController(http.Controller):
             if lead:
                 print('if lead')
                 lead.sudo().write({
-                    'stage_id': stage.id,
-                    'type': "opportunity",
-                    'description': 'Motif : %s ' % (motif),
+                    'name': partner.name,
+                    'partner_name': partner.name,
                     'num_dossier': dossier,
+                    'email': partner.email,
+                    'type': "opportunity",
+                    'stage_id': stage.id,
+                    'description': 'Motif : %s ' % (motif),
+                    'mode_de_financement': client.mode_de_financement,
 
                 })
             if not lead:
@@ -56,7 +60,8 @@ class ClientCPFController(http.Controller):
                     'email': partner.email,
                     'type': "opportunity",
                     'stage_id': stage.id,
-                    'description': 'Motif : %s ' % (motif)
+                    'description': 'Motif : %s ' % (motif),
+                    'mode_de_financement': client.mode_de_financement,
 
                 })
                 lead.partner_id = partner.id
