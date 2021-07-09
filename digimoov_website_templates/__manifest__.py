@@ -22,6 +22,7 @@
         'views/homepage.xml',
         # 'views/homepage2.xml',
         'views/faq.xml',
+        'views/maintenance.xml',
         'views/financement.xml',
         'views/examen.xml',
         'views/formation.xml',
