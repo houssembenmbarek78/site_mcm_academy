@@ -114,7 +114,7 @@
             </xpath>
             <xpath expr="//field[@name='planned_revenue']" position="replace">
                 <field name="mode_de_financement"></field>
-                <field name="numero_dossier"></field>
+                <field name="num_dossier"></field>
                 <field name="num_tel"></field>
             </xpath>
             <xpath expr="//field[@name='probability']" position="replace"></xpath>
