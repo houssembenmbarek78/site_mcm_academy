@@ -1307,9 +1307,36 @@
                             <i class="fa fa-check-circle fa-2x text-success" role="img" aria-label="Success"
                                title="Success"/>
                         </h3>
-                        <h3 class="text-center">Nous vous remecions pour le temps que vous avez consacré à charger vos
-                            documents.
-                        </h3>
+                        <t t-if="partner">
+                            <t t-if="partner.renounce_request">
+                                <h3 class="text-center">
+                                    Merci !
+                                </h3>
+                                <h3 class="text-center">
+                                    Dès la validation de vos documents, vous recevrez un email vous invitant à la
+                                    plateforme de formation.
+                                </h3>
+                            </t>
+                            <t t-else="">
+                                <style>
+                                    .arrow1 {
+                                    animation: slide1 1s ease-in-out infinite;
+                                    margin-left: 9px;
+                                    }
+                                </style>
+                                <h3 class="text-center">
+                                    Merci !
+                                </h3>
+                                <h3 class="text-center">
+                                    Vous recevrez un email vous
+                                    invitant à la plateforme de formation dans 14 jours.
+                                    Vous pouvez réduire ce délais en renonçant à votre droit de rétractation
+                                    <i class="fa fa-arrow-right mr-1"/>
+                                    <a href="/my/home">ICI</a>
+                                    <i class="fa fa-arrow-left mr-1"/>
+                                </h3>
+                            </t>
+                        </t>
                         <h3 class="text-center">
                             <img src="https://media.giphy.com/media/11uArCoB4fkRcQ/giphy.gif"
                                  style="width:100%;height:auto;"/>
@@ -1358,7 +1385,8 @@
                     <t t-if="document.code_document=='cerfa'">
                         <div class="form-group row form-field o_website_form_required">
                             <div class="col-lg-4 col-md-5 text-right">
-                                <label class="col-form-label" for="updated_document_cerfa" id="label_updated_document_cerfa">
+                                <label class="col-form-label" for="updated_document_cerfa"
+                                       id="label_updated_document_cerfa">
                                     CERFA 11414-05 (Page1,2,3)
                                 </label>
                             </div>
@@ -1369,7 +1397,7 @@
                             </div>
                         </div>
                         <div class="form-group row form-field" style="display: none;"
-                                             id="o_website_form_updated_cerfa_2">
+                             id="o_website_form_updated_cerfa_2">
                             <div class="col-lg-4 col-md-5 text-right">
                                 <label class="col-form-label" for="cerfa2">
                                     CERFA 11414-05 Page 2
@@ -1381,8 +1409,8 @@
                                        accept="image/*,application/pdf"/>
                             </div>
                         </div>
-                        <div  class="form-group row form-field" style="display: none;"
-                                             id="o_website_form_updated_cerfa_3">
+                        <div class="form-group row form-field" style="display: none;"
+                             id="o_website_form_updated_cerfa_3">
                             <div class="col-lg-4 col-md-5 text-right">
                                 <label class="col-form-label" for="identity">
                                     CERFA 11414-05 Page 3

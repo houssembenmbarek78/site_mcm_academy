@@ -2,6 +2,18 @@
 <odoo>
     <template id="digimoov_website_templates.digimoov_footer_template" inherit_id="website.footer_custom" active="True">
         <xpath expr="//div[@id='footer']" position="replace">
+            <t t-if="request.website.is_public_user()==True">
+                <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot.js"/>
+                <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot-config.js"/>
+            </t>
+            <t t-if="request.website.is_public_user()==False">
+                <input type="hidden" name="intercom_user_name_connected" id="intercom_user_name_connected"
+                       t-att-value="request.website.get_user_name_logged()"/>
+                <input type="hidden" name="intercom_user_email_connected" id="intercom_user_email_connected"
+                       t-att-value="request.website.get_user_email_logged()"/>
+                <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-user.js"/>
+                <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-user-config.js"/>
+            </t>
             <style>
                 @import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
                 .social-icons {
@@ -241,11 +253,9 @@
                                         </a>
                                         <div style="text-align: left;">
                                             <span style="font-size: 0.875rem;">&amp;nbsp;</span>
-                                            <font style="color: rgb(255, 255, 255); text-align: left;"><a
-                                                    href="tel:+33 9 86 87 88 66" data-original-title="" title=""
-                                                    aria-describedby="tooltip757473">+33 9 86 87 88 66</a>&amp;nbsp;(Disponible
-                                                de 9h à 12h)
-
+                                            <font style="color: rgb(255, 255, 255); text-align: left;">
+                                                <a href="tel:+33 9 86 87 88 66" data-original-title="" title=""
+                                                   aria-describedby="tooltip757473">+33 9 86 87 88 66</a>&amp;nbsp;
                                             </font>
                                         </div>
                                     </li>
@@ -263,11 +273,11 @@
                                     <li style="text-align: left">
                                         <span class="fa fa-info-circle" data-original-title="" title=""
                                               aria-describedby="tooltip590995" style="color: rgb(255, 255, 255);"/>
-                                        <font style="color: white; text-align: left;"><a href="/contact"
-                                                                                         data-original-title="" title=""
-                                                                                         aria-describedby="tooltip754257">
-                                            &amp;nbsp;</a>Digimoov est une filiale du groupe MCM Academy. Numéro
-                                            d'agrément : DRIEA IDF N° 2019-0110
+                                        <font style="color: white; text-align: left;">
+                                            <a href="/contact" data-original-title="" title=""
+                                               aria-describedby="tooltip754257">
+                                                &amp;nbsp;</a>Digimoov est une filiale du groupe MCM Academy. Numéro
+                                            d'agrément : DRIEAT IDF N° 2019-0110
                                         </font>
                                     </li>
                                 </ul>
@@ -305,16 +315,18 @@
                                 <ul class="social-icons shadow">
                                     <li class="tab">
                                         <a href="https://www.facebook.com/Digimoov" data-original-title="" title=""
-                                           aria-describedby="tooltip67821" target="_blank"><i
-                                                class="fa fa-facebook circle" data-original-title="" title=""
-                                                aria-describedby="tooltip741703"/>&amp;nbsp;
+                                           aria-describedby="tooltip67821" target="_blank">
+                                            <i class="fa fa-facebook circle" data-original-title="" title=""
+                                               aria-describedby="tooltip741703"/>
+                                            &amp;nbsp;
                                         </a>
                                     </li>
                                     <li class="tab">
                                         <a href="https://www.instagram.com/digimoov.formation/" data-original-title=""
-                                           title="" aria-describedby="tooltip9968"><i class="circle fa fa-instagram"
-                                                                                      data-original-title="" title=""
-                                                                                      aria-describedby="tooltip864579"/>&amp;nbsp;&amp;nbsp;
+                                           title="" aria-describedby="tooltip9968">
+                                            <i class="circle fa fa-instagram" data-original-title="" title=""
+                                               aria-describedby="tooltip864579"/>
+                                            &amp;nbsp;&amp;nbsp;
                                         </a>
                                     </li>
                                 </ul>
@@ -325,11 +337,11 @@
                         </div>
                     </div>
                 </div>
-                <div id="to-top" style="">
+                <!-- <div id="to-top" style="">
                     <a id="to-top bg-alpha">
                         <span class="fa fa-arrow-up"/>
                     </a>
-                </div>
+                </div> -->
                 <script>
                     window.axeptioSettings = {
                     clientId: "60005024632ebb7d2482c2d6",

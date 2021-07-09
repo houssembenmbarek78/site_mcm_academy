@@ -21,6 +21,11 @@ class Website(Website):
             return request.make_response(content, [('Content-Type', mimetype)])
         else: # if doesn't exist in database generate new sitemap
             return super(Website,self).sitemap_xml_index(**kwargs)
+    @http.route('/update_renonce',type='json', auth="public", methods=['POST'], website=True)
+    def update_renonce(self,demande_renonce):
+        user = request.env.user #recuperer l'utilisateur connecté
+        if demande_renonce: # testé si l'utilisateur a cocher la demande de renonce dans son portal client
+            user.partner_id.renounce_request = True # mettre la demande de renonce cocher dans la fiche client
 
 class FAQ(http.Controller):
 

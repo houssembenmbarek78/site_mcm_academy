@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="mcm_contact_documents_charger_mes_documents_mcm" name="Document: Submit a Document">
+        <t name="Document" priority="29" t-name="document">
+            <t t-call="website.layout">
+                <t t-set="additional_title">Document</t>
+                <div id="wrap" class="oe_structure oe_empt">
+                    <div class="container">
+                        <div class="row">
+                            <div class="row m-0">
+                                <div class="col-lg-6">
+                                    <div class="card-shadow ">
+                                        <img src="/mcm_contact_documents/static/img/3 Dossier d'insciption Digimoov.webp"
+                                             class="img-responsive img img-fluid"
+                                             data-original-title="" title="" aria-describedby="tooltip508208"/>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="contact-box ">
+                                        <center>
+                                            <span style="font-size: 28px;">CHARGER MES DOCUMENTS</span>
+                                        </center>
+                                        <br/>
+                                        <form action="/submitted/document" method="post" id="mcm_my_documents_form"
+                                              class="s_website_form container-fluid mt32" enctype="multipart/form-data"
+                                              data-model_name="partner.document"
+                                              data-success_page="/submitted_documents" data-editable-form="false"
+                                              hide-change-model="true">
+                                            <div class="form-group row form-field o_website_form_required">
+                                                <div class="col-lg-12 col-md-12">
+                                                    <label class="col-form-label">Pièce d'identité recto/verso</label>
+                                                </div>
+                                                <div class="col-lg-9 col-md-9">
+                                                    <label class="col-form-label" for="identity">Charger la piéce
+                                                        d'identité recto :
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-9 col-md-12 col-sm-12">
+                                                    <input type="file" name="identity" required="1" id="identity"
+                                                           placeholder="Veuillez Charger 1 fichier Recto verso ou 2 fichiers "
+                                                           class="form-control o_website_form_input"
+                                                           accept="image/*,application/pdf"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-field o_website_form_required">
+                                                <div class="col-lg-9 col-md-9">
+                                                    <label class="col-form-label" for="identity">Charger la piéce
+                                                        d'identité verso :
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-9 col-md-12 col-sm-12">
+                                                    <input type="file" name="identity2" required="1" id="identity2"
+                                                           placeholder="Veuillez Charger 1 fichier Recto verso ou 2 fichiers "
+                                                           class="form-control o_website_form_input"
+                                                           accept="image/*,application/pdf"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-field o_website_form_required">
+                                                <div class="col-lg-9 col-md-12 col-sm-12">
+                                                    <input type="checkbox" name="confirm_identity" id="confirm_identity"
+                                                           required="1"/>
+                                                    <label for="confirm_identity"
+                                                           style="margin-left:8px;font-weight:normal !important;display:unset !important;">
+                                                        Je confirme avoir soumis le recto et le verso
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-field o_website_form_required">
+                                                <div class="col-lg-9 col-md-12 col-sm-12">
+                                                    <label class="col-form-label" for="number">N°Pièce d'identité
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-9 col-md-12 col-sm-12">
+                                                    <input type="number" class="form-control o_website_form_input"
+                                                           name="identity_number"
+                                                           required="0"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-field o_website_form_required">
+                                                <div class="col-lg-9 col-md-9">
+                                                    <label class="col-form-label" for="identity">Charger le permis de
+                                                        conduire recto :
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-9 col-md-12 col-sm-12">
+                                                    <input type="file" name="permis" required="1" id="permis"
+                                                           placeholder="Veuillez Charger 1 fichier Recto verso ou 2 fichiers "
+                                                           class="form-control o_website_form_input"
+                                                           accept="image/*,application/pdf"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-field o_website_form_required">
+                                                <div class="col-lg-9 col-md-9">
+                                                    <label class="col-form-label" for="identity">Charger le permis de
+                                                        conduire verso :
+                                                    </label>
+                                                </div>
+                                                <div class="col-lg-9 col-md-12 col-sm-12">
+                                                    <input type="file" name="permis1" required="1" id="permis1"
+                                                           placeholder="Veuillez Charger 1 fichier Recto verso ou 2 fichiers "
+                                                           class="form-control o_website_form_input"
+                                                           accept="image/*,application/pdf"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-field o_website_form_required">
+                                                <div class="col-lg-9 col-md-12 col-sm-12">
+                                                    <input type="checkbox" name="confirm_permis" id="confirm_permis"
+                                                           required="1"/>
+                                                    <label for="confirm_permis"
+                                                           style="margin-left:8px;font-weight:normal !important;display:unset !important;">
+                                                        Je confirme avoir soumis le recto et le verso
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-md-8 col-lg-7">
+                                                    <button type="submit" class="btn btn-primary centered-content"
+                                                            id="submit_documents"
+                                                            style="width: 100% !important;">
+                                                        Envoyer
+                                                        <span class="fa fa-1x fa-fw fa-long-arrow-right ml-1"></span>
+                                                    </button>
+                                                    <span id="o_website_form_result"></span>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>
