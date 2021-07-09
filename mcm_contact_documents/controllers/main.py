@@ -310,16 +310,6 @@ class CustomerPortal(CustomerPortal):
                         'partner_id': False,
                         'owner_id': False}
                     vals_list.append(vals)
-                    vals = {
-                        'name': "Carte d'identité Verso",
-                        'folder_id': int(folder_id),
-                        'code_document': 'identity2',
-                        'confirmation': kw.get('confirm_identity'),
-                        'attachment_number': kw.get('identity_number'),
-                        'type': 'binary',
-                        'partner_id': False,
-                        'owner_id': False}
-                    vals_list.append(vals)
                     document = request.env['documents.document'].sudo().create(vals_list)
                     print(len(files))
                     if document:
