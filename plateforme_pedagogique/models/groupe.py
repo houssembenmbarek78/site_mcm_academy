@@ -80,6 +80,7 @@ class Groupe(models.Model):
                     if not (exist):
                       print('n\'existe pas dans groupe')
                       find_parcours = self.env['plateforme_pedagogique.parcours'].sudo().search([('name', "=", name_parcours ),('startDate',"=",start_date_string)])
+                      list.append(find_parcours.id)
                       if not(find_parcours):
                         print('on ne doit pas créer parcours')
                       if (find_parcours):
