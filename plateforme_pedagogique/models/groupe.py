@@ -37,8 +37,9 @@ class Groupe(models.Model):
             find_groupe = self.env['plateforme_pedagogique.groupe'].sudo().search([('name', "=", namegroupe)])
             if not (find_groupe):
                print('on ne doit pas créer un groupe',find_groupe)
-               find_groupe=self.env['plateforme_pedagogique.groupe'].create({
+               find_groupe = self.env['plateforme_pedagogique.groupe'].create({
                    'name': namegroupe,
+                   'public': groupe['public']
                })
             if find_groupe:
              list = []
