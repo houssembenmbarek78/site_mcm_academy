@@ -50,7 +50,6 @@
                 <tree>
                     <field name="name"/>
                     <field name="users_count"/>
-                    <field name="parent_id"/>
                     <field name="parcours_count"/>
 
                 </tree>

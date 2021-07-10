@@ -71,7 +71,7 @@ class Groupe(models.Model):
                     start_date_string=str(start_Date)
                     exist = False
                     for parc_grp in find_groupe.parcours_ids:
-                        # On compare le user d'api avec chaque user de groupe sur odoo si existant on l'ajoute à une liste
+                        # On compare le parcours d'api avec chaque parcours de groupe sur odoo si existant on l'ajoute à une liste
                         if ((parc_grp.startDate == start_date_string) and (parc_grp.name == name_parcours)):
                             exist = True
                             list.append(parc_grp.id)
