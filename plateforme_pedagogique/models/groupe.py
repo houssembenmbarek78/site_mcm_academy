@@ -36,7 +36,7 @@ class Groupe(models.Model):
                                        params=params)
             find_groupe = self.env['plateforme_pedagogique.groupe'].sudo().search([('name', "=", namegroupe)])
             if not (find_groupe):
-               print('on ne doit pas créer un groupe',find_groupe)
+
                find_groupe = self.env['plateforme_pedagogique.groupe'].create({
                    'name': namegroupe,
                    'public': groupe['public']
@@ -79,7 +79,7 @@ class Groupe(models.Model):
                     # Apres le parcours si on a pas trouvé partner on doit verifier la table user
                     if not (exist):
                       print('n\'existe pas dans groupe')
-                      find_parcours = self.env['plateforme_pedagogique.parcours'].sudo().search([('name', "=", name_parcours ),('startDate',"=",start_date_string)])
+                      find_parcours = self.env['plateforme_pedagogique.parcours'].sudo().search([('name', "=", name_parcours ),('startDate',"=",startDate)])
                       list.append(find_parcours.id)
                       if not(find_parcours):
                         print('on ne doit pas créer parcours')
