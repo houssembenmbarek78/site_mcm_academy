@@ -68,7 +68,7 @@
             </field>
         </record>
         <menuitem id="main_learning_plateform_menu" name="360 Learning"></menuitem>
-        <menuitem id="learning_plateform_menu" name="360 Learning" parent="main_learning_plateform_menu"/>
+        <menuitem id="learning_plateform_menu" name="360 Learning" parent="main_learning_plateform_menu" action="contact_list_action"/>
         <menuitem id="groupe_menu" name="groupes" parent="learning_plateform_menu" action="groups_list_action"/>
 
 
