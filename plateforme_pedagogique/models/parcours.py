@@ -47,7 +47,7 @@ class Parcours(models.Model):
           start_date = datetime.strptime(date_split, "%Y-%m-%dT%H:%M:%S")
           # new_format = '%d %B, %Y, %H:%M:%S'
           # start_date = date.strftime(new_format)
-
+          
           #changer Forma  de date fin
           end_date = str(session['endDate'])
           date_split = end_date[0:19]

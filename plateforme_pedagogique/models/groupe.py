@@ -55,9 +55,7 @@ class Groupe(models.Model):
                     end_Date = date.strftime(new_format)
                 if len(startDate) > 0:
                     date_split = startDate[0:19]
-                    date = datetime.strptime(date_split, "%Y-%m-%dT%H:%M:%S")
-                    new_format =  '%d %B, %Y, %H:%M:%S'
-                    start_Date = date.strftime(new_format)
+                    start_date = datetime.strptime(date_split, "%Y-%m-%dT%H:%M:%S")
                 durée = ''
                 type_durée = ''
                 if 'programDurationType' in parcours:
@@ -79,7 +77,7 @@ class Groupe(models.Model):
                     # Apres le parcours si on a pas trouvé partner on doit verifier la table user
                     if not (exist):
                       print('n\'existe pas dans groupe')
-                      find_parcours = self.env['plateforme_pedagogique.parcours'].sudo().search([('name', "=", name_parcours ),('startDate',"=",startDate)])
+                      find_parcours = self.env['plateforme_pedagogique.parcours'].sudo().search([('name', "=", name_parcours ),('startDate',"=",start_date)])
                       list.append(find_parcours.id)
                       if not(find_parcours):
                         print('on ne doit pas créer parcours')
