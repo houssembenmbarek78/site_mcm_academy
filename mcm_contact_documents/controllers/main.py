@@ -320,7 +320,7 @@ class CustomerPortal(CustomerPortal):
                     datas_Carte_didentité_Verso = base64.encodebytes(files[1].read())
                     # Attachement Carte d'identité Recto
                     request.env['ir.attachment'].sudo().create({
-                        'name': "Carte d'identité recto",
+                        'name': "Carte d'identité Recto",
                         'type': 'binary',
                         'datas': datas_Carte_didentité_Recto,
                         'res_model': 'documents.document',
@@ -338,7 +338,7 @@ class CustomerPortal(CustomerPortal):
                 elif len(files) == 1:
                     datas_carte_didentiterecto = base64.encodebytes(files[0].read())
                     request.env['ir.attachment'].sudo().create({
-                        'name': "Carte d'identité recto",
+                        'name': "Carte d'identité Recto",
                         'type': 'binary',
                         'datas': datas_carte_didentiterecto,
                         'res_model': 'documents.document',
@@ -352,7 +352,7 @@ class CustomerPortal(CustomerPortal):
             if files2:
                 vals_list = []
                 vals = {
-                    'name': "Carte d'identité verso",
+                    'name': "Carte d'identité Verso",
                     'folder_id': int(folder_id),
                     'code_document': 'identity2',
                     'confirmation': kw.get('confirm_identity'),
@@ -380,7 +380,7 @@ class CustomerPortal(CustomerPortal):
                     })
                     # creation de l'attachement carte d'identité verso
                     request.env['ir.attachment'].sudo().create({
-                        'name': "Carte d'identité verso",
+                        'name': "Carte d'identité Verso",
                         'type': 'binary',
                         'datas': datas_cartedidenditeeverso,
                         'res_model': 'documents.document',
