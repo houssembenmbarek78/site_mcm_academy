@@ -23,6 +23,28 @@
             <field name="interval_type">hours</field>
             <field name="numbercall">-1</field>
         </record>
+<!--  Géneration des groups-->
+        <record id="ir_cron_get_groups" model="ir.cron">
+            <field name="name">Géneration des  groups</field>
+            <field name="model_id" ref="model_plateforme_pedagogique_groupe"/>
+             <field name="active" eval="True"></field>
+            <field name="state">code</field>
+            <field name="code">model.getParcours()</field>
+            <field name="interval_number">5</field>
+            <field name="interval_type">hours</field>
+            <field name="numbercall">-1</field>
+        </record>
 
+    <!--  Géneration des groups-->
+        <record id="ir_cron_get_user_groups" model="ir.cron">
+            <field name="name">Géneration des users groups</field>
+            <field name="model_id" ref="model_plateforme_pedagogique_groupe"/>
+             <field name="active" eval="True"></field>
+            <field name="state">code</field>
+            <field name="code">model.getusers_groupe()</field>
+            <field name="interval_number">5</field>
+            <field name="interval_type">hours</field>
+            <field name="numbercall">-1</field>
+        </record>
 
 </odoo>

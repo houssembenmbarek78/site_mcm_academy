@@ -109,6 +109,10 @@ class Groupe(models.Model):
             find_groupe = self.env['plateforme_pedagogique.groupe'].sudo().search([('name', "=", namegroupe)])
             if not (find_groupe):
                 print('on ne  cree pas des groupe')
+                find_groupe = self.env['plateforme_pedagogique.groupe'].create({
+                    'name': namegroupe,
+                    'public': groupe['public']
+                })
              # Si le groupe existe on fait un parcours sur les user de groupe d'api
             if (find_groupe):
                 list = []
