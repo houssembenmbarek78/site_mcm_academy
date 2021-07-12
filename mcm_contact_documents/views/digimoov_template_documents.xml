@@ -30,7 +30,7 @@
                                                 <label class="col-form-label">Pièce d'identité recto/verso</label>
                                             </div>
                                             <div class="col-lg-9 col-md-9">
-                                                <label class="col-form-label" for="identity">Charger la piéce d'identité recto :
+                                                <label class="col-form-label" for="identity">Charger la piéce d'identité recto : (*.jpg,*.png,*.pdf)
                                                 </label>
                                             </div>
                                             <div class="col-lg-9 col-md-12 col-sm-12">
@@ -45,7 +45,7 @@
                                         </div>
                                         <div class="form-group row form-field o_website_form_required">
                                             <div class="col-lg-9 col-md-9">
-                                                <label class="col-form-label" for="identity2">Charger la piéce d'identité verso :
+                                                <label class="col-form-label" for="identity2">Charger la piéce d'identité verso : (*.jpg,*.png,*.pdf)
                                                 </label>
                                             </div>
                                             <div class="col-lg-9 col-md-12 col-sm-12">
