@@ -6,7 +6,7 @@ class PartnerDocuments(models.Model):
     _name = 'partner.documents'
 
     name = fields.Char(string='Title', required=True)
-    attachment_id=fields.Many2one('ir.attachment','Pièce jointe',required=True ,help='charger votre document de type image(jpeg,png) ou pdf')
+    attachment_id=fields.Many2one('ir.attachment','Pièce jointe',required=True ,string ="charger votre document de type image(jpeg,png) ou pdf',help='charger votre document de type image(jpeg,png) ou pdf")
     partner_id=fields.Many2one('res.partner','Client',required=True)
     attachment_number=fields.Char('Numéro')
     confirmation=fields.Boolean('Je confirme avoir soumis le recto et le verso')
@@ -20,7 +20,7 @@ class PartnerDocuments(models.Model):
     def action_refuse_document(self):
         self.state='refuse'
         lang = self.env.context.get('lang')
-        template_id = self.env['ir.model.data'].xmlid_to_res_id('mcm_contact_documents.mail_template_refused_document',                                                          raise_if_not_found=False)
+        template_id = self.env['ir.model.data'].xmlid_to_res_id('mcm_contact_documents.mail_template_refused_document',raise_if_not_found=False)
         print('template')
         print(template_id)
         ctx = {
