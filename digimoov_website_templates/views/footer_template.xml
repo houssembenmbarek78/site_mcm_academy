@@ -2,8 +2,18 @@
 <odoo>
     <template id="digimoov_website_templates.digimoov_footer_template" inherit_id="website.footer_custom" active="True">
         <xpath expr="//div[@id='footer']" position="replace">
+            <t t-if="request.website.is_public_user()==True">
+                <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot.js"/>
+                <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-bot-config.js"/>
+            </t>
+            <t t-if="request.website.is_public_user()==False">
+                <input type="hidden" name="intercom_user_name_connected" id="intercom_user_name_connected" t-att-value="request.website.get_user_name_logged()"/>
+                <input type="hidden" name="intercom_user_email_connected" id="intercom_user_email_connected" t-att-value="request.website.get_user_email_logged()"/>
+                <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-user.js"/>
+                <script type="text/javascript" src="/digimoov_website_templates/static/src/js/intercom-user-config.js"/>
+            </t>
             <style>
-               
+                @import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
                 .social-icons {
                 list-style-type: none;
                 margin: 0 auto 20px;
@@ -26,7 +36,6 @@
                 background: #fff;
                 border-radius: 20px;
                 border: solid 1px;
-
                 }
                 .fa-facebook {
                 color: hsl(221, 44%, 41%);
@@ -43,7 +52,7 @@
 
                 .fa-instagram:hover {
                 background-color: hsl(221, 44%, 41%);
-                } {
+                
                 color: hsl(221, 44%, 41%);
                 border-color: hsl(221, 44%, 41%);
                 }
@@ -231,9 +240,7 @@
                                         <div style="text-align: left;">
                                             <span style="font-size: 0.875rem;">&amp;nbsp;</span>
                                             <font style="color: rgb(255, 255, 255); text-align: left;">
-                                                <a href="tel:+33 9 86 87 88 66" data-original-title="" title="" aria-describedby="tooltip757473">+33 9 86 87 88 66</a>&amp;nbsp;(Disponible
-                                                de 9h à 12h)
-
+                                                <a href="tel:+33 9 86 87 88 66" data-original-title="" title="" aria-describedby="tooltip757473">+33 9 86 87 88 66</a>&amp;nbsp;
                                             </font>
                                         </div>
                                     </li>
@@ -250,9 +257,7 @@
                                         <span class="fa fa-info-circle" data-original-title="" title="" aria-describedby="tooltip590995" style="color: rgb(255, 255, 255);"/>
                                         <font style="color: white; text-align: left;">
                                             <a href="/contact" data-original-title="" title="" aria-describedby="tooltip754257">
-                                            &amp;nbsp;</a>Digimoov est une filiale du groupe MCM Academy. Numéro
-                                            d'agrément : DRIEA IDF N° 2019-0110
-                                        </font>
+                                                &amp;nbsp;</a>Digimoov est un nom commercial de la société MCM Academy. Numéro d’agrément : DRIEAT IDF N°2019-0110 </font>
                                     </li>
                                 </ul>
                                 <p>
@@ -261,80 +266,49 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4">
-                            <div class="footer-area2">
-                                <div class="footer-head">
-                                    <!-- <h3 style="text-align: left;">
-                                        <a href="/politique-de-confidentialite">Politique de Confidentialité</a>
-                                    </h3>
-                                    <h3 style="text-align: left;">
-                                        <a href="/conditions" data-original-title="" title="" aria-describedby="tooltip767819">Conditions Générales de Vente
-                                        </a>
-                                    </h3>
-
-                                    <h3 style="text-align: left;">
-                                        <a href="/faq" data-original-title="" title="" aria-describedby="tooltip324872">Foire Aux Questions
-                                        </a>
-                                    </h3> -->
-                                    <ul class="footer-links" style="text-align: center;">
+                            <div class="contactus">
+                                <div class="footer-contact">
+                                    <ul class="footer-links">
                                         <li>
-
-                                            <div style="text-align: left;">
-                                                <span style="font-size: 0.875rem;">&amp;nbsp;</span>
-                                                <font style="color: rgb(255, 255, 255); text-align: left;">
-                                                    <a href="/politique-de-confidentialite">Politique de Confidentialité</a>
-                                                </font>
-                                            </div>
+                                            <h3>
+                                                <a href="/politique-de-confidentialite">Politique de Confidentialité</a>
+                                            </h3>
+                                            <h3>
+                                                <br/>
+                                                <a href="/conditions" data-original-title="" title="" aria-describedby="tooltip767819">Conditions Générales de Vente
+                                                </a>
+                                            </h3>
                                         </li>
-                                        <li style="text-align: left">
-                                            <div style="text-align: left;">
-                                                <span style="font-size: 0.875rem;">&amp;nbsp;</span>
-                                                <font style="color: rgb(255, 255, 255); text-align: left;">
-                                                    <a href="/conditions" data-original-title="" title="" aria-describedby="tooltip767819">Conditions Générales de Vente
-                                                    </a>
-                                                </font>
-                                            </div>
+                                        <li>
+                                            <h3>
+                                                <a href="/faq" data-original-title="" title="" aria-describedby="tooltip324872">Foire Aux Questions
+                                                </a>
+                                            </h3>
                                         </li>
-                                        <li style="text-align: left">
-                                            <div style="text-align: left;">
-                                                <span style="font-size: 0.875rem;">&amp;nbsp;</span>
-                                                <font style="color: rgb(255, 255, 255); text-align: left;">
-                                                    <a href="/faq" data-original-title="" title="" aria-describedby="tooltip324872">Foire Aux Questions
-                                                    </a>
-                                                </font>
-                                            </div>
-                                        </li>
-
                                     </ul>
-
                                 </div>
                             </div>
-                            <div class="d-flex d-flex justify-content-center">
-
-                                <a href="https://www.facebook.com/Digimoov" data-original-title="" title="" aria-describedby="tooltip67821" target="_blank">
-                                    <i class="fa fa-facebook circle" data-original-title="" title="" aria-describedby="tooltip741703" style="margin: 1rem"/>
-
-                                </a>
-
-
-                                <a href="https://www.instagram.com/digimoov.formation/" data-original-title="" title="" aria-describedby="tooltip9968">
-                                    <i class="circle fa fa-instagram" data-original-title="" title="" aria-describedby="tooltip864579" style="margin: 1rem"/>
-
-                                </a>
-
-
-                            </div>
-
+                            <footer>
+                                <ul class="social-icons shadow">
+                                    <li class="tab">
+                                        <a href="https://www.facebook.com/Digimoov" data-original-title="" title="" aria-describedby="tooltip67821" target="_blank">
+                                            <i class="fa fa-facebook circle" data-original-title="" title="" aria-describedby="tooltip741703"/>
+                                            &amp;nbsp;
+                                        </a>
+                                    </li>
+                                    <li class="tab">
+                                        <a href="https://www.instagram.com/digimoov.formation/" data-original-title="" title="" aria-describedby="tooltip9968">
+                                            <i class="circle fa fa-instagram" data-original-title="" title="" aria-describedby="tooltip864579"/>
+                                            &amp;nbsp;&amp;nbsp;
+                                        </a>
+                                    </li>
+                                </ul>
+                            </footer>
+                            <a href="javascript:showAxeptioButton()" data-original-title="" title="" aria-describedby="tooltip366530">&amp;nbsp;
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div id="to-top">
-                    <a id="to-top bg-alpha">
-                        <span class="fa fa-arrow-up pointer"/>
-                    </a>
-
-                </div>
-                <a href="javascript:showAxeptioButton()" data-original-title="" title="" aria-describedby="tooltip366530">&amp;nbsp;
-                </a>
                 <script>
                     window.axeptioSettings = {
                     clientId: "60005024632ebb7d2482c2d6",
@@ -342,7 +316,7 @@
                     };
                     (function(d, s) {
                     var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
-                    e.async = true; e.src = "//static.axept.io/sdk-slim.js"";
+                    e.async = true; e.src = "//static.axept.io/sdk.js";
                     t.parentNode.insertBefore(e, t);
                     })(document, "script");
                 </script>

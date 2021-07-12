@@ -12,8 +12,7 @@
 
 
             </style>
-            <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js" />
-
+            <script defer="defer" type="text/javascript" src="/digimoov_website_templates/static/src/js/lazy-min.js"/>
             <section class="banner oe_img_bg oe_custom_bg" style="background: linear-gradient(90deg, rgba(249,250,252,1) 0%, rgba(242,241,241,0.7203256302521008) 100%);">
                 <p>
                     <br/>
@@ -111,29 +110,14 @@
                                             <div class="card">
                                                 <div class="card-header" id="accordion-tab-1-heading-1">
                                                     <h5>
-                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-1" aria-expanded="false" aria-controls="accordion-tab-1-content-1" data-original-title="" title="" aria-describedby="tooltip276001">Qu’est ce que Digimoov
-                                                            ?
+                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-1" aria-expanded="false" aria-controls="accordion-tab-1-content-1" data-original-title="" title="" aria-describedby="tooltip276001">Qu’est ce que Digimoov&amp;nbsp;?
                                                         </button>
                                                     </h5>
                                                 </div>
                                                 <div class="collapse" id="accordion-tab-1-content-1" aria-labelledby="accordion-tab-1-heading-1" data-parent="#accordion-tab-1" style="">
                                                     <div class="card-body">
                                                         <p>
-                                                            <font style="color: rgb(0, 0, 0);">Digimoov est un centre de
-                                                                formation à
-                                                                distance qui propose des formations 100 % en
-                                                                ligne
-                                                                certifiées
-                                                                par la
-                                                                DRIEA Île-de-France (Direction Régionale et
-                                                                Interdépartementale
-                                                                de
-                                                                l'Équipement et de l'Aménagement) à destination des
-                                                                métiers
-                                                                de
-                                                                transport
-                                                                de marchandises léger (-3,5 T de PTAC).
-                                                            </font>
+                                                            <font style="color: rgb(0, 0, 0);">Digimoov est un nom commercial de la société MCM Academy. Il s'agit d'un centre de formation à distance qui propose des formations 100 % en ligne certifiées par la DRIEAT Île-de-France (Direction Régionale et Interdépartementale de l’Environnement, de l’Aménagement et des Transports) à destination des métiers de transport de marchandises léger (-3,5 T de PTAC). </font>
                                                         </p>
                                                         <p/>
                                                     </div>
@@ -163,16 +147,14 @@
                                                 <div class="card-header" id="accordion-tab-1-heading-3">
                                                     <h5>
                                                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-3" aria-expanded="false" aria-controls="accordion-tab-1-content-3" data-original-title="" title="" aria-describedby="tooltip389775">Êtes-vous un centre
-                                                            agréé par l’Etat (DRIEA) ?
+                                                            agréé par l’Etat (DRIEAT) ?
                                                         </button>
                                                     </h5>
                                                 </div>
                                                 <div class="collapse" id="accordion-tab-1-content-3" aria-labelledby="accordion-tab-1-heading-3" data-parent="#accordion-tab-1" style="">
                                                     <div class="card-body">
                                                         <p>
-                                                            <font style="color: rgb(0, 0, 0);">Oui, numéro d'agrément :
-                                                                DRIEA IDF N° 2019-0110.
-                                                            </font>
+                                                            <font style="color: rgb(0, 0, 0);">Oui, Digimoov est un nom commercial de la société MCM Academy. Numéro d’agrément : DRIEAT IDF N° 2019-0110 </font>
                                                         </p>
                                                         <p/>
                                                     </div>
@@ -522,7 +504,8 @@
                                                         <p>
                                                             <font style="color: rgb(0, 0, 0);">Vous avez la possibilité
                                                                 de passer l'examen dans l'un des centres suivants :
-                                                                Bordeaux, Lille, Lyon, Marseille, Nantes, Paris,
+                                                                Bordeaux, Dijon, Lille, Lyon, Marseille,
+                                                                 Montpellier, Nantes, Nice, Orléans, Paris, Rennes, Rouen,
                                                                 Strasbourg, Toulouse.
                                                             </font>
                                                         </p>
@@ -734,7 +717,7 @@
                                                             <font style="color: rgb(0, 0, 0);">Vous allez recevoir votre
                                                                 attestation dans un délai qui varie entre 2 et 3 mois au
                                                                 maximum à compter de la date d'envoi de dossier à la
-                                                                DRIEA.
+                                                                DRIEAT.
                                                             </font>
                                                         </p>
                                                         <p/>
@@ -764,7 +747,7 @@
                                                                 l'obligation d'obtenir l'attestation de capacité
                                                                 professionnelle de transport routier léger de
                                                                 marchandises afin de pouvoir inscrire votre société au
-                                                                registre des transporteurs auprès de la DRIEA/DREAL.
+                                                                registre des transporteurs auprès de la DRIEAT/DREAL.
                                                                 Vous pourrez donc devenir livreur/coursier en scooter,
                                                                 voiture ou camionnette pour livrer tous types de
                                                                 marchandises.
@@ -792,7 +775,7 @@
                                                         <p>
                                                             <font color="#000000">Il est indispensable de passer une
                                                                 formation qui dure 102 heures auprès d’un centre de
-                                                                formation agréé par la DREAL/DRIEA. Ensuite, vous devez
+                                                                formation agréé par la DREAL/DRIEAT. Ensuite, vous devez
                                                                 réussir un examen de 3 heures dans l’un de nos centres
                                                                 d’examens partout en France pour obtenir votre
                                                                 attestation de capacité professionnelle en transport
@@ -846,7 +829,7 @@
                                                                         11414-04) en incluant votre justificatif
                                                                         d’expérience professionnelle ou une copie de
                                                                         votre diplôme. Ce dossier doit être adressé à la
-                                                                        DREAL (ou DRIEA en Île-de-France).
+                                                                        DREAL (ou DRIEAT en Île-de-France).
                                                                     </font>
                                                                 </p>
                                                             </li>
