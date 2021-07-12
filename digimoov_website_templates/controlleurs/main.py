@@ -146,7 +146,7 @@ class QUISOMMESNOUS(http.Controller):
         if request.website.id == 2:
             return request.render("digimoov_website_templates.digimoov_template_quisommesnous", {})
         elif request.website.id == 1:
-            return request.render("website.qui-sommes-nous-1", {})
+            return request.render("mcm_website_theme.qui-sommes-nous", {})
 
 
 class NOSCENTRES(http.Controller):

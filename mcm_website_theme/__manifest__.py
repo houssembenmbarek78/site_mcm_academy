@@ -23,6 +23,7 @@ add css and js files to website model
         'views/formation_vmdtr.xml',
         'views/formation_vtc.xml',
         'views/website_sale.xml',
+        'views/quisommesnous.xml',
     ],
 
     'installable': True,
