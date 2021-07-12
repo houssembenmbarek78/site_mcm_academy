@@ -6,7 +6,7 @@ class PartnerDocuments(models.Model):
     _name = 'partner.documents'
 
     name = fields.Char(string='Title', required=True)
-    attachment_id=fields.Many2one('ir.attachment','Pièce jointe',required=True)
+    attachment_id=fields.Many2one('ir.attachment','Pièce jointe',required=True ,help='charger votre document de type image(jpeg,png) ou pdf')
     partner_id=fields.Many2one('res.partner','Client',required=True)
     attachment_number=fields.Char('Numéro')
     confirmation=fields.Boolean('Je confirme avoir soumis le recto et le verso')
