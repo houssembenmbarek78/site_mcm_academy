@@ -36,7 +36,7 @@
                                             <div class="col-lg-9 col-md-12 col-sm-12">
                                                 <input type="file" name="identity" required="1" id="identity"
                                                        placeholder="Veuillez Charger 1 fichier Recto verso ou 2 fichiers "
-                                                       class="form-control o_website_form_input" title="format documents supportés: *jpg,*.png,*.pdf"
+                                                       class="form-control o_website_form_input" value="format documents supportés: *jpg,*.png,*.pdf"
                                                        accept="image/*,application/pdf"/>
 
                                             </div>
@@ -49,7 +49,7 @@
                                             <div class="col-lg-9 col-md-12 col-sm-12">
                                                 <input type="file" name="identity2" required="1" id="identity2"
                                                        placeholder="Veuillez Charger 1 fichier Recto verso ou 2 fichiers "
-                                                       class="form-control o_website_form_input" title="format documents supportés: *jpg,*.png,*.pdf"
+                                                       class="form-control o_website_form_input" value="format documents supportés: *jpg,*.png,*.pdf"
                                                        accept="image/*,application/pdf"/>
                                             </div>
                                         </div>
