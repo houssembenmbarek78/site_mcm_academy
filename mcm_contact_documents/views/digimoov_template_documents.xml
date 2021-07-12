@@ -25,42 +25,54 @@
                                           data-model_name="partner.document"
                                           data-success_page="/submitted_documents" data-editable-form="false"
                                           hide-change-model="true">
-                                        <div class="row" style="padding-left:7%;padding-right:7%;">
-                                            <div class="form-group row form-field o_website_form_required">
-                                                <div class="col-lg-12 col-md-12">
+                                        <div class="form-group row form-field o_website_form_required">
+                                            <div class="col-lg-12 col-md-12">
                                                 <label class="col-form-label">Pièce d'identité recto/verso</label>
                                             </div>
-                                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                                <div>
-                                                    <label>Charger la piéce d'identité recto :</label>
-                                                    <input type="file" name="identity" required="1" id="identity"
-                                                           label="Piéce d'identité Recto :"
-                                                           title="Veuillez Charger la Piéce d'identité Recto (Taille Max : 4 MO)"
-                                                           class="form-control o_website_form_input"
-                                                           accept="image/*"/>
-                                                </div>
+                                            <div class="col-lg-9 col-md-9">
+                                                <label class="col-form-label" for="identity">Charger la piéce d'identité recto :
+                                                </label>
                                             </div>
-                                            <br></br>
-                                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                                <div>
-                                                    <label>Charger la piéce d'identité verso:</label>
-                                                    <input type="file" name="identity2" required="1" id="identity2"
-                                                           label="Piéce d'identité Verso :"
-                                                           title="Veuillez Charger la Piéce d'identité Verso (Taille Max : 4 MO)"
-                                                           class="form-control o_website_form_input"
-                                                                                                   accept="image/*"/>
-                                                </div>
-                                            </div>
-                                               </div>
-                                            <br></br>
-                                            <div class="form-group row form-field o_website_form_required">
                                             <div class="col-lg-9 col-md-12 col-sm-12">
-                                            <input type="checkbox" name="confirm_identity" id="confirm_identity" required="1"/>
-                                            <label for="confirm_identity" style="margin-left:8px;font-weight:normal !important;display:unset !important;">
-                                            </label>
+                                                <input type="file" name="identity" required="1" id="identity"
+                                                       placeholder="Veuillez Charger 1 fichier Recto verso ou 2 fichiers "
+                                                       class="form-control o_website_form_input" string="format documents supportés: *jpg,*.png,*.pdf"
+                                                       accept="image/*,application/pdf" help ="format documents supportés: *jpg,*.png,*.pdf"/>
                                             </div>
+                                             <div class="col-lg-12 col-md-12">
+                                                <label class="col-form-label">*.jpg,*.png,*.pdf</label>
+                                             </div>
+                                            <div class="col-lg-12 col-md-12">
+                                                <label class="col-form-label"> *.jpg,*.png,*.pdf </label>
                                             </div>
-                                            <div class="form-group row form-field o_website_form_required">
+                                                <p> *.jpg,*.png,*.pdf </p>
+                                        </div>
+                                        <div class="form-group row form-field o_website_form_required">
+                                            <div class="col-lg-9 col-md-9">
+                                                <label class="col-form-label" for="identity2">Charger la piéce d'identité verso :
+                                                </label>
+                                            </div>
+                                            <div class="col-lg-9 col-md-12 col-sm-12">
+                                                <input type="file" name="identity2" required="1" id="identity2"
+                                                       placeholder="Veuillez Charger 1 fichier Recto verso ou 2 fichiers "
+                                                       class="form-control o_website_form_input" string="format documents supportés: *jpg,*.png,*.pdf" help ='format documents supportés: *jpg,*.png,*.pdf'
+                                                       accept="image/*,application/pdf"/>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12">
+                                                <label class="col-form-label"> *.jpg,*.png,*.pdf </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row form-field o_website_form_required">
+                                            <div class="col-lg-9 col-md-12 col-sm-12">
+                                                <input type="checkbox" name="confirm_identity" id="confirm_identity"
+                                                       required="1"/>
+                                                <label for="confirm_identity"
+                                                       style="margin-left:8px;font-weight:normal !important;display:unset !important;">
+                                                    Je confirme avoir soumis le recto et le verso
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row form-field o_website_form_required">
                                             <div class="col-lg-9 col-md-12 col-sm-12">
                                                 <label class="col-form-label" for="number">N°Pièce d'identité</label>
                                             </div>
@@ -70,11 +82,10 @@
                                                        required="0"/>
                                             </div>
                                         </div>
-                                      </div>
                                         <div class="form-group row">
                                             <div class="col-md-8 col-lg-7">
                                                 <button type="submit" class="btn btn-primary centered-content"
-                                                        id="upload_my_files"
+                                                        id="submit_documents"
                                                         style="width: 100% !important;">
                                                     Envoyer
                                                     <span class="fa fa-1x fa-fw fa-long-arrow-right ml-1"></span>
@@ -86,8 +97,47 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
+                <script>
+                    function checkDomicile() {
+                    var domic_checked= document.getElementById('check_domicile_checked');
+                    var domic_not_checked= document.getElementById('check_domicile_not_checked');
+                    var domic_identity_hebergeur=
+                    document.getElementById('o_website_form_identity_hebergeur');
+                    var domic_attestation_hebergeur=
+                    document.getElementById('o_website_form_attestation_hebergeur');
+                    var identity_hebergeur = document.getElementById('identity_hebergeur');
+                    var attestation_hebergeur = document.getElementById('attestation_hebergeur');
+                    if(domic_checked.checked){
+                    if(domic_identity_hebergeur) {
+                    domic_identity_hebergeur.style.display='none';
+                    domic_identity_hebergeur.className='form-group row form-field';
+                    identity_hebergeur.required = 0;
+                    }
+                    if(domic_attestation_hebergeur) {
+                    domic_attestation_hebergeur.style.display='none';
+                    domic_attestation_hebergeur.className='form-group row form-field';
+                    attestation_hebergeur.required = 0;
+                    }
+                    }
+                    if(domic_not_checked.checked){
+                    if(domic_identity_hebergeur) {
+                    domic_identity_hebergeur.style.display='block';
+                    domic_identity_hebergeur.className='form-group row form-field
+                    o_website_form_required';
+                    identity_hebergeur.required = 1;
+                    }
+                    if(domic_attestation_hebergeur) {
+                    domic_attestation_hebergeur.style.display='block';
+                    domic_attestation_hebergeur.className='form-group row form-field
+                    o_website_form_required';
+                    attestation_hebergeur.required = 1;
+                    }
+                    }
+                    };
+                </script>
             </div>
         </t>
     </template>
