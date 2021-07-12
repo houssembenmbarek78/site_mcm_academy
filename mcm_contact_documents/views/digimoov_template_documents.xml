@@ -30,7 +30,7 @@
                                                 <label class="col-form-label">Pièce d'identité recto/verso</label>
                                             </div>
                                             <div class="col-lg-9 col-md-9">
-                                                <label class="col-form-label" for="identity">Charger la piéce d'identité recto :{formats documents supportés (*.jpg,*.png,*.pdf)}
+                                                <label class="col-form-label" for="identity">Charger la piéce d'identité recto :
                                                 </label>
                                             </div>
                                             <div class="col-lg-9 col-md-12 col-sm-12">
@@ -38,11 +38,12 @@
                                                        placeholder="Veuillez Charger 1 fichier Recto verso ou 2 fichiers "
                                                        class="form-control o_website_form_input"
                                                        accept="image/*,application/pdf"/>
+                                                <label>format documents supportés: *jpg,*.png,*.pdf</label>
                                             </div>
                                         </div>
                                         <div class="form-group row form-field o_website_form_required">
                                             <div class="col-lg-9 col-md-9">
-                                                <label class="col-form-label" for="identity">Charger la piéce d'identité verso :{formats documents supportés (*.jpg,*.png,*.pdf)}
+                                                <label class="col-form-label" for="identity">Charger la piéce d'identité verso :
                                                 </label>
                                             </div>
                                             <div class="col-lg-9 col-md-12 col-sm-12">
@@ -50,6 +51,7 @@
                                                        placeholder="Veuillez Charger 1 fichier Recto verso ou 2 fichiers "
                                                        class="form-control o_website_form_input"
                                                        accept="image/*,application/pdf"/>
+                                                <label>format documents supportés: *jpg,*.png,*.pdf</label>
                                             </div>
                                         </div>
                                         <div class="form-group row form-field o_website_form_required">
