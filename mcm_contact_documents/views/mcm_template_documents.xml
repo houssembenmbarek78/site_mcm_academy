@@ -32,7 +32,7 @@
                                                 </div>
                                                 <div class="col-lg-9 col-md-9">
                                                     <label class="col-form-label" for="identity">Charger la piéce
-                                                        d'identité recto :
+                                                        d'identité recto : (*.jpg,*.png,*.pdf)
                                                     </label>
                                                 </div>
                                                 <div class="col-lg-9 col-md-12 col-sm-12">
@@ -45,7 +45,7 @@
                                             <div class="form-group row form-field o_website_form_required">
                                                 <div class="col-lg-9 col-md-9">
                                                     <label class="col-form-label" for="identity">Charger la piéce
-                                                        d'identité verso :
+                                                        d'identité verso :(*.jpg,*.png,*.pdf)
                                                     </label>
                                                 </div>
                                                 <div class="col-lg-9 col-md-12 col-sm-12">
@@ -79,7 +79,7 @@
                                             <div class="form-group row form-field o_website_form_required">
                                                 <div class="col-lg-9 col-md-9">
                                                     <label class="col-form-label" for="identity">Charger le permis de
-                                                        conduire recto :
+                                                        conduire recto :(*.jpg,*.png,*.pdf)
                                                     </label>
                                                 </div>
                                                 <div class="col-lg-9 col-md-12 col-sm-12">
@@ -92,7 +92,7 @@
                                             <div class="form-group row form-field o_website_form_required">
                                                 <div class="col-lg-9 col-md-9">
                                                     <label class="col-form-label" for="identity">Charger le permis de
-                                                        conduire verso :
+                                                        conduire verso :(*.jpg,*.png,*.pdf)
                                                     </label>
                                                 </div>
                                                 <div class="col-lg-9 col-md-12 col-sm-12">

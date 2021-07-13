@@ -124,7 +124,7 @@ publicWidget.registry.digi_documents = publicWidget.Widget.extend({
                  if (file != null)
                  {
                     var type=file['type'];
-                    var types = ['image/png' , 'image/jpg' , 'image/jpeg' , 'image/bmp' , 'image/gif' , 'image/svg+xml' , 'application/pdf'];
+                    var types = ['image/png' , 'image/jpg' , 'image/jpeg' , 'image/bmp' ,  'image/svg+xml' , 'application/pdf'];
                     if (types.includes(type)){
                         check_type=true;
                     }
@@ -207,7 +207,7 @@ publicWidget.registry.mcm_documents = publicWidget.Widget.extend({
                  if (file != null)
                  {
                     var type=file['type'];
-                    var types = ['image/png' , 'image/jpg' , 'image/jpeg' , 'image/bmp' , 'image/gif' , 'image/svg+xml' , 'application/pdf'];
+                    var types = ['image/png' , 'image/jpg' , 'image/jpeg' , 'image/bmp' , 'image/svg+xml' , 'application/pdf'];
                     if (types.includes(type)){
                         check_type=true;
                     }
