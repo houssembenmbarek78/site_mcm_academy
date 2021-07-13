@@ -26,7 +26,10 @@ class FAQ(http.Controller):
 
     @http.route('/faq', type='http', auth='public', website=True)
     def faq(self, **kw, ):
-        return request.render("digimoov_website_templates.digimoov_template_faq", {})
+        if request.website.id == 2:
+            return request.render("digimoov_website_templates.digimoov_template_faq", {})
+        elif request.website.id == 1:
+            return request.render("mcm_website_theme.mcm_website_faq", {})
 
 
 class FINANCEMENT(http.Controller):
