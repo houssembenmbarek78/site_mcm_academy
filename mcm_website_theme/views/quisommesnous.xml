@@ -147,7 +147,48 @@
                         </div>
                     </div>
                 </section>
-
+                <section id="sh_corpomate_theme_section_386" data-name="why choose us">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="sh_left_img">
+                                    <div class="sh_img">
+                                        <img src="/sh_corpomate_theme/static/src/img/theme_16/2.jpg"/>
+                                    </div>
+                                    <div class="sh_mission">
+                                        <span class="fa fa-trophy"/>
+                                        <h4 class="o_default_snippet_text">our mission</h4>
+                                        <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="sh_right_part">
+                                    <h5 class="o_default_snippet_text">about us</h5>
+                                    <h2 class="o_default_snippet_text">welcome to laboratory!</h2>
+                                    <p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                    <ul>
+                                        <li class="o_default_snippet_text">
+                                            <span class="fa fa-check-square-o"/>
+ lorem ipsum dolor sit amet</li>
+                                        <li class="o_default_snippet_text">
+                                            <span class="fa fa-check-square-o"/>
+ lorem ipsum dolor sit amet</li>
+                                        <li class="o_default_snippet_text">
+                                            <span class="fa fa-check-square-o"/>
+ lorem ipsum dolor sit amet</li>
+                                        <li class="o_default_snippet_text">
+                                            <span class="fa fa-check-square-o"/>
+ lorem ipsum dolor sit amet</li>
+                                    </ul>
+                                    <div class="sh_btn">
+                                        <a href="#" class="btn btn-primary o_default_snippet_text">read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section id="sh_corpomate_theme_section_394" class="js_cls_sh_corpomate_theme_section_394 oe_img_bg o_colored_level" data-snippet="sh_corpomate_theme_tmpl_394" data-name="testimonial" style="background-image: url('/sh_corpomate_theme/static/src/img/theme_16/7.jpg');">
                     <div class="container">
                         <div class="sh_title">
