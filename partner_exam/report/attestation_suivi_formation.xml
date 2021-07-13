@@ -59,7 +59,9 @@
                                         <br/>
                                         Lieu et dates de la formation :
                                         <strong>En ligne, du
-                                            <span t-esc="(o.sale_order_ids[0].signed_on).strftime('%d/%m/%Y')"/>
+                                            <t t-set="sales"
+                                               t-value="o.sale_order_ids.filtered(lambda tx: tx.state == 'sale')"/>
+                                            <span t-esc="(sales[0].signed_on).strftime('%d/%m/%Y')"/>
                                             au
                                             <span t-field="o.module_id.date_exam"
                                                   t-field-options='{"format": "dd/MM/yyyy"}'/>
@@ -270,7 +272,9 @@
                                         <br/>
                                         Lieu et dates de la formation :
                                         <strong>En ligne, du
-                                            <span t-esc="(o.sale_order_ids[0].signed_on).strftime('%d/%m/%Y')"/>
+                                            <t t-set="sales"
+                                               t-value="o.sale_order_ids.filtered(lambda tx: tx.state == 'sale')"/>
+                                            <span t-esc="(sales[0].signed_on).strftime('%d/%m/%Y')"/>
                                             au
                                             <span t-field="o.module_id.date_exam"
                                                   t-field-options='{"format": "dd/MM/yyyy"}'/>
